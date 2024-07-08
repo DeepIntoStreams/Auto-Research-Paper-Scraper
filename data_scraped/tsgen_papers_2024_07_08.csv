@@ -1,0 +1,107 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Learning to (Learn at Test Time): RNNs with Expressive Hidden States,05/07/2024,"Yu Sun, Xinhao Li, Karan Dalal, Jiarui Xu, Arjun Vikram, Genghan Zhang, Yann Dubois, Xinlei Chen, Xiaolong Wang, Sanmi Koyejo, Tatsunori Hashimoto, Carlos Guestrin","Self-attention performs well in long context but has quadratic complexity.
+Existing RNN layers have linear complexity, but their performance in long
+context is limited by the expressive power of their hidden state. We propose a
+new class of sequence modeling layers with linear complexity and an expressive
+hidden state. The key idea is to make the hidden state a machine learning model
+itself, and the update rule a step of self-supervised learning. Since the
+hidden state is updated by training even on test sequences, our layers are
+called Test-Time Training (TTT) layers. We consider two instantiations:
+TTT-Linear and TTT-MLP, whose hidden state is a linear model and a two-layer
+MLP respectively. We evaluate our instantiations at the scale of 125M to 1.3B
+parameters, comparing with a strong Transformer and Mamba, a modern RNN. Both
+TTT-Linear and TTT-MLP match or exceed the baselines. Similar to Transformer,
+they can keep reducing perplexity by conditioning on more tokens, while Mamba
+cannot after 16k context. With preliminary systems optimization, TTT-Linear is
+already faster than Transformer at 8k context and matches Mamba in wall-clock
+time. TTT-MLP still faces challenges in memory I/O, but shows larger potential
+in long context, pointing to a promising direction for future research.",http://arxiv.org/pdf/2407.04620v1,,False
+"Not (yet) the whole story: Evaluating Visual Storytelling Requires More than Measuring Coherence, Grounding, and Repetition",05/07/2024,"Aditya K Surikuchi, Raquel Fernández, Sandro Pezzelle","Visual storytelling consists in generating a natural language story given a
+temporally ordered sequence of images. This task is not only challenging for
+models, but also very difficult to evaluate with automatic metrics since there
+is no consensus about what makes a story 'good'. In this paper, we introduce a
+novel method that measures story quality in terms of human likeness regarding
+three key aspects highlighted in previous work: visual grounding, coherence,
+and repetitiveness. We then use this method to evaluate the stories generated
+by several models, showing that the foundation model LLaVA obtains the best
+result, but only slightly so compared to TAPM, a 50-times smaller visual
+storytelling model. Upgrading the visual and language components of TAPM
+results in a model that yields competitive performance with a relatively low
+number of parameters. Finally, we carry out a human evaluation study, whose
+results suggest that a 'good' story may require more than a human-like level of
+visual grounding, coherence, and repetition.",http://arxiv.org/pdf/2407.04559v1,,False
+Rethinking Image Compression on the Web with Generative AI,05/07/2024,"Shayan Ali Hassan, Danish Humair, Ihsan Ayyub Qazi, Zafar Ayyub Qazi","The rapid growth of the Internet, driven by social media, web browsing, and
+video streaming, has made images central to the Web experience, resulting in
+significant data transfer and increased webpage sizes. Traditional image
+compression methods, while reducing bandwidth, often degrade image quality.
+This paper explores a novel approach using generative AI to reconstruct images
+at the edge or client-side. We develop a framework that leverages text prompts
+and provides additional conditioning inputs like Canny edges and color palettes
+to a text-to-image model, achieving up to 99.8% bandwidth savings in the best
+cases and 92.6% on average, while maintaining high perceptual similarity.
+Empirical analysis and a user study show that our method preserves image
+meaning and structure more effectively than traditional compression methods,
+offering a promising solution for reducing bandwidth usage and improving
+Internet affordability with minimal degradation in image quality.",http://arxiv.org/pdf/2407.04542v1,,False
+Hindsight Preference Learning for Offline Preference-based Reinforcement Learning,05/07/2024,"Chen-Xiao Gao, Shengjun Fang, Chenjun Xiao, Yang Yu, Zongzhang Zhang","Offline preference-based reinforcement learning (RL), which focuses on
+optimizing policies using human preferences between pairs of trajectory
+segments selected from an offline dataset, has emerged as a practical avenue
+for RL applications. Existing works rely on extracting step-wise reward signals
+from trajectory-wise preference annotations, assuming that preferences
+correlate with the cumulative Markovian rewards. However, such methods fail to
+capture the holistic perspective of data annotation: Humans often assess the
+desirability of a sequence of actions by considering the overall outcome rather
+than the immediate rewards. To address this challenge, we propose to model
+human preferences using rewards conditioned on future outcomes of the
+trajectory segments, i.e. the hindsight information. For downstream RL
+optimization, the reward of each step is calculated by marginalizing over
+possible future outcomes, the distribution of which is approximated by a
+variational auto-encoder trained using the offline dataset. Our proposed
+method, Hindsight Preference Learning (HPL), can facilitate credit assignment
+by taking full advantage of vast trajectory data available in massive unlabeled
+datasets. Comprehensive empirical studies demonstrate the benefits of HPL in
+delivering robust and advantageous rewards across various domains. Our code is
+publicly released at https://github.com/typoverflow/WiseRL.",http://arxiv.org/pdf/2407.04451v1,,False
+Robust Decision Transformer: Tackling Data Corruption in Offline RL via Sequence Modeling,05/07/2024,"Jiawei Xu, Rui Yang, Feng Luo, Meng Fang, Baoxiang Wang, Lei Han","Learning policies from offline datasets through offline reinforcement
+learning (RL) holds promise for scaling data-driven decision-making and
+avoiding unsafe and costly online interactions. However, real-world data
+collected from sensors or humans often contains noise and errors, posing a
+significant challenge for existing offline RL methods. Our study indicates that
+traditional offline RL methods based on temporal difference learning tend to
+underperform Decision Transformer (DT) under data corruption, especially when
+the amount of data is limited. This suggests the potential of sequential
+modeling for tackling data corruption in offline RL. To further unleash the
+potential of sequence modeling methods, we propose Robust Decision Transformer
+(RDT) by incorporating several robust techniques. Specifically, we introduce
+Gaussian weighted learning and iterative data correction to reduce the effect
+of corrupted data. Additionally, we leverage embedding dropout to enhance the
+model's resistance to erroneous inputs. Extensive experiments on MoJoCo,
+KitChen, and Adroit tasks demonstrate RDT's superior performance under diverse
+data corruption compared to previous methods. Moreover, RDT exhibits remarkable
+robustness in a challenging setting that combines training-time data corruption
+with testing-time observation perturbations. These results highlight the
+potential of robust sequence modeling for learning from noisy or corrupted
+offline datasets, thereby promoting the reliable application of offline RL in
+real-world tasks.",http://arxiv.org/pdf/2407.04285v1,,False
+TimeLDM: Latent Diffusion Model for Unconditional Time Series Generation,05/07/2024,"Jian Qian, Miao Sun, Sifan Zhou, Biao Wan, Minhao Li, Patrick Chiang","Time series generation is a crucial research topic in the area of deep
+learning, which can be used for data augmentation, imputing missing values, and
+forecasting. Currently, latent diffusion models are ascending to the forefront
+of generative modeling for many important data representations. Being the most
+pivotal in the computer vision domain, latent diffusion models have also
+recently attracted interest in other communities, including NLP, Speech, and
+Geometric Space. In this work, we propose TimeLDM, a novel latent diffusion
+model for high-quality time series generation. TimeLDM is composed of a
+variational autoencoder that encodes time series into an informative and
+smoothed latent content and a latent diffusion model operating in the latent
+space to generate latent information. We evaluate the ability of our method to
+generate synthetic time series with simulated and realistic datasets, benchmark
+the performance against existing state-of-the-art methods. Qualitatively and
+quantitatively, we find that the proposed TimeLDM persistently delivers
+high-quality generated time series. Sores from Context-FID and Discriminative
+indicate that TimeLDM consistently and significantly outperforms current
+state-of-the-art benchmarks with an average improvement of 3.4$\times$ and
+3.8$\times$, respectively. Further studies demonstrate that our method presents
+better performance on different lengths of time series data generation. To the
+best of our knowledge, this is the first study to explore the potential of the
+latent diffusion model for unconditional time series generation and establish a
+new baseline for synthetic time series.",http://arxiv.org/pdf/2407.04211v1,,False

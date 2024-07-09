@@ -1,0 +1,244 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Physics-Informed Machine Learning Towards A Real-Time Spacecraft Thermal Simulator,08/07/2024,"Manaswin Oddiraju, Zaki Hasnain, Saptarshi Bandyopadhyay, Eric Sunada, Souma Chowdhury","Modeling thermal states for complex space missions, such as the surface
+exploration of airless bodies, requires high computation, whether used in
+ground-based analysis for spacecraft design or during onboard reasoning for
+autonomous operations. For example, a finite-element thermal model with
+hundreds of elements can take significant time to simulate, which makes it
+unsuitable for onboard reasoning during time-sensitive scenarios such as
+descent and landing, proximity operations, or in-space assembly. Further, the
+lack of fast and accurate thermal modeling drives thermal designs to be more
+conservative and leads to spacecraft with larger mass and higher power budgets.
+The emerging paradigm of physics-informed machine learning (PIML) presents a
+class of hybrid modeling architectures that address this challenge by combining
+simplified physics models with machine learning (ML) models resulting in models
+which maintain both interpretability and robustness. Such techniques enable
+designs with reduced mass and power through onboard thermal-state estimation
+and control and may lead to improved onboard handling of off-nominal states,
+including unplanned down-time. The PIML model or hybrid model presented here
+consists of a neural network which predicts reduced nodalizations (distribution
+and size of coarse mesh) given on-orbit thermal load conditions, and
+subsequently a (relatively coarse) finite-difference model operates on this
+mesh to predict thermal states. We compare the computational performance and
+accuracy of the hybrid model to a data-driven neural net model, and a
+high-fidelity finite-difference model of a prototype Earth-orbiting small
+spacecraft. The PIML based active nodalization approach provides significantly
+better generalization than the neural net model and coarse mesh model, while
+reducing computing cost by up to 1.7x compared to the high-fidelity model.",http://arxiv.org/pdf/2407.06099v1,,False
+From Loops to Oops: Fallback Behaviors of Language Models Under Uncertainty,08/07/2024,"Maor Ivgi, Ori Yoran, Jonathan Berant, Mor Geva","Large language models (LLMs) often exhibit undesirable behaviors, such as
+hallucinations and sequence repetitions. We propose to view these behaviors as
+fallbacks that models exhibit under uncertainty, and investigate the connection
+between them. We categorize fallback behaviors -- sequence repetitions,
+degenerate text, and hallucinations -- and extensively analyze them in models
+from the same family that differ by the amount of pretraining tokens, parameter
+count, or the inclusion of instruction-following training. Our experiments
+reveal a clear and consistent ordering of fallback behaviors, across all these
+axes: the more advanced an LLM is (i.e., trained on more tokens, has more
+parameters, or instruction-tuned), its fallback behavior shifts from sequence
+repetitions, to degenerate text, and then to hallucinations. Moreover, the same
+ordering is observed throughout a single generation, even for the
+best-performing models; as uncertainty increases, models shift from generating
+hallucinations to producing degenerate text and then sequence repetitions.
+Lastly, we demonstrate that while common decoding techniques, such as random
+sampling, might alleviate some unwanted behaviors like sequence repetitions,
+they increase harder-to-detect hallucinations.",http://arxiv.org/pdf/2407.06071v1,,False
+Learning local equivariant representations for quantum operators,08/07/2024,"Zhanghao Zhouyin, Zixi Gan, Shishir Kumar Pandey, Linfeng Zhang, Qiangqiang Gu","Predicting quantum operator matrices such as Hamiltonian, overlap, and
+density matrices in the density functional theory (DFT) framework is crucial
+for understanding material properties. Current methods often focus on
+individual operators and struggle with efficiency and scalability for large
+systems. Here we introduce a novel deep learning model, SLEM (Strictly
+Localized Equivariant Message-passing) for predicting multiple quantum
+operators, that achieves state-of-the-art accuracy while dramatically improving
+computational efficiency. SLEM's key innovation is its strict locality-based
+design, constructing local, equivariant representations for quantum tensors
+while preserving physical symmetries. This enables complex many-body dependence
+without expanding the effective receptive field, leading to superior data
+efficiency and transferability. Using an innovative SO(2) convolution
+technique, SLEM reduces the computational complexity of high-order tensor
+products and is therefore capable of handling systems requiring the $f$ and $g$
+orbitals in their basis sets. We demonstrate SLEM's capabilities across diverse
+2D and 3D materials, achieving high accuracy even with limited training data.
+SLEM's design facilitates efficient parallelization, potentially extending DFT
+simulations to systems with device-level sizes, opening new possibilities for
+large-scale quantum simulations and high-throughput materials discovery.",http://arxiv.org/pdf/2407.06053v1,,False
+Distilling System 2 into System 1,08/07/2024,"Ping Yu, Jing Xu, Jason Weston, Ilia Kulikov","Large language models (LLMs) can spend extra compute during inference to
+generate intermediate thoughts, which helps to produce better final responses.
+Since Chain-of-Thought (Wei et al., 2022), many such System 2 techniques have
+been proposed such as Rephrase and Respond (Deng et al., 2023a), System 2
+Attention (Weston and Sukhbaatar, 2023) and Branch-Solve-Merge (Saha et al.,
+2023). In this work we investigate self-supervised methods to ``compile''
+(distill) higher quality outputs from System 2 techniques back into LLM
+generations without intermediate reasoning token sequences, as this reasoning
+has been distilled into System 1. We show that several such techniques can be
+successfully distilled, resulting in improved results compared to the original
+System 1 performance, and with less inference cost than System 2. We posit that
+such System 2 distillation will be an important feature of future continually
+learning AI systems, enabling them to focus System 2 capabilities on the
+reasoning tasks that they cannot yet do well.",http://arxiv.org/pdf/2407.06023v1,,False
+Simulation-based Benchmarking for Causal Structure Learning in Gene Perturbation Experiments,08/07/2024,"Luka Kovačević, Izzy Newsham, Sach Mukherjee, John Whittaker","Causal structure learning (CSL) refers to the task of learning causal
+relationships from data. Advances in CSL now allow learning of causal graphs in
+diverse application domains, which has the potential to facilitate data-driven
+causal decision-making. Real-world CSL performance depends on a number of
+$\textit{context-specific}$ factors, including context-specific data
+distributions and non-linear dependencies, that are important in practical
+use-cases. However, our understanding of how to assess and select CSL methods
+in specific contexts remains limited. To address this gap, we present
+$\textit{CausalRegNet}$, a multiplicative effect structural causal model that
+allows for generating observational and interventional data incorporating
+context-specific properties, with a focus on the setting of gene perturbation
+experiments. Using real-world gene perturbation data, we show that CausalRegNet
+generates accurate distributions and scales far better than current simulation
+frameworks. We illustrate the use of CausalRegNet in assessing CSL methods in
+the context of interventional experiments in biology.",http://arxiv.org/pdf/2407.06015v1,,False
+Change-Point Detection in Industrial Data Streams based on Online Dynamic Mode Decomposition with Control,08/07/2024,"Marek Wadinger, Michal Kvasnica, Yoshinobu Kawahara","We propose a novel change-point detection method based on online Dynamic Mode
+Decomposition with control (ODMDwC). Leveraging ODMDwC's ability to find and
+track linear approximation of a non-linear system while incorporating control
+effects, the proposed method dynamically adapts to its changing behavior due to
+aging and seasonality. This approach enables the detection of changes in
+spatial, temporal, and spectral patterns, providing a robust solution that
+preserves correspondence between the score and the extent of change in the
+system dynamics. We formulate a truncated version of ODMDwC and utilize
+higher-order time-delay embeddings to mitigate noise and extract broad-band
+features. Our method addresses the challenges faced in industrial settings
+where safety-critical systems generate non-uniform data streams while requiring
+timely and accurate change-point detection to protect profit and life. Our
+results demonstrate that this method yields intuitive and improved detection
+results compared to the Singular-Value-Decomposition-based method. We validate
+our approach using synthetic and real-world data, showing its competitiveness
+to other approaches on complex systems' benchmark datasets. Provided guidelines
+for hyperparameters selection enhance our method's practical applicability.",http://arxiv.org/pdf/2407.05976v1,,False
+Structural Generalization in Autonomous Cyber Incident Response with Message-Passing Neural Networks and Reinforcement Learning,08/07/2024,"Jakob Nyberg, Pontus Johnson","We believe that agents for automated incident response based on machine
+learning need to handle changes in network structure. Computer networks are
+dynamic, and can naturally change in structure over time. Retraining agents for
+small network changes costs time and energy. We attempt to address this issue
+with an existing method of relational agent learning, where the relations
+between objects are assumed to remain consistent across problem instances. The
+state of the computer network is represented as a relational graph and encoded
+through a message passing neural network. The message passing neural network
+and an agent policy using the encoding are optimized end-to-end using
+reinforcement learning. We evaluate the approach on the second instance of the
+Cyber Autonomy Gym for Experimentation (CAGE~2), a cyber incident simulator
+that simulates attacks on an enterprise network. We create variants of the
+original network with different numbers of hosts and agents are tested without
+additional training on them. Our results show that agents using relational
+information are able to find solutions despite changes to the network, and can
+perform optimally in some instances. Agents using the default vector state
+representation perform better, but need to be specially trained on each network
+variant, demonstrating a trade-off between specialization and generalization.",http://arxiv.org/pdf/2407.05775v1,,False
+TransMA: an explainable multi-modal deep learning model for predicting properties of ionizable lipid nanoparticles in mRNA delivery,08/07/2024,"Kun Wu, Zixu Wang, Xiulong Yang, Yangyang Chen, Zhenqi Han, Jialu Zhang, Lizhuang Liu","As the primary mRNA delivery vehicles, ionizable lipid nanoparticles (LNPs)
+exhibit excellent safety, high transfection efficiency, and strong immune
+response induction. However, the screening process for LNPs is time-consuming
+and costly. To expedite the identification of high-transfection-efficiency mRNA
+drug delivery systems, we propose an explainable LNPs transfection efficiency
+prediction model, called TransMA. TransMA employs a multi-modal molecular
+structure fusion architecture, wherein the fine-grained atomic spatial
+relationship extractor named molecule 3D Transformer captures three-dimensional
+spatial features of the molecule, and the coarse-grained atomic sequence
+extractor named molecule Mamba captures one-dimensional molecular features. We
+design the mol-attention mechanism block, enabling it to align coarse and
+fine-grained atomic features and captures relationships between atomic spatial
+and sequential structures. TransMA achieves state-of-the-art performance in
+predicting transfection efficiency using the scaffold and cliff data splitting
+methods on the current largest LNPs dataset, including Hela and RAW cell lines.
+Moreover, we find that TransMA captures the relationship between subtle
+structural changes and significant transfection efficiency variations,
+providing valuable insights for LNPs design. Additionally, TransMA's
+predictions on external transfection efficiency data maintain a consistent
+order with actual transfection efficiencies, demonstrating its robust
+generalization capability. The code, model and data are made publicly available
+at https://github.com/wklix/TransMA/tree/master. We hope that high-accuracy
+transfection prediction models in the future can aid in LNPs design and initial
+screening, thereby assisting in accelerating the mRNA design process.",http://arxiv.org/pdf/2407.05736v1,,False
+Multi-Fidelity Bayesian Neural Network for Uncertainty Quantification in Transonic Aerodynamic Loads,08/07/2024,"Andrea Vaiuso, Gabriele Immordino, Marcello Righi, Andrea Da Ronch","Multi-fidelity models are becoming more prevalent in engineering,
+particularly in aerospace, as they combine both the computational efficiency of
+low-fidelity models with the high accuracy of higher-fidelity simulations.
+Various state-of-the-art techniques exist for fusing data from different
+fidelity sources, including Co-Kriging and transfer learning in neural
+networks. This paper aims to implement a multi-fidelity Bayesian neural network
+model that applies transfer learning to fuse data generated by models at
+different fidelities. Bayesian neural networks use probability distributions
+over network weights, enabling them to provide predictions along with estimates
+of their confidence. This approach harnesses the predictive and data fusion
+capabilities of neural networks while also quantifying uncertainty. The results
+demonstrate that the multi-fidelity Bayesian model outperforms the
+state-of-the-art Co-Kriging in terms of overall accuracy and robustness on
+unseen data.",http://arxiv.org/pdf/2407.05684v1,,False
+RadiomicsFill-Mammo: Synthetic Mammogram Mass Manipulation with Radiomics Features,08/07/2024,"Inye Na, Jonghun Kim, Eun Sook Ko, Hyunjin Park","Motivated by the question, ""Can we generate tumors with desired attributes?''
+this study leverages radiomics features to explore the feasibility of
+generating synthetic tumor images. Characterized by its low-dimensional yet
+biologically meaningful markers, radiomics bridges the gap between complex
+medical imaging data and actionable clinical insights. We present
+RadiomicsFill-Mammo, the first of the RadiomicsFill series, an innovative
+technique that generates realistic mammogram mass images mirroring specific
+radiomics attributes using masked images and opposite breast images, leveraging
+a recent stable diffusion model. This approach also allows for the
+incorporation of essential clinical variables, such as BI-RADS and breast
+density, alongside radiomics features as conditions for mass generation.
+Results indicate that RadiomicsFill-Mammo effectively generates diverse and
+realistic tumor images based on various radiomics conditions. Results also
+demonstrate a significant improvement in mass detection capabilities,
+leveraging RadiomicsFill-Mammo as a strategy to generate simulated samples.
+Furthermore, RadiomicsFill-Mammo not only advances medical imaging research but
+also opens new avenues for enhancing treatment planning and tumor simulation.
+Our code is available at https://github.com/nainye/RadiomicsFill.",http://arxiv.org/pdf/2407.05683v1,,False
+BEVWorld: A Multimodal World Model for Autonomous Driving via Unified BEV Latent Space,08/07/2024,"Yumeng Zhang, Shi Gong, Kaixin Xiong, Xiaoqing Ye, Xiao Tan, Fan Wang, Jizhou Huang, Hua Wu, Haifeng Wang","World models are receiving increasing attention in autonomous driving for
+their ability to predict potential future scenarios. In this paper, we present
+BEVWorld, a novel approach that tokenizes multimodal sensor inputs into a
+unified and compact Bird's Eye View (BEV) latent space for environment
+modeling. The world model consists of two parts: the multi-modal tokenizer and
+the latent BEV sequence diffusion model. The multi-modal tokenizer first
+encodes multi-modality information and the decoder is able to reconstruct the
+latent BEV tokens into LiDAR and image observations by ray-casting rendering in
+a self-supervised manner. Then the latent BEV sequence diffusion model predicts
+future scenarios given action tokens as conditions. Experiments demonstrate the
+effectiveness of BEVWorld in autonomous driving tasks, showcasing its
+capability in generating future scenes and benefiting downstream tasks such as
+perception and motion prediction. Code will be available at
+https://github.com/zympsyche/BevWorld.",http://arxiv.org/pdf/2407.05679v1,,False
+MSTF: Multiscale Transformer for Incomplete Trajectory Prediction,08/07/2024,"Zhanwen Liu, Chao Li, Nan Yang, Yang Wang, Jiaqi Ma, Guangliang Cheng, Xiangmo Zhao","Motion forecasting plays a pivotal role in autonomous driving systems,
+enabling vehicles to execute collision warnings and rational local-path
+planning based on predictions of the surrounding vehicles. However, prevalent
+methods often assume complete observed trajectories, neglecting the potential
+impact of missing values induced by object occlusion, scope limitation, and
+sensor failures. Such oversights inevitably compromise the accuracy of
+trajectory predictions. To tackle this challenge, we propose an end-to-end
+framework, termed Multiscale Transformer (MSTF), meticulously crafted for
+incomplete trajectory prediction. MSTF integrates a Multiscale Attention Head
+(MAH) and an Information Increment-based Pattern Adaptive (IIPA) module.
+Specifically, the MAH component concurrently captures multiscale motion
+representation of trajectory sequence from various temporal granularities,
+utilizing a multi-head attention mechanism. This approach facilitates the
+modeling of global dependencies in motion across different scales, thereby
+mitigating the adverse effects of missing values. Additionally, the IIPA module
+adaptively extracts continuity representation of motion across time steps by
+analyzing missing patterns in the data. The continuity representation
+delineates motion trend at a higher level, guiding MSTF to generate predictions
+consistent with motion continuity. We evaluate our proposed MSTF model using
+two large-scale real-world datasets. Experimental results demonstrate that MSTF
+surpasses state-of-the-art (SOTA) models in the task of incomplete trajectory
+prediction, showcasing its efficacy in addressing the challenges posed by
+missing values in motion forecasting for autonomous driving systems.",http://arxiv.org/pdf/2407.05671v1,,False
+Deep Learning-based Anomaly Detection and Log Analysis for Computer Networks,08/07/2024,"Shuzhan Wang, Ruxue Jiang, Zhaoqi Wang, Yan Zhou","Computer network anomaly detection and log analysis, as an important topic in
+the field of network security, has been a key task to ensure network security
+and system reliability. First, existing network anomaly detection and log
+analysis methods are often challenged by high-dimensional data and complex
+network topologies, resulting in unstable performance and high false-positive
+rates. In addition, traditional methods are usually difficult to handle
+time-series data, which is crucial for anomaly detection and log analysis.
+Therefore, we need a more efficient and accurate method to cope with these
+problems. To compensate for the shortcomings of current methods, we propose an
+innovative fusion model that integrates Isolation Forest, GAN (Generative
+Adversarial Network), and Transformer with each other, and each of them plays a
+unique role. Isolation Forest is used to quickly identify anomalous data
+points, and GAN is used to generate synthetic data with the real data
+distribution characteristics to augment the training dataset, while the
+Transformer is used for modeling and context extraction on time series data.
+The synergy of these three components makes our model more accurate and robust
+in anomaly detection and log analysis tasks. We validate the effectiveness of
+this fusion model in an extensive experimental evaluation. Experimental results
+show that our model significantly improves the accuracy of anomaly detection
+while reducing the false alarm rate, which helps to detect potential network
+problems in advance. The model also performs well in the log analysis task and
+is able to quickly identify anomalous behaviors, which helps to improve the
+stability of the system. The significance of this study is that it introduces
+advanced deep learning techniques, which work anomaly detection and log
+analysis.",http://arxiv.org/pdf/2407.05639v1,,False

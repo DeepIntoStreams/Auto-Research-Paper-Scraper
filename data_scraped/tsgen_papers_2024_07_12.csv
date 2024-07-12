@@ -1,0 +1,542 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Real-Time Anomaly Detection and Reactive Planning with Large Language Models,11/07/2024,"Rohan Sinha, Amine Elhafsi, Christopher Agia, Matthew Foutter, Edward Schmerling, Marco Pavone","Foundation models, e.g., large language models (LLMs), trained on
+internet-scale data possess zero-shot generalization capabilities that make
+them a promising technology towards detecting and mitigating
+out-of-distribution failure modes of robotic systems. Fully realizing this
+promise, however, poses two challenges: (i) mitigating the considerable
+computational expense of these models such that they may be applied online, and
+(ii) incorporating their judgement regarding potential anomalies into a safe
+control framework. In this work, we present a two-stage reasoning framework:
+First is a fast binary anomaly classifier that analyzes observations in an LLM
+embedding space, which may then trigger a slower fallback selection stage that
+utilizes the reasoning capabilities of generative LLMs. These stages correspond
+to branch points in a model predictive control strategy that maintains the
+joint feasibility of continuing along various fallback plans to account for the
+slow reasoner's latency as soon as an anomaly is detected, thus ensuring
+safety. We show that our fast anomaly classifier outperforms autoregressive
+reasoning with state-of-the-art GPT models, even when instantiated with
+relatively small language models. This enables our runtime monitor to improve
+the trustworthiness of dynamic robotic systems, such as quadrotors or
+autonomous vehicles, under resource and time constraints. Videos illustrating
+our approach in both simulation and real-world experiments are available on
+this project page: https://sites.google.com/view/aesop-llm.",http://arxiv.org/pdf/2407.08735v1,,False
+MetaUrban: A Simulation Platform for Embodied AI in Urban Spaces,11/07/2024,"Wayne Wu, Honglin He, Yiran Wang, Chenda Duan, Jack He, Zhizheng Liu, Quanyi Li, Bolei Zhou","Public urban spaces like streetscapes and plazas serve residents and
+accommodate social life in all its vibrant variations. Recent advances in
+Robotics and Embodied AI make public urban spaces no longer exclusive to
+humans. Food delivery bots and electric wheelchairs have started sharing
+sidewalks with pedestrians, while diverse robot dogs and humanoids have
+recently emerged in the street. Ensuring the generalizability and safety of
+these forthcoming mobile machines is crucial when navigating through the
+bustling streets in urban spaces. In this work, we present MetaUrban, a
+compositional simulation platform for Embodied AI research in urban spaces.
+MetaUrban can construct an infinite number of interactive urban scenes from
+compositional elements, covering a vast array of ground plans, object
+placements, pedestrians, vulnerable road users, and other mobile agents'
+appearances and dynamics. We design point navigation and social navigation
+tasks as the pilot study using MetaUrban for embodied AI research and establish
+various baselines of Reinforcement Learning and Imitation Learning. Experiments
+demonstrate that the compositional nature of the simulated environments can
+substantially improve the generalizability and safety of the trained mobile
+agents. MetaUrban will be made publicly available to provide more research
+opportunities and foster safe and trustworthy embodied AI in urban spaces.",http://arxiv.org/pdf/2407.08725v1,,False
+Sensor-Aware Classifiers for Energy-Efficient Time Series Applications on IoT Devices,11/07/2024,"Dina Hussein, Lubah Nelson, Ganapati Bhat","Time-series data processing is an important component of many real-world
+applications, such as health monitoring, environmental monitoring, and digital
+agriculture. These applications collect distinct windows of sensor data (e.g.,
+few seconds) and process them to assess the environment. Machine learning (ML)
+models are being employed in time-series applications due to their
+generalization abilities for classification. State-of-the-art time-series
+applications wait for entire sensor data window to become available before
+processing the data using ML algorithms, resulting in high sensor energy
+consumption. However, not all situations require processing full sensor window
+to make accurate inference. For instance, in activity recognition, sitting and
+standing activities can be inferred with partial windows. Using this insight,
+we propose to employ early exit classifiers with partial sensor windows to
+minimize energy consumption while maintaining accuracy. Specifically, we first
+utilize multiple early exits with successively increasing amount of data as
+they become available in a window. If early exits provide inference with high
+confidence, we return the label and enter low power mode for sensors. The
+proposed approach has potential to enable significant energy savings in time
+series applications. We utilize neural networks and random forest classifiers
+to evaluate our approach. Our evaluations with six datasets show that the
+proposed approach enables up to 50-60% energy savings on average without any
+impact on accuracy. The energy savings can enable time-series applications in
+remote locations with limited energy availability.",http://arxiv.org/pdf/2407.08715v1,,False
+Estimation of spatio-temporal extremes via generative neural networks,11/07/2024,"Christopher Bülte, Lisa Leimenstoll, Melanie Schienle","Recent methods in modeling spatial extreme events have focused on utilizing
+parametric max-stable processes and their underlying dependence structure. In
+this work, we provide a unified approach for analyzing spatial extremes with
+little available data by estimating the distribution of model parameters or the
+spatial dependence directly. By employing recent developments in generative
+neural networks we predict a full sample-based distribution, allowing for
+direct assessment of uncertainty regarding model parameters or other parameter
+dependent functionals. We validate our method by fitting several simulated
+max-stable processes, showing a high accuracy of the approach, regarding
+parameter estimation, as well as uncertainty quantification. Additional
+robustness checks highlight the generalization and extrapolation capabilities
+of the model, while an application to precipitation extremes across Western
+Germany demonstrates the usability of our approach in real-world scenarios.",http://arxiv.org/pdf/2407.08668v1,,False
+Latent Conditional Diffusion-based Data Augmentation for Continuous-Time Dynamic Graph Mode,11/07/2024,"Yuxing Tian, Yiyan Qi, Aiwen Jiang, Qi Huang, Jian Guo","Continuous-Time Dynamic Graph (CTDG) precisely models evolving real-world
+relationships, drawing heightened interest in dynamic graph learning across
+academia and industry. However, existing CTDG models encounter challenges
+stemming from noise and limited historical data. Graph Data Augmentation (GDA)
+emerges as a critical solution, yet current approaches primarily focus on
+static graphs and struggle to effectively address the dynamics inherent in
+CTDGs. Moreover, these methods often demand substantial domain expertise for
+parameter tuning and lack theoretical guarantees for augmentation efficacy. To
+address these issues, we propose Conda, a novel latent diffusion-based GDA
+method tailored for CTDGs. Conda features a sandwich-like architecture,
+incorporating a Variational Auto-Encoder (VAE) and a conditional diffusion
+model, aimed at generating enhanced historical neighbor embeddings for target
+nodes. Unlike conventional diffusion models trained on entire graphs via
+pre-training, Conda requires historical neighbor sequence embeddings of target
+nodes for training, thus facilitating more targeted augmentation. We integrate
+Conda into the CTDG model and adopt an alternating training strategy to
+optimize performance. Extensive experimentation across six widely used
+real-world datasets showcases the consistent performance improvement of our
+approach, particularly in scenarios with limited historical data.",http://arxiv.org/pdf/2407.08500v1,,False
+Joint Optimization of Age of Information and Energy Consumption in NR-V2X System based on Deep Reinforcement Learning,11/07/2024,"Shulin Song, Zheng Zhang, Qiong Wu, Qiang Fan, Pingyi Fan","Autonomous driving may be the most important application scenario of next
+generation, the development of wireless access technologies enabling reliable
+and low-latency vehicle communication becomes crucial. To address this, 3GPP
+has developed Vehicle-to-Everything (V2X) specifications based on 5G New Radio
+(NR) technology, where Mode 2 Side-Link (SL) communication resembles Mode 4 in
+LTE-V2X, allowing direct communication between vehicles. This supplements SL
+communication in LTE-V2X and represents the latest advancement in cellular V2X
+(C-V2X) with improved performance of NR-V2X. However, in NR-V2X Mode 2,
+resource collisions still occur, and thus degrade the age of information (AOI).
+Therefore, a interference cancellation method is employed to mitigate this
+impact by combining NR-V2X with Non-Orthogonal multiple access (NOMA)
+technology. In NR-V2X, when vehicles select smaller resource reservation
+interval (RRI), higher-frequency transmissions take ore energy to reduce AoI.
+Hence, it is important to jointly consider AoI and communication energy
+consumption based on NR-V2X communication. Then, we formulate such an
+optimization problem and employ the Deep Reinforcement Learning (DRL) algorithm
+to compute the optimal transmission RRI and transmission power for each
+transmitting vehicle to reduce the energy consumption of each transmitting
+vehicle and the AoI of each receiving vehicle. Extensive simulations have
+demonstrated the performance of our proposed algorithm.",http://arxiv.org/pdf/2407.08458v1,,False
+"A Comprehensive Survey on Human Video Generation: Challenges, Methods, and Insights",11/07/2024,"Wentao Lei, Jinting Wang, Fengji Ma, Guanjie Huang, Li Liu","Human video generation is a dynamic and rapidly evolving task that aims to
+synthesize 2D human body video sequences with generative models given control
+conditions such as text, audio, and pose. With the potential for wide-ranging
+applications in film, gaming, and virtual communication, the ability to
+generate natural and realistic human video is critical. Recent advancements in
+generative models have laid a solid foundation for the growing interest in this
+area. Despite the significant progress, the task of human video generation
+remains challenging due to the consistency of characters, the complexity of
+human motion, and difficulties in their relationship with the environment. This
+survey provides a comprehensive review of the current state of human video
+generation, marking, to the best of our knowledge, the first extensive
+literature review in this domain. We start with an introduction to the
+fundamentals of human video generation and the evolution of generative models
+that have facilitated the field's growth. We then examine the main methods
+employed for three key sub-tasks within human video generation: text-driven,
+audio-driven, and pose-driven motion generation. These areas are explored
+concerning the conditions that guide the generation process. Furthermore, we
+offer a collection of the most commonly utilized datasets and the evaluation
+metrics that are crucial in assessing the quality and realism of generated
+videos. The survey concludes with a discussion of the current challenges in the
+field and suggests possible directions for future research. The goal of this
+survey is to offer the research community a clear and holistic view of the
+advancements in human video generation, highlighting the milestones achieved
+and the challenges that lie ahead.",http://arxiv.org/pdf/2407.08428v1,,False
+Parallelizing Autoregressive Generation with Variational State Space Models,11/07/2024,"Gaspard Lambrechts, Yann Claes, Pierre Geurts, Damien Ernst","Attention-based models such as Transformers and recurrent models like state
+space models (SSMs) have emerged as successful methods for autoregressive
+sequence modeling. Although both enable parallel training, none enable parallel
+generation due to their autoregressiveness. We propose the variational SSM
+(VSSM), a variational autoencoder (VAE) where both the encoder and decoder are
+SSMs. Since sampling the latent variables and decoding them with the SSM can be
+parallelized, both training and generation can be conducted in parallel.
+Moreover, the decoder recurrence allows generation to be resumed without
+reprocessing the whole sequence. Finally, we propose the autoregressive VSSM
+that can be conditioned on a partial realization of the sequence, as is common
+in language generation tasks. Interestingly, the autoregressive VSSM still
+enables parallel generation. We highlight on toy problems (MNIST, CIFAR) the
+empirical gains in speed-up and show that it competes with traditional models
+in terms of generation quality (Transformer, Mamba SSM).",http://arxiv.org/pdf/2407.08415v1,,False
+Digital twins to alleviate the need for real field data in vision-based vehicle speed detection systems,11/07/2024,"Antonio Hernández Martínez, Iván García Daza, Carlos Fernández López, David Fernández Llorca","Accurate vision-based speed estimation is much more cost-effective than
+traditional methods based on radar or LiDAR. However, it is also challenging
+due to the limitations of perspective projection on a discrete sensor, as well
+as the high sensitivity to calibration, lighting and weather conditions.
+Interestingly, deep learning approaches (which dominate the field of computer
+vision) are very limited in this context due to the lack of available data.
+Indeed, obtaining video sequences of real road traffic with accurate speed
+values associated with each vehicle is very complex and costly, and the number
+of available datasets is very limited. Recently, some approaches are focusing
+on the use of synthetic data. However, it is still unclear how models trained
+on synthetic data can be effectively applied to real world conditions. In this
+work, we propose the use of digital-twins using CARLA simulator to generate a
+large dataset representative of a specific real-world camera. The synthetic
+dataset contains a large variability of vehicle types, colours, speeds,
+lighting and weather conditions. A 3D CNN model is trained on the digital twin
+and tested on the real sequences. Unlike previous approaches that generate
+multi-camera sequences, we found that the gap between the the real and the
+virtual conditions is a key factor in obtaining low speed estimation errors.
+Even with a preliminary approach, the mean absolute error obtained remains
+below 3km/h.",http://arxiv.org/pdf/2407.08380v1,,False
+Continually Learn to Map Visual Concepts to Large Language Models in Resource-constrained Environments,11/07/2024,"Clea Rebillard, Julio Hurtado, Andrii Krutsylo, Lucia Passaro, Vincenzo Lomonaco","Learning continually from a stream of non-i.i.d. data is an open challenge in
+deep learning, even more so when working in resource-constrained environments
+such as embedded devices. Visual models that are continually updated through
+supervised learning are often prone to overfitting, catastrophic forgetting,
+and biased representations. On the other hand, large language models contain
+knowledge about multiple concepts and their relations, which can foster a more
+robust, informed and coherent learning process. This work proposes Continual
+Visual Mapping (CVM), an approach that continually ground vision
+representations to a knowledge space extracted from a fixed Language model.
+Specifically, CVM continually trains a small and efficient visual model to map
+its representations into a conceptual space established by a fixed Large
+Language Model. Due to their smaller nature, CVM can be used when directly
+adapting large visual pre-trained models is unfeasible due to computational or
+data constraints. CVM overcome state-of-the-art continual learning methods on
+five benchmarks and offers a promising avenue for addressing generalization
+capabilities in continual learning, even in computationally constrained
+devices.",http://arxiv.org/pdf/2407.08279v1,,False
+Synthetic Electroretinogram Signal Generation Using Conditional Generative Adversarial Network for Enhancing Classification of Autism Spectrum Disorder,11/07/2024,"Mikhail Kulyabin, Paul A. Constable, Aleksei Zhdanov, Irene O. Lee, David H. Skuse, Dorothy A. Thompson, Andreas Maier","The electroretinogram (ERG) is a clinical test that records the retina's
+electrical response to light. The ERG is a promising way to study different
+neurodevelopmental and neurodegenerative disorders, including autism spectrum
+disorder (ASD) - a neurodevelopmental condition that impacts language,
+communication, and reciprocal social interactions. However, in heterogeneous
+populations, such as ASD, where the ability to collect large datasets is
+limited, the application of artificial intelligence (AI) is complicated.
+Synthetic ERG signals generated from real ERG recordings carry similar
+information as natural ERGs and, therefore, could be used as an extension for
+natural data to increase datasets so that AI applications can be fully
+utilized. As proof of principle, this study presents a Generative Adversarial
+Network capable of generating synthetic ERG signals of children with ASD and
+typically developing control individuals. We applied a Time Series Transformer
+and Visual Transformer with Continuous Wavelet Transform to enhance
+classification results on the extended synthetic signals dataset. This approach
+may support classification models in related psychiatric conditions where the
+ERG may help classify disorders.",http://arxiv.org/pdf/2407.08166v1,,False
+How Well Can a Long Sequence Model Model Long Sequences? Comparing Architechtural Inductive Biases on Long-Context Abilities,11/07/2024,Jerry Huang,"Long sequences occur in abundance within real-world scenarios, hence properly
+modelling them opens numerous down-stream use-cases. Deep neural networks,
+however, have often struggled with these for a variety of reasons. Recent
+advances, both in system engineering as well as model design, have enabled the
+scaling up of model that are purported to support extended context length. In
+particular, the state-space and linear recurrent neural network families of
+models hypothetically can entend to infinite sequence lenth. However, is this
+too good to be true? We conduct an evaluation to show that while such claims
+may be sound theoretically, there remain large practical gaps that are
+empirically observed. In particular, recurrent models still suffer in the same
+settings as long-context LLMs with attention. We further show that different
+inductive biases have inconsistent extrapolation capabilities, highlighting the
+need to further study such paradigms and investigate why long-context models
+seemingly fail to behave as one might expect.",http://arxiv.org/pdf/2407.08112v1,,False
+Towards Interpretable Foundation Models of Robot Behavior: A Task Specific Policy Generation Approach,10/07/2024,"Isaac Sheidlower, Reuben Aronson, Elaine Schaertl Short","Foundation models are a promising path toward general-purpose and
+user-friendly robots. The prevalent approach involves training a generalist
+policy that, like a reinforcement learning policy, uses observations to output
+actions. Although this approach has seen much success, several concerns arise
+when considering deployment and end-user interaction with these systems. In
+particular, the lack of modularity between tasks means that when model weights
+are updated (e.g., when a user provides feedback), the behavior in other,
+unrelated tasks may be affected. This can negatively impact the system's
+interpretability and usability. We present an alternative approach to the
+design of robot foundation models, Diffusion for Policy Parameters (DPP), which
+generates stand-alone, task-specific policies. Since these policies are
+detached from the foundation model, they are updated only when a user wants,
+either through feedback or personalization, allowing them to gain a high degree
+of familiarity with that policy. We demonstrate a proof-of-concept of DPP in
+simulation then discuss its limitations and the future of interpretable
+foundation models.",http://arxiv.org/pdf/2407.08065v1,,False
+A New Self-organizing Interval Type-2 Fuzzy Neural Network for Multi-Step Time Series Prediction,10/07/2024,"Fulong Yao, Wanqing Zhao, Matthew Forshaw, Yang Song","This paper proposes a new self-organizing interval type-2 fuzzy neural
+network with multiple outputs (SOIT2FNN-MO) for multi-step time series
+prediction. Differing from the traditional six-layer IT2FNN, a nine-layer
+network is developed to improve prediction accuracy, uncertainty handling and
+model interpretability. First, a new co-antecedent layer and a modified
+consequent layer are devised to improve the interpretability of the fuzzy model
+for multi-step predictions. Second, a new transformation layer is designed to
+address the potential issues in the vanished rule firing strength caused by
+highdimensional inputs. Third, a new link layer is proposed to build temporal
+connections between multi-step predictions. Furthermore, a two-stage
+self-organizing mechanism is developed to automatically generate the fuzzy
+rules, in which the first stage is used to create the rule base from empty and
+perform the initial optimization, while the second stage is to fine-tune all
+network parameters. Finally, various simulations are carried out on chaotic and
+microgrid time series prediction problems, demonstrating the superiority of our
+approach in terms of prediction accuracy, uncertainty handling and model
+interpretability.",http://arxiv.org/pdf/2407.08010v1,,False
+Automating Weak Label Generation for Data Programming with Clinicians in the Loop,10/07/2024,"Jean Park, Sydney Pugh, Kaustubh Sridhar, Mengyu Liu, Navish Yarna, Ramneet Kaur, Souradeep Dutta, Elena Bernardis, Oleg Sokolsky, Insup Lee","Large Deep Neural Networks (DNNs) are often data hungry and need high-quality
+labeled data in copious amounts for learning to converge. This is a challenge
+in the field of medicine since high quality labeled data is often scarce. Data
+programming has been the ray of hope in this regard, since it allows us to
+label unlabeled data using multiple weak labeling functions. Such functions are
+often supplied by a domain expert. Data-programming can combine multiple weak
+labeling functions and suggest labels better than simple majority voting over
+the different functions. However, it is not straightforward to express such
+weak labeling functions, especially in high-dimensional settings such as images
+and time-series data. What we propose in this paper is a way to bypass this
+issue, using distance functions. In high-dimensional spaces, it is easier to
+find meaningful distance metrics which can generalize across different labeling
+tasks. We propose an algorithm that queries an expert for labels of a few
+representative samples of the dataset. These samples are carefully chosen by
+the algorithm to capture the distribution of the dataset. The labels assigned
+by the expert on the representative subset induce a labeling on the full
+dataset, thereby generating weak labels to be used in the data programming
+pipeline. In our medical time series case study, labeling a subset of 50 to 130
+out of 3,265 samples showed 17-28% improvement in accuracy and 13-28%
+improvement in F1 over the baseline using clinician-defined labeling functions.
+In our medical image case study, labeling a subset of about 50 to 120 images
+from 6,293 unlabeled medical images using our approach showed significant
+improvement over the baseline method, Snuba, with an increase of approximately
+5-15% in accuracy and 12-19% in F1 score.",http://arxiv.org/pdf/2407.07982v1,,False
+Generative Image as Action Models,10/07/2024,"Mohit Shridhar, Yat Long Lo, Stephen James","Image-generation diffusion models have been fine-tuned to unlock new
+capabilities such as image-editing and novel view synthesis. Can we similarly
+unlock image-generation models for visuomotor control? We present GENIMA, a
+behavior-cloning agent that fine-tunes Stable Diffusion to 'draw joint-actions'
+as targets on RGB images. These images are fed into a controller that maps the
+visual targets into a sequence of joint-positions. We study GENIMA on 25
+RLBench and 9 real-world manipulation tasks. We find that, by lifting actions
+into image-space, internet pre-trained diffusion models can generate policies
+that outperform state-of-the-art visuomotor approaches, especially in
+robustness to scene perturbations and generalizing to novel objects. Our method
+is also competitive with 3D agents, despite lacking priors such as depth,
+keypoints, or motion-planners.",http://arxiv.org/pdf/2407.07875v1,,False
+Toto: Time Series Optimized Transformer for Observability,10/07/2024,"Ben Cohen, Emaad Khwaja, Kan Wang, Charles Masson, Elise Ramé, Youssef Doubli, Othmane Abou-Amal","This technical report describes the Time Series Optimized Transformer for
+Observability (Toto), a new state of the art foundation model for time series
+forecasting developed by Datadog. In addition to advancing the state of the art
+on generalized time series benchmarks in domains such as electricity and
+weather, this model is the first general-purpose time series forecasting
+foundation model to be specifically tuned for observability metrics.
+  Toto was trained on a dataset of one trillion time series data points, the
+largest among all currently published time series foundation models. Alongside
+publicly available time series datasets, 75% of the data used to train Toto
+consists of fully anonymous numerical metric data points from the Datadog
+platform.
+  In our experiments, Toto outperforms existing time series foundation models
+on observability data. It does this while also excelling at general-purpose
+forecasting tasks, achieving state-of-the-art zero-shot performance on multiple
+open benchmark datasets.",http://arxiv.org/pdf/2407.07874v2,,False
+RoBus: A Multimodal Dataset for Controllable Road Networks and Building Layouts Generation,10/07/2024,"Tao Li, Ruihang Li, Huangnan Zheng, Shanding Ye, Shijian Li, Zhijie Pan","Automated 3D city generation, focusing on road networks and building layouts,
+is in high demand for applications in urban design, multimedia games and
+autonomous driving simulations. The surge of generative AI facilitates
+designing city layouts based on deep learning models. However, the lack of
+high-quality datasets and benchmarks hinders the progress of these data-driven
+methods in generating road networks and building layouts. Furthermore, few
+studies consider urban characteristics, which generally take graphics as
+analysis objects and are crucial for practical applications, to control the
+generative process. To alleviate these problems, we introduce a multimodal
+dataset with accompanying evaluation metrics for controllable generation of
+Road networks and Building layouts (RoBus), which is the first and largest
+open-source dataset in city generation so far. RoBus dataset is formatted as
+images, graphics and texts, with $72,400$ paired samples that cover around
+$80,000km^2$ globally. We analyze the RoBus dataset statistically and validate
+the effectiveness against existing road networks and building layouts
+generation methods. Additionally, we design new baselines that incorporate
+urban characteristics, such as road orientation and building density, in the
+process of generating road networks and building layouts using the RoBus
+dataset, enhancing the practicality of automated urban design. The RoBus
+dataset and related codes are published at
+https://github.com/tourlics/RoBus_Dataset.",http://arxiv.org/pdf/2407.07835v1,,False
+Evaluating Large Language Models with Grid-Based Game Competitions: An Extensible LLM Benchmark and Leaderboard,10/07/2024,"Oguzhan Topsakal, Colby Jacob Edell, Jackson Bailey Harper","We introduce a novel and extensible benchmark for large language models
+(LLMs) through grid-based games such as Tic-Tac-Toe, Connect Four, and Gomoku.
+The open-source game simulation code, available on GitHub, allows LLMs to
+compete and generates detailed data files in JSON, CSV, TXT, and PNG formats
+for leaderboard rankings and further analysis. We present the results of games
+among leading LLMs, including Claude 3.5 Sonnet and Claude 3 Sonnet by
+Anthropic, Gemini 1.5 Pro and Gemini 1.5 Flash by Google, GPT-4 Turbo and
+GPT-4o by OpenAI, and Llama3-70B by Meta. We also encourage submissions of
+results from other LLMs. In total, we simulated 2,310 matches (5 sessions for
+each pair among 7 LLMs and a random player) across three types of games, using
+three distinct prompt types: list, illustration, and image. The results
+revealed significant variations in LLM performance across different games and
+prompt types, with analysis covering win and disqualification rates, missed
+opportunity analysis, and invalid move analysis. The details of the leaderboard
+and result matrix data are available as open-access data on GitHub. This study
+enhances our understanding of LLMs' capabilities in playing games they were not
+specifically trained for, helping to assess their rule comprehension and
+strategic thinking. On the path to Artificial General Intelligence (AGI), this
+study lays the groundwork for future exploration into their utility in complex
+decision-making scenarios, illuminating their strategic thinking abilities and
+offering directions for further inquiry into the limits of LLMs within
+game-based frameworks.",http://arxiv.org/pdf/2407.07796v2,,False
+Towards Human-Like Driving: Active Inference in Autonomous Vehicle Control,10/07/2024,"Elahe Delavari, John Moore, Junho Hong, Jaerock Kwon","This paper presents a novel approach to Autonomous Vehicle (AV) control
+through the application of active inference, a theory derived from neuroscience
+that conceptualizes the brain as a predictive machine. Traditional autonomous
+driving systems rely heavily on Modular Pipelines, Imitation Learning, or
+Reinforcement Learning, each with inherent limitations in adaptability,
+generalization, and computational efficiency. Active inference addresses these
+challenges by minimizing prediction error (termed ""surprise"") through a dynamic
+model that balances perception and action. Our method integrates active
+inference with deep learning to manage lateral control in AVs, enabling them to
+perform lane following maneuvers within a simulated urban environment. We
+demonstrate that our model, despite its simplicity, effectively learns and
+generalizes from limited data without extensive retraining, significantly
+reducing computational demands. The proposed approach not only enhances the
+adaptability and performance of AVs in dynamic scenarios but also aligns
+closely with human-like driving behavior, leveraging a generative model to
+predict and adapt to environmental changes. Results from extensive experiments
+in the CARLA simulator show promising outcomes, outperforming traditional
+methods in terms of adaptability and efficiency, thereby advancing the
+potential of active inference in real-world autonomous driving applications.",http://arxiv.org/pdf/2407.07684v1,,False
+Feasibility Study on Active Learning of Smart Surrogates for Scientific Simulations,10/07/2024,"Pradeep Bajracharya, Javier Quetzalcóatl Toledo-Marín, Geoffrey Fox, Shantenu Jha, Linwei Wang","High-performance scientific simulations, important for comprehension of
+complex systems, encounter computational challenges especially when exploring
+extensive parameter spaces. There has been an increasing interest in developing
+deep neural networks (DNNs) as surrogate models capable of accelerating the
+simulations. However, existing approaches for training these DNN surrogates
+rely on extensive simulation data which are heuristically selected and
+generated with expensive computation -- a challenge under-explored in the
+literature. In this paper, we investigate the potential of incorporating active
+learning into DNN surrogate training. This allows intelligent and objective
+selection of training simulations, reducing the need to generate extensive
+simulation data as well as the dependency of the performance of DNN surrogates
+on pre-defined training simulations. In the problem context of constructing DNN
+surrogates for diffusion equations with sources, we examine the efficacy of
+diversity- and uncertainty-based strategies for selecting training simulations,
+considering two different DNN architecture. The results set the groundwork for
+developing the high-performance computing infrastructure for Smart Surrogates
+that supports on-the-fly generation of simulation data steered by active
+learning strategies to potentially improve the efficiency of scientific
+simulations.",http://arxiv.org/pdf/2407.07674v1,,False
+"Physics-Informed Geometric Operators to Support Surrogate, Dimension Reduction and Generative Models for Engineering Design",10/07/2024,"Shahroz Khan, Zahid Masood, Muhammad Usama, Konstantinos Kostas, Panagiotis Kaklis, Wei, Chen","In this work, we propose a set of physics-informed geometric operators (GOs)
+to enrich the geometric data provided for training surrogate/discriminative
+models, dimension reduction, and generative models, typically employed for
+performance prediction, dimension reduction, and creating data-driven
+parameterisations, respectively. However, as both the input and output streams
+of these models consist of low-level shape representations, they often fail to
+capture shape characteristics essential for performance analyses. Therefore,
+the proposed GOs exploit the differential and integral properties of
+shapes--accessed through Fourier descriptors, curvature integrals, geometric
+moments, and their invariants--to infuse high-level intrinsic geometric
+information and physics into the feature vector used for training, even when
+employing simple model architectures or low-level parametric descriptions. We
+showed that for surrogate modelling, along with the inclusion of the notion of
+physics, GOs enact regularisation to reduce over-fitting and enhance
+generalisation to new, unseen designs. Furthermore, through extensive
+experimentation, we demonstrate that for dimension reduction and generative
+models, incorporating the proposed GOs enriches the training data with compact
+global and local geometric features. This significantly enhances the quality of
+the resulting latent space, thereby facilitating the generation of valid and
+diverse designs. Lastly, we also show that GOs can enable learning parametric
+sensitivities to a great extent. Consequently, these enhancements accelerate
+the convergence rate of shape optimisers towards optimal solutions.",http://arxiv.org/pdf/2407.07611v1,,False
+Secondary Structure-Guided Novel Protein Sequence Generation with Latent Graph Diffusion,10/07/2024,"Yutong Hu, Yang Tan, Andi Han, Lirong Zheng, Liang Hong, Bingxin Zhou","The advent of deep learning has introduced efficient approaches for de novo
+protein sequence design, significantly improving success rates and reducing
+development costs compared to computational or experimental methods. However,
+existing methods face challenges in generating proteins with diverse lengths
+and shapes while maintaining key structural features. To address these
+challenges, we introduce CPDiffusion-SS, a latent graph diffusion model that
+generates protein sequences based on coarse-grained secondary structural
+information. CPDiffusion-SS offers greater flexibility in producing a variety
+of novel amino acid sequences while preserving overall structural constraints,
+thus enhancing the reliability and diversity of generated proteins.
+Experimental analyses demonstrate the significant superiority of the proposed
+method in producing diverse and novel sequences, with CPDiffusion-SS surpassing
+popular baseline methods on open benchmarks across various quantitative
+measurements. Furthermore, we provide a series of case studies to highlight the
+biological significance of the generation performance by the proposed method.
+The source code is publicly available at
+https://github.com/riacd/CPDiffusion-SS",http://arxiv.org/pdf/2407.07443v1,,False
+Token-Mol 1.0: Tokenized drug design with large language model,10/07/2024,"Jike Wang, Rui Qin, Mingyang Wang, Meijing Fang, Yangyang Zhang, Yuchen Zhu, Qun Su, Qiaolin Gou, Chao Shen, Odin Zhang, Zhenxing Wu, Dejun Jiang, Xujun Zhang, Huifeng Zhao, Xiaozhe Wan, Zhourui Wu, Liwei Liu, Yu Kang, Chang-Yu Hsieh, Tingjun Hou","Significant interests have recently risen in leveraging sequence-based large
+language models (LLMs) for drug design. However, most current applications of
+LLMs in drug discovery lack the ability to comprehend three-dimensional (3D)
+structures, thereby limiting their effectiveness in tasks that explicitly
+involve molecular conformations. In this study, we introduced Token-Mol, a
+token-only 3D drug design model. This model encodes all molecular information,
+including 2D and 3D structures, as well as molecular property data, into
+tokens, which transforms classification and regression tasks in drug discovery
+into probabilistic prediction problems, thereby enabling learning through a
+unified paradigm. Token-Mol is built on the transformer decoder architecture
+and trained using random causal masking techniques. Additionally, we proposed
+the Gaussian cross-entropy (GCE) loss function to overcome the challenges in
+regression tasks, significantly enhancing the capacity of LLMs to learn
+continuous numerical values. Through a combination of fine-tuning and
+reinforcement learning (RL), Token-Mol achieves performance comparable to or
+surpassing existing task-specific methods across various downstream tasks,
+including pocket-based molecular generation, conformation generation, and
+molecular property prediction. Compared to existing molecular pre-trained
+models, Token-Mol exhibits superior proficiency in handling a wider range of
+downstream tasks essential for drug design. Notably, our approach improves
+regression task accuracy by approximately 30% compared to similar token-only
+methods. Token-Mol overcomes the precision limitations of token-only models and
+has the potential to integrate seamlessly with general models such as ChatGPT,
+paving the way for the development of a universal artificial intelligence drug
+design model that facilitates rapid and high-quality drug design by experts.",http://arxiv.org/pdf/2407.07930v1,,False
+Flow to Rare Events: An Application of Normalizing Flow in Temporal Importance Sampling for Automated Vehicle Validation,10/07/2024,"Yichun Ye, He Zhang, Ye Tian, Jian Sun","Automated Vehicle (AV) validation based on simulated testing requires
+unbiased evaluation and high efficiency. One effective solution is to increase
+the exposure to risky rare events while reweighting the probability measure.
+However, characterizing the distribution of risky events is particularly
+challenging due to the paucity of samples and the temporality of continuous
+scenario variables. To solve it, we devise a method to represent, generate, and
+reweight the distribution of risky rare events. We decompose the temporal
+evolution of continuous variables into distribution components based on
+conditional probability. By introducing the Risk Indicator Function, the
+distribution of risky rare events is theoretically precipitated out of
+naturalistic driving distribution. This targeted distribution is practically
+generated via Normalizing Flow, which achieves exact and tractable probability
+evaluation of intricate distribution. The rare event distribution is then
+demonstrated as the advantageous Importance Sampling distribution. We also
+promote the technique of temporal Importance Sampling. The combined method,
+named as TrimFlow, is executed to estimate the collision rate of Car-following
+scenarios as a tentative practice. The results showed that sampling background
+vehicle maneuvers from rare event distribution could evolve testing scenarios
+to hazardous states. TrimFlow reduced 86.1% of tests compared to generating
+testing scenarios according to their exposure in the naturalistic driving
+environment. In addition, the TrimFlow method is not limited to one specific
+type of functional scenario.",http://arxiv.org/pdf/2407.07320v1,,False
+ViTime: A Visual Intelligence-Based Foundation Model for Time Series Forecasting,10/07/2024,"Luoxiao Yang, Yun Wang, Xinqi Fan, Israel Cohen, Yue Zhao, Zijun Zhang","The success of large pretrained models in natural language processing (NLP)
+and computer vision (CV) has opened new avenues for constructing foundation
+models for time series forecasting (TSF). Traditional TSF foundation models
+rely heavily on numerical data fitting. In contrast, the human brain is
+inherently skilled at processing visual information, prefer predicting future
+trends by observing visualized sequences. From a biomimetic perspective,
+utilizing models to directly process numerical sequences might not be the most
+effective route to achieving Artificial General Intelligence (AGI). This paper
+proposes ViTime, a novel Visual Intelligence-based foundation model for TSF.
+ViTime overcomes the limitations of numerical time series data fitting by
+utilizing visual data processing paradigms and employs a innovative data
+synthesis method during training, called Real Time Series (RealTS). Experiments
+on a diverse set of previously unseen forecasting datasets demonstrate that
+ViTime achieves state-of-the-art zero-shot performance, even surpassing the
+best individually trained supervised models in some situations. These findings
+suggest that visual intelligence can significantly enhance time series analysis
+and forecasting, paving the way for more advanced and versatile models in the
+field. The code for our framework is accessible at
+https://github.com/IkeYang/ViTime.",http://arxiv.org/pdf/2407.07311v1,,False
+Causal Discovery in Semi-Stationary Time Series,10/07/2024,"Shanyun Gao, Raghavendra Addanki, Tong Yu, Ryan A. Rossi, Murat Kocaoglu","Discovering causal relations from observational time series without making
+the stationary assumption is a significant challenge. In practice, this
+challenge is common in many areas, such as retail sales, transportation
+systems, and medical science. Here, we consider this problem for a class of
+non-stationary time series. The structural causal model (SCM) of this type of
+time series, called the semi-stationary time series, exhibits that a finite
+number of different causal mechanisms occur sequentially and periodically
+across time. This model holds considerable practical utility because it can
+represent periodicity, including common occurrences such as seasonality and
+diurnal variation. We propose a constraint-based, non-parametric algorithm for
+discovering causal relations in this setting. The resulting algorithm,
+PCMCI$_{\Omega}$, can capture the alternating and recurring changes in the
+causal mechanisms and then identify the underlying causal graph with
+conditional independence (CI) tests. We show that this algorithm is sound in
+identifying causal relations on discrete time series. We validate the algorithm
+with extensive experiments on continuous and discrete simulated data. We also
+apply our algorithm to a real-world climate dataset.",http://arxiv.org/pdf/2407.07291v1,,False
+Causal Discovery-Driven Change Point Detection in Time Series,10/07/2024,"Shanyun Gao, Raghavendra Addanki, Tong Yu, Ryan A. Rossi, Murat Kocaoglu","Change point detection in time series seeks to identify times when the
+probability distribution of time series changes. It is widely applied in many
+areas, such as human-activity sensing and medical science. In the context of
+multivariate time series, this typically involves examining the joint
+distribution of high-dimensional data: If any one variable changes, the whole
+time series is assumed to have changed. However, in practical applications, we
+may be interested only in certain components of the time series, exploring
+abrupt changes in their distributions in the presence of other time series.
+Here, assuming an underlying structural causal model that governs the
+time-series data generation, we address this problem by proposing a two-stage
+non-parametric algorithm that first learns parts of the causal structure
+through constraint-based discovery methods. The algorithm then uses conditional
+relative Pearson divergence estimation to identify the change points. The
+conditional relative Pearson divergence quantifies the distribution disparity
+between consecutive segments in the time series, while the causal discovery
+method enables a focus on the causal mechanism, facilitating access to
+independent and identically distributed (IID) samples. Theoretically, the
+typical assumption of samples being IID in conventional change point detection
+methods can be relaxed based on the Causal Markov Condition. Through
+experiments on both synthetic and real-world datasets, we validate the
+correctness and utility of our approach.",http://arxiv.org/pdf/2407.07290v1,,False
+Towards a theory of learning dynamics in deep state space models,10/07/2024,"Jakub Smékal, Jimmy T. H. Smith, Michael Kleinman, Dan Biderman, Scott W. Linderman","State space models (SSMs) have shown remarkable empirical performance on many
+long sequence modeling tasks, but a theoretical understanding of these models
+is still lacking. In this work, we study the learning dynamics of linear SSMs
+to understand how covariance structure in data, latent state size, and
+initialization affect the evolution of parameters throughout learning with
+gradient descent. We show that focusing on the learning dynamics in the
+frequency domain affords analytical solutions under mild assumptions, and we
+establish a link between one-dimensional SSMs and the dynamics of deep linear
+feed-forward networks. Finally, we analyze how latent state
+over-parameterization affects convergence time and describe future work in
+extending our results to the study of deep SSMs with nonlinear connections.
+This work is a step toward a theory of learning dynamics in deep state space
+models.",http://arxiv.org/pdf/2407.07279v1,,False

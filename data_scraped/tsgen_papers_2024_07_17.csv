@@ -1,0 +1,226 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Global Optimisation of Black-Box Functions with Generative Models in the Wasserstein Space,16/07/2024,"Tigran Ramazyan, Mikhail Hushchyn, Denis Derkach","We propose a new uncertainty estimator for gradient-free optimisation of
+black-box simulators using deep generative surrogate models. Optimisation of
+these simulators is especially challenging for stochastic simulators and higher
+dimensions. To address these issues, we utilise a deep generative surrogate
+approach to model the black box response for the entire parameter space. We
+then leverage this knowledge to estimate the proposed uncertainty based on the
+Wasserstein distance - the Wasserstein uncertainty. This approach is employed
+in a posterior agnostic gradient-free optimisation algorithm that minimises
+regret over the entire parameter space. A series of tests were conducted to
+demonstrate that our method is more robust to the shape of both the black box
+function and the stochastic response of the black box than state-of-the-art
+methods, such as efficient global optimisation with a deep Gaussian process
+surrogate.",http://arxiv.org/pdf/2407.11917v1,,False
+Combining Wasserstein-1 and Wasserstein-2 proximals: robust manifold learning via well-posed generative flows,16/07/2024,"Hyemin Gu, Markos A. Katsoulakis, Luc Rey-Bellet, Benjamin J. Zhang","We formulate well-posed continuous-time generative flows for learning
+distributions that are supported on low-dimensional manifolds through
+Wasserstein proximal regularizations of $f$-divergences. Wasserstein-1 proximal
+operators regularize $f$-divergences so that singular distributions can be
+compared. Meanwhile, Wasserstein-2 proximal operators regularize the paths of
+the generative flows by adding an optimal transport cost, i.e., a kinetic
+energy penalization. Via mean-field game theory, we show that the combination
+of the two proximals is critical for formulating well-posed generative flows.
+Generative flows can be analyzed through optimality conditions of a mean-field
+game (MFG), a system of a backward Hamilton-Jacobi (HJ) and a forward
+continuity partial differential equations (PDEs) whose solution characterizes
+the optimal generative flow. For learning distributions that are supported on
+low-dimensional manifolds, the MFG theory shows that the Wasserstein-1
+proximal, which addresses the HJ terminal condition, and the Wasserstein-2
+proximal, which addresses the HJ dynamics, are both necessary for the
+corresponding backward-forward PDE system to be well-defined and have a unique
+solution with provably linear flow trajectories. This implies that the
+corresponding generative flow is also unique and can therefore be learned in a
+robust manner even for learning high-dimensional distributions supported on
+low-dimensional manifolds. The generative flows are learned through adversarial
+training of continuous-time flows, which bypasses the need for reverse
+simulation. We demonstrate the efficacy of our approach for generating
+high-dimensional images without the need to resort to autoencoders or
+specialized architectures.",http://arxiv.org/pdf/2407.11901v1,,False
+Variance Norms for Kernelized Anomaly Detection,16/07/2024,"Thomas Cass, Lukas Gonon, Nikita Zozoulenko","We present a unified theory for Mahalanobis-type anomaly detection on Banach
+spaces, using ideas from Cameron-Martin theory applied to non-Gaussian
+measures. This approach leads to a basis-free, data-driven notion of anomaly
+distance through the so-called variance norm of a probability measure, which
+can be consistently estimated using empirical measures. Our framework
+generalizes the classical $\mathbb{R}^d$, functional $(L^2[0,1])^d$, and
+kernelized settings, including the general case of non-injective covariance
+operator. We prove that the variance norm depends solely on the inner product
+in a given Hilbert space, and hence that the kernelized Mahalanobis distance
+can naturally be recovered by working on reproducing kernel Hilbert spaces.
+  Using the variance norm, we introduce the notion of a kernelized
+nearest-neighbour Mahalanobis distance for semi-supervised anomaly detection.
+In an empirical study on 12 real-world datasets, we demonstrate that the
+kernelized nearest-neighbour Mahalanobis distance outperforms the traditional
+kernelized Mahalanobis distance for multivariate time series anomaly detection,
+using state-of-the-art time series kernels such as the signature, global
+alignment, and Volterra reservoir kernels. Moreover, we provide an initial
+theoretical justification of nearest-neighbour Mahalanobis distances by
+developing concentration inequalities in the finite-dimensional Gaussian case.",http://arxiv.org/pdf/2407.11873v1,,False
+Gradient Flows and Riemannian Structure in the Gromov-Wasserstein Geometry,16/07/2024,"Zhengxin Zhang, Ziv Goldfeld, Kristjan Greenewald, Youssef Mroueh, Bharath K. Sriperumbudur","The Wasserstein space of probability measures is known for its intricate
+Riemannian structure, which underpins the Wasserstein geometry and enables
+gradient flow algorithms. However, the Wasserstein geometry may not be suitable
+for certain tasks or data modalities. Motivated by scenarios where the global
+structure of the data needs to be preserved, this work initiates the study of
+gradient flows and Riemannian structure in the Gromov-Wasserstein (GW)
+geometry, which is particularly suited for such purposes. We focus on the inner
+product GW (IGW) distance between distributions on $\mathbb{R}^d$. Given a
+functional $\mathsf{F}:\mathcal{P}_2(\mathbb{R}^d)\to\mathbb{R}$ to optimize,
+we present an implicit IGW minimizing movement scheme that generates a sequence
+of distributions $\{\rho_i\}_{i=0}^n$, which are close in IGW and aligned in
+the 2-Wasserstein sense. Taking the time step to zero, we prove that the
+discrete solution converges to an IGW generalized minimizing movement (GMM)
+$(\rho_t)_t$ that follows the continuity equation with a velocity field $v_t\in
+L^2(\rho_t;\mathbb{R}^d)$, specified by a global transformation of the
+Wasserstein gradient of $\mathsf{F}$. The transformation is given by a mobility
+operator that modifies the Wasserstein gradient to encode not only local
+information, but also global structure. Our gradient flow analysis leads us to
+identify the Riemannian structure that gives rise to the intrinsic IGW
+geometry, using which we establish a Benamou-Brenier-like formula for IGW. We
+conclude with a formal derivation, akin to the Otto calculus, of the IGW
+gradient as the inverse mobility acting on the Wasserstein gradient. Numerical
+experiments validating our theory and demonstrating the global nature of IGW
+interpolations are provided.",http://arxiv.org/pdf/2407.11800v1,,False
+Statistical Reachability Analysis of Stochastic Cyber-Physical Systems under Distribution Shift,16/07/2024,"Navid Hashemi, Lars Lindemann, Jyotirmoy V. Deshmukh","Reachability analysis is a popular method to give safety guarantees for
+stochastic cyber-physical systems (SCPSs) that takes in a symbolic description
+of the system dynamics and uses set-propagation methods to compute an
+overapproximation of the set of reachable states over a bounded time horizon.
+In this paper, we investigate the problem of performing reachability analysis
+for an SCPS that does not have a symbolic description of the dynamics, but
+instead is described using a digital twin model that can be simulated to
+generate system trajectories. An important challenge is that the simulator
+implicitly models a probability distribution over the set of trajectories of
+the SCPS; however, it is typical to have a sim2real gap, i.e., the actual
+distribution of the trajectories in a deployment setting may be shifted from
+the distribution assumed by the simulator. We thus propose a statistical
+reachability analysis technique that, given a user-provided threshold
+$1-\epsilon$, provides a set that guarantees that any reachable state during
+deployment lies in this set with probability not smaller than this threshold.
+Our method is based on three main steps: (1) learning a deterministic surrogate
+model from sampled trajectories, (2) conducting reachability analysis over the
+surrogate model, and (3) employing {\em robust conformal inference} using an
+additional set of sampled trajectories to quantify the surrogate model's
+distribution shift with respect to the deployed SCPS. To counter conservatism
+in reachable sets, we propose a novel method to train surrogate models that
+minimizes a quantile loss term (instead of the usual mean squared loss), and a
+new method that provides tighter guarantees using conformal inference using a
+normalized surrogate error. We demonstrate the effectiveness of our technique
+on various case studies.",http://arxiv.org/pdf/2407.11609v1,,False
+The Foundations of Tokenization: Statistical and Computational Concerns,16/07/2024,"Juan Luis Gastaldi, John Terilla, Luca Malagutti, Brian DuSell, Tim Vieira, Ryan Cotterell","Tokenization - the practice of converting strings of characters over an
+alphabet into sequences of tokens over a vocabulary - is a critical yet
+under-theorized step in the NLP pipeline. Notably, it remains the only major
+step not fully integrated into widely used end-to-end neural models. This paper
+aims to address this theoretical gap by laying the foundations of tokenization
+from a formal perspective. By articulating and extending basic properties about
+the category of stochastic maps, we propose a unified framework for
+representing and analyzing tokenizer models. This framework allows us to
+establish general conditions for the use of tokenizers. In particular, we
+formally establish the necessary and sufficient conditions for a tokenizer
+model to preserve the consistency of statistical estimators. Additionally, we
+discuss statistical and computational concerns crucial for the design and
+implementation of tokenizer models. The framework and results advanced in this
+paper represent a step toward a robust theoretical foundation for neural
+language modeling.",http://arxiv.org/pdf/2407.11606v1,,False
+Optimizing KV Cache Eviction in LLMs: Adaptive Allocation for Enhanced Budget Utilization,16/07/2024,"Yuan Feng, Junlin Lv, Yukun Cao, Xike Xie, S. Kevin Zhou","Large Language Models have excelled in various fields but encounter
+efficiency limitations due to the extensive KV cache required for long
+sequences inference. Many efforts try to evict non-critical cache elements
+during runtime, thereby reducing cache size within a given memory budget while
+preserving generation quality. Our reexamination of their underlying principles
+discerns that prevailing strategies essentially aim to minimize an upper bound
+of eviction loss within a specific budget allocation. However, we observe that
+the current practice of uniformly allocating budgets across different attention
+heads during the eviction procedure tends to degrade the quality of generation
+posten-eviction. In light of these findings, we propose a simple yet effective
+adaptive allocation algorithm that not only theoretically ensures its loss
+upper bound does not exceed that of previous uniform allocation methods, but
+also effectively aligns with the characteristics of the self-attention
+mechanism, thus practically reducing the upper bound. Further, integrating this
+algorithm with two of the most advanced methods yields Ada-SnapKV and
+Ada-Pyramid. Extensive experimental validation across 16 datasets and the
+Needle-in-a-Haystack test confirm that Ada-SnapKV and Ada-Pyramid achieve
+further enhancements, establishing new benchmarks in state-of-the-art
+performance.",http://arxiv.org/pdf/2407.11550v1,,False
+How Personality Traits Influence Negotiation Outcomes? A Simulation based on Large Language Models,16/07/2024,"Yin Jou Huang, Rafik Hadfi","Psychological evidence reveals the influence of personality traits on
+decision-making. For instance, agreeableness is generally associated with
+positive outcomes in negotiations, whereas neuroticism is often linked to less
+favorable outcomes. This paper introduces a simulation framework centered on
+Large Language Model (LLM) agents endowed with synthesized personality traits.
+The agents negotiate within bargaining domains and possess customizable
+personalities and objectives. The experimental results show that the behavioral
+tendencies of LLM-based simulations could reproduce behavioral patterns
+observed in human negotiations. The contribution is twofold. First, we propose
+a simulation methodology that investigates the alignment between the linguistic
+and economic capabilities of LLM agents. Secondly, we offer empirical insights
+into the strategic impact of Big-Five personality traits on the outcomes of
+bilateral negotiations. We also provide a case study based on synthesized
+bargaining dialogues to reveal intriguing behaviors, including deceitful and
+compromising behaviors.",http://arxiv.org/pdf/2407.11549v1,,False
+Diff-MTS: Temporal-Augmented Conditional Diffusion-based AIGC for Industrial Time Series Towards the Large Model Era,16/07/2024,"Lei Ren, Haiteng Wang, Yuanjun Laili","Industrial Multivariate Time Series (MTS) is a critical view of the
+industrial field for people to understand the state of machines. However, due
+to data collection difficulty and privacy concerns, available data for building
+industrial intelligence and industrial large models is far from sufficient.
+Therefore, industrial time series data generation is of great importance.
+Existing research usually applies Generative Adversarial Networks (GANs) to
+generate MTS. However, GANs suffer from unstable training process due to the
+joint training of the generator and discriminator. This paper proposes a
+temporal-augmented conditional adaptive diffusion model, termed Diff-MTS, for
+MTS generation. It aims to better handle the complex temporal dependencies and
+dynamics of MTS data. Specifically, a conditional Adaptive Maximum-Mean
+Discrepancy (Ada-MMD) method has been proposed for the controlled generation of
+MTS, which does not require a classifier to control the generation. It improves
+the condition consistency of the diffusion model. Moreover, a Temporal
+Decomposition Reconstruction UNet (TDR-UNet) is established to capture complex
+temporal patterns and further improve the quality of the synthetic time series.
+Comprehensive experiments on the C-MAPSS and FEMTO datasets demonstrate that
+the proposed Diff-MTS performs substantially better in terms of diversity,
+fidelity, and utility compared with GAN-based methods. These results show that
+Diff-MTS facilitates the generation of industrial data, contributing to
+intelligent maintenance and the construction of industrial large models.",http://arxiv.org/pdf/2407.11501v1,,False
+AIGC for Industrial Time Series: From Deep Generative Models to Large Generative Models,16/07/2024,"Lei Ren, Haiteng Wang, Yang Tang, Chunhua Yang","With the remarkable success of generative models like ChatGPT, Artificial
+Intelligence Generated Content (AIGC) is undergoing explosive development. Not
+limited to text and images, generative models can generate industrial time
+series data, addressing challenges such as the difficulty of data collection
+and data annotation. Due to their outstanding generation ability, they have
+been widely used in Internet of Things, metaverse, and cyber-physical-social
+systems to enhance the efficiency of industrial production. In this paper, we
+present a comprehensive overview of generative models for industrial time
+series from deep generative models (DGMs) to large generative models (LGMs).
+First, a DGM-based AIGC framework is proposed for industrial time series
+generation. Within this framework, we survey advanced industrial DGMs and
+present a multi-perspective categorization. Furthermore, we systematically
+analyze the critical technologies required to construct industrial LGMs from
+four aspects: large-scale industrial dataset, LGMs architecture for complex
+industrial characteristics, self-supervised training for industrial time
+series, and fine-tuning of industrial downstream tasks. Finally, we conclude
+the challenges and future directions to enable the development of generative
+models in industry.",http://arxiv.org/pdf/2407.11480v1,,False
+Semi-Supervised Generative Models for Disease Trajectories: A Case Study on Systemic Sclerosis,16/07/2024,"Cécile Trottet, Manuel Schürch, Ahmed Allam, Imon Barua, Liubov Petelytska, Oliver Distler, Anna-Maria Hoffmann-Vold, Michael Krauthammer, the EUSTAR collaborators","We propose a deep generative approach using latent temporal processes for
+modeling and holistically analyzing complex disease trajectories, with a
+particular focus on Systemic Sclerosis (SSc). We aim to learn temporal latent
+representations of the underlying generative process that explain the observed
+patient disease trajectories in an interpretable and comprehensive way. To
+enhance the interpretability of these latent temporal processes, we develop a
+semi-supervised approach for disentangling the latent space using established
+medical knowledge. By combining the generative approach with medical
+definitions of different characteristics of SSc, we facilitate the discovery of
+new aspects of the disease. We show that the learned temporal latent processes
+can be utilized for further data analysis and clinical hypothesis testing,
+including finding similar patients and clustering SSc patient trajectories into
+novel sub-types. Moreover, our method enables personalized online monitoring
+and prediction of multivariate time series with uncertainty quantification.",http://arxiv.org/pdf/2407.11427v1,,False
+NAMER: Non-Autoregressive Modeling for Handwritten Mathematical Expression Recognition,16/07/2024,"Chenyu Liu, Jia Pan, Jinshui Hu, Baocai Yin, Bing Yin, Mingjun Chen, Cong Liu, Jun Du, Qingfeng Liu","Recently, Handwritten Mathematical Expression Recognition (HMER) has gained
+considerable attention in pattern recognition for its diverse applications in
+document understanding. Current methods typically approach HMER as an
+image-to-sequence generation task within an autoregressive (AR) encoder-decoder
+framework. However, these approaches suffer from several drawbacks: 1) a lack
+of overall language context, limiting information utilization beyond the
+current decoding step; 2) error accumulation during AR decoding; and 3) slow
+decoding speed. To tackle these problems, this paper makes the first attempt to
+build a novel bottom-up Non-AutoRegressive Modeling approach for HMER, called
+NAMER. NAMER comprises a Visual Aware Tokenizer (VAT) and a Parallel Graph
+Decoder (PGD). Initially, the VAT tokenizes visible symbols and local relations
+at a coarse level. Subsequently, the PGD refines all tokens and establishes
+connectivities in parallel, leveraging comprehensive visual and linguistic
+contexts. Experiments on CROHME 2014/2016/2019 and HME100K datasets demonstrate
+that NAMER not only outperforms the current state-of-the-art (SOTA) methods on
+ExpRate by 1.93%/2.35%/1.49%/0.62%, but also achieves significant speedups of
+13.7x and 6.7x faster in decoding time and overall FPS, proving the
+effectiveness and efficiency of NAMER.",http://arxiv.org/pdf/2407.11380v1,,False

@@ -1,0 +1,184 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Patch-Level Training for Large Language Models,17/07/2024,"Chenze Shao, Fandong Meng, Jie Zhou","As Large Language Models (LLMs) achieve remarkable progress in language
+understanding and generation, their training efficiency has become a critical
+concern. Traditionally, LLMs are trained to predict the next token in a
+sequence. Despite the success of token-level training, it suffers from
+considerable computational costs due to the need to process an extensive number
+of tokens. To mitigate this issue, this paper introduces patch-level training
+for LLMs, which reduces the sequence length by compressing multiple tokens into
+a single patch. During patch-level training, we feed the language model shorter
+sequences of patches and train it to predict the next patch, thereby processing
+the majority of the training data at a significantly reduced computational
+cost. Following this, the model continues token-level training on the remaining
+training data to align with the inference mode. Experiments on a diverse range
+of models (370M-2.7B parameters) demonstrate that patch-level training can
+reduce overall computational costs to 0.5$\times$, without compromising the
+model performance compared to token-level training. Source code:
+\url{https://github.com/shaochenze/PatchTrain}.",http://arxiv.org/pdf/2407.12665v1,,False
+On the Complexity of Identification in Linear Structural Causal Models,17/07/2024,"Julian Dörfler, Benito van der Zander, Markus Bläser, Maciej Liskiewicz","Learning the unknown causal parameters of a linear structural causal model is
+a fundamental task in causal analysis. The task, known as the problem of
+identification, asks to estimate the parameters of the model from a combination
+of assumptions on the graphical structure of the model and observational data,
+represented as a non-causal covariance matrix. In this paper, we give a new
+sound and complete algorithm for generic identification which runs in
+polynomial space. By standard simulation results, this algorithm has
+exponential running time which vastly improves the state-of-the-art double
+exponential time method using a Gr\""obner basis approach. The paper also
+presents evidence that parameter identification is computationally hard in
+general. In particular, we prove, that the task asking whether, for a given
+feasible correlation matrix, there are exactly one or two or more parameter
+sets explaining the observed matrix, is hard for $\forall R$, the co-class of
+the existential theory of the reals. In particular, this problem is
+$coNP$-hard. To our best knowledge, this is the first hardness result for some
+notion of identifiability.",http://arxiv.org/pdf/2407.12528v1,,False
+Evaluating the transferability potential of deep learning models for climate downscaling,17/07/2024,"Ayush Prasad, Paula Harder, Qidong Yang, Prasanna Sattegeri, Daniela Szwarcman, Campbell Watson, David Rolnick","Climate downscaling, the process of generating high-resolution climate data
+from low-resolution simulations, is essential for understanding and adapting to
+climate change at regional and local scales. Deep learning approaches have
+proven useful in tackling this problem. However, existing studies usually focus
+on training models for one specific task, location and variable, which are
+therefore limited in their generalizability and transferability. In this paper,
+we evaluate the efficacy of training deep learning downscaling models on
+multiple diverse climate datasets to learn more robust and transferable
+representations. We evaluate the effectiveness of architectures zero-shot
+transferability using CNNs, Fourier Neural Operators (FNOs), and vision
+Transformers (ViTs). We assess the spatial, variable, and product
+transferability of downscaling models experimentally, to understand the
+generalizability of these different architecture types.",http://arxiv.org/pdf/2407.12517v1,,False
+Close the Sim2real Gap via Physically-based Structured Light Synthetic Data Simulation,17/07/2024,"Kaixin Bai, Lei Zhang, Zhaopeng Chen, Fang Wan, Jianwei Zhang","Despite the substantial progress in deep learning, its adoption in industrial
+robotics projects remains limited, primarily due to challenges in data
+acquisition and labeling. Previous sim2real approaches using domain
+randomization require extensive scene and model optimization. To address these
+issues, we introduce an innovative physically-based structured light simulation
+system, generating both RGB and physically realistic depth images, surpassing
+previous dataset generation tools. We create an RGBD dataset tailored for
+robotic industrial grasping scenarios and evaluate it across various tasks,
+including object detection, instance segmentation, and embedding sim2real
+visual perception in industrial robotic grasping. By reducing the sim2real gap
+and enhancing deep learning training, we facilitate the application of deep
+learning models in industrial settings. Project details are available at
+https://baikaixinpublic.github.io/structured light 3D synthesizer/.",http://arxiv.org/pdf/2407.12449v1,,False
+Semantic-Aware Representation of Multi-Modal Data for Data Ingress: A Literature Review,17/07/2024,"Pierre Lamart, Yinan Yu, Christian Berger","Machine Learning (ML) is continuously permeating a growing amount of
+application domains. Generative AI such as Large Language Models (LLMs) also
+sees broad adoption to process multi-modal data such as text, images, audio,
+and video. While the trend is to use ever-larger datasets for training,
+managing this data efficiently has become a significant practical challenge in
+the industry-double as much data is certainly not double as good. Rather the
+opposite is important since getting an understanding of the inherent quality
+and diversity of the underlying data lakes is a growing challenge for
+application-specific ML as well as for fine-tuning foundation models.
+Furthermore, information retrieval (IR) from expanding data lakes is
+complicated by the temporal dimension inherent in time-series data which must
+be considered to determine its semantic value. This study focuses on the
+different semantic-aware techniques to extract embeddings from mono-modal,
+multi-modal, and cross-modal data to enhance IR capabilities in a growing data
+lake. Articles were collected to summarize information about the
+state-of-the-art techniques focusing on applications of embedding for three
+different categories of data modalities.",http://arxiv.org/pdf/2407.12438v1,,False
+SafePowerGraph: Safety-aware Evaluation of Graph Neural Networks for Transmission Power Grids,17/07/2024,"Salah Ghamizi, Aleksandar Bojchevski, Aoxiang Ma, Jun Cao","Power grids are critical infrastructures of paramount importance to modern
+society and their rapid evolution and interconnections has heightened the
+complexity of power systems (PS) operations. Traditional methods for grid
+analysis struggle with the computational demands of large-scale RES and ES
+integration, prompting the adoption of machine learning (ML) techniques,
+particularly Graph Neural Networks (GNNs). GNNs have proven effective in
+solving the alternating current (AC) Power Flow (PF) and Optimal Power Flow
+(OPF) problems, crucial for operational planning. However, existing benchmarks
+and datasets completely ignore safety and robustness requirements in their
+evaluation and never consider realistic safety-critical scenarios that most
+impact the operations of the power grids. We present SafePowerGraph, the first
+simulator-agnostic, safety-oriented framework and benchmark for GNNs in PS
+operations. SafePowerGraph integrates multiple PF and OPF simulators and
+assesses GNN performance under diverse scenarios, including energy price
+variations and power line outages. Our extensive experiments underscore the
+importance of self-supervised learning and graph attention architectures for
+GNN robustness. We provide at https://github.com/yamizi/SafePowerGraph our
+open-source repository, a comprehensive leaderboard, a dataset and model zoo
+and expect our framework to standardize and advance research in the critical
+field of GNN for power systems.",http://arxiv.org/pdf/2407.12421v1,,False
+Not All Frequencies Are Created Equal:Towards a Dynamic Fusion of Frequencies in Time-Series Forecasting,17/07/2024,"Xingyu Zhang, Siyu Zhao, Zeen Song, Huijie Guo, Jianqi Zhang, Changwen Zheng, Wenwen Qiang","Long-term time series forecasting is a long-standing challenge in various
+applications. A central issue in time series forecasting is that methods should
+expressively capture long-term dependency. Furthermore, time series forecasting
+methods should be flexible when applied to different scenarios. Although
+Fourier analysis offers an alternative to effectively capture reusable and
+periodic patterns to achieve long-term forecasting in different scenarios,
+existing methods often assume high-frequency components represent noise and
+should be discarded in time series forecasting. However, we conduct a series of
+motivation experiments and discover that the role of certain frequencies varies
+depending on the scenarios. In some scenarios, removing high-frequency
+components from the original time series can improve the forecasting
+performance, while in others scenarios, removing them is harmful to forecasting
+performance. Therefore, it is necessary to treat the frequencies differently
+according to specific scenarios. To achieve this, we first reformulate the time
+series forecasting problem as learning a transfer function of each frequency in
+the Fourier domain. Further, we design Frequency Dynamic Fusion (FreDF), which
+individually predicts each Fourier component, and dynamically fuses the output
+of different frequencies. Moreover, we provide a novel insight into the
+generalization ability of time series forecasting and propose the
+generalization bound of time series forecasting. Then we prove FreDF has a
+lower bound, indicating that FreDF has better generalization ability. Extensive
+experiments conducted on multiple benchmark datasets and ablation studies
+demonstrate the effectiveness of FreDF.",http://arxiv.org/pdf/2407.12415v1,,False
+PersLLM: A Personified Training Approach for Large Language Models,17/07/2024,"Zheni Zeng, Jiayi Chen, Huimin Chen, Yukun Yan, Yuxuan Chen, Zhiyuan Liu, Maosong Sun","Large language models exhibit aspects of human-level intelligence that
+catalyze their application as human-like agents in domains such as social
+simulations, human-machine interactions, and collaborative multi-agent systems.
+However, the absence of distinct personalities, such as displaying ingratiating
+behaviors, inconsistent opinions, and uniform response patterns, diminish LLMs
+utility in practical applications. Addressing this, the development of
+personality traits in LLMs emerges as a crucial area of research to unlock
+their latent potential. Existing methods to personify LLMs generally involve
+strategies like employing stylized training data for instruction tuning or
+using prompt engineering to simulate different personalities. These methods
+only capture superficial linguistic styles instead of the core of personalities
+and are therefore not stable. In this study, we propose PersLLM, integrating
+psychology-grounded principles of personality: social practice, consistency,
+and dynamic development, into a comprehensive training methodology. We
+incorporate personality traits directly into the model parameters, enhancing
+the model's resistance to induction, promoting consistency, and supporting the
+dynamic evolution of personality. Single-agent evaluation validates our
+method's superiority, as it produces responses more aligned with reference
+personalities compared to other approaches. Case studies for multi-agent
+communication highlight its benefits in enhancing opinion consistency within
+individual agents and fostering collaborative creativity among multiple agents
+in dialogue contexts, potentially benefiting human simulation and multi-agent
+cooperation. Additionally, human-agent interaction evaluations indicate that
+our personified models significantly enhance interactive experiences,
+underscoring the practical implications of our research.",http://arxiv.org/pdf/2407.12393v1,,False
+HIMO: A New Benchmark for Full-Body Human Interacting with Multiple Objects,17/07/2024,"Xintao Lv, Liang Xu, Yichao Yan, Xin Jin, Congsheng Xu, Shuwen Wu, Yifan Liu, Lincheng Li, Mengxiao Bi, Wenjun Zeng, Xiaokang Yang","Generating human-object interactions (HOIs) is critical with the tremendous
+advances of digital avatars. Existing datasets are typically limited to humans
+interacting with a single object while neglecting the ubiquitous manipulation
+of multiple objects. Thus, we propose HIMO, a large-scale MoCap dataset of
+full-body human interacting with multiple objects, containing 3.3K 4D HOI
+sequences and 4.08M 3D HOI frames. We also annotate HIMO with detailed textual
+descriptions and temporal segments, benchmarking two novel tasks of HOI
+synthesis conditioned on either the whole text prompt or the segmented text
+prompts as fine-grained timeline control. To address these novel tasks, we
+propose a dual-branch conditional diffusion model with a mutual interaction
+module for HOI synthesis. Besides, an auto-regressive generation pipeline is
+also designed to obtain smooth transitions between HOI segments. Experimental
+results demonstrate the generalization ability to unseen object geometries and
+temporal compositions.",http://arxiv.org/pdf/2407.12371v1,,False
+When can transformers compositionally generalize in-context?,17/07/2024,"Seijin Kobayashi, Simon Schug, Yassir Akram, Florian Redhardt, Johannes von Oswald, Razvan Pascanu, Guillaume Lajoie, João Sacramento","Many tasks can be composed from a few independent components. This gives rise
+to a combinatorial explosion of possible tasks, only some of which might be
+encountered during training. Under what circumstances can transformers
+compositionally generalize from a subset of tasks to all possible combinations
+of tasks that share similar components? Here we study a modular multitask
+setting that allows us to precisely control compositional structure in the data
+generation process. We present evidence that transformers learning in-context
+struggle to generalize compositionally on this task despite being in principle
+expressive enough to do so. Compositional generalization becomes possible only
+when introducing a bottleneck that enforces an explicit separation between task
+inference and task execution.",http://arxiv.org/pdf/2407.12275v1,,False
+Base Models for Parabolic Partial Differential Equations,17/07/2024,"Xingzi Xu, Ali Hasan, Jie Ding, Vahid Tarokh","Parabolic partial differential equations (PDEs) appear in many disciplines to
+model the evolution of various mathematical objects, such as probability flows,
+value functions in control theory, and derivative prices in finance. It is
+often necessary to compute the solutions or a function of the solutions to a
+parametric PDE in multiple scenarios corresponding to different parameters of
+this PDE. This process often requires resolving the PDEs from scratch, which is
+time-consuming. To better employ existing simulations for the PDEs, we propose
+a framework for finding solutions to parabolic PDEs across different scenarios
+by meta-learning an underlying base distribution. We build upon this base
+distribution to propose a method for computing solutions to parametric PDEs
+under different parameter settings. Finally, we illustrate the application of
+the proposed methods through extensive experiments in generative modeling,
+stochastic control, and finance. The empirical results suggest that the
+proposed approach improves generalization to solving PDEs under new parameter
+regimes.",http://arxiv.org/pdf/2407.12234v1,,False

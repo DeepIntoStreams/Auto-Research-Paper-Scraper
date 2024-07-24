@@ -1,0 +1,230 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+RedAgent: Red Teaming Large Language Models with Context-aware Autonomous Language Agent,23/07/2024,"Huiyu Xu, Wenhui Zhang, Zhibo Wang, Feng Xiao, Rui Zheng, Yunhe Feng, Zhongjie Ba, Kui Ren","Recently, advanced Large Language Models (LLMs) such as GPT-4 have been
+integrated into many real-world applications like Code Copilot. These
+applications have significantly expanded the attack surface of LLMs, exposing
+them to a variety of threats. Among them, jailbreak attacks that induce toxic
+responses through jailbreak prompts have raised critical safety concerns. To
+identify these threats, a growing number of red teaming approaches simulate
+potential adversarial scenarios by crafting jailbreak prompts to test the
+target LLM. However, existing red teaming methods do not consider the unique
+vulnerabilities of LLM in different scenarios, making it difficult to adjust
+the jailbreak prompts to find context-specific vulnerabilities. Meanwhile,
+these methods are limited to refining jailbreak templates using a few mutation
+operations, lacking the automation and scalability to adapt to different
+scenarios. To enable context-aware and efficient red teaming, we abstract and
+model existing attacks into a coherent concept called ""jailbreak strategy"" and
+propose a multi-agent LLM system named RedAgent that leverages these strategies
+to generate context-aware jailbreak prompts. By self-reflecting on contextual
+feedback in an additional memory buffer, RedAgent continuously learns how to
+leverage these strategies to achieve effective jailbreaks in specific contexts.
+Extensive experiments demonstrate that our system can jailbreak most black-box
+LLMs in just five queries, improving the efficiency of existing red teaming
+methods by two times. Additionally, RedAgent can jailbreak customized LLM
+applications more efficiently. By generating context-aware jailbreak prompts
+towards applications on GPTs, we discover 60 severe vulnerabilities of these
+real-world applications with only two queries per vulnerability. We have
+reported all found issues and communicated with OpenAI and Meta for bug fixes.",http://arxiv.org/pdf/2407.16667v1,,False
+GenRec: A Flexible Data Generator for Recommendations,23/07/2024,"Erica Coppolillo, Simone Mungari, Ettore Ritacco, Giuseppe Manco","The scarcity of realistic datasets poses a significant challenge in
+benchmarking recommender systems and social network analysis methods and
+techniques. A common and effective solution is to generate synthetic data that
+simulates realistic interactions. However, although various methods have been
+proposed, the existing literature still lacks generators that are fully
+adaptable and allow easy manipulation of the underlying data distributions and
+structural properties. To address this issue, the present work introduces
+GenRec, a novel framework for generating synthetic user-item interactions that
+exhibit realistic and well-known properties observed in recommendation
+scenarios. The framework is based on a stochastic generative process based on
+latent factor modeling. Here, the latent factors can be exploited to yield
+long-tailed preference distributions, and at the same time they characterize
+subpopulations of users and topic-based item clusters. Notably, the proposed
+framework is highly flexible and offers a wide range of hyper-parameters for
+customizing the generation of user-item interactions. The code used to perform
+the experiments is publicly available at
+https://anonymous.4open.science/r/GenRec-DED3.",http://arxiv.org/pdf/2407.16594v1,,False
+"A Kernel-Based Conditional Two-Sample Test Using Nearest Neighbors (with Applications to Calibration, Regression Curves, and Simulation-Based Inference)",23/07/2024,"Anirban Chatterjee, Ziang Niu, Bhaswar B. Bhattacharya","In this paper we introduce a kernel-based measure for detecting differences
+between two conditional distributions. Using the `kernel trick' and
+nearest-neighbor graphs, we propose a consistent estimate of this measure which
+can be computed in nearly linear time (for a fixed number of nearest
+neighbors). Moreover, when the two conditional distributions are the same, the
+estimate has a Gaussian limit and its asymptotic variance has a simple form
+that can be easily estimated from the data. The resulting test attains precise
+asymptotic level and is universally consistent for detecting differences
+between two conditional distributions. We also provide a resampling based test
+using our estimate that applies to the conditional goodness-of-fit problem,
+which controls Type I error in finite samples and is asymptotically consistent
+with only a finite number of resamples. A method to de-randomize the resampling
+test is also presented. The proposed methods can be readily applied to a broad
+range of problems, ranging from classical nonparametric statistics to modern
+machine learning. Specifically, we explore three applications: testing model
+calibration, regression curve evaluation, and validation of emulator models in
+simulation-based inference. We illustrate the superior performance of our
+method for these tasks, both in simulations as well as on real data. In
+particular, we apply our method to (1) assess the calibration of neural network
+models trained on the CIFAR-10 dataset, (2) compare regression functions for
+wind power generation across two different turbines, and (3) validate emulator
+models on benchmark examples with intractable posteriors and for generating
+synthetic `redshift' associated with galaxy images.",http://arxiv.org/pdf/2407.16550v1,,False
+Enhancing Encrypted Internet Traffic Classification Through Advanced Data Augmentation Techniques,23/07/2024,"Yehonatan Zion, Porat Aharon, Ran Dubin, Amit Dvir, Chen Hajaj","The increasing popularity of online services has made Internet Traffic
+Classification a critical field of study. However, the rapid development of
+internet protocols and encryption limits usable data availability. This paper
+addresses the challenges of classifying encrypted internet traffic, focusing on
+the scarcity of open-source datasets and limitations of existing ones. We
+propose two Data Augmentation (DA) techniques to synthetically generate data
+based on real samples: Average augmentation and MTU augmentation. Both
+augmentations are aimed to improve the performance of the classifier, each from
+a different perspective: The Average augmentation aims to increase dataset size
+by generating new synthetic samples, while the MTU augmentation enhances
+classifier robustness to varying Maximum Transmission Units (MTUs). Our
+experiments, conducted on two well-known academic datasets and a commercial
+dataset, demonstrate the effectiveness of these approaches in improving model
+performance and mitigating constraints associated with limited and homogeneous
+datasets. Our findings underscore the potential of data augmentation in
+addressing the challenges of modern internet traffic classification.
+Specifically, we show that our augmentation techniques significantly enhance
+encrypted traffic classification models. This improvement can positively impact
+user Quality of Experience (QoE) by more accurately classifying traffic as
+video streaming (e.g., YouTube) or chat (e.g., Google Chat). Additionally, it
+can enhance Quality of Service (QoS) for file downloading activities (e.g.,
+Google Docs).",http://arxiv.org/pdf/2407.16539v1,,False
+HAPFI: History-Aware Planning based on Fused Information,23/07/2024,"Sujin Jeon, Suyeon Shin, Byoung-Tak Zhang","Embodied Instruction Following (EIF) is a task of planning a long sequence of
+sub-goals given high-level natural language instructions, such as ""Rinse a
+slice of lettuce and place on the white table next to the fork"". To
+successfully execute these long-term horizon tasks, we argue that an agent must
+consider its past, i.e., historical data, when making decisions in each step.
+Nevertheless, recent approaches in EIF often neglects the knowledge from
+historical data and also do not effectively utilize information across the
+modalities. To this end, we propose History-Aware Planning based on Fused
+Information (HAPFI), effectively leveraging the historical data from diverse
+modalities that agents collect while interacting with the environment.
+Specifically, HAPFI integrates multiple modalities, including historical RGB
+observations, bounding boxes, sub-goals, and high-level instructions, by
+effectively fusing modalities via our Mutually Attentive Fusion method. Through
+experiments with diverse comparisons, we show that an agent utilizing
+historical multi-modal information surpasses all the compared methods that
+neglect the historical data in terms of action planning capability, enabling
+the generation of well-informed action plans for the next step. Moreover, we
+provided qualitative evidence highlighting the significance of leveraging
+historical multi-modal data, particularly in scenarios where the agent
+encounters intermediate failures, showcasing its robust re-planning
+capabilities.",http://arxiv.org/pdf/2407.16533v1,,False
+On Deep Learning for computing the Dynamic Initial Margin and Margin Value Adjustment,23/07/2024,"Joel P. Villarino, Álvaro Leitao","The present work addresses the challenge of training neural networks for
+Dynamic Initial Margin (DIM) computation in counterparty credit risk, a task
+traditionally burdened by the high costs associated with generating training
+datasets through nested Monte Carlo (MC) simulations. By condensing the initial
+market state variables into an input vector, determined through an interest
+rate model and a parsimonious parameterization of the current interest rate
+term structure, we construct a training dataset where labels are noisy but
+unbiased DIM samples derived from single MC paths. A multi-output neural
+network structure is employed to handle DIM as a time-dependent function,
+facilitating training across a mesh of monitoring times. The methodology offers
+significant advantages: it reduces the dataset generation cost to a single MC
+execution and parameterizes the neural network by initial market state
+variables, obviating the need for repeated training. Experimental results
+demonstrate the approach's convergence properties and robustness across
+different interest rate models (Vasicek and Hull-White) and portfolio
+complexities, validating its general applicability and efficiency in more
+realistic scenarios.",http://arxiv.org/pdf/2407.16435v1,,False
+Bayesian Autoregressive Online Change-Point Detection with Time-Varying Parameters,23/07/2024,"Ioanna-Yvonni Tsaknaki, Fabrizio Lillo, Piero Mazzarisi","Change points in real-world systems mark significant regime shifts in system
+dynamics, possibly triggered by exogenous or endogenous factors. These points
+define regimes for the time evolution of the system and are crucial for
+understanding transitions in financial, economic, social, environmental, and
+technological contexts. Building upon the Bayesian approach introduced in
+\cite{c:07}, we devise a new method for online change point detection in the
+mean of a univariate time series, which is well suited for real-time
+applications and is able to handle the general temporal patterns displayed by
+data in many empirical contexts. We first describe time series as an
+autoregressive process of an arbitrary order. Second, the variance and
+correlation of the data are allowed to vary within each regime driven by a
+scoring rule that updates the value of the parameters for a better fit of the
+observations. Finally, a change point is detected in a probabilistic framework
+via the posterior distribution of the current regime length. By modeling
+temporal dependencies and time-varying parameters, the proposed approach
+enhances both the estimate accuracy and the forecasting power. Empirical
+validations using various datasets demonstrate the method's effectiveness in
+capturing memory and dynamic patterns, offering deeper insights into the
+non-stationary dynamics of real-world systems.",http://arxiv.org/pdf/2407.16376v1,,False
+TWIN V2: Scaling Ultra-Long User Behavior Sequence Modeling for Enhanced CTR Prediction at Kuaishou,23/07/2024,"Zihua Si, Lin Guan, ZhongXiang Sun, Xiaoxue Zang, Jing Lu, Yiqun Hui, Xingchao Cao, Zeyu Yang, Yichen Zheng, Dewei Leng, Kai Zheng, Chenbin Zhang, Yanan Niu, Yang Song, Kun Gai","The significance of modeling long-term user interests for CTR prediction
+tasks in large-scale recommendation systems is progressively gaining attention
+among researchers and practitioners. Existing work, such as SIM and TWIN,
+typically employs a two-stage approach to model long-term user behavior
+sequences for efficiency concerns. The first stage rapidly retrieves a subset
+of sequences related to the target item from a long sequence using a
+search-based mechanism namely the General Search Unit (GSU), while the second
+stage calculates the interest scores using the Exact Search Unit (ESU) on the
+retrieved results. Given the extensive length of user behavior sequences
+spanning the entire life cycle, potentially reaching up to 10^6 in scale, there
+is currently no effective solution for fully modeling such expansive user
+interests. To overcome this issue, we introduced TWIN-V2, an enhancement of
+TWIN, where a divide-and-conquer approach is applied to compress life-cycle
+behaviors and uncover more accurate and diverse user interests. Specifically, a
+hierarchical clustering method groups items with similar characteristics in
+life-cycle behaviors into a single cluster during the offline phase. By
+limiting the size of clusters, we can compress behavior sequences well beyond
+the magnitude of 10^5 to a length manageable for online inference in GSU
+retrieval. Cluster-aware target attention extracts comprehensive and
+multi-faceted long-term interests of users, thereby making the final
+recommendation results more accurate and diverse. Extensive offline experiments
+on a multi-billion-scale industrial dataset and online A/B tests have
+demonstrated the effectiveness of TWIN-V2. Under an efficient deployment
+framework, TWIN-V2 has been successfully deployed to the primary traffic that
+serves hundreds of millions of daily active users at Kuaishou.",http://arxiv.org/pdf/2407.16357v1,10.1145/3627673.3680030,False
+STATE: A Robust ATE Estimator of Heavy-Tailed Metrics for Variance Reduction in Online Controlled Experiments,23/07/2024,"Hao Zhou, Kun Sun, Shaoming Li, Yangfeng Fan, Guibin Jiang, Jiaqi Zheng, Tao Li","Online controlled experiments play a crucial role in enabling data-driven
+decisions across a wide range of companies. Variance reduction is an effective
+technique to improve the sensitivity of experiments, achieving higher
+statistical power while using fewer samples and shorter experimental periods.
+However, typical variance reduction methods (e.g., regression-adjusted
+estimators) are built upon the intuitional assumption of Gaussian distributions
+and cannot properly characterize the real business metrics with heavy-tailed
+distributions. Furthermore, outliers diminish the correlation between
+pre-experiment covariates and outcome metrics, greatly limiting the
+effectiveness of variance reduction.
+  In this paper, we develop a novel framework that integrates the Student's
+t-distribution with machine learning tools to fit heavy-tailed metrics and
+construct a robust average treatment effect estimator in online controlled
+experiments, which we call STATE. By adopting a variational EM method to
+optimize the loglikehood function, we can infer a robust solution that greatly
+eliminates the negative impact of outliers and achieves significant variance
+reduction. Moreover, we extend the STATE method from count metrics to ratio
+metrics by utilizing linear transformation that preserves unbiased estimation,
+whose variance reduction is more complex but less investigated in existing
+works. Finally, both simulations on synthetic data and long-term empirical
+results on Meituan experiment platform demonstrate the effectiveness of our
+method. Compared with the state-of-the-art estimators (CUPAC/MLRATE), STATE
+achieves over 50% variance reduction, indicating it can reach the same
+statistical power with only half of the observations, or half the experimental
+duration.",http://arxiv.org/pdf/2407.16337v1,,False
+Diffusion Models as Optimizers for Efficient Planning in Offline RL,23/07/2024,"Renming Huang, Yunqiang Pei, Guoqing Wang, Yangming Zhang, Yang Yang, Peng Wang, Hengtao Shen","Diffusion models have shown strong competitiveness in offline reinforcement
+learning tasks by formulating decision-making as sequential generation.
+However, the practicality of these methods is limited due to the lengthy
+inference processes they require. In this paper, we address this problem by
+decomposing the sampling process of diffusion models into two decoupled
+subprocesses: 1) generating a feasible trajectory, which is a time-consuming
+process, and 2) optimizing the trajectory. With this decomposition approach, we
+are able to partially separate efficiency and quality factors, enabling us to
+simultaneously gain efficiency advantages and ensure quality assurance. We
+propose the Trajectory Diffuser, which utilizes a faster autoregressive model
+to handle the generation of feasible trajectories while retaining the
+trajectory optimization process of diffusion models. This allows us to achieve
+more efficient planning without sacrificing capability. To evaluate the
+effectiveness and efficiency of the Trajectory Diffuser, we conduct experiments
+on the D4RL benchmarks. The results demonstrate that our method achieves $\it
+3$-$\it 10 \times$ faster inference speed compared to previous sequence
+modeling methods, while also outperforming them in terms of overall
+performance. https://github.com/RenMing-Huang/TrajectoryDiffuser
+  Keywords: Reinforcement Learning and Efficient Planning and Diffusion Model",http://arxiv.org/pdf/2407.16142v1,,False
+Diffusion Transformer Captures Spatial-Temporal Dependencies: A Theory for Gaussian Process Data,23/07/2024,"Hengyu Fu, Zehao Dou, Jiawei Guo, Mengdi Wang, Minshuo Chen","Diffusion Transformer, the backbone of Sora for video generation,
+successfully scales the capacity of diffusion models, pioneering new avenues
+for high-fidelity sequential data generation. Unlike static data such as
+images, sequential data consists of consecutive data frames indexed by time,
+exhibiting rich spatial and temporal dependencies. These dependencies represent
+the underlying dynamic model and are critical to validate the generated data.
+In this paper, we make the first theoretical step towards bridging diffusion
+transformers for capturing spatial-temporal dependencies. Specifically, we
+establish score approximation and distribution estimation guarantees of
+diffusion transformers for learning Gaussian process data with covariance
+functions of various decay patterns. We highlight how the spatial-temporal
+dependencies are captured and affect learning efficiency. Our study proposes a
+novel transformer approximation theory, where the transformer acts to unroll an
+algorithm. We support our theoretical results by numerical experiments,
+providing strong evidence that spatial-temporal dependencies are captured
+within attention layers, aligning with our approximation theory.",http://arxiv.org/pdf/2407.16134v1,,False

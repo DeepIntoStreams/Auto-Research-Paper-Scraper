@@ -1,0 +1,220 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Dependency Transformer Grammars: Integrating Dependency Structures into Transformer Language Models,24/07/2024,"Yida Zhao, Chao Lou, Kewei Tu","Syntactic Transformer language models aim to achieve better generalization
+through simultaneously modeling syntax trees and sentences. While prior work
+has been focusing on adding constituency-based structures to Transformers, we
+introduce Dependency Transformer Grammars (DTGs), a new class of Transformer
+language model with explicit dependency-based inductive bias. DTGs simulate
+dependency transition systems with constrained attention patterns by modifying
+attention masks, incorporate the stack information through relative positional
+encoding, and augment dependency arc representation with a combination of token
+embeddings and operation embeddings. When trained on a dataset of sentences
+annotated with dependency trees, DTGs achieve better generalization while
+maintaining comparable perplexity with Transformer language model baselines.
+DTGs also outperform recent constituency-based models, showing that dependency
+can better guide Transformer language models. Our code is released at
+https://github.com/zhaoyd1/Dep_Transformer_Grammars.",http://arxiv.org/pdf/2407.17406v1,,False
+Revolutionizing Text-to-Image Retrieval as Autoregressive Token-to-Voken Generation,24/07/2024,"Yongqi Li, Hongru Cai, Wenjie Wang, Leigang Qu, Yinwei Wei, Wenjie Li, Liqiang Nie, Tat-Seng Chua","Text-to-image retrieval is a fundamental task in multimedia processing,
+aiming to retrieve semantically relevant cross-modal content. Traditional
+studies have typically approached this task as a discriminative problem,
+matching the text and image via the cross-attention mechanism (one-tower
+framework) or in a common embedding space (two-tower framework). Recently,
+generative cross-modal retrieval has emerged as a new research line, which
+assigns images with unique string identifiers and generates the target
+identifier as the retrieval target. Despite its great potential, existing
+generative approaches are limited due to the following issues: insufficient
+visual information in identifiers, misalignment with high-level semantics, and
+learning gap towards the retrieval target. To address the above issues, we
+propose an autoregressive voken generation method, named AVG. AVG tokenizes
+images into vokens, i.e., visual tokens, and innovatively formulates the
+text-to-image retrieval task as a token-to-voken generation problem. AVG
+discretizes an image into a sequence of vokens as the identifier of the image,
+while maintaining the alignment with both the visual information and high-level
+semantics of the image. Additionally, to bridge the learning gap between
+generative training and the retrieval target, we incorporate discriminative
+training to modify the learning direction during token-to-voken training.
+Extensive experiments demonstrate that AVG achieves superior results in both
+effectiveness and efficiency.",http://arxiv.org/pdf/2407.17274v1,,False
+Channel-Aware Low-Rank Adaptation in Time Series Forecasting,24/07/2024,"Tong Nie, Yuewen Mei, Guoyang Qin, Jian Sun, Wei Ma","The balance between model capacity and generalization has been a key focus of
+recent discussions in long-term time series forecasting. Two representative
+channel strategies are closely associated with model expressivity and
+robustness, including channel independence (CI) and channel dependence (CD).
+The former adopts individual channel treatment and has been shown to be more
+robust to distribution shifts, but lacks sufficient capacity to model
+meaningful channel interactions. The latter is more expressive for representing
+complex cross-channel dependencies, but is prone to overfitting. To balance the
+two strategies, we present a channel-aware low-rank adaptation method to
+condition CD models on identity-aware individual components. As a plug-in
+solution, it is adaptable for a wide range of backbone architectures. Extensive
+experiments show that it can consistently and significantly improve the
+performance of both CI and CD models with demonstrated efficiency and
+flexibility. The code is available at https://github.com/tongnie/C-LoRA.",http://arxiv.org/pdf/2407.17246v1,10.1145/3627673.3679884,False
+Generalization Bounds of Surrogate Policies for Combinatorial Optimization Problems,24/07/2024,"Pierre-Cyril Aubin-Frankowski, Yohann De Castro, Axel Parmentier, Alessandro Rudi","A recent stream of structured learning approaches has improved the practical
+state of the art for a range of combinatorial optimization problems with
+complex objectives encountered in operations research. Such approaches train
+policies that chain a statistical model with a surrogate combinatorial
+optimization oracle to map any instance of the problem to a feasible solution.
+The key idea is to exploit the statistical distribution over instances instead
+of dealing with instances separately. However learning such policies by risk
+minimization is challenging because the empirical risk is piecewise constant in
+the parameters, and few theoretical guarantees have been provided so far. In
+this article, we investigate methods that smooth the risk by perturbing the
+policy, which eases optimization and improves generalization. Our main
+contribution is a generalization bound that controls the perturbation bias, the
+statistical learning error, and the optimization error. Our analysis relies on
+the introduction of a uniform weak property, which captures and quantifies the
+interplay of the statistical model and the surrogate combinatorial optimization
+oracle. This property holds under mild assumptions on the statistical model,
+the surrogate optimization, and the instance data distribution. We illustrate
+the result on a range of applications such as stochastic vehicle scheduling. In
+particular, such policies are relevant for contextual stochastic optimization
+and our results cover this case.",http://arxiv.org/pdf/2407.17200v1,,False
+Towards Robust Knowledge Tracing Models via k-Sparse Attention,24/07/2024,"Shuyan Huang, Zitao Liu, Xiangyu Zhao, Weiqi Luo, Jian Weng","Knowledge tracing (KT) is the problem of predicting students' future
+performance based on their historical interaction sequences. With the advanced
+capability of capturing contextual long-term dependency, attention mechanism
+becomes one of the essential components in many deep learning based KT (DLKT)
+models. In spite of the impressive performance achieved by these attentional
+DLKT models, many of them are often vulnerable to run the risk of overfitting,
+especially on small-scale educational datasets. Therefore, in this paper, we
+propose \textsc{sparseKT}, a simple yet effective framework to improve the
+robustness and generalization of the attention based DLKT approaches.
+Specifically, we incorporate a k-selection module to only pick items with the
+highest attention scores. We propose two sparsification heuristics : (1)
+soft-thresholding sparse attention and (2) top-$K$ sparse attention. We show
+that our \textsc{sparseKT} is able to help attentional KT models get rid of
+irrelevant student interactions and have comparable predictive performance when
+compared to 11 state-of-the-art KT models on three publicly available
+real-world educational datasets. To encourage reproducible research, we make
+our data and code publicly available at
+\url{https://github.com/pykt-team/pykt-toolkit}\footnote{We merged our model to
+the \textsc{pyKT} benchmark at \url{https://pykt.org/}.}.",http://arxiv.org/pdf/2407.17097v1,,False
+Contrastive Learning Is Not Optimal for Quasiperiodic Time Series,24/07/2024,"Adrian Atienza, Jakob Bardram, Sadasivan Puthusserypady","Despite recent advancements in Self-Supervised Learning (SSL) for time series
+analysis, a noticeable gap persists between the anticipated achievements and
+actual performance. While these methods have demonstrated formidable
+generalization capabilities with minimal labels in various domains, their
+effectiveness in distinguishing between different classes based on a limited
+number of annotated records is notably lacking. Our hypothesis attributes this
+bottleneck to the prevalent use of Contrastive Learning, a shared training
+objective in previous state-of-the-art (SOTA) methods. By mandating
+distinctiveness between representations for negative pairs drawn from separate
+records, this approach compels the model to encode unique record-based patterns
+but simultaneously neglects changes occurring across the entire record. To
+overcome this challenge, we introduce Distilled Embedding for Almost-Periodic
+Time Series (DEAPS) in this paper, offering a non-contrastive method tailored
+for quasiperiodic time series, such as electrocardiogram (ECG) data. By
+avoiding the use of negative pairs, we not only mitigate the model's blindness
+to temporal changes but also enable the integration of a ""Gradual Loss (Lgra)""
+function. This function guides the model to effectively capture dynamic
+patterns evolving throughout the record. The outcomes are promising, as DEAPS
+demonstrates a notable improvement of +10% over existing SOTA methods when just
+a few annotated records are presented to fit a Machine Learning (ML) model
+based on the learned representation.",http://arxiv.org/pdf/2407.17073v1,,False
+Time Series Missing Imputation with Multivariate Radial Basis Function Neural Network,24/07/2024,"Chanyoung Jung, Yun Jang","Researchers have been persistently working to address the issue of missing
+values in time series data. Numerous models have been proposed, striving to
+estimate the distribution of the data. The Radial Basis Functions Neural
+Network (RBFNN) has recently exhibited exceptional performance in estimating
+data distribution. In this paper, we propose a time series imputation model
+based on RBFNN. Our imputation model learns local information from timestamps
+to create a continuous function. Additionally, we incorporate time gaps to
+facilitate learning information considering the missing terms of missing
+values. We name this model the Missing Imputation Multivariate RBFNN
+(MIM-RBFNN). However, MIM-RBFNN relies on a local information-based learning
+approach, which presents difficulties in utilizing temporal information.
+Therefore, we propose an extension called the Missing Value Imputation
+Recurrent Neural Network with Continuous Function (MIRNN-CF) using the
+continuous function generated by MIM-RBFNN. We evaluate the performance using
+two real-world datasets with non-random missing and random missing patterns,
+and conduct an ablation study comparing MIM-RBFNN and MIRNN-CF.",http://arxiv.org/pdf/2407.17040v1,,False
+scGHSOM: Hierarchical clustering and visualization of single-cell and CRISPR data using growing hierarchical SOM,24/07/2024,"Shang-Jung Wen, Jia-Ming Chang, Fang Yu","High-dimensional single-cell data poses significant challenges in identifying
+underlying biological patterns due to the complexity and heterogeneity of
+cellular states. We propose a comprehensive gene-cell dependency visualization
+via unsupervised clustering, Growing Hierarchical Self-Organizing Map (GHSOM),
+specifically designed for analyzing high-dimensional single-cell data like
+single-cell sequencing and CRISPR screens. GHSOM is applied to cluster samples
+in a hierarchical structure such that the self-growth structure of clusters
+satisfies the required variations between and within. We propose a novel
+Significant Attributes Identification Algorithm to identify features that
+distinguish clusters. This algorithm pinpoints attributes with minimal
+variation within a cluster but substantial variation between clusters. These
+key attributes can then be used for targeted data retrieval and downstream
+analysis. Furthermore, we present two innovative visualization tools: Cluster
+Feature Map and Cluster Distribution Map. The Cluster Feature Map highlights
+the distribution of specific features across the hierarchical structure of
+GHSOM clusters. This allows for rapid visual assessment of cluster uniqueness
+based on chosen features. The Cluster Distribution Map depicts leaf clusters as
+circles on the GHSOM grid, with circle size reflecting cluster data size and
+color customizable to visualize features like cell type or other attributes. We
+apply our analysis to three single-cell datasets and one CRISPR dataset
+(cell-gene database) and evaluate clustering methods with internal and external
+CH and ARI scores. GHSOM performs well, being the best performer in internal
+evaluation (CH=4.2). In external evaluation, GHSOM has the third-best
+performance of all methods.",http://arxiv.org/pdf/2407.16984v1,,False
+GV-Rep: A Large-Scale Dataset for Genetic Variant Representation Learning,24/07/2024,"Zehui Li, Vallijah Subasri, Guy-Bart Stan, Yiren Zhao, Bo Wang","Genetic variants (GVs) are defined as differences in the DNA sequences among
+individuals and play a crucial role in diagnosing and treating genetic
+diseases. The rapid decrease in next generation sequencing cost has led to an
+exponential increase in patient-level GV data. This growth poses a challenge
+for clinicians who must efficiently prioritize patient-specific GVs and
+integrate them with existing genomic databases to inform patient management. To
+addressing the interpretation of GVs, genomic foundation models (GFMs) have
+emerged. However, these models lack standardized performance assessments,
+leading to considerable variability in model evaluations. This poses the
+question: How effectively do deep learning methods classify unknown GVs and
+align them with clinically-verified GVs? We argue that representation learning,
+which transforms raw data into meaningful feature spaces, is an effective
+approach for addressing both indexing and classification challenges. We
+introduce a large-scale Genetic Variant dataset, named GV-Rep, featuring
+variable-length contexts and detailed annotations, designed for deep learning
+models to learn GV representations across various traits, diseases, tissue
+types, and experimental contexts. Our contributions are three-fold: (i)
+Construction of a comprehensive dataset with 7 million records, each labeled
+with characteristics of the corresponding variants, alongside additional data
+from 17,548 gene knockout tests across 1,107 cell types, 1,808 variant
+combinations, and 156 unique clinically verified GVs from real-world patients.
+(ii) Analysis of the structure and properties of the dataset. (iii)
+Experimentation of the dataset with pre-trained GFMs. The results show a
+significant gap between GFMs current capabilities and accurate GV
+representation. We hope this dataset will help advance genomic deep learning to
+bridge this gap.",http://arxiv.org/pdf/2407.16940v1,,False
+Synthetic Trajectory Generation Through Convolutional Neural Networks,24/07/2024,"Jesse Merhi, Erik Buchholz, Salil S. Kanhere","Location trajectories provide valuable insights for applications from urban
+planning to pandemic control. However, mobility data can also reveal sensitive
+information about individuals, such as political opinions, religious beliefs,
+or sexual orientations. Existing privacy-preserving approaches for publishing
+this data face a significant utility-privacy trade-off. Releasing synthetic
+trajectory data generated through deep learning offers a promising solution.
+Due to the trajectories' sequential nature, most existing models are based on
+recurrent neural networks (RNNs). However, research in generative adversarial
+networks (GANs) largely employs convolutional neural networks (CNNs) for image
+generation. This discrepancy raises the question of whether advances in
+computer vision can be applied to trajectory generation. In this work, we
+introduce a Reversible Trajectory-to-CNN Transformation (RTCT) that adapts
+trajectories into a format suitable for CNN-based models. We integrated this
+transformation with the well-known DCGAN in a proof-of-concept (PoC) and
+evaluated its performance against an RNN-based trajectory GAN using four
+metrics across two datasets. The PoC was superior in capturing spatial
+distributions compared to the RNN model but had difficulty replicating
+sequential and temporal properties. Although the PoC's utility is not
+sufficient for practical applications, the results demonstrate the
+transformation's potential to facilitate the use of CNNs for trajectory
+generation, opening up avenues for future research. To support continued
+research, all source code has been made available under an open-source license.",http://arxiv.org/pdf/2407.16938v1,,False
+Federated Automatic Latent Variable Selection in Multi-output Gaussian Processes,24/07/2024,"Jingyi Gao, Seokhyun Chung","This paper explores a federated learning approach that automatically selects
+the number of latent processes in multi-output Gaussian processes (MGPs). The
+MGP has seen great success as a transfer learning tool when data is generated
+from multiple sources/units/entities. A common approach in MGPs to transfer
+knowledge across units involves gathering all data from each unit to a central
+server and extracting common independent latent processes to express each unit
+as a linear combination of the shared latent patterns. However, this approach
+poses key challenges in (i) determining the adequate number of latent processes
+and (ii) relying on centralized learning which leads to potential privacy risks
+and significant computational burdens on the central server. To address these
+issues, we propose a hierarchical model that places spike-and-slab priors on
+the coefficients of each latent process. These priors help automatically select
+only needed latent processes by shrinking the coefficients of unnecessary ones
+to zero. To estimate the model while avoiding the drawbacks of centralized
+learning, we propose a variational inference-based approach, that formulates
+model inference as an optimization problem compatible with federated settings.
+We then design a federated learning algorithm that allows units to jointly
+select and infer the common latent processes without sharing their data. We
+also discuss an efficient learning approach for a new unit within our proposed
+federated framework. Simulation and case studies on Li-ion battery degradation
+and air temperature data demonstrate the advantageous features of our proposed
+approach.",http://arxiv.org/pdf/2407.16935v1,,False

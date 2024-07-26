@@ -1,0 +1,161 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Differentiable Quantum Architecture Search in Asynchronous Quantum Reinforcement Learning,25/07/2024,Samuel Yen-Chi Chen,"The emergence of quantum reinforcement learning (QRL) is propelled by
+advancements in quantum computing (QC) and machine learning (ML), particularly
+through quantum neural networks (QNN) built on variational quantum circuits
+(VQC). These advancements have proven successful in addressing sequential
+decision-making tasks. However, constructing effective QRL models demands
+significant expertise due to challenges in designing quantum circuit
+architectures, including data encoding and parameterized circuits, which
+profoundly influence model performance. In this paper, we propose addressing
+this challenge with differentiable quantum architecture search (DiffQAS),
+enabling trainable circuit parameters and structure weights using
+gradient-based optimization. Furthermore, we enhance training efficiency
+through asynchronous reinforcement learning (RL) methods facilitating parallel
+training. Through numerical simulations, we demonstrate that our proposed
+DiffQAS-QRL approach achieves performance comparable to manually-crafted
+circuit architectures across considered environments, showcasing stability
+across diverse scenarios. This methodology offers a pathway for designing QRL
+models without extensive quantum knowledge, ensuring robust performance and
+fostering broader application of QRL.",http://arxiv.org/pdf/2407.18202v1,,False
+Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models,25/07/2024,"Sanae Lotfi, Yilun Kuang, Brandon Amos, Micah Goldblum, Marc Finzi, Andrew Gordon Wilson","Large language models (LLMs) with billions of parameters excel at predicting
+the next token in a sequence. Recent work computes non-vacuous
+compression-based generalization bounds for LLMs, but these bounds are vacuous
+for large models at the billion-parameter scale. Moreover, these bounds are
+obtained through restrictive compression techniques, bounding compressed models
+that generate low-quality text. Additionally, the tightness of these existing
+bounds depends on the number of IID documents in a training set rather than the
+much larger number of non-IID constituent tokens, leaving untapped potential
+for tighter bounds. In this work, we instead use properties of martingales to
+derive generalization bounds that benefit from the vast number of tokens in LLM
+training sets. Since a dataset contains far more tokens than documents, our
+generalization bounds not only tolerate but actually benefit from far less
+restrictive compression schemes. With Monarch matrices, Kronecker
+factorizations, and post-training quantization, we achieve non-vacuous
+generalization bounds for LLMs as large as LLaMA2-70B. Unlike previous
+approaches, our work achieves the first non-vacuous bounds for models that are
+deployed in practice and generate high-quality text.",http://arxiv.org/pdf/2407.18158v1,,False
+Amortized Active Learning for Nonparametric Functions,25/07/2024,"Cen-You Li, Marc Toussaint, Barbara Rakitsch, Christoph Zimmer","Active learning (AL) is a sequential learning scheme aiming to select the
+most informative data. AL reduces data consumption and avoids the cost of
+labeling large amounts of data. However, AL trains the model and solves an
+acquisition optimization for each selection. It becomes expensive when the
+model training or acquisition optimization is challenging. In this paper, we
+focus on active nonparametric function learning, where the gold standard
+Gaussian process (GP) approaches suffer from cubic time complexity. We propose
+an amortized AL method, where new data are suggested by a neural network which
+is trained up-front without any real data (Figure 1). Our method avoids
+repeated model training and requires no acquisition optimization during the AL
+deployment. We (i) utilize GPs as function priors to construct an AL simulator,
+(ii) train an AL policy that can zero-shot generalize from simulation to real
+learning problems of nonparametric functions and (iii) achieve real-time data
+selection and comparable learning performances to time-consuming baseline
+methods.",http://arxiv.org/pdf/2407.17992v1,,False
+DAM: Towards A Foundation Model for Time Series Forecasting,25/07/2024,"Luke Darlow, Qiwen Deng, Ahmed Hassan, Martin Asenov, Rajkarn Singh, Artjom Joosen, Adam Barker, Amos Storkey","It is challenging to scale time series forecasting models such that they
+forecast accurately for multiple distinct domains and datasets, all with
+potentially different underlying collection procedures (e.g., sample
+resolution), patterns (e.g., periodicity), and prediction requirements (e.g.,
+reconstruction vs. forecasting). We call this general task universal
+forecasting. Existing methods usually assume that input data is regularly
+sampled, and they forecast to pre-determined horizons, resulting in failure to
+generalise outside of the scope of their training. We propose the DAM - a
+neural model that takes randomly sampled histories and outputs an adjustable
+basis composition as a continuous function of time for forecasting to non-fixed
+horizons. It involves three key components: (1) a flexible approach for using
+randomly sampled histories from a long-tail distribution, that enables an
+efficient global perspective of the underlying temporal dynamics while
+retaining focus on the recent history; (2) a transformer backbone that is
+trained on these actively sampled histories to produce, as representational
+output, (3) the basis coefficients of a continuous function of time. We show
+that a single univariate DAM, trained on 25 time series datasets, either
+outperformed or closely matched existing SoTA models at multivariate long-term
+forecasting across 18 datasets, including 8 held-out for zero-shot transfer,
+even though these models were trained to specialise for each dataset-horizon
+combination. This single DAM excels at zero-shot transfer and very-long-term
+forecasting, performs well at imputation, is interpretable via basis function
+composition and attention, can be tuned for different inference-cost
+requirements, is robust to missing and irregularly sampled data {by design}.",http://arxiv.org/pdf/2407.17880v1,,False
+Demystifying Verbatim Memorization in Large Language Models,25/07/2024,"Jing Huang, Diyi Yang, Christopher Potts","Large Language Models (LLMs) frequently memorize long sequences verbatim,
+often with serious legal and privacy implications. Much prior work has studied
+such verbatim memorization using observational data. To complement such work,
+we develop a framework to study verbatim memorization in a controlled setting
+by continuing pre-training from Pythia checkpoints with injected sequences. We
+find that (1) non-trivial amounts of repetition are necessary for verbatim
+memorization to happen; (2) later (and presumably better) checkpoints are more
+likely to verbatim memorize sequences, even for out-of-distribution sequences;
+(3) the generation of memorized sequences is triggered by distributed model
+states that encode high-level features and makes important use of general
+language modeling capabilities. Guided by these insights, we develop stress
+tests to evaluate unlearning methods and find they often fail to remove the
+verbatim memorized information, while also degrading the LM. Overall, these
+findings challenge the hypothesis that verbatim memorization stems from
+specific model weights or mechanisms. Rather, verbatim memorization is
+intertwined with the LM's general capabilities and thus will be very difficult
+to isolate and suppress without degrading model quality.",http://arxiv.org/pdf/2407.17817v1,,False
+Very Large-Scale Multi-Agent Simulation in AgentScope,25/07/2024,"Xuchen Pan, Dawei Gao, Yuexiang Xie, Zhewei Wei, Yaliang Li, Bolin Ding, Ji-Rong Wen, Jingren Zhou","Recent advances in large language models (LLMs) have opened new avenues for
+applying multi-agent systems in very large-scale simulations. However, there
+remain several challenges when conducting multi-agent simulations with existing
+platforms, such as limited scalability and low efficiency, unsatisfied agent
+diversity, and effort-intensive management processes. To address these
+challenges, we develop several new features and components for AgentScope, a
+user-friendly multi-agent platform, enhancing its convenience and flexibility
+for supporting very large-scale multi-agent simulations. Specifically, we
+propose an actor-based distributed mechanism as the underlying technological
+infrastructure towards great scalability and high efficiency, and provide
+flexible environment support for simulating various real-world scenarios, which
+enables parallel execution of multiple agents, centralized workflow
+orchestration, and both inter-agent and agent-environment interactions among
+agents. Moreover, we integrate an easy-to-use configurable tool and an
+automatic background generation pipeline in AgentScope, simplifying the process
+of creating agents with diverse yet detailed background settings. Last but not
+least, we provide a web-based interface for conveniently monitoring and
+managing a large number of agents that might deploy across multiple devices. We
+conduct a comprehensive simulation to demonstrate the effectiveness of the
+proposed enhancements in AgentScope, and provide detailed observations and
+discussions to highlight the great potential of applying multi-agent systems in
+large-scale simulations. The source code is released on GitHub at
+https://github.com/modelscope/agentscope to inspire further research and
+development in large-scale multi-agent simulations.",http://arxiv.org/pdf/2407.17789v1,,False
+Context-aware knowledge graph framework for traffic speed forecasting using graph neural network,25/07/2024,"Yatao Zhang, Yi Wang, Song Gao, Martin Raubal","Human mobility is intricately influenced by urban contexts spatially and
+temporally, constituting essential domain knowledge in understanding traffic
+systems. While existing traffic forecasting models primarily rely on raw
+traffic data and advanced deep learning techniques, incorporating contextual
+information remains underexplored due to the lack of effective integration
+frameworks and the complexity of urban contexts. This study proposes a novel
+context-aware knowledge graph (CKG) framework to enhance traffic speed
+forecasting by effectively modeling spatial and temporal contexts. Employing a
+relation-dependent integration strategy, the framework generates context-aware
+representations from the spatial and temporal units of CKG to capture
+spatio-temporal dependencies of urban contexts. A CKG-GNN model, combining the
+CKG, dual-view multi-head self-attention (MHSA), and graph neural network
+(GNN), is then designed to predict traffic speed using these context-aware
+representations. Our experiments demonstrate that CKG's configuration
+significantly influences embedding performance, with ComplEx and KG2E emerging
+as optimal for embedding spatial and temporal units, respectively. The CKG-GNN
+model surpasses benchmark models, achieving an average MAE of $3.46\pm0.01$ and
+a MAPE of $14.76\pm0.09\%$ for traffic speed predictions from 10 to 120
+minutes. The dual-view MHSA analysis reveals the crucial role of
+relation-dependent features from the context-based view and the model's ability
+to prioritize recent time slots in prediction from the sequence-based view. The
+CKG framework's model-agnostic nature suggests its potential applicability in
+various applications of intelligent transportation systems. Overall, this study
+underscores the importance of incorporating domain-specific contexts into
+traffic forecasting and merging context-aware knowledge graphs with neural
+networks to enhance accuracy.",http://arxiv.org/pdf/2407.17703v1,,False
+Transformers on Markov Data: Constant Depth Suffices,25/07/2024,"Nived Rajaraman, Marco Bondaschi, Kannan Ramchandran, Michael Gastpar, Ashok Vardhan Makkuva","Attention-based transformers have been remarkably successful at modeling
+generative processes across various domains and modalities. In this paper, we
+study the behavior of transformers on data drawn from \kth Markov processes,
+where the conditional distribution of the next symbol in a sequence depends on
+the previous $k$ symbols observed. We observe a surprising phenomenon
+empirically which contradicts previous findings: when trained for sufficiently
+long, a transformer with a fixed depth and $1$ head per layer is able to
+achieve low test loss on sequences drawn from \kth Markov sources, even as $k$
+grows. Furthermore, this low test loss is achieved by the transformer's ability
+to represent and learn the in-context conditional empirical distribution. On
+the theoretical side, our main result is that a transformer with a single head
+and three layers can represent the in-context conditional empirical
+distribution for \kth Markov sources, concurring with our empirical
+observations. Along the way, we prove that \textit{attention-only} transformers
+with $O(\log_2(k))$ layers can represent the in-context conditional empirical
+distribution by composing induction heads to track the previous $k$ symbols in
+the sequence. These results provide more insight into our current understanding
+of the mechanisms by which transformers learn to capture context, by
+understanding their behavior on Markov sources.",http://arxiv.org/pdf/2407.17686v1,,False

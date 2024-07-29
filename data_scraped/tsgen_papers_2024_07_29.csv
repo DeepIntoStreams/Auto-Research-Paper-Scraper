@@ -1,0 +1,146 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+SOAP-RL: Sequential Option Advantage Propagation for Reinforcement Learning in POMDP Environments,26/07/2024,"Shu Ishida, João F. Henriques","This work compares ways of extending Reinforcement Learning algorithms to
+Partially Observed Markov Decision Processes (POMDPs) with options. One view of
+options is as temporally extended action, which can be realized as a memory
+that allows the agent to retain historical information beyond the policy's
+context window. While option assignment could be handled using heuristics and
+hand-crafted objectives, learning temporally consistent options and associated
+sub-policies without explicit supervision is a challenge. Two algorithms, PPOEM
+and SOAP, are proposed and studied in depth to address this problem. PPOEM
+applies the forward-backward algorithm (for Hidden Markov Models) to optimize
+the expected returns for an option-augmented policy. However, this learning
+approach is unstable during on-policy rollouts. It is also unsuited for
+learning causal policies without the knowledge of future trajectories, since
+option assignments are optimized for offline sequences where the entire episode
+is available. As an alternative approach, SOAP evaluates the policy gradient
+for an optimal option assignment. It extends the concept of the generalized
+advantage estimation (GAE) to propagate option advantages through time, which
+is an analytical equivalent to performing temporal back-propagation of option
+policy gradients. This option policy is only conditional on the history of the
+agent, not future actions. Evaluated against competing baselines, SOAP
+exhibited the most robust performance, correctly discovering options for POMDP
+corridor environments, as well as on standard benchmarks including Atari and
+MuJoCo, outperforming PPOEM, as well as LSTM and Option-Critic baselines. The
+open-sourced code is available at https://github.com/shuishida/SoapRL.",http://arxiv.org/pdf/2407.18913v1,,False
+"Lessons from Learning to Spin ""Pens""",26/07/2024,"Jun Wang, Ying Yuan, Haichuan Che, Haozhi Qi, Yi Ma, Jitendra Malik, Xiaolong Wang","In-hand manipulation of pen-like objects is an important skill in our daily
+lives, as many tools such as hammers and screwdrivers are similarly shaped.
+However, current learning-based methods struggle with this task due to a lack
+of high-quality demonstrations and the significant gap between simulation and
+the real world. In this work, we push the boundaries of learning-based in-hand
+manipulation systems by demonstrating the capability to spin pen-like objects.
+We first use reinforcement learning to train an oracle policy with privileged
+information and generate a high-fidelity trajectory dataset in simulation. This
+serves two purposes: 1) pre-training a sensorimotor policy in simulation; 2)
+conducting open-loop trajectory replay in the real world. We then fine-tune the
+sensorimotor policy using these real-world trajectories to adapt it to the real
+world dynamics. With less than 50 trajectories, our policy learns to rotate
+more than ten pen-like objects with different physical properties for multiple
+revolutions. We present a comprehensive analysis of our design choices and
+share the lessons learned during development.",http://arxiv.org/pdf/2407.18902v1,,False
+AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents,26/07/2024,"Harsh Trivedi, Tushar Khot, Mareike Hartmann, Ruskin Manku, Vinty Dong, Edward Li, Shashank Gupta, Ashish Sabharwal, Niranjan Balasubramanian","Autonomous agents that address day-to-day digital tasks (e.g., ordering
+groceries for a household), must not only operate multiple apps (e.g., notes,
+messaging, shopping app) via APIs, but also generate rich code with complex
+control flow in an iterative manner based on their interaction with the
+environment. However, existing benchmarks for tool use are inadequate, as they
+only cover tasks that require a simple sequence of API calls.
+  To remedy this gap, we built $\textbf{AppWorld Engine}$, a high-quality
+execution environment (60K lines of code) of 9 day-to-day apps operable via 457
+APIs and populated with realistic digital activities simulating the lives of
+~100 fictitious users. We then created $\textbf{AppWorld Benchmark}$ (40K lines
+of code), a suite of 750 natural, diverse, and challenging autonomous agent
+tasks requiring rich and interactive code generation. It supports robust
+programmatic evaluation with state-based unit tests, allowing for different
+ways of completing a task while also checking for unexpected changes, i.e.,
+collateral damage. The state-of-the-art LLM, GPT-4o, solves only ~49% of our
+'normal' tasks and ~30% of 'challenge' tasks, while other models solve at least
+16% fewer. This highlights the benchmark's difficulty and AppWorld's potential
+to push the frontiers of interactive coding agents. The project website is
+available at https://appworld.dev/.",http://arxiv.org/pdf/2407.18901v1,,False
+Learning production functions for supply chains with graph neural networks,26/07/2024,"Serina Chang, Zhiyin Lin, Benjamin Yan, Swapnil Bembde, Qi Xiu, Chi Heem Wong, Yu Qin, Frank Kloster, Alex Luo, Raj Palleti, Jure Leskovec","The global economy relies on the flow of goods over supply chain networks,
+with nodes as firms and edges as transactions between firms. While we may
+observe these external transactions, they are governed by unseen production
+functions, which determine how firms internally transform the input products
+they receive into output products that they sell. In this setting, it can be
+extremely valuable to infer these production functions, to better understand
+and improve supply chains, and to forecast future transactions more accurately.
+However, existing graph neural networks (GNNs) cannot capture these hidden
+relationships between nodes' inputs and outputs. Here, we introduce a new class
+of models for this setting, by combining temporal GNNs with a novel inventory
+module, which learns production functions via attention weights and a special
+loss function. We evaluate our models extensively on real supply chains data,
+along with data generated from our new open-source simulator, SupplySim. Our
+models successfully infer production functions, with a 6-50% improvement over
+baselines, and forecast future transactions on real and synthetic data,
+outperforming baselines by 11-62%.",http://arxiv.org/pdf/2407.18772v1,,False
+Cluster-norm for Unsupervised Probing of Knowledge,26/07/2024,"Walter Laurito, Sharan Maiya, Grégoire Dhimoïla, Owen, Yeung, Kaarel Hänni","The deployment of language models brings challenges in generating reliable
+information, especially when these models are fine-tuned using human
+preferences. To extract encoded knowledge without (potentially) biased human
+labels, unsupervised probing techniques like Contrast-Consistent Search (CCS)
+have been developed (Burns et al., 2022). However, salient but unrelated
+features in a given dataset can mislead these probes (Farquhar et al., 2023).
+Addressing this, we propose a cluster normalization method to minimize the
+impact of such features by clustering and normalizing activations of contrast
+pairs before applying unsupervised probing techniques. While this approach does
+not address the issue of differentiating between knowledge in general and
+simulated knowledge - a major issue in the literature of latent knowledge
+elicitation (Christiano et al., 2021) - it significantly improves the ability
+of unsupervised probes to identify the intended knowledge amidst distractions.",http://arxiv.org/pdf/2407.18712v1,,False
+Contrastive Learning of Asset Embeddings from Financial Time Series,26/07/2024,"Rian Dolphin, Barry Smyth, Ruihai Dong","Representation learning has emerged as a powerful paradigm for extracting
+valuable latent features from complex, high-dimensional data. In financial
+domains, learning informative representations for assets can be used for tasks
+like sector classification, and risk management. However, the complex and
+stochastic nature of financial markets poses unique challenges. We propose a
+novel contrastive learning framework to generate asset embeddings from
+financial time series data. Our approach leverages the similarity of asset
+returns over many subwindows to generate informative positive and negative
+samples, using a statistical sampling strategy based on hypothesis testing to
+address the noisy nature of financial data. We explore various contrastive loss
+functions that capture the relationships between assets in different ways to
+learn a discriminative representation space. Experiments on real-world datasets
+demonstrate the effectiveness of the learned asset embeddings on benchmark
+industry classification and portfolio optimization tasks. In each case our
+novel approaches significantly outperform existing baselines highlighting the
+potential for contrastive learning to capture meaningful and actionable
+relationships in financial data.",http://arxiv.org/pdf/2407.18645v1,,False
+Constructing Enhanced Mutual Information for Online Class-Incremental Learning,26/07/2024,"Huan Zhang, Fan Lyu, Shenghua Fan, Yujin Zheng, Dingwen Wang","Online Class-Incremental continual Learning (OCIL) addresses the challenge of
+continuously learning from a single-channel data stream, adapting to new tasks
+while mitigating catastrophic forgetting. Recently, Mutual Information
+(MI)-based methods have shown promising performance in OCIL. However, existing
+MI-based methods treat various knowledge components in isolation, ignoring the
+knowledge confusion across tasks. This narrow focus on simple MI knowledge
+alignment may lead to old tasks being easily forgotten with the introduction of
+new tasks, risking the loss of common parts between past and present
+knowledge.To address this, we analyze the MI relationships from the
+perspectives of diversity, representativeness, and separability, and propose an
+Enhanced Mutual Information (EMI) method based on knwoledge decoupling. EMI
+consists of Diversity Mutual Information (DMI), Representativeness Mutual
+Information (RMI) and Separability Mutual Information (SMI). DMI diversifies
+intra-class sample features by considering the similarity relationships among
+inter-class sample features to enable the network to learn more general
+knowledge. RMI summarizes representative features for each category and aligns
+sample features with these representative features, making the intra-class
+sample distribution more compact. SMI establishes MI relationships for
+inter-class representative features, enhancing the stability of representative
+features while increasing the distinction between inter-class representative
+features, thus creating clear boundaries between class. Extensive experimental
+results on widely used benchmark datasets demonstrate the superior performance
+of EMI over state-of-the-art baseline methods.",http://arxiv.org/pdf/2407.18526v1,,False
+A Reliable Common-Sense Reasoning Socialbot Built Using LLMs and Goal-Directed ASP,26/07/2024,"Yankai Zeng, Abhiramon Rajashekharan, Kinjal Basu, Huaduo Wang, Joaquín Arias, Gopal Gupta","The development of large language models (LLMs), such as GPT, has enabled the
+construction of several socialbots, like ChatGPT, that are receiving a lot of
+attention for their ability to simulate a human conversation. However, the
+conversation is not guided by a goal and is hard to control. In addition,
+because LLMs rely more on pattern recognition than deductive reasoning, they
+can give confusing answers and have difficulty integrating multiple topics into
+a cohesive response. These limitations often lead the LLM to deviate from the
+main topic to keep the conversation interesting. We propose AutoCompanion, a
+socialbot that uses an LLM model to translate natural language into predicates
+(and vice versa) and employs commonsense reasoning based on Answer Set
+Programming (ASP) to hold a social conversation with a human. In particular, we
+rely on s(CASP), a goal-directed implementation of ASP as the backend. This
+paper presents the framework design and how an LLM is used to parse user
+messages and generate a response from the s(CASP) engine output. To validate
+our proposal, we describe (real) conversations in which the chatbot's goal is
+to keep the user entertained by talking about movies and books, and s(CASP)
+ensures (i) correctness of answers, (ii) coherence (and precision) during the
+conversation, which it dynamically regulates to achieve its specific purpose,
+and (iii) no deviation from the main topic.",http://arxiv.org/pdf/2407.18498v1,,False

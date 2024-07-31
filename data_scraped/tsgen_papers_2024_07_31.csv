@@ -1,0 +1,192 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+What Are Good Positional Encodings for Directed Graphs?,30/07/2024,"Yinan Huang, Haoyu Wang, Pan Li","Positional encodings (PE) for graphs are essential in constructing powerful
+and expressive graph neural networks and graph transformers as they effectively
+capture relative spatial relations between nodes. While PEs for undirected
+graphs have been extensively studied, those for directed graphs remain largely
+unexplored, despite the fundamental role of directed graphs in representing
+entities with strong logical dependencies, such as those in program analysis
+and circuit designs. This work studies the design of PEs for directed graphs
+that are expressive to represent desired directed spatial relations. We first
+propose walk profile, a generalization of walk counting sequence to directed
+graphs. We identify limitations in existing PE methods, including symmetrized
+Laplacian PE, Singular Value Decomposition PE, and Magnetic Laplacian PE, in
+their ability to express walk profiles. To address these limitations, we
+propose the Multi-q Magnetic Laplacian PE, which extends Magnetic Laplacian PE
+with multiple potential factors. This simple variant turns out to be capable of
+provably expressing walk profiles. Furthermore, we generalize previous
+basis-invariant and stable networks to handle complex-domain PEs decomposed
+from Magnetic Laplacians. Our numerical experiments demonstrate the
+effectiveness of Multi-q Magnetic Laplacian PE with a stable neural
+architecture, outperforming previous PE methods (with stable networks) on
+predicting directed distances/walk profiles, sorting network satisfiability,
+and on general circuit benchmarks. Our code is available at
+https://github.com/Graph-COM/Multi-q-Maglap.",http://arxiv.org/pdf/2407.20912v1,,False
+Machine learning surrogates for efficient hydrologic modeling: Insights from stochastic simulations of managed aquifer recharge,30/07/2024,"Timothy Dai, Kate Maher, Zach Perzan","Process-based hydrologic models are invaluable tools for understanding the
+terrestrial water cycle and addressing modern water resources problems.
+However, many hydrologic models are computationally expensive and, depending on
+the resolution and scale, simulations can take on the order of hours to days to
+complete. While techniques such as uncertainty quantification and optimization
+have become valuable tools for supporting management decisions, these analyses
+typically require hundreds of model simulations, which are too computationally
+expensive to perform with a process-based hydrologic model. To address this
+gap, we propose a hybrid modeling workflow in which a process-based model is
+used to generate an initial set of simulations and a machine learning (ML)
+surrogate model is then trained to perform the remaining simulations required
+for downstream analysis. As a case study, we apply this workflow to simulations
+of variably saturated groundwater flow at a prospective managed aquifer
+recharge (MAR) site. We compare the accuracy and computational efficiency of
+several ML architectures, including deep convolutional networks, recurrent
+neural networks, vision transformers, and networks with Fourier transforms. Our
+results demonstrate that ML surrogate models can achieve under 10% mean
+absolute percentage error and yield order-of-magnitude runtime savings over
+processed-based models. We also offer practical recommendations for training
+hydrologic surrogate models, including implementing data normalization to
+improve accuracy, using a normalized loss function to improve training
+stability and downsampling input features to decrease memory requirements.",http://arxiv.org/pdf/2407.20902v1,,False
+"AhmedML: High-Fidelity Computational Fluid Dynamics Dataset for Incompressible, Low-Speed Bluff Body Aerodynamics",30/07/2024,"Neil Ashton, Danielle C. Maddix, Samuel Gundry, Parisa M. Shabestari","The development of Machine Learning (ML) methods for Computational Fluid
+Dynamics (CFD) is currently limited by the lack of openly available training
+data. This paper presents a new open-source dataset comprising of high
+fidelity, scale-resolving CFD simulations of 500 geometric variations of the
+Ahmed Car Body - a simplified car-like shape that exhibits many of the flow
+topologies that are present on bluff bodies such as road vehicles. The dataset
+contains simulation results that exhibit a broad set of fundamental flow
+physics such as geometry and pressure-induced flow separation as well as 3D
+vortical structures. Each variation of the Ahmed car body were run using a
+high-fidelity, time-accurate, hybrid Reynolds-Averaged Navier-Stokes (RANS) -
+Large-Eddy Simulation (LES) turbulence modelling approach using the open-source
+CFD code OpenFOAM. The dataset contains boundary, volume, geometry, and
+time-averaged forces/moments in widely used open-source formats. In addition,
+the OpenFOAM case setup is provided so that others can reproduce or extend the
+dataset. This represents to the authors knowledge, the first open-source
+large-scale dataset using high-fidelity CFD methods for the widely used Ahmed
+car body that is available to freely download with a permissive license
+(CC-BY-SA).",http://arxiv.org/pdf/2407.20801v1,,False
+Interpretable Pre-Trained Transformers for Heart Time-Series Data,30/07/2024,"Harry J. Davies, James Monsen, Danilo P. Mandic","Decoder-only transformers are the backbone of the popular generative
+pre-trained transformer (GPT) series of large language models. In this work, we
+apply the same framework to periodic heart time-series data to create two
+pre-trained general purpose cardiac models, namely PPG-PT and ECG-PT. We
+demonstrate that both such pre-trained models are fully interpretable. This is
+achieved firstly through aggregate attention maps which show that the model
+focuses on similar points in previous cardiac cycles in order to make
+predictions and gradually broadens its attention in deeper layers. Next, tokens
+with the same value, that occur at different distinct points in the ECG and PPG
+cycle, form separate clusters in high dimensional space based on their phase as
+they propagate through the transformer blocks. Finally, we highlight that
+individual attention heads respond to specific physiologically relevent
+features, such as the dicrotic notch in PPG and the P-wave in ECG. It is also
+demonstrated that these pre-trained models can be easily fine-tuned for tasks
+such as classification of atrial fibrillation. In this specific example, the
+fine-tuning took 11 minutes of computer time, and achieved a
+leave-one-subject-out AUCs of 0.99 and 0.93 for ECG and PPG respectively.
+Importantly, these fine-tuned models are also fully explainable, with attention
+shifting to regions in the context that are strongly indicative of atrial
+fibrillation.",http://arxiv.org/pdf/2407.20775v1,,False
+A Tutorial on the Use of Physics-Informed Neural Networks to Compute the Spectrum of Quantum Systems,30/07/2024,"Lorenzo Brevi, Antonio Mandarino, Enrico Prati","Quantum many-body systems are of great interest for many research areas,
+including physics, biology and chemistry. However, their simulation is
+extremely challenging, due to the exponential growth of the Hilbert space with
+the system size, making it exceedingly difficult to parameterize the wave
+functions of large systems by using exact methods. Neural networks and machine
+learning in general are a way to face this challenge. For instance, methods
+like Tensor networks and Neural Quantum States are being investigated as
+promising tools to obtain the wave function of a quantum mechanical system. In
+this tutorial, we focus on a particularly promising class of deep learning
+algorithms. We explain how to construct a Physics-Informed Neural Network
+(PINN) able to solve the Schr\""odinger equation for a given potential, by
+finding its eigenvalues and eigenfunctions. This technique is unsupervised, and
+utilizes a novel computational method in a manner that is barely explored.
+PINNs are a deep learning method that exploits Automatic Differentiation to
+solve Integro-Differential Equations in a mesh-free way. We show how to find
+both the ground and the excited states. The method discovers the states
+progressively by starting from the ground state. We explain how to introduce
+inductive biases in the loss to exploit further knowledge of the physical
+system. Such additional constraints allow for a faster and more accurate
+convergence. This technique can then be enhanced by a smart choice of
+collocation points in order to take advantage of the mesh-free nature of the
+PINN. The methods are made explicit by applying them to the infinite potential
+well and the particle in a ring, a challenging problem to be learned by an AI
+agent due to the presence of complex-valued eigenfunctions and degenerate
+states.",http://arxiv.org/pdf/2407.20669v1,,False
+Towards Generalizable Reinforcement Learning via Causality-Guided Self-Adaptive Representations,30/07/2024,"Yupei Yang, Biwei Huang, Fan Feng, Xinyue Wang, Shikui Tu, Lei Xu","General intelligence requires quick adaption across tasks. While existing
+reinforcement learning (RL) methods have made progress in generalization, they
+typically assume only distribution changes between source and target domains.
+In this paper, we explore a wider range of scenarios where both the
+distribution and environment spaces may change. For example, in Atari games, we
+train agents to generalize to tasks with different levels of mode and
+difficulty, where there could be new state or action variables that never
+occurred in previous environments. To address this challenging setting, we
+introduce a causality-guided self-adaptive representation-based approach,
+called CSR, that equips the agent to generalize effectively and efficiently
+across a sequence of tasks with evolving dynamics. Specifically, we employ
+causal representation learning to characterize the latent causal variables and
+world models within the RL system. Such compact causal representations uncover
+the structural relationships among variables, enabling the agent to
+autonomously determine whether changes in the environment stem from
+distribution shifts or variations in space, and to precisely locate these
+changes. We then devise a three-step strategy to fine-tune the model under
+different scenarios accordingly. Empirical experiments show that CSR
+efficiently adapts to the target domains with only a few samples and
+outperforms state-of-the-art baselines on a wide range of scenarios, including
+our simulated environments, Cartpole, and Atari games.",http://arxiv.org/pdf/2407.20651v1,,False
+Investigating Sparsity in Recurrent Neural Networks,30/07/2024,Harshil Darji,"In the past few years, neural networks have evolved from simple Feedforward
+Neural Networks to more complex neural networks, such as Convolutional Neural
+Networks and Recurrent Neural Networks. Where CNNs are a perfect fit for tasks
+where the sequence is not important such as image recognition, RNNs are useful
+when order is important such as machine translation. An increasing number of
+layers in a neural network is one way to improve its performance, but it also
+increases its complexity making it much more time and power-consuming to train.
+One way to tackle this problem is to introduce sparsity in the architecture of
+the neural network. Pruning is one of the many methods to make a neural network
+architecture sparse by clipping out weights below a certain threshold while
+keeping the performance near to the original. Another way is to generate
+arbitrary structures using random graphs and embed them between an input and
+output layer of an Artificial Neural Network. Many researchers in past years
+have focused on pruning mainly CNNs, while hardly any research is done for the
+same in RNNs. The same also holds in creating sparse architectures for RNNs by
+generating and embedding arbitrary structures. Therefore, this thesis focuses
+on investigating the effects of the before-mentioned two techniques on the
+performance of RNNs. We first describe the pruning of RNNs, its impact on the
+performance of RNNs, and the number of training epochs required to regain
+accuracy after the pruning is performed. Next, we continue with the creation
+and training of Sparse Recurrent Neural Networks and identify the relation
+between the performance and the graph properties of its underlying arbitrary
+structure. We perform these experiments on RNN with Tanh nonlinearity
+(RNN-Tanh), RNN with ReLU nonlinearity (RNN-ReLU), GRU, and LSTM. Finally, we
+analyze and discuss the results achieved from both the experiments.",http://arxiv.org/pdf/2407.20601v1,10.13140/RG.2.2.30539.20004,False
+Neuromorphic on-chip reservoir computing with spiking neural network architectures,30/07/2024,"Samip Karki, Diego Chavez Arana, Andrew Sornborger, Francesco Caravelli","Reservoir computing is a promising approach for harnessing the computational
+power of recurrent neural networks while dramatically simplifying training.
+This paper investigates the application of integrate-and-fire neurons within
+reservoir computing frameworks for two distinct tasks: capturing chaotic
+dynamics of the H\'enon map and forecasting the Mackey-Glass time series.
+Integrate-and-fire neurons can be implemented in low-power neuromorphic
+architectures such as Intel Loihi. We explore the impact of network topologies
+created through random interactions on the reservoir's performance. Our study
+reveals task-specific variations in network effectiveness, highlighting the
+importance of tailored architectures for distinct computational tasks. To
+identify optimal network configurations, we employ a meta-learning approach
+combined with simulated annealing. This method efficiently explores the space
+of possible network structures, identifying architectures that excel in
+different scenarios. The resulting networks demonstrate a range of behaviors,
+showcasing how inherent architectural features influence task-specific
+capabilities. We study the reservoir computing performance using a custom
+integrate-and-fire code, Intel's Lava neuromorphic computing software
+framework, and via an on-chip implementation in Loihi. We conclude with an
+analysis of the energy performance of the Loihi architecture.",http://arxiv.org/pdf/2407.20547v1,,False
+A2SF: Accumulative Attention Scoring with Forgetting Factor for Token Pruning in Transformer Decoder,30/07/2024,"Hyun Rae Jo, Dong Kun Shin","Recently, large language models (LLM) based on transformers are facing memory
+bottleneck issues due to KV cache, especially in long sequence handling.
+Previous researches proposed KV cache compression techniques that identify
+insignificant tokens based on Accumulative Attention Scores and removes their
+items from KV cache, noting that only few tokens play an important role in
+attention operations. However, we have observed that the existing Accumulative
+Attention Score is not suitable for the transformer decoder structure. In the
+decoder model, the number of times the Attention Score accumulates varies
+depending on the order of token appearance due to the effect of masking,
+causing an uneven comparison between tokens. To solve this, we propose
+Accumulative Attention Score with Forgetting Factor (A2SF) technique, which
+introduces a Forgetting Factor in the Attention Score accumulation process.
+A2SF applies a penalty to the past Attention Score generated from old tokens by
+repeatedly multiplying the Forgetting Factor to the Attention Score over time.
+Therefore, older tokens receive a larger penalty, providing fairness among
+different ages of tokens. Through the fair comparison among tokens, we can more
+effectively select important tokens. We have verified the accuracy improvement
+through A2SF in the OPT and LLaMA models and A2SF improves the accuracy of
+LLaMA 2 by up to 7.8% and 5.1% on 1-shot and 0-shot.",http://arxiv.org/pdf/2407.20485v1,,False

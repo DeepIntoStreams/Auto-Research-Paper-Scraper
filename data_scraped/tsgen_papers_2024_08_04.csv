@@ -1,0 +1,229 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+MM-Vet v2: A Challenging Benchmark to Evaluate Large Multimodal Models for Integrated Capabilities,01/08/2024,"Weihao Yu, Zhengyuan Yang, Linfeng Ren, Linjie Li, Jianfeng Wang, Kevin Lin, Chung-Ching Lin, Zicheng Liu, Lijuan Wang, Xinchao Wang","MM-Vet, with open-ended vision-language questions targeting at evaluating
+integrated capabilities, has become one of the most popular benchmarks for
+large multimodal model evaluation. MM-Vet assesses six core vision-language
+(VL) capabilities: recognition, knowledge, spatial awareness, language
+generation, OCR, and math. However, its question format is restricted to single
+image-text pairs, lacking the interleaved image and text sequences prevalent in
+real-world scenarios. To address this limitation, we introduce MM-Vet v2, which
+includes a new VL capability called ""image-text sequence understanding"",
+evaluating models' ability to process VL sequences. Furthermore, we maintain
+the high quality of evaluation samples while further expanding the evaluation
+set size. Using MM-Vet v2 to benchmark large multimodal models, we found that
+Claude 3.5 Sonnet is the best model with a score of 71.8, slightly
+outperforming GPT-4o which scored 71.0. Among open-weight models,
+InternVL2-Llama3-76B leads with a score of 68.4.",http://arxiv.org/pdf/2408.00765v1,,False
+AMAES: Augmented Masked Autoencoder Pretraining on Public Brain MRI Data for 3D-Native Segmentation,01/08/2024,"Asbjørn Munk, Jakob Ambsdorf, Sebastian Llambias, Mads Nielsen","This study investigates the impact of self-supervised pretraining of 3D
+semantic segmentation models on a large-scale, domain-specific dataset. We
+introduce BRAINS-45K, a dataset of 44,756 brain MRI volumes from public
+sources, the largest public dataset available, and revisit a number of design
+choices for pretraining modern segmentation architectures by simplifying and
+optimizing state-of-the-art methods, and combining them with a novel
+augmentation strategy. The resulting AMAES framework is based on
+masked-image-modeling and intensity-based augmentation reversal and balances
+memory usage, runtime, and finetuning performance. Using the popular U-Net and
+the recent MedNeXt architecture as backbones, we evaluate the effect of
+pretraining on three challenging downstream tasks, covering single-sequence,
+low-resource settings, and out-of-domain generalization. The results highlight
+that pretraining on the proposed dataset with AMAES significantly improves
+segmentation performance in the majority of evaluated cases, and that it is
+beneficial to pretrain the model with augmentations, despite pretraing on a
+large-scale dataset. Code and model checkpoints for reproducing results, as
+well as the BRAINS-45K dataset are available at
+\url{https://github.com/asbjrnmunk/amaes}.",http://arxiv.org/pdf/2408.00640v1,,False
+Intermittent Semi-working Mask: A New Masking Paradigm for LLMs,01/08/2024,"Mingcong Lu, Jiangcai Zhu, Wang Hao, Zheng Li, Shusheng Zhang, Kailai Shao, Chao Chen, Nan Li, Feng Wang, Xin Lu","Multi-turn dialogues are a key interaction method between humans and Large
+Language Models (LLMs), as conversations extend over multiple rounds, keeping
+LLMs' high generation quality and low latency is a challenge. Mainstream LLMs
+can be grouped into two categories based on masking strategy: causal LLM and
+prefix LLM. Several works have demonstrated that prefix LLMs tend to outperform
+causal ones in scenarios that heavily depend on historical context such as
+multi-turn dialogues or in-context learning, thanks to their bidirectional
+attention on prefix sequences. However, prefix LLMs have an inherent
+inefficient training problem in multi-turn dialogue datasets. In addition, the
+attention mechanism of prefix LLM makes it unable to reuse Key-Value Cache (KV
+Cache) across dialogue rounds to reduce generation latency. In this paper, we
+propose a novel masking scheme called Intermittent Semi-working Mask (ISM) to
+address these problems. Specifically, we apply alternate bidirectional and
+unidirectional attention on queries and answers in the dialogue history. In
+this way, ISM is able to maintain the high quality of prefix LLM and low
+generation latency of causal LLM, simultaneously. Extensive experiments
+illustrate that our ISM achieves significant performance.",http://arxiv.org/pdf/2408.00539v1,,False
+Hilbert curves for efficient exploratory landscape analysis neighbourhood sampling,01/08/2024,"Johannes J. Pienaar, Anna S. Bosman, Katherine M. Malan","Landscape analysis aims to characterise optimisation problems based on their
+objective (or fitness) function landscape properties. The problem search space
+is typically sampled, and various landscape features are estimated based on the
+samples. One particularly salient set of features is information content, which
+requires the samples to be sequences of neighbouring solutions, such that the
+local relationships between consecutive sample points are preserved. Generating
+such spatially correlated samples that also provide good search space coverage
+is challenging. It is therefore common to first obtain an unordered sample with
+good search space coverage, and then apply an ordering algorithm such as the
+nearest neighbour to minimise the distance between consecutive points in the
+sample. However, the nearest neighbour algorithm becomes computationally
+prohibitive in higher dimensions, thus there is a need for more efficient
+alternatives. In this study, Hilbert space-filling curves are proposed as a
+method to efficiently obtain high-quality ordered samples. Hilbert curves are a
+special case of fractal curves, and guarantee uniform coverage of a bounded
+search space while providing a spatially correlated sample. We study the
+effectiveness of Hilbert curves as samplers, and discover that they are capable
+of extracting salient features at a fraction of the computational cost compared
+to Latin hypercube sampling with post-factum ordering. Further, we investigate
+the use of Hilbert curves as an ordering strategy, and find that they order the
+sample significantly faster than the nearest neighbour ordering, without
+sacrificing the saliency of the extracted features.",http://arxiv.org/pdf/2408.00526v1,10.1007/978-3-031-56855-8_18,False
+VecAug: Unveiling Camouflaged Frauds with Cohort Augmentation for Enhanced Detection,01/08/2024,"Fei Xiao, Shaofeng Cai, Gang Chen, H. V. Jagadish, Beng Chin Ooi, Meihui Zhang","Fraud detection presents a challenging task characterized by ever-evolving
+fraud patterns and scarce labeled data. Existing methods predominantly rely on
+graph-based or sequence-based approaches. While graph-based approaches connect
+users through shared entities to capture structural information, they remain
+vulnerable to fraudsters who can disrupt or manipulate these connections. In
+contrast, sequence-based approaches analyze users' behavioral patterns,
+offering robustness against tampering but overlooking the interactions between
+similar users. Inspired by cohort analysis in retention and healthcare, this
+paper introduces VecAug, a novel cohort-augmented learning framework that
+addresses these challenges by enhancing the representation learning of target
+users with personalized cohort information. To this end, we first propose a
+vector burn-in technique for automatic cohort identification, which retrieves a
+task-specific cohort for each target user. Then, to fully exploit the cohort
+information, we introduce an attentive cohort aggregation technique for
+augmenting target user representations. To improve the robustness of such
+cohort augmentation, we also propose a novel label-aware cohort neighbor
+separation mechanism to distance negative cohort neighbors and calibrate the
+aggregated cohort information. By integrating this cohort information with
+target user representations, VecAug enhances the modeling capacity and
+generalization capabilities of the model to be augmented. Our framework is
+flexible and can be seamlessly integrated with existing fraud detection models.
+We deploy our framework on e-commerce platforms and evaluate it on three fraud
+detection datasets, and results show that VecAug improves the detection
+performance of base models by up to 2.48\% in AUC and 22.5\% in R@P$_{0.9}$,
+outperforming state-of-the-art methods significantly.",http://arxiv.org/pdf/2408.00513v1,,False
+Augmenting Channel Simulator and Semi- Supervised Learning for Efficient Indoor Positioning,01/08/2024,"Yupeng Li, Xinyu Ning, Shijian Gao, Yitong Liu, Zhi Sun, Qixing Wang, Jiangzhou Wang","This work aims to tackle the labor-intensive and resource-consuming task of
+indoor positioning by proposing an efficient approach. The proposed approach
+involves the introduction of a semi-supervised learning (SSL) with a biased
+teacher (SSLB) algorithm, which effectively utilizes both labeled and unlabeled
+channel data. To reduce measurement expenses, unlabeled data is generated using
+an updated channel simulator (UCHS), and then weighted by adaptive confidence
+values to simplify the tuning of hyperparameters. Simulation results
+demonstrate that the proposed strategy achieves superior performance while
+minimizing measurement overhead and training expense compared to existing
+benchmarks, offering a valuable and practical solution for indoor positioning.",http://arxiv.org/pdf/2408.00429v1,,False
+DriveArena: A Closed-loop Generative Simulation Platform for Autonomous Driving,01/08/2024,"Xuemeng Yang, Licheng Wen, Yukai Ma, Jianbiao Mei, Xin Li, Tiantian Wei, Wenjie Lei, Daocheng Fu, Pinlong Cai, Min Dou, Botian Shi, Liang He, Yong Liu, Yu Qiao","This paper presented DriveArena, the first high-fidelity closed-loop
+simulation system designed for driving agents navigating in real scenarios.
+DriveArena features a flexible, modular architecture, allowing for the seamless
+interchange of its core components: Traffic Manager, a traffic simulator
+capable of generating realistic traffic flow on any worldwide street map, and
+World Dreamer, a high-fidelity conditional generative model with infinite
+autoregression. This powerful synergy empowers any driving agent capable of
+processing real-world images to navigate in DriveArena's simulated environment.
+The agent perceives its surroundings through images generated by World Dreamer
+and output trajectories. These trajectories are fed into Traffic Manager,
+achieving realistic interactions with other vehicles and producing a new scene
+layout. Finally, the latest scene layout is relayed back into World Dreamer,
+perpetuating the simulation cycle. This iterative process fosters closed-loop
+exploration within a highly realistic environment, providing a valuable
+platform for developing and evaluating driving agents across diverse and
+challenging scenarios. DriveArena signifies a substantial leap forward in
+leveraging generative image data for the driving simulation platform, opening
+insights for closed-loop autonomous driving. Code will be available soon on
+GitHub: https://github.com/PJLab-ADG/DriveArena",http://arxiv.org/pdf/2408.00415v1,,False
+DiM-Gesture: Co-Speech Gesture Generation with Adaptive Layer Normalization Mamba-2 framework,01/08/2024,"Fan Zhang, Naye Ji, Fuxing Gao, Bozuo Zhao, Jingmei Wu, Yanbing Jiang, Hui Du, Zhenqing Ye, Jiayang Zhu, WeiFan Zhong, Leyao Yan, Xiaomeng Ma","Speech-driven gesture generation is an emerging domain within virtual human
+creation, where current methods predominantly utilize Transformer-based
+architectures that necessitate extensive memory and are characterized by slow
+inference speeds. In response to these limitations, we propose
+\textit{DiM-Gestures}, a novel end-to-end generative model crafted to create
+highly personalized 3D full-body gestures solely from raw speech audio,
+employing Mamba-based architectures. This model integrates a Mamba-based fuzzy
+feature extractor with a non-autoregressive Adaptive Layer Normalization
+(AdaLN) Mamba-2 diffusion architecture. The extractor, leveraging a Mamba
+framework and a WavLM pre-trained model, autonomously derives implicit,
+continuous fuzzy features, which are then unified into a singular latent
+feature. This feature is processed by the AdaLN Mamba-2, which implements a
+uniform conditional mechanism across all tokens to robustly model the interplay
+between the fuzzy features and the resultant gesture sequence. This innovative
+approach guarantees high fidelity in gesture-speech synchronization while
+maintaining the naturalness of the gestures. Employing a diffusion model for
+training and inference, our framework has undergone extensive subjective and
+objective evaluations on the ZEGGS and BEAT datasets. These assessments
+substantiate our model's enhanced performance relative to contemporary
+state-of-the-art methods, demonstrating competitive outcomes with the DiTs
+architecture (Persona-Gestors) while optimizing memory usage and accelerating
+inference speed.",http://arxiv.org/pdf/2408.00370v1,,False
+Clover-2: Accurate Inference for Regressive Lightweight Speculative Decoding,01/08/2024,"Bin Xiao, Lujun Gui, Lei Su, Weipeng Chen","Large Language Models (LLMs) frequently suffer from inefficiencies, largely
+attributable to the discord between the requirements of auto-regressive
+decoding and the architecture of contemporary GPUs. Recently, regressive
+lightweight speculative decoding has garnered attention for its notable
+efficiency improvements in text generation tasks. This approach utilizes a
+lightweight regressive draft model, like a Recurrent Neural Network (RNN) or a
+single transformer decoder layer, leveraging sequential information to
+iteratively predict potential tokens. Specifically, RNN draft models are
+computationally economical but tend to deliver lower accuracy, while attention
+decoder layer models exhibit the opposite traits. This paper presents Clover-2,
+an advanced iteration of Clover, an RNN-based draft model designed to achieve
+comparable accuracy to that of attention decoder layer models while maintaining
+minimal computational overhead. Clover-2 enhances the model architecture and
+incorporates knowledge distillation to increase Clover's accuracy and improve
+overall efficiency. We conducted experiments using the open-source Vicuna 7B
+and LLaMA3-Instruct 8B models. The results demonstrate that Clover-2 surpasses
+existing methods across various model architectures, showcasing its efficacy
+and robustness.",http://arxiv.org/pdf/2408.00264v1,,False
+Enhanced Structured State Space Models via Grouped FIR Filtering and Attention Sink Mechanisms,01/08/2024,"Tian Meng, Yang Tao, Wuliang Yin","Structured State Space Models (SSMs) have emerged as compelling alternatives
+to Transformer architectures, offering linear-time complexity and superior
+performance in various sequence modeling tasks. Despite their advantages, SSMs
+like the original Mamba-2 face training difficulties due to the sensitivities
+introduced by the extended series of recurrent matrix multiplications. In this
+paper, we propose an advanced architecture that mitigates these challenges by
+decomposing A-multiplications into multiple groups and optimizing positional
+encoding through Grouped Finite Impulse Response (FIR) filtering. This new
+structure, denoted as Grouped FIR-enhanced SSM (GFSSM), employs semiseparable
+matrices for efficient computation. Furthermore, inspired by the ""attention
+sink"" phenomenon identified in streaming language models, we incorporate a
+similar mechanism to enhance the stability and performance of our model over
+extended sequences. Our approach further bridges the gap between SSMs and
+Transformer architectures, offering a viable path forward for scalable and
+high-performing sequence modeling.",http://arxiv.org/pdf/2408.00244v1,,False
+Empirical Bayes Linked Matrix Decomposition,01/08/2024,Eric F. Lock,"Data for several applications in diverse fields can be represented as
+multiple matrices that are linked across rows or columns. This is particularly
+common in molecular biomedical research, in which multiple molecular ""omics""
+technologies may capture different feature sets (e.g., corresponding to rows in
+a matrix) and/or different sample populations (corresponding to columns). This
+has motivated a large body of work on integrative matrix factorization
+approaches that identify and decompose low-dimensional signal that is shared
+across multiple matrices or specific to a given matrix. We propose an empirical
+variational Bayesian approach to this problem that has several advantages over
+existing techniques, including the flexibility to accommodate shared signal
+over any number of row or column sets (i.e., bidimensional integration), an
+intuitive model-based objective function that yields appropriate shrinkage for
+the inferred signals, and a relatively efficient estimation algorithm with no
+tuning parameters. A general result establishes conditions for the uniqueness
+of the underlying decomposition for a broad family of methods that includes the
+proposed approach. For scenarios with missing data, we describe an associated
+iterative imputation approach that is novel for the single-matrix context and a
+powerful approach for ""blockwise"" imputation (in which an entire row or column
+is missing) in various linked matrix contexts. Extensive simulations show that
+the method performs very well under different scenarios with respect to
+recovering underlying low-rank signal, accurately decomposing shared and
+specific signals, and accurately imputing missing data. The approach is applied
+to gene expression and miRNA data from breast cancer tissue and normal breast
+tissue, for which it gives an informative decomposition of variation and
+outperforms alternative strategies for missing data imputation.",http://arxiv.org/pdf/2408.00237v1,10.1007/s10994-024-06599-8,False
+Invariant Discovery of Features Across Multiple Length Scales: Applications in Microscopy and Autonomous Materials Characterization,01/08/2024,"Aditya Raghavan, Utkarsh Pratiush, Mani Valleti, Richard Liu, Reece Emery, Hiroshi Funakubo, Yongtao Liu, Philip Rack, Sergei Kalinin","Physical imaging is a foundational characterization method in areas from
+condensed matter physics and chemistry to astronomy and spans length scales
+from atomic to universe. Images encapsulate crucial data regarding atomic
+bonding, materials microstructures, and dynamic phenomena such as
+microstructural evolution and turbulence, among other phenomena. The challenge
+lies in effectively extracting and interpreting this information. Variational
+Autoencoders (VAEs) have emerged as powerful tools for identifying underlying
+factors of variation in image data, providing a systematic approach to
+distilling meaningful patterns from complex datasets. However, a significant
+hurdle in their application is the definition and selection of appropriate
+descriptors reflecting local structure. Here we introduce the scale-invariant
+VAE approach (SI-VAE) based on the progressive training of the VAE with the
+descriptors sampled at different length scales. The SI-VAE allows the discovery
+of the length scale dependent factors of variation in the system. Here, we
+illustrate this approach using the ferroelectric domain images and generalize
+it to the movies of the electron-beam induced phenomena in graphene and
+topography evolution across combinatorial libraries. This approach can further
+be used to initialize the decision making in automated experiments including
+structure-property discovery and can be applied across a broad range of imaging
+methods. This approach is universal and can be applied to any spatially
+resolved data including both experimental imaging studies and simulations, and
+can be particularly useful for exploration of phenomena such as turbulence,
+scale-invariant transformation fronts, etc.",http://arxiv.org/pdf/2408.00229v1,,False

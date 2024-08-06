@@ -1,0 +1,172 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+On Using Quasirandom Sequences in Machine Learning for Model Weight Initialization,05/08/2024,"Andriy Miranskyy, Adam Sorrenti, Viral Thakar","The effectiveness of training neural networks directly impacts computational
+costs, resource allocation, and model development timelines in machine learning
+applications. An optimizer's ability to train the model adequately (in terms of
+trained model performance) depends on the model's initial weights. Model weight
+initialization schemes use pseudorandom number generators (PRNGs) as a source
+of randomness.
+  We investigate whether substituting PRNGs for low-discrepancy quasirandom
+number generators (QRNGs) -- namely Sobol' sequences -- as a source of
+randomness for initializers can improve model performance. We examine
+Multi-Layer Perceptrons (MLP), Convolutional Neural Networks (CNN), Long
+Short-Term Memory (LSTM), and Transformer architectures trained on MNIST,
+CIFAR-10, and IMDB datasets using SGD and Adam optimizers. Our analysis uses
+ten initialization schemes: Glorot, He, Lecun (both Uniform and Normal);
+Orthogonal, Random Normal, Truncated Normal, and Random Uniform. Models with
+weights set using PRNG- and QRNG-based initializers are compared pairwise for
+each combination of dataset, architecture, optimizer, and initialization
+scheme.
+  Our findings indicate that QRNG-based neural network initializers either
+reach a higher accuracy or achieve the same accuracy more quickly than
+PRNG-based initializers in 60% of the 120 experiments conducted. Thus, using
+QRNG-based initializers instead of PRNG-based initializers can speed up and
+improve model training.",http://arxiv.org/pdf/2408.02654v1,,False
+Language Model Can Listen While Speaking,05/08/2024,"Ziyang Ma, Yakun Song, Chenpeng Du, Jian Cong, Zhuo Chen, Yuping Wang, Yuxuan Wang, Xie Chen","Dialogue serves as the most natural manner of human-computer interaction
+(HCI). Recent advancements in speech language models (SLM) have significantly
+enhanced speech-based conversational AI. However, these models are limited to
+turn-based conversation, lacking the ability to interact with humans in
+real-time spoken scenarios, for example, being interrupted when the generated
+content is not satisfactory. To address these limitations, we explore full
+duplex modeling (FDM) in interactive speech language models (iSLM), focusing on
+enhancing real-time interaction and, more explicitly, exploring the
+quintessential ability of interruption. We introduce a novel model design,
+namely listening-while-speaking language model (LSLM), an end-to-end system
+equipped with both listening and speaking channels. Our LSLM employs a
+token-based decoder-only TTS for speech generation and a streaming
+self-supervised learning (SSL) encoder for real-time audio input. LSLM fuses
+both channels for autoregressive generation and detects turn-taking in real
+time. Three fusion strategies -- early fusion, middle fusion, and late fusion
+-- are explored, with middle fusion achieving an optimal balance between speech
+generation and real-time interaction. Two experimental settings, command-based
+FDM and voice-based FDM, demonstrate LSLM's robustness to noise and sensitivity
+to diverse instructions. Our results highlight LSLM's capability to achieve
+duplex communication with minimal impact on existing systems. This study aims
+to advance the development of interactive speech dialogue systems, enhancing
+their applicability in real-world contexts.",http://arxiv.org/pdf/2408.02622v1,,False
+MeshAnything V2: Artist-Created Mesh Generation With Adjacent Mesh Tokenization,05/08/2024,"Yiwen Chen, Yikai Wang, Yihao Luo, Zhengyi Wang, Zilong Chen, Jun Zhu, Chi Zhang, Guosheng Lin","We introduce MeshAnything V2, an autoregressive transformer that generates
+Artist-Created Meshes (AM) aligned to given shapes. It can be integrated with
+various 3D asset production pipelines to achieve high-quality, highly
+controllable AM generation. MeshAnything V2 surpasses previous methods in both
+efficiency and performance using models of the same size. These improvements
+are due to our newly proposed mesh tokenization method: Adjacent Mesh
+Tokenization (AMT). Different from previous methods that represent each face
+with three vertices, AMT uses a single vertex whenever possible. Compared to
+previous methods, AMT requires about half the token sequence length to
+represent the same mesh in average. Furthermore, the token sequences from AMT
+are more compact and well-structured, fundamentally benefiting AM generation.
+Our extensive experiments show that AMT significantly improves the efficiency
+and performance of AM generation. Project Page:
+https://buaacyw.github.io/meshanything-v2/",http://arxiv.org/pdf/2408.02555v1,,False
+Attenuation-adjusted deep learning of pore defects in 2D radiographs of additive manufacturing powders,05/08/2024,"Andreas Bjerregaard, David Schumacher, Jon Sporring","The presence of gas pores in metal feedstock powder for additive
+manufacturing greatly affects the final AM product. Since current porosity
+analysis often involves lengthy X-ray computed tomography (XCT) scans with a
+full rotation around the sample, motivation exists to explore methods that
+allow for high throughput -- possibly enabling in-line porosity analysis during
+manufacturing. Through labelling pore pixels on single 2D radiographs of
+powders, this work seeks to simulate such future efficient setups. High
+segmentation accuracy is achieved by combining a model of X-ray attenuation
+through particles with a variant of the widely applied UNet architecture;
+notably, F1-score increases by $11.4\%$ compared to the baseline UNet. The
+proposed pore segmentation is enabled by: 1) pretraining on synthetic data, 2)
+making tight particle cutouts, and 3) subtracting an ideal particle without
+pores generated from a distance map inspired by Lambert-Beers law. This paper
+explores four image processing methods, where the fastest (yet still
+unoptimized) segments a particle in mean $0.014s$ time with F1-score $0.78$,
+and the most accurate in $0.291s$ with F1-score $0.87$. Due to their scalable
+nature, these strategies can be involved in making high throughput porosity
+analysis of metal feedstock powder for additive manufacturing.",http://arxiv.org/pdf/2408.02427v1,,False
+A Lean Transformer Model for Dynamic Malware Analysis and Detection,05/08/2024,"Tony Quertier, Benjamin Marais, Grégoire Barrué, Stéphane Morucci, Sévan Azé, Sébastien Salladin","Malware is a fast-growing threat to the modern computing world and existing
+lines of defense are not efficient enough to address this issue. This is mainly
+due to the fact that many prevention solutions rely on signature-based
+detection methods that can easily be circumvented by hackers. Therefore, there
+is a recurrent need for behavior-based analysis where a suspicious file is ran
+in a secured environment and its traces are collected to reports for analysis.
+Previous works have shown some success leveraging Neural Networks and API calls
+sequences extracted from these execution reports.
+  Recently, Large Language Models and Generative AI have demonstrated
+impressive capabilities mainly in Natural Language Processing tasks and
+promising applications in the cybersecurity field for both attackers and
+defenders.
+  In this paper, we design an Encoder-Only model, based on the Transformers
+architecture, to detect malicious files, digesting their API call sequences
+collected by an execution emulation solution. We are also limiting the size of
+the model architecture and the number of its parameters since it is often
+considered that Large Language Models may be overkill for specific tasks such
+as the one we are dealing with hereafter. In addition to achieving decent
+detection results, this approach has the advantage of reducing our carbon
+footprint by limiting training and inference times and facilitating technical
+operations with less hardware requirements.
+  We also carry out some analysis of our results and highlight the limits and
+possible improvements when using Transformers to analyze malicious files.",http://arxiv.org/pdf/2408.02313v1,,False
+Optimization of Iterative Blind Detection based on Expectation Maximization and Belief Propagation,05/08/2024,"Luca Schmid, Tomer Raviv, Nir Shlezinger, Laurent Schmalen","We study iterative blind symbol detection for block-fading linear
+inter-symbol interference channels. Based on the factor graph framework, we
+design a joint channel estimation and detection scheme that combines the
+expectation maximization (EM) algorithm and the ubiquitous belief propagation
+(BP) algorithm. Interweaving the iterations of both schemes significantly
+reduces the EM algorithm's computational burden while retaining its excellent
+performance. To this end, we apply simple yet effective model-based learning
+methods to find a suitable parameter update schedule by introducing momentum in
+both the EM parameter updates as well as in the BP message passing. Numerical
+simulations verify that the proposed method can learn efficient schedules that
+generalize well and even outperform coherent BP detection in high
+signal-to-noise scenarios.",http://arxiv.org/pdf/2408.02312v1,,False
+DRFormer: Multi-Scale Transformer Utilizing Diverse Receptive Fields for Long Time-Series Forecasting,05/08/2024,"Ruixin Ding, Yuqi Chen, Yu-Ting Lan, Wei Zhang","Long-term time series forecasting (LTSF) has been widely applied in finance,
+traffic prediction, and other domains. Recently, patch-based transformers have
+emerged as a promising approach, segmenting data into sub-level patches that
+serve as input tokens. However, existing methods mostly rely on predetermined
+patch lengths, necessitating expert knowledge and posing challenges in
+capturing diverse characteristics across various scales. Moreover, time series
+data exhibit diverse variations and fluctuations across different temporal
+scales, which traditional approaches struggle to model effectively. In this
+paper, we propose a dynamic tokenizer with a dynamic sparse learning algorithm
+to capture diverse receptive fields and sparse patterns of time series data. In
+order to build hierarchical receptive fields, we develop a multi-scale
+Transformer model, coupled with multi-scale sequence extraction, capable of
+capturing multi-resolution features. Additionally, we introduce a group-aware
+rotary position encoding technique to enhance intra- and inter-group position
+awareness among representations across different temporal scales. Our proposed
+model, named DRFormer, is evaluated on various real-world datasets, and
+experimental results demonstrate its superiority compared to existing methods.
+Our code is available at: https://github.com/ruixindingECNU/DRFormer.",http://arxiv.org/pdf/2408.02279v1,10.1145/3627673.3679724,False
+Analyzing Cultural Representations of Emotions in LLMs through Mixed Emotion Survey,04/08/2024,"Shiran Dudy, Ibrahim Said Ahmad, Ryoko Kitajima, Agata Lapedriza","Large Language Models (LLMs) have gained widespread global adoption,
+showcasing advanced linguistic capabilities across multiple of languages. There
+is a growing interest in academia to use these models to simulate and study
+human behaviors. However, it is crucial to acknowledge that an LLM's
+proficiency in a specific language might not fully encapsulate the norms and
+values associated with its culture. Concerns have emerged regarding potential
+biases towards Anglo-centric cultures and values due to the predominance of
+Western and US-based training data. This study focuses on analyzing the
+cultural representations of emotions in LLMs, in the specific case of
+mixed-emotion situations. Our methodology is based on the studies of Miyamoto
+et al. (2010), which identified distinctive emotional indicators in Japanese
+and American human responses. We first administer their mixed emotion survey to
+five different LLMs and analyze their outputs. Second, we experiment with
+contextual variables to explore variations in responses considering both
+language and speaker origin. Thirdly, we expand our investigation to encompass
+additional East Asian and Western European origin languages to gauge their
+alignment with their respective cultures, anticipating a closer fit. We find
+that (1) models have limited alignment with the evidence in the literature; (2)
+written language has greater effect on LLMs' response than information on
+participants origin; and (3) LLMs responses were found more similar for East
+Asian languages than Western European languages.",http://arxiv.org/pdf/2408.02143v1,,False
+Individualized multi-horizon MRI trajectory prediction for Alzheimer's Disease,04/08/2024,"Rosemary He, Gabriella Ang, Daniel Tward","Neurodegeneration as measured through magnetic resonance imaging (MRI) is
+recognized as a potential biomarker for diagnosing Alzheimer's disease (AD),
+but is generally considered less specific than amyloid or tau based biomarkers.
+Due to a large amount of variability in brain anatomy between different
+individuals, we hypothesize that leveraging MRI time series can help improve
+specificity, by treating each patient as their own baseline. Here we turn to
+conditional variational autoencoders to generate individualized MRI predictions
+given the subject's age, disease status and one previous scan. Using serial
+imaging data from the Alzheimer's Disease Neuroimaging Initiative, we train a
+novel architecture to build a latent space distribution which can be sampled
+from to generate future predictions of changing anatomy. This enables us to
+extrapolate beyond the dataset and predict MRIs up to 10 years. We evaluated
+the model on a held-out set from ADNI and an independent dataset (from Open
+Access Series of Imaging Studies). By comparing to several alternatives, we
+show that our model produces more individualized images with higher resolution.
+Further, if an individual already has a follow-up MRI, we demonstrate a usage
+of our model to compute a likelihood ratio classifier for disease status. In
+practice, the model may be able to assist in early diagnosis of AD and provide
+a counterfactual baseline trajectory for treatment effect estimation.
+Furthermore, it generates a synthetic dataset that can potentially be used for
+downstream tasks such as anomaly detection and classification.",http://arxiv.org/pdf/2408.02018v1,,False

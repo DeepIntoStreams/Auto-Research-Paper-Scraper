@@ -1,0 +1,162 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+PackMamba: Efficient Processing of Variable-Length Sequences in Mamba training,07/08/2024,"Haoran Xu, Ziqian Liu, Rong Fu, Zhongling Su, Zerui Wang, Zheng Cai, Zhilin Pei, Xingcheng Zhang","With the evolution of large language models, traditional Transformer models
+become computationally demanding for lengthy sequences due to the quadratic
+growth in computation with respect to the sequence length. Mamba, emerging as a
+groundbreaking architecture in the field of generative AI, demonstrates
+remarkable proficiency in handling elongated sequences with reduced
+computational and memory complexity. Nevertheless, the existing training
+framework of Mamba presents inefficiency with variable-length sequence inputs.
+Either single-sequence training results in low GPU utilization, or batched
+processing of variable-length sequences to a maximum length incurs considerable
+memory and computational overhead. To address this problem, we analyze the
+performance of bottleneck operators in Mamba under diverse tensor shapes and
+proposed PackMamba, a high-throughput Mamba that efficiently handles
+variable-length sequences. Diving deep into state-space models (SSMs), we
+modify the parallel operators to avoid passing information between individual
+sequences while maintaining high performance. Experimental results on an NVIDIA
+A100 GPU demonstrate throughput exceeding the baseline single-sequence
+processing scheme: 3.06x speedup on the 1.4B model and 2.62x on the 2.8B model.",http://arxiv.org/pdf/2408.03865v1,,False
+Early Prediction of Causes (not Effects) in Healthcare by Long-Term Clinical Time Series Forecasting,07/08/2024,"Michael Staniek, Marius Fracarolli, Michael Hagmann, Stefan Riezler","Machine learning for early syndrome diagnosis aims to solve the intricate
+task of predicting a ground truth label that most often is the outcome (effect)
+of a medical consensus definition applied to observed clinical measurements
+(causes), given clinical measurements observed several hours before. Instead of
+focusing on the prediction of the future effect, we propose to directly predict
+the causes via time series forecasting (TSF) of clinical variables and
+determine the effect by applying the gold standard consensus definition to the
+forecasted values. This method has the invaluable advantage of being
+straightforwardly interpretable to clinical practitioners, and because model
+training does not rely on a particular label anymore, the forecasted data can
+be used to predict any consensus-based label. We exemplify our method by means
+of long-term TSF with Transformer models, with a focus on accurate prediction
+of sparse clinical variables involved in the SOFA-based Sepsis-3 definition and
+the new Simplified Acute Physiology Score (SAPS-II) definition. Our experiments
+are conducted on two datasets and show that contrary to recent proposals which
+advocate set function encoders for time series and direct multi-step decoders,
+best results are achieved by a combination of standard dense encoders with
+iterative multi-step decoders. The key for success of iterative multi-step
+decoding can be attributed to its ability to capture cross-variate dependencies
+and to a student forcing training strategy that teaches the model to rely on
+its own previous time step predictions for the next time step prediction.",http://arxiv.org/pdf/2408.03816v1,,False
+"Trustworthy Image Semantic Communication with GenAI: Explainablity, Controllability, and Efficiency",07/08/2024,"Xijun Wang, Dongshan Ye, Chenyuan Feng, Howard H. Yang, Xiang Chen, Tony Q. S. Quek","Image semantic communication (ISC) has garnered significant attention for its
+potential to achieve high efficiency in visual content transmission. However,
+existing ISC systems based on joint source-channel coding face challenges in
+interpretability, operability, and compatibility. To address these limitations,
+we propose a novel trustworthy ISC framework. This approach leverages text
+extraction and segmentation mapping techniques to convert images into
+explainable semantics, while employing Generative Artificial Intelligence
+(GenAI) for multiple downstream inference tasks. We also introduce a multi-rate
+ISC transmission protocol that dynamically adapts to both the received
+explainable semantic content and specific task requirements at the receiver.
+Simulation results demonstrate that our framework achieves explainable
+learning, decoupled training, and compatible transmission in various
+application scenarios. Finally, some intriguing research directions and
+application scenarios are identified.",http://arxiv.org/pdf/2408.03806v1,,False
+Local Topology Measures of Contextual Language Model Latent Spaces With Applications to Dialogue Term Extraction,07/08/2024,"Benjamin Matthias Ruppik, Michael Heck, Carel van Niekerk, Renato Vukovic, Hsien-chin Lin, Shutong Feng, Marcus Zibrowius, Milica Gašić","A common approach for sequence tagging tasks based on contextual word
+representations is to train a machine learning classifier directly on these
+embedding vectors. This approach has two shortcomings. First, such methods
+consider single input sequences in isolation and are unable to put an
+individual embedding vector in relation to vectors outside the current local
+context of use. Second, the high performance of these models relies on
+fine-tuning the embedding model in conjunction with the classifier, which may
+not always be feasible due to the size or inaccessibility of the underlying
+feature-generation model. It is thus desirable, given a collection of embedding
+vectors of a corpus, i.e., a datastore, to find features of each vector that
+describe its relation to other, similar vectors in the datastore. With this in
+mind, we introduce complexity measures of the local topology of the latent
+space of a contextual language model with respect to a given datastore. The
+effectiveness of our features is demonstrated through their application to
+dialogue term extraction. Our work continues a line of research that explores
+the manifold hypothesis for word embeddings, demonstrating that local structure
+in the space carved out by word embeddings can be exploited to infer semantic
+properties.",http://arxiv.org/pdf/2408.03706v1,,False
+Consumer Transactions Simulation through Generative Adversarial Networks,07/08/2024,"Sergiy Tkachuk, Szymon Łukasik, Anna Wróblewska","In the rapidly evolving domain of large-scale retail data systems,
+envisioning and simulating future consumer transactions has become a crucial
+area of interest. It offers significant potential to fortify demand forecasting
+and fine-tune inventory management. This paper presents an innovative
+application of Generative Adversarial Networks (GANs) to generate synthetic
+retail transaction data, specifically focusing on a novel system architecture
+that combines consumer behavior modeling with stock-keeping unit (SKU)
+availability constraints to address real-world assortment optimization
+challenges. We diverge from conventional methodologies by integrating SKU data
+into our GAN architecture and using more sophisticated embedding methods (e.g.,
+hyper-graphs). This design choice enables our system to generate not only
+simulated consumer purchase behaviors but also reflects the dynamic interplay
+between consumer behavior and SKU availability -- an aspect often overlooked,
+among others, because of data scarcity in legacy retail simulation models. Our
+GAN model generates transactions under stock constraints, pioneering a
+resourceful experimental system with practical implications for real-world
+retail operation and strategy. Preliminary results demonstrate enhanced realism
+in simulated transactions measured by comparing generated items with real ones
+using methods employed earlier in related studies. This underscores the
+potential for more accurate predictive modeling.",http://arxiv.org/pdf/2408.03655v1,,False
+Time is Not Enough: Time-Frequency based Explanation for Time-Series Black-Box Models,07/08/2024,"Hyunseung Chung, Sumin Jo, Yeonsu Kwon, Edward Choi","Despite the massive attention given to time-series explanations due to their
+extensive applications, a notable limitation in existing approaches is their
+primary reliance on the time-domain. This overlooks the inherent characteristic
+of time-series data containing both time and frequency features. In this work,
+we present Spectral eXplanation (SpectralX), an XAI framework that provides
+time-frequency explanations for time-series black-box classifiers. This easily
+adaptable framework enables users to ""plug-in"" various perturbation-based XAI
+methods for any pre-trained time-series classification models to assess their
+impact on the explanation quality without having to modify the framework
+architecture. Additionally, we introduce Feature Importance Approximations
+(FIA), a new perturbation-based XAI method. These methods consist of feature
+insertion, deletion, and combination techniques to enhance computational
+efficiency and class-specific explanations in time-series classification tasks.
+We conduct extensive experiments in the generated synthetic dataset and various
+UCR Time-Series datasets to first compare the explanation performance of FIA
+and other existing perturbation-based XAI methods in both time-domain and
+time-frequency domain, and then show the superiority of our FIA in the
+time-frequency domain with the SpectralX framework. Finally, we conduct a user
+study to confirm the practicality of our FIA in SpectralX framework for
+class-specific time-frequency based time-series explanations. The source code
+is available in https://github.com/gustmd0121/Time_is_not_Enough",http://arxiv.org/pdf/2408.03636v1,10.1145/3627673.3679844,False
+Activations Through Extensions: A Framework To Boost Performance Of Neural Networks,07/08/2024,"Chandramouli Kamanchi, Sumatra Mukherjee, Kameshwaran Sampath, Pankaj Dayama, Arindam Jati, Vijay Ekambaram, Dzung Phan","Activation functions are non-linearities in neural networks that allow them
+to learn complex mapping between inputs and outputs. Typical choices for
+activation functions are ReLU, Tanh, Sigmoid etc., where the choice generally
+depends on the application domain. In this work, we propose a
+framework/strategy that unifies several works on activation functions and
+theoretically explains the performance benefits of these works. We also propose
+novel techniques that originate from the framework and allow us to obtain
+``extensions'' (i.e. special generalizations of a given neural network) of
+neural networks through operations on activation functions. We theoretically
+and empirically show that ``extensions'' of neural networks have performance
+benefits compared to vanilla neural networks with insignificant space and time
+complexity costs on standard test functions. We also show the benefits of
+neural network ``extensions'' in the time-series domain on real-world datasets.",http://arxiv.org/pdf/2408.03599v1,,False
+Sensitivity analysis using the Metamodel of Optimal Prognosis,07/08/2024,"Thomas Most, Johannes Will","In real case applications within the virtual prototyping process, it is not
+always possible to reduce the complexity of the physical models and to obtain
+numerical models which can be solved quickly. Usually, every single numerical
+simulation takes hours or even days. Although the progresses in numerical
+methods and high performance computing, in such cases, it is not possible to
+explore various model configurations, hence efficient surrogate models are
+required. Generally the available meta-model techniques show several advantages
+and disadvantages depending on the investigated problem. In this paper we
+present an automatic approach for the selection of the optimal suitable
+meta-model for the actual problem. Together with an automatic reduction of the
+variable space using advanced filter techniques an efficient approximation is
+enabled also for high dimensional problems. This filter techniques enable a
+reduction of the high dimensional variable space to a much smaller subspace
+where meta-model-based sensitivity analyses are carried out to assess the
+influence of important variables and to identify the optimal subspace with
+corresponding surrogate model which enables the most accurate probabilistic
+analysis. For this purpose we investigate variance-based and moment-free
+sensitivity measures in combination with advanced meta-models as moving least
+squares and kriging.",http://arxiv.org/pdf/2408.03590v1,,False
+Hierarchical learning control for autonomous robots inspired by central nervous system,07/08/2024,"Pei Zhang, Zhaobo Hua, Jinliang Ding","Mammals can generate autonomous behaviors in various complex environments
+through the coordination and interaction of activities at different levels of
+their central nervous system. In this paper, we propose a novel hierarchical
+learning control framework by mimicking the hierarchical structure of the
+central nervous system along with their coordination and interaction behaviors.
+The framework combines the active and passive control systems to improve both
+the flexibility and reliability of the control system as well as to achieve
+more diverse autonomous behaviors of robots. Specifically, the framework has a
+backbone of independent neural network controllers at different levels and
+takes a three-level dual descending pathway structure, inspired from the
+functionality of the cerebral cortex, cerebellum, and spinal cord. We
+comprehensively validated the proposed approach through the simulation as well
+as the experiment of a hexapod robot in various complex environments, including
+obstacle crossing and rapid recovery after partial damage. This study reveals
+the principle that governs the autonomous behavior in the central nervous
+system and demonstrates the effectiveness of the hierarchical control approach
+with the salient features of the hierarchical learning control architecture and
+combination of active and passive control systems.",http://arxiv.org/pdf/2408.03525v1,,False

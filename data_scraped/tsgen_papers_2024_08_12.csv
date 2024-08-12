@@ -1,0 +1,197 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Beyond Closure Models: Learning Chaotic-Systems via Physics-Informed Neural Operators,09/08/2024,"Chuwei Wang, Julius Berner, Zongyi Li, Di Zhou, Jiayun Wang, Jane Bae, Anima Anandkumar","Accurately predicting the long-term behavior of chaotic systems is crucial
+for various applications such as climate modeling. However, achieving such
+predictions typically requires iterative computations over a dense
+spatiotemporal grid to account for the unstable nature of chaotic systems,
+which is expensive and impractical in many real-world situations. An
+alternative approach to such a full-resolved simulation is using a coarse grid
+and then correcting its errors through a \textit{closure model}, which
+approximates the overall information from fine scales not captured in the
+coarse-grid simulation. Recently, ML approaches have been used for closure
+modeling, but they typically require a large number of training samples from
+expensive fully-resolved simulations (FRS). In this work, we prove an even more
+fundamental limitation, i.e., the standard approach to learning closure models
+suffers from a large approximation error for generic problems, no matter how
+large the model is, and it stems from the non-uniqueness of the mapping. We
+propose an alternative end-to-end learning approach using a physics-informed
+neural operator (PINO) that overcomes this limitation by not using a closure
+model or a coarse-grid solver. We first train the PINO model on data from a
+coarse-grid solver and then fine-tune it with (a small amount of) FRS and
+physics-based losses on a fine grid. The discretization-free nature of neural
+operators means that they do not suffer from the restriction of a coarse grid
+that closure models face, and they can provably approximate the long-term
+statistics of chaotic systems. In our experiments, our PINO model achieves a
+120x speedup compared to FRS with a relative error $\sim 5\%$. In contrast, the
+closure model coupled with a coarse-grid solver is $58$x slower than PINO while
+having a much higher error $\sim205\%$ when the closure model is trained on the
+same FRS dataset.",http://arxiv.org/pdf/2408.05177v1,,False
+Beyond the Eye: A Relational Model for Early Dementia Detection Using Retinal OCTA Images,09/08/2024,"Shouyue Liu, Jinkui Hao, Yonghuai Liu, Huazhu Fu, Xinyu Guo, Shuting Zhang, Yitian Zhao","Early detection of dementia, such as Alzheimer's disease (AD) or mild
+cognitive impairment (MCI), is essential to enable timely intervention and
+potential treatment. Accurate detection of AD/MCI is challenging due to the
+high complexity, cost, and often invasive nature of current diagnostic
+techniques, which limit their suitability for large-scale population screening.
+Given the shared embryological origins and physiological characteristics of the
+retina and brain, retinal imaging is emerging as a potentially rapid and
+cost-effective alternative for the identification of individuals with or at
+high risk of AD. In this paper, we present a novel PolarNet+ that uses retinal
+optical coherence tomography angiography (OCTA) to discriminate early-onset AD
+(EOAD) and MCI subjects from controls. Our method first maps OCTA images from
+Cartesian coordinates to polar coordinates, allowing approximate sub-region
+calculation to implement the clinician-friendly early treatment of diabetic
+retinopathy study (ETDRS) grid analysis. We then introduce a multi-view module
+to serialize and analyze the images along three dimensions for comprehensive,
+clinically useful information extraction. Finally, we abstract the sequence
+embedding into a graph, transforming the detection task into a general graph
+classification problem. A regional relationship module is applied after the
+multi-view module to excavate the relationship between the sub-regions. Such
+regional relationship analyses validate known eye-brain links and reveal new
+discriminative patterns.",http://arxiv.org/pdf/2408.05117v1,,False
+Generating novel experimental hypotheses from language models: A case study on cross-dative generalization,09/08/2024,"Kanishka Misra, Najoung Kim","Neural network language models (LMs) have been shown to successfully capture
+complex linguistic knowledge. However, their utility for understanding language
+acquisition is still debated. We contribute to this debate by presenting a case
+study where we use LMs as simulated learners to derive novel experimental
+hypotheses to be tested with humans. We apply this paradigm to study
+cross-dative generalization (CDG): productive generalization of novel verbs
+across dative constructions (she pilked me the ball/she pilked the ball to me)
+-- acquisition of which is known to involve a large space of contextual
+features -- using LMs trained on child-directed speech. We specifically ask:
+""what properties of the training exposure facilitate a novel verb's
+generalization to the (unmodeled) alternate construction?"" To answer this, we
+systematically vary the exposure context in which a novel dative verb occurs in
+terms of the properties of the theme and recipient, and then analyze the LMs'
+usage of the novel verb in the unmodeled dative construction. We find LMs to
+replicate known patterns of children's CDG, as a precondition to exploring
+novel hypotheses. Subsequent simulations reveal a nuanced role of the features
+of the novel verbs' exposure context on the LMs' CDG. We find CDG to be
+facilitated when the first postverbal argument of the exposure context is
+pronominal, definite, short, and conforms to the prototypical animacy
+expectations of the exposure dative. These patterns are characteristic of
+harmonic alignment in datives, where the argument with features ranking higher
+on the discourse prominence scale tends to precede the other. This gives rise
+to a novel hypothesis that CDG is facilitated insofar as the features of the
+exposure context -- in particular, its first postverbal argument -- are
+harmonically aligned. We conclude by proposing future experiments that can test
+this hypothesis in children.",http://arxiv.org/pdf/2408.05086v1,,False
+On expected signatures and signature cumulants in semimartingale models,09/08/2024,"Peter K. Friz, Paul P. Hager, Nikolas Tapia","The concept of signatures and expected signatures is vital in data science,
+especially for sequential data analysis. The signature transform, a Cartan type
+development, translates paths into high-dimensional feature vectors, capturing
+their intrinsic characteristics. Under natural conditions, the expectation of
+the signature determines the law of the signature, providing a statistical
+summary of the data distribution. This property facilitates robust modeling and
+inference in machine learning and stochastic processes. Building on previous
+work by the present authors [Unified signature cumulants and generalized Magnus
+expansions, FoM Sigma '22] we here revisit the actual computation of expected
+signatures, in a general semimartingale setting. Several new formulae are
+given. A log-transform of (expected) signatures leads to log-signatures
+(signature cumulants), offering a significant reduction in complexity.",http://arxiv.org/pdf/2408.05085v1,,False
+Masked adversarial neural network for cell type deconvolution in spatial transcriptomics,09/08/2024,"Lin Huang, Xiaofei Liu, Shunfang Wang, Wenwen Min","Accurately determining cell type composition in disease-relevant tissues is
+crucial for identifying disease targets. Most existing spatial transcriptomics
+(ST) technologies cannot achieve single-cell resolution, making it challenging
+to accurately determine cell types. To address this issue, various
+deconvolution methods have been developed. Most of these methods use
+single-cell RNA sequencing (scRNA-seq) data from the same tissue as a reference
+to infer cell types in ST data spots. However, they often overlook the
+differences between scRNA-seq and ST data. To overcome this limitation, we
+propose a Masked Adversarial Neural Network (MACD). MACD employs adversarial
+learning to align real ST data with simulated ST data generated from scRNA-seq
+data. By mapping them into a unified latent space, it can minimize the
+differences between the two types of data. Additionally, MACD uses masking
+techniques to effectively learn the features of real ST data and mitigate
+noise. We evaluated MACD on 32 simulated datasets and 2 real datasets,
+demonstrating its accuracy in performing cell type deconvolution. All code and
+public datasets used in this paper are available at
+https://github.com/wenwenmin/MACD and https://zenodo.org/records/12804822.",http://arxiv.org/pdf/2408.05065v1,,False
+Variational Bayesian Phylogenetic Inference with Semi-implicit Branch Length Distributions,09/08/2024,"Tianyu Xie, Frederick A. Matsen IV, Marc A. Suchard, Cheng Zhang","Reconstructing the evolutionary history relating a collection of molecular
+sequences is the main subject of modern Bayesian phylogenetic inference.
+However, the commonly used Markov chain Monte Carlo methods can be inefficient
+due to the complicated space of phylogenetic trees, especially when the number
+of sequences is large. An alternative approach is variational Bayesian
+phylogenetic inference (VBPI) which transforms the inference problem into an
+optimization problem. While effective, the default diagonal lognormal
+approximation for the branch lengths of the tree used in VBPI is often
+insufficient to capture the complexity of the exact posterior. In this work, we
+propose a more flexible family of branch length variational posteriors based on
+semi-implicit hierarchical distributions using graph neural networks. We show
+that this semi-implicit construction emits straightforward permutation
+equivariant distributions, and therefore can handle the non-Euclidean branch
+length space across different tree topologies with ease. To deal with the
+intractable marginal probability of semi-implicit variational distributions, we
+develop several alternative lower bounds for stochastic optimization. We
+demonstrate the effectiveness of our proposed method over baseline methods on
+benchmark data examples, in terms of both marginal likelihood estimation and
+branch length posterior approximation.",http://arxiv.org/pdf/2408.05058v1,,False
+Causal Discovery of Linear Non-Gaussian Causal Models with Unobserved Confounding,09/08/2024,"Daniela Schkoda, Elina Robeva, Mathias Drton","We consider linear non-Gaussian structural equation models that involve
+latent confounding. In this setting, the causal structure is identifiable, but,
+in general, it is not possible to identify the specific causal effects.
+Instead, a finite number of different causal effects result in the same
+observational distribution. Most existing algorithms for identifying these
+causal effects use overcomplete independent component analysis (ICA), which
+often suffers from convergence to local optima. Furthermore, the number of
+latent variables must be known a priori. To address these issues, we propose an
+algorithm that operates recursively rather than using overcomplete ICA. The
+algorithm first infers a source, estimates the effect of the source and its
+latent parents on their descendants, and then eliminates their influence from
+the data. For both source identification and effect size estimation, we use
+rank conditions on matrices formed from higher-order cumulants. We prove
+asymptotic correctness under the mild assumption that locally, the number of
+latent variables never exceeds the number of observed variables. Simulation
+studies demonstrate that our method achieves comparable performance to
+overcomplete ICA even though it does not know the number of latents in advance.",http://arxiv.org/pdf/2408.04907v1,,False
+An Evaluation of Standard Statistical Models and LLMs on Time Series Forecasting,09/08/2024,"Rui Cao, Qiao Wang","This research examines the use of Large Language Models (LLMs) in predicting
+time series, with a specific focus on the LLMTIME model. Despite the
+established effectiveness of LLMs in tasks such as text generation, language
+translation, and sentiment analysis, this study highlights the key challenges
+that large language models encounter in the context of time series prediction.
+We assess the performance of LLMTIME across multiple datasets and introduce
+classical almost periodic functions as time series to gauge its effectiveness.
+The empirical results indicate that while large language models can perform
+well in zero-shot forecasting for certain datasets, their predictive accuracy
+diminishes notably when confronted with diverse time series data and
+traditional signals. The primary finding of this study is that the predictive
+capacity of LLMTIME, similar to other LLMs, significantly deteriorates when
+dealing with time series data that contain both periodic and trend components,
+as well as when the signal comprises complex frequency components.",http://arxiv.org/pdf/2408.04867v1,,False
+MDS-GNN: A Mutual Dual-Stream Graph Neural Network on Graphs with Incomplete Features and Structure,09/08/2024,"Peng Yuan, Peng Tang","Graph Neural Networks (GNNs) have emerged as powerful tools for analyzing and
+learning representations from graph-structured data. A crucial prerequisite for
+the outstanding performance of GNNs is the availability of complete graph
+information, i.e., node features and graph structure, which is frequently unmet
+in real-world scenarios since graphs are often incomplete due to various
+uncontrollable factors. Existing approaches only focus on dealing with either
+incomplete features or incomplete structure, which leads to performance loss
+inevitably. To address this issue, this study proposes a mutual dual-stream
+graph neural network (MDS-GNN), which implements a mutual benefit learning
+between features and structure. Its main ideas are as follows: a)
+reconstructing the missing node features based on the initial incomplete graph
+structure; b) generating an augmented global graph based on the reconstructed
+node features, and propagating the incomplete node features on this global
+graph; and c) utilizing contrastive learning to make the dual-stream process
+mutually benefit from each other. Extensive experiments on six real-world
+datasets demonstrate the effectiveness of our proposed MDS-GNN on incomplete
+graphs.",http://arxiv.org/pdf/2408.04845v1,,False
+Improved Robustness for Deep Learning-based Segmentation of Multi-Center Myocardial Perfusion MRI Datasets Using Data Adaptive Uncertainty-guided Space-time Analysis,09/08/2024,"Dilek M. Yalcinkaya, Khalid Youssef, Bobak Heydari, Janet Wei, Noel Bairey Merz, Robert Judd, Rohan Dharmakumar, Orlando P. Simonetti, Jonathan W. Weinsaft, Subha V. Raman, Behzad Sharif","Background. Fully automatic analysis of myocardial perfusion MRI datasets
+enables rapid and objective reporting of stress/rest studies in patients with
+suspected ischemic heart disease. Developing deep learning techniques that can
+analyze multi-center datasets despite limited training data and variations in
+software and hardware is an ongoing challenge.
+  Methods. Datasets from 3 medical centers acquired at 3T (n = 150 subjects)
+were included: an internal dataset (inD; n = 95) and two external datasets
+(exDs; n = 55) used for evaluating the robustness of the trained deep neural
+network (DNN) models against differences in pulse sequence (exD-1) and scanner
+vendor (exD-2). A subset of inD (n = 85) was used for training/validation of a
+pool of DNNs for segmentation, all using the same spatiotemporal U-Net
+architecture and hyperparameters but with different parameter initializations.
+We employed a space-time sliding-patch analysis approach that automatically
+yields a pixel-wise ""uncertainty map"" as a byproduct of the segmentation
+process. In our approach, a given test case is segmented by all members of the
+DNN pool and the resulting uncertainty maps are leveraged to automatically
+select the ""best"" one among the pool of solutions.
+  Results. The proposed DAUGS analysis approach performed similarly to the
+established approach on the internal dataset (p = n.s.) whereas it
+significantly outperformed on the external datasets (p < 0.005 for exD-1 and
+exD-2). Moreover, the number of image series with ""failed"" segmentation was
+significantly lower for the proposed vs. the established approach (4.3% vs.
+17.1%, p < 0.0005).
+  Conclusions. The proposed DAUGS analysis approach has the potential to
+improve the robustness of deep learning methods for segmentation of
+multi-center stress perfusion datasets with variations in the choice of pulse
+sequence, site location or scanner vendor.",http://arxiv.org/pdf/2408.04805v1,,False

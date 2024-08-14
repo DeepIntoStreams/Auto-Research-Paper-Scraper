@@ -1,0 +1,151 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Faster Private Minimum Spanning Trees,13/08/2024,"Rasmus Pagh, Lukas Retschmeier","Motivated by applications in clustering and synthetic data generation, we
+consider the problem of releasing a minimum spanning tree (MST) under
+edge-weight differential privacy constraints where a graph topology $G=(V,E)$
+with $n$ vertices and $m$ edges is public, the weight matrix $\vec{W}\in
+\mathbb{R}^{n \times n}$ is private, and we wish to release an approximate MST
+under $\rho$-zero-concentrated differential privacy. Weight matrices are
+considered neighboring if they differ by at most $\Delta_\infty$ in each entry,
+i.e., we consider an $\ell_\infty$ neighboring relationship. Existing private
+MST algorithms either add noise to each entry in $\vec{W}$ and estimate the MST
+by post-processing or add noise to weights in-place during the execution of a
+specific MST algorithm. Using the post-processing approach with an efficient
+MST algorithm takes $O(n^2)$ time on dense graphs but results in an additive
+error on the weight of the MST of magnitude $O(n^2\log n)$. In-place algorithms
+give asymptotically better utility, but the running time of existing in-place
+algorithms is $O(n^3)$ for dense graphs. Our main result is a new
+differentially private MST algorithm that matches the utility of existing
+in-place methods while running in time $O(m + n^{3/2}\log n)$ for fixed privacy
+parameter $\rho$. The technical core of our algorithm is an efficient sublinear
+time simulation of Report-Noisy-Max that works by discretizing all edge weights
+to a multiple of $\Delta_\infty$ and forming groups of edges with identical
+weights. Specifically, we present a data structure that allows us to sample a
+noisy minimum weight edge among at most $O(n^2)$ cut edges in $O(\sqrt{n} \log
+n)$ time. Experimental evaluations support our claims that our algorithm
+significantly improves previous algorithms either in utility or running time.",http://arxiv.org/pdf/2408.06997v1,,False
+Measuring User Understanding in Dialogue-based XAI Systems,13/08/2024,"Dimitry Mindlin, Amelie Sophie Robrecht, Michael Morasch, Philipp Cimiano","The field of eXplainable Artificial Intelligence (XAI) is increasingly
+recognizing the need to personalize and/or interactively adapt the explanation
+to better reflect users' explanation needs. While dialogue-based approaches to
+XAI have been proposed recently, the state-of-the-art in XAI is still
+characterized by what we call one-shot, non-personalized and one-way
+explanations. In contrast, dialogue-based systems that can adapt explanations
+through interaction with a user promise to be superior to GUI-based or
+dashboard explanations as they offer a more intuitive way of requesting
+information. In general, while interactive XAI systems are often evaluated in
+terms of user satisfaction, there are limited studies that access user's
+objective model understanding. This is in particular the case for
+dialogue-based XAI approaches. In this paper, we close this gap by carrying out
+controlled experiments within a dialogue framework in which we measure
+understanding of users in three phases by asking them to simulate the
+predictions of the model they are learning about. By this, we can quantify the
+level of (improved) understanding w.r.t. how the model works, comparing the
+state prior, and after the interaction. We further analyze the data to reveal
+patterns of how the interaction between groups with high vs. low understanding
+gain differ. Overall, our work thus contributes to our understanding about the
+effectiveness of XAI approaches.",http://arxiv.org/pdf/2408.06960v1,,False
+Diffusion Model for Slate Recommendation,13/08/2024,"Federico Tomasi, Francesco Fabbri, Mounia Lalmas, Zhenwen Dai","Slate recommendation is a technique commonly used on streaming platforms and
+e-commerce sites to present multiple items together. A significant challenge
+with slate recommendation is managing the complex combinatorial choice space.
+Traditional methods often simplify this problem by assuming users engage with
+only one item at a time. However, this simplification does not reflect the
+reality, as users often interact with multiple items simultaneously. In this
+paper, we address the general slate recommendation problem, which accounts for
+simultaneous engagement with multiple items. We propose a generative approach
+using Diffusion Models, leveraging their ability to learn structures in
+high-dimensional data. Our model generates high-quality slates that maximize
+user satisfaction by overcoming the challenges of the combinatorial choice
+space. Furthermore, our approach enhances the diversity of recommendations.
+Extensive offline evaluations on applications such as music playlist generation
+and e-commerce bundle recommendations show that our model outperforms
+state-of-the-art baselines in both relevance and diversity.",http://arxiv.org/pdf/2408.06883v1,,False
+Multimodal Analysis of White Blood Cell Differentiation in Acute Myeloid Leukemia Patients using a β-Variational Autoencoder,13/08/2024,"Gizem Mert, Ario Sadafi, Raheleh Salehi, Nassir Navab, Carsten Marr","Biomedical imaging and RNA sequencing with single-cell resolution improves
+our understanding of white blood cell diseases like leukemia. By combining
+morphological and transcriptomic data, we can gain insights into cellular
+functions and trajectoriess involved in blood cell differentiation. However,
+existing methodologies struggle with integrating morphological and
+transcriptomic data, leaving a significant research gap in comprehensively
+understanding the dynamics of cell differentiation. Here, we introduce an
+unsupervised method that explores and reconstructs these two modalities and
+uncovers the relationship between different subtypes of white blood cells from
+human peripheral blood smears in terms of morphology and their corresponding
+transcriptome. Our method is based on a beta-variational autoencoder
+(\beta-VAE) with a customized loss function, incorporating a R-CNN architecture
+to distinguish single-cell from background and to minimize any interference
+from artifacts. This implementation of \beta-VAE shows good reconstruction
+capability along with continuous latent embeddings, while maintaining clear
+differentiation between single-cell classes. Our novel approach is especially
+helpful to uncover the correlation of two latent features in complex biological
+processes such as formation of granules in the cell (granulopoiesis) with gene
+expression patterns. It thus provides a unique tool to improve the
+understanding of white blood cell maturation for biomedicine and diagnostics.",http://arxiv.org/pdf/2408.06720v1,,False
+Variational Learning of Gaussian Process Latent Variable Models through Stochastic Gradient Annealed Importance Sampling,13/08/2024,"Jian Xu, Shian Du, Junmei Yang, Qianli Ma, Delu Zeng","Gaussian Process Latent Variable Models (GPLVMs) have become increasingly
+popular for unsupervised tasks such as dimensionality reduction and missing
+data recovery due to their flexibility and non-linear nature. An
+importance-weighted version of the Bayesian GPLVMs has been proposed to obtain
+a tighter variational bound. However, this version of the approach is primarily
+limited to analyzing simple data structures, as the generation of an effective
+proposal distribution can become quite challenging in high-dimensional spaces
+or with complex data sets. In this work, we propose an Annealed Importance
+Sampling (AIS) approach to address these issues. By transforming the posterior
+into a sequence of intermediate distributions using annealing, we combine the
+strengths of Sequential Monte Carlo samplers and VI to explore a wider range of
+posterior distributions and gradually approach the target distribution. We
+further propose an efficient algorithm by reparameterizing all variables in the
+evidence lower bound (ELBO). Experimental results on both toy and image
+datasets demonstrate that our method outperforms state-of-the-art methods in
+terms of tighter variational bounds, higher log-likelihoods, and more robust
+convergence.",http://arxiv.org/pdf/2408.06710v1,,False
+Leveraging Priors via Diffusion Bridge for Time Series Generation,13/08/2024,"Jinseong Park, Seungyun Lee, Woojin Jeong, Yujin Choi, Jaewook Lee","Time series generation is widely used in real-world applications such as
+simulation, data augmentation, and hypothesis test techniques. Recently,
+diffusion models have emerged as the de facto approach for time series
+generation, emphasizing diverse synthesis scenarios based on historical or
+correlated time series data streams. Since time series have unique
+characteristics, such as fixed time order and data scaling, standard Gaussian
+prior might be ill-suited for general time series generation. In this paper, we
+exploit the usage of diverse prior distributions for synthesis. Then, we
+propose TimeBridge, a framework that enables flexible synthesis by leveraging
+diffusion bridges to learn the transport between chosen prior and data
+distributions. Our model covers a wide range of scenarios in time series
+diffusion models, which leverages (i) data- and time-dependent priors for
+unconditional synthesis, and (ii) data-scale preserving synthesis with a
+constraint as a prior for conditional generation. Experimentally, our model
+achieves state-of-the-art performance in both unconditional and conditional
+time series generation tasks.",http://arxiv.org/pdf/2408.06672v1,,False
+RW-NSGCN: A Robust Approach to Structural Attacks via Negative Sampling,13/08/2024,"Shuqi He, Jun Zhuang, Ding Wang, Jun Song","Node classification using Graph Neural Networks (GNNs) has been widely
+applied in various practical scenarios, such as predicting user interests and
+detecting communities in social networks. However, recent studies have shown
+that graph-structured networks often contain potential noise and attacks, in
+the form of topological perturbations and weight disturbances, which can lead
+to decreased classification performance in GNNs. To improve the robustness of
+the model, we propose a novel method: Random Walk Negative Sampling Graph
+Convolutional Network (RW-NSGCN). Specifically, RW-NSGCN integrates the Random
+Walk with Restart (RWR) and PageRank (PGR) algorithms for negative sampling and
+employs a Determinantal Point Process (DPP)-based GCN for convolution
+operations. RWR leverages both global and local information to manage noise and
+local variations, while PGR assesses node importance to stabilize the
+topological structure. The DPP-based GCN ensures diversity among negative
+samples and aggregates their features to produce robust node embeddings,
+thereby improving classification performance. Experimental results demonstrate
+that the RW-NSGCN model effectively addresses network topology attacks and
+weight instability, increasing the accuracy of anomaly detection and overall
+stability. In terms of classification accuracy, RW-NSGCN significantly
+outperforms existing methods, showing greater resilience across various
+scenarios and effectively mitigating the impact of such vulnerabilities.",http://arxiv.org/pdf/2408.06665v1,,False
+Unveiling the Flaws: A Critical Analysis of Initialization Effect on Time Series Anomaly Detection,13/08/2024,"Alex Koran, Hadi Hojjati, Narges Armanfard","Deep learning for time-series anomaly detection (TSAD) has gained significant
+attention over the past decade. Despite the reported improvements in several
+papers, the practical application of these models remains limited. Recent
+studies have cast doubt on these models, attributing their results to flawed
+evaluation techniques. However, the impact of initialization has largely been
+overlooked. This paper provides a critical analysis of the initialization
+effects on TSAD model performance. Our extensive experiments reveal that TSAD
+models are highly sensitive to hyperparameters such as window size, seed
+number, and normalization. This sensitivity often leads to significant
+variability in performance, which can be exploited to artificially inflate the
+reported efficacy of these models. We demonstrate that even minor changes in
+initialization parameters can result in performance variations that overshadow
+the claimed improvements from novel model architectures. Our findings highlight
+the need for rigorous evaluation protocols and transparent reporting of
+preprocessing steps to ensure the reliability and fairness of anomaly detection
+methods. This paper calls for a more cautious interpretation of TSAD
+advancements and encourages the development of more robust and transparent
+evaluation practices to advance the field and its practical applications.",http://arxiv.org/pdf/2408.06620v1,,False

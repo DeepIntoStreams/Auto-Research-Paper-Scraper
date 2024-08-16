@@ -1,0 +1,199 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+GSVD-NMF: Recovering Missing Features in Non-negative Matrix Factorization,15/08/2024,"Youdong Guo, Timothy E. Holy","Non-negative matrix factorization (NMF) is an important tool in signal
+processing and widely used to separate mixed sources into their components.
+However, NMF is NP-hard and thus may fail to discover the ideal factorization;
+moreover, the number of components may not be known in advance and thus
+features may be missed or incompletely separated. To recover missing components
+from under-complete NMF, we introduce GSVD-NMF, which proposes new components
+based on the generalized singular value decomposition (GSVD) between
+preliminary NMF results and the SVD of the original matrix. Simulation and
+experimental results demonstrate that GSVD-NMF often recovers missing features
+from under-complete NMF and helps NMF achieve better local optima.",http://arxiv.org/pdf/2408.08260v1,,False
+Derivative-Free Guidance in Continuous and Discrete Diffusion Models with Soft Value-Based Decoding,15/08/2024,"Xiner Li, Yulai Zhao, Chenyu Wang, Gabriele Scalia, Gokcen Eraslan, Surag Nair, Tommaso Biancalani, Aviv Regev, Sergey Levine, Masatoshi Uehara","Diffusion models excel at capturing the natural design spaces of images,
+molecules, DNA, RNA, and protein sequences. However, rather than merely
+generating designs that are natural, we often aim to optimize downstream reward
+functions while preserving the naturalness of these design spaces. Existing
+methods for achieving this goal often require ``differentiable'' proxy models
+(\textit{e.g.}, classifier guidance or DPS) or involve computationally
+expensive fine-tuning of diffusion models (\textit{e.g.}, classifier-free
+guidance, RL-based fine-tuning). In our work, we propose a new method to
+address these challenges. Our algorithm is an iterative sampling method that
+integrates soft value functions, which looks ahead to how intermediate noisy
+states lead to high rewards in the future, into the standard inference
+procedure of pre-trained diffusion models. Notably, our approach avoids
+fine-tuning generative models and eliminates the need to construct
+differentiable models. This enables us to (1) directly utilize
+non-differentiable features/reward feedback, commonly used in many scientific
+domains, and (2) apply our method to recent discrete diffusion models in a
+principled way. Finally, we demonstrate the effectiveness of our algorithm
+across several domains, including image generation, molecule generation, and
+DNA/RNA sequence generation. The code is available at
+\href{https://github.com/masa-ue/SVDD}{https://github.com/masa-ue/SVDD}.",http://arxiv.org/pdf/2408.08252v1,,False
+LLM4DSR: Leveraing Large Language Model for Denoising Sequential Recommendation,15/08/2024,"Bohao Wang, Feng Liu, Jiawei Chen, Yudi Wu, Xingyu Lou, Jun Wang, Yan Feng, Chun Chen, Can Wang","Sequential recommendation systems fundamentally rely on users' historical
+interaction sequences, which are often contaminated by noisy interactions.
+Identifying these noisy interactions accurately without additional information
+is particularly difficult due to the lack of explicit supervisory signals to
+denote noise. Large Language Models (LLMs), equipped with extensive open
+knowledge and semantic reasoning abilities, present a promising avenue to
+bridge this information gap. However, employing LLMs for denoising in
+sequential recommendation introduces notable challenges: 1) Direct application
+of pretrained LLMs may not be competent for the denoising task, frequently
+generating nonsensical responses; 2) Even after fine-tuning, the reliability of
+LLM outputs remains questionable, especially given the complexity of the task
+and th inherent hallucinatory issue of LLMs.
+  To tackle these challenges, we propose LLM4DSR, a tailored approach for
+denoising sequential recommendation using LLMs. We constructed a
+self-supervised fine-tuning task to activate LLMs' capabilities to identify
+noisy items and suggest replacements. Furthermore, we developed an uncertainty
+estimation module that ensures only high-confidence responses are utilized for
+sequence corrections. Remarkably, LLM4DSR is model-agnostic, allowing the
+corrected sequences to be flexibly applied across various recommendation
+models. Extensive experiments validate the superiority of LLM4DSR over existing
+methods across three datasets and three recommendation backbones.",http://arxiv.org/pdf/2408.08208v1,,False
+Scaling Up Natural Language Understanding for Multi-Robots Through the Lens of Hierarchy,15/08/2024,"Shaojun Xu, Xusheng Luo, Yutong Huang, Letian Leng, Ruixuan Liu, Changliu Liu","Long-horizon planning is hindered by challenges such as uncertainty
+accumulation, computational complexity, delayed rewards and incomplete
+information. This work proposes an approach to exploit the task hierarchy from
+human instructions to facilitate multi-robot planning. Using Large Language
+Models (LLMs), we propose a two-step approach to translate multi-sentence
+instructions into a structured language, Hierarchical Linear Temporal Logic
+(LTL), which serves as a formal representation for planning. Initially, LLMs
+transform the instructions into a hierarchical representation defined as
+Hierarchical Task Tree, capturing the logical and temporal relations among
+tasks. Following this, a domain-specific fine-tuning of LLM translates
+sub-tasks of each task into flat LTL formulas, aggregating them to form
+hierarchical LTL specifications. These specifications are then leveraged for
+planning using off-the-shelf planners. Our framework not only bridges the gap
+between instructions and algorithmic planning but also showcases the potential
+of LLMs in harnessing hierarchical reasoning to automate multi-robot task
+planning. Through evaluations in both simulation and real-world experiments
+involving human participants, we demonstrate that our method can handle more
+complex instructions compared to existing methods. The results indicate that
+our approach achieves higher success rates and lower costs in multi-robot task
+allocation and plan generation. Demos videos are available at
+https://youtu.be/7WOrDKxIMIs .",http://arxiv.org/pdf/2408.08188v1,,False
+General-purpose Clothes Manipulation with Semantic Keypoints,15/08/2024,"Yuhong Deng, David Hsu","We have seen much recent progress in task-specific clothes manipulation, but
+generalizable clothes manipulation is still a challenge. Clothes manipulation
+requires sequential actions, making it challenging to generalize to unseen
+tasks. Besides, a general clothes state representation method is crucial. In
+this paper, we adopt language instructions to specify and decompose clothes
+manipulation tasks, and propose a large language model based hierarchical
+learning method to enhance generalization. For state representation, we use
+semantic keypoints to capture the geometry of clothes and outline their
+manipulation methods. Simulation experiments show that the proposed method
+outperforms the baseline method in terms of success rate and generalization for
+clothes manipulation tasks.",http://arxiv.org/pdf/2408.08160v1,,False
+The Unreasonable Effectiveness of Solving Inverse Problems with Neural Networks,15/08/2024,"Philipp Holl, Nils Thuerey","Finding model parameters from data is an essential task in science and
+engineering, from weather and climate forecasts to plasma control. Previous
+works have employed neural networks to greatly accelerate finding solutions to
+inverse problems. Of particular interest are end-to-end models which utilize
+differentiable simulations in order to backpropagate feedback from the
+simulated process to the network weights and enable roll-out of multiple time
+steps. So far, it has been assumed that, while model inference is faster than
+classical optimization, this comes at the cost of a decrease in solution
+accuracy. We show that this is generally not true. In fact, neural networks
+trained to learn solutions to inverse problems can find better solutions than
+classical optimizers even on their training set. To demonstrate this, we
+perform both a theoretical analysis as well an extensive empirical evaluation
+on challenging problems involving local minima, chaos, and zero-gradient
+regions. Our findings suggest an alternative use for neural networks: rather
+than generalizing to new data for fast inference, they can also be used to find
+better solutions on known data.",http://arxiv.org/pdf/2408.08119v1,,False
+Learned denoising with simulated and experimental low-dose CT data,15/08/2024,"Maximilian B. Kiss, Ander Biguri, Carola-Bibiane Schönlieb, K. Joost Batenburg, Felix Lucka","Like in many other research fields, recent developments in computational
+imaging have focused on developing machine learning (ML) approaches to tackle
+its main challenges. To improve the performance of computational imaging
+algorithms, machine learning methods are used for image processing tasks such
+as noise reduction. Generally, these ML methods heavily rely on the
+availability of high-quality data on which they are trained. This work explores
+the application of ML methods, specifically convolutional neural networks
+(CNNs), in the context of noise reduction for computed tomography (CT) imaging.
+We utilize a large 2D computed tomography dataset for machine learning to carry
+out for the first time a comprehensive study on the differences between the
+observed performances of algorithms trained on simulated noisy data and on
+real-world experimental noisy data. The study compares the performance of two
+common CNN architectures, U-Net and MSD-Net, that are trained and evaluated on
+both simulated and experimental noisy data. The results show that while
+sinogram denoising performed better with simulated noisy data if evaluated in
+the sinogram domain, the performance did not carry over to the reconstruction
+domain where training on experimental noisy data shows a higher performance in
+denoising experimental noisy data. Training the algorithms in an end-to-end
+fashion from sinogram to reconstruction significantly improved model
+performance, emphasizing the importance of matching raw measurement data to
+high-quality CT reconstructions. The study furthermore suggests the need for
+more sophisticated noise simulation approaches to bridge the gap between
+simulated and real-world data in CT image denoising applications and gives
+insights into the challenges and opportunities in leveraging simulated data for
+machine learning in computational imaging.",http://arxiv.org/pdf/2408.08115v1,,False
+COTODE: COntinuous Trajectory neural Ordinary Differential Equations for modelling event sequences,15/08/2024,"Ilya Kuleshov, Galina Boeva, Vladislav Zhuzhel, Evgenia Romanenkova, Evgeni Vorsin, Alexey Zaytsev","Observation of the underlying actors that generate event sequences reveals
+that they often evolve continuously. Most modern methods, however, tend to
+model such processes through at most piecewise-continuous trajectories. To
+address this, we adopt a way of viewing events not as standalone phenomena but
+instead as observations of a Gaussian Process, which in turn governs the
+actor's dynamics. We propose integrating these obtained dynamics, resulting in
+a continuous-trajectory modification of the widely successful Neural ODE model.
+Through Gaussian Process theory, we were able to evaluate the uncertainty in an
+actor's representation, which arises from not observing them between events.
+This estimate led us to develop a novel, theoretically backed negative feedback
+mechanism. Empirical studies indicate that our model with Gaussian process
+interpolation and negative feedback achieves state-of-the-art performance, with
+improvements up to 20% AUROC against similar architectures.",http://arxiv.org/pdf/2408.08055v1,,False
+Causal Discovery from Time-Series Data with Short-Term Invariance-Based Convolutional Neural Networks,15/08/2024,"Rujia Shen, Boran Wang, Chao Zhao, Yi Guan, Jingchi Jiang","Causal discovery from time-series data aims to capture both intra-slice
+(contemporaneous) and inter-slice (time-lagged) causality between variables
+within the temporal chain, which is crucial for various scientific disciplines.
+Compared to causal discovery from non-time-series data, causal discovery from
+time-series data necessitates more serialized samples with a larger amount of
+observed time steps. To address the challenges, we propose a novel
+gradient-based causal discovery approach STIC, which focuses on
+\textbf{S}hort-\textbf{T}erm \textbf{I}nvariance using \textbf{C}onvolutional
+neural networks to uncover the causal relationships from time-series data.
+Specifically, STIC leverages both the short-term time and mechanism invariance
+of causality within each window observation, which possesses the property of
+independence, to enhance sample efficiency. Furthermore, we construct two
+causal convolution kernels, which correspond to the short-term time and
+mechanism invariance respectively, to estimate the window causal graph. To
+demonstrate the necessity of convolutional neural networks for causal discovery
+from time-series data, we theoretically derive the equivalence between
+convolution and the underlying generative principle of time-series data under
+the assumption that the additive noise model is identifiable. Experimental
+evaluations conducted on both synthetic and FMRI benchmark datasets demonstrate
+that our STIC outperforms baselines significantly and achieves the
+state-of-the-art performance, particularly when the datasets contain a limited
+number of observed time steps. Code is available at
+\url{https://github.com/HITshenrj/STIC}.",http://arxiv.org/pdf/2408.08023v1,,False
+The mean-variance portfolio selection based on the average and current profitability of the risky asset,15/08/2024,"Yu Li, Yuhan Wu, Shuhua Zhang","We study the continuous-time pre-commitment mean-variance portfolio selection
+in a time-varying financial market. By introducing two indexes which
+respectively express the average profitability of the risky asset (AP) and the
+current profitability of the risky asset (CP), the optimal portfolio selection
+is represented by AP and CP. Furthermore, instead of the traditional maximum
+likelihood estimation (MLE) of return rate and volatility of the risky asset,
+we estimate AP and CP with the second-order variation of an auxiliary wealth
+process. We prove that the estimations of AP and CP in this paper are more
+accurate than that in MLE. And, the portfolio selection is implemented in
+various simulated and real financial markets. Numerical studies confirm the
+superior performance of our portfolio selection with the estimation of AP and
+CP under various evaluation criteria.",http://arxiv.org/pdf/2408.07969v1,,False
+RandomNet: Clustering Time Series Using Untrained Deep Neural Networks,15/08/2024,"Xiaosheng Li, Wenjie Xi, Jessica Lin","Neural networks are widely used in machine learning and data mining.
+Typically, these networks need to be trained, implying the adjustment of
+weights (parameters) within the network based on the input data. In this work,
+we propose a novel approach, RandomNet, that employs untrained deep neural
+networks to cluster time series. RandomNet uses different sets of random
+weights to extract diverse representations of time series and then ensembles
+the clustering relationships derived from these different representations to
+build the final clustering results. By extracting diverse representations, our
+model can effectively handle time series with different characteristics. Since
+all parameters are randomly generated, no training is required during the
+process. We provide a theoretical analysis of the effectiveness of the method.
+To validate its performance, we conduct extensive experiments on all of the 128
+datasets in the well-known UCR time series archive and perform statistical
+analysis of the results. These datasets have different sizes, sequence lengths,
+and they are from diverse fields. The experimental results show that the
+proposed method is competitive compared with existing state-of-the-art methods.",http://arxiv.org/pdf/2408.07956v1,10.1007/s10618-024-01048-5,False
+A Systematic Evaluation of Generated Time Series and Their Effects in Self-Supervised Pretraining,15/08/2024,"Audrey Der, Chin-Chia Michael Yeh, Xin Dai, Huiyuan Chen, Yan Zheng, Yujie Fan, Zhongfang Zhuang, Vivian Lai, Junpeng Wang, Liang Wang, Wei Zhang, Eamonn Keogh","Self-supervised Pretrained Models (PTMs) have demonstrated remarkable
+performance in computer vision and natural language processing tasks. These
+successes have prompted researchers to design PTMs for time series data. In our
+experiments, most self-supervised time series PTMs were surpassed by simple
+supervised models. We hypothesize this undesired phenomenon may be caused by
+data scarcity. In response, we test six time series generation methods, use the
+generated data in pretraining in lieu of the real data, and examine the effects
+on classification performance. Our results indicate that replacing a real-data
+pretraining set with a greater volume of only generated samples produces
+noticeable improvement.",http://arxiv.org/pdf/2408.07869v1,,False

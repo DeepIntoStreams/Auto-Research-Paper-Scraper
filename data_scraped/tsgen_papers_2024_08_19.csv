@@ -1,0 +1,189 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Accelerating Giant Impact Simulations with Machine Learning,16/08/2024,"Caleb Lammers, Miles Cranmer, Sam Hadden, Shirley Ho, Norman Murray, Daniel Tamayo","Constraining planet formation models based on the observed exoplanet
+population requires generating large samples of synthetic planetary systems,
+which can be computationally prohibitive. A significant bottleneck is
+simulating the giant impact phase, during which planetary embryos evolve
+gravitationally and combine to form planets, which may themselves experience
+later collisions. To accelerate giant impact simulations, we present a machine
+learning (ML) approach to predicting collisional outcomes in multiplanet
+systems. Trained on more than 500,000 $N$-body simulations of three-planet
+systems, we develop an ML model that can accurately predict which two planets
+will experience a collision, along with the state of the post-collision
+planets, from a short integration of the system's initial conditions. Our model
+greatly improves on non-ML baselines that rely on metrics from dynamics theory,
+which struggle to accurately predict which pair of planets will experience a
+collision. By combining with a model for predicting long-term stability, we
+create an efficient ML-based giant impact emulator, which can predict the
+outcomes of giant impact simulations with a speedup of up to four orders of
+magnitude. We expect our model to enable analyses that would not otherwise be
+computationally feasible. As such, we release our full training code, along
+with an easy-to-use API for our collision outcome model and giant impact
+emulator.",http://arxiv.org/pdf/2408.08873v1,,False
+Entropy Coding of Unordered Data Structures,16/08/2024,"Julius Kunze, Daniel Severo, Giulio Zani, Jan-Willem van de Meent, James Townsend","We present shuffle coding, a general method for optimal compression of
+sequences of unordered objects using bits-back coding. Data structures that can
+be compressed using shuffle coding include multisets, graphs, hypergraphs, and
+others. We release an implementation that can easily be adapted to different
+data types and statistical models, and demonstrate that our implementation
+achieves state-of-the-art compression rates on a range of graph datasets
+including molecular data.",http://arxiv.org/pdf/2408.08837v1,,False
+A Transparency Paradox? Investigating the Impact of Explanation Specificity and Autonomous Vehicle Perceptual Inaccuracies on Passengers,16/08/2024,"Daniel Omeiza, Raunak Bhattacharyya, Marina Jirotka, Nick Hawes, Lars Kunze","Transparency in automated systems could be afforded through the provision of
+intelligible explanations. While transparency is desirable, might it lead to
+catastrophic outcomes (such as anxiety), that could outweigh its benefits? It's
+quite unclear how the specificity of explanations (level of transparency)
+influences recipients, especially in autonomous driving (AD). In this work, we
+examined the effects of transparency mediated through varying levels of
+explanation specificity in AD. We first extended a data-driven explainer model
+by adding a rule-based option for explanation generation in AD, and then
+conducted a within-subject lab study with 39 participants in an immersive
+driving simulator to study the effect of the resulting explanations.
+Specifically, our investigation focused on: (1) how different types of
+explanations (specific vs. abstract) affect passengers' perceived safety,
+anxiety, and willingness to take control of the vehicle when the vehicle
+perception system makes erroneous predictions; and (2) the relationship between
+passengers' behavioural cues and their feelings during the autonomous drives.
+Our findings showed that passengers felt safer with specific explanations when
+the vehicle's perception system had minimal errors, while abstract explanations
+that hid perception errors led to lower feelings of safety. Anxiety levels
+increased when specific explanations revealed perception system errors (high
+transparency). We found no significant link between passengers' visual patterns
+and their anxiety levels. Our study suggests that passengers prefer clear and
+specific explanations (high transparency) when they originate from autonomous
+vehicles (AVs) with optimal perceptual accuracy.",http://arxiv.org/pdf/2408.08785v1,,False
+Beam Prediction based on Large Language Models,16/08/2024,"Yucheng Sheng, Kai Huang, Le Liang, Peng Liu, Shi Jin, Geoffrey Ye Li","Millimeter-wave (mmWave) communication is promising for next-generation
+wireless networks but suffers from significant path loss, requiring extensive
+antenna arrays and frequent beam training. Traditional deep learning models,
+such as long short-term memory (LSTM), enhance beam tracking accuracy however
+are limited by poor robustness and generalization. In this letter, we use large
+language models (LLMs) to improve the robustness of beam prediction. By
+converting time series data into text-based representations and employing the
+Prompt-as-Prefix (PaP) technique for contextual enrichment, our approach
+unleashes the strength of LLMs for time series forecasting. Simulation results
+demonstrate that our LLM-based method offers superior robustness and
+generalization compared to LSTM-based models, showcasing the potential of LLMs
+in wireless communications.",http://arxiv.org/pdf/2408.08707v1,,False
+Turning Trash into Treasure: Accelerating Inference of Large Language Models with Token Recycling,16/08/2024,"Xianzhen Luo, Yixuan Wang, Qingfu Zhu, Zhiming Zhang, Xuanyu Zhang, Qing Yang, Dongliang Xu, Wanxiang Che","The rapid growth in the parameters of large language models (LLMs) has made
+inference latency a fundamental bottleneck, limiting broader application of
+LLMs. Speculative decoding represents a lossless approach to accelerate
+inference through a guess-and-verify paradigm, leveraging the parallel
+capabilities of modern hardware. Some speculative decoding methods rely on
+additional structures to guess draft tokens, such as small models or
+parameter-efficient architectures, which need extra training before use.
+Alternatively, retrieval-based train-free techniques build libraries from
+pre-existing corpora or by n-gram generation. However, they face challenges
+like large storage requirements, time-consuming retrieval, and limited
+adaptability. Observing that candidate tokens generated during the decoding
+process are likely to reoccur in future sequences, we propose Token Recycling.
+This approach stores candidate tokens in an adjacency matrix and employs a
+breadth-first search (BFS)-like algorithm on the matrix to construct a draft
+tree. The tree is then validated through tree attention. New candidate tokens
+from the decoding process are then used to update the matrix. Token Recycling
+requires \textless2MB of additional storage and achieves approximately 2x
+speedup across all sizes of LLMs. It significantly outperforms existing
+train-free methods by 30\% and even a training method by 25\%. It can be
+directly applied to any existing LLMs and tasks without the need for
+adaptation.",http://arxiv.org/pdf/2408.08696v1,,False
+SC-Rec: Enhancing Generative Retrieval with Self-Consistent Reranking for~Sequential Recommendation,16/08/2024,"Tongyoung Kim, Soojin Yoon, Seongku Kang, Jinyoung Yeo, Dongha Lee","Language Models (LMs) are increasingly employed in recommendation systems due
+to their advanced language understanding and generation capabilities. Recent
+recommender systems based on generative retrieval have leveraged the
+inferential abilities of LMs to directly generate the index tokens of the next
+item, based on item sequences within the user's interaction history. Previous
+studies have mostly focused on item indices based solely on textual semantic or
+collaborative information. However, although the standalone effectiveness of
+these aspects has been demonstrated, the integration of this information has
+remained unexplored. Our in-depth analysis finds that there is a significant
+difference in the knowledge captured by the model from heterogeneous item
+indices and diverse input prompts, which can have a high potential for
+complementarity. In this paper, we propose SC-Rec, a unified recommender system
+that learns diverse preference knowledge from two distinct item indices and
+multiple prompt templates. Furthermore, SC-Rec adopts a novel reranking
+strategy that aggregates a set of ranking results, inferred based on different
+indices and prompts, to achieve the self-consistency of the model. Our
+empirical evaluation on three real-world datasets demonstrates that SC-Rec
+considerably outperforms the state-of-the-art methods for sequential
+recommendation, effectively incorporating complementary knowledge from varied
+outputs of the model.",http://arxiv.org/pdf/2408.08686v1,,False
+Fine-tuning LLMs for Autonomous Spacecraft Control: A Case Study Using Kerbal Space Program,16/08/2024,"Alejandro Carrasco, Victor Rodriguez-Fernandez, Richard Linares","Recent trends are emerging in the use of Large Language Models (LLMs) as
+autonomous agents that take actions based on the content of the user text
+prompt. This study explores the use of fine-tuned Large Language Models (LLMs)
+for autonomous spacecraft control, using the Kerbal Space Program Differential
+Games suite (KSPDG) as a testing environment. Traditional Reinforcement
+Learning (RL) approaches face limitations in this domain due to insufficient
+simulation capabilities and data. By leveraging LLMs, specifically fine-tuning
+models like GPT-3.5 and LLaMA, we demonstrate how these models can effectively
+control spacecraft using language-based inputs and outputs. Our approach
+integrates real-time mission telemetry into textual prompts processed by the
+LLM, which then generate control actions via an agent. The results open a
+discussion about the potential of LLMs for space operations beyond their
+nominal use for text-related tasks. Future work aims to expand this methodology
+to other space control tasks and evaluate the performance of different LLM
+families. The code is available at this URL:
+\texttt{https://github.com/ARCLab-MIT/kspdg}.",http://arxiv.org/pdf/2408.08676v1,,False
+Robust Stochastic Shortest-Path Planning via Risk-Sensitive Incremental Sampling,16/08/2024,"Clinton Enwerem, Erfaun Noorani, John S. Baras, Brian M. Sadler","With the pervasiveness of Stochastic Shortest-Path (SSP) problems in
+high-risk industries, such as last-mile autonomous delivery and supply chain
+management, robust planning algorithms are crucial for ensuring successful task
+completion while mitigating hazardous outcomes. Mainstream chance-constrained
+incremental sampling techniques for solving SSP problems tend to be overly
+conservative and typically do not consider the likelihood of undesirable tail
+events. We propose an alternative risk-aware approach inspired by the
+asymptotically-optimal Rapidly-Exploring Random Trees (RRT*) planning
+algorithm, which selects nodes along path segments with minimal Conditional
+Value-at-Risk (CVaR). Our motivation rests on the step-wise coherence of the
+CVaR risk measure and the optimal substructure of the SSP problem. Thus,
+optimizing with respect to the CVaR at each sampling iteration necessarily
+leads to an optimal path in the limit of the sample size. We validate our
+approach via numerical path planning experiments in a two-dimensional grid
+world with obstacles and stochastic path-segment lengths. Our simulation
+results show that incorporating risk into the tree growth process yields paths
+with lengths that are significantly less sensitive to variations in the noise
+parameter, or equivalently, paths that are more robust to environmental
+uncertainty. Algorithmic analyses reveal similar query time and memory space
+complexity to the baseline RRT* procedure, with only a marginal increase in
+processing time. This increase is offset by significantly lower noise
+sensitivity and reduced planner failure rates.",http://arxiv.org/pdf/2408.08668v1,,False
+A new perspective on Bayesian Operational Modal Analysis,16/08/2024,"Brandon J. O'Connell, Max D. Champneys, Timothy J. Rogers","In the field of operational modal analysis (OMA), obtained modal information
+is frequently used to assess the current state of aerospace, mechanical,
+offshore and civil structures. However, the stochasticity of operational
+systems and the lack of forcing information can lead to inconsistent results.
+Quantifying the uncertainty of the recovered modal parameters through OMA is
+therefore of significant value. In this article, a new perspective on Bayesian
+OMA is proposed: a Bayesian stochastic subspace identification (SSI) algorithm.
+Distinct from existing approaches to Bayesian OMA, a hierarchical probabilistic
+model is embedded at the core of covariance-driven SSI. Through substitution of
+canonical correlation analysis with a Bayesian equivalent, posterior
+distributions over the modal properties are obtained. Two inference schemes are
+presented for the proposed Bayesian formulation: Markov Chain Monte Carlo and
+variational Bayes. Two case studies are then explored. The first is benchmark
+study using data from a simulated, multi degree-of-freedom, linear system.
+Following application of Bayesian SSI, it is shown that the same posterior is
+targeted and recovered by both inference schemes, with good agreement between
+the posterior mean and the conventional SSI result. The second study applies
+the variational form to data obtained from an in-service structure: The Z24
+bridge. The results of this study are presented at single model orders, and
+then using a stabilisation diagram. The recovered posterior uncertainty is
+presented and compared to the classic SSI result. It is observed that the
+posterior distributions with mean values coinciding with the natural
+frequencies exhibit lower variance than values situated away from the natural
+frequencies.",http://arxiv.org/pdf/2408.08664v1,,False
+Adversarial Contrastive Learning Based Physics-Informed Temporal Networks for Cuffless Blood Pressure Estimation,16/08/2024,"Rui Wang, Mengshi Qi, Yingxia Shao, Anfu Zhou, Huadong Ma","Time series data mining is immensely important in extensive applications,
+such as traffic, medical, and e-commerce. In this paper, we focus on medical
+temporal variation modeling, \emph{i.e.,} cuffless blood pressure (BP)
+monitoring which has great value in cardiovascular healthcare. Although
+providing a comfortable user experience, such methods are suffering from the
+demand for a significant amount of realistic data to train an individual model
+for each subject, especially considering the invasive or obtrusive BP
+ground-truth measurements. To tackle this challenge, we introduce a novel
+physics-informed temporal network~(PITN) with adversarial contrastive learning
+to enable precise BP estimation with very limited data. Specifically, we first
+enhance the physics-informed neural network~(PINN) with the temporal block for
+investigating BP dynamics' multi-periodicity for personal cardiovascular cycle
+modeling and temporal variation. We then employ adversarial training to
+generate extra physiological time series data, improving PITN's robustness in
+the face of sparse subject-specific training data. Furthermore, we utilize
+contrastive learning to capture the discriminative variations of cardiovascular
+physiologic phenomena. This approach aggregates physiological signals with
+similar blood pressure values in latent space while separating clusters of
+samples with dissimilar blood pressure values. Experiments on three
+widely-adopted datasets with different modailties (\emph{i.e.,} bioimpedance,
+PPG, millimeter-wave) demonstrate the superiority and effectiveness of the
+proposed methods over previous state-of-the-art approaches. The code is
+available at~\url{https://github.com/Zest86/ACL-PITN}.",http://arxiv.org/pdf/2408.08488v1,,False

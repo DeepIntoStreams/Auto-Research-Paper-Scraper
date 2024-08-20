@@ -1,0 +1,250 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Demystifying the Communication Characteristics for Distributed Transformer Models,19/08/2024,"Quentin Anthony, Benjamin Michalowicz, Jacob Hatef, Lang Xu, Mustafa Abduljabbar, Aamir Shafi, Hari Subramoni, Dhabaleswar Panda","Deep learning (DL) models based on the transformer architecture have
+revolutionized many DL applications such as large language models (LLMs),
+vision transformers, audio generation, and time series prediction. Much of this
+progress has been fueled by distributed training, yet distributed communication
+remains a substantial bottleneck to training progress. This paper examines the
+communication behavior of transformer models - that is, how different
+parallelism schemes used in multi-node/multi-GPU DL Training communicate data
+in the context of transformers. We use GPT-based language models as a case
+study of the transformer architecture due to their ubiquity. We validate the
+empirical results obtained from our communication logs using analytical models.
+At a high level, our analysis reveals a need to optimize small message
+point-to-point communication further, correlations between sequence length,
+per-GPU throughput, model size, and optimizations used, and where to
+potentially guide further optimizations in framework and HPC middleware design
+and optimization.",http://arxiv.org/pdf/2408.10197v1,,False
+Physics-Aware Combinatorial Assembly Planning using Deep Reinforcement Learning,19/08/2024,"Ruixuan Liu, Alan Chen, Weiye Zhao, Changliu Liu","Combinatorial assembly uses standardized unit primitives to build objects
+that satisfy user specifications. Lego is a widely used platform for
+combinatorial assembly, in which people use unit primitives (ie Lego bricks) to
+build highly customizable 3D objects. This paper studies sequence planning for
+physical combinatorial assembly using Lego. Given the shape of the desired
+object, we want to find a sequence of actions for placing Lego bricks to build
+the target object. In particular, we aim to ensure the planned assembly
+sequence is physically executable. However, assembly sequence planning (ASP)
+for combinatorial assembly is particularly challenging due to its combinatorial
+nature, ie the vast number of possible combinations and complex constraints. To
+address the challenges, we employ deep reinforcement learning to learn a
+construction policy for placing unit primitives sequentially to build the
+desired object. Specifically, we design an online physics-aware action mask
+that efficiently filters out invalid actions and guides policy learning. In the
+end, we demonstrate that the proposed method successfully plans physically
+valid assembly sequences for constructing different Lego structures. The
+generated construction plan can be executed in real.",http://arxiv.org/pdf/2408.10162v1,,False
+Customizing Language Models with Instance-wise LoRA for Sequential Recommendation,19/08/2024,"Xiaoyu Kong, Jiancan Wu, An Zhang, Leheng Sheng, Hui Lin, Xiang Wang, Xiangnan He","Sequential recommendation systems predict a user's next item of interest by
+analyzing past interactions, aligning recommendations with individual
+preferences. Leveraging the strengths of Large Language Models (LLMs) in
+knowledge comprehension and reasoning, recent approaches have applied LLMs to
+sequential recommendation through language generation paradigms. These methods
+convert user behavior sequences into prompts for LLM fine-tuning, utilizing
+Low-Rank Adaptation (LoRA) modules to refine recommendations. However, the
+uniform application of LoRA across diverse user behaviors sometimes fails to
+capture individual variability, leading to suboptimal performance and negative
+transfer between disparate sequences. To address these challenges, we propose
+Instance-wise LoRA (iLoRA), integrating LoRA with the Mixture of Experts (MoE)
+framework. iLoRA creates a diverse array of experts, each capturing specific
+aspects of user preferences, and introduces a sequence representation guided
+gate function. This gate function processes historical interaction sequences to
+generate enriched representations, guiding the gating network to output
+customized expert participation weights. This tailored approach mitigates
+negative transfer and dynamically adjusts to diverse behavior patterns.
+Extensive experiments on three benchmark datasets demonstrate the effectiveness
+of iLoRA, highlighting its superior performance compared to existing methods in
+capturing user-specific preferences and improving recommendation accuracy.",http://arxiv.org/pdf/2408.10159v1,,False
+Geometry Informed Tokenization of Molecules for Language Model Generation,19/08/2024,"Xiner Li, Limei Wang, Youzhi Luo, Carl Edwards, Shurui Gui, Yuchao Lin, Heng Ji, Shuiwang Ji","We consider molecule generation in 3D space using language models (LMs),
+which requires discrete tokenization of 3D molecular geometries. Although
+tokenization of molecular graphs exists, that for 3D geometries is largely
+unexplored. Here, we attempt to bridge this gap by proposing the Geo2Seq, which
+converts molecular geometries into $SE(3)$-invariant 1D discrete sequences.
+Geo2Seq consists of canonical labeling and invariant spherical representation
+steps, which together maintain geometric and atomic fidelity in a format
+conducive to LMs. Our experiments show that, when coupled with Geo2Seq, various
+LMs excel in molecular geometry generation, especially in controlled generation
+tasks.",http://arxiv.org/pdf/2408.10120v1,,False
+Personalizing Reinforcement Learning from Human Feedback with Variational Preference Learning,19/08/2024,"Sriyash Poddar, Yanming Wan, Hamish Ivison, Abhishek Gupta, Natasha Jaques","Reinforcement Learning from Human Feedback (RLHF) is a powerful paradigm for
+aligning foundation models to human values and preferences. However, current
+RLHF techniques cannot account for the naturally occurring differences in
+individual human preferences across a diverse population. When these
+differences arise, traditional RLHF frameworks simply average over them,
+leading to inaccurate rewards and poor performance for individual subgroups. To
+address the need for pluralistic alignment, we develop a class of multimodal
+RLHF methods. Our proposed techniques are based on a latent variable
+formulation - inferring a novel user-specific latent and learning reward models
+and policies conditioned on this latent without additional user-specific data.
+While conceptually simple, we show that in practice, this reward modeling
+requires careful algorithmic considerations around model architecture and
+reward scaling. To empirically validate our proposed technique, we first show
+that it can provide a way to combat underspecification in simulated control
+problems, inferring and optimizing user-specific reward functions. Next, we
+conduct experiments on pluralistic language datasets representing diverse user
+preferences and demonstrate improved reward function accuracy. We additionally
+show the benefits of this probabilistic framework in terms of measuring
+uncertainty, and actively learning user preferences. This work enables learning
+from diverse populations of users with divergent preferences, an important
+challenge that naturally occurs in problems from robot learning to foundation
+model alignment.",http://arxiv.org/pdf/2408.10075v1,,False
+Uniting contrastive and generative learning for event sequences models,19/08/2024,"Aleksandr Yugay, Alexey Zaytsev","High-quality representation of transactional sequences is vital for modern
+banking applications, including risk management, churn prediction, and
+personalized customer offers. Different tasks require distinct representation
+properties: local tasks benefit from capturing the client's current state,
+while global tasks rely on general behavioral patterns. Previous research has
+demonstrated that various self-supervised approaches yield representations that
+better capture either global or local qualities.
+  This study investigates the integration of two self-supervised learning
+techniques - instance-wise contrastive learning and a generative approach based
+on restoring masked events in latent space. The combined approach creates
+representations that balance local and global transactional data
+characteristics. Experiments conducted on several public datasets, focusing on
+sequence classification and next-event type prediction, show that the
+integrated method achieves superior performance compared to individual
+approaches and demonstrates synergistic effects. These findings suggest that
+the proposed approach offers a robust framework for advancing event sequences
+representation learning in the financial sector.",http://arxiv.org/pdf/2408.09995v1,,False
+Caption-Driven Explorations: Aligning Image and Text Embeddings through Human-Inspired Foveated Vision,19/08/2024,"Dario Zanca, Andrea Zugarini, Simon Dietz, Thomas R. Altstidl, Mark A. Turban Ndjeuha, Leo Schwinn, Bjoern Eskofier","Understanding human attention is crucial for vision science and AI. While
+many models exist for free-viewing, less is known about task-driven image
+exploration. To address this, we introduce CapMIT1003, a dataset with captions
+and click-contingent image explorations, to study human attention during the
+captioning task. We also present NevaClip, a zero-shot method for predicting
+visual scanpaths by combining CLIP models with NeVA algorithms. NevaClip
+generates fixations to align the representations of foveated visual stimuli and
+captions. The simulated scanpaths outperform existing human attention models in
+plausibility for captioning and free-viewing tasks. This research enhances the
+understanding of human attention and advances scanpath prediction models.",http://arxiv.org/pdf/2408.09948v1,,False
+Predicting path-dependent processes by deep learning,19/08/2024,"Xudong Zheng, Yuecai Han","In this paper, we investigate a deep learning method for predicting
+path-dependent processes based on discretely observed historical information.
+This method is implemented by considering the prediction as a nonparametric
+regression and obtaining the regression function through simulated samples and
+deep neural networks. When applying this method to fractional Brownian motion
+and the solutions of some stochastic differential equations driven by it, we
+theoretically proved that the $L_2$ errors converge to 0, and we further
+discussed the scope of the method. With the frequency of discrete observations
+tending to infinity, the predictions based on discrete observations converge to
+the predictions based on continuous observations, which implies that we can
+make approximations by the method. We apply the method to the fractional
+Brownian motion and the fractional Ornstein-Uhlenbeck process as examples.
+Comparing the results with the theoretical optimal predictions and taking the
+mean square error as a measure, the numerical simulations demonstrate that the
+method can generate accurate results. We also analyze the impact of factors
+such as prediction period, Hurst index, etc. on the accuracy.",http://arxiv.org/pdf/2408.09941v1,,False
+The curse of random quantum data,19/08/2024,"Kaining Zhang, Junyu Liu, Liu Liu, Liang Jiang, Min-Hsiu Hsieh, Dacheng Tao","Quantum machine learning, which involves running machine learning algorithms
+on quantum devices, may be one of the most significant flagship applications
+for these devices. Unlike its classical counterparts, the role of data in
+quantum machine learning has not been fully understood. In this work, we
+quantify the performances of quantum machine learning in the landscape of
+quantum data. Provided that the encoding of quantum data is sufficiently
+random, the performance, we find that the training efficiency and
+generalization capabilities in quantum machine learning will be exponentially
+suppressed with the increase in the number of qubits, which we call ""the curse
+of random quantum data"". Our findings apply to both the quantum kernel method
+and the large-width limit of quantum neural networks. Conversely, we highlight
+that through meticulous design of quantum datasets, it is possible to avoid
+these curses, thereby achieving efficient convergence and robust
+generalization. Our conclusions are corroborated by extensive numerical
+simulations.",http://arxiv.org/pdf/2408.09937v1,,False
+Instruction-Based Molecular Graph Generation with Unified Text-Graph Diffusion Model,19/08/2024,"Yuran Xiang, Haiteng Zhao, Chang Ma, Zhi-Hong Deng","Recent advancements in computational chemistry have increasingly focused on
+synthesizing molecules based on textual instructions. Integrating graph
+generation with these instructions is complex, leading most current methods to
+use molecular sequences with pre-trained large language models. In response to
+this challenge, we propose a novel framework, named $\textbf{UTGDiff (Unified
+Text-Graph Diffusion Model)}$, which utilizes language models for discrete
+graph diffusion to generate molecular graphs from instructions. UTGDiff
+features a unified text-graph transformer as the denoising network, derived
+from pre-trained language models and minimally modified to process graph data
+through attention bias. Our experimental results demonstrate that UTGDiff
+consistently outperforms sequence-based baselines in tasks involving
+instruction-based molecule generation and editing, achieving superior
+performance with fewer parameters given an equivalent level of pretraining
+corpus. Our code is availble at https://github.com/ran1812/UTGDiff.",http://arxiv.org/pdf/2408.09896v1,,False
+Self-Directed Turing Test for Large Language Models,19/08/2024,"Weiqi Wu, Hongqiu Wu, Hai Zhao","The Turing test examines whether AIs can exhibit human-like behaviour in
+natural language conversations. Traditional Turing tests adopt a rigid dialogue
+format where each participant sends only one message each time and require
+continuous human involvement to direct the entire interaction with the test
+subject. This fails to reflect a natural conversational style and hinders the
+evaluation of Large Language Models (LLMs) in complex and prolonged dialogues.
+This paper proposes the Self-Directed Turing Test, which extends the original
+test with a burst dialogue format, allowing more dynamic exchanges by multiple
+consecutive messages. It further efficiently reduces human workload by having
+the LLM self-direct the majority of the test process, iteratively generating
+dialogues that simulate its interaction with humans. With the pseudo-dialogue
+history, the model then engages in a shorter dialogue with a human, which is
+paired with a human-human conversation on the same topic to be judged using
+questionnaires. We introduce the X-Turn Pass-Rate metric to assess the human
+likeness of LLMs across varying durations. While LLMs like GPT-4 initially
+perform well, achieving pass rates of 51.9% and 38.9% during 3 turns and 10
+turns of dialogues respectively, their performance drops as the dialogue
+progresses, which underscores the difficulty in maintaining consistency in the
+long term.",http://arxiv.org/pdf/2408.09853v1,,False
+A Population-to-individual Tuning Framework for Adapting Pretrained LM to On-device User Intent Prediction,19/08/2024,"Jiahui Gong, Jingtao Ding, Fanjin Meng, Guilong Chen, Hong Chen, Shen Zhao, Haisheng Lu, Yong Li","Mobile devices, especially smartphones, can support rich functions and have
+developed into indispensable tools in daily life. With the rise of generative
+AI services, smartphones can potentially transform into personalized
+assistants, anticipating user needs and scheduling services accordingly.
+Predicting user intents on smartphones, and reflecting anticipated activities
+based on past interactions and context, remains a pivotal step towards this
+vision. Existing research predominantly focuses on specific domains, neglecting
+the challenge of modeling diverse event sequences across dynamic contexts.
+Leveraging pre-trained language models (PLMs) offers a promising avenue, yet
+adapting PLMs to on-device user intent prediction presents significant
+challenges. To address these challenges, we propose PITuning, a
+Population-to-Individual Tuning framework. PITuning enhances common pattern
+extraction through dynamic event-to-intent transition modeling and addresses
+long-tailed preferences via adaptive unlearning strategies. Experimental
+results on real-world datasets demonstrate PITuning's superior intent
+prediction performance, highlighting its ability to capture long-tailed
+preferences and its practicality for on-device prediction scenarios.",http://arxiv.org/pdf/2408.09815v1,,False
+Simulating Field Experiments with Large Language Models,19/08/2024,"Yaoyu Chen, Yuheng Hu, Yingda Lu","Prevailing large language models (LLMs) are capable of human responses
+simulation through its unprecedented content generation and reasoning
+abilities. However, it is not clear whether and how to leverage LLMs to
+simulate field experiments. In this paper, we propose and evaluate two
+prompting strategies: the observer mode that allows a direct prediction on main
+conclusions and the participant mode that simulates distributions of responses
+from participants. Using this approach, we examine fifteen well cited field
+experimental papers published in INFORMS and MISQ, finding encouraging
+alignments between simulated experimental results and the actual results in
+certain scenarios. We further identify topics of which LLMs underperform,
+including gender difference and social norms related research. Additionally,
+the automatic and standardized workflow proposed in this paper enables the
+possibility of a large-scale screening of more papers with field experiments.
+This paper pioneers the utilization of large language models (LLMs) for
+simulating field experiments, presenting a significant extension to previous
+work which focused solely on lab environments. By introducing two novel
+prompting strategies, observer and participant modes, we demonstrate the
+ability of LLMs to both predict outcomes and replicate participant responses
+within complex field settings. Our findings indicate a promising alignment with
+actual experimental results in certain scenarios, achieving a stimulation
+accuracy of 66% in observer mode. This study expands the scope of potential
+applications for LLMs and illustrates their utility in assisting researchers
+prior to engaging in expensive field experiments. Moreover, it sheds light on
+the boundaries of LLMs when used in simulating field experiments, serving as a
+cautionary note for researchers considering the integration of LLMs into their
+experimental toolkit.",http://arxiv.org/pdf/2408.09682v1,,False
+A Comparison of Large Language Model and Human Performance on Random Number Generation Tasks,19/08/2024,Rachel M. Harrison,"Random Number Generation Tasks (RNGTs) are used in psychology for examining
+how humans generate sequences devoid of predictable patterns. By adapting an
+existing human RNGT for an LLM-compatible environment, this preliminary study
+tests whether ChatGPT-3.5, a large language model (LLM) trained on
+human-generated text, exhibits human-like cognitive biases when generating
+random number sequences. Initial findings indicate that ChatGPT-3.5 more
+effectively avoids repetitive and sequential patterns compared to humans, with
+notably lower repeat frequencies and adjacent number frequencies. Continued
+research into different models, parameters, and prompting methodologies will
+deepen our understanding of how LLMs can more closely mimic human random
+generation behaviors, while also broadening their applications in cognitive and
+behavioral science research.",http://arxiv.org/pdf/2408.09656v1,,False
+Deep Learning-based Machine Condition Diagnosis using Short-time Fourier Transformation Variants,19/08/2024,"Eduardo Jr Piedad, Zherish Galvin Mayordo, Eduardo Prieto-Araujo, Oriol Gomis-Bellmunt","In motor condition diagnosis, electrical current signature serves as an
+alternative feature to vibration-based sensor data, which is a more expensive
+and invasive method. Machine learning (ML) techniques have been emerging in
+diagnosing motor conditions using only motor phase current signals. This study
+converts time-series motor current signals to time-frequency 2D plots using
+Short-time Fourier Transform (STFT) methods. The motor current signal dataset
+consists of 3,750 sample points with five classes - one healthy and four
+synthetically-applied motor fault conditions, and with five loading conditions:
+0, 25, 50, 75, and 100%. Five transformation methods are used on the dataset:
+non-overlap and overlap STFTs, non-overlap and overlap realigned STFTs, and
+synchrosqueezed STFT. Then, deep learning (DL) models based on the previous
+Convolutional Neural Network (CNN) architecture are trained and validated from
+generated plots of each method. The DL models of overlap-STFT, overlap R-STFT,
+non-overlap STFT, non-overlap R-STFT, and synchrosqueezed-STFT performed
+exceptionally with an average accuracy of 97.65, 96.03, 96.08, 96.32, and
+88.27%, respectively. Four methods outperformed the previous best ML method
+with 93.20% accuracy, while all five outperformed previous 2D-plot-based
+methods with accuracy of 80.25, 74.80, and 82.80%, respectively, using the same
+dataset, same DL architecture, and validation steps.",http://arxiv.org/pdf/2408.09649v1,,False

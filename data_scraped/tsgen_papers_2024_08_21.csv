@@ -1,0 +1,312 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model,20/08/2024,"Chunting Zhou, Lili Yu, Arun Babu, Kushal Tirumala, Michihiro Yasunaga, Leonid Shamis, Jacob Kahn, Xuezhe Ma, Luke Zettlemoyer, Omer Levy","We introduce Transfusion, a recipe for training a multi-modal model over
+discrete and continuous data. Transfusion combines the language modeling loss
+function (next token prediction) with diffusion to train a single transformer
+over mixed-modality sequences. We pretrain multiple Transfusion models up to 7B
+parameters from scratch on a mixture of text and image data, establishing
+scaling laws with respect to a variety of uni- and cross-modal benchmarks. Our
+experiments show that Transfusion scales significantly better than quantizing
+images and training a language model over discrete image tokens. By introducing
+modality-specific encoding and decoding layers, we can further improve the
+performance of Transfusion models, and even compress each image to just 16
+patches. We further demonstrate that scaling our Transfusion recipe to 7B
+parameters and 2T multi-modal tokens produces a model that can generate images
+and text on a par with similar scale diffusion models and language models,
+reaping the benefits of both worlds.",http://arxiv.org/pdf/2408.11039v1,,False
+An Overlooked Role of Context-Sensitive Dendrites,20/08/2024,"Mohsin Raza, Ahsan Adeel","To date, most dendritic studies have predominantly focused on the apical zone
+of pyramidal two-point neurons (TPNs) receiving only feedback (FB) connections
+from higher perceptual layers and using them for learning. Recent cellular
+neurophysiology and computational neuroscience studies suggests that the apical
+input (context), coming from feedback and lateral connections, is multifaceted
+and far more diverse, with greater implications for ongoing learning and
+processing in the brain than previously realized. In addition to the FB, the
+apical tuft receives signals from neighboring cells of the same network as
+proximal (P) context, other parts of the brain as distal (D) context, and
+overall coherent information across the network as universal (U) context. The
+integrated context (C) amplifies and suppresses the transmission of coherent
+and conflicting feedforward (FF) signals, respectively. Specifically, we show
+that complex context-sensitive (CS)-TPNs flexibly integrate C moment-by-moment
+with the FF somatic current at the soma such that the somatic current is
+amplified when both feedforward (FF) and C are coherent; otherwise, it is
+attenuated. This generates the event only when the FF and C currents are
+coherent, which is then translated into a singlet or a burst based on the FB
+information. Spiking simulation results show that this flexible integration of
+somatic and contextual currents enables the propagation of more coherent
+signals (bursts), making learning faster with fewer neurons. Similar behavior
+is observed when this functioning is used in conventional artificial networks,
+where orders of magnitude fewer neurons are required to process vast amounts of
+heterogeneous real-world audio-visual (AV) data trained using backpropagation
+(BP). The computational findings presented here demonstrate the universality of
+CS-TPNs, suggesting a dendritic narrative that was previously overlooked.",http://arxiv.org/pdf/2408.11019v1,,False
+Denoising Plane Wave Ultrasound Images Using Diffusion Probabilistic Models,20/08/2024,"Hojat Asgariandehkordi, Sobhan Goudarzi, Mostafa Sharifzadeh, Adrian Basarab, Hassan Rivaz","Ultrasound plane wave imaging is a cutting-edge technique that enables high
+frame-rate imaging. However, one challenge associated with high frame-rate
+ultrasound imaging is the high noise associated with them, hindering their
+wider adoption. Therefore, the development of a denoising method becomes
+imperative to augment the quality of plane wave images. Drawing inspiration
+from Denoising Diffusion Probabilistic Models (DDPMs), our proposed solution
+aims to enhance plane wave image quality. Specifically, the method considers
+the distinction between low-angle and high-angle compounding plane waves as
+noise and effectively eliminates it by adapting a DDPM to beamformed
+radiofrequency (RF) data. The method underwent training using only 400
+simulated images. In addition, our approach employs natural image segmentation
+masks as intensity maps for the generated images, resulting in accurate
+denoising for various anatomy shapes. The proposed method was assessed across
+simulation, phantom, and in vivo images. The results of the evaluations
+indicate that our approach not only enhances image quality on simulated data
+but also demonstrates effectiveness on phantom and in vivo data in terms of
+image quality. Comparative analysis with other methods underscores the
+superiority of our proposed method across various evaluation metrics. The
+source code and trained model will be released along with the dataset at:
+http://code.sonography.ai",http://arxiv.org/pdf/2408.10987v1,,False
+Kernel-Based Differentiable Learning of Non-Parametric Directed Acyclic Graphical Models,20/08/2024,"Yurou Liang, Oleksandr Zadorozhnyi, Mathias Drton","Causal discovery amounts to learning a directed acyclic graph (DAG) that
+encodes a causal model. This model selection problem can be challenging due to
+its large combinatorial search space, particularly when dealing with
+non-parametric causal models. Recent research has sought to bypass the
+combinatorial search by reformulating causal discovery as a continuous
+optimization problem, employing constraints that ensure the acyclicity of the
+graph. In non-parametric settings, existing approaches typically rely on
+finite-dimensional approximations of the relationships between nodes, resulting
+in a score-based continuous optimization problem with a smooth acyclicity
+constraint. In this work, we develop an alternative approximation method by
+utilizing reproducing kernel Hilbert spaces (RKHS) and applying general
+sparsity-inducing regularization terms based on partial derivatives. Within
+this framework, we introduce an extended RKHS representer theorem. To enforce
+acyclicity, we advocate the log-determinant formulation of the acyclicity
+constraint and show its stability. Finally, we assess the performance of our
+proposed RKHS-DAGMA procedure through simulations and illustrative data
+analyses.",http://arxiv.org/pdf/2408.10976v1,,False
+Kilometer-Scale Convection Allowing Model Emulation using Generative Diffusion Modeling,20/08/2024,"Jaideep Pathak, Yair Cohen, Piyush Garg, Peter Harrington, Noah Brenowitz, Dale Durran, Morteza Mardani, Arash Vahdat, Shaoming Xu, Karthik Kashinath, Michael Pritchard","Storm-scale convection-allowing models (CAMs) are an important tool for
+predicting the evolution of thunderstorms and mesoscale convective systems that
+result in damaging extreme weather. By explicitly resolving convective dynamics
+within the atmosphere they afford meteorologists the nuance needed to provide
+outlook on hazard. Deep learning models have thus far not proven skilful at
+km-scale atmospheric simulation, despite being competitive at coarser
+resolution with state-of-the-art global, medium-range weather forecasting. We
+present a generative diffusion model called StormCast, which emulates the
+high-resolution rapid refresh (HRRR) model-NOAA's state-of-the-art 3km
+operational CAM. StormCast autoregressively predicts 99 state variables at km
+scale using a 1-hour time step, with dense vertical resolution in the
+atmospheric boundary layer, conditioned on 26 synoptic variables. We present
+evidence of successfully learnt km-scale dynamics including competitive 1-6
+hour forecast skill for composite radar reflectivity alongside physically
+realistic convective cluster evolution, moist updrafts, and cold pool
+morphology. StormCast predictions maintain realistic power spectra for multiple
+predicted variables across multi-hour forecasts. Together, these results
+establish the potential for autoregressive ML to emulate CAMs -- opening up new
+km-scale frontiers for regional ML weather prediction and future climate hazard
+dynamical downscaling.",http://arxiv.org/pdf/2408.10958v1,,False
+Recurrent Neural Networks Learn to Store and Generate Sequences using Non-Linear Representations,20/08/2024,"Róbert Csordás, Christopher Potts, Christopher D. Manning, Atticus Geiger","The Linear Representation Hypothesis (LRH) states that neural networks learn
+to encode concepts as directions in activation space, and a strong version of
+the LRH states that models learn only such encodings. In this paper, we present
+a counterexample to this strong LRH: when trained to repeat an input token
+sequence, gated recurrent neural networks (RNNs) learn to represent the token
+at each position with a particular order of magnitude, rather than a direction.
+These representations have layered features that are impossible to locate in
+distinct linear subspaces. To show this, we train interventions to predict and
+manipulate tokens by learning the scaling factor corresponding to each sequence
+position. These interventions indicate that the smallest RNNs find only this
+magnitude-based solution, while larger RNNs have linear representations. These
+findings strongly indicate that interpretability research should not be
+confined by the LRH.",http://arxiv.org/pdf/2408.10920v1,,False
+Radio U-Net: a convolutional neural network to detect diffuse radio sources in galaxy clusters and beyond,20/08/2024,"Chiara Stuardi, Claudio Gheller, Franco Vazza, Andrea Botteon","The forthcoming generation of radio telescope arrays promises significant
+advancements in sensitivity and resolution, enabling the identification and
+characterization of many new faint and diffuse radio sources. Conventional
+manual cataloging methodologies are anticipated to be insufficient to exploit
+the capabilities of new radio surveys. Radio interferometric images of diffuse
+sources present a challenge for image segmentation tasks due to noise,
+artifacts, and embedded radio sources. In response to these challenges, we
+introduce Radio U-Net, a fully convolutional neural network based on the U-Net
+architecture. Radio U-Net is designed to detect faint and extended sources in
+radio surveys, such as radio halos, relics, and cosmic web filaments. Radio
+U-Net was trained on synthetic radio observations built upon cosmological
+simulations and then tested on a sample of galaxy clusters, where the detection
+of cluster diffuse radio sources relied on customized data reduction and visual
+inspection of LOFAR Two Metre Sky Survey (LoTSS) data. The 83% of clusters
+exhibiting diffuse radio emission were accurately identified, and the
+segmentation successfully recovered the morphology of the sources even in
+low-quality images. In a test sample comprising 246 galaxy clusters, we
+achieved a 73% accuracy rate in distinguishing between clusters with and
+without diffuse radio emission. Our results establish the applicability of
+Radio U-Net to extensive radio survey datasets, probing its efficiency on
+cutting-edge high-performance computing systems. This approach represents an
+advancement in optimizing the exploitation of forthcoming large radio surveys
+for scientific exploration.",http://arxiv.org/pdf/2408.10871v1,,False
+ZebraPose: Zebra Detection and Pose Estimation using only Synthetic Data,20/08/2024,"Elia Bonetto, Aamir Ahmad","Synthetic data is increasingly being used to address the lack of labeled
+images in uncommon domains for deep learning tasks. A prominent example is 2D
+pose estimation of animals, particularly wild species like zebras, for which
+collecting real-world data is complex and impractical. However, many approaches
+still require real images, consistency and style constraints, sophisticated
+animal models, and/or powerful pre-trained networks to bridge the syn-to-real
+gap. Moreover, they often assume that the animal can be reliably detected in
+images or videos, a hypothesis that often does not hold, e.g. in wildlife
+scenarios or aerial images. To solve this, we use synthetic data generated with
+a 3D photorealistic simulator to obtain the first synthetic dataset that can be
+used for both detection and 2D pose estimation of zebras without applying any
+of the aforementioned bridging strategies. Unlike previous works, we
+extensively train and benchmark our detection and 2D pose estimation models on
+multiple real-world and synthetic datasets using both pre-trained and
+non-pre-trained backbones. These experiments show how the models trained from
+scratch and only with synthetic data can consistently generalize to real-world
+images of zebras in both tasks. Moreover, we show it is possible to easily
+generalize those same models to 2D pose estimation of horses with a minimal
+amount of real-world images to account for the domain transfer. Code, results,
+trained models; and the synthetic, training, and validation data, including
+104K manually labeled frames, are provided as open-source at
+https://zebrapose.is.tue.mpg.de/",http://arxiv.org/pdf/2408.10831v1,,False
+Inverse Deep Learning Ray Tracing for Heliostat Surface Prediction,20/08/2024,"Jan Lewen, Max Pargmann, Mehdi Cherti, Jenia Jitsev, Robert Pitz-Paal, Daniel Maldonado Quinto","Concentrating Solar Power (CSP) plants play a crucial role in the global
+transition towards sustainable energy. A key factor in ensuring the safe and
+efficient operation of CSP plants is the distribution of concentrated flux
+density on the receiver. However, the non-ideal flux density generated by
+individual heliostats can undermine the safety and efficiency of the power
+plant. The flux density from each heliostat is influenced by its precise
+surface profile, which includes factors such as canting and mirror errors.
+Accurately measuring these surface profiles for a large number of heliostats in
+operation is a formidable challenge. Consequently, control systems often rely
+on the assumption of ideal surface conditions, which compromises both safety
+and operational efficiency. In this study, we introduce inverse Deep Learning
+Ray Tracing (iDLR), an innovative method designed to predict heliostat surfaces
+based solely on target images obtained during heliostat calibration. Our
+simulation-based investigation demonstrates that sufficient information
+regarding the heliostat surface is retained in the flux density distribution of
+a single heliostat, enabling deep learning models to accurately predict the
+underlying surface with deflectometry-like precision for the majority of
+heliostats. Additionally, we assess the limitations of this method,
+particularly in relation to surface accuracy and resultant flux density
+predictions. Furthermore, we are presenting a new comprehensive heliostat model
+using Non-Uniform Rational B-Spline (NURBS) that has the potential to become
+the new State of the Art for heliostat surface parameterization. Our findings
+reveal that iDLR has significant potential to enhance CSP plant operations,
+potentially increasing the overall efficiency and energy output of the power
+plants.",http://arxiv.org/pdf/2408.10802v1,,False
+"Accelerated training of deep learning surrogate models for surface displacement and flow, with application to MCMC-based history matching of CO2 storage operations",20/08/2024,"Yifu Han, Francois P. Hamon, Louis J. Durlofsky","Deep learning surrogate modeling shows great promise for subsurface flow
+applications, but the training demands can be substantial. Here we introduce a
+new surrogate modeling framework to predict CO2 saturation, pressure and
+surface displacement for use in the history matching of carbon storage
+operations. Rather than train using a large number of expensive coupled
+flow-geomechanics simulation runs, training here involves a large number of
+inexpensive flow-only simulations combined with a much smaller number of
+coupled runs. The flow-only runs use an effective rock compressibility, which
+is shown to provide accurate predictions for saturation and pressure for our
+system. A recurrent residual U-Net architecture is applied for the saturation
+and pressure surrogate models, while a new residual U-Net model is introduced
+to predict surface displacement. The surface displacement surrogate accepts, as
+inputs, geomodel quantities along with saturation and pressure surrogate
+predictions. Median relative error for a diverse test set is less than 4% for
+all variables. The surrogate models are incorporated into a hierarchical Markov
+chain Monte Carlo history matching workflow. Surrogate error is included using
+a new treatment involving the full model error covariance matrix. A high degree
+of prior uncertainty, with geomodels characterized by uncertain geological
+scenario parameters (metaparameters) and associated realizations, is
+considered. History matching results for a synthetic true model are generated
+using in-situ monitoring-well data only, surface displacement data only, and
+both data types. The enhanced uncertainty reduction achieved with both data
+types is quantified. Posterior saturation and surface displacement fields are
+shown to correspond well with the true solution.",http://arxiv.org/pdf/2408.10717v1,,False
+CoRA: Collaborative Information Perception by Large Language Model's Weights for Recommendation,20/08/2024,"Yuting Liu, Jinghao Zhang, Yizhou Dang, Yuliang Liang, Qiang Liu, Guibing Guo, Jianzhe Zhao, Xingwei Wang","Involving collaborative information in Large Language Models (LLMs) is a
+promising technique for adapting LLMs for recommendation. Existing methods
+achieve this by concatenating collaborative features with text tokens into a
+unified sequence input and then fine-tuning to align these features with LLM's
+input space. Although effective, in this work, we identify two limitations when
+adapting LLMs to recommendation tasks, which hinder the integration of general
+knowledge and collaborative information, resulting in sub-optimal
+recommendation performance. (1) Fine-tuning LLM with recommendation data can
+undermine its inherent world knowledge and fundamental competencies, which are
+crucial for interpreting and inferring recommendation text. (2) Incorporating
+collaborative features into textual prompts disrupts the semantics of the
+original prompts, preventing LLM from generating appropriate outputs. In this
+paper, we propose a new paradigm, CoRA (an acronym for Collaborative LoRA),
+with a collaborative weights generator. Rather than input space alignment, this
+method aligns collaborative information with LLM's parameter space,
+representing them as incremental weights to update LLM's output. This way, LLM
+perceives collaborative information without altering its general knowledge and
+text inference capabilities. Specifically, we employ a collaborative filtering
+model to extract user and item embeddings, converting them into collaborative
+weights with low-rank properties through the collaborative weights generator.
+We then merge the collaborative weights into LLM's weights, enabling LLM to
+perceive the collaborative signals and generate personalized recommendations
+without fine-tuning or extra collaborative tokens in prompts. Extensive
+experiments confirm that CoRA effectively integrates collaborative information
+into LLM, enhancing recommendation performance.",http://arxiv.org/pdf/2408.10645v1,,False
+Strategist: Learning Strategic Skills by LLMs via Bi-Level Tree Search,20/08/2024,"Jonathan Light, Min Cai, Weiqin Chen, Guanzhi Wang, Xiusi Chen, Wei Cheng, Yisong Yue, Ziniu Hu","In this paper, we propose a new method Strategist that utilizes LLMs to
+acquire new skills for playing multi-agent games through a self-improvement
+process. Our method gathers quality feedback through self-play simulations with
+Monte Carlo tree search and LLM-based reflection, which can then be used to
+learn high-level strategic skills such as how to evaluate states that guide the
+low-level execution.We showcase how our method can be used in both action
+planning and dialogue generation in the context of games, achieving good
+performance on both tasks. Specifically, we demonstrate that our method can
+help train agents with better performance than both traditional reinforcement
+learning-based approaches and other LLM-based skill learning approaches in
+games including the Game of Pure Strategy (GOPS) and The Resistance: Avalon.",http://arxiv.org/pdf/2408.10635v1,,False
+Interactive Counterfactual Generation for Univariate Time Series,20/08/2024,"Udo Schlegel, Julius Rauscher, Daniel A. Keim","We propose an interactive methodology for generating counterfactual
+explanations for univariate time series data in classification tasks by
+leveraging 2D projections and decision boundary maps to tackle interpretability
+challenges. Our approach aims to enhance the transparency and understanding of
+deep learning models' decision processes. The application simplifies the time
+series data analysis by enabling users to interactively manipulate projected
+data points, providing intuitive insights through inverse projection
+techniques. By abstracting user interactions with the projected data points
+rather than the raw time series data, our method facilitates an intuitive
+generation of counterfactual explanations. This approach allows for a more
+straightforward exploration of univariate time series data, enabling users to
+manipulate data points to comprehend potential outcomes of hypothetical
+scenarios. We validate this method using the ECG5000 benchmark dataset,
+demonstrating significant improvements in interpretability and user
+understanding of time series classification. The results indicate a promising
+direction for enhancing explainable AI, with potential applications in various
+domains requiring transparent and interpretable deep learning models. Future
+work will explore the scalability of this method to multivariate time series
+data and its integration with other interpretability techniques.",http://arxiv.org/pdf/2408.10633v1,,False
+Finding the DeepDream for Time Series: Activation Maximization for Univariate Time Series,20/08/2024,"Udo Schlegel, Daniel A. Keim, Tobias Sutter","Understanding how models process and interpret time series data remains a
+significant challenge in deep learning to enable applicability in
+safety-critical areas such as healthcare. In this paper, we introduce Sequence
+Dreaming, a technique that adapts Activation Maximization to analyze sequential
+information, aiming to enhance the interpretability of neural networks
+operating on univariate time series. By leveraging this method, we visualize
+the temporal dynamics and patterns most influential in model decision-making
+processes. To counteract the generation of unrealistic or excessively noisy
+sequences, we enhance Sequence Dreaming with a range of regularization
+techniques, including exponential smoothing. This approach ensures the
+production of sequences that more accurately reflect the critical features
+identified by the neural network. Our approach is tested on a time series
+classification dataset encompassing applications in predictive maintenance. The
+results show that our proposed Sequence Dreaming approach demonstrates targeted
+activation maximization for different use cases so that either centered class
+or border activation maximization can be generated. The results underscore the
+versatility of Sequence Dreaming in uncovering salient temporal features
+learned by neural networks, thereby advancing model transparency and
+trustworthiness in decision-critical domains.",http://arxiv.org/pdf/2408.10628v1,,False
+Integrating Multi-Modal Input Token Mixer Into Mamba-Based Decision Models: Decision MetaMamba,20/08/2024,Wall Kim,"Return-Conditioned Transformer Decision Models (RCTDM) have demonstrated the
+potential to enhance transformer performance in offline reinforcement learning
+by replacing rewards in the input sequence with returns-to-go. However, to
+achieve the goal of learning an optimal policy from offline datasets composed
+of limited suboptimal trajectories, RCTDM required alternative methods. One
+prominent approach, trajectory stitching, was designed to enable the network to
+combine multiple trajectories to find the optimal path. To implement this using
+only transformers without auxiliary networks, it was necessary to shorten the
+input sequence length to better capture the Markov property in reinforcement
+learnings. This, however, introduced a trade-off, as it reduced the accuracy of
+action inference. Our study introduces a model named Decision MetaMamba to
+resolve these challenges. DMM employs an input token mixer to extract patterns
+from short sequences and uses a State Space Model (SSM) to selectively combine
+information from relatively distant sequences. Inspired by Metaformer, this
+structure was developed by transforming Mamba's input layer into various
+multi-modal layers. Fortunately, with the advent of Mamba, implemented using
+parallel selective scanning, we achieved a high-performance sequence model
+capable of replacing transformers. Based on these innovations, DMM demonstrated
+excellent performance across various datasets in offline RL, confirming that
+models using SSM can improve performance by domain-specific alterations of the
+input layer. Additionally, it maintained its performance even in lightweight
+models with fewer parameters. These results suggest that decision models based
+on SSM can pave the way for improved outcomes in future developments.",http://arxiv.org/pdf/2408.10517v1,,False
+Data Augmentation Integrating Dialogue Flow and Style to Adapt Spoken Dialogue Systems to Low-Resource User Groups,20/08/2024,"Zhiyang Qi, Michimasa Inaba","This study addresses the interaction challenges encountered by spoken
+dialogue systems (SDSs) when engaging with users who exhibit distinct
+conversational behaviors, particularly minors, in scenarios where data are
+scarce. We propose a novel data augmentation framework to enhance SDS
+performance for user groups with limited resources. Our approach leverages a
+large language model (LLM) to extract speaker styles and a pre-trained language
+model (PLM) to simulate dialogue act history. This method generates enriched
+and personalized dialogue data, facilitating improved interactions with unique
+user demographics. Extensive experiments validate the efficacy of our
+methodology, highlighting its potential to foster the development of more
+adaptive and inclusive dialogue systems.",http://arxiv.org/pdf/2408.10516v1,,False

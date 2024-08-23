@@ -1,0 +1,342 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations,22/08/2024,"Can Qin, Congying Xia, Krithika Ramakrishnan, Michael Ryoo, Lifu Tu, Yihao Feng, Manli Shu, Honglu Zhou, Anas Awadalla, Jun Wang, Senthil Purushwalkam, Le Xue, Yingbo Zhou, Huan Wang, Silvio Savarese, Juan Carlos Niebles, Zeyuan Chen, Ran Xu, Caiming Xiong","We present xGen-VideoSyn-1, a text-to-video (T2V) generation model capable of
+producing realistic scenes from textual descriptions. Building on recent
+advancements, such as OpenAI's Sora, we explore the latent diffusion model
+(LDM) architecture and introduce a video variational autoencoder (VidVAE).
+VidVAE compresses video data both spatially and temporally, significantly
+reducing the length of visual tokens and the computational demands associated
+with generating long-sequence videos. To further address the computational
+costs, we propose a divide-and-merge strategy that maintains temporal
+consistency across video segments. Our Diffusion Transformer (DiT) model
+incorporates spatial and temporal self-attention layers, enabling robust
+generalization across different timeframes and aspect ratios. We have devised a
+data processing pipeline from the very beginning and collected over 13M
+high-quality video-text pairs. The pipeline includes multiple steps such as
+clipping, text detection, motion estimation, aesthetics scoring, and dense
+captioning based on our in-house video-LLM model. Training the VidVAE and DiT
+models required approximately 40 and 642 H100 days, respectively. Our model
+supports over 14-second 720p video generation in an end-to-end way and
+demonstrates competitive performance against state-of-the-art T2V models.",http://arxiv.org/pdf/2408.12590v1,,False
+Dynamics of Meta-learning Representation in the Teacher-student Scenario,22/08/2024,"Hui Wang, Cho Tung Yip, Bo Li","Gradient-based meta-learning algorithms have gained popularity for their
+ability to train models on new tasks using limited data. Empirical observations
+indicate that such algorithms are able to learn a shared representation across
+tasks, which is regarded as a key factor in their success. However, the
+in-depth theoretical understanding of the learning dynamics and the origin of
+the shared representation remains underdeveloped. In this work, we investigate
+the meta-learning dynamics of the non-linear two-layer neural networks trained
+on streaming tasks in the teach-student scenario. Through the lens of
+statistical physics analysis, we characterize the macroscopic behavior of the
+meta-training processes, the formation of the shared representation, and the
+generalization ability of the model on new tasks. The analysis also points to
+the importance of the choice of certain hyper-parameters of the learning
+algorithms.",http://arxiv.org/pdf/2408.12545v1,,False
+"PCGRL+: Scaling, Control and Generalization in Reinforcement Learning Level Generators",22/08/2024,"Sam Earle, Zehua Jiang, Julian Togelius","Procedural Content Generation via Reinforcement Learning (PCGRL) has been
+introduced as a means by which controllable designer agents can be trained
+based only on a set of computable metrics acting as a proxy for the level's
+quality and key characteristics. While PCGRL offers a unique set of affordances
+for game designers, it is constrained by the compute-intensive process of
+training RL agents, and has so far been limited to generating relatively small
+levels. To address this issue of scale, we implement several PCGRL environments
+in Jax so that all aspects of learning and simulation happen in parallel on the
+GPU, resulting in faster environment simulation; removing the CPU-GPU transfer
+of information bottleneck during RL training; and ultimately resulting in
+significantly improved training speed. We replicate several key results from
+prior works in this new framework, letting models train for much longer than
+previously studied, and evaluating their behavior after 1 billion timesteps.
+Aiming for greater control for human designers, we introduce randomized level
+sizes and frozen ""pinpoints"" of pivotal game tiles as further ways of
+countering overfitting. To test the generalization ability of learned
+generators, we evaluate models on large, out-of-distribution map sizes, and
+find that partial observation sizes learn more robust design strategies.",http://arxiv.org/pdf/2408.12525v1,,False
+Predicting Solar Energy Generation with Machine Learning based on AQI and Weather Features,22/08/2024,"Arjun Shah, Varun Viswanath, Kashish Gandhi, Dr. Nilesh Madhukar Patil","This paper addresses the pressing need for an accurate solar energy
+prediction model, which is crucial for efficient grid integration. We explore
+the influence of the Air Quality Index and weather features on solar energy
+generation, employing advanced Machine Learning and Deep Learning techniques.
+Our methodology uses time series modeling and makes novel use of power
+transform normalization and zero-inflated modeling. Various Machine Learning
+algorithms and Conv2D Long Short-Term Memory model based Deep Learning models
+are applied to these transformations for precise predictions. Results
+underscore the effectiveness of our approach, demonstrating enhanced prediction
+accuracy with Air Quality Index and weather features. We achieved a 0.9691
+$R^2$ Score, 0.18 MAE, 0.10 RMSE with Conv2D Long Short-Term Memory model,
+showcasing the power transform technique's innovation in enhancing time series
+forecasting for solar energy generation. Such results help our research
+contribute valuable insights to the synergy between Air Quality Index, weather
+features, and Deep Learning techniques for solar energy prediction.",http://arxiv.org/pdf/2408.12476v1,10.21203/rs.3.rs-3178713/v1,False
+4D Diffusion for Dynamic Protein Structure Prediction with Reference Guided Motion Alignment,22/08/2024,"Kaihui Cheng, Ce Liu, Qingkun Su, Jun Wang, Liwei Zhang, Yining Tang, Yao Yao, Siyu Zhu, Yuan Qi","Protein structure prediction is pivotal for understanding the
+structure-function relationship of proteins, advancing biological research, and
+facilitating pharmaceutical development and experimental design. While deep
+learning methods and the expanded availability of experimental 3D protein
+structures have accelerated structure prediction, the dynamic nature of protein
+structures has received limited attention. This study introduces an innovative
+4D diffusion model incorporating molecular dynamics (MD) simulation data to
+learn dynamic protein structures. Our approach is distinguished by the
+following components: (1) a unified diffusion model capable of generating
+dynamic protein structures, including both the backbone and side chains,
+utilizing atomic grouping and side-chain dihedral angle predictions; (2) a
+reference network that enhances structural consistency by integrating the
+latent embeddings of the initial 3D protein structures; and (3) a motion
+alignment module aimed at improving temporal structural coherence across
+multiple time steps. To our knowledge, this is the first diffusion-based model
+aimed at predicting protein trajectories across multiple time steps
+simultaneously. Validation on benchmark datasets demonstrates that our model
+exhibits high accuracy in predicting dynamic 3D structures of proteins
+containing up to 256 amino acids over 32 time steps, effectively capturing both
+local flexibility in stable states and significant conformational changes.",http://arxiv.org/pdf/2408.12419v1,,False
+Multi-Source Knowledge-Based Hybrid Neural Framework for Time Series Representation Learning,22/08/2024,"Sagar Srinivas Sakhinana, Krishna Sai Sudhir Aripirala, Shivam Gupta, Venkataramana Runkana","Accurately predicting the behavior of complex dynamical systems,
+characterized by high-dimensional multivariate time series(MTS) in
+interconnected sensor networks, is crucial for informed decision-making in
+various applications to minimize risk. While graph forecasting networks(GFNs)
+are ideal for forecasting MTS data that exhibit spatio-temporal dependencies,
+prior works rely solely on the domain-specific knowledge of time-series
+variables inter-relationships to model the nonlinear dynamics, neglecting
+inherent relational structural dependencies among the variables within the MTS
+data. In contrast, contemporary works infer relational structures from MTS data
+but neglect domain-specific knowledge. The proposed hybrid architecture
+addresses these limitations by combining both domain-specific knowledge and
+implicit knowledge of the relational structure underlying the MTS data using
+Knowledge-Based Compositional Generalization. The hybrid architecture shows
+promising results on multiple benchmark datasets, outperforming
+state-of-the-art forecasting methods. Additionally, the architecture models the
+time varying uncertainty of multi-horizon forecasts.",http://arxiv.org/pdf/2408.12409v1,,False
+Efficient Multivariate Time Series Anomaly Detection Through Transfer Learning for Large-Scale Web services,22/08/2024,"Shenglin Zhang, Pengtian Zhu, Minghua Ma, Jiagang Wang, Yongqian Sun, Dongwen Li, Jingyu Wang, Qianying Guo, Xiaolei Hua, Lin Zhu, Dan Pei","Large language models (LLMs) excel at general question-answering (Q&A) but
+often fall short in specialized domains due to a lack of domain-specific
+knowledge. Commercial companies face the dual challenges of privacy protection
+and resource constraints when involving LLMs for fine-tuning. This paper
+propose a novel framework, Self-Evolution, designed to address these issues by
+leveraging lightweight open-source LLMs through multiple iterative fine-tuning
+rounds. To enhance the efficiency of iterative fine-tuning, Self-Evolution
+employ a strategy that filters and reinforces the knowledge with higher value
+during the iterative process. We employed Self-Evolution on Qwen1.5-7B-Chat
+using 4,000 documents containing rich domain knowledge from China Mobile,
+achieving a performance score 174% higher on domain-specific question-answering
+evaluations than Qwen1.5-7B-Chat and even 22% higher than Qwen1.5-72B-Chat.
+Self-Evolution has been deployed in China Mobile's daily operation and
+maintenance for 117 days, and it improves the efficiency of locating alarms,
+fixing problems, and finding related reports, with an average efficiency
+improvement of over 18.6%. In addition, we release Self-Evolution framework
+code in https://github.com/Zero-Pointer/Self-Evolution.",http://arxiv.org/pdf/2408.12247v1,,False
+MedDiT: A Knowledge-Controlled Diffusion Transformer Framework for Dynamic Medical Image Generation in Virtual Simulated Patient,22/08/2024,"Yanzeng Li, Cheng Zeng, Jinchao Zhang, Jie Zhou, Lei Zou","Medical education relies heavily on Simulated Patients (SPs) to provide a
+safe environment for students to practice clinical skills, including medical
+image analysis. However, the high cost of recruiting qualified SPs and the lack
+of diverse medical imaging datasets have presented significant challenges. To
+address these issues, this paper introduces MedDiT, a novel
+knowledge-controlled conversational framework that can dynamically generate
+plausible medical images aligned with simulated patient symptoms, enabling
+diverse diagnostic skill training. Specifically, MedDiT integrates various
+patient Knowledge Graphs (KGs), which describe the attributes and symptoms of
+patients, to dynamically prompt Large Language Models' (LLMs) behavior and
+control the patient characteristics, mitigating hallucination during medical
+conversation. Additionally, a well-tuned Diffusion Transformer (DiT) model is
+incorporated to generate medical images according to the specified patient
+attributes in the KG. In this paper, we present the capabilities of MedDiT
+through a practical demonstration, showcasing its ability to act in diverse
+simulated patient cases and generate the corresponding medical images. This can
+provide an abundant and interactive learning experience for students, advancing
+medical education by offering an immersive simulation platform for future
+healthcare professionals. The work sheds light on the feasibility of
+incorporating advanced technologies like LLM, KG, and DiT in education
+applications, highlighting their potential to address the challenges faced in
+simulated patient-based medical education.",http://arxiv.org/pdf/2408.12236v1,,False
+Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits,22/08/2024,"Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao","The vast and complicated large-qubit state space forbids us to
+comprehensively capture the dynamics of modern quantum computers via classical
+simulations or quantum tomography. However, recent progress in quantum learning
+theory invokes a crucial question: given a quantum circuit containing d tunable
+RZ gates and G-d Clifford gates, can a learner perform purely classical
+inference to efficiently predict its linear properties using new classical
+inputs, after learning from data obtained by incoherently measuring states
+generated by the same circuit but with different classical inputs? In this
+work, we prove that the sample complexity scaling linearly in d is necessary
+and sufficient to achieve a small prediction error, while the corresponding
+computational complexity may scale exponentially in d. Building upon these
+derived complexity bounds, we further harness the concept of classical shadow
+and truncated trigonometric expansion to devise a kernel-based learning model
+capable of trading off prediction error and computational complexity,
+transitioning from exponential to polynomial scaling in many practical
+settings. Our results advance two crucial realms in quantum computation: the
+exploration of quantum algorithms with practical utilities and learning-based
+quantum system certification. We conduct numerical simulations to validate our
+proposals across diverse scenarios, encompassing quantum information processing
+protocols, Hamiltonian simulation, and variational quantum algorithms up to 60
+qubits.",http://arxiv.org/pdf/2408.12199v1,,False
+Transformers are Minimax Optimal Nonparametric In-Context Learners,22/08/2024,"Juno Kim, Tai Nakamaki, Taiji Suzuki","In-context learning (ICL) of large language models has proven to be a
+surprisingly effective method of learning a new task from only a few
+demonstrative examples. In this paper, we study the efficacy of ICL from the
+viewpoint of statistical learning theory. We develop approximation and
+generalization error bounds for a transformer composed of a deep neural network
+and one linear attention layer, pretrained on nonparametric regression tasks
+sampled from general function spaces including the Besov space and piecewise
+$\gamma$-smooth class. We show that sufficiently trained transformers can
+achieve -- and even improve upon -- the minimax optimal estimation risk in
+context by encoding the most relevant basis representations during pretraining.
+Our analysis extends to high-dimensional or sequential data and distinguishes
+the \emph{pretraining} and \emph{in-context} generalization gaps. Furthermore,
+we establish information-theoretic lower bounds for meta-learners w.r.t. both
+the number of tasks and in-context examples. These findings shed light on the
+roles of task diversity and representation learning for ICL.",http://arxiv.org/pdf/2408.12186v1,,False
+Search-Based LLMs for Code Optimization,22/08/2024,"Shuzheng Gao, Cuiyun Gao, Wenchao Gu, Michael Lyu","The code written by developers usually suffers from efficiency problems and
+contain various performance bugs. These inefficiencies necessitate the research
+of automated refactoring methods for code optimization. Early research in code
+optimization employs rule-based methods and focuses on specific inefficiency
+issues, which are labor-intensive and suffer from the low coverage issue.
+Recent work regards the task as a sequence generation problem, and resorts to
+deep learning (DL) techniques such as large language models (LLMs). These
+methods typically prompt LLMs to directly generate optimized code. Although
+these methods show state-of-the-art performance, such one-step generation
+paradigm is hard to achieve an optimal solution. First, complex optimization
+methods such as combinatorial ones are hard to be captured by LLMs. Second, the
+one-step generation paradigm poses challenge in precisely infusing the
+knowledge required for effective code optimization within LLMs, resulting in
+under-optimized code.To address these problems, we propose to model this task
+from the search perspective, and propose a search-based LLMs framework named
+SBLLM that enables iterative refinement and discovery of improved optimization
+methods. SBLLM synergistically integrate LLMs with evolutionary search and
+consists of three key components: 1) an execution-based representative sample
+selection part that evaluates the fitness of each existing optimized code and
+prioritizes promising ones to pilot the generation of improved code; 2) an
+adaptive optimization pattern retrieval part that infuses targeted optimization
+patterns into the model for guiding LLMs towards rectifying and progressively
+enhancing their optimization methods; and 3) a genetic operator-inspired
+chain-of-thought prompting part that aids LLMs in combining different
+optimization methods and generating improved optimization methods.",http://arxiv.org/pdf/2408.12159v1,,False
+MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,22/08/2024,"Congchi Yin, Feng Li, Shu Zhang, Zike Wang, Jun Shao, Piji Li, Jianhua Chen, Xun Jiang","The clinical diagnosis of most mental disorders primarily relies on the
+conversations between psychiatrist and patient. The creation of such diagnostic
+conversation datasets is promising to boost the AI mental healthcare community.
+However, directly collecting the conversations in real diagnosis scenarios is
+near impossible due to stringent privacy and ethical considerations. To address
+this issue, we seek to synthesize diagnostic conversation by exploiting
+anonymous patient cases that are easier to access. Specifically, we design a
+neuro-symbolic multi-agent framework for synthesizing the diagnostic
+conversation of mental disorders with large language models. It takes patient
+case as input and is capable of generating multiple diverse conversations with
+one single patient case. The framework basically involves the interaction
+between a doctor agent and a patient agent, and achieves text generation under
+symbolic control via a dynamic diagnosis tree from a tool agent. By applying
+the proposed framework, we develop the largest Chinese mental disorders
+diagnosis dataset MDD-5k, which is built upon 1000 cleaned real patient cases
+by cooperating with a pioneering psychiatric hospital, and contains 5000
+high-quality long conversations with diagnosis results as labels. To the best
+of our knowledge, it's also the first labelled Chinese mental disorders
+diagnosis dataset. Human evaluation demonstrates the proposed MDD-5k dataset
+successfully simulates human-like diagnostic process of mental disorders. The
+dataset and code will become publicly accessible in
+https://github.com/lemonsis/MDD-5k.",http://arxiv.org/pdf/2408.12142v1,,False
+Geolocation Representation from Large Language Models are Generic Enhancers for Spatio-Temporal Learning,22/08/2024,"Junlin He, Tong Nie, Wei Ma","In the geospatial domain, universal representation models are significantly
+less prevalent than their extensive use in natural language processing and
+computer vision. This discrepancy arises primarily from the high costs
+associated with the input of existing representation models, which often
+require street views and mobility data. To address this, we develop a novel,
+training-free method that leverages large language models (LLMs) and auxiliary
+map data from OpenStreetMap to derive geolocation representations (LLMGeovec).
+LLMGeovec can represent the geographic semantics of city, country, and global
+scales, which acts as a generic enhancer for spatio-temporal learning.
+Specifically, by direct feature concatenation, we introduce a simple yet
+effective paradigm for enhancing multiple spatio-temporal tasks including
+geographic prediction (GP), long-term time series forecasting (LTSF), and
+graph-based spatio-temporal forecasting (GSTF). LLMGeovec can seamlessly
+integrate into a wide spectrum of spatio-temporal learning models, providing
+immediate enhancements. Experimental results demonstrate that LLMGeovec
+achieves global coverage and significantly boosts the performance of leading
+GP, LTSF, and GSTF models.",http://arxiv.org/pdf/2408.12116v1,,False
+Cross-border Commodity Pricing Strategy Optimization via Mixed Neural Network for Time Series Analysis,22/08/2024,"Lijuan Wang, Yijia Hu, Yan Zhou","In the context of global trade, cross-border commodity pricing largely
+determines the competitiveness and market share of businesses. However,
+existing methodologies often prove inadequate, as they lack the agility and
+precision required to effectively respond to the dynamic international markets.
+Time series data is of great significance in commodity pricing and can reveal
+market dynamics and trends. Therefore, we propose a new method based on the
+hybrid neural network model CNN-BiGRU-SSA. The goal is to achieve accurate
+prediction and optimization of cross-border commodity pricing strategies
+through in-depth analysis and optimization of time series data. Our model
+undergoes experimental validation across multiple datasets. The results show
+that our method achieves significant performance advantages on datasets such as
+UNCTAD, IMF, WITS and China Customs. For example, on the UNCTAD dataset, our
+model reduces MAE to 4.357, RMSE to 5.406, and R2 to 0.961, significantly
+better than other models. On the IMF and WITS datasets, our method also
+achieves similar excellent performance. These experimental results verify the
+effectiveness and reliability of our model in the field of cross-border
+commodity pricing. Overall, this study provides an important reference for
+enterprises to formulate more reasonable and effective cross-border commodity
+pricing strategies, thereby enhancing market competitiveness and profitability.
+At the same time, our method also lays a foundation for the application of deep
+learning in the fields of international trade and economic strategy
+optimization, which has important theoretical and practical significance.",http://arxiv.org/pdf/2408.12115v1,,False
+Risk Analysis in Customer Relationship Management via Quantile Region Convolutional Neural Network-Long Short-Term Memory and Cross-Attention Mechanism,22/08/2024,"Yaowen Huang, Jun Der Leu, Baoli Lu, Yan Zhou","Risk analysis is an important business decision support task in customer
+relationship management (CRM), involving the identification of potential risks
+or challenges that may affect customer satisfaction, retention rates, and
+overall business performance. To enhance risk analysis in CRM, this paper
+combines the advantages of quantile region convolutional neural network-long
+short-term memory (QRCNN-LSTM) and cross-attention mechanisms for modeling. The
+QRCNN-LSTM model combines sequence modeling with deep learning architectures
+commonly used in natural language processing tasks, enabling the capture of
+both local and global dependencies in sequence data. The cross-attention
+mechanism enhances interactions between different input data parts, allowing
+the model to focus on specific areas or features relevant to CRM risk analysis.
+By applying QRCNN-LSTM and cross-attention mechanisms to CRM risk analysis,
+empirical evidence demonstrates that this approach can effectively identify
+potential risks and provide data-driven support for business decisions.",http://arxiv.org/pdf/2408.12113v1,,False
+Unsupervised discovery of the shared and private geometry in multi-view data,22/08/2024,"Sai Koukuntla, Joshua B. Julian, Jesse C. Kaminsky, Manuel Schottdorf, David W. Tank, Carlos D. Brody, Adam S. Charles","Modern applications often leverage multiple views of a subject of study.
+Within neuroscience, there is growing interest in large-scale simultaneous
+recordings across multiple brain regions. Understanding the relationship
+between views (e.g., the neural activity in each region recorded) can reveal
+fundamental principles about the characteristics of each representation and
+about the system. However, existing methods to characterize such relationships
+either lack the expressivity required to capture complex nonlinearities,
+describe only sources of variance that are shared between views, or discard
+geometric information that is crucial to interpreting the data. Here, we
+develop a nonlinear neural network-based method that, given paired samples of
+high-dimensional views, disentangles low-dimensional shared and private latent
+variables underlying these views while preserving intrinsic data geometry.
+Across multiple simulated and real datasets, we demonstrate that our method
+outperforms competing methods. Using simulated populations of lateral
+geniculate nucleus (LGN) and V1 neurons we demonstrate our model's ability to
+discover interpretable shared and private structure across different noise
+conditions. On a dataset of unrotated and corresponding but randomly rotated
+MNIST digits, we recover private latents for the rotated view that encode
+rotation angle regardless of digit class, and places the angle representation
+on a 1-d manifold, while shared latents encode digit class but not rotation
+angle. Applying our method to simultaneous Neuropixels recordings of
+hippocampus and prefrontal cortex while mice run on a linear track, we discover
+a low-dimensional shared latent space that encodes the animal's position. We
+propose our approach as a general-purpose method for finding succinct and
+interpretable descriptions of paired data sets in terms of disentangled shared
+and private latent variables.",http://arxiv.org/pdf/2408.12091v1,,False
+Through-the-Wall Radar Human Activity Micro-Doppler Signature Representation Method Based on Joint Boulic-Sinusoidal Pendulum Model,22/08/2024,"Xiaopeng Yang, Weicheng Gao, Xiaodong Qu, Zeyu Ma, Hao Zhang","With the help of micro-Doppler signature, ultra-wideband (UWB)
+through-the-wall radar (TWR) enables the reconstruction of range and velocity
+information of limb nodes to accurately identify indoor human activities.
+However, existing methods are usually trained and validated directly using
+range-time maps (RTM) and Doppler-time maps (DTM), which have high feature
+redundancy and poor generalization ability. In order to solve this problem,
+this paper proposes a human activity micro-Doppler signature representation
+method based on joint Boulic-sinusoidal pendulum motion model. In detail, this
+paper presents a simplified joint Boulic-sinusoidal pendulum human motion model
+by taking head, torso, both hands and feet into consideration improved from
+Boulic-Thalmann kinematic model. The paper also calculates the minimum number
+of key points needed to describe the Doppler and micro-Doppler information
+sufficiently. Both numerical simulations and experiments are conducted to
+verify the effectiveness. The results demonstrate that the proposed number of
+key points of micro-Doppler signature can precisely represent the indoor human
+limb node motion characteristics, and substantially improve the generalization
+capability of the existing methods for different testers.",http://arxiv.org/pdf/2408.12077v1,10.1109/TMTT.2024.3441591,False
+Simplified Mamba with Disentangled Dependency Encoding for Long-Term Time Series Forecasting,22/08/2024,"Zixuan Weng, Jindong Han, Wenzhao Jiang, Hao Liu","Recently many deep learning models have been proposed for Long-term Time
+Series Forecasting (LTSF). Based on previous literature, we identify three
+critical patterns that can improve forecasting accuracy: the order and semantic
+dependencies in time dimension as well as cross-variate dependency. However,
+little effort has been made to simultaneously consider order and semantic
+dependencies when developing forecasting models. Moreover, existing approaches
+utilize cross-variate dependency by mixing information from different
+timestamps and variates, which may introduce irrelevant or harmful
+cross-variate information to the time dimension and largely hinder forecasting
+performance. To overcome these limitations, we investigate the potential of
+Mamba for LTSF and discover two key advantages benefiting forecasting: (i) the
+selection mechanism makes Mamba focus on or ignore specific inputs and learn
+semantic dependency easily, and (ii) Mamba preserves order dependency by
+processing sequences recursively. After that, we empirically find that the
+non-linear activation used in Mamba is unnecessary for semantically sparse time
+series data. Therefore, we further propose SAMBA, a Simplified Mamba with
+disentangled dependency encoding. Specifically, we first remove the
+non-linearities of Mamba to make it more suitable for LTSF. Furthermore, we
+propose a disentangled dependency encoding strategy to endow Mamba with
+cross-variate dependency modeling capabilities while reducing the interference
+between time and variate dimensions. Extensive experimental results on seven
+real-world datasets demonstrate the effectiveness of SAMBA over
+state-of-the-art forecasting models.",http://arxiv.org/pdf/2408.12068v1,,False

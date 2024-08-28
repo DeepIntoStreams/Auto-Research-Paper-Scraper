@@ -1,0 +1,248 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+The Mamba in the Llama: Distilling and Accelerating Hybrid Models,27/08/2024,"Junxiong Wang, Daniele Paliotta, Avner May, Alexander M. Rush, Tri Dao","Linear RNN architectures, like Mamba, can be competitive with Transformer
+models in language modeling while having advantageous deployment
+characteristics. Given the focus on training large-scale Transformer models, we
+consider the challenge of converting these pretrained models for deployment. We
+demonstrate that it is feasible to distill large Transformers into linear RNNs
+by reusing the linear projection weights from attention layers with academic
+GPU resources. The resulting hybrid model, which incorporates a quarter of the
+attention layers, achieves performance comparable to the original Transformer
+in chat benchmarks and outperforms open-source hybrid Mamba models trained from
+scratch with trillions of tokens in both chat benchmarks and general
+benchmarks. Moreover, we introduce a hardware-aware speculative decoding
+algorithm that accelerates the inference speed of Mamba and hybrid models.
+Overall we show how, with limited computation resources, we can remove many of
+the original attention layers and generate from the resulting model more
+efficiently. Our top-performing model, distilled from Llama3-8B-Instruct,
+achieves a 29.61 length-controlled win rate on AlpacaEval 2 against GPT-4 and
+7.35 on MT-Bench, surpassing the best instruction-tuned linear RNN model.",http://arxiv.org/pdf/2408.15237v1,,False
+How transformers learn structured data: insights from hierarchical filtering,27/08/2024,"Jerome Garnier-Brun, Marc Mézard, Emanuele Moscato, Luca Saglietti","We introduce a hierarchical filtering procedure for generative models of
+sequences on trees, enabling control over the range of positional correlations
+in the data. Leveraging this controlled setting, we provide evidence that
+vanilla encoder-only transformer architectures can implement the optimal Belief
+Propagation algorithm on both root classification and masked language modeling
+tasks. Correlations at larger distances corresponding to increasing layers of
+the hierarchy are sequentially included as the network is trained. We analyze
+how the transformer layers succeed by focusing on attention maps from models
+trained with varying degrees of filtering. These attention maps show clear
+evidence for iterative hierarchical reconstruction of correlations, and we can
+relate these observations to a plausible implementation of the exact inference
+algorithm for the network sizes considered.",http://arxiv.org/pdf/2408.15138v1,,False
+Urdu Digital Text Word Optical Character Recognition Using Permuted Auto Regressive Sequence Modeling,27/08/2024,"Ahmed Mustafa, Ijlal Baig, Hasan Sajid","This research paper introduces an innovative word-level Optical Character
+Recognition (OCR) model specifically designed for digital Urdu text
+recognition. Utilizing transformer-based architectures and attention
+mechanisms, the model was trained on a comprehensive dataset of approximately
+160,000 Urdu text images, achieving a character error rate (CER) of 0.178,
+which highlights its superior accuracy in recognizing Urdu characters. The
+model's strength lies in its unique architecture, incorporating the permuted
+autoregressive sequence (PARSeq) model, which allows for context-aware
+inference and iterative refinement by leveraging bidirectional context
+information to enhance recognition accuracy. Furthermore, its capability to
+handle a diverse range of Urdu text styles, fonts, and variations enhances its
+applicability in real-world scenarios. Despite its promising results, the model
+has some limitations, such as difficulty with blurred images, non-horizontal
+orientations, and overlays of patterns, lines, or other text, which can
+occasionally lead to suboptimal performance. Additionally, trailing or
+following punctuation marks can introduce noise into the recognition process.
+Addressing these challenges will be a focus of future research, aiming to
+refine the model further, explore data augmentation techniques, optimize
+hyperparameters, and integrate contextual improvements for more accurate and
+efficient Urdu text recognition.",http://arxiv.org/pdf/2408.15119v1,,False
+Data-Driven Nonlinear Deformation Design of 3D-Printable Shells,27/08/2024,"Samuel Silverman, Kelsey L. Snapp, Keith A. Brown, Emily Whiting","Designing and fabricating structures with specific mechanical properties
+requires understanding the intricate relationship between design parameters and
+performance. Understanding the design-performance relationship becomes
+increasingly complicated for nonlinear deformations. Though successful at
+modeling elastic deformations, simulation-based techniques struggle to model
+large elastoplastic deformations exhibiting plasticity and densification. We
+propose a neural network trained on experimental data to learn the
+design-performance relationship between 3D-printable shells and their
+compressive force-displacement behavior. Trained on thousands of physical
+experiments, our network aids in both forward and inverse design to generate
+shells exhibiting desired elastoplastic and hyperelastic deformations. We
+validate a subset of generated designs through fabrication and testing.
+Furthermore, we demonstrate the network's inverse design efficacy in generating
+custom shells for several applications.",http://arxiv.org/pdf/2408.15097v1,,False
+Earth Observation Satellite Scheduling with Graph Neural Networks,27/08/2024,"Antoine Jacquet, Guillaume Infantes, Nicolas Meuleau, Emmanuel Benazera, Stéphanie Roussel, Vincent Baudoui, Jonathan Guerra","The Earth Observation Satellite Planning (EOSP) is a difficult optimization
+problem with considerable practical interest. A set of requested observations
+must be scheduled on an agile Earth observation satellite while respecting
+constraints on their visibility window, as well as maneuver constraints that
+impose varying delays between successive observations. In addition, the problem
+is largely oversubscribed: there are much more candidate observations than what
+can possibly be achieved. Therefore, one must select the set of observations
+that will be performed while maximizing their weighted cumulative benefit, and
+propose a feasible schedule for these observations. As previous work mostly
+focused on heuristic and iterative search algorithms, this paper presents a new
+technique for selecting and scheduling observations based on Graph Neural
+Networks (GNNs) and Deep Reinforcement Learning (DRL). GNNs are used to extract
+relevant information from the graphs representing instances of the EOSP, and
+DRL drives the search for optimal schedules. Our simulations show that it is
+able to learn on small problem instances and generalize to larger real-world
+instances, with very competitive performance compared to traditional
+approaches.",http://arxiv.org/pdf/2408.15041v1,,False
+Sequence-aware Pre-training for Echocardiography Probe Guidance,27/08/2024,"Haojun Jiang, Zhenguo Sun, Yu Sun, Ning Jia, Meng Li, Shaqi Luo, Shiji Song, Gao Huang","Cardiac ultrasound probe guidance aims to help novices adjust the 6-DOF probe
+pose to obtain high-quality sectional images. Cardiac ultrasound faces two
+major challenges: (1) the inherently complex structure of the heart, and (2)
+significant individual variations. Previous works have only learned the
+population-averaged 2D and 3D structures of the heart rather than personalized
+cardiac structural features, leading to a performance bottleneck. Clinically,
+we observed that sonographers adjust their understanding of a patient's cardiac
+structure based on prior scanning sequences, thereby modifying their scanning
+strategies. Inspired by this, we propose a sequence-aware self-supervised
+pre-training method. Specifically, our approach learns personalized 2D and 3D
+cardiac structural features by predicting the masked-out images and actions in
+a scanning sequence. We hypothesize that if the model can predict the missing
+content it has acquired a good understanding of the personalized cardiac
+structure. In the downstream probe guidance task, we also introduced a sequence
+modeling approach that models individual cardiac structural information based
+on the images and actions from historical scan data, enabling more accurate
+navigation decisions. Experiments on a large-scale dataset with 1.36 million
+samples demonstrated that our proposed sequence-aware paradigm can
+significantly reduce navigation errors, with translation errors decreasing by
+15.90% to 36.87% and rotation errors decreasing by 11.13% to 20.77%, compared
+to state-of-the-art methods.",http://arxiv.org/pdf/2408.15026v1,,False
+Prior-free Balanced Replay: Uncertainty-guided Reservoir Sampling for Long-Tailed Continual Learning,27/08/2024,"Lei Liu, Li Liu, Yawen Cui","Even in the era of large models, one of the well-known issues in continual
+learning (CL) is catastrophic forgetting, which is significantly challenging
+when the continual data stream exhibits a long-tailed distribution, termed as
+Long-Tailed Continual Learning (LTCL). Existing LTCL solutions generally
+require the label distribution of the data stream to achieve re-balance
+training. However, obtaining such prior information is often infeasible in real
+scenarios since the model should learn without pre-identifying the majority and
+minority classes. To this end, we propose a novel Prior-free Balanced Replay
+(PBR) framework to learn from long-tailed data stream with less forgetting.
+Concretely, motivated by our experimental finding that the minority classes are
+more likely to be forgotten due to the higher uncertainty, we newly design an
+uncertainty-guided reservoir sampling strategy to prioritize rehearsing
+minority data without using any prior information, which is based on the mutual
+dependence between the model and samples. Additionally, we incorporate two
+prior-free components to further reduce the forgetting issue: (1) Boundary
+constraint is to preserve uncertain boundary supporting samples for continually
+re-estimating task boundaries. (2) Prototype constraint is to maintain the
+consistency of learned class prototypes along with training. Our approach is
+evaluated on three standard long-tailed benchmarks, demonstrating superior
+performance to existing CL methods and previous SOTA LTCL approach in both
+task- and class-incremental learning settings, as well as ordered- and
+shuffled-LTCL settings.",http://arxiv.org/pdf/2408.14976v1,,False
+Development of Large Annotated Music Datasets using HMM-based Forced Viterbi Alignment,27/08/2024,"S. Johanan Joysingh, P. Vijayalakshmi, T. Nagarajan","Datasets are essential for any machine learning task. Automatic Music
+Transcription (AMT) is one such task, where considerable amount of data is
+required depending on the way the solution is achieved. Considering the fact
+that a music dataset, complete with audio and its time-aligned transcriptions
+would require the effort of people with musical experience, it could be stated
+that the task becomes even more challenging. Musical experience is required in
+playing the musical instrument(s), and in annotating and verifying the
+transcriptions. We propose a method that would help in streamlining this
+process, making the task of obtaining a dataset from a particular instrument
+easy and efficient. We use predefined guitar exercises and hidden Markov
+model(HMM) based forced viterbi alignment to accomplish this. The guitar
+exercises are designed to be simple. Since the note sequence are already
+defined, HMM based forced viterbi alignment provides time-aligned
+transcriptions of these audio files. The onsets of the transcriptions are
+manually verified and the labels are accurate up to 10ms, averaging at 5ms. The
+contributions of the proposed work is two fold, i) a well streamlined and
+efficient method for generating datasets for any instrument, especially
+monophonic and, ii) an acoustic plectrum guitar dataset containing wave files
+and transcriptions in the form of label files. This method will aid as a
+preliminary step towards building concrete datasets for building AMT systems
+for different instruments.",http://arxiv.org/pdf/2408.14890v1,10.1109/TENCON.2019.8929664,False
+Data downlink prioritization using image classification on-board a 6U CubeSat,27/08/2024,"Keenan A. A. Chatar, Ezra Fielding, Kei Sano, Kentaro Kitamura","Nanosatellites are proliferating as low-cost dedicated sensing systems with
+lean development cycles. Kyushu Institute of Technology and collaborators have
+launched a joint venture for a nanosatellite mission, VERTECS. The primary
+mission is to elucidate the formation history of stars by observing the
+optical-wavelength cosmic background radiation. The VERTECS satellite will be
+equipped with a small-aperture telescope and a high-precision attitude control
+system to capture the cosmic data for analysis on the ground. However,
+nanosatellites are limited by their onboard memory resources and downlink speed
+capabilities. Additionally, due to a limited number of ground stations, the
+satellite mission will face issues meeting the required data budget for mission
+success. To alleviate this issue, we propose an on-orbit system to autonomously
+classify and then compress desirable image data for data downlink
+prioritization and optimization. The system comprises a prototype Camera
+Controller Board (CCB) which carries a Raspberry Pi Compute Module 4 which is
+used for classification and compression. The system uses a lightweight
+Convolutional Neural Network (CNN) model to classify and determine the
+desirability of captured image data. The model is designed to be lean and
+robust to reduce the computational and memory load on the satellite. The model
+is trained and tested on a novel star field dataset consisting of data captured
+by the Sloan Digital Sky Survey (SDSS). The dataset is meant to simulate the
+expected data produced by the 6U satellite. The compression step implements
+GZip, RICE or HCOMPRESS compression, which are standards for astronomical data.
+Preliminary testing on the proposed CNN model results in a classification
+accuracy of about 100\% on the star field dataset, with compression ratios of
+3.99, 5.16 and 5.43 for GZip, RICE and HCOMPRESS that were achieved on tested
+FITS image data.",http://arxiv.org/pdf/2408.14865v1,10.1117/12.2684047,False
+Correntropy-Based Improper Likelihood Model for Robust Electrophysiological Source Imaging,27/08/2024,"Yuanhao Li, Badong Chen, Zhongxu Hu, Keita Suzuki, Wenjun Bai, Yasuharu Koike, Okito Yamashita","Bayesian learning provides a unified skeleton to solve the
+electrophysiological source imaging task. From this perspective, existing
+source imaging algorithms utilize the Gaussian assumption for the observation
+noise to build the likelihood function for Bayesian inference. However, the
+electromagnetic measurements of brain activity are usually affected by
+miscellaneous artifacts, leading to a potentially non-Gaussian distribution for
+the observation noise. Hence the conventional Gaussian likelihood model is a
+suboptimal choice for the real-world source imaging task. In this study, we aim
+to solve this problem by proposing a new likelihood model which is robust with
+respect to non-Gaussian noises. Motivated by the robust maximum correntropy
+criterion, we propose a new improper distribution model concerning the noise
+assumption. This new noise distribution is leveraged to structure a robust
+likelihood function and integrated with hierarchical prior distributions to
+estimate source activities by variational inference. In particular, the score
+matching is adopted to determine the hyperparameters for the improper
+likelihood model. A comprehensive performance evaluation is performed to
+compare the proposed noise assumption to the conventional Gaussian model.
+Simulation results show that, the proposed method can realize more precise
+source reconstruction by designing known ground-truth. The real-world dataset
+also demonstrates the superiority of our new method with the visual perception
+task. This study provides a new backbone for Bayesian source imaging, which
+would facilitate its application using real-world noisy brain signal.",http://arxiv.org/pdf/2408.14843v1,,False
+Diffusion Models Are Real-Time Game Engines,27/08/2024,"Dani Valevski, Yaniv Leviathan, Moab Arar, Shlomi Fruchter","We present GameNGen, the first game engine powered entirely by a neural model
+that enables real-time interaction with a complex environment over long
+trajectories at high quality. GameNGen can interactively simulate the classic
+game DOOM at over 20 frames per second on a single TPU. Next frame prediction
+achieves a PSNR of 29.4, comparable to lossy JPEG compression. Human raters are
+only slightly better than random chance at distinguishing short clips of the
+game from clips of the simulation. GameNGen is trained in two phases: (1) an
+RL-agent learns to play the game and the training sessions are recorded, and
+(2) a diffusion model is trained to produce the next frame, conditioned on the
+sequence of past frames and actions. Conditioning augmentations enable stable
+auto-regressive generation over long trajectories.",http://arxiv.org/pdf/2408.14837v1,,False
+Channel-wise Influence: Estimating Data Influence for Multivariate Time Series,27/08/2024,"Muyao Wang, Zeke Xie, Bo Chen","The influence function, a technique from robust statistics, measures the
+impact on model parameters or related functions when training data is removed
+or modified. This effective and valuable post-hoc method allows for studying
+the interpretability of machine learning models without requiring costly model
+retraining. It would provide extensions like increasing model performance,
+improving model generalization, and offering interpretability. Recently,
+Multivariate Time Series (MTS) analysis has become an important yet challenging
+task, attracting significant attention. However, there is no preceding research
+on the influence functions of MTS to shed light on the effects of modifying the
+channel of training MTS. Given that each channel in an MTS plays a crucial role
+in its analysis, it is essential to characterize the influence of different
+channels. To fill this gap, we propose a channel-wise influence function, which
+is the first method that can estimate the influence of different channels in
+MTS, utilizing a first-order gradient approximation that leverages the more
+informative average gradient of the data set. Additionally, we demonstrate how
+this influence function can be used to estimate the impact of a channel in MTS.
+Finally, we validated the accuracy and effectiveness of our influence
+estimation function in critical MTS analysis tasks, such as MTS anomaly
+detection and MTS forecasting. According to abundant experiments on real-world
+dataset, the original influence function performs worse than our method and
+even fail for the channel pruning problem, which demonstrate the superiority
+and necessity of channel-wise influence function in MTS analysis tasks.",http://arxiv.org/pdf/2408.14763v1,,False
+Sequential-Scanning Dual-Energy CT Imaging Using High Temporal Resolution Image Reconstruction and Error-Compensated Material Basis Image Generation,27/08/2024,"Qiaoxin Li, Ruifeng Chen, Peng Wang, Guotao Quan, Yanfeng Du, Dong Liang, Yinsheng Li","Dual-energy computed tomography (DECT) has been widely used to obtain
+quantitative elemental composition of imaged subjects for personalized and
+precise medical diagnosis. Compared with DECT leveraging advanced X-ray source
+and/or detector technologies, the use of the sequential-scanning data
+acquisition scheme to implement DECT may make a broader impact on clinical
+practice because this scheme requires no specialized hardware designs and can
+be directly implemented into conventional CT systems. However, since the
+concentration of iodinated contrast agent in the imaged subject varies over
+time, sequentially scanned data sets acquired at two tube potentials are
+temporally inconsistent. As existing material basis image reconstruction
+approaches assume that the data sets acquired at two tube potentials are
+temporally consistent, the violation of this assumption results in inaccurate
+quantification of material concentration. In this work, we developed
+sequential-scanning DECT imaging using high temporal resolution image
+reconstruction and error-compensated material basis image generation,
+ACCELERATION in short, to address the technical challenge induced by temporal
+inconsistency of sequentially scanned data sets and improve quantification
+accuracy of material concentration in sequential-scanning DECT. ACCELERATION
+has been validated and evaluated using numerical simulation data sets generated
+from clinical human subject exams and experimental human subject studies.
+Results demonstrated the improvement of quantification accuracy and image
+quality using ACCELERATION.",http://arxiv.org/pdf/2408.14754v1,,False

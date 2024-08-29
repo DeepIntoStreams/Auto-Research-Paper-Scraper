@@ -1,0 +1,202 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Modeling and Analyzing the Influence of Non-Item Pages on Sequential Next-Item Prediction,28/08/2024,"Elisabeth Fischer, Daniel Schlör, Albin Zehe, Andreas Hotho","Analyzing the sequence of historical interactions between users and items,
+sequential recommendation models learn user intent and make predictions about
+the next item of interest. Next to these item interactions, most systems also
+have interactions with pages not related to specific items, for example
+navigation pages, account pages, and pages for a specific category, which may
+provide additional insights into the user's interests. However, while there are
+several approaches to integrate additional information about items and users,
+the topic of integrating non-item pages has been less explored. We use the
+hypotheses testing framework HypTrails to show that there is indeed a
+relationship between these non-item pages and the items of interest and fill
+this gap by proposing various approaches of representing non-item pages (e.g,
+based on their content) to use them as an additional information source for the
+task of sequential next-item prediction.
+  We create a synthetic dataset with non-item pages highly related to the
+subsequent item to show that the models are generally capable of learning from
+these interactions, and subsequently evaluate the improvements gained by
+including non-item pages in two real-world datasets.
+  We adapt eight popular sequential recommender models, covering CNN-, RNN- and
+transformer-based architectures, to integrate non-item pages and investigate
+the capabilities of these models to leverage their information for next item
+prediction. We also analyze their behavior on noisy data and compare different
+item representation strategies.
+  Our results show that non-item pages are a valuable source of information,
+but representing such a page well is the key to successfully leverage them. The
+inclusion of non-item pages can increase the performance for next-item
+prediction in all examined model architectures with a varying degree.",http://arxiv.org/pdf/2408.15953v1,,False
+Persuasion Games using Large Language Models,28/08/2024,"Ganesh Prasath Ramani, Shirish Karande, Santhosh V, Yash Bhatia","Large Language Models (LLMs) have emerged as formidable instruments capable
+of comprehending and producing human-like text. This paper explores the
+potential of LLMs, to shape human perspectives and subsequently influence their
+decisions on particular tasks. This capability finds applications in diverse
+domains such as Investment, Credit cards and Insurance, wherein they assist
+users in selecting appropriate insurance policies, investment plans, Credit
+cards, Retail, as well as in Behavioral Change Support Systems (BCSS).
+  We present a sophisticated multi-agent framework wherein a consortium of
+agents operate in collaborative manner. The primary agent engages directly with
+users through persuasive dialogue, while the auxiliary agents perform tasks
+such as information retrieval, response analysis, development of persuasion
+strategies, and validation of facts. Empirical evidence from our experiments
+demonstrates that this collaborative methodology significantly enhances the
+persuasive efficacy of the LLM. We analyze user resistance to persuasive
+efforts continuously and counteract it by employing a combination of rule-based
+and LLM-based resistance-persuasion mapping techniques.
+  We employ simulated personas and generate conversations in insurance,
+banking, and retail domains to evaluate the proficiency of large language
+models (LLMs) in recognizing, adjusting to, and influencing various personality
+types. Concurrently, we examine the resistance mechanisms employed by LLM
+simulated personas. Persuasion is quantified via measurable surveys before and
+after interaction, LLM-generated scores on conversation, and user decisions
+(purchase or non-purchase).",http://arxiv.org/pdf/2408.15879v1,,False
+GenDDS: Generating Diverse Driving Video Scenarios with Prompt-to-Video Generative Model,28/08/2024,"Yongjie Fu, Yunlong Li, Xuan Di","Autonomous driving training requires a diverse range of datasets encompassing
+various traffic conditions, weather scenarios, and road types. Traditional data
+augmentation methods often struggle to generate datasets that represent rare
+occurrences. To address this challenge, we propose GenDDS, a novel approach for
+generating driving scenarios generation by leveraging the capabilities of
+Stable Diffusion XL (SDXL), an advanced latent diffusion model. Our methodology
+involves the use of descriptive prompts to guide the synthesis process, aimed
+at producing realistic and diverse driving scenarios. With the power of the
+latest computer vision techniques, such as ControlNet and Hotshot-XL, we have
+built a complete pipeline for video generation together with SDXL. We employ
+the KITTI dataset, which includes real-world driving videos, to train the
+model. Through a series of experiments, we demonstrate that our model can
+generate high-quality driving videos that closely replicate the complexity and
+variability of real-world driving scenarios. This research contributes to the
+development of sophisticated training data for autonomous driving systems and
+opens new avenues for creating virtual environments for simulation and
+validation purposes.",http://arxiv.org/pdf/2408.15868v1,,False
+chemtrain: Learning Deep Potential Models via Automatic Differentiation and Statistical Physics,28/08/2024,"Paul Fuchs, Stephan Thaler, Sebastien Röcken, Julija Zavadlav","Neural Networks (NNs) are promising models for refining the accuracy of
+molecular dynamics, potentially opening up new fields of application. Typically
+trained bottom-up, atomistic NN potential models can reach first-principle
+accuracy, while coarse-grained implicit solvent NN potentials surpass classical
+continuum solvent models. However, overcoming the limitations of costly
+generation of accurate reference data and data inefficiency of common bottom-up
+training demands efficient incorporation of data from many sources. This paper
+introduces the framework chemtrain to learn sophisticated NN potential models
+through customizable training routines and advanced training algorithms. These
+routines can combine multiple top-down and bottom-up algorithms, e.g., to
+incorporate both experimental and simulation data or pre-train potentials with
+less costly algorithms. chemtrain provides an object-oriented high-level
+interface to simplify the creation of custom routines. On the lower level,
+chemtrain relies on JAX to compute gradients and scale the computations to use
+available resources. We demonstrate the simplicity and importance of combining
+multiple algorithms in the examples of parametrizing an all-atomistic model of
+titanium and a coarse-grained implicit solvent model of alanine dipeptide.",http://arxiv.org/pdf/2408.15852v1,,False
+Automatic Differential Diagnosis using Transformer-Based Multi-Label Sequence Classification,28/08/2024,"Abu Adnan Sadi, Mohammad Ashrafuzzaman Khan, Lubaba Binte Saber","As the field of artificial intelligence progresses, assistive technologies
+are becoming more widely used across all industries. The healthcare industry is
+no different, with numerous studies being done to develop assistive tools for
+healthcare professionals. Automatic diagnostic systems are one such beneficial
+tool that can assist with a variety of tasks, including collecting patient
+information, analyzing test results, and diagnosing patients. However, the idea
+of developing systems that can provide a differential diagnosis has been
+largely overlooked in most of these research studies. In this study, we propose
+a transformer-based approach for providing differential diagnoses based on a
+patient's age, sex, medical history, and symptoms. We use the DDXPlus dataset,
+which provides differential diagnosis information for patients based on 49
+disease types. Firstly, we propose a method to process the tabular patient data
+from the dataset and engineer them into patient reports to make them suitable
+for our research. In addition, we introduce two data modification modules to
+diversify the training data and consequently improve the robustness of the
+models. We approach the task as a multi-label classification problem and
+conduct extensive experiments using four transformer models. All the models
+displayed promising results by achieving over 97% F1 score on the held-out test
+set. Moreover, we design additional behavioral tests to get a broader
+understanding of the models. In particular, for one of our test cases, we
+prepared a custom test set of 100 samples with the assistance of a doctor. The
+results on the custom set showed that our proposed data modification modules
+improved the model's generalization capabilities. We hope our findings will
+provide future researchers with valuable insights and inspire them to develop
+reliable systems for automatic differential diagnosis.",http://arxiv.org/pdf/2408.15827v1,,False
+Autoregressive model path dependence near Ising criticality,28/08/2024,"Yi Hong Teoh, Roger G. Melko","Autoregressive models are a class of generative model that probabilistically
+predict the next output of a sequence based on previous inputs. The
+autoregressive sequence is by definition one-dimensional (1D), which is natural
+for language tasks and hence an important component of modern architectures
+like recurrent neural networks (RNNs) and transformers. However, when language
+models are used to predict outputs on physical systems that are not
+intrinsically 1D, the question arises of which choice of autoregressive
+sequence -- if any -- is optimal. In this paper, we study the reconstruction of
+critical correlations in the two-dimensional (2D) Ising model, using RNNs and
+transformers trained on binary spin data obtained near the thermal phase
+transition. We compare the training performance for a number of different 1D
+autoregressive sequences imposed on finite-size 2D lattices. We find that paths
+with long 1D segments are more efficient at training the autoregressive models
+compared to space-filling curves that better preserve the 2D locality. Our
+results illustrate the potential importance in choosing the optimal
+autoregressive sequence ordering when training modern language models for tasks
+in physics.",http://arxiv.org/pdf/2408.15715v1,,False
+CBF-LLM: Safe Control for LLM Alignment,28/08/2024,"Yuya Miyaoka, Masaki Inoue","This paper proposes a control-based framework for aligning large language
+models (LLMs) by leveraging a control barrier function (CBF) to ensure
+user-desirable text generation. The presented framework applies the safety
+filter, designed based on the CBF, to the output generation of the baseline
+LLM, i.e., the sequence of the token, with the aim of intervening in the
+generated text. The overall text-generation system is implemented with Llama 3
+and a RoBERTa model, and the source code is available at
+https://github.com/Mya-Mya/CBF-LLM. The experiment demonstrates its control
+ability and effectiveness in reducing the number of interventions needed for
+user-specified alignment tasks.",http://arxiv.org/pdf/2408.15625v1,,False
+Grand canonical generative diffusion model for crystalline phases and grain boundaries,28/08/2024,"Bo Lei, Enze Chen, Hyuna Kwon, Tim Hsu, Babak Sadigh, Vincenzo Lordi, Timofey Frolov, Fei Zhou","The diffusion model has emerged as a powerful tool for generating atomic
+structures for materials science. This work calls attention to the deficiency
+of current particle-based diffusion models, which represent atoms as a point
+cloud, in generating even the simplest ordered crystalline structures. The
+problem is attributed to particles being trapped in local minima during the
+score-driven simulated annealing of the diffusion process, similar to the
+physical process of force-driven simulated annealing. We develop a solution,
+the grand canonical diffusion model, which adopts an alternative voxel-based
+representation with continuous rather than fixed number of particles. The
+method is applied towards generation of several common crystalline phases as
+well as the technologically important and challenging problem of grain boundary
+structures.",http://arxiv.org/pdf/2408.15601v1,,False
+A Novel Denoising Technique and Deep Learning Based Hybrid Wind Speed Forecasting Model for Variable Terrain Conditions,28/08/2024,"Sourav Malakar, Saptarsi Goswami, Amlan Chakrabarti, Bhaswati Ganguli","Wind flow can be highly unpredictable and can suffer substantial fluctuations
+in speed and direction due to the shape and height of hills, mountains, and
+valleys, making accurate wind speed (WS) forecasting essential in complex
+terrain. This paper presents a novel and adaptive model for short-term
+forecasting of WS. The paper's key contributions are as follows: (a) The
+Partial Auto Correlation Function (PACF) is utilised to minimise the dimension
+of the set of Intrinsic Mode Functions (IMF), hence reducing training time; (b)
+The sample entropy (SampEn) was used to calculate the complexity of the reduced
+set of IMFs. The proposed technique is adaptive since a specific Deep Learning
+(DL) model-feature combination was chosen based on complexity; (c) A novel
+bidirectional feature-LSTM framework for complicated IMFs has been suggested,
+resulting in improved forecasting accuracy; (d) The proposed model shows
+superior forecasting performance compared to the persistence, hybrid, Ensemble
+empirical mode decomposition (EEMD), and Variational Mode Decomposition
+(VMD)-based deep learning models. It has achieved the lowest variance in terms
+of forecasting accuracy between simple and complex terrain conditions 0.70%.
+Dimension reduction of IMF's and complexity-based model-feature selection helps
+reduce the training time by 68.77% and improve forecasting quality by 58.58% on
+average.",http://arxiv.org/pdf/2408.15554v1,,False
+TrafficGamer: Reliable and Flexible Traffic Simulation for Safety-Critical Scenarios with Game-Theoretic Oracles,28/08/2024,"Guanren Qiao, Guorui Quan, Jiawei Yu, Shujun Jia, Guiliang Liu","While modern Autonomous Vehicle (AV) systems can develop reliable driving
+policies under regular traffic conditions, they frequently struggle with
+safety-critical traffic scenarios. This difficulty primarily arises from the
+rarity of such scenarios in driving datasets and the complexities associated
+with predictive modeling among multiple vehicles. To support the testing and
+refinement of AV policies, simulating safety-critical traffic events is an
+essential challenge to be addressed. In this work, we introduce TrafficGamer,
+which facilitates game-theoretic traffic simulation by viewing common road
+driving as a multi-agent game. In evaluating the empirical performance across
+various real-world datasets, TrafficGamer ensures both fidelity and
+exploitability of the simulated scenarios, guaranteeing that they not only
+statically align with real-world traffic distribution but also efficiently
+capture equilibriums for representing safety-critical scenarios involving
+multiple agents. Additionally, the results demonstrate that TrafficGamer
+exhibits highly flexible simulation across various contexts. Specifically, we
+demonstrate that the generated scenarios can dynamically adapt to equilibriums
+of varying tightness by configuring risk-sensitive constraints during
+optimization. To the best of our knowledge, TrafficGamer is the first simulator
+capable of generating diverse traffic scenarios involving multiple agents. We
+have provided a demo webpage for the project at
+https://qiaoguanren.github.io/trafficgamer-demo/.",http://arxiv.org/pdf/2408.15538v1,,False
+Improving Thompson Sampling via Information Relaxation for Budgeted Multi-armed Bandits,28/08/2024,"Woojin Jeong, Seungki Min","We consider a Bayesian budgeted multi-armed bandit problem, in which each arm
+consumes a different amount of resources when selected and there is a budget
+constraint on the total amount of resources that can be used. Budgeted Thompson
+Sampling (BTS) offers a very effective heuristic to this problem, but its
+arm-selection rule does not take into account the remaining budget information.
+We adopt \textit{Information Relaxation Sampling} framework that generalizes
+Thompson Sampling for classical $K$-armed bandit problems, and propose a series
+of algorithms that are randomized like BTS but more carefully optimize their
+decisions with respect to the budget constraint. In a one-to-one correspondence
+with these algorithms, a series of performance benchmarks that improve the
+conventional benchmark are also suggested. Our theoretical analysis and
+simulation results show that our algorithms (and our benchmarks) make
+incremental improvements over BTS (respectively, the conventional benchmark)
+across various settings including a real-world example.",http://arxiv.org/pdf/2408.15535v1,,False

@@ -1,0 +1,143 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Bidirectional Decoding: Improving Action Chunking via Closed-Loop Resampling,30/08/2024,"Yuejiang Liu, Jubayer Ibn Hamid, Annie Xie, Yoonho Lee, Maximilian Du, Chelsea Finn","Predicting and executing a sequence of actions without intermediate
+replanning, known as action chunking, is increasingly used in robot learning
+from human demonstrations. However, its effects on learned policies remain
+puzzling: some studies highlight its importance for achieving strong
+performance, while others observe detrimental effects. In this paper, we first
+dissect the role of action chunking by analyzing the divergence between the
+learner and the demonstrator. We find that longer action chunks enable a policy
+to better capture temporal dependencies by taking into account more past states
+and actions within the chunk. However, this advantage comes at the cost of
+exacerbating errors in stochastic environments due to fewer observations of
+recent states. To address this, we propose Bidirectional Decoding (BID), a
+test-time inference algorithm that bridges action chunking with closed-loop
+operations. BID samples multiple predictions at each time step and searches for
+the optimal one based on two criteria: (i) backward coherence, which favors
+samples aligned with previous decisions, (ii) forward contrast, which favors
+samples close to outputs of a stronger policy and distant from those of a
+weaker policy. By coupling decisions within and across action chunks, BID
+enhances temporal consistency over extended sequences while enabling adaptive
+replanning in stochastic environments. Experimental results show that BID
+substantially outperforms conventional closed-loop operations of two
+state-of-the-art generative policies across seven simulation benchmarks and two
+real-world tasks.",http://arxiv.org/pdf/2408.17355v1,,False
+Structuring a Training Strategy to Robustify Perception Models with Realistic Image Augmentations,30/08/2024,"Ahmed Hammam, Bharathwaj Krishnaswami Sreedhar, Nura Kawa, Tim Patzelt, Oliver De Candido","Advancing Machine Learning (ML)-based perception models for autonomous
+systems necessitates addressing weak spots within the models, particularly in
+challenging Operational Design Domains (ODDs). These are environmental
+operating conditions of an autonomous vehicle which can contain difficult
+conditions, e.g., lens flare at night or objects reflected in a wet street.
+This report introduces a novel methodology for training with augmentations to
+enhance model robustness and performance in such conditions. The proposed
+approach leverages customized physics-based augmentation functions, to generate
+realistic training data that simulates diverse ODD scenarios.
+  We present a comprehensive framework that includes identifying weak spots in
+ML models, selecting suitable augmentations, and devising effective training
+strategies. The methodology integrates hyperparameter optimization and latent
+space optimization to fine-tune augmentation parameters, ensuring they
+maximally improve the ML models' performance. Experimental results demonstrate
+improvements in model performance, as measured by commonly used metrics such as
+mean Average Precision (mAP) and mean Intersection over Union (mIoU) on
+open-source object detection and semantic segmentation models and datasets.
+  Our findings emphasize that optimal training strategies are model- and
+data-specific and highlight the benefits of integrating augmentations into the
+training pipeline. By incorporating augmentations, we observe enhanced
+robustness of ML-based perception models, making them more resilient to edge
+cases encountered in real-world ODDs. This work underlines the importance of
+customized augmentations and offers an effective solution for improving the
+safety and reliability of autonomous driving functions.",http://arxiv.org/pdf/2408.17311v1,,False
+Accelerating the discovery of steady-states of planetary interior dynamics with machine learning,30/08/2024,"Siddhant Agarwal, Nicola Tosi, Christian Hüttig, David S. Greenberg, Ali Can Bekar","Simulating mantle convection often requires reaching a computationally
+expensive steady-state, crucial for deriving scaling laws for thermal and
+dynamical flow properties and benchmarking numerical solutions. The strong
+temperature dependence of the rheology of mantle rocks causes viscosity
+variations of several orders of magnitude, leading to a slow-evolving stagnant
+lid where heat conduction dominates, overlying a rapidly-evolving and strongly
+convecting region. Time-stepping methods, while effective for fluids with
+constant viscosity, are hindered by the Courant criterion, which restricts the
+time step based on the system's maximum velocity and grid size. Consequently,
+achieving steady-state requires a large number of time steps due to the
+disparate time scales governing the stagnant and convecting regions.
+  We present a concept for accelerating mantle convection simulations using
+machine learning. We generate a dataset of 128 two-dimensional simulations with
+mixed basal and internal heating, and pressure- and temperature-dependent
+viscosity. We train a feedforward neural network on 97 simulations to predict
+steady-state temperature profiles. These can then be used to initialize
+numerical time stepping methods for different simulation parameters. Compared
+to typical initializations, the number of time steps required to reach
+steady-state is reduced by a median factor of 3.75. The benefit of this method
+lies in requiring very few simulations to train on, providing a solution with
+no prediction error as we initialize a numerical method, and posing minimal
+computational overhead at inference time. We demonstrate the effectiveness of
+our approach and discuss the potential implications for accelerated simulations
+for advancing mantle convection research.",http://arxiv.org/pdf/2408.17298v1,,False
+Short-term Wind Speed Forecasting for Power Integration in Smart Grids based on Hybrid LSSVM-SVMD Method,30/08/2024,"Ephrem Admasu Yekun, Alem H. Fitwib, Selvi Karpaga Subramaniand, Anubhav Kumard, Teshome Goa Tella","Owing to its minimal pollution and efficient energy use, wind energy has
+become one of the most widely exploited renewable energy resources. The
+successful integration of wind power into the grid system is contingent upon
+accurate wind speed forecasting models. However, the task of wind speed
+forecasting is challenging due to the inherent intermittent characteristics of
+wind speed. In this paper, a hybrid machine learning approach is developed for
+predicting short-term wind speed. First, the wind data was decomposed into
+modal components using Successive Variational Mode Decomposition (SVMD). Then,
+each sub-signal was fitted into a Least Squares Support Vector Machines (LSSVM)
+model, with its hyperparameter optimized by a novel variant of Quantum-behaved
+Particle Swarm Optimization (QPSO), QPSO with elitist breeding (EBQPSO).
+Second, the residuals making up for the differences between the original wind
+series and the aggregate of the SVMD modes were modeled using long short-term
+model (LSTM). Then, the overall predicted values were computed using the
+aggregate of the LSSVM and the LSTM models. Finally, the performance of the
+proposed model was compared against state-of-the-art benchmark models for
+forecasting wind speed using two separate data sets collected from a local wind
+farm. Empirical results show significant improvement in performance by the
+proposed method, achieving a 1.21% to 32.76% reduction in root mean square
+error (RMSE) and a 2.05% to 40.75% reduction in mean average error (MAE)
+compared to the benchmark methods. The entire code implementation of this work
+is freely available in Github.",http://arxiv.org/pdf/2408.17185v1,,False
+Error-controlled non-additive interaction discovery in machine learning models,30/08/2024,"Winston Chen, Yifan Jiang, William Stafford Noble, Yang Young Lu","Machine learning (ML) models are powerful tools for detecting complex
+patterns within data, yet their ""black box"" nature limits their
+interpretability, hindering their use in critical domains like healthcare and
+finance. To address this challenge, interpretable ML methods have been
+developed to explain how features influence model predictions. However, these
+methods often focus on univariate feature importance, overlooking the complex
+interactions between features that ML models are capable of capturing.
+Recognizing this limitation, recent efforts have aimed to extend these methods
+to discover feature interactions, but existing approaches struggle with
+robustness and error control, especially under data perturbations. In this
+study, we introduce Diamond, a novel method for trustworthy feature interaction
+discovery. Diamond uniquely integrates the model-X knockoffs framework to
+control the false discovery rate (FDR), ensuring that the proportion of falsely
+discovered interactions remains low. We further address the challenges of using
+off-the-shelf interaction importance measures by proposing a calibration
+procedure that refines these measures to maintain the desired FDR. Diamond's
+applicability spans a wide range of ML models, including deep neural networks,
+tree-based models, and factorization-based models. Our empirical evaluations on
+both simulated and real datasets across various biomedical studies demonstrate
+Diamond's utility in enabling more reliable data-driven scientific discoveries.
+This method represents a significant step forward in the deployment of ML
+models for scientific innovation and hypothesis generation.",http://arxiv.org/pdf/2408.17016v1,,False
+Improving Time Series Classification with Representation Soft Label Smoothing,30/08/2024,"Hengyi Ma, Weitong Chen","Previous research has indicated that deep neural network based models for
+time series classification (TSC) tasks are prone to overfitting. This issue can
+be mitigated by employing strategies that prevent the model from becoming
+overly confident in its predictions, such as label smoothing and confidence
+penalty. Building upon the concept of label smoothing, we propose a novel
+approach to generate more reliable soft labels, which we refer to as
+representation soft label smoothing. We apply label smoothing, confidence
+penalty, and our method representation soft label smoothing to several TSC
+models and compare their performance with baseline method which only uses hard
+labels for training. Our results demonstrate that the use of these enhancement
+techniques yields competitive results compared to the baseline method.
+Importantly, our method demonstrates strong performance across models with
+varying structures and complexities.",http://arxiv.org/pdf/2408.17010v1,,False
+Training Ultra Long Context Language Model with Fully Pipelined Distributed Transformer,30/08/2024,"Jinghan Yao, Sam Ade Jacobs, Masahiro Tanaka, Olatunji Ruwase, Aamir Shafi, Hari Subramoni, Dhabaleswar K. Panda","Large Language Models (LLMs) with long context capabilities are integral to
+complex tasks in natural language processing and computational biology, such as
+text generation and protein sequence analysis. However, training LLMs directly
+on extremely long contexts demands considerable GPU resources and increased
+memory, leading to higher costs and greater complexity. Alternative approaches
+that introduce long context capabilities via downstream finetuning or
+adaptations impose significant design limitations. In this paper, we propose
+Fully Pipelined Distributed Transformer (FPDT) for efficiently training
+long-context LLMs with extreme hardware efficiency. For GPT and Llama models,
+we achieve a 16x increase in sequence length that can be trained on the same
+hardware compared to current state-of-the-art solutions. With our dedicated
+sequence chunk pipeline design, we can now train 8B LLM with 2 million sequence
+length on only 4 GPUs, while also maintaining over 55% of MFU. Our proposed
+FPDT is agnostic to existing training techniques and is proven to work
+efficiently across different LLM models.",http://arxiv.org/pdf/2408.16978v1,,False

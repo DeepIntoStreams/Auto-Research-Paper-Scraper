@@ -1,0 +1,144 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+View-Invariant Policy Learning via Zero-Shot Novel View Synthesis,05/09/2024,"Stephen Tian, Blake Wulfe, Kyle Sargent, Katherine Liu, Sergey Zakharov, Vitor Guizilini, Jiajun Wu","Large-scale visuomotor policy learning is a promising approach toward
+developing generalizable manipulation systems. Yet, policies that can be
+deployed on diverse embodiments, environments, and observational modalities
+remain elusive. In this work, we investigate how knowledge from large-scale
+visual data of the world may be used to address one axis of variation for
+generalizable manipulation: observational viewpoint. Specifically, we study
+single-image novel view synthesis models, which learn 3D-aware scene-level
+priors by rendering images of the same scene from alternate camera viewpoints
+given a single input image. For practical application to diverse robotic data,
+these models must operate zero-shot, performing view synthesis on unseen tasks
+and environments. We empirically analyze view synthesis models within a simple
+data-augmentation scheme that we call View Synthesis Augmentation (VISTA) to
+understand their capabilities for learning viewpoint-invariant policies from
+single-viewpoint demonstration data. Upon evaluating the robustness of policies
+trained with our method to out-of-distribution camera viewpoints, we find that
+they outperform baselines in both simulated and real-world manipulation tasks.
+Videos and additional visualizations are available at
+https://s-tian.github.io/projects/vista.",http://arxiv.org/pdf/2409.03685v1,,False
+A method to benchmark high-dimensional process drift detection,05/09/2024,"Edgar Wolf, Tobias Windisch","Process curves are multi-variate finite time series data coming from
+manufacturing processes. This paper studies machine learning methods for drifts
+of process curves. A theoretic framework to synthetically generate process
+curves in a controlled way is introduced in order to benchmark machine learning
+algorithms for process drift detection. A evaluation score, called the temporal
+area under the curve, is introduced, which allows to quantify how well machine
+learning models unveil curves belonging to drift segments. Finally, a benchmark
+study comparing popular machine learning approaches on synthetic data generated
+with the introduced framework shown.",http://arxiv.org/pdf/2409.03669v1,,False
+A DNN Biophysics Model with Topological and Electrostatic Features,05/09/2024,"Elyssa Sliheet, Md Abu Talha, Weihua Geng","In this project, we provide a deep-learning neural network (DNN) based
+biophysics model to predict protein properties. The model uses multi-scale and
+uniform topological and electrostatic features generated with protein
+structural information and force field, which governs the molecular mechanics.
+The topological features are generated using the element specified persistent
+homology (ESPH) while the electrostatic features are fast computed using a
+Cartesian treecode. These features are uniform in number for proteins with
+various sizes thus the broadly available protein structure database can be used
+in training the network. These features are also multi-scale thus the
+resolution and computational cost can be balanced by the users. The machine
+learning simulation on over 4000 protein structures shows the efficiency and
+fidelity of these features in representing the protein structure and force
+field for the predication of their biophysical properties such as electrostatic
+solvation energy. Tests on topological or electrostatic features alone and the
+combination of both showed the optimal performance when both features are used.
+This model shows its potential as a general tool in assisting biophysical
+properties and function prediction for the broad biomolecules using data from
+both theoretical computing and experiments.",http://arxiv.org/pdf/2409.03658v1,,False
+VFLGAN-TS: Vertical Federated Learning-based Generative Adversarial Networks for Publication of Vertically Partitioned Time-Series Data,05/09/2024,"Xun Yuan, Zilong Zhao, Prosanta Gope, Biplab Sikdar","In the current artificial intelligence (AI) era, the scale and quality of the
+dataset play a crucial role in training a high-quality AI model. However, often
+original data cannot be shared due to privacy concerns and regulations. A
+potential solution is to release a synthetic dataset with a similar
+distribution to the private dataset. Nevertheless, in some scenarios, the
+attributes required to train an AI model are distributed among different
+parties, and the parties cannot share the local data for synthetic data
+construction due to privacy regulations. In PETS 2024, we recently introduced
+the first Vertical Federated Learning-based Generative Adversarial Network
+(VFLGAN) for publishing vertically partitioned static data. However, VFLGAN
+cannot effectively handle time-series data, presenting both temporal and
+attribute dimensions. In this article, we proposed VFLGAN-TS, which combines
+the ideas of attribute discriminator and vertical federated learning to
+generate synthetic time-series data in the vertically partitioned scenario. The
+performance of VFLGAN-TS is close to that of its counterpart, which is trained
+in a centralized manner and represents the upper limit for VFLGAN-TS. To
+further protect privacy, we apply a Gaussian mechanism to make VFLGAN-TS
+satisfy an $(\epsilon,\delta)$-differential privacy. Besides, we develop an
+enhanced privacy auditing scheme to evaluate the potential privacy breach
+through the framework of VFLGAN-TS and synthetic datasets.",http://arxiv.org/pdf/2409.03612v1,,False
+Costs Estimation in Unit Commitment Problems using Simulation-Based Inference,05/09/2024,"Matthias Pirlet, Adrien Bolland, Gilles Louppe, Damien Ernst","The Unit Commitment (UC) problem is a key optimization task in power systems
+to forecast the generation schedules of power units over a finite time period
+by minimizing costs while meeting demand and technical constraints. However,
+many parameters required by the UC problem are unknown, such as the costs. In
+this work, we estimate these unknown costs using simulation-based inference on
+an illustrative UC problem, which provides an approximated posterior
+distribution of the parameters given observed generation schedules and demands.
+Our results highlight that the learned posterior distribution effectively
+captures the underlying distribution of the data, providing a range of possible
+values for the unknown parameters given a past observation. This posterior
+allows for the estimation of past costs using observed past generation
+schedules, enabling operators to better forecast future costs and make more
+robust generation scheduling forecasts. We present avenues for future research
+to address overconfidence in posterior estimation, enhance the scalability of
+the methodology and apply it to more complex UC problems modeling the network
+constraints and renewable energy sources.",http://arxiv.org/pdf/2409.03588v1,,False
+Reinforcement Learning Approach to Optimizing Profilometric Sensor Trajectories for Surface Inspection,05/09/2024,"Sara Roos-Hoefgeest, Mario Roos-Hoefgeest, Ignacio Alvarez, Rafael C. González","High-precision surface defect detection in manufacturing is essential for
+ensuring quality control. Laser triangulation profilometric sensors are key to
+this process, providing detailed and accurate surface measurements over a line.
+To achieve a complete and precise surface scan, accurate relative motion
+between the sensor and the workpiece is required. It is crucial to control the
+sensor pose to maintain optimal distance and relative orientation to the
+surface. It is also important to ensure uniform profile distribution throughout
+the scanning process. This paper presents a novel Reinforcement Learning (RL)
+based approach to optimize robot inspection trajectories for profilometric
+sensors. Building upon the Boustrophedon scanning method, our technique
+dynamically adjusts the sensor position and tilt to maintain optimal
+orientation and distance from the surface, while also ensuring a consistent
+profile distance for uniform and high-quality scanning. Utilizing a simulated
+environment based on the CAD model of the part, we replicate real-world
+scanning conditions, including sensor noise and surface irregularities. This
+simulation-based approach enables offline trajectory planning based on CAD
+models. Key contributions include the modeling of the state space, action
+space, and reward function, specifically designed for inspection applications
+using profilometric sensors. We use Proximal Policy Optimization (PPO)
+algorithm to efficiently train the RL agent, demonstrating its capability to
+optimize inspection trajectories with profilometric sensors. To validate our
+approach, we conducted several experiments where a model trained on a specific
+training piece was tested on various parts in simulation. Also, we conducted a
+real-world experiment by executing the optimized trajectory, generated offline
+from a CAD model, to inspect a part using a UR3e robotic arm model.",http://arxiv.org/pdf/2409.03429v1,,False
+An Effective Deployment of Diffusion LM for Data Augmentation in Low-Resource Sentiment Classification,05/09/2024,"Zhuowei Chen, Lianxi Wang, Yuben Wu, Xinfeng Liao, Yujia Tian, Junyang Zhong","Sentiment classification (SC) often suffers from low-resource challenges such
+as domain-specific contexts, imbalanced label distributions, and few-shot
+scenarios. The potential of the diffusion language model (LM) for textual data
+augmentation (DA) remains unexplored, moreover, textual DA methods struggle to
+balance the diversity and consistency of new samples. Most DA methods either
+perform logical modifications or rephrase less important tokens in the original
+sequence with the language model. In the context of SC, strong emotional tokens
+could act critically on the sentiment of the whole sequence. Therefore,
+contrary to rephrasing less important context, we propose DiffusionCLS to
+leverage a diffusion LM to capture in-domain knowledge and generate pseudo
+samples by reconstructing strong label-related tokens. This approach ensures a
+balance between consistency and diversity, avoiding the introduction of noise
+and augmenting crucial features of datasets. DiffusionCLS also comprises a
+Noise-Resistant Training objective to help the model generalize. Experiments
+demonstrate the effectiveness of our method in various low-resource scenarios
+including domain-specific and domain-general problems. Ablation studies confirm
+the effectiveness of our framework's modules, and visualization studies
+highlight optimal deployment conditions, reinforcing our conclusions.",http://arxiv.org/pdf/2409.03203v1,,False
+Bypassing DARCY Defense: Indistinguishable Universal Adversarial Triggers,05/09/2024,"Zuquan Peng, Yuanyuan He, Jianbing Ni, Ben Niu","Neural networks (NN) classification models for Natural Language Processing
+(NLP) are vulnerable to the Universal Adversarial Triggers (UAT) attack that
+triggers a model to produce a specific prediction for any input. DARCY borrows
+the ""honeypot"" concept to bait multiple trapdoors, effectively detecting the
+adversarial examples generated by UAT. Unfortunately, we find a new UAT
+generation method, called IndisUAT, which produces triggers (i.e., tokens) and
+uses them to craft adversarial examples whose feature distribution is
+indistinguishable from that of the benign examples in a randomly-chosen
+category at the detection layer of DARCY. The produced adversarial examples
+incur the maximal loss of predicting results in the DARCY-protected models.
+Meanwhile, the produced triggers are effective in black-box models for text
+generation, text inference, and reading comprehension. Finally, the evaluation
+results under NN models for NLP tasks indicate that the IndisUAT method can
+effectively circumvent DARCY and penetrate other defenses. For example,
+IndisUAT can reduce the true positive rate of DARCY's detection by at least
+40.8% and 90.6%, and drop the accuracy by at least 33.3% and 51.6% in the RNN
+and CNN models, respectively. IndisUAT reduces the accuracy of the BERT's
+adversarial defense model by at least 34.0%, and makes the GPT-2 language model
+spew racist outputs even when conditioned on non-racial context.",http://arxiv.org/pdf/2409.03183v1,,False

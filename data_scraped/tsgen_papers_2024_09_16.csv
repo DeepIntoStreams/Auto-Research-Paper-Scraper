@@ -1,0 +1,248 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Multi forests: Variable importance for multi-class outcomes,13/09/2024,"Roman Hornung, Alexander Hapfelmeier","In prediction tasks with multi-class outcomes, identifying covariates
+specifically associated with one or more outcome classes can be important.
+Conventional variable importance measures (VIMs) from random forests (RFs),
+like permutation and Gini importance, focus on overall predictive performance
+or node purity, without differentiating between the classes. Therefore, they
+can be expected to fail to distinguish class-associated covariates from
+covariates that only distinguish between groups of classes. We introduce a VIM
+called multi-class VIM, tailored for identifying exclusively class-associated
+covariates, via a novel RF variant called multi forests (MuFs). The trees in
+MuFs use both multi-way and binary splitting. The multi-way splits generate
+child nodes for each class, using a split criterion that evaluates how well
+these nodes represent their respective classes. This setup forms the basis of
+the multi-class VIM, which measures the discriminatory ability of the splits
+performed in the respective covariates with regard to this split criterion.
+Alongside the multi-class VIM, we introduce a second VIM, the discriminatory
+VIM. This measure, based on the binary splits, assesses the strength of the
+general influence of the covariates, irrespective of their
+class-associatedness. Simulation studies demonstrate that the multi-class VIM
+specifically ranks class-associated covariates highly, unlike conventional VIMs
+which also rank other types of covariates highly. Analyses of 121 datasets
+reveal that MuFs often have slightly lower predictive performance compared to
+conventional RFs. This is, however, not a limiting factor given the algorithm's
+primary purpose of calculating the multi-class VIM.",http://arxiv.org/pdf/2409.08925v1,,False
+Latent Space Score-based Diffusion Model for Probabilistic Multivariate Time Series Imputation,13/09/2024,"Guojun Liang, Najmeh Abiri, Atiye Sadat Hashemi, Jens Lundström, Stefan Byttner, Prayag Tiwari","Accurate imputation is essential for the reliability and success of
+downstream tasks. Recently, diffusion models have attracted great attention in
+this field. However, these models neglect the latent distribution in a
+lower-dimensional space derived from the observed data, which limits the
+generative capacity of the diffusion model. Additionally, dealing with the
+original missing data without labels becomes particularly problematic. To
+address these issues, we propose the Latent Space Score-Based Diffusion Model
+(LSSDM) for probabilistic multivariate time series imputation. Observed values
+are projected onto low-dimensional latent space and coarse values of the
+missing data are reconstructed without knowing their ground truth values by
+this unsupervised learning approach. Finally, the reconstructed values are fed
+into a conditional diffusion model to obtain the precise imputed values of the
+time series. In this way, LSSDM not only possesses the power to identify the
+latent distribution but also seamlessly integrates the diffusion model to
+obtain the high-fidelity imputed values and assess the uncertainty of the
+dataset. Experimental results demonstrate that LSSDM achieves superior
+imputation performance while also providing a better explanation and
+uncertainty analysis of the imputation mechanism. The website of the code is
+\textit{https://github.com/gorgen2020/LSSDM\_imputation}.",http://arxiv.org/pdf/2409.08917v1,,False
+xTED: Cross-Domain Policy Adaptation via Diffusion-Based Trajectory Editing,13/09/2024,"Haoyi Niu, Qimao Chen, Tenglong Liu, Jianxiong Li, Guyue Zhou, Yi Zhang, Jianming Hu, Xianyuan Zhan","Reusing pre-collected data from different domains is an attractive solution
+in decision-making tasks where the accessible data is insufficient in the
+target domain but relatively abundant in other related domains. Existing
+cross-domain policy transfer methods mostly aim at learning domain
+correspondences or corrections to facilitate policy learning, which requires
+learning domain/task-specific model components, representations, or policies
+that are inflexible or not fully reusable to accommodate arbitrary domains and
+tasks. These issues make us wonder: can we directly bridge the domain gap at
+the data (trajectory) level, instead of devising complicated, domain-specific
+policy transfer models? In this study, we propose a Cross-Domain Trajectory
+EDiting (xTED) framework with a new diffusion transformer model (Decision
+Diffusion Transformer, DDiT) that captures the trajectory distribution from the
+target dataset as a prior. The proposed diffusion transformer backbone captures
+the intricate dependencies among state, action, and reward sequences, as well
+as the transition dynamics within the target data trajectories. With the above
+pre-trained diffusion prior, source data trajectories with domain gaps can be
+transformed into edited trajectories that closely resemble the target data
+distribution through the diffusion-based editing process, which implicitly
+corrects the underlying domain gaps, enhancing the state realism and dynamics
+reliability in source trajectory data, while enabling flexible choices of
+downstream policy learning methods. Despite its simplicity, xTED demonstrates
+superior performance against other baselines in extensive simulation and
+real-robot experiments.",http://arxiv.org/pdf/2409.08687v1,,False
+Online Learning Of Expanding Graphs,13/09/2024,"Samuel Rey, Bishwadeep Das, Elvin Isufi","This paper addresses the problem of online network topology inference for
+expanding graphs from a stream of spatiotemporal signals. Online algorithms for
+dynamic graph learning are crucial in delay-sensitive applications or when
+changes in topology occur rapidly. While existing works focus on inferring the
+connectivity within a fixed set of nodes, in practice, the graph can grow as
+new nodes join the network. This poses additional challenges like modeling
+temporal dynamics involving signals and graphs of different sizes. This growth
+also increases the computational complexity of the learning process, which may
+become prohibitive. To the best of our knowledge, this is the first work to
+tackle this setting. We propose a general online algorithm based on projected
+proximal gradient descent that accounts for the increasing graph size at each
+iteration. Recursively updating the sample covariance matrix is a key aspect of
+our approach. We introduce a strategy that enables different types of updates
+for nodes that just joined the network and for previously existing nodes. To
+provide further insights into the proposed method, we specialize it in Gaussian
+Markov random field settings, where we analyze the computational complexity and
+characterize the dynamic cumulative regret. Finally, we demonstrate the
+effectiveness of the proposed approach using both controlled experiments and
+real-world datasets from epidemic and financial networks.",http://arxiv.org/pdf/2409.08660v1,,False
+Co-Optimization of Robot Design and Control: Enhancing Performance and Understanding Design Complexity,13/09/2024,"Etor Arza, Frank Veenstra, Tønnes F. Nygaard, Kyrre Glette","The design (shape) of a robot is usually decided before the control is
+implemented. This might limit how well the design is adapted to a task, as the
+suitability of the design is given by how well the robot performs in the task,
+which requires both a design and a controller. The co-optimization or
+simultaneous optimization of the design and control of robots addresses this
+limitation by producing a design and control that are both adapted to the task.
+In this paper, we investigate some of the challenges inherent in the
+co-optimization of design and control. We show that retraining the controller
+of a robot with additional resources after the co-optimization process
+terminates significantly improves the robot's performance. In addition, we
+demonstrate that the resources allocated to training the controller for each
+design influence the design complexity, where simpler designs are associated
+with lower training budgets. The experimentation is conducted in four publicly
+available simulation environments for co-optimization of design and control,
+making the findings more applicable to the general case. The results presented
+in this paper hope to guide other practitioners in the co-optimization of
+design and control of robots.",http://arxiv.org/pdf/2409.08621v1,,False
+Automatic Generation of Fast and Accurate Performance Models for Deep Neural Network Accelerators,13/09/2024,"Konstantin Lübeck, Alexander Louis-Ferdinand Jung, Felix Wedlich, Mika Markus Müller, Federico Nicolás Peccia, Felix Thömmes, Jannik Steinmetz, Valentin Biermaier, Adrian Frischknecht, Paul Palomero Bernardo, Oliver Bringmann","Implementing Deep Neural Networks (DNNs) on resource-constrained edge devices
+is a challenging task that requires tailored hardware accelerator architectures
+and a clear understanding of their performance characteristics when executing
+the intended AI workload. To facilitate this, we present an automated
+generation approach for fast performance models to accurately estimate the
+latency of a DNN mapped onto systematically modeled and concisely described
+accelerator architectures. Using our accelerator architecture description
+method, we modeled representative DNN accelerators such as Gemmini, UltraTrail,
+Plasticine-derived, and a parameterizable systolic array. Together with DNN
+mappings for those modeled architectures, we perform a combined DNN/hardware
+dependency graph analysis, which enables us, in the best case, to evaluate only
+154 loop kernel iterations to estimate the performance for 4.19 billion
+instructions achieving a significant speedup. We outperform regression and
+analytical models in terms of mean absolute percentage error (MAPE) compared to
+simulation results, while being several magnitudes faster than an RTL
+simulation.",http://arxiv.org/pdf/2409.08595v1,,False
+Second-order difference subspace,13/09/2024,"Kazuhiro Fukui, Pedro H. V. Valois, Lincon Souza, Takumi Kobayashi","Subspace representation is a fundamental technique in various fields of
+machine learning. Analyzing a geometrical relationship among multiple subspaces
+is essential for understanding subspace series' temporal and/or spatial
+dynamics. This paper proposes the second-order difference subspace, a
+higher-order extension of the first-order difference subspace between two
+subspaces that can analyze the geometrical difference between them. As a
+preliminary for that, we extend the definition of the first-order difference
+subspace to the more general setting that two subspaces with different
+dimensions have an intersection. We then define the second-order difference
+subspace by combining the concept of first-order difference subspace and
+principal component subspace (Karcher mean) between two subspaces, motivated by
+the second-order central difference method. We can understand that the
+first/second-order difference subspaces correspond to the velocity and
+acceleration of subspace dynamics from the viewpoint of a geodesic on a
+Grassmann manifold. We demonstrate the validity and naturalness of our
+second-order difference subspace by showing numerical results on two
+applications: temporal shape analysis of a 3D object and time series analysis
+of a biometric signal.",http://arxiv.org/pdf/2409.08563v1,,False
+Expediting and Elevating Large Language Model Reasoning via Hidden Chain-of-Thought Decoding,13/09/2024,"Tianqiao Liu, Zui Chen, Zitao Liu, Mi Tian, Weiqi Luo","Large language models (LLMs) have demonstrated remarkable capabilities in
+tasks requiring reasoning and multi-step problem-solving through the use of
+chain-of-thought (CoT) prompting. However, generating the full CoT process
+results in significantly longer output sequences, leading to increased
+computational costs and latency during inference. To address this challenge, we
+propose a novel approach to compress the CoT process through semantic
+alignment, enabling more efficient decoding while preserving the benefits of
+CoT reasoning. Our method introduces an auxiliary CoT model that learns to
+generate and compress the full thought process into a compact special token
+representation semantically aligned with the original CoT output. This
+compressed representation is then integrated into the input of the Hidden
+Chain-of-Thought (HCoT) model. The training process follows a two-stage
+procedure: First, the CoT model is optimized to generate the compressed token
+representations aligned with the ground-truth CoT outputs using a contrastive
+loss. Subsequently, with the CoT model parameters frozen, the HCoT model is
+fine-tuned to generate accurate subsequent predictions conditioned on the
+prefix instruction and the compressed CoT representations from the CoT model.
+Extensive experiments across three challenging domains - mathematical
+reasoning, agent invocation, and question answering - demonstrate that our
+semantic compression approach achieves competitive or improved performance
+compared to the full CoT baseline, while providing significant speedups of at
+least 1.5x in decoding time. Moreover, incorporating contrastive learning
+objectives further enhances the quality of the compressed representations,
+leading to better CoT prompting and improved task accuracy. Our work paves the
+way for more efficient exploitation of multi-step reasoning capabilities in
+LLMs across a wide range of applications.",http://arxiv.org/pdf/2409.08561v1,,False
+Apollo: Band-sequence Modeling for High-Quality Audio Restoration,13/09/2024,"Kai Li, Yi Luo","Audio restoration has become increasingly significant in modern society, not
+only due to the demand for high-quality auditory experiences enabled by
+advanced playback devices, but also because the growing capabilities of
+generative audio models necessitate high-fidelity audio. Typically, audio
+restoration is defined as a task of predicting undistorted audio from damaged
+input, often trained using a GAN framework to balance perception and
+distortion. Since audio degradation is primarily concentrated in mid- and
+high-frequency ranges, especially due to codecs, a key challenge lies in
+designing a generator capable of preserving low-frequency information while
+accurately reconstructing high-quality mid- and high-frequency content.
+Inspired by recent advancements in high-sample-rate music separation, speech
+enhancement, and audio codec models, we propose Apollo, a generative model
+designed for high-sample-rate audio restoration. Apollo employs an explicit
+frequency band split module to model the relationships between different
+frequency bands, allowing for more coherent and higher-quality restored audio.
+Evaluated on the MUSDB18-HQ and MoisesDB datasets, Apollo consistently
+outperforms existing SR-GAN models across various bit rates and music genres,
+particularly excelling in complex scenarios involving mixtures of multiple
+instruments and vocals. Apollo significantly improves music restoration quality
+while maintaining computational efficiency. The source code for Apollo is
+publicly available at https://github.com/JusperLee/Apollo.",http://arxiv.org/pdf/2409.08514v1,,False
+Exploring Information Retrieval Landscapes: An Investigation of a Novel Evaluation Techniques and Comparative Document Splitting Methods,13/09/2024,"Esmaeil Narimissa, David Raithel","The performance of Retrieval-Augmented Generation (RAG) systems in
+information retrieval is significantly influenced by the characteristics of the
+documents being processed. In this study, the structured nature of textbooks,
+the conciseness of articles, and the narrative complexity of novels are shown
+to require distinct retrieval strategies. A comparative evaluation of multiple
+document-splitting methods reveals that the Recursive Character Splitter
+outperforms the Token-based Splitter in preserving contextual integrity. A
+novel evaluation technique is introduced, utilizing an open-source model to
+generate a comprehensive dataset of question-and-answer pairs, simulating
+realistic retrieval scenarios to enhance testing efficiency and metric
+reliability. The evaluation employs weighted scoring metrics, including
+SequenceMatcher, BLEU, METEOR, and BERT Score, to assess the system's accuracy
+and relevance. This approach establishes a refined standard for evaluating the
+precision of RAG systems, with future research focusing on optimizing chunk and
+overlap sizes to improve retrieval accuracy and efficiency.",http://arxiv.org/pdf/2409.08479v1,,False
+Integrating Neural Operators with Diffusion Models Improves Spectral Representation in Turbulence Modeling,13/09/2024,"Vivek Oommen, Aniruddha Bora, Zhen Zhang, George Em Karniadakis","We integrate neural operators with diffusion models to address the spectral
+limitations of neural operators in surrogate modeling of turbulent flows. While
+neural operators offer computational efficiency, they exhibit deficiencies in
+capturing high-frequency flow dynamics, resulting in overly smooth
+approximations. To overcome this, we condition diffusion models on neural
+operators to enhance the resolution of turbulent structures. Our approach is
+validated for different neural operators on diverse datasets, including a high
+Reynolds number jet flow simulation and experimental Schlieren velocimetry. The
+proposed method significantly improves the alignment of predicted energy
+spectra with true distributions compared to neural operators alone.
+Additionally, proper orthogonal decomposition analysis demonstrates enhanced
+spectral fidelity in space-time. This work establishes a new paradigm for
+combining generative models with neural operators to advance surrogate modeling
+of turbulent systems, and it can be used in other scientific applications that
+involve microstructure and high-frequency content. See our project page:
+vivekoommen.github.io/NO_DM",http://arxiv.org/pdf/2409.08477v1,,False
+An Intent Modeling and Inference Framework for Autonomous and Remotely Piloted Aerial Systems,13/09/2024,"Kesav Kaza, Varun Mehta, Hamid Azad, Miodrag Bolic, Iraj Mantegh","An intent modelling and inference framework is presented to assist the
+defense planning for protecting a geo-fence against unauthorized flights.
+First, a novel mathematical definition for the intent of an uncrewed aircraft
+system (UAS) is presented. The concepts of critical waypoints and critical
+waypoint patterns are introduced and associated with a motion process to fully
+characterize an intent. This modelling framework consists of representations of
+a UAS mission planner, used to plan the aircraft's motion sequence, as well as
+a defense planner, defined to protect the geo-fence. It is applicable to
+autonomous, semi-autonomous, and piloted systems in 2D and 3D environments with
+obstacles. The framework is illustrated by defining a library of intents for a
+security application. Detection and tracking of the target are presumed for
+formulating the intent inference problem. Multiple formulations of the decision
+maker's objective are discussed as part of a deep-learning-based methodology.
+Further, a multi-modal dynamic model for characterizing the UAS flight is
+discussed. This is later utilized to extract features using the interacting
+multiple model (IMM) filter for training the intent classifier. Finally, as
+part of the simulation study, an attention-based bi-directional long short-term
+memory (Bi-LSTM) network for intent inference is presented. The simulation
+experiments illustrate various aspects of the framework, including trajectory
+generation, radar measurement simulation, etc., in 2D and 3D environments.",http://arxiv.org/pdf/2409.08472v1,,False
+Predictive Control and Regret Analysis of Non-Stationary MDP with Look-ahead Information,13/09/2024,"Ziyi Zhang, Yorie Nakahira, Guannan Qu","Policy design in non-stationary Markov Decision Processes (MDPs) is
+inherently challenging due to the complexities introduced by time-varying
+system transition and reward, which make it difficult for learners to determine
+the optimal actions for maximizing cumulative future rewards. Fortunately, in
+many practical applications, such as energy systems, look-ahead predictions are
+available, including forecasts for renewable energy generation and demand. In
+this paper, we leverage these look-ahead predictions and propose an algorithm
+designed to achieve low regret in non-stationary MDPs by incorporating such
+predictions. Our theoretical analysis demonstrates that, under certain
+assumptions, the regret decreases exponentially as the look-ahead window
+expands. When the system prediction is subject to error, the regret does not
+explode even if the prediction error grows sub-exponentially as a function of
+the prediction horizon. We validate our approach through simulations,
+confirming the efficacy of our algorithm in non-stationary environments.",http://arxiv.org/pdf/2409.08434v1,,False

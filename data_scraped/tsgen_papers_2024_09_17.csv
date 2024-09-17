@@ -1,0 +1,99 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Robust image representations with counterfactual contrastive learning,16/09/2024,"Mélanie Roschewitz, Fabio De Sousa Ribeiro, Tian Xia, Galvin Khara, Ben Glocker","Contrastive pretraining can substantially increase model generalisation and
+downstream performance. However, the quality of the learned representations is
+highly dependent on the data augmentation strategy applied to generate positive
+pairs. Positive contrastive pairs should preserve semantic meaning while
+discarding unwanted variations related to the data acquisition domain.
+Traditional contrastive pipelines attempt to simulate domain shifts through
+pre-defined generic image transformations. However, these do not always mimic
+realistic and relevant domain variations for medical imaging such as scanner
+differences. To tackle this issue, we herein introduce counterfactual
+contrastive learning, a novel framework leveraging recent advances in causal
+image synthesis to create contrastive positive pairs that faithfully capture
+relevant domain variations. Our method, evaluated across five datasets
+encompassing both chest radiography and mammography data, for two established
+contrastive objectives (SimCLR and DINO-v2), outperforms standard contrastive
+learning in terms of robustness to acquisition shift. Notably, counterfactual
+contrastive learning achieves superior downstream performance on both
+in-distribution and on external datasets, especially for images acquired with
+scanners under-represented in the training set. Further experiments show that
+the proposed framework extends beyond acquisition shifts, with models trained
+with counterfactual contrastive learning substantially improving subgroup
+performance across biological sex.",http://arxiv.org/pdf/2409.10365v1,,False
+2D or not 2D: How Does the Dimensionality of Gesture Representation Affect 3D Co-Speech Gesture Generation?,16/09/2024,"Téo Guichoux, Laure Soulier, Nicolas Obin, Catherine Pelachaud","Co-speech gestures are fundamental for communication. The advent of recent
+deep learning techniques has facilitated the creation of lifelike, synchronous
+co-speech gestures for Embodied Conversational Agents. ""In-the-wild"" datasets,
+aggregating video content from platforms like YouTube via human pose detection
+technologies, provide a feasible solution by offering 2D skeletal sequences
+aligned with speech. Concurrent developments in lifting models enable the
+conversion of these 2D sequences into 3D gesture databases. However, it is
+important to note that the 3D poses estimated from the 2D extracted poses are,
+in essence, approximations of the ground-truth, which remains in the 2D domain.
+This distinction raises questions about the impact of gesture representation
+dimensionality on the quality of generated motions - a topic that, to our
+knowledge, remains largely unexplored. Our study examines the effect of using
+either 2D or 3D joint coordinates as training data on the performance of
+speech-to-gesture deep generative models. We employ a lifting model for
+converting generated 2D pose sequences into 3D and assess how gestures created
+directly in 3D stack up against those initially generated in 2D and then
+converted to 3D. We perform an objective evaluation using widely used metrics
+in the gesture generation field as well as a user study to qualitatively
+evaluate the different approaches.",http://arxiv.org/pdf/2409.10357v1,,False
+DreamHead: Learning Spatial-Temporal Correspondence via Hierarchical Diffusion for Audio-driven Talking Head Synthesis,16/09/2024,"Fa-Ting Hong, Yunfei Liu, Yu Li, Changyin Zhou, Fei Yu, Dan Xu","Audio-driven talking head synthesis strives to generate lifelike video
+portraits from provided audio. The diffusion model, recognized for its superior
+quality and robust generalization, has been explored for this task. However,
+establishing a robust correspondence between temporal audio cues and
+corresponding spatial facial expressions with diffusion models remains a
+significant challenge in talking head generation. To bridge this gap, we
+present DreamHead, a hierarchical diffusion framework that learns
+spatial-temporal correspondences in talking head synthesis without compromising
+the model's intrinsic quality and adaptability.~DreamHead learns to predict
+dense facial landmarks from audios as intermediate signals to model the spatial
+and temporal correspondences.~Specifically, a first hierarchy of
+audio-to-landmark diffusion is first designed to predict temporally smooth and
+accurate landmark sequences given audio sequence signals. Then, a second
+hierarchy of landmark-to-image diffusion is further proposed to produce
+spatially consistent facial portrait videos, by modeling spatial
+correspondences between the dense facial landmark and appearance. Extensive
+experiments show that proposed DreamHead can effectively learn spatial-temporal
+consistency with the designed hierarchical diffusion and produce high-fidelity
+audio-driven talking head videos for multiple identities.",http://arxiv.org/pdf/2409.10281v1,,False
+Evaluating the Efficacy of Instance Incremental vs. Batch Learning in Delayed Label Environments: An Empirical Study on Tabular Data Streaming for Fraud Detection,16/09/2024,"Kodjo Mawuena Amekoe, Mustapha Lebbah, Gregoire Jaffre, Hanene Azzag, Zaineb Chelly Dagdia","Real-world tabular learning production scenarios typically involve evolving
+data streams, where data arrives continuously and its distribution may change
+over time. In such a setting, most studies in the literature regarding
+supervised learning favor the use of instance incremental algorithms due to
+their ability to adapt to changes in the data distribution. Another significant
+reason for choosing these algorithms is \textit{avoid storing observations in
+memory} as commonly done in batch incremental settings. However, the design of
+instance incremental algorithms often assumes immediate availability of labels,
+which is an optimistic assumption. In many real-world scenarios, such as fraud
+detection or credit scoring, labels may be delayed. Consequently, batch
+incremental algorithms are widely used in many real-world tasks. This raises an
+important question: ""In delayed settings, is instance incremental learning the
+best option regarding predictive performance and computational efficiency?""
+Unfortunately, this question has not been studied in depth, probably due to the
+scarcity of real datasets containing delayed information. In this study, we
+conduct a comprehensive empirical evaluation and analysis of this question
+using a real-world fraud detection problem and commonly used generated
+datasets. Our findings indicate that instance incremental learning is not the
+superior option, considering on one side state-of-the-art models such as
+Adaptive Random Forest (ARF) and other side batch learning models such as
+XGBoost. Additionally, when considering the interpretability of the learning
+systems, batch incremental solutions tend to be favored. Code:
+\url{https://github.com/anselmeamekoe/DelayedLabelStream}",http://arxiv.org/pdf/2409.10111v1,,False
+E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models,16/09/2024,"Chan Kim, Keonwoo Kim, Mintaek Oh, Hanbi Baek, Jiyang Lee, Donghwi Jung, Soojin Woo, Younkyung Woo, John Tucker, Roya Firoozi, Seung-Woo Seo, Mac Schwager, Seong-Woo Kim","Large language models (LLMs) have shown significant potential in guiding
+embodied agents to execute language instructions across a range of tasks,
+including robotic manipulation and navigation. However, existing methods are
+primarily designed for static environments and do not leverage the agent's own
+experiences to refine its initial plans. Given that real-world environments are
+inherently stochastic, initial plans based solely on LLMs' general knowledge
+may fail to achieve their objectives, unlike in static scenarios. To address
+this limitation, this study introduces the Experience-and-Emotion Map (E2Map),
+which integrates not only LLM knowledge but also the agent's real-world
+experiences, drawing inspiration from human emotional responses. The proposed
+methodology enables one-shot behavior adjustments by updating the E2Map based
+on the agent's experiences. Our evaluation in stochastic navigation
+environments, including both simulations and real-world scenarios, demonstrates
+that the proposed method significantly enhances performance in stochastic
+environments compared to existing LLM-based approaches. Code and supplementary
+materials are available at https://e2map.github.io/.",http://arxiv.org/pdf/2409.10027v1,,False

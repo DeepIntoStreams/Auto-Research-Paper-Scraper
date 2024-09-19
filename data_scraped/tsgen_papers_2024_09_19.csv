@@ -1,0 +1,255 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Massively Multi-Person 3D Human Motion Forecasting with Scene Context,18/09/2024,"Felix B Mueller, Julian Tanke, Juergen Gall","Forecasting long-term 3D human motion is challenging: the stochasticity of
+human behavior makes it hard to generate realistic human motion from the input
+sequence alone. Information on the scene environment and the motion of nearby
+people can greatly aid the generation process. We propose a scene-aware social
+transformer model (SAST) to forecast long-term (10s) human motion motion.
+Unlike previous models, our approach can model interactions between both widely
+varying numbers of people and objects in a scene. We combine a temporal
+convolutional encoder-decoder architecture with a Transformer-based bottleneck
+that allows us to efficiently combine motion and scene information. We model
+the conditional motion distribution using denoising diffusion models. We
+benchmark our approach on the Humans in Kitchens dataset, which contains 1 to
+16 persons and 29 to 50 objects that are visible simultaneously. Our model
+outperforms other approaches in terms of realism and diversity on different
+metrics and in a user study. Code is available at
+https://github.com/felixbmuller/SAST.",http://arxiv.org/pdf/2409.12189v1,,False
+Computational Dynamical Systems,18/09/2024,"Jordan Cotler, Semon Rezchikov","We study the computational complexity theory of smooth, finite-dimensional
+dynamical systems. Building off of previous work, we give definitions for what
+it means for a smooth dynamical system to simulate a Turing machine. We then
+show that 'chaotic' dynamical systems (more precisely, Axiom A systems) and
+'integrable' dynamical systems (more generally, measure-preserving systems)
+cannot robustly simulate universal Turing machines, although such machines can
+be robustly simulated by other kinds of dynamical systems. Subsequently, we
+show that any Turing machine that can be encoded into a structurally stable
+one-dimensional dynamical system must have a decidable halting problem, and
+moreover an explicit time complexity bound in instances where it does halt.
+More broadly, our work elucidates what it means for one 'machine' to simulate
+another, and emphasizes the necessity of defining low-complexity 'encoders' and
+'decoders' to translate between the dynamics of the simulation and the system
+being simulated. We highlight how the notion of a computational dynamical
+system leads to questions at the intersection of computational complexity
+theory, dynamical systems theory, and real algebraic geometry.",http://arxiv.org/pdf/2409.12179v1,,False
+A Unified Framework for Neural Computation and Learning Over Time,18/09/2024,"Stefano Melacci, Alessandro Betti, Michele Casoni, Tommaso Guidi, Matteo Tiezzi, Marco Gori","This paper proposes Hamiltonian Learning, a novel unified framework for
+learning with neural networks ""over time"", i.e., from a possibly infinite
+stream of data, in an online manner, without having access to future
+information. Existing works focus on the simplified setting in which the stream
+has a known finite length or is segmented into smaller sequences, leveraging
+well-established learning strategies from statistical machine learning. In this
+paper, the problem of learning over time is rethought from scratch, leveraging
+tools from optimal control theory, which yield a unifying view of the temporal
+dynamics of neural computations and learning. Hamiltonian Learning is based on
+differential equations that: (i) can be integrated without the need of external
+software solvers; (ii) generalize the well-established notion of gradient-based
+learning in feed-forward and recurrent networks; (iii) open to novel
+perspectives. The proposed framework is showcased by experimentally proving how
+it can recover gradient-based learning, comparing it to out-of-the box
+optimizers, and describing how it is flexible enough to switch from fully-local
+to partially/non-local computational schemes, possibly distributed over
+multiple devices, and BackPropagation without storing activations. Hamiltonian
+Learning is easy to implement and can help researches approach in a principled
+and innovative manner the problem of learning over time.",http://arxiv.org/pdf/2409.12038v1,,False
+Topological Deep Learning with State-Space Models: A Mamba Approach for Simplicial Complexes,18/09/2024,"Marco Montagna, Simone Scardapane, Lev Telyatnikov","Graph Neural Networks based on the message-passing (MP) mechanism are a
+dominant approach for handling graph-structured data. However, they are
+inherently limited to modeling only pairwise interactions, making it difficult
+to explicitly capture the complexity of systems with $n$-body relations. To
+address this, topological deep learning has emerged as a promising field for
+studying and modeling higher-order interactions using various topological
+domains, such as simplicial and cellular complexes. While these new domains
+provide powerful representations, they introduce new challenges, such as
+effectively modeling the interactions among higher-order structures through
+higher-order MP. Meanwhile, structured state-space sequence models have proven
+to be effective for sequence modeling and have recently been adapted for graph
+data by encoding the neighborhood of a node as a sequence, thereby avoiding the
+MP mechanism. In this work, we propose a novel architecture designed to operate
+with simplicial complexes, utilizing the Mamba state-space model as its
+backbone. Our approach generates sequences for the nodes based on the
+neighboring cells, enabling direct communication between all higher-order
+structures, regardless of their rank. We extensively validate our model,
+demonstrating that it achieves competitive performance compared to
+state-of-the-art models developed for simplicial complexes.",http://arxiv.org/pdf/2409.12033v1,,False
+Promise and Peril of Collaborative Code Generation Models: Balancing Effectiveness and Memorization,18/09/2024,"Zhi Chen, Lingxiao Jiang","In the rapidly evolving field of machine learning, training models with
+datasets from various locations and organizations presents significant
+challenges due to privacy and legal concerns. The exploration of effective
+collaborative training settings capable of leveraging valuable knowledge from
+distributed and isolated datasets is increasingly crucial. This study
+investigates key factors that impact the effectiveness of collaborative
+training methods in code next-token prediction, as well as the correctness and
+utility of the generated code, demonstrating the promise of such methods.
+Additionally, we evaluate the memorization of different participant training
+data across various collaborative training settings, including centralized,
+federated, and incremental training, highlighting their potential risks in
+leaking data. Our findings indicate that the size and diversity of code
+datasets are pivotal factors influencing the success of collaboratively trained
+code models. We show that federated learning achieves competitive performance
+compared to centralized training while offering better data protection, as
+evidenced by lower memorization ratios in the generated code. However,
+federated learning can still produce verbatim code snippets from hidden
+training data, potentially violating privacy or copyright. Our study further
+explores effectiveness and memorization patterns in incremental learning,
+emphasizing the sequence in which individual participant datasets are
+introduced. We also identify cross-organizational clones as a prevalent
+challenge in both centralized and federated learning scenarios. Our findings
+highlight the persistent risk of data leakage during inference, even when
+training data remains unseen. We conclude with recommendations for
+practitioners and researchers to optimize multisource datasets, propelling
+cross-organizational collaboration forward.",http://arxiv.org/pdf/2409.12020v1,,False
+Additive-feature-attribution methods: a review on explainable artificial intelligence for fluid dynamics and heat transfer,18/09/2024,"Andrés Cremades, Sergio Hoyas, Ricardo Vinuesa","The use of data-driven methods in fluid mechanics has surged dramatically in
+recent years due to their capacity to adapt to the complex and multi-scale
+nature of turbulent flows, as well as to detect patterns in large-scale
+simulations or experimental tests. In order to interpret the relationships
+generated in the models during the training process, numerical attributions
+need to be assigned to the input features. One important example are the
+additive-feature-attribution methods. These explainability methods link the
+input features with the model prediction, providing an interpretation based on
+a linear formulation of the models. The SHapley Additive exPlanations (SHAP
+values) are formulated as the only possible interpretation that offers a unique
+solution for understanding the model. In this manuscript, the
+additive-feature-attribution methods are presented, showing four common
+implementations in the literature: kernel SHAP, tree SHAP, gradient SHAP, and
+deep SHAP. Then, the main applications of the additive-feature-attribution
+methods are introduced, dividing them into three main groups: turbulence
+modeling, fluid-mechanics fundamentals, and applied problems in fluid dynamics
+and heat transfer. This review shows thatexplainability techniques, and in
+particular additive-feature-attribution methods, are crucial for implementing
+interpretable and physics-compliant deep-learning models in the fluid-mechanics
+field.",http://arxiv.org/pdf/2409.11992v1,,False
+Metric-Semantic Factor Graph Generation based on Graph Neural Networks,18/09/2024,"Jose Andres Millan-Romera, Hriday Bavle, Muhammad Shaheer, Holger Voos, Jose Luis Sanchez-Lopez","Understanding the relationships between geometric structures and semantic
+concepts is crucial for building accurate models of complex environments. In
+indoors, certain spatial constraints, such as the relative positioning of
+planes, remain consistent despite variations in layout. This paper explores how
+these invariant relationships can be captured in a graph SLAM framework by
+representing high-level concepts like rooms and walls, linking them to
+geometric elements like planes through an optimizable factor graph. Several
+efforts have tackled this issue with add-hoc solutions for each concept
+generation and with manually-defined factors.
+  This paper proposes a novel method for metric-semantic factor graph
+generation which includes defining a semantic scene graph, integrating
+geometric information, and learning the interconnecting factors, all based on
+Graph Neural Networks (GNNs). An edge classification network (G-GNN) sorts the
+edges between planes into same room, same wall or none types. The resulting
+relations are clustered, generating a room or wall for each cluster. A second
+family of networks (F-GNN) infers the geometrical origin of the new nodes. The
+definition of the factors employs the same F-GNN used for the metric attribute
+of the generated nodes. Furthermore, share the new factor graph with the
+S-Graphs+ algorithm, extending its graph expressiveness and scene
+representation with the ultimate goal of improving the SLAM performance. The
+complexity of the environments is increased to N-plane rooms by training the
+networks on L-shaped rooms. The framework is evaluated in synthetic and
+simulated scenarios as no real datasets of the required complex layouts are
+available.",http://arxiv.org/pdf/2409.11972v1,,False
+"RaggeDi: Diffusion-based State Estimation of Disordered Rags, Sheets, Towels and Blankets",18/09/2024,"Jikai Ye, Wanze Li, Shiraz Khan, Gregory S. Chirikjian","Cloth state estimation is an important problem in robotics. It is essential
+for the robot to know the accurate state to manipulate cloth and execute tasks
+such as robotic dressing, stitching, and covering/uncovering human beings.
+However, estimating cloth state accurately remains challenging due to its high
+flexibility and self-occlusion. This paper proposes a diffusion model-based
+pipeline that formulates the cloth state estimation as an image generation
+problem by representing the cloth state as an RGB image that describes the
+point-wise translation (translation map) between a pre-defined flattened mesh
+and the deformed mesh in a canonical space. Then we train a conditional
+diffusion-based image generation model to predict the translation map based on
+an observation. Experiments are conducted in both simulation and the real world
+to validate the performance of our method. Results indicate that our method
+outperforms two recent methods in both accuracy and speed.",http://arxiv.org/pdf/2409.11831v1,,False
+Smart Data-Driven GRU Predictor for SnO$_2$ Thin films Characteristics,18/09/2024,"Faiza Bouamra, Mohamed Sayah, Labib Sadek Terrissa, Noureddine Zerhouni","In material physics, characterization techniques are foremost crucial for
+obtaining the materials data regarding the physical properties as well as
+structural, electronics, magnetic, optic, dielectric, and spectroscopic
+characteristics. However, for many materials, ensuring availability and safe
+accessibility is not always easy and fully warranted. Moreover, the use of
+modeling and simulation techniques need a lot of theoretical knowledge, in
+addition of being associated to costly computation time and a great complexity
+deal. Thus, analyzing materials with different techniques for multiple samples
+simultaneously, still be very challenging for engineers and researchers. It is
+worth noting that although of being very risky, X-ray diffraction is the well
+known and widely used characterization technique which gathers data from
+structural properties of crystalline 1d, 2d or 3d materials. We propose in this
+paper, a Smart GRU for Gated Recurrent Unit model to forcast structural
+characteristics or properties of thin films of tin oxide SnO$_2$(110). Indeed,
+thin films samples are elaborated and managed experimentally and the collected
+data dictionary is then used to generate an AI -- Artificial Intelligence --
+GRU model for the thin films of tin oxide SnO$_2$(110) structural property
+characterization.",http://arxiv.org/pdf/2409.11782v1,,False
+Knowledge Adaptation Network for Few-Shot Class-Incremental Learning,18/09/2024,"Ye Wang, Yaxiong Wang, Guoshuai Zhao, Xueming Qian","Few-shot class-incremental learning (FSCIL) aims to incrementally recognize
+new classes using a few samples while maintaining the performance on previously
+learned classes. One of the effective methods to solve this challenge is to
+construct prototypical evolution classifiers. Despite the advancement achieved
+by most existing methods, the classifier weights are simply initialized using
+mean features. Because representations for new classes are weak and biased, we
+argue such a strategy is suboptimal. In this paper, we tackle this issue from
+two aspects. Firstly, thanks to the development of foundation models, we employ
+a foundation model, the CLIP, as the network pedestal to provide a general
+representation for each class. Secondly, to generate a more reliable and
+comprehensive instance representation, we propose a Knowledge Adapter (KA)
+module that summarizes the data-specific knowledge from training data and fuses
+it into the general representation. Additionally, to tune the knowledge learned
+from the base classes to the upcoming classes, we propose a mechanism of
+Incremental Pseudo Episode Learning (IPEL) by simulating the actual FSCIL.
+Taken together, our proposed method, dubbed as Knowledge Adaptation Network
+(KANet), achieves competitive performance on a wide range of datasets,
+including CIFAR100, CUB200, and ImageNet-R.",http://arxiv.org/pdf/2409.11770v1,,False
+Recurrent Interpolants for Probabilistic Time Series Prediction,18/09/2024,"Yu Chen, Marin Biloš, Sarthak Mittal, Wei Deng, Kashif Rasul, Anderson Schneider","Sequential models such as recurrent neural networks or transformer-based
+models became \textit{de facto} tools for multivariate time series forecasting
+in a probabilistic fashion, with applications to a wide range of datasets, such
+as finance, biology, medicine, etc. Despite their adeptness in capturing
+dependencies, assessing prediction uncertainty, and efficiency in training,
+challenges emerge in modeling high-dimensional complex distributions and
+cross-feature dependencies. To tackle these issues, recent works delve into
+generative modeling by employing diffusion or flow-based models. Notably, the
+integration of stochastic differential equations or probability flow
+successfully extends these methods to probabilistic time series imputation and
+forecasting. However, scalability issues necessitate a computational-friendly
+framework for large-scale generative model-based predictions. This work
+proposes a novel approach by blending the computational efficiency of recurrent
+neural networks with the high-quality probabilistic modeling of the diffusion
+model, which addresses challenges and advances generative models' application
+in time series forecasting. Our method relies on the foundation of stochastic
+interpolants and the extension to a broader conditional generation framework
+with additional control features, offering insights for future developments in
+this dynamic field.",http://arxiv.org/pdf/2409.11684v1,,False
+Towards Explainable Goal Recognition Using Weight of Evidence (WoE): A Human-Centered Approach,18/09/2024,"Abeer Alshehri, Amal Abdulrahman, Hajar Alamri, Tim Miller, Mor Vered","Goal recognition (GR) involves inferring an agent's unobserved goal from a
+sequence of observations. This is a critical problem in AI with diverse
+applications. Traditionally, GR has been addressed using 'inference to the best
+explanation' or abduction, where hypotheses about the agent's goals are
+generated as the most plausible explanations for observed behavior.
+Alternatively, some approaches enhance interpretability by ensuring that an
+agent's behavior aligns with an observer's expectations or by making the
+reasoning behind decisions more transparent. In this work, we tackle a
+different challenge: explaining the GR process in a way that is comprehensible
+to humans. We introduce and evaluate an explainable model for goal recognition
+(GR) agents, grounded in the theoretical framework and cognitive processes
+underlying human behavior explanation. Drawing on insights from two human-agent
+studies, we propose a conceptual framework for human-centered explanations of
+GR. Using this framework, we develop the eXplainable Goal Recognition (XGR)
+model, which generates explanations for both why and why not questions. We
+evaluate the model computationally across eight GR benchmarks and through three
+user studies. The first study assesses the efficiency of generating human-like
+explanations within the Sokoban game domain, the second examines perceived
+explainability in the same domain, and the third evaluates the model's
+effectiveness in aiding decision-making in illegal fishing detection. Results
+demonstrate that the XGR model significantly enhances user understanding,
+trust, and decision-making compared to baseline models, underscoring its
+potential to improve human-agent collaboration.",http://arxiv.org/pdf/2409.11675v1,,False
+Few-Shot Class-Incremental Learning with Non-IID Decentralized Data,18/09/2024,"Cuiwei Liu, Siang Xu, Huaijun Qiu, Jing Zhang, Zhi Liu, Liang Zhao","Few-shot class-incremental learning is crucial for developing scalable and
+adaptive intelligent systems, as it enables models to acquire new classes with
+minimal annotated data while safeguarding the previously accumulated knowledge.
+Nonetheless, existing methods deal with continuous data streams in a
+centralized manner, limiting their applicability in scenarios that prioritize
+data privacy and security. To this end, this paper introduces federated
+few-shot class-incremental learning, a decentralized machine learning paradigm
+tailored to progressively learn new classes from scarce data distributed across
+multiple clients. In this learning paradigm, clients locally update their
+models with new classes while preserving data privacy, and then transmit the
+model updates to a central server where they are aggregated globally. However,
+this paradigm faces several issues, such as difficulties in few-shot learning,
+catastrophic forgetting, and data heterogeneity. To address these challenges,
+we present a synthetic data-driven framework that leverages replay buffer data
+to maintain existing knowledge and facilitate the acquisition of new knowledge.
+Within this framework, a noise-aware generative replay module is developed to
+fine-tune local models with a balance of new and replay data, while generating
+synthetic data of new classes to further expand the replay buffer for future
+tasks. Furthermore, a class-specific weighted aggregation strategy is designed
+to tackle data heterogeneity by adaptively aggregating class-specific
+parameters based on local models performance on synthetic data. This enables
+effective global model optimization without direct access to client data.
+Comprehensive experiments across three widely-used datasets underscore the
+effectiveness and preeminence of the introduced framework.",http://arxiv.org/pdf/2409.11657v1,,False

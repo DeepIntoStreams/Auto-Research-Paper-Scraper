@@ -1,0 +1,279 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+SpaceMesh: A Continuous Representation for Learning Manifold Surface Meshes,30/09/2024,"Tianchang Shen, Zhaoshuo Li, Marc Law, Matan Atzmon, Sanja Fidler, James Lucas, Jun Gao, Nicholas Sharp","Meshes are ubiquitous in visual computing and simulation, yet most existing
+machine learning techniques represent meshes only indirectly, e.g. as the level
+set of a scalar field or deformation of a template, or as a disordered triangle
+soup lacking local structure. This work presents a scheme to directly generate
+manifold, polygonal meshes of complex connectivity as the output of a neural
+network. Our key innovation is to define a continuous latent connectivity space
+at each mesh vertex, which implies the discrete mesh. In particular, our vertex
+embeddings generate cyclic neighbor relationships in a halfedge mesh
+representation, which gives a guarantee of edge-manifoldness and the ability to
+represent general polygonal meshes. This representation is well-suited to
+machine learning and stochastic optimization, without restriction on
+connectivity or topology. We first explore the basic properties of this
+representation, then use it to fit distributions of meshes from large datasets.
+The resulting models generate diverse meshes with tessellation structure
+learned from the dataset population, with concise details and high-quality mesh
+elements. In applications, this approach not only yields high-quality outputs
+from generative models, but also enables directly learning challenging geometry
+processing tasks such as mesh repair.",http://arxiv.org/pdf/2409.20562v1,10.1145/3680528.3687634,False
+Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers,30/09/2024,"Lirui Wang, Xinlei Chen, Jialiang Zhao, Kaiming He","One of the roadblocks for training generalist robotic models today is
+heterogeneity. Previous robot learning methods often collect data to train with
+one specific embodiment for one task, which is expensive and prone to
+overfitting. This work studies the problem of learning policy representations
+through heterogeneous pre-training on robot data across different embodiments
+and tasks at scale. We propose Heterogeneous Pre-trained Transformers (HPT),
+which pre-train a large, shareable trunk of a policy neural network to learn a
+task and embodiment agnostic shared representation. This general architecture
+aligns the specific proprioception and vision inputs from distinct embodiments
+to a short sequence of tokens and then processes such tokens to map to control
+robots for different tasks. Leveraging the recent large-scale multi-embodiment
+real-world robotic datasets as well as simulation, deployed robots, and human
+video datasets, we investigate pre-training policies across heterogeneity. We
+conduct experiments to investigate the scaling behaviors of training
+objectives, to the extent of 52 datasets. HPTs outperform several baselines and
+enhance the fine-tuned policy performance by over 20% on unseen tasks in
+multiple simulator benchmarks and real-world settings. See the project website
+(https://liruiw.github.io/hpt/) for code and videos.",http://arxiv.org/pdf/2409.20537v1,,False
+What Information Contributes to Log-based Anomaly Detection? Insights from a Configurable Transformer-Based Approach,30/09/2024,"Xingfang Wu, Heng Li, Foutse Khomh","Log data are generated from logging statements in the source code, providing
+insights into the execution processes of software applications and systems.
+State-of-the-art log-based anomaly detection approaches typically leverage deep
+learning models to capture the semantic or sequential information in the log
+data and detect anomalous runtime behaviors. However, the impacts of these
+different types of information are not clear. In addition, existing approaches
+have not captured the timestamps in the log data, which can potentially provide
+more fine-grained temporal information than sequential information. In this
+work, we propose a configurable transformer-based anomaly detection model that
+can capture the semantic, sequential, and temporal information in the log data
+and allows us to configure the different types of information as the model's
+features. Additionally, we train and evaluate the proposed model using log
+sequences of different lengths, thus overcoming the constraint of existing
+methods that rely on fixed-length or time-windowed log sequences as inputs.
+With the proposed model, we conduct a series of experiments with different
+combinations of input features to evaluate the roles of different types of
+information in anomaly detection. When presented with log sequences of varying
+lengths, the model can attain competitive and consistently stable performance
+compared to the baselines. The results indicate that the event occurrence
+information plays a key role in identifying anomalies, while the impact of the
+sequential and temporal information is not significant for anomaly detection in
+the studied public datasets. On the other hand, the findings also reveal the
+simplicity of the studied public datasets and highlight the importance of
+constructing new datasets that contain different types of anomalies to better
+evaluate the performance of anomaly detection models.",http://arxiv.org/pdf/2409.20503v1,,False
+Stream-level flow matching from a Bayesian decision theoretic perspective,30/09/2024,"Ganchao Wei, Li Ma","Flow matching (FM) is a family of training algorithms for fitting continuous
+normalizing flows (CNFs). A standard approach to FM, called conditional flow
+matching (CFM), exploits the fact that the marginal vector field of a CNF can
+be learned by fitting least-square regression to the so-called conditional
+vector field specified given one or both ends of the flow path. We show that
+viewing CFM training from a Bayesian decision theoretic perspective on
+parameter estimation opens the door to generalizations of CFM algorithms. We
+propose one such extension by introducing a CFM algorithm based on defining
+conditional probability paths given what we refer to as ``streams'', instances
+of latent stochastic paths that connect pairs of noise and observed data.
+Further, we advocates the modeling of these latent streams using Gaussian
+processes (GPs). The unique distributional properties of GPs, and in particular
+the fact that the velocities of a GP is still a GP, allows drawing samples from
+the resulting stream-augmented conditional probability path without simulating
+the actual streams, and hence the ``simulation-free"" nature of CFM training is
+preserved. We show that this generalization of the CFM can substantially reduce
+the variance in the estimated marginal vector field at a moderate computational
+cost, thereby improving the quality of the generated samples under common
+metrics. Additionally, we show that adopting the GP on the streams allows for
+flexibly linking multiple related training data points (e.g., time series) and
+incorporating additional prior information. We empirically validate our claim
+through both simulations and applications to two hand-written image datasets.",http://arxiv.org/pdf/2409.20423v1,,False
+A SSM is Polymerized from Multivariate Time Series,30/09/2024,Haixiang Wu,"For multivariate time series (MTS) tasks, previous state space models (SSMs)
+followed the modeling paradigm of Transformer-based methods. However, none of
+them explicitly model the complex dependencies of MTS: the Channel Dependency
+variations with Time (CDT). In view of this, we delve into the derivation of
+SSM, which involves approximating continuously updated functions by orthogonal
+function bases. We then develop Poly-Mamba, a novel method for MTS forecasting.
+Its core concept is to expand the original orthogonal function basis space into
+a multivariate orthogonal function space containing variable mixing terms, and
+make a projection on this space so as to explicitly describe the CDT by
+weighted coefficients. In Poly-Mamba, we propose the Multivariate Orthogonal
+Polynomial Approximation (MOPA) as a simplified implementation of this concept.
+For the simple linear relationship between channels, we propose Linear Channel
+Mixing (LCM) and generate CDT patterns adaptively for different channels
+through a proposed Order Combining method. Experiments on six real-world
+datasets demonstrate that Poly-Mamba outperforms the SOTA methods, especially
+when dealing with datasets having a large number of channels and complex
+correlations. The codes and log files will be released at:
+https://github.com/Joeland4/Poly-Mamba.",http://arxiv.org/pdf/2409.20310v1,,False
+PersonalLLM: Tailoring LLMs to Individual Preferences,30/09/2024,"Thomas P. Zollo, Andrew Wei Tung Siah, Naimeng Ye, Ang Li, Hongseok Namkoong","As LLMs become capable of complex tasks, there is growing potential for
+personalized interactions tailored to the subtle and idiosyncratic preferences
+of the user. We present a public benchmark, PersonalLLM, focusing on adapting
+LLMs to provide maximal benefits for a particular user. Departing from existing
+alignment benchmarks that implicitly assume uniform preferences, we curate
+open-ended prompts paired with many high-quality answers over which users would
+be expected to display heterogeneous latent preferences. Instead of
+persona-prompting LLMs based on high-level attributes (e.g., user's race or
+response length), which yields homogeneous preferences relative to humans, we
+develop a method that can simulate a large user base with diverse preferences
+from a set of pre-trained reward models. Our dataset and generated
+personalities offer an innovative testbed for developing personalization
+algorithms that grapple with continual data sparsity--few relevant feedback
+from the particular user--by leveraging historical data from other (similar)
+users. We explore basic in-context learning and meta-learning baselines to
+illustrate the utility of PersonalLLM and highlight the need for future
+methodological development. Our dataset is available at
+https://huggingface.co/datasets/namkoong-lab/PersonalLLM",http://arxiv.org/pdf/2409.20296v1,,False
+Random Features Outperform Linear Models: Effect of Strong Input-Label Correlation in Spiked Covariance Data,30/09/2024,"Samet Demir, Zafer Dogan","Random Feature Model (RFM) with a nonlinear activation function is
+instrumental in understanding training and generalization performance in
+high-dimensional learning. While existing research has established an
+asymptotic equivalence in performance between the RFM and noisy linear models
+under isotropic data assumptions, empirical observations indicate that the RFM
+frequently surpasses linear models in practical applications. To address this
+gap, we ask, ""When and how does the RFM outperform linear models?"" In practice,
+inputs often have additional structures that significantly influence learning.
+Therefore, we explore the RFM under anisotropic input data characterized by
+spiked covariance in the proportional asymptotic limit, where dimensions
+diverge jointly while maintaining finite ratios. Our analysis reveals that a
+high correlation between inputs and labels is a critical factor enabling the
+RFM to outperform linear models. Moreover, we show that the RFM performs
+equivalent to noisy polynomial models, where the polynomial degree depends on
+the strength of the correlation between inputs and labels. Our numerical
+simulations validate these theoretical insights, confirming the
+performance-wise superiority of RFM in scenarios characterized by strong
+input-label correlation.",http://arxiv.org/pdf/2409.20250v1,,False
+Beyond Prompts: Dynamic Conversational Benchmarking of Large Language Models,30/09/2024,"David Castillo-Bolado, Joseph Davidson, Finlay Gray, Marek Rosa","We introduce a dynamic benchmarking system for conversational agents that
+evaluates their performance through a single, simulated, and lengthy
+user$\leftrightarrow$agent interaction. The interaction is a conversation
+between the user and agent, where multiple tasks are introduced and then
+undertaken concurrently. We context switch regularly to interleave the tasks,
+which constructs a realistic testing scenario in which we assess the Long-Term
+Memory, Continual Learning, and Information Integration capabilities of the
+agents. Results from both proprietary and open-source Large-Language Models
+show that LLMs in general perform well on single-task interactions, but they
+struggle on the same tasks when they are interleaved. Notably, short-context
+LLMs supplemented with an LTM system perform as well as or better than those
+with larger contexts. Our benchmark suggests that there are other challenges
+for LLMs responding to more natural interactions that contemporary benchmarks
+have heretofore not been able to capture.",http://arxiv.org/pdf/2409.20222v1,,False
+Choosing DAG Models Using Markov and Minimal Edge Count in the Absence of Ground Truth,30/09/2024,"Joseph D. Ramsey, Bryan Andrews, Peter Spirtes","We give a novel nonparametric pointwise consistent statistical test (the
+Markov Checker) of the Markov condition for directed acyclic graph (DAG) or
+completed partially directed acyclic graph (CPDAG) models given a dataset. We
+also introduce the Cross-Algorithm Frugality Search (CAFS) for rejecting DAG
+models that either do not pass the Markov Checker test or that are not edge
+minimal. Edge minimality has been used previously by Raskutti and Uhler as a
+nonparametric simplicity criterion, though CAFS readily generalizes to other
+simplicity conditions. Reference to the ground truth is not necessary for CAFS,
+so it is useful for finding causal structure learning algorithms and tuning
+parameter settings that output causal models that are approximately true from a
+given data set. We provide a software tool for this analysis that is suitable
+for even quite large or dense models, provided a suitably fast pointwise
+consistent test of conditional independence is available. In addition, we show
+in simulation that the CAFS procedure can pick approximately correct models
+without knowing the ground truth.",http://arxiv.org/pdf/2409.20187v1,,False
+Modelando procesos cognitivos de la lectura natural con GPT-2,30/09/2024,"Bruno Bianchi, Alfredo Umfurer, Juan Esteban Kamienkowski","The advancement of the Natural Language Processing field has enabled the
+development of language models with a great capacity for generating text. In
+recent years, Neuroscience has been using these models to better understand
+cognitive processes. In previous studies, we found that models like Ngrams and
+LSTM networks can partially model Predictability when used as a co-variable to
+explain readers' eye movements. In the present work, we further this line of
+research by using GPT-2 based models. The results show that this architecture
+achieves better outcomes than its predecessors.",http://arxiv.org/pdf/2409.20174v1,,False
+MemSim: A Bayesian Simulator for Evaluating Memory of LLM-based Personal Assistants,30/09/2024,"Zeyu Zhang, Quanyu Dai, Luyu Chen, Zeren Jiang, Rui Li, Jieming Zhu, Xu Chen, Yi Xie, Zhenhua Dong, Ji-Rong Wen","LLM-based agents have been widely applied as personal assistants, capable of
+memorizing information from user messages and responding to personal queries.
+However, there still lacks an objective and automatic evaluation on their
+memory capability, largely due to the challenges in constructing reliable
+questions and answers (QAs) according to user messages. In this paper, we
+propose MemSim, a Bayesian simulator designed to automatically construct
+reliable QAs from generated user messages, simultaneously keeping their
+diversity and scalability. Specifically, we introduce the Bayesian Relation
+Network (BRNet) and a causal generation mechanism to mitigate the impact of LLM
+hallucinations on factual information, facilitating the automatic creation of
+an evaluation dataset. Based on MemSim, we generate a dataset in the daily-life
+scenario, named MemDaily, and conduct extensive experiments to assess the
+effectiveness of our approach. We also provide a benchmark for evaluating
+different memory mechanisms in LLM-based agents with the MemDaily dataset. To
+benefit the research community, we have released our project at
+https://github.com/nuster1128/MemSim.",http://arxiv.org/pdf/2409.20163v1,,False
+Single-shot reconstruction of three-dimensional morphology of biological cells in digital holographic microscopy using a physics-driven neural network,30/09/2024,"Jihwan Kim, Youngdo Kim, Hyo Seung Lee, Eunseok Seo, Sang Joon Lee","Recent advances in deep learning-based image reconstruction techniques have
+led to significant progress in phase retrieval using digital in-line
+holographic microscopy (DIHM). However, existing deep learning-based phase
+retrieval methods have technical limitations in generalization performance and
+three-dimensional (3D) morphology reconstruction from a single-shot hologram of
+biological cells. In this study, we propose a novel deep learning model, named
+MorpHoloNet, for single-shot reconstruction of 3D morphology by integrating
+physics-driven and coordinate-based neural networks. By simulating the optical
+diffraction of coherent light through a 3D phase shift distribution, the
+proposed MorpHoloNet is optimized by minimizing the loss between the simulated
+and input holograms on the sensor plane. Compared to existing DIHM methods that
+face challenges with twin image and phase retrieval problems, MorpHoloNet
+enables direct reconstruction of 3D complex light field and 3D morphology of a
+test sample from its single-shot hologram without requiring multiple
+phase-shifted holograms or angle scanning. The performance of the proposed
+MorpHoloNet is validated by reconstructing 3D morphologies and refractive index
+distributions from synthetic holograms of ellipsoids and experimental holograms
+of biological cells. The proposed deep learning model is utilized to
+reconstruct spatiotemporal variations in 3D translational and rotational
+behaviors and morphological deformations of biological cells from consecutive
+single-shot holograms captured using DIHM. MorpHoloNet would pave the way for
+advancing label-free, real-time 3D imaging and dynamic analysis of biological
+cells under various cellular microenvironments in biomedical and engineering
+fields.",http://arxiv.org/pdf/2409.20013v1,,False
+Numerically Robust Fixed-Point Smoothing Without State Augmentation,30/09/2024,Nicholas Krämer,"Practical implementations of Gaussian smoothing algorithms have received a
+great deal of attention in the last 60 years. However, almost all work focuses
+on estimating complete time series (''fixed-interval smoothing'',
+$\mathcal{O}(K)$ memory) through variations of the Rauch--Tung--Striebel
+smoother, rarely on estimating the initial states (''fixed-point smoothing'',
+$\mathcal{O}(1)$ memory). Since fixed-point smoothing is a crucial component of
+algorithms for dynamical systems with unknown initial conditions, we close this
+gap by introducing a new formulation of a Gaussian fixed-point smoother. In
+contrast to prior approaches, our perspective admits a numerically robust
+Cholesky-based form (without downdates) and avoids state augmentation, which
+would needlessly inflate the state-space model and reduce the numerical
+practicality of any fixed-point smoother code. The experiments demonstrate how
+a JAX implementation of our algorithm matches the runtime of the fastest
+methods and the robustness of the most robust techniques while existing
+implementations must always sacrifice one for the other.",http://arxiv.org/pdf/2409.20004v1,,False
+Task-agnostic Pre-training and Task-guided Fine-tuning for Versatile Diffusion Planner,30/09/2024,"Chenyou Fan, Chenjia Bai, Zhao Shan, Haoran He, Yang Zhang, Zhen Wang","Diffusion models have demonstrated their capabilities in modeling
+trajectories of multi-tasks. However, existing multi-task planners or policies
+typically rely on task-specific demonstrations via multi-task imitation, or
+require task-specific reward labels to facilitate policy optimization via
+Reinforcement Learning (RL). To address these challenges, we aim to develop a
+versatile diffusion planner that can leverage large-scale inferior data that
+contains task-agnostic sub-optimal trajectories, with the ability to fast adapt
+to specific tasks. In this paper, we propose \textbf{SODP}, a two-stage
+framework that leverages \textbf{S}ub-\textbf{O}ptimal data to learn a
+\textbf{D}iffusion \textbf{P}lanner, which is generalizable for various
+downstream tasks. Specifically, in the pre-training stage, we train a
+foundation diffusion planner that extracts general planning capabilities by
+modeling the versatile distribution of multi-task trajectories, which can be
+sub-optimal and has wide data coverage. Then for downstream tasks, we adopt
+RL-based fine-tuning with task-specific rewards to fast refine the diffusion
+planner, which aims to generate action sequences with higher task-specific
+returns. Experimental results from multi-task domains including Meta-World and
+Adroit demonstrate that SODP outperforms state-of-the-art methods with only a
+small amount of data for reward-guided fine-tuning.",http://arxiv.org/pdf/2409.19949v1,,False
+Classification with a Network of Partially Informative Agents: Enabling Wise Crowds from Individually Myopic Classifiers,30/09/2024,"Tong Yao, Shreyas Sundaram","We consider the problem of classification with a (peer-to-peer) network of
+heterogeneous and partially informative agents, each receiving local data
+generated by an underlying true class, and equipped with a classifier that can
+only distinguish between a subset of the entire set of classes. We propose an
+iterative algorithm that uses the posterior probabilities of the local
+classifier and recursively updates each agent's local belief on all the
+possible classes, based on its local signals and belief information from its
+neighbors. We then adopt a novel distributed min-rule to update each agent's
+global belief and enable learning of the true class for all agents. We show
+that under certain assumptions, the beliefs on the true class converge to one
+asymptotically almost surely. We provide the asymptotic convergence rate, and
+demonstrate the performance of our algorithm through simulation with image data
+and experimented with random forest classifiers and MobileNet.",http://arxiv.org/pdf/2409.19947v1,,False
+SWIM: Short-Window CNN Integrated with Mamba for EEG-Based Auditory Spatial Attention Decoding,30/09/2024,"Ziyang Zhang, Andrew Thwaites, Alexandra Woolgar, Brian Moore, Chao Zhang","In complex auditory environments, the human auditory system possesses the
+remarkable ability to focus on a specific speaker while disregarding others. In
+this study, a new model named SWIM, a short-window convolution neural network
+(CNN) integrated with Mamba, is proposed for identifying the locus of auditory
+attention (left or right) from electroencephalography (EEG) signals without
+relying on speech envelopes. SWIM consists of two parts. The first is a
+short-window CNN (SW$_\text{CNN}$), which acts as a short-term EEG feature
+extractor and achieves a final accuracy of 84.9% in the leave-one-speaker-out
+setup on the widely used KUL dataset. This improvement is due to the use of an
+improved CNN structure, data augmentation, multitask training, and model
+combination. The second part, Mamba, is a sequence model first applied to
+auditory spatial attention decoding to leverage the long-term dependency from
+previous SW$_\text{CNN}$ time steps. By joint training SW$_\text{CNN}$ and
+Mamba, the proposed SWIM structure uses both short-term and long-term
+information and achieves an accuracy of 86.2%, which reduces the classification
+errors by a relative 31.0% compared to the previous state-of-the-art result.
+The source code is available at https://github.com/windowso/SWIM-ASAD.",http://arxiv.org/pdf/2409.19884v1,,False

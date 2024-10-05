@@ -1,0 +1,424 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Training Language Models on Synthetic Edit Sequences Improves Code Synthesis,03/10/2024,"Ulyana Piterbarg, Lerrel Pinto, Rob Fergus","Software engineers mainly write code by editing existing programs. In
+contrast, large language models (LLMs) autoregressively synthesize programs in
+a single pass. One explanation for this is the scarcity of open-sourced edit
+data. While high-quality instruction data for code synthesis is already scarce,
+high-quality edit data is even scarcer. To fill this gap, we develop a
+synthetic data generation algorithm called LintSeq. This algorithm refactors
+existing code into a sequence of code edits by using a linter to procedurally
+sample across the error-free insertions that can be used to sequentially write
+programs. It outputs edit sequences as text strings consisting of consecutive
+program diffs. To test LintSeq, we use it to refactor a dataset of instruction
++ program pairs into instruction + program-diff-sequence tuples. Then, we
+instruction finetune a series of smaller LLMs ranging from 2.6B to 14B
+parameters on both the re-factored and original versions of this dataset,
+comparing zero-shot performance on code synthesis benchmarks. We show that
+during repeated sampling, edit sequence finetuned models produce more diverse
+programs than baselines. This results in better inference-time scaling for
+benchmark coverage as a function of samples, i.e. the fraction of problems
+""pass@k"" solved by any attempt given ""k"" tries. For example, on HumanEval
+pass@50, small LLMs finetuned on synthetic edit sequences are competitive with
+GPT-4 and outperform models finetuned on the baseline dataset by +20% (+/-3%)
+in absolute score. Finally, we also pretrain our own tiny LMs for code
+understanding. We show that finetuning tiny models on synthetic code edits
+results in state-of-the-art code synthesis for the on-device model class. Our
+150M parameter edit sequence LM matches or outperforms code models with twice
+as many parameters, both with and without repeated sampling, including Codex
+and AlphaCode.",http://arxiv.org/pdf/2410.02749v1,,False
+Grounding Large Language Models In Embodied Environment With Imperfect World Models,03/10/2024,"Haolan Liu, Jishen Zhao","Despite a widespread success in various applications, large language models
+(LLMs) often stumble when tackling basic physical reasoning or executing
+robotics tasks, due to a lack of direct experience with the physical nuances of
+the real world. To address these issues, we propose a Grounding Large language
+model with Imperfect world MOdel (GLIMO), which utilizes proxy world models
+such as simulators to collect and synthesize trining data. GLIMO incorporates
+an LLM agent-based data generator to automatically create high-quality and
+diverse instruction datasets. The generator includes an iterative self-refining
+module for temporally consistent experience sampling, a diverse set of
+question-answering instruction seeds, and a retrieval-augmented generation
+module for reflecting on prior experiences. Comprehensive experiments show that
+our approach improve the performance of strong open-source LLMs like LLaMA-3
+with a performance boost of 2.04 $\times$, 1.54 $\times$, and 1.82 $\times$
+across three different benchmarks, respectively. The performance is able to
+compete with or surpass their larger counterparts such as GPT-4.",http://arxiv.org/pdf/2410.02742v1,,False
+FAN: Fourier Analysis Networks,03/10/2024,"Yihong Dong, Ge Li, Yongding Tao, Xue Jiang, Kechi Zhang, Jia Li, Jing Su, Jun Zhang, Jingjing Xu","Despite the remarkable success achieved by neural networks, particularly
+those represented by MLP and Transformer, we reveal that they exhibit potential
+flaws in the modeling and reasoning of periodicity, i.e., they tend to memorize
+the periodic data rather than genuinely understanding the underlying principles
+of periodicity. However, periodicity is a crucial trait in various forms of
+reasoning and generalization, underpinning predictability across natural and
+engineered systems through recurring patterns in observations. In this paper,
+we propose FAN, a novel network architecture based on Fourier Analysis, which
+empowers the ability to efficiently model and reason about periodic phenomena.
+By introducing Fourier Series, the periodicity is naturally integrated into the
+structure and computational processes of the neural network, thus achieving a
+more accurate expression and prediction of periodic patterns. As a promising
+substitute to multi-layer perceptron (MLP), FAN can seamlessly replace MLP in
+various models with fewer parameters and FLOPs. Through extensive experiments,
+we demonstrate the effectiveness of FAN in modeling and reasoning about
+periodic functions, and the superiority and generalizability of FAN across a
+range of real-world tasks, including symbolic formula representation, time
+series forecasting, and language modeling.",http://arxiv.org/pdf/2410.02675v1,,False
+Grounded Answers for Multi-agent Decision-making Problem through Generative World Model,03/10/2024,"Zeyang Liu, Xinrui Yang, Shiguang Sun, Long Qian, Lipeng Wan, Xingyu Chen, Xuguang Lan","Recent progress in generative models has stimulated significant innovations
+in many fields, such as image generation and chatbots. Despite their success,
+these models often produce sketchy and misleading solutions for complex
+multi-agent decision-making problems because they miss the trial-and-error
+experience and reasoning as humans. To address this limitation, we explore a
+paradigm that integrates a language-guided simulator into the multi-agent
+reinforcement learning pipeline to enhance the generated answer. The simulator
+is a world model that separately learns dynamics and reward, where the dynamics
+model comprises an image tokenizer as well as a causal transformer to generate
+interaction transitions autoregressively, and the reward model is a
+bidirectional transformer learned by maximizing the likelihood of trajectories
+in the expert demonstrations under language guidance. Given an image of the
+current state and the task description, we use the world model to train the
+joint policy and produce the image sequence as the answer by running the
+converged policy on the dynamics model. The empirical results demonstrate that
+this framework can improve the answers for multi-agent decision-making problems
+by showing superior performance on the training and unseen tasks of the
+StarCraft Multi-Agent Challenge benchmark. In particular, it can generate
+consistent interaction sequences and explainable reward functions at
+interaction states, opening the path for training generative models of the
+future.",http://arxiv.org/pdf/2410.02664v1,,False
+Scalable Simulation-free Entropic Unbalanced Optimal Transport,03/10/2024,"Jaemoo Choi, Jaewoong Choi","The Optimal Transport (OT) problem investigates a transport map that connects
+two distributions while minimizing a given cost function. Finding such a
+transport map has diverse applications in machine learning, such as generative
+modeling and image-to-image translation. In this paper, we introduce a scalable
+and simulation-free approach for solving the Entropic Unbalanced Optimal
+Transport (EUOT) problem. We derive the dynamical form of this EUOT problem,
+which is a generalization of the Schr\""odinger bridges (SB) problem. Based on
+this, we derive dual formulation and optimality conditions of the EUOT problem
+from the stochastic optimal control interpretation. By leveraging these
+properties, we propose a simulation-free algorithm to solve EUOT, called
+Simulation-free EUOT (SF-EUOT). While existing SB models require expensive
+simulation costs during training and evaluation, our model achieves
+simulation-free training and one-step generation by utilizing the reciprocal
+property. Our model demonstrates significantly improved scalability in
+generative modeling and image-to-image translation tasks compared to previous
+SB methods.",http://arxiv.org/pdf/2410.02656v1,,False
+Estimating Generalization Performance Along the Trajectory of Proximal SGD in Robust Regression,03/10/2024,"Kai Tan, Pierre C. Bellec","This paper studies the generalization performance of iterates obtained by
+Gradient Descent (GD), Stochastic Gradient Descent (SGD) and their proximal
+variants in high-dimensional robust regression problems. The number of features
+is comparable to the sample size and errors may be heavy-tailed. We introduce
+estimators that precisely track the generalization error of the iterates along
+the trajectory of the iterative algorithm. These estimators are provably
+consistent under suitable conditions. The results are illustrated through
+several examples, including Huber regression, pseudo-Huber regression, and
+their penalized variants with non-smooth regularizer. We provide explicit
+generalization error estimates for iterates generated from GD and SGD, or from
+proximal SGD in the presence of a non-smooth regularizer. The proposed risk
+estimates serve as effective proxies for the actual generalization error,
+allowing us to determine the optimal stopping iteration that minimizes the
+generalization error. Extensive simulations confirm the effectiveness of the
+proposed generalization error estimates.",http://arxiv.org/pdf/2410.02629v1,,False
+Beyond Squared Error: Exploring Loss Design for Enhanced Training of Generative Flow Networks,03/10/2024,"Rui Hu, Yifan Zhang, Zhuoran Li, Longbo Huang","Generative Flow Networks (GFlowNets) are a novel class of generative models
+designed to sample from unnormalized distributions and have found applications
+in various important tasks, attracting great research interest in their
+training algorithms. In general, GFlowNets are trained by fitting the forward
+flow to the backward flow on sampled training objects. Prior work focused on
+the choice of training objects, parameterizations, sampling and resampling
+strategies, and backward policies, aiming to enhance credit assignment,
+exploration, or exploitation of the training process. However, the choice of
+regression loss, which can highly influence the exploration and exploitation
+behavior of the under-training policy, has been overlooked. Due to the lack of
+theoretical understanding for choosing an appropriate regression loss, most
+existing algorithms train the flow network by minimizing the squared error of
+the forward and backward flows in log-space, i.e., using the quadratic
+regression loss. In this work, we rigorously prove that distinct regression
+losses correspond to specific divergence measures, enabling us to design and
+analyze regression losses according to the desired properties of the
+corresponding divergence measures. Specifically, we examine two key properties:
+zero-forcing and zero-avoiding, where the former promotes exploitation and
+higher rewards, and the latter encourages exploration and enhances diversity.
+Based on our theoretical framework, we propose three novel regression losses,
+namely, Shifted-Cosh, Linex(1/2), and Linex(1). We evaluate them across three
+benchmarks: hyper-grid, bit-sequence generation, and molecule generation. Our
+proposed losses are compatible with most existing training algorithms, and
+significantly improve the performances of the algorithms concerning convergence
+speed, sample diversity, and robustness.",http://arxiv.org/pdf/2410.02596v1,,False
+Deep Learning-Based Prediction of Suspension Dynamics Performance in Multi-Axle Vehicles,03/10/2024,"Kai Chun Lin, Bo-Yi Lin","This paper presents a deep learning-based framework for predicting the
+dynamic performance of suspension systems in multi-axle vehicles, emphasizing
+the integration of machine learning with traditional vehicle dynamics modeling.
+A Multi-Task Deep Belief Network Deep Neural Network (MTL-DBN-DNN) was
+developed to capture the relationships between key vehicle parameters and
+suspension performance metrics. The model was trained on data generated from
+numerical simulations and demonstrated superior prediction accuracy compared to
+conventional DNN models. A comprehensive sensitivity analysis was conducted to
+assess the impact of various vehicle and suspension parameters on dynamic
+suspension performance. Additionally, the Suspension Dynamic Performance Index
+(SDPI) was introduced as a holistic measure to quantify overall suspension
+performance, accounting for the combined effects of multiple parameters. The
+findings highlight the effectiveness of multitask learning in improving
+predictive models for complex vehicle systems.",http://arxiv.org/pdf/2410.02566v1,,False
+Local Flow Matching Generative Models,03/10/2024,"Chen Xu, Xiuyuan Cheng, Yao Xie","Flow Matching (FM) is a simulation-free method for learning a continuous and
+invertible flow to interpolate between two distributions, and in particular to
+generate data from noise in generative modeling. In this paper, we introduce
+Local Flow Matching (LFM), which learns a sequence of FM sub-models and each
+matches a diffusion process up to the time of the step size in the
+data-to-noise direction. In each step, the two distributions to be interpolated
+by the sub-model are closer to each other than data vs. noise, and this enables
+the use of smaller models with faster training. The stepwise structure of LFM
+is natural to be distilled and different distillation techniques can be adopted
+to speed up generation. Theoretically, we prove a generation guarantee of the
+proposed flow model in terms of the $\chi^2$-divergence between the generated
+and true data distributions. In experiments, we demonstrate the improved
+training efficiency and competitive generative performance of LFM compared to
+FM on the unconditional generation of tabular data and image datasets, and also
+on the conditional generation of robotic manipulation policies.",http://arxiv.org/pdf/2410.02548v1,,False
+Dual Active Learning for Reinforcement Learning from Human Feedback,03/10/2024,"Pangpang Liu, Chengchun Shi, Will Wei Sun","Aligning large language models (LLMs) with human preferences is critical to
+recent advances in generative artificial intelligence. Reinforcement learning
+from human feedback (RLHF) is widely applied to achieve this objective. A key
+step in RLHF is to learn the reward function from human feedback. However,
+human feedback is costly and time-consuming, making it essential to collect
+high-quality conversation data for human teachers to label. Additionally,
+different human teachers have different levels of expertise. It is thus
+critical to query the most appropriate teacher for their opinions. In this
+paper, we use offline reinforcement learning (RL) to formulate the alignment
+problem. Motivated by the idea of $D$-optimal design, we first propose a dual
+active reward learning algorithm for the simultaneous selection of
+conversations and teachers. Next, we apply pessimistic RL to solve the
+alignment problem, based on the learned reward estimator. Theoretically, we
+show that the reward estimator obtained through our proposed adaptive selection
+strategy achieves minimal generalized variance asymptotically, and prove that
+the sub-optimality of our pessimistic policy scales as $O(1/\sqrt{T})$ with a
+given sample budget $T$. Through simulations and experiments on LLMs, we
+demonstrate the effectiveness of our algorithm and its superiority over
+state-of-the-arts.",http://arxiv.org/pdf/2410.02504v1,,False
+Learning K-U-Net with constant complexity: An Application to time series forecasting,03/10/2024,"Jiang You, Arben Cela, René Natowicz, Jacob Ouanounou, Patrick Siarry","Training deep models for time series forecasting is a critical task with an
+inherent challenge of time complexity. While current methods generally ensure
+linear time complexity, our observations on temporal redundancy show that
+high-level features are learned 98.44\% slower than low-level features. To
+address this issue, we introduce a new exponentially weighted stochastic
+gradient descent algorithm designed to achieve constant time complexity in deep
+learning models. We prove that the theoretical complexity of this learning
+method is constant. Evaluation of this method on Kernel U-Net (K-U-Net) on
+synthetic datasets shows a significant reduction in complexity while improving
+the accuracy of the test set.",http://arxiv.org/pdf/2410.02438v1,,False
+Predictive Attractor Models,03/10/2024,"Ramy Mounir, Sudeep Sarkar","Sequential memory, the ability to form and accurately recall a sequence of
+events or stimuli in the correct order, is a fundamental prerequisite for
+biological and artificial intelligence as it underpins numerous cognitive
+functions (e.g., language comprehension, planning, episodic memory formation,
+etc.) However, existing methods of sequential memory suffer from catastrophic
+forgetting, limited capacity, slow iterative learning procedures, low-order
+Markov memory, and, most importantly, the inability to represent and generate
+multiple valid future possibilities stemming from the same context. Inspired by
+biologically plausible neuroscience theories of cognition, we propose
+\textit{Predictive Attractor Models (PAM)}, a novel sequence memory
+architecture with desirable generative properties. PAM is a streaming model
+that learns a sequence in an online, continuous manner by observing each input
+\textit{only once}. Additionally, we find that PAM avoids catastrophic
+forgetting by uniquely representing past context through lateral inhibition in
+cortical minicolumns, which prevents new memories from overwriting previously
+learned knowledge. PAM generates future predictions by sampling from a union
+set of predicted possibilities; this generative ability is realized through an
+attractor model trained alongside the predictor. We show that PAM is trained
+with local computations through Hebbian plasticity rules in a biologically
+plausible framework. Other desirable traits (e.g., noise tolerance, CPU-based
+learning, capacity scaling) are discussed throughout the paper. Our findings
+suggest that PAM represents a significant step forward in the pursuit of
+biologically plausible and computationally efficient sequential memory models,
+with broad implications for cognitive science and artificial intelligence
+research.",http://arxiv.org/pdf/2410.02430v1,,False
+Diffusion Meets Options: Hierarchical Generative Skill Composition for Temporally-Extended Tasks,03/10/2024,"Zeyu Feng, Hao Luan, Kevin Yuchen Ma, Harold Soh","Safe and successful deployment of robots requires not only the ability to
+generate complex plans but also the capacity to frequently replan and correct
+execution errors. This paper addresses the challenge of long-horizon trajectory
+planning under temporally extended objectives in a receding horizon manner. To
+this end, we propose DOPPLER, a data-driven hierarchical framework that
+generates and updates plans based on instruction specified by linear temporal
+logic (LTL). Our method decomposes temporal tasks into chain of options with
+hierarchical reinforcement learning from offline non-expert datasets. It
+leverages diffusion models to generate options with low-level actions. We
+devise a determinantal-guided posterior sampling technique during batch
+generation, which improves the speed and diversity of diffusion generated
+options, leading to more efficient querying. Experiments on robot navigation
+and manipulation tasks demonstrate that DOPPLER can generate sequences of
+trajectories that progressively satisfy the specified formulae for obstacle
+avoidance and sequential visitation. Demonstration videos are available online
+at: https://philiptheother.github.io/doppler/.",http://arxiv.org/pdf/2410.02389v1,,False
+SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration,03/10/2024,"Jintao Zhang, Jia wei, Pengle Zhang, Jun Zhu, Jianfei Chen","The transformer architecture predominates across various models. As the heart
+of the transformer, attention has a computational complexity of O(N^2),
+compared to O(N) for linear transformations. When handling large sequence
+lengths, attention becomes the primary time-consuming component. Although
+quantization has proven to be an effective method for accelerating model
+inference, existing quantization methods primarily focus on optimizing the
+linear layer. In response, we first analyze the feasibility of quantization in
+attention detailedly. Following that, we propose SageAttention, a highly
+efficient and accurate quantization method for attention. The OPS (operations
+per second) of our approach outperforms FlashAttention2 and xformers by about
+2.1 times and 2.7 times, respectively. SageAttention also achieves superior
+accuracy performance over FlashAttention3. Comprehensive experiments confirm
+that our approach incurs almost no end-to-end metrics loss across diverse
+models, including those for large language processing, image generation, and
+video generation.",http://arxiv.org/pdf/2410.02367v1,,False
+Autonomous Self-Trained Channel State Prediction Method for mmWave Vehicular Communications,03/10/2024,"Abidemi Orimogunje, Vukan Ninkovic, Evariste Twahirwa, Gaspard Gashema, Dejan Vukobratovic","Establishing and maintaining 5G mmWave vehicular connectivity poses a
+significant challenge due to high user mobility that necessitates frequent
+triggering of beam switching procedures. Departing from reactive beam switching
+based on the user device channel state feedback, proactive beam switching
+prepares in advance for upcoming beam switching decisions by exploiting
+accurate channel state information (CSI) prediction. In this paper, we develop
+a framework for autonomous self-trained CSI prediction for mmWave vehicular
+users where a base station (gNB) collects and labels a dataset that it uses for
+training recurrent neural network (RNN)-based CSI prediction model. The
+proposed framework exploits the CSI feedback from vehicular users combined with
+overhearing the C-V2X cooperative awareness messages (CAMs) they broadcast. We
+implement and evaluate the proposed framework using deepMIMO dataset generation
+environment and demonstrate its capability to provide accurate CSI prediction
+for 5G mmWave vehicular users. CSI prediction model is trained and its
+capability to provide accurate CSI predictions from various input features are
+investigated.",http://arxiv.org/pdf/2410.02326v1,,False
+Perfect Counterfactuals in Imperfect Worlds: Modelling Noisy Implementation of Actions in Sequential Algorithmic Recourse,03/10/2024,"Yueqing Xuan, Kacper Sokol, Mark Sanderson, Jeffrey Chan","Algorithmic recourse provides actions to individuals who have been adversely
+affected by automated decision-making and helps them achieve a desired outcome.
+Knowing the recourse, however, does not guarantee that users would implement it
+perfectly, either due to environmental variability or personal choices.
+Recourse generation should thus anticipate its sub-optimal or noisy
+implementation. While several approaches have constructed recourse that
+accounts for robustness to small perturbation (i.e., noisy recourse
+implementation), they assume an entire recourse to be implemented in a single
+step and thus apply one-off uniform noise to it. Such assumption is unrealistic
+since recourse often includes multiple sequential steps which becomes harder to
+implement and subject to more noise. In this work, we consider recourse under
+plausible noise that adapts to the local data geometry and accumulates at every
+step of the way. We frame this problem as a Markov Decision Process and
+demonstrate that the distribution of our plausible noise satisfies the Markov
+property. We then propose the RObust SEquential (ROSE) recourse generator to
+output a sequence of steps that will lead to the desired outcome even under
+imperfect implementation. Given our plausible modelling of sub-optimal human
+actions and greater recourse robustness to accumulated uncertainty, ROSE can
+grant users higher chances of success under low recourse costs. Empirical
+evaluation shows our algorithm manages the inherent trade-off between recourse
+robustness and costs more effectively while ensuring its low sparsity and fast
+computation.",http://arxiv.org/pdf/2410.02273v1,,False
+FedScalar: A Communication efficient Federated Learning,03/10/2024,"M. Rostami, S. S. Kia","Federated learning (FL) has gained considerable popularity for distributed
+machine learning due to its ability to preserve the privacy of participating
+agents by eliminating the need for data aggregation. Nevertheless,
+communication costs between agents and the central server in FL are substantial
+in large-scale problems and remain a limiting factor for this algorithm. This
+paper introduces an innovative algorithm, called \emph{FedScalar}, within the
+federated learning framework aimed at improving communication efficiency.
+Unlike traditional FL methods that require agents to send high-dimensional
+vectors to the server, \emph{FedScalar} enables agents to communicate updates
+using a single scalar. Each agent encodes its updated model parameters into a
+scalar through the inner product between its local update difference and a
+random vector, which is then transmitted to the server. The server decodes this
+information by projecting the averaged scalar values onto the random vector.
+Our method thereby significantly reduces communication overhead. Technically,
+we demonstrate that the proposed algorithm achieves a convergence rate of
+$O(1/\sqrt{K})$ to a stationary point for smooth, non-convex loss functions.
+Additionally, our analysis shows that altering the underlying distribution of
+the random vector generated by the server can reduce the variance during the
+aggregation step of the algorithm. Finally, we validate the performance and
+communication efficiency of our algorithm with numerical simulations.",http://arxiv.org/pdf/2410.02260v1,,False
+Fast nonparametric feature selection with error control using integrated path stability selection,03/10/2024,"Omar Melikechi, David B. Dunson, Jeffrey W. Miller","Feature selection can greatly improve performance and interpretability in
+machine learning problems. However, existing nonparametric feature selection
+methods either lack theoretical error control or fail to accurately control
+errors in practice. Many methods are also slow, especially in high dimensions.
+In this paper, we introduce a general feature selection method that applies
+integrated path stability selection to thresholding to control false positives
+and the false discovery rate. The method also estimates q-values, which are
+better suited to high-dimensional data than p-values. We focus on two special
+cases of the general method based on gradient boosting (IPSSGB) and random
+forests (IPSSRF). Extensive simulations with RNA sequencing data show that
+IPSSGB and IPSSRF have better error control, detect more true positives, and
+are faster than existing methods. We also use both methods to detect microRNAs
+and genes related to ovarian cancer, finding that they make better predictions
+with fewer features than other methods.",http://arxiv.org/pdf/2410.02208v1,,False
+Deep Koopman-layered Model with Universal Property Based on Toeplitz Matrices,03/10/2024,"Yuka Hashimoto, Tomoharu Iwata","We propose deep Koopman-layered models with learnable parameters in the form
+of Toeplitz matrices for analyzing the dynamics of time-series data. The
+proposed model has both theoretical solidness and flexibility. By virtue of the
+universal property of Toeplitz matrices and the reproducing property underlined
+in the model, we can show its universality and the generalization property. In
+addition, the flexibility of the proposed model enables the model to fit
+time-series data coming from nonautonomous dynamical systems. When training the
+model, we apply Krylov subspace methods for efficient computations. In
+addition, the proposed model can be regarded as a neural ODE-based model. In
+this sense, the proposed model establishes a new connection among Koopman
+operators, neural ODEs, and numerical linear algebraic methods.",http://arxiv.org/pdf/2410.02199v1,,False
+BACKTIME: Backdoor Attacks on Multivariate Time Series Forecasting,03/10/2024,"Xiao Lin, Zhining Liu, Dongqi Fu, Ruizhong Qiu, Hanghang Tong","Multivariate Time Series (MTS) forecasting is a fundamental task with
+numerous real-world applications, such as transportation, climate, and
+epidemiology. While a myriad of powerful deep learning models have been
+developed for this task, few works have explored the robustness of MTS
+forecasting models to malicious attacks, which is crucial for their trustworthy
+employment in high-stake scenarios. To address this gap, we dive deep into the
+backdoor attacks on MTS forecasting models and propose an effective attack
+method named BackTime.By subtly injecting a few stealthy triggers into the MTS
+data, BackTime can alter the predictions of the forecasting model according to
+the attacker's intent. Specifically, BackTime first identifies vulnerable
+timestamps in the data for poisoning, and then adaptively synthesizes stealthy
+and effective triggers by solving a bi-level optimization problem with a
+GNN-based trigger generator. Extensive experiments across multiple datasets and
+state-of-the-art MTS forecasting models demonstrate the effectiveness,
+versatility, and stealthiness of \method{} attacks. The code is available at
+\url{https://github.com/xiaolin-cs/BackTime}.",http://arxiv.org/pdf/2410.02195v1,,False
+Channel-aware Contrastive Conditional Diffusion for Multivariate Probabilistic Time Series Forecasting,03/10/2024,"Siyang Li, Yize Chen, Hui Xiong","Forecasting faithful trajectories of multivariate time series from practical
+scopes is essential for reasonable decision-making. Recent methods majorly
+tailor generative conditional diffusion models to estimate the target temporal
+predictive distribution. However, it remains an obstacle to enhance the
+exploitation efficiency of given implicit temporal predictive information to
+bolster conditional diffusion learning. To this end, we propose a generic
+channel-aware Contrastive Conditional Diffusion model entitled CCDM to achieve
+desirable Multivariate probabilistic forecasting, obviating the need for
+curated temporal conditioning inductive biases. In detail, we first design a
+channel-centric conditional denoising network to manage intra-variate
+variations and cross-variate correlations, which can lead to scalability on
+diverse prediction horizons and channel numbers. Then, we devise an ad-hoc
+denoising-based temporal contrastive learning to explicitly amplify the
+predictive mutual information between past observations and future forecasts.
+It can coherently complement naive step-wise denoising diffusion training and
+improve the forecasting accuracy and generality on unknown test time series.
+Besides, we offer theoretic insights on the benefits of such auxiliary
+contrastive training refinement from both neural mutual information and
+temporal distribution generalization aspects. The proposed CCDM can exhibit
+superior forecasting capability compared to current state-of-the-art diffusion
+forecasters over a comprehensive benchmark, with best MSE and CRPS outcomes on
+$66.67\%$ and $83.33\%$ cases. Our code is publicly available at
+https://github.com/LSY-Cython/CCDM.",http://arxiv.org/pdf/2410.02168v1,,False
+A Formal Framework for Understanding Length Generalization in Transformers,03/10/2024,"Xinting Huang, Andy Yang, Satwik Bhattamishra, Yash Sarrof, Andreas Krebs, Hattie Zhou, Preetum Nakkiran, Michael Hahn","A major challenge for transformers is generalizing to sequences longer than
+those observed during training. While previous works have empirically shown
+that transformers can either succeed or fail at length generalization depending
+on the task, theoretical understanding of this phenomenon remains limited. In
+this work, we introduce a rigorous theoretical framework to analyze length
+generalization in causal transformers with learnable absolute positional
+encodings. In particular, we characterize those functions that are identifiable
+in the limit from sufficiently long inputs with absolute positional encodings
+under an idealized inference scheme using a norm-based regularizer. This
+enables us to prove the possibility of length generalization for a rich family
+of problems. We experimentally validate the theory as a predictor of success
+and failure of length generalization across a range of algorithmic and formal
+language tasks. Our theory not only explains a broad set of empirical
+observations but also opens the way to provably predicting length
+generalization capabilities in transformers.",http://arxiv.org/pdf/2410.02140v1,,False
+TrajGPT: Irregular Time-Series Representation Learning for Health Trajectory Analysis,03/10/2024,"Ziyang Song, Qingcheng Lu, He Zhu, David Buckeridge, Yue Li","In many domains, such as healthcare, time-series data is often irregularly
+sampled with varying intervals between observations. This poses challenges for
+classical time-series models that require equally spaced data. To address this,
+we propose a novel time-series Transformer called Trajectory Generative
+Pre-trained Transformer (TrajGPT). TrajGPT employs a novel Selective Recurrent
+Attention (SRA) mechanism, which utilizes a data-dependent decay to adaptively
+filter out irrelevant past information based on contexts. By interpreting
+TrajGPT as discretized ordinary differential equations (ODEs), it effectively
+captures the underlying continuous dynamics and enables time-specific inference
+for forecasting arbitrary target timesteps. Experimental results demonstrate
+that TrajGPT excels in trajectory forecasting, drug usage prediction, and
+phenotype classification without requiring task-specific fine-tuning. By
+evolving the learned continuous dynamics, TrajGPT can interpolate and
+extrapolate disease risk trajectories from partially-observed time series. The
+visualization of predicted health trajectories shows that TrajGPT forecasts
+unseen diseases based on the history of clinically relevant phenotypes (i.e.,
+contexts).",http://arxiv.org/pdf/2410.02133v1,,False
+Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments,03/10/2024,"Amogh Mannekote, Adam Davies, Jina Kang, Kristy Elizabeth Boyer","Simulating learner actions helps stress-test open-ended interactive learning
+environments and prototype new adaptations before deployment. While recent
+studies show the promise of using large language models (LLMs) for simulating
+human behavior, such approaches have not gone beyond rudimentary
+proof-of-concept stages due to key limitations. First, LLMs are highly
+sensitive to minor prompt variations, raising doubts about their ability to
+generalize to new scenarios without extensive prompt engineering. Moreover,
+apparently successful outcomes can often be unreliable, either because domain
+experts unintentionally guide LLMs to produce expected results, leading to
+self-fulfilling prophecies; or because the LLM has encountered highly similar
+scenarios in its training data, meaning that models may not be simulating
+behavior so much as regurgitating memorized content. To address these
+challenges, we propose Hyp-Mix, a simulation authoring framework that allows
+experts to develop and evaluate simulations by combining testable hypotheses
+about learner behavior. Testing this framework in a physics learning
+environment, we found that GPT-4 Turbo maintains calibrated behavior even as
+the underlying learner model changes, providing the first evidence that LLMs
+can be used to simulate realistic behaviors in open-ended interactive learning
+environments, a necessary prerequisite for useful LLM behavioral simulation.",http://arxiv.org/pdf/2410.02110v1,,False

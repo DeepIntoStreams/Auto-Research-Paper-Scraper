@@ -1,0 +1,521 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Regression Conformal Prediction under Bias,07/10/2024,"Matt Y. Cheung, Tucker J. Netherton, Laurence E. Court, Ashok Veeraraghavan, Guha Balakrishnan","Uncertainty quantification is crucial to account for the imperfect
+predictions of machine learning algorithms for high-impact applications.
+Conformal prediction (CP) is a powerful framework for uncertainty
+quantification that generates calibrated prediction intervals with valid
+coverage. In this work, we study how CP intervals are affected by bias - the
+systematic deviation of a prediction from ground truth values - a phenomenon
+prevalent in many real-world applications. We investigate the influence of bias
+on interval lengths of two different types of adjustments -- symmetric
+adjustments, the conventional method where both sides of the interval are
+adjusted equally, and asymmetric adjustments, a more flexible method where the
+interval can be adjusted unequally in positive or negative directions. We
+present theoretical and empirical analyses characterizing how symmetric and
+asymmetric adjustments impact the ""tightness"" of CP intervals for regression
+tasks. Specifically for absolute residual and quantile-based non-conformity
+scores, we prove: 1) the upper bound of symmetrically adjusted interval lengths
+increases by $2|b|$ where $b$ is a globally applied scalar value representing
+bias, 2) asymmetrically adjusted interval lengths are not affected by bias, and
+3) conditions when asymmetrically adjusted interval lengths are guaranteed to
+be smaller than symmetric ones. Our analyses suggest that even if predictions
+exhibit significant drift from ground truth values, asymmetrically adjusted
+intervals are still able to maintain the same tightness and validity of
+intervals as if the drift had never happened, while symmetric ones
+significantly inflate the lengths. We demonstrate our theoretical results with
+two real-world prediction tasks: sparse-view computed tomography (CT)
+reconstruction and time-series weather forecasting. Our work paves the way for
+more bias-robust machine learning systems.",http://arxiv.org/pdf/2410.05263v1,,False
+LADEV: A Language-Driven Testing and Evaluation Platform for Vision-Language-Action Models in Robotic Manipulation,07/10/2024,"Zhijie Wang, Zhehua Zhou, Jiayang Song, Yuheng Huang, Zhan Shu, Lei Ma","Building on the advancements of Large Language Models (LLMs) and Vision
+Language Models (VLMs), recent research has introduced Vision-Language-Action
+(VLA) models as an integrated solution for robotic manipulation tasks. These
+models take camera images and natural language task instructions as input and
+directly generate control actions for robots to perform specified tasks,
+greatly improving both decision-making capabilities and interaction with human
+users. However, the data-driven nature of VLA models, combined with their lack
+of interpretability, makes the assurance of their effectiveness and robustness
+a challenging task. This highlights the need for a reliable testing and
+evaluation platform. For this purpose, in this work, we propose LADEV, a
+comprehensive and efficient platform specifically designed for evaluating VLA
+models. We first present a language-driven approach that automatically
+generates simulation environments from natural language inputs, mitigating the
+need for manual adjustments and significantly improving testing efficiency.
+Then, to further assess the influence of language input on the VLA models, we
+implement a paraphrase mechanism that produces diverse natural language task
+instructions for testing. Finally, to expedite the evaluation process, we
+introduce a batch-style method for conducting large-scale testing of VLA
+models. Using LADEV, we conducted experiments on several state-of-the-art VLA
+models, demonstrating its effectiveness as a tool for evaluating these models.
+Our results showed that LADEV not only enhances testing efficiency but also
+establishes a solid baseline for evaluating VLA models, paving the way for the
+development of more intelligent and advanced robotic systems.",http://arxiv.org/pdf/2410.05191v1,,False
+A Simulation-Free Deep Learning Approach to Stochastic Optimal Control,07/10/2024,"Mengjian Hua, Matthieu Laurière, Eric Vanden-Eijnden","We propose a simulation-free algorithm for the solution of generic problems
+in stochastic optimal control (SOC). Unlike existing methods, our approach does
+not require the solution of an adjoint problem, but rather leverages Girsanov
+theorem to directly calculate the gradient of the SOC objective on-policy. This
+allows us to speed up the optimization of control policies parameterized by
+neural networks since it completely avoids the expensive back-propagation step
+through stochastic differential equations (SDEs) used in the Neural SDE
+framework. In particular, it enables us to solve SOC problems in high dimension
+and on long time horizons. We demonstrate the efficiency of our approach in
+various domains of applications, including standard stochastic optimal control
+problems, sampling from unnormalized distributions via construction of a
+Schr\""odinger-F\""ollmer process, and fine-tuning of pre-trained diffusion
+models. In all cases our method is shown to outperform the existing methods in
+both the computing time and memory efficiency.",http://arxiv.org/pdf/2410.05163v1,,False
+SparsePO: Controlling Preference Alignment of LLMs via Sparse Token Masks,07/10/2024,"Fenia Christopoulou, Ronald Cardenas, Gerasimos Lampouras, Haitham Bou-Ammar, Jun Wang","Preference Optimization (PO) has proven an effective step for aligning
+language models to human-desired behaviors. Current variants, following the
+offline Direct Preference Optimization objective, have focused on a strict
+setting where all tokens are contributing signals of KL divergence and rewards
+to the loss function. However, human preference is not affected by each word in
+a sequence equally but is often dependent on specific words or phrases, e.g.
+existence of toxic terms leads to non-preferred responses. Based on this
+observation, we argue that not all tokens should be weighted equally during PO
+and propose a flexible objective termed SparsePO, that aims to automatically
+learn to weight the KL divergence and reward corresponding to each token during
+PO training. We propose two different variants of weight-masks that can either
+be derived from the reference model itself or learned on the fly. Notably, our
+method induces sparsity in the learned masks, allowing the model to learn how
+to best weight reward and KL divergence contributions at the token level,
+learning an optimal level of mask sparsity. Extensive experiments on multiple
+domains, including sentiment control, dialogue, text summarization and
+text-to-code generation, illustrate that our approach assigns meaningful
+weights to tokens according to the target task, generates more responses with
+the desired preference and improves reasoning tasks by up to 2 percentage
+points compared to other token- and response-level PO methods.",http://arxiv.org/pdf/2410.05102v1,,False
+HyperINF: Unleashing the HyperPower of the Schulz's Method for Data Influence Estimation,07/10/2024,"Xinyu Zhou, Simin Fan, Martin Jaggi","Influence functions provide a principled method to assess the contribution of
+individual training samples to a specific target. Yet, their high computational
+costs limit their applications on large-scale models and datasets. Existing
+methods proposed for influence function approximation have significantly
+reduced the computational overheads. However, they mostly suffer from
+inaccurate estimation due to the lack of strong convergence guarantees from the
+algorithm. The family of hyperpower methods are well-known for their rigorous
+convergence guarantees on matrix inverse approximation, while the matrix
+multiplication operation can involve intractable memory and computation costs
+on large-scale models. We propose HyperINF, an efficient and accurate influence
+function approximation method which leverages the hyperpower method,
+specifically Schulz's iterative algorithm.
+  To deal with the computation-intensive matrix multiplication, we incorporate
+the generalized fisher information (GFIM) as a low-rank approximation of the
+Hessian matrix, which reduces the memory and computation overheads to constant
+costs independent of ranks on LoRA-tuned models.
+  We first demonstrate the superior accuracy and stability of \method compared
+to other baselines through a synthetic convergence simulation for matrix
+inversion. We further validate the efficacy of \method through extensive
+real-world data attribution tasks, including mislabeled data detection and data
+selection for LLM and VLM fine-tuning.
+  On LoRA-tuned models, HyperINF achieves superior downstream performance with
+minimal memory and computational overhead, while other baselines suffer from
+significant degradation. Our codebase is available at
+https://github.com/Blackzxy/HyperINF.",http://arxiv.org/pdf/2410.05090v1,,False
+Compression via Pre-trained Transformers: A Study on Byte-Level Multimodal Data,07/10/2024,"David Heurtel-Depeiges, Anian Ruoss, Joel Veness, Tim Genewein","Foundation models have recently been shown to be strong data compressors.
+However, when accounting for their excessive parameter count, their compression
+ratios are actually inferior to standard compression algorithms. Moreover,
+naively reducing the number of parameters may not necessarily help as it leads
+to worse predictions and thus weaker compression. In this paper, we conduct a
+large-scale empirical study to investigate whether there is a sweet spot where
+competitive compression ratios with pre-trained vanilla transformers are
+possible. To this end, we train families of models on 165GB of raw byte
+sequences of either text, image, or audio data (and all possible combinations
+of the three) and then compress 1GB of out-of-distribution (OOD) data from each
+modality. We find that relatively small models (i.e., millions of parameters)
+can outperform standard general-purpose compression algorithms (gzip, LZMA2)
+and even domain-specific compressors (PNG, JPEG 2000, FLAC) - even when
+factoring in parameter count. We achieve, e.g., the lowest compression ratio of
+0.49 on OOD audio data (vs. 0.54 for FLAC). To study the impact of model- and
+dataset scale, we conduct extensive ablations and hyperparameter sweeps, and we
+investigate the effect of unimodal versus multimodal training. We find that
+even small models can be trained to perform well on multiple modalities, but,
+in contrast to previously reported results with large-scale foundation models,
+transfer to unseen modalities is generally weak.",http://arxiv.org/pdf/2410.05078v1,,False
+Assumption-Lean Post-Integrated Inference with Negative Control Outcomes,07/10/2024,"Jin-Hong Du, Kathryn Roeder, Larry Wasserman","Data integration has become increasingly common in aligning multiple
+heterogeneous datasets. With high-dimensional outcomes, data integration
+methods aim to extract low-dimensional embeddings of observations to remove
+unwanted variations, such as batch effects and unmeasured covariates, inherent
+in data collected from different sources. However, multiple hypothesis testing
+after data integration can be substantially biased due to the data-dependent
+integration processes. To address this challenge, we introduce a robust
+post-integrated inference (PII) method that adjusts for latent heterogeneity
+using negative control outcomes. By leveraging causal interpretations, we
+derive nonparametric identification conditions that form the basis of our PII
+approach.
+  Our assumption-lean semiparametric inference method extends robustness and
+generality to projected direct effect estimands that account for mediators,
+confounders, and moderators. These estimands remain statistically meaningful
+under model misspecifications and with error-prone embeddings. We provide
+deterministic quantifications of the bias of target estimands induced by
+estimated embeddings and finite-sample linear expansions of the estimators with
+uniform concentration bounds on the residuals for all outcomes.
+  The proposed doubly robust estimators are consistent and efficient under
+minimal assumptions, facilitating data-adaptive estimation with machine
+learning algorithms. Using random forests, we evaluate empirical statistical
+errors in simulations and analyze single-cell CRISPR perturbed datasets with
+potential unmeasured confounders.",http://arxiv.org/pdf/2410.04996v1,,False
+Random-projection ensemble dimension reduction,07/10/2024,"Wenxing Zhou, Timothy I. Cannings","We introduce a new framework for dimension reduction in the context of
+high-dimensional regression. Our proposal is to aggregate an ensemble of random
+projections, which have been carefully chosen based on the empirical regression
+performance after being applied to the covariates. More precisely, we consider
+disjoint groups of independent random projections, apply a base regression
+method after each projection, and retain the projection in each group based on
+the empirical performance. We aggregate the selected projections by taking the
+singular value decomposition of their empirical average and then output the
+leading order singular vectors. A particularly appealing aspect of our approach
+is that the singular values provide a measure of the relative importance of the
+corresponding projection directions, which can be used to select the final
+projection dimension. We investigate in detail (and provide default
+recommendations for) various aspects of our general framework, including the
+projection distribution and the base regression method, as well as the number
+of random projections used. Additionally, we investigate the possibility of
+further reducing the dimension by applying our algorithm twice in cases where
+projection dimension recommended in the initial application is too large. Our
+theoretical results show that the error of our algorithm stabilises as the
+number of groups of projections increases. We demonstrate the excellent
+empirical performance of our proposal in a large numerical study using
+simulated and real data.",http://arxiv.org/pdf/2410.04922v1,,False
+Unsupervised Skill Discovery for Robotic Manipulation through Automatic Task Generation,07/10/2024,"Paul Jansonnie, Bingbing Wu, Julien Perez, Jan Peters","Learning skills that interact with objects is of major importance for robotic
+manipulation. These skills can indeed serve as an efficient prior for solving
+various manipulation tasks. We propose a novel Skill Learning approach that
+discovers composable behaviors by solving a large and diverse number of
+autonomously generated tasks. Our method learns skills allowing the robot to
+consistently and robustly interact with objects in its environment. The
+discovered behaviors are embedded in primitives which can be composed with
+Hierarchical Reinforcement Learning to solve unseen manipulation tasks. In
+particular, we leverage Asymmetric Self-Play to discover behaviors and
+Multiplicative Compositional Policies to embed them. We compare our method to
+Skill Learning baselines and find that our skills are more interactive.
+Furthermore, the learned skills can be used to solve a set of unseen
+manipulation tasks, in simulation as well as on a real robotic platform.",http://arxiv.org/pdf/2410.04855v1,,False
+Learning Interpretable Hierarchical Dynamical Systems Models from Time Series Data,07/10/2024,"Manuel Brenner, Elias Weber, Georgia Koppe, Daniel Durstewitz","In science, we are often interested in obtaining a generative model of the
+underlying system dynamics from observed time series. While powerful methods
+for dynamical systems reconstruction (DSR) exist when data come from a single
+domain, how to best integrate data from multiple dynamical regimes and leverage
+it for generalization is still an open question. This becomes particularly
+important when individual time series are short, and group-level information
+may help to fill in for gaps in single-domain data. At the same time, averaging
+is not an option in DSR, as it will wipe out crucial dynamical properties
+(e.g., limit cycles in one domain vs. chaos in another). Hence, a framework is
+needed that enables to efficiently harvest group-level (multi-domain)
+information while retaining all single-domain dynamical characteristics. Here
+we provide such a hierarchical approach and showcase it on popular DSR
+benchmarks, as well as on neuroscientific and medical time series. In addition
+to faithful reconstruction of all individual dynamical regimes, our
+unsupervised methodology discovers common low-dimensional feature spaces in
+which datasets with similar dynamics cluster. The features spanning these
+spaces were further dynamically highly interpretable, surprisingly in often
+linear relation to control parameters that govern the dynamics of the
+underlying system. Finally, we illustrate transfer learning and generalization
+to new parameter regimes.",http://arxiv.org/pdf/2410.04814v1,,False
+Timer-XL: Long-Context Transformers for Unified Time Series Forecasting,07/10/2024,"Yong Liu, Guo Qin, Xiangdong Huang, Jianmin Wang, Mingsheng Long","We present Timer-XL, a generative Transformer for unified time series
+forecasting. To uniformly predict 1D and 2D time series, we generalize next
+token prediction, predominantly adopted for causal generation of 1D sequences,
+to multivariate next token prediction. The proposed paradigm uniformly
+formulates various forecasting scenarios as a long-context generation problem.
+We opt for the generative Transformer, which can capture global-range and
+causal dependencies while providing contextual flexibility, to implement
+unified forecasting on univariate series characterized by non-stationarity,
+multivariate time series with complicated dynamics and correlations, and
+covariate-informed contexts that include both endogenous and exogenous
+variables. Technically, we propose a universal TimeAttention to facilitate
+generative Transformers on time series, which can effectively capture
+fine-grained intra- and inter-series dependencies of flattened time series
+tokens (patches) and is further strengthened by position embeddings in both
+temporal and variable dimensions. Timer-XL achieves state-of-the-art
+performance across challenging forecasting benchmarks through a unified
+approach. As a large time series model, it demonstrates notable model
+transferability by large-scale pre-training, as well as contextual flexibility
+in token lengths, positioning it as a one-for-all forecaster.",http://arxiv.org/pdf/2410.04803v1,,False
+ACDC: Autoregressive Coherent Multimodal Generation using Diffusion Correction,07/10/2024,"Hyungjin Chung, Dohun Lee, Jong Chul Ye","Autoregressive models (ARMs) and diffusion models (DMs) represent two leading
+paradigms in generative modeling, each excelling in distinct areas: ARMs in
+global context modeling and long-sequence generation, and DMs in generating
+high-quality local contexts, especially for continuous data such as images and
+short videos. However, ARMs often suffer from exponential error accumulation
+over long sequences, leading to physically implausible results, while DMs are
+limited by their local context generation capabilities. In this work, we
+introduce Autoregressive Coherent multimodal generation with Diffusion
+Correction (ACDC), a zero-shot approach that combines the strengths of both
+ARMs and DMs at the inference stage without the need for additional
+fine-tuning. ACDC leverages ARMs for global context generation and
+memory-conditioned DMs for local correction, ensuring high-quality outputs by
+correcting artifacts in generated multimodal tokens. In particular, we propose
+a memory module based on large language models (LLMs) that dynamically adjusts
+the conditioning texts for the DMs, preserving crucial global context
+information. Our experiments on multimodal tasks, including coherent
+multi-frame story generation and autoregressive video generation, demonstrate
+that ACDC effectively mitigates the accumulation of errors and significantly
+enhances the quality of generated outputs, achieving superior performance while
+remaining agnostic to specific ARM and DM architectures. Project page:
+https://acdc2025.github.io/",http://arxiv.org/pdf/2410.04721v1,,False
+Rule-based Data Selection for Large Language Models,07/10/2024,"Xiaomin Li, Mingye Gao, Zhiwei Zhang, Chang Yue, Hong Hu","The quality of training data significantly impacts the performance of large
+language models (LLMs). There are increasing studies using LLMs to rate and
+select data based on several human-crafted metrics (rules). However, these
+conventional rule-based approaches often depend too heavily on human
+heuristics, lack effective metrics for assessing rules, and exhibit limited
+adaptability to new tasks. In our study, we introduce an innovative rule-based
+framework that utilizes the orthogonality of score vectors associated with
+rules as a novel metric for rule evaluations. Our approach includes an
+automated pipeline that first uses LLMs to generate a diverse set of rules,
+encompassing various rating dimensions to evaluate data quality. Then it rates
+a batch of data based on these rules and uses the determinantal point process
+(DPP) from random matrix theory to select the most orthogonal score vectors,
+thereby identifying a set of independent rules. These rules are subsequently
+used to evaluate all data, selecting samples with the highest average scores
+for downstream tasks such as LLM training. We verify the effectiveness of our
+method through two experimental setups: 1) comparisons with ground truth
+ratings and 2) benchmarking LLMs trained with the chosen data. Our
+comprehensive experiments cover a range of scenarios, including general
+pre-training and domain-specific fine-tuning in areas such as IMDB, Medical,
+Math, and Code. The outcomes demonstrate that our DPP-based rule rating method
+consistently outperforms other approaches, including rule-free rating, uniform
+sampling, importance resampling, and QuRating, in terms of both rating
+precision and model performance.",http://arxiv.org/pdf/2410.04715v1,,False
+SegINR: Segment-wise Implicit Neural Representation for Sequence Alignment in Neural Text-to-Speech,07/10/2024,"Minchan Kim, Myeonghun Jeong, Joun Yeop Lee, Nam Soo Kim","We present SegINR, a novel approach to neural Text-to-Speech (TTS) that
+addresses sequence alignment without relying on an auxiliary duration predictor
+and complex autoregressive (AR) or non-autoregressive (NAR) frame-level
+sequence modeling. SegINR simplifies the process by converting text sequences
+directly into frame-level features. It leverages an optimal text encoder to
+extract embeddings, transforming each into a segment of frame-level features
+using a conditional implicit neural representation (INR). This method, named
+segment-wise INR (SegINR), models temporal dynamics within each segment and
+autonomously defines segment boundaries, reducing computational costs. We
+integrate SegINR into a two-stage TTS framework, using it for semantic token
+prediction. Our experiments in zero-shot adaptive TTS scenarios demonstrate
+that SegINR outperforms conventional methods in speech quality with
+computational efficiency.",http://arxiv.org/pdf/2410.04690v1,,False
+Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF,06/10/2024,"Zhaolin Gao, Wenhao Zhan, Jonathan D. Chang, Gokul Swamy, Kianté Brantley, Jason D. Lee, Wen Sun","Large Language Models (LLMs) have achieved remarkable success at tasks like
+summarization that involve a single turn of interaction. However, they can
+still struggle with multi-turn tasks like dialogue that require long-term
+planning. Previous works on multi-turn dialogue extend single-turn
+reinforcement learning from human feedback (RLHF) methods to the multi-turn
+setting by treating all prior dialogue turns as a long context. Such approaches
+suffer from covariate shift: the conversations in the training set have
+previous turns generated by some reference policy, which means that low
+training error may not necessarily correspond to good performance when the
+learner is actually in the conversation loop. In response, we introduce
+REgressing the RELative FUture (REFUEL), an efficient policy optimization
+approach designed to address multi-turn RLHF in LLMs. REFUEL employs a single
+model to estimate $Q$-values and trains on self-generated data, addressing the
+covariate shift issue. REFUEL frames the multi-turn RLHF problem as a sequence
+of regression tasks on iteratively collected datasets, enabling ease of
+implementation. Theoretically, we prove that REFUEL can match the performance
+of any policy covered by the training set. Empirically, we evaluate our
+algorithm by using Llama-3.1-70B-it to simulate a user in conversation with our
+model. REFUEL consistently outperforms state-of-the-art methods such as DPO and
+REBEL across various settings. Furthermore, despite having only 8 billion
+parameters, Llama-3-8B-it fine-tuned with REFUEL outperforms Llama-3.1-70B-it
+on long multi-turn dialogues. Implementation of REFUEL can be found at
+https://github.com/ZhaolinGao/REFUEL/, and models trained by REFUEL can be
+found at https://huggingface.co/Cornell-AGI.",http://arxiv.org/pdf/2410.04612v1,,False
+Modeling Social Media Recommendation Impacts Using Academic Networks: A Graph Neural Network Approach,06/10/2024,"Sabrina Guidotti, Gregor Donabauer, Simone Somazzi, Udo Kruschwitz, Davide Taibi, Dimitri Ognibene","The widespread use of social media has highlighted potential negative impacts
+on society and individuals, largely driven by recommendation algorithms that
+shape user behavior and social dynamics. Understanding these algorithms is
+essential but challenging due to the complex, distributed nature of social
+media networks as well as limited access to real-world data. This study
+proposes to use academic social networks as a proxy for investigating
+recommendation systems in social media. By employing Graph Neural Networks
+(GNNs), we develop a model that separates the prediction of academic infosphere
+from behavior prediction, allowing us to simulate recommender-generated
+infospheres and assess the model's performance in predicting future
+co-authorships. Our approach aims to improve our understanding of
+recommendation systems' roles and social networks modeling. To support the
+reproducibility of our work we publicly make available our implementations:
+https://github.com/DimNeuroLab/academic_network_project",http://arxiv.org/pdf/2410.04552v1,,False
+Pullback Flow Matching on Data Manifolds,06/10/2024,"Friso de Kruiff, Erik Bekkers, Ozan Öktem, Carola-Bibiane Schönlieb, Willem Diepeveen","We propose Pullback Flow Matching (PFM), a novel framework for generative
+modeling on data manifolds. Unlike existing methods that assume or learn
+restrictive closed-form manifold mappings for training Riemannian Flow Matching
+(RFM) models, PFM leverages pullback geometry and isometric learning to
+preserve the underlying manifold's geometry while enabling efficient generation
+and precise interpolation in latent space. This approach not only facilitates
+closed-form mappings on the data manifold but also allows for designable latent
+spaces, using assumed metrics on both data and latent manifolds. By enhancing
+isometric learning through Neural ODEs and proposing a scalable training
+objective, we achieve a latent space more suitable for interpolation, leading
+to improved manifold learning and generative performance. We demonstrate PFM's
+effectiveness through applications in synthetic data, protein dynamics and
+protein sequence data, generating novel proteins with specific properties. This
+method shows strong potential for drug discovery and materials science, where
+generating novel samples with specific properties is of great interest.",http://arxiv.org/pdf/2410.04543v1,,False
+Improved Off-policy Reinforcement Learning in Biological Sequence Design,06/10/2024,"Hyeonah Kim, Minsu Kim, Taeyoung Yun, Sanghyeok Choi, Emmanuel Bengio, Alex Hernández-García, Jinkyoo Park","Designing biological sequences with desired properties is a significant
+challenge due to the combinatorially vast search space and the high cost of
+evaluating each candidate sequence. To address these challenges, reinforcement
+learning (RL) methods, such as GFlowNets, utilize proxy models for rapid reward
+evaluation and annotated data for policy training. Although these approaches
+have shown promise in generating diverse and novel sequences, the limited
+training data relative to the vast search space often leads to the
+misspecification of proxy for out-of-distribution inputs. We introduce
+$\delta$-Conservative Search, a novel off-policy search method for training
+GFlowNets designed to improve robustness against proxy misspecification. The
+key idea is to incorporate conservativeness, controlled by parameter $\delta$,
+to constrain the search to reliable regions. Specifically, we inject noise into
+high-score offline sequences by randomly masking tokens with a Bernoulli
+distribution of parameter $\delta$ and then denoise masked tokens using the
+GFlowNet policy. Additionally, $\delta$ is adaptively adjusted based on the
+uncertainty of the proxy model for each data point. This enables the reflection
+of proxy uncertainty to determine the level of conservativeness. Experimental
+results demonstrate that our method consistently outperforms existing machine
+learning methods in discovering high-score sequences across diverse
+tasks-including DNA, RNA, protein, and peptide design-especially in large-scale
+scenarios.",http://arxiv.org/pdf/2410.04461v1,,False
+TimeBridge: Non-Stationarity Matters for Long-term Time Series Forecasting,06/10/2024,"Peiyuan Liu, Beiliang Wu, Yifan Hu, Naiqi Li, Tao Dai, Jigang Bao, Shu-tao Xia","Non-stationarity poses significant challenges for multivariate time series
+forecasting due to the inherent short-term fluctuations and long-term trends
+that can lead to spurious regressions or obscure essential long-term
+relationships. Most existing methods either eliminate or retain
+non-stationarity without adequately addressing its distinct impacts on
+short-term and long-term modeling. Eliminating non-stationarity is essential
+for avoiding spurious regressions and capturing local dependencies in
+short-term modeling, while preserving it is crucial for revealing long-term
+cointegration across variates. In this paper, we propose TimeBridge, a novel
+framework designed to bridge the gap between non-stationarity and dependency
+modeling in long-term time series forecasting. By segmenting input series into
+smaller patches, TimeBridge applies Integrated Attention to mitigate short-term
+non-stationarity and capture stable dependencies within each variate, while
+Cointegrated Attention preserves non-stationarity to model long-term
+cointegration across variates. Extensive experiments show that TimeBridge
+consistently achieves state-of-the-art performance in both short-term and
+long-term forecasting. Additionally, TimeBridge demonstrates exceptional
+performance in financial forecasting on the CSI 500 and S&P 500 indices,
+further validating its robustness and effectiveness. Code is available at
+\url{https://github.com/Hank0626/TimeBridge}.",http://arxiv.org/pdf/2410.04442v1,,False
+GenSim: A General Social Simulation Platform with Large Language Model based Agents,06/10/2024,"Jiakai Tang, Heyang Gao, Xuchen Pan, Lei Wang, Haoran Tan, Dawei Gao, Yushuo Chen, Xu Chen, Yankai Lin, Yaliang Li, Bolin Ding, Jingren Zhou, Ji-Rong Wen","With the rapid advancement of large language models (LLMs), recent years have
+witnessed many promising studies on leveraging LLM-based agents to simulate
+human social behavior. While prior work has demonstrated significant potential
+across various domains, much of it has focused on specific scenarios involving
+a limited number of agents and has lacked the ability to adapt when errors
+occur during simulation. To overcome these limitations, we propose a novel
+LLM-agent-based simulation platform called \textit{GenSim}, which: (1)
+\textbf{Abstracts a set of general functions} to simplify the simulation of
+customized social scenarios; (2) \textbf{Supports one hundred thousand agents}
+to better simulate large-scale populations in real-world contexts; (3)
+\textbf{Incorporates error-correction mechanisms} to ensure more reliable and
+long-term simulations. To evaluate our platform, we assess both the efficiency
+of large-scale agent simulations and the effectiveness of the error-correction
+mechanisms. To our knowledge, GenSim represents an initial step toward a
+general, large-scale, and correctable social simulation platform based on LLM
+agents, promising to further advance the field of social science.",http://arxiv.org/pdf/2410.04360v1,,False
+"Spectral Densities, Structured Noise and Ensemble Averaging within Open Quantum Dynamics",05/10/2024,"Yannick Marcel Holtkamp, Emiliano Godinez-Ramirez, Ulrich Kleinekathöfer","Although recent advances in simulating open quantum systems have lead to
+significant progress, the applicability of numerically exact methods is still
+restricted to rather small systems. Hence, more approximate methods remain
+relevant due to their computational efficiency, enabling simulations of larger
+systems over extended timescales. In this study, we present advances for one
+such method, namely the Numerical Integration of Schr\""odinger Equation (NISE).
+Firstly, we introduce a modified ensemble-averaging procedure that improves the
+long-time behavior of the thermalized variant of the NISE scheme, termed
+Thermalized NISE. Secondly, we demonstrate how to use the NISE in conjunction
+with (highly) structured spectral densities by utilizing a noise generating
+algorithm for arbitrary structured noise. This algorithm also serves as a tool
+for establishing best practices in determining spectral densities from excited
+state calculations along molecular dynamics or quantum mechanics/molecular
+mechanics trajectories. Finally, we assess the ability of the NISE approach to
+calculate absorption spectra and demonstrate the utility of the proposed
+modifications by determining population dynamics.",http://arxiv.org/pdf/2410.04294v1,10.1063/5.0224807,False
+Constructing Cloze Questions Generatively,05/10/2024,"Yicheng Sun, Jie Wang","We present a generative method called CQG for constructing cloze questions
+from a given article using neural networks and WordNet, with an emphasis on
+generating multigram distractors. Built on sense disambiguation, text-to-text
+transformation, WordNet's synset taxonomies and lexical labels, CQG selects an
+answer key for a given sentence, segments it into a sequence of instances,
+generates instance-level distractor candidates (IDCs) using a transformer and
+sibling synsets.It then removes inappropriate IDCs, ranks the remaining IDCs
+based on contextual embedding similarities, as well as synset and lexical
+relatedness, forms distractor candidates by combinatorially replacing instances
+with the corresponding top-ranked IDCs, and checks if they are legitimate
+phrases. Finally, it selects top-ranked distractor candidates based on
+contextual semantic similarities to the answer key. Experiments show that this
+method significantly outperforms SOTA results. Human judges also confirm the
+high qualities of the generated distractors.",http://arxiv.org/pdf/2410.04266v1,10.1109/IJCNN54540.2023.10191481,False
+Compositional Diffusion Models for Powered Descent Trajectory Generation with Flexible Constraints,05/10/2024,"Julia Briden, Yilun Du, Enrico M. Zucchelli, Richard Linares","This work introduces TrajDiffuser, a compositional diffusion-based flexible
+and concurrent trajectory generator for 6 degrees of freedom powered descent
+guidance. TrajDiffuser is a statistical model that learns the multi-modal
+distributions of a dataset of simulated optimal trajectories, each subject to
+only one or few constraints that may vary for different trajectories. During
+inference, the trajectory is generated simultaneously over time, providing
+stable long-horizon planning, and constraints can be composed together,
+increasing the model's generalizability and decreasing the training data
+required. The generated trajectory is then used to initialize an optimizer,
+increasing its robustness and speed.",http://arxiv.org/pdf/2410.04261v1,,False
+Correlation-Aware Select and Merge Attention for Efficient Fine-Tuning and Context Length Extension,05/10/2024,"Ning Wang, Zekun Li, Tongxin Bai, Guoqi Li","Modeling long sequences is crucial for various large-scale models; however,
+extending existing architectures to handle longer sequences presents
+significant technical and resource challenges. In this paper, we propose an
+efficient and flexible attention architecture that enables the extension of
+context lengths in large language models with reduced computational resources
+and fine-tuning time compared to other excellent methods. Specifically, we
+introduce correlation-aware selection and merging mechanisms to facilitate
+efficient sparse attention. In addition, we also propose a novel data
+augmentation technique involving positional encodings to enhance generalization
+to unseen positions. The results are as follows: First, using a single A100, we
+achieve fine-tuning on Llama2-7B with a sequence length of 32K, which is more
+efficient than other methods that rely on subsets for regression. Second, we
+present a comprehensive method for extending context lengths across the
+pre-training, fine-tuning, and inference phases. During pre-training, our
+attention mechanism partially breaks translation invariance during token
+selection, so we apply positional encodings only to the selected tokens. This
+approach achieves relatively high performance and significant extrapolation
+capabilities. For fine-tuning, we introduce Cyclic, Randomly Truncated, and
+Dynamically Growing NTK Positional Embedding (CRD NTK). This design allows
+fine-tuning with a sequence length of only 16K, enabling models such as
+Llama2-7B and Mistral-7B to perform inference with context lengths of up to 1M
+or even arbitrary lengths. Our method achieves 100\% accuracy on the passkey
+task with a context length of 4M and maintains stable perplexity at a 1M
+context length. This represents at least a 64-fold reduction in resource
+requirements compared to traditional full-attention mechanisms, while still
+achieving competitive performance.",http://arxiv.org/pdf/2410.04211v1,,False
+Unsupervised Assessment of Landscape Shifts Based on Persistent Entropy and Topological Preservation,05/10/2024,Sebastian Basterrech,"Concept drift typically refers to the analysis of changes in data
+distribution. A drift in the input data can have negative consequences on a
+learning predictor and the system's stability. The majority of concept drift
+methods emphasize the analysis of statistical changes in non-stationary data
+over time. In this context, we consider another perspective, where the concept
+drift also integrates substantial changes in the topological characteristics of
+the data stream. In this article, we introduce a novel framework for monitoring
+changes in multi-dimensional data streams. We explore a generalization of the
+standard concept drift focusing on the changes in the topological
+characteristics of the data. Our developed approach is based on persistent
+entropy and topology-preserving projections in a continual learning scenario.
+The framework operates in both unsupervised and supervised environments. To
+demonstrate the utility of the proposed framework, we analyze the model across
+three scenarios using data streams generated with MNIST samples. The obtained
+results reveal the potential of applying topological data analysis for shift
+detection and encourage further research in this area.",http://arxiv.org/pdf/2410.04183v1,,False
+Applying Quantum Autoencoders for Time Series Anomaly Detection,05/10/2024,"Robin Frehner, Kurt Stockinger","Anomaly detection is an important problem with applications in various
+domains such as fraud detection, pattern recognition or medical diagnosis.
+Several algorithms have been introduced using classical computing approaches.
+However, using quantum computing for solving anomaly detection problems in time
+series data is a widely unexplored research field.
+  This paper explores the application of quantum autoencoders to time series
+anomaly detection. We investigate two primary techniques for classifying
+anomalies: (1) Analyzing the reconstruction error generated by the quantum
+autoencoder and (2) latent representation analysis. Our simulated experimental
+results, conducted across various ansaetze, demonstrate that quantum
+autoencoders consistently outperform classical deep learning-based autoencoders
+across multiple datasets. Specifically, quantum autoencoders achieve superior
+anomaly detection performance while utilizing 60-230 times fewer parameters and
+requiring five times fewer training iterations. In addition, we implement our
+quantum encoder on real quantum hardware. Our experimental results demonstrate
+that quantum autoencoders achieve anomaly detection performance on par with
+their simulated counterparts.",http://arxiv.org/pdf/2410.04154v1,,False
+ECon: On the Detection and Resolution of Evidence Conflicts,05/10/2024,"Cheng Jiayang, Chunkit Chan, Qianqian Zhuang, Lin Qiu, Tianhang Zhang, Tengxiao Liu, Yangqiu Song, Yue Zhang, Pengfei Liu, Zheng Zhang","The rise of large language models (LLMs) has significantly influenced the
+quality of information in decision-making systems, leading to the prevalence of
+AI-generated content and challenges in detecting misinformation and managing
+conflicting information, or ""inter-evidence conflicts."" This study introduces a
+method for generating diverse, validated evidence conflicts to simulate
+real-world misinformation scenarios. We evaluate conflict detection methods,
+including Natural Language Inference (NLI) models, factual consistency (FC)
+models, and LLMs, on these conflicts (RQ1) and analyze LLMs' conflict
+resolution behaviors (RQ2). Our key findings include: (1) NLI and LLM models
+exhibit high precision in detecting answer conflicts, though weaker models
+suffer from low recall; (2) FC models struggle with lexically similar answer
+conflicts, while NLI and LLM models handle these better; and (3) stronger
+models like GPT-4 show robust performance, especially with nuanced conflicts.
+For conflict resolution, LLMs often favor one piece of conflicting evidence
+without justification and rely on internal knowledge if they have prior
+beliefs.",http://arxiv.org/pdf/2410.04068v1,,False
+Is Score Matching Suitable for Estimating Point Processes?,05/10/2024,"Haoqun Cao, Zizhuo Meng, Tianjun Ke, Feng Zhou","Score matching estimators have gained widespread attention in recent years
+partly because they are free from calculating the integral of normalizing
+constant, thereby addressing the computational challenges in maximum likelihood
+estimation (MLE). Some existing works have proposed score matching estimators
+for point processes. However, this work demonstrates that the incompleteness of
+the estimators proposed in those works renders them applicable only to specific
+problems, and they fail for more general point processes. To address this
+issue, this work introduces the weighted score matching estimator to point
+processes. Theoretically, we prove the consistency of our estimator and
+establish its rate of convergence. Experimental results indicate that our
+estimator accurately estimates model parameters on synthetic data and yields
+results consistent with MLE on real data. In contrast, existing score matching
+estimators fail to perform effectively. Codes are publicly available at
+\url{https://github.com/KenCao2007/WSM_TPP}.",http://arxiv.org/pdf/2410.04037v1,,False

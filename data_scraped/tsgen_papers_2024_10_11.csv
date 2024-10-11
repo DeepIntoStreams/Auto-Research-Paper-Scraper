@@ -1,0 +1,414 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+DICE: Discrete Inversion Enabling Controllable Editing for Multinomial Diffusion and Masked Generative Models,10/10/2024,"Xiaoxiao He, Ligong Han, Quan Dao, Song Wen, Minhao Bai, Di Liu, Han Zhang, Martin Renqiang Min, Felix Juefei-Xu, Chaowei Tan, Bo Liu, Kang Li, Hongdong Li, Junzhou Huang, Faez Ahmed, Akash Srivastava, Dimitris Metaxas","Discrete diffusion models have achieved success in tasks like image
+generation and masked language modeling but face limitations in controlled
+content editing. We introduce DICE (Discrete Inversion for Controllable
+Editing), the first approach to enable precise inversion for discrete diffusion
+models, including multinomial diffusion and masked generative models. By
+recording noise sequences and masking patterns during the reverse diffusion
+process, DICE enables accurate reconstruction and flexible editing of discrete
+data without the need for predefined masks or attention manipulation. We
+demonstrate the effectiveness of DICE across both image and text domains,
+evaluating it on models such as VQ-Diffusion, Paella, and RoBERTa. Our results
+show that DICE preserves high data fidelity while enhancing editing
+capabilities, offering new opportunities for fine-grained content manipulation
+in discrete spaces. For project webpage, see
+https://hexiaoxiao-cs.github.io/DICE/.",http://arxiv.org/pdf/2410.08207v1,,False
+DifFRelight: Diffusion-Based Facial Performance Relighting,10/10/2024,"Mingming He, Pascal Clausen, Ahmet Levent Taşel, Li Ma, Oliver Pilarski, Wenqi Xian, Laszlo Rikker, Xueming Yu, Ryan Burgert, Ning Yu, Paul Debevec","We present a novel framework for free-viewpoint facial performance relighting
+using diffusion-based image-to-image translation. Leveraging a subject-specific
+dataset containing diverse facial expressions captured under various lighting
+conditions, including flat-lit and one-light-at-a-time (OLAT) scenarios, we
+train a diffusion model for precise lighting control, enabling high-fidelity
+relit facial images from flat-lit inputs. Our framework includes
+spatially-aligned conditioning of flat-lit captures and random noise, along
+with integrated lighting information for global control, utilizing prior
+knowledge from the pre-trained Stable Diffusion model. This model is then
+applied to dynamic facial performances captured in a consistent flat-lit
+environment and reconstructed for novel-view synthesis using a scalable dynamic
+3D Gaussian Splatting method to maintain quality and consistency in the relit
+results. In addition, we introduce unified lighting control by integrating a
+novel area lighting representation with directional lighting, allowing for
+joint adjustments in light size and direction. We also enable high dynamic
+range imaging (HDRI) composition using multiple directional lights to produce
+dynamic sequences under complex lighting conditions. Our evaluations
+demonstrate the models efficiency in achieving precise lighting control and
+generalizing across various facial expressions while preserving detailed
+features such as skintexture andhair. The model accurately reproduces complex
+lighting effects like eye reflections, subsurface scattering, self-shadowing,
+and translucency, advancing photorealism within our framework.",http://arxiv.org/pdf/2410.08188v1,10.1145/3680528.3687644,False
+On the Evaluation of Generative Robotic Simulations,10/10/2024,"Feng Chen, Botian Xu, Pu Hua, Peiqi Duan, Yanchao Yang, Yi Ma, Huazhe Xu","Due to the difficulty of acquiring extensive real-world data, robot
+simulation has become crucial for parallel training and sim-to-real transfer,
+highlighting the importance of scalable simulated robotic tasks. Foundation
+models have demonstrated impressive capacities in autonomously generating
+feasible robotic tasks. However, this new paradigm underscores the challenge of
+adequately evaluating these autonomously generated tasks. To address this, we
+propose a comprehensive evaluation framework tailored to generative
+simulations. Our framework segments evaluation into three core aspects:
+quality, diversity, and generalization. For single-task quality, we evaluate
+the realism of the generated task and the completeness of the generated
+trajectories using large language models and vision-language models. In terms
+of diversity, we measure both task and data diversity through text similarity
+of task descriptions and world model loss trained on collected task
+trajectories. For task-level generalization, we assess the zero-shot
+generalization ability on unseen tasks of a policy trained with multiple
+generated tasks. Experiments conducted on three representative task generation
+pipelines demonstrate that the results from our framework are highly consistent
+with human evaluations, confirming the feasibility and validity of our
+approach. The findings reveal that while metrics of quality and diversity can
+be achieved through certain methods, no single approach excels across all
+metrics, suggesting a need for greater focus on balancing these different
+metrics. Additionally, our analysis further highlights the common challenge of
+low generalization capability faced by current works. Our anonymous website:
+https://sites.google.com/view/evaltasks.",http://arxiv.org/pdf/2410.08172v1,,False
+Steering Masked Discrete Diffusion Models via Discrete Denoising Posterior Prediction,10/10/2024,"Jarrid Rector-Brooks, Mohsin Hasan, Zhangzhi Peng, Zachary Quinn, Chenghao Liu, Sarthak Mittal, Nouha Dziri, Michael Bronstein, Yoshua Bengio, Pranam Chatterjee, Alexander Tong, Avishek Joey Bose","Generative modeling of discrete data underlies important applications
+spanning text-based agents like ChatGPT to the design of the very building
+blocks of life in protein sequences. However, application domains need to exert
+control over the generated data by steering the generative process - typically
+via RLHF - to satisfy a specified property, reward, or affinity metric. In this
+paper, we study the problem of steering Masked Diffusion Models (MDMs), a
+recent class of discrete diffusion models that offer a compelling alternative
+to traditional autoregressive models. We introduce Discrete Denoising Posterior
+Prediction (DDPP), a novel framework that casts the task of steering
+pre-trained MDMs as a problem of probabilistic inference by learning to sample
+from a target Bayesian posterior. Our DDPP framework leads to a family of three
+novel objectives that are all simulation-free, and thus scalable while applying
+to general non-differentiable reward functions. Empirically, we instantiate
+DDPP by steering MDMs to perform class-conditional pixel-level image modeling,
+RLHF-based alignment of MDMs using text-based rewards, and finetuning protein
+language models to generate more diverse secondary structures and shorter
+proteins. We substantiate our designs via wet-lab validation, where we observe
+transient expression of reward-optimized protein sequences.",http://arxiv.org/pdf/2410.08134v1,,False
+Assessing Episodic Memory in LLMs with Sequence Order Recall Tasks,10/10/2024,"Mathis Pink, Vy A. Vo, Qinyuan Wu, Jianing Mu, Javier S. Turek, Uri Hasson, Kenneth A. Norman, Sebastian Michelmann, Alexander Huth, Mariya Toneva","Current LLM benchmarks focus on evaluating models' memory of facts and
+semantic relations, primarily assessing semantic aspects of long-term memory.
+However, in humans, long-term memory also includes episodic memory, which links
+memories to their contexts, such as the time and place they occurred. The
+ability to contextualize memories is crucial for many cognitive tasks and
+everyday functions. This form of memory has not been evaluated in LLMs with
+existing benchmarks. To address the gap in evaluating memory in LLMs, we
+introduce Sequence Order Recall Tasks (SORT), which we adapt from tasks used to
+study episodic memory in cognitive psychology. SORT requires LLMs to recall the
+correct order of text segments, and provides a general framework that is both
+easily extendable and does not require any additional annotations. We present
+an initial evaluation dataset, Book-SORT, comprising 36k pairs of segments
+extracted from 9 books recently added to the public domain. Based on a human
+experiment with 155 participants, we show that humans can recall sequence order
+based on long-term memory of a book. We find that models can perform the task
+with high accuracy when relevant text is given in-context during the SORT
+evaluation. However, when presented with the book text only during training,
+LLMs' performance on SORT falls short. By allowing to evaluate more aspects of
+memory, we believe that SORT will aid in the emerging development of
+memory-augmented models.",http://arxiv.org/pdf/2410.08133v1,,False
+Deconstructing equivariant representations in molecular systems,10/10/2024,"Kin Long Kelvin Lee, Mikhail Galkin, Santiago Miret","Recent equivariant models have shown significant progress in not just
+chemical property prediction, but as surrogates for dynamical simulations of
+molecules and materials. Many of the top performing models in this category are
+built within the framework of tensor products, which preserves equivariance by
+restricting interactions and transformations to those that are allowed by
+symmetry selection rules. Despite being a core part of the modeling process,
+there has not yet been much attention into understanding what information
+persists in these equivariant representations, and their general behavior
+outside of benchmark metrics. In this work, we report on a set of experiments
+using a simple equivariant graph convolution model on the QM9 dataset, focusing
+on correlating quantitative performance with the resulting molecular graph
+embeddings. Our key finding is that, for a scalar prediction task, many of the
+irreducible representations are simply ignored during training -- specifically
+those pertaining to vector ($l=1$) and tensor quantities ($l=2$) -- an issue
+that does not necessarily make itself evident in the test metric. We
+empirically show that removing some unused orders of spherical harmonics
+improves model performance, correlating with improved latent space structure.
+We provide a number of recommendations for future experiments to try and
+improve efficiency and utilization of equivariant features based on these
+observations.",http://arxiv.org/pdf/2410.08131v1,,False
+Generalizing Stochastic Smoothing for Differentiation and Gradient Estimation,10/10/2024,"Felix Petersen, Christian Borgelt, Aashwin Mishra, Stefano Ermon","We deal with the problem of gradient estimation for stochastic differentiable
+relaxations of algorithms, operators, simulators, and other non-differentiable
+functions. Stochastic smoothing conventionally perturbs the input of a
+non-differentiable function with a differentiable density distribution with
+full support, smoothing it and enabling gradient estimation. Our theory starts
+at first principles to derive stochastic smoothing with reduced assumptions,
+without requiring a differentiable density nor full support, and we present a
+general framework for relaxation and gradient estimation of non-differentiable
+black-box functions $f:\mathbb{R}^n\to\mathbb{R}^m$. We develop variance
+reduction for gradient estimation from 3 orthogonal perspectives. Empirically,
+we benchmark 6 distributions and up to 24 variance reduction strategies for
+differentiable sorting and ranking, differentiable shortest-paths on graphs,
+differentiable rendering for pose estimation, as well as differentiable cryo-ET
+simulations.",http://arxiv.org/pdf/2410.08125v1,,False
+Closing the Loop: Learning to Generate Writing Feedback via Language Model Simulated Student Revisions,10/10/2024,"Inderjeet Nair, Jiaye Tan, Xiaotian Su, Anne Gere, Xu Wang, Lu Wang","Providing feedback is widely recognized as crucial for refining students'
+writing skills. Recent advances in language models (LMs) have made it possible
+to automatically generate feedback that is actionable and well-aligned with
+human-specified attributes. However, it remains unclear whether the feedback
+generated by these models is truly effective in enhancing the quality of
+student revisions. Moreover, prompting LMs with a precise set of instructions
+to generate feedback is nontrivial due to the lack of consensus regarding the
+specific attributes that can lead to improved revising performance. To address
+these challenges, we propose PROF that PROduces Feedback via learning from LM
+simulated student revisions. PROF aims to iteratively optimize the feedback
+generator by directly maximizing the effectiveness of students' overall
+revising performance as simulated by LMs. Focusing on an economic essay
+assignment, we empirically test the efficacy of PROF and observe that our
+approach not only surpasses a variety of baseline methods in effectiveness of
+improving students' writing but also demonstrates enhanced pedagogical values,
+even though it was not explicitly trained for this aspect.",http://arxiv.org/pdf/2410.08058v1,,False
+Generalization Bounds and Model Complexity for Kolmogorov-Arnold Networks,10/10/2024,"Xianyang Zhang, Huijuan Zhou","Kolmogorov-Arnold Network (KAN) is a network structure recently proposed by
+Liu et al. (2024) that offers improved interpretability and a more parsimonious
+design in many science-oriented tasks compared to multi-layer perceptrons. This
+work provides a rigorous theoretical analysis of KAN by establishing
+generalization bounds for KAN equipped with activation functions that are
+either represented by linear combinations of basis functions or lying in a
+low-rank Reproducing Kernel Hilbert Space (RKHS). In the first case, the
+generalization bound accommodates various choices of basis functions in forming
+the activation functions in each layer of KAN and is adapted to different
+operator norms at each layer. For a particular choice of operator norms, the
+bound scales with the $l_1$ norm of the coefficient matrices and the Lipschitz
+constants for the activation functions, and it has no dependence on
+combinatorial parameters (e.g., number of nodes) outside of logarithmic
+factors. Moreover, our result does not require the boundedness assumption on
+the loss function and, hence, is applicable to a general class of
+regression-type loss functions. In the low-rank case, the generalization bound
+scales polynomially with the underlying ranks as well as the Lipschitz
+constants of the activation functions in each layer. These bounds are
+empirically investigated for KANs trained with stochastic gradient descent on
+simulated and real data sets. The numerical results demonstrate the practical
+relevance of these bounds.",http://arxiv.org/pdf/2410.08026v1,,False
+Doob's Lagrangian: A Sample-Efficient Variational Approach to Transition Path Sampling,10/10/2024,"Yuanqi Du, Michael Plainer, Rob Brekelmans, Chenru Duan, Frank Noé, Carla P. Gomes, Alan Apsuru-Guzik, Kirill Neklyudov","Rare event sampling in dynamical systems is a fundamental problem arising in
+the natural sciences, which poses significant computational challenges due to
+an exponentially large space of trajectories. For settings where the dynamical
+system of interest follows a Brownian motion with known drift, the question of
+conditioning the process to reach a given endpoint or desired rare event is
+definitively answered by Doob's h-transform. However, the naive estimation of
+this transform is infeasible, as it requires simulating sufficiently many
+forward trajectories to estimate rare event probabilities. In this work, we
+propose a variational formulation of Doob's $h$-transform as an optimization
+problem over trajectories between a given initial point and the desired ending
+point. To solve this optimization, we propose a simulation-free training
+objective with a model parameterization that imposes the desired boundary
+conditions by design. Our approach significantly reduces the search space over
+trajectories and avoids expensive trajectory simulation and inefficient
+importance sampling estimators which are required in existing methods. We
+demonstrate the ability of our method to find feasible transition paths on
+real-world molecular simulation and protein folding tasks.",http://arxiv.org/pdf/2410.07974v1,,False
+Benchmarking Agentic Workflow Generation,10/10/2024,"Shuofei Qiao, Runnan Fang, Zhisong Qiu, Xiaobin Wang, Ningyu Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Huajun Chen","Large Language Models (LLMs), with their exceptional ability to handle a wide
+range of tasks, have driven significant advancements in tackling reasoning and
+planning tasks, wherein decomposing complex problems into executable workflows
+is a crucial step in this process. Existing workflow evaluation frameworks
+either focus solely on holistic performance or suffer from limitations such as
+restricted scenario coverage, simplistic workflow structures, and lax
+evaluation standards. To this end, we introduce WorFBench, a unified workflow
+generation benchmark with multi-faceted scenarios and intricate graph workflow
+structures. Additionally, we present WorFEval, a systemic evaluation protocol
+utilizing subsequence and subgraph matching algorithms to accurately quantify
+the LLM agent's workflow generation capabilities. Through comprehensive
+evaluations across different types of LLMs, we discover distinct gaps between
+the sequence planning capabilities and graph planning capabilities of LLM
+agents, with even GPT-4 exhibiting a gap of around 15%. We also train two
+open-source models and evaluate their generalization abilities on held-out
+tasks. Furthermore, we observe that the generated workflows can enhance
+downstream tasks, enabling them to achieve superior performance with less time
+during inference. Code and dataset will be available at
+https://github.com/zjunlp/WorFBench.",http://arxiv.org/pdf/2410.07869v1,,False
+System-2 Reasoning via Generality and Adaptation,10/10/2024,"Sejin Kim, Sundong Kim","While significant progress has been made in task-specific applications,
+current models struggle with deep reasoning, generality, and adaptation -- key
+components of System-2 reasoning that are crucial for achieving Artificial
+General Intelligence (AGI). Despite the promise of approaches such as program
+synthesis, language models, and transformers, these methods often fail to
+generalize beyond their training data and to adapt to novel tasks, limiting
+their ability to perform human-like reasoning. This paper explores the
+limitations of existing approaches in achieving advanced System-2 reasoning and
+highlights the importance of generality and adaptation for AGI. Moreover, we
+propose four key research directions to address these gaps: (1) learning human
+intentions from action sequences, (2) combining symbolic and neural models, (3)
+meta-learning for unfamiliar environments, and (4) reinforcement learning to
+reason multi-step. Through these directions, we aim to advance the ability to
+generalize and adapt, bringing computational models closer to the reasoning
+capabilities required for AGI.",http://arxiv.org/pdf/2410.07866v1,,False
+Masked Generative Priors Improve World Models Sequence Modelling Capabilities,10/10/2024,"Cristian Meo, Mircea Lica, Zarif Ikram, Akihiro Nakano, Vedant Shah, Aniket Rajiv Didolkar, Dianbo Liu, Anirudh Goyal, Justin Dauwels","Deep Reinforcement Learning (RL) has become the leading approach for creating
+artificial agents in complex environments. Model-based approaches, which are RL
+methods with world models that predict environment dynamics, are among the most
+promising directions for improving data efficiency, forming a critical step
+toward bridging the gap between research and real-world deployment. In
+particular, world models enhance sample efficiency by learning in imagination,
+which involves training a generative sequence model of the environment in a
+self-supervised manner. Recently, Masked Generative Modelling has emerged as a
+more efficient and superior inductive bias for modelling and generating token
+sequences. Building on the Efficient Stochastic Transformer-based World Models
+(STORM) architecture, we replace the traditional MLP prior with a Masked
+Generative Prior (e.g., MaskGIT Prior) and introduce GIT-STORM. We evaluate our
+model on two downstream tasks: reinforcement learning and video prediction.
+GIT-STORM demonstrates substantial performance gains in RL tasks on the Atari
+100k benchmark. Moreover, we apply Transformer-based World Models to continuous
+action environments for the first time, addressing a significant gap in prior
+research. To achieve this, we employ a state mixer function that integrates
+latent state representations with actions, enabling our model to handle
+continuous control tasks. We validate this approach through qualitative and
+quantitative analyses on the DeepMind Control Suite, showcasing the
+effectiveness of Transformer-based World Models in this new domain. Our results
+highlight the versatility and efficacy of the MaskGIT dynamics prior, paving
+the way for more accurate world models and effective RL policies.",http://arxiv.org/pdf/2410.07836v1,,False
+Simple ReFlow: Improved Techniques for Fast Flow Models,10/10/2024,"Beomsu Kim, Yu-Guan Hsieh, Michal Klein, Marco Cuturi, Jong Chul Ye, Bahjat Kawar, James Thornton","Diffusion and flow-matching models achieve remarkable generative performance
+but at the cost of many sampling steps, this slows inference and limits
+applicability to time-critical tasks. The ReFlow procedure can accelerate
+sampling by straightening generation trajectories. However, ReFlow is an
+iterative procedure, typically requiring training on simulated data, and
+results in reduced sample quality. To mitigate sample deterioration, we examine
+the design space of ReFlow and highlight potential pitfalls in prior heuristic
+practices. We then propose seven improvements for training dynamics, learning
+and inference, which are verified with thorough ablation studies on CIFAR10 $32
+\times 32$, AFHQv2 $64 \times 64$, and FFHQ $64 \times 64$. Combining all our
+techniques, we achieve state-of-the-art FID scores (without / with guidance,
+resp.) for fast generation via neural ODEs: $2.23$ / $1.98$ on CIFAR10, $2.30$
+/ $1.91$ on AFHQv2, $2.84$ / $2.67$ on FFHQ, and $3.49$ / $1.74$ on
+ImageNet-64, all with merely $9$ neural function evaluations.",http://arxiv.org/pdf/2410.07815v1,,False
+Deep and Probabilistic Solar Irradiance Forecast at the Arctic Circle,10/10/2024,"Niklas Erdmann, Lars Ø. Bentsen, Roy Stenbro, Heine N. Riise, Narada Warakagoda, Paal Engelstad","Solar irradiance forecasts can be dynamic and unreliable due to changing
+weather conditions. Near the Arctic circle, this also translates into a
+distinct set of further challenges. This work is forecasting solar irradiance
+with Norwegian data using variations of Long-Short-Term Memory units (LSTMs).
+In order to gain more trustworthiness of results, the probabilistic approaches
+Quantile Regression (QR) and Maximum Likelihood (MLE) are optimized on top of
+the LSTMs, providing measures of uncertainty for the results. MLE is further
+extended by using a Johnson's SU distribution, a Johnson's SB distribution, and
+a Weibull distribution in addition to a normal Gaussian to model parameters.
+Contrary to a Gaussian, Weibull, Johnson's SU and Johnson's SB can return
+skewed distributions, enabling it to fit the non-normal solar irradiance
+distribution more optimally. The LSTMs are compared against each other, a
+simple Multi-layer Perceptron (MLP), and a smart-persistence estimator. The
+proposed LSTMs are found to be more accurate than smart persistence and the MLP
+for a multi-horizon, day-ahead (36 hours) forecast. The deterministic LSTM
+showed better root mean squared error (RMSE), but worse mean absolute error
+(MAE) than a MLE with Johnson's SB distribution. Probabilistic uncertainty
+estimation is shown to fit relatively well across the distribution of observed
+irradiance. While QR shows better uncertainty estimation calibration, MLE with
+Johnson's SB, Johnson's SU, or Gaussian show better performance in the other
+metrics employed. Optimizing and comparing the models against each other
+reveals a seemingly inherent trade-off between point-prediction and uncertainty
+estimation calibration.",http://arxiv.org/pdf/2410.07806v1,,False
+Synthesizing Multi-Class Surgical Datasets with Anatomy-Aware Diffusion Models,10/10/2024,"Danush Kumar Venkatesh, Dominik Rivoir, Micha Pfeiffer, Fiona Kolbinger, Stefanie Speidel","In computer-assisted surgery, automatically recognizing anatomical organs is
+crucial for understanding the surgical scene and providing intraoperative
+assistance. While machine learning models can identify such structures, their
+deployment is hindered by the need for labeled, diverse surgical datasets with
+anatomical annotations. Labeling multiple classes (i.e., organs) in a surgical
+scene is time-intensive, requiring medical experts. Although synthetically
+generated images can enhance segmentation performance, maintaining both organ
+structure and texture during generation is challenging. We introduce a
+multi-stage approach using diffusion models to generate multi-class surgical
+datasets with annotations. Our framework improves anatomy awareness by training
+organ specific models with an inpainting objective guided by binary
+segmentation masks. The organs are generated with an inference pipeline using
+pre-trained ControlNet to maintain the organ structure. The synthetic
+multi-class datasets are constructed through an image composition step,
+ensuring structural and textural consistency. This versatile approach allows
+the generation of multi-class datasets from real binary datasets and simulated
+surgical masks. We thoroughly evaluate the generated datasets on image quality
+and downstream segmentation, achieving a $15\%$ improvement in segmentation
+scores when combined with real images. Our codebase
+https://gitlab.com/nct_tso_public/muli-class-image-synthesis",http://arxiv.org/pdf/2410.07753v1,,False
+Learning Low-Level Causal Relations using a Simulated Robotic Arm,10/10/2024,"Miroslav Cibula, Matthias Kerzel, Igor Farkaš","Causal learning allows humans to predict the effect of their actions on the
+known environment and use this knowledge to plan the execution of more complex
+actions. Such knowledge also captures the behaviour of the environment and can
+be used for its analysis and the reasoning behind the behaviour. This type of
+knowledge is also crucial in the design of intelligent robotic systems with
+common sense. In this paper, we study causal relations by learning the forward
+and inverse models based on data generated by a simulated robotic arm involved
+in two sensorimotor tasks. As a next step, we investigate feature attribution
+methods for the analysis of the forward model, which reveals the low-level
+causal effects corresponding to individual features of the state vector related
+to both the arm joints and the environment features. This type of analysis
+provides solid ground for dimensionality reduction of the state
+representations, as well as for the aggregation of knowledge towards the
+explainability of causal effects at higher levels.",http://arxiv.org/pdf/2410.07751v1,10.1007/978-3-031-72359-9_21,False
+Theoretical limits of descending $\ell_0$ sparse-regression ML algorithms,10/10/2024,Mihailo Stojnic,"We study the theoretical limits of the $\ell_0$ (quasi) norm based
+optimization algorithms when employed for solving classical compressed sensing
+or sparse regression problems. Considering standard contexts with deterministic
+signals and statistical systems, we utilize \emph{Fully lifted random duality
+theory} (Fl RDT) and develop a generic analytical program for studying
+performance of the \emph{maximum-likelihood} (ML) decoding. The key ML
+performance parameter, the residual \emph{root mean square error}
+($\textbf{RMSE}$), is uncovered to exhibit the so-called
+\emph{phase-transition} (PT) phenomenon. The associated aPT curve, which
+separates the regions of systems dimensions where \emph{an} $\ell_0$ based
+algorithm succeeds or fails in achieving small (comparable to the noise) ML
+optimal $\textbf{RMSE}$ is precisely determined as well. In parallel, we
+uncover the existence of another dPT curve which does the same separation but
+for practically feasible \emph{descending} $\ell_0$ ($d\ell_0$) algorithms.
+Concrete implementation and practical relevance of the Fl RDT typically rely on
+the ability to conduct a sizeable set of the underlying numerical evaluations
+which reveal that for the ML decoding the Fl RDT converges astonishingly fast
+with corrections in the estimated quantities not exceeding $\sim 0.1\%$ already
+on the third level of lifting. Analytical results are supplemented by a
+sizeable set of numerical experiments where we implement a simple variant of
+$d\ell_0$ and demonstrate that its practical performance very accurately
+matches the theoretical predictions. Completely surprisingly, a remarkably
+precise agreement between the simulations and the theory is observed for fairly
+small dimensions of the order of 100.",http://arxiv.org/pdf/2410.07651v1,,False
+Conditional Lagrangian Wasserstein Flow for Time Series Imputation,10/10/2024,"Weizhu Qian, Dalin Zhang, Yan Zhao","Time series imputation is important for numerous real-world applications. To
+overcome the limitations of diffusion model-based imputation methods, e.g.,
+slow convergence in inference, we propose a novel method for time series
+imputation in this work, called Conditional Lagrangian Wasserstein Flow. The
+proposed method leverages the (conditional) optimal transport theory to learn
+the probability flow in a simulation-free manner, in which the initial noise,
+missing data, and observations are treated as the source distribution, target
+distribution, and conditional information, respectively. According to the
+principle of least action in Lagrangian mechanics, we learn the velocity by
+minimizing the corresponding kinetic energy. Moreover, to incorporate more
+prior information into the model, we parameterize the derivative of a
+task-specific potential function via a variational autoencoder, and combine it
+with the base estimator to formulate a Rao-Blackwellized sampler. The propose
+model allows us to take less intermediate steps to produce high-quality samples
+for inference compared to existing diffusion methods. Finally, the experimental
+results on the real-word datasets show that the proposed method achieves
+competitive performance on time series imputation compared to the
+state-of-the-art methods.",http://arxiv.org/pdf/2410.07550v1,,False
+Generalization Ability Analysis of Through-the-Wall Radar Human Activity Recognition,10/10/2024,"Weicheng Gao, Xiaodong Qu, Xiaopeng Yang","Through-the-Wall radar (TWR) human activity recognition (HAR) is a technology
+that uses low-frequency ultra-wideband (UWB) signal to detect and analyze
+indoor human motion. However, the high dependence of existing end-to-end
+recognition models on the distribution of TWR training data makes it difficult
+to achieve good generalization across different indoor testers. In this regard,
+the generalization ability of TWR HAR is analyzed in this paper. In detail, an
+end-to-end linear neural network method for TWR HAR and its generalization
+error bound are first discussed. Second, a micro-Doppler corner representation
+method and the change of the generalization error before and after dimension
+reduction are presented. The appropriateness of the theoretical generalization
+errors is proved through numerical simulations and experiments. The results
+demonstrate that feature dimension reduction is effective in allowing
+recognition models to generalize across different indoor testers.",http://arxiv.org/pdf/2410.07543v1,,False
+Efficient Generation of Molecular Clusters with Dual-Scale Equivariant Flow Matching,10/10/2024,"Akshay Subramanian, Shuhui Qu, Cheol Woo Park, Sulin Liu, Janghwan Lee, Rafael Gómez-Bombarelli","Amorphous molecular solids offer a promising alternative to inorganic
+semiconductors, owing to their mechanical flexibility and solution
+processability. The packing structure of these materials plays a crucial role
+in determining their electronic and transport properties, which are key to
+enhancing the efficiency of devices like organic solar cells (OSCs). However,
+obtaining these optoelectronic properties computationally requires molecular
+dynamics (MD) simulations to generate a conformational ensemble, a process that
+can be computationally expensive due to the large system sizes involved. Recent
+advances have focused on using generative models, particularly flow-based
+models as Boltzmann generators, to improve the efficiency of MD sampling. In
+this work, we developed a dual-scale flow matching method that separates
+training and inference into coarse-grained and all-atom stages and enhances
+both the accuracy and efficiency of standard flow matching samplers. We
+demonstrate the effectiveness of this method on a dataset of Y6 molecular
+clusters obtained through MD simulations, and we benchmark its efficiency and
+accuracy against single-scale flow matching methods.",http://arxiv.org/pdf/2410.07539v1,,False
+Enhanced physics-informed neural networks (PINNs) for high-order power grid dynamics,10/10/2024,Vineet Jagadeesan Nair,"We develop improved physics-informed neural networks (PINNs) for high-order
+and high-dimensional power system models described by nonlinear ordinary
+differential equations. We propose some novel enhancements to improve PINN
+training and accuracy and also implement several other recently proposed ideas
+from the literature. We successfully apply these to study the transient
+dynamics of synchronous generators. We also make progress towards applying
+PINNs to advanced inverter models. Such enhanced PINNs can allow us to
+accelerate high-fidelity simulations needed to ensure a stable and reliable
+renewables-rich future grid.",http://arxiv.org/pdf/2410.07527v1,,False
+Offline Inverse Constrained Reinforcement Learning for Safe-Critical Decision Making in Healthcare,10/10/2024,"Nan Fang, Guiliang Liu, Wei Gong","Reinforcement Learning (RL) applied in healthcare can lead to unsafe medical
+decisions and treatment, such as excessive dosages or abrupt changes, often due
+to agents overlooking common-sense constraints. Consequently, Constrained
+Reinforcement Learning (CRL) is a natural choice for safe decisions. However,
+specifying the exact cost function is inherently difficult in healthcare.
+Recent Inverse Constrained Reinforcement Learning (ICRL) is a promising
+approach that infers constraints from expert demonstrations. ICRL algorithms
+model Markovian decisions in an interactive environment. These settings do not
+align with the practical requirement of a decision-making system in healthcare,
+where decisions rely on historical treatment recorded in an offline dataset. To
+tackle these issues, we propose the Constraint Transformer (CT). Specifically,
+1) we utilize a causal attention mechanism to incorporate historical decisions
+and observations into the constraint modeling, while employing a Non-Markovian
+layer for weighted constraints to capture critical states. 2) A generative
+world model is used to perform exploratory data augmentation, enabling offline
+RL methods to simulate unsafe decision sequences. In multiple medical
+scenarios, empirical results demonstrate that CT can capture unsafe states and
+achieve strategies that approximate lower mortality rates, reducing the
+occurrence probability of unsafe behaviors.",http://arxiv.org/pdf/2410.07525v1,,False

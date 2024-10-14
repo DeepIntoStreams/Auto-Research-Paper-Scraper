@@ -1,0 +1,218 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Overcoming Slow Decision Frequencies in Continuous Control: Model-Based Sequence Reinforcement Learning for Model-Free Control,11/10/2024,"Devdhar Patel, Hava Siegelmann","Reinforcement learning (RL) is rapidly reaching and surpassing human-level
+control capabilities. However, state-of-the-art RL algorithms often require
+timesteps and reaction times significantly faster than human capabilities,
+which is impractical in real-world settings and typically necessitates
+specialized hardware. Such speeds are difficult to achieve in the real world
+and often requires specialized hardware. We introduce Sequence Reinforcement
+Learning (SRL), an RL algorithm designed to produce a sequence of actions for a
+given input state, enabling effective control at lower decision frequencies.
+SRL addresses the challenges of learning action sequences by employing both a
+model and an actor-critic architecture operating at different temporal scales.
+We propose a ""temporal recall"" mechanism, where the critic uses the model to
+estimate intermediate states between primitive actions, providing a learning
+signal for each individual action within the sequence. Once training is
+complete, the actor can generate action sequences independently of the model,
+achieving model-free control at a slower frequency. We evaluate SRL on a suite
+of continuous control tasks, demonstrating that it achieves performance
+comparable to state-of-the-art algorithms while significantly reducing actor
+sample complexity. To better assess performance across varying decision
+frequencies, we introduce the Frequency-Averaged Score (FAS) metric. Our
+results show that SRL significantly outperforms traditional RL algorithms in
+terms of FAS, making it particularly suitable for applications requiring
+variable decision frequencies. Additionally, we compare SRL with model-based
+online planning, showing that SRL achieves superior FAS while leveraging the
+same model during training that online planners use for planning.",http://arxiv.org/pdf/2410.08979v1,,False
+Enhancing Motion Variation in Text-to-Motion Models via Pose and Video Conditioned Editing,11/10/2024,"Clayton Leite, Yu Xiao","Text-to-motion models that generate sequences of human poses from textual
+descriptions are garnering significant attention. However, due to data
+scarcity, the range of motions these models can produce is still limited. For
+instance, current text-to-motion models cannot generate a motion of kicking a
+football with the instep of the foot, since the training data only includes
+martial arts kicks. We propose a novel method that uses short video clips or
+images as conditions to modify existing basic motions. In this approach, the
+model's understanding of a kick serves as the prior, while the video or image
+of a football kick acts as the posterior, enabling the generation of the
+desired motion. By incorporating these additional modalities as conditions, our
+method can create motions not present in the training set, overcoming the
+limitations of text-motion datasets. A user study with 26 participants
+demonstrated that our approach produces unseen motions with realism comparable
+to commonly represented motions in text-motion datasets (e.g., HumanML3D), such
+as walking, running, squatting, and kicking.",http://arxiv.org/pdf/2410.08931v1,,False
+Path-minimizing Latent ODEs for improved extrapolation and inference,11/10/2024,"Matt L. Sampson, Peter Melchior","Latent ODE models provide flexible descriptions of dynamic systems, but they
+can struggle with extrapolation and predicting complicated non-linear dynamics.
+The latent ODE approach implicitly relies on encoders to identify unknown
+system parameters and initial conditions, whereas the evaluation times are
+known and directly provided to the ODE solver. This dichotomy can be exploited
+by encouraging time-independent latent representations. By replacing the common
+variational penalty in latent space with an $\ell_2$ penalty on the path length
+of each system, the models learn data representations that can easily be
+distinguished from those of systems with different configurations. This results
+in faster training, smaller models, more accurate interpolation and long-time
+extrapolation compared to the baseline ODE models with GRU, RNN, and LSTM
+encoder/decoders on tests with damped harmonic oscillator, self-gravitating
+fluid, and predator-prey systems. We also demonstrate superior results for
+simulation-based inference of the Lotka-Volterra parameters and initial
+conditions by using the latents as data summaries for a conditional normalizing
+flow. Our change to the training loss is agnostic to the specific recognition
+network used by the decoder and can therefore easily be adopted by other latent
+ODE models.",http://arxiv.org/pdf/2410.08923v1,,False
+"VLM See, Robot Do: Human Demo Video to Robot Action Plan via Vision Language Model",11/10/2024,"Beichen Wang, Juexiao Zhang, Shuwen Dong, Irving Fang, Chen Feng","Vision Language Models (VLMs) have recently been adopted in robotics for
+their capability in common sense reasoning and generalizability. Existing work
+has applied VLMs to generate task and motion planning from natural language
+instructions and simulate training data for robot learning. In this work, we
+explore using VLM to interpret human demonstration videos and generate robot
+task planning. Our method integrates keyframe selection, visual perception, and
+VLM reasoning into a pipeline. We named it SeeDo because it enables the VLM to
+''see'' human demonstrations and explain the corresponding plans to the robot
+for it to ''do''. To validate our approach, we collected a set of long-horizon
+human videos demonstrating pick-and-place tasks in three diverse categories and
+designed a set of metrics to comprehensively benchmark SeeDo against several
+baselines, including state-of-the-art video-input VLMs. The experiments
+demonstrate SeeDo's superior performance. We further deployed the generated
+task plans in both a simulation environment and on a real robot arm.",http://arxiv.org/pdf/2410.08792v1,,False
+No Tick-Size Too Small: A General Method for Modelling Small Tick Limit Order Books,11/10/2024,"Konark Jain, Jean-François Muzy, Jonathan Kochems, Emmanuel Bacry","We investigate the disparity in the microstructural properties of the Limit
+Order Book (LOB) across different relative tick sizes. Tick sizes not only
+influence the granularity of the price formation process but also affect market
+agents' behavior. A key contribution of this study is the identification of
+several stylized facts, which are used to differentiate between large, medium,
+and small tick stocks, along with clear metrics for their measurement. We
+provide cross-asset visualizations to illustrate how these attributes vary with
+relative tick size. Further, we propose a Hawkes Process model that accounts
+for sparsity, multi-tick level price moves, and the shape of the book in
+small-tick stocks. Through simulation studies, we demonstrate the universality
+of the model and identify key variables that determine whether a simulated LOB
+resembles a large-tick or small-tick stock. Our tests show that stylized facts
+like sparsity, shape, and relative returns distribution can be smoothly
+transitioned from a large-tick to a small-tick asset using our model. We test
+this model's assumptions, showcase its challenges and propose questions for
+further directions in this area of research.",http://arxiv.org/pdf/2410.08744v1,,False
+Preferential Normalizing Flows,11/10/2024,"Petrus Mikkola, Luigi Acerbi, Arto Klami","Eliciting a high-dimensional probability distribution from an expert via
+noisy judgments is notoriously challenging, yet useful for many applications,
+such as prior elicitation and reward modeling. We introduce a method for
+eliciting the expert's belief density as a normalizing flow based solely on
+preferential questions such as comparing or ranking alternatives. This allows
+eliciting in principle arbitrarily flexible densities, but flow estimation is
+susceptible to the challenge of collapsing or diverging probability mass that
+makes it difficult in practice. We tackle this problem by introducing a novel
+functional prior for the flow, motivated by a decision-theoretic argument, and
+show empirically that the belief density can be inferred as the function-space
+maximum a posteriori estimate. We demonstrate our method by eliciting
+multivariate belief densities of simulated experts, including the prior belief
+of a general-purpose large language model over a real-world dataset.",http://arxiv.org/pdf/2410.08710v1,,False
+Efficiently Scanning and Resampling Spatio-Temporal Tasks with Irregular Observations,11/10/2024,"Bryce Ferenczi, Michael Burke, Tom Drummond","Various works have aimed at combining the inference efficiency of recurrent
+models and training parallelism of multi-head attention for sequence modeling.
+However, most of these works focus on tasks with fixed-dimension observation
+spaces, such as individual tokens in language modeling or pixels in image
+completion. To handle an observation space of varying size, we propose a novel
+algorithm that alternates between cross-attention between a 2D latent state and
+observation, and a discounted cumulative sum over the sequence dimension to
+efficiently accumulate historical information. We find this resampling cycle is
+critical for performance. To evaluate efficient sequence modeling in this
+domain, we introduce two multi-agent intention tasks: simulated agents chasing
+bouncing particles and micromanagement analysis in professional StarCraft II
+games. Our algorithm achieves comparable accuracy with a lower parameter count,
+faster training and inference compared to existing methods.",http://arxiv.org/pdf/2410.08681v1,,False
+GAI-Enabled Explainable Personalized Federated Semi-Supervised Learning,11/10/2024,"Yubo Peng, Feibo Jiang, Li Dong, Kezhi Wang, Kun Yang","Federated learning (FL) is a commonly distributed algorithm for mobile users
+(MUs) training artificial intelligence (AI) models, however, several challenges
+arise when applying FL to real-world scenarios, such as label scarcity, non-IID
+data, and unexplainability. As a result, we propose an explainable personalized
+FL framework, called XPFL. First, we introduce a generative AI (GAI) assisted
+personalized federated semi-supervised learning, called GFed. Particularly, in
+local training, we utilize a GAI model to learn from large unlabeled data and
+apply knowledge distillation-based semi-supervised learning to train the local
+FL model using the knowledge acquired from the GAI model. In global
+aggregation, we obtain the new local FL model by fusing the local and global FL
+models in specific proportions, allowing each local model to incorporate
+knowledge from others while preserving its personalized characteristics.
+Second, we propose an explainable AI mechanism for FL, named XFed.
+Specifically, in local training, we apply a decision tree to match the input
+and output of the local FL model. In global aggregation, we utilize
+t-distributed stochastic neighbor embedding (t-SNE) to visualize the local
+models before and after aggregation. Finally, simulation results validate the
+effectiveness of the proposed XPFL framework.",http://arxiv.org/pdf/2410.08634v1,,False
+Transformers Provably Solve Parity Efficiently with Chain of Thought,11/10/2024,"Juno Kim, Taiji Suzuki","This work provides the first theoretical analysis of training transformers to
+solve complex problems by recursively generating intermediate states, analogous
+to fine-tuning for chain-of-thought (CoT) reasoning. We consider training a
+one-layer transformer to solve the fundamental $k$-parity problem, extending
+the work on RNNs by Wies et al. (2023). We establish three key results: (1) any
+finite-precision gradient-based algorithm, without intermediate supervision,
+requires substantial iterations to solve parity with finite samples. (2) In
+contrast, when intermediate parities are incorporated into the loss function,
+our model can learn parity in one gradient update when aided by \emph{teacher
+forcing}, where ground-truth labels of the reasoning chain are provided at each
+generation step. (3) Even without teacher forcing, where the model must
+generate CoT chains end-to-end, parity can be learned efficiently if augmented
+data is employed to internally verify the soundness of intermediate steps.
+These results rigorously show that task decomposition and stepwise reasoning
+naturally arise from optimizing transformers with CoT; moreover,
+self-consistency checking can improve reasoning ability, aligning with
+empirical studies of CoT.",http://arxiv.org/pdf/2410.08633v1,,False
+Synth-SONAR: Sonar Image Synthesis with Enhanced Diversity and Realism via Dual Diffusion Models and GPT Prompting,11/10/2024,"Purushothaman Natarajan, Kamal Basha, Athira Nambiar","Sonar image synthesis is crucial for advancing applications in underwater
+exploration, marine biology, and defence. Traditional methods often rely on
+extensive and costly data collection using sonar sensors, jeopardizing data
+quality and diversity. To overcome these limitations, this study proposes a new
+sonar image synthesis framework, Synth-SONAR leveraging diffusion models and
+GPT prompting. The key novelties of Synth-SONAR are threefold: First, by
+integrating Generative AI-based style injection techniques along with publicly
+available real/simulated data, thereby producing one of the largest sonar data
+corpus for sonar research. Second, a dual text-conditioning sonar diffusion
+model hierarchy synthesizes coarse and fine-grained sonar images with enhanced
+quality and diversity. Third, high-level (coarse) and low-level (detailed)
+text-based sonar generation methods leverage advanced semantic information
+available in visual language models (VLMs) and GPT-prompting. During inference,
+the method generates diverse and realistic sonar images from textual prompts,
+bridging the gap between textual descriptions and sonar image generation. This
+marks the application of GPT-prompting in sonar imagery for the first time, to
+the best of our knowledge. Synth-SONAR achieves state-of-the-art results in
+producing high-quality synthetic sonar datasets, significantly enhancing their
+diversity and realism.",http://arxiv.org/pdf/2410.08612v1,,False
+MergePrint: Robust Fingerprinting against Merging Large Language Models,11/10/2024,"Shojiro Yamabe, Tsubasa Takahashi, Futa Waseda, Koki Wataoka","As the cost of training large language models (LLMs) rises, protecting their
+intellectual property has become increasingly critical. Model merging, which
+integrates multiple expert models into a single model capable of performing
+multiple tasks, presents a growing risk of unauthorized and malicious usage.
+While fingerprinting techniques have been studied for asserting model
+ownership, existing methods have primarily focused on fine-tuning, leaving
+model merging underexplored. To address this gap, we propose a novel
+fingerprinting method MergePrint that embeds robust fingerprints designed to
+preserve ownership claims even after model merging. By optimizing against a
+pseudo-merged model, which simulates post-merged model weights, MergePrint
+generates fingerprints that remain detectable after merging. Additionally, we
+optimize the fingerprint inputs to minimize performance degradation, enabling
+verification through specific outputs from targeted inputs. This approach
+provides a practical fingerprinting strategy for asserting ownership in cases
+of misappropriation through model merging.",http://arxiv.org/pdf/2410.08604v1,,False
+Intent-Enhanced Data Augmentation for Sequential Recommendation,11/10/2024,"Shuai Chen, Zhoujun Li","The research on intent-enhanced sequential recommendation algorithms focuses
+on how to better mine dynamic user intent based on user behavior data for
+sequential recommendation tasks. Various data augmentation methods are widely
+applied in current sequential recommendation algorithms, effectively enhancing
+the ability to capture user intent. However, these widely used data
+augmentation methods often rely on a large amount of random sampling, which can
+introduce excessive noise into the training data, blur user intent, and thus
+negatively affect recommendation performance. Additionally, these methods have
+limited approaches to utilizing augmented data, failing to fully leverage the
+augmented samples. We propose an intent-enhanced data augmentation method for
+sequential recommendation(\textbf{IESRec}), which constructs positive and
+negative samples based on user behavior sequences through intent-segment
+insertion. On one hand, the generated positive samples are mixed with the
+original training data, and they are trained together to improve recommendation
+performance. On the other hand, the generated positive and negative samples are
+used to build a contrastive loss function, enhancing recommendation performance
+through self-supervised training. Finally, the main recommendation task is
+jointly trained with the contrastive learning loss minimization task.
+Experiments on three real-world datasets validate the effectiveness of our
+IESRec model.",http://arxiv.org/pdf/2410.08583v1,,False
+AdvDiffuser: Generating Adversarial Safety-Critical Driving Scenarios via Guided Diffusion,11/10/2024,"Yuting Xie, Xianda Guo, Cong Wang, Kunhua Liu, Long Chen","Safety-critical scenarios are infrequent in natural driving environments but
+hold significant importance for the training and testing of autonomous driving
+systems. The prevailing approach involves generating safety-critical scenarios
+automatically in simulation by introducing adversarial adjustments to natural
+environments. These adjustments are often tailored to specific tested systems,
+thereby disregarding their transferability across different systems. In this
+paper, we propose AdvDiffuser, an adversarial framework for generating
+safety-critical driving scenarios through guided diffusion. By incorporating a
+diffusion model to capture plausible collective behaviors of background
+vehicles and a lightweight guide model to effectively handle adversarial
+scenarios, AdvDiffuser facilitates transferability. Experimental results on the
+nuScenes dataset demonstrate that AdvDiffuser, trained on offline driving logs,
+can be applied to various tested systems with minimal warm-up episode data and
+outperform other existing methods in terms of realism, diversity, and
+adversarial performance.",http://arxiv.org/pdf/2410.08453v1,,False

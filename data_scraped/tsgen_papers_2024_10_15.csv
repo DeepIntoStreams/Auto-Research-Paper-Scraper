@@ -1,0 +1,417 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Depth Any Video with Scalable Synthetic Data,14/10/2024,"Honghui Yang, Di Huang, Wei Yin, Chunhua Shen, Haifeng Liu, Xiaofei He, Binbin Lin, Wanli Ouyang, Tong He","Video depth estimation has long been hindered by the scarcity of consistent
+and scalable ground truth data, leading to inconsistent and unreliable results.
+In this paper, we introduce Depth Any Video, a model that tackles the challenge
+through two key innovations. First, we develop a scalable synthetic data
+pipeline, capturing real-time video depth data from diverse synthetic
+environments, yielding 40,000 video clips of 5-second duration, each with
+precise depth annotations. Second, we leverage the powerful priors of
+generative video diffusion models to handle real-world videos effectively,
+integrating advanced techniques such as rotary position encoding and flow
+matching to further enhance flexibility and efficiency. Unlike previous models,
+which are limited to fixed-length video sequences, our approach introduces a
+novel mixed-duration training strategy that handles videos of varying lengths
+and performs robustly across different frame rates-even on single frames. At
+inference, we propose a depth interpolation method that enables our model to
+infer high-resolution video depth across sequences of up to 150 frames. Our
+model outperforms all previous generative depth models in terms of spatial
+accuracy and temporal consistency.",http://arxiv.org/pdf/2410.10815v1,,False
+When Attention Sink Emerges in Language Models: An Empirical View,14/10/2024,"Xiangming Gu, Tianyu Pang, Chao Du, Qian Liu, Fengzhuo Zhang, Cunxiao Du, Ye Wang, Min Lin","Language Models (LMs) assign significant attention to the first token, even
+if it is not semantically important, which is known as attention sink. This
+phenomenon has been widely adopted in applications such as streaming/long
+context generation, KV cache optimization, inference acceleration, model
+quantization, and others. Despite its widespread use, a deep understanding of
+attention sink in LMs is still lacking. In this work, we first demonstrate that
+attention sinks exist universally in LMs with various inputs, even in small
+models. Furthermore, attention sink is observed to emerge during the LM
+pre-training, motivating us to investigate how optimization, data distribution,
+loss function, and model architecture in LM pre-training influence its
+emergence. We highlight that attention sink emerges after effective
+optimization on sufficient training data. The sink position is highly
+correlated with the loss function and data distribution. Most importantly, we
+find that attention sink acts more like key biases, storing extra attention
+scores, which could be non-informative and not contribute to the value
+computation. We also observe that this phenomenon (at least partially) stems
+from tokens' inner dependence on attention scores as a result of softmax
+normalization. After relaxing such dependence by replacing softmax attention
+with other attention operations, such as sigmoid attention without
+normalization, attention sinks do not emerge in LMs up to 1B parameters. The
+code is available at https://github.com/sail-sg/Attention-Sink.",http://arxiv.org/pdf/2410.10781v1,,False
+Adaptive Diffusion Terrain Generator for Autonomous Uneven Terrain Navigation,14/10/2024,"Youwei Yu, Junhong Xu, Lantao Liu","Model-free reinforcement learning has emerged as a powerful method for
+developing robust robot control policies capable of navigating through complex
+and unstructured terrains. The effectiveness of these methods hinges on two
+essential elements: (1) the use of massively parallel physics simulations to
+expedite policy training, and (2) an environment generator tasked with crafting
+sufficiently challenging yet attainable terrains to facilitate continuous
+policy improvement. Existing methods of environment generation often rely on
+heuristics constrained by a set of parameters, limiting the diversity and
+realism. In this work, we introduce the Adaptive Diffusion Terrain Generator
+(ADTG), a novel method that leverages Denoising Diffusion Probabilistic Models
+to dynamically expand existing training environments by adding more diverse and
+complex terrains adaptive to the current policy. ADTG guides the diffusion
+model's generation process through initial noise optimization, blending
+noise-corrupted terrains from existing training environments weighted by the
+policy's performance in each corresponding environment. By manipulating the
+noise corruption level, ADTG seamlessly transitions between generating similar
+terrains for policy fine-tuning and novel ones to expand training diversity.
+Our experiments show that the policy trained by ADTG outperforms both
+procedural generated and natural environments, along with popular navigation
+methods.",http://arxiv.org/pdf/2410.10766v1,,False
+AFlow: Automating Agentic Workflow Generation,14/10/2024,"Jiayi Zhang, Jinyu Xiang, Zhaoyang Yu, Fengwei Teng, Xionghui Chen, Jiaqi Chen, Mingchen Zhuge, Xin Cheng, Sirui Hong, Jinlin Wang, Bingnan Zheng, Bang Liu, Yuyu Luo, Chenglin Wu","Large language models (LLMs) have demonstrated remarkable potential in
+solving complex tasks across diverse domains, typically by employing agentic
+workflows that follow detailed instructions and operational sequences. However,
+constructing these workflows requires significant human effort, limiting
+scalability and generalizability. Recent research has sought to automate the
+generation and optimization of these workflows, but existing methods still rely
+on initial manual setup and fall short of achieving fully automated and
+effective workflow generation. To address this challenge, we reformulate
+workflow optimization as a search problem over code-represented workflows,
+where LLM-invoking nodes are connected by edges. We introduce AFlow, an
+automated framework that efficiently explores this space using Monte Carlo Tree
+Search, iteratively refining workflows through code modification,
+tree-structured experience, and execution feedback. Empirical evaluations
+across six benchmark datasets demonstrate AFlow's efficacy, yielding a 5.7%
+average improvement over state-of-the-art baselines. Furthermore, AFlow enables
+smaller models to outperform GPT-4o on specific tasks at 4.55% of its inference
+cost in dollars. The code will be available at
+https://github.com/geekan/MetaGPT.",http://arxiv.org/pdf/2410.10762v1,,False
+SplitLLM: Collaborative Inference of LLMs for Model Placement and Throughput Optimization,14/10/2024,"Akrit Mudvari, Yuang Jiang, Leandros Tassiulas","Large language models (LLMs) have been a disruptive innovation in recent
+years, and they play a crucial role in our daily lives due to their ability to
+understand and generate human-like text. Their capabilities include natural
+language understanding, information retrieval and search, translation,
+chatbots, virtual assistance, and many more. However, it is well known that
+LLMs are massive in terms of the number of parameters. Additionally, the
+self-attention mechanism in the underlying architecture of LLMs, Transformers,
+has quadratic complexity in terms of both computation and memory with respect
+to the input sequence length. For these reasons, LLM inference is
+resource-intensive, and thus, the throughput of LLM inference is limited,
+especially for the longer sequences. In this report, we design a collaborative
+inference architecture between a server and its clients to alleviate the
+throughput limit. In this design, we consider the available resources on both
+sides, i.e., the computation and communication costs. We develop a dynamic
+programming-based algorithm to optimally allocate computation between the
+server and the client device to increase the server throughput, while not
+violating the service level agreement (SLA). We show in the experiments that we
+are able to efficiently distribute the workload allowing for roughly 1/3
+reduction in the server workload, while achieving 19 percent improvement over a
+greedy method. As a result, we are able to demonstrate that, in an environment
+with different types of LLM inference requests, the throughput of the server is
+improved.",http://arxiv.org/pdf/2410.10759v1,,False
+Embedding Self-Correction as an Inherent Ability in Large Language Models for Enhanced Mathematical Reasoning,14/10/2024,"Kuofeng Gao, Huanqia Cai, Qingyao Shuai, Dihong Gong, Zhifeng Li","Accurate mathematical reasoning with Large Language Models (LLMs) is crucial
+in revolutionizing domains that heavily rely on such reasoning. However, LLMs
+often encounter difficulties in certain aspects of mathematical reasoning,
+leading to flawed reasoning and erroneous results. To mitigate these issues, we
+introduce a novel mechanism, the Chain of Self-Correction (CoSC), specifically
+designed to embed self-correction as an inherent ability in LLMs, enabling them
+to validate and rectify their own results. The CoSC mechanism operates through
+a sequence of self-correction stages. In each stage, the LLMs generate a
+program to address a given problem, execute this program using program-based
+tools to obtain an output, subsequently verify this output. Based on the
+verification, the LLMs either proceed to the next correction stage or finalize
+the answer. This iterative self-correction process allows the LLMs to refine
+their reasoning steps and improve the accuracy of their mathematical reasoning.
+To enable the CoSC mechanism at a low cost, we employ a two-phase finetuning
+approach. In the first phase, the LLMs are trained with a relatively small
+volume of seeding data generated from GPT-4, establishing an initial CoSC
+capability. In the second phase, the CoSC capability is further enhanced by
+training with a larger volume of self-generated data using the trained model in
+the first phase, without relying on the paid GPT-4. Our comprehensive
+experiments demonstrate that CoSC significantly improves performance on
+traditional mathematical datasets among existing open-source LLMs. Notably, our
+CoSC-Code-34B model achieved a 53.5% score on MATH, the most challenging
+mathematical reasoning dataset in the public domain, surpassing the performance
+of well-established models such as ChatGPT, GPT-4, and even multi-modal LLMs
+like GPT-4V, Gemini-1.0 Pro, and Gemini-1.0 Ultra.",http://arxiv.org/pdf/2410.10735v1,,False
+Lambda-Skip Connections: the architectural component that prevents Rank Collapse,14/10/2024,"Federico Arangath Joseph, Jerome Sieber, Melanie N. Zeilinger, Carmen Amo Alonso","Rank collapse, a phenomenon where embedding vectors in sequence models
+rapidly converge to a uniform token or equilibrium state, has recently gained
+attention in the deep learning literature. This phenomenon leads to reduced
+expressivity and potential training instabilities due to vanishing gradients.
+Empirical evidence suggests that architectural components like skip
+connections, LayerNorm, and MultiLayer Perceptrons (MLPs) play critical roles
+in mitigating rank collapse. While this issue is well-documented for
+transformers, alternative sequence models, such as State Space Models (SSMs),
+which have recently gained prominence, have not been thoroughly examined for
+similar vulnerabilities. This paper extends the theory of rank collapse from
+transformers to SSMs using a unifying framework that captures both
+architectures. We study how a parametrized version of the classic skip
+connection component, which we call \emph{lambda-skip connections}, provides
+guarantees for rank collapse prevention. Through analytical results, we present
+a sufficient condition to guarantee prevention of rank collapse across all the
+aforementioned architectures. We also study the necessity of this condition via
+ablation studies and analytical examples. To our knowledge, this is the first
+study that provides a general guarantee to prevent rank collapse, and that
+investigates rank collapse in the context of SSMs, offering valuable
+understanding for both theoreticians and practitioners. Finally, we validate
+our findings with experiments demonstrating the crucial role of architectural
+components such as skip connections and gating mechanisms in preventing rank
+collapse.",http://arxiv.org/pdf/2410.10609v1,,False
+SLaNC: Static LayerNorm Calibration,14/10/2024,"Mahsa Salmani, Nikita Trukhanov, Ilya Soloveychik","The ever increasing sizes of Large Language Models (LLMs) beyond hundreds of
+billions of parameters have generated enormous pressure on the manufacturers of
+dedicated hardware accelerators and made the innovative design of the latter
+one of the most rapidly expanding fields of the AI industry. Various approaches
+have been explored to enable efficient and accurate processing of LLMs on the
+available accelerators given their computational and storage limitations. Among
+these, various quantization techniques have become the main focus of the
+community as a means of reducing the compute, communication and storage
+requirements. Quantization to lower precision formats naturally poses a number
+of challenges caused by the limited range of the available value
+representations. When it comes to processing the popular Transformer models on
+hardware, one of the main issues becomes calculation of the LayerNorm simply
+because accumulation of the variance requires a much wider dynamic range than
+the hardware enables. In this article, we address this matter and propose a
+computationally-efficient scaling technique that can be easily applied to
+Transformer models during inference. Our method suggests a straightforward way
+of scaling the LayerNorm inputs based on the static weights of the immediately
+preceding linear layers. The scaling factors are computed offline, based solely
+on the linear layer weights, hence no latency or computational overhead is
+added during inference. Most importantly, our technique ensures that no
+numerical issues such as overflow or underflow could happen during the compute.
+This approach offers smooth, accurate and resource-effective inference across a
+wide range of hardware architectures. The article provides theoretical
+justification as well as supporting numerical simulations.",http://arxiv.org/pdf/2410.10553v1,,False
+Transparent Networks for Multivariate Time Series,14/10/2024,"Minkyu Kim, Suan Lee, Jinho Kim","Transparent models, which are machine learning models that produce inherently
+interpretable predictions, are receiving significant attention in high-stakes
+domains. However, despite much real-world data being collected as time series,
+there is a lack of studies on transparent time series models. To address this
+gap, we propose a novel transparent neural network model for time series called
+Generalized Additive Time Series Model (GATSM). GATSM consists of two parts: 1)
+independent feature networks to learn feature representations, and 2) a
+transparent temporal module to learn temporal patterns across different time
+steps using the feature representations. This structure allows GATSM to
+effectively capture temporal patterns and handle dynamic-length time series
+while preserving transparency. Empirical experiments show that GATSM
+significantly outperforms existing generalized additive models and achieves
+comparable performance to black-box time series models, such as recurrent
+neural networks and Transformer. In addition, we demonstrate that GATSM finds
+interesting patterns in time series. The source code is available at
+https://github.com/gim4855744/GATSM.",http://arxiv.org/pdf/2410.10535v1,,False
+Get Rid of Task Isolation: A Continuous Multi-task Spatio-Temporal Learning Framework,14/10/2024,"Zhongchao Yi, Zhengyang Zhou, Qihe Huang, Yanjiang Chen, Liheng Yu, Xu Wang, Yang Wang","Spatiotemporal learning has become a pivotal technique to enable urban
+intelligence. Traditional spatiotemporal models mostly focus on a specific task
+by assuming a same distribution between training and testing sets. However,
+given that urban systems are usually dynamic, multi-sourced with imbalanced
+data distributions, current specific task-specific models fail to generalize to
+new urban conditions and adapt to new domains without explicitly modeling
+interdependencies across various dimensions and types of urban data. To this
+end, we argue that there is an essential to propose a Continuous Multi-task
+Spatio-Temporal learning framework (CMuST) to empower collective urban
+intelligence, which reforms the urban spatiotemporal learning from
+single-domain to cooperatively multi-dimensional and multi-task learning.
+Specifically, CMuST proposes a new multi-dimensional spatiotemporal interaction
+network (MSTI) to allow cross-interactions between context and main
+observations as well as self-interactions within spatial and temporal aspects
+to be exposed, which is also the core for capturing task-level commonality and
+personalization. To ensure continuous task learning, a novel Rolling Adaptation
+training scheme (RoAda) is devised, which not only preserves task uniqueness by
+constructing data summarization-driven task prompts, but also harnesses
+correlated patterns among tasks by iterative model behavior modeling. We
+further establish a benchmark of three cities for multi-task spatiotemporal
+learning, and empirically demonstrate the superiority of CMuST via extensive
+evaluations on these datasets. The impressive improvements on both few-shot
+streaming data and new domain tasks against existing SOAT methods are achieved.
+Code is available at https://github.com/DILab-USTCSZ/CMuST.",http://arxiv.org/pdf/2410.10524v1,,False
+Artificial Intelligence-Based Triaging of Cutaneous Melanocytic Lesions,14/10/2024,"Ruben T. Lucassen, Nikolas Stathonikos, Gerben E. Breimer, Mitko Veta, Willeke A. M. Blokx","Pathologists are facing an increasing workload due to a growing volume of
+cases and the need for more comprehensive diagnoses. Aiming to facilitate
+workload reduction and faster turnaround times, we developed an artificial
+intelligence (AI) model for triaging cutaneous melanocytic lesions based on
+whole slide images. The AI model was developed and validated using a
+retrospective cohort from the UMC Utrecht. The dataset consisted of 52,202
+whole slide images from 27,167 unique specimens, acquired from 20,707 patients.
+Specimens with only common nevi were assigned to the low complexity category
+(86.6%). In contrast, specimens with any other melanocytic lesion subtype,
+including non-common nevi, melanocytomas, and melanomas, were assigned to the
+high complexity category (13.4%). The dataset was split on patient level into a
+development set (80%) and test sets (20%) for independent evaluation.
+Predictive performance was primarily measured using the area under the receiver
+operating characteristic curve (AUROC) and the area under the precision-recall
+curve (AUPRC). A simulation experiment was performed to study the effect of
+implementing AI-based triaging in the clinic. The AI model reached an AUROC of
+0.966 (95% CI, 0.960-0.972) and an AUPRC of 0.857 (95% CI, 0.836-0.877) on the
+in-distribution test set, and an AUROC of 0.899 (95% CI, 0.860-0.934) and an
+AUPRC of 0.498 (95% CI, 0.360-0.639) on the out-of-distribution test set. In
+the simulation experiment, using random case assignment as baseline, AI-based
+triaging prevented an average of 43.9 (95% CI, 36-55) initial examinations of
+high complexity cases by general pathologists for every 500 cases. In
+conclusion, the AI model achieved a strong predictive performance in
+differentiating between cutaneous melanocytic lesions of high and low
+complexity. The improvement in workflow efficiency due to AI-based triaging
+could be substantial.",http://arxiv.org/pdf/2410.10509v1,,False
+GIFT-Eval: A Benchmark For General Time Series Forecasting Model Evaluation,14/10/2024,"Taha Aksu, Gerald Woo, Juncheng Liu, Xu Liu, Chenghao Liu, Silvio Savarese, Caiming Xiong, Doyen Sahoo","Time series foundation models excel in zero-shot forecasting, handling
+diverse tasks without explicit training. However, the advancement of these
+models has been hindered by the lack of comprehensive benchmarks. To address
+this gap, we introduce the General Time Series Forecasting Model Evaluation,
+GIFT-Eval, a pioneering benchmark aimed at promoting evaluation across diverse
+datasets. GIFT-Eval encompasses 28 datasets over 144,000 time series and 177
+million data points, spanning seven domains, 10 frequencies, multivariate
+inputs, and prediction lengths ranging from short to long-term forecasts. To
+facilitate the effective pretraining and evaluation of foundation models, we
+also provide a non-leaking pretraining dataset containing approximately 230
+billion data points. Additionally, we provide a comprehensive analysis of 17
+baselines, which includes statistical models, deep learning models, and
+foundation models. We discuss each model in the context of various benchmark
+characteristics and offer a qualitative analysis that spans both deep learning
+and foundation models. We believe the insights from this analysis, along with
+access to this new standard zero-shot time series forecasting benchmark, will
+guide future developments in time series foundation models. The codebase,
+datasets, and a leaderboard showing all the results in detail will be available
+soon.",http://arxiv.org/pdf/2410.10393v1,,False
+Matrix Sketching in Bandits: Current Pitfalls and New Framework,14/10/2024,"Dongxie Wen, Hanyan Yin, Xiao Zhang, Zhewei Wei","The utilization of sketching techniques has progressively emerged as a
+pivotal method for enhancing the efficiency of online learning. In linear
+bandit settings, current sketch-based approaches leverage matrix sketching to
+reduce the per-round time complexity from \(\Omega\left(d^2\right)\) to
+\(O(d)\), where \(d\) is the input dimension. Despite this improved efficiency,
+these approaches encounter critical pitfalls: if the spectral tail of the
+covariance matrix does not decrease rapidly, it can lead to linear regret. In
+this paper, we revisit the regret analysis and algorithm design concerning
+approximating the covariance matrix using matrix sketching in linear bandits.
+We illustrate how inappropriate sketch sizes can result in unbounded spectral
+loss, thereby causing linear regret. To prevent this issue, we propose Dyadic
+Block Sketching, an innovative streaming matrix sketching approach that
+adaptively manages sketch size to constrain global spectral loss. This approach
+effectively tracks the best rank-\( k \) approximation in an online manner,
+ensuring efficiency when the geometry of the covariance matrix is favorable.
+Then, we apply the proposed Dyadic Block Sketching to linear bandits and
+demonstrate that the resulting bandit algorithm can achieve sublinear regret
+without prior knowledge of the covariance matrix, even under the worst case.
+Our method is a general framework for efficient sketch-based linear bandits,
+applicable to all existing sketch-based approaches, and offers improved regret
+bounds accordingly. Additionally, we conduct comprehensive empirical studies
+using both synthetic and real-world data to validate the accuracy of our
+theoretical findings and to highlight the effectiveness of our algorithm.",http://arxiv.org/pdf/2410.10258v1,,False
+Learning via Surrogate PAC-Bayes,14/10/2024,"Antoine Picard-Weibel, Roman Moscoviz, Benjamin Guedj","PAC-Bayes learning is a comprehensive setting for (i) studying the
+generalisation ability of learning algorithms and (ii) deriving new learning
+algorithms by optimising a generalisation bound. However, optimising
+generalisation bounds might not always be viable for tractable or computational
+reasons, or both. For example, iteratively querying the empirical risk might
+prove computationally expensive. In response, we introduce a novel principled
+strategy for building an iterative learning algorithm via the optimisation of a
+sequence of surrogate training objectives, inherited from PAC-Bayes
+generalisation bounds. The key argument is to replace the empirical risk (seen
+as a function of hypotheses) in the generalisation bound by its projection onto
+a constructible low dimensional functional space: these projections can be
+queried much more efficiently than the initial risk. On top of providing that
+generic recipe for learning via surrogate PAC-Bayes bounds, we (i) contribute
+theoretical results establishing that iteratively optimising our surrogates
+implies the optimisation of the original generalisation bounds, (ii)
+instantiate this strategy to the framework of meta-learning, introducing a
+meta-objective offering a closed form expression for meta-gradient, (iii)
+illustrate our approach with numerical experiments inspired by an industrial
+biochemical problem.",http://arxiv.org/pdf/2410.10230v1,,False
+Balanced Neural ODEs: nonlinear model order reduction and Koopman operator approxmations,14/10/2024,"Julius Aka, Johannes Brunnemann, Jörg Eiden, Arne Speerforck, Lars Mikelsons","Variational Autoencoders (VAEs) are a powerful framework for learning compact
+latent representations, while NeuralODEs excel in learning transient system
+dynamics. This work combines the strengths of both to create fast surrogate
+models with adjustable complexity. By leveraging the VAE's dimensionality
+reduction using a non-hierarchical prior, our method adaptively assigns
+stochastic noise, naturally complementing known NeuralODE training enhancements
+and enabling probabilistic time series modeling. We show that standard Latent
+ODEs struggle with dimensionality reduction in systems with time-varying
+inputs. Our approach mitigates this by continuously propagating variational
+parameters through time, establishing fixed information channels in latent
+space. This results in a flexible and robust method that can learn different
+system complexities, e.g. deep neural networks or linear matrices. Hereby, it
+enables efficient approximation of the Koopman operator without the need for
+predefining its dimensionality. As our method balances dimensionality reduction
+and reconstruction accuracy, we call it Balanced Neural ODE (B-NODE). We
+demonstrate the effectiveness of this method on academic test cases and apply
+it to a real-world example of a thermal power plant.",http://arxiv.org/pdf/2410.10174v1,,False
+MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models,14/10/2024,"Peng Xia, Siwei Han, Shi Qiu, Yiyang Zhou, Zhaoyang Wang, Wenhao Zheng, Zhaorun Chen, Chenhang Cui, Mingyu Ding, Linjie Li, Lijuan Wang, Huaxiu Yao","Interleaved multimodal comprehension and generation, enabling models to
+produce and interpret both images and text in arbitrary sequences, have become
+a pivotal area in multimodal learning. Despite significant advancements, the
+evaluation of this capability remains insufficient. Existing benchmarks suffer
+from limitations in data scale, scope, and evaluation depth, while current
+evaluation metrics are often costly or biased, lacking in reliability for
+practical applications. To address these challenges, we introduce MMIE, a
+large-scale knowledge-intensive benchmark for evaluating interleaved multimodal
+comprehension and generation in Large Vision-Language Models (LVLMs). MMIE
+comprises 20K meticulously curated multimodal queries, spanning 3 categories,
+12 fields, and 102 subfields, including mathematics, coding, physics,
+literature, health, and arts. It supports both interleaved inputs and outputs,
+offering a mix of multiple-choice and open-ended question formats to evaluate
+diverse competencies. Moreover, we propose a reliable automated evaluation
+metric, leveraging a scoring model fine-tuned with human-annotated data and
+systematic evaluation criteria, aimed at reducing bias and improving evaluation
+accuracy. Extensive experiments demonstrate the effectiveness of our benchmark
+and metrics in providing a comprehensive evaluation of interleaved LVLMs.
+Specifically, we evaluate eight LVLMs, revealing that even the best models show
+significant room for improvement, with most achieving only moderate results. We
+believe MMIE will drive further advancements in the development of interleaved
+LVLMs. We publicly release our benchmark and code in
+https://mmie-bench.github.io/.",http://arxiv.org/pdf/2410.10139v1,,False
+FormalAlign: Automated Alignment Evaluation for Autoformalization,14/10/2024,"Jianqiao Lu, Yingjia Wan, Yinya Huang, Jing Xiong, Zhengying Liu, Zhijiang Guo","Autoformalization aims to convert informal mathematical proofs into
+machine-verifiable formats, bridging the gap between natural and formal
+languages. However, ensuring semantic alignment between the informal and
+formalized statements remains challenging. Existing approaches heavily rely on
+manual verification, hindering scalability. To address this, we introduce
+\textsc{FormalAlign}, the first automated framework designed for evaluating the
+alignment between natural and formal languages in autoformalization.
+\textsc{FormalAlign} trains on both the autoformalization sequence generation
+task and the representational alignment between input and output, employing a
+dual loss that combines a pair of mutually enhancing autoformalization and
+alignment tasks. Evaluated across four benchmarks augmented by our proposed
+misalignment strategies, \textsc{FormalAlign} demonstrates superior
+performance. In our experiments, \textsc{FormalAlign} outperforms GPT-4,
+achieving an Alignment-Selection Score 11.58\% higher on \forml-Basic (99.21\%
+vs. 88.91\%) and 3.19\% higher on MiniF2F-Valid (66.39\% vs. 64.34\%). This
+effective alignment evaluation significantly reduces the need for manual
+verification. Both the dataset and code can be accessed
+via~\url{https://github.com/rookie-joe/FormalAlign}.",http://arxiv.org/pdf/2410.10135v1,,False
+Learning Linear Attention in Polynomial Time,14/10/2024,"Morris Yau, Ekin Akyurek, Jiayuan Mao, Joshua B. Tenenbaum, Stefanie Jegelka, Jacob Andreas","Previous research has explored the computational expressivity of Transformer
+models in simulating Boolean circuits or Turing machines. However, the
+learnability of these simulators from observational data has remained an open
+question. Our study addresses this gap by providing the first polynomial-time
+learnability results (specifically strong, agnostic PAC learning) for
+single-layer Transformers with linear attention. We show that linear attention
+may be viewed as a linear predictor in a suitably defined RKHS. As a
+consequence, the problem of learning any linear transformer may be converted
+into the problem of learning an ordinary linear predictor in an expanded
+feature space, and any such predictor may be converted back into a multiheaded
+linear transformer. Moving to generalization, we show how to efficiently
+identify training datasets for which every empirical risk minimizer is
+equivalent (up to trivial symmetries) to the linear Transformer that generated
+the data, thereby guaranteeing the learned model will correctly generalize
+across all inputs. Finally, we provide examples of computations expressible via
+linear attention and therefore polynomial-time learnable, including associative
+memories, finite automata, and a class of Universal Turing Machine (UTMs) with
+polynomially bounded computation histories. We empirically validate our
+theoretical findings on three tasks: learning random linear attention networks,
+key--value associations, and learning to execute finite automata. Our findings
+bridge a critical gap between theoretical expressivity and learnability of
+Transformers, and show that flexible and general models of computation are
+efficiently learnable.",http://arxiv.org/pdf/2410.10101v1,,False
+VideoAgent: Self-Improving Video Generation,14/10/2024,"Achint Soni, Sreyas Venkataraman, Abhranil Chandra, Sebastian Fischmeister, Percy Liang, Bo Dai, Sherry Yang","Video generation has been used to generate visual plans for controlling
+robotic systems. Given an image observation and a language instruction,
+previous work has generated video plans which are then converted to robot
+controls to be executed. However, a major bottleneck in leveraging video
+generation for control lies in the quality of the generated videos, which often
+suffer from hallucinatory content and unrealistic physics, resulting in low
+task success when control actions are extracted from the generated videos.
+While scaling up dataset and model size provides a partial solution,
+integrating external feedback is both natural and essential for grounding video
+generation in the real world. With this observation, we propose VideoAgent for
+self-improving generated video plans based on external feedback. Instead of
+directly executing the generated video plan, VideoAgent first refines the
+generated video plans using a novel procedure which we call self-conditioning
+consistency, utilizing feedback from a pretrained vision-language model (VLM).
+As the refined video plan is being executed, VideoAgent collects additional
+data from the environment to further improve video plan generation. Experiments
+in simulated robotic manipulation from MetaWorld and iTHOR show that VideoAgent
+drastically reduces hallucination, thereby boosting success rate of downstream
+manipulation tasks. We further illustrate that VideoAgent can effectively
+refine real-robot videos, providing an early indicator that robotics can be an
+effective tool in grounding video generation in the physical world.",http://arxiv.org/pdf/2410.10076v1,,False
+Self-Organizing Recurrent Stochastic Configuration Networks for Nonstationary Data Modelling,14/10/2024,"Gang Dang, Dianhui Wang","Recurrent stochastic configuration networks (RSCNs) are a class of randomized
+learner models that have shown promise in modelling nonlinear dynamics. In many
+fields, however, the data generated by industry systems often exhibits
+nonstationary characteristics, leading to the built model performing well on
+the training data but struggling with the newly arriving data. This paper aims
+at developing a self-organizing version of RSCNs, termed as SORSCNs, to enhance
+the continuous learning ability of the network for modelling nonstationary
+data. SORSCNs can autonomously adjust the network parameters and reservoir
+structure according to the data streams acquired in real-time. The output
+weights are updated online using the projection algorithm, while the network
+structure is dynamically adjusted in the light of the recurrent stochastic
+configuration algorithm and an improved sensitivity analysis. Comprehensive
+comparisons among the echo state network (ESN), online self-learning stochastic
+configuration network (OSL-SCN), self-organizing modular ESN (SOMESN), RSCN,
+and SORSCN are carried out. Experimental results clearly demonstrate that the
+proposed SORSCNs outperform other models with sound generalization, indicating
+great potential in modelling nonlinear systems with nonstationary dynamics.",http://arxiv.org/pdf/2410.10072v1,,False

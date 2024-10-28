@@ -1,0 +1,271 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning,25/10/2024,"Xiangyu Zeng, Kunchang Li, Chenting Wang, Xinhao Li, Tianxiang Jiang, Ziang Yan, Songze Li, Yansong Shi, Zhengrong Yue, Yi Wang, Yali Wang, Yu Qiao, Limin Wang","Multimodal Large Language Models (MLLMs) have demonstrated impressive
+performance in short video understanding. However, understanding long-form
+videos still remains challenging for MLLMs. This paper proposes TimeSuite, a
+collection of new designs to adapt the existing short-form video MLLMs for long
+video understanding, including a simple yet efficient framework to process long
+video sequence, a high-quality video dataset for grounded tuning of MLLMs, and
+a carefully-designed instruction tuning task to explicitly incorporate the
+grounding supervision in the traditional QA format. Specifically, based on
+VideoChat, we propose our long-video MLLM, coined as VideoChat-T, by
+implementing a token shuffling to compress long video tokens and introducing
+Temporal Adaptive Position Encoding (TAPE) to enhance the temporal awareness of
+visual representation. Meanwhile, we introduce the TimePro, a comprehensive
+grounding-centric instruction tuning dataset composed of 9 tasks and 349k
+high-quality grounded annotations. Notably, we design a new instruction tuning
+task type, called Temporal Grounded Caption, to peform detailed video
+descriptions with the corresponding time stamps prediction. This explicit
+temporal location prediction will guide MLLM to correctly attend on the visual
+content when generating description, and thus reduce the hallucination risk
+caused by the LLMs. Experimental results demonstrate that our TimeSuite
+provides a successful solution to enhance the long video understanding
+capability of short-form MLLM, achieving improvement of 5.6% and 6.8% on the
+benchmarks of Egoschema and VideoMME, respectively. In addition, VideoChat-T
+exhibits robust zero-shot temporal grounding capabilities, significantly
+outperforming the existing state-of-the-art MLLMs. After fine-tuning, it
+performs on par with the traditional supervised expert models.",http://arxiv.org/pdf/2410.19702v1,,False
+AGENT-CQ: Automatic Generation and Evaluation of Clarifying Questions for Conversational Search with LLMs,25/10/2024,"Clemencia Siro, Yifei Yuan, Mohammad Aliannejadi, Maarten de Rijke","Generating diverse and effective clarifying questions is crucial for
+improving query understanding and retrieval performance in open-domain
+conversational search (CS) systems. We propose AGENT-CQ (Automatic GENeration,
+and evaluaTion of Clarifying Questions), an end-to-end LLM-based framework
+addressing the challenges of scalability and adaptability faced by existing
+methods that rely on manual curation or template-based approaches. AGENT-CQ
+consists of two stages: a generation stage employing LLM prompting strategies
+to generate clarifying questions, and an evaluation stage (CrowdLLM) that
+simulates human crowdsourcing judgments using multiple LLM instances to assess
+generated questions and answers based on comprehensive quality metrics.
+Extensive experiments on the ClariQ dataset demonstrate CrowdLLM's
+effectiveness in evaluating question and answer quality. Human evaluation and
+CrowdLLM show that the AGENT-CQ - generation stage, consistently outperforms
+baselines in various aspects of question and answer quality. In retrieval-based
+evaluation, LLM-generated questions significantly enhance retrieval
+effectiveness for both BM25 and cross-encoder models compared to
+human-generated questions.",http://arxiv.org/pdf/2410.19692v1,,False
+Considerations for Distribution Shift Robustness of Diagnostic Models in Healthcare,25/10/2024,"Arno Blaas, Adam Goliński, Andrew Miller, Luca Zappella, Jörn-Henrik Jacobsen, Christina Heinze-Deml","We consider robustness to distribution shifts in the context of diagnostic
+models in healthcare, where the prediction target $Y$, e.g., the presence of a
+disease, is causally upstream of the observations $X$, e.g., a biomarker.
+Distribution shifts may occur, for instance, when the training data is
+collected in a domain with patients having particular demographic
+characteristics while the model is deployed on patients from a different
+demographic group. In the domain of applied ML for health, it is common to
+predict $Y$ from $X$ without considering further information about the patient.
+However, beyond the direct influence of the disease $Y$ on biomarker $X$, a
+predictive model may learn to exploit confounding dependencies (or shortcuts)
+between $X$ and $Y$ that are unstable under certain distribution shifts. In
+this work, we highlight a data generating mechanism common to healthcare
+settings and discuss how recent theoretical results from the causality
+literature can be applied to build robust predictive models. We theoretically
+show why ignoring covariates as well as common invariant learning approaches
+will in general not yield robust predictors in the studied setting, while
+including certain covariates into the prediction model will. In an extensive
+simulation study, we showcase the robustness (or lack thereof) of different
+predictors under various data generating processes. Lastly, we analyze the
+performance of the different approaches using the PTB-XL dataset, a public
+dataset of annotated ECG recordings.",http://arxiv.org/pdf/2410.19575v1,,False
+PMM-Net: Single-stage Multi-agent Trajectory Prediction with Patching-based Embedding and Explicit Modal Modulation,25/10/2024,"Huajian Liu, Wei Dong, Kunpeng Fan, Chao Wang, Yongzhuo Gao","Analyzing and forecasting trajectories of agents like pedestrians plays a
+pivotal role for embodied intelligent applications. The inherent indeterminacy
+of human behavior and complex social interaction among a rich variety of agents
+make this task more challenging than common time-series forecasting. In this
+letter, we aim to explore a distinct formulation for multi-agent trajectory
+prediction framework. Specifically, we proposed a patching-based temporal
+feature extraction module and a graph-based social feature extraction module,
+enabling effective feature extraction and cross-scenario generalization.
+Moreover, we reassess the role of social interaction and present a novel method
+based on explicit modality modulation to integrate temporal and social
+features, thereby constructing an efficient single-stage inference pipeline.
+Results on public benchmark datasets demonstrate the superior performance of
+our model compared with the state-of-the-art methods. The code is available at:
+github.com/TIB-K330/pmm-net.",http://arxiv.org/pdf/2410.19544v1,,False
+Utilizing Image Transforms and Diffusion Models for Generative Modeling of Short and Long Time Series,25/10/2024,"Ilan Naiman, Nimrod Berman, Itai Pemper, Idan Arbiv, Gal Fadlon, Omri Azencot","Lately, there has been a surge in interest surrounding generative modeling of
+time series data. Most existing approaches are designed either to process short
+sequences or to handle long-range sequences. This dichotomy can be attributed
+to gradient issues with recurrent networks, computational costs associated with
+transformers, and limited expressiveness of state space models. Towards a
+unified generative model for varying-length time series, we propose in this
+work to transform sequences into images. By employing invertible transforms
+such as the delay embedding and the short-time Fourier transform, we unlock
+three main advantages: i) We can exploit advanced diffusion vision models; ii)
+We can remarkably process short- and long-range inputs within the same
+framework; and iii) We can harness recent and established tools proposed in the
+time series to image literature. We validate the effectiveness of our method
+through a comprehensive evaluation across multiple tasks, including
+unconditional generation, interpolation, and extrapolation. We show that our
+approach achieves consistently state-of-the-art results against strong
+baselines. In the unconditional generation tasks, we show remarkable mean
+improvements of 58.17% over previous diffusion models in the short
+discriminative score and 132.61% in the (ultra-)long classification scores.
+Code is at https://github.com/azencot-group/ImagenTime.",http://arxiv.org/pdf/2410.19538v1,,False
+Marked Temporal Bayesian Flow Point Processes,25/10/2024,"Hui Chen, Xuhui Fan, Hengyu Liu, Longbing Cao","Marked event data captures events by recording their continuous-valued
+occurrence timestamps along with their corresponding discrete-valued types.
+They have appeared in various real-world scenarios such as social media,
+financial transactions, and healthcare records, and have been effectively
+modeled through Marked Temporal Point Process (MTPP) models. Recently,
+developing generative models for these MTPP models have seen rapid development
+due to their powerful generative capability and less restrictive functional
+forms. However, existing generative MTPP models are usually challenged in
+jointly modeling events' timestamps and types since: (1) mainstream methods
+design the generative mechanisms for timestamps only and do not include event
+types; (2) the complex interdependence between the timestamps and event types
+are overlooked. In this paper, we propose a novel generative MTPP model called
+BMTPP. Unlike existing generative MTPP models, BMTPP flexibly models marked
+temporal joint distributions using a parameter-based approach. Additionally, by
+adding joint noise to the marked temporal data space, BMTPP effectively
+captures and explicitly reveals the interdependence between timestamps and
+event types. Extensive experiments validate the superiority of our approach
+over other state-of-the-art models and its ability to effectively capture
+marked-temporal interdependence.",http://arxiv.org/pdf/2410.19512v1,,False
+Measuring memorization through probabilistic discoverable extraction,25/10/2024,"Jamie Hayes, Marika Swanberg, Harsh Chaudhari, Itay Yona, Ilia Shumailov","Large language models (LLMs) are susceptible to memorizing training data,
+raising concerns due to the potential extraction of sensitive information.
+Current methods to measure memorization rates of LLMs, primarily discoverable
+extraction (Carlini et al., 2022), rely on single-sequence greedy sampling,
+potentially underestimating the true extent of memorization. This paper
+introduces a probabilistic relaxation of discoverable extraction that
+quantifies the probability of extracting a target sequence within a set of
+generated samples, considering various sampling schemes and multiple attempts.
+This approach addresses the limitations of reporting memorization rates through
+discoverable extraction by accounting for the probabilistic nature of LLMs and
+user interaction patterns. Our experiments demonstrate that this probabilistic
+measure can reveal cases of higher memorization rates compared to rates found
+through discoverable extraction. We further investigate the impact of different
+sampling schemes on extractability, providing a more comprehensive and
+realistic assessment of LLM memorization and its associated risks. Our
+contributions include a new probabilistic memorization definition, empirical
+evidence of its effectiveness, and a thorough evaluation across different
+models, sizes, sampling schemes, and training data repetitions.",http://arxiv.org/pdf/2410.19482v1,,False
+Improving Inverse Folding for Peptide Design with Diversity-regularized Direct Preference Optimization,25/10/2024,"Ryan Park, Darren J. Hsu, C. Brian Roland, Maria Korshunova, Chen Tessler, Shie Mannor, Olivia Viessmann, Bruno Trentini","Inverse folding models play an important role in structure-based design by
+predicting amino acid sequences that fold into desired reference structures.
+Models like ProteinMPNN, a message-passing encoder-decoder model, are trained
+to reliably produce new sequences from a reference structure. However, when
+applied to peptides, these models are prone to generating repetitive sequences
+that do not fold into the reference structure. To address this, we fine-tune
+ProteinMPNN to produce diverse and structurally consistent peptide sequences
+via Direct Preference Optimization (DPO). We derive two enhancements to DPO:
+online diversity regularization and domain-specific priors. Additionally, we
+develop a new understanding on improving diversity in decoder models. When
+conditioned on OpenFold generated structures, our fine-tuned models achieve
+state-of-the-art structural similarity scores, improving base ProteinMPNN by at
+least 8%. Compared to standard DPO, our regularized method achieves up to 20%
+higher sequence diversity with no loss in structural similarity score.",http://arxiv.org/pdf/2410.19471v1,,False
+LOCAL: Learning with Orientation Matrix to Infer Causal Structure from Time Series Data,25/10/2024,"Yue Cheng, Jiajun Zhang, Weiwei Xing, Xiaoyu Guo, Xiaohui Gao","Discovering the underlying Directed Acyclic Graph (DAG) from time series
+observational data is highly challenging due to the dynamic nature and complex
+nonlinear interactions between variables. Existing methods often struggle with
+inefficiency and the handling of high-dimensional data. To address these
+research gap, we propose LOCAL, a highly efficient, easy-to-implement, and
+constraint-free method for recovering dynamic causal structures. LOCAL is the
+first attempt to formulate a quasi-maximum likelihood-based score function for
+learning the dynamic DAG equivalent to the ground truth. On this basis, we
+propose two adaptive modules for enhancing the algebraic characterization of
+acyclicity with new capabilities: Asymptotic Causal Mask Learning (ACML) and
+Dynamic Graph Parameter Learning (DGPL). ACML generates causal masks using
+learnable priority vectors and the Gumbel-Sigmoid function, ensuring the
+creation of DAGs while optimizing computational efficiency. DGPL transforms
+causal learning into decomposed matrix products, capturing the dynamic causal
+structure of high-dimensional data and enhancing interpretability. Extensive
+experiments on synthetic and real-world datasets demonstrate that LOCAL
+significantly outperforms existing methods, and highlight LOCAL's potential as
+a robust and efficient method for dynamic causal discovery. Our code will be
+available soon.",http://arxiv.org/pdf/2410.19464v1,,False
+On the Application of Deep Learning for Precise Indoor Positioning in 6G,25/10/2024,"Sai Prasanth Kotturi, Anil Kumar Yerrapragada, Sai Prasad, Radha Krishna Ganti","Accurate localization in indoor environments is a challenge due to the Non
+Line of Sight (NLoS) nature of the signaling. In this paper, we explore the use
+of AI/ML techniques for positioning accuracy enhancement in Indoor Factory
+(InF) scenarios. The proposed neural network, which we term LocNet, is trained
+on measurements such as Channel Impulse Response (CIR) and Reference Signal
+Received Power (RSRP) from multiple Transmit Receive Points (TRPs). Simulation
+results show that when using measurements from 18 TRPs, LocNet achieves a 9 cm
+positioning accuracy at the 90th percentile. Additionally, we demonstrate that
+the same model generalizes effectively even when measurements from some TRPs
+randomly become unavailable. Lastly, we provide insights on the robustness of
+the trained model to the errors in ground truth labels used for training.",http://arxiv.org/pdf/2410.19436v1,,False
+High Resolution Seismic Waveform Generation using Denoising Diffusion,25/10/2024,"Andreas Bergmeister, Kadek Hendrawan Palgunadi, Andrea Bosisio, Laura Ermert, Maria Koroni, Nathanaël Perraudin, Simon Dirmeier, Men-Andrin Meier","Accurate prediction and synthesis of seismic waveforms are crucial for
+seismic hazard assessment and earthquake-resistant infrastructure design.
+Existing prediction methods, such as Ground Motion Models and physics-based
+simulations, often fail to capture the full complexity of seismic wavefields,
+particularly at higher frequencies. This study introduces a novel, efficient,
+and scalable generative model for high-frequency seismic waveform generation.
+Our approach leverages a spectrogram representation of seismic waveform data,
+which is reduced to a lower-dimensional submanifold via an autoencoder. A
+state-of-the-art diffusion model is trained to generate this latent
+representation, conditioned on key input parameters: earthquake magnitude,
+recording distance, site conditions, and faulting type. The model generates
+waveforms with frequency content up to 50 Hz. Any scalar ground motion
+statistic, such as peak ground motion amplitudes and spectral accelerations,
+can be readily derived from the synthesized waveforms. We validate our model
+using commonly used seismological metrics, and performance metrics from image
+generation studies. Our results demonstrate that our openly available model can
+generate distributions of realistic high-frequency seismic waveforms across a
+wide range of input parameters, even in data-sparse regions. For the scalar
+ground motion statistics commonly used in seismic hazard and earthquake
+engineering studies, we show that the model accurately reproduces both the
+median trends of the real data and its variability. To evaluate and compare the
+growing number of this and similar 'Generative Waveform Models' (GWM), we argue
+that they should generally be openly available and that they should be included
+in community efforts for ground motion model evaluations.",http://arxiv.org/pdf/2410.19343v1,,False
+A prescriptive theory for brain-like inference,25/10/2024,"Hadi Vafaii, Dekel Galor, Jacob L. Yates","The Evidence Lower Bound (ELBO) is a widely used objective for training deep
+generative models, such as Variational Autoencoders (VAEs). In the neuroscience
+literature, an identical objective is known as the variational free energy,
+hinting at a potential unified framework for brain function and machine
+learning. Despite its utility in interpreting generative models, including
+diffusion models, ELBO maximization is often seen as too broad to offer
+prescriptive guidance for specific architectures in neuroscience or machine
+learning. In this work, we show that maximizing ELBO under Poisson assumptions
+for general sequence data leads to a spiking neural network that performs
+Bayesian posterior inference through its membrane potential dynamics. The
+resulting model, the iterative Poisson VAE (iP-VAE), has a closer connection to
+biological neurons than previous brain-inspired predictive coding models based
+on Gaussian assumptions. Compared to amortized and iterative VAEs, iP-VAElearns
+sparser representations and exhibits superior generalization to
+out-of-distribution samples. These findings suggest that optimizing ELBO,
+combined with Poisson assumptions, provides a solid foundation for developing
+prescriptive theories in NeuroAI.",http://arxiv.org/pdf/2410.19315v1,,False
+TEARS: Textual Representations for Scrutable Recommendations,25/10/2024,"Emiliano Penaloza, Olivier Gouvert, Haolun Wu, Laurent Charlin","Traditional recommender systems rely on high-dimensional (latent) embeddings
+for modeling user-item interactions, often resulting in opaque representations
+that lack interpretability. Moreover, these systems offer limited control to
+users over their recommendations. Inspired by recent work, we introduce TExtuAl
+Representations for Scrutable recommendations (TEARS) to address these
+challenges. Instead of representing a user's interests through a latent
+embedding, TEARS encodes them in natural text, providing transparency and
+allowing users to edit them. To do so, TEARS uses a modern LLM to generate user
+summaries based on user preferences. We find the summaries capture user
+preferences uniquely. Using these summaries, we take a hybrid approach where we
+use an optimal transport procedure to align the summaries' representation with
+the learned representation of a standard VAE for collaborative filtering. We
+find this approach can surpass the performance of three popular VAE models
+while providing user-controllable recommendations. We also analyze the
+controllability of TEARS through three simulated user tasks to evaluate the
+effectiveness of a user editing its summary.",http://arxiv.org/pdf/2410.19302v1,,False
+Non-rigid Relative Placement through 3D Dense Diffusion,25/10/2024,"Eric Cai, Octavian Donca, Ben Eisner, David Held","The task of ""relative placement"" is to predict the placement of one object in
+relation to another, e.g. placing a mug onto a mug rack. Through explicit
+object-centric geometric reasoning, recent methods for relative placement have
+made tremendous progress towards data-efficient learning for robot manipulation
+while generalizing to unseen task variations. However, they have yet to
+represent deformable transformations, despite the ubiquity of non-rigid bodies
+in real world settings. As a first step towards bridging this gap, we propose
+``cross-displacement"" - an extension of the principles of relative placement to
+geometric relationships between deformable objects - and present a novel
+vision-based method to learn cross-displacement through dense diffusion. To
+this end, we demonstrate our method's ability to generalize to unseen object
+instances, out-of-distribution scene configurations, and multimodal goals on
+multiple highly deformable tasks (both in simulation and in the real world)
+beyond the scope of prior works. Supplementary information and videos can be
+found at our
+$\href{https://sites.google.com/view/tax3d-corl-2024}{\text{website}}$.",http://arxiv.org/pdf/2410.19247v1,,False
+Peptide-GPT: Generative Design of Peptides using Generative Pre-trained Transformers and Bio-informatic Supervision,25/10/2024,"Aayush Shah, Chakradhar Guntuboina, Amir Barati Farimani","In recent years, natural language processing (NLP) models have demonstrated
+remarkable capabilities in various domains beyond traditional text generation.
+In this work, we introduce PeptideGPT, a protein language model tailored to
+generate protein sequences with distinct properties: hemolytic activity,
+solubility, and non-fouling characteristics. To facilitate a rigorous
+evaluation of these generated sequences, we established a comprehensive
+evaluation pipeline consisting of ideas from bioinformatics to retain valid
+proteins with ordered structures. First, we rank the generated sequences based
+on their perplexity scores, then we filter out those lying outside the
+permissible convex hull of proteins. Finally, we predict the structure using
+ESMFold and select the proteins with pLDDT values greater than 70 to ensure
+ordered structure. The properties of generated sequences are evaluated using
+task-specific classifiers - PeptideBERT and HAPPENN. We achieved an accuracy of
+76.26% in hemolytic, 72.46% in non-hemolytic, 78.84% in non-fouling, and 68.06%
+in solubility protein generation. Our experimental results demonstrate the
+effectiveness of PeptideGPT in de novo protein design and underscore the
+potential of leveraging NLP-based approaches for paving the way for future
+innovations and breakthroughs in synthetic biology and bioinformatics. Codes,
+models, and data used in this study are freely available at:
+https://github.com/aayush-shah14/PeptideGPT.",http://arxiv.org/pdf/2410.19222v1,,False

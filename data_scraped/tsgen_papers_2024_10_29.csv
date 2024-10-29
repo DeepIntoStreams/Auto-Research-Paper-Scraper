@@ -1,0 +1,293 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Adaptive Transfer Clustering: A Unified Framework,28/10/2024,"Yuqi Gu, Zhongyuan Lyu, Kaizheng Wang","We propose a general transfer learning framework for clustering given a main
+dataset and an auxiliary one about the same subjects. The two datasets may
+reflect similar but different latent grouping structures of the subjects. We
+propose an adaptive transfer clustering (ATC) algorithm that automatically
+leverages the commonality in the presence of unknown discrepancy, by optimizing
+an estimated bias-variance decomposition. It applies to a broad class of
+statistical models including Gaussian mixture models, stochastic block models,
+and latent class models. A theoretical analysis proves the optimality of ATC
+under the Gaussian mixture model and explicitly quantifies the benefit of
+transfer. Extensive simulations and real data experiments confirm our method's
+effectiveness in various scenarios.",http://arxiv.org/pdf/2410.21263v1,,False
+One-Step Diffusion Policy: Fast Visuomotor Policies via Diffusion Distillation,28/10/2024,"Zhendong Wang, Zhaoshuo Li, Ajay Mandlekar, Zhenjia Xu, Jiaojiao Fan, Yashraj Narang, Linxi Fan, Yuke Zhu, Yogesh Balaji, Mingyuan Zhou, Ming-Yu Liu, Yu Zeng","Diffusion models, praised for their success in generative tasks, are
+increasingly being applied to robotics, demonstrating exceptional performance
+in behavior cloning. However, their slow generation process stemming from
+iterative denoising steps poses a challenge for real-time applications in
+resource-constrained robotics setups and dynamically changing environments. In
+this paper, we introduce the One-Step Diffusion Policy (OneDP), a novel
+approach that distills knowledge from pre-trained diffusion policies into a
+single-step action generator, significantly accelerating response times for
+robotic control tasks. We ensure the distilled generator closely aligns with
+the original policy distribution by minimizing the Kullback-Leibler (KL)
+divergence along the diffusion chain, requiring only $2\%$-$10\%$ additional
+pre-training cost for convergence. We evaluated OneDP on 6 challenging
+simulation tasks as well as 4 self-designed real-world tasks using the Franka
+robot. The results demonstrate that OneDP not only achieves state-of-the-art
+success rates but also delivers an order-of-magnitude improvement in inference
+speed, boosting action prediction frequency from 1.5 Hz to 62 Hz, establishing
+its potential for dynamic and computationally constrained robotic applications.
+We share the project page at https://research.nvidia.com/labs/dir/onedp/.",http://arxiv.org/pdf/2410.21257v1,,False
+SeriesGAN: Time Series Generation via Adversarial and Autoregressive Learning,28/10/2024,"MohammadReza EskandariNasab, Shah Muhammad Hamdi, Soukaina Filali Boubrahimi","Current Generative Adversarial Network (GAN)-based approaches for time series
+generation face challenges such as suboptimal convergence, information loss in
+embedding spaces, and instability. To overcome these challenges, we introduce
+an advanced framework that integrates the advantages of an
+autoencoder-generated embedding space with the adversarial training dynamics of
+GANs. This method employs two discriminators: one to specifically guide the
+generator and another to refine both the autoencoder's and generator's output.
+Additionally, our framework incorporates a novel autoencoder-based loss
+function and supervision from a teacher-forcing supervisor network, which
+captures the stepwise conditional distributions of the data. The generator
+operates within the latent space, while the two discriminators work on latent
+and feature spaces separately, providing crucial feedback to both the generator
+and the autoencoder. By leveraging this dual-discriminator approach, we
+minimize information loss in the embedding space. Through joint training, our
+framework excels at generating high-fidelity time series data, consistently
+outperforming existing state-of-the-art benchmarks both qualitatively and
+quantitatively across a range of real and synthetic multivariate time series
+datasets.",http://arxiv.org/pdf/2410.21203v1,,False
+Trajectory Flow Matching with Applications to Clinical Time Series Modeling,28/10/2024,"Xi Zhang, Yuan Pu, Yuki Kawamura, Andrew Loza, Yoshua Bengio, Dennis L. Shung, Alexander Tong","Modeling stochastic and irregularly sampled time series is a challenging
+problem found in a wide range of applications, especially in medicine. Neural
+stochastic differential equations (Neural SDEs) are an attractive modeling
+technique for this problem, which parameterize the drift and diffusion terms of
+an SDE with neural networks. However, current algorithms for training Neural
+SDEs require backpropagation through the SDE dynamics, greatly limiting their
+scalability and stability. To address this, we propose Trajectory Flow Matching
+(TFM), which trains a Neural SDE in a simulation-free manner, bypassing
+backpropagation through the dynamics. TFM leverages the flow matching technique
+from generative modeling to model time series. In this work we first establish
+necessary conditions for TFM to learn time series data. Next, we present a
+reparameterization trick which improves training stability. Finally, we adapt
+TFM to the clinical time series setting, demonstrating improved performance on
+three clinical time series datasets both in terms of absolute performance and
+uncertainty prediction.",http://arxiv.org/pdf/2410.21154v1,,False
+Palisade -- Prompt Injection Detection Framework,28/10/2024,"Sahasra Kokkula, Somanathan R, Nandavardhan R, Aashishkumar, G Divya","The advent of Large Language Models LLMs marks a milestone in Artificial
+Intelligence, altering how machines comprehend and generate human language.
+However, LLMs are vulnerable to malicious prompt injection attacks, where
+crafted inputs manipulate the models behavior in unintended ways, compromising
+system integrity and causing incorrect outcomes. Conventional detection methods
+rely on static, rule-based approaches, which often fail against sophisticated
+threats like abnormal token sequences and alias substitutions, leading to
+limited adaptability and higher rates of false positives and false
+negatives.This paper proposes a novel NLP based approach for prompt injection
+detection, emphasizing accuracy and optimization through a layered input
+screening process. In this framework, prompts are filtered through three
+distinct layers rule-based, ML classifier, and companion LLM before reaching
+the target model, thereby minimizing the risk of malicious interaction.Tests
+show the ML classifier achieves the highest accuracy among individual layers,
+yet the multi-layer framework enhances overall detection accuracy by reducing
+false negatives. Although this increases false positives, it minimizes the risk
+of overlooking genuine injected prompts, thus prioritizing security.This
+multi-layered detection approach highlights LLM vulnerabilities and provides a
+comprehensive framework for future research, promoting secure interactions
+between humans and AI systems.",http://arxiv.org/pdf/2410.21146v1,,False
+Federated Time Series Generation on Feature and Temporally Misaligned Data,28/10/2024,"Chenrui Fan, Zhi Wen Soi, Aditya Shankar, Abele Mălan, Lydia Y. Chen","Distributed time series data presents a challenge for federated learning, as
+clients often possess different feature sets and have misaligned time steps.
+Existing federated time series models are limited by the assumption of perfect
+temporal or feature alignment across clients. In this paper, we propose FedTDD,
+a novel federated time series diffusion model that jointly learns a synthesizer
+across clients. At the core of FedTDD is a novel data distillation and
+aggregation framework that reconciles the differences between clients by
+imputing the misaligned timesteps and features. In contrast to traditional
+federated learning, FedTDD learns the correlation across clients' time series
+through the exchange of local synthetic outputs instead of model parameters. A
+coordinator iteratively improves a global distiller network by leveraging
+shared knowledge from clients through the exchange of synthetic data. As the
+distiller becomes more refined over time, it subsequently enhances the quality
+of the clients' local feature estimates, allowing each client to then improve
+its local imputations for missing data using the latest, more accurate
+distiller. Experimental results on five datasets demonstrate FedTDD's
+effectiveness compared to centralized training, and the effectiveness of
+sharing synthetic outputs to transfer knowledge of local time series. Notably,
+FedTDD achieves 79.4% and 62.8% improvement over local training in Context-FID
+and Correlational scores.",http://arxiv.org/pdf/2410.21072v1,,False
+Physics-informed Partitioned Coupled Neural Operator for Complex Networks,28/10/2024,"Weidong Wu, Yong Zhang, Lili Hao, Yang Chen, Xiaoyan Sun, Dunwei Gong","Physics-Informed Neural Operators provide efficient, high-fidelity
+simulations for systems governed by partial differential equations (PDEs).
+However, most existing studies focus only on multi-scale, multi-physics systems
+within a single spatial region, neglecting the case with multiple
+interconnected sub-regions, such as gas and thermal systems. To address this,
+this paper proposes a Physics-Informed Partitioned Coupled Neural Operator
+(PCNO) to enhance the simulation performance of such networks. Compared to the
+existing Fourier Neural Operator (FNO), this method designs a joint convolution
+operator within the Fourier layer, enabling global integration capturing all
+sub-regions. Additionally, grid alignment layers are introduced outside the
+Fourier layer to help the joint convolution operator accurately learn the
+coupling relationship between sub-regions in the frequency domain. Experiments
+on gas networks demonstrate that the proposed operator not only accurately
+simulates complex systems but also shows good generalization and low model
+complexity.",http://arxiv.org/pdf/2410.21025v1,,False
+A Stein Gradient Descent Approach for Doubly Intractable Distributions,28/10/2024,"Heesang Lee, Songhee Kim, Bokgyeong Kang, Jaewoo Park","Bayesian inference for doubly intractable distributions is challenging
+because they include intractable terms, which are functions of parameters of
+interest. Although several alternatives have been developed for such models,
+they are computationally intensive due to repeated auxiliary variable
+simulations. We propose a novel Monte Carlo Stein variational gradient descent
+(MC-SVGD) approach for inference for doubly intractable distributions. Through
+an efficient gradient approximation, our MC-SVGD approach rapidly transforms an
+arbitrary reference distribution to approximate the posterior distribution of
+interest, without necessitating any predefined variational distribution class
+for the posterior. Such a transport map is obtained by minimizing
+Kullback-Leibler divergence between the transformed and posterior distributions
+in a reproducing kernel Hilbert space (RKHS). We also investigate the
+convergence rate of the proposed method. We illustrate the application of the
+method to challenging examples, including a Potts model, an exponential random
+graph model, and a Conway--Maxwell--Poisson regression model. The proposed
+method achieves substantial computational gains over existing algorithms, while
+providing comparable inferential performance for the posterior distributions.",http://arxiv.org/pdf/2410.21021v1,,False
+Informed Deep Abstaining Classifier: Investigating noise-robust training for diagnostic decision support systems,28/10/2024,"Helen Schneider, Sebastian Nowak, Aditya Parikh, Yannik C. Layer, Maike Theis, Wolfgang Block, Alois M. Sprinkart, Ulrike Attenberger, Rafet Sifa","Image-based diagnostic decision support systems (DDSS) utilizing deep
+learning have the potential to optimize clinical workflows. However, developing
+DDSS requires extensive datasets with expert annotations and is therefore
+costly. Leveraging report contents from radiological data bases with Natural
+Language Processing to annotate the corresponding image data promises to
+replace labor-intensive manual annotation. As mining ""real world"" databases can
+introduce label noise, noise-robust training losses are of great interest.
+However, current noise-robust losses do not consider noise estimations that can
+for example be derived based on the performance of the automatic label
+generator used. In this study, we expand the noise-robust Deep Abstaining
+Classifier (DAC) loss to an Informed Deep Abstaining Classifier (IDAC) loss by
+incorporating noise level estimations during training. Our findings demonstrate
+that IDAC enhances the noise robustness compared to DAC and several
+state-of-the-art loss functions. The results are obtained on various simulated
+noise levels using a public chest X-ray data set. These findings are reproduced
+on an in-house noisy data set, where labels were extracted from the clinical
+systems of the University Hospital Bonn by a text-based transformer. The IDAC
+can therefore be a valuable tool for researchers, companies or clinics aiming
+to develop accurate and reliable DDSS from routine clinical data.",http://arxiv.org/pdf/2410.21014v1,,False
+Neural Hamilton: Can A.I. Understand Hamiltonian Mechanics?,28/10/2024,"Tae-Geun Kim, Seong Chan Park","We propose a novel framework based on neural network that reformulates
+classical mechanics as an operator learning problem. A machine directly maps a
+potential function to its corresponding trajectory in phase space without
+solving the Hamilton equations. Most notably, while conventional methods tend
+to accumulate errors over time through iterative time integration, our approach
+prevents error propagation. Two newly developed neural network architectures,
+namely VaRONet and MambONet, are introduced to adapt the Variational LSTM
+sequence-to-sequence model and leverage the Mamba model for efficient temporal
+dynamics processing. We tested our approach with various 1D physics problems:
+harmonic oscillation, double-well potentials, Morse potential, and other
+potential models outside the training data. Compared to traditional numerical
+methods based on the fourth-order Runge-Kutta (RK4) algorithm, our model
+demonstrates improved computational efficiency and accuracy.
+  Code is available at: https://github.com/Axect/Neural_Hamilton",http://arxiv.org/pdf/2410.20951v1,,False
+FACTS: A Factored State-Space Framework For World Modelling,28/10/2024,"Li Nanbo, Firas Laakom, Yucheng Xu, Wenyi Wang, Jürgen Schmidhuber","World modelling is essential for understanding and predicting the dynamics of
+complex systems by learning both spatial and temporal dependencies. However,
+current frameworks, such as Transformers and selective state-space models like
+Mambas, exhibit limitations in efficiently encoding spatial and temporal
+structures, particularly in scenarios requiring long-term high-dimensional
+sequence modelling. To address these issues, we propose a novel recurrent
+framework, the \textbf{FACT}ored \textbf{S}tate-space (\textbf{FACTS}) model,
+for spatial-temporal world modelling. The FACTS framework constructs a
+graph-structured memory with a routing mechanism that learns permutable memory
+representations, ensuring invariance to input permutations while adapting
+through selective state-space propagation. Furthermore, FACTS supports parallel
+computation of high-dimensional sequences. We empirically evaluate FACTS across
+diverse tasks, including multivariate time series forecasting and
+object-centric world modelling, demonstrating that it consistently outperforms
+or matches specialised state-of-the-art models, despite its general-purpose
+world modelling design.",http://arxiv.org/pdf/2410.20922v1,,False
+Deep Recurrent Stochastic Configuration Networks for Modelling Nonlinear Dynamic Systems,28/10/2024,"Gang Dang, Dianhui Wang","Deep learning techniques have shown promise in many domain applications. This
+paper proposes a novel deep reservoir computing framework, termed deep
+recurrent stochastic configuration network (DeepRSCN) for modelling nonlinear
+dynamic systems. DeepRSCNs are incrementally constructed, with all reservoir
+nodes directly linked to the final output. The random parameters are assigned
+in the light of a supervisory mechanism, ensuring the universal approximation
+property of the built model. The output weights are updated online using the
+projection algorithm to handle the unknown dynamics. Given a set of training
+samples, DeepRSCNs can quickly generate learning representations, which consist
+of random basis functions with cascaded input and readout weights. Experimental
+results over a time series prediction, a nonlinear system identification
+problem, and two industrial data predictive analyses demonstrate that the
+proposed DeepRSCN outperforms the single-layer network in terms of modelling
+efficiency, learning capability, and generalization performance.",http://arxiv.org/pdf/2410.20904v1,,False
+Active Causal Structure Learning with Latent Variables: Towards Learning to Detour in Autonomous Robots,28/10/2024,"Pablo de los Riscos, Fernando Corbacho","Artificial General Intelligence (AGI) Agents and Robots must be able to cope
+with everchanging environments and tasks. They must be able to actively
+construct new internal causal models of their interactions with the environment
+when new structural changes take place in the environment. Thus, we claim that
+active causal structure learning with latent variables (ACSLWL) is a necessary
+component to build AGI agents and robots. This paper describes how a complex
+planning and expectation-based detour behavior can be learned by ACSLWL when,
+unexpectedly, and for the first time, the simulated robot encounters a sort of
+transparent barrier in its pathway towards its target. ACSWL consists of acting
+in the environment, discovering new causal relations, constructing new causal
+models, exploiting the causal models to maximize its expected utility,
+detecting possible latent variables when unexpected observations occur, and
+constructing new structures-internal causal models and optimal estimation of
+the associated parameters, to be able to cope efficiently with the new
+encountered situations. That is, the agent must be able to construct new causal
+internal models that transform a previously unexpected and inefficient
+(sub-optimal) situation, into a predictable situation with an optimal operating
+plan.",http://arxiv.org/pdf/2410.20894v1,,False
+Generative Simulations of The Solar Corona Evolution With Denoising Diffusion : Proof of Concept,28/10/2024,"Grégoire Francisco, Francesco Pio Ramunno, Manolis K. Georgoulis, João Fernandes, Teresa Barata, Dario Del Moro","The solar magnetized corona is responsible for various manifestations with a
+space weather impact, such as flares, coronal mass ejections (CMEs) and,
+naturally, the solar wind. Modeling the corona's dynamics and evolution is
+therefore critical for improving our ability to predict space weather In this
+work, we demonstrate that generative deep learning methods, such as Denoising
+Diffusion Probabilistic Models (DDPM), can be successfully applied to simulate
+future evolutions of the corona as observed in Extreme Ultraviolet (EUV)
+wavelengths. Our model takes a 12-hour video of an Active Region (AR) as input
+and simulate the potential evolution of the AR over the subsequent 12 hours,
+with a time-resolution of two hours. We propose a light UNet backbone
+architecture adapted to our problem by adding 1D temporal convolutions after
+each classical 2D spatial ones, and spatio-temporal attention in the bottleneck
+part. The model not only produce visually realistic outputs but also captures
+the inherent stochasticity of the system's evolution. Notably, the simulations
+enable the generation of reliable confidence intervals for key predictive
+metrics such as the EUV peak flux and fluence of the ARs, paving the way for
+probabilistic and interpretable space weather forecasting. Future studies will
+focus on shorter forecasting horizons with increased spatial and temporal
+resolution, aiming at reducing the uncertainty of the simulations and providing
+practical applications for space weather forecasting. The code used for this
+study is available at the following link:
+https://github.com/gfrancisco20/video_diffusion",http://arxiv.org/pdf/2410.20843v1,,False
+Introducing Spectral Attention for Long-Range Dependency in Time Series Forecasting,28/10/2024,"Bong Gyun Kang, Dongjun Lee, HyunGi Kim, DoHyun Chung","Sequence modeling faces challenges in capturing long-range dependencies
+across diverse tasks. Recent linear and transformer-based forecasters have
+shown superior performance in time series forecasting. However, they are
+constrained by their inherent inability to effectively address long-range
+dependencies in time series data, primarily due to using fixed-size inputs for
+prediction. Furthermore, they typically sacrifice essential temporal
+correlation among consecutive training samples by shuffling them into
+mini-batches. To overcome these limitations, we introduce a fast and effective
+Spectral Attention mechanism, which preserves temporal correlations among
+samples and facilitates the handling of long-range information while
+maintaining the base model structure. Spectral Attention preserves long-period
+trends through a low-pass filter and facilitates gradient to flow between
+samples. Spectral Attention can be seamlessly integrated into most sequence
+models, allowing models with fixed-sized look-back windows to capture
+long-range dependencies over thousands of steps. Through extensive experiments
+on 11 real-world time series datasets using 7 recent forecasting models, we
+consistently demonstrate the efficacy of our Spectral Attention mechanism,
+achieving state-of-the-art results.",http://arxiv.org/pdf/2410.20772v1,,False
+A Static and Dynamic Attention Framework for Multi Turn Dialogue Generation,28/10/2024,"Wei-Nan Zhang, Yiming Cui, Kaiyan Zhang, Yifa Wang, Qingfu Zhu, Lingzhi Li, Ting Liu","Recently, research on open domain dialogue systems have attracted extensive
+interests of academic and industrial researchers. The goal of an open domain
+dialogue system is to imitate humans in conversations. Previous works on single
+turn conversation generation have greatly promoted the research of open domain
+dialogue systems. However, understanding multiple single turn conversations is
+not equal to the understanding of multi turn dialogue due to the coherent and
+context dependent properties of human dialogue. Therefore, in open domain multi
+turn dialogue generation, it is essential to modeling the contextual semantics
+of the dialogue history, rather than only according to the last utterance.
+Previous research had verified the effectiveness of the hierarchical recurrent
+encoder-decoder framework on open domain multi turn dialogue generation.
+However, using RNN-based model to hierarchically encoding the utterances to
+obtain the representation of dialogue history still face the problem of a
+vanishing gradient. To address this issue, in this paper, we proposed a static
+and dynamic attention-based approach to model the dialogue history and then
+generate open domain multi turn dialogue responses. Experimental results on
+Ubuntu and Opensubtitles datasets verify the effectiveness of the proposed
+static and dynamic attention-based approach on automatic and human evaluation
+metrics in various experimental settings. Meanwhile, we also empirically verify
+the performance of combining the static and dynamic attentions on open domain
+multi turn dialogue generation.",http://arxiv.org/pdf/2410.20766v1,10.1145/3522763,False
+Likelihood approximations via Gaussian approximate inference,28/10/2024,Thang D. Bui,"Non-Gaussian likelihoods are essential for modelling complex real-world
+observations but pose significant computational challenges in learning and
+inference. Even with Gaussian priors, non-Gaussian likelihoods often lead to
+analytically intractable posteriors, necessitating approximation methods. To
+this end, we propose efficient schemes to approximate the effects of
+non-Gaussian likelihoods by Gaussian densities based on variational inference
+and moment matching in transformed bases. These enable efficient inference
+strategies originally designed for models with a Gaussian likelihood to be
+deployed. Our empirical results demonstrate that the proposed matching
+strategies attain good approximation quality for binary and multiclass
+classification in large-scale point-estimate and distributional inferential
+settings. In challenging streaming problems, the proposed methods outperform
+all existing likelihood approximations and approximate inference methods in the
+exact models. As a by-product, we show that the proposed approximate
+log-likelihoods are a superior alternative to least-squares on raw labels for
+neural network classification.",http://arxiv.org/pdf/2410.20754v1,,False

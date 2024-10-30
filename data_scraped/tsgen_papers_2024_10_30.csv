@@ -1,0 +1,316 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Local Policies Enable Zero-shot Long-horizon Manipulation,29/10/2024,"Murtaza Dalal, Min Liu, Walter Talbott, Chen Chen, Deepak Pathak, Jian Zhang, Ruslan Salakhutdinov","Sim2real for robotic manipulation is difficult due to the challenges of
+simulating complex contacts and generating realistic task distributions. To
+tackle the latter problem, we introduce ManipGen, which leverages a new class
+of policies for sim2real transfer: local policies. Locality enables a variety
+of appealing properties including invariances to absolute robot and object
+pose, skill ordering, and global scene configuration. We combine these policies
+with foundation models for vision, language and motion planning and demonstrate
+SOTA zero-shot performance of our method to Robosuite benchmark tasks in
+simulation (97%). We transfer our local policies from simulation to reality and
+observe they can solve unseen long-horizon manipulation tasks with up to 8
+stages with significant pose, object and scene configuration variation.
+ManipGen outperforms SOTA approaches such as SayCan, OpenVLA, LLMTrajGen and
+VoxPoser across 50 real-world manipulation tasks by 36%, 76%, 62% and 60%
+respectively. Video results at https://mihdalal.github.io/manipgen/",http://arxiv.org/pdf/2410.22332v1,,False
+Online Detecting LLM-Generated Texts via Sequential Hypothesis Testing by Betting,29/10/2024,"Can Chen, Jun-Kun Wang","Developing algorithms to differentiate between machine-generated texts and
+human-written texts has garnered substantial attention in recent years.
+Existing methods in this direction typically concern an offline setting where a
+dataset containing a mix of real and machine-generated texts is given upfront,
+and the task is to determine whether each sample in the dataset is from a large
+language model (LLM) or a human. However, in many practical scenarios, sources
+such as news websites, social media accounts, or on other forums publish
+content in a streaming fashion. Therefore, in this online scenario, how to
+quickly and accurately determine whether the source is an LLM with strong
+statistical guarantees is crucial for these media or platforms to function
+effectively and prevent the spread of misinformation and other potential misuse
+of LLMs. To tackle the problem of online detection, we develop an algorithm
+based on the techniques of sequential hypothesis testing by betting that not
+only builds upon and complements existing offline detection techniques but also
+enjoys statistical guarantees, which include a controlled false positive rate
+and the expected time to correctly identify a source as an LLM. Experiments
+were conducted to demonstrate the effectiveness of our method.",http://arxiv.org/pdf/2410.22318v1,,False
+Emotion-Guided Image to Music Generation,29/10/2024,"Souraja Kundu, Saket Singh, Yuji Iwahori","Generating music from images can enhance various applications, including
+background music for photo slideshows, social media experiences, and video
+creation. This paper presents an emotion-guided image-to-music generation
+framework that leverages the Valence-Arousal (VA) emotional space to produce
+music that aligns with the emotional tone of a given image. Unlike previous
+models that rely on contrastive learning for emotional consistency, the
+proposed approach directly integrates a VA loss function to enable accurate
+emotional alignment. The model employs a CNN-Transformer architecture,
+featuring pre-trained CNN image feature extractors and three Transformer
+encoders to capture complex, high-level emotional features from MIDI music.
+Three Transformer decoders refine these features to generate musically and
+emotionally consistent MIDI sequences. Experimental results on a newly curated
+emotionally paired image-MIDI dataset demonstrate the proposed model's superior
+performance across metrics such as Polyphony Rate, Pitch Entropy, Groove
+Consistency, and loss convergence.",http://arxiv.org/pdf/2410.22299v1,,False
+LLMs are Highly-Constrained Biophysical Sequence Optimizers,29/10/2024,"Angelica Chen, Samuel D. Stanton, Robert G. Alberstein, Andrew M. Watkins, Richard Bonneau, Vladimir Gligorijevi, Kyunghyun Cho, Nathan C. Frey","Large language models (LLMs) have recently shown significant potential in
+various biological tasks such as protein engineering and molecule design. These
+tasks typically involve black-box discrete sequence optimization, where the
+challenge lies in generating sequences that are not only biologically feasible
+but also adhere to hard fine-grained constraints. However, LLMs often struggle
+with such constraints, especially in biological contexts where verifying
+candidate solutions is costly and time-consuming. In this study, we explore the
+possibility of employing LLMs as highly-constrained bilevel optimizers through
+a methodology we refer to as Language Model Optimization with Margin
+Expectation (LLOME). This approach combines both offline and online
+optimization, utilizing limited oracle evaluations to iteratively enhance the
+sequences generated by the LLM. We additionally propose a novel training
+objective -- Margin-Aligned Expectation (MargE) -- that trains the LLM to
+smoothly interpolate between the reward and reference distributions. Lastly, we
+introduce a synthetic test suite that bears strong geometric similarity to real
+biophysical problems and enables rapid evaluation of LLM optimizers without
+time-consuming lab validation. Our findings reveal that, in comparison to
+genetic algorithm baselines, LLMs achieve significantly lower regret solutions
+while requiring fewer test function evaluations. However, we also observe that
+LLMs exhibit moderate miscalibration, are susceptible to generator collapse,
+and have difficulty finding the optimal solution when no explicit ground truth
+rewards are available.",http://arxiv.org/pdf/2410.22296v1,,False
+Fourier Head: Helping Large Language Models Learn Complex Probability Distributions,29/10/2024,"Nate Gillman, Daksh Aggarwal, Michael Freeman, Saurabh Singh, Chen Sun","As the quality of large language models has improved, there has been
+increased interest in using them to model non-linguistic tokens. For example,
+the Decision Transformer recasts agentic decision making as a sequence modeling
+problem, using a decoder-only LLM to model the distribution over the discrete
+action space for an Atari agent. However, when adapting LLMs to non-linguistic
+domains, it remains unclear if softmax over discrete bins captures the
+continuous structure of the tokens and the potentially complex distributions
+needed for high quality token generation. We introduce a neural network layer,
+constructed using Fourier series, which we can easily substitute for any linear
+layer if we want the outputs to have a more continuous structure. We perform
+extensive analysis on synthetic datasets, as well as on large-scale decision
+making and time series forecasting tasks. We also provide theoretical evidence
+that this layer can better learn signal from data while ignoring high-frequency
+noise. All of our results support the effectiveness of our proposed Fourier
+head in scenarios where the underlying data distribution has a natural
+continuous structure. For example, the Fourier head improves a Decision
+Transformer agent's returns by 46% on the Atari Seaquest game, and increases a
+state-of-the-art times series foundation model's forecasting performance by
+3.5% across 20 benchmarks unseen during training.",http://arxiv.org/pdf/2410.22269v1,,False
+Very Attentive Tacotron: Robust and Unbounded Length Generalization in Autoregressive Transformer-Based Text-to-Speech,29/10/2024,"Eric Battenberg, RJ Skerry-Ryan, Daisy Stanton, Soroosh Mariooryad, Matt Shannon, Julian Salazar, David Kao","Autoregressive (AR) Transformer-based sequence models are known to have
+difficulty generalizing to sequences longer than those seen during training.
+When applied to text-to-speech (TTS), these models tend to drop or repeat words
+or produce erratic output, especially for longer utterances. In this paper, we
+introduce enhancements aimed at AR Transformer-based encoder-decoder TTS
+systems that address these robustness and length generalization issues. Our
+approach uses an alignment mechanism to provide cross-attention operations with
+relative location information. The associated alignment position is learned as
+a latent property of the model via backprop and requires no external alignment
+information during training. While the approach is tailored to the monotonic
+nature of TTS input-output alignment, it is still able to benefit from the
+flexible modeling power of interleaved multi-head self- and cross-attention
+operations. A system incorporating these improvements, which we call Very
+Attentive Tacotron, matches the naturalness and expressiveness of a baseline
+T5-based TTS system, while eliminating problems with repeated or dropped words
+and enabling generalization to any practical utterance length.",http://arxiv.org/pdf/2410.22179v1,,False
+EconoJax: A Fast & Scalable Economic Simulation in Jax,29/10/2024,"Koen Ponse, Aske Plaat, Niki van Stein, Thomas M. Moerland","Accurate economic simulations often require many experimental runs,
+particularly when combined with reinforcement learning. Unfortunately, training
+reinforcement learning agents in multi-agent economic environments can be slow.
+This paper introduces EconoJax, a fast simulated economy, based on the AI
+economist. EconoJax, and its training pipeline, are completely written in JAX.
+This allows EconoJax to scale to large population sizes and perform large
+experiments, while keeping training times within minutes. Through experiments
+with populations of 100 agents, we show how real-world economic behavior
+emerges through training within 15 minutes, in contrast to previous work that
+required several days. To aid and inspire researchers to build more rich and
+dynamic economic simulations, we open-source EconoJax on Github at:
+https://github.com/ponseko/econojax.",http://arxiv.org/pdf/2410.22165v1,,False
+Variational inference for pile-up removal at hadron colliders with diffusion models,29/10/2024,"Malte Algren, Christopher Pollard, John Andrew Raine, Tobias Golling","In this paper, we present a novel method for pile-up removal of pp
+interactions using variational inference with diffusion models, called Vipr.
+Instead of using classification methods to identify which particles are from
+the primary collision, a generative model is trained to predict the
+constituents of the hard-scatter particle jets with pile-up removed. This
+results in an estimate of the full posterior over hard-scatter jet
+constituents, which has not yet been explored in the context of pile-up
+removal. We evaluate the performance of Vipr in a sample of jets from simulated
+$t\bar{t}$ events overlain with pile-up contamination. Vipr outperforms
+SoftDrop in predicting the substructure of the hard-scatter jets over a wide
+range of pile-up scenarios.",http://arxiv.org/pdf/2410.22074v1,,False
+Fast and High-Quality Auto-Regressive Speech Synthesis via Speculative Decoding,29/10/2024,"Bohan Li, Hankun Wang, Situo Zhang, Yiwei Guo, Kai Yu","The auto-regressive architecture, like GPTs, is widely used in modern
+Text-to-Speech (TTS) systems. However, it incurs substantial inference time,
+particularly due to the challenges in the next-token prediction posed by
+lengthy sequences of speech tokens. In this work, we introduce VADUSA, one of
+the first approaches to accelerate auto-regressive TTS through speculative
+decoding. Our results show that VADUSA not only significantly improves
+inference speed but also enhances performance by incorporating draft heads to
+predict future speech content auto-regressively. Furthermore, the inclusion of
+a tolerance mechanism during sampling accelerates inference without
+compromising quality. Our approach demonstrates strong generalization across
+large datasets and various types of speech tokens.",http://arxiv.org/pdf/2410.21951v1,,False
+Online Test of a Neural Network Deep Convection Parameterization in ARP-GEM1,29/10/2024,"Blanka Balogh, David Saint-Martin, Olivier Geoffroy","In this study, we present the integration of a neural network-based
+parameterization into the global atmospheric model ARP-GEM1, leveraging the
+Python interface of the OASIS coupler. This approach facilitates the exchange
+of fields between the Fortran-based ARP-GEM1 model and a Python component
+responsible for neural network inference. As a proof-of-concept experiment, we
+trained a neural network to emulate the deep convection parameterization of
+ARP-GEM1. Using the flexible Fortran/Python interface, we have successfully
+replaced ARP-GEM1's deep convection scheme with a neural network emulator. To
+assess the performance of the neural network deep convection scheme, we have
+run a 5-years ARP-GEM1 simulation using the neural network emulator. The
+evaluation of averaged fields showed good agreement with output from an
+ARP-GEM1 simulation using the physics-based deep convection scheme. The Python
+component was deployed on a separate partition from the general circulation
+model, using GPUs to increase inference speed of the neural network.",http://arxiv.org/pdf/2410.21920v1,,False
+Identifiability Analysis of Linear ODE Systems with Hidden Confounders,29/10/2024,"Yuanyuan Wang, Biwei Huang, Wei Huang, Xi Geng, Mingming Gong","The identifiability analysis of linear Ordinary Differential Equation (ODE)
+systems is a necessary prerequisite for making reliable causal inferences about
+these systems. While identifiability has been well studied in scenarios where
+the system is fully observable, the conditions for identifiability remain
+unexplored when latent variables interact with the system. This paper aims to
+address this gap by presenting a systematic analysis of identifiability in
+linear ODE systems incorporating hidden confounders. Specifically, we
+investigate two cases of such systems. In the first case, latent confounders
+exhibit no causal relationships, yet their evolution adheres to specific
+functional forms, such as polynomial functions of time $t$. Subsequently, we
+extend this analysis to encompass scenarios where hidden confounders exhibit
+causal dependencies, with the causal structure of latent variables described by
+a Directed Acyclic Graph (DAG). The second case represents a more intricate
+variation of the first case, prompting a more comprehensive identifiability
+analysis. Accordingly, we conduct detailed identifiability analyses of the
+second system under various observation conditions, including both continuous
+and discrete observations from single or multiple trajectories. To validate our
+theoretical results, we perform a series of simulations, which support and
+substantiate our findings.",http://arxiv.org/pdf/2410.21917v1,,False
+SceneGenAgent: Precise Industrial Scene Generation with Coding Agent,29/10/2024,"Xiao Xia, Dan Zhang, Zibo Liao, Zhenyu Hou, Tianrui Sun, Jing Li, Ling Fu, Yuxiao Dong","The modeling of industrial scenes is essential for simulations in industrial
+manufacturing. While large language models (LLMs) have shown significant
+progress in generating general 3D scenes from textual descriptions, generating
+industrial scenes with LLMs poses a unique challenge due to their demand for
+precise measurements and positioning, requiring complex planning over spatial
+arrangement. To address this challenge, we introduce SceneGenAgent, an
+LLM-based agent for generating industrial scenes through C# code. SceneGenAgent
+ensures precise layout planning through a structured and calculable format,
+layout verification, and iterative refinement to meet the quantitative
+requirements of industrial scenarios. Experiment results demonstrate that LLMs
+powered by SceneGenAgent exceed their original performance, reaching up to
+81.0% success rate in real-world industrial scene generation tasks and
+effectively meeting most scene generation requirements. To further enhance
+accessibility, we construct SceneInstruct, a dataset designed for fine-tuning
+open-source LLMs to integrate into SceneGenAgent. Experiments show that
+fine-tuning open-source LLMs on SceneInstruct yields significant performance
+improvements, with Llama3.1-70B approaching the capabilities of GPT-4o. Our
+code and data are available at https://github.com/THUDM/SceneGenAgent .",http://arxiv.org/pdf/2410.21909v1,,False
+Building Altruistic and Moral AI Agent with Brain-inspired Affective Empathy Mechanisms,29/10/2024,"Feifei Zhao, Hui Feng, Haibo Tong, Zhengqiang Han, Enmeng Lu, Yinqian Sun, Yi Zeng","As AI closely interacts with human society, it is crucial to ensure that its
+decision-making is safe, altruistic, and aligned with human ethical and moral
+values. However, existing research on embedding ethical and moral
+considerations into AI remains insufficient, and previous external constraints
+based on principles and rules are inadequate to provide AI with long-term
+stability and generalization capabilities. In contrast, the intrinsic
+altruistic motivation based on empathy is more willing, spontaneous, and
+robust. Therefore, this paper is dedicated to autonomously driving intelligent
+agents to acquire morally behaviors through human-like affective empathy
+mechanisms. We draw inspiration from the neural mechanism of human brain's
+moral intuitive decision-making, and simulate the mirror neuron system to
+construct a brain-inspired affective empathy-driven altruistic decision-making
+model. Here, empathy directly impacts dopamine release to form intrinsic
+altruistic motivation. Based on the principle of moral utilitarianism, we
+design the moral reward function that integrates intrinsic empathy and
+extrinsic self-task goals. A comprehensive experimental scenario incorporating
+empathetic processes, personal objectives, and altruistic goals is developed.
+The proposed model enables the agent to make consistent moral decisions
+(prioritizing altruism) by balancing self-interest with the well-being of
+others. We further introduce inhibitory neurons to regulate different levels of
+empathy and verify the positive correlation between empathy levels and
+altruistic preferences, yielding conclusions consistent with findings from
+psychological behavioral experiments. This work provides a feasible solution
+for the development of ethical AI by leveraging the intrinsic human-like
+empathy mechanisms, and contributes to the harmonious coexistence between
+humans and AI.",http://arxiv.org/pdf/2410.21882v1,,False
+Cross-Entropy Is All You Need To Invert the Data Generating Process,29/10/2024,"Patrik Reizinger, Alice Bizeul, Attila Juhos, Julia E. Vogt, Randall Balestriero, Wieland Brendel, David Klindt","Supervised learning has become a cornerstone of modern machine learning, yet
+a comprehensive theory explaining its effectiveness remains elusive. Empirical
+phenomena, such as neural analogy-making and the linear representation
+hypothesis, suggest that supervised models can learn interpretable factors of
+variation in a linear fashion. Recent advances in self-supervised learning,
+particularly nonlinear Independent Component Analysis, have shown that these
+methods can recover latent structures by inverting the data generating process.
+We extend these identifiability results to parametric instance discrimination,
+then show how insights transfer to the ubiquitous setting of supervised
+learning with cross-entropy minimization. We prove that even in standard
+classification tasks, models learn representations of ground-truth factors of
+variation up to a linear transformation. We corroborate our theoretical
+contribution with a series of empirical studies. First, using simulated data
+matching our theoretical assumptions, we demonstrate successful disentanglement
+of latent factors. Second, we show that on DisLib, a widely-used
+disentanglement benchmark, simple classification tasks recover latent
+structures up to linear transformations. Finally, we reveal that models trained
+on ImageNet encode representations that permit linear decoding of proxy factors
+of variation. Together, our theoretical findings and experiments offer a
+compelling explanation for recent observations of linear representations, such
+as superposition in neural networks. This work takes a significant step toward
+a cohesive theory that accounts for the unreasonable effectiveness of
+supervised deep learning.",http://arxiv.org/pdf/2410.21869v1,,False
+Exponentially Consistent Statistical Classification of Continuous Sequences with Distribution Uncertainty,29/10/2024,"Lina Zhu, Lin Zhou","In multiple classification, one aims to determine whether a testing sequence
+is generated from the same distribution as one of the M training sequences or
+not. Unlike most of existing studies that focus on discrete-valued sequences
+with perfect distribution match, we study multiple classification for
+continuous sequences with distribution uncertainty, where the generating
+distributions of the testing and training sequences deviate even under the true
+hypothesis. In particular, we propose distribution free tests and prove that
+the error probabilities of our tests decay exponentially fast for three
+different test designs: fixed-length, sequential, and two-phase tests. We first
+consider the simple case without the null hypothesis, where the testing
+sequence is known to be generated from a distribution close to the generating
+distribution of one of the training sequences. Subsequently, we generalize our
+results to a more general case with the null hypothesis by allowing the testing
+sequence to be generated from a distribution that is vastly different from the
+generating distributions of all training sequences.",http://arxiv.org/pdf/2410.21799v1,,False
+On the Role of Depth and Looping for In-Context Learning with Task Diversity,29/10/2024,"Khashayar Gatmiry, Nikunj Saunshi, Sashank J. Reddi, Stefanie Jegelka, Sanjiv Kumar","The intriguing in-context learning (ICL) abilities of deep Transformer models
+have lately garnered significant attention. By studying in-context linear
+regression on unimodal Gaussian data, recent empirical and theoretical works
+have argued that ICL emerges from Transformers' abilities to simulate learning
+algorithms like gradient descent. However, these works fail to capture the
+remarkable ability of Transformers to learn multiple tasks in context. To this
+end, we study in-context learning for linear regression with diverse tasks,
+characterized by data covariance matrices with condition numbers ranging from
+$[1, \kappa]$, and highlight the importance of depth in this setting. More
+specifically, (a) we show theoretical lower bounds of $\log(\kappa)$ (or
+$\sqrt{\kappa}$) linear attention layers in the unrestricted (or restricted)
+attention setting and, (b) we show that multilayer Transformers can indeed
+solve such tasks with a number of layers that matches the lower bounds.
+However, we show that this expressivity of multilayer Transformer comes at the
+price of robustness. In particular, multilayer Transformers are not robust to
+even distributional shifts as small as $O(e^{-L})$ in Wasserstein distance,
+where $L$ is the depth of the network. We then demonstrate that Looped
+Transformers -- a special class of multilayer Transformers with weight-sharing
+-- not only exhibit similar expressive power but are also provably robust under
+mild assumptions. Besides out-of-distribution generalization, we also show that
+Looped Transformers are the only models that exhibit a monotonic behavior of
+loss with respect to depth.",http://arxiv.org/pdf/2410.21698v1,,False
+"Pushing the Limits of All-Atom Geometric Graph Neural Networks: Pre-Training, Scaling and Zero-Shot Transfer",29/10/2024,"Zihan Pengmei, Zhengyuan Shen, Zichen Wang, Marcus Collins, Huzefa Rangwala","Constructing transferable descriptors for conformation representation of
+molecular and biological systems finds numerous applications in drug discovery,
+learning-based molecular dynamics, and protein mechanism analysis. Geometric
+graph neural networks (Geom-GNNs) with all-atom information have transformed
+atomistic simulations by serving as a general learnable geometric descriptors
+for downstream tasks including prediction of interatomic potential and
+molecular properties. However, common practices involve supervising Geom-GNNs
+on specific downstream tasks, which suffer from the lack of high-quality data
+and inaccurate labels leading to poor generalization and performance
+degradation on out-of-distribution (OOD) scenarios. In this work, we explored
+the possibility of using pre-trained Geom-GNNs as transferable and highly
+effective geometric descriptors for improved generalization. To explore their
+representation power, we studied the scaling behaviors of Geom-GNNs under
+self-supervised pre-training, supervised and unsupervised learning setups. We
+find that the expressive power of different architectures can differ on the
+pre-training task. Interestingly, Geom-GNNs do not follow the power-law scaling
+on the pre-training task, and universally lack predictable scaling behavior on
+the supervised tasks with quantum chemical labels important for screening and
+design of novel molecules. More importantly, we demonstrate how all-atom graph
+embedding can be organically combined with other neural architectures to
+enhance the expressive power. Meanwhile, the low-dimensional projection of the
+latent space shows excellent agreement with conventional geometrical
+descriptors.",http://arxiv.org/pdf/2410.21683v1,,False
+Sequential choice in ordered bundles,29/10/2024,"Rajeev Kohli, Kriste Krstovski, Hengyu Kuang, Hengxu Lin","Experience goods such as sporting and artistic events, songs, videos, news
+stories, podcasts, and television series, are often packaged and consumed in
+bundles. Many such bundles are ordered in the sense that the individual items
+are consumed sequentially, one at a time. We examine if an individual's
+decision to consume the next item in an ordered bundle can be predicted based
+on his/her consumption pattern for the preceding items. We evaluate several
+predictive models, including two custom Transformers using decoder-only and
+encoder-decoder architectures, fine-tuned GPT-3, a custom LSTM model, a
+reinforcement learning model, two Markov models, and a zero-order model. Using
+data from Spotify, we find that the custom Transformer with a decoder-only
+architecture provides the most accurate predictions, both for individual
+choices and aggregate demand. This model captures a general form of state
+dependence. Analysis of Transformer attention weights suggests that the
+consumption of the next item in a bundle is based on approximately equal
+weighting of all preceding choices. Our results indicate that the Transformer
+can assist in queuing the next item that an individual is likely to consume
+from an ordered bundle, predicting the demand for individual items, and
+personalizing promotions to increase demand.",http://arxiv.org/pdf/2410.21670v1,,False

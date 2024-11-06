@@ -1,0 +1,255 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Discovering Data Structures: Nearest Neighbor Search and Beyond,05/11/2024,"Omar Salemohamed, Laurent Charlin, Shivam Garg, Vatsal Sharan, Gregory Valiant","We propose a general framework for end-to-end learning of data structures.
+Our framework adapts to the underlying data distribution and provides
+fine-grained control over query and space complexity. Crucially, the data
+structure is learned from scratch, and does not require careful initialization
+or seeding with candidate data structures/algorithms. We first apply this
+framework to the problem of nearest neighbor search. In several settings, we
+are able to reverse-engineer the learned data structures and query algorithms.
+For 1D nearest neighbor search, the model discovers optimal distribution
+(in)dependent algorithms such as binary search and variants of interpolation
+search. In higher dimensions, the model learns solutions that resemble k-d
+trees in some regimes, while in others, they have elements of
+locality-sensitive hashing. The model can also learn useful representations of
+high-dimensional data and exploit them to design effective data structures. We
+also adapt our framework to the problem of estimating frequencies over a data
+stream, and believe it could also be a powerful discovery tool for new
+problems.",http://arxiv.org/pdf/2411.03253v1,,False
+Spontaneous Emergence of Agent Individuality through Social Interactions in LLM-Based Communities,05/11/2024,"Ryosuke Takata, Atsushi Masumori, Takashi Ikegami","We study the emergence of agency from scratch by using Large Language Model
+(LLM)-based agents. In previous studies of LLM-based agents, each agent's
+characteristics, including personality and memory, have traditionally been
+predefined. We focused on how individuality, such as behavior, personality, and
+memory, can be differentiated from an undifferentiated state. The present LLM
+agents engage in cooperative communication within a group simulation,
+exchanging context-based messages in natural language. By analyzing this
+multi-agent simulation, we report valuable new insights into how social norms,
+cooperation, and personality traits can emerge spontaneously. This paper
+demonstrates that autonomously interacting LLM-powered agents generate
+hallucinations and hashtags to sustain communication, which, in turn, increases
+the diversity of words within their interactions. Each agent's emotions shift
+through communication, and as they form communities, the personalities of the
+agents emerge and evolve accordingly. This computational modeling approach and
+its findings will provide a new method for analyzing collective artificial
+intelligence.",http://arxiv.org/pdf/2411.03252v1,,False
+Navigating Extremes: Dynamic Sparsity in Large Output Space,05/11/2024,"Nasib Ullah, Erik Schultheis, Mike Lasby, Yani Ioannou, Rohit Babbar","In recent years, Dynamic Sparse Training (DST) has emerged as an alternative
+to post-training pruning for generating efficient models. In principle, DST
+allows for a more memory efficient training process, as it maintains sparsity
+throughout the entire training run. However, current DST implementations fail
+to capitalize on this in practice. Because sparse matrix multiplication is much
+less efficient than dense matrix multiplication on GPUs, most implementations
+simulate sparsity by masking weights. In this paper, we leverage recent
+advances in semi-structured sparse training to apply DST in the domain of
+classification with large output spaces, where memory-efficiency is paramount.
+With a label space of possibly millions of candidates, the classification layer
+alone will consume several gigabytes of memory. Switching from a dense to a
+fixed fan-in sparse layer updated with sparse evolutionary training (SET);
+however, severely hampers training convergence, especially at the largest label
+spaces. We find that poor gradient flow from the sparse classifier to the dense
+text encoder make it difficult to learn good input representations. By
+employing an intermediate layer or adding an auxiliary training objective, we
+recover most of the generalisation performance of the dense model. Overall, we
+demonstrate the applicability and practical benefits of DST in a challenging
+domain -- characterized by a highly skewed label distribution that differs
+substantially from typical DST benchmark datasets -- which enables end-to-end
+training with millions of labels on commodity hardware.",http://arxiv.org/pdf/2411.03171v1,,False
+IMUDiffusion: A Diffusion Model for Multivariate Time Series Synthetisation for Inertial Motion Capturing Systems,05/11/2024,"Heiko Oppel, Michael Munz","Kinematic sensors are often used to analyze movement behaviors in sports and
+daily activities due to their ease of use and lack of spatial restrictions,
+unlike video-based motion capturing systems. Still, the generation, and
+especially the labeling of motion data for specific activities can be
+time-consuming and costly. Additionally, many models struggle with limited
+data, which limits their performance in recognizing complex movement patterns.
+To address those issues, generating synthetic data can help expand the
+diversity and variability. In this work, we propose IMUDiffusion, a
+probabilistic diffusion model specifically designed for multivariate time
+series generation. Our approach enables the generation of high-quality time
+series sequences which accurately capture the dynamics of human activities.
+Moreover, by joining our dataset with synthetic data, we achieve a significant
+improvement in the performance of our baseline human activity classifier. In
+some cases, we are able to improve the macro F1-score by almost 30%.
+IMUDiffusion provides a valuable tool for generating realistic human activity
+movements and enhance the robustness of models in scenarios with limited
+training data.",http://arxiv.org/pdf/2411.02954v1,,False
+A scalable generative model for dynamical system reconstruction from neuroimaging data,05/11/2024,"Eric Volkmann, Alena Brändle, Daniel Durstewitz, Georgia Koppe","Data-driven inference of the generative dynamics underlying a set of observed
+time series is of growing interest in machine learning and the natural
+sciences. In neuroscience, such methods promise to alleviate the need to
+handcraft models based on biophysical principles and allow to automatize the
+inference of inter-individual differences in brain dynamics. Recent
+breakthroughs in training techniques for state space models (SSMs) specifically
+geared toward dynamical systems (DS) reconstruction (DSR) enable to recover the
+underlying system including its geometrical (attractor) and long-term
+statistical invariants from even short time series. These techniques are based
+on control-theoretic ideas, like modern variants of teacher forcing (TF), to
+ensure stable loss gradient propagation while training. However, as it
+currently stands, these techniques are not directly applicable to data
+modalities where current observations depend on an entire history of previous
+states due to a signal's filtering properties, as common in neuroscience (and
+physiology more generally). Prominent examples are the blood oxygenation level
+dependent (BOLD) signal in functional magnetic resonance imaging (fMRI) or
+Ca$^{2+}$ imaging data. Such types of signals render the SSM's decoder model
+non-invertible, a requirement for previous TF-based methods. Here, exploiting
+the recent success of control techniques for training SSMs, we propose a novel
+algorithm that solves this problem and scales exceptionally well with model
+dimensionality and filter length. We demonstrate its efficiency in
+reconstructing dynamical systems, including their state space geometry and
+long-term temporal properties, from just short BOLD time series.",http://arxiv.org/pdf/2411.02949v1,,False
+Time-Causal VAE: Robust Financial Time Series Generator,05/11/2024,"Beatrice Acciaio, Stephan Eckstein, Songyan Hou","We build a time-causal variational autoencoder (TC-VAE) for robust generation
+of financial time series data. Our approach imposes a causality constraint on
+the encoder and decoder networks, ensuring a causal transport from the real
+market time series to the fake generated time series. Specifically, we prove
+that the TC-VAE loss provides an upper bound on the causal Wasserstein distance
+between market distributions and generated distributions. Consequently, the
+TC-VAE loss controls the discrepancy between optimal values of various dynamic
+stochastic optimization problems under real and generated distributions. To
+further enhance the model's ability to approximate the latent representation of
+the real market distribution, we integrate a RealNVP prior into the TC-VAE
+framework. Finally, extensive numerical experiments show that TC-VAE achieves
+promising results on both synthetic and real market data. This is done by
+comparing real and generated distributions according to various statistical
+distances, demonstrating the effectiveness of the generated data for downstream
+financial optimization tasks, as well as showcasing that the generated data
+reproduces stylized facts of real financial market data.",http://arxiv.org/pdf/2411.02947v1,,False
+Theoretically Guaranteed Distribution Adaptable Learning,05/11/2024,"Chao Xu, Xijia Tang, Guoqing Liu, Yuhua Qian, Chenping Hou","In many open environment applications, data are collected in the form of a
+stream, which exhibits an evolving distribution over time. How to design
+algorithms to track these evolving data distributions with provable guarantees,
+particularly in terms of the generalization ability, remains a formidable
+challenge. To handle this crucial but rarely studied problem and take a further
+step toward robust artificial intelligence, we propose a novel framework called
+Distribution Adaptable Learning (DAL). It enables the model to effectively
+track the evolving data distributions. By Encoding Feature Marginal
+Distribution Information (EFMDI), we broke the limitations of optimal transport
+to characterize the environmental changes and enable model reuse across diverse
+data distributions. It can enhance the reusable and evolvable properties of DAL
+in accommodating evolving distributions. Furthermore, to obtain the model
+interpretability, we not only analyze the generalization error bound of the
+local step in the evolution process, but also investigate the generalization
+error bound associated with the entire classifier trajectory of the evolution
+based on the Fisher-Rao distance. For demonstration, we also present two
+special cases within the framework, together with their optimizations and
+convergence analyses. Experimental results over both synthetic and real-world
+data distribution evolving tasks validate the effectiveness and practical
+utility of the proposed framework.",http://arxiv.org/pdf/2411.02921v1,,False
+Exploring the Interplay Between Video Generation and World Models in Autonomous Driving: A Survey,05/11/2024,"Ao Fu, Yi Zhou, Tao Zhou, Yi Yang, Bojun Gao, Qun Li, Guobin Wu, Ling Shao","World models and video generation are pivotal technologies in the domain of
+autonomous driving, each playing a critical role in enhancing the robustness
+and reliability of autonomous systems. World models, which simulate the
+dynamics of real-world environments, and video generation models, which produce
+realistic video sequences, are increasingly being integrated to improve
+situational awareness and decision-making capabilities in autonomous vehicles.
+This paper investigates the relationship between these two technologies,
+focusing on how their structural parallels, particularly in diffusion-based
+models, contribute to more accurate and coherent simulations of driving
+scenarios. We examine leading works such as JEPA, Genie, and Sora, which
+exemplify different approaches to world model design, thereby highlighting the
+lack of a universally accepted definition of world models. These diverse
+interpretations underscore the field's evolving understanding of how world
+models can be optimized for various autonomous driving tasks. Furthermore, this
+paper discusses the key evaluation metrics employed in this domain, such as
+Chamfer distance for 3D scene reconstruction and Fr\'echet Inception Distance
+(FID) for assessing the quality of generated video content. By analyzing the
+interplay between video generation and world models, this survey identifies
+critical challenges and future research directions, emphasizing the potential
+of these technologies to jointly advance the performance of autonomous driving
+systems. The findings presented in this paper aim to provide a comprehensive
+understanding of how the integration of video generation and world models can
+drive innovation in the development of safer and more reliable autonomous
+vehicles.",http://arxiv.org/pdf/2411.02914v1,,False
+Analyzing Poverty through Intra-Annual Time-Series: A Wavelet Transform Approach,05/11/2024,"Mohammad Kakooei, Klaudia Solska, Adel Daoud","Reducing global poverty is a key objective of the Sustainable Development
+Goals (SDGs). Achieving this requires high-frequency, granular data to capture
+neighborhood-level changes, particularly in data scarce regions such as low-
+and middle-income countries. To fill in the data gaps, recent computer vision
+methods combining machine learning (ML) with earth observation (EO) data to
+improve poverty estimation. However, while much progress have been made, they
+often omit intra-annual variations, which are crucial for estimating poverty in
+agriculturally dependent countries. We explored the impact of integrating
+intra-annual NDVI information with annual multi-spectral data on model
+accuracy. To evaluate our method, we created a simulated dataset using Landsat
+imagery and nighttime light data to evaluate EO-ML methods that use
+intra-annual EO data. Additionally, we evaluated our method against the
+Demographic and Health Survey (DHS) dataset across Africa. Our results indicate
+that integrating specific NDVI-derived features with multi-spectral data
+provides valuable insights for poverty analysis, emphasizing the importance of
+retaining intra-annual information.",http://arxiv.org/pdf/2411.02855v1,,False
+Generalization and Risk Bounds for Recurrent Neural Networks,05/11/2024,"Xuewei Cheng, Ke Huang, Shujie Ma","Recurrent Neural Networks (RNNs) have achieved great success in the
+prediction of sequential data. However, their theoretical studies are still
+lagging behind because of their complex interconnected structures. In this
+paper, we establish a new generalization error bound for vanilla RNNs, and
+provide a unified framework to calculate the Rademacher complexity that can be
+applied to a variety of loss functions. When the ramp loss is used, we show
+that our bound is tighter than the existing bounds based on the same
+assumptions on the Frobenius and spectral norms of the weight matrices and a
+few mild conditions. Our numerical results show that our new generalization
+bound is the tightest among all existing bounds in three public datasets. Our
+bound improves the second tightest one by an average percentage of 13.80% and
+3.01% when the $\tanh$ and ReLU activation functions are used, respectively.
+Moreover, we derive a sharp estimation error bound for RNN-based estimators
+obtained through empirical risk minimization (ERM) in multi-class
+classification problems when the loss function satisfies a Bernstein condition.",http://arxiv.org/pdf/2411.02784v1,,False
+Deep learning-based modularized loading protocol for parameter estimation of Bouc-Wen class models,05/11/2024,"Sebin Oh, Junho Song, Taeyong Kim","This study proposes a modularized deep learning-based loading protocol for
+optimal parameter estimation of Bouc-Wen (BW) class models. The protocol
+consists of two key components: optimal loading history construction and
+CNN-based rapid parameter estimation. Each component is decomposed into
+independent sub-modules tailored to distinct hysteretic behaviors-basic
+hysteresis, structural degradation, and pinching effect-making the protocol
+adaptable to diverse hysteresis models. Three independent CNN architectures are
+developed to capture the path-dependent nature of these hysteretic behaviors.
+By training these CNN architectures on diverse loading histories, minimal
+loading sequences, termed \textit{loading history modules}, are identified and
+then combined to construct an optimal loading history. The three CNN models,
+trained on the respective loading history modules, serve as rapid parameter
+estimators. Numerical evaluation of the protocol, including nonlinear time
+history analysis of a 3-story steel moment frame and fragility curve
+construction for a 3-story reinforced concrete frame, demonstrates that the
+proposed protocol significantly reduces total analysis time while maintaining
+or improving estimation accuracy. The proposed protocol can be extended to
+other hysteresis models, suggesting a systematic approach for identifying
+general hysteresis models.",http://arxiv.org/pdf/2411.02776v1,,False
+New random projections for isotropic kernels using stable spectral distributions,05/11/2024,"Nicolas Langrené, Xavier Warin, Pierre Gruet","Rahimi and Recht [31] introduced the idea of decomposing shift-invariant
+kernels by randomly sampling from their spectral distribution. This famous
+technique, known as Random Fourier Features (RFF), is in principle applicable
+to any shift-invariant kernel whose spectral distribution can be identified and
+simulated. In practice, however, it is usually applied to the Gaussian kernel
+because of its simplicity, since its spectral distribution is also Gaussian.
+Clearly, simple spectral sampling formulas would be desirable for broader
+classes of kernel functions. In this paper, we propose to decompose spectral
+kernel distributions as a scale mixture of $\alpha$-stable random vectors. This
+provides a simple and ready-to-use spectral sampling formula for a very large
+class of multivariate shift-invariant kernels, including exponential power
+kernels, generalized Mat\'ern kernels, generalized Cauchy kernels, as well as
+newly introduced kernels such as the Beta, Kummer, and Tricomi kernels. In
+particular, we show that the spectral densities of all these kernels are scale
+mixtures of the multivariate Gaussian distribution. This provides a very simple
+way to modify existing Random Fourier Features software based on Gaussian
+kernels to cover a much richer class of multivariate kernels. This result has
+broad applications for support vector machines, kernel ridge regression,
+Gaussian processes, and other kernel-based machine learning techniques for
+which the random Fourier features technique is applicable.",http://arxiv.org/pdf/2411.02770v1,,False
+"Elliptical Wishart distributions: information geometry, maximum likelihood estimator, performance analysis and statistical learning",05/11/2024,"Imen Ayadi, Florent Bouchard, Frédéric Pascal","This paper deals with Elliptical Wishart distributions - which generalize the
+Wishart distribution - in the context of signal processing and machine
+learning. Two algorithms to compute the maximum likelihood estimator (MLE) are
+proposed: a fixed point algorithm and a Riemannian optimization method based on
+the derived information geometry of Elliptical Wishart distributions. The
+existence and uniqueness of the MLE are characterized as well as the
+convergence of both estimation algorithms. Statistical properties of the MLE
+are also investigated such as consistency, asymptotic normality and an
+intrinsic version of Fisher efficiency. On the statistical learning side, novel
+classification and clustering methods are designed. For the $t$-Wishart
+distribution, the performance of the MLE and statistical learning algorithms
+are evaluated on both simulated and real EEG and hyperspectral data, showcasing
+the interest of our proposed methods.",http://arxiv.org/pdf/2411.02726v1,,False
+Point processes with event time uncertainty,05/11/2024,"Xiuyuan Cheng, Tingnan Gong, Yao Xie","Point processes are widely used statistical models for uncovering the
+temporal patterns in dependent event data. In many applications, the event time
+cannot be observed exactly, calling for the incorporation of time uncertainty
+into the modeling of point process data. In this work, we introduce a framework
+to model time-uncertain point processes possibly on a network. We start by
+deriving the formulation in the continuous-time setting under a few assumptions
+motivated by application scenarios. After imposing a time grid, we obtain a
+discrete-time model that facilitates inference and can be computed by
+first-order optimization methods such as Gradient Descent or Variation
+inequality (VI) using batch-based Stochastic Gradient Descent (SGD). The
+parameter recovery guarantee is proved for VI inference at an $O(1/k)$
+convergence rate using $k$ SGD steps. Our framework handles non-stationary
+processes by modeling the inference kernel as a matrix (or tensor on a network)
+and it covers the stationary process, such as the classical Hawkes process, as
+a special case. We experimentally show that the proposed approach outperforms
+previous General Linear model (GLM) baselines on simulated and real data and
+reveals meaningful causal relations on a Sepsis-associated Derangements
+dataset.",http://arxiv.org/pdf/2411.02694v1,,False

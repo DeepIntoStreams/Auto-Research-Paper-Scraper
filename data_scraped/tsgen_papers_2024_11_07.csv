@@ -1,0 +1,270 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+A Comparative Study of Deep Reinforcement Learning for Crop Production Management,06/11/2024,"Joseph Balderas, Dong Chen, Yanbo Huang, Li Wang, Ren-Cang Li","Crop production management is essential for optimizing yield and minimizing a
+field's environmental impact to crop fields, yet it remains challenging due to
+the complex and stochastic processes involved. Recently, researchers have
+turned to machine learning to address these complexities. Specifically,
+reinforcement learning (RL), a cutting-edge approach designed to learn optimal
+decision-making strategies through trial and error in dynamic environments, has
+emerged as a promising tool for developing adaptive crop management policies.
+RL models aim to optimize long-term rewards by continuously interacting with
+the environment, making them well-suited for tackling the uncertainties and
+variability inherent in crop management. Studies have shown that RL can
+generate crop management policies that compete with, and even outperform,
+expert-designed policies within simulation-based crop models. In the gym-DSSAT
+crop model environment, one of the most widely used simulators for crop
+management, proximal policy optimization (PPO) and deep Q-networks (DQN) have
+shown promising results. However, these methods have not yet been
+systematically evaluated under identical conditions. In this study, we
+evaluated PPO and DQN against static baseline policies across three different
+RL tasks, fertilization, irrigation, and mixed management, provided by the
+gym-DSSAT environment. To ensure a fair comparison, we used consistent default
+parameters, identical reward functions, and the same environment settings. Our
+results indicate that PPO outperforms DQN in fertilization and irrigation
+tasks, while DQN excels in the mixed management task. This comparative analysis
+provides critical insights into the strengths and limitations of each approach,
+advancing the development of more effective RL-based crop management
+strategies.",http://arxiv.org/pdf/2411.04106v1,,False
+Towards Resource-Efficient Federated Learning in Industrial IoT for Multivariate Time Series Analysis,06/11/2024,"Alexandros Gkillas, Aris Lalos","Anomaly and missing data constitute a thorny problem in industrial
+applications. In recent years, deep learning enabled anomaly detection has
+emerged as a critical direction, however the improved detection accuracy is
+achieved with the utilization of large neural networks, increasing their
+storage and computational cost. Moreover, the data collected in edge devices
+contain user privacy, introducing challenges that can be successfully addressed
+by the privacy-preserving distributed paradigm, known as federated learning
+(FL). This framework allows edge devices to train and exchange models
+increasing also the communication cost. Thus, to deal with the increased
+communication, processing and storage challenges of the FL based deep anomaly
+detection NN pruning is expected to have significant benefits towards reducing
+the processing, storage and communication complexity. With this focus, a novel
+compression-based optimization problem is proposed at the server-side of a FL
+paradigm that fusses the received local models broadcast and performs pruning
+generating a more compressed model. Experiments in the context of anomaly
+detection and missing value imputation demonstrate that the proposed FL
+scenario along with the proposed compressed-based method are able to achieve
+high compression rates (more than $99.7\%$) with negligible performance losses
+(less than $1.18\%$ ) as compared to the centralized solutions.",http://arxiv.org/pdf/2411.03996v1,,False
+ET-SEED: Efficient Trajectory-Level SE(3) Equivariant Diffusion Policy,06/11/2024,"Chenrui Tie, Yue Chen, Ruihai Wu, Boxuan Dong, Zeyi Li, Chongkai Gao, Hao Dong","Imitation learning, e.g., diffusion policy, has been proven effective in
+various robotic manipulation tasks. However, extensive demonstrations are
+required for policy robustness and generalization. To reduce the demonstration
+reliance, we leverage spatial symmetry and propose ET-SEED, an efficient
+trajectory-level SE(3) equivariant diffusion model for generating action
+sequences in complex robot manipulation tasks. Further, previous equivariant
+diffusion models require the per-step equivariance in the Markov process,
+making it difficult to learn policy under such strong constraints. We
+theoretically extend equivariant Markov kernels and simplify the condition of
+equivariant diffusion process, thereby significantly improving training
+efficiency for trajectory-level SE(3) equivariant diffusion policy in an
+end-to-end manner. We evaluate ET-SEED on representative robotic manipulation
+tasks, involving rigid body, articulated and deformable object. Experiments
+demonstrate superior data efficiency and manipulation proficiency of our
+proposed method, as well as its ability to generalize to unseen configurations
+with only a few demonstrations. Website: https://et-seed.github.io/",http://arxiv.org/pdf/2411.03990v1,,False
+Can Custom Models Learn In-Context? An Exploration of Hybrid Architecture Performance on In-Context Learning Tasks,06/11/2024,"Ryan Campbell, Nelson Lojo, Kesava Viswanadha, Christoffer Grondal Tryggestad, Derrick Han Sun, Sriteja Vijapurapu, August Rolfsen, Anant Sahai","In-Context Learning (ICL) is a phenomenon where task learning occurs through
+a prompt sequence without the necessity of parameter updates. ICL in
+Multi-Headed Attention (MHA) with absolute positional embedding has been the
+focus of more study than other sequence model varieties. We examine
+implications of architectural differences between GPT-2 and LLaMa as well as
+LlaMa and Mamba. We extend work done by Garg et al. (2022) and Park et al.
+(2024) to GPT-2/LLaMa hybrid and LLaMa/Mamba hybrid models - examining the
+interplay between sequence transformation blocks and regressive performance
+in-context. We note that certain architectural changes cause degraded training
+efficiency/ICL accuracy by converging to suboptimal predictors or converging
+slower. We also find certain hybrids showing optimistic performance
+improvements, informing potential future ICL-focused architecture
+modifications. Additionally, we propose the ""ICL regression score"", a scalar
+metric describing a model's whole performance on a specific task. Compute
+limitations impose restrictions on our architecture-space, training duration,
+number of training runs, function class complexity, and benchmark complexity.
+To foster reproducible and extensible research, we provide a typed, modular,
+and extensible Python package on which we run all experiments.",http://arxiv.org/pdf/2411.03945v1,,False
+Game-Theoretic Machine Unlearning: Mitigating Extra Privacy Leakage,06/11/2024,"Hengzhu Liu, Tianqing Zhu, Lefeng Zhang, Ping Xiong","With the extensive use of machine learning technologies, data providers
+encounter increasing privacy risks. Recent legislation, such as GDPR, obligates
+organizations to remove requested data and its influence from a trained model.
+Machine unlearning is an emerging technique designed to enable machine learning
+models to erase users' private information. Although several efficient machine
+unlearning schemes have been proposed, these methods still have limitations.
+First, removing the contributions of partial data may lead to model performance
+degradation. Second, discrepancies between the original and generated unlearned
+models can be exploited by attackers to obtain target sample's information,
+resulting in additional privacy leakage risks. To address above challenges, we
+proposed a game-theoretic machine unlearning algorithm that simulates the
+competitive relationship between unlearning performance and privacy protection.
+This algorithm comprises unlearning and privacy modules. The unlearning module
+possesses a loss function composed of model distance and classification error,
+which is used to derive the optimal strategy. The privacy module aims to make
+it difficult for an attacker to infer membership information from the unlearned
+data, thereby reducing the privacy leakage risk during the unlearning process.
+Additionally, the experimental results on real-world datasets demonstrate that
+this game-theoretic unlearning algorithm's effectiveness and its ability to
+generate an unlearned model with a performance similar to that of the retrained
+one while mitigating extra privacy leakage risks.",http://arxiv.org/pdf/2411.03914v1,,False
+Retentive Neural Quantum States: Efficient Ansätze for Ab Initio Quantum Chemistry,06/11/2024,"Oliver Knitter, Dan Zhao, James Stokes, Martin Ganahl, Stefan Leichenauer, Shravan Veerapaneni","Neural-network quantum states (NQS) has emerged as a powerful application of
+quantum-inspired deep learning for variational Monte Carlo methods, offering a
+competitive alternative to existing techniques for identifying ground states of
+quantum problems. A significant advancement toward improving the practical
+scalability of NQS has been the incorporation of autoregressive models, most
+recently transformers, as variational ansatze. Transformers learn sequence
+information with greater expressiveness than recurrent models, but at the cost
+of increased time complexity with respect to sequence length. We explore the
+use of the retentive network (RetNet), a recurrent alternative to transformers,
+as an ansatz for solving electronic ground state problems in $\textit{ab
+initio}$ quantum chemistry. Unlike transformers, RetNets overcome this time
+complexity bottleneck by processing data in parallel during training, and
+recurrently during inference. We give a simple computational cost estimate of
+the RetNet and directly compare it with similar estimates for transformers,
+establishing a clear threshold ratio of problem-to-model size past which the
+RetNet's time complexity outperforms that of the transformer. Though this
+efficiency can comes at the expense of decreased expressiveness relative to the
+transformer, we overcome this gap through training strategies that leverage the
+autoregressive structure of the model -- namely, variational neural annealing.
+Our findings support the RetNet as a means of improving the time complexity of
+NQS without sacrificing accuracy. We provide further evidence that the ablative
+improvements of neural annealing extend beyond the RetNet architecture,
+suggesting it would serve as an effective general training strategy for
+autoregressive NQS.",http://arxiv.org/pdf/2411.03900v1,,False
+Large Generative Model-assisted Talking-face Semantic Communication System,06/11/2024,"Feibo Jiang, Siwei Tu, Li Dong, Cunhua Pan, Jiangzhou Wang, Xiaohu You","The rapid development of generative Artificial Intelligence (AI) continually
+unveils the potential of Semantic Communication (SemCom). However, current
+talking-face SemCom systems still encounter challenges such as low bandwidth
+utilization, semantic ambiguity, and diminished Quality of Experience (QoE).
+This study introduces a Large Generative Model-assisted Talking-face Semantic
+Communication (LGM-TSC) System tailored for the talking-face video
+communication. Firstly, we introduce a Generative Semantic Extractor (GSE) at
+the transmitter based on the FunASR model to convert semantically sparse
+talking-face videos into texts with high information density. Secondly, we
+establish a private Knowledge Base (KB) based on the Large Language Model (LLM)
+for semantic disambiguation and correction, complemented by a joint knowledge
+base-semantic-channel coding scheme. Finally, at the receiver, we propose a
+Generative Semantic Reconstructor (GSR) that utilizes BERT-VITS2 and SadTalker
+models to transform text back into a high-QoE talking-face video matching the
+user's timbre. Simulation results demonstrate the feasibility and effectiveness
+of the proposed LGM-TSC system.",http://arxiv.org/pdf/2411.03876v1,,False
+Flexible task abstractions emerge in linear networks with fast and bounded units,06/11/2024,"Kai Sandbrink, Jan P. Bauer, Alexandra M. Proca, Andrew M. Saxe, Christopher Summerfield, Ali Hummos","Animals survive in dynamic environments changing at arbitrary timescales, but
+such data distribution shifts are a challenge to neural networks. To adapt to
+change, neural systems may change a large number of parameters, which is a slow
+process involving forgetting past information. In contrast, animals leverage
+distribution changes to segment their stream of experience into tasks and
+associate them with internal task abstracts. Animals can then respond flexibly
+by selecting the appropriate task abstraction. However, how such flexible task
+abstractions may arise in neural systems remains unknown. Here, we analyze a
+linear gated network where the weights and gates are jointly optimized via
+gradient descent, but with neuron-like constraints on the gates including a
+faster timescale, nonnegativity, and bounded activity. We observe that the
+weights self-organize into modules specialized for tasks or sub-tasks
+encountered, while the gates layer forms unique representations that switch the
+appropriate weight modules (task abstractions). We analytically reduce the
+learning dynamics to an effective eigenspace, revealing a virtuous cycle: fast
+adapting gates drive weight specialization by protecting previous knowledge,
+while weight specialization in turn increases the update rate of the gating
+layer. Task switching in the gating layer accelerates as a function of
+curriculum block size and task training, mirroring key findings in cognitive
+neuroscience. We show that the discovered task abstractions support
+generalization through both task and subtask composition, and we extend our
+findings to a non-linear network switching between two tasks. Overall, our work
+offers a theory of cognitive flexibility in animals as arising from joint
+gradient descent on synaptic and neural gating in a neural network
+architecture.",http://arxiv.org/pdf/2411.03840v1,,False
+Automating Exploratory Proteomics Research via Language Models,06/11/2024,"Ning Ding, Shang Qu, Linhai Xie, Yifei Li, Zaoqu Liu, Kaiyan Zhang, Yibai Xiong, Yuxin Zuo, Zhangren Chen, Ermo Hua, Xingtai Lv, Youbang Sun, Yang Li, Dong Li, Fuchu He, Bowen Zhou","With the development of artificial intelligence, its contribution to science
+is evolving from simulating a complex problem to automating entire research
+processes and producing novel discoveries. Achieving this advancement requires
+both specialized general models grounded in real-world scientific data and
+iterative, exploratory frameworks that mirror human scientific methodologies.
+In this paper, we present PROTEUS, a fully automated system for scientific
+discovery from raw proteomics data. PROTEUS uses large language models (LLMs)
+to perform hierarchical planning, execute specialized bioinformatics tools, and
+iteratively refine analysis workflows to generate high-quality scientific
+hypotheses. The system takes proteomics datasets as input and produces a
+comprehensive set of research objectives, analysis results, and novel
+biological hypotheses without human intervention. We evaluated PROTEUS on 12
+proteomics datasets collected from various biological samples (e.g. immune
+cells, tumors) and different sample types (single-cell and bulk), generating
+191 scientific hypotheses. These were assessed using both automatic LLM-based
+scoring on 5 metrics and detailed reviews from human experts. Results
+demonstrate that PROTEUS consistently produces reliable, logically coherent
+results that align well with existing literature while also proposing novel,
+evaluable hypotheses. The system's flexible architecture facilitates seamless
+integration of diverse analysis tools and adaptation to different proteomics
+data types. By automating complex proteomics analysis workflows and hypothesis
+generation, PROTEUS has the potential to considerably accelerate the pace of
+scientific discovery in proteomics research, enabling researchers to
+efficiently explore large-scale datasets and uncover biological insights.",http://arxiv.org/pdf/2411.03743v1,,False
+Towards 3D Semantic Scene Completion for Autonomous Driving: A Meta-Learning Framework Empowered by Deformable Large-Kernel Attention and Mamba Model,06/11/2024,"Yansong Qu, Zilin Huang, Zihao Sheng, Tiantian Chen, Sikai Chen","Semantic scene completion (SSC) is essential for achieving comprehensive
+perception in autonomous driving systems. However, existing SSC methods often
+overlook the high deployment costs in real-world applications. Traditional
+architectures, such as 3D Convolutional Neural Networks (3D CNNs) and
+self-attention mechanisms, face challenges in efficiently capturing long-range
+dependencies within 3D voxel grids, limiting their effectiveness. To address
+these issues, we introduce MetaSSC, a novel meta-learning-based framework for
+SSC that leverages deformable convolution, large-kernel attention, and the
+Mamba (D-LKA-M) model. Our approach begins with a voxel-based semantic
+segmentation (SS) pretraining task, aimed at exploring the semantics and
+geometry of incomplete regions while acquiring transferable meta-knowledge.
+Using simulated cooperative perception datasets, we supervise the perception
+training of a single vehicle using aggregated sensor data from multiple nearby
+connected autonomous vehicles (CAVs), generating richer and more comprehensive
+labels. This meta-knowledge is then adapted to the target domain through a
+dual-phase training strategy that does not add extra model parameters, enabling
+efficient deployment. To further enhance the model's capability in capturing
+long-sequence relationships within 3D voxel grids, we integrate Mamba blocks
+with deformable convolution and large-kernel attention into the backbone
+network. Extensive experiments demonstrate that MetaSSC achieves
+state-of-the-art performance, significantly outperforming competing models
+while also reducing deployment costs.",http://arxiv.org/pdf/2411.03672v1,,False
+A Subsampling Based Neural Network for Spatial Data,06/11/2024,Debjoy Thakur,"The application of deep neural networks in geospatial data has become a
+trending research problem in the present day. A significant amount of
+statistical research has already been introduced, such as generalized least
+square optimization by incorporating spatial variance-covariance matrix,
+considering basis functions in the input nodes of the neural networks, and so
+on. However, for lattice data, there is no available literature about the
+utilization of asymptotic analysis of neural networks in regression for spatial
+data. This article proposes a consistent localized two-layer deep neural
+network-based regression for spatial data. We have proved the consistency of
+this deep neural network for bounded and unbounded spatial domains under a
+fixed sampling design of mixed-increasing spatial regions. We have proved that
+its asymptotic convergence rate is faster than that of \cite{zhan2024neural}'s
+neural network and an improved generalization of \cite{shen2023asymptotic}'s
+neural network structure. We empirically observe the rate of convergence of
+discrepancy measures between the empirical probability distribution of observed
+and predicted data, which will become faster for a less smooth spatial surface.
+We have applied our asymptotic analysis of deep neural networks to the
+estimation of the monthly average temperature of major cities in the USA from
+its satellite image. This application is an effective showcase of non-linear
+spatial regression. We demonstrate our methodology with simulated lattice data
+in various scenarios.",http://arxiv.org/pdf/2411.03620v1,,False
+Open-Source High-Speed Flight Surrogate Modeling Framework,06/11/2024,"Tyler E. Korenyi-Both, Nathan J. Falkiewicz, Matthew C. Jones","High-speed flight vehicles, which travel much faster than the speed of sound,
+are crucial for national defense and space exploration. However, accurately
+predicting their behavior under numerous, varied flight conditions is a
+challenge and often prohibitively expensive. The proposed approach involves
+creating smarter, more efficient machine learning models (also known as
+surrogate models or meta models) that can fuse data generated from a variety of
+fidelity levels -- to include engineering methods, simulation, wind tunnel, and
+flight test data -- to make more accurate predictions. These models are able to
+move the bulk of the computation from high performance computing (HPC) to
+single user machines (laptop, desktop, etc.). The project builds upon previous
+work but introduces code improvements and an informed perspective on the
+direction of the field. The new surrogate modeling framework is now modular
+and, by design, broadly applicable to many modeling problems. The new framework
+also has a more robust automatic hyperparameter tuning capability and abstracts
+away most of the pre- and post-processing tasks. The Gaussian process
+regression and deep neural network-based models included in the presented
+framework were able to model two datasets with high accuracy (R^2>0.99). The
+primary conclusion is that the framework is effective and has been delivered to
+the Air Force for integration into real-world projects. For future work,
+significant and immediate investment in continued research is crucial. The
+author recommends further testing and refining modeling methods that explicitly
+incorporate physical laws and are robust enough to handle simulation and test
+data from varying resolutions and sources, including coarse meshes, fine
+meshes, unstructured meshes, and limited experimental test points.",http://arxiv.org/pdf/2411.03598v1,,False
+An Experimental Study on Decomposition-Based Deep Ensemble Learning for Traffic Flow Forecasting,06/11/2024,"Qiyuan Zhu, A. K. Qin, Hussein Dia, Adriana-Simona Mihaita, Hanna Grzybowska","Traffic flow forecasting is a crucial task in intelligent transport systems.
+Deep learning offers an effective solution, capturing complex patterns in
+time-series traffic flow data to enable the accurate prediction. However, deep
+learning models are prone to overfitting the intricate details of flow data,
+leading to poor generalisation. Recent studies suggest that decomposition-based
+deep ensemble learning methods may address this issue by breaking down a time
+series into multiple simpler signals, upon which deep learning models are built
+and ensembled to generate the final prediction. However, few studies have
+compared the performance of decomposition-based ensemble methods with
+non-decomposition-based ones which directly utilise raw time-series data. This
+work compares several decomposition-based and non-decomposition-based deep
+ensemble learning methods. Experimental results on three traffic datasets
+demonstrate the superiority of decomposition-based ensemble methods, while also
+revealing their sensitivity to aggregation strategies and forecasting horizons.",http://arxiv.org/pdf/2411.03588v1,,False

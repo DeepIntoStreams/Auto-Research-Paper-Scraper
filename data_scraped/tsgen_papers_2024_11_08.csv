@@ -1,0 +1,300 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Which bits went where? Past and future transfer entropy decomposition with the information bottleneck,07/11/2024,"Kieran A. Murphy, Zhuowen Yin, Dani S. Bassett","Whether the system under study is a shoal of fish, a collection of neurons,
+or a set of interacting atmospheric and oceanic processes, transfer entropy
+measures the flow of information between time series and can detect possible
+causal relationships. Much like mutual information, transfer entropy is
+generally reported as a single value summarizing an amount of shared variation,
+yet a more fine-grained accounting might illuminate much about the processes
+under study. Here we propose to decompose transfer entropy and localize the
+bits of variation on both sides of information flow: that of the originating
+process's past and that of the receiving process's future. We employ the
+information bottleneck (IB) to compress the time series and identify the
+transferred entropy. We apply our method to decompose the transfer entropy in
+several synthetic recurrent processes and an experimental mouse dataset of
+concurrent behavioral and neural activity. Our approach highlights the nuanced
+dynamics within information flow, laying a foundation for future explorations
+into the intricate interplay of temporal processes in complex systems.",http://arxiv.org/pdf/2411.04992v1,,False
+DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning,07/11/2024,"Gaoyue Zhou, Hengkai Pan, Yann LeCun, Lerrel Pinto","The ability to predict future outcomes given control actions is fundamental
+for physical reasoning. However, such predictive models, often called world
+models, have proven challenging to learn and are typically developed for
+task-specific solutions with online policy learning. We argue that the true
+potential of world models lies in their ability to reason and plan across
+diverse problems using only passive data. Concretely, we require world models
+to have the following three properties: 1) be trainable on offline,
+pre-collected trajectories, 2) support test-time behavior optimization, and 3)
+facilitate task-agnostic reasoning. To realize this, we present DINO World
+Model (DINO-WM), a new method to model visual dynamics without reconstructing
+the visual world. DINO-WM leverages spatial patch features pre-trained with
+DINOv2, enabling it to learn from offline behavioral trajectories by predicting
+future patch features. This design allows DINO-WM to achieve observational
+goals through action sequence optimization, facilitating task-agnostic behavior
+planning by treating desired goal patch features as prediction targets. We
+evaluate DINO-WM across various domains, including maze navigation, tabletop
+pushing, and particle manipulation. Our experiments demonstrate that DINO-WM
+can generate zero-shot behavioral solutions at test time without relying on
+expert demonstrations, reward modeling, or pre-learned inverse models. Notably,
+DINO-WM exhibits strong generalization capabilities compared to prior
+state-of-the-art work, adapting to diverse task families such as arbitrarily
+configured mazes, push manipulation with varied object shapes, and
+multi-particle scenarios.",http://arxiv.org/pdf/2411.04983v1,,False
+SuffixDecoding: A Model-Free Approach to Speeding Up Large Language Model Inference,07/11/2024,"Gabriele Oliaro, Zhihao Jia, Daniel Campos, Aurick Qiao","We present SuffixDecoding, a novel model-free approach to accelerating large
+language model (LLM) inference through speculative decoding. Unlike existing
+methods that rely on draft models or specialized decoding heads, SuffixDecoding
+leverages suffix trees built from previously generated outputs to efficiently
+predict candidate token sequences. Our approach enables flexible
+tree-structured speculation without the overhead of maintaining and
+orchestrating additional models. SuffixDecoding builds and dynamically updates
+suffix trees to capture patterns in the generated text, using them to construct
+speculation trees through a principled scoring mechanism based on empirical
+token frequencies. SuffixDecoding requires only CPU memory which is plentiful
+and underutilized on typical LLM serving nodes. We demonstrate that
+SuffixDecoding achieves competitive speedups compared to model-based approaches
+across diverse workloads including open-domain chat, code generation, and
+text-to-SQL tasks. For open-ended chat and code generation tasks,
+SuffixDecoding achieves up to $1.4\times$ higher output throughput than
+SpecInfer and up to $1.1\times$ lower time-per-token (TPOT) latency. For a
+proprietary multi-LLM text-to-SQL application, SuffixDecoding achieves up to
+$2.9\times$ higher output throughput and $3\times$ lower latency than
+speculative decoding. Our evaluation shows that SuffixDecoding maintains high
+acceptance rates even with small reference corpora of 256 examples, while
+continuing to improve performance as more historical outputs are incorporated.",http://arxiv.org/pdf/2411.04975v1,,False
+DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion,07/11/2024,"Wenqiang Sun, Shuo Chen, Fangfu Liu, Zilong Chen, Yueqi Duan, Jun Zhang, Yikai Wang","In this paper, we introduce \textbf{DimensionX}, a framework designed to
+generate photorealistic 3D and 4D scenes from just a single image with video
+diffusion. Our approach begins with the insight that both the spatial structure
+of a 3D scene and the temporal evolution of a 4D scene can be effectively
+represented through sequences of video frames. While recent video diffusion
+models have shown remarkable success in producing vivid visuals, they face
+limitations in directly recovering 3D/4D scenes due to limited spatial and
+temporal controllability during generation. To overcome this, we propose
+ST-Director, which decouples spatial and temporal factors in video diffusion by
+learning dimension-aware LoRAs from dimension-variant data. This controllable
+video diffusion approach enables precise manipulation of spatial structure and
+temporal dynamics, allowing us to reconstruct both 3D and 4D representations
+from sequential frames with the combination of spatial and temporal dimensions.
+Additionally, to bridge the gap between generated videos and real-world scenes,
+we introduce a trajectory-aware mechanism for 3D generation and an
+identity-preserving denoising strategy for 4D generation. Extensive experiments
+on various real-world and synthetic datasets demonstrate that DimensionX
+achieves superior results in controllable video generation, as well as in 3D
+and 4D scene generation, compared with previous methods.",http://arxiv.org/pdf/2411.04928v1,,False
+Evaluating Robustness of Reinforcement Learning Algorithms for Autonomous Shipping,07/11/2024,"Bavo Lesy, Ali Anwar, Siegfried Mercelis","Recently, there has been growing interest in autonomous shipping due to its
+potential to improve maritime efficiency and safety. The use of advanced
+technologies, such as artificial intelligence, can address the current
+navigational and operational challenges in autonomous shipping. In particular,
+inland waterway transport (IWT) presents a unique set of challenges, such as
+crowded waterways and variable environmental conditions. In such dynamic
+settings, the reliability and robustness of autonomous shipping solutions are
+critical factors for ensuring safe operations. This paper examines the
+robustness of benchmark deep reinforcement learning (RL) algorithms,
+implemented for IWT within an autonomous shipping simulator, and their ability
+to generate effective motion planning policies. We demonstrate that a
+model-free approach can achieve an adequate policy in the simulator,
+successfully navigating port environments never encountered during training. We
+focus particularly on Soft-Actor Critic (SAC), which we show to be inherently
+more robust to environmental disturbances compared to MuZero, a
+state-of-the-art model-based RL algorithm. In this paper, we take a significant
+step towards developing robust, applied RL frameworks that can be generalized
+to various vessel types and navigate complex port- and inland environments and
+scenarios.",http://arxiv.org/pdf/2411.04915v1,,False
+GUI Agents with Foundation Models: A Comprehensive Survey,07/11/2024,"Shuai Wang, Weiwen Liu, Jingxuan Chen, Weinan Gan, Xingshan Zeng, Shuai Yu, Xinlong Hao, Kun Shao, Yasheng Wang, Ruiming Tang","Recent advances in foundation models, particularly Large Language Models
+(LLMs) and Multimodal Large Language Models (MLLMs), facilitate intelligent
+agents being capable of performing complex tasks. By leveraging the ability of
+(M)LLMs to process and interpret Graphical User Interfaces (GUIs), these agents
+can autonomously execute user instructions by simulating human-like
+interactions such as clicking and typing. This survey consolidates recent
+research on (M)LLM-based GUI agents, highlighting key innovations in data,
+frameworks, and applications. We begin by discussing representative datasets
+and benchmarks. Next, we summarize a unified framework that captures the
+essential components used in prior research, accompanied by a taxonomy.
+Additionally, we explore commercial applications of (M)LLM-based GUI agents.
+Drawing from existing work, we identify several key challenges and propose
+future research directions. We hope this paper will inspire further
+developments in the field of (M)LLM-based GUI agents.",http://arxiv.org/pdf/2411.04890v1,,False
+Conjugate gradient methods for high-dimensional GLMMs,07/11/2024,"Andrea Pandolfi, Omiros Papaspiliopoulos, Giacomo Zanella","Generalized linear mixed models (GLMMs) are a widely used tool in statistical
+analysis. The main bottleneck of many computational approaches lies in the
+inversion of the high dimensional precision matrices associated with the random
+effects. Such matrices are typically sparse; however, the sparsity pattern
+resembles a multi partite random graph, which does not lend itself well to
+default sparse linear algebra techniques. Notably, we show that, for typical
+GLMMs, the Cholesky factor is dense even when the original precision is sparse.
+We thus turn to approximate iterative techniques, in particular to the
+conjugate gradient (CG) method. We combine a detailed analysis of the spectrum
+of said precision matrices with results from random graph theory to show that
+CG-based methods applied to high-dimensional GLMMs typically achieve a fixed
+approximation error with a total cost that scales linearly with the number of
+parameters and observations. Numerical illustrations with both real and
+simulated data confirm the theoretical findings, while at the same time
+illustrating situations, such as nested structures, where CG-based methods
+struggle.",http://arxiv.org/pdf/2411.04729v1,,False
+Neuromorphic Wireless Split Computing with Multi-Level Spikes,07/11/2024,"Dengyu Wu, Jiechen Chen, Bipin Rajendran, H. Vincent Poor, Osvaldo Simeone","Inspired by biological processes, neuromorphic computing utilizes spiking
+neural networks (SNNs) to perform inference tasks, offering significant
+efficiency gains for workloads involving sequential data. Recent advances in
+hardware and software have demonstrated that embedding a few bits of payload in
+each spike exchanged between the spiking neurons can further enhance inference
+accuracy. In a split computing architecture, where the SNN is divided across
+two separate devices, the device storing the first layers must share
+information about the spikes generated by the local output neurons with the
+other device. Consequently, the advantages of multi-level spikes must be
+balanced against the challenges of transmitting additional bits between the two
+devices.
+  This paper addresses these challenges by investigating a wireless
+neuromorphic split computing architecture employing multi-level SNNs. For this
+system, we present the design of digital and analog modulation schemes
+optimized for an orthogonal frequency division multiplexing (OFDM) radio
+interface. Simulation and experimental results using software-defined radios
+provide insights into the performance gains of multi-level SNN models and the
+optimal payload size as a function of the quality of the connection between a
+transmitter and receiver.",http://arxiv.org/pdf/2411.04728v1,,False
+Peri-midFormer: Periodic Pyramid Transformer for Time Series Analysis,07/11/2024,"Qiang Wu, Gechang Yao, Zhixi Feng, Shuyuan Yang","Time series analysis finds wide applications in fields such as weather
+forecasting, anomaly detection, and behavior recognition. Previous methods
+attempted to model temporal variations directly using 1D time series. However,
+this has been quite challenging due to the discrete nature of data points in
+time series and the complexity of periodic variation. In terms of periodicity,
+taking weather and traffic data as an example, there are multi-periodic
+variations such as yearly, monthly, weekly, and daily, etc. In order to break
+through the limitations of the previous methods, we decouple the implied
+complex periodic variations into inclusion and overlap relationships among
+different level periodic components based on the observation of the
+multi-periodicity therein and its inclusion relationships. This explicitly
+represents the naturally occurring pyramid-like properties in time series,
+where the top level is the original time series and lower levels consist of
+periodic components with gradually shorter periods, which we call the periodic
+pyramid. To further extract complex temporal variations, we introduce
+self-attention mechanism into the periodic pyramid, capturing complex periodic
+relationships by computing attention between periodic components based on their
+inclusion, overlap, and adjacency relationships. Our proposed Peri-midFormer
+demonstrates outstanding performance in five mainstream time series analysis
+tasks, including short- and long-term forecasting, imputation, classification,
+and anomaly detection.",http://arxiv.org/pdf/2411.04554v1,,False
+Vision Language Models are In-Context Value Learners,07/11/2024,"Yecheng Jason Ma, Joey Hejna, Ayzaan Wahid, Chuyuan Fu, Dhruv Shah, Jacky Liang, Zhuo Xu, Sean Kirmani, Peng Xu, Danny Driess, Ted Xiao, Jonathan Tompson, Osbert Bastani, Dinesh Jayaraman, Wenhao Yu, Tingnan Zhang, Dorsa Sadigh, Fei Xia","Predicting temporal progress from visual trajectories is important for
+intelligent robots that can learn, adapt, and improve. However, learning such
+progress estimator, or temporal value function, across different tasks and
+domains requires both a large amount of diverse data and methods which can
+scale and generalize. To address these challenges, we present Generative Value
+Learning (\GVL), a universal value function estimator that leverages the world
+knowledge embedded in vision-language models (VLMs) to predict task progress.
+Naively asking a VLM to predict values for a video sequence performs poorly due
+to the strong temporal correlation between successive frames. Instead, GVL
+poses value estimation as a temporal ordering problem over shuffled video
+frames; this seemingly more challenging task encourages VLMs to more fully
+exploit their underlying semantic and temporal grounding capabilities to
+differentiate frames based on their perceived task progress, consequently
+producing significantly better value predictions. Without any robot or task
+specific training, GVL can in-context zero-shot and few-shot predict effective
+values for more than 300 distinct real-world tasks across diverse robot
+platforms, including challenging bimanual manipulation tasks. Furthermore, we
+demonstrate that GVL permits flexible multi-modal in-context learning via
+examples from heterogeneous tasks and embodiments, such as human videos. The
+generality of GVL enables various downstream applications pertinent to
+visuomotor policy learning, including dataset filtering, success detection, and
+advantage-weighted regression -- all without any model training or finetuning.",http://arxiv.org/pdf/2411.04549v1,,False
+Real-time stress detection on social network posts using big data technology,07/11/2024,"Hai-Yen Phan Nguyen, Phi-Lan Ly, Duc-Manh Le, Trong-Hop Do","In the context of modern life, particularly in Industry 4.0 within the online
+space, emotions and moods are frequently conveyed through social media posts.
+The trend of sharing stories, thoughts, and feelings on these platforms
+generates a vast and promising data source for Big Data. This creates both a
+challenge and an opportunity for research in applying technology to develop
+more automated and accurate methods for detecting stress in social media users.
+In this study, we developed a real-time system for stress detection in online
+posts, using the ""Dreaddit: A Reddit Dataset for Stress Analysis in Social
+Media,"" which comprises 187,444 posts across five different Reddit domains.
+Each domain contains texts with both stressful and non-stressful content,
+showcasing various expressions of stress. A labeled dataset of 3,553 lines was
+created for training. Apache Kafka, PySpark, and AirFlow were utilized to build
+and deploy the model. Logistic Regression yielded the best results for new
+streaming data, achieving 69,39% for measuring accuracy and 68,97 for measuring
+F1-scores.",http://arxiv.org/pdf/2411.04532v1,,False
+Enabling Adaptive Agent Training in Open-Ended Simulators by Targeting Diversity,07/11/2024,"Robby Costales, Stefanos Nikolaidis","The wider application of end-to-end learning methods to embodied
+decision-making domains remains bottlenecked by their reliance on a
+superabundance of training data representative of the target domain.
+Meta-reinforcement learning (meta-RL) approaches abandon the aim of zero-shot
+generalization--the goal of standard reinforcement learning (RL)--in favor of
+few-shot adaptation, and thus hold promise for bridging larger generalization
+gaps. While learning this meta-level adaptive behavior still requires
+substantial data, efficient environment simulators approaching real-world
+complexity are growing in prevalence. Even so, hand-designing sufficiently
+diverse and numerous simulated training tasks for these complex domains is
+prohibitively labor-intensive. Domain randomization (DR) and procedural
+generation (PG), offered as solutions to this problem, require simulators to
+possess carefully-defined parameters which directly translate to meaningful
+task diversity--a similarly prohibitive assumption. In this work, we present
+DIVA, an evolutionary approach for generating diverse training tasks in such
+complex, open-ended simulators. Like unsupervised environment design (UED)
+methods, DIVA can be applied to arbitrary parameterizations, but can
+additionally incorporate realistically-available domain knowledge--thus
+inheriting the flexibility and generality of UED, and the supervised structure
+embedded in well-designed simulators exploited by DR and PG. Our empirical
+results showcase DIVA's unique ability to overcome complex parameterizations
+and successfully train adaptive agent behavior, far outperforming competitive
+baselines from prior literature. These findings highlight the potential of such
+semi-supervised environment design (SSED) approaches, of which DIVA is the
+first humble constituent, to enable training in realistic simulated domains,
+and produce more robust and capable adaptive agents.",http://arxiv.org/pdf/2411.04466v1,,False
+Can CDT rationalise the ex ante optimal policy via modified anthropics?,07/11/2024,"Emery Cooper, Caspar Oesterheld, Vincent Conitzer","In Newcomb's problem, causal decision theory (CDT) recommends two-boxing and
+thus comes apart from evidential decision theory (EDT) and ex ante policy
+optimisation (which prescribe one-boxing). However, in Newcomb's problem, you
+should perhaps believe that with some probability you are in a simulation run
+by the predictor to determine whether to put a million dollars into the opaque
+box. If so, then causal decision theory might recommend one-boxing in order to
+cause the predictor to fill the opaque box. In this paper, we study
+generalisations of this approach. That is, we consider general Newcomblike
+problems and try to form reasonable self-locating beliefs under which CDT's
+recommendations align with an EDT-like notion of ex ante policy optimisation.
+We consider approaches in which we model the world as running simulations of
+the agent, and an approach not based on such models (which we call 'Generalised
+Generalised Thirding', or GGT). For each approach, we characterise the
+resulting CDT policies, and prove that under certain conditions, these include
+the ex ante optimal policies.",http://arxiv.org/pdf/2411.04462v1,,False
+A Bayesian Mixture Model of Temporal Point Processes with Determinantal Point Process Prior,07/11/2024,"Yiwei Dong, Shaoxin Ye, Yuwen Cao, Qiyu Han, Hongteng Xu, Hanfang Yang","Asynchronous event sequence clustering aims to group similar event sequences
+in an unsupervised manner. Mixture models of temporal point processes have been
+proposed to solve this problem, but they often suffer from overfitting, leading
+to excessive cluster generation with a lack of diversity. To overcome these
+limitations, we propose a Bayesian mixture model of Temporal Point Processes
+with Determinantal Point Process prior (TP$^2$DP$^2$) and accordingly an
+efficient posterior inference algorithm based on conditional Gibbs sampling.
+Our work provides a flexible learning framework for event sequence clustering,
+enabling automatic identification of the potential number of clusters and
+accurate grouping of sequences with similar features. It is applicable to a
+wide range of parametric temporal point processes, including neural
+network-based models. Experimental results on both synthetic and real-world
+data suggest that our framework could produce moderately fewer yet more diverse
+mixture components, and achieve outstanding results across multiple evaluation
+metrics.",http://arxiv.org/pdf/2411.04397v1,,False
+TrajGPT: Controlled Synthetic Trajectory Generation Using a Multitask Transformer-Based Spatiotemporal Model,07/11/2024,"Shang-Ling Hsu, Emmanuel Tung, John Krumm, Cyrus Shahabi, Khurram Shafique","Human mobility modeling from GPS-trajectories and synthetic trajectory
+generation are crucial for various applications, such as urban planning,
+disaster management and epidemiology. Both of these tasks often require filling
+gaps in a partially specified sequence of visits - a new problem that we call
+""controlled"" synthetic trajectory generation. Existing methods for
+next-location prediction or synthetic trajectory generation cannot solve this
+problem as they lack the mechanisms needed to constrain the generated sequences
+of visits. Moreover, existing approaches (1) frequently treat space and time as
+independent factors, an assumption that fails to hold true in real-world
+scenarios, and (2) suffer from challenges in accuracy of temporal prediction as
+they fail to deal with mixed distributions and the inter-relationships of
+different modes with latent variables (e.g., day-of-the-week). These
+limitations become even more pronounced when the task involves filling gaps
+within sequences instead of solely predicting the next visit.
+  We introduce TrajGPT, a transformer-based, multi-task, joint spatiotemporal
+generative model to address these issues. Taking inspiration from large
+language models, TrajGPT poses the problem of controlled trajectory generation
+as that of text infilling in natural language. TrajGPT integrates the spatial
+and temporal models in a transformer architecture through a Bayesian
+probability model that ensures that the gaps in a visit sequence are filled in
+a spatiotemporally consistent manner. Our experiments on public and private
+datasets demonstrate that TrajGPT not only excels in controlled synthetic visit
+generation but also outperforms competing models in next-location prediction
+tasks - Relatively, TrajGPT achieves a 26-fold improvement in temporal accuracy
+while retaining more than 98% of spatial accuracy on average.",http://arxiv.org/pdf/2411.04381v1,10.1145/3678717.3691303,False
+Benchmarking Large Language Models with Integer Sequence Generation Tasks,07/11/2024,"Daniel O'Malley, Manish Bhattarai, Javier Santos","This paper presents a novel benchmark where the large language model (LLM)
+must write code that computes integer sequences from the Online Encyclopedia of
+Integer Sequences (OEIS), a widely-used resource for mathematical sequences.
+The benchmark is designed to evaluate both the correctness of the generated
+code and its computational efficiency. Our benchmark reveals that the o1 series
+of models outperform other frontier models from OpenAI, Anthropic, Meta, and
+Google in accuracy and cheating rates across both easy and hard integer
+sequences. In order to ensure models do not exploit memorized sequence values,
+we introduce an automated cheating detection mechanism that flags the use of
+lookup tables and validated this automation against human cheating evaluations.
+This benchmark provides a meaningful challenge for current LLMs, offering
+insights into their mathematical reasoning and code writing capabilities, which
+can guide future research directions and model development in mathematical
+reasoning and code synthesis.",http://arxiv.org/pdf/2411.04372v1,,False

@@ -1,0 +1,204 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+LLMPhy: Complex Physical Reasoning Using Large Language Models and World Models,12/11/2024,"Anoop Cherian, Radu Corcodel, Siddarth Jain, Diego Romeres","Physical reasoning is an important skill needed for robotic agents when
+operating in the real world. However, solving such reasoning problems often
+involves hypothesizing and reflecting over complex multi-body interactions
+under the effect of a multitude of physical forces and thus learning all such
+interactions poses a significant hurdle for state-of-the-art machine learning
+frameworks, including large language models (LLMs). To study this problem, we
+propose a new physical reasoning task and a dataset, dubbed TraySim. Our task
+involves predicting the dynamics of several objects on a tray that is given an
+external impact -- the domino effect of the ensued object interactions and
+their dynamics thus offering a challenging yet controlled setup, with the goal
+of reasoning being to infer the stability of the objects after the impact. To
+solve this complex physical reasoning task, we present LLMPhy, a zero-shot
+black-box optimization framework that leverages the physics knowledge and
+program synthesis abilities of LLMs, and synergizes these abilities with the
+world models built into modern physics engines. Specifically, LLMPhy uses an
+LLM to generate code to iteratively estimate the physical hyperparameters of
+the system (friction, damping, layout, etc.) via an implicit
+analysis-by-synthesis approach using a (non-differentiable) simulator in the
+loop and uses the inferred parameters to imagine the dynamics of the scene
+towards solving the reasoning task. To show the effectiveness of LLMPhy, we
+present experiments on our TraySim dataset to predict the steady-state poses of
+the objects. Our results show that the combination of the LLM and the physics
+engine leads to state-of-the-art zero-shot physical reasoning performance,
+while demonstrating superior convergence against standard black-box
+optimization methods and better estimation of the physical parameters.",http://arxiv.org/pdf/2411.08027v1,,False
+Language Models as Causal Effect Generators,12/11/2024,"Lucius E. J. Bynum, Kyunghyun Cho","We present a framework for large language model (LLM) based data generation
+with controllable causal structure. In particular, we define a procedure for
+turning any language model and any directed acyclic graph (DAG) into a
+sequence-driven structural causal model (SD-SCM). Broadly speaking, an SD-SCM
+is a causal model with user-defined structure and LLM-defined structural
+equations. We characterize how an SD-SCM allows sampling from observational,
+interventional, and counterfactual distributions according to the desired
+causal structure. We then leverage this procedure to propose a new type of
+benchmark for causal inference methods, generating individual-level
+counterfactual data without needing to manually specify functional
+relationships between variables. We create an example benchmark consisting of
+thousands of datasets, and test a suite of popular estimation methods on these
+datasets for average, conditional average, and individual treatment effect
+estimation, both with and without hidden confounding. Apart from generating
+data, the same procedure also allows us to test for the presence of a causal
+effect that might be encoded in an LLM. This procedure can underpin auditing
+LLMs for misinformation, discrimination, or otherwise undesirable behavior. We
+believe SD-SCMs can serve as a useful tool in any application that would
+benefit from sequential data with controllable causal structure.",http://arxiv.org/pdf/2411.08019v1,,False
+Evidential time-to-event prediction model with well-calibrated uncertainty estimation,12/11/2024,"Ling Huang, Yucheng Xing, Swapnil Mishra, Thierry Denoeux, Mengling Feng","Time-to-event analysis, or Survival analysis, provides valuable insights into
+clinical prognosis and treatment recommendations. However, this task is
+typically more challenging than other regression tasks due to the censored
+observations. Moreover, concerns regarding the reliability of predictions
+persist among clinicians, mainly attributed to the absence of confidence
+assessment, robustness, and calibration of prediction. To address those
+challenges, we introduce an evidential regression model designed especially for
+time-to-event prediction tasks, with which the most plausible event time, is
+directly quantified by aggregated Gaussian random fuzzy numbers (GRFNs). The
+GRFNs are a newly introduced family of random fuzzy subsets of the real line
+that generalizes both Gaussian random variables and Gaussian possibility
+distributions. Different from conventional methods that construct models based
+on strict data distribution, e.g., proportional hazard function, our model only
+assumes the event time is encoded in a real line GFRN without any strict
+distribution assumption, therefore offering more flexibility in complex data
+scenarios. Furthermore, the epistemic and aleatory uncertainty regarding the
+event time is quantified within the aggregated GRFN as well. Our model can,
+therefore, provide more detailed clinical decision-making guidance with two
+more degrees of information. The model is fit by minimizing a generalized
+negative log-likelihood function that accounts for data censoring based on
+uncertainty evidence reasoning. Experimental results on simulated datasets with
+varying data distributions and censoring scenarios, as well as on real-world
+datasets across diverse clinical settings and tasks, demonstrate that our model
+achieves both accurate and reliable performance, outperforming state-of-the-art
+methods.",http://arxiv.org/pdf/2411.07853v1,,False
+Automatic Album Sequencing,12/11/2024,"Vincent Herrmann, Dylan R. Ashley, Jürgen Schmidhuber","Album sequencing is a critical part of the album production process.
+Recently, a data-driven approach was proposed that sequences general
+collections of independent media by extracting the narrative essence of the
+items in the collections. While this approach implies an album sequencing
+technique, it is not widely accessible to a less technical audience, requiring
+advanced knowledge of machine learning techniques to use. To address this, we
+introduce a new user-friendly web-based tool that allows a less technical
+audience to upload music tracks, execute this technique in one click, and
+subsequently presents the result in a clean visualization to the user. To both
+increase the number of templates available to the user and address shortcomings
+of previous work, we also introduce a new direct transformer-based album
+sequencing method. We find that our more direct method outperforms a random
+baseline but does not reach the same performance as the narrative essence
+approach. Both methods are included in our web-based user interface, and this
+-- alongside a full copy of our implementation -- is publicly available at
+https://github.com/dylanashley/automatic-album-sequencing",http://arxiv.org/pdf/2411.07772v1,,False
+"Understanding Audiovisual Deepfake Detection: Techniques, Challenges, Human Factors and Perceptual Insights",12/11/2024,"Ammarah Hashmi, Sahibzada Adil Shahzad, Chia-Wen Lin, Yu Tsao, Hsin-Min Wang","Deep Learning has been successfully applied in diverse fields, and its impact
+on deepfake detection is no exception. Deepfakes are fake yet realistic
+synthetic content that can be used deceitfully for political impersonation,
+phishing, slandering, or spreading misinformation. Despite extensive research
+on unimodal deepfake detection, identifying complex deepfakes through joint
+analysis of audio and visual streams remains relatively unexplored. To fill
+this gap, this survey first provides an overview of audiovisual deepfake
+generation techniques, applications, and their consequences, and then provides
+a comprehensive review of state-of-the-art methods that combine audio and
+visual modalities to enhance detection accuracy, summarizing and critically
+analyzing their strengths and limitations. Furthermore, we discuss existing
+open source datasets for a deeper understanding, which can contribute to the
+research community and provide necessary information to beginners who want to
+analyze deep learning-based audiovisual methods for video forensics. By
+bridging the gap between unimodal and multimodal approaches, this paper aims to
+improve the effectiveness of deepfake detection strategies and guide future
+research in cybersecurity and media integrity.",http://arxiv.org/pdf/2411.07650v1,,False
+Multimodal Clinical Reasoning through Knowledge-augmented Rationale Generation,12/11/2024,"Shuai Niu, Jing Ma, Liang Bai, Zhihua Wang, Yida Xu, Yunya Song, Xian Yang","Clinical rationales play a pivotal role in accurate disease diagnosis;
+however, many models predominantly use discriminative methods and overlook the
+importance of generating supportive rationales. Rationale distillation is a
+process that transfers knowledge from large language models (LLMs) to smaller
+language models (SLMs), thereby enhancing the latter's ability to break down
+complex tasks. Despite its benefits, rationale distillation alone is inadequate
+for addressing domain knowledge limitations in tasks requiring specialized
+expertise, such as disease diagnosis. Effectively embedding domain knowledge in
+SLMs poses a significant challenge. While current LLMs are primarily geared
+toward processing textual data, multimodal LLMs that incorporate time series
+data, especially electronic health records (EHRs), are still evolving. To
+tackle these limitations, we introduce ClinRaGen, an SLM optimized for
+multimodal rationale generation in disease diagnosis. ClinRaGen incorporates a
+unique knowledge-augmented attention mechanism to merge domain knowledge with
+time series EHR data, utilizing a stepwise rationale distillation strategy to
+produce both textual and time series-based clinical rationales. Our evaluations
+show that ClinRaGen markedly improves the SLM's capability to interpret
+multimodal EHR data and generate accurate clinical rationales, supporting more
+reliable disease diagnosis, advancing LLM applications in healthcare, and
+narrowing the performance divide between LLMs and SLMs.",http://arxiv.org/pdf/2411.07611v1,,False
+Model Stealing for Any Low-Rank Language Model,12/11/2024,"Allen Liu, Ankur Moitra","Model stealing, where a learner tries to recover an unknown model via
+carefully chosen queries, is a critical problem in machine learning, as it
+threatens the security of proprietary models and the privacy of data they are
+trained on. In recent years, there has been particular interest in stealing
+large language models (LLMs). In this paper, we aim to build a theoretical
+understanding of stealing language models by studying a simple and
+mathematically tractable setting. We study model stealing for Hidden Markov
+Models (HMMs), and more generally low-rank language models.
+  We assume that the learner works in the conditional query model, introduced
+by Kakade, Krishnamurthy, Mahajan and Zhang. Our main result is an efficient
+algorithm in the conditional query model, for learning any low-rank
+distribution. In other words, our algorithm succeeds at stealing any language
+model whose output distribution is low-rank. This improves upon the previous
+result by Kakade, Krishnamurthy, Mahajan and Zhang, which also requires the
+unknown distribution to have high ""fidelity"", a property that holds only in
+restricted cases. There are two key insights behind our algorithm: First, we
+represent the conditional distributions at each timestep by constructing
+barycentric spanners among a collection of vectors of exponentially large
+dimension. Second, for sampling from our representation, we iteratively solve a
+sequence of convex optimization problems that involve projection in relative
+entropy to prevent compounding of errors over the length of the sequence. This
+is an interesting example where, at least theoretically, allowing a machine
+learning model to solve more complex problems at inference time can lead to
+drastic improvements in its performance.",http://arxiv.org/pdf/2411.07536v1,,False
+An Attack Traffic Identification Method Based on Temporal Spectrum,12/11/2024,"Wenwei Xie, Jie Yin, Zihao Chen","To address the issues of insufficient robustness, unstable features, and data
+noise interference in existing network attack detection and identification
+models, this paper proposes an attack traffic detection and identification
+method based on temporal spectrum. First, traffic data is segmented by a
+sliding window to construct a feature sequence and a corresponding label
+sequence for network traffic. Next, the proposed spectral label generation
+methods, SSPE and COAP, are applied to transform the label sequence into
+spectral labels and the feature sequence into temporal features. Spectral
+labels and temporal features are used to capture and represent behavioral
+patterns of attacks. Finally, the constructed temporal features and spectral
+labels are used to train models, which subsequently detects and identifies
+network attack behaviors. Experimental results demonstrate that compared to
+traditional methods, models trained with the SSPE or COAP method improve
+identification accuracy by 10%, and exhibit strong robustness, particularly in
+noisy environments.",http://arxiv.org/pdf/2411.07510v1,,False
+FM-TS: Flow Matching for Time Series Generation,12/11/2024,"Yang Hu, Xiao Wang, Lirong Wu, Huatian Zhang, Stan Z. Li, Sheng Wang, Tianlong Chen","Time series generation has emerged as an essential tool for analyzing
+temporal data across numerous fields. While diffusion models have recently
+gained significant attention in generating high-quality time series, they tend
+to be computationally demanding and reliant on complex stochastic processes. To
+address these limitations, we introduce FM-TS, a rectified Flow Matching-based
+framework for Time Series generation, which simplifies the time series
+generation process by directly optimizing continuous trajectories. This
+approach avoids the need for iterative sampling or complex noise schedules
+typically required in diffusion-based models. FM-TS is more efficient in terms
+of training and inference. Moreover, FM-TS is highly adaptive, supporting both
+conditional and unconditional time series generation. Notably, through our
+novel inference design, the model trained in an unconditional setting can
+seamlessly generalize to conditional tasks without the need for retraining.
+Extensive benchmarking across both settings demonstrates that FM-TS
+consistently delivers superior performance compared to existing approaches
+while being more efficient in terms of training and inference. For instance, in
+terms of discriminative score, FM-TS achieves 0.005, 0.019, 0.011, 0.005,
+0.053, and 0.106 on the Sines, Stocks, ETTh, MuJoCo, Energy, and fMRI
+unconditional time series datasets, respectively, significantly outperforming
+the second-best method which achieves 0.006, 0.067, 0.061, 0.008, 0.122, and
+0.167 on the same datasets. We have achieved superior performance in solar
+forecasting and MuJoCo imputation tasks, significantly enhanced by our
+innovative $t$ power sampling method. The code is available at
+https://github.com/UNITES-Lab/FMTS.",http://arxiv.org/pdf/2411.07506v1,,False
+Machines and Mathematical Mutations: Using GNNs to Characterize Quiver Mutation Classes,12/11/2024,"Jesse He, Helen Jenne, Herman Chau, Davis Brown, Mark Raugas, Sara Billey, Henry Kvinge","Machine learning is becoming an increasingly valuable tool in mathematics,
+enabling one to identify subtle patterns across collections of examples so vast
+that they would be impossible for a single researcher to feasibly review and
+analyze. In this work, we use graph neural networks to investigate quiver
+mutation -- an operation that transforms one quiver (or directed multigraph)
+into another -- which is central to the theory of cluster algebras with deep
+connections to geometry, topology, and physics. In the study of cluster
+algebras, the question of mutation equivalence is of fundamental concern: given
+two quivers, can one efficiently determine if one quiver can be transformed
+into the other through a sequence of mutations? Currently, this question has
+only been resolved in specific cases. In this paper, we use graph neural
+networks and AI explainability techniques to discover mutation equivalence
+criteria for the previously unknown case of quivers of type $\tilde{D}_n$.
+Along the way, we also show that even without explicit training to do so, our
+model captures structure within its hidden representation that allows us to
+reconstruct known criteria from type $D_n$, adding to the growing evidence that
+modern machine learning models are capable of learning abstract and general
+rules from mathematical data.",http://arxiv.org/pdf/2411.07467v1,,False

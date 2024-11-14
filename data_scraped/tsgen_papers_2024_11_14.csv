@@ -1,0 +1,284 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Deep Learning Accelerated Quantum Transport Simulations in Nanoelectronics: From Break Junctions to Field-Effect Transistors,13/11/2024,"Jijie Zou, Zhanghao Zhouyin, Dongying Lin, Linfeng Zhang, Shimin Hou, Qiangqiang Gu","Quantum transport calculations are essential for understanding and designing
+nanoelectronic devices, yet the trade-off between accuracy and computational
+efficiency has long limited their practical applications. We present a general
+framework that combines the deep learning tight-binding Hamiltonian (DeePTB)
+approach with the non-equilibrium Green's Function (NEGF) method, enabling
+efficient quantum transport calculations while maintaining first-principles
+accuracy. We demonstrate the capabilities of the DeePTB-NEGF framework through
+two representative applications: comprehensive simulation of break junction
+systems, where conductance histograms show good agreement with experimental
+measurements in both metallic contact and single-molecule junction cases; and
+simulation of carbon nanotube field effect transistors through self-consistent
+NEGF-Poisson calculations, capturing essential physics including the
+electrostatic potential and transfer characteristic curves under finite bias
+conditions. This framework bridges the gap between first-principles accuracy
+and computational efficiency, providing a powerful tool for high-throughput
+quantum transport simulations across different scales in nanoelectronics.",http://arxiv.org/pdf/2411.08800v1,,False
+Learning Gaussian Multi-Index Models with Gradient Flow: Time Complexity and Directional Convergence,13/11/2024,"Berfin Simsek, Amire Bendjeddou, Daniel Hsu","This work focuses on the gradient flow dynamics of a neural network model
+that uses correlation loss to approximate a multi-index function on
+high-dimensional standard Gaussian data. Specifically, the multi-index function
+we consider is a sum of neurons $f^*(x) \!=\! \sum_{j=1}^k \! \sigma^*(v_j^T
+x)$ where $v_1, \dots, v_k$ are unit vectors, and $\sigma^*$ lacks the first
+and second Hermite polynomials in its Hermite expansion. It is known that, for
+the single-index case ($k\!=\!1$), overcoming the search phase requires
+polynomial time complexity. We first generalize this result to multi-index
+functions characterized by vectors in arbitrary directions. After the search
+phase, it is not clear whether the network neurons converge to the index
+vectors, or get stuck at a sub-optimal solution. When the index vectors are
+orthogonal, we give a complete characterization of the fixed points and prove
+that neurons converge to the nearest index vectors. Therefore, using $n \!
+\asymp \! k \log k$ neurons ensures finding the full set of index vectors with
+gradient flow with high probability over random initialization. When $ v_i^T
+v_j \!=\! \beta \! \geq \! 0$ for all $i \neq j$, we prove the existence of a
+sharp threshold $\beta_c \!=\! c/(c+k)$ at which the fixed point that computes
+the average of the index vectors transitions from a saddle point to a minimum.
+Numerical simulations show that using a correlation loss and a mild
+overparameterization suffices to learn all of the index vectors when they are
+nearly orthogonal, however, the correlation loss fails when the dot product
+between the index vectors exceeds a certain threshold.",http://arxiv.org/pdf/2411.08798v1,,False
+Evaluating World Models with LLM for Decision Making,13/11/2024,"Chang Yang, Xinrun Wang, Junzhe Jiang, Qinggang Zhang, Xiao Huang","World model emerges as a key module in decision making, where MuZero and
+Dreamer achieve remarkable successes in complex tasks. Recent work leverages
+Large Language Models (LLMs) as general world simulators to simulate the
+dynamics of the world due to their generalizability. LLMs also serve as the
+world model for deliberative reasoning in Reasoning via Planning (RAP) and Tree
+of Thought (ToT). However, the world models are either evaluated as a general
+world simulator, or as a functional module of the agent, i.e., predicting the
+transitions to assist the planning. In this work, we propose a comprehensive
+evaluation of the world models with LLMs from the decision making perspective.
+Specifically, we leverage the 31 diverse environments from (Wang et al.,
+2023;2024) and curate the rule-based policy of each environment for the diverse
+evaluation. Then, we design three main tasks, i.e., policy verification, action
+proposal, and policy planning, where the world models can be used for decision
+making solely. Finally, we conduct the comprehensive evaluation of the advanced
+LLMs, i.e., GPT-4o and GPT-4o-mini, on the environments for the three main
+tasks under various settings. The key observations include: i) GPT-4o
+significantly outperforms GPT-4o-mini on the three main tasks, especially for
+the tasks which require the domain knowledge, ii) the performance of the world
+model with LLM will be decreased for long-term decision-making tasks, and iii)
+the combination of different functionalities of the world model will brings
+additional unstabilities of the performance.",http://arxiv.org/pdf/2411.08794v1,,False
+Locally Private Sampling with Public Data,13/11/2024,"Behnoosh Zamanlooy, Mario Diaz, Shahab Asoodeh","Local differential privacy (LDP) is increasingly employed in
+privacy-preserving machine learning to protect user data before sharing it with
+an untrusted aggregator. Most LDP methods assume that users possess only a
+single data record, which is a significant limitation since users often gather
+extensive datasets (e.g., images, text, time-series data) and frequently have
+access to public datasets. To address this limitation, we propose a locally
+private sampling framework that leverages both the private and public datasets
+of each user. Specifically, we assume each user has two distributions: $p$ and
+$q$ that represent their private dataset and the public dataset, respectively.
+The objective is to design a mechanism that generates a private sample
+approximating $p$ while simultaneously preserving $q$. We frame this objective
+as a minimax optimization problem using $f$-divergence as the utility measure.
+We fully characterize the minimax optimal mechanisms for general
+$f$-divergences provided that $p$ and $q$ are discrete distributions.
+Remarkably, we demonstrate that this optimal mechanism is universal across all
+$f$-divergences. Experiments validate the effectiveness of our minimax optimal
+sampler compared to the state-of-the-art locally private sampler.",http://arxiv.org/pdf/2411.08791v1,,False
+ScaleNet: Scale Invariance Learning in Directed Graphs,13/11/2024,"Qin Jiang, Chengjia Wang, Michael Lones, Wei Pang","Graph Neural Networks (GNNs) have advanced relational data analysis but lack
+invariance learning techniques common in image classification. In node
+classification with GNNs, it is actually the ego-graph of the center node that
+is classified. This research extends the scale invariance concept to node
+classification by drawing an analogy to image processing: just as scale
+invariance being used in image classification to capture multi-scale features,
+we propose the concept of ``scaled ego-graphs''. Scaled ego-graphs generalize
+traditional ego-graphs by replacing undirected single-edges with
+``scaled-edges'', which are ordered sequences of multiple directed edges. We
+empirically assess the performance of the proposed scale invariance in graphs
+on seven benchmark datasets, across both homophilic and heterophilic
+structures. Our scale-invariance-based graph learning outperforms inception
+models derived from random walks by being simpler, faster, and more accurate.
+The scale invariance explains inception models' success on homophilic graphs
+and limitations on heterophilic graphs. To ensure applicability of inception
+model to heterophilic graphs as well, we further present ScaleNet, an
+architecture that leverages multi-scaled features. ScaleNet achieves
+state-of-the-art results on five out of seven datasets (four homophilic and one
+heterophilic) and matches top performance on the remaining two, demonstrating
+its excellent applicability. This represents a significant advance in graph
+learning, offering a unified framework that enhances node classification across
+various graph types. Our code is available at
+https://github.com/Qin87/ScaleNet/tree/July25.",http://arxiv.org/pdf/2411.08758v1,,False
+Deep Generative Demand Learning for Newsvendor and Pricing,13/11/2024,"Shijin Gong, Huihang Liu, Xinyu Zhang","We consider data-driven inventory and pricing decisions in the feature-based
+newsvendor problem, where demand is influenced by both price and contextual
+features and is modeled without any structural assumptions. The unknown demand
+distribution results in a challenging conditional stochastic optimization
+problem, further complicated by decision-dependent uncertainty and the
+integration of features. Inspired by recent advances in deep generative
+learning, we propose a novel approach leveraging conditional deep generative
+models (cDGMs) to address these challenges. cDGMs learn the demand distribution
+and generate probabilistic demand forecasts conditioned on price and features.
+This generative approach enables accurate profit estimation and supports the
+design of algorithms for two key objectives: (1) optimizing inventory for
+arbitrary prices, and (2) jointly determining optimal pricing and inventory
+levels. We provide theoretical guarantees for our approach, including the
+consistency of profit estimation and convergence of our decisions to the
+optimal solution. Extensive simulations-ranging from simple to complex
+scenarios, including one involving textual features-and a real-world case study
+demonstrate the effectiveness of our approach. Our method opens a new paradigm
+in management science and operations research, is adaptable to extensions of
+the newsvendor and pricing problems, and holds potential for solving other
+conditional stochastic optimization problems.",http://arxiv.org/pdf/2411.08631v1,,False
+Hopfield-Fenchel-Young Networks: A Unified Framework for Associative Memory Retrieval,13/11/2024,"Saul Santos, Vlad Niculae, Daniel McNamee, André F. T. Martins","Associative memory models, such as Hopfield networks and their modern
+variants, have garnered renewed interest due to advancements in memory capacity
+and connections with self-attention in transformers. In this work, we introduce
+a unified framework-Hopfield-Fenchel-Young networks-which generalizes these
+models to a broader family of energy functions. Our energies are formulated as
+the difference between two Fenchel-Young losses: one, parameterized by a
+generalized entropy, defines the Hopfield scoring mechanism, while the other
+applies a post-transformation to the Hopfield output. By utilizing Tsallis and
+norm entropies, we derive end-to-end differentiable update rules that enable
+sparse transformations, uncovering new connections between loss margins,
+sparsity, and exact retrieval of single memory patterns. We further extend this
+framework to structured Hopfield networks using the SparseMAP transformation,
+allowing the retrieval of pattern associations rather than a single pattern.
+Our framework unifies and extends traditional and modern Hopfield networks and
+provides an energy minimization perspective for widely used
+post-transformations like $\ell_2$-normalization and layer normalization-all
+through suitable choices of Fenchel-Young losses and by using convex analysis
+as a building block. Finally, we validate our Hopfield-Fenchel-Young networks
+on diverse memory recall tasks, including free and sequential recall.
+Experiments on simulated data, image retrieval, multiple instance learning, and
+text rationalization demonstrate the effectiveness of our approach.",http://arxiv.org/pdf/2411.08590v1,,False
+Grammarization-Based Grasping with Deep Multi-Autoencoder Latent Space Exploration by Reinforcement Learning Agent,13/11/2024,Leonidas Askianakis,"Grasping by a robot in unstructured environments is deemed a critical
+challenge because of the requirement for effective adaptation to a wide
+variation in object geometries, material properties, and other environmental
+factors. In this paper, we propose a novel framework for robotic grasping based
+on the idea of compressing high-dimensional target and gripper features in a
+common latent space using a set of autoencoders. Our approach simplifies
+grasping by using three autoencoders dedicated to the target, the gripper, and
+a third one that fuses their latent representations. This allows the RL agent
+to achieve higher learning rates at the initial stages of exploration of a new
+environment, as well as at non-zero shot grasp attempts. The agent explores the
+latent space of the third autoencoder for better quality grasp without explicit
+reconstruction of objects. By implementing the PoWER algorithm into the RL
+training process, updates on the agent's policy will be made through the
+perturbation in the reward-weighted latent space. The successful exploration
+efficiently constrains both position and pose integrity for feasible executions
+of grasps. We evaluate our system on a diverse set of objects, demonstrating
+the high success rate in grasping with minimum computational overhead. We found
+that approach enhances the adaptation of the RL agent by more than 35 \% in
+simulation experiments.",http://arxiv.org/pdf/2411.08566v1,,False
+Deeper Insights into Learning Performance of Stochastic Configuration Networks,13/11/2024,"Xiufeng Yan, Dianhui Wang","Stochastic Configuration Networks (SCNs) are a class of randomized neural
+networks that integrate randomized algorithms within an incremental learning
+framework. A defining feature of SCNs is the supervisory mechanism, which
+adaptively adjusts the distribution to generate effective random basis
+functions, thereby enabling error-free learning. In this paper, we present a
+comprehensive analysis of the impact of the supervisory mechanism on the
+learning performance of SCNs. Our findings reveal that the current SCN
+framework evaluates the effectiveness of each random basis function in reducing
+residual errors using a lower bound on its error reduction potential, which
+constrains SCNs' overall learning efficiency. Specifically, SCNs may fail to
+consistently select the most effective random candidate as the new basis
+function during each training iteration. To overcome this problem, we propose a
+novel method for evaluating the hidden layer's output matrix, supported by a
+new supervisory mechanism that accurately assesses the error reduction
+potential of random basis functions without requiring the computation of the
+Moore-Penrose inverse of the output matrix. This approach enhances the
+selection of basis functions, reducing computational complexity and improving
+the overall scalability and learning capabilities of SCNs. We introduce a
+Recursive Moore-Penrose Inverse-SCN (RMPI-SCN) training scheme based on the new
+supervisory mechanism and demonstrate its effectiveness through simulations
+over some benchmark datasets. Experiments show that RMPI-SCN outperforms the
+conventional SCN in terms of learning capability, underscoring its potential to
+advance the SCN framework for large-scale data modeling applications.",http://arxiv.org/pdf/2411.08544v1,,False
+Quantifying Qualitative Insights: Leveraging LLMs to Market Predict,13/11/2024,"Hoyoung Lee, Youngsoo Choi, Yuhee Kwon","Recent advancements in Large Language Models (LLMs) have the potential to
+transform financial analytics by integrating numerical and textual data.
+However, challenges such as insufficient context when fusing multimodal
+information and the difficulty in measuring the utility of qualitative outputs,
+which LLMs generate as text, have limited their effectiveness in tasks such as
+financial forecasting. This study addresses these challenges by leveraging
+daily reports from securities firms to create high-quality contextual
+information. The reports are segmented into text-based key factors and combined
+with numerical data, such as price information, to form context sets. By
+dynamically updating few-shot examples based on the query time, the sets
+incorporate the latest information, forming a highly relevant set closely
+aligned with the query point. Additionally, a crafted prompt is designed to
+assign scores to the key factors, converting qualitative insights into
+quantitative results. The derived scores undergo a scaling process,
+transforming them into real-world values that are used for prediction. Our
+experiments demonstrate that LLMs outperform time-series models in market
+forecasting, though challenges such as imperfect reproducibility and limited
+explainability remain.",http://arxiv.org/pdf/2411.08404v1,,False
+Surprisingly Popular Voting for Concentric Rank-Order Models,13/11/2024,"Hadi Hosseini, Debmalya Mandal, Amrit Puhan","An important problem on social information sites is the recovery of ground
+truth from individual reports when the experts are in the minority. The wisdom
+of the crowd, i.e. the collective opinion of a group of individuals fails in
+such a scenario. However, the surprisingly popular (SP)
+algorithm~\cite{prelec2017solution} can recover the ground truth even when the
+experts are in the minority, by asking the individuals to report additional
+prediction reports--their beliefs about the reports of others. Several recent
+works have extended the surprisingly popular algorithm to an equivalent voting
+rule (SP-voting) to recover the ground truth ranking over a set of $m$
+alternatives. However, we are yet to fully understand when SP-voting can
+recover the ground truth ranking, and if so, how many samples (votes and
+predictions) it needs. We answer this question by proposing two rank-order
+models and analyzing the sample complexity of SP-voting under these models. In
+particular, we propose concentric mixtures of Mallows and Plackett-Luce models
+with $G (\ge 2)$ groups. Our models generalize previously proposed concentric
+mixtures of Mallows models with $2$ groups, and we highlight the importance of
+$G > 2$ groups by identifying three distinct groups (expert, intermediate, and
+non-expert) from existing datasets. Next, we provide conditions on the
+parameters of the underlying models so that SP-voting can recover ground-truth
+rankings with high probability, and also derive sample complexities under the
+same. We complement the theoretical results by evaluating SP-voting on
+simulated and real datasets.",http://arxiv.org/pdf/2411.08367v1,,False
+"Generative AI for Data Augmentation in Wireless Networks: Analysis, Applications, and Case Study",13/11/2024,"Jinbo Wen, Jiawen Kang, Dusit Niyato, Yang Zhang, Jiacheng Wang, Biplab Sikdar, Ping Zhang","Data augmentation is a powerful technique to mitigate data scarcity. However,
+owing to fundamental differences in wireless data structures, traditional data
+augmentation techniques may not be suitable for wireless data. Fortunately,
+Generative Artificial Intelligence (GenAI) can be an effective alternative to
+wireless data augmentation due to its excellent data generation capability.
+This article systemically explores the potential and effectiveness of
+GenAI-driven data augmentation in wireless networks. We first briefly review
+data augmentation techniques, discuss their limitations in wireless networks,
+and introduce generative data augmentation, including reviewing GenAI models
+and their applications in data augmentation. We then explore the application
+prospects of GenAI-driven data augmentation in wireless networks from the
+physical, network, and application layers, which provides a GenAI-driven data
+augmentation architecture for each application. Subsequently, we propose a
+general generative diffusion model-based data augmentation framework for Wi-Fi
+gesture recognition, which uses transformer-based diffusion models to generate
+high-quality channel state information data. Furthermore, we develop residual
+neural network models for Wi-Fi gesture recognition to evaluate the role of
+augmented data and conduct a case study based on a real dataset. Simulation
+results demonstrate the effectiveness of the proposed framework. Finally, we
+discuss research directions for generative data augmentation.",http://arxiv.org/pdf/2411.08341v1,,False
+R3HF: Reward Redistribution for Enhancing Reinforcement Learning from Human Feedback,13/11/2024,"Jiahui Li, Tai-wei Chang, Fengda Zhang, Kun Kuang, Long Chen","Reinforcement learning from human feedback (RLHF) provides a paradigm for
+aligning large language models (LLMs) with human preferences. This involves the
+initial training of a reward model based on pairwise human feedback. The reward
+model is subsequently utilized in reinforcement learning to assess the scores
+of each generated sentence as a whole, further guiding the optimization of
+LLMs. However, current approaches have a significant shortcoming: \emph{They
+allocate a single, sparse, and delayed reward to an entire sequence of output}.
+This may overlook some significant individual contributions of each token
+towards the desired outcome. To overcome this limitation, our paper proposes a
+novel reward redistribution method called R3HF, which facilitates a more
+fine-grained, token-level reward allocation. Specifically, our method treats
+the reward prediction task of the reward model as a regression problem. As a
+result, the redistributed rewards are computed by evaluating the specific
+contribution of each token to the reward model's output. This detailed approach
+improves the model's understanding of language nuances, leading to more precise
+enhancements in its performance. Our method is crafted to integrate seamlessly
+with most current techniques while incurring minimal computational costs.
+Through comprehensive experiments across diverse datasets and tasks, we have
+verified the effectiveness and superiority of our approach.",http://arxiv.org/pdf/2411.08302v1,,False
+DNN Task Assignment in UAV Networks: A Generative AI Enhanced Multi-Agent Reinforcement Learning Approach,13/11/2024,"Xin Tang, Qian Chen, Wenjie Weng, Binhan Liao, Jiacheng Wang, Xianbin Cao, Xiaohuan Li","Unmanned Aerial Vehicles (UAVs) possess high mobility and flexible deployment
+capabilities, prompting the development of UAVs for various application
+scenarios within the Internet of Things (IoT). The unique capabilities of UAVs
+give rise to increasingly critical and complex tasks in uncertain and
+potentially harsh environments. The substantial amount of data generated from
+these applications necessitates processing and analysis through deep neural
+networks (DNNs). However, UAVs encounter challenges due to their limited
+computing resources when managing DNN models. This paper presents a joint
+approach that combines multiple-agent reinforcement learning (MARL) and
+generative diffusion models (GDM) for assigning DNN tasks to a UAV swarm, aimed
+at reducing latency from task capture to result output. To address these
+challenges, we first consider the task size of the target area to be inspected
+and the shortest flying path as optimization constraints, employing a greedy
+algorithm to resolve the subproblem with a focus on minimizing the UAV's flying
+path and the overall system cost. In the second stage, we introduce a novel DNN
+task assignment algorithm, termed GDM-MADDPG, which utilizes the reverse
+denoising process of GDM to replace the actor network in multi-agent deep
+deterministic policy gradient (MADDPG). This approach generates specific DNN
+task assignment actions based on agents' observations in a dynamic environment.
+Simulation results indicate that our algorithm performs favorably compared to
+benchmarks in terms of path planning, Age of Information (AoI), energy
+consumption, and task load balancing.",http://arxiv.org/pdf/2411.08299v1,,False

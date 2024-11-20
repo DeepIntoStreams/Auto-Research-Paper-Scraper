@@ -1,0 +1,229 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"LazyDINO: Fast, scalable, and efficiently amortized Bayesian inversion via structure-exploiting and surrogate-driven measure transport",19/11/2024,"Lianghao Cao, Joshua Chen, Michael Brennan, Thomas O'Leary-Roseberry, Youssef Marzouk, Omar Ghattas","We present LazyDINO, a transport map variational inference method for fast,
+scalable, and efficiently amortized solutions of high-dimensional nonlinear
+Bayesian inverse problems with expensive parameter-to-observable (PtO) maps.
+Our method consists of an offline phase in which we construct a
+derivative-informed neural surrogate of the PtO map using joint samples of the
+PtO map and its Jacobian. During the online phase, when given observational
+data, we seek rapid posterior approximation using surrogate-driven training of
+a lazy map [Brennan et al., NeurIPS, (2020)], i.e., a structure-exploiting
+transport map with low-dimensional nonlinearity. The trained lazy map then
+produces approximate posterior samples or density evaluations. Our surrogate
+construction is optimized for amortized Bayesian inversion using lazy map
+variational inference. We show that (i) the derivative-based reduced basis
+architecture [O'Leary-Roseberry et al., Comput. Methods Appl. Mech. Eng., 388
+(2022)] minimizes the upper bound on the expected error in surrogate posterior
+approximation, and (ii) the derivative-informed training formulation
+[O'Leary-Roseberry et al., J. Comput. Phys., 496 (2024)] minimizes the expected
+error due to surrogate-driven transport map optimization. Our numerical results
+demonstrate that LazyDINO is highly efficient in cost amortization for Bayesian
+inversion. We observe one to two orders of magnitude reduction of offline cost
+for accurate posterior approximation, compared to simulation-based amortized
+inference via conditional transport and conventional surrogate-driven
+transport. In particular, LazyDINO outperforms Laplace approximation
+consistently using fewer than 1000 offline samples, while other amortized
+inference methods struggle and sometimes fail at 16,000 offline samples.",http://arxiv.org/pdf/2411.12726v1,,False
+Machine Learning Approaches on Crop Pattern Recognition a Comparative Analysis,19/11/2024,"Kazi Hasibul Kabir, Md. Zahiruddin Aqib, Sharmin Sultana, Shamim Akhter","Monitoring agricultural activities is important to ensure food security.
+Remote sensing plays a significant role for large-scale continuous monitoring
+of cultivation activities. Time series remote sensing data were used for the
+generation of the cropping pattern. Classification algorithms are used to
+classify crop patterns and mapped agriculture land used. Some conventional
+classification methods including support vector machine (SVM) and decision
+trees were applied for crop pattern recognition. However, in this paper, we are
+proposing Deep Neural Network (DNN) based classification to improve the
+performance of crop pattern recognition and make a comparative analysis with
+two (2) other machine learning approaches including Naive Bayes and Random
+Forest.",http://arxiv.org/pdf/2411.12667v1,,False
+PoM: Efficient Image and Video Generation with the Polynomial Mixer,19/11/2024,"David Picard, Nicolas Dufour","Diffusion models based on Multi-Head Attention (MHA) have become ubiquitous
+to generate high quality images and videos. However, encoding an image or a
+video as a sequence of patches results in costly attention patterns, as the
+requirements both in terms of memory and compute grow quadratically. To
+alleviate this problem, we propose a drop-in replacement for MHA called the
+Polynomial Mixer (PoM) that has the benefit of encoding the entire sequence
+into an explicit state. PoM has a linear complexity with respect to the number
+of tokens. This explicit state also allows us to generate frames in a
+sequential fashion, minimizing memory and compute requirement, while still
+being able to train in parallel. We show the Polynomial Mixer is a universal
+sequence-to-sequence approximator, just like regular MHA. We adapt several
+Diffusion Transformers (DiT) for generating images and videos with PoM
+replacing MHA, and we obtain high quality samples while using less
+computational resources. The code is available at
+https://github.com/davidpicard/HoMM.",http://arxiv.org/pdf/2411.12663v1,,False
+Smart Predict-then-Optimize Method with Dependent Data: Risk Bounds and Calibration of Autoregression,19/11/2024,"Jixian Liu, Tao Xu, Jianping He, Chongrong Fang","The predict-then-optimize (PTO) framework is indispensable for addressing
+practical stochastic decision-making tasks. It consists of two crucial steps:
+initially predicting unknown parameters of an optimization model and
+subsequently solving the problem based on these predictions. Elmachtoub and
+Grigas [1] introduced the Smart Predict-then-Optimize (SPO) loss for the
+framework, which gauges the decision error arising from predicted parameters,
+and a convex surrogate, the SPO+ loss, which incorporates the underlying
+structure of the optimization model. The consistency of these different loss
+functions is guaranteed under the assumption of i.i.d. training data.
+Nevertheless, various types of data are often dependent, such as power load
+fluctuations over time. This dependent nature can lead to diminished model
+performance in testing or real-world applications. Motivated to make
+intelligent predictions for time series data, we present an autoregressive SPO
+method directly targeting the optimization problem at the decision stage in
+this paper, where the conditions of consistency are no longer met. Therefore,
+we first analyze the generalization bounds of the SPO loss within our
+autoregressive model. Subsequently, the uniform calibration results in Liu and
+Grigas [2] are extended in the proposed model. Finally, we conduct experiments
+to empirically demonstrate the effectiveness of the SPO+ surrogate compared to
+the absolute loss and the least squares loss, especially when the cost vectors
+are determined by stationary dynamical systems and demonstrate the relationship
+between normalized regret and mixing coefficients.",http://arxiv.org/pdf/2411.12653v1,,False
+PyAWD: A Library for Generating Large Synthetic Datasets of Acoustic Wave Propagation with Devito,19/11/2024,"Pascal Tribel, Gianluca Bontempi","Seismic data is often sparse and unevenly distributed due to the high costs
+and logistical challenges associated with deploying physical seismometers,
+limiting the application of Machine Learning (ML) in earthquake analysis. To
+address this gap, we introduce PyAWD, a Python library designed to generate
+high-resolution synthetic datasets simulating spatio-temporal acoustic wave
+propagation in both two-dimensional and three-dimensional heterogeneous media.
+By allowing fine control over parameters such as wave speed, external forces,
+spatial and temporal discretization, and media composition, PyAWD enables the
+creation of ML-scale datasets that capture the complexity of seismic wave
+behavior. We illustrate the library's potential with an epicenter retrieval
+task, showcasing its suitability for designing complex, accurate seismic
+problems that support advanced ML approaches in the absence or lack of dense
+real-world data.",http://arxiv.org/pdf/2411.12636v1,,False
+Instant Policy: In-Context Imitation Learning via Graph Diffusion,19/11/2024,"Vitalis Vosylius, Edward Johns","Following the impressive capabilities of in-context learning with large
+transformers, In-Context Imitation Learning (ICIL) is a promising opportunity
+for robotics. We introduce Instant Policy, which learns new tasks instantly
+(without further training) from just one or two demonstrations, achieving ICIL
+through two key components. First, we introduce inductive biases through a
+graph representation and model ICIL as a graph generation problem with a
+learned diffusion process, enabling structured reasoning over demonstrations,
+observations, and actions. Second, we show that such a model can be trained
+using pseudo-demonstrations - arbitrary trajectories generated in simulation -
+as a virtually infinite pool of training data. Simulated and real experiments
+show that Instant Policy enables rapid learning of various everyday robot
+tasks. We also show how it can serve as a foundation for cross-embodiment and
+zero-shot transfer to language-defined tasks. Code and videos are available at
+https://www.robot-learning.uk/instant-policy.",http://arxiv.org/pdf/2411.12633v1,,False
+STREAM: A Universal State-Space Model for Sparse Geometric Data,19/11/2024,"Mark Schöne, Yash Bhisikar, Karan Bania, Khaleelulla Khan Nazeer, Christian Mayr, Anand Subramoney, David Kappel","Handling sparse and unstructured geometric data, such as point clouds or
+event-based vision, is a pressing challenge in the field of machine vision.
+Recently, sequence models such as Transformers and state-space models entered
+the domain of geometric data. These methods require specialized preprocessing
+to create a sequential view of a set of points. Furthermore, prior works
+involving sequence models iterate geometric data with either uniform or learned
+step sizes, implicitly relying on the model to infer the underlying geometric
+structure. In this work, we propose to encode geometric structure explicitly
+into the parameterization of a state-space model. State-space models are based
+on linear dynamics governed by a one-dimensional variable such as time or a
+spatial coordinate. We exploit this dynamic variable to inject relative
+differences of coordinates into the step size of the state-space model. The
+resulting geometric operation computes interactions between all pairs of N
+points in O(N) steps. Our model deploys the Mamba selective state-space model
+with a modified CUDA kernel to efficiently map sparse geometric data to modern
+hardware. The resulting sequence model, which we call STREAM, achieves
+competitive results on a range of benchmarks from point-cloud classification to
+event-based vision and audio classification. STREAM demonstrates a powerful
+inductive bias for sparse geometric data by improving the PointMamba baseline
+when trained from scratch on the ModelNet40 and ScanObjectNN point cloud
+analysis datasets. It further achieves, for the first time, 100% test accuracy
+on all 11 classes of the DVS128 Gestures dataset.",http://arxiv.org/pdf/2411.12603v1,,False
+A data driven approach to classify descriptors based on their efficiency in translating noisy trajectories into physically-relevant information,19/11/2024,"Simone Martino, Domiziano Doria, Chiara Lionello, Matteo Becchi, Giovanni M. Pavan","Reconstructing the physical complexity of many-body dynamical systems can be
+challenging. Starting from the trajectories of their constitutive units (raw
+data), typical approaches require selecting appropriate descriptors to convert
+them into time-series, which are then analyzed to extract interpretable
+information. However, identifying the most effective descriptor is often
+non-trivial. Here, we report a data-driven approach to compare the efficiency
+of various descriptors in extracting information from noisy trajectories and
+translating it into physically relevant insights. As a prototypical system with
+non-trivial internal complexity, we analyze molecular dynamics trajectories of
+an atomistic system where ice and water coexist in equilibrium near the
+solid/liquid transition temperature. We compare general and specific
+descriptors often used in aqueous systems: number of neighbors, molecular
+velocities, Smooth Overlap of Atomic Positions (SOAP), Local Environments and
+Neighbors Shuffling (LENS), Orientational Tetrahedral Order, and distance from
+the fifth neighbor ($d_5$). Using Onion Clustering -- an efficient unsupervised
+method for single-point time-series analysis -- we assess the maximum
+extractable information for each descriptor and rank them via a
+high-dimensional metric. Our results show that advanced descriptors like SOAP
+and LENS outperform classical ones due to higher signal-to-noise ratios.
+Nonetheless, even simple descriptors can rival or exceed advanced ones after
+local signal denoising. For example, $d_5$, initially among the weakest,
+becomes the most effective at resolving the system's non-local dynamical
+complexity after denoising. This work highlights the critical role of noise in
+information extraction from molecular trajectories and offers a data-driven
+approach to identify optimal descriptors for systems with characteristic
+internal complexity.",http://arxiv.org/pdf/2411.12570v1,,False
+Regular-pattern-sensitive CRFs for Distant Label Interactions,19/11/2024,"Sean Papay, Roman Klinger, Sebastian Pado","Linear-chain conditional random fields (CRFs) are a common model component
+for sequence labeling tasks when modeling the interactions between different
+labels is important. However, the Markov assumption limits linear-chain CRFs to
+only directly modeling interactions between adjacent labels. Weighted
+finite-state transducers (FSTs) are a related approach which can be made to
+model distant label-label interactions, but exact label inference is
+intractable for these models in the general case, and the task of selecting an
+appropriate automaton structure for the desired interaction types poses a
+practical challenge. In this work, we present regular-pattern-sensitive CRFs
+(RPCRFs), a method of enriching standard linear-chain CRFs with the ability to
+learn long-distance label interactions which occur in user-specified patterns.
+This approach allows users to write regular-expression label patterns concisely
+specifying which types of interactions the model should take into account,
+allowing the model to learn from data whether and in which contexts these
+patterns occur. The result can be interpreted alternatively as a CRF augmented
+with additional, non-local potentials, or as a finite-state transducer whose
+structure is defined by a set of easily-interpretable patterns. Critically,
+unlike the general case for FSTs (and for non-chain CRFs), exact training and
+inference are tractable for many pattern sets. In this work, we detail how a
+RPCRF can be automatically constructed from a set of user-specified patterns,
+and demonstrate the model's effectiveness on synthetic data, showing how
+different types of patterns can capture different nonlocal dependency
+structures in label sequences.",http://arxiv.org/pdf/2411.12484v1,,False
+"A Review on Generative AI Models for Synthetic Medical Text, Time Series, and Longitudinal Data",19/11/2024,"Mohammad Loni, Fatemeh Poursalim, Mehdi Asadi, Arash Gharehbaghi","This paper presents the results of a novel scoping review on the practical
+models for generating three different types of synthetic health records (SHRs):
+medical text, time series, and longitudinal data. The innovative aspects of the
+review, which incorporate study objectives, data modality, and research
+methodology of the reviewed studies, uncover the importance and the scope of
+the topic for the digital medicine context. In total, 52 publications met the
+eligibility criteria for generating medical time series (22), longitudinal data
+(17), and medical text (13). Privacy preservation was found to be the main
+research objective of the studied papers, along with class imbalance, data
+scarcity, and data imputation as the other objectives. The adversarial
+network-based, probabilistic, and large language models exhibited superiority
+for generating synthetic longitudinal data, time series, and medical texts,
+respectively. Finding a reliable performance measure to quantify SHR
+re-identification risk is the major research gap of the topic.",http://arxiv.org/pdf/2411.12274v1,,False
+Contrast Similarity-Aware Dual-Pathway Mamba for Multivariate Time Series Node Classification,19/11/2024,"Mingsen Du, Meng Chen, Yongjian Li, Xiuxin Zhang, Jiahui Gao, Cun Ji, Shoushui Wei","Multivariate time series (MTS) data is generated through multiple sensors
+across various domains such as engineering application, health monitoring, and
+the internet of things, characterized by its temporal changes and high
+dimensional characteristics. Over the past few years, many studies have
+explored the long-range dependencies and similarities in MTS. However,
+long-range dependencies are difficult to model due to their temporal changes
+and high dimensionality makes it difficult to obtain similarities effectively
+and efficiently. Thus, to address these issues, we propose contrast
+similarity-aware dual-pathway Mamba for MTS node classification (CS-DPMamba).
+Firstly, to obtain the dynamic similarity of each sample, we initially use
+temporal contrast learning module to acquire MTS representations. And then we
+construct a similarity matrix between MTS representations using Fast Dynamic
+Time Warping (FastDTW). Secondly, we apply the DPMamba to consider the
+bidirectional nature of MTS, allowing us to better capture long-range and
+short-range dependencies within the data. Finally, we utilize the
+Kolmogorov-Arnold Network enhanced Graph Isomorphism Network to complete the
+information interaction in the matrix and MTS node classification task. By
+comprehensively considering the long-range dependencies and dynamic similarity
+features, we achieved precise MTS node classification. We conducted experiments
+on multiple University of East Anglia (UEA) MTS datasets, which encompass
+diverse application scenarios. Our results demonstrate the superiority of our
+method through both supervised and semi-supervised experiments on the MTS
+classification task.",http://arxiv.org/pdf/2411.12222v1,,False
+HEIGHT: Heterogeneous Interaction Graph Transformer for Robot Navigation in Crowded and Constrained Environments,19/11/2024,"Shuijing Liu, Haochen Xia, Fatemeh Cheraghi Pouria, Kaiwen Hong, Neeloy Chakraborty, Katherine Driggs-Campbell","We study the problem of robot navigation in dense and interactive crowds with
+environmental constraints such as corridors and furniture. Previous methods
+fail to consider all types of interactions among agents and obstacles, leading
+to unsafe and inefficient robot paths. In this article, we leverage a
+graph-based representation of crowded and constrained scenarios and propose a
+structured framework to learn robot navigation policies with deep reinforcement
+learning. We first split the representations of different components in the
+environment and propose a heterogeneous spatio-temporal (st) graph to model
+distinct interactions among humans, robots, and obstacles. Based on the
+heterogeneous st-graph, we propose HEIGHT, a novel navigation policy network
+architecture with different components to capture heterogeneous interactions
+among entities through space and time. HEIGHT utilizes attention mechanisms to
+prioritize important interactions and a recurrent network to track changes in
+the dynamic scene over time, encouraging the robot to avoid collisions
+adaptively. Through extensive simulation and real-world experiments, we
+demonstrate that HEIGHT outperforms state-of-the-art baselines in terms of
+success and efficiency in challenging navigation scenarios. Furthermore, we
+demonstrate that our pipeline achieves better zero-shot generalization
+capability than previous works when the densities of humans and obstacles
+change. More videos are available at
+https://sites.google.com/view/crowdnav-height/home.",http://arxiv.org/pdf/2411.12150v1,,False

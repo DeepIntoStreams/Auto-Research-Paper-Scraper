@@ -1,0 +1,207 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+PRIMUS: Pretraining IMU Encoders with Multimodal Self-Supervision,22/11/2024,"Arnav M. Das, Chi Ian Tang, Fahim Kawsar, Mohammad Malekzadeh","Sensing human motions through Inertial Measurement Units (IMUs) embedded in
+personal devices has enabled significant applications in health and wellness.
+While labeled IMU data is scarce, we can collect unlabeled or weakly labeled
+IMU data to model human motions. For video or text modalities, the ""pretrain
+and adapt"" approach utilizes large volumes of unlabeled or weakly labeled data
+for pretraining, building a strong feature extractor, followed by adaptation to
+specific tasks using limited labeled data. This approach has not been widely
+adopted in the IMU domain for two reasons: (1) pretraining methods are poorly
+understood in the context of IMU, and (2) open-source pretrained models that
+generalize across datasets are rarely publicly available. In this paper, we aim
+to address the first issue by proposing PRIMUS, a method for PRetraining IMU
+encoderS. We conduct a systematic and unified evaluation of various
+self-supervised and multimodal learning pretraining objectives. Our findings
+indicate that using PRIMUS, which combines self-supervision, multimodal
+supervision, and nearest-neighbor supervision, can significantly enhance
+downstream performance. With fewer than 500 labeled samples per class, PRIMUS
+effectively enhances downstream performance by up to 15% in held-out test data,
+compared to the state-of-the-art multimodal training method. To benefit the
+broader community, our code and pre-trained IMU encoders will be made publicly
+available at github.com/nokia-bell-labs upon publication.",http://arxiv.org/pdf/2411.15127v1,,False
+What You See is Not What You Get: Neural Partial Differential Equations and The Illusion of Learning,22/11/2024,"Arvind Mohan, Ashesh Chattopadhyay, Jonah Miller","Differentiable Programming for scientific machine learning (SciML) has
+recently seen considerable interest and success, as it directly embeds neural
+networks inside PDEs, often called as NeuralPDEs, derived from first principle
+physics. Therefore, there is a widespread assumption in the community that
+NeuralPDEs are more trustworthy and generalizable than black box models.
+However, like any SciML model, differentiable programming relies predominantly
+on high-quality PDE simulations as ""ground truth"" for training. However,
+mathematics dictates that these are only discrete numerical approximations of
+the true physics. Therefore, we ask: Are NeuralPDEs and differentiable
+programming models trained on PDE simulations as physically interpretable as we
+think? In this work, we rigorously attempt to answer these questions, using
+established ideas from numerical analysis, experiments, and analysis of model
+Jacobians. Our study shows that NeuralPDEs learn the artifacts in the
+simulation training data arising from the discretized Taylor Series truncation
+error of the spatial derivatives. Additionally, NeuralPDE models are
+systematically biased, and their generalization capability is likely enabled by
+a fortuitous interplay of numerical dissipation and truncation error in the
+training dataset and NeuralPDE, which seldom happens in practical applications.
+This bias manifests aggressively even in relatively accessible 1-D equations,
+raising concerns about the veracity of differentiable programming on complex,
+high-dimensional, real-world PDEs, and in dataset integrity of foundation
+models. Further, we observe that the initial condition constrains the
+truncation error in initial-value problems in PDEs, thereby exerting
+limitations to extrapolation. Finally, we demonstrate that an eigenanalysis of
+model weights can indicate a priori if the model will be inaccurate for
+out-of-distribution testing.",http://arxiv.org/pdf/2411.15101v1,,False
+Financial Risk Assessment via Long-term Payment Behavior Sequence Folding,22/11/2024,"Yiran Qiao, Yateng Tang, Xiang Ao, Qi Yuan, Ziming Liu, Chen Shen, Xuehao Zheng","Online inclusive financial services encounter significant financial risks due
+to their expansive user base and low default costs. By real-world practice, we
+reveal that utilizing longer-term user payment behaviors can enhance models'
+ability to forecast financial risks. However, learning long behavior sequences
+is non-trivial for deep sequential models. Additionally, the diverse fields of
+payment behaviors carry rich information, requiring thorough exploitation.
+These factors collectively complicate the task of long-term user behavior
+modeling. To tackle these challenges, we propose a Long-term Payment Behavior
+Sequence Folding method, referred to as LBSF. In LBSF, payment behavior
+sequences are folded based on merchants, using the merchant field as an
+intrinsic grouping criterion, which enables informative parallelism without
+reliance on external knowledge. Meanwhile, we maximize the utility of payment
+details through a multi-field behavior encoding mechanism. Subsequently,
+behavior aggregation at the merchant level followed by relational learning
+across merchants facilitates comprehensive user financial representation. We
+evaluate LBSF on the financial risk assessment task using a large-scale
+real-world dataset. The results demonstrate that folding long behavior
+sequences based on internal behavioral cues effectively models long-term
+patterns and changes, thereby generating more accurate user financial profiles
+for practical applications.",http://arxiv.org/pdf/2411.15056v1,,False
+GOT4Rec: Graph of Thoughts for Sequential Recommendation,22/11/2024,"Zewen Long, Liang Wang, Shu Wu, Qiang Liu, Liang Wang","With the advancement of large language models (LLMs), researchers have
+explored various methods to optimally leverage their comprehension and
+generation capabilities in sequential recommendation scenarios. However,
+several challenges persist in this endeavor. Firstly, most existing approaches
+rely on the input-output prompting paradigm, which can result in irrelevant or
+inaccurate responses. Secondly, while there have been attempts to enhance LLMs
+using prompting strategies such as chain-of-thought (CoT), these efforts have
+not fully harnessed the reasoning abilities of LLMs or effectively captured the
+multifaceted information contained within user sequences. To address these
+limitations, we propose GOT4Rec, a sequential recommendation method that
+utilizes the graph of thoughts (GoT) prompting strategy. Specifically, we
+identify and utilize three key types of information within user history
+sequences: short-term interests, long-term interests and collaborative
+information from other users. Our approach enables LLMs to independently reason
+and generate recommendations based on these distinct types of information,
+subsequently aggregating the results within the GoT framework to derive the
+final recommended items. This method allows LLMs, with enhanced reasoning
+capabilities, to more effectively consider the diverse information within user
+sequences, resulting in more accurate recommendations and more comprehensive
+explanations. Extensive experiments on real-world datasets demonstrate the
+effectiveness of GOT4Rec, indicating that it outperforms existing
+state-of-the-art baselines. Our code is available at
+https://anonymous.4open.science/r/GOT4Rec-ED99.",http://arxiv.org/pdf/2411.14922v1,,False
+Iterative Reweighted Framework Based Algorithms for Sparse Linear Regression with Generalized Elastic Net Penalty,22/11/2024,"Yanyun Ding, Zhenghua Yao, Peili Li, Yunhai Xiao","The elastic net penalty is frequently employed in high-dimensional statistics
+for parameter regression and variable selection. It is particularly beneficial
+compared to lasso when the number of predictors greatly surpasses the number of
+observations. However, empirical evidence has shown that the $\ell_q$-norm
+penalty (where $0 < q < 1$) often provides better regression compared to the
+$\ell_1$-norm penalty, demonstrating enhanced robustness in various scenarios.
+In this paper, we explore a generalized elastic net model that employs a
+$\ell_r$-norm (where $r \geq 1$) in loss function to accommodate various types
+of noise, and employs a $\ell_q$-norm (where $0 < q < 1$) to replace the
+$\ell_1$-norm in elastic net penalty. Theoretically, we establish the
+computable lower bounds for the nonzero entries of the generalized first-order
+stationary points of the proposed generalized elastic net model. For
+implementation, we develop two efficient algorithms based on the locally
+Lipschitz continuous $\epsilon$-approximation to $\ell_q$-norm. The first
+algorithm employs an alternating direction method of multipliers (ADMM), while
+the second utilizes a proximal majorization-minimization method (PMM), where
+the subproblems are addressed using the semismooth Newton method (SNN). We also
+perform extensive numerical experiments with both simulated and real data,
+showing that both algorithms demonstrate superior performance. Notably, the
+PMM-SSN is efficient than ADMM, even though the latter provides a simpler
+implementation.",http://arxiv.org/pdf/2411.14875v1,,False
+Resolution-Agnostic Transformer-based Climate Downscaling,22/11/2024,"Declan Curran, Hira Saleem, Flora Salim, Sanaa Hobeichi","Understanding future weather changes at regional and local scales is crucial
+for planning and decision-making, particularly in the context of extreme
+weather events, as well as for broader applications in agriculture, insurance,
+and infrastructure development. However, the computational cost of downscaling
+Global Climate Models (GCMs) to the fine resolutions needed for such
+applications presents a significant barrier. Drawing on advancements in weather
+forecasting models, this study introduces a cost-efficient downscaling method
+using a pretrained Earth Vision Transformer (Earth ViT) model. Initially
+trained on ERA5 data to downscale from 50 km to 25 km resolution, the model is
+then tested on the higher resolution BARRA-SY dataset at a 3 km resolution.
+Remarkably, it performs well without additional training, demonstrating its
+ability to generalize across different resolutions. This approach holds promise
+for generating large ensembles of regional climate simulations by downscaling
+GCMs with varying input resolutions without incurring additional training
+costs. Ultimately, this method could provide more comprehensive estimates of
+potential future changes in key climate variables, aiding in effective planning
+for extreme weather events and climate change adaptation strategies.",http://arxiv.org/pdf/2411.14774v1,,False
+LIBER: Lifelong User Behavior Modeling Based on Large Language Models,22/11/2024,"Chenxu Zhu, Shigang Quan, Bo Chen, Jianghao Lin, Xiaoling Cai, Hong Zhu, Xiangyang Li, Yunjia Xi, Weinan Zhang, Ruiming Tang","CTR prediction plays a vital role in recommender systems. Recently, large
+language models (LLMs) have been applied in recommender systems due to their
+emergence abilities. While leveraging semantic information from LLMs has shown
+some improvements in the performance of recommender systems, two notable
+limitations persist in these studies. First, LLM-enhanced recommender systems
+encounter challenges in extracting valuable information from lifelong user
+behavior sequences within textual contexts for recommendation tasks. Second,
+the inherent variability in human behaviors leads to a constant stream of new
+behaviors and irregularly fluctuating user interests. This characteristic
+imposes two significant challenges on existing models. On the one hand, it
+presents difficulties for LLMs in effectively capturing the dynamic shifts in
+user interests within these sequences, and on the other hand, there exists the
+issue of substantial computational overhead if the LLMs necessitate recurrent
+calls upon each update to the user sequences. In this work, we propose Lifelong
+User Behavior Modeling (LIBER) based on large language models, which includes
+three modules: (1) User Behavior Streaming Partition (UBSP), (2) User Interest
+Learning (UIL), and (3) User Interest Fusion (UIF). Initially, UBSP is employed
+to condense lengthy user behavior sequences into shorter partitions in an
+incremental paradigm, facilitating more efficient processing. Subsequently, UIL
+leverages LLMs in a cascading way to infer insights from these partitions.
+Finally, UIF integrates the textual outputs generated by the aforementioned
+processes to construct a comprehensive representation, which can be
+incorporated by any recommendation model to enhance performance. LIBER has been
+deployed on Huawei's music recommendation service and achieved substantial
+improvements in users' play count and play time by 3.01% and 7.69%.",http://arxiv.org/pdf/2411.14713v1,,False
+Whats in a Video: Factorized Autoregressive Decoding for Online Dense Video Captioning,22/11/2024,"AJ Piergiovanni, Dahun Kim, Michael S. Ryoo, Isaac Noble, Anelia Angelova","Generating automatic dense captions for videos that accurately describe their
+contents remains a challenging area of research. Most current models require
+processing the entire video at once. Instead, we propose an efficient, online
+approach which outputs frequent, detailed and temporally aligned captions,
+without access to future frames. Our model uses a novel autoregressive
+factorized decoding architecture, which models the sequence of visual features
+for each time segment, outputting localized descriptions and efficiently
+leverages the context from the previous video segments. This allows the model
+to output frequent, detailed captions to more comprehensively describe the
+video, according to its actual local content, rather than mimic the training
+data. Second, we propose an optimization for efficient training and inference,
+which enables scaling to longer videos. Our approach shows excellent
+performance compared to both offline and online methods, and uses 20\% less
+compute. The annotations produced are much more comprehensive and frequent, and
+can further be utilized in automatic video tagging and in large-scale video
+data harvesting.",http://arxiv.org/pdf/2411.14688v1,,False
+Double Machine Learning for Adaptive Causal Representation in High-Dimensional Data,22/11/2024,"Lynda Aouar, Han Yu","Adaptive causal representation learning from observational data is presented,
+integrated with an efficient sample splitting technique within the
+semiparametric estimating equation framework. The support points sample
+splitting (SPSS), a subsampling method based on energy distance, is employed
+for efficient double machine learning (DML) in causal inference. The support
+points are selected and split as optimal representative points of the full raw
+data in a random sample, in contrast to the traditional random splitting, and
+providing an optimal sub-representation of the underlying data generating
+distribution. They offer the best representation of a full big dataset, whereas
+the unit structural information of the underlying distribution via the
+traditional random data splitting is most likely not preserved. Three machine
+learning estimators were adopted for causal inference, support vector machine
+(SVM), deep learning (DL), and a hybrid super learner (SL) with deep learning
+(SDL), using SPSS. A comparative study is conducted between the proposed SVM,
+DL, and SDL representations using SPSS, and the benchmark results from
+Chernozhukov et al. (2018), which employed random forest, neural network, and
+regression trees with a random k-fold cross-fitting technique on the
+401(k)-pension plan real data. The simulations show that DL with SPSS and the
+hybrid methods of DL and SL with SPSS outperform SVM with SPSS in terms of
+computational efficiency and the estimation quality, respectively.",http://arxiv.org/pdf/2411.14665v1,,False
+VQalAttent: a Transparent Speech Generation Pipeline based on Transformer-learned VQ-VAE Latent Space,22/11/2024,"Armani Rodriguez, Silvija Kokalj-Filipovic","Generating high-quality speech efficiently remains a key challenge for
+generative models in speech synthesis. This paper introduces VQalAttent, a
+lightweight model designed to generate fake speech with tunable performance and
+interpretability. Leveraging the AudioMNIST dataset, consisting of human
+utterances of decimal digits (0-9), our method employs a two-step architecture:
+first, a scalable vector quantized autoencoder (VQ-VAE) that compresses audio
+spectrograms into discrete latent representations, and second, a decoder-only
+transformer that learns the probability model of these latents. Trained
+transformer generates similar latent sequences, convertible to audio
+spectrograms by the VQ-VAE decoder, from which we generate fake utterances.
+Interpreting statistical and perceptual quality of the fakes, depending on the
+dimension and the extrinsic information of the latent space, enables guided
+improvements in larger, commercial generative models. As a valuable tool for
+understanding and refining audio synthesis, our results demonstrate
+VQalAttent's capacity to generate intelligible speech samples with limited
+computational resources, while the modularity and transparency of the training
+pipeline helps easily correlate the analytics with modular modifications, hence
+providing insights for the more complex models.",http://arxiv.org/pdf/2411.14642v1,,False

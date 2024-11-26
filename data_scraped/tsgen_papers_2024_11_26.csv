@@ -1,0 +1,319 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"Quark: Real-time, High-resolution, and General Neural View Synthesis",25/11/2024,"John Flynn, Michael Broxton, Lukas Murmann, Lucy Chai, Matthew DuVall, Clément Godard, Kathryn Heal, Srinivas Kaza, Stephen Lombardi, Xuan Luo, Supreeth Achar, Kira Prabhu, Tiancheng Sun, Lynn Tsai, Ryan Overbeck","We present a novel neural algorithm for performing high-quality,
+high-resolution, real-time novel view synthesis. From a sparse set of input RGB
+images or videos streams, our network both reconstructs the 3D scene and
+renders novel views at 1080p resolution at 30fps on an NVIDIA A100. Our
+feed-forward network generalizes across a wide variety of datasets and scenes
+and produces state-of-the-art quality for a real-time method. Our quality
+approaches, and in some cases surpasses, the quality of some of the top offline
+methods. In order to achieve these results we use a novel combination of
+several key concepts, and tie them together into a cohesive and effective
+algorithm. We build on previous works that represent the scene using
+semi-transparent layers and use an iterative learned render-and-refine approach
+to improve those layers. Instead of flat layers, our method reconstructs
+layered depth maps (LDMs) that efficiently represent scenes with complex depth
+and occlusions. The iterative update steps are embedded in a multi-scale,
+UNet-style architecture to perform as much compute as possible at reduced
+resolution. Within each update step, to better aggregate the information from
+multiple input views, we use a specialized Transformer-based network component.
+This allows the majority of the per-input image processing to be performed in
+the input image space, as opposed to layer space, further increasing
+efficiency. Finally, due to the real-time nature of our reconstruction and
+rendering, we dynamically create and discard the internal 3D geometry for each
+frame, generating the LDM for each view. Taken together, this produces a novel
+and effective algorithm for view synthesis. Through extensive evaluation, we
+demonstrate that we achieve state-of-the-art quality at real-time rates.
+Project page: https://quark-3d.github.io/",http://arxiv.org/pdf/2411.16680v1,,False
+Exploring Discrete Flow Matching for 3D De Novo Molecule Generation,25/11/2024,"Ian Dunn, David R. Koes","Deep generative models that produce novel molecular structures have the
+potential to facilitate chemical discovery. Flow matching is a recently
+proposed generative modeling framework that has achieved impressive performance
+on a variety of tasks including those on biomolecular structures. The seminal
+flow matching framework was developed only for continuous data. However, de
+novo molecular design tasks require generating discrete data such as atomic
+elements or sequences of amino acid residues. Several discrete flow matching
+methods have been proposed recently to address this gap. In this work we
+benchmark the performance of existing discrete flow matching methods for 3D de
+novo small molecule generation and provide explanations of their differing
+behavior. As a result we present FlowMol-CTMC, an open-source model that
+achieves state of the art performance for 3D de novo design with fewer
+learnable parameters than existing methods. Additionally, we propose the use of
+metrics that capture molecule quality beyond local chemical valency constraints
+and towards higher-order structural motifs. These metrics show that even though
+basic constraints are satisfied, the models tend to produce unusual and
+potentially problematic functional groups outside of the training data
+distribution. Code and trained models for reproducing this work are available
+at \url{https://github.com/dunni3/FlowMol}.",http://arxiv.org/pdf/2411.16644v1,,False
+Inference-Time Policy Steering through Human Interactions,25/11/2024,"Yanwei Wang, Lirui Wang, Yilun Du, Balakumar Sundaralingam, Xuning Yang, Yu-Wei Chao, Claudia Perez-D'Arpino, Dieter Fox, Julie Shah","Generative policies trained with human demonstrations can autonomously
+accomplish multimodal, long-horizon tasks. However, during inference, humans
+are often removed from the policy execution loop, limiting the ability to guide
+a pre-trained policy towards a specific sub-goal or trajectory shape among
+multiple predictions. Naive human intervention may inadvertently exacerbate
+distribution shift, leading to constraint violations or execution failures. To
+better align policy output with human intent without inducing
+out-of-distribution errors, we propose an Inference-Time Policy Steering (ITPS)
+framework that leverages human interactions to bias the generative sampling
+process, rather than fine-tuning the policy on interaction data. We evaluate
+ITPS across three simulated and real-world benchmarks, testing three forms of
+human interaction and associated alignment distance metrics. Among six sampling
+strategies, our proposed stochastic sampling with diffusion policy achieves the
+best trade-off between alignment and distribution shift. Videos are available
+at https://yanweiw.github.io/itps/.",http://arxiv.org/pdf/2411.16627v1,,False
+Imperceptible Adversarial Examples in the Physical World,25/11/2024,"Weilin Xu, Sebastian Szyller, Cory Cornelius, Luis Murillo Rojas, Marius Arvinte, Alvaro Velasquez, Jason Martin, Nageen Himayat","Adversarial examples in the digital domain against deep learning-based
+computer vision models allow for perturbations that are imperceptible to human
+eyes. However, producing similar adversarial examples in the physical world has
+been difficult due to the non-differentiable image distortion functions in
+visual sensing systems. The existing algorithms for generating physically
+realizable adversarial examples often loosen their definition of adversarial
+examples by allowing unbounded perturbations, resulting in obvious or even
+strange visual patterns. In this work, we make adversarial examples
+imperceptible in the physical world using a straight-through estimator (STE,
+a.k.a. BPDA). We employ STE to overcome the non-differentiability -- applying
+exact, non-differentiable distortions in the forward pass of the
+backpropagation step, and using the identity function in the backward pass. Our
+differentiable rendering extension to STE also enables imperceptible
+adversarial patches in the physical world. Using printout photos, and
+experiments in the CARLA simulator, we show that STE enables fast generation of
+$\ell_\infty$ bounded adversarial examples despite the non-differentiable
+distortions. To the best of our knowledge, this is the first work demonstrating
+imperceptible adversarial examples bounded by small $\ell_\infty$ norms in the
+physical world that force zero classification accuracy in the global
+perturbation threat model and cause near-zero ($4.22\%$) AP50 in object
+detection in the patch perturbation threat model. We urge the community to
+re-evaluate the threat of adversarial examples in the physical world.",http://arxiv.org/pdf/2411.16622v1,,False
+"Pricing Multi-strike Quanto Call Options on Multiple Assets with Stochastic Volatility, Correlation, and Exchange Rates",25/11/2024,"Boris Ter-Avanesov, Gunter A. Meissner","Quanto options allow the buyer to exchange the foreign currency payoff into
+the domestic currency at a fixed exchange rate. We investigate quanto options
+with multiple underlying assets valued in different foreign currencies each
+with a different strike price in the payoff function. We carry out a
+comparative performance analysis of different stochastic volatility (SV),
+stochastic correlation (SC), and stochastic exchange rate (SER) models to
+determine the best combination of these models for Monte Carlo (MC) simulation
+pricing. In addition, we test the performance of all model variants with
+constant correlation as a benchmark. We find that a combination of GARCH-Jump
+SV, Weibull SC, and Ornstein Uhlenbeck (OU) SER performs best. In addition, we
+analyze different discretization schemes and their results. In our simulations,
+the Milstein scheme yields the best balance between execution times and lower
+standard deviations of price estimates. Furthermore, we find that incorporating
+mean reversion into stochastic correlation and stochastic FX rate modeling is
+beneficial for MC simulation pricing. We improve the accuracy of our
+simulations by implementing antithetic variates variance reduction. Finally, we
+derive the correlation risk parameters Cora and Gora in our framework so that
+correlation hedging of quanto options can be performed.",http://arxiv.org/pdf/2411.16617v1,,False
+Naive Algorithmic Collusion: When Do Bandit Learners Cooperate and When Do They Compete?,25/11/2024,"Connor Douglas, Foster Provost, Arun Sundararajan","Algorithmic agents are used in a variety of competitive decision settings,
+notably in making pricing decisions in contexts that range from online retail
+to residential home rentals. Business managers, algorithm designers, legal
+scholars, and regulators alike are all starting to consider the ramifications
+of ""algorithmic collusion."" We study the emergent behavior of multi-armed
+bandit machine learning algorithms used in situations where agents are
+competing, but they have no information about the strategic interaction they
+are engaged in. Using a general-form repeated Prisoner's Dilemma game, agents
+engage in online learning with no prior model of game structure and no
+knowledge of competitors' states or actions (e.g., no observation of competing
+prices). We show that these context-free bandits, with no knowledge of
+opponents' choices or outcomes, still will consistently learn collusive
+behavior - what we call ""naive collusion."" We primarily study this system
+through an analytical model and examine perturbations to the model through
+simulations.
+  Our findings have several notable implications for regulators. First, calls
+to limit algorithms from conditioning on competitors' prices are insufficient
+to prevent algorithmic collusion. This is a direct result of collusion arising
+even in the naive setting. Second, symmetry in algorithms can increase
+collusion potential. This highlights a new, simple mechanism for
+""hub-and-spoke"" algorithmic collusion. A central distributor need not imbue its
+algorithm with supra-competitive tendencies for apparent collusion to arise; it
+can simply arise by using certain (common) machine learning algorithms.
+Finally, we highlight that collusive outcomes depend starkly on the specific
+algorithm being used, and we highlight market and algorithmic conditions under
+which it will be unknown a priori whether collusion occurs.",http://arxiv.org/pdf/2411.16574v1,,False
+Enhancing Few-Shot Learning with Integrated Data and GAN Model Approaches,25/11/2024,"Yinqiu Feng, Aoran Shen, Jiacheng Hu, Yingbin Liang, Shiru Wang, Junliang Du","This paper presents an innovative approach to enhancing few-shot learning by
+integrating data augmentation with model fine-tuning in a framework designed to
+tackle the challenges posed by small-sample data. Recognizing the critical
+limitations of traditional machine learning models that require large
+datasets-especially in fields such as drug discovery, target recognition, and
+malicious traffic detection-this study proposes a novel strategy that leverages
+Generative Adversarial Networks (GANs) and advanced optimization techniques to
+improve model performance with limited data. Specifically, the paper addresses
+the noise and bias issues introduced by data augmentation methods, contrasting
+them with model-based approaches, such as fine-tuning and metric learning,
+which rely heavily on related datasets. By combining Markov Chain Monte Carlo
+(MCMC) sampling and discriminative model ensemble strategies within a GAN
+framework, the proposed model adjusts generative and discriminative
+distributions to simulate a broader range of relevant data. Furthermore, it
+employs MHLoss and a reparameterized GAN ensemble to enhance stability and
+accelerate convergence, ultimately leading to improved classification
+performance on small-sample images and structured datasets. Results confirm
+that the MhERGAN algorithm developed in this research is highly effective for
+few-shot learning, offering a practical solution that bridges data scarcity
+with high-performing model adaptability and generalization.",http://arxiv.org/pdf/2411.16567v1,,False
+Generating Out-Of-Distribution Scenarios Using Language Models,25/11/2024,"Erfan Aasi, Phat Nguyen, Shiva Sreeram, Guy Rosman, Sertac Karaman, Daniela Rus","The deployment of autonomous vehicles controlled by machine learning
+techniques requires extensive testing in diverse real-world environments,
+robust handling of edge cases and out-of-distribution scenarios, and
+comprehensive safety validation to ensure that these systems can navigate
+safely and effectively under unpredictable conditions. Addressing
+Out-Of-Distribution (OOD) driving scenarios is essential for enhancing safety,
+as OOD scenarios help validate the reliability of the models within the
+vehicle's autonomy stack. However, generating OOD scenarios is challenging due
+to their long-tailed distribution and rarity in urban driving dataset.
+Recently, Large Language Models (LLMs) have shown promise in autonomous
+driving, particularly for their zero-shot generalization and common-sense
+reasoning capabilities. In this paper, we leverage these LLM strengths to
+introduce a framework for generating diverse OOD driving scenarios. Our
+approach uses LLMs to construct a branching tree, where each branch represents
+a unique OOD scenario. These scenarios are then simulated in the CARLA
+simulator using an automated framework that aligns scene augmentation with the
+corresponding textual descriptions. We evaluate our framework through extensive
+simulations, and assess its performance via a diversity metric that measures
+the richness of the scenarios. Additionally, we introduce a new ""OOD-ness""
+metric, which quantifies how much the generated scenarios deviate from typical
+urban driving conditions. Furthermore, we explore the capacity of modern
+Vision-Language Models (VLMs) to interpret and safely navigate through the
+simulated OOD scenarios. Our findings offer valuable insights into the
+reliability of language models in addressing OOD scenarios within the context
+of urban driving.",http://arxiv.org/pdf/2411.16554v1,,False
+Multi-Resolution Generative Modeling of Human Motion from Limited Data,25/11/2024,"David Eduardo Moreno-Villamarín, Anna Hilsmann, Peter Eisert","We present a generative model that learns to synthesize human motion from
+limited training sequences. Our framework provides conditional generation and
+blending across multiple temporal resolutions. The model adeptly captures human
+motion patterns by integrating skeletal convolution layers and a multi-scale
+architecture. Our model contains a set of generative and adversarial networks,
+along with embedding modules, each tailored for generating motions at specific
+frame rates while exerting control over their content and details. Notably, our
+approach also extends to the synthesis of co-speech gestures, demonstrating its
+ability to generate synchronized gestures from speech inputs, even with limited
+paired data. Through direct synthesis of SMPL pose parameters, our approach
+avoids test-time adjustments to fit human body meshes. Experimental results
+showcase our model's ability to achieve extensive coverage of training
+examples, while generating diverse motions, as indicated by local and global
+diversity metrics.",http://arxiv.org/pdf/2411.16498v1,10.1145/3697294.3697309,False
+Unsupervised Event Outlier Detection in Continuous Time,25/11/2024,"Somjit Nath, Yik Chau Lui, Siqi Liu","Event sequence data record the occurrences of events in continuous time.
+Event sequence forecasting based on temporal point processes (TPPs) has been
+extensively studied, but outlier or anomaly detection, especially without any
+supervision from humans, is still underexplored. In this work, we develop, to
+the best our knowledge, the first unsupervised outlier detection approach to
+detecting abnormal events. Our novel unsupervised outlier detection framework
+is based on ideas from generative adversarial networks (GANs) and reinforcement
+learning (RL). We train a 'generator' that corrects outliers in the data with a
+'discriminator' that learns to discriminate the corrected data from the real
+data, which may contain outliers. A key insight is that if the generator made a
+mistake in the correction, it would generate anomalies that are different from
+the anomalies in the real data, so it serves as data augmentation for the
+discriminator learning. Different from typical GAN-based outlier detection
+approaches, our method employs the generator to detect outliers in an online
+manner. The experimental results show that our method can detect event outliers
+more accurately than the state-of-the-art approaches.",http://arxiv.org/pdf/2411.16427v1,,False
+Machine Learning for the Digital Typhoon Dataset: Extensions to Multiple Basins and New Developments in Representations and Tasks,25/11/2024,"Asanobu Kitamoto, Erwan Dzik, Gaspar Faure","This paper presents the Digital Typhoon Dataset V2, a new version of the
+longest typhoon satellite image dataset for 40+ years aimed at benchmarking
+machine learning models for long-term spatio-temporal data. The new addition in
+Dataset V2 is tropical cyclone data from the southern hemisphere, in addition
+to the northern hemisphere data in Dataset V1. Having data from two hemispheres
+allows us to ask new research questions about regional differences across
+basins and hemispheres. We also discuss new developments in representations and
+tasks of the dataset. We first introduce a self-supervised learning framework
+for representation learning. Combined with the LSTM model, we discuss
+performance on intensity forecasting and extra-tropical transition forecasting
+tasks. We then propose new tasks, such as the typhoon center estimation task.
+We show that an object detection-based model performs better for stronger
+typhoons. Finally, we study how machine learning models can generalize across
+basins and hemispheres, by training the model on the northern hemisphere data
+and testing it on the southern hemisphere data. The dataset is publicly
+available at \url{http://agora.ex.nii.ac.jp/digital-typhoon/dataset/} and
+\url{https://github.com/kitamoto-lab/digital-typhoon/}.",http://arxiv.org/pdf/2411.16421v1,,False
+Towards Foundation Models for Critical Care Time Series,25/11/2024,"Manuel Burger, Fedor Sergeev, Malte Londschien, Daphné Chopard, Hugo Yèche, Eike Gerdes, Polina Leshetkina, Alexander Morgenroth, Zeynep Babür, Jasmina Bogojeska, Martin Faltys, Rita Kuznetsova, Gunnar Rätsch","Notable progress has been made in generalist medical large language models
+across various healthcare areas. However, large-scale modeling of in-hospital
+time series data - such as vital signs, lab results, and treatments in critical
+care - remains underexplored. Existing datasets are relatively small, but
+combining them can enhance patient diversity and improve model robustness. To
+effectively utilize these combined datasets for large-scale modeling, it is
+essential to address the distribution shifts caused by varying treatment
+policies, necessitating the harmonization of treatment variables across the
+different datasets. This work aims to establish a foundation for training
+large-scale multi-variate time series models on critical care data and to
+provide a benchmark for machine learning models in transfer learning across
+hospitals to study and address distribution shift challenges. We introduce a
+harmonized dataset for sequence modeling and transfer learning research,
+representing the first large-scale collection to include core treatment
+variables. Future plans involve expanding this dataset to support further
+advancements in transfer learning and the development of scalable,
+generalizable models for critical healthcare applications.",http://arxiv.org/pdf/2411.16346v1,,False
+One Diffusion to Generate Them All,25/11/2024,"Duong H. Le, Tuan Pham, Sangho Lee, Christopher Clark, Aniruddha Kembhavi, Stephan Mandt, Ranjay Krishna, Jiasen Lu","We introduce OneDiffusion, a versatile, large-scale diffusion model that
+seamlessly supports bidirectional image synthesis and understanding across
+diverse tasks. It enables conditional generation from inputs such as text,
+depth, pose, layout, and semantic maps, while also handling tasks like image
+deblurring, upscaling, and reverse processes such as depth estimation and
+segmentation. Additionally, OneDiffusion allows for multi-view generation,
+camera pose estimation, and instant personalization using sequential image
+inputs. Our model takes a straightforward yet effective approach by treating
+all tasks as frame sequences with varying noise scales during training,
+allowing any frame to act as a conditioning image at inference time. Our
+unified training framework removes the need for specialized architectures,
+supports scalable multi-task training, and adapts smoothly to any resolution,
+enhancing both generalization and scalability. Experimental results demonstrate
+competitive performance across tasks in both generation and prediction such as
+text-to-image, multiview generation, ID preservation, depth estimation and
+camera pose estimation despite relatively small training dataset. Our code and
+checkpoint are freely available at https://github.com/lehduong/OneDiffusion",http://arxiv.org/pdf/2411.16318v1,,False
+Flow Annealed Importance Sampling Bootstrap meets Differentiable Particle Physics,25/11/2024,"Annalena Kofler, Vincent Stimper, Mikhail Mikhasenko, Michael Kagan, Lukas Heinrich","High-energy physics requires the generation of large numbers of simulated
+data samples from complex but analytically tractable distributions called
+matrix elements. Surrogate models, such as normalizing flows, are gaining
+popularity for this task due to their computational efficiency. We adopt an
+approach based on Flow Annealed importance sampling Bootstrap (FAB) that
+evaluates the differentiable target density during training and helps avoid the
+costly generation of training data in advance. We show that FAB reaches higher
+sampling efficiency with fewer target evaluations in high dimensions in
+comparison to other methods.",http://arxiv.org/pdf/2411.16234v1,,False
+SALOVA: Segment-Augmented Long Video Assistant for Targeted Retrieval and Routing in Long-Form Video Analysis,25/11/2024,"Junho Kim, Hyunjun Kim, Hosu Lee, Yong Man Ro","Despite advances in Large Multi-modal Models, applying them to long and
+untrimmed video content remains challenging due to limitations in context
+length and substantial memory overhead. These constraints often lead to
+significant information loss and reduced relevance in the model responses. With
+the exponential growth of video data across web platforms, understanding
+long-form video is crucial for advancing generalized intelligence. In this
+paper, we introduce SALOVA: Segment-Augmented LOng Video Assistant, a novel
+video-LLM framework designed to enhance the comprehension of lengthy video
+content through targeted retrieval process. We address two main challenges to
+achieve it: (i) We present the SceneWalk dataset, a high-quality collection of
+87.8K long videos, each densely captioned at the segment level to enable models
+to capture scene continuity and maintain rich descriptive context. (ii) We
+develop robust architectural designs integrating dynamic routing mechanism and
+spatio-temporal projector to efficiently retrieve and process relevant video
+segments based on user queries. Our framework mitigates the limitations of
+current video-LMMs by allowing for precise identification and retrieval of
+relevant video segments in response to queries, thereby improving the
+contextual relevance of the generated responses. Through extensive experiments,
+SALOVA demonstrates enhanced capability in processing complex long-form videos,
+showing significant capability to maintain contextual integrity across extended
+sequences.",http://arxiv.org/pdf/2411.16173v1,,False
+VICON: Vision In-Context Operator Networks for Multi-Physics Fluid Dynamics Prediction,25/11/2024,"Yadi Cao, Yuxuan Liu, Liu Yang, Rose Yu, Hayden Schaeffer, Stanley Osher","In-Context Operator Networks (ICONs) are models that learn operators across
+different types of PDEs using a few-shot, in-context approach. Although they
+show successful generalization to various PDEs, existing methods treat each
+data point as a single token, and suffer from computational inefficiency when
+processing dense data, limiting their application in higher spatial dimensions.
+In this work, we propose Vision In-Context Operator Networks (VICON),
+incorporating a vision transformer architecture that efficiently processes 2D
+functions through patch-wise operations. We evaluated our method on three fluid
+dynamics datasets, demonstrating both superior performance (reducing scaled
+$L^2$ error by $40\%$ and $61.6\%$ for two benchmark datasets for compressible
+flows, respectively) and computational efficiency (requiring only one-third of
+the inference time per frame) in long-term rollout predictions compared to the
+current state-of-the-art sequence-to-sequence model with fixed timestep
+prediction: Multiple Physics Pretraining (MPP). Compared to MPP, our method
+preserves the benefits of in-context operator learning, enabling flexible
+context formation when dealing with insufficient frame counts or varying
+timestep values.",http://arxiv.org/pdf/2411.16063v1,,False
+From Dashcam Videos to Driving Simulations: Stress Testing Automated Vehicles against Rare Events,25/11/2024,"Yan Miao, Georgios Fainekos, Bardh Hoxha, Hideki Okamoto, Danil Prokhorov, Sayan Mitra","Testing Automated Driving Systems (ADS) in simulation with realistic driving
+scenarios is important for verifying their performance. However, converting
+real-world driving videos into simulation scenarios is a significant challenge
+due to the complexity of interpreting high-dimensional video data and the
+time-consuming nature of precise manual scenario reconstruction. In this work,
+we propose a novel framework that automates the conversion of real-world car
+crash videos into detailed simulation scenarios for ADS testing. Our approach
+leverages prompt-engineered Video Language Models(VLM) to transform dashcam
+footage into SCENIC scripts, which define the environment and driving behaviors
+in the CARLA simulator, enabling the generation of realistic simulation
+scenarios. Importantly, rather than solely aiming for one-to-one scenario
+reconstruction, our framework focuses on capturing the essential driving
+behaviors from the original video while offering flexibility in parameters such
+as weather or road conditions to facilitate search-based testing. Additionally,
+we introduce a similarity metric that helps iteratively refine the generated
+scenario through feedback by comparing key features of driving behaviors
+between the real and simulated videos. Our preliminary results demonstrate
+substantial time efficiency, finishing the real-to-sim conversion in minutes
+with full automation and no human intervention, while maintaining high fidelity
+to the original driving events.",http://arxiv.org/pdf/2411.16027v1,,False

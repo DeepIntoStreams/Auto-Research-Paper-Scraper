@@ -1,0 +1,275 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Cross-modal Information Flow in Multimodal Large Language Models,27/11/2024,"Zhi Zhang, Srishti Yadav, Fengze Han, Ekaterina Shutova","The recent advancements in auto-regressive multimodal large language models
+(MLLMs) have demonstrated promising progress for vision-language tasks. While
+there exists a variety of studies investigating the processing of linguistic
+information within large language models, little is currently known about the
+inner working mechanism of MLLMs and how linguistic and visual information
+interact within these models. In this study, we aim to fill this gap by
+examining the information flow between different modalities -- language and
+vision -- in MLLMs, focusing on visual question answering. Specifically, given
+an image-question pair as input, we investigate where in the model and how the
+visual and linguistic information are combined to generate the final
+prediction. Conducting experiments with a series of models from the LLaVA
+series, we find that there are two distinct stages in the process of
+integration of the two modalities. In the lower layers, the model first
+transfers the more general visual features of the whole image into the
+representations of (linguistic) question tokens. In the middle layers, it once
+again transfers visual information about specific objects relevant to the
+question to the respective token positions of the question. Finally, in the
+higher layers, the resulting multimodal representation is propagated to the
+last position of the input sequence for the final prediction. Overall, our
+findings provide a new and comprehensive perspective on the spatial and
+functional aspects of image and language processing in the MLLMs, thereby
+facilitating future research into multimodal information localization and
+editing.",http://arxiv.org/pdf/2411.18620v1,,False
+Surveying the space of descriptions of a composite system with machine learning,27/11/2024,"Kieran A. Murphy, Yujing Zhang, Dani S. Bassett","Multivariate information theory provides a general and principled framework
+for understanding how the components of a complex system are connected.
+Existing analyses are coarse in nature -- built up from characterizations of
+discrete subsystems -- and can be computationally prohibitive. In this work, we
+propose to study the continuous space of possible descriptions of a composite
+system as a window into its organizational structure. A description consists of
+specific information conveyed about each of the components, and the space of
+possible descriptions is equivalent to the space of lossy compression schemes
+of the components. We introduce a machine learning framework to optimize
+descriptions that extremize key information theoretic quantities used to
+characterize organization, such as total correlation and O-information. Through
+case studies on spin systems, Sudoku boards, and letter sequences from natural
+language, we identify extremal descriptions that reveal how system-wide
+variation emerges from individual components. By integrating machine learning
+into a fine-grained information theoretic analysis of composite random
+variables, our framework opens a new avenues for probing the structure of
+real-world complex systems.",http://arxiv.org/pdf/2411.18579v1,,False
+Draft Model Knows When to Stop: A Self-Verification Length Policy for Speculative Decoding,27/11/2024,"Ziyin Zhang, Jiahao Xu, Tian Liang, Xingyu Chen, Zhiwei He, Rui Wang, Zhaopeng Tu","Speculative Decoding (SD) has become an important technique in accelerating
+the inference speed of large language models. Conventional SD methods employ a
+fixed draft length, which ignores the token generation difficulty across tasks.
+Consequently, in this paper, we address such an issue and introduce SVIP - a
+difficulty-aware dynamic draft length policy for speculative decoding systems.
+Based on a theoretical lower bound of draft token acceptance rate and its
+inference-time approximation, SVIP adaptively determines the lengths of draft
+sequences based on the entropy of each draft token distribution. Experimental
+results on mainstream SD benchmarks and frameworks demonstrate the superior
+performance of SVIP, achieving up to 20\% walltime speedup on SpecBench over
+baseline SD methods and 60\% speedup on MT-Bench for long-form generation of up
+to 8K tokens. Moreover, SVIP is totally training-free and compatible with any
+existing SD methods that generate draft tokens autoregressively. Experimental
+results also show that SVIP yields consistent walltime improvement on top of
+GliDe & CaPE and EAGLE-2.",http://arxiv.org/pdf/2411.18462v1,,False
+Continuous Autoregressive Models with Noise Augmentation Avoid Error Accumulation,27/11/2024,"Marco Pasini, Javier Nistal, Stefan Lattner, George Fazekas","Autoregressive models are typically applied to sequences of discrete tokens,
+but recent research indicates that generating sequences of continuous
+embeddings in an autoregressive manner is also feasible. However, such
+Continuous Autoregressive Models (CAMs) can suffer from a decline in generation
+quality over extended sequences due to error accumulation during inference. We
+introduce a novel method to address this issue by injecting random noise into
+the input embeddings during training. This procedure makes the model robust
+against varying error levels at inference. We further reduce error accumulation
+through an inference procedure that introduces low-level noise. Experiments on
+musical audio generation show that CAM substantially outperforms existing
+autoregressive and non-autoregressive approaches while preserving audio quality
+over extended sequences. This work paves the way for generating continuous
+embeddings in a purely autoregressive setting, opening new possibilities for
+real-time and interactive generative applications.",http://arxiv.org/pdf/2411.18447v1,,False
+XR-MBT: Multi-modal Full Body Tracking for XR through Self-Supervision with Learned Depth Point Cloud Registration,27/11/2024,"Denys Rozumnyi, Nadine Bertsch, Othman Sbai, Filippo Arcadu, Yuhua Chen, Artsiom Sanakoyeu, Manoj Kumar, Catherine Herold, Robin Kips","Tracking the full body motions of users in XR (AR/VR) devices is a
+fundamental challenge to bring a sense of authentic social presence. Due to the
+absence of dedicated leg sensors, currently available body tracking methods
+adopt a synthesis approach to generate plausible motions given a 3-point signal
+from the head and controller tracking. In order to enable mixed reality
+features, modern XR devices are capable of estimating depth information of the
+headset surroundings using available sensors combined with dedicated machine
+learning models. Such egocentric depth sensing cannot drive the body directly,
+as it is not registered and is incomplete due to limited field-of-view and body
+self-occlusions. For the first time, we propose to leverage the available depth
+sensing signal combined with self-supervision to learn a multi-modal pose
+estimation model capable of tracking full body motions in real time on XR
+devices. We demonstrate how current 3-point motion synthesis models can be
+extended to point cloud modalities using a semantic point cloud encoder network
+combined with a residual network for multi-modal pose estimation. These modules
+are trained jointly in a self-supervised way, leveraging a combination of real
+unregistered point clouds and simulated data obtained from motion capture. We
+compare our approach against several state-of-the-art systems for XR body
+tracking and show that our method accurately tracks a diverse range of body
+motions. XR-MBT tracks legs in XR for the first time, whereas traditional
+synthesis approaches based on partial body tracking are blind.",http://arxiv.org/pdf/2411.18377v1,,False
+G3Flow: Generative 3D Semantic Flow for Pose-aware and Generalizable Object Manipulation,27/11/2024,"Tianxing Chen, Yao Mu, Zhixuan Liang, Zanxin Chen, Shijia Peng, Qiangyu Chen, Mingkun Xu, Ruizhen Hu, Hongyuan Zhang, Xuelong Li, Ping Luo","Recent advances in imitation learning for 3D robotic manipulation have shown
+promising results with diffusion-based policies. However, achieving human-level
+dexterity requires seamless integration of geometric precision and semantic
+understanding. We present G3Flow, a novel framework that constructs real-time
+semantic flow, a dynamic, object-centric 3D semantic representation by
+leveraging foundation models. Our approach uniquely combines 3D generative
+models for digital twin creation, vision foundation models for semantic feature
+extraction, and robust pose tracking for continuous semantic flow updates. This
+integration enables complete semantic understanding even under occlusions while
+eliminating manual annotation requirements. By incorporating semantic flow into
+diffusion policies, we demonstrate significant improvements in both
+terminal-constrained manipulation and cross-object generalization. Extensive
+experiments across five simulation tasks show that G3Flow consistently
+outperforms existing approaches, achieving up to 68.3% and 50.1% average
+success rates on terminal-constrained manipulation and cross-object
+generalization tasks respectively. Our results demonstrate the effectiveness of
+G3Flow in enhancing real-time dynamic semantic feature understanding for
+robotic manipulation policies.",http://arxiv.org/pdf/2411.18369v1,,False
+Ridge Regression for Manifold-valued Time-Series with Application to Meteorological Forecast,27/11/2024,Esfandiar Nava-Yazdani,"We propose a natural intrinsic extension of the ridge regression from
+Euclidean spaces to general manifolds, which relies on Riemannian least-squares
+fitting, empirical covariance, and Mahalanobis distance. We utilize it for
+time-series prediction and apply the approach to forecast hurricane tracks and
+their wind speeds.",http://arxiv.org/pdf/2411.18339v1,,False
+GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation,27/11/2024,"Wenbo Cui, Chengyang Zhao, Songlin Wei, Jiazhao Zhang, Haoran Geng, Yaran Chen, He Wang","Effectively manipulating articulated objects in household scenarios is a
+crucial step toward achieving general embodied artificial intelligence.
+Mainstream research in 3D vision has primarily focused on manipulation through
+depth perception and pose detection. However, in real-world environments, these
+methods often face challenges due to imperfect depth perception, such as with
+transparent lids and reflective handles. Moreover, they generally lack the
+diversity in part-based interactions required for flexible and adaptable
+manipulation. To address these challenges, we introduced a large-scale
+part-centric dataset for articulated object manipulation that features both
+photo-realistic material randomizations and detailed annotations of
+part-oriented, scene-level actionable interaction poses. We evaluated the
+effectiveness of our dataset by integrating it with several state-of-the-art
+methods for depth estimation and interaction pose prediction. Additionally, we
+proposed a novel modular framework that delivers superior and robust
+performance for generalizable articulated object manipulation. Our extensive
+experiments demonstrate that our dataset significantly improves the performance
+of depth perception and actionable interaction pose prediction in both
+simulation and real-world scenarios.",http://arxiv.org/pdf/2411.18276v1,,False
+Dynamic Retail Pricing via Q-Learning -- A Reinforcement Learning Framework for Enhanced Revenue Management,27/11/2024,"Mohit Apte, Ketan Kale, Pranav Datar, Pratiksha Deshmukh","This paper explores the application of a reinforcement learning (RL)
+framework using the Q-Learning algorithm to enhance dynamic pricing strategies
+in the retail sector. Unlike traditional pricing methods, which often rely on
+static demand models, our RL approach continuously adapts to evolving market
+dynamics, offering a more flexible and responsive pricing strategy. By creating
+a simulated retail environment, we demonstrate how RL effectively addresses
+real-time changes in consumer behavior and market conditions, leading to
+improved revenue outcomes. Our results illustrate that the RL model not only
+surpasses traditional methods in terms of revenue generation but also provides
+insights into the complex interplay of price elasticity and consumer demand.
+This research underlines the significant potential of applying artificial
+intelligence in economic decision-making, paving the way for more
+sophisticated, data-driven pricing models in various commercial domains.",http://arxiv.org/pdf/2411.18261v1,,False
+Thai Financial Domain Adaptation of THaLLE -- Technical Report,27/11/2024,"KBTG Labs, Atthakorn Petchsod, Pornchanan Balee, Danupat Khamnuansin, Anuruth Lertpiya, Chanatip Saetia, Tawunrat Chalothorn, Thadpong Pongthawornkamol, Monchai Lertsutthiwong","Large Language Models (LLMs) excel in general tasks but struggle with
+domain-specific challenges, such as specialized terminology and localized
+regulations. Existing financial LLMs, like FinGPT and BloombergGPT, lack
+support for the Thai financial domain. We developed a Thai Financial LLM using
+the Investment Consultant (IC) exam dataset from the Stock Exchange of
+Thailand. To address dataset limitations, we applied data augmentation, ReLoRA
+for efficient training, Continued Pretraining (CPT) for domain knowledge, and
+Rank-Stabilized LoRA (rsLoRA) for fine-tuning. Supervised Fine-Tuning (SFT)
+simulated exam scenarios, while Direct Preference Optimization (DPO) refined
+the model using feedback. The model achieved scores of 72%, 72%, and 84% on IC
+exam levels P1, P2, and P3, respectively, demonstrating its effectiveness in
+Thai financial advisory tasks and its potential for specialized applications.",http://arxiv.org/pdf/2411.18242v1,,False
+Dependency-Aware CAV Task Scheduling via Diffusion-Based Reinforcement Learning,27/11/2024,"Xiang Cheng, Zhi Mao, Ying Wang, Wen Wu","In this paper, we propose a novel dependency-aware task scheduling strategy
+for dynamic unmanned aerial vehicle-assisted connected autonomous vehicles
+(CAVs). Specifically, different computation tasks of CAVs consisting of
+multiple dependency subtasks are judiciously assigned to nearby CAVs or the
+base station for promptly completing tasks. Therefore, we formulate a joint
+scheduling priority and subtask assignment optimization problem with the
+objective of minimizing the average task completion time. The problem aims at
+improving the long-term system performance, which is reformulated as a Markov
+decision process. To solve the problem, we further propose a diffusion-based
+reinforcement learning algorithm, named Synthetic DDQN based Subtasks
+Scheduling, which can make adaptive task scheduling decision in real time. A
+diffusion model-based synthetic experience replay is integrated into the
+reinforcement learning framework, which can generate sufficient synthetic data
+in experience replay buffer, thereby significantly accelerating convergence and
+improving sample efficiency. Simulation results demonstrate the effectiveness
+of the proposed algorithm on reducing task completion time, comparing to
+benchmark schemes.",http://arxiv.org/pdf/2411.18230v1,,False
+SALMONN-omni: A Codec-free LLM for Full-duplex Speech Understanding and Generation,27/11/2024,"Wenyi Yu, Siyin Wang, Xiaoyu Yang, Xianzhao Chen, Xiaohai Tian, Jun Zhang, Guangzhi Sun, Lu Lu, Yuxuan Wang, Chao Zhang","Full-duplex multimodal large language models (LLMs) provide a unified
+framework for addressing diverse speech understanding and generation tasks,
+enabling more natural and seamless human-machine conversations. Unlike
+traditional modularised conversational AI systems, which separate speech
+recognition, understanding, and text-to-speech generation into distinct
+components, multimodal LLMs operate as single end-to-end models. This
+streamlined design eliminates error propagation across components and fully
+leverages the rich non-verbal information embedded in input speech signals. We
+introduce SALMONN-omni, a codec-free, full-duplex speech understanding and
+generation model capable of simultaneously listening to its own generated
+speech and background sounds while speaking. To support this capability, we
+propose a novel duplex spoken dialogue framework incorporating a ``thinking''
+mechanism that facilitates asynchronous text and speech generation relying on
+embeddings instead of codecs (quantized speech and audio tokens). Experimental
+results demonstrate SALMONN-omni's versatility across a broad range of
+streaming speech tasks, including speech recognition, speech enhancement, and
+spoken question answering. Additionally, SALMONN-omni excels at managing
+turn-taking, barge-in, and echo cancellation scenarios, establishing its
+potential as a robust prototype for full-duplex conversational AI systems. To
+the best of our knowledge, SALMONN-omni is the first codec-free model of its
+kind. A full technical report along with model checkpoints will be released
+soon.",http://arxiv.org/pdf/2411.18138v1,,False
+The Bigger the Better? Accurate Molecular Potential Energy Surfaces from Minimalist Neural Networks,27/11/2024,"Silvan Käser, Debasish Koner, Markus Meuwly","Atomistic simulations are a powerful tool for studying the dynamics of
+molecules, proteins, and materials on wide time and length scales. Their
+reliability and predictiveness, however, depend directly on the accuracy of the
+underlying potential energy surface (PES). Guided by the principle of parsimony
+this work introduces KerNN, a combined kernel/neural network-based approach to
+represent molecular PESs. Compared to state-of-the-art neural network PESs the
+number of learnable parameters of KerNN is significantly reduced. This speeds
+up training and evaluation times by several orders of magnitude while retaining
+high prediction accuracy. Importantly, using kernels as the features also
+improves the extrapolation capabilities of KerNN far beyond the coverage
+provided by the training data which solves a general problem of NN-based PESs.
+KerNN applied to spectroscopy and reaction dynamics shows excellent performance
+on test set statistics and observables including vibrational bands computed
+from classical and quantum simulations.",http://arxiv.org/pdf/2411.18121v1,,False
+Heterogeneous Relationships of Subjects and Shapelets for Semi-supervised Multivariate Series Classification,27/11/2024,"Mingsen Du, Meng Chen, Yongjian Li, Cun Ji, Shoushui Wei","Multivariate time series (MTS) classification is widely applied in fields
+such as industry, healthcare, and finance, aiming to extract key features from
+complex time series data for accurate decision-making and prediction. However,
+existing methods for MTS often struggle due to the challenges of effectively
+modeling high-dimensional data and the lack of labeled data, resulting in poor
+classification performance. To address this issue, we propose a heterogeneous
+relationships of subjects and shapelets method for semi-supervised MTS
+classification. This method offers a novel perspective by integrating various
+types of additional information while capturing the relationships between them.
+Specifically, we first utilize a contrast temporal self-attention module to
+obtain sparse MTS representations, and then model the similarities between
+these representations using soft dynamic time warping to construct a similarity
+graph. Secondly, we learn the shapelets for different subject types,
+incorporating both the subject features and their shapelets as additional
+information to further refine the similarity graph, ultimately generating a
+heterogeneous graph. Finally, we use a dual level graph attention network to
+get prediction. Through this method, we successfully transform dataset into a
+heterogeneous graph, integrating multiple additional information and achieving
+precise semi-supervised node classification. Experiments on the Human Activity
+Recognition, sleep stage classification and University of East Anglia datasets
+demonstrate that our method outperforms current state-of-the-art methods in MTS
+classification tasks, validating its superiority.",http://arxiv.org/pdf/2411.18043v1,,False
+Diffeomorphic Latent Neural Operator Learning for Data-Efficient Predictions of Solutions to Partial Differential Equations,27/11/2024,"Zan Ahmad, Shiyi Chen, Minglang Yin, Avisha Kumar, Nicolas Charon, Natalia Trayanova, Mauro Maggioni","A computed approximation of the solution operator to a system of partial
+differential equations (PDEs) is needed in various areas of science and
+engineering. Neural operators have been shown to be quite effective at
+predicting these solution generators after training on high-fidelity ground
+truth data (e.g. numerical simulations). However, in order to generalize well
+to unseen spatial domains, neural operators must be trained on an extensive
+amount of geometrically varying data samples that may not be feasible to
+acquire or simulate in certain contexts (i.e., patient-specific medical data,
+large-scale computationally intensive simulations.) We propose that in order to
+learn a PDE solution operator that can generalize across multiple domains
+without needing to sample enough data expressive enough for all possible
+geometries, we can train instead a latent neural operator on just a few ground
+truth solution fields diffeomorphically mapped from different geometric/spatial
+domains to a fixed reference configuration. Furthermore, the form of the
+solutions is dependent on the choice of mapping to and from the reference
+domain. We emphasize that preserving properties of the differential operator
+when constructing these mappings can significantly reduce the data requirement
+for achieving an accurate model due to the regularity of the solution fields
+that the latent neural operator is training on. We provide motivating numerical
+experimentation that demonstrates an extreme case of this consideration by
+exploiting the conformal invariance of the Laplacian",http://arxiv.org/pdf/2411.18014v1,,False
+Optimized Conformal Selection: Powerful Selective Inference After Conformity Score Optimization,27/11/2024,"Tian Bai, Ying Jin","Model selection/optimization in conformal inference is challenging, since it
+may break the exchangeability between labeled and unlabeled data. We study this
+problem in the context of conformal selection, which uses conformal p-values to
+select ``interesting'' instances with large unobserved labels from a pool of
+unlabeled data, while controlling the FDR in finite sample. For validity,
+existing solutions require the model choice to be independent of the data used
+to construct the p-values and calibrate the selection set. However, when
+presented with many model choices and limited labeled data, it is desirable to
+(i) select the best model in a data-driven manner, and (ii) mitigate power loss
+due to sample splitting.
+  This paper presents OptCS, a general framework that allows valid statistical
+testing (selection) after flexible data-driven model optimization. We introduce
+general conditions under which OptCS constructs valid conformal p-values
+despite substantial data reuse and handles complex p-value dependencies to
+maintain finite-sample FDR control via a novel multiple testing procedure. We
+instantiate this general recipe to propose three FDR-controlling procedures,
+each optimizing the models differently: (i) selecting the most powerful one
+among multiple pre-trained candidate models, (ii) using all data for model
+fitting without sample splitting, and (iii) combining full-sample model fitting
+and selection. We demonstrate the efficacy of our methods via simulation
+studies and real applications in drug discovery and alignment of large language
+models in radiology report generation.",http://arxiv.org/pdf/2411.17983v1,,False

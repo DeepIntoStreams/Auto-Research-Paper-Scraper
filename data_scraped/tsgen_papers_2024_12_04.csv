@@ -1,0 +1,775 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+T-REG: Preference Optimization with Token-Level Reward Regularization,03/12/2024,"Wenxuan Zhou, Shujian Zhang, Lingxiao Zhao, Tao Meng","Reinforcement learning from human feedback (RLHF) has been crucial in
+aligning large language models (LLMs) with human values. Traditionally, RLHF
+involves generating responses to a query and using a reward model to assign a
+reward to the entire response. However, this approach faces challenges due to
+its reliance on a single, sparse reward, which makes it challenging for the
+model to identify which parts of the sequence contribute most significantly to
+the final reward. Recent methods have attempted to address this limitation by
+introducing token-level rewards. However, these methods often rely on either a
+trained credit assignment model or AI annotators, raising concerns about the
+quality and reliability of the rewards. In this paper, we propose token-level
+reward regularization (T-REG), a novel approach that leverages both
+sequence-level and token-level rewards for preference optimization. Harnessing
+the self-refinement capabilities of LLMs, our method uses contrastive prompting
+to enable LLMs to self-generate token-level rewards. These self-generated
+rewards then act as reward regularization, guiding the model to more
+effectively distribute sequence-level rewards across tokens. This facilitates
+better token-level credit assignment and enhances alignment performance.
+Experiments on the instruction following benchmarks, including Alpaca Eval 2
+and Arena-Hard, show that our method consistently outperforms baseline methods
+by up to 3.8% and 4.4%, respectively. We will release the code and models at
+https://github.com/wzhouad/T-REG.",http://arxiv.org/pdf/2412.02685v1,,False
+Planning-Guided Diffusion Policy Learning for Generalizable Contact-Rich Bimanual Manipulation,03/12/2024,"Xuanlin Li, Tong Zhao, Xinghao Zhu, Jiuguang Wang, Tao Pang, Kuan Fang","Contact-rich bimanual manipulation involves precise coordination of two arms
+to change object states through strategically selected contacts and motions.
+Due to the inherent complexity of these tasks, acquiring sufficient
+demonstration data and training policies that generalize to unseen scenarios
+remain a largely unresolved challenge. Building on recent advances in planning
+through contacts, we introduce Generalizable Planning-Guided Diffusion Policy
+Learning (GLIDE), an approach that effectively learns to solve contact-rich
+bimanual manipulation tasks by leveraging model-based motion planners to
+generate demonstration data in high-fidelity physics simulation. Through
+efficient planning in randomized environments, our approach generates
+large-scale and high-quality synthetic motion trajectories for tasks involving
+diverse objects and transformations. We then train a task-conditioned diffusion
+policy via behavior cloning using these demonstrations. To tackle the
+sim-to-real gap, we propose a set of essential design options in feature
+extraction, task representation, action prediction, and data augmentation that
+enable learning robust prediction of smooth action sequences and generalization
+to unseen scenarios. Through experiments in both simulation and the real world,
+we demonstrate that our approach can enable a bimanual robotic system to
+effectively manipulate objects of diverse geometries, dimensions, and physical
+properties. Website: https://glide-manip.github.io/",http://arxiv.org/pdf/2412.02676v1,,False
+Generating Critical Scenarios for Testing Automated Driving Systems,03/12/2024,"Trung-Hieu Nguyen, Truong-Giang Vuong, Hong-Nam Duong, Son Nguyen, Hieu Dinh Vo, Toshiaki Aoki, Thu-Trang Nguyen","Autonomous vehicles (AVs) have demonstrated significant potential in
+revolutionizing transportation, yet ensuring their safety and reliability
+remains a critical challenge, especially when exposed to dynamic and
+unpredictable environments. Real-world testing of an Autonomous Driving System
+(ADS) is both expensive and risky, making simulation-based testing a preferred
+approach. In this paper, we propose AVASTRA, a Reinforcement Learning
+(RL)-based approach to generate realistic critical scenarios for testing ADSs
+in simulation environments. To capture the complexity of driving scenarios,
+AVASTRA comprehensively represents the environment by both the internal states
+of an ADS under-test (e.g., the status of the ADS's core components, speed, or
+acceleration) and the external states of the surrounding factors in the
+simulation environment (e.g., weather, traffic flow, or road condition).
+AVASTRA trains the RL agent to effectively configure the simulation environment
+that places the AV in dangerous situations and potentially leads it to
+collisions. We introduce a diverse set of actions that allows the RL agent to
+systematically configure both environmental conditions and traffic
+participants. Additionally, based on established safety requirements, we
+enforce heuristic constraints to ensure the realism and relevance of the
+generated test scenarios. AVASTRA is evaluated on two popular simulation maps
+with four different road configurations. Our results show AVASTRA's ability to
+outperform the state-of-the-art approach by generating 30% to 115% more
+collision scenarios. Compared to the baseline based on Random Search, AVASTRA
+achieves up to 275% better performance. These results highlight the
+effectiveness of AVASTRA in enhancing the safety testing of AVs through
+realistic comprehensive critical scenario generation.",http://arxiv.org/pdf/2412.02574v1,,False
+Graph-Powered Defense: Controller Area Network Intrusion Detection for Unmanned Aerial Vehicles,03/12/2024,"Reek Majumder, Gurcan Comert, David Werth, Adrian Gale, Mashrur Chowdhury, M Sabbir Salek","The network of services, including delivery, farming, and environmental
+monitoring, has experienced exponential expansion in the past decade with
+Unmanned Aerial Vehicles (UAVs). Yet, UAVs are not robust enough against
+cyberattacks, especially on the Controller Area Network (CAN) bus. The CAN bus
+is a general-purpose vehicle-bus standard to enable microcontrollers and
+in-vehicle computers to interact, primarily connecting different Electronic
+Control Units (ECUs). In this study, we focus on solving some of the most
+critical security weaknesses in UAVs by developing a novel graph-based
+intrusion detection system (IDS) leveraging the Uncomplicated Application-level
+Vehicular Communication and Networking (UAVCAN) protocol. First, we decode CAN
+messages based on UAVCAN protocol specification; second, we present a
+comprehensive method of transforming tabular UAVCAN messages into graph
+structures. Lastly, we apply various graph-based machine learning models for
+detecting cyber-attacks on the CAN bus, including graph convolutional neural
+networks (GCNNs), graph attention networks (GATs), Graph Sample and Aggregate
+Networks (GraphSAGE), and graph structure-based transformers. Our findings show
+that inductive models such as GATs, GraphSAGE, and graph-based transformers can
+achieve competitive and even better accuracy than transductive models like
+GCNNs in detecting various types of intrusions, with minimum information on
+protocol specification, thus providing a generic robust solution for CAN bus
+security for the UAVs. We also compared our results with baseline single-layer
+Long Short-Term Memory (LSTM) and found that all our graph-based models perform
+better without using any decoded features based on the UAVCAN protocol,
+highlighting higher detection performance with protocol-independent capability.",http://arxiv.org/pdf/2412.02539v1,,False
+OODFace: Benchmarking Robustness of Face Recognition under Common Corruptions and Appearance Variations,03/12/2024,"Caixin Kang, Yubo Chen, Shouwei Ruan, Shiji Zhao, Ruochen Zhang, Jiayi Wang, Shan Fu, Xingxing Wei","With the rise of deep learning, facial recognition technology has seen
+extensive research and rapid development. Although facial recognition is
+considered a mature technology, we find that existing open-source models and
+commercial algorithms lack robustness in certain real-world Out-of-Distribution
+(OOD) scenarios, raising concerns about the reliability of these systems. In
+this paper, we introduce OODFace, which explores the OOD challenges faced by
+facial recognition models from two perspectives: common corruptions and
+appearance variations. We systematically design 30 OOD scenarios across 9 major
+categories tailored for facial recognition. By simulating these challenges on
+public datasets, we establish three robustness benchmarks: LFW-C/V, CFP-FP-C/V,
+and YTF-C/V. We then conduct extensive experiments on 19 different facial
+recognition models and 3 commercial APIs, along with extended experiments on
+face masks, Vision-Language Models (VLMs), and defense strategies to assess
+their robustness. Based on the results, we draw several key insights,
+highlighting the vulnerability of facial recognition systems to OOD data and
+suggesting possible solutions. Additionally, we offer a unified toolkit that
+includes all corruption and variation types, easily extendable to other
+datasets. We hope that our benchmarks and findings can provide guidance for
+future improvements in facial recognition model robustness.",http://arxiv.org/pdf/2412.02479v1,,False
+Gracefully Filtering Backdoor Samples for Generative Large Language Models without Retraining,03/12/2024,"Zongru Wu, Pengzhou Cheng, Lingyong Fang, Zhuosheng Zhang, Gongshen Liu","Backdoor attacks remain significant security threats to generative large
+language models (LLMs). Since generative LLMs output sequences of
+high-dimensional token logits instead of low-dimensional classification logits,
+most existing backdoor defense methods designed for discriminative models like
+BERT are ineffective for generative LLMs. Inspired by the observed differences
+in learning behavior between backdoor and clean mapping in the frequency space,
+we transform gradients of each training sample, directly influencing parameter
+updates, into the frequency space. Our findings reveal a distinct separation
+between the gradients of backdoor and clean samples in the frequency space.
+Based on this phenomenon, we propose Gradient Clustering in the Frequency Space
+for Backdoor Sample Filtering (GraCeFul), which leverages sample-wise gradients
+in the frequency space to effectively identify backdoor samples without
+requiring retraining LLMs. Experimental results show that GraCeFul outperforms
+baselines significantly. Notably, GraCeFul exhibits remarkable computational
+efficiency, achieving nearly 100% recall and F1 scores in identifying backdoor
+samples, reducing the average success rate of various backdoor attacks to 0%
+with negligible drops in clean accuracy across multiple free-style question
+answering datasets. Additionally, GraCeFul generalizes to Llama-2 and Vicuna.
+The codes are publicly available at https://github.com/ZrW00/GraceFul.",http://arxiv.org/pdf/2412.02454v1,,False
+An Adaptive Grasping Force Tracking Strategy for Nonlinear and Time-Varying Object Behaviors,03/12/2024,"Ziyang Cheng, Xiangyu Tian, Ruomin Sui, Tiemin Li, Yao Jiang","Accurate grasp force control is one of the key skills for ensuring successful
+and damage-free robotic grasping of objects. Although existing methods have
+conducted in-depth research on slip detection and grasping force planning, they
+often overlook the issue of adaptive tracking of the actual force to the target
+force when handling objects with different material properties. The optimal
+parameters of a force tracking controller are significantly influenced by the
+object's stiffness, and many adaptive force tracking algorithms rely on
+stiffness estimation. However, real-world objects often exhibit viscous,
+plastic, or other more complex nonlinear time-varying behaviors, and existing
+studies provide insufficient support for these materials in terms of stiffness
+definition and estimation. To address this, this paper introduces the concept
+of generalized stiffness, extending the definition of stiffness to nonlinear
+time-varying grasp system models, and proposes an online generalized stiffness
+estimator based on Long Short-Term Memory (LSTM) networks. Based on generalized
+stiffness, this paper proposes an adaptive parameter adjustment strategy using
+a PI controller as an example, enabling dynamic force tracking for objects with
+varying characteristics. Experimental results demonstrate that the proposed
+method achieves high precision and short probing time, while showing better
+adaptability to non-ideal objects compared to existing methods. The method
+effectively solves the problem of grasp force tracking in unknown, nonlinear,
+and time-varying grasp systems, enhancing the robotic grasping ability in
+unstructured environments.",http://arxiv.org/pdf/2412.02335v1,,False
+Sample Efficient Robot Learning in Supervised Effect Prediction Tasks,03/12/2024,"Mehmet Arda Eren, Erhan Oztop","In self-supervised robot learning, robots actively explore their environments
+and generate data by acting on entities in the environment. Therefore, an
+exploration policy is desired that ensures sample efficiency to minimize robot
+execution costs while still providing accurate learning. For this purpose, the
+robotic community has adopted Intrinsic Motivation (IM)-based approaches such
+as Learning Progress (LP). On the machine learning front, Active Learning (AL)
+has been used successfully, especially for classification tasks. In this work,
+we develop a novel AL framework geared towards robotics regression tasks, such
+as action-effect prediction and, more generally, for world model learning,
+which we call MUSEL - Model Uncertainty for Sample Efficient Learning. MUSEL
+aims to extract model uncertainty from the total uncertainty estimate given by
+a suitable learning engine by making use of earning progress and input
+diversity and use it to improve sample efficiency beyond the state-of-the-art
+action-effect prediction methods. We demonstrate the feasibility of our model
+by using a Stochastic Variational Gaussian Process (SVGP) as the learning
+engine and testing the system on a set of robotic experiments in simulation.
+The efficacy of MUSEL is demonstrated by comparing its performance to standard
+methods used in robot action-effect learning. In a robotic tabletop environment
+in which a robot manipulator is tasked with learning the effect of its actions,
+the experiments show that MUSEL facilitates higher accuracy in learning action
+effects while ensuring sample efficiency.",http://arxiv.org/pdf/2412.02331v1,,False
+Switchable deep beamformer for high-quality and real-time passive acoustic mapping,03/12/2024,"Yi Zeng, Jinwei Li, Hui Zhu, Shukuan Lu, Jianfeng Li, Xiran Cai","Passive acoustic mapping (PAM) is a promising tool for monitoring acoustic
+cavitation activities in the applications of ultrasound therapy. Data-adaptive
+beamformers for PAM have better image quality compared to the time exposure
+acoustics (TEA) algorithms. However, the computational cost of data-adaptive
+beamformers is considerably expensive. In this work, we develop a deep
+beamformer based on a generative adversarial network, which can switch between
+different transducer arrays and reconstruct high-quality PAM images directly
+from radio frequency ultrasound signals with low computational cost. The deep
+beamformer was trained on the dataset consisting of simulated and experimental
+cavitation signals of single and multiple microbubble clouds measured by
+different (linear and phased) arrays covering 1-15 MHz. We compared the
+performance of the deep beamformer to TEA and three different data-adaptive
+beamformers using the simulated and experimental test dataset. Compared with
+TEA, the deep beamformer reduced the energy spread area by 18.9%-65.0% and
+improved the image signal-to-noise ratio by 9.3-22.9 dB in average for the
+different arrays in our data. Compared to the data-adaptive beamformers, the
+deep beamformer reduced the computational cost by three orders of magnitude
+achieving 10.5 ms image reconstruction speed in our data, while the image
+quality was as good as that of the data-adaptive beamformers. These results
+demonstrated the potential of the deep beamformer for high-resolution
+monitoring of microbubble cavitation activities for ultrasound therapy.",http://arxiv.org/pdf/2412.02327v1,,False
+Enhanced Photovoltaic Power Forecasting: An iTransformer and LSTM-Based Model Integrating Temporal and Covariate Interactions,03/12/2024,"Guang Wu, Yun Wang, Qian Zhou, Ziyang Zhang","Accurate photovoltaic (PV) power forecasting is critical for integrating
+renewable energy sources into the grid, optimizing real-time energy management,
+and ensuring energy reliability amidst increasing demand. However, existing
+models often struggle with effectively capturing the complex relationships
+between target variables and covariates, as well as the interactions between
+temporal dynamics and multivariate data, leading to suboptimal forecasting
+accuracy. To address these challenges, we propose a novel model architecture
+that leverages the iTransformer for feature extraction from target variables
+and employs long short-term memory (LSTM) to extract features from covariates.
+A cross-attention mechanism is integrated to fuse the outputs of both models,
+followed by a Kolmogorov-Arnold network (KAN) mapping for enhanced
+representation. The effectiveness of the proposed model is validated using
+publicly available datasets from Australia, with experiments conducted across
+four seasons. Results demonstrate that the proposed model effectively capture
+seasonal variations in PV power generation and improve forecasting accuracy.",http://arxiv.org/pdf/2412.02302v1,,False
+Initial Study On Improving Segmentation By Combining Preoperative CT And Intraoperative CBCT Using Synthetic Data,03/12/2024,"Maximilian E. Tschuchnig, Philipp Steininger, Michael Gadermayr","Computer-Assisted Interventions enable clinicians to perform precise,
+minimally invasive procedures, often relying on advanced imaging methods.
+Cone-beam computed tomography (CBCT) can be used to facilitate
+computer-assisted interventions, despite often suffering from artifacts that
+pose challenges for accurate interpretation. While the degraded image quality
+can affect image analysis, the availability of high quality, preoperative scans
+offers potential for improvements. Here we consider a setting where
+preoperative CT and intraoperative CBCT scans are available, however, the
+alignment (registration) between the scans is imperfect to simulate a real
+world scenario. We propose a multimodal learning method that fuses roughly
+aligned CBCT and CT scans and investigate the effect on segmentation
+performance. For this experiment we use synthetically generated data containing
+real CT and synthetic CBCT volumes with corresponding voxel annotations. We
+show that this fusion setup improves segmentation performance in $18$ out of
+$20$ investigated setups.",http://arxiv.org/pdf/2412.02294v1,,False
+Step-by-Step Guidance to Differential Anemia Diagnosis with Real-World Data and Deep Reinforcement Learning,03/12/2024,"Lillian Muyama, Estelle Lu, Geoffrey Cheminet, Jacques Pouchot, Bastien Rance, Anne-Isabelle Tropeano, Antoine Neuraz, Adrien Coulet","Clinical diagnostic guidelines outline the key questions to answer to reach a
+diagnosis. Inspired by guidelines, we aim to develop a model that learns from
+electronic health records to determine the optimal sequence of actions for
+accurate diagnosis. Focusing on anemia and its sub-types, we employ deep
+reinforcement learning (DRL) algorithms and evaluate their performance on both
+a synthetic dataset, which is based on expert-defined diagnostic pathways, and
+a real-world dataset. We investigate the performance of these algorithms across
+various scenarios. Our experimental results demonstrate that DRL algorithms
+perform competitively with state-of-the-art methods while offering the
+significant advantage of progressively generating pathways to the suggested
+diagnosis, providing a transparent decision-making process that can guide and
+explain diagnostic reasoning.",http://arxiv.org/pdf/2412.02273v1,,False
+VideoGen-of-Thought: A Collaborative Framework for Multi-Shot Video Generation,03/12/2024,"Mingzhe Zheng, Yongqi Xu, Haojian Huang, Xuran Ma, Yexin Liu, Wenjie Shu, Yatian Pang, Feilong Tang, Qifeng Chen, Harry Yang, Ser-Nam Lim","Current video generation models excel at generating short clips but still
+struggle with creating multi-shot, movie-like videos. Existing models trained
+on large-scale data on the back of rich computational resources are
+unsurprisingly inadequate for maintaining a logical storyline and visual
+consistency across multiple shots of a cohesive script since they are often
+trained with a single-shot objective. To this end, we propose
+VideoGen-of-Thought (VGoT), a collaborative and training-free architecture
+designed specifically for multi-shot video generation. VGoT is designed with
+three goals in mind as follows. Multi-Shot Video Generation: We divide the
+video generation process into a structured, modular sequence, including (1)
+Script Generation, which translates a curt story into detailed prompts for each
+shot; (2) Keyframe Generation, responsible for creating visually consistent
+keyframes faithful to character portrayals; and (3) Shot-Level Video
+Generation, which transforms information from scripts and keyframes into shots;
+(4) Smoothing Mechanism that ensures a consistent multi-shot output. Reasonable
+Narrative Design: Inspired by cinematic scriptwriting, our prompt generation
+approach spans five key domains, ensuring logical consistency, character
+development, and narrative flow across the entire video. Cross-Shot
+Consistency: We ensure temporal and identity consistency by leveraging
+identity-preserving (IP) embeddings across shots, which are automatically
+created from the narrative. Additionally, we incorporate a cross-shot smoothing
+mechanism, which integrates a reset boundary that effectively combines latent
+features from adjacent shots, resulting in smooth transitions and maintaining
+visual coherence throughout the video. Our experiments demonstrate that VGoT
+surpasses existing video generation methods in producing high-quality,
+coherent, multi-shot videos.",http://arxiv.org/pdf/2412.02259v1,,False
+Towards the efficacy of federated prediction for epidemics on networks,03/12/2024,"Chengpeng Fu, Tong Li, Hao Chen, Wen Du, Zhidong He","Epidemic prediction is of practical significance in public health, enabling
+early intervention, resource allocation, and strategic planning. However,
+privacy concerns often hinder the sharing of health data among institutions,
+limiting the development of accurate prediction models. In this paper, we
+develop a general privacy-preserving framework for node-level epidemic
+prediction on networks based on federated learning (FL). We frame the
+spatio-temporal spread of epidemics across multiple data-isolated subnetworks,
+where each node state represents the aggregate epidemic severity within a
+community. Then, both the pure temporal LSTM model and the spatio-temporal
+model i.e., Spatio-Temporal Graph Attention Network (STGAT) are proposed to
+address the federated epidemic prediction. Extensive experiments are conducted
+on various epidemic processes using a practical airline network, offering a
+comprehensive assessment of FL efficacy under diverse scenarios. By introducing
+the efficacy energy metric to measure system robustness under various client
+configurations, we systematically explore key factors influencing FL
+performance, including client numbers, aggregation strategies, graph
+partitioning, missing infectious reports. Numerical results manifest that STGAT
+excels in capturing spatio-temporal dependencies in dynamic processes whereas
+LSTM performs well in simpler pattern. Moreover, our findings highlight the
+importance of balancing feature consistency and volume uniformity among
+clients, as well as the prediction dilemma between information richness and
+intrinsic stochasticity of dynamic processes. This study offers practical
+insights into the efficacy of FL scenario in epidemic management, demonstrates
+the potential of FL to address broader collective dynamics.",http://arxiv.org/pdf/2412.02161v1,,False
+Unsupervised Learning-based Calibration Scheme for the Rough Bergomi Model,03/12/2024,"Changqing Teng, Guanglian Li","Current deep learning-based calibration schemes for rough volatility models
+are based on the supervised learning framework, which can be costly due to a
+large amount of training data being generated. In this work, we propose a novel
+unsupervised learning-based scheme for the rough Bergomi (rBergomi) model which
+does not require accessing training data. The main idea is to use the backward
+stochastic differential equation (BSDE) derived in \cite{bayer2022pricing} and
+simultaneously learn the BSDE solutions with the model parameters. We establish
+that the mean squares error between the option prices under the learned model
+parameters and the historical data is bounded by the loss function. Moreover,
+the loss can be made arbitrarily small under suitable conditions on the fitting
+ability of the rBergomi model to the market and the universal approximation
+capability of neural networks. Numerical experiments for both simulated and
+historical data confirm the efficiency of scheme.",http://arxiv.org/pdf/2412.02135v1,,False
+Machine Learning Methods for Automated Interstellar Object Classification with LSST,03/12/2024,"Richard Cloete, Peter Vereš, Abraham Loeb","The Legacy Survey of Space and Time, to be conducted with the Vera C. Rubin
+Observatory, is poised to revolutionize our understanding of the Solar System
+by providing an unprecedented wealth of data on various objects, including the
+elusive interstellar objects (ISOs). Detecting and classifying ISOs is crucial
+for studying the composition and diversity of materials from other planetary
+systems. However, the rarity and brief observation windows of ISOs, coupled
+with the vast quantities of data to be generated by LSST, create significant
+challenges for their identification and classification. This study aims to
+address these challenges by exploring the application of machine learning
+algorithms to the automated classification of ISO tracklets in simulated LSST
+data. We employed various machine learning algorithms, including random forests
+(RFs), stochastic gradient descent (SGD), gradient boosting machines (GBMs),
+and neural networks (NNs), to classify ISO tracklets in simulated LSST data. We
+demonstrate that GBM and RF algorithms outperform SGD and NN algorithms in
+accurately distinguishing ISOs from other Solar System objects. RF analysis
+shows that many derived Digest2 values are more important than direct
+observables in classifying ISOs from the LSST tracklets. The GBM model achieves
+the highest precision, recall, and F1 score, with values of 0.9987, 0.9986, and
+0.9987, respectively. These findings lay the foundation for the development of
+an efficient and robust automated system for ISO discovery using LSST data,
+paving the way for a deeper understanding of the materials and processes that
+shape planetary systems beyond our own. The integration of our proposed machine
+learning approach into the LSST data processing pipeline will optimize the
+survey's potential for identifying these rare and valuable objects, enabling
+timely follow-up observations and further characterization.",http://arxiv.org/pdf/2412.02112v1,10.1051/0004-6361/202451118,False
+Implementing An Artificial Quantum Perceptron,03/12/2024,"Ashutosh Hathidara, Lalit Pandey","A Perceptron is a fundamental building block of a neural network. The
+flexibility and scalability of perceptron make it ubiquitous in building
+intelligent systems. Studies have shown the efficacy of a single neuron in
+making intelligent decisions. Here, we examined and compared two perceptrons
+with distinct mechanisms, and developed a quantum version of one of those
+perceptrons. As a part of this modeling, we implemented the quantum circuit for
+an artificial perception, generated a dataset, and simulated the training.
+Through these experiments, we show that there is an exponential growth
+advantage and test different qubit versions. Our findings show that this
+quantum model of an individual perceptron can be used as a pattern classifier.
+For the second type of model, we provide an understanding to design and
+simulate a spike-dependent quantum perceptron. Our code is available at
+\url{https://github.com/ashutosh1919/quantum-perceptron}",http://arxiv.org/pdf/2412.02083v1,,False
+GNN-based Auto-Encoder for Short Linear Block Codes: A DRL Approach,03/12/2024,"Kou Tian, Chentao Yue, Changyang She, Yonghui Li, Branka Vucetic","This paper presents a novel auto-encoder based end-to-end channel encoding
+and decoding. It integrates deep reinforcement learning (DRL) and graph neural
+networks (GNN) in code design by modeling the generation of code parity-check
+matrices as a Markov Decision Process (MDP), to optimize key coding performance
+metrics such as error-rates and code algebraic properties. An edge-weighted GNN
+(EW-GNN) decoder is proposed, which operates on the Tanner graph with an
+iterative message-passing structure. Once trained on a single linear block
+code, the EW-GNN decoder can be directly used to decode other linear block
+codes of different code lengths and code rates. An iterative joint training of
+the DRL-based code designer and the EW-GNN decoder is performed to optimize the
+end-end encoding and decoding process. Simulation results show the proposed
+auto-encoder significantly surpasses several traditional coding schemes at
+short block lengths, including low-density parity-check (LDPC) codes with the
+belief propagation (BP) decoding and the maximum-likelihood decoding (MLD), and
+BCH with BP decoding, offering superior error-correction capabilities while
+maintaining low decoding complexity.",http://arxiv.org/pdf/2412.02053v1,,False
+Geometry-aware PINNs for Turbulent Flow Prediction,02/12/2024,"Shinjan Ghosh, Julian Busch, Georgia Olympia Brikis, Biswadip Dey","Design exploration or optimization using computational fluid dynamics (CFD)
+is commonly used in the industry. Geometric variation is a key component of
+such design problems, especially in turbulent flow scenarios, which involves
+running costly simulations at every design iteration. While parametric
+RANS-PINN type approaches have been proven to make effective turbulent
+surrogates, as a means of predicting unknown Reynolds number flows for a given
+geometry at near real-time, geometry aware physics informed surrogates with the
+ability to predict varying geometries are a relatively less studied topic. A
+novel geometry aware parametric PINN surrogate model has been created, which
+can predict flow fields for NACA 4 digit airfoils in turbulent conditions, for
+unseen shapes as well as inlet flow conditions. A local+global approach for
+embedding has been proposed, where known global design parameters for an
+airfoil as well as local SDF values can be used as inputs to the model along
+with velocity inlet/Reynolds number ($\mathcal{R}_e$) to predict the flow
+fields. A RANS formulation of the Navier-Stokes equations with a 2-equation
+k-epsilon turbulence model has been used for the PDE losses, in addition to
+limited CFD data from 8 different NACA airfoils for training. The models have
+then been validated with unknown NACA airfoils at unseen Reynolds numbers.",http://arxiv.org/pdf/2412.01954v1,,False
+Self-Improvement in Language Models: The Sharpening Mechanism,02/12/2024,"Audrey Huang, Adam Block, Dylan J. Foster, Dhruv Rohatgi, Cyril Zhang, Max Simchowitz, Jordan T. Ash, Akshay Krishnamurthy","Recent work in language modeling has raised the possibility of
+self-improvement, where a language models evaluates and refines its own
+generations to achieve higher performance without external feedback. It is
+impossible for this self-improvement to create information that is not already
+in the model, so why should we expect that this will lead to improved
+capabilities? We offer a new perspective on the capabilities of
+self-improvement through a lens we refer to as sharpening. Motivated by the
+observation that language models are often better at verifying response quality
+than they are at generating correct responses, we formalize self-improvement as
+using the model itself as a verifier during post-training in order to
+``sharpen'' the model to one placing large mass on high-quality sequences,
+thereby amortizing the expensive inference-time computation of generating good
+sequences. We begin by introducing a new statistical framework for sharpening
+in which the learner aims to sharpen a pre-trained base policy via sample
+access, and establish fundamental limits. Then we analyze two natural families
+of self-improvement algorithms based on SFT and RLHF.",http://arxiv.org/pdf/2412.01951v1,,False
+RandAR: Decoder-only Autoregressive Visual Generation in Random Orders,02/12/2024,"Ziqi Pang, Tianyuan Zhang, Fujun Luan, Yunze Man, Hao Tan, Kai Zhang, William T. Freeman, Yu-Xiong Wang","We introduce RandAR, a decoder-only visual autoregressive (AR) model capable
+of generating images in arbitrary token orders. Unlike previous decoder-only AR
+models that rely on a predefined generation order, RandAR removes this
+inductive bias, unlocking new capabilities in decoder-only generation. Our
+essential design enables random order by inserting a ""position instruction
+token"" before each image token to be predicted, representing the spatial
+location of the next image token. Trained on randomly permuted token sequences
+-- a more challenging task than fixed-order generation, RandAR achieves
+comparable performance to its conventional raster-order counterpart. More
+importantly, decoder-only transformers trained from random orders acquire new
+capabilities. For the efficiency bottleneck of AR models, RandAR adopts
+parallel decoding with KV-Cache at inference time, enjoying 2.5x acceleration
+without sacrificing generation quality. Additionally, RandAR supports
+inpainting, outpainting and resolution extrapolation in a zero-shot manner. We
+hope RandAR inspires new directions for decoder-only visual generation models
+and broadens their applications across diverse scenarios. Our project page is
+at https://rand-ar.github.io/.",http://arxiv.org/pdf/2412.01827v1,,False
+X-Prompt: Towards Universal In-Context Image Generation in Auto-Regressive Vision Language Foundation Models,02/12/2024,"Zeyi Sun, Ziyang Chu, Pan Zhang, Tong Wu, Xiaoyi Dong, Yuhang Zang, Yuanjun Xiong, Dahua Lin, Jiaqi Wang","In-context generation is a key component of large language models' (LLMs)
+open-task generalization capability. By leveraging a few examples as context,
+LLMs can perform both in-domain and out-of-domain tasks. Recent advancements in
+auto-regressive vision-language models (VLMs) built upon LLMs have showcased
+impressive performance in text-to-image generation. However, the potential of
+in-context learning for general image generation tasks remains largely
+unexplored. To address this, we introduce X-Prompt, a purely auto-regressive
+large-vision language model designed to deliver competitive performance across
+a wide range of both seen and unseen image generation tasks, all within a
+unified in-context learning framework. X-Prompt incorporates a specialized
+design that efficiently compresses valuable features from in-context examples,
+supporting longer in-context token sequences and improving its ability to
+generalize to unseen tasks. A unified training task for both text and image
+prediction enables X-Prompt to handle general image generation with enhanced
+task awareness from in-context examples. Extensive experiments validate the
+model's performance across diverse seen image generation tasks and its capacity
+to generalize to previously unseen tasks.",http://arxiv.org/pdf/2412.01824v1,,False
+Robot Learning with Super-Linear Scaling,02/12/2024,"Marcel Torne, Arhan Jain, Jiayi Yuan, Vidaaranya Macha, Lars Ankile, Anthony Simeonov, Pulkit Agrawal, Abhishek Gupta","Scaling robot learning requires data collection pipelines that scale
+favorably with human effort. In this work, we propose Crowdsourcing and
+Amortizing Human Effort for Real-to-Sim-to-Real(CASHER), a pipeline for scaling
+up data collection and learning in simulation where the performance scales
+superlinearly with human effort. The key idea is to crowdsource digital twins
+of real-world scenes using 3D reconstruction and collect large-scale data in
+simulation, rather than the real-world. Data collection in simulation is
+initially driven by RL, bootstrapped with human demonstrations. As the training
+of a generalist policy progresses across environments, its generalization
+capabilities can be used to replace human effort with model generated
+demonstrations. This results in a pipeline where behavioral data is collected
+in simulation with continually reducing human effort. We show that CASHER
+demonstrates zero-shot and few-shot scaling laws on three real-world tasks
+across diverse scenarios. We show that CASHER enables fine-tuning of
+pre-trained policies to a target scenario using a video scan without any
+additional human effort. See our project website:
+https://casher-robot-learning.github.io/CASHER/",http://arxiv.org/pdf/2412.01770v1,,False
+CBOL-Tuner: Classifier-pruned Bayesian optimization to explore temporally structured latent spaces for particle accelerator tuning,02/12/2024,"Mahindra Rautela, Alan Williams, Alexander Scheinker","Complex dynamical systems, such as particle accelerators, often require
+complicated and time-consuming tuning procedures for optimal performance. It
+may also be required that these procedures estimate the optimal system
+parameters, which govern the dynamics of a spatiotemporal beam -- this can be a
+high-dimensional optimization problem. To address this, we propose a
+Classifier-pruned Bayesian Optimization-based Latent space Tuner (CBOL-Tuner),
+a framework for efficient exploration within a temporally-structured latent
+space. The CBOL-Tuner integrates a convolutional variational autoencoder (CVAE)
+for latent space representation, a long short-term memory (LSTM) network for
+temporal dynamics, a dense neural network (DNN) for parameter estimation, and a
+classifier-pruned Bayesian optimizer (C-BO) to adaptively search and filter the
+latent space for optimal solutions. CBOL-Tuner demonstrates superior
+performance in identifying multiple optimal settings and outperforms
+alternative global optimization methods.",http://arxiv.org/pdf/2412.01748v1,,False
+Are We There Yet? Revealing the Risks of Utilizing Large Language Models in Scholarly Peer Review,02/12/2024,"Rui Ye, Xianghe Pang, Jingyi Chai, Jiaao Chen, Zhenfei Yin, Zhen Xiang, Xiaowen Dong, Jing Shao, Siheng Chen","Scholarly peer review is a cornerstone of scientific advancement, but the
+system is under strain due to increasing manuscript submissions and the
+labor-intensive nature of the process. Recent advancements in large language
+models (LLMs) have led to their integration into peer review, with promising
+results such as substantial overlaps between LLM- and human-generated reviews.
+However, the unchecked adoption of LLMs poses significant risks to the
+integrity of the peer review system. In this study, we comprehensively analyze
+the vulnerabilities of LLM-generated reviews by focusing on manipulation and
+inherent flaws. Our experiments show that injecting covert deliberate content
+into manuscripts allows authors to explicitly manipulate LLM reviews, leading
+to inflated ratings and reduced alignment with human reviews. In a simulation,
+we find that manipulating 5% of the reviews could potentially cause 12% of the
+papers to lose their position in the top 30% rankings. Implicit manipulation,
+where authors strategically highlight minor limitations in their papers,
+further demonstrates LLMs' susceptibility compared to human reviewers, with a
+4.5 times higher consistency with disclosed limitations. Additionally, LLMs
+exhibit inherent flaws, such as potentially assigning higher ratings to
+incomplete papers compared to full papers and favoring well-known authors in
+single-blind review process. These findings highlight the risks of
+over-reliance on LLMs in peer review, underscoring that we are not yet ready
+for widespread adoption and emphasizing the need for robust safeguards.",http://arxiv.org/pdf/2412.01708v1,,False
+Kernel-Based Optimal Control: An Infinitesimal Generator Approach,02/12/2024,"Petar Bevanda, Nicolas Hosichen, Tobias Wittmann, Jan Brüdigam, Sandra Hirche, Boris Houska","This paper presents a novel approach for optimal control of nonlinear
+stochastic systems using infinitesimal generator learning within
+infinite-dimensional reproducing kernel Hilbert spaces. Our learning framework
+leverages data samples of system dynamics and stage cost functions, with only
+control penalties and constraints provided. The proposed method directly learns
+the diffusion operator of a controlled Fokker-Planck-Kolmogorov equation in an
+infinite-dimensional hypothesis space. This operator models the continuous-time
+evolution of the probability measure of the control system's state. We
+demonstrate that this approach seamlessly integrates with modern convex
+operator-theoretic Hamilton-Jacobi-Bellman recursions, enabling a data-driven
+solution to the optimal control problem. Furthermore, our statistical learning
+framework includes nonparametric estimators for uncontrolled forward
+infinitesimal generators as a special case. Numerical experiments, ranging from
+synthetic differential equations to simulated robotic systems, showcase the
+advantages of our approach compared to both modern data-driven and classical
+nonlinear programming methods for optimal control.",http://arxiv.org/pdf/2412.01591v1,,False
+How Much Can Time-related Features Enhance Time Series Forecasting?,02/12/2024,"Chaolv Zeng, Yuan Tian, Guanjie Zheng, Yunjun Gao","Recent advancements in long-term time series forecasting (LTSF) have
+primarily focused on capturing cross-time and cross-variate (channel)
+dependencies within historical data. However, a critical aspect often
+overlooked by many existing methods is the explicit incorporation of
+\textbf{time-related features} (e.g., season, month, day of the week, hour,
+minute), which are essential components of time series data. The absence of
+this explicit time-related encoding limits the ability of current models to
+capture cyclical or seasonal trends and long-term dependencies, especially with
+limited historical input. To address this gap, we introduce a simple yet highly
+efficient module designed to encode time-related features, Time Stamp
+Forecaster (TimeSter), thereby enhancing the backbone's forecasting
+performance. By integrating TimeSter with a linear backbone, our model,
+TimeLinear, significantly improves the performance of a single linear
+projector, reducing MSE by an average of 23\% on benchmark datasets such as
+Electricity and Traffic. Notably, TimeLinear achieves these gains while
+maintaining exceptional computational efficiency, delivering results that are
+on par with or exceed state-of-the-art models, despite using a fraction of the
+parameters.",http://arxiv.org/pdf/2412.01557v1,,False
+Generative modeling assisted simulation of measurement-altered quantum criticality,02/12/2024,"Yuchen Zhu, Molei Tao, Yuebo Jin, Xie Chen","In quantum many-body systems, measurements can induce qualitative new
+features, but their simulation is hindered by the exponential complexity
+involved in sampling the measurement results. We propose to use machine
+learning to assist the simulation of measurement-induced quantum phenomena. In
+particular, we focus on the measurement-altered quantum criticality protocol
+and generate local reduced density matrices of the critical chain given random
+measurement results. Such generation is enabled by a physics-preserving
+conditional diffusion generative model, which learns an observation-indexed
+probability distribution of an ensemble of quantum states, and then samples
+from that distribution given an observation.",http://arxiv.org/pdf/2412.01513v1,,False
+Understanding complex crowd dynamics with generative neural simulators,02/12/2024,"Koen Minartz, Fleur Hendriks, Simon Martinus Koop, Alessandro Corbetta, Vlado Menkovski","Understanding the dynamics of pedestrian crowds is an outstanding challenge
+crucial for designing efficient urban infrastructure and ensuring safe crowd
+management. To this end, both small-scale laboratory and large-scale real-world
+measurements have been used. However, these approaches respectively lack
+statistical resolution and parametric controllability, both essential to
+discovering physical relationships underlying the complex stochastic dynamics
+of crowds. Here, we establish an investigation paradigm that offers
+laboratory-like controllability, while ensuring the statistical resolution of
+large-scale real-world datasets. Using our data-driven Neural Crowd Simulator
+(NeCS), which we train on large-scale data and validate against key statistical
+features of crowd dynamics, we show that we can perform effective surrogate
+crowd dynamics experiments without training on specific scenarios. We not only
+reproduce known experimental results on pairwise avoidance, but also uncover
+the vision-guided and topological nature of N-body interactions. These findings
+show how virtual experiments based on neural simulation enable data-driven
+scientific discovery.",http://arxiv.org/pdf/2412.01491v2,,False
+LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations,02/12/2024,"Anian Ruoss, Fabio Pardo, Harris Chan, Bonnie Li, Volodymyr Mnih, Tim Genewein","Today's largest foundation models have increasingly general capabilities, yet
+when used as agents, they often struggle with simple reasoning and
+decision-making tasks, even though they possess good factual knowledge of the
+task and how to solve it. In this paper, we present a benchmark to
+pressure-test these models' multimodal decision-making capabilities in the very
+long-context regime (up to one million tokens) and investigate whether they can
+learn from a large number of expert demonstrations in their context. We
+evaluate a wide range of state-of-the-art frontier models as policies across a
+battery of simple interactive decision-making tasks: playing tic-tac-toe,
+chess, and Atari, navigating grid worlds, solving crosswords, and controlling a
+simulated cheetah. We measure the performance of Claude 3.5 Sonnet, Gemini 1.5
+Flash, Gemini 1.5 Pro, GPT-4o, o1-mini, and o1-preview under increasing amounts
+of expert demonstrations in the context $\unicode{x2013}$ from no
+demonstrations up to 512 full episodes, pushing these models' multimodal
+long-context reasoning capabilities to their limits. Across our tasks, today's
+frontier models rarely manage to fully reach expert performance, showcasing the
+difficulty of our benchmark. Presenting more demonstrations often has little
+effect, but some models steadily improve with more demonstrations on a few
+tasks. We investigate the effect of encoding observations as text or images and
+the impact of chain-of-thought prompting. Overall, our results suggest that
+even today's most capable models often struggle to imitate desired behavior by
+generalizing purely from in-context demonstrations. To help quantify the impact
+of other approaches and future innovations aiming to tackle this problem, we
+open source our benchmark that covers the zero-, few-, and many-shot regimes in
+a unified evaluation.",http://arxiv.org/pdf/2412.01441v1,,False
+Learning Elementary Cellular Automata with Transformers,02/12/2024,Mikhail Burtsev,"Large Language Models demonstrate remarkable mathematical capabilities but at
+the same time struggle with abstract reasoning and planning. In this study, we
+explore whether Transformers can learn to abstract and generalize the rules
+governing Elementary Cellular Automata. By training Transformers on state
+sequences generated with random initial conditions and local rules, we show
+that they can generalize across different Boolean functions of fixed arity,
+effectively abstracting the underlying rules. While the models achieve high
+accuracy in next-state prediction, their performance declines sharply in
+multi-step planning tasks without intermediate context. Our analysis reveals
+that including future states or rule prediction in the training loss enhances
+the models' ability to form internal representations of the rules, leading to
+improved performance in longer planning horizons and autoregressive generation.
+Furthermore, we confirm that increasing the model's depth plays a crucial role
+in extended sequential computations required for complex reasoning tasks. This
+highlights the potential to improve LLM with inclusion of longer horizons in
+loss function, as well as incorporating recurrence and adaptive computation
+time for dynamic control of model depth.",http://arxiv.org/pdf/2412.01417v1,,False
+Efficient LLM Inference using Dynamic Input Pruning and Cache-Aware Masking,02/12/2024,"Marco Federici, Davide Belli, Mart van Baalen, Amir Jalalirad, Andrii Skliar, Bence Major, Markus Nagel, Paul Whatmough","While mobile devices provide ever more compute power, improvements in DRAM
+bandwidth are much slower. This is unfortunate for large language model (LLM)
+token generation, which is heavily memory-bound. Previous work has proposed to
+leverage natural dynamic activation sparsity in ReLU-activated LLMs to reduce
+effective DRAM bandwidth per token. However, more recent LLMs use SwiGLU
+instead of ReLU, which result in little inherent sparsity. While SwiGLU
+activations can be pruned based on magnitude, the resulting sparsity patterns
+are difficult to predict, rendering previous approaches ineffective. To
+circumvent this issue, our work introduces Dynamic Input Pruning (DIP): a
+predictor-free dynamic sparsification approach, which preserves accuracy with
+minimal fine-tuning. DIP can further use lightweight LoRA adapters to regain
+some performance lost during sparsification. Lastly, we describe a novel
+cache-aware masking strategy, which considers the cache state and activation
+magnitude to further increase cache hit rate, improving LLM token rate on
+mobile devices. DIP outperforms other methods in terms of accuracy, memory and
+throughput trade-offs across simulated hardware settings. On Phi-3-Medium, DIP
+achieves a 46% reduction in memory and 40% increase in throughput with $<$ 0.1
+loss in perplexity.",http://arxiv.org/pdf/2412.01380v1,,False
+A Survey on Deep Neural Networks in Collaborative Filtering Recommendation Systems,02/12/2024,"Pang Li, Shahrul Azman Mohd Noah, Hafiz Mohd Sarim","This survey provides an examination of the use of Deep Neural Networks (DNN)
+in Collaborative Filtering (CF) recommendation systems. As the digital world
+increasingly relies on data-driven approaches, traditional CF techniques face
+limitations in scalability and flexibility. DNNs can address these challenges
+by effectively modeling complex, non-linear relationships within the data. We
+begin by exploring the fundamental principles of both collaborative filtering
+and deep neural networks, laying the groundwork for understanding their
+integration. Subsequently, we review key advancements in the field,
+categorizing various deep learning models that enhance CF systems, including
+Multilayer Perceptrons (MLP), Convolutional Neural Networks (CNN), Recurrent
+Neural Networks (RNN), Graph Neural Networks (GNN), autoencoders, Generative
+Adversarial Networks (GAN), and Restricted Boltzmann Machines (RBM). The paper
+also discusses evaluation protocols, various publicly available auxiliary
+information, and data features. Furthermore, the survey concludes with a
+discussion of the challenges and future research opportunities in enhancing
+collaborative filtering systems with deep learning.",http://arxiv.org/pdf/2412.01378v1,,False
+Hierarchical Object-Oriented POMDP Planning for Object Rearrangement,02/12/2024,"Rajesh Mangannavar, Alan Fern, Prasad Tadepalli","We present an online planning framework for solving multi-object
+rearrangement problems in partially observable, multi-room environments.
+Current object rearrangement solutions, primarily based on Reinforcement
+Learning or hand-coded planning methods, often lack adaptability to diverse
+challenges. To address this limitation, we introduce a novel Hierarchical
+Object-Oriented Partially Observed Markov Decision Process (HOO-POMDP) planning
+approach. This approach comprises of (a) an object-oriented POMDP planner
+generating sub-goals, (b) a set of low-level policies for sub-goal achievement,
+and (c) an abstraction system converting the continuous low-level world into a
+representation suitable for abstract planning. We evaluate our system on
+varying numbers of objects, rooms, and problem types in AI2-THOR simulated
+environments with promising results.",http://arxiv.org/pdf/2412.01348v1,,False
+Morphological-Symmetry-Equivariant Heterogeneous Graph Neural Network for Robotic Dynamics Learning,02/12/2024,"Fengze Xie, Sizhe Wei, Yue Song, Yisong Yue, Lu Gan","We present a morphological-symmetry-equivariant heterogeneous graph neural
+network, namely MS-HGNN, for robotic dynamics learning, that integrates robotic
+kinematic structures and morphological symmetries into a single graph network.
+These structural priors are embedded into the learning architecture as
+constraints, ensuring high generalizability, sample and model efficiency. The
+proposed MS-HGNN is a versatile and general architecture that is applicable to
+various multi-body dynamic systems and a wide range of dynamics learning
+problems. We formally prove the morphological-symmetry-equivariant property of
+our MS-HGNN and validate its effectiveness across multiple quadruped robot
+learning problems using both real-world and simulated data. Our code is made
+publicly available at https://github.com/lunarlab-gatech/MorphSym-HGNN/.",http://arxiv.org/pdf/2412.01297v1,,False
+FedPAW: Federated Learning with Personalized Aggregation Weights for Urban Vehicle Speed Prediction,02/12/2024,"Yuepeng He, Pengzhan Zhou, Yijun Zhai, Fang Qu, Zhida Qin, Mingyan Li, Songtao Guo","Vehicle speed prediction is crucial for intelligent transportation systems,
+promoting more reliable autonomous driving by accurately predicting future
+vehicle conditions. Due to variations in drivers' driving styles and vehicle
+types, speed predictions for different target vehicles may significantly
+differ. Existing methods may not realize personalized vehicle speed prediction
+while protecting drivers' data privacy. We propose a Federated learning
+framework with Personalized Aggregation Weights (FedPAW) to overcome these
+challenges. This method captures client-specific information by measuring the
+weighted mean squared error between the parameters of local models and global
+models. The server sends tailored aggregated models to clients instead of a
+single global model, without incurring additional computational and
+communication overhead for clients. To evaluate the effectiveness of FedPAW, we
+collected driving data in urban scenarios using the autonomous driving
+simulator CARLA, employing an LSTM-based Seq2Seq model with a multi-head
+attention mechanism to predict the future speed of target vehicles. The results
+demonstrate that our proposed FedPAW ranks lowest in prediction error within
+the time horizon of 10 seconds, with a 0.8% reduction in test MAE, compared to
+eleven representative benchmark baselines. The source code of FedPAW and
+dataset CarlaVSP are open-accessed at: https://github.com/heyuepeng/PFLlibVSP
+and https://pan.baidu.com/s/1qs8fxUvSPERV3C9i6pfUIw?pwd=tl3e.",http://arxiv.org/pdf/2412.01281v1,,False
+CPRM: A LLM-based Continual Pre-training Framework for Relevance Modeling in Commercial Search,02/12/2024,"Kaixin Wu, Yixin Ji, Zeyuan Chen, Qiang Wang, Cunxiang Wang, Hong Liu, Baijun Ji, Jia Xu, Zhongyi Liu, Jinjie Gu, Yuan Zhou, Linjian Mo","Relevance modeling between queries and items stands as a pivotal component in
+commercial search engines, directly affecting the user experience. Given the
+remarkable achievements of large language models (LLMs) in various natural
+language processing (NLP) tasks, LLM-based relevance modeling is gradually
+being adopted within industrial search systems. Nevertheless, foundational LLMs
+lack domain-specific knowledge and do not fully exploit the potential of
+in-context learning. Furthermore, structured item text remains underutilized,
+and there is a shortage in the supply of corresponding queries and background
+knowledge. We thereby propose CPRM (Continual Pre-training for Relevance
+Modeling), a framework designed for the continual pre-training of LLMs to
+address these issues. Our CPRM framework includes three modules: 1) employing
+both queries and multi-field item to jointly pre-train for enhancing domain
+knowledge, 2) applying in-context pre-training, a novel approach where LLMs are
+pre-trained on a sequence of related queries or items, and 3) conducting
+reading comprehension on items to produce associated domain knowledge and
+background information (e.g., generating summaries and corresponding queries)
+to further strengthen LLMs. Results on offline experiments and online A/B
+testing demonstrate that our model achieves convincing performance compared to
+strong baselines.",http://arxiv.org/pdf/2412.01269v2,,False
+PainterNet: Adaptive Image Inpainting with Actual-Token Attention and Diverse Mask Control,02/12/2024,"Ruichen Wang, Junliang Zhang, Qingsong Xie, Chen Chen, Haonan Lu","Recently, diffusion models have exhibited superior performance in the area of
+image inpainting. Inpainting methods based on diffusion models can usually
+generate realistic, high-quality image content for masked areas. However, due
+to the limitations of diffusion models, existing methods typically encounter
+problems in terms of semantic consistency between images and text, and the
+editing habits of users. To address these issues, we present PainterNet, a
+plugin that can be flexibly embedded into various diffusion models. To generate
+image content in the masked areas that highly aligns with the user input
+prompt, we proposed local prompt input, Attention Control Points (ACP), and
+Actual-Token Attention Loss (ATAL) to enhance the model's focus on local areas.
+Additionally, we redesigned the MASK generation algorithm in training and
+testing dataset to simulate the user's habit of applying MASK, and introduced a
+customized new training dataset, PainterData, and a benchmark dataset,
+PainterBench. Our extensive experimental analysis exhibits that PainterNet
+surpasses existing state-of-the-art models in key metrics including image
+quality and global/local text consistency.",http://arxiv.org/pdf/2412.01223v1,,False
+TinyFusion: Diffusion Transformers Learned Shallow,02/12/2024,"Gongfan Fang, Kunjun Li, Xinyin Ma, Xinchao Wang","Diffusion Transformers have demonstrated remarkable capabilities in image
+generation but often come with excessive parameterization, resulting in
+considerable inference overhead in real-world applications. In this work, we
+present TinyFusion, a depth pruning method designed to remove redundant layers
+from diffusion transformers via end-to-end learning. The core principle of our
+approach is to create a pruned model with high recoverability, allowing it to
+regain strong performance after fine-tuning. To accomplish this, we introduce a
+differentiable sampling technique to make pruning learnable, paired with a
+co-optimized parameter to simulate future fine-tuning. While prior works focus
+on minimizing loss or error after pruning, our method explicitly models and
+optimizes the post-fine-tuning performance of pruned models. Experimental
+results indicate that this learnable paradigm offers substantial benefits for
+layer pruning of diffusion transformers, surpassing existing importance-based
+and error-based methods. Additionally, TinyFusion exhibits strong
+generalization across diverse architectures, such as DiTs, MARs, and SiTs.
+Experiments with DiT-XL show that TinyFusion can craft a shallow diffusion
+transformer at less than 7% of the pre-training cost, achieving a 2$\times$
+speedup with an FID score of 2.86, outperforming competitors with comparable
+efficiency. Code is available at https://github.com/VainF/TinyFusion.",http://arxiv.org/pdf/2412.01199v1,,False
+Object Agnostic 3D Lifting in Space and Time,02/12/2024,"Christopher Fusco, Mosam Dabhi, Shin-Fang Ch'ng, Simon Lucey","We present a spatio-temporal perspective on category-agnostic 3D lifting of
+2D keypoints over a temporal sequence. Our approach differs from existing
+state-of-the-art methods that are either: (i) object agnostic, but can only
+operate on individual frames, or (ii) can model space-time dependencies, but
+are only designed to work with a single object category. Our approach is
+grounded in two core principles. First, when there is a lack of data about an
+object, general information from similar objects can be leveraged for better
+performance. Second, while temporal information is important, the most critical
+information is in immediate temporal proximity. These two principles allow us
+to outperform current state-of-the-art methods on per-frame and per-sequence
+metrics for a variety of objects. Lastly, we release a new synthetic dataset
+containing 3D skeletons and motion sequences of a diverse set animals. Dataset
+and code will be made publicly available.",http://arxiv.org/pdf/2412.01166v1,,False
+MuSiCNet: A Gradual Coarse-to-Fine Framework for Irregularly Sampled Multivariate Time Series Analysis,02/12/2024,"Jiexi Liu, Meng Cao, Songcan Chen","Irregularly sampled multivariate time series (ISMTS) are prevalent in
+reality. Most existing methods treat ISMTS as synchronized regularly sampled
+time series with missing values, neglecting that the irregularities are
+primarily attributed to variations in sampling rates. In this paper, we
+introduce a novel perspective that irregularity is essentially relative in some
+senses. With sampling rates artificially determined from low to high, an
+irregularly sampled time series can be transformed into a hierarchical set of
+relatively regular time series from coarse to fine. We observe that additional
+coarse-grained relatively regular series not only mitigate the irregularly
+sampled challenges to some extent but also incorporate broad-view temporal
+information, thereby serving as a valuable asset for representation learning.
+Therefore, following the philosophy of learning that Seeing the big picture
+first, then delving into the details, we present the Multi-Scale and
+Multi-Correlation Attention Network (MuSiCNet) combining multiple scales to
+iteratively refine the ISMTS representation. Specifically, within each scale,
+we explore time attention and frequency correlation matrices to aggregate
+intra- and inter-series information, naturally enhancing the representation
+quality with richer and more intrinsic details. While across adjacent scales,
+we employ a representation rectification method containing contrastive learning
+and reconstruction results adjustment to further improve representation
+consistency. MuSiCNet is an ISMTS analysis framework that competitive with SOTA
+in three mainstream tasks consistently, including classification,
+interpolation, and forecasting.",http://arxiv.org/pdf/2412.01063v1,,False
+Energy-Based Modelling for Discrete and Mixed Data via Heat Equations on Structured Spaces,02/12/2024,"Tobias Schröder, Zijing Ou, Yingzhen Li, Andrew B. Duncan","Energy-based models (EBMs) offer a flexible framework for probabilistic
+modelling across various data domains. However, training EBMs on data in
+discrete or mixed state spaces poses significant challenges due to the lack of
+robust and fast sampling methods. In this work, we propose to train discrete
+EBMs with Energy Discrepancy, a loss function which only requires the
+evaluation of the energy function at data points and their perturbed
+counterparts, thus eliminating the need for Markov chain Monte Carlo. We
+introduce perturbations of the data distribution by simulating a diffusion
+process on the discrete state space endowed with a graph structure. This allows
+us to inform the choice of perturbation from the structure of the modelled
+discrete variable, while the continuous time parameter enables fine-grained
+control of the perturbation. Empirically, we demonstrate the efficacy of the
+proposed approaches in a wide range of applications, including the estimation
+of discrete densities with non-binary vocabulary and binary image modelling.
+Finally, we train EBMs on tabular data sets with applications in synthetic data
+generation and calibrated classification.",http://arxiv.org/pdf/2412.01019v1,,False
+Detecting Memorization in Large Language Models,02/12/2024,Eduardo Slonski,"Large language models (LLMs) have achieved impressive results in natural
+language processing but are prone to memorizing portions of their training
+data, which can compromise evaluation metrics, raise privacy concerns, and
+limit generalization. Traditional methods for detecting memorization rely on
+output probabilities or loss functions, often lacking precision due to
+confounding factors like common language patterns. In this paper, we introduce
+an analytical method that precisely detects memorization by examining neuron
+activations within the LLM. By identifying specific activation patterns that
+differentiate between memorized and not memorized tokens, we train
+classification probes that achieve near-perfect accuracy. The approach can also
+be applied to other mechanisms, such as repetition, as demonstrated in this
+study, highlighting its versatility. Intervening on these activations allows us
+to suppress memorization without degrading overall performance, enhancing
+evaluation integrity by ensuring metrics reflect genuine generalization.
+Additionally, our method supports large-scale labeling of tokens and sequences,
+crucial for next-generation AI models, improving training efficiency and
+results. Our findings contribute to model interpretability and offer practical
+tools for analyzing and controlling internal mechanisms in LLMs.",http://arxiv.org/pdf/2412.01014v1,,False

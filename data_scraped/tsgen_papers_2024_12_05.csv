@@ -1,0 +1,288 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Navigation World Models,04/12/2024,"Amir Bar, Gaoyue Zhou, Danny Tran, Trevor Darrell, Yann LeCun","Navigation is a fundamental skill of agents with visual-motor capabilities.
+We introduce a Navigation World Model (NWM), a controllable video generation
+model that predicts future visual observations based on past observations and
+navigation actions. To capture complex environment dynamics, NWM employs a
+Conditional Diffusion Transformer (CDiT), trained on a diverse collection of
+egocentric videos of both human and robotic agents, and scaled up to 1 billion
+parameters. In familiar environments, NWM can plan navigation trajectories by
+simulating them and evaluating whether they achieve the desired goal. Unlike
+supervised navigation policies with fixed behavior, NWM can dynamically
+incorporate constraints during planning. Experiments demonstrate its
+effectiveness in planning trajectories from scratch or by ranking trajectories
+sampled from an external policy. Furthermore, NWM leverages its learned visual
+priors to imagine trajectories in unfamiliar environments from a single input
+image, making it a flexible and powerful tool for next-generation navigation
+systems.",http://arxiv.org/pdf/2412.03572v1,,False
+The Matrix: Infinite-Horizon World Generation with Real-Time Moving Control,04/12/2024,"Ruili Feng, Han Zhang, Zhantao Yang, Jie Xiao, Zhilei Shu, Zhiheng Liu, Andy Zheng, Yukun Huang, Yu Liu, Hongyang Zhang","We present The Matrix, the first foundational realistic world simulator
+capable of generating continuous 720p high-fidelity real-scene video streams
+with real-time, responsive control in both first- and third-person
+perspectives, enabling immersive exploration of richly dynamic environments.
+Trained on limited supervised data from AAA games like Forza Horizon 5 and
+Cyberpunk 2077, complemented by large-scale unsupervised footage from
+real-world settings like Tokyo streets, The Matrix allows users to traverse
+diverse terrains -- deserts, grasslands, water bodies, and urban landscapes --
+in continuous, uncut hour-long sequences. Operating at 16 FPS, the system
+supports real-time interactivity and demonstrates zero-shot generalization,
+translating virtual game environments to real-world contexts where collecting
+continuous movement data is often infeasible. For example, The Matrix can
+simulate a BMW X3 driving through an office setting--an environment present in
+neither gaming data nor real-world sources. This approach showcases the
+potential of AAA game data to advance robust world models, bridging the gap
+between simulations and real-world applications in scenarios with limited data.",http://arxiv.org/pdf/2412.03568v1,,False
+NODE-AdvGAN: Improving the transferability and perceptual similarity of adversarial examples by dynamic-system-driven adversarial generative model,04/12/2024,"Xinheng Xie, Yue Wu, Cuiyu He","Understanding adversarial examples is crucial for improving the model's
+robustness, as they introduce imperceptible perturbations that deceive models.
+Effective adversarial examples, therefore, offer the potential to train more
+robust models by removing their singularities. We propose NODE-AdvGAN, a novel
+approach that treats adversarial generation as a continuous process and employs
+a Neural Ordinary Differential Equation (NODE) for simulating the dynamics of
+the generator. By mimicking the iterative nature of traditional gradient-based
+methods, NODE-AdvGAN generates smoother and more precise perturbations that
+preserve high perceptual similarity when added to benign images. We also
+propose a new training strategy, NODE-AdvGAN-T, which enhances transferability
+in black-box attacks by effectively tuning noise parameters during training.
+Experiments demonstrate that NODE-AdvGAN and NODE-AdvGAN-T generate more
+effective adversarial examples that achieve higher attack success rates while
+preserving better perceptual quality than traditional GAN-based methods.",http://arxiv.org/pdf/2412.03539v1,,False
+Soft Checksums to Flag Untrustworthy Machine Learning Surrogate Predictions and Application to Atomic Physics Simulations,04/12/2024,"Casey Lauer, Robert C. Blake, Jonathan B. Freund","Trained neural networks (NN) are attractive as surrogate models to replace
+costly calculations in physical simulations, but are often unknowingly applied
+to states not adequately represented in the training dataset. We present the
+novel technique of soft checksums for scientific machine learning, a
+general-purpose method to differentiate between trustworthy predictions with
+small errors on in-distribution (ID) data points, and untrustworthy predictions
+with large errors on out-of-distribution (OOD) data points. By adding a check
+node to the existing output layer, we train the model to learn the chosen
+checksum function encoded within the NN predictions and show that violations of
+this function correlate with high prediction errors. As the checksum function
+depends only on the NN predictions, we can calculate the checksum error for any
+prediction with a single forward pass, incurring negligible time and memory
+costs. Additionally, we find that incorporating the checksum function into the
+loss function and exposing the NN to OOD data points during the training
+process improves separation between ID and OOD predictions. By applying soft
+checksums to a physically complex and high-dimensional non-local thermodynamic
+equilibrium atomic physics dataset, we show that a well-chosen threshold
+checksum error can effectively separate ID and OOD predictions.",http://arxiv.org/pdf/2412.03497v1,,False
+From Words to Workflows: Automating Business Processes,04/12/2024,"Laura Minkova, Jessica López Espejel, Taki Eddine Toufik Djaidja, Walid Dahhane, El Hassane Ettifouri","As businesses increasingly rely on automation to streamline operations, the
+limitations of Robotic Process Automation (RPA) have become apparent,
+particularly its dependence on expert knowledge and inability to handle complex
+decision-making tasks. Recent advancements in Artificial Intelligence (AI),
+particularly Generative AI (GenAI) and Large Language Models (LLMs), have paved
+the way for Intelligent Automation (IA), which integrates cognitive
+capabilities to overcome the shortcomings of RPA. This paper introduces
+Text2Workflow, a novel method that automatically generates workflows from
+natural language user requests. Unlike traditional automation approaches,
+Text2Workflow offers a generalized solution for automating any business
+process, translating user inputs into a sequence of executable steps
+represented in JavaScript Object Notation (JSON) format. Leveraging the
+decision-making and instruction-following capabilities of LLMs, this method
+provides a scalable, adaptable framework that enables users to visualize and
+execute workflows with minimal manual intervention. This research outlines the
+Text2Workflow methodology and its broader implications for automating complex
+business processes.",http://arxiv.org/pdf/2412.03446v1,,False
+Assessing Foundation Models' Transferability to Physiological Signals in Precision Medicine,04/12/2024,"Matthias Christenson, Cove Geary, Brian Locke, Pranav Koirala, Warren Woodrich Pettine","The success of precision medicine requires computational models that can
+effectively process and interpret diverse physiological signals across
+heterogeneous patient populations. While foundation models have demonstrated
+remarkable transfer capabilities across various domains, their effectiveness in
+handling individual-specific physiological signals - crucial for precision
+medicine - remains largely unexplored. This work introduces a systematic
+pipeline for rapidly and efficiently evaluating foundation models' transfer
+capabilities in medical contexts. Our pipeline employs a three-stage approach.
+First, it leverages physiological simulation software to generate diverse,
+clinically relevant scenarios, particularly focusing on data-scarce medical
+conditions. This simulation-based approach enables both targeted capability
+assessment and subsequent model fine-tuning. Second, the pipeline projects
+these simulated signals through the foundation model to obtain embeddings,
+which are then evaluated using linear methods. This evaluation quantifies the
+model's ability to capture three critical aspects: physiological feature
+independence, temporal dynamics preservation, and medical scenario
+differentiation. Finally, the pipeline validates these representations through
+specific downstream medical tasks. Initial testing of our pipeline on the
+Moirai time series foundation model revealed significant limitations in
+physiological signal processing, including feature entanglement, temporal
+dynamics distortion, and reduced scenario discrimination. These findings
+suggest that current foundation models may require substantial architectural
+modifications or targeted fine-tuning before deployment in clinical settings.",http://arxiv.org/pdf/2412.03427v1,,False
+Automated Test-Case Generation for REST APIs Using Model Inference Search Heuristic,04/12/2024,"Clinton Cao, Annibale Panichella, Sicco Verwer","The rising popularity of the microservice architectural style has led to a
+growing demand for automated testing approaches tailored to these systems.
+EvoMaster is a state-of-the-art tool that uses Evolutionary Algorithms (EAs) to
+automatically generate test cases for microservices' REST APIs. One limitation
+of these EAs is the use of unit-level search heuristics, such as branch
+distances, which focus on fine-grained code coverage and may not effectively
+capture the complex, interconnected behaviors characteristic of system-level
+testing. To address this limitation, we propose a new search heuristic (MISH)
+that uses real-time automaton learning to guide the test case generation
+process. We capture the sequential call patterns exhibited by a test case by
+learning an automaton from the stream of log events outputted by different
+microservices within the same system. Therefore, MISH learns a representation
+of the systemwide behavior, allowing us to define the fitness of a test case
+based on the path it traverses within the inferred automaton. We empirically
+evaluate MISH's effectiveness on six real-world benchmark microservice
+applications and compare it against a state-of-the-art technique, MOSA, for
+testing REST APIs. Our evaluation shows promising results for using MISH to
+guide the automated test case generation within EvoMaster.",http://arxiv.org/pdf/2412.03420v1,,False
+Can neural operators always be continuously discretized?,04/12/2024,"Takashi Furuya, Michael Puthawala, Maarten V. de Hoop, Matti Lassas","We consider the problem of discretization of neural operators between Hilbert
+spaces in a general framework including skip connections. We focus on bijective
+neural operators through the lens of diffeomorphisms in infinite dimensions.
+Framed using category theory, we give a no-go theorem that shows that
+diffeomorphisms between Hilbert spaces or Hilbert manifolds may not admit any
+continuous approximations by diffeomorphisms on finite-dimensional spaces, even
+if the approximations are nonlinear. The natural way out is the introduction of
+strongly monotone diffeomorphisms and layerwise strongly monotone neural
+operators which have continuous approximations by strongly monotone
+diffeomorphisms on finite-dimensional spaces. For these, one can guarantee
+discretization invariance, while ensuring that finite-dimensional
+approximations converge not only as sequences of functions, but that their
+representations converge in a suitable sense as well. Finally, we show that
+bilipschitz neural operators may always be written in the form of an
+alternating composition of strongly monotone neural operators, plus a simple
+isometry. Thus we realize a rigorous platform for discretization of a
+generalization of a neural operator. We also show that neural operators of this
+type may be approximated through the composition of finite-rank residual neural
+operators, where each block is strongly monotone, and may be inverted locally
+via iteration. We conclude by providing a quantitative approximation result for
+the discretization of general bilipschitz neural operators.",http://arxiv.org/pdf/2412.03393v1,,False
+Intuitive Axial Augmentation Using Polar-Sine-Based Piecewise Distortion for Medical Slice-Wise Segmentation,04/12/2024,"Yiqin Zhang, Qingkui Chen, Chen Huang, Zhengjie Zhang, Meiling Chen, Zhibing Fu","Most data-driven models for medical image analysis rely on universal
+augmentations to improve performance. Experimental evidence has confirmed their
+effectiveness, but the unclear mechanism underlying them poses a barrier to the
+widespread acceptance and trust in such methods within the medical community.
+We revisit and acknowledge the unique characteristics of medical images apart
+from traditional digital images, and consequently, proposed a medical-specific
+augmentation algorithm that is more elastic and aligns well with radiology scan
+procedure. The method performs piecewise affine with sinusoidal distorted ray
+according to radius on polar coordinates, thus simulating uncertain postures of
+human lying flat on the scanning table. Our method could generate human
+visceral distribution without affecting the fundamental relative position on
+axial plane. Two non-adaptive algorithms, namely Meta-based Scan Table Removal
+and Similarity-Guided Parameter Search, are introduced to bolster robustness of
+our augmentation method. Experiments show our method improves accuracy across
+multiple famous segmentation frameworks without requiring more data samples.
+Our preview code is available in: https://github.com/MGAMZ/PSBPD.",http://arxiv.org/pdf/2412.03352v1,,False
+Scalable Bayesian Tensor Ring Factorization for Multiway Data Analysis,04/12/2024,"Zerui Tao, Toshihisa Tanaka, Qibin Zhao","Tensor decompositions play a crucial role in numerous applications related to
+multi-way data analysis. By employing a Bayesian framework with
+sparsity-inducing priors, Bayesian Tensor Ring (BTR) factorization offers
+probabilistic estimates and an effective approach for automatically adapting
+the tensor ring rank during the learning process. However, previous BTR method
+employs an Automatic Relevance Determination (ARD) prior, which can lead to
+sub-optimal solutions. Besides, it solely focuses on continuous data, whereas
+many applications involve discrete data. More importantly, it relies on the
+Coordinate-Ascent Variational Inference (CAVI) algorithm, which is inadequate
+for handling large tensors with extensive observations. These limitations
+greatly limit its application scales and scopes, making it suitable only for
+small-scale problems, such as image/video completion. To address these issues,
+we propose a novel BTR model that incorporates a nonparametric Multiplicative
+Gamma Process (MGP) prior, known for its superior accuracy in identifying
+latent structures. To handle discrete data, we introduce the P\'olya-Gamma
+augmentation for closed-form updates. Furthermore, we develop an efficient
+Gibbs sampler for consistent posterior simulation, which reduces the
+computational complexity of previous VI algorithm by two orders, and an online
+EM algorithm that is scalable to extremely large tensors. To showcase the
+advantages of our model, we conduct extensive experiments on both simulation
+data and real-world applications.",http://arxiv.org/pdf/2412.03321v1,,False
+Semi-decentralized Training of Spatio-Temporal Graph Neural Networks for Traffic Prediction,04/12/2024,"Ivan Kralj, Lodovico Giaretta, Gordan Ježić, Ivana Podnar Žarko, Šarūnas Girdzijauskas","In smart mobility, large networks of geographically distributed sensors
+produce vast amounts of high-frequency spatio-temporal data that must be
+processed in real time to avoid major disruptions. Traditional centralized
+approaches are increasingly unsuitable to this task, as they struggle to scale
+with expanding sensor networks, and reliability issues in central components
+can easily affect the whole deployment. To address these challenges, we explore
+and adapt semi-decentralized training techniques for Spatio-Temporal Graph
+Neural Networks (ST-GNNs) in smart mobility domain. We implement a simulation
+framework where sensors are grouped by proximity into multiple cloudlets, each
+handling a subgraph of the traffic graph, fetching node features from other
+cloudlets to train its own local ST-GNN model, and exchanging model updates
+with other cloudlets to ensure consistency, enhancing scalability and removing
+reliance on a centralized aggregator. We perform extensive comparative
+evaluation of four different ST-GNN training setups -- centralized, traditional
+FL, server-free FL, and Gossip Learning -- on large-scale traffic datasets, the
+METR-LA and PeMS-BAY datasets, for short-, mid-, and long-term vehicle speed
+predictions. Experimental results show that semi-decentralized setups are
+comparable to centralized approaches in performance metrics, while offering
+advantages in terms of scalability and fault tolerance. In addition, we
+highlight often overlooked issues in existing literature for distributed
+ST-GNNs, such as the variation in model performance across different
+geographical areas due to region-specific traffic patterns, and the significant
+communication overhead and computational costs that arise from the large
+receptive field of GNNs, leading to substantial data transfers and increased
+computation of partial embeddings.",http://arxiv.org/pdf/2412.03188v1,,False
+ChatTS: Aligning Time Series with LLMs via Synthetic Data for Enhanced Understanding and Reasoning,04/12/2024,"Zhe Xie, Zeyan Li, Xiao He, Longlong Xu, Xidao Wen, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei","Understanding time series is crucial for its application in real-world
+scenarios. Recently, large language models (LLMs) have been increasingly
+applied to time series tasks, leveraging their strong language capabilities to
+enhance various applications. However, research on multimodal LLMs (MLLMs) for
+time series understanding and reasoning remains limited, primarily due to the
+scarcity of high-quality datasets that align time series with textual
+information. This paper introduces ChatTS, a novel MLLM designed for time
+series analysis. ChatTS treats time series as a modality, similar to how vision
+MLLMs process images, enabling it to perform both understanding and reasoning
+with time series. To address the scarcity of training data, we propose an
+attribute-based method for generating synthetic time series with detailed
+attribute descriptions. We further introduce Time Series Evol-Instruct, a novel
+approach that generates diverse time series Q&As, enhancing the model's
+reasoning capabilities. To the best of our knowledge, ChatTS is the first MLLM
+that takes multivariate time series as input, which is fine-tuned exclusively
+on synthetic datasets. We evaluate its performance using benchmark datasets
+with real-world data, including six alignment tasks and four reasoning tasks.
+Our results show that ChatTS significantly outperforms existing vision-based
+MLLMs (e.g., GPT-4o) and text/agent-based LLMs, achieving a 46.0% improvement
+in alignment tasks and a 25.8% improvement in reasoning tasks.",http://arxiv.org/pdf/2412.03104v1,,False
+UTSD: Unified Time Series Diffusion Model,04/12/2024,"Xiangkai Ma, Xiaobin Hong, Wenzhong Li, Sanglu Lu","Transformer-based architectures have achieved unprecedented success in time
+series analysis. However, facing the challenge of across-domain modeling,
+existing studies utilize statistical prior as prompt engineering fails under
+the huge distribution shift among various domains. In this paper, a Unified
+Time Series Diffusion (UTSD) model is established for the first time to model
+the multi-domain probability distribution, utilizing the powerful probability
+distribution modeling ability of Diffusion. Unlike the autoregressive models
+that capture the conditional probabilities of the prediction horizon to the
+historical sequence, we use a diffusion denoising process to model the mixture
+distribution of the cross-domain data and generate the prediction sequence for
+the target domain directly utilizing conditional sampling. The proposed UTSD
+contains three pivotal designs: (1) The condition network captures the
+multi-scale fluctuation patterns from the observation sequence, which are
+utilized as context representations to guide the denoising network to generate
+the prediction sequence; (2) Adapter-based fine-tuning strategy, the
+multi-domain universal representation learned in the pretraining stage is
+utilized for downstream tasks in target domains; (3) The diffusion and
+denoising process on the actual sequence space, combined with the improved
+classifier free guidance as the conditional generation strategy, greatly
+improves the stability and accuracy of the downstream task. We conduct
+extensive experiments on mainstream benchmarks, and the pre-trained UTSD
+outperforms existing foundation models on all data domains, exhibiting superior
+zero-shot generalization ability. After training from scratch, UTSD achieves
+comparable performance against domain-specific proprietary models. The
+empirical results validate the potential of UTSD as a time series foundational
+model.",http://arxiv.org/pdf/2412.03068v1,,False
+Panoptic Diffusion Models: co-generation of images and segmentation maps,04/12/2024,"Yinghan Long, Kaushik Roy","Recently, diffusion models have demonstrated impressive capabilities in
+text-guided and image-conditioned image generation. However, existing diffusion
+models cannot simultaneously generate a segmentation map of objects and a
+corresponding image from the prompt. Previous attempts either generate
+segmentation maps based on the images or provide maps as input conditions to
+control image generation, limiting their functionality to given inputs.
+Incorporating an inherent understanding of the scene layouts can improve the
+creativity and realism of diffusion models. To address this limitation, we
+present Panoptic Diffusion Model (PDM), the first model designed to generate
+both images and panoptic segmentation maps concurrently. PDM bridges the gap
+between image and text by constructing segmentation layouts that provide
+detailed, built-in guidance throughout the generation process. This ensures the
+inclusion of categories mentioned in text prompts and enriches the diversity of
+segments within the background. We demonstrate the effectiveness of PDM across
+two architectures: a unified diffusion transformer and a two-stream transformer
+with a pretrained backbone. To facilitate co-generation with fewer sampling
+steps, we incorporate a fast diffusion solver into PDM. Additionally, when
+ground-truth maps are available, PDM can function as a text-guided
+image-to-image generation model. Finally, we propose a novel metric for
+evaluating the quality of generated maps and show that PDM achieves
+state-of-the-art results in image generation with implicit scene control.",http://arxiv.org/pdf/2412.02929v1,,False
+Higher Order Transformers: Efficient Attention Mechanism for Tensor Structured Data,04/12/2024,"Soroush Omranpour, Guillaume Rabusseau, Reihaneh Rabbany","Transformers are now ubiquitous for sequence modeling tasks, but their
+extension to multi-dimensional data remains a challenge due to the quadratic
+cost of the attention mechanism. In this paper, we propose Higher-Order
+Transformers (HOT), a novel architecture designed to efficiently process data
+with more than two axes, i.e. higher-order tensors. To address the
+computational challenges associated with high-order tensor attention, we
+introduce a novel Kronecker factorized attention mechanism that reduces the
+attention cost to quadratic in each axis' dimension, rather than quadratic in
+the total size of the input tensor. To further enhance efficiency, HOT
+leverages kernelized attention, reducing the complexity to linear. This
+strategy maintains the model's expressiveness while enabling scalable attention
+computation. We validate the effectiveness of HOT on two high-dimensional
+tasks, including multivariate time series forecasting, and 3D medical image
+classification. Experimental results demonstrate that HOT achieves competitive
+performance while significantly improving computational efficiency, showcasing
+its potential for tackling a wide range of complex, multi-dimensional data.",http://arxiv.org/pdf/2412.02919v1,,False

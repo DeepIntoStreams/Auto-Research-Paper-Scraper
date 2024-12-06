@@ -1,0 +1,393 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection,05/12/2024,"Enshen Zhou, Qi Su, Cheng Chi, Zhizheng Zhang, Zhongyuan Wang, Tiejun Huang, Lu Sheng, He Wang","Automatic detection and prevention of open-set failures are crucial in
+closed-loop robotic systems. Recent studies often struggle to simultaneously
+identify unexpected failures reactively after they occur and prevent
+foreseeable ones proactively. To this end, we propose Code-as-Monitor (CaM), a
+novel paradigm leveraging the vision-language model (VLM) for both open-set
+reactive and proactive failure detection. The core of our method is to
+formulate both tasks as a unified set of spatio-temporal constraint
+satisfaction problems and use VLM-generated code to evaluate them for real-time
+monitoring. To enhance the accuracy and efficiency of monitoring, we further
+introduce constraint elements that abstract constraint-related entities or
+their parts into compact geometric elements. This approach offers greater
+generality, simplifies tracking, and facilitates constraint-aware visual
+programming by leveraging these elements as visual prompts. Experiments show
+that CaM achieves a 28.7% higher success rate and reduces execution time by
+31.8% under severe disturbances compared to baselines across three simulators
+and a real-world setting. Moreover, CaM can be integrated with open-loop
+control policies to form closed-loop systems, enabling long-horizon tasks in
+cluttered scenes with dynamic environments.",http://arxiv.org/pdf/2412.04455v1,,False
+Moto: Latent Motion Token as the Bridging Language for Robot Manipulation,05/12/2024,"Yi Chen, Yuying Ge, Yizhuo Li, Yixiao Ge, Mingyu Ding, Ying Shan, Xihui Liu","Recent developments in Large Language Models pre-trained on extensive corpora
+have shown significant success in various natural language processing tasks
+with minimal fine-tuning. This success offers new promise for robotics, which
+has long been constrained by the high cost of action-labeled data. We ask:
+given the abundant video data containing interaction-related knowledge
+available as a rich ""corpus"", can a similar generative pre-training approach be
+effectively applied to enhance robot learning? The key challenge is to identify
+an effective representation for autoregressive pre-training that benefits robot
+manipulation tasks. Inspired by the way humans learn new skills through
+observing dynamic environments, we propose that effective robotic learning
+should emphasize motion-related knowledge, which is closely tied to low-level
+actions and is hardware-agnostic, facilitating the transfer of learned motions
+to actual robot actions. To this end, we introduce Moto, which converts video
+content into latent Motion Token sequences by a Latent Motion Tokenizer,
+learning a bridging ""language"" of motion from videos in an unsupervised manner.
+We pre-train Moto-GPT through motion token autoregression, enabling it to
+capture diverse visual motion knowledge. After pre-training, Moto-GPT
+demonstrates the promising ability to produce semantically interpretable motion
+tokens, predict plausible motion trajectories, and assess trajectory
+rationality through output likelihood. To transfer learned motion priors to
+real robot actions, we implement a co-fine-tuning strategy that seamlessly
+bridges latent motion token prediction and real robot control. Extensive
+experiments show that the fine-tuned Moto-GPT exhibits superior robustness and
+efficiency on robot manipulation benchmarks, underscoring its effectiveness in
+transferring knowledge from video data to downstream visual manipulation tasks.",http://arxiv.org/pdf/2412.04445v1,,False
+Likelihood-Scheduled Score-Based Generative Modeling for Fully 3D PET Image Reconstruction,05/12/2024,"George Webber, Yuya Mizuno, Oliver D. Howes, Alexander Hammers, Andrew P. King, Andrew J. Reader","Medical image reconstruction with pre-trained score-based generative models
+(SGMs) has advantages over other existing state-of-the-art deep-learned
+reconstruction methods, including improved resilience to different scanner
+setups and advanced image distribution modeling. SGM-based reconstruction has
+recently been applied to simulated positron emission tomography (PET) datasets,
+showing improved contrast recovery for out-of-distribution lesions relative to
+the state-of-the-art. However, existing methods for SGM-based reconstruction
+from PET data suffer from slow reconstruction, burdensome hyperparameter tuning
+and slice inconsistency effects (in 3D). In this work, we propose a practical
+methodology for fully 3D reconstruction that accelerates reconstruction and
+reduces the number of critical hyperparameters by matching the likelihood of an
+SGM's reverse diffusion process to a current iterate of the maximum-likelihood
+expectation maximization algorithm. Using the example of low-count
+reconstruction from simulated $[^{18}$F]DPA-714 datasets, we show our
+methodology can match or improve on the NRMSE and SSIM of existing
+state-of-the-art SGM-based PET reconstruction while reducing reconstruction
+time and the need for hyperparameter tuning. We evaluate our methodology
+against state-of-the-art supervised and conventional reconstruction algorithms.
+Finally, we demonstrate a first-ever implementation of SGM-based reconstruction
+for real 3D PET data, specifically $[^{18}$F]DPA-714 data, where we integrate
+perpendicular pre-trained SGMs to eliminate slice inconsistency issues.",http://arxiv.org/pdf/2412.04339v1,,False
+GRAM: Generalization in Deep RL with a Robust Adaptation Module,05/12/2024,"James Queeney, Xiaoyi Cai, Mouhacine Benosman, Jonathan P. How","The reliable deployment of deep reinforcement learning in real-world settings
+requires the ability to generalize across a variety of conditions, including
+both in-distribution scenarios seen during training as well as novel
+out-of-distribution scenarios. In this work, we present a framework for
+dynamics generalization in deep reinforcement learning that unifies these two
+distinct types of generalization within a single architecture. We introduce a
+robust adaptation module that provides a mechanism for identifying and reacting
+to both in-distribution and out-of-distribution environment dynamics, along
+with a joint training pipeline that combines the goals of in-distribution
+adaptation and out-of-distribution robustness. Our algorithm GRAM achieves
+strong generalization performance across in-distribution and
+out-of-distribution scenarios upon deployment, which we demonstrate on a
+variety of realistic simulated locomotion tasks with a quadruped robot.",http://arxiv.org/pdf/2412.04323v1,,False
+Generative-Model-Based Fully 3D PET Image Reconstruction by Conditional Diffusion Sampling,05/12/2024,"George Webber, Yuya Mizuno, Oliver D. Howes, Alexander Hammers, Andrew P. King, Andrew J. Reader","Score-based generative models (SGMs) have recently shown promising results
+for image reconstruction on simulated positron emission tomography (PET)
+datasets. In this work we have developed and implemented practical methodology
+for 3D image reconstruction with SGMs, and perform (to our knowledge) the first
+SGM-based reconstruction of real fully 3D PET data. We train an SGM on
+full-count reference brain images, and extend methodology to allow SGM-based
+reconstructions at very low counts (1% of original, to simulate low-dose or
+short-duration scanning). We then perform reconstructions for multiple
+independent realisations of 1% count data, allowing us to analyse the bias and
+variance characteristics of the method. We sample from the learned posterior
+distribution of the generative algorithm to calculate uncertainty images for
+our reconstructions. We evaluate the method's performance on real full- and
+low-count PET data and compare with conventional OSEM and MAP-EM baselines,
+showing that our SGM-based low-count reconstructions match full-dose
+reconstructions more closely and in a bias-variance trade-off comparison, our
+SGM-reconstructed images have lower variance than existing baselines. Future
+work will compare to supervised deep-learned methods, with other avenues for
+investigation including how data conditioning affects the SGM's posterior
+distribution and the algorithm's performance with different tracers.",http://arxiv.org/pdf/2412.04319v1,10.1109/NSS/MIC/RTSD57108.2024.10657861,False
+The Hyperfitting Phenomenon: Sharpening and Stabilizing LLMs for Open-Ended Text Generation,05/12/2024,"Fredrik Carlsson, Fangyu Liu, Daniel Ward, Murathan Kurfali, Joakim Nivre","This paper introduces the counter-intuitive generalization results of
+overfitting pre-trained large language models (LLMs) on very small datasets. In
+the setting of open-ended text generation, it is well-documented that LLMs tend
+to generate repetitive and dull sequences, a phenomenon that is especially
+apparent when generating using greedy decoding. This issue persists even with
+state-of-the-art LLMs containing billions of parameters, trained via next-token
+prediction on large datasets. We find that by further fine-tuning these models
+to achieve a near-zero training loss on a small set of samples -- a process we
+refer to as hyperfitting -- the long-sequence generative capabilities are
+greatly enhanced. Greedy decoding with these Hyperfitted models even outperform
+Top-P sampling over long-sequences, both in terms of diversity and human
+preferences. This phenomenon extends to LLMs of various sizes, different
+domains, and even autoregressive image generation. We further find this
+phenomena to be distinctly different from that of Grokking and double descent.
+Surprisingly, our experiments indicate that hyperfitted models rarely fall into
+repeating sequences they were trained on, and even explicitly blocking these
+sequences results in high-quality output. All hyperfitted models produce
+extremely low-entropy predictions, often allocating nearly all probability to a
+single token.",http://arxiv.org/pdf/2412.04318v1,,False
+PoTable: Programming Standardly on Table-based Reasoning Like a Human Analyst,05/12/2024,"Qingyang Mao, Qi Liu, Zhi Li, Mingyue Cheng, Zheng Zhang, Rui Li","Table-based reasoning has garnered substantial research interest,
+particularly in its integration with Large Language Model (LLM) which has
+revolutionized the general reasoning paradigm. Numerous LLM-based studies
+introduce symbolic tools (e.g., databases, Python) as assistants to extend
+human-like abilities in structured table understanding and complex arithmetic
+computations. However, these studies can be improved better in simulating human
+cognitive behavior when using symbolic tools, as they still suffer from
+limitations of non-standard logical splits and constrained operation pools. In
+this study, we propose PoTable as a novel table-based reasoning method that
+simulates a human tabular analyst, which integrates a Python interpreter as the
+real-time executor accompanied by an LLM-based operation planner and code
+generator. Specifically, PoTable follows a human-like logical stage split and
+extends the operation pool into an open-world space without any constraints.
+Through planning and executing in each distinct stage, PoTable standardly
+completes the entire reasoning process and produces superior reasoning results
+along with highly accurate, steply commented and completely executable
+programs. Accordingly, the effectiveness and explainability of PoTable are
+fully demonstrated. Extensive experiments over three evaluation datasets from
+two public benchmarks on two backbones show the outstanding performance of our
+approach. In particular, GPT-based PoTable achieves over 4% higher absolute
+accuracy than runner-ups on all evaluation datasets.",http://arxiv.org/pdf/2412.04272v1,,False
+Frequency-Adaptive Low-Latency Object Detection Using Events and Frames,05/12/2024,"Haitian Zhang, Xiangyuan Wang, Chang Xu, Xinya Wang, Fang Xu, Huai Yu, Lei Yu, Wen Yang","Fusing Events and RGB images for object detection leverages the robustness of
+Event cameras in adverse environments and the rich semantic information
+provided by RGB cameras. However, two critical mismatches: low-latency Events
+\textit{vs.}~high-latency RGB frames; temporally sparse labels in training
+\textit{vs.}~continuous flow in inference, significantly hinder the
+high-frequency fusion-based object detection. To address these challenges, we
+propose the \textbf{F}requency-\textbf{A}daptive Low-Latency \textbf{O}bject
+\textbf{D}etector (FAOD). FAOD aligns low-frequency RGB frames with
+high-frequency Events through an Align Module, which reinforces cross-modal
+style and spatial proximity to address the Event-RGB Mismatch. We further
+propose a training strategy, Time Shift, which enforces the module to align the
+prediction from temporally shifted Event-RGB pairs and their original
+representation, that is, consistent with Event-aligned annotations. This
+strategy enables the network to use high-frequency Event data as the primary
+reference while treating low-frequency RGB images as supplementary information,
+retaining the low-latency nature of the Event stream toward high-frequency
+detection. Furthermore, we observe that these corrected Event-RGB pairs
+demonstrate better generalization from low training frequency to higher
+inference frequencies compared to using Event data alone. Extensive experiments
+on the PKU-DAVIS-SOD and DSEC-Detection datasets demonstrate that our FAOD
+achieves SOTA performance. Specifically, in the PKU-DAVIS-SOD Dataset, FAOD
+achieves 9.8 points improvement in terms of the mAP in fully paired Event-RGB
+data with only a quarter of the parameters compared to SODFormer, and even
+maintains robust performance (only a 3 points drop in mAP) under 80$\times$
+Event-RGB frequency mismatch.",http://arxiv.org/pdf/2412.04149v1,,False
+Methodology for Online Estimation of Rheological Parameters in Polymer Melts Using Deep Learning and Microfluidics,05/12/2024,"Juan Sandubete-López, José L. Risco-Martín, Alexander H. McMillan, Eva Besada-Portas","Microfluidic devices are increasingly used in biological and chemical
+experiments due to their cost-effectiveness for rheological estimation in
+fluids. However, these devices often face challenges in terms of accuracy,
+size, and cost. This study presents a methodology, integrating deep learning,
+modeling and simulation to enhance the design of microfluidic systems, used to
+develop an innovative approach for viscosity measurement of polymer melts. We
+use synthetic data generated from the simulations to train a deep learning
+model, which then identifies rheological parameters of polymer melts from
+pressure drop and flow rate measurements in a microfluidic circuit, enabling
+online estimation of fluid properties. By improving the accuracy and
+flexibility of microfluidic rheological estimation, our methodology accelerates
+the design and testing of microfluidic devices, reducing reliance on physical
+prototypes, and offering significant contributions to the field.",http://arxiv.org/pdf/2412.04142v1,,False
+Compositional Generative Multiphysics and Multi-component Simulation,05/12/2024,"Tao Zhang, Zhenhai Liu, Feipeng Qi, Yongjun Jiao, Tailin Wu","Multiphysics simulation, which models the interactions between multiple
+physical processes, and multi-component simulation of complex structures are
+critical in fields like nuclear and aerospace engineering. Previous studies
+often rely on numerical solvers or machine learning-based surrogate models to
+solve or accelerate these simulations. However, multiphysics simulations
+typically require integrating multiple specialized solvers-each responsible for
+evolving a specific physical process-into a coupled program, which introduces
+significant development challenges. Furthermore, no universal algorithm exists
+for multi-component simulations, which adds to the complexity. Here we propose
+compositional Multiphysics and Multi-component Simulation with Diffusion models
+(MultiSimDiff) to overcome these challenges. During diffusion-based training,
+MultiSimDiff learns energy functions modeling the conditional probability of
+one physical process/component conditioned on other processes/components. In
+inference, MultiSimDiff generates coupled multiphysics solutions and
+multi-component structures by sampling from the joint probability distribution,
+achieved by composing the learned energy functions in a structured way. We test
+our method in three tasks. In the reaction-diffusion and nuclear thermal
+coupling problems, MultiSimDiff successfully predicts the coupling solution
+using decoupled data, while the surrogate model fails in the more complex
+second problem. For the thermal and mechanical analysis of the prismatic fuel
+element, MultiSimDiff trained for single component prediction accurately
+predicts a larger structure with 64 components, reducing the relative error by
+40.3% compared to the surrogate model.",http://arxiv.org/pdf/2412.04134v1,,False
+DeepFEA: Deep Learning for Prediction of Transient Finite Element Analysis Solutions,05/12/2024,"Georgios Triantafyllou, Panagiotis G. Kalozoumis, George Dimas, Dimitris K. Iakovidis","Finite Element Analysis (FEA) is a powerful but computationally intensive
+method for simulating physical phenomena. Recent advancements in machine
+learning have led to surrogate models capable of accelerating FEA. Yet there
+are still limitations in developing surrogates of transient FEA models that can
+simultaneously predict the solutions for both nodes and elements with
+applicability on both the 2D and 3D domains. Motivated by this research gap,
+this study proposes DeepFEA, a deep learning-based framework that leverages a
+multilayer Convolutional Long Short-Term Memory (ConvLSTM) network branching
+into two parallel convolutional neural networks to predict the solutions for
+both nodes and elements of FEA models. The proposed network is optimized using
+a novel adaptive learning algorithm, called Node-Element Loss Optimization
+(NELO). NELO minimizes the error occurring at both branches of the network
+enabling the prediction of solutions for transient FEA simulations. The
+experimental evaluation of DeepFEA is performed on three datasets in the
+context of structural mechanics, generated to serve as publicly available
+reference datasets. The results show that DeepFEA can achieve less than 3%
+normalized mean and root mean squared error for 2D and 3D simulation scenarios,
+and inference times that are two orders of magnitude faster than FEA. In
+contrast, relevant state-of-the-art methods face challenges with
+multi-dimensional output and dynamic input prediction. Furthermore, DeepFEA's
+robustness was demonstrated in a real-life biomedical scenario, confirming its
+suitability for accurate and efficient predictions of FEA simulations.",http://arxiv.org/pdf/2412.04121v1,,False
+D-LORD for Motion Stylization,05/12/2024,"Meenakshi Gupta, Mingyuan Lei, Tat-Jen Cham, Hwee Kuan Lee","This paper introduces a novel framework named D-LORD (Double Latent
+Optimization for Representation Disentanglement), which is designed for motion
+stylization (motion style transfer and motion retargeting). The primary
+objective of this framework is to separate the class and content information
+from a given motion sequence using a data-driven latent optimization approach.
+Here, class refers to person-specific style, such as a particular emotion or an
+individual's identity, while content relates to the style-agnostic aspect of an
+action, such as walking or jumping, as universally understood concepts. The key
+advantage of D-LORD is its ability to perform style transfer without needing
+paired motion data. Instead, it utilizes class and content labels during the
+latent optimization process. By disentangling the representation, the framework
+enables the transformation of one motion sequences style to another's style
+using Adaptive Instance Normalization. The proposed D-LORD framework is
+designed with a focus on generalization, allowing it to handle different class
+and content labels for various applications. Additionally, it can generate
+diverse motion sequences when specific class and content labels are provided.
+The framework's efficacy is demonstrated through experimentation on three
+datasets: the CMU XIA dataset for motion style transfer, the MHAD dataset, and
+the RRIS Ability dataset for motion retargeting. Notably, this paper presents
+the first generalized framework for motion style transfer and motion
+retargeting, showcasing its potential contributions in this area.",http://arxiv.org/pdf/2412.04097v1,10.1109/TSMC.2024.3502498,False
+HyperFLINT: Hypernetwork-based Flow Estimation and Temporal Interpolation for Scientific Ensemble Visualization,05/12/2024,"Hamid Gadirov, Qi Wu, David Bauer, Kwan-Liu Ma, Jos Roerdink, Steffen Frey","We present HyperFLINT (Hypernetwork-based FLow estimation and temporal
+INTerpolation), a novel deep learning-based approach for estimating flow
+fields, temporally interpolating scalar fields, and facilitating parameter
+space exploration in spatio-temporal scientific ensemble data. This work
+addresses the critical need to explicitly incorporate ensemble parameters into
+the learning process, as traditional methods often neglect these, limiting
+their ability to adapt to diverse simulation settings and provide meaningful
+insights into the data dynamics. HyperFLINT introduces a hypernetwork to
+account for simulation parameters, enabling it to generate accurate
+interpolations and flow fields for each timestep by dynamically adapting to
+varying conditions, thereby outperforming existing parameter-agnostic
+approaches. The architecture features modular neural blocks with convolutional
+and deconvolutional layers, supported by a hypernetwork that generates weights
+for the main network, allowing the model to better capture intricate simulation
+dynamics. A series of experiments demonstrates HyperFLINT's significantly
+improved performance in flow field estimation and temporal interpolation, as
+well as its potential in enabling parameter space exploration, offering
+valuable insights into complex scientific ensembles.",http://arxiv.org/pdf/2412.04095v1,,False
+Towards Generalizable Autonomous Penetration Testing via Domain Randomization and Meta-Reinforcement Learning,05/12/2024,"Shicheng Zhou, Jingju Liu, Yuliang Lu, Jiahai Yang, Yue Zhang, Jie Chen","With increasing numbers of vulnerabilities exposed on the internet,
+autonomous penetration testing (pentesting) has emerged as an emerging research
+area, while reinforcement learning (RL) is a natural fit for studying
+autonomous pentesting. Previous research in RL-based autonomous pentesting
+mainly focused on enhancing agents' learning efficacy within abstract simulated
+training environments. They overlooked the applicability and generalization
+requirements of deploying agents' policies in real-world environments that
+differ substantially from their training settings. In contrast, for the first
+time, we shift focus to the pentesting agents' ability to generalize across
+unseen real environments. For this purpose, we propose a Generalizable
+Autonomous Pentesting framework (namely GAP) for training agents capable of
+drawing inferences from one to another -- a key requirement for the broad
+application of autonomous pentesting and a hallmark of human intelligence. GAP
+introduces a Real-to-Sim-to-Real pipeline with two key methods: domain
+randomization and meta-RL learning. Specifically, we are among the first to
+apply domain randomization in autonomous pentesting and propose a large
+language model-powered domain randomization method for synthetic environment
+generation. We further apply meta-RL to improve the agents' generalization
+ability in unseen environments by leveraging the synthetic environments. The
+combination of these two methods can effectively bridge the generalization gap
+and improve policy adaptation performance. Experiments are conducted on various
+vulnerable virtual machines, with results showing that GAP can (a) enable
+policy learning in unknown real environments, (b) achieve zero-shot policy
+transfer in similar environments, and (c) realize rapid policy adaptation in
+dissimilar environments.",http://arxiv.org/pdf/2412.04078v1,,False
+Integrated Sensing and Communications for Low-Altitude Economy: A Deep Reinforcement Learning Approach,05/12/2024,"Xiaowen Ye, Yuyi Mao, Xianghao Yu, Shu Sun, Liqun Fu, Jie Xu","This paper studies an integrated sensing and communications (ISAC) system for
+low-altitude economy (LAE), where a ground base station (GBS) provides
+communication and navigation services for authorized unmanned aerial vehicles
+(UAVs), while sensing the low-altitude airspace to monitor the unauthorized
+mobile target. The expected communication sum-rate over a given flight period
+is maximized by jointly optimizing the beamforming at the GBS and UAVs'
+trajectories, subject to the constraints on the average signal-to-noise ratio
+requirement for sensing, the flight mission and collision avoidance of UAVs, as
+well as the maximum transmit power at the GBS. Typically, this is a sequential
+decision-making problem with the given flight mission. Thus, we transform it to
+a specific Markov decision process (MDP) model called episode task. Based on
+this modeling, we propose a novel LAE-oriented ISAC scheme, referred to as Deep
+LAE-ISAC (DeepLSC), by leveraging the deep reinforcement learning (DRL)
+technique. In DeepLSC, a reward function and a new action selection policy
+termed constrained noise-exploration policy are judiciously designed to fulfill
+various constraints. To enable efficient learning in episode tasks, we develop
+a hierarchical experience replay mechanism, where the gist is to employ all
+experiences generated within each episode to jointly train the neural network.
+Besides, to enhance the convergence speed of DeepLSC, a symmetric experience
+augmentation mechanism, which simultaneously permutes the indexes of all
+variables to enrich available experience sets, is proposed. Simulation results
+demonstrate that compared with benchmarks, DeepLSC yields a higher sum-rate
+while meeting the preset constraints, achieves faster convergence, and is more
+robust against different settings.",http://arxiv.org/pdf/2412.04074v1,,False
+ProtDAT: A Unified Framework for Protein Sequence Design from Any Protein Text Description,05/12/2024,"Xiao-Yu Guo, Yi-Fan Li, Yuan Liu, Xiaoyong Pan, Hong-Bin Shen","Protein design has become a critical method in advancing significant
+potential for various applications such as drug development and enzyme
+engineering. However, protein design methods utilizing large language models
+with solely pretraining and fine-tuning struggle to capture relationships in
+multi-modal protein data. To address this, we propose ProtDAT, a de novo
+fine-grained framework capable of designing proteins from any descriptive
+protein text input. ProtDAT builds upon the inherent characteristics of protein
+data to unify sequences and text as a cohesive whole rather than separate
+entities. It leverages an innovative multi-modal cross-attention, integrating
+protein sequences and textual information for a foundational level and seamless
+integration. Experimental results demonstrate that ProtDAT achieves the
+state-of-the-art performance in protein sequence generation, excelling in
+rationality, functionality, structural similarity, and validity. On 20,000
+text-sequence pairs from Swiss-Prot, it improves pLDDT by 6%, TM-score by 0.26,
+and reduces RMSD by 1.2 {\AA}, highlighting its potential to advance protein
+design.",http://arxiv.org/pdf/2412.04069v1,,False
+Learning Speed-Adaptive Walking Agent Using Imitation Learning with Physics-Informed Simulation,05/12/2024,"Yi-Hung Chiu, Ung Hee Lee, Changseob Song, Manaen Hu, Inseung Kang","Virtual models of human gait, or digital twins, offer a promising solution
+for studying mobility without the need for labor-intensive data collection.
+However, challenges such as the sim-to-real gap and limited adaptability to
+diverse walking conditions persist. To address these, we developed and
+validated a framework to create a skeletal humanoid agent capable of adapting
+to varying walking speeds while maintaining biomechanically realistic motions.
+The framework combines a synthetic data generator, which produces
+biomechanically plausible gait kinematics from open-source biomechanics data,
+and a training system that uses adversarial imitation learning to train the
+agent's walking policy. We conducted comprehensive analyses comparing the
+agent's kinematics, synthetic data, and the original biomechanics dataset. The
+agent achieved a root mean square error of 5.24 +- 0.09 degrees at varying
+speeds compared to ground-truth kinematics data, demonstrating its
+adaptability. This work represents a significant step toward developing a
+digital twin of human locomotion, with potential applications in biomechanics
+research, exoskeleton design, and rehabilitation.",http://arxiv.org/pdf/2412.03949v1,,False
+InfiniCube: Unbounded and Controllable Dynamic 3D Driving Scene Generation with World-Guided Video Models,05/12/2024,"Yifan Lu, Xuanchi Ren, Jiawei Yang, Tianchang Shen, Zhangjie Wu, Jun Gao, Yue Wang, Siheng Chen, Mike Chen, Sanja Fidler, Jiahui Huang","We present InfiniCube, a scalable method for generating unbounded dynamic 3D
+driving scenes with high fidelity and controllability. Previous methods for
+scene generation either suffer from limited scales or lack geometric and
+appearance consistency along generated sequences. In contrast, we leverage the
+recent advancements in scalable 3D representation and video models to achieve
+large dynamic scene generation that allows flexible controls through HD maps,
+vehicle bounding boxes, and text descriptions. First, we construct a
+map-conditioned sparse-voxel-based 3D generative model to unleash its power for
+unbounded voxel world generation. Then, we re-purpose a video model and ground
+it on the voxel world through a set of carefully designed pixel-aligned
+guidance buffers, synthesizing a consistent appearance. Finally, we propose a
+fast feed-forward approach that employs both voxel and pixel branches to lift
+the dynamic videos to dynamic 3D Gaussians with controllable objects. Our
+method can generate controllable and realistic 3D driving scenes, and extensive
+experiments validate the effectiveness and superiority of our model.",http://arxiv.org/pdf/2412.03934v1,,False
+LL-ICM: Image Compression for Low-level Machine Vision via Large Vision-Language Model,05/12/2024,"Yuan Xue, Qi Zhang, Chuanmin Jia, Shiqi Wang","Image Compression for Machines (ICM) aims to compress images for machine
+vision tasks rather than human viewing. Current works predominantly concentrate
+on high-level tasks like object detection and semantic segmentation. However,
+the quality of original images is usually not guaranteed in the real world,
+leading to even worse perceptual quality or downstream task performance after
+compression. Low-level (LL) machine vision models, like image restoration
+models, can help improve such quality, and thereby their compression
+requirements should also be considered. In this paper, we propose a pioneered
+ICM framework for LL machine vision tasks, namely LL-ICM. By jointly optimizing
+compression and LL tasks, the proposed LL-ICM not only enriches its encoding
+ability in generalizing to versatile LL tasks but also optimizes the processing
+ability of down-stream LL task models, achieving mutual adaptation for image
+codecs and LL task models. Furthermore, we integrate large-scale
+vision-language models into the LL-ICM framework to generate more universal and
+distortion-robust feature embeddings for LL vision tasks. Therefore, one LL-ICM
+codec can generalize to multiple tasks. We establish a solid benchmark to
+evaluate LL-ICM, which includes extensive objective experiments by using both
+full and no-reference image quality assessments. Experimental results show that
+LL-ICM can achieve 22.65% BD-rate reductions over the state-of-the-art methods.",http://arxiv.org/pdf/2412.03841v1,,False
+The broader spectrum of in-context learning,05/12/2024,"Andrew Kyle Lampinen, Stephanie C. Y. Chan, Aaditya K. Singh, Murray Shanahan","The ability of language models to learn a task from a few examples in context
+has generated substantial interest. Here, we provide a perspective that
+situates this type of supervised few-shot learning within a much broader
+spectrum of meta-learned in-context learning. Indeed, we suggest that any
+distribution of sequences in which context non-trivially decreases loss on
+subsequent predictions can be interpreted as eliciting a kind of in-context
+learning. We suggest that this perspective helps to unify the broad set of
+in-context abilities that language models exhibit $\unicode{x2014}$ such as
+adapting to tasks from instructions or role play, or extrapolating time series.
+This perspective also sheds light on potential roots of in-context learning in
+lower-level processing of linguistic dependencies (e.g. coreference or parallel
+structures). Finally, taking this perspective highlights the importance of
+generalization, which we suggest can be studied along several dimensions: not
+only the ability to learn something novel, but also flexibility in learning
+from different presentations, and in applying what is learned. We discuss
+broader connections to past literature in meta-learning and goal-conditioned
+agents, and other perspectives on learning and adaptation. We close by
+suggesting that research on in-context learning should consider this broader
+spectrum of in-context capabilities and types of generalization.",http://arxiv.org/pdf/2412.03782v1,,False

@@ -1,0 +1,338 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Stag-1: Towards Realistic 4D Driving Simulation with Video Generation Model,06/12/2024,"Lening Wang, Wenzhao Zheng, Dalong Du, Yunpeng Zhang, Yilong Ren, Han Jiang, Zhiyong Cui, Haiyang Yu, Jie Zhou, Jiwen Lu, Shanghang Zhang","4D driving simulation is essential for developing realistic autonomous
+driving simulators. Despite advancements in existing methods for generating
+driving scenes, significant challenges remain in view transformation and
+spatial-temporal dynamic modeling. To address these limitations, we propose a
+Spatial-Temporal simulAtion for drivinG (Stag-1) model to reconstruct
+real-world scenes and design a controllable generative network to achieve 4D
+simulation. Stag-1 constructs continuous 4D point cloud scenes using
+surround-view data from autonomous vehicles. It decouples spatial-temporal
+relationships and produces coherent keyframe videos. Additionally, Stag-1
+leverages video generation models to obtain photo-realistic and controllable 4D
+driving simulation videos from any perspective. To expand the range of view
+generation, we train vehicle motion videos based on decomposed camera poses,
+enhancing modeling capabilities for distant scenes. Furthermore, we reconstruct
+vehicle camera trajectories to integrate 3D points across consecutive views,
+enabling comprehensive scene understanding along the temporal dimension.
+Following extensive multi-level scene training, Stag-1 can simulate from any
+desired viewpoint and achieve a deep understanding of scene evolution under
+static spatial-temporal conditions. Compared to existing methods, our approach
+shows promising performance in multi-view scene consistency, background
+coherence, and accuracy, and contributes to the ongoing advancements in
+realistic autonomous driving simulation. Code: https://github.com/wzzheng/Stag.",http://arxiv.org/pdf/2412.05280v1,,False
+Extrapolated Urban View Synthesis Benchmark,06/12/2024,"Xiangyu Han, Zhen Jia, Boyi Li, Yan Wang, Boris Ivanovic, Yurong You, Lingjie Liu, Yue Wang, Marco Pavone, Chen Feng, Yiming Li","Photorealistic simulators are essential for the training and evaluation of
+vision-centric autonomous vehicles (AVs). At their core is Novel View Synthesis
+(NVS), a crucial capability that generates diverse unseen viewpoints to
+accommodate the broad and continuous pose distribution of AVs. Recent advances
+in radiance fields, such as 3D Gaussian Splatting, achieve photorealistic
+rendering at real-time speeds and have been widely used in modeling large-scale
+driving scenes. However, their performance is commonly evaluated using an
+interpolated setup with highly correlated training and test views. In contrast,
+extrapolation, where test views largely deviate from training views, remains
+underexplored, limiting progress in generalizable simulation technology. To
+address this gap, we leverage publicly available AV datasets with multiple
+traversals, multiple vehicles, and multiple cameras to build the first
+Extrapolated Urban View Synthesis (EUVS) benchmark. Meanwhile, we conduct
+quantitative and qualitative evaluations of state-of-the-art Gaussian Splatting
+methods across different difficulty levels. Our results show that Gaussian
+Splatting is prone to overfitting to training views. Besides, incorporating
+diffusion priors and improving geometry cannot fundamentally improve NVS under
+large view changes, highlighting the need for more robust approaches and
+large-scale training. We have released our data to help advance self-driving
+and urban robotics simulation technology.",http://arxiv.org/pdf/2412.05256v1,,False
+Enhancing Foundation Models for Time Series Forecasting via Wavelet-based Tokenization,06/12/2024,"Luca Masserano, Abdul Fatir Ansari, Boran Han, Xiyuan Zhang, Christos Faloutsos, Michael W. Mahoney, Andrew Gordon Wilson, Youngsuk Park, Syama Rangapuram, Danielle C. Maddix, Yuyang Wang","How to best develop foundational models for time series forecasting remains
+an important open question. Tokenization is a crucial consideration in this
+effort: what is an effective discrete vocabulary for a real-valued sequential
+input? To address this question, we develop WaveToken, a wavelet-based
+tokenizer that allows models to learn complex representations directly in the
+space of time-localized frequencies. Our method first scales and decomposes the
+input time series, then thresholds and quantizes the wavelet coefficients, and
+finally pre-trains an autoregressive model to forecast coefficients for the
+forecast horizon. By decomposing coarse and fine structures in the inputs,
+wavelets provide an eloquent and compact language for time series forecasting
+that simplifies learning. Empirical results on a comprehensive benchmark,
+including 42 datasets for both in-domain and zero-shot settings, show that
+WaveToken: i) provides better accuracy than recently proposed foundation models
+for forecasting while using a much smaller vocabulary (1024 tokens), and
+performs on par or better than modern deep learning models trained specifically
+on each dataset; and ii) exhibits superior generalization capabilities,
+achieving the best average rank across all datasets for three complementary
+metrics. In addition, we show that our method can easily capture complex
+temporal patterns of practical relevance that are challenging for other recent
+pre-trained models, including trends, sparse spikes, and non-stationary time
+series with varying frequencies evolving over time.",http://arxiv.org/pdf/2412.05244v1,,False
+Transformers Meet Relational Databases,06/12/2024,"Jakub Peleška, Gustav Šír","Transformer models have continuously expanded into all machine learning
+domains convertible to the underlying sequence-to-sequence representation,
+including tabular data. However, while ubiquitous, this representation
+restricts their extension to the more general case of relational databases. In
+this paper, we introduce a modular neural message-passing scheme that closely
+adheres to the formal relational model, enabling direct end-to-end learning of
+tabular Transformers from database storage systems. We address the challenges
+of appropriate learning data representation and loading, which are critical in
+the database setting, and compare our approach against a number of
+representative models from various related fields across a significantly wide
+range of datasets. Our results demonstrate a superior performance of this newly
+proposed class of neural architectures.",http://arxiv.org/pdf/2412.05218v1,,False
+SurgBox: Agent-Driven Operating Room Sandbox with Surgery Copilot,06/12/2024,"Jinlin Wu, Xusheng Liang, Xuexue Bai, Zhen Chen","Surgical interventions, particularly in neurology, represent complex and
+high-stakes scenarios that impose substantial cognitive burdens on surgical
+teams. Although deliberate education and practice can enhance cognitive
+capabilities, surgical training opportunities remain limited due to patient
+safety concerns. To address these cognitive challenges in surgical training and
+operation, we propose SurgBox, an agent-driven sandbox framework to
+systematically enhance the cognitive capabilities of surgeons in immersive
+surgical simulations. Specifically, our SurgBox leverages large language models
+(LLMs) with tailored Retrieval-Augmented Generation (RAG) to authentically
+replicate various surgical roles, enabling realistic training environments for
+deliberate practice. In particular, we devise Surgery Copilot, an AI-driven
+assistant to actively coordinate the surgical information stream and support
+clinical decision-making, thereby diminishing the cognitive workload of
+surgical teams during surgery. By incorporating a novel Long-Short Memory
+mechanism, our Surgery Copilot can effectively balance immediate procedural
+assistance with comprehensive surgical knowledge. Extensive experiments using
+real neurosurgical procedure records validate our SurgBox framework in both
+enhancing surgical cognitive capabilities and supporting clinical
+decision-making. By providing an integrated solution for training and
+operational support to address cognitive challenges, our SurgBox framework
+advances surgical education and practice, potentially transforming surgical
+outcomes and healthcare quality. The code is available at
+https://github.com/franciszchen/SurgBox.",http://arxiv.org/pdf/2412.05187v1,,False
+Towards Flexible 3D Perception: Object-Centric Occupancy Completion Augments 3D Object Detection,06/12/2024,"Chaoda Zheng, Feng Wang, Naiyan Wang, Shuguang Cui, Zhen Li","While 3D object bounding box (bbox) representation has been widely used in
+autonomous driving perception, it lacks the ability to capture the precise
+details of an object's intrinsic geometry. Recently, occupancy has emerged as a
+promising alternative for 3D scene perception. However, constructing a
+high-resolution occupancy map remains infeasible for large scenes due to
+computational constraints. Recognizing that foreground objects only occupy a
+small portion of the scene, we introduce object-centric occupancy as a
+supplement to object bboxes. This representation not only provides intricate
+details for detected objects but also enables higher voxel resolution in
+practical applications. We advance the development of object-centric occupancy
+perception from both data and algorithm perspectives. On the data side, we
+construct the first object-centric occupancy dataset from scratch using an
+automated pipeline. From the algorithmic standpoint, we introduce a novel
+object-centric occupancy completion network equipped with an implicit shape
+decoder that manages dynamic-size occupancy generation. This network accurately
+predicts the complete object-centric occupancy volume for inaccurate object
+proposals by leveraging temporal information from long sequences. Our method
+demonstrates robust performance in completing object shapes under noisy
+detection and tracking conditions. Additionally, we show that our occupancy
+features significantly enhance the detection results of state-of-the-art 3D
+object detectors, especially for incomplete or distant objects in the Waymo
+Open Dataset.",http://arxiv.org/pdf/2412.05154v1,,False
+A Practical Examination of AI-Generated Text Detectors for Large Language Models,06/12/2024,"Brian Tufts, Xuandong Zhao, Lei Li","The proliferation of large language models has raised growing concerns about
+their misuse, particularly in cases where AI-generated text is falsely
+attributed to human authors. Machine-generated content detectors claim to
+effectively identify such text under various conditions and from any language
+model. This paper critically evaluates these claims by assessing several
+popular detectors (RADAR, Wild, T5Sentinel, Fast-DetectGPT, GPTID, LogRank,
+Binoculars) on a range of domains, datasets, and models that these detectors
+have not previously encountered. We employ various prompting strategies to
+simulate adversarial attacks, demonstrating that even moderate efforts can
+significantly evade detection. We emphasize the importance of the true positive
+rate at a specific false positive rate (TPR@FPR) metric and demonstrate that
+these detectors perform poorly in certain settings, with TPR@.01 as low as 0\%.
+Our findings suggest that both trained and zero-shot detectors struggle to
+maintain high sensitivity while achieving a reasonable true positive rate.",http://arxiv.org/pdf/2412.05139v1,,False
+Putting the Iterative Training of Decision Trees to the Test on a Real-World Robotic Task,06/12/2024,"Raphael C. Engelhardt, Marcel J. Meinen, Moritz Lange, Laurenz Wiskott, Wolfgang Konen","In previous research, we developed methods to train decision trees (DT) as
+agents for reinforcement learning tasks, based on deep reinforcement learning
+(DRL) networks. The samples from which the DTs are built, use the environment's
+state as features and the corresponding action as label. To solve the
+nontrivial task of selecting samples, which on one hand reflect the DRL agent's
+capabilities of choosing the right action but on the other hand also cover
+enough state space to generalize well, we developed an algorithm to iteratively
+train DTs.
+  In this short paper, we apply this algorithm to a real-world implementation
+of a robotic task for the first time. Real-world tasks pose additional
+challenges compared to simulations, such as noise and delays. The task consists
+of a physical pendulum attached to a cart, which moves on a linear track. By
+movements to the left and to the right, the pendulum is to be swung in the
+upright position and balanced in the unstable equilibrium. Our results
+demonstrate the applicability of the algorithm to real-world tasks by
+generating a DT whose performance matches the performance of the DRL agent,
+while consisting of fewer parameters. This research could be a starting point
+for distilling DTs from DRL agents to obtain transparent, lightweight models
+for real-world reinforcement learning tasks.",http://arxiv.org/pdf/2412.04974v1,,False
+Maximizing Alignment with Minimal Feedback: Efficiently Learning Rewards for Visuomotor Robot Policy Alignment,06/12/2024,"Ran Tian, Yilin Wu, Chenfeng Xu, Masayoshi Tomizuka, Jitendra Malik, Andrea Bajcsy","Visuomotor robot policies, increasingly pre-trained on large-scale datasets,
+promise significant advancements across robotics domains. However, aligning
+these policies with end-user preferences remains a challenge, particularly when
+the preferences are hard to specify. While reinforcement learning from human
+feedback (RLHF) has become the predominant mechanism for alignment in
+non-embodied domains like large language models, it has not seen the same
+success in aligning visuomotor policies due to the prohibitive amount of human
+feedback required to learn visual reward functions. To address this limitation,
+we propose Representation-Aligned Preference-based Learning (RAPL), an
+observation-only method for learning visual rewards from significantly less
+human preference feedback. Unlike traditional RLHF, RAPL focuses human feedback
+on fine-tuning pre-trained vision encoders to align with the end-user's visual
+representation and then constructs a dense visual reward via feature matching
+in this aligned representation space. We first validate RAPL through simulation
+experiments in the X-Magical benchmark and Franka Panda robotic manipulation,
+demonstrating that it can learn rewards aligned with human preferences, more
+efficiently uses preference data, and generalizes across robot embodiments.
+Finally, our hardware experiments align pre-trained Diffusion Policies for
+three object manipulation tasks. We find that RAPL can fine-tune these policies
+with 5x less real human preference data, taking the first step towards
+minimizing human feedback while maximizing visuomotor robot policy alignment.",http://arxiv.org/pdf/2412.04835v1,,False
+Wavelet Diffusion Neural Operator,06/12/2024,"Peiyan Hu, Rui Wang, Xiang Zheng, Tao Zhang, Haodong Feng, Ruiqi Feng, Long Wei, Yue Wang, Zhi-Ming Ma, Tailin Wu","Simulating and controlling physical systems described by partial differential
+equations (PDEs) are crucial tasks across science and engineering. Recently,
+diffusion generative models have emerged as a competitive class of methods for
+these tasks due to their ability to capture long-term dependencies and model
+high-dimensional states. However, diffusion models typically struggle with
+handling system states with abrupt changes and generalizing to higher
+resolutions. In this work, we propose Wavelet Diffusion Neural Operator (WDNO),
+a novel PDE simulation and control framework that enhances the handling of
+these complexities. WDNO comprises two key innovations. Firstly, WDNO performs
+diffusion-based generative modeling in the wavelet domain for the entire
+trajectory to handle abrupt changes and long-term dependencies effectively.
+Secondly, to address the issue of poor generalization across different
+resolutions, which is one of the fundamental tasks in modeling physical
+systems, we introduce multi-resolution training. We validate WDNO on five
+physical systems, including 1D advection equation, three challenging physical
+systems with abrupt changes (1D Burgers' equation, 1D compressible
+Navier-Stokes equation and 2D incompressible fluid), and a real-world dataset
+ERA5, which demonstrates superior performance on both simulation and control
+tasks over state-of-the-art methods, with significant improvements in long-term
+and detail prediction accuracy. Remarkably, in the challenging context of the
+2D high-dimensional and indirect control task aimed at reducing smoke leakage,
+WDNO reduces the leakage by 33.2% compared to the second-best baseline.",http://arxiv.org/pdf/2412.04833v1,,False
+Rethinking Time Series Forecasting with LLMs via Nearest Neighbor Contrastive Learning,06/12/2024,"Jayanie Bogahawatte, Sachith Seneviratne, Maneesha Perera, Saman Halgamuge","Adapting Large Language Models (LLMs) that are extensively trained on
+abundant text data, and customizing the input prompt to enable time series
+forecasting has received considerable attention. While recent work has shown
+great potential for adapting the learned prior of LLMs, the formulation of the
+prompt to finetune LLMs remains challenging as prompt should be aligned with
+time series data. Additionally, current approaches do not effectively leverage
+word token embeddings which embody the rich representation space learned by
+LLMs. This emphasizes the need for a robust approach to formulate the prompt
+which utilizes the word token embeddings while effectively representing the
+characteristics of the time series. To address these challenges, we propose
+NNCL-TLLM: Nearest Neighbor Contrastive Learning for Time series forecasting
+via LLMs. First, we generate time series compatible text prototypes such that
+each text prototype represents both word token embeddings in its neighborhood
+and time series characteristics via end-to-end finetuning. Next, we draw
+inspiration from Nearest Neighbor Contrastive Learning to formulate the prompt
+while obtaining the top-$k$ nearest neighbor time series compatible text
+prototypes. We then fine-tune the layer normalization and positional embeddings
+of the LLM, keeping the other layers intact, reducing the trainable parameters
+and decreasing the computational cost. Our comprehensive experiments
+demonstrate that NNCL-TLLM outperforms in few-shot forecasting while achieving
+competitive or superior performance over the state-of-the-art methods in
+long-term and short-term forecasting tasks.",http://arxiv.org/pdf/2412.04806v1,,False
+Estimating the treatment effect over time under general interference through deep learner integrated TMLE,06/12/2024,"Suhan Guo, Furao Shen, Ni Li","Understanding the effects of quarantine policies in populations with
+underlying social networks is crucial for public health, yet most causal
+inference methods fail here due to their assumption of independent individuals.
+We introduce DeepNetTMLE, a deep-learning-enhanced Targeted Maximum Likelihood
+Estimation (TMLE) method designed to estimate time-sensitive treatment effects
+in observational data. DeepNetTMLE mitigates bias from time-varying confounders
+under general interference by incorporating a temporal module and domain
+adversarial training to build intervention-invariant representations. This
+process removes associations between current treatments and historical
+variables, while the targeting step maintains the bias-variance trade-off,
+enhancing the reliability of counterfactual predictions. Using simulations of a
+``Susceptible-Infected-Recovered'' model with varied quarantine coverages, we
+show that DeepNetTMLE achieves lower bias and more precise confidence intervals
+in counterfactual estimates, enabling optimal quarantine recommendations within
+budget constraints, surpassing state-of-the-art methods.",http://arxiv.org/pdf/2412.04799v1,,False
+DPGIIL: Dirichlet Process-Deep Generative Model-Integrated Incremental Learning for Clustering in Transmissibility-based Online Structural Anomaly Detection,06/12/2024,"Lin-Feng Mei, Wang-Ji Yan","Clustering based on vibration responses, such as transmissibility functions
+(TFs), is promising in structural anomaly detection, but most existing
+approaches struggle with determining the optimal cluster number and handling
+high-dimensional streaming data, while their shallow structures also make them
+sensitive to manually-engineered feature quality. To bridge this gap, this work
+proposes the Dirichlet process-deep generative model-integrated incremental
+learning (DPGIIL) for clustering by combining the advantages of deep generative
+models (DGMs) in representation learning and the Dirichlet process mixture
+model (DPMM) in identifying distinct patterns in observed data. By introducing
+a DPMM prior into the latent space of DGMs, DPGIIL automatically captures
+dissimilarities in extracted latent representations, enabling both generative
+modeling and clustering. Within the context of variational Bayesian inference,
+a lower bound on the log marginal likelihood of DPGIIL, tighter than the
+evidence lower bound given sufficient training data, is derived analytically,
+which enables the joint optimization of DGM and DPMM parameters, thereby
+allowing the DPMM to regularize the DGM's feature extraction process.
+Additionally, a greedy split-merge scheme-based coordinate ascent variational
+inference method is devised to accelerate the optimization. The summary
+statistics of the DPMM, along with the network parameters, are used to retain
+information about previous data for incremental learning. Notably, this study
+uses variational autoencoder (VAE) within DPGIIL as an illustrative example,
+while this framework is adaptable to other DGMs. Two case studies show that the
+proposed method outperforms some state-of-the-art approaches in structural
+anomaly detection and clustering, while also dynamically generating new
+clusters to indicate the emergence of new structural conditions for online
+monitoring.",http://arxiv.org/pdf/2412.04781v1,,False
+REGENT: A Retrieval-Augmented Generalist Agent That Can Act In-Context in New Environments,06/12/2024,"Kaustubh Sridhar, Souradeep Dutta, Dinesh Jayaraman, Insup Lee","Building generalist agents that can rapidly adapt to new environments is a
+key challenge for deploying AI in the digital and real worlds. Is scaling
+current agent architectures the most effective way to build generalist agents?
+We propose a novel approach to pre-train relatively small policies on
+relatively small datasets and adapt them to unseen environments via in-context
+learning, without any finetuning. Our key idea is that retrieval offers a
+powerful bias for fast adaptation. Indeed, we demonstrate that even a simple
+retrieval-based 1-nearest neighbor agent offers a surprisingly strong baseline
+for today's state-of-the-art generalist agents. From this starting point, we
+construct a semi-parametric agent, REGENT, that trains a transformer-based
+policy on sequences of queries and retrieved neighbors. REGENT can generalize
+to unseen robotics and game-playing environments via retrieval augmentation and
+in-context learning, achieving this with up to 3x fewer parameters and up to an
+order-of-magnitude fewer pre-training datapoints, significantly outperforming
+today's state-of-the-art generalist agents. Website:
+https://kaustubhsridhar.github.io/regent-research",http://arxiv.org/pdf/2412.04759v1,,False
+GABAR: Graph Attention-Based Action Ranking for Relational Policy Learning,06/12/2024,"Rajesh Mangannavar, Stefan Lee, Alan Fern, Prasad Tadepalli","We propose a novel approach to learn relational policies for classical
+planning based on learning to rank actions. We introduce a new graph
+representation that explicitly captures action information and propose a Graph
+Neural Network architecture augmented with Gated Recurrent Units (GRUs) to
+learn action rankings. Our model is trained on small problem instances and
+generalizes to significantly larger instances where traditional planning
+becomes computationally expensive. Experimental results across standard
+planning benchmarks demonstrate that our action-ranking approach achieves
+generalization to significantly larger problems than those used in training.",http://arxiv.org/pdf/2412.04752v1,,False
+Question Answering for Decisionmaking in Green Building Design: A Multimodal Data Reasoning Method Driven by Large Language Models,06/12/2024,"Yihui Li, Xiaoyue Yan, Hao Zhou, Borong Lin","In recent years, the critical role of green buildings in addressing energy
+consumption and environmental issues has become widely acknowledged. Research
+indicates that over 40% of potential energy savings can be achieved during the
+early design stage. Therefore, decision-making in green building design (DGBD),
+which is based on modeling and performance simulation, is crucial for reducing
+building energy costs. However, the field of green building encompasses a broad
+range of specialized knowledge, which involves significant learning costs and
+results in low decision-making efficiency. Many studies have already applied
+artificial intelligence (AI) methods to this field. Based on previous research,
+this study innovatively integrates large language models with DGBD, creating
+GreenQA, a question answering framework for multimodal data reasoning.
+Utilizing Retrieval Augmented Generation, Chain of Thought, and Function Call
+methods, GreenQA enables multimodal question answering, including weather data
+analysis and visualization, retrieval of green building cases, and knowledge
+query. Additionally, this study conducted a user survey using the GreenQA web
+platform. The results showed that 96% of users believed the platform helped
+improve design efficiency. This study not only effectively supports DGBD but
+also provides inspiration for AI-assisted design.",http://arxiv.org/pdf/2412.04741v1,,False
+Generative Humanization for Therapeutic Antibodies,06/12/2024,"Cade Gordon, Aniruddh Raghu, Hunter Elliott, Peyton Greenside","Antibody therapies have been employed to address some of today's most
+challenging diseases, but must meet many criteria during drug development
+before reaching a patient. Humanization is a sequence optimization strategy
+that addresses one critical risk called immunogenicity - a patient's immune
+response to the drug - by making an antibody more ""human-like"" in the absence
+of a predictive lab-based test for immunogenicity. However, existing
+humanization strategies generally yield very few humanized candidates, which
+may have degraded biophysical properties or decreased drug efficacy. Here, we
+re-frame humanization as a conditional generative modeling task, where
+humanizing mutations are sampled from a language model trained on human
+antibody data. We describe a sampling process that incorporates models of
+therapeutic attributes, such as antigen binding affinity, to obtain candidate
+sequences that have both reduced immunogenicity risk and maintained or improved
+therapeutic properties, allowing this algorithm to be readily embedded into an
+iterative antibody optimization campaign. We demonstrate in silico and in lab
+validation that in real therapeutic programs our generative humanization method
+produces diverse sets of antibodies that are both (1) highly-human and (2) have
+favorable therapeutic properties, such as improved binding to target antigens.",http://arxiv.org/pdf/2412.04737v1,,False
+Zephyr quantum-assisted hierarchical Calo4pQVAE for particle-calorimeter interactions,06/12/2024,"Ian Lu, Hao Jia, Sebastian Gonzalez, Deniz Sogutlu, J. Quetzalcoatl Toledo-Marin, Sehmimul Hoque, Abhishek Abhishek, Colin Gay, Roger Melko, Eric Paquet, Geoffrey Fox, Maximilian Swiatlowski, Wojciech Fedorko","With the approach of the High Luminosity Large Hadron Collider (HL-LHC) era
+set to begin particle collisions by the end of this decade, it is evident that
+the computational demands of traditional collision simulation methods are
+becoming increasingly unsustainable. Existing approaches, which rely heavily on
+first-principles Monte Carlo simulations for modeling event showers in
+calorimeters, are projected to require millions of CPU-years annually -- far
+exceeding current computational capacities. This bottleneck presents an
+exciting opportunity for advancements in computational physics by integrating
+deep generative models with quantum simulations. We propose a quantum-assisted
+hierarchical deep generative surrogate founded on a variational autoencoder
+(VAE) in combination with an energy conditioned restricted Boltzmann machine
+(RBM) embedded in the model's latent space as a prior. By mapping the topology
+of D-Wave's Zephyr quantum annealer (QA) into the nodes and couplings of a
+4-partite RBM, we leverage quantum simulation to accelerate our shower
+generation times significantly. To evaluate our framework, we use Dataset 2 of
+the CaloChallenge 2022. Through the integration of classical computation and
+quantum simulation, this hybrid framework paves way for utilizing large-scale
+quantum simulations as priors in deep generative models.",http://arxiv.org/pdf/2412.04677v1,,False

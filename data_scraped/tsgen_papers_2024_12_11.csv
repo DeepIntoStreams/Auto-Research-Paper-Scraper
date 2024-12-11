@@ -1,0 +1,228 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Bayesian Optimization of Antibodies Informed by a Generative Model of Evolving Sequences,10/12/2024,"Alan Nawzad Amin, Nate Gruver, Yilun Kuang, Lily Li, Hunter Elliott, Calvin McCarter, Aniruddh Raghu, Peyton Greenside, Andrew Gordon Wilson","To build effective therapeutics, biologists iteratively mutate antibody
+sequences to improve binding and stability. Proposed mutations can be informed
+by previous measurements or by learning from large antibody databases to
+predict only typical antibodies. Unfortunately, the space of typical antibodies
+is enormous to search, and experiments often fail to find suitable antibodies
+on a budget. We introduce Clone-informed Bayesian Optimization (CloneBO), a
+Bayesian optimization procedure that efficiently optimizes antibodies in the
+lab by teaching a generative model how our immune system optimizes antibodies.
+Our immune system makes antibodies by iteratively evolving specific portions of
+their sequences to bind their target strongly and stably, resulting in a set of
+related, evolving sequences known as a clonal family. We train a large language
+model, CloneLM, on hundreds of thousands of clonal families and use it to
+design sequences with mutations that are most likely to optimize an antibody
+within the human immune system. We propose to guide our designs to fit previous
+measurements with a twisted sequential Monte Carlo procedure. We show that
+CloneBO optimizes antibodies substantially more efficiently than previous
+methods in realistic in silico experiments and designs stronger and more stable
+binders in in vitro wet lab experiments.",http://arxiv.org/pdf/2412.07763v1,,False
+FlashRNN: Optimizing Traditional RNNs on Modern Hardware,10/12/2024,"Korbinian Pöppel, Maximilian Beck, Sepp Hochreiter","While Transformers and other sequence-parallelizable neural network
+architectures seem like the current state of the art in sequence modeling, they
+specifically lack state-tracking capabilities. These are important for
+time-series tasks and logical reasoning. Traditional RNNs like LSTMs and GRUs,
+as well as modern variants like sLSTM do have these capabilities at the cost of
+strictly sequential processing. While this is often seen as a strong
+limitation, we show how fast these networks can get with our
+hardware-optimization FlashRNN in Triton and CUDA, optimizing kernels to the
+register level on modern GPUs. We extend traditional RNNs with a
+parallelization variant that processes multiple RNNs of smaller hidden state in
+parallel, similar to the head-wise processing in Transformers. To enable
+flexibility on different GPU variants, we introduce a new optimization
+framework for hardware-internal cache sizes, memory and compute handling. It
+models the hardware in a setting using polyhedral-like constraints, including
+the notion of divisibility. This speeds up the solution process in our
+ConstrINT library for general integer constraint satisfaction problems (integer
+CSPs). We show that our kernels can achieve 50x speed-ups over a vanilla
+PyTorch implementation and allow 40x larger hidden sizes compared to our Triton
+implementation. Our open-source kernels and the optimization library are
+released here to boost research in the direction of state-tracking enabled RNNs
+and sequence modeling: \url{https://github.com/NX-AI/flashrnn}",http://arxiv.org/pdf/2412.07752v1,,False
+SimVS: Simulating World Inconsistencies for Robust View Synthesis,10/12/2024,"Alex Trevithick, Roni Paiss, Philipp Henzler, Dor Verbin, Rundi Wu, Hadi Alzayer, Ruiqi Gao, Ben Poole, Jonathan T. Barron, Aleksander Holynski, Ravi Ramamoorthi, Pratul P. Srinivasan","Novel-view synthesis techniques achieve impressive results for static scenes
+but struggle when faced with the inconsistencies inherent to casual capture
+settings: varying illumination, scene motion, and other unintended effects that
+are difficult to model explicitly. We present an approach for leveraging
+generative video models to simulate the inconsistencies in the world that can
+occur during capture. We use this process, along with existing multi-view
+datasets, to create synthetic data for training a multi-view harmonization
+network that is able to reconcile inconsistent observations into a consistent
+3D scene. We demonstrate that our world-simulation strategy significantly
+outperforms traditional augmentation methods in handling real-world scene
+variations, thereby enabling highly accurate static 3D reconstructions in the
+presence of a variety of challenging inconsistencies. Project page:
+https://alextrevithick.github.io/simvs",http://arxiv.org/pdf/2412.07696v1,,False
+Bayesian Data Augmentation and Training for Perception DNN in Autonomous Aerial Vehicles,10/12/2024,"Ashik E Rasul, Humaira Tasnim, Hyung-Jin Yoon, Ayoosh Bansal, Duo Wang, Naira Hovakimyan, Lui Sha, Petros Voulgaris","Learning-based solutions have enabled incredible capabilities for autonomous
+systems. Autonomous vehicles, both aerial and ground, rely on DNN for various
+integral tasks, including perception. The efficacy of supervised learning
+solutions hinges on the quality of the training data. Discrepancies between
+training data and operating conditions result in faults that can lead to
+catastrophic incidents. However, collecting vast amounts of context-sensitive
+data, with broad coverage of possible operating environments, is prohibitively
+difficult. Synthetic data generation techniques for DNN allow for the easy
+exploration of diverse scenarios. However, synthetic data generation solutions
+for aerial vehicles are still lacking.
+  This work presents a data augmentation framework for aerial vehicle's
+perception training, leveraging photorealistic simulation integrated with
+high-fidelity vehicle dynamics. Safe landing is a crucial challenge in the
+development of autonomous air taxis, therefore, landing maneuver is chosen as
+the focus of this work. With repeated simulations of landing in varying
+scenarios we assess the landing performance of the VTOL type UAV and gather
+valuable data. The landing performance is used as the objective function to
+optimize the DNN through retraining. Given the high computational cost of DNN
+retraining, we incorporated Bayesian Optimization in our framework that
+systematically explores the data augmentation parameter space to retrain the
+best-performing models. The framework allowed us to identify high-performing
+data augmentation parameters that are consistently effective across different
+landing scenarios. Utilizing the capabilities of this data augmentation
+framework, we obtained a robust perception model. The model consistently
+improved the perception-based landing success rate by at least 20% under
+different lighting and weather conditions.",http://arxiv.org/pdf/2412.07655v1,,False
+Deep Partially Linear Transformation Model for Right-Censored Survival Data,10/12/2024,"Junkai Yin, Yue Zhang, Zhangsheng Yu","Although the Cox proportional hazards model is well established and
+extensively used in the analysis of survival data, the proportional hazards
+(PH) assumption may not always hold in practical scenarios. The semiparametric
+transformation model extends the conventional Cox model and also includes many
+other survival models as special cases. This paper introduces a deep partially
+linear transformation model (DPLTM) as a general and flexible framework for
+estimation, inference and prediction. The proposed method is capable of
+avoiding the curse of dimensionality while still retaining the interpretability
+of some covariates of interest. We derive the overall convergence rate of the
+maximum likelihood estimators, the minimax lower bound of the nonparametric
+deep neural network (DNN) estimator, the asymptotic normality and the
+semiparametric efficiency of the parametric estimator. Comprehensive simulation
+studies demonstrate the impressive performance of the proposed estimation
+procedure in terms of both estimation accuracy and prediction power, which is
+further validated by an application to a real-world dataset.",http://arxiv.org/pdf/2412.07611v1,,False
+Ontology-driven Prompt Tuning for LLM-based Task and Motion Planning,10/12/2024,"Muhayy Ud Din, Jan Rosell, Waseem Akram, Isiah Zaplana, Maximo A Roa, Lakmal Seneviratne, Irfan Hussain","Performing complex manipulation tasks in dynamic environments requires
+efficient Task and Motion Planning (TAMP) approaches, which combine high-level
+symbolic plan with low-level motion planning. Advances in Large Language Models
+(LLMs), such as GPT-4, are transforming task planning by offering natural
+language as an intuitive and flexible way to describe tasks, generate symbolic
+plans, and reason. However, the effectiveness of LLM-based TAMP approaches is
+limited due to static and template-based prompting, which struggles in adapting
+to dynamic environments and complex task contexts. To address these
+limitations, this work proposes a novel ontology-driven prompt-tuning framework
+that employs knowledge-based reasoning to refine and expand user prompts with
+task contextual reasoning and knowledge-based environment state descriptions.
+Integrating domain-specific knowledge into the prompt ensures semantically
+accurate and context-aware task plans. The proposed framework demonstrates its
+effectiveness by resolving semantic errors in symbolic plan generation, such as
+maintaining logical temporal goal ordering in scenarios involving hierarchical
+object placement. The proposed framework is validated through both simulation
+and real-world scenarios, demonstrating significant improvements over the
+baseline approach in terms of adaptability to dynamic environments, and the
+generation of semantically correct task plans.",http://arxiv.org/pdf/2412.07493v1,,False
+Causal World Representation in the GPT Model,10/12/2024,"Raanan Y. Rohekar, Yaniv Gurwicz, Sungduk Yu, Vasudev Lal","Are generative pre-trained transformer (GPT) models only trained to predict
+the next token, or do they implicitly learn a world model from which a sequence
+is generated one token at a time? We examine this question by deriving a causal
+interpretation of the attention mechanism in GPT, and suggesting a causal world
+model that arises from this interpretation. Furthermore, we propose that
+GPT-models, at inference time, can be utilized for zero-shot causal structure
+learning for in-distribution sequences. Empirical evaluation is conducted in a
+controlled synthetic environment using the setup and rules of the Othello board
+game. A GPT, pre-trained on real-world games played with the intention of
+winning, is tested on synthetic data that only adheres to the game rules. We
+find that the GPT model tends to generate next moves that adhere to the game
+rules for sequences for which the attention mechanism encodes a causal
+structure with high confidence. In general, in cases for which the GPT model
+generates moves that do not adhere to the game rules, it also fails to capture
+any causal structure.",http://arxiv.org/pdf/2412.07446v1,,False
+Gearing Gaussian process modeling and sequential design towards stochastic simulators,10/12/2024,"Mickael Binois, Arindam Fadikar, Abby Stevens","This chapter presents specific aspects of Gaussian process modeling in the
+presence of complex noise. Starting from the standard homoscedastic model,
+various generalizations from the literature are presented: input varying noise
+variance, non-Gaussian noise, or quantile modeling. These approaches are
+compared in terms of goal, data availability and inference procedure. A
+distinction is made between methods depending on their handling of repeated
+observations at the same location, also called replication. The chapter
+concludes with the corresponding adaptations of the sequential design
+procedures. These are illustrated in an example from epidemiology.",http://arxiv.org/pdf/2412.07306v1,,False
+Automatic Doubly Robust Forests,10/12/2024,"Zhaomeng Chen, Junting Duan, Victor Chernozhukov, Vasilis Syrgkanis","This paper proposes the automatic Doubly Robust Random Forest (DRRF)
+algorithm for estimating the conditional expectation of a moment functional in
+the presence of high-dimensional nuisance functions. DRRF combines the
+automatic debiasing framework using the Riesz representer (Chernozhukov et al.,
+2022) with non-parametric, forest-based estimation methods for the conditional
+moment (Athey et al., 2019; Oprescu et al., 2019). In contrast to existing
+methods, DRRF does not require prior knowledge of the form of the debiasing
+term nor impose restrictive parametric or semi-parametric assumptions on the
+target quantity. Additionally, it is computationally efficient for making
+predictions at multiple query points and significantly reduces runtime compared
+to methods such as Orthogonal Random Forest (Oprescu et al., 2019). We
+establish the consistency and asymptotic normality results of DRRF estimator
+under general assumptions, allowing for the construction of valid confidence
+intervals. Through extensive simulations in heterogeneous treatment effect
+(HTE) estimation, we demonstrate the superior performance of DRRF over
+benchmark approaches in terms of estimation accuracy, robustness, and
+computational efficiency.",http://arxiv.org/pdf/2412.07184v1,,False
+Political Actor Agent: Simulating Legislative System for Roll Call Votes Prediction with Large Language Models,10/12/2024,"Hao Li, Ruoyuan Gong, Hao Jiang","Predicting roll call votes through modeling political actors has emerged as a
+focus in quantitative political science and computer science. Widely used
+embedding-based methods generate vectors for legislators from diverse data sets
+to predict legislative behaviors. However, these methods often contend with
+challenges such as the need for manually predefined features, reliance on
+extensive training data, and a lack of interpretability. Achieving more
+interpretable predictions under flexible conditions remains an unresolved
+issue. This paper introduces the Political Actor Agent (PAA), a novel
+agent-based framework that utilizes Large Language Models to overcome these
+limitations. By employing role-playing architectures and simulating legislative
+system, PAA provides a scalable and interpretable paradigm for predicting
+roll-call votes. Our approach not only enhances the accuracy of predictions but
+also offers multi-view, human-understandable decision reasoning, providing new
+insights into political actor behaviors. We conducted comprehensive experiments
+using voting records from the 117-118th U.S. House of Representatives,
+validating the superior performance and interpretability of PAA. This study not
+only demonstrates PAA's effectiveness but also its potential in political
+science research.",http://arxiv.org/pdf/2412.07144v1,,False
+A Review of Human Emotion Synthesis Based on Generative Technology,10/12/2024,"Fei Ma, Yukan Li, Yifan Xie, Ying He, Yi Zhang, Hongwei Ren, Zhou Liu, Wei Yao, Fuji Ren, Fei Richard Yu, Shiguang Ni","Human emotion synthesis is a crucial aspect of affective computing. It
+involves using computational methods to mimic and convey human emotions through
+various modalities, with the goal of enabling more natural and effective
+human-computer interactions. Recent advancements in generative models, such as
+Autoencoders, Generative Adversarial Networks, Diffusion Models, Large Language
+Models, and Sequence-to-Sequence Models, have significantly contributed to the
+development of this field. However, there is a notable lack of comprehensive
+reviews in this field. To address this problem, this paper aims to address this
+gap by providing a thorough and systematic overview of recent advancements in
+human emotion synthesis based on generative models. Specifically, this review
+will first present the review methodology, the emotion models involved, the
+mathematical principles of generative models, and the datasets used. Then, the
+review covers the application of different generative models to emotion
+synthesis based on a variety of modalities, including facial images, speech,
+and text. It also examines mainstream evaluation metrics. Additionally, the
+review presents some major findings and suggests future research directions,
+providing a comprehensive understanding of the role of generative technology in
+the nuanced domain of emotion synthesis.",http://arxiv.org/pdf/2412.07116v1,,False
+EvRepSL: Event-Stream Representation via Self-Supervised Learning for Event-Based Vision,10/12/2024,"Qiang Qu, Xiaoming Chen, Yuk Ying Chung, Yiran Shen","Event-stream representation is the first step for many computer vision tasks
+using event cameras. It converts the asynchronous event-streams into a
+formatted structure so that conventional machine learning models can be applied
+easily. However, most of the state-of-the-art event-stream representations are
+manually designed and the quality of these representations cannot be guaranteed
+due to the noisy nature of event-streams. In this paper, we introduce a
+data-driven approach aiming at enhancing the quality of event-stream
+representations. Our approach commences with the introduction of a new
+event-stream representation based on spatial-temporal statistics, denoted as
+EvRep. Subsequently, we theoretically derive the intrinsic relationship between
+asynchronous event-streams and synchronous video frames. Building upon this
+theoretical relationship, we train a representation generator, RepGen, in a
+self-supervised learning manner accepting EvRep as input. Finally, the
+event-streams are converted to high-quality representations, termed as EvRepSL,
+by going through the learned RepGen (without the need of fine-tuning or
+retraining). Our methodology is rigorously validated through extensive
+evaluations on a variety of mainstream event-based classification and optical
+flow datasets (captured with various types of event cameras). The experimental
+results highlight not only our approach's superior performance over existing
+event-stream representations but also its versatility, being agnostic to
+different event cameras and tasks.",http://arxiv.org/pdf/2412.07080v1,10.1109/TIP.2024.3497795,False
+Enhancing radioisotope identification in gamma spectra with transfer learning,10/12/2024,Peter Lalor,"Machine learning methods in gamma spectroscopy have the potential to provide
+accurate, real-time classification of unknown radioactive samples. However,
+obtaining sufficient experimental training data is often prohibitively
+expensive and time-consuming, and models trained solely on synthetic data can
+struggle to generalize to the unpredictable range of real-world operating
+scenarios. In this work, we pretrain a model using physically derived synthetic
+data and subsequently leverage transfer learning techniques to fine-tune the
+model for a specific target domain. This paradigm enables us to embed physical
+principles during the pretraining step, thus requiring less data from the
+target domain compared to classical machine learning methods. Results of this
+analysis indicate that fine-tuned models significantly outperform those trained
+exclusively on synthetic data or solely on target-domain data, particularly in
+the intermediate data regime (${\approx} 10^4$ training samples). This
+conclusion is consistent across four different machine learning architectures
+(MLP, CNN, Transformer, and LSTM) considered in this study. This research
+serves as proof of concept for applying transfer learning techniques to
+application scenarios where access to experimental data is limited.",http://arxiv.org/pdf/2412.07069v1,,False

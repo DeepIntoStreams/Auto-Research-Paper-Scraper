@@ -1,0 +1,380 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+GPD-1: Generative Pre-training for Driving,11/12/2024,"Zixun Xie, Sicheng Zuo, Wenzhao Zheng, Yunpeng Zhang, Dalong Du, Jie Zhou, Jiwen Lu, Shanghang Zhang","Modeling the evolutions of driving scenarios is important for the evaluation
+and decision-making of autonomous driving systems. Most existing methods focus
+on one aspect of scene evolution such as map generation, motion prediction, and
+trajectory planning. In this paper, we propose a unified Generative
+Pre-training for Driving (GPD-1) model to accomplish all these tasks altogether
+without additional fine-tuning. We represent each scene with ego, agent, and
+map tokens and formulate autonomous driving as a unified token generation
+problem. We adopt the autoregressive transformer architecture and use a
+scene-level attention mask to enable intra-scene bi-directional interactions.
+For the ego and agent tokens, we propose a hierarchical positional tokenizer to
+effectively encode both 2D positions and headings. For the map tokens, we train
+a map vector-quantized autoencoder to efficiently compress ego-centric semantic
+maps into discrete tokens. We pre-train our GPD-1 on the large-scale nuPlan
+dataset and conduct extensive experiments to evaluate its effectiveness. With
+different prompts, our GPD-1 successfully generalizes to various tasks without
+finetuning, including scene generation, traffic simulation, closed-loop
+simulation, map prediction, and motion planning. Code:
+https://github.com/wzzheng/GPD.",http://arxiv.org/pdf/2412.08643v1,,False
+"Generative Semantic Communication: Architectures, Technologies, and Applications",11/12/2024,"Jinke Ren, Yaping Sun, Hongyang Du, Weiwen Yuan, Chongjie Wang, Xianda Wang, Yingbin Zhou, Ziwei Zhu, Fangxin Wang, Shuguang Cui","This paper delves into the applications of generative artificial intelligence
+(GAI) in semantic communication (SemCom) and presents a thorough study. Three
+popular SemCom systems enabled by classical GAI models are first introduced,
+including variational autoencoders, generative adversarial networks, and
+diffusion models. For each system, the fundamental concept of the GAI model,
+the corresponding SemCom architecture, and the associated literature review of
+recent efforts are elucidated. Then, a novel generative SemCom system is
+proposed by incorporating the cutting-edge GAI technology-large language models
+(LLMs). This system features two LLM-based AI agents at both the transmitter
+and receiver, serving as ""brains"" to enable powerful information understanding
+and content regeneration capabilities, respectively. This innovative design
+allows the receiver to directly generate the desired content, instead of
+recovering the bit stream, based on the coded semantic information conveyed by
+the transmitter. Therefore, it shifts the communication mindset from
+""information recovery"" to ""information regeneration"" and thus ushers in a new
+era of generative SemCom. A case study on point-to-point video retrieval is
+presented to demonstrate the superiority of the proposed generative SemCom
+system, showcasing a 99.98% reduction in communication overhead and a 53%
+improvement in retrieval accuracy compared to the traditional communication
+system. Furthermore, four typical application scenarios for generative SemCom
+are delineated, followed by a discussion of three open issues warranting future
+investigation. In a nutshell, this paper provides a holistic set of guidelines
+for applying GAI in SemCom, paving the way for the efficient implementation of
+generative SemCom in future wireless networks.",http://arxiv.org/pdf/2412.08642v1,,False
+Synthetic Vision: Training Vision-Language Models to Understand Physics,11/12/2024,"Vahid Balazadeh, Mohammadmehdi Ataei, Hyunmin Cheong, Amir Hosein Khasahmadi, Rahul G. Krishnan","Physical reasoning, which involves the interpretation, understanding, and
+prediction of object behavior in dynamic environments, remains a significant
+challenge for current Vision-Language Models (VLMs). In this work, we propose
+two methods to enhance VLMs' physical reasoning capabilities using simulated
+data. First, we fine-tune a pre-trained VLM using question-answer (QA) pairs
+generated from simulations relevant to physical reasoning tasks. Second, we
+introduce Physics Context Builders (PCBs), specialized VLMs fine-tuned to
+create scene descriptions enriched with physical properties and processes.
+During physical reasoning tasks, these PCBs can be leveraged as context to
+assist a Large Language Model (LLM) to improve its performance. We evaluate
+both of our approaches using multiple benchmarks, including a new stability
+detection QA dataset called Falling Tower, which includes both simulated and
+real-world scenes, and CLEVRER. We demonstrate that a small QA fine-tuned VLM
+can significantly outperform larger state-of-the-art foundational models. We
+also show that integrating PCBs boosts the performance of foundational LLMs on
+physical reasoning tasks. Using the real-world scenes from the Falling Tower
+dataset, we also validate the robustness of both approaches in Sim2Real
+transfer. Our results highlight the utility that simulated data can have in the
+creation of learning systems capable of advanced physical reasoning.",http://arxiv.org/pdf/2412.08619v1,,False
+RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation,11/12/2024,"Mingfei Han, Liang Ma, Kamila Zhumakhanova, Ekaterina Radionova, Jingyi Zhang, Xiaojun Chang, Xiaodan Liang, Ivan Laptev","Vision-and-Language Navigation (VLN) suffers from the limited diversity and
+scale of training data, primarily constrained by the manual curation of
+existing simulators. To address this, we introduce RoomTour3D, a
+video-instruction dataset derived from web-based room tour videos that capture
+real-world indoor spaces and human walking demonstrations. Unlike existing VLN
+datasets, RoomTour3D leverages the scale and diversity of online videos to
+generate open-ended human walking trajectories and open-world navigable
+instructions. To compensate for the lack of navigation data in online videos,
+we perform 3D reconstruction and obtain 3D trajectories of walking paths
+augmented with additional information on the room types, object locations and
+3D shape of surrounding scenes. Our dataset includes $\sim$100K open-ended
+description-enriched trajectories with $\sim$200K instructions, and 17K
+action-enriched trajectories from 1847 room tour environments. We demonstrate
+experimentally that RoomTour3D enables significant improvements across multiple
+VLN tasks including CVDN, SOON, R2R, and REVERIE. Moreover, RoomTour3D
+facilitates the development of trainable zero-shot VLN agents, showcasing the
+potential and challenges of advancing towards open-world navigation.",http://arxiv.org/pdf/2412.08591v1,,False
+Learning Sketch Decompositions in Planning via Deep Reinforcement Learning,11/12/2024,"Michael Aichmüller, Hector Geffner","In planning and reinforcement learning, the identification of common subgoal
+structures across problems is important when goals are to be achieved over long
+horizons. Recently, it has been shown that such structures can be expressed as
+feature-based rules, called sketches, over a number of classical planning
+domains. These sketches split problems into subproblems which then become
+solvable in low polynomial time by a greedy sequence of IW$(k)$ searches.
+Methods for learning sketches using feature pools and min-SAT solvers have been
+developed, yet they face two key limitations: scalability and expressivity. In
+this work, we address these limitations by formulating the problem of learning
+sketch decompositions as a deep reinforcement learning (DRL) task, where
+general policies are sought in a modified planning problem where the successor
+states of a state s are defined as those reachable from s through an IW$(k)$
+search. The sketch decompositions obtained through this method are
+experimentally evaluated across various domains, and problems are regarded as
+solved by the decomposition when the goal is reached through a greedy sequence
+of IW$(k)$ searches. While our DRL approach for learning sketch decompositions
+does not yield interpretable sketches in the form of rules, we demonstrate that
+the resulting decompositions can often be understood in a crisp manner.",http://arxiv.org/pdf/2412.08574v1,,False
+GenPlan: Generative sequence models as adaptive planners,11/12/2024,"Akash Karthikeyan, Yash Vardhan Pant","Offline reinforcement learning has shown tremendous success in behavioral
+planning by learning from previously collected demonstrations. However,
+decision-making in multitask missions still presents significant challenges.
+For instance, a mission might require an agent to explore an unknown
+environment, discover goals, and navigate to them, even if it involves
+interacting with obstacles along the way. Such behavioral planning problems are
+difficult to solve due to: a) agents failing to adapt beyond the single task
+learned through their reward function, and b) the inability to generalize to
+new environments not covered in the training demonstrations, e.g., environments
+where all doors were unlocked in the demonstrations. Consequently,
+state-of-the-art decision making methods are limited to missions where the
+required tasks are well-represented in the training demonstrations and can be
+solved within a short (temporal) planning horizon. To address this, we propose
+GenPlan: a stochastic and adaptive planner that leverages discrete-flow models
+for generative sequence modeling, enabling sample-efficient exploration and
+exploitation. This framework relies on an iterative denoising procedure to
+generate a sequence of goals and actions. This approach captures multi-modal
+action distributions and facilitates goal and task discovery, thereby enhancing
+generalization to out-of-distribution tasks and environments, i.e., missions
+not part of the training data. We demonstrate the effectiveness of our method
+through multiple simulation environments. Notably, GenPlan outperforms the
+state-of-the-art methods by over 10% on adaptive planning tasks, where the
+agent adapts to multi-task missions while leveraging demonstrations on
+single-goal-reaching tasks.",http://arxiv.org/pdf/2412.08565v1,,False
+From Multimodal LLMs to Generalist Embodied Agents: Methods and Lessons,11/12/2024,"Andrew Szot, Bogdan Mazoure, Omar Attia, Aleksei Timofeev, Harsh Agrawal, Devon Hjelm, Zhe Gan, Zsolt Kira, Alexander Toshev","We examine the capability of Multimodal Large Language Models (MLLMs) to
+tackle diverse domains that extend beyond the traditional language and vision
+tasks these models are typically trained on. Specifically, our focus lies in
+areas such as Embodied AI, Games, UI Control, and Planning. To this end, we
+introduce a process of adapting an MLLM to a Generalist Embodied Agent (GEA).
+GEA is a single unified model capable of grounding itself across these varied
+domains through a multi-embodiment action tokenizer. GEA is trained with
+supervised learning on a large dataset of embodied experiences and with online
+RL in interactive simulators. We explore the data and algorithmic choices
+necessary to develop such a model. Our findings reveal the importance of
+training with cross-domain data and online RL for building generalist agents.
+The final GEA model achieves strong generalization performance to unseen tasks
+across diverse benchmarks compared to other generalist models and
+benchmark-specific approaches.",http://arxiv.org/pdf/2412.08442v1,,False
+Proactive Model Adaptation Against Concept Drift for Online Time Series Forecasting,11/12/2024,"Lifan Zhao, Yanyan Shen","Time series forecasting always faces the challenge of concept drift, where
+data distributions evolve over time, leading to a decline in forecast model
+performance. Existing solutions are based on online learning, which continually
+organize recent time series observations as new training samples and update
+model parameters according to the forecasting feedback on recent data. However,
+they overlook a critical issue: obtaining ground-truth future values of each
+sample should be delayed until after the forecast horizon. This delay creates a
+temporal gap between the training samples and the test sample. Our empirical
+analysis reveals that the gap can introduce concept drift, causing forecast
+models to adapt to outdated concepts. In this paper, we present
+\textsc{Proceed}, a novel proactive model adaptation framework for online time
+series forecasting. \textsc{Proceed} first operates by estimating the concept
+drift between the recently used training samples and the current test sample.
+It then employs an adaptation generator to efficiently translate the estimated
+drift into parameter adjustments, proactively adapting the model to the test
+sample. To enhance the generalization capability of the framework,
+\textsc{Proceed} is trained on synthetic diverse concept drifts. We conduct
+extensive experiments on five real-world datasets across various forecast
+models. The empirical study demonstrates that our proposed \textsc{Proceed}
+brings more performance improvements than the state-of-the-art online learning
+methods, significantly facilitating forecast models' resilience against concept
+drifts.",http://arxiv.org/pdf/2412.08435v1,,False
+SwarmGPT-Primitive: A Language-Driven Choreographer for Drone Swarms Using Safe Motion Primitive Composition,11/12/2024,"Vedant Vyas, Martin Schuck, Dinushka O. Dahanaggamaarachchi, Siqi Zhou, Angela P. Schoellig","Catalyzed by advancements in hardware and software, drone performances are
+increasingly making their mark in the entertainment industry. However,
+designing smooth and safe choreographies for drone swarms is complex and often
+requires expert domain knowledge. In this work, we introduce
+SwarmGPT-Primitive, a language-based choreographer that integrates the
+reasoning capabilities of large language models (LLMs) with safe motion
+planning to facilitate deployable drone swarm choreographies. The LLM composes
+choreographies for a given piece of music by utilizing a library of motion
+primitives; the language-based choreographer is augmented with an
+optimization-based safety filter, which certifies the choreography for
+real-world deployment by making minimal adjustments when feasibility and safety
+constraints are violated. The overall SwarmGPT-Primitive framework decouples
+choreographic design from safe motion planning, which allows non-expert users
+to re-prompt and refine compositions without concerns about compliance with
+constraints such as avoiding collisions or downwash effects or satisfying
+actuation limits. We demonstrate our approach through simulations and
+experiments with swarms of up to 20 drones performing choreographies designed
+based on various songs, highlighting the system's ability to generate effective
+and synchronized drone choreographies for real-world deployment.",http://arxiv.org/pdf/2412.08428v1,,False
+Grasp Diffusion Network: Learning Grasp Generators from Partial Point Clouds with Diffusion Models in SO(3)xR3,11/12/2024,"Joao Carvalho, An T. Le, Philipp Jahr, Qiao Sun, Julen Urain, Dorothea Koert, Jan Peters","Grasping objects successfully from a single-view camera is crucial in many
+robot manipulation tasks. An approach to solve this problem is to leverage
+simulation to create large datasets of pairs of objects and grasp poses, and
+then learn a conditional generative model that can be prompted quickly during
+deployment. However, the grasp pose data is highly multimodal since there are
+several ways to grasp an object. Hence, in this work, we learn a grasp
+generative model with diffusion models to sample candidate grasp poses given a
+partial point cloud of an object. A novel aspect of our method is to consider
+diffusion in the manifold space of rotations and to propose a
+collision-avoidance cost guidance to improve the grasp success rate during
+inference. To accelerate grasp sampling we use recent techniques from the
+diffusion literature to achieve faster inference times. We show in simulation
+and real-world experiments that our approach can grasp several objects from raw
+depth images with $90\%$ success rate and benchmark it against several
+baselines.",http://arxiv.org/pdf/2412.08398v1,,False
+Towards Automated Algebraic Multigrid Preconditioner Design Using Genetic Programming for Large-Scale Laser Beam Welding Simulations,11/12/2024,"Dinesh Parthasarathy, Tommaso Bevilacqua, Martin Lanser, Axel Klawonn, Harald Köstler","Multigrid methods are asymptotically optimal algorithms ideal for large-scale
+simulations. But, they require making numerous algorithmic choices that
+significantly influence their efficiency. Unlike recent approaches that learn
+optimal multigrid components using machine learning techniques, we adopt a
+complementary strategy here, employing evolutionary algorithms to construct
+efficient multigrid cycles from available individual components. This
+technology is applied to finite element simulations of the laser beam welding
+process. The thermo-elastic behavior is described by a coupled system of
+time-dependent thermo-elasticity equations, leading to nonlinear and
+ill-conditioned systems. The nonlinearity is addressed using Newton's method,
+and iterative solvers are accelerated with an algebraic multigrid (AMG)
+preconditioner using hypre BoomerAMG interfaced via PETSc. This is applied as a
+monolithic solver for the coupled equations. To further enhance solver
+efficiency, flexible AMG cycles are introduced, extending traditional cycle
+types with level-specific smoothing sequences and non-recursive cycling
+patterns. These are automatically generated using genetic programming, guided
+by a context-free grammar containing AMG rules. Numerical experiments
+demonstrate the potential of these approaches to improve solver performance in
+large-scale laser beam welding simulations.",http://arxiv.org/pdf/2412.08186v1,,False
+Evil twins are not that evil: Qualitative insights into machine-generated prompts,11/12/2024,"Nathanaël Carraz Rakotonirina, Corentin Kervadec, Francesca Franzon, Marco Baroni","It has been widely observed that language models (LMs) respond in predictable
+ways to algorithmically generated prompts that are seemingly unintelligible.
+This is both a sign that we lack a full understanding of how LMs work, and a
+practical challenge, because opaqueness can be exploited for harmful uses of
+LMs, such as jailbreaking. We present the first thorough analysis of opaque
+machine-generated prompts, or autoprompts, pertaining to 3 LMs of different
+sizes and families. We find that machine-generated prompts are characterized by
+a last token that is often intelligible and strongly affects the generation. A
+small but consistent proportion of the previous tokens are fillers that
+probably appear in the prompt as a by-product of the fact that the optimization
+process fixes the number of tokens. The remaining tokens tend to have at least
+a loose semantic relation with the generation, although they do not engage in
+well-formed syntactic relations with it. We find moreover that some of the
+ablations we applied to machine-generated prompts can also be applied to
+natural language sequences, leading to similar behavior, suggesting that
+autoprompts are a direct consequence of the way in which LMs process linguistic
+inputs in general.",http://arxiv.org/pdf/2412.08127v1,,False
+Dense Depth from Event Focal Stack,11/12/2024,"Kenta Horikawa, Mariko Isogawa, Hideo Saito, Shohei Mori","We propose a method for dense depth estimation from an event stream generated
+when sweeping the focal plane of the driving lens attached to an event camera.
+In this method, a depth map is inferred from an ``event focal stack'' composed
+of the event stream using a convolutional neural network trained with
+synthesized event focal stacks. The synthesized event stream is created from a
+focal stack generated by Blender for any arbitrary 3D scene. This allows for
+training on scenes with diverse structures. Additionally, we explored methods
+to eliminate the domain gap between real event streams and synthetic event
+streams. Our method demonstrates superior performance over a depth-from-defocus
+method in the image domain on synthetic and real datasets.",http://arxiv.org/pdf/2412.08120v1,,False
+Adversarial Vulnerabilities in Large Language Models for Time Series Forecasting,11/12/2024,"Fuqiang Liu, Sicong Jiang, Luis Miranda-Moreno, Seongjin Choi, Lijun Sun","Large Language Models (LLMs) have recently demonstrated significant potential
+in the field of time series forecasting, offering impressive capabilities in
+handling complex temporal data. However, their robustness and reliability in
+real-world applications remain under-explored, particularly concerning their
+susceptibility to adversarial attacks. In this paper, we introduce a targeted
+adversarial attack framework for LLM-based time series forecasting. By
+employing both gradient-free and black-box optimization methods, we generate
+minimal yet highly effective perturbations that significantly degrade the
+forecasting accuracy across multiple datasets and LLM architectures. Our
+experiments, which include models like TimeGPT and LLM-Time with GPT-3.5,
+GPT-4, LLaMa, and Mistral, show that adversarial attacks lead to much more
+severe performance degradation than random noise, and demonstrate the broad
+effectiveness of our attacks across different LLMs. The results underscore the
+critical vulnerabilities of LLMs in time series forecasting, highlighting the
+need for robust defense mechanisms to ensure their reliable deployment in
+practical applications.",http://arxiv.org/pdf/2412.08099v1,,False
+Dynamic Classification of Latent Disease Progression with Auxiliary Surrogate Labels,11/12/2024,"Zexi Cai, Donglin Zeng, Karen S. Marder, Lawrence S. Honig, Yuanjia Wang","Disease progression prediction based on patients' evolving health information
+is challenging when true disease states are unknown due to diagnostic
+capabilities or high costs. For example, the absence of gold-standard
+neurological diagnoses hinders distinguishing Alzheimer's disease (AD) from
+related conditions such as AD-related dementias (ADRDs), including Lewy body
+dementia (LBD). Combining temporally dependent surrogate labels and health
+markers may improve disease prediction. However, existing literature models
+informative surrogate labels and observed variables that reflect the underlying
+states using purely generative approaches, limiting the ability to predict
+future states. We propose integrating the conventional hidden Markov model as a
+generative model with a time-varying discriminative classification model to
+simultaneously handle potentially misspecified surrogate labels and incorporate
+important markers of disease progression. We develop an adaptive
+forward-backward algorithm with subjective labels for estimation, and utilize
+the modified posterior and Viterbi algorithms to predict the progression of
+future states or new patients based on objective markers only. Importantly, the
+adaptation eliminates the need to model the marginal distribution of
+longitudinal markers, a requirement in traditional algorithms. Asymptotic
+properties are established, and significant improvement with finite samples is
+demonstrated via simulation studies. Analysis of the neuropathological dataset
+of the National Alzheimer's Coordinating Center (NACC) shows much improved
+accuracy in distinguishing LBD from AD.",http://arxiv.org/pdf/2412.08088v1,,False
+Statistical Downscaling via High-Dimensional Distribution Matching with Generative Models,11/12/2024,"Zhong Yi Wan, Ignacio Lopez-Gomez, Robert Carver, Tapio Schneider, John Anderson, Fei Sha, Leonardo Zepeda-Núñez","Statistical downscaling is a technique used in climate modeling to increase
+the resolution of climate simulations. High-resolution climate information is
+essential for various high-impact applications, including natural hazard risk
+assessment. However, simulating climate at high resolution is intractable.
+Thus, climate simulations are often conducted at a coarse scale and then
+downscaled to the desired resolution. Existing downscaling techniques are
+either simulation-based methods with high computational costs, or statistical
+approaches with limitations in accuracy or application specificity. We
+introduce Generative Bias Correction and Super-Resolution (GenBCSR), a
+two-stage probabilistic framework for statistical downscaling that overcomes
+the limitations of previous methods. GenBCSR employs two transformations to
+match high-dimensional distributions at different resolutions: (i) the first
+stage, bias correction, aligns the distributions at coarse scale, (ii) the
+second stage, statistical super-resolution, lifts the corrected coarse
+distribution by introducing fine-grained details. Each stage is instantiated by
+a state-of-the-art generative model, resulting in an efficient and effective
+computational pipeline for the well-studied distribution matching problem. By
+framing the downscaling problem as distribution matching, GenBCSR relaxes the
+constraints of supervised learning, which requires samples to be aligned.
+Despite not requiring such correspondence, we show that GenBCSR surpasses
+standard approaches in predictive accuracy of critical impact variables,
+particularly in predicting the tails (99% percentile) of composite indexes
+composed of interacting variables, achieving up to 4-5 folds of error
+reduction.",http://arxiv.org/pdf/2412.08079v1,,False
+DialogAgent: An Auto-engagement Agent for Code Question Answering Data Production,11/12/2024,"Xiaoyun Liang, Jingyi Ren, Jiayi Qi, Chao Peng, Bo Jiang","Large Language Models (LLMs) have become increasingly integral to enhancing
+developer productivity, particularly in code generation, comprehension, and
+repair tasks. However, fine-tuning these models with high-quality, real-world
+data is challenging due to privacy concerns and the lack of accessible, labeled
+datasets. In this paper, we present DialogAgent, an automated tool for
+generating synthetic training data that closely mimics real developer
+interactions within Integrated Development Environments (IDEs). DialogAgent
+enables the production of diverse, high-fidelity query-response pairs by
+simulating multi-turn dialogues and contextual behaviors observed in real-world
+programming scenarios. The tool significantly reduces the reliance on manual
+data generation, increasing efficiency by 4.8 times compared to traditional
+methods. Our experiments and online deployment demonstrate substantial
+improvements in model performance for code-related question-answering tasks:
+the acceptance rate of responses generated by our in-house model is improved by
+33%, after training on synthesized data generated by DialogAgent.",http://arxiv.org/pdf/2412.08069v1,,False
+DynamicPAE: Generating Scene-Aware Physical Adversarial Examples in Real-Time,11/12/2024,"Jin Hu, Xianglong Liu, Jiakai Wang, Junkai Zhang, Xianqi Yang, Haotong Qin, Yuqing Ma, Ke Xu","Physical adversarial examples (PAEs) are regarded as ""whistle-blowers"" of
+real-world risks in deep-learning applications. However, current PAE generation
+studies show limited adaptive attacking ability to diverse and varying scenes.
+The key challenges in generating dynamic PAEs are exploring their patterns
+under noisy gradient feedback and adapting the attack to agnostic scenario
+natures. To address the problems, we present DynamicPAE, the first generative
+framework that enables scene-aware real-time physical attacks beyond static
+attacks. Specifically, to train the dynamic PAE generator under noisy gradient
+feedback, we introduce the residual-driven sample trajectory guidance
+technique, which redefines the training task to break the limited feedback
+information restriction that leads to the degeneracy problem. Intuitively, it
+allows the gradient feedback to be passed to the generator through a low-noise
+auxiliary task, thereby guiding the optimization away from degenerate solutions
+and facilitating a more comprehensive and stable exploration of feasible PAEs.
+To adapt the generator to agnostic scenario natures, we introduce the
+context-aligned scene expectation simulation process, consisting of the
+conditional-uncertainty-aligned data module and the skewness-aligned objective
+re-weighting module. The former enhances robustness in the context of
+incomplete observation by employing a conditional probabilistic model for
+domain randomization, while the latter facilitates consistent stealth control
+across different attack targets by automatically reweighting losses based on
+the skewness indicator. Extensive digital and physical evaluations demonstrate
+the superior attack performance of DynamicPAE, attaining a 1.95 $\times$ boost
+(65.55% average AP drop under attack) on representative object detectors (e.g.,
+Yolo-v8) over state-of-the-art static PAE generating methods.",http://arxiv.org/pdf/2412.08053v1,,False
+Ask1: Development and Reinforcement Learning-Based Control of a Custom Quadruped Robot,11/12/2024,"Yuxing Lu, Yufei Xue, Guiyang Xin, Chenkun Qi, Yan Zhuang","In this work, we present the design, development, and experimental validation
+of a custom-built quadruped robot, Ask1. The Ask1 robot shares similar
+morphology with the Unitree Go1, but features custom hardware components and a
+different control architecture. We transfer and extend previous reinforcement
+learning (RL)-based control methods to the Ask1 robot, demonstrating the
+applicability of our approach in real-world scenarios. By eliminating the need
+for Adversarial Motion Priors (AMP) and reference trajectories, we introduce a
+novel reward function to guide the robot's motion style. We demonstrate the
+generalization capability of the proposed RL algorithm by training it on both
+the Go1 and Ask1 robots. Simulation and real-world experiments validate the
+effectiveness of this method, showing that Ask1, like the Go1, is capable of
+navigating various rugged terrains.",http://arxiv.org/pdf/2412.08019v1,,False
+Quantum-Cognitive Neural Networks: Assessing Confidence and Uncertainty with Human Decision-Making Simulations,11/12/2024,"Milan Maksimovic, Ivan S. Maksymov","Modern machine learning (ML) systems excel in recognising and classifying
+images with remarkable accuracy. However, like many computer software systems,
+they can fail by generating confusing or erroneous outputs or by deferring to
+human operators to interpret the results and make final decisions. In this
+paper, we employ the recently proposed quantum-tunnelling neural networks
+(QT-NNs), inspired by human brain processes, alongside quantum cognition
+theory, to classify image datasets while emulating human perception and
+judgment. Our findings suggest that the QT-NN model provides compelling
+evidence of its potential to replicate human-like decision-making and
+outperform traditional ML algorithms.",http://arxiv.org/pdf/2412.08010v1,,False
+Accurate Prediction of Temperature Indicators in Eastern China Using a Multi-Scale CNN-LSTM-Attention model,11/12/2024,"Jiajiang Shen, Weiyan Wu, Qianyu Xu","In recent years, the importance of accurate weather forecasting has become
+increasingly prominent due to the impacts of global climate change and the
+rapid development of data science. Traditional forecasting methods often
+struggle to handle the complexity and nonlinearity inherent in climate data. To
+address these challenges, we propose a weather prediction model based on a
+multi-scale convolutional CNN-LSTM-Attention architecture, specifically
+designed for time series forecasting of temperature data in China. The model
+integrates Convolutional Neural Networks (CNN), Long Short-Term Memory (LSTM)
+networks, and attention mechanisms to leverage the strengths of spatial feature
+extraction, temporal sequence modeling, and the ability to focus on important
+features. The development process of the model includes data collection,
+preprocessing, feature extraction, and model building. Experimental results
+show that the model performs excellently in predicting temperature trends with
+high accuracy. The final computed results indicate that the Mean Squared Error
+(MSE) is 1.978295 and the Root Mean Squared Error (RMSE) is 0.8106562. This
+work marks a significant advancement in applying deep learning techniques to
+meteorological data, offering a valuable tool for improving weather forecasting
+accuracy and providing essential support for decision-making in areas such as
+urban planning, agriculture, and energy management.",http://arxiv.org/pdf/2412.07997v1,,False

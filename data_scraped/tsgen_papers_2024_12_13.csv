@@ -1,0 +1,587 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Spectral Image Tokenizer,12/12/2024,"Carlos Esteves, Mohammed Suhail, Ameesh Makadia","Image tokenizers map images to sequences of discrete tokens, and are a
+crucial component of autoregressive transformer-based image generation. The
+tokens are typically associated with spatial locations in the input image,
+arranged in raster scan order, which is not ideal for autoregressive modeling.
+In this paper, we propose to tokenize the image spectrum instead, obtained from
+a discrete wavelet transform (DWT), such that the sequence of tokens represents
+the image in a coarse-to-fine fashion. Our tokenizer brings several advantages:
+1) it leverages that natural images are more compressible at high frequencies,
+2) it can take and reconstruct images of different resolutions without
+retraining, 3) it improves the conditioning for next-token prediction --
+instead of conditioning on a partial line-by-line reconstruction of the image,
+it takes a coarse reconstruction of the full image, 4) it enables partial
+decoding where the first few generated tokens can reconstruct a coarse version
+of the image, 5) it enables autoregressive models to be used for image
+upsampling. We evaluate the tokenizer reconstruction metrics as well as
+multiscale image generation, text-guided image upsampling and editing.",http://arxiv.org/pdf/2412.09607v1,,False
+InternLM-XComposer2.5-OmniLive: A Comprehensive Multimodal System for Long-term Streaming Video and Audio Interactions,12/12/2024,"Pan Zhang, Xiaoyi Dong, Yuhang Cao, Yuhang Zang, Rui Qian, Xilin Wei, Lin Chen, Yifei Li, Junbo Niu, Shuangrui Ding, Qipeng Guo, Haodong Duan, Xin Chen, Han Lv, Zheng Nie, Min Zhang, Bin Wang, Wenwei Zhang, Xinyue Zhang, Jiaye Ge, Wei Li, Jingwen Li, Zhongying Tu, Conghui He, Xingcheng Zhang, Kai Chen, Yu Qiao, Dahua Lin, Jiaqi Wang","Creating AI systems that can interact with environments over long periods,
+similar to human cognition, has been a longstanding research goal. Recent
+advancements in multimodal large language models (MLLMs) have made significant
+strides in open-world understanding. However, the challenge of continuous and
+simultaneous streaming perception, memory, and reasoning remains largely
+unexplored. Current MLLMs are constrained by their sequence-to-sequence
+architecture, which limits their ability to process inputs and generate
+responses simultaneously, akin to being unable to think while perceiving.
+Furthermore, relying on long contexts to store historical data is impractical
+for long-term interactions, as retaining all information becomes costly and
+inefficient. Therefore, rather than relying on a single foundation model to
+perform all functions, this project draws inspiration from the concept of the
+Specialized Generalist AI and introduces disentangled streaming perception,
+reasoning, and memory mechanisms, enabling real-time interaction with streaming
+video and audio input. The proposed framework InternLM-XComposer2.5-OmniLive
+(IXC2.5-OL) consists of three key modules: (1) Streaming Perception Module:
+Processes multimodal information in real-time, storing key details in memory
+and triggering reasoning in response to user queries. (2) Multi-modal Long
+Memory Module: Integrates short-term and long-term memory, compressing
+short-term memories into long-term ones for efficient retrieval and improved
+accuracy. (3) Reasoning Module: Responds to queries and executes reasoning
+tasks, coordinating with the perception and memory modules. This project
+simulates human-like cognition, enabling multimodal large language models to
+provide continuous and adaptive service over time.",http://arxiv.org/pdf/2412.09596v1,,False
+Improving the Reliability of Cable Broadband Networks via Proactive Network Maintenance,12/12/2024,"Jiyao Hu, Zhenyu Zhou, Xiaowei Yang","Cable broadband networks are one of the few ""last-mile"" broadband
+technologies widely available in the U.S. Unfortunately, they have poor
+reliability after decades of deployment. The cable industry proposed a
+framework called Proactive Network Maintenance (PNM) to diagnose the cable
+networks. However, there is little public knowledge or systematic study on how
+to use these data to detect and localize cable network problems. Existing tools
+in the public domain have prohibitive high false-positive rates. In this paper,
+we propose CableMon, the first public-domain system that applies machine
+learning techniques to PNM data to improve the reliability of cable broadband
+networks. CableMon tackles two key challenges faced by cable ISPs: accurately
+detecting failures, and distinguishing whether a failure occurs within a
+network or at a subscriber's premise. CableMon uses statistical models to
+generate features from time series data and uses customer trouble tickets as
+hints to infer abnormal/failure thresholds for these generated features.
+Further, CableMon employs an unsupervised learning model to group cable devices
+sharing similar anomalous patterns and effectively identify impairments that
+occur inside a cable network and impairments occur at a subscriber's premise,
+as these two different faults require different types of technical personnel to
+repair them. We use eight months of PNM data and customer trouble tickets from
+an ISP and experimental deployment to evaluate CableMon's performance. Our
+evaluation results show that CableMon can effectively detect and distinguish
+failures from PNM data and outperforms existing public-domain tools.",http://arxiv.org/pdf/2412.09564v1,,False
+Enhancing Convergence of Decentralized Gradient Tracking under the KL Property,12/12/2024,"Xiaokai Chen, Tianyu Cao, Gesualdo Scutari","We study decentralized multiagent optimization over networks, modeled as
+undirected graphs. The optimization problem consists of minimizing a nonconvex
+smooth function plus a convex extended-value function, which enforces
+constraints or extra structure on the solution (e.g., sparsity, low-rank). We
+further assume that the objective function satisfies the Kurdyka-{\L}ojasiewicz
+(KL) property, with given exponent $\theta\in [0,1)$. The KL property is
+satisfied by several (nonconvex) functions of practical interest, e.g., arising
+from machine learning applications; in the centralized setting, it permits to
+achieve strong convergence guarantees. Here we establish convergence of the
+same type for the notorious decentralized gradient-tracking-based algorithm
+SONATA. Specifically, $\textbf{(i)}$ when $\theta\in (0,1/2]$, the sequence
+generated by SONATA converges to a stationary solution of the problem at
+R-linear rate;$ \textbf{(ii)} $when $\theta\in (1/2,1)$, sublinear rate is
+certified; and finally $\textbf{(iii)}$ when $\theta=0$, the iterates will
+either converge in a finite number of steps or converges at R-linear rate. This
+matches the convergence behavior of centralized proximal-gradient algorithms
+except when $\theta=0$. Numerical results validate our theoretical findings.",http://arxiv.org/pdf/2412.09556v1,,False
+SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing,12/12/2024,"Xueting Li, Ye Yuan, Shalini De Mello, Gilles Daviet, Jonathan Leaf, Miles Macklin, Jan Kautz, Umar Iqbal","We introduce SimAvatar, a framework designed to generate simulation-ready
+clothed 3D human avatars from a text prompt. Current text-driven human avatar
+generation methods either model hair, clothing, and the human body using a
+unified geometry or produce hair and garments that are not easily adaptable for
+simulation within existing simulation pipelines. The primary challenge lies in
+representing the hair and garment geometry in a way that allows leveraging
+established prior knowledge from foundational image diffusion models (e.g.,
+Stable Diffusion) while being simulation-ready using either physics or neural
+simulators. To address this task, we propose a two-stage framework that
+combines the flexibility of 3D Gaussians with simulation-ready hair strands and
+garment meshes. Specifically, we first employ three text-conditioned 3D
+generative models to generate garment mesh, body shape and hair strands from
+the given text prompt. To leverage prior knowledge from foundational diffusion
+models, we attach 3D Gaussians to the body mesh, garment mesh, as well as hair
+strands and learn the avatar appearance through optimization. To drive the
+avatar given a pose sequence, we first apply physics simulators onto the
+garment meshes and hair strands. We then transfer the motion onto 3D Gaussians
+through carefully designed mechanisms for each body part. As a result, our
+synthesized avatars have vivid texture and realistic dynamic motion. To the
+best of our knowledge, our method is the first to produce highly realistic,
+fully simulation-ready 3D avatars, surpassing the capabilities of current
+approaches.",http://arxiv.org/pdf/2412.09545v1,,False
+Learned Compression for Compressed Learning,12/12/2024,"Dan Jacobellis, Neeraja J. Yadwadkar","Modern sensors produce increasingly rich streams of high-resolution data. Due
+to resource constraints, machine learning systems discard the vast majority of
+this information via resolution reduction. Compressed-domain learning allows
+models to operate on compact latent representations, allowing higher effective
+resolution for the same budget. However, existing compression systems are not
+ideal for compressed learning. Linear transform coding and end-to-end learned
+compression systems reduce bitrate, but do not uniformly reduce dimensionality;
+thus, they do not meaningfully increase efficiency. Generative autoencoders
+reduce dimensionality, but their adversarial or perceptual objectives lead to
+significant information loss. To address these limitations, we introduce WaLLoC
+(Wavelet Learned Lossy Compression), a neural codec architecture that combines
+linear transform coding with nonlinear dimensionality-reducing autoencoders.
+WaLLoC sandwiches a shallow, asymmetric autoencoder and entropy bottleneck
+between an invertible wavelet packet transform. Across several key metrics,
+WaLLoC outperforms the autoencoders used in state-of-the-art latent diffusion
+models. WaLLoC does not require perceptual or adversarial losses to represent
+high-frequency detail, providing compatibility with modalities beyond RGB
+images and stereo audio. WaLLoC's encoder consists almost entirely of linear
+operations, making it exceptionally efficient and suitable for mobile
+computing, remote sensing, and learning directly from compressed data. We
+demonstrate WaLLoC's capability for compressed-domain learning across several
+tasks, including image classification, colorization, document understanding,
+and music source separation. Our code, experiments, and pre-trained audio and
+image codecs are available at https://ut-sysml.org/walloc",http://arxiv.org/pdf/2412.09405v1,,False
+A Geometry-Aware Message Passing Neural Network for Modeling Aerodynamics over Airfoils,12/12/2024,"Jacob Helwig, Xuan Zhang, Haiyang Yu, Shuiwang Ji","Computational modeling of aerodynamics is a key problem in aerospace
+engineering, often involving flows interacting with solid objects such as
+airfoils. Deep surrogate models have emerged as purely data-driven approaches
+that learn direct mappings from simulation conditions to solutions based on
+either simulation or experimental data. Here, we consider modeling of
+incompressible flows over solid objects, wherein geometric structures are a key
+factor in determining aerodynamics. To effectively incorporate geometries, we
+propose a message passing scheme that efficiently and expressively integrates
+the airfoil shape with the mesh representation. Under this framework, we first
+obtain a representation of the geometry in the form of a latent graph on the
+airfoil surface. We subsequently propagate this representation to all
+collocation points through message passing on a directed, bipartite graph. We
+demonstrate that this framework supports efficient training by downsampling the
+solution mesh while avoiding distribution shifts at test time when evaluated on
+the full mesh. To enable our model to be able to distinguish between distinct
+spatial regimes of dynamics relative to the airfoil, we represent mesh points
+in both a leading edge and trailing edge coordinate system. We further enhance
+the expressiveness of our coordinate system representations by embedding our
+hybrid Polar-Cartesian coordinates using sinusoidal and spherical harmonics
+bases. We additionally find that a change of basis to canonicalize input
+representations with respect to inlet velocity substantially improves
+generalization. Altogether, these design choices lead to a purely data-driven
+machine learning framework known as GeoMPNN, which won the Best Student
+Submission award at the NeurIPS 2024 ML4CFD Competition, placing 4th overall.
+Our code is publicly available as part of the AIRS library
+(https://github.com/divelab/AIRS).",http://arxiv.org/pdf/2412.09399v1,,False
+Diffusion Model with Representation Alignment for Protein Inverse Folding,12/12/2024,"Chenglin Wang, Yucheng Zhou, Zijie Zhai, Jianbing Shen, Kai Zhang","Protein inverse folding is a fundamental problem in bioinformatics, aiming to
+recover the amino acid sequences from a given protein backbone structure.
+Despite the success of existing methods, they struggle to fully capture the
+intricate inter-residue relationships critical for accurate sequence
+prediction. We propose a novel method that leverages diffusion models with
+representation alignment (DMRA), which enhances diffusion-based inverse folding
+by (1) proposing a shared center that aggregates contextual information from
+the entire protein structure and selectively distributes it to each residue;
+and (2) aligning noisy hidden representations with clean semantic
+representations during the denoising process. This is achieved by predefined
+semantic representations for amino acid types and a representation alignment
+method that utilizes type embeddings as semantic feedback to normalize each
+residue. In experiments, we conduct extensive evaluations on the CATH4.2
+dataset to demonstrate that DMRA outperforms leading methods, achieving
+state-of-the-art performance and exhibiting strong generalization capabilities
+on the TS50 and TS500 datasets.",http://arxiv.org/pdf/2412.09380v1,,False
+Quantitative Evaluation of Motif Sets in Time Series,12/12/2024,"Daan Van Wesenbeeck, Aras Yurtman, Wannes Meert, Hendrik Blockeel","Time Series Motif Discovery (TSMD), which aims at finding recurring patterns
+in time series, is an important task in numerous application domains, and many
+methods for this task exist. These methods are usually evaluated qualitatively.
+A few metrics for quantitative evaluation, where discovered motifs are compared
+to some ground truth, have been proposed, but they typically make implicit
+assumptions that limit their applicability. This paper introduces PROM, a
+broadly applicable metric that overcomes those limitations, and TSMD-Bench, a
+benchmark for quantitative evaluation of time series motif discovery.
+Experiments with PROM and TSMD-Bench show that PROM provides a more
+comprehensive evaluation than existing metrics, that TSMD-Bench is a more
+challenging benchmark than earlier ones, and that the combination can help
+understand the relative performance of TSMD methods. More generally, the
+proposed approach enables large-scale, systematic performance comparisons in
+this field.",http://arxiv.org/pdf/2412.09346v1,,False
+Diffusion Predictive Control with Constraints,12/12/2024,"Ralf Römer, Alexander von Rohr, Angela P. Schoellig","Diffusion models have recently gained popularity for policy learning in
+robotics due to their ability to capture high-dimensional and multimodal
+distributions. However, diffusion policies are inherently stochastic and
+typically trained offline, limiting their ability to handle unseen and dynamic
+conditions where novel constraints not represented in the training data must be
+satisfied. To overcome this limitation, we propose diffusion predictive control
+with constraints (DPCC), an algorithm for diffusion-based control with explicit
+state and action constraints that can deviate from those in the training data.
+DPCC uses constraint tightening and incorporates model-based projections into
+the denoising process of a trained trajectory diffusion model. This allows us
+to generate constraint-satisfying, dynamically feasible, and goal-reaching
+trajectories for predictive control. We show through simulations of a robot
+manipulator that DPCC outperforms existing methods in satisfying novel
+test-time constraints while maintaining performance on the learned control
+task.",http://arxiv.org/pdf/2412.09342v1,,False
+Does Low Spoilage Under Cold Conditions Foster Cultural Complexity During the Foraging Era? -- A Theoretical and Computational Inquiry,12/12/2024,Minhyeok Lee,"Human cultural complexity did not arise in a vacuum. Scholars in the
+humanities and social sciences have long debated how ecological factors, such
+as climate and resource availability, enabled early hunter-gatherers to
+allocate time and energy beyond basic subsistence tasks. This paper presents a
+formal, interdisciplinary approach that integrates theoretical modeling with
+computational methods to examine whether conditions that allow lower spoilage
+of stored food, often associated with colder climates and abundant large fauna,
+could indirectly foster the emergence of cultural complexity. Our contribution
+is twofold. First, we propose a mathematical framework that relates spoilage
+rates, yield levels, resource management skills, and cultural activities. Under
+this framework, we prove that lower spoilage and adequate yields reduce the
+frequency of hunting, thus freeing substantial time for cultural pursuits.
+Second, we implement a reinforcement learning simulation, inspired by
+engineering optimization techniques, to validate the theoretical predictions.
+By training agents in different $(Y,p)$ environments, where $Y$ is yield and
+$p$ is the probability of daily spoilage, we observe patterns consistent with
+the theoretical model: stable conditions with lower spoilage strongly correlate
+with increased cultural complexity. While we do not claim to replicate
+prehistoric social realities directly, our results suggest that ecologically
+stable niches provided a milieu in which cultural forms could germinate and
+evolve. This study, therefore, offers an integrative perspective that unites
+humanistic inquiries into the origins of culture with the formal rigor and
+exploratory power of computational modeling.",http://arxiv.org/pdf/2412.09335v1,,False
+Towards Open-Vocabulary Video Semantic Segmentation,12/12/2024,"Xinhao Li, Yun Liu, Guolei Sun, Min Wu, Le Zhang, Ce Zhu","Semantic segmentation in videos has been a focal point of recent research.
+However, existing models encounter challenges when faced with unfamiliar
+categories. To address this, we introduce the Open Vocabulary Video Semantic
+Segmentation (OV-VSS) task, designed to accurately segment every pixel across a
+wide range of open-vocabulary categories, including those that are novel or
+previously unexplored. To enhance OV-VSS performance, we propose a robust
+baseline, OV2VSS, which integrates a spatial-temporal fusion module, allowing
+the model to utilize temporal relationships across consecutive frames.
+Additionally, we incorporate a random frame enhancement module, broadening the
+model's understanding of semantic context throughout the entire video sequence.
+Our approach also includes video text encoding, which strengthens the model's
+capability to interpret textual information within the video context.
+Comprehensive evaluations on benchmark datasets such as VSPW and Cityscapes
+highlight OV-VSS's zero-shot generalization capabilities, especially in
+handling novel categories. The results validate OV2VSS's effectiveness,
+demonstrating improved performance in semantic segmentation tasks across
+diverse video datasets.",http://arxiv.org/pdf/2412.09329v1,,False
+Auto-Regressive Moving Diffusion Models for Time Series Forecasting,12/12/2024,"Jiaxin Gao, Qinglong Cao, Yuntian Chen","Time series forecasting (TSF) is essential in various domains, and recent
+advancements in diffusion-based TSF models have shown considerable promise.
+However, these models typically adopt traditional diffusion patterns, treating
+TSF as a noise-based conditional generation task. This approach neglects the
+inherent continuous sequential nature of time series, leading to a fundamental
+misalignment between diffusion mechanisms and the TSF objective, thereby
+severely impairing performance. To bridge this misalignment, and inspired by
+the classic Auto-Regressive Moving Average (ARMA) theory, which views time
+series as continuous sequential progressions evolving from previous data
+points, we propose a novel Auto-Regressive Moving Diffusion (ARMD) model to
+first achieve the continuous sequential diffusion-based TSF. Unlike previous
+methods that start from white Gaussian noise, our model employs chain-based
+diffusion with priors, accurately modeling the evolution of time series and
+leveraging intermediate state information to improve forecasting accuracy and
+stability. Specifically, our approach reinterprets the diffusion process by
+considering future series as the initial state and historical series as the
+final state, with intermediate series generated using a sliding-based technique
+during the forward process. This design aligns the diffusion model's sampling
+procedure with the forecasting objective, resulting in an unconditional,
+continuous sequential diffusion TSF model. Extensive experiments conducted on
+seven widely used datasets demonstrate that our model achieves state-of-the-art
+performance, significantly outperforming existing diffusion-based TSF models.
+Our code is available on GitHub: https://github.com/daxin007/ARMD.",http://arxiv.org/pdf/2412.09328v1,,False
+Benchmarking LLMs for Mimicking Child-Caregiver Language in Interaction,12/12/2024,"Jing Liu, Abdellah Fourtassi","LLMs can generate human-like dialogues, yet their ability to simulate early
+child-adult interactions remains largely unexplored. In this paper, we examined
+how effectively LLMs can capture the distinctive features of child-caregiver
+language in interaction, using both static and interactive benchmarking
+methods. We found that state-of-the-art LLMs like Llama 3 and GPT-4o can
+approximate child-caregiver dialogues at the word and utterance level, but they
+struggle to reproduce the child and caregiver's discursive patterns, exaggerate
+alignment, and fail to reach the level of diversity shown by humans. The
+broader goal of this work is to initiate the development of a comprehensive
+benchmark for LLMs in child-oriented applications.",http://arxiv.org/pdf/2412.09318v1,,False
+"Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance",12/12/2024,"Yizhou Fan, Luzhen Tang, Huixiao Le, Kejie Shen, Shufang Tan, Yueying Zhao, Yuan Shen, Xinyu Li, Dragan Gašević","With the continuous development of technological and educational innovation,
+learners nowadays can obtain a variety of support from agents such as teachers,
+peers, education technologies, and recently, generative artificial intelligence
+such as ChatGPT. The concept of hybrid intelligence is still at a nascent
+stage, and how learners can benefit from a symbiotic relationship with various
+agents such as AI, human experts and intelligent learning systems is still
+unknown. The emerging concept of hybrid intelligence also lacks deep insights
+and understanding of the mechanisms and consequences of hybrid human-AI
+learning based on strong empirical research. In order to address this gap, we
+conducted a randomised experimental study and compared learners' motivations,
+self-regulated learning processes and learning performances on a writing task
+among different groups who had support from different agents (ChatGPT, human
+expert, writing analytics tools, and no extra tool). A total of 117 university
+students were recruited, and their multi-channel learning, performance and
+motivation data were collected and analysed. The results revealed that:
+learners who received different learning support showed no difference in
+post-task intrinsic motivation; there were significant differences in the
+frequency and sequences of the self-regulated learning processes among groups;
+ChatGPT group outperformed in the essay score improvement but their knowledge
+gain and transfer were not significantly different. Our research found that in
+the absence of differences in motivation, learners with different supports
+still exhibited different self-regulated learning processes, ultimately leading
+to differentiated performance. What is particularly noteworthy is that AI
+technologies such as ChatGPT may promote learners' dependence on technology and
+potentially trigger metacognitive laziness.",http://arxiv.org/pdf/2412.09315v1,10.1111/bjet.13544,False
+Learning Novel Skills from Language-Generated Demonstrations,12/12/2024,"Ao-Qun Jin, Tian-Yu Xiang, Xiao-Hu Zhou, Mei-Jiang Gui, Xiao-Liang Xie, Shi-Qi Liu, Shuang-Yi Wang, Yue Cao, Sheng-Bin Duan, Fu-Chao Xie, Zeng-Guang Hou","Current robot learning algorithms for acquiring novel skills often rely on
+demonstration datasets or environment interactions, resulting in high labor
+costs and potential safety risks. To address these challenges, this study
+proposes a skill-learning framework that enables robots to acquire novel skills
+from natural language instructions. The proposed pipeline leverages
+vision-language models to generate demonstration videos of novel skills, which
+are processed by an inverse dynamics model to extract actions from the
+unlabeled demonstrations. These actions are subsequently mapped to
+environmental contexts via imitation learning, enabling robots to learn new
+skills effectively. Experimental evaluations in the MetaWorld simulation
+environments demonstrate the pipeline's capability to generate high-fidelity
+and reliable demonstrations. Using the generated demonstrations, various skill
+learning algorithms achieve an accomplishment rate three times the original on
+novel tasks. These results highlight a novel approach to robot learning,
+offering a foundation for the intuitive and intelligent acquisition of novel
+robotic skills.",http://arxiv.org/pdf/2412.09286v1,,False
+Score and Distribution Matching Policy: Advanced Accelerated Visuomotor Policies via Matched Distillation,12/12/2024,"Bofang Jia, Pengxiang Ding, Can Cui, Mingyang Sun, Pengfang Qian, Zhaoxin Fan, Donglin Wang","Visual-motor policy learning has advanced with architectures like
+diffusion-based policies, known for modeling complex robotic trajectories.
+However, their prolonged inference times hinder high-frequency control tasks
+requiring real-time feedback. While consistency distillation (CD) accelerates
+inference, it introduces errors that compromise action quality. To address
+these limitations, we propose the Score and Distribution Matching Policy (SDM
+Policy), which transforms diffusion-based policies into single-step generators
+through a two-stage optimization process: score matching ensures alignment with
+true action distributions, and distribution matching minimizes KL divergence
+for consistency. A dual-teacher mechanism integrates a frozen teacher for
+stability and an unfrozen teacher for adversarial training, enhancing
+robustness and alignment with target distributions. Evaluated on a 57-task
+simulation benchmark, SDM Policy achieves a 6x inference speedup while having
+state-of-the-art action quality, providing an efficient and reliable framework
+for high-frequency robotic tasks.",http://arxiv.org/pdf/2412.09265v1,,False
+Vision CNNs trained to estimate spatial latents learned similar ventral-stream-aligned representations,12/12/2024,"Yudi Xie, Weichen Huang, Esther Alter, Jeremy Schwartz, Joshua B. Tenenbaum, James J. DiCarlo","Studies of the functional role of the primate ventral visual stream have
+traditionally focused on object categorization, often ignoring -- despite much
+prior evidence -- its role in estimating ""spatial"" latents such as object
+position and pose. Most leading ventral stream models are derived by optimizing
+networks for object categorization, which seems to imply that the ventral
+stream is also derived under such an objective. Here, we explore an alternative
+hypothesis: Might the ventral stream be optimized for estimating spatial
+latents? And a closely related question: How different -- if at all -- are
+representations learned from spatial latent estimation compared to
+categorization? To ask these questions, we leveraged synthetic image datasets
+generated by a 3D graphic engine and trained convolutional neural networks
+(CNNs) to estimate different combinations of spatial and category latents. We
+found that models trained to estimate just a few spatial latents achieve neural
+alignment scores comparable to those trained on hundreds of categories, and the
+spatial latent performance of models strongly correlates with their neural
+alignment. Spatial latent and category-trained models have very similar -- but
+not identical -- internal representations, especially in their early and middle
+layers. We provide evidence that this convergence is partly driven by
+non-target latent variability in the training data, which facilitates the
+implicit learning of representations of those non-target latents. Taken
+together, these results suggest that many training objectives, such as spatial
+latents, can lead to similar models aligned neurally with the ventral stream.
+Thus, one should not assume that the ventral stream is optimized for object
+categorization only. As a field, we need to continue to sharpen our measures of
+comparing models to brains to better understand the functional roles of the
+ventral stream.",http://arxiv.org/pdf/2412.09115v1,,False
+In-Dataset Trajectory Return Regularization for Offline Preference-based Reinforcement Learning,12/12/2024,"Songjun Tu, Jingbo Sun, Qichao Zhang, Yaocheng Zhang, Jia Liu, Ke Chen, Dongbin Zhao","Offline preference-based reinforcement learning (PbRL) typically operates in
+two phases: first, use human preferences to learn a reward model and annotate
+rewards for a reward-free offline dataset; second, learn a policy by optimizing
+the learned reward via offline RL. However, accurately modeling step-wise
+rewards from trajectory-level preference feedback presents inherent challenges.
+The reward bias introduced, particularly the overestimation of predicted
+rewards, leads to optimistic trajectory stitching, which undermines the
+pessimism mechanism critical to the offline RL phase. To address this
+challenge, we propose In-Dataset Trajectory Return Regularization (DTR) for
+offline PbRL, which leverages conditional sequence modeling to mitigate the
+risk of learning inaccurate trajectory stitching under reward bias.
+Specifically, DTR employs Decision Transformer and TD-Learning to strike a
+balance between maintaining fidelity to the behavior policy with high
+in-dataset trajectory returns and selecting optimal actions based on high
+reward labels. Additionally, we introduce an ensemble normalization technique
+that effectively integrates multiple reward models, balancing the tradeoff
+between reward differentiation and accuracy. Empirical evaluations on various
+benchmarks demonstrate the superiority of DTR over other state-of-the-art
+baselines",http://arxiv.org/pdf/2412.09104v1,,False
+SVasP: Self-Versatility Adversarial Style Perturbation for Cross-Domain Few-Shot Learning,12/12/2024,"Wenqian Li, Pengfei Fang, Hui Xue","Cross-Domain Few-Shot Learning (CD-FSL) aims to transfer knowledge from seen
+source domains to unseen target domains, which is crucial for evaluating the
+generalization and robustness of models. Recent studies focus on utilizing
+visual styles to bridge the domain gap between different domains. However, the
+serious dilemma of gradient instability and local optimization problem occurs
+in those style-based CD-FSL methods. This paper addresses these issues and
+proposes a novel crop-global style perturbation method, called
+\underline{\textbf{S}}elf-\underline{\textbf{V}}ersatility
+\underline{\textbf{A}}dversarial \underline{\textbf{S}}tyle
+\underline{\textbf{P}}erturbation (\textbf{SVasP}), which enhances the gradient
+stability and escapes from poor sharp minima jointly. Specifically, SVasP
+simulates more diverse potential target domain adversarial styles via
+diversifying input patterns and aggregating localized crop style gradients, to
+serve as global style perturbation stabilizers within one image, a concept we
+refer to as self-versatility. Then a novel objective function is proposed to
+maximize visual discrepancy while maintaining semantic consistency between
+global, crop, and adversarial features. Having the stabilized global style
+perturbation in the training phase, one can obtain a flattened minima in the
+loss landscape, boosting the transferability of the model to the target
+domains. Extensive experiments on multiple benchmark datasets demonstrate that
+our method significantly outperforms existing state-of-the-art methods. Our
+codes are available at https://github.com/liwenqianSEU/SVasP.",http://arxiv.org/pdf/2412.09073v1,,False
+Motif Guided Graph Transformer with Combinatorial Skeleton Prototype Learning for Skeleton-Based Person Re-Identification,12/12/2024,"Haocong Rao, Chunyan Miao","Person re-identification (re-ID) via 3D skeleton data is a challenging task
+with significant value in many scenarios. Existing skeleton-based methods
+typically assume virtual motion relations between all joints, and adopt average
+joint or sequence representations for learning. However, they rarely explore
+key body structure and motion such as gait to focus on more important body
+joints or limbs, while lacking the ability to fully mine valuable
+spatial-temporal sub-patterns of skeletons to enhance model learning. This
+paper presents a generic Motif guided graph transformer with Combinatorial
+skeleton prototype learning (MoCos) that exploits structure-specific and
+gait-related body relations as well as combinatorial features of skeleton
+graphs to learn effective skeleton representations for person re-ID. In
+particular, motivated by the locality within joints' structure and the
+body-component collaboration in gait, we first propose the motif guided graph
+transformer (MGT) that incorporates hierarchical structural motifs and gait
+collaborative motifs, which simultaneously focuses on multi-order local joint
+correlations and key cooperative body parts to enhance skeleton relation
+learning. Then, we devise the combinatorial skeleton prototype learning (CSP)
+that leverages random spatial-temporal combinations of joint nodes and skeleton
+graphs to generate diverse sub-skeleton and sub-tracklet representations, which
+are contrasted with the most representative features (prototypes) of each
+identity to learn class-related semantics and discriminative skeleton
+representations. Extensive experiments validate the superior performance of
+MoCos over existing state-of-the-art models. We further show its generality
+under RGB-estimated skeletons, different graph modeling, and unsupervised
+scenarios.",http://arxiv.org/pdf/2412.09044v1,,False
+A physics-informed transformer neural operator for learning generalized solutions of initial boundary value problems,12/12/2024,"Sumanth Kumar Boya, Deepak Subramani","Initial boundary value problems arise commonly in applications with
+engineering and natural systems governed by nonlinear partial differential
+equations (PDEs). Operator learning is an emerging field for solving these
+equations by using a neural network to learn a map between infinite dimensional
+input and output function spaces. These neural operators are trained using a
+combination of data (observations or simulations) and PDE-residuals
+(physics-loss). A major drawback of existing neural approaches is the
+requirement to retrain with new initial/boundary conditions, and the necessity
+for a large amount of simulation data for training. We develop a
+physics-informed transformer neural operator (named PINTO) that efficiently
+generalizes to unseen initial and boundary conditions, trained in a
+simulation-free setting using only physics loss. The main innovation lies in
+our new iterative kernel integral operator units, implemented using
+cross-attention, to transform the PDE solution's domain points into an
+initial/boundary condition-aware representation vector, enabling efficient
+learning of the solution function for new scenarios. The PINTO architecture is
+applied to simulate the solutions of important equations used in engineering
+applications: advection, Burgers, and steady and unsteady Navier-Stokes
+equations (three flow scenarios). For these five test cases, we show that the
+relative errors during testing under challenging conditions of unseen
+initial/boundary conditions are only one-fifth to one-third of other leading
+physics informed operator learning methods. Moreover, our PINTO model is able
+to accurately solve the advection and Burgers equations at time steps that are
+not included in the training collocation points. The code is available at
+$\texttt{https://github.com/quest-lab-iisc/PINTO}$",http://arxiv.org/pdf/2412.09009v1,,False
+Stellar parameter prediction and spectral simulation using machine learning,12/12/2024,"Vojtěch Cvrček, Martino Romaniello, Radim Šára, Wolfram Freudling, Pascal Ballester","We applied machine learning to the entire data history of ESO's High Accuracy
+Radial Velocity Planet Searcher (HARPS) instrument. Our primary goal was to
+recover the physical properties of the observed objects, with a secondary
+emphasis on simulating spectra. We systematically investigated the impact of
+various factors on the accuracy and fidelity of the results, including the use
+of simulated data, the effect of varying amounts of real training data, network
+architectures, and learning paradigms. Our approach integrates supervised and
+unsupervised learning techniques within autoencoder frameworks. Our methodology
+leverages an existing simulation model that utilizes a library of existing
+stellar spectra in which the emerging flux is computed from first principles
+rooted in physics and a HARPS instrument model to generate simulated spectra
+comparable to observational data. We trained standard and variational
+autoencoders on HARPS data to predict spectral parameters and generate spectra.
+Our models excel at predicting spectral parameters and compressing real
+spectra, and they achieved a mean prediction error of approximately 50 K for
+effective temperatures, making them relevant for most astrophysical
+applications. Furthermore, the models predict metallicity ([M/H]) and surface
+gravity (log g) with an accuracy of approximately 0.03 dex and 0.04 dex,
+respectively, underscoring their broad applicability in astrophysical research.
+The models' computational efficiency, with processing times of 779.6 ms on CPU
+and 3.97 ms on GPU, makes them valuable for high-throughput applications like
+massive spectroscopic surveys and large archival studies. By achieving accuracy
+comparable to classical methods with significantly reduced computation time,
+our methodology enhances the scope and efficiency of spectroscopic analysis.",http://arxiv.org/pdf/2412.09002v1,,False
+Selective Visual Prompting in Vision Mamba,12/12/2024,"Yifeng Yao, Zichen Liu, Zhenyu Cui, Yuxin Peng, Jiahuan Zhou","Pre-trained Vision Mamba (Vim) models have demonstrated exceptional
+performance across various computer vision tasks in a computationally efficient
+manner, attributed to their unique design of selective state space models. To
+further extend their applicability to diverse downstream vision tasks, Vim
+models can be adapted using the efficient fine-tuning technique known as visual
+prompting. However, existing visual prompting methods are predominantly
+tailored for Vision Transformer (ViT)-based models that leverage global
+attention, neglecting the distinctive sequential token-wise compression and
+propagation characteristics of Vim. Specifically, existing prompt tokens
+prefixed to the sequence are insufficient to effectively activate the input and
+forget gates across the entire sequence, hindering the extraction and
+propagation of discriminative information. To address this limitation, we
+introduce a novel Selective Visual Prompting (SVP) method specifically for the
+efficient fine-tuning of Vim. To prevent the loss of discriminative information
+during state space propagation, SVP employs lightweight selective prompters for
+token-wise prompt generation, ensuring adaptive activation of the update and
+forget gates within Mamba blocks to promote discriminative information
+propagation. Moreover, considering that Vim propagates both shared cross-layer
+information and specific inner-layer information, we further refine SVP with a
+dual-path structure: Cross-Prompting and Inner-Prompting. Cross-Prompting
+utilizes shared parameters across layers, while Inner-Prompting employs
+distinct parameters, promoting the propagation of both shared and specific
+information, respectively. Extensive experimental results on various
+large-scale benchmarks demonstrate that our proposed SVP significantly
+outperforms state-of-the-art methods. Our code is available at
+https://github.com/zhoujiahuan1991/AAAI2025-SVP.",http://arxiv.org/pdf/2412.08947v1,,False
+Goal-Conditioned Supervised Learning for Multi-Objective Recommendation,12/12/2024,"Shijun Li, Hilaf Hasson, Jing Hu, Joydeep Ghosh","Multi-objective learning endeavors to concurrently optimize multiple
+objectives using a single model, aiming to achieve high and balanced
+performance across these diverse objectives. However, it often involves a more
+complex optimization problem, particularly when navigating potential conflicts
+between objectives, leading to solutions with higher memory requirements and
+computational complexity. This paper introduces a Multi-Objective
+Goal-Conditioned Supervised Learning (MOGCSL) framework for automatically
+learning to achieve multiple objectives from offline sequential data. MOGCSL
+extends the conventional Goal-Conditioned Supervised Learning (GCSL) method to
+multi-objective scenarios by redefining goals from one-dimensional scalars to
+multi-dimensional vectors. The need for complex architectures and optimization
+constraints can be naturally eliminated. MOGCSL benefits from filtering out
+uninformative or noisy instances that do not achieve desirable long-term
+rewards. It also incorporates a novel goal-choosing algorithm to model and
+select ""high"" achievable goals for inference.
+  While MOGCSL is quite general, we focus on its application to the next action
+prediction problem in commercial-grade recommender systems. In this context,
+any viable solution needs to be reasonably scalable and also be robust to large
+amounts of noisy data that is characteristic of this application space. We show
+that MOGCSL performs admirably on both counts. Specifically, extensive
+experiments conducted on real-world recommendation datasets validate its
+efficacy and efficiency. Also, analysis and experiments are included to explain
+its strength in discounting the noisier portions of training data in
+recommender systems.",http://arxiv.org/pdf/2412.08911v1,,False
+Federated Foundation Models on Heterogeneous Time Series,12/12/2024,"Shengchao Chen, Guodong Long, Jing Jiang, Chengqi Zhang","Training a general-purpose time series foundation models with robust
+generalization capabilities across diverse applications from scratch is still
+an open challenge. Efforts are primarily focused on fusing cross-domain time
+series datasets to extract shared subsequences as tokens for training models on
+Transformer architecture. However, due to significant statistical heterogeneity
+across domains, this cross-domain fusing approach doesn't work effectively as
+the same as fusing texts and images. To tackle this challenge, this paper
+proposes a novel federated learning approach to address the heterogeneity in
+time series foundation models training, namely FFTS. Specifically, each
+data-holding organization is treated as an independent client in a
+collaborative learning framework with federated settings, and then many
+client-specific local models will be trained to preserve the unique
+characteristics per dataset. Moreover, a new regularization mechanism will be
+applied to both client-side and server-side, thus to align the shared knowledge
+across heterogeneous datasets from different domains. Extensive experiments on
+benchmark datasets demonstrate the effectiveness of the proposed federated
+learning approach. The newly learned time series foundation models achieve
+superior generalization capabilities on cross-domain time series analysis
+tasks, including forecasting, imputation, and anomaly detection.",http://arxiv.org/pdf/2412.08906v1,,False
+Efficient Reinforcement Learning for Optimal Control with Natural Images,12/12/2024,Peter N. Loxley,"Reinforcement learning solves optimal control and sequential decision
+problems widely found in control systems engineering, robotics, and artificial
+intelligence. This work investigates optimal control over a sequence of natural
+images. The problem is formalized, and general conditions are derived for an
+image to be sufficient for implementing an optimal policy. Reinforcement
+learning is shown to be efficient only for certain types of image
+representations. This is demonstrated by developing a reinforcement learning
+benchmark that scales easily with number of states and length of horizon, and
+has optimal policies that are easily distinguished from suboptimal policies.
+Image representations given by overcomplete sparse codes are found to be
+computationally efficient for optimal control, using fewer computational
+resources to learn and evaluate optimal policies. For natural images of fixed
+size, representing each image as an overcomplete sparse code in a linear
+network is shown to increase network storage capacity by orders of magnitude
+beyond that possible for any complete code, allowing larger tasks with many
+more states to be solved. Sparse codes can be generated by devices with low
+energy requirements and low computational overhead.",http://arxiv.org/pdf/2412.08893v1,,False
+Quantum Kernel-Based Long Short-term Memory for Climate Time-Series Forecasting,12/12/2024,"Yu-Chao Hsu, Nan-Yow Chen, Tai-Yu Li, Po-Heng, Lee, Kuan-Cheng Chen","We present the Quantum Kernel-Based Long short-memory (QK-LSTM) network,
+which integrates quantum kernel methods into classical LSTM architectures to
+enhance predictive accuracy and computational efficiency in climate time-series
+forecasting tasks, such as Air Quality Index (AQI) prediction. By embedding
+classical inputs into high-dimensional quantum feature spaces, QK-LSTM captures
+intricate nonlinear dependencies and temporal dynamics with fewer trainable
+parameters. Leveraging quantum kernel methods allows for efficient computation
+of inner products in quantum spaces, addressing the computational challenges
+faced by classical models and variational quantum circuit-based models.
+Designed for the Noisy Intermediate-Scale Quantum (NISQ) era, QK-LSTM supports
+scalable hybrid quantum-classical implementations. Experimental results
+demonstrate that QK-LSTM outperforms classical LSTM networks in AQI
+forecasting, showcasing its potential for environmental monitoring and
+resource-constrained scenarios, while highlighting the broader applicability of
+quantum-enhanced machine learning frameworks in tackling large-scale,
+high-dimensional climate datasets.",http://arxiv.org/pdf/2412.08851v1,,False
+Emulating the Global Change Analysis Model with Deep Learning,12/12/2024,"Andrew Holmes, Matt Jensen, Sarah Coffland, Hidemi Mitani Shen, Logan Sizemore, Seth Bassetti, Brenna Nieva, Claudia Tebaldi, Abigail Snyder, Brian Hutchinson","The Global Change Analysis Model (GCAM) simulates complex interactions
+between the coupled Earth and human systems, providing valuable insights into
+the co-evolution of land, water, and energy sectors under different future
+scenarios. Understanding the sensitivities and drivers of this multisectoral
+system can lead to more robust understanding of the different pathways to
+particular outcomes. The interactions and complexity of the coupled human-Earth
+systems make GCAM simulations costly to run at scale - a requirement for large
+ensemble experiments which explore uncertainty in model parameters and outputs.
+A differentiable emulator with similar predictive power, but greater
+efficiency, could provide novel scenario discovery and analysis of GCAM and its
+outputs, requiring fewer runs of GCAM. As a first use case, we train a neural
+network on an existing large ensemble that explores a range of GCAM inputs
+related to different relative contributions of energy production sources, with
+a focus on wind and solar. We complement this existing ensemble with
+interpolated input values and a wider selection of outputs, predicting 22,528
+GCAM outputs across time, sectors, and regions. We report a median $R^2$ score
+of 0.998 for the emulator's predictions and an $R^2$ score of 0.812 for its
+input-output sensitivity.",http://arxiv.org/pdf/2412.08850v1,,False

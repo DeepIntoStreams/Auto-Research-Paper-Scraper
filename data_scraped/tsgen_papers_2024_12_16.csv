@@ -1,0 +1,229 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Shape error prediction in 5-axis machining using graph neural networks,13/12/2024,"Julia Huuk, Abheek Dhingra, Eirini Ntoutsi, Bernd Denkena","This paper presents an innovative method for predicting shape errors in
+5-axis machining using graph neural networks. The graph structure is defined
+with nodes representing workpiece surface points and edges denoting the
+neighboring relationships. The dataset encompasses data from a material removal
+simulation, process data, and post-machining quality information. Experimental
+results show that the presented approach can generalize the shape error
+prediction for the investigated workpiece geometry. Moreover, by modelling
+spatial and temporal connections within the workpiece, the approach handles a
+low number of labels compared to non-graphical methods such as Support Vector
+Machines.",http://arxiv.org/pdf/2412.10341v1,,False
+SCBench: A KV Cache-Centric Analysis of Long-Context Methods,13/12/2024,"Yucheng Li, Huiqiang Jiang, Qianhui Wu, Xufang Luo, Surin Ahn, Chengruidong Zhang, Amir H. Abdi, Dongsheng Li, Jianfeng Gao, Yuqing Yang, Lili Qiu","Long-context LLMs have enabled numerous downstream applications but also
+introduced significant challenges related to computational and memory
+efficiency. To address these challenges, optimizations for long-context
+inference have been developed, centered around the KV cache. However, existing
+benchmarks often evaluate in single-request, neglecting the full lifecycle of
+the KV cache in real-world use. This oversight is particularly critical, as KV
+cache reuse has become widely adopted in LLMs inference frameworks, such as
+vLLM and SGLang, as well as by LLM providers, including OpenAI, Microsoft,
+Google, and Anthropic. To address this gap, we introduce
+SCBench(SharedContextBench), a comprehensive benchmark for evaluating
+long-context methods from a KV cachecentric perspective: 1) KV cache
+generation, 2) KV cache compression, 3) KV cache retrieval, 4) KV cache
+loading. Specifically, SCBench uses test examples with shared context, ranging
+12 tasks with two shared context modes, covering four categories of
+long-context capabilities: string retrieval, semantic retrieval, global
+information, and multi-task. With it, we provide an extensive KV cache-centric
+analysis of eight categories long-context solutions, including Gated Linear
+RNNs, Mamba-Attention hybrids, and efficient methods such as sparse attention,
+KV cache dropping, quantization, retrieval, loading, and prompt compression.
+The evaluation is conducted on 8 long-context LLMs. Our findings show that
+sub-O(n) memory methods suffer in multi-turn scenarios, while sparse encoding
+with O(n) memory and sub-O(n^2) pre-filling computation perform robustly.
+Dynamic sparsity yields more expressive KV caches than static patterns, and
+layer-level sparsity in hybrid architectures reduces memory usage with strong
+performance. Additionally, we identify attention distribution shift issues in
+long-generation scenarios. https://aka.ms/SCBench.",http://arxiv.org/pdf/2412.10319v1,,False
+High-dimensional Statistics Applications to Batch Effects in Metabolomics,13/12/2024,Zhendong Guo,"Batch effects are inevitable in large-scale metabolomics. Prior to formal
+data analysis, batch effect correction (BEC) is applied to prevent from
+obscuring biological variations, and batch effect evaluation (BEE) is used for
+correction assessment. However, existing BEE algorithms neglect covariances
+between the variables, and existing BEC algorithms might fail to adequately
+correct the covariances. Therefore, we resort to recent advancements in
+high-dimensional statistics, and respectively propose ""quality control-based
+simultaneous tests (QC-ST)"" and ""covariance correction (CoCo)"". Validated by
+the simulation data, QC-ST can simultaneously detect the statistical
+significance of QC samples' mean vectors and covariance matrices across
+different batches, and has a satisfactory statistical performance in empirical
+sizes, empirical powers, and computational speed. Then, we apply four QC-based
+BEC algorithms to two large cohort datasets, and find that extreme gradient
+boost (XGBoost) performs best in relative standard deviation (RSD) and
+dispersion-ratio (D-ratio). After prepositive BEC, if QC-ST still suggests that
+batch effects between some two batches are significant, CoCo should be
+implemented. And after CoCo (if necessary), the four metrics (i.e., RSD,
+D-ratio, classification performance, and QC-ST) might be further improved. In
+summary, under the guidance of QC-ST, we can develop a matching strategy to
+integrate multiple BEC algorithms more rationally and flexibly, and minimize
+batch effects for reliable biological conclusions.",http://arxiv.org/pdf/2412.10196v1,,False
+Simple Guidance Mechanisms for Discrete Diffusion Models,13/12/2024,"Yair Schiff, Subham Sekhar Sahoo, Hao Phung, Guanghan Wang, Sam Boshar, Hugo Dalla-torre, Bernardo P. de Almeida, Alexander Rush, Thomas Pierrot, Volodymyr Kuleshov","Diffusion models for continuous data gained widespread adoption owing to
+their high quality generation and control mechanisms. However, controllable
+diffusion on discrete data faces challenges given that continuous guidance
+methods do not directly apply to discrete diffusion. Here, we provide a
+straightforward derivation of classifier-free and classifier-based guidance for
+discrete diffusion, as well as a new class of diffusion models that leverage
+uniform noise and that are more guidable because they can continuously edit
+their outputs. We improve the quality of these models with a novel
+continuous-time variational lower bound that yields state-of-the-art
+performance, especially in settings involving guidance or fast generation.
+Empirically, we demonstrate that our guidance mechanisms combined with uniform
+noise diffusion improve controllable generation relative to autoregressive and
+diffusion baselines on several discrete data domains, including genomic
+sequences, small molecule design, and discretized image generation.",http://arxiv.org/pdf/2412.10193v1,,False
+AMUSE: Adaptive Model Updating using a Simulated Environment,13/12/2024,"Louis Chislett, Catalina A. Vallejos, Timothy I. Cannings, James Liley","Prediction models frequently face the challenge of concept drift, in which
+the underlying data distribution changes over time, weakening performance.
+Examples can include models which predict loan default, or those used in
+healthcare contexts. Typical management strategies involve regular model
+updates or updates triggered by concept drift detection. However, these simple
+policies do not necessarily balance the cost of model updating with improved
+classifier performance. We present AMUSE (Adaptive Model Updating using a
+Simulated Environment), a novel method leveraging reinforcement learning
+trained within a simulated data generating environment, to determine update
+timings for classifiers. The optimal updating policy depends on the current
+data generating process and ongoing drift process. Our key idea is that we can
+train an arbitrarily complex model updating policy by creating a training
+environment in which possible episodes of drift are simulated by a parametric
+model, which represents expectations of possible drift patterns. As a result,
+AMUSE proactively recommends updates based on estimated performance
+improvements, learning a policy that balances maintaining model performance
+with minimizing update costs. Empirical results confirm the effectiveness of
+AMUSE in simulated data.",http://arxiv.org/pdf/2412.10119v1,,False
+CosyVoice 2: Scalable Streaming Speech Synthesis with Large Language Models,13/12/2024,"Zhihao Du, Yuxuan Wang, Qian Chen, Xian Shi, Xiang Lv, Tianyu Zhao, Zhifu Gao, Yexin Yang, Changfeng Gao, Hui Wang, Fan Yu, Huadai Liu, Zhengyan Sheng, Yue Gu, Chong Deng, Wen Wang, Shiliang Zhang, Zhijie Yan, Jingren Zhou","In our previous work, we introduced CosyVoice, a multilingual speech
+synthesis model based on supervised discrete speech tokens. By employing
+progressive semantic decoding with two popular generative models, language
+models (LMs) and Flow Matching, CosyVoice demonstrated high prosody
+naturalness, content consistency, and speaker similarity in speech in-context
+learning. Recently, significant progress has been made in multi-modal large
+language models (LLMs), where the response latency and real-time factor of
+speech synthesis play a crucial role in the interactive experience. Therefore,
+in this report, we present an improved streaming speech synthesis model,
+CosyVoice 2, which incorporates comprehensive and systematic optimizations.
+Specifically, we introduce finite-scalar quantization to improve the codebook
+utilization of speech tokens. For the text-speech LM, we streamline the model
+architecture to allow direct use of a pre-trained LLM as the backbone. In
+addition, we develop a chunk-aware causal flow matching model to support
+various synthesis scenarios, enabling both streaming and non-streaming
+synthesis within a single model. By training on a large-scale multilingual
+dataset, CosyVoice 2 achieves human-parity naturalness, minimal response
+latency, and virtually lossless synthesis quality in the streaming mode. We
+invite readers to listen to the demos at
+https://funaudiollm.github.io/cosyvoice2.",http://arxiv.org/pdf/2412.10117v1,,False
+Are you doing better than random guessing? A call for using negative controls when evaluating causal discovery algorithms,13/12/2024,Anne Helby Petersen,"New proposals for causal discovery algorithms are typically evaluated using
+simulations and a few select real data examples with known data generating
+mechanisms. However, there does not exist a general guideline for how such
+evaluation studies should be designed, and therefore, comparing results across
+different studies can be difficult. In this article, we propose a common
+evaluation baseline by posing the question: Are we doing better than random
+guessing? For the task of graph skeleton estimation, we derive exact
+distributional results under random guessing for the expected behavior of a
+range of typical causal discovery evaluation metrics (including precision and
+recall). We show that these metrics can achieve very large values under random
+guessing in certain scenarios, and hence warn against using them without also
+reporting negative control results, i.e., performance under random guessing. We
+also propose an exact test of overall skeleton fit, and showcase its use on a
+real data application. Finally, we propose a general pipeline for using random
+controls beyond the skeleton estimation task, and apply it both in a simulated
+example and a real data application.",http://arxiv.org/pdf/2412.10039v1,,False
+Latent feedback control of distributed systems in multiple scenarios through deep learning-based reduced order models,13/12/2024,"Matteo Tomasetto, Francesco Braghin, Andrea Manzoni","Continuous monitoring and real-time control of high-dimensional distributed
+systems are often crucial in applications to ensure a desired physical
+behavior, without degrading stability and system performances. Traditional
+feedback control design that relies on full-order models, such as
+high-dimensional state-space representations or partial differential equations,
+fails to meet these requirements due to the delay in the control computation,
+which requires multiple expensive simulations of the physical system. The
+computational bottleneck is even more severe when considering parametrized
+systems, as new strategies have to be determined for every new scenario. To
+address these challenges, we propose a real-time closed-loop control strategy
+enhanced by nonlinear non-intrusive Deep Learning-based Reduced Order Models
+(DL-ROMs). Specifically, in the offline phase, (i) full-order state-control
+pairs are generated for different scenarios through the adjoint method, (ii)
+the essential features relevant for control design are extracted from the
+snapshots through a combination of Proper Orthogonal Decomposition (POD) and
+deep autoencoders, and (iii) the low-dimensional policy bridging latent control
+and state spaces is approximated with a feedforward neural network. After data
+generation and neural networks training, the optimal control actions are
+retrieved in real-time for any observed state and scenario. In addition, the
+dynamics may be approximated through a cheap surrogate model in order to close
+the loop at the latent level, thus continuously controlling the system in
+real-time even when full-order state measurements are missing. The
+effectiveness of the proposed method, in terms of computational speed,
+accuracy, and robustness against noisy data, is finally assessed on two
+different high-dimensional optimal transport problems, one of which also
+involving an underlying fluid flow.",http://arxiv.org/pdf/2412.09942v1,,False
+TTAQ: Towards Stable Post-training Quantization in Continuous Domain Adaptation,13/12/2024,"Junrui Xiao, Zhikai Li, Lianwei Yang, Yiduo Mei, Qingyi Gu","Post-training quantization (PTQ) reduces excessive hardware cost by
+quantizing full-precision models into lower bit representations on a tiny
+calibration set, without retraining. Despite the remarkable progress made
+through recent efforts, traditional PTQ methods typically encounter failure in
+dynamic and ever-changing real-world scenarios, involving unpredictable data
+streams and continual domain shifts, which poses greater challenges. In this
+paper, we propose a novel and stable quantization process for test-time
+adaptation (TTA), dubbed TTAQ, to address the performance degradation of
+traditional PTQ in dynamically evolving test domains. To tackle domain shifts
+in quantizer, TTAQ proposes the Perturbation Error Mitigation (PEM) and
+Perturbation Consistency Reconstruction (PCR). Specifically, PEM analyzes the
+error propagation and devises a weight regularization scheme to mitigate the
+impact of input perturbations. On the other hand, PCR introduces consistency
+learning to ensure that quantized models provide stable predictions for same
+sample. Furthermore, we introduce Adaptive Balanced Loss (ABL) to adjust the
+logits by taking advantage of the frequency and complexity of the class, which
+can effectively address the class imbalance caused by unpredictable data
+streams during optimization. Extensive experiments are conducted on multiple
+datasets with generic TTA methods, proving that TTAQ can outperform existing
+baselines and encouragingly improve the accuracy of low bit PTQ models in
+continually changing test domains. For instance, TTAQ decreases the mean error
+of 2-bit models on ImageNet-C dataset by an impressive 10.1\%.",http://arxiv.org/pdf/2412.09899v1,,False
+Financial Fine-tuning a Large Time Series Model,13/12/2024,"Xinghong Fu, Masanori Hirano, Kentaro Imajo","Large models have shown unprecedented capabilities in natural language
+processing, image generation, and most recently, time series forecasting. This
+leads us to ask the question: treating market prices as a time series, can
+large models be used to predict the market? In this paper, we answer this by
+evaluating the performance of the latest time series foundation model TimesFM
+on price prediction. We find that due to the irregular nature of price data,
+directly applying TimesFM gives unsatisfactory results and propose to fine-tune
+TimeFM on financial data for the task of price prediction. This is done by
+continual pre-training of the latest time series foundation model TimesFM on
+price data containing 100 million time points, spanning a range of financial
+instruments spanning hourly and daily granularities. The fine-tuned model
+demonstrates higher price prediction accuracy than the baseline model. We
+conduct mock trading for our model in various financial markets and show that
+it outperforms various benchmarks in terms of returns, sharpe ratio, max
+drawdown and trading cost.",http://arxiv.org/pdf/2412.09880v1,,False
+Multivariate Time Series Clustering for Environmental State Characterization of Ground-Based Gravitational-Wave Detectors,13/12/2024,"Rutuja Gurav, Isaac Kelly, Pooyan Goodarzi, Anamaria Effler, Barry Barish, Evangelos Papalexakis, Jonathan Richardson","Gravitational-wave observatories like LIGO are large-scale, terrestrial
+instruments housed in infrastructure that spans a multi-kilometer geographic
+area and which must be actively controlled to maintain operational stability
+for long observation periods. Despite exquisite seismic isolation, they remain
+susceptible to seismic noise and other terrestrial disturbances that can couple
+undesirable vibrations into the instrumental infrastructure, potentially
+leading to control instabilities or noise artifacts in the detector output. It
+is, therefore, critical to characterize the seismic state of these
+observatories to identify a set of temporal patterns that can inform the
+detector operators in day-to-day monitoring and diagnostics. On a day-to-day
+basis, the operators monitor several seismically relevant data streams to
+diagnose operational instabilities and sources of noise using some simple
+empirically-determined thresholds. It can be untenable for a human operator to
+monitor multiple data streams in this manual fashion and thus a distillation of
+these data-streams into a more human-friendly format is sought. In this paper,
+we present an end-to-end machine learning pipeline for features-based
+multivariate time series clustering to achieve this goal and to provide
+actionable insights to the detector operators by correlating found clusters
+with events of interest in the detector.",http://arxiv.org/pdf/2412.09832v1,,False
+deepNoC: A deep learning system to assign the number of contributors to a short tandem repeat DNA profile,13/12/2024,"Duncan Taylor, Melissa A. Humphries","A common task in forensic biology is to interpret and evaluate short tandem
+repeat DNA profiles. The first step in these interpretations is to assign a
+number of contributors to the profiles, a task that is most often performed
+manually by a scientist using their knowledge of DNA profile behaviour. Studies
+using constructed DNA profiles have shown that as DNA profiles become more
+complex, and the number of DNA-donating individuals increases, the ability for
+scientists to assign the target number. There have been a number of machine
+learning algorithms developed that seek to assign the number of contributors to
+a DNA profile, however due to practical limitations in being able to generate
+DNA profiles in a laboratory, the algorithms have been based on summaries of
+the available information. In this work we develop an analysis pipeline that
+simulates the electrophoretic signal of an STR profile, allowing virtually
+unlimited, pre-labelled training material to be generated. We show that by
+simulating 100 000 profiles and training a number of contributors estimation
+tool using a deep neural network architecture (in an algorithm named deepNoC)
+that a high level of performance is achieved (89% for 1 to 10 contributors).
+The trained network can then have fine-tuning training performed with only a
+few hundred profiles in order to achieve the same accuracy within a specific
+laboratory. We also build into deepNoC secondary outputs that provide a level
+of explainability to a user of algorithm, and show how they can be displayed in
+an intuitive manner.",http://arxiv.org/pdf/2412.09803v1,,False

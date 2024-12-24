@@ -1,0 +1,508 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Token Statistics Transformer: Linear-Time Attention via Variational Rate Reduction,23/12/2024,"Ziyang Wu, Tianjiao Ding, Yifu Lu, Druv Pai, Jingyuan Zhang, Weida Wang, Yaodong Yu, Yi Ma, Benjamin D. Haeffele","The attention operator is arguably the key distinguishing factor of
+transformer architectures, which have demonstrated state-of-the-art performance
+on a variety of tasks. However, transformer attention operators often impose a
+significant computational burden, with the computational complexity scaling
+quadratically with the number of tokens. In this work, we propose a novel
+transformer attention operator whose computational complexity scales linearly
+with the number of tokens. We derive our network architecture by extending
+prior work which has shown that a transformer style architecture naturally
+arises by ""white-box"" architecture design, where each layer of the network is
+designed to implement an incremental optimization step of a maximal coding rate
+reduction objective (MCR$^2$). Specifically, we derive a novel variational form
+of the MCR$^2$ objective and show that the architecture that results from
+unrolled gradient descent of this variational objective leads to a new
+attention module called Token Statistics Self-Attention (TSSA). TSSA has linear
+computational and memory complexity and radically departs from the typical
+attention architecture that computes pairwise similarities between tokens.
+Experiments on vision, language, and long sequence tasks show that simply
+swapping TSSA for standard self-attention, which we refer to as the Token
+Statistics Transformer (ToST), achieves competitive performance with
+conventional transformers while being significantly more computationally
+efficient and interpretable. Our results also somewhat call into question the
+conventional wisdom that pairwise similarity style attention mechanisms are
+critical to the success of transformer architectures. Code will be available at
+https://github.com/RobinWu218/ToST.",http://arxiv.org/pdf/2412.17810v1,,False
+Automating the Search for Artificial Life with Foundation Models,23/12/2024,"Akarsh Kumar, Chris Lu, Louis Kirsch, Yujin Tang, Kenneth O. Stanley, Phillip Isola, David Ha","With the recent Nobel Prize awarded for radical advances in protein
+discovery, foundation models (FMs) for exploring large combinatorial spaces
+promise to revolutionize many scientific fields. Artificial Life (ALife) has
+not yet integrated FMs, thus presenting a major opportunity for the field to
+alleviate the historical burden of relying chiefly on manual design and
+trial-and-error to discover the configurations of lifelike simulations. This
+paper presents, for the first time, a successful realization of this
+opportunity using vision-language FMs. The proposed approach, called Automated
+Search for Artificial Life (ASAL), (1) finds simulations that produce target
+phenomena, (2) discovers simulations that generate temporally open-ended
+novelty, and (3) illuminates an entire space of interestingly diverse
+simulations. Because of the generality of FMs, ASAL works effectively across a
+diverse range of ALife substrates including Boids, Particle Life, Game of Life,
+Lenia, and Neural Cellular Automata. A major result highlighting the potential
+of this technique is the discovery of previously unseen Lenia and Boids
+lifeforms, as well as cellular automata that are open-ended like Conway's Game
+of Life. Additionally, the use of FMs allows for the quantification of
+previously qualitative phenomena in a human-aligned way. This new paradigm
+promises to accelerate ALife research beyond what is possible through human
+ingenuity alone.",http://arxiv.org/pdf/2412.17799v1,,False
+PepTune: De Novo Generation of Therapeutic Peptides with Multi-Objective-Guided Discrete Diffusion,23/12/2024,"Sophia Tang, Yinuo Zhang, Pranam Chatterjee","Peptide therapeutics, a major class of medicines, have achieved remarkable
+success across diseases such as diabetes and cancer, with landmark examples
+such as GLP-1 receptor agonists revolutionizing the treatment of type-2
+diabetes and obesity. Despite their success, designing peptides that satisfy
+multiple conflicting objectives, such as target binding affinity, solubility,
+and membrane permeability, remains a major challenge. Classical drug
+development and structure-based design are ineffective for such tasks, as they
+fail to optimize global functional properties critical for therapeutic
+efficacy. Existing generative frameworks are largely limited to continuous
+spaces, unconditioned outputs, or single-objective guidance, making them
+unsuitable for discrete sequence optimization across multiple properties. To
+address this, we present PepTune, a multi-objective discrete diffusion model
+for the simultaneous generation and optimization of therapeutic peptide SMILES.
+Built on the Masked Discrete Language Model (MDLM) framework, PepTune ensures
+valid peptide structures with state-dependent masking schedules and
+penalty-based objectives. To guide the diffusion process, we propose a Monte
+Carlo Tree Search (MCTS)-based strategy that balances exploration and
+exploitation to iteratively refine Pareto-optimal sequences. MCTS integrates
+classifier-based rewards with search-tree expansion, overcoming gradient
+estimation challenges and data sparsity inherent to discrete spaces. Using
+PepTune, we generate diverse, chemically-modified peptides optimized for
+multiple therapeutic properties, including target binding affinity, membrane
+permeability, solubility, hemolysis, and non-fouling characteristics on various
+disease-relevant targets. In total, our results demonstrate that MCTS-guided
+discrete diffusion is a powerful and modular approach for multi-objective
+sequence design in discrete state spaces.",http://arxiv.org/pdf/2412.17780v1,,False
+ResearchTown: Simulator of Human Research Community,23/12/2024,"Haofei Yu, Zhaochen Hong, Zirui Cheng, Kunlun Zhu, Keyang Xuan, Jinwei Yao, Tao Feng, Jiaxuan You","Large Language Models (LLMs) have demonstrated remarkable potential in
+scientific domains, yet a fundamental question remains unanswered: Can we
+simulate human research communities with LLMs? Addressing this question can
+deepen our understanding of the processes behind idea brainstorming and inspire
+the automatic discovery of novel scientific insights. In this work, we propose
+ResearchTown, a multi-agent framework for research community simulation. Within
+this framework, the human research community is simplified and modeled as an
+agent-data graph, where researchers and papers are represented as agent-type
+and data-type nodes, respectively, and connected based on their collaboration
+relationships. We also introduce TextGNN, a text-based inference framework that
+models various research activities (e.g., paper reading, paper writing, and
+review writing) as special forms of a unified message-passing process on the
+agent-data graph. To evaluate the quality of the research simulation, we
+present ResearchBench, a benchmark that uses a node-masking prediction task for
+scalable and objective assessment based on similarity. Our experiments reveal
+three key findings: (1) ResearchTown can provide a realistic simulation of
+collaborative research activities, including paper writing and review writing;
+(2) ResearchTown can maintain robust simulation with multiple researchers and
+diverse papers; (3) ResearchTown can generate interdisciplinary research ideas
+that potentially inspire novel research directions.",http://arxiv.org/pdf/2412.17767v1,,False
+Deliberation in Latent Space via Differentiable Cache Augmentation,23/12/2024,"Luyang Liu, Jonas Pfeiffer, Jiaxing Wu, Jun Xie, Arthur Szlam","Techniques enabling large language models (LLMs) to ""think more"" by
+generating and attending to intermediate reasoning steps have shown promise in
+solving complex problems. However, the standard approaches generate sequences
+of discrete tokens immediately before responding, and so they can incur
+significant latency costs and be challenging to optimize. In this work, we
+demonstrate that a frozen LLM can be augmented with an offline coprocessor that
+operates on the model's key-value (kv) cache. This coprocessor augments the
+cache with a set of latent embeddings designed to improve the fidelity of
+subsequent decoding. We train this coprocessor using the language modeling loss
+from the decoder on standard pretraining data, while keeping the decoder itself
+frozen. This approach enables the model to learn, in an end-to-end
+differentiable fashion, how to distill additional computation into its
+kv-cache. Because the decoder remains unchanged, the coprocessor can operate
+offline and asynchronously, and the language model can function normally if the
+coprocessor is unavailable or if a given cache is deemed not to require extra
+computation. We show experimentally that when a cache is augmented, the decoder
+achieves lower perplexity on numerous subsequent tokens. Furthermore, even
+without any task-specific training, our experiments demonstrate that cache
+augmentation consistently reduces perplexity and improves performance across a
+range of reasoning-intensive tasks.",http://arxiv.org/pdf/2412.17747v1,,False
+Sensitivity Curve Maximization: Attacking Robust Aggregators in Distributed Learning,23/12/2024,"Christian A. Schroth, Stefan Vlaski, Abdelhak M. Zoubir","In distributed learning agents aim at collaboratively solving a global
+learning problem. It becomes more and more likely that individual agents are
+malicious or faulty with an increasing size of the network. This leads to a
+degeneration or complete breakdown of the learning process. Classical
+aggregation schemes are prone to breakdown at small contamination rates,
+therefore robust aggregation schemes are sought for. While robust aggregation
+schemes can generally tolerate larger contamination rates, many have been shown
+to be susceptible to carefully crafted malicious attacks. In this work, we show
+how the sensitivity curve (SC), a classical tool from robust statistics, can be
+used to systematically derive optimal attack patterns against arbitrary robust
+aggregators, in most cases rendering them ineffective. We show the
+effectiveness of the proposed attack in multiple simulations.",http://arxiv.org/pdf/2412.17740v1,,False
+SMAC-Hard: Enabling Mixed Opponent Strategy Script and Self-play on SMAC,23/12/2024,"Yue Deng, Yan Yu, Weiyu Ma, Zirui Wang, Wenhui Zhu, Jian Zhao, Yin Zhang","The availability of challenging simulation environments is pivotal for
+advancing the field of Multi-Agent Reinforcement Learning (MARL). In
+cooperative MARL settings, the StarCraft Multi-Agent Challenge (SMAC) has
+gained prominence as a benchmark for algorithms following centralized training
+with decentralized execution paradigm. However, with continual advancements in
+SMAC, many algorithms now exhibit near-optimal performance, complicating the
+evaluation of their true effectiveness. To alleviate this problem, in this
+work, we highlight a critical issue: the default opponent policy in these
+environments lacks sufficient diversity, leading MARL algorithms to overfit and
+exploit unintended vulnerabilities rather than learning robust strategies. To
+overcome these limitations, we propose SMAC-HARD, a novel benchmark designed to
+enhance training robustness and evaluation comprehensiveness. SMAC-HARD
+supports customizable opponent strategies, randomization of adversarial
+policies, and interfaces for MARL self-play, enabling agents to generalize to
+varying opponent behaviors and improve model stability. Furthermore, we
+introduce a black-box testing framework wherein agents are trained without
+exposure to the edited opponent scripts but are tested against these scripts to
+evaluate the policy coverage and adaptability of MARL algorithms. We conduct
+extensive evaluations of widely used and state-of-the-art algorithms on
+SMAC-HARD, revealing the substantial challenges posed by edited and mixed
+strategy opponents. Additionally, the black-box strategy tests illustrate the
+difficulty of transferring learned policies to unseen adversaries. We envision
+SMAC-HARD as a critical step toward benchmarking the next generation of MARL
+algorithms, fostering progress in self-play methods for multi-agent systems.
+Our code is available at https://github.com/devindeng94/smac-hard.",http://arxiv.org/pdf/2412.17707v1,,False
+EasyTime: Time Series Forecasting Made Easy,23/12/2024,"Xiangfei Qiu, Xiuwen Li, Ruiyang Pang, Zhicheng Pan, Xingjian Wu, Liu Yang, Jilin Hu, Yang Shu, Xuesong Lu, Chengcheng Yang, Chenjuan Guo, Aoying Zhou, Christian S. Jensen, Bin Yang","Time series forecasting has important applications across diverse domains.
+EasyTime, the system we demonstrate, facilitates easy use of time-series
+forecasting methods by researchers and practitioners alike. First, EasyTime
+enables one-click evaluation, enabling researchers to evaluate new forecasting
+methods using the suite of diverse time series datasets collected in the
+preexisting time series forecasting benchmark (TFB). This is achieved by
+leveraging TFB's flexible and consistent evaluation pipeline. Second, when
+practitioners must perform forecasting on a new dataset, a nontrivial first
+step is often to find an appropriate forecasting method. EasyTime provides an
+Automated Ensemble module that combines the promising forecasting methods to
+yield superior forecasting accuracy compared to individual methods. Third,
+EasyTime offers a natural language Q&A module leveraging large language models.
+Given a question like ""Which method is best for long term forecasting on time
+series with strong seasonality?"", EasyTime converts the question into SQL
+queries on the database of results obtained by TFB and then returns an answer
+in natural language and charts. By demonstrating EasyTime, we intend to show
+how it is possible to simplify the use of time series forecasting and to offer
+better support for the development of new generations of time series
+forecasting methods.",http://arxiv.org/pdf/2412.17603v1,,False
+Optimal Convergence Rates for Neural Operators,23/12/2024,"Mike Nguyen, Nicole Mücke","We introduce the neural tangent kernel (NTK) regime for two-layer neural
+operators and analyze their generalization properties. For early-stopped
+gradient descent (GD), we derive fast convergence rates that are known to be
+minimax optimal within the framework of non-parametric regression in
+reproducing kernel Hilbert spaces (RKHS). We provide bounds on the number of
+hidden neurons and the number of second-stage samples necessary for
+generalization. To justify our NTK regime, we additionally show that any
+operator approximable by a neural operator can also be approximated by an
+operator from the RKHS. A key application of neural operators is learning
+surrogate maps for the solution operators of partial differential equations
+(PDEs). We consider the standard Poisson equation to illustrate our theoretical
+findings with simulations.",http://arxiv.org/pdf/2412.17518v1,,False
+Improving the Noise Estimation of Latent Neural Stochastic Differential Equations,23/12/2024,"Linus Heck, Maximilian Gelbrecht, Michael T. Schaub, Niklas Boers","Latent neural stochastic differential equations (SDEs) have recently emerged
+as a promising approach for learning generative models from stochastic time
+series data. However, they systematically underestimate the noise level
+inherent in such data, limiting their ability to capture stochastic dynamics
+accurately. We investigate this underestimation in detail and propose a
+straightforward solution: by including an explicit additional noise
+regularization in the loss function, we are able to learn a model that
+accurately captures the diffusion component of the data. We demonstrate our
+results on a conceptual model system that highlights the improved latent neural
+SDE's capability to model stochastic bistable dynamics.",http://arxiv.org/pdf/2412.17499v1,,False
+DeepMF: Deep Motion Factorization for Closed-Loop Safety-Critical Driving Scenario Simulation,23/12/2024,"Yizhe Li, Linrui Zhang, Xueqian Wang, Houde Liu, Bin Liang","Safety-critical traffic scenarios are of great practical relevance to
+evaluating the robustness of autonomous driving (AD) systems. Given that these
+long-tail events are extremely rare in real-world traffic data, there is a
+growing body of work dedicated to the automatic traffic scenario generation.
+However, nearly all existing algorithms for generating safety-critical
+scenarios rely on snippets of previously recorded traffic events, transforming
+normal traffic flow into accident-prone situations directly. In other words,
+safety-critical traffic scenario generation is hindsight and not applicable to
+newly encountered and open-ended traffic events.In this paper, we propose the
+Deep Motion Factorization (DeepMF) framework, which extends static
+safety-critical driving scenario generation to closed-loop and interactive
+adversarial traffic simulation. DeepMF casts safety-critical traffic simulation
+as a Bayesian factorization that includes the assignment of hazardous traffic
+participants, the motion prediction of selected opponents, the reaction
+estimation of autonomous vehicle (AV) and the probability estimation of the
+accident occur. All the aforementioned terms are calculated using decoupled
+deep neural networks, with inputs limited to the current observation and
+historical states. Consequently, DeepMF can effectively and efficiently
+simulate safety-critical traffic scenarios at any triggered time and for any
+duration by maximizing the compounded posterior probability of traffic risk.
+Extensive experiments demonstrate that DeepMF excels in terms of risk
+management, flexibility, and diversity, showcasing outstanding performance in
+simulating a wide range of realistic, high-risk traffic scenarios.",http://arxiv.org/pdf/2412.17487v1,,False
+A Temporal Convolutional Network-based Approach for Network Intrusion Detection,23/12/2024,"Rukmini Nazre, Rujuta Budke, Omkar Oak, Suraj Sawant, Amit Joshi","Network intrusion detection is critical for securing modern networks, yet the
+complexity of network traffic poses significant challenges to traditional
+methods. This study proposes a Temporal Convolutional Network(TCN) model
+featuring a residual block architecture with dilated convolutions to capture
+dependencies in network traffic data while ensuring training stability. The
+TCN's ability to process sequences in parallel enables faster, more accurate
+sequence modeling than Recurrent Neural Networks. Evaluated on the Edge-IIoTset
+dataset, which includes 15 classes with normal traffic and 14 cyberattack
+types, the proposed model achieved an accuracy of 96.72% and a loss of 0.0688,
+outperforming 1D CNN, CNN-LSTM, CNN-GRU, CNN-BiLSTM, and CNN-GRU-LSTM models. A
+class-wise classification report, encompassing metrics such as recall,
+precision, accuracy, and F1-score, demonstrated the TCN model's superior
+performance across varied attack categories, including Malware, Injection, and
+DDoS. These results underscore the model's potential in addressing the
+complexities of network intrusion detection effectively.",http://arxiv.org/pdf/2412.17452v1,,False
+"FFA Sora, video generation as fundus fluorescein angiography simulator",23/12/2024,"Xinyuan Wu, Lili Wang, Ruoyu Chen, Bowen Liu, Weiyi Zhang, Xi Yang, Yifan Feng, Mingguang He, Danli Shi","Fundus fluorescein angiography (FFA) is critical for diagnosing retinal
+vascular diseases, but beginners often struggle with image interpretation. This
+study develops FFA Sora, a text-to-video model that converts FFA reports into
+dynamic videos via a Wavelet-Flow Variational Autoencoder (WF-VAE) and a
+diffusion transformer (DiT). Trained on an anonymized dataset, FFA Sora
+accurately simulates disease features from the input text, as confirmed by
+objective metrics: Frechet Video Distance (FVD) = 329.78, Learned Perceptual
+Image Patch Similarity (LPIPS) = 0.48, and Visual-question-answering Score
+(VQAScore) = 0.61. Specific evaluations showed acceptable alignment between the
+generated videos and textual prompts, with BERTScore of 0.35. Additionally, the
+model demonstrated strong privacy-preserving performance in retrieval
+evaluations, achieving an average Recall@K of 0.073. Human assessments
+indicated satisfactory visual quality, with an average score of 1.570(scale: 1
+= best, 5 = worst). This model addresses privacy concerns associated with
+sharing large-scale FFA data and enhances medical education.",http://arxiv.org/pdf/2412.17346v1,,False
+On the Feasibility of Vision-Language Models for Time-Series Classification,23/12/2024,"Vinay Prithyani, Mohsin Mohammed, Richa Gadgil, Ricardo Buitrago, Vinija Jain, Aman Chadha","We build upon time-series classification by leveraging the capabilities of
+Vision Language Models (VLMs). We find that VLMs produce competitive results
+after two or less epochs of fine-tuning. We develop a novel approach that
+incorporates graphical data representations as images in conjunction with
+numerical data. This approach is rooted in the hypothesis that graphical
+representations can provide additional contextual information that numerical
+data alone may not capture. Additionally, providing a graphical representation
+can circumvent issues such as limited context length faced by LLMs. To further
+advance this work, we implemented a scalable end-to-end pipeline for training
+on different scenarios, allowing us to isolate the most effective strategies
+for transferring learning capabilities from LLMs to Time Series Classification
+(TSC) tasks. Our approach works with univariate and multivariate time-series
+data. In addition, we conduct extensive and practical experiments to show how
+this approach works for time-series classification and generative labels.",http://arxiv.org/pdf/2412.17304v1,,False
+Enabling Time-series Foundation Model for Building Energy Forecasting via Contrastive Curriculum Learning,23/12/2024,"Rui Liang, Yang Deng, Donghua Xie, Fang He, Dan Wang","Advances in time-series forecasting are driving a shift from conventional
+machine learning models to foundation models (FMs) that are trained with
+generalized knowledge. However, existing FMs still perform poorly in the energy
+fields, such as building energy forecasting (BEF). This paper studies the
+adaptation of FM to BEF tasks. We demonstrate the shortcomings of fine-tuning
+FM straightforwardly from both the perspectives of FM and the data. To overcome
+these limitations, we propose a new \textit{contrastive curriculum
+learning}-based training method. Our method optimizes the ordering of training
+data in the context of TSFM adaptation. Experiments show that our method can
+improve the zero/few-shot performance by 14.6\% compared to the existing FMs.
+Our code and new TSFM will be available at <Anonymous Github Repo>.",http://arxiv.org/pdf/2412.17285v1,,False
+Foundation Model for Lossy Compression of Spatiotemporal Scientific Data,22/12/2024,"Xiao Li, Jaemoon Lee, Anand Rangarajan, Sanjay Ranka","We present a foundation model (FM) for lossy scientific data compression,
+combining a variational autoencoder (VAE) with a hyper-prior structure and a
+super-resolution (SR) module. The VAE framework uses hyper-priors to model
+latent space dependencies, enhancing compression efficiency. The SR module
+refines low-resolution representations into high-resolution outputs, improving
+reconstruction quality. By alternating between 2D and 3D convolutions, the
+model efficiently captures spatiotemporal correlations in scientific data while
+maintaining low computational cost. Experimental results demonstrate that the
+FM generalizes well to unseen domains and varying data shapes, achieving up to
+4 times higher compression ratios than state-of-the-art methods after
+domain-specific fine-tuning. The SR module improves compression ratio by 30
+percent compared to simple upsampling techniques. This approach significantly
+reduces storage and transmission costs for large-scale scientific simulations
+while preserving data integrity and fidelity.",http://arxiv.org/pdf/2412.17184v1,,False
+Enhancing Item Tokenization for Generative Recommendation through Self-Improvement,22/12/2024,"Runjin Chen, Mingxuan Ju, Ngoc Bui, Dimosthenis Antypas, Stanley Cai, Xiaopeng Wu, Leonardo Neves, Zhangyang Wang, Neil Shah, Tong Zhao","Generative recommendation systems, driven by large language models (LLMs),
+present an innovative approach to predicting user preferences by modeling items
+as token sequences and generating recommendations in a generative manner. A
+critical challenge in this approach is the effective tokenization of items,
+ensuring that they are represented in a form compatible with LLMs. Current item
+tokenization methods include using text descriptions, numerical strings, or
+sequences of discrete tokens. While text-based representations integrate
+seamlessly with LLM tokenization, they are often too lengthy, leading to
+inefficiencies and complicating accurate generation. Numerical strings, while
+concise, lack semantic depth and fail to capture meaningful item relationships.
+Tokenizing items as sequences of newly defined tokens has gained traction, but
+it often requires external models or algorithms for token assignment. These
+external processes may not align with the LLM's internal pretrained
+tokenization schema, leading to inconsistencies and reduced model performance.
+To address these limitations, we propose a self-improving item tokenization
+method that allows the LLM to refine its own item tokenizations during training
+process. Our approach starts with item tokenizations generated by any external
+model and periodically adjusts these tokenizations based on the LLM's learned
+patterns. Such alignment process ensures consistency between the tokenization
+and the LLM's internal understanding of the items, leading to more accurate
+recommendations. Furthermore, our method is simple to implement and can be
+integrated as a plug-and-play enhancement into existing generative
+recommendation systems. Experimental results on multiple datasets and using
+various initial tokenization strategies demonstrate the effectiveness of our
+method, with an average improvement of 8\% in recommendation performance.",http://arxiv.org/pdf/2412.17171v1,,False
+LLM Agent for Fire Dynamics Simulations,22/12/2024,"Leidong Xu, Danyal Mohaddes, Yi Wang","Significant advances have been achieved in leveraging foundation models, such
+as large language models (LLMs), to accelerate complex scientific workflows. In
+this work we introduce FoamPilot, a proof-of-concept LLM agent designed to
+enhance the usability of FireFOAM, a specialized solver for fire dynamics and
+fire suppression simulations built using OpenFOAM, a popular open-source
+toolbox for computational fluid dynamics (CFD). FoamPilot provides three core
+functionalities: code insight, case configuration and simulation evaluation.
+Code insight is an alternative to traditional keyword searching leveraging
+retrieval-augmented generation (RAG) and aims to enable efficient navigation
+and summarization of the FireFOAM source code for developers and experienced
+users. For case configuration, the agent interprets user requests in natural
+language and aims to modify existing simulation setups accordingly to support
+intermediate users. FoamPilot's job execution functionality seeks to manage the
+submission and execution of simulations in high-performance computing (HPC)
+environments and provide preliminary analysis of simulation results to support
+less experienced users. Promising results were achieved for each functionality,
+particularly for simple tasks, and opportunities were identified for
+significant further improvement for more complex tasks. The integration of
+these functionalities into a single LLM agent is a step aimed at accelerating
+the simulation workflow for engineers and scientists employing FireFOAM for
+complex simulations critical for improving fire safety.",http://arxiv.org/pdf/2412.17146v1,,False
+ASP-based Multi-shot Reasoning via DLV2 with Incremental Grounding,22/12/2024,"Francesco Calimeri, Giovambattista Ianni, Francesco Pacenza, Simona Perri, Jessica Zanfari","DLV2 is an AI tool for Knowledge Representation and Reasoning which supports
+Answer Set Programming (ASP) - a logic-based declarative formalism,
+successfully used in both academic and industrial applications. Given a logic
+program modelling a computational problem, an execution of DLV2 produces the
+so-called answer sets that correspond one-to-one to the solutions to the
+problem at hand. The computational process of DLV2 relies on the typical Ground
+& Solve approach where the grounding step transforms the input program into a
+new, equivalent ground program, and the subsequent solving step applies
+propositional algorithms to search for the answer sets. Recently, emerging
+applications in contexts such as stream reasoning and event processing created
+a demand for multi-shot reasoning: here, the system is expected to be reactive
+while repeatedly executed over rapidly changing data. In this work, we present
+a new incremental reasoner obtained from the evolution of DLV2 towards iterated
+reasoning. Rather than restarting the computation from scratch, the system
+remains alive across repeated shots, and it incrementally handles the internal
+grounding process. At each shot, the system reuses previous computations for
+building and maintaining a large, more general ground program, from which a
+smaller yet equivalent portion is determined and used for computing answer
+sets. Notably, the incremental process is performed in a completely transparent
+fashion for the user. We describe the system, its usage, its applicability and
+performance in some practically relevant domains. Under consideration in Theory
+and Practice of Logic Programming (TPLP).",http://arxiv.org/pdf/2412.17143v1,,False
+LLM-Powered User Simulator for Recommender System,22/12/2024,"Zijian Zhang, Shuchang Liu, Ziru Liu, Rui Zhong, Qingpeng Cai, Xiangyu Zhao, Chunxu Zhang, Qidong Liu, Peng Jiang","User simulators can rapidly generate a large volume of timely user behavior
+data, providing a testing platform for reinforcement learning-based recommender
+systems, thus accelerating their iteration and optimization. However, prevalent
+user simulators generally suffer from significant limitations, including the
+opacity of user preference modeling and the incapability of evaluating
+simulation accuracy. In this paper, we introduce an LLM-powered user simulator
+to simulate user engagement with items in an explicit manner, thereby enhancing
+the efficiency and effectiveness of reinforcement learning-based recommender
+systems training. Specifically, we identify the explicit logic of user
+preferences, leverage LLMs to analyze item characteristics and distill user
+sentiments, and design a logical model to imitate real human engagement. By
+integrating a statistical model, we further enhance the reliability of the
+simulation, proposing an ensemble model that synergizes logical and statistical
+insights for user interaction simulations. Capitalizing on the extensive
+knowledge and semantic generation capabilities of LLMs, our user simulator
+faithfully emulates user behaviors and preferences, yielding high-fidelity
+training data that enrich the training of recommendation algorithms. We
+establish quantifying and qualifying experiments on five datasets to validate
+the simulator's effectiveness and stability across various recommendation
+scenarios.",http://arxiv.org/pdf/2412.16984v1,,False
+System-2 Mathematical Reasoning via Enriched Instruction Tuning,22/12/2024,"Huanqia Cai, Yijun Yang, Zhifeng Li","Solving complex mathematical problems via system-2 reasoning is a natural
+human skill, yet it remains a significant challenge for current large language
+models (LLMs). We identify the scarcity of deliberate multi-step reasoning data
+as a primary limiting factor. To this end, we introduce Enriched Instruction
+Tuning (EIT), a method that enriches existing human-annotated mathematical
+datasets by synergizing human and AI feedback to create fine-grained reasoning
+trajectories. These datasets are then used to fine-tune open-source LLMs,
+enhancing their mathematical reasoning abilities without reliance on any
+symbolic verification program. Concretely, EIT is composed of two critical
+steps: Enriching with Reasoning Plan (ERP) and Enriching with Reasoning Step
+(ERS). The former generates a high-level plan that breaks down complex
+instructions into a sequence of simpler objectives, while ERS fills in
+reasoning contexts often overlooked by human annotators, creating a smoother
+reasoning trajectory for LLM fine-tuning. Unlike existing CoT prompting methods
+that generate reasoning chains only depending on LLM's internal knowledge, our
+method leverages human-annotated initial answers as ``meta-knowledge'' to help
+LLMs generate more detailed and precise reasoning processes, leading to a more
+trustworthy LLM expert for complex mathematical problems. In experiments, EIT
+achieves an accuracy of 84.1\% on GSM8K and 32.5\% on MATH, surpassing
+state-of-the-art fine-tuning and prompting methods, and even matching the
+performance of tool-augmented methods.",http://arxiv.org/pdf/2412.16964v1,,False
+Learning to Generate Gradients for Test-Time Adaptation via Test-Time Training Layers,22/12/2024,"Qi Deng, Shuaicheng Niu, Ronghao Zhang, Yaofo Chen, Runhao Zeng, Jian Chen, Xiping Hu","Test-time adaptation (TTA) aims to fine-tune a trained model online using
+unlabeled testing data to adapt to new environments or out-of-distribution
+data, demonstrating broad application potential in real-world scenarios.
+However, in this optimization process, unsupervised learning objectives like
+entropy minimization frequently encounter noisy learning signals. These signals
+produce unreliable gradients, which hinder the model ability to converge to an
+optimal solution quickly and introduce significant instability into the
+optimization process. In this paper, we seek to resolve these issues from the
+perspective of optimizer design. Unlike prior TTA using manually designed
+optimizers like SGD, we employ a learning-to-optimize approach to automatically
+learn an optimizer, called Meta Gradient Generator (MGG). Specifically, we aim
+for MGG to effectively utilize historical gradient information during the
+online optimization process to optimize the current model. To this end, in MGG,
+we design a lightweight and efficient sequence modeling layer -- gradient
+memory layer. It exploits a self-supervised reconstruction loss to compress
+historical gradient information into network parameters, thereby enabling
+better memorization ability over a long-term adaptation process. We only need a
+small number of unlabeled samples to pre-train MGG, and then the trained MGG
+can be deployed to process unseen samples. Promising results on ImageNet-C, R,
+Sketch, and A indicate that our method surpasses current state-of-the-art
+methods with fewer updates, less data, and significantly shorter adaptation
+iterations. Compared with a previous SOTA method SAR, we achieve 7.4% accuracy
+improvement and 4.2 times faster adaptation speed on ImageNet-C.",http://arxiv.org/pdf/2412.16901v1,,False
+Integrating Random Effects in Variational Autoencoders for Dimensionality Reduction of Correlated Data,22/12/2024,"Giora Simchoni, Saharon Rosset","Variational Autoencoders (VAE) are widely used for dimensionality reduction
+of large-scale tabular and image datasets, under the assumption of independence
+between data observations. In practice, however, datasets are often correlated,
+with typical sources of correlation including spatial, temporal and clustering
+structures. Inspired by the literature on linear mixed models (LMM), we propose
+LMMVAE -- a novel model which separates the classic VAE latent model into fixed
+and random parts. While the fixed part assumes the latent variables are
+independent as usual, the random part consists of latent variables which are
+correlated between similar clusters in the data such as nearby locations or
+successive measurements. The classic VAE architecture and loss are modified
+accordingly. LMMVAE is shown to improve squared reconstruction error and
+negative likelihood loss significantly on unseen data, with simulated as well
+as real datasets from various applications and correlation scenarios. It also
+shows improvement in the performance of downstream tasks such as supervised
+classification on the learned representations.",http://arxiv.org/pdf/2412.16899v1,,False
+Preventing Non-intrusive Load Monitoring Privacy Invasion: A Precise Adversarial Attack Scheme for Networked Smart Meters,22/12/2024,"Jialing He, Jiacheng Wang, Ning Wang, Shangwei Guo, Liehuang Zhu, Dusit Niyato, Tao Xiang","Smart grid, through networked smart meters employing the non-intrusive load
+monitoring (NILM) technique, can considerably discern the usage patterns of
+residential appliances. However, this technique also incurs privacy leakage. To
+address this issue, we propose an innovative scheme based on adversarial attack
+in this paper. The scheme effectively prevents NILM models from violating
+appliance-level privacy, while also ensuring accurate billing calculation for
+users. To achieve this objective, we overcome two primary challenges. First, as
+NILM models fall under the category of time-series regression models, direct
+application of traditional adversarial attacks designed for classification
+tasks is not feasible. To tackle this issue, we formulate a novel adversarial
+attack problem tailored specifically for NILM and providing a theoretical
+foundation for utilizing the Jacobian of the NILM model to generate
+imperceptible perturbations. Leveraging the Jacobian, our scheme can produce
+perturbations, which effectively misleads the signal prediction of NILM models
+to safeguard users' appliance-level privacy. The second challenge pertains to
+fundamental utility requirements, where existing adversarial attack schemes
+struggle to achieve accurate billing calculation for users. To handle this
+problem, we introduce an additional constraint, mandating that the sum of added
+perturbations within a billing period must be precisely zero. Experimental
+validation on real-world power datasets REDD and UK-DALE demonstrates the
+efficacy of our proposed solutions, which can significantly amplify the
+discrepancy between the output of the targeted NILM model and the actual power
+signal of appliances, and enable accurate billing at the same time.
+Additionally, our solutions exhibit transferability, making the generated
+perturbation signal from one target model applicable to other diverse NILM
+models.",http://arxiv.org/pdf/2412.16893v1,,False
+Sim911: Towards Effective and Equitable 9-1-1 Dispatcher Training with an LLM-Enabled Simulation,22/12/2024,"Zirong Chen, Elizabeth Chason, Noah Mladenovski, Erin Wilson, Kristin Mullen, Stephen Martini, Meiyi Ma","Emergency response services are vital for enhancing public safety by
+safeguarding the environment, property, and human lives. As frontline members
+of these services, 9-1-1 dispatchers have a direct impact on response times and
+the overall effectiveness of emergency operations. However, traditional
+dispatcher training methods, which rely on role-playing by experienced
+personnel, are labor-intensive, time-consuming, and often neglect the specific
+needs of underserved communities. To address these challenges, we introduce
+Sim911, the first training simulation for 9-1-1 dispatchers powered by Large
+Language Models (LLMs). Sim911 enhances training through three key technical
+innovations: (1) knowledge construction, which utilizes archived 9-1-1 call
+data to generate simulations that closely mirror real-world scenarios; (2)
+context-aware controlled generation, which employs dynamic prompts and vector
+bases to ensure that LLM behavior aligns with training objectives; and (3)
+validation with looped correction, which filters out low-quality responses and
+refines the system performance.",http://arxiv.org/pdf/2412.16844v1,,False
+Algorithm Design for Continual Learning in IoT Networks,22/12/2024,"Shugang Hao, Lingjie Duan","Continual learning (CL) is a new online learning technique over sequentially
+generated streaming data from different tasks, aiming to maintain a small
+forgetting loss on previously-learned tasks. Existing work focuses on reducing
+the forgetting loss under a given task sequence. However, if similar tasks
+continuously appear to the end time, the forgetting loss is still huge on prior
+distinct tasks. In practical IoT networks, an autonomous vehicle to sample data
+and learn different tasks can route and alter the order of task pattern at
+increased travelling cost. To our best knowledge, we are the first to study how
+to opportunistically route the testing object and alter the task sequence in
+CL. We formulate a new optimization problem and prove it NP-hard. We propose a
+polynomial-time algorithm to achieve approximation ratios of $\frac{3}{2}$ for
+underparameterized case and $\frac{3}{2} + r^{1-T}$ for overparameterized case,
+respectively, where $r:=1-\frac{n}{m}$ is a parameter of feature number $m$ and
+sample number $n$ and $T$ is the task number. Simulation results verify our
+algorithm's close-to-optimum performance.",http://arxiv.org/pdf/2412.16830v1,,False
+Bi-Sparse Unsupervised Feature Selection,22/12/2024,"Xianchao Xiu, Chenyi Huang, Pan Shang, Wanquan Liu","To efficiently deal with high-dimensional datasets in many areas,
+unsupervised feature selection (UFS) has become a rising technique for
+dimension reduction. Even though there are many UFS methods, most of them only
+consider the global structure of datasets by embedding a single sparse
+regularization or constraint. In this paper, we introduce a novel bi-sparse UFS
+method, called BSUFS, to simultaneously characterize both global and local
+structures. The core idea of BSUFS is to incorporate $\ell_{2,p}$-norm and
+$\ell_q$-norm into the classical principal component analysis (PCA), which
+enables our proposed method to select relevant features and filter out
+irrelevant noise accurately. Here, the parameters $p$ and $q$ are within the
+range of [0,1). Therefore, BSUFS not only constructs a unified framework for
+bi-sparse optimization, but also includes some existing works as special cases.
+To solve the resulting non-convex model, we propose an efficient proximal
+alternating minimization (PAM) algorithm using Riemannian manifold optimization
+and sparse optimization techniques. Theoretically, PAM is proven to have global
+convergence, i.e., for any random initial point, the generated sequence
+converges to a critical point that satisfies the first-order optimality
+condition. Extensive numerical experiments on synthetic and real-world datasets
+demonstrate the effectiveness of our proposed BSUFS. Specifically, the average
+accuracy (ACC) is improved by at least 4.71% and the normalized mutual
+information (NMI) is improved by at least 3.14% on average compared to the
+existing UFS competitors. The results validate the advantages of bi-sparse
+optimization in feature selection and show its potential for other fields in
+image processing. Our code will be available at https://github.com/xianchaoxiu.",http://arxiv.org/pdf/2412.16819v1,,False

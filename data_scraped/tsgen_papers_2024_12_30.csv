@@ -1,0 +1,500 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Generalized Grade-of-Membership Estimation for High-dimensional Locally Dependent Data,27/12/2024,"Ling Chen, Chengzhu Huang, Yuqi Gu","This work focuses on the mixed membership models for multivariate categorical
+data widely used for analyzing survey responses and population genetics data.
+These grade of membership (GoM) models offer rich modeling power but present
+significant estimation challenges for high-dimensional polytomous data. Popular
+existing approaches, such as Bayesian MCMC inference, are not scalable and lack
+theoretical guarantees in high-dimensional settings. To address this, we first
+observe that data from this model can be reformulated as a three-way
+(quasi-)tensor, with many subjects responding to many items with varying
+numbers of categories. We introduce a novel and simple approach that flattens
+the three-way quasi-tensor into a ""fat"" matrix, and then perform a singular
+value decomposition of it to estimate parameters by exploiting the singular
+subspace geometry. Our fast spectral method can accommodate a broad range of
+data distributions with arbitrarily locally dependent noise, which we formalize
+as the generalized-GoM models. We establish finite-sample entrywise error
+bounds for the generalized-GoM model parameters. This is supported by a new
+sharp two-to-infinity singular subspace perturbation theory for locally
+dependent and flexibly distributed noise, a contribution of independent
+interest. Simulations and applications to data in political surveys, population
+genetics, and single-cell sequencing demonstrate our method's superior
+performance.",http://arxiv.org/pdf/2412.19796v1,,False
+Generative Pretrained Embedding and Hierarchical Irregular Time Series Representation for Daily Living Activity Recognition,27/12/2024,"Damien Bouchabou, Sao Mai Nguyen","Within the evolving landscape of smart homes, the precise recognition of
+daily living activities using ambient sensor data stands paramount. This paper
+not only aims to bolster existing algorithms by evaluating two distinct
+pretrained embeddings suited for ambient sensor activations but also introduces
+a novel hierarchical architecture. We delve into an architecture anchored on
+Transformer Decoder-based pre-trained embeddings, reminiscent of the GPT
+design, and contrast it with the previously established state-of-the-art (SOTA)
+ELMo embeddings for ambient sensors. Our proposed hierarchical structure
+leverages the strengths of each pre-trained embedding, enabling the discernment
+of activity dependencies and sequence order, thereby enhancing classification
+precision. To further refine recognition, we incorporate into our proposed
+architecture an hour-of-the-day embedding. Empirical evaluations underscore the
+preeminence of the Transformer Decoder embedding in classification endeavors.
+Additionally, our innovative hierarchical design significantly bolsters the
+efficacy of both pre-trained embeddings, notably in capturing inter-activity
+nuances. The integration of temporal aspects subtly but distinctively augments
+classification, especially for time-sensitive activities. In conclusion, our
+GPT-inspired hierarchical approach, infused with temporal insights, outshines
+the SOTA ELMo benchmark.",http://arxiv.org/pdf/2412.19732v1,10.3233/FAIA241075,False
+Learning to Forget: Bayesian Time Series Forecasting using Recurrent Sparse Spectrum Signature Gaussian Processes,27/12/2024,"Csaba Tóth, Masaki Adachi, Michael A. Osborne, Harald Oberhauser","The signature kernel is a kernel between time series of arbitrary length and
+comes with strong theoretical guarantees from stochastic analysis. It has found
+applications in machine learning such as covariance functions for Gaussian
+processes. A strength of the underlying signature features is that they provide
+a structured global description of a time series. However, this property can
+quickly become a curse when local information is essential and forgetting is
+required; so far this has only been addressed with ad-hoc methods such as
+slicing the time series into subsegments. To overcome this, we propose a
+principled, data-driven approach by introducing a novel forgetting mechanism
+for signatures. This allows the model to dynamically adapt its context length
+to focus on more recent information. To achieve this, we revisit the recently
+introduced Random Fourier Signature Features, and develop Random Fourier
+Decayed Signature Features (RFDSF) with Gaussian processes (GPs). This results
+in a Bayesian time series forecasting algorithm with variational inference,
+that offers a scalable probabilistic algorithm that processes and transforms a
+time series into a joint predictive distribution over time steps in one pass
+using recurrence. For example, processing a sequence of length $10^4$ steps in
+$\approx 10^{-2}$ seconds and in $< 1\text{GB}$ of GPU memory. We demonstrate
+that it outperforms other GP-based alternatives and competes with
+state-of-the-art probabilistic time series forecasting algorithms.",http://arxiv.org/pdf/2412.19727v1,,False
+Toward Scalable Multirobot Control: Fast Policy Learning in Distributed MPC,27/12/2024,"Xinglong Zhang, Wei Pan, Cong Li, Xin Xu, Xiangke Wang, Ronghua Zhang, Dewen Hu","Distributed model predictive control (DMPC) is promising in achieving optimal
+cooperative control in multirobot systems (MRS). However, real-time DMPC
+implementation relies on numerical optimization tools to periodically calculate
+local control sequences online. This process is computationally demanding and
+lacks scalability for large-scale, nonlinear MRS. This article proposes a novel
+distributed learning-based predictive control (DLPC) framework for scalable
+multirobot control. Unlike conventional DMPC methods that calculate open-loop
+control sequences, our approach centers around a computationally fast and
+efficient distributed policy learning algorithm that generates explicit
+closed-loop DMPC policies for MRS without using numerical solvers. The policy
+learning is executed incrementally and forward in time in each prediction
+interval through an online distributed actor-critic implementation. The control
+policies are successively updated in a receding-horizon manner, enabling fast
+and efficient policy learning with the closed-loop stability guarantee. The
+learned control policies could be deployed online to MRS with varying robot
+scales, enhancing scalability and transferability for large-scale MRS.
+Furthermore, we extend our methodology to address the multirobot safe learning
+challenge through a force field-inspired policy learning approach. We validate
+our approach's effectiveness, scalability, and efficiency through extensive
+experiments on cooperative tasks of large-scale wheeled robots and multirotor
+drones. Our results demonstrate the rapid learning and deployment of DMPC
+policies for MRS with scales up to 10,000 units.",http://arxiv.org/pdf/2412.19669v1,,False
+Bidding Games on Markov Decision Processes with Quantitative Reachability Objectives,27/12/2024,"Guy Avni, Martin Kurečka, Kaushik Mallik, Petr Novotný, Suman Sadhukhan","Graph games are fundamental in strategic reasoning of multi-agent systems and
+their environments. We study a new family of graph games which combine
+stochastic environmental uncertainties and auction-based interactions among the
+agents, formalized as bidding games on (finite) Markov decision processes
+(MDP). Normally, on MDPs, a single decision-maker chooses a sequence of
+actions, producing a probability distribution over infinite paths. In bidding
+games on MDPs, two players -- called the reachability and safety players -- bid
+for the privilege of choosing the next action at each step. The reachability
+player's goal is to maximize the probability of reaching a target vertex,
+whereas the safety player's goal is to minimize it. These games generalize
+traditional bidding games on graphs, and the existing analysis techniques do
+not extend. For instance, the central property of traditional bidding games is
+the existence of a threshold budget, which is a necessary and sufficient budget
+to guarantee winning for the reachability player. For MDPs, the threshold
+becomes a relation between the budgets and probabilities of reaching the
+target. We devise value-iteration algorithms that approximate thresholds and
+optimal policies for general MDPs, and compute the exact solutions for acyclic
+MDPs, and show that finding thresholds is at least as hard as solving
+simple-stochastic games.",http://arxiv.org/pdf/2412.19609v1,,False
+SocRATES: Towards Automated Scenario-based Testing of Social Navigation Algorithms,27/12/2024,"Shashank Rao Marpally, Pranav Goyal, Harold Soh","Current social navigation methods and benchmarks primarily focus on proxemics
+and task efficiency. While these factors are important, qualitative aspects
+such as perceptions of a robot's social competence are equally crucial for
+successful adoption and integration into human environments. We propose a more
+comprehensive evaluation of social navigation through scenario-based testing,
+where specific human-robot interaction scenarios can reveal key robot
+behaviors. However, creating such scenarios is often labor-intensive and
+complex. In this work, we address this challenge by introducing a pipeline that
+automates the generation of context-, and location-appropriate social
+navigation scenarios, ready for simulation. Our pipeline transforms simple
+scenario metadata into detailed textual scenarios, infers pedestrian and robot
+trajectories, and simulates pedestrian behaviors, which enables more controlled
+evaluation. We leverage the social reasoning and code-generation capabilities
+of Large Language Models (LLMs) to streamline scenario generation and
+translation. Our experiments show that our pipeline produces realistic
+scenarios and significantly improves scenario translation over naive LLM
+prompting. Additionally, we present initial feedback from a usability study
+with social navigation experts and a case-study demonstrating a scenario-based
+evaluation of three navigation algorithms.",http://arxiv.org/pdf/2412.19595v1,,False
+Scalable Hierarchical Reinforcement Learning for Hyper Scale Multi-Robot Task Planning,27/12/2024,"Xuan Zhou, Xiang Shi, Lele Zhang, Chen Chen, Hongbo Li, Lin Ma, Fang Deng, Jie Chen","To improve the efficiency of warehousing system and meet huge customer
+orders, we aim to solve the challenges of dimension disaster and dynamic
+properties in hyper scale multi-robot task planning (MRTP) for robotic mobile
+fulfillment system (RMFS). Existing research indicates that hierarchical
+reinforcement learning (HRL) is an effective method to reduce these challenges.
+Based on that, we construct an efficient multi-stage HRL-based multi-robot task
+planner for hyper scale MRTP in RMFS, and the planning process is represented
+with a special temporal graph topology. To ensure optimality, the planner is
+designed with a centralized architecture, but it also brings the challenges of
+scaling up and generalization that require policies to maintain performance for
+various unlearned scales and maps. To tackle these difficulties, we first
+construct a hierarchical temporal attention network (HTAN) to ensure basic
+ability of handling inputs with unfixed lengths, and then design multi-stage
+curricula for hierarchical policy learning to further improve the scaling up
+and generalization ability while avoiding catastrophic forgetting.
+Additionally, we notice that policies with hierarchical structure suffer from
+unfair credit assignment that is similar to that in multi-agent reinforcement
+learning, inspired of which, we propose a hierarchical reinforcement learning
+algorithm with counterfactual rollout baseline to improve learning performance.
+Experimental results demonstrate that our planner outperform other
+state-of-the-art methods on various MRTP instances in both simulated and
+real-world RMFS. Also, our planner can successfully scale up to hyper scale
+MRTP instances in RMFS with up to 200 robots and 1000 retrieval racks on
+unlearned maps while keeping superior performance over other methods.",http://arxiv.org/pdf/2412.19538v1,,False
+RobotDiffuse: Motion Planning for Redundant Manipulator based on Diffusion Model,27/12/2024,"Xiaohan Zhang, Xudong Mou, Rui Wang, Tianyu Wo, Ningbo Gu, Tiejun Wang, Cangbai Xu, Xudong Liu","Redundant manipulators, with their higher Degrees of Freedom (DOFs), offer
+enhanced kinematic performance and versatility, making them suitable for
+applications like manufacturing, surgical robotics, and human-robot
+collaboration. However, motion planning for these manipulators is challenging
+due to increased DOFs and complex, dynamic environments. While traditional
+motion planning algorithms struggle with high-dimensional spaces, deep
+learning-based methods often face instability and inefficiency in complex
+tasks. This paper introduces RobotDiffuse, a diffusion model-based approach for
+motion planning in redundant manipulators. By integrating physical constraints
+with a point cloud encoder and replacing the U-Net structure with an
+encoder-only transformer, RobotDiffuse improves the model's ability to capture
+temporal dependencies and generate smoother, more coherent motion plans. We
+validate the approach using a complex simulator, and release a new dataset with
+35M robot poses and 0.14M obstacle avoidance scenarios. Experimental results
+demonstrate the effectiveness of RobotDiffuse and the promise of diffusion
+models for motion planning tasks. The code can be accessed at
+https://github.com/ACRoboT-buaa/RobotDiffuse.",http://arxiv.org/pdf/2412.19500v1,,False
+Meta-Learning-Based Delayless Subband Adaptive Filter using Complex Self-Attention for Active Noise Control,27/12/2024,"Pengxing Feng, Hing Cheung So","Active noise control typically employs adaptive filtering to generate
+secondary noise, where the least mean square algorithm is the most widely used.
+However, traditional updating rules are linear and exhibit limited
+effectiveness in addressing nonlinear environments and nonstationary noise. To
+tackle this challenge, we reformulate the active noise control problem as a
+meta-learning problem and propose a meta-learning-based delayless subband
+adaptive filter with deep neural networks. The core idea is to utilize a neural
+network as an adaptive algorithm that can adapt to different environments and
+types of noise. The neural network will train under noisy observations,
+implying that it recognizes the optimized updating rule without true labels. A
+single-headed attention recurrent neural network is devised with learnable
+feature embedding to update the adaptive filter weight efficiently, enabling
+accurate computation of the secondary source to attenuate the unwanted primary
+noise. In order to relax the time constraint on updating the adaptive filter
+weights, the delayless subband architecture is employed, which will allow the
+system to be updated less frequently as the downsampling factor increases. In
+addition, the delayless subband architecture does not introduce additional time
+delays in active noise control systems. A skip updating strategy is introduced
+to decrease the updating frequency further so that machines with limited
+resources have more possibility to board our meta-learning-based model.
+Extensive multi-condition training ensures generalization and robustness
+against various types of noise and environments. Simulation results demonstrate
+that our meta-learning-based model achieves superior noise reduction
+performance compared to traditional methods.",http://arxiv.org/pdf/2412.19471v1,,False
+Revisiting PCA for time series reduction in temporal dimension,27/12/2024,"Jiaxin Gao, Wenbo Hu, Yuntian Chen","Revisiting PCA for Time Series Reduction in Temporal Dimension; Jiaxin Gao,
+Wenbo Hu, Yuntian Chen; Deep learning has significantly advanced time series
+analysis (TSA), enabling the extraction of complex patterns for tasks like
+classification, forecasting, and regression. Although dimensionality reduction
+has traditionally focused on the variable space-achieving notable success in
+minimizing data redundancy and computational complexity-less attention has been
+paid to reducing the temporal dimension. In this study, we revisit Principal
+Component Analysis (PCA), a classical dimensionality reduction technique, to
+explore its utility in temporal dimension reduction for time series data. It is
+generally thought that applying PCA to the temporal dimension would disrupt
+temporal dependencies, leading to limited exploration in this area. However,
+our theoretical analysis and extensive experiments demonstrate that applying
+PCA to sliding series windows not only maintains model performance, but also
+enhances computational efficiency. In auto-regressive forecasting, the temporal
+structure is partially preserved through windowing, and PCA is applied within
+these windows to denoise the time series while retaining their statistical
+information. By preprocessing time-series data with PCA, we reduce the temporal
+dimensionality before feeding it into TSA models such as Linear, Transformer,
+CNN, and RNN architectures. This approach accelerates training and inference
+and reduces resource consumption. Notably, PCA improves Informer training and
+inference speed by up to 40% and decreases GPU memory usage of TimesNet by 30%,
+without sacrificing model accuracy. Comparative analysis against other
+reduction methods further highlights the effectiveness of PCA in improving the
+efficiency of TSA models.",http://arxiv.org/pdf/2412.19423v1,,False
+Spectral-Temporal Fusion Representation for Person-in-Bed Detection,27/12/2024,"Xuefeng Yang, Shiheng Zhang, Jian Guan, Feiyang Xiao, Wei Lu, Qiaoxi Zhu","This study is based on the ICASSP 2025 Signal Processing Grand Challenge's
+Accelerometer-Based Person-in-Bed Detection Challenge, which aims to determine
+bed occupancy using accelerometer signals. The task is divided into two tracks:
+""in bed"" and ""not in bed"" segmented detection, and streaming detection, facing
+challenges such as individual differences, posture variations, and external
+disturbances. We propose a spectral-temporal fusion-based feature
+representation method with mixup data augmentation, and adopt Intersection over
+Union (IoU) loss to optimize detection accuracy. In the two tracks, our method
+achieved outstanding results of 100.00% and 95.55% in detection scores,
+securing first place and third place, respectively.",http://arxiv.org/pdf/2412.19404v1,,False
+Asymptotically Optimal Search for a Change Point Anomaly under a Composite Hypothesis Model,27/12/2024,"Liad Lea Didi, Tomer Gafni, Kobi Cohen","We address the problem of searching for a change point in an anomalous
+process among a finite set of M processes. Specifically, we address a composite
+hypothesis model in which each process generates measurements following a
+common distribution with an unknown parameter (vector). This parameter belongs
+to either a normal or abnormal space depending on the current state of the
+process. Before the change point, all processes, including the anomalous one,
+are in a normal state; after the change point, the anomalous process
+transitions to an abnormal state. Our goal is to design a sequential search
+strategy that minimizes the Bayes risk by balancing sample complexity and
+detection accuracy. We propose a deterministic search algorithm with the
+following notable properties. First, we analytically demonstrate that when the
+distributions of both normal and abnormal processes are unknown, the algorithm
+is asymptotically optimal in minimizing the Bayes risk as the error probability
+approaches zero. In the second setting, where the parameter under the null
+hypothesis is known, the algorithm achieves asymptotic optimality with improved
+detection time based on the true normal state. Simulation results are presented
+to validate the theoretical findings.",http://arxiv.org/pdf/2412.19392v1,,False
+Large Language Models for Market Research: A Data-augmentation Approach,26/12/2024,"Mengxin Wang, Dennis J. Zhang, Heng Zhang","Large Language Models (LLMs) have transformed artificial intelligence by
+excelling in complex natural language processing tasks. Their ability to
+generate human-like text has opened new possibilities for market research,
+particularly in conjoint analysis, where understanding consumer preferences is
+essential but often resource-intensive. Traditional survey-based methods face
+limitations in scalability and cost, making LLM-generated data a promising
+alternative. However, while LLMs have the potential to simulate real consumer
+behavior, recent studies highlight a significant gap between LLM-generated and
+human data, with biases introduced when substituting between the two. In this
+paper, we address this gap by proposing a novel statistical data augmentation
+approach that efficiently integrates LLM-generated data with real data in
+conjoint analysis. Our method leverages transfer learning principles to debias
+the LLM-generated data using a small amount of human data. This results in
+statistically robust estimators with consistent and asymptotically normal
+properties, in contrast to naive approaches that simply substitute human data
+with LLM-generated data, which can exacerbate bias. We validate our framework
+through an empirical study on COVID-19 vaccine preferences, demonstrating its
+superior ability to reduce estimation error and save data and costs by 24.9\%
+to 79.8\%. In contrast, naive approaches fail to save data due to the inherent
+biases in LLM-generated data compared to human data. Another empirical study on
+sports car choices validates the robustness of our results. Our findings
+suggest that while LLM-generated data is not a direct substitute for human
+responses, it can serve as a valuable complement when used within a robust
+statistical framework.",http://arxiv.org/pdf/2412.19363v1,,False
+Biology Instructions: A Dataset and Benchmark for Multi-Omics Sequence Understanding Capability of Large Language Models,26/12/2024,"Haonan He, Yuchen Ren, Yining Tang, Ziyang Xu, Junxian Li, Minghao Yang, Di Zhang, Dong Yuan, Tao Chen, Shufei Zhang, Yuqiang Li, Nanqing Dong, Wanli Ouyang, Dongzhan Zhou, Peng Ye","Large language models have already demonstrated their formidable capabilities
+in general domains, ushering in a revolutionary transformation. However,
+exploring and exploiting the extensive knowledge of these models to comprehend
+multi-omics biology remains underexplored. To fill this research gap, we first
+introduce Biology-Instructions, the first large-scale multi-omics biological
+sequences-related instruction-tuning dataset including DNA, RNA, proteins, and
+multi-molecules, designed to bridge the gap between large language models
+(LLMs) and complex biological sequences-related tasks. This dataset can enhance
+the versatility of LLMs by integrating diverse biological sequenced-based
+prediction tasks with advanced reasoning capabilities, while maintaining
+conversational fluency. Additionally, we reveal significant performance
+limitations in even state-of-the-art LLMs on biological sequence-related
+multi-omics tasks without specialized pre-training and instruction-tuning. We
+further develop a strong baseline called ChatMultiOmics with a novel
+three-stage training pipeline, demonstrating the powerful ability to understand
+biology by using Biology-Instructions. Biology-Instructions and ChatMultiOmics
+are publicly available and crucial resources for enabling more effective
+integration of LLMs with multi-omics sequence analysis.",http://arxiv.org/pdf/2412.19191v1,,False
+PlanLLM: Video Procedure Planning with Refinable Large Language Models,26/12/2024,"Dejie Yang, Zijing Zhao, YangLiu","Video procedure planning, i.e., planning a sequence of action steps given the
+video frames of start and goal states, is an essential ability for embodied AI.
+Recent works utilize Large Language Models (LLMs) to generate enriched action
+step description texts to guide action step decoding. Although LLMs are
+introduced, these methods decode the action steps into a closed-set of one-hot
+vectors, limiting the model's capability of generalizing to new steps or tasks.
+Additionally, fixed action step descriptions based on world-level commonsense
+may contain noise in specific instances of visual states. In this paper, we
+propose PlanLLM, a cross-modal joint learning framework with LLMs for video
+procedure planning. We propose an LLM-Enhanced Planning module which fully uses
+the generalization ability of LLMs to produce free-form planning output and to
+enhance action step decoding. We also propose Mutual Information Maximization
+module to connect world-level commonsense of step descriptions and
+sample-specific information of visual states, enabling LLMs to employ the
+reasoning ability to generate step sequences. With the assistance of LLMs, our
+method can both closed-set and open vocabulary procedure planning tasks. Our
+PlanLLM achieves superior performance on three benchmarks, demonstrating the
+effectiveness of our designs.",http://arxiv.org/pdf/2412.19139v1,,False
+DAPoinTr: Domain Adaptive Point Transformer for Point Cloud Completion,26/12/2024,"Yinghui Li, Qianyu Zhou, Jingyu Gong, Ye Zhu, Richard Dazeley, Xinkui Zhao, Xuequan Lu","Point Transformers (PoinTr) have shown great potential in point cloud
+completion recently. Nevertheless, effective domain adaptation that improves
+transferability toward target domains remains unexplored. In this paper, we
+delve into this topic and empirically discover that direct feature alignment on
+point Transformer's CNN backbone only brings limited improvements since it
+cannot guarantee sequence-wise domain-invariant features in the Transformer. To
+this end, we propose a pioneering Domain Adaptive Point Transformer (DAPoinTr)
+framework for point cloud completion. DAPoinTr consists of three key
+components: Domain Query-based Feature Alignment (DQFA), Point Token-wise
+Feature alignment (PTFA), and Voted Prediction Consistency (VPC). In
+particular, DQFA is presented to narrow the global domain gaps from the
+sequence via the presented domain proxy and domain query at the Transformer
+encoder and decoder, respectively. PTFA is proposed to close the local domain
+shifts by aligning the tokens, \emph{i.e.,} point proxy and dynamic query, at
+the Transformer encoder and decoder, respectively. VPC is designed to consider
+different Transformer decoders as multiple of experts (MoE) for ensembled
+prediction voting and pseudo-label generation. Extensive experiments with
+visualization on several domain adaptation benchmarks demonstrate the
+effectiveness and superiority of our DAPoinTr compared with state-of-the-art
+methods. Code will be publicly available at:
+https://github.com/Yinghui-Li-New/DAPoinTr",http://arxiv.org/pdf/2412.19062v1,,False
+TravelAgent: Generative Agents in the Built Environment,25/12/2024,"Ariel Noyman, Kai Hu, Kent Larson","Understanding human behavior in built environments is critical for designing
+functional, user centered urban spaces. Traditional approaches, such as manual
+observations, surveys, and simplified simulations, often fail to capture the
+complexity and dynamics of real world behavior. To address these limitations,
+we introduce TravelAgent, a novel simulation platform that models pedestrian
+navigation and activity patterns across diverse indoor and outdoor environments
+under varying contextual and environmental conditions. TravelAgent leverages
+generative agents integrated into 3D virtual environments, enabling agents to
+process multimodal sensory inputs and exhibit human-like decision-making,
+behavior, and adaptation. Through experiments, including navigation,
+wayfinding, and free exploration, we analyze data from 100 simulations
+comprising 1898 agent steps across diverse spatial layouts and agent
+archetypes, achieving an overall task completion rate of 76%. Using spatial,
+linguistic, and sentiment analyses, we show how agents perceive, adapt to, or
+struggle with their surroundings and assigned tasks. Our findings highlight the
+potential of TravelAgent as a tool for urban design, spatial cognition
+research, and agent-based modeling. We discuss key challenges and opportunities
+in deploying generative agents for the evaluation and refinement of spatial
+designs, proposing TravelAgent as a new paradigm for simulating and
+understanding human experiences in built environments.",http://arxiv.org/pdf/2412.18985v1,,False
+Exemplar-condensed Federated Class-incremental Learning,25/12/2024,"Rui Sun, Yumin Zhang, Varun Ojha, Tejal Shah, Haoran Duan, Bo Wei, Rajiv Ranjan","We propose Exemplar-Condensed federated class-incremental learning (ECoral)
+to distil the training characteristics of real images from streaming data into
+informative rehearsal exemplars. The proposed method eliminates the limitations
+of exemplar selection in replay-based approaches for mitigating catastrophic
+forgetting in federated continual learning (FCL). The limitations particularly
+related to the heterogeneity of information density of each summarized data.
+Our approach maintains the consistency of training gradients and the
+relationship to past tasks for the summarized exemplars to represent the
+streaming data compared to the original images effectively. Additionally, our
+approach reduces the information-level heterogeneity of the summarized data by
+inter-client sharing of the disentanglement generative model. Extensive
+experiments show that our ECoral outperforms several state-of-the-art methods
+and can be seamlessly integrated with many existing approaches to enhance
+performance.",http://arxiv.org/pdf/2412.18926v1,,False
+Long-Range Tasks Using Short-Context LLMs: Incremental Reasoning With Structured Memories,25/12/2024,"Dulhan Jayalath, James Bradley Wendt, Nicholas Monath, Sandeep Tata, Beliz Gunel","Long-range tasks require reasoning over long inputs. Existing solutions
+either need large compute budgets, training data, access to model weights, or
+use complex, task-specific approaches. We present PRISM, which alleviates these
+concerns by processing information as a stream of chunks, maintaining a
+structured in-context memory specified by a typed hierarchy schema. This
+approach demonstrates superior performance to baselines on diverse tasks while
+using at least 4x smaller contexts than long-context models. Moreover, PRISM is
+token-efficient. By producing short outputs and efficiently leveraging
+key-value (KV) caches, it achieves up to 54% cost reduction when compared to
+alternative short-context approaches. The method also scales down to tiny
+information chunks (e.g., 500 tokens) without increasing the number of tokens
+encoded or sacrificing quality. Furthermore, we show that it is possible to
+generate schemas to generalize our approach to new tasks with minimal effort.",http://arxiv.org/pdf/2412.18914v1,,False
+IUST_PersonReId: A New Domain in Person Re-Identification Datasets,25/12/2024,"Alireza Sedighi Moghaddam, Fatemeh Anvari, Mohammadjavad Mirshekari Haghighi, Mohammadali Fakhari, Mohammad Reza Mohammadi","Person re-identification (ReID) models often struggle to generalize across
+diverse cultural contexts, particularly in Islamic regions like Iran, where
+modest clothing styles are prevalent. Existing datasets predominantly feature
+Western and East Asian fashion, limiting their applicability in these settings.
+To address this gap, we introduce IUST_PersonReId, a dataset designed to
+reflect the unique challenges of ReID in new cultural environments, emphasizing
+modest attire and diverse scenarios from Iran, including markets, campuses, and
+mosques. Experiments on IUST_PersonReId with state-of-the-art models, such as
+Solider and CLIP-ReID, reveal significant performance drops compared to
+benchmarks like Market1501 and MSMT17, highlighting the challenges posed by
+occlusion and limited distinctive features. Sequence-based evaluations show
+improvements by leveraging temporal context, emphasizing the dataset's
+potential for advancing culturally sensitive and robust ReID systems.
+IUST_PersonReId offers a critical resource for addressing fairness and bias in
+ReID research globally. The dataset is publicly available at
+https://computervisioniust.github.io/IUST_PersonReId/.",http://arxiv.org/pdf/2412.18874v1,,False
+Optimistic Critic Reconstruction and Constrained Fine-Tuning for General Offline-to-Online RL,25/12/2024,"Qin-Wen Luo, Ming-Kun Xie, Ye-Wen Wang, Sheng-Jun Huang","Offline-to-online (O2O) reinforcement learning (RL) provides an effective
+means of leveraging an offline pre-trained policy as initialization to improve
+performance rapidly with limited online interactions. Recent studies often
+design fine-tuning strategies for a specific offline RL method and cannot
+perform general O2O learning from any offline method. To deal with this
+problem, we disclose that there are evaluation and improvement mismatches
+between the offline dataset and the online environment, which hinders the
+direct application of pre-trained policies to online fine-tuning. In this
+paper, we propose to handle these two mismatches simultaneously, which aims to
+achieve general O2O learning from any offline method to any online method.
+Before online fine-tuning, we re-evaluate the pessimistic critic trained on the
+offline dataset in an optimistic way and then calibrate the misaligned critic
+with the reliable offline actor to avoid erroneous update. After obtaining an
+optimistic and and aligned critic, we perform constrained fine-tuning to combat
+distribution shift during online learning. We show empirically that the
+proposed method can achieve stable and efficient performance improvement on
+multiple simulated tasks when compared to the state-of-the-art methods.",http://arxiv.org/pdf/2412.18855v1,,False
+SWAG: Long-term Surgical Workflow Prediction with Generative-based Anticipation,25/12/2024,"Maxence Boels, Yang Liu, Prokar Dasgupta, Alejandro Granados, Sebastien Ourselin","While existing recognition approaches excel at identifying current surgical
+phases, they provide limited foresight into future procedural steps,
+restricting their intraoperative utility. Similarly, current anticipation
+methods are constrained to predicting short-term events or singular future
+occurrences, neglecting the dynamic and sequential nature of surgical
+workflows. To address these limitations, we propose SWAG (Surgical Workflow
+Anticipative Generation), a unified framework for phase recognition and
+long-term anticipation of surgical workflows. SWAG employs two generative
+decoding methods -- single-pass (SP) and auto-regressive (AR) -- to predict
+sequences of future surgical phases. A novel prior knowledge embedding
+mechanism enhances the accuracy of anticipatory predictions. The framework
+addresses future phase classification and remaining time regression tasks.
+Additionally, a regression-to-classification (R2C) method is introduced to map
+continuous predictions to discrete temporal segments. SWAG's performance was
+evaluated on the Cholec80 and AutoLaparo21 datasets. The single-pass
+classification model with prior knowledge embeddings (SWAG-SP\*) achieved
+53.5\% accuracy in 15-minute anticipation on AutoLaparo21, while the R2C model
+reached 60.8\% accuracy on Cholec80. SWAG's single-pass regression approach
+outperformed existing methods for remaining time prediction, achieving weighted
+mean absolute errors of 0.32 and 0.48 minutes for 2- and 3-minute horizons,
+respectively. SWAG demonstrates versatility across classification and
+regression tasks, offering robust tools for real-time surgical workflow
+anticipation. By unifying recognition and anticipatory capabilities, SWAG
+provides actionable predictions to enhance intraoperative decision-making.",http://arxiv.org/pdf/2412.18849v1,,False
+Advancing NAM-to-Speech Conversion with Novel Methods and the MultiNAM Dataset,25/12/2024,"Neil Shah, Shirish Karande, Vineet Gandhi","Current Non-Audible Murmur (NAM)-to-speech techniques rely on voice cloning
+to simulate ground-truth speech from paired whispers. However, the simulated
+speech often lacks intelligibility and fails to generalize well across
+different speakers. To address this issue, we focus on learning phoneme-level
+alignments from paired whispers and text and employ a Text-to-Speech (TTS)
+system to simulate the ground-truth. To reduce dependence on whispers, we learn
+phoneme alignments directly from NAMs, though the quality is constrained by the
+available training data. To further mitigate reliance on NAM/whisper data for
+ground-truth simulation, we propose incorporating the lip modality to infer
+speech and introduce a novel diffusion-based method that leverages recent
+advancements in lip-to-speech technology. Additionally, we release the MultiNAM
+dataset with over $7.96$ hours of paired NAM, whisper, video, and text data
+from two speakers and benchmark all methods on this dataset. Speech samples and
+the dataset are available at \url{https://diff-nam.github.io/DiffNAM/}",http://arxiv.org/pdf/2412.18839v1,,False
+PhyloGen: Language Model-Enhanced Phylogenetic Inference via Graph Structure Generation,25/12/2024,"ChenRui Duan, Zelin Zang, Siyuan Li, Yongjie Xu, Stan Z. Li","Phylogenetic trees elucidate evolutionary relationships among species, but
+phylogenetic inference remains challenging due to the complexity of combining
+continuous (branch lengths) and discrete parameters (tree topology).
+Traditional Markov Chain Monte Carlo methods face slow convergence and
+computational burdens. Existing Variational Inference methods, which require
+pre-generated topologies and typically treat tree structures and branch lengths
+independently, may overlook critical sequence features, limiting their accuracy
+and flexibility. We propose PhyloGen, a novel method leveraging a pre-trained
+genomic language model to generate and optimize phylogenetic trees without
+dependence on evolutionary models or aligned sequence constraints. PhyloGen
+views phylogenetic inference as a conditionally constrained tree structure
+generation problem, jointly optimizing tree topology and branch lengths through
+three core modules: (i) Feature Extraction, (ii) PhyloTree Construction, and
+(iii) PhyloTree Structure Modeling. Meanwhile, we introduce a Scoring Function
+to guide the model towards a more stable gradient descent. We demonstrate the
+effectiveness and robustness of PhyloGen on eight real-world benchmark
+datasets. Visualization results confirm PhyloGen provides deeper insights into
+phylogenetic relationships.",http://arxiv.org/pdf/2412.18827v1,,False
+Thermal-Mechanical Physics Informed Deep Learning For Fast Prediction of Thermal Stress Evolution in Laser Metal Deposition,25/12/2024,"R. Sharma, Y. B. Guo","Understanding thermal stress evolution in metal additive manufacturing (AM)
+is crucial for producing high-quality components. Recent advancements in
+machine learning (ML) have shown great potential for modeling complex
+multiphysics problems in metal AM. While physics-based simulations face the
+challenge of high computational costs, conventional data-driven ML models
+require large, labeled training datasets to achieve accurate predictions.
+Unfortunately, generating large datasets for ML model training through
+time-consuming experiments or high-fidelity simulations is highly expensive in
+metal AM. To address these challenges, this study introduces a physics-informed
+neural network (PINN) framework that incorporates governing physical laws into
+deep neural networks (NNs) to predict temperature and thermal stress evolution
+during the laser metal deposition (LMD) process. The study also discusses the
+enhanced accuracy and efficiency of the PINN model when supplemented with small
+simulation data. Furthermore, it highlights the PINN transferability, enabling
+fast predictions with a set of new process parameters using a pre-trained PINN
+model as an online soft sensor, significantly reducing computation time
+compared to physics-based numerical models while maintaining accuracy.",http://arxiv.org/pdf/2412.18786v1,,False
+Towards a Statistical Understanding of Neural Networks: Beyond the Neural Tangent Kernel Theories,25/12/2024,"Haobo Zhang, Jianfa Lai, Yicheng Li, Qian Lin, Jun S. Liu","A primary advantage of neural networks lies in their feature learning
+characteristics, which is challenging to theoretically analyze due to the
+complexity of their training dynamics. We propose a new paradigm for studying
+feature learning and the resulting benefits in generalizability. After
+reviewing the neural tangent kernel (NTK) theory and recent results in kernel
+regression, which address the generalization issue of sufficiently wide neural
+networks, we examine limitations and implications of the fixed kernel theory
+(as the NTK theory) and review recent theoretical advancements in feature
+learning. Moving beyond the fixed kernel/feature theory, we consider neural
+networks as adaptive feature models. Finally, we propose an over-parameterized
+Gaussian sequence model as a prototype model to study the feature learning
+characteristics of neural networks.",http://arxiv.org/pdf/2412.18756v1,,False
+Predicting Time Series of Networked Dynamical Systems without Knowing Topology,25/12/2024,"Yanna Ding, Zijie Huang, Malik Magdon-Ismail, Jianxi Gao","Many real-world complex systems, such as epidemic spreading networks and
+ecosystems, can be modeled as networked dynamical systems that produce
+multivariate time series. Learning the intrinsic dynamics from observational
+data is pivotal for forecasting system behaviors and making informed decisions.
+However, existing methods for modeling networked time series often assume known
+topologies, whereas real-world networks are typically incomplete or inaccurate,
+with missing or spurious links that hinder precise predictions. Moreover, while
+networked time series often originate from diverse topologies, the ability of
+models to generalize across topologies has not been systematically evaluated.
+To address these gaps, we propose a novel framework for learning network
+dynamics directly from observed time-series data, when prior knowledge of graph
+topology or governing dynamical equations is absent. Our approach leverages
+continuous graph neural networks with an attention mechanism to construct a
+latent topology, enabling accurate reconstruction of future trajectories for
+network states. Extensive experiments on real and synthetic networks
+demonstrate that our model not only captures dynamics effectively without
+topology knowledge but also generalizes to unseen time series originating from
+diverse topologies.",http://arxiv.org/pdf/2412.18734v1,,False

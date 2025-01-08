@@ -1,0 +1,153 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Synthetic Data for Portfolios: A Throw of the Dice Will Never Abolish Chance,07/01/2025,"Adil Rengim Cetingoz, Charles-Albert Lehalle","Simulation methods have always been instrumental in finance, and data-driven
+methods with minimal model specification, commonly referred to as generative
+models, have attracted increasing attention, especially after the success of
+deep learning in a broad range of fields. However, the adoption of these models
+in financial applications has not kept pace with the growing interest, probably
+due to the unique complexities and challenges of financial markets. This paper
+aims to contribute to a deeper understanding of the limitations of generative
+models, particularly in portfolio and risk management. To this end, we begin by
+presenting theoretical results on the importance of initial sample size, and
+point out the potential pitfalls of generating far more data than originally
+available. We then highlight the inseparable nature of model development and
+the desired use case by touching on a paradox: generic generative models
+inherently care less about what is important for constructing portfolios (in
+particular the long-short ones). Based on these findings, we propose a pipeline
+for the generation of multivariate returns that meets conventional evaluation
+standards on a large universe of US equities while being compliant with
+stylized facts observed in asset returns and turning around the pitfalls we
+previously identified. Moreover, we insist on the need for more delicate
+evaluation methods, and suggest, through an example of mean-reversion
+strategies, a method designed to identify poor models for a given application
+based on regurgitative training, i.e. retraining the model using the data it
+has itself generated, which is commonly referred to in statistics as
+identifiability.",http://arxiv.org/pdf/2501.03993v1,,False
+Synthetic Data Privacy Metrics,07/01/2025,"Amy Steier, Lipika Ramaswamy, Andre Manoel, Alexa Haushalter","Recent advancements in generative AI have made it possible to create
+synthetic datasets that can be as accurate as real-world data for training AI
+models, powering statistical insights, and fostering collaboration with
+sensitive datasets while offering strong privacy guarantees. Effectively
+measuring the empirical privacy of synthetic data is an important step in the
+process. However, while there is a multitude of new privacy metrics being
+published every day, there currently is no standardization. In this paper, we
+review the pros and cons of popular metrics that include simulations of
+adversarial attacks. We also review current best practices for amending
+generative models to enhance the privacy of the data they create (e.g.
+differential privacy).",http://arxiv.org/pdf/2501.03941v1,,False
+Not all tokens are created equal: Perplexity Attention Weighted Networks for AI generated text detection,07/01/2025,"Pablo Miralles-González, Javier Huertas-Tato, Alejandro Martín, David Camacho","The rapid advancement in large language models (LLMs) has significantly
+enhanced their ability to generate coherent and contextually relevant text,
+raising concerns about the misuse of AI-generated content and making it
+critical to detect it. However, the task remains challenging, particularly in
+unseen domains or with unfamiliar LLMs. Leveraging LLM next-token distribution
+outputs offers a theoretically appealing approach for detection, as they
+encapsulate insights from the models' extensive pre-training on diverse
+corpora. Despite its promise, zero-shot methods that attempt to operationalize
+these outputs have met with limited success. We hypothesize that one of the
+problems is that they use the mean to aggregate next-token distribution metrics
+across tokens, when some tokens are naturally easier or harder to predict and
+should be weighted differently. Based on this idea, we propose the Perplexity
+Attention Weighted Network (PAWN), which uses the last hidden states of the LLM
+and positions to weight the sum of a series of features based on metrics from
+the next-token distribution across the sequence length. Although not zero-shot,
+our method allows us to cache the last hidden states and next-token
+distribution metrics on disk, greatly reducing the training resource
+requirements. PAWN shows competitive and even better performance
+in-distribution than the strongest baselines (fine-tuned LMs) with a fraction
+of their trainable parameters. Our model also generalizes better to unseen
+domains and source models, with smaller variability in the decision boundary
+across distribution shifts. It is also more robust to adversarial attacks, and
+if the backbone has multilingual capabilities, it presents decent
+generalization to languages not seen during supervised training, with LLaMA3-1B
+reaching a mean macro-averaged F1 score of 81.46% in cross-validation with nine
+languages.",http://arxiv.org/pdf/2501.03940v1,,False
+Cosmological Parameter Estimation with Sequential Linear Simulation-based Inference,07/01/2025,"Nicolas Mediato-Diaz, Will Handley","We develop the framework of Linear Simulation-based Inference (LSBI), an
+application of simulation-based inference where the likelihood is approximated
+by a Gaussian linear function of its parameters. We obtain analytical
+expressions for the posterior distributions of hyper-parameters of the linear
+likelihood in terms of samples drawn from a simulator, for both uniform and
+conjugate priors. This method is applied sequentially to several toy-models and
+tested on emulated datasets for the Cosmic Microwave Background temperature
+power spectrum. We find that convergence is achieved after four or five rounds
+of $\mathcal{O}(10^4)$ simulations, which is competitive with state-of-the-art
+neural density estimation methods. Therefore, we demonstrate that it is
+possible to obtain significant information gain and generate posteriors that
+agree with the underlying parameters while maintaining explainability and
+intellectual oversight.",http://arxiv.org/pdf/2501.03921v1,,False
+mFabric: An Efficient and Scalable Fabric for Mixture-of-Experts Training,07/01/2025,"Xudong Liao, Yijun Sun, Han Tian, Xinchen Wan, Yilun Jin, Zilong Wang, Zhenghang Ren, Xinyang Huang, Wenxue Li, Kin Fai Tse, Zhizhen Zhong, Guyue Liu, Ying Zhang, Xiaofeng Ye, Yiming Zhang, Kai Chen","Mixture-of-Expert (MoE) models outperform conventional models by selectively
+activating different subnets, named \emph{experts}, on a per-token basis. This
+gated computation generates dynamic communications that cannot be determined
+beforehand, challenging the existing GPU interconnects that remain
+\emph{static} during the distributed training process. In this paper, we
+advocate for a first-of-its-kind system, called mFabric, that unlocks topology
+reconfiguration \emph{during} distributed MoE training. Towards this vision, we
+first perform a production measurement study and show that the MoE dynamic
+communication pattern has \emph{strong locality}, alleviating the requirement
+of global reconfiguration. Based on this, we design and implement a
+\emph{regionally reconfigurable high-bandwidth domain} on top of existing
+electrical interconnects using optical circuit switching (OCS), achieving
+scalability while maintaining rapid adaptability. We have built a fully
+functional mFabric prototype with commodity hardware and a customized
+collective communication runtime that trains state-of-the-art MoE models with
+\emph{in-training} topology reconfiguration across 32 A100 GPUs. Large-scale
+packet-level simulations show that mFabric delivers comparable performance as
+the non-blocking fat-tree fabric while boosting the training cost efficiency
+(e.g., performance per dollar) of four representative MoE models by
+1.2$\times$--1.5$\times$ and 1.9$\times$--2.3$\times$ at 100 Gbps and 400 Gbps
+link bandwidths, respectively.",http://arxiv.org/pdf/2501.03905v1,,False
+Explainable Reinforcement Learning via Temporal Policy Decomposition,07/01/2025,"Franco Ruggeri, Alessio Russo, Rafia Inam, Karl Henrik Johansson","We investigate the explainability of Reinforcement Learning (RL) policies
+from a temporal perspective, focusing on the sequence of future outcomes
+associated with individual actions. In RL, value functions compress information
+about rewards collected across multiple trajectories and over an infinite
+horizon, allowing a compact form of knowledge representation. However, this
+compression obscures the temporal details inherent in sequential
+decision-making, presenting a key challenge for interpretability. We present
+Temporal Policy Decomposition (TPD), a novel explainability approach that
+explains individual RL actions in terms of their Expected Future Outcome (EFO).
+These explanations decompose generalized value functions into a sequence of
+EFOs, one for each time step up to a prediction horizon of interest, revealing
+insights into when specific outcomes are expected to occur. We leverage
+fixed-horizon temporal difference learning to devise an off-policy method for
+learning EFOs for both optimal and suboptimal actions, enabling contrastive
+explanations consisting of EFOs for different state-action pairs. Our
+experiments demonstrate that TPD generates accurate explanations that (i)
+clarify the policy's future strategy and anticipated trajectory for a given
+action and (ii) improve understanding of the reward composition, facilitating
+fine-tuning of the reward function to align with human expectations.",http://arxiv.org/pdf/2501.03902v1,,False
+Imitation Learning of MPC with Neural Networks: Error Guarantees and Sparsification,07/01/2025,"Hendrik Alsmeier, Lukas Theiner, Anton Savchenko, Ali Mesbah, Rolf Findeisen","This paper presents a framework for bounding the approximation error in
+imitation model predictive controllers utilizing neural networks. Leveraging
+the Lipschitz properties of these neural networks, we derive a bound that
+guides dataset design to ensure the approximation error remains at chosen
+limits. We discuss how this method can be used to design a stable neural
+network controller with performance guarantees employing existing robust model
+predictive control approaches for data generation. Additionally, we introduce a
+training adjustment, which is based on the sensitivities of the optimization
+problem and reduces dataset density requirements based on the derived bounds.
+We verify that the proposed augmentation results in improvements to the
+network's predictive capabilities and a reduction of the Lipschitz constant.
+Moreover, on a simulated inverted pendulum problem, we show that the approach
+results in a closer match of the closed-loop behavior between the imitation and
+the original model predictive controller.",http://arxiv.org/pdf/2501.03671v1,,False
+Physics-Constrained Generative Artificial Intelligence for Rapid Takeoff Trajectory Design,07/01/2025,"Samuel Sisk, Xiaosong Du","To aid urban air mobility (UAM), electric vertical takeoff and landing
+(eVTOL) aircraft are being targeted. Conventional multidisciplinary analysis
+and optimization (MDAO) can be expensive, while surrogate-based optimization
+can struggle with challenging physical constraints. This work proposes
+physics-constrained generative adversarial networks (physicsGAN), to
+intelligently parameterize the takeoff control profiles of an eVTOL aircraft
+and to transform the original design space to a feasible space. Specifically,
+the transformed feasible space refers to a space where all designs directly
+satisfy all design constraints. The physicsGAN-enabled surrogate-based takeoff
+trajectory design framework was demonstrated on the Airbus A3 Vahana. The
+physicsGAN generated only feasible control profiles of power and wing angle in
+the feasible space with around 98.9% of designs satisfying all constraints. The
+proposed design framework obtained 99.6% accuracy compared with
+simulation-based optimal design and took only 2.2 seconds, which reduced the
+computational time by around 200 times. Meanwhile, data-driven GAN-enabled
+surrogate-based optimization took 21.9 seconds using a derivative-free
+optimizer, which was around an order of magnitude slower than the proposed
+framework. Moreover, the data-driven GAN-based optimization using
+gradient-based optimizers could not consistently find the optimal design during
+random trials and got stuck in an infeasible region, which is problematic in
+real practice. Therefore, the proposed physicsGAN-based design framework
+outperformed data-driven GAN-based design to the extent of efficiency (2.2
+seconds), optimality (99.6% accurate), and feasibility (100% feasible).
+According to the literature review, this is the first physics-constrained
+generative artificial intelligence enabled by surrogate models.",http://arxiv.org/pdf/2501.03445v1,,False

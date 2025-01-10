@@ -1,0 +1,284 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Progressive Growing of Video Tokenizers for Highly Compressed Latent Spaces,09/01/2025,"Aniruddha Mahapatra, Long Mai, Yitian Zhang, David Bourgin, Feng Liu","Video tokenizers are essential for latent video diffusion models, converting
+raw video data into spatiotemporally compressed latent spaces for efficient
+training. However, extending state-of-the-art video tokenizers to achieve a
+temporal compression ratio beyond 4x without increasing channel capacity poses
+significant challenges. In this work, we propose an alternative approach to
+enhance temporal compression. We find that the reconstruction quality of
+temporally subsampled videos from a low-compression encoder surpasses that of
+high-compression encoders applied to original videos. This indicates that
+high-compression models can leverage representations from lower-compression
+models. Building on this insight, we develop a bootstrapped
+high-temporal-compression model that progressively trains high-compression
+blocks atop well-trained lower-compression models. Our method includes a
+cross-level feature-mixing module to retain information from the pretrained
+low-compression model and guide higher-compression blocks to capture the
+remaining details from the full video sequence. Evaluation of video benchmarks
+shows that our method significantly improves reconstruction quality while
+increasing temporal compression compared to direct extensions of existing video
+tokenizers. Furthermore, the resulting compact latent space effectively trains
+a video diffusion model for high-quality video generation with a reduced token
+budget.",http://arxiv.org/pdf/2501.05442v1,,False
+TimeDP: Learning to Generate Multi-Domain Time Series with Domain Prompts,09/01/2025,"Yu-Hao Huang, Chang Xu, Yueying Wu, Wu-Jun Li, Jiang Bian","Time series generation models are crucial for applications like data
+augmentation and privacy preservation. Most existing time series generation
+models are typically designed to generate data from one specified domain. While
+leveraging data from other domain for better generalization is proved to work
+in other application areas, this approach remains challenging for time series
+modeling due to the large divergence in patterns among different real world
+time series categories. In this paper, we propose a multi-domain time series
+diffusion model with domain prompts, named TimeDP. In TimeDP, we utilize a time
+series semantic prototype module which defines time series prototypes to
+represent time series basis, each prototype vector serving as ""word""
+representing some elementary time series feature. A prototype assignment module
+is applied to extract the extract domain specific prototype weights, for
+learning domain prompts as generation condition. During sampling, we extract
+""domain prompt"" with few-shot samples from the target domain and use the domain
+prompts as condition to generate time series samples. Experiments demonstrate
+that our method outperforms baselines to provide the state-of-the-art in-domain
+generation quality and strong unseen domain generation capability.",http://arxiv.org/pdf/2501.05403v1,,False
+Large Physics Models: Towards a collaborative approach with Large Language Models and Foundation Models,09/01/2025,"Kristian G. Barman, Sascha Caron, Emily Sullivan, Henk W. de Regt, Roberto Ruiz de Austri, Mieke Boon, Michael Färber, Stefan Fröse, Faegheh Hasibi, Andreas Ipp, Rukshak Kapoor, Gregor Kasieczka, Daniel Kostić, Michael Krämer, Tobias Golling, Luis G. Lopez, Jesus Marco, Sydney Otten, Pawel Pawlowski, Pietro Vischia, Erik Weber, Christoph Weniger","This paper explores ideas and provides a potential roadmap for the
+development and evaluation of physics-specific large-scale AI models, which we
+call Large Physics Models (LPMs). These models, based on foundation models such
+as Large Language Models (LLMs) - trained on broad data - are tailored to
+address the demands of physics research. LPMs can function independently or as
+part of an integrated framework. This framework can incorporate specialized
+tools, including symbolic reasoning modules for mathematical manipulations,
+frameworks to analyse specific experimental and simulated data, and mechanisms
+for synthesizing theories and scientific literature. We begin by examining
+whether the physics community should actively develop and refine dedicated
+models, rather than relying solely on commercial LLMs. We then outline how LPMs
+can be realized through interdisciplinary collaboration among experts in
+physics, computer science, and philosophy of science. To integrate these models
+effectively, we identify three key pillars: Development, Evaluation, and
+Philosophical Reflection. Development focuses on constructing models capable of
+processing physics texts, mathematical formulations, and diverse physical data.
+Evaluation assesses accuracy and reliability by testing and benchmarking.
+Finally, Philosophical Reflection encompasses the analysis of broader
+implications of LLMs in physics, including their potential to generate new
+scientific understanding and what novel collaboration dynamics might arise in
+research. Inspired by the organizational structure of experimental
+collaborations in particle physics, we propose a similarly interdisciplinary
+and collaborative approach to building and refining Large Physics Models. This
+roadmap provides specific objectives, defines pathways to achieve them, and
+identifies challenges that must be addressed to realise physics-specific large
+scale AI models.",http://arxiv.org/pdf/2501.05382v1,,False
+Accelerated Diffusion Models via Speculative Sampling,09/01/2025,"Valentin De Bortoli, Alexandre Galashov, Arthur Gretton, Arnaud Doucet","Speculative sampling is a popular technique for accelerating inference in
+Large Language Models by generating candidate tokens using a fast draft model
+and accepting or rejecting them based on the target model's distribution. While
+speculative sampling was previously limited to discrete sequences, we extend it
+to diffusion models, which generate samples via continuous, vector-valued
+Markov chains. In this context, the target model is a high-quality but
+computationally expensive diffusion model. We propose various drafting
+strategies, including a simple and effective approach that does not require
+training a draft model and is applicable out of the box to any diffusion model.
+Our experiments demonstrate significant generation speedup on various diffusion
+models, halving the number of function evaluations, while generating exact
+samples from the target model.",http://arxiv.org/pdf/2501.05370v1,,False
+Stream Aligner: Efficient Sentence-Level Alignment via Distribution Induction,09/01/2025,"Hantao Lou, Jiaming Ji, Kaile Wang, Yaodong Yang","The rapid advancement of large language models (LLMs) has led to significant
+improvements in their capabilities, but also to increased concerns about their
+alignment with human values and intentions. Current alignment strategies,
+including adaptive training and inference-time methods, have demonstrated
+potential in this area. However, these approaches still struggle to balance
+deployment complexity and capability across various tasks and difficulties. In
+this work, we introduce the Streaming Distribution Induce Aligner (Stream
+Aligner), a novel alignment paradigm that combines efficiency with enhanced
+performance in various tasks throughout the generation process. Stream Aligner
+achieves dynamic sentence-level correction by using a small model to learn the
+preferences of the suffix sentence, iteratively correcting the suffix sentence
+output by the upstream model, and then using the corrected sentence to replace
+the suffix sentence in subsequent generations. Compared to Aligner, our
+experiments demonstrate that Stream Aligner reduces reliance on the
+capabilities of additional models, enhances the reasoning abilities of LLMs,
+and decreases latency during user interaction. Specifically, Stream Aligner-2B
+model has achieved an improvement of 76.1% in helpfulness, 36.0% in
+harmlessness on the tested Llama2-70B-chat model, and Stream Aligner-8B has
+achieved an improvement of 3.5% on the math ability of the tested
+Llama3-70B-Instruct model.",http://arxiv.org/pdf/2501.05336v1,,False
+Light Transport-aware Diffusion Posterior Sampling for Single-View Reconstruction of 3D Volumes,09/01/2025,"Ludwic Leonard, Nils Thuerey, Ruediger Westermann","We introduce a single-view reconstruction technique of volumetric fields in
+which multiple light scattering effects are omnipresent, such as in clouds. We
+model the unknown distribution of volumetric fields using an unconditional
+diffusion model trained on a novel benchmark dataset comprising 1,000
+synthetically simulated volumetric density fields. The neural diffusion model
+is trained on the latent codes of a novel, diffusion-friendly, monoplanar
+representation. The generative model is used to incorporate a tailored
+parametric diffusion posterior sampling technique into different reconstruction
+tasks. A physically-based differentiable volume renderer is employed to provide
+gradients with respect to light transport in the latent space. This stands in
+contrast to classic NeRF approaches and makes the reconstructions better
+aligned with observed data. Through various experiments, we demonstrate
+single-view reconstruction of volumetric clouds at a previously unattainable
+quality.",http://arxiv.org/pdf/2501.05226v1,,False
+Constrained Optimization of Charged Particle Tracking with Multi-Agent Reinforcement Learning,09/01/2025,"Tobias Kortus, Ralf Keidel, Nicolas R. Gauger, Jan Kieseler","Reinforcement learning demonstrated immense success in modelling complex
+physics-driven systems, providing end-to-end trainable solutions by interacting
+with a simulated or real environment, maximizing a scalar reward signal. In
+this work, we propose, building upon previous work, a multi-agent reinforcement
+learning approach with assignment constraints for reconstructing particle
+tracks in pixelated particle detectors. Our approach optimizes collaboratively
+a parametrized policy, functioning as a heuristic to a multidimensional
+assignment problem, by jointly minimizing the total amount of particle
+scattering over the reconstructed tracks in a readout frame. To satisfy
+constraints, guaranteeing a unique assignment of particle hits, we propose a
+safety layer solving a linear assignment problem for every joint action.
+Further, to enforce cost margins, increasing the distance of the local policies
+predictions to the decision boundaries of the optimizer mappings, we recommend
+the use of an additional component in the blackbox gradient estimation, forcing
+the policy to solutions with lower total assignment costs. We empirically show
+on simulated data, generated for a particle detector developed for proton
+imaging, the effectiveness of our approach, compared to multiple single- and
+multi-agent baselines. We further demonstrate the effectiveness of constraints
+with cost margins for both optimization and generalization, introduced by wider
+regions with high reconstruction performance as well as reduced predictive
+instabilities. Our results form the basis for further developments in RL-based
+tracking, offering both enhanced performance with constrained policies and
+greater flexibility in optimizing tracking algorithms through the option for
+individual and team rewards.",http://arxiv.org/pdf/2501.05113v1,,False
+LearningFlow: Automated Policy Learning Workflow for Urban Driving with Large Language Models,09/01/2025,"Zengqi Peng, Yubin Wang, Xu Han, Lei Zheng, Jun Ma","Recent advancements in reinforcement learning (RL) demonstrate the
+significant potential in autonomous driving. Despite this promise, challenges
+such as the manual design of reward functions and low sample efficiency in
+complex environments continue to impede the development of safe and effective
+driving policies. To tackle these issues, we introduce LearningFlow, an
+innovative automated policy learning workflow tailored to urban driving. This
+framework leverages the collaboration of multiple large language model (LLM)
+agents throughout the RL training process. LearningFlow includes a curriculum
+sequence generation process and a reward generation process, which work in
+tandem to guide the RL policy by generating tailored training curricula and
+reward functions. Particularly, each process is supported by an analysis agent
+that evaluates training progress and provides critical insights to the
+generation agent. Through the collaborative efforts of these LLM agents,
+LearningFlow automates policy learning across a series of complex driving
+tasks, and it significantly reduces the reliance on manual reward function
+design while enhancing sample efficiency. Comprehensive experiments are
+conducted in the high-fidelity CARLA simulator, along with comparisons with
+other existing methods, to demonstrate the efficacy of our proposed approach.
+The results demonstrate that LearningFlow excels in generating rewards and
+curricula. It also achieves superior performance and robust generalization
+across various driving tasks, as well as commendable adaptation to different RL
+algorithms.",http://arxiv.org/pdf/2501.05057v1,,False
+LongViTU: Instruction Tuning for Long-Form Video Understanding,09/01/2025,"Rujie Wu, Xiaojian Ma, Hai Ci, Yue Fan, Yuxuan Wang, Haozhe Zhao, Qing Li, Yizhou Wang","This paper introduce LongViTU, a large-scale (~121k QA pairs, ~900h videos),
+automatically generated dataset for long-form video understanding. We developed
+a systematic approach that organizes videos into a hierarchical tree structure
+and incorporates self-revision mechanisms to ensure high-quality QA pairs. Each
+QA pair in LongViTU features: 1) long-term context (average certificate length
+of 4.6 minutes); 2) rich knowledge and condensed reasoning (commonsense,
+causality, planning, etc.); and 3) explicit timestamp labels for relevant
+events. LongViTU also serves as a benchmark for instruction following in
+long-form and streaming video understanding. We evaluate the open-source
+state-of-the-art long video understanding model, LongVU, and the commercial
+model, Gemini-1.5-Pro, on our benchmark. They achieve GPT-4 scores of 49.9 and
+52.3, respectively, underscoring the substantial challenge posed by our
+benchmark. Further supervised fine-tuning (SFT) on LongVU led to performance
+improvements of 12.0% on our benchmark, 2.2% on the in-distribution (ID)
+benchmark EgoSchema, 1.0%, 2.2% and 1.2% on the out-of-distribution (OOD)
+benchmarks VideoMME (Long), WorldQA and OpenEQA, respectively. These outcomes
+demonstrate LongViTU's high data quality and robust OOD generalizability.",http://arxiv.org/pdf/2501.05037v1,,False
+CuRLA: Curriculum Learning Based Deep Reinforcement Learning for Autonomous Driving,09/01/2025,"Bhargava Uppuluri, Anjel Patel, Neil Mehta, Sridhar Kamath, Pratyush Chakraborty","In autonomous driving, traditional Computer Vision (CV) agents often struggle
+in unfamiliar situations due to biases in the training data. Deep Reinforcement
+Learning (DRL) agents address this by learning from experience and maximizing
+rewards, which helps them adapt to dynamic environments. However, ensuring
+their generalization remains challenging, especially with static training
+environments. Additionally, DRL models lack transparency, making it difficult
+to guarantee safety in all scenarios, particularly those not seen during
+training. To tackle these issues, we propose a method that combines DRL with
+Curriculum Learning for autonomous driving. Our approach uses a Proximal Policy
+Optimization (PPO) agent and a Variational Autoencoder (VAE) to learn safe
+driving in the CARLA simulator. The agent is trained using two-fold curriculum
+learning, progressively increasing environment difficulty and incorporating a
+collision penalty in the reward function to promote safety. This method
+improves the agent's adaptability and reliability in complex environments, and
+understand the nuances of balancing multiple reward components from different
+feedback signals in a single scalar reward function. Keywords: Computer Vision,
+Deep Reinforcement Learning, Variational Autoencoder, Proximal Policy
+Optimization, Curriculum Learning, Autonomous Driving.",http://arxiv.org/pdf/2501.04982v1,,False
+Battling the Non-stationarity in Time Series Forecasting via Test-time Adaptation,09/01/2025,"HyunGi Kim, Siwon Kim, Jisoo Mok, Sungroh Yoon","Deep Neural Networks have spearheaded remarkable advancements in time series
+forecasting (TSF), one of the major tasks in time series modeling. Nonetheless,
+the non-stationarity of time series undermines the reliability of pre-trained
+source time series forecasters in mission-critical deployment settings. In this
+study, we introduce a pioneering test-time adaptation framework tailored for
+TSF (TSF-TTA). TAFAS, the proposed approach to TSF-TTA, flexibly adapts source
+forecasters to continuously shifting test distributions while preserving the
+core semantic information learned during pre-training. The novel utilization of
+partially-observed ground truth and gated calibration module enables proactive,
+robust, and model-agnostic adaptation of source forecasters. Experiments on
+diverse benchmark datasets and cutting-edge architectures demonstrate the
+efficacy and generality of TAFAS, especially in long-term forecasting scenarios
+that suffer from significant distribution shifts. The code is available at
+https://github.com/kimanki/TAFAS.",http://arxiv.org/pdf/2501.04970v1,,False
+Image2CADSeq: Computer-Aided Design Sequence and Knowledge Inference from Product Images,09/01/2025,"Xingang Li, Zhenghui Sha","Computer-aided design (CAD) tools empower designers to design and modify 3D
+models through a series of CAD operations, commonly referred to as a CAD
+sequence. In scenarios where digital CAD files are not accessible, reverse
+engineering (RE) has been used to reconstruct 3D CAD models. Recent advances
+have seen the rise of data-driven approaches for RE, with a primary focus on
+converting 3D data, such as point clouds, into 3D models in boundary
+representation (B-rep) format. However, obtaining 3D data poses significant
+challenges, and B-rep models do not reveal knowledge about the 3D modeling
+process of designs. To this end, our research introduces a novel data-driven
+approach with an Image2CADSeq neural network model. This model aims to reverse
+engineer CAD models by processing images as input and generating CAD sequences.
+These sequences can then be translated into B-rep models using a solid modeling
+kernel. Unlike B-rep models, CAD sequences offer enhanced flexibility to modify
+individual steps of model creation, providing a deeper understanding of the
+construction process of CAD models. To quantitatively and rigorously evaluate
+the predictive performance of the Image2CADSeq model, we have developed a
+multi-level evaluation framework for model assessment. The model was trained on
+a specially synthesized dataset, and various network architectures were
+explored to optimize the performance. The experimental and validation results
+show great potential for the model in generating CAD sequences from 2D image
+data.",http://arxiv.org/pdf/2501.04928v1,,False
+SpecTf: Transformers Enable Data-Driven Imaging Spectroscopy Cloud Detection,09/01/2025,"Jake H. Lee, Michael Kiper, David R. Thompson, Philip G. Brodrick","Current and upcoming generations of visible-shortwave infrared (VSWIR)
+imaging spectrometers promise unprecedented capacity to quantify Earth System
+processes across the globe. However, reliable cloud screening remains a
+fundamental challenge for these instruments, where traditional spatial and
+temporal approaches are limited by cloud variability and limited temporal
+coverage. The Spectroscopic Transformer (SpecTf) addresses these challenges
+with a spectroscopy-specific deep learning architecture that performs cloud
+detection using only spectral information (no spatial or temporal data are
+required). By treating spectral measurements as sequences rather than image
+channels, SpecTf learns fundamental physical relationships without relying on
+spatial context. Our experiments demonstrate that SpecTf significantly
+outperforms the current baseline approach implemented for the EMIT instrument,
+and performs comparably with other machine learning methods with orders of
+magnitude fewer learned parameters. Critically, we demonstrate SpecTf's
+inherent interpretability through its attention mechanism, revealing physically
+meaningful spectral features the model has learned. Finally, we present
+SpecTf's potential for cross-instrument generalization by applying it to a
+different instrument on a different platform without modifications, opening the
+door to instrument agnostic data driven algorithms for future imaging
+spectroscopy tasks.",http://arxiv.org/pdf/2501.04916v1,,False
+Towards understanding the bias in decision trees,09/01/2025,"Nathan Phelps, Daniel J. Lizotte, Douglas G. Woolford","There is a widespread and longstanding belief that machine learning models
+are biased towards the majority (or negative) class when learning from
+imbalanced data, leading them to neglect or ignore the minority (or positive)
+class. In this study, we show that this belief is not necessarily correct for
+decision trees, and that their bias can actually be in the opposite direction.
+Motivated by a recent simulation study that suggested that decision trees can
+be biased towards the minority class, our paper aims to reconcile the conflict
+between that study and decades of other works. First, we critically evaluate
+past literature on this problem, finding that failing to consider the data
+generating process has led to incorrect conclusions about the bias in decision
+trees. We then prove that, under specific conditions related to the predictors,
+decision trees fit to purity and trained on a dataset with only one positive
+case are biased towards the minority class. Finally, we demonstrate that splits
+in a decision tree are also biased when there is more than one positive case.
+Our findings have implications on the use of popular tree-based models, such as
+random forests.",http://arxiv.org/pdf/2501.04903v1,,False
+"Online Continual Learning: A Systematic Literature Review of Approaches, Challenges, and Benchmarks",09/01/2025,"Seyed Amir Bidaki, Amir Mohammadkhah, Kiyan Rezaee, Faeze Hassani, Sadegh Eskandari, Maziar Salahi, Mohammad M. Ghassemi","Online Continual Learning (OCL) is a critical area in machine learning,
+focusing on enabling models to adapt to evolving data streams in real-time
+while addressing challenges such as catastrophic forgetting and the
+stability-plasticity trade-off. This study conducts the first comprehensive
+Systematic Literature Review (SLR) on OCL, analyzing 81 approaches, extracting
+over 1,000 features (specific tasks addressed by these approaches), and
+identifying more than 500 components (sub-models within approaches, including
+algorithms and tools). We also review 83 datasets spanning applications like
+image classification, object detection, and multimodal vision-language tasks.
+Our findings highlight key challenges, including reducing computational
+overhead, developing domain-agnostic solutions, and improving scalability in
+resource-constrained environments. Furthermore, we identify promising
+directions for future research, such as leveraging self-supervised learning for
+multimodal and sequential data, designing adaptive memory mechanisms that
+integrate sparse retrieval and generative replay, and creating efficient
+frameworks for real-world applications with noisy or evolving task boundaries.
+By providing a rigorous and structured synthesis of the current state of OCL,
+this review offers a valuable resource for advancing this field and addressing
+its critical challenges and opportunities. The complete SLR methodology steps
+and extracted data are publicly available through the provided link:
+https://github.com/kiyan-rezaee/
+Systematic-Literature-Review-on-Online-Continual-Learning",http://arxiv.org/pdf/2501.04897v1,,False

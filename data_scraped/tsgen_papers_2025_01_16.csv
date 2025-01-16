@@ -1,0 +1,209 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"Towards Fast, Specialized Machine Learning Force Fields: Distilling Foundation Models via Energy Hessians",15/01/2025,"Ishan Amin, Sanjeev Raja, Aditi Krishnapriyan","The foundation model (FM) paradigm is transforming Machine Learning Force
+Fields (MLFFs), leveraging general-purpose representations and scalable
+training to perform a variety of computational chemistry tasks. Although MLFF
+FMs have begun to close the accuracy gap relative to first-principles methods,
+there is still a strong need for faster inference speed. Additionally, while
+research is increasingly focused on general-purpose models which transfer
+across chemical space, practitioners typically only study a small subset of
+systems at a given time. This underscores the need for fast, specialized MLFFs
+relevant to specific downstream applications, which preserve test-time physical
+soundness while maintaining train-time scalability. In this work, we introduce
+a method for transferring general-purpose representations from MLFF foundation
+models to smaller, faster MLFFs specialized to specific regions of chemical
+space. We formulate our approach as a knowledge distillation procedure, where
+the smaller ""student"" MLFF is trained to match the Hessians of the energy
+predictions of the ""teacher"" foundation model. Our specialized MLFFs can be up
+to 20 $\times$ faster than the original foundation model, while retaining, and
+in some cases exceeding, its performance and that of undistilled models. We
+also show that distilling from a teacher model with a direct force
+parameterization into a student model trained with conservative forces (i.e.,
+computed as derivatives of the potential energy) successfully leverages the
+representations from the large-scale teacher for improved accuracy, while
+maintaining energy conservation during test-time molecular dynamics
+simulations. More broadly, our work suggests a new paradigm for MLFF
+development, in which foundation models are released along with smaller,
+specialized simulation ""engines"" for common chemical subsets.",http://arxiv.org/pdf/2501.09009v1,,False
+Personality Modeling for Persuasion of Misinformation using AI Agent,15/01/2025,"Qianmin Lou, Wentao Xu","The proliferation of misinformation on social media platforms has highlighted
+the need to understand how individual personality traits influence
+susceptibility to and propagation of misinformation. This study employs an
+innovative agent-based modeling approach to investigate the relationship
+between personality traits and misinformation dynamics. Using six AI agents
+embodying different dimensions of the Big Five personality traits
+(Extraversion, Agreeableness, and Neuroticism), we simulated interactions
+across six diverse misinformation topics. The experiment, implemented through
+the AgentScope framework using the GLM-4-Flash model, generated 90 unique
+interactions, revealing complex patterns in how personality combinations affect
+persuasion and resistance to misinformation. Our findings demonstrate that
+analytical and critical personality traits enhance effectiveness in
+evidence-based discussions, while non-aggressive persuasion strategies show
+unexpected success in misinformation correction. Notably, agents with critical
+traits achieved a 59.4% success rate in HIV-related misinformation discussions,
+while those employing non-aggressive approaches maintained consistent
+persuasion rates above 40% across different personality combinations. The study
+also revealed a non-transitive pattern in persuasion effectiveness, challenging
+conventional assumptions about personality-based influence. These results
+provide crucial insights for developing personality-aware interventions in
+digital environments and suggest that effective misinformation countermeasures
+should prioritize emotional connection and trust-building over confrontational
+approaches. The findings contribute to both theoretical understanding of
+personality-misinformation dynamics and practical strategies for combating
+misinformation in social media contexts.",http://arxiv.org/pdf/2501.08985v1,,False
+Computing Approximated Fixpoints via Dampened Mann Iteration,15/01/2025,"Paolo Baldan, Sebastian Gurke, Barbara König, Tommaso Padoan, Florian Wittbold","Fixpoints are ubiquitous in computer science and when dealing with
+quantitative semantics and verification one is commonly led to consider least
+fixpoints of (higher-dimensional) functions over the nonnegative reals. We show
+how to approximate the least fixpoint of such functions, focusing on the case
+in which they are not known precisely, but represented by a sequence of
+approximating functions that converge to them. We concentrate on monotone and
+non-expansive functions, for which uniqueness of fixpoints is not guaranteed
+and standard fixpoint iteration schemes might get stuck at a fixpoint that is
+not the least. Our main contribution is the identification of an iteration
+scheme, a variation of Mann iteration with a dampening factor, which, under
+suitable conditions, is shown to guarantee convergence to the least fixpoint of
+the function of interest. We then argue that these results are relevant in the
+context of model-based reinforcement learning for Markov decision processes
+(MDPs), showing that the proposed iteration scheme instantiates to MDPs and
+allows us to derive convergence to the optimal expected return. More generally,
+we show that our results can be used to iterate to the least fixpoint almost
+surely for systems where the function of interest can be approximated with
+given probabilistic error bounds, as it happens for probabilistic systems, such
+as simple stochastic games, that can be explored via sampling.",http://arxiv.org/pdf/2501.08950v1,,False
+RouteNet-Gauss: Hardware-Enhanced Network Modeling with Machine Learning,15/01/2025,"Carlos Güemes-Palau, Miquel Ferriol-Galmés, Jordi Paillisse-Vilanova, Albert López-Brescó, Pere Barlet-Ros, Albert Cabellos-Aparicio","Network simulation is pivotal in network modeling, assisting with tasks
+ranging from capacity planning to performance estimation. Traditional
+approaches such as Discrete Event Simulation (DES) face limitations in terms of
+computational cost and accuracy. This paper introduces RouteNet-Gauss, a novel
+integration of a testbed network with a Machine Learning (ML) model to address
+these challenges. By using the testbed as a hardware accelerator,
+RouteNet-Gauss generates training datasets rapidly and simulates network
+scenarios with high fidelity to real-world conditions. Experimental results
+show that RouteNet-Gauss significantly reduces prediction errors by up to 95%
+and achieves a 488x speedup in inference time compared to state-of-the-art
+DES-based methods. RouteNet-Gauss's modular architecture is dynamically
+constructed based on the specific characteristics of the network scenario, such
+as topology and routing. This enables it to understand and generalize to
+different network configurations beyond those seen during training, including
+networks up to 10x larger. Additionally, it supports Temporal Aggregated
+Performance Estimation (TAPE), providing configurable temporal granularity and
+maintaining high accuracy in flow performance metrics. This approach shows
+promise in improving both simulation efficiency and accuracy, offering a
+valuable tool for network operators.",http://arxiv.org/pdf/2501.08848v1,,False
+Transformer-based Multivariate Time Series Anomaly Localization,15/01/2025,"Charalampos Shimillas, Kleanthis Malialis, Konstantinos Fokianos, Marios M. Polycarpou","With the growing complexity of Cyber-Physical Systems (CPS) and the
+integration of Internet of Things (IoT), the use of sensors for online
+monitoring generates large volume of multivariate time series (MTS) data.
+Consequently, the need for robust anomaly diagnosis in MTS is paramount to
+maintaining system reliability and safety. While significant advancements have
+been made in anomaly detection, localization remains a largely underexplored
+area, though crucial for intelligent decision-making. This paper introduces a
+novel transformer-based model for unsupervised anomaly diagnosis in MTS, with a
+focus on improving localization performance, through an in-depth analysis of
+the self-attention mechanism's learning behavior under both normal and
+anomalous conditions. We formulate the anomaly localization problem as a
+three-stage process: time-step, window, and segment-based. This leads to the
+development of the Space-Time Anomaly Score (STAS), a new metric inspired by
+the connection between transformer latent representations and space-time
+statistical models. STAS is designed to capture individual anomaly behaviors
+and inter-series dependencies, delivering enhanced localization performance.
+Additionally, the Statistical Feature Anomaly Score (SFAS) complements STAS by
+analyzing statistical features around anomalies, with their combination helping
+to reduce false alarms. Experiments on real world and synthetic datasets
+illustrate the model's superiority over state-of-the-art methods in both
+detection and localization tasks.",http://arxiv.org/pdf/2501.08628v1,,False
+CT-PatchTST: Channel-Time Patch Time-Series Transformer for Long-Term Renewable Energy Forecasting,15/01/2025,"Menghao Huo, Kuan Lu, Yuxiao Li, Qiang Zhu","Accurately predicting renewable energy output is crucial for the efficient
+integration of solar and wind power into modern energy systems. This study
+develops and evaluates an advanced deep learning model, Channel-Time Patch
+Time-Series Transformer (CT-PatchTST), to forecast the power output of
+photovoltaic and wind energy systems using annual offshore wind power, onshore
+wind power, and solar power generation data from Denmark. While the original
+Patch Time-Series Transformer(PatchTST) model employs a channel-independent
+(CI) approach, it tends to overlook inter-channel relationships during
+training, potentially leading to a loss of critical information. To address
+this limitation and further leverage the benefits of increased data granularity
+brought by CI, we propose CT-PatchTST. This enhanced model improves the
+processing of inter-channel information while maintaining the advantages of the
+channel-independent approach. The predictive performance of CT-PatchTST is
+rigorously analyzed, demonstrating its ability to provide precise and reliable
+energy forecasts. This work contributes to improving the predictability of
+renewable energy systems, supporting their broader adoption and integration
+into energy grids.",http://arxiv.org/pdf/2501.08620v1,,False
+RLHS: Mitigating Misalignment in RLHF with Hindsight Simulation,15/01/2025,"Kaiqu Liang, Haimin Hu, Ryan Liu, Thomas L. Griffiths, Jaime Fernández Fisac","Generative AI systems like foundation models (FMs) must align well with human
+values to ensure their behavior is helpful and trustworthy. While Reinforcement
+Learning from Human Feedback (RLHF) has shown promise for optimizing model
+performance using human judgments, existing RLHF pipelines predominantly rely
+on immediate feedback, which can fail to accurately reflect the downstream
+impact of an interaction on users' utility. We demonstrate that feedback based
+on evaluators' foresight estimates of downstream consequences systematically
+induces Goodhart's Law dynamics, incentivizing misaligned behaviors like
+sycophancy and deception and ultimately degrading user outcomes. To alleviate
+this, we propose decoupling evaluation from prediction by refocusing RLHF on
+hindsight feedback. Our theoretical analysis reveals that conditioning
+evaluator feedback on downstream observations mitigates misalignment and
+improves expected human utility, even when these observations are simulated by
+the AI system itself. To leverage this insight in a practical alignment
+algorithm, we introduce Reinforcement Learning from Hindsight Simulation
+(RLHS), which first simulates plausible consequences and then elicits feedback
+to assess what behaviors were genuinely beneficial in hindsight. We apply RLHS
+to two widely-employed online and offline preference optimization methods --
+Proximal Policy Optimization (PPO) and Direct Preference Optimization (DPO) --
+and show empirically that misalignment is significantly reduced with both
+methods. Through an online human user study, we show that RLHS consistently
+outperforms RLHF in helping users achieve their goals and earns higher
+satisfaction ratings, despite being trained solely with simulated hindsight
+feedback. These results underscore the importance of focusing on long-term
+consequences, even simulated ones, to mitigate misalignment in RLHF.",http://arxiv.org/pdf/2501.08617v1,,False
+AutoRestTest: A Tool for Automated REST API Testing Using LLMs and MARL,15/01/2025,"Tyler Stennett, Myeongsoo Kim, Saurabh Sinha, Alessandro Orso","As REST APIs have become widespread in modern web services, comprehensive
+testing of these APIs has become increasingly crucial. Due to the vast search
+space consisting of operations, parameters, and parameter values along with
+their complex dependencies and constraints, current testing tools suffer from
+low code coverage, leading to suboptimal fault detection. To address this
+limitation, we present a novel tool, AutoRestTest, which integrates the
+Semantic Operation Dependency Graph (SODG) with Multi-Agent Reinforcement
+Learning (MARL) and large language models (LLMs) for effective REST API
+testing. AutoRestTest determines operation-dependent parameters using the SODG
+and employs five specialized agents (operation, parameter, value, dependency,
+and header) to identify dependencies of operations and generate operation
+sequences, parameter combinations, and values. AutoRestTest provides a
+command-line interface and continuous telemetry on successful operation count,
+unique server errors detected, and time elapsed. Upon completion, AutoRestTest
+generates a detailed report highlighting errors detected and operations
+exercised. In this paper, we introduce our tool and present preliminary
+results.",http://arxiv.org/pdf/2501.08600v1,,False
+OpenMLDB: A Real-Time Relational Data Feature Computation System for Online ML,15/01/2025,"Xuanhe Zhou, Wei Zhou, Liguo Qi, Hao Zhang, Dihao Chen, Bingsheng He, Mian Lu, Guoliang Li, Fan Wu, Yuqiang Chen","Efficient and consistent feature computation is crucial for a wide range of
+online ML applications. Typically, feature computation is divided into two
+distinct phases, i.e., offline stage for model training and online stage for
+model serving. These phases often rely on execution engines with different
+interface languages and function implementations, causing significant
+inconsistencies. Moreover, many online ML features involve complex time-series
+computations (e.g., functions over varied-length table windows) that differ
+from standard streaming and analytical queries. Existing data processing
+systems (e.g., Spark, Flink, DuckDB) often incur multi-second latencies for
+these computations, making them unsuitable for real-time online ML applications
+that demand timely feature updates.
+  This paper presents OpenMLDB, a feature computation system deployed in
+4Paradigm's SageOne platform and over 100 real scenarios. Technically, OpenMLDB
+first employs a unified query plan generator for consistent computation results
+across the offline and online stages, significantly reducing feature deployment
+overhead. Second, OpenMLDB provides an online execution engine that resolves
+performance bottlenecks caused by long window computations (via
+pre-aggregation) and multi-table window unions (via data self-adjusting). It
+also provides a high-performance offline execution engine with window parallel
+optimization and time-aware data skew resolving. Third, OpenMLDB features a
+compact data format and stream-focused indexing to maximize memory usage and
+accelerate data access. Evaluations in testing and real workloads reveal
+significant performance improvements and resource savings compared to the
+baseline systems. The open community of OpenMLDB now has over 150 contributors
+and gained 1.6k stars on GitHub.",http://arxiv.org/pdf/2501.08591v1,,False
+Reinforcement Learning-Enhanced Procedural Generation for Dynamic Narrative-Driven AR Experiences,15/01/2025,Aniruddha Srinivas Joshi,"Procedural Content Generation (PCG) is widely used to create scalable and
+diverse environments in games. However, existing methods, such as the Wave
+Function Collapse (WFC) algorithm, are often limited to static scenarios and
+lack the adaptability required for dynamic, narrative-driven applications,
+particularly in augmented reality (AR) games. This paper presents a
+reinforcement learning-enhanced WFC framework designed for mobile AR
+environments. By integrating environment-specific rules and dynamic tile weight
+adjustments informed by reinforcement learning (RL), the proposed method
+generates maps that are both contextually coherent and responsive to gameplay
+needs. Comparative evaluations and user studies demonstrate that the framework
+achieves superior map quality and delivers immersive experiences, making it
+well-suited for narrative-driven AR games. Additionally, the method holds
+promise for broader applications in education, simulation training, and
+immersive extended reality (XR) experiences, where dynamic and adaptive
+environments are critical.",http://arxiv.org/pdf/2501.08552v1,,False

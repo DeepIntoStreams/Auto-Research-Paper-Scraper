@@ -1,0 +1,208 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+FAST: Efficient Action Tokenization for Vision-Language-Action Models,16/01/2025,"Karl Pertsch, Kyle Stachowicz, Brian Ichter, Danny Driess, Suraj Nair, Quan Vuong, Oier Mees, Chelsea Finn, Sergey Levine","Autoregressive sequence models, such as Transformer-based vision-language
+action (VLA) policies, can be tremendously effective for capturing complex and
+generalizable robotic behaviors. However, such models require us to choose a
+tokenization of our continuous action signals, which determines how the
+discrete symbols predicted by the model map to continuous robot actions. We
+find that current approaches for robot action tokenization, based on simple
+per-dimension, per-timestep binning schemes, typically perform poorly when
+learning dexterous skills from high-frequency robot data. To address this
+challenge, we propose a new compression-based tokenization scheme for robot
+actions, based on the discrete cosine transform. Our tokenization approach,
+Frequency-space Action Sequence Tokenization (FAST), enables us to train
+autoregressive VLAs for highly dexterous and high-frequency tasks where
+standard discretization methods fail completely. Based on FAST, we release
+FAST+, a universal robot action tokenizer, trained on 1M real robot action
+trajectories. It can be used as a black-box tokenizer for a wide range of robot
+action sequences, with diverse action spaces and control frequencies. Finally,
+we show that, when combined with the pi0 VLA, our method can scale to training
+on 10k hours of robot data and match the performance of diffusion VLAs, while
+reducing training time by up to 5x.",http://arxiv.org/pdf/2501.09747v1,,False
+Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models,16/01/2025,"Fengli Xu, Qianyue Hao, Zefang Zong, Jingwei Wang, Yunke Zhang, Jingyi Wang, Xiaochong Lan, Jiahui Gong, Tianjian Ouyang, Fanjin Meng, Chenyang Shao, Yuwei Yan, Qinglong Yang, Yiwen Song, Sijian Ren, Xinyuan Hu, Yu Li, Jie Feng, Chen Gao, Yong Li","Language has long been conceived as an essential tool for human reasoning.
+The breakthrough of Large Language Models (LLMs) has sparked significant
+research interest in leveraging these models to tackle complex reasoning tasks.
+Researchers have moved beyond simple autoregressive token generation by
+introducing the concept of ""thought"" -- a sequence of tokens representing
+intermediate steps in the reasoning process. This innovative paradigm enables
+LLMs' to mimic complex human reasoning processes, such as tree search and
+reflective thinking. Recently, an emerging trend of learning to reason has
+applied reinforcement learning (RL) to train LLMs to master reasoning
+processes. This approach enables the automatic generation of high-quality
+reasoning trajectories through trial-and-error search algorithms, significantly
+expanding LLMs' reasoning capacity by providing substantially more training
+data. Furthermore, recent studies demonstrate that encouraging LLMs to ""think""
+with more tokens during test-time inference can further significantly boost
+reasoning accuracy. Therefore, the train-time and test-time scaling combined to
+show a new research frontier -- a path toward Large Reasoning Model. The
+introduction of OpenAI's o1 series marks a significant milestone in this
+research direction. In this survey, we present a comprehensive review of recent
+progress in LLM reasoning. We begin by introducing the foundational background
+of LLMs and then explore the key technical components driving the development
+of large reasoning models, with a focus on automated data construction,
+learning-to-reason techniques, and test-time scaling. We also analyze popular
+open-source projects at building large reasoning models, and conclude with open
+challenges and future research directions.",http://arxiv.org/pdf/2501.09686v1,,False
+Fokker-Planck to Callan-Symanzik: evolution of weight matrices under training,16/01/2025,"Wei Bu, Uri Kol, Ziming Liu","The dynamical evolution of a neural network during training has been an
+incredibly fascinating subject of study. First principal derivation of generic
+evolution of variables in statistical physics systems has proved useful when
+used to describe training dynamics conceptually, which in practice means
+numerically solving equations such as Fokker-Planck equation. Simulating entire
+networks inevitably runs into the curse of dimensionality. In this paper, we
+utilize Fokker-Planck to simulate the probability density evolution of
+individual weight matrices in the bottleneck layers of a simple
+2-bottleneck-layered auto-encoder and compare the theoretical evolutions
+against the empirical ones by examining the output data distributions. We also
+derive physically relevant partial differential equations such as
+Callan-Symanzik and Kardar-Parisi-Zhang equations from the dynamical equation
+we have.",http://arxiv.org/pdf/2501.09659v1,,False
+Empowering Large Language Models in Wireless Communication: A Novel Dataset and Fine-Tuning Framework,16/01/2025,"Yushen Lin, Ruichen Zhang, Wenqi Huang, Kaidi Wang, Zhiguo Ding, Daniel K. C. So, Dusit Niyato","In this work, we develop a specialized dataset aimed at enhancing the
+evaluation and fine-tuning of large language models (LLMs) specifically for
+wireless communication applications. The dataset includes a diverse set of
+multi-hop questions, including true/false and multiple-choice types, spanning
+varying difficulty levels from easy to hard. By utilizing advanced language
+models for entity extraction and question generation, rigorous data curation
+processes are employed to maintain high quality and relevance. Additionally, we
+introduce a Pointwise V-Information (PVI) based fine-tuning method, providing a
+detailed theoretical analysis and justification for its use in quantifying the
+information content of training data with 2.24\% and 1.31\% performance boost
+for different models compared to baselines, respectively. To demonstrate the
+effectiveness of the fine-tuned models with the proposed methodologies on
+practical tasks, we also consider different tasks, including summarizing
+optimization problems from technical papers and solving the mathematical
+problems related to non-orthogonal multiple access (NOMA), which are generated
+by using the proposed multi-agent framework. Simulation results show
+significant performance gain in summarization tasks with 20.9\% in the ROUGE-L
+metrics. We also study the scaling laws of fine-tuning LLMs and the challenges
+LLMs face in the field of wireless communications, offering insights into their
+adaptation to wireless communication tasks. This dataset and fine-tuning
+methodology aim to enhance the training and evaluation of LLMs, contributing to
+advancements in LLMs for wireless communication research and applications.",http://arxiv.org/pdf/2501.09631v1,,False
+EVaDE : Event-Based Variational Thompson Sampling for Model-Based Reinforcement Learning,16/01/2025,"Siddharth Aravindan, Dixant Mittal, Wee Sun Lee","Posterior Sampling for Reinforcement Learning (PSRL) is a well-known
+algorithm that augments model-based reinforcement learning (MBRL) algorithms
+with Thompson sampling. PSRL maintains posterior distributions of the
+environment transition dynamics and the reward function, which are intractable
+for tasks with high-dimensional state and action spaces. Recent works show that
+dropout, used in conjunction with neural networks, induces variational
+distributions that can approximate these posteriors. In this paper, we propose
+Event-based Variational Distributions for Exploration (EVaDE), which are
+variational distributions that are useful for MBRL, especially when the
+underlying domain is object-based. We leverage the general domain knowledge of
+object-based domains to design three types of event-based convolutional layers
+to direct exploration. These layers rely on Gaussian dropouts and are inserted
+between the layers of the deep neural network model to help facilitate
+variational Thompson sampling. We empirically show the effectiveness of
+EVaDE-equipped Simulated Policy Learning (EVaDE-SimPLe) on the 100K Atari game
+suite.",http://arxiv.org/pdf/2501.09611v1,,False
+Reducing the Sensitivity of Neural Physics Simulators to Mesh Topology via Pretraining,16/01/2025,"Nathan Vaska, Justin Goodwin, Robin Walters, Rajmonda S. Caceres","Meshes are used to represent complex objects in high fidelity physics
+simulators across a variety of domains, such as radar sensing and aerodynamics.
+There is growing interest in using neural networks to accelerate physics
+simulations, and also a growing body of work on applying neural networks
+directly to irregular mesh data. Since multiple mesh topologies can represent
+the same object, mesh augmentation is typically required to handle topological
+variation when training neural networks. Due to the sensitivity of physics
+simulators to small changes in mesh shape, it is challenging to use these
+augmentations when training neural network-based physics simulators. In this
+work, we show that variations in mesh topology can significantly reduce the
+performance of neural network simulators. We evaluate whether pretraining can
+be used to address this issue, and find that employing an established
+autoencoder pretraining technique with graph embedding models reduces the
+sensitivity of neural network simulators to variations in mesh topology.
+Finally, we highlight future research directions that may further reduce neural
+simulator sensitivity to mesh topology.",http://arxiv.org/pdf/2501.09597v1,,False
+Towards Spectral Convergence of Locally Linear Embedding on Manifolds with Boundary,16/01/2025,Andrew Lyons,"We study the eigenvalues and eigenfunctions of a differential operator that
+governs the asymptotic behavior of the unsupervised learning algorithm known as
+Locally Linear Embedding when a large data set is sampled from an interval or
+disc. In particular, the differential operator is of second order, mixed-type,
+and degenerates near the boundary. We show that a natural regularity condition
+on the eigenfunctions imposes a consistent boundary condition and use the
+Frobenius method to estimate pointwise behavior. We then determine the limiting
+sequence of eigenvalues analytically and compare them to numerical predictions.
+Finally, we propose a variational framework for determining eigenvalues on
+other compact manifolds.",http://arxiv.org/pdf/2501.09572v1,,False
+Intra-day Solar and Power Forecast for Optimization of Intraday Market Participation,16/01/2025,"Nelson Salazar-Peña, Adolfo Palma-Vergara, Mateo Montes, María Alejandra Vargas-Torres, Adriana Salinas, Andrés Velasco, Alejandra Tabares, Andrés González-Mancera","The prediction of solar irradiance enhances reliability in photovoltaic (PV)
+solar plant generation and grid integration. In Colombia, PV plants face
+penalties if energy production deviates beyond governmental thresholds from
+intraday market offers. This research employs Long Short-Term Memory (LSTM) and
+Bidirectional-LSTM (Bi-LSTM) models, utilizing meteorological data from a PV
+plant in El Paso, Cesar, Colombia, to predict solar irradiance with a 6-hour
+horizon and 10-minute resolution. While Bi-LSTM showed superior performance,
+the LSTM model achieved comparable results with significantly reduced training
+time (6 hours versus 18 hours), making it computationally advantageous. The
+LSTM predictions were averaged to create an hourly resolution model, evaluated
+using Mean Absolute Error, Root-Mean-Square Error, Normalized Root-Mean-Square
+Error, and Mean Absolute Percentage Error metrics. Comparison with the Global
+Forecast System (GFS) revealed similar performance, with both models
+effectively capturing daily solar irradiance patterns. The forecast model
+integrates with an Object-Oriented power production model, enabling accurate
+energy offers in the intraday market while minimizing penalty costs.",http://arxiv.org/pdf/2501.09551v1,,False
+Multi-task deep-learning for sleep event detection and stage classification,16/01/2025,"Adriana Anido-Alonso, Diego Alvarez-Estevez","Polysomnographic sleep analysis is the standard clinical method to accurately
+diagnose and treat sleep disorders. It is an intricate process which involves
+the manual identification, classification, and location of multiple sleep event
+patterns. This is complex, for which identification of different types of
+events involves focusing on different subsets of signals, resulting on an
+iterative time-consuming process entailing several visual analysis passes. In
+this paper we propose a multi-task deep-learning approach for the simultaneous
+detection of sleep events and hypnogram construction in one single pass. Taking
+as reference state-of-the-art methodology for object-detection in the field of
+Computer Vision, we reformulate the problem for the analysis of multi-variate
+time sequences, and more specifically for pattern detection in the sleep
+analysis scenario. We investigate the performance of the resulting method in
+identifying different assembly combinations of EEG arousals, respiratory events
+(apneas and hypopneas) and sleep stages, also considering different input
+signal montage configurations. Furthermore, we evaluate our approach using two
+independent datasets, assessing true-generalization effects involving local and
+external validation scenarios. Based on our results, we analyze and discuss our
+method's capabilities and its potential wide-range applicability across
+different settings and datasets.",http://arxiv.org/pdf/2501.09519v1,,False
+ADAGE: A generic two-layer framework for adaptive agent based modelling,16/01/2025,"Benjamin Patrick Evans, Sihan Zeng, Sumitra Ganesh, Leo Ardon","Agent-based models (ABMs) are valuable for modelling complex, potentially
+out-of-equilibria scenarios. However, ABMs have long suffered from the Lucas
+critique, stating that agent behaviour should adapt to environmental changes.
+Furthermore, the environment itself often adapts to these behavioural changes,
+creating a complex bi-level adaptation problem. Recent progress integrating
+multi-agent reinforcement learning into ABMs introduces adaptive agent
+behaviour, beginning to address the first part of this critique, however, the
+approaches are still relatively ad hoc, lacking a general formulation, and
+furthermore, do not tackle the second aspect of simultaneously adapting
+environmental level characteristics in addition to the agent behaviours. In
+this work, we develop a generic two-layer framework for ADaptive AGEnt based
+modelling (ADAGE) for addressing these problems. This framework formalises the
+bi-level problem as a Stackelberg game with conditional behavioural policies,
+providing a consolidated framework for adaptive agent-based modelling based on
+solving a coupled set of non-linear equations. We demonstrate how this generic
+approach encapsulates several common (previously viewed as distinct) ABM tasks,
+such as policy design, calibration, scenario generation, and robust behavioural
+learning under one unified framework. We provide example simulations on
+multiple complex economic and financial environments, showing the strength of
+the novel framework under these canonical settings, addressing long-standing
+critiques of traditional ABMs.",http://arxiv.org/pdf/2501.09429v1,,False
+"On Learning Informative Trajectory Embeddings for Imitation, Classification and Regression",16/01/2025,"Zichang Ge, Changyu Chen, Arunesh Sinha, Pradeep Varakantham","In real-world sequential decision making tasks like autonomous driving,
+robotics, and healthcare, learning from observed state-action trajectories is
+critical for tasks like imitation, classification, and clustering. For example,
+self-driving cars must replicate human driving behaviors, while robots and
+healthcare systems benefit from modeling decision sequences, whether or not
+they come from expert data. Existing trajectory encoding methods often focus on
+specific tasks or rely on reward signals, limiting their ability to generalize
+across domains and tasks. Inspired by the success of embedding models like CLIP
+and BERT in static domains, we propose a novel method for embedding
+state-action trajectories into a latent space that captures the skills and
+competencies in the dynamic underlying decision-making processes. This method
+operates without the need for reward labels, enabling better generalization
+across diverse domains and tasks. Our contributions are threefold: (1) We
+introduce a trajectory embedding approach that captures multiple abilities from
+state-action data. (2) The learned embeddings exhibit strong representational
+power across downstream tasks, including imitation, classification, clustering,
+and regression. (3) The embeddings demonstrate unique properties, such as
+controlling agent behaviors in IQ-Learn and an additive structure in the latent
+space. Experimental results confirm that our method outperforms traditional
+approaches, offering more flexible and powerful trajectory representations for
+various applications. Our code is available at
+https://github.com/Erasmo1015/vte.",http://arxiv.org/pdf/2501.09327v1,,False
+Large Language Model is Secretly a Protein Sequence Optimizer,16/01/2025,"Yinkai Wang, Jiaxing He, Yuanqi Du, Xiaohui Chen, Jianan Canal Li, Li-Ping Liu, Xiaolin Xu, Soha Hassoun","We consider the protein sequence engineering problem, which aims to find
+protein sequences with high fitness levels, starting from a given wild-type
+sequence. Directed evolution has been a dominating paradigm in this field which
+has an iterative process to generate variants and select via experimental
+feedback. We demonstrate large language models (LLMs), despite being trained on
+massive texts, are secretly protein sequence optimizers. With a directed
+evolutionary method, LLM can perform protein engineering through Pareto and
+experiment-budget constrained optimization, demonstrating success on both
+synthetic and experimental fitness landscapes.",http://arxiv.org/pdf/2501.09274v1,,False

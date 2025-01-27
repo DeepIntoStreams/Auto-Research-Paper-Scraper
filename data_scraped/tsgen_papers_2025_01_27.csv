@@ -1,0 +1,282 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+A Predictive Approach for Enhancing Accuracy in Remote Robotic Surgery Using Informer Model,24/01/2025,"Muhammad Hanif Lashari, Shakil Ahmed, Wafa Batayneh, Ashfaq Khokhar","Precise and real-time estimation of the robotic arm's position on the
+patient's side is essential for the success of remote robotic surgery in
+Tactile Internet (TI) environments. This paper presents a prediction model
+based on the Transformer-based Informer framework for accurate and efficient
+position estimation. Additionally, it combines a Four-State Hidden Markov Model
+(4-State HMM) to simulate realistic packet loss scenarios. The proposed
+approach addresses challenges such as network delays, jitter, and packet loss
+to ensure reliable and precise operation in remote surgical applications. The
+method integrates the optimization problem into the Informer model by embedding
+constraints such as energy efficiency, smoothness, and robustness into its
+training process using a differentiable optimization layer. The Informer
+framework uses features such as ProbSparse attention, attention distilling, and
+a generative-style decoder to focus on position-critical features while
+maintaining a low computational complexity of O(L log L). The method is
+evaluated using the JIGSAWS dataset, achieving a prediction accuracy of over 90
+percent under various network scenarios. A comparison with models such as TCN,
+RNN, and LSTM demonstrates the Informer framework's superior performance in
+handling position prediction and meeting real-time requirements, making it
+suitable for Tactile Internet-enabled robotic surgery.",http://arxiv.org/pdf/2501.14678v1,,False
+ACT-JEPA: Joint-Embedding Predictive Architecture Improves Policy Representation Learning,24/01/2025,"Aleksandar Vujinovic, Aleksandar Kovacevic","Learning efficient representations for decision-making policies is a
+challenge in imitation learning (IL). Current IL methods require expert
+demonstrations, which are expensive to collect. Consequently, they often have
+underdeveloped world models. Self-supervised learning (SSL) offers an
+alternative by allowing models to learn from diverse, unlabeled data, including
+failures. However, SSL methods often operate in raw input space, making them
+inefficient. In this work, we propose ACT-JEPA, a novel architecture that
+integrates IL and SSL to enhance policy representations. We train a policy to
+predict (1) action sequences and (2) abstract observation sequences. The first
+objective uses action chunking to improve action prediction and reduce
+compounding errors. The second objective extends this idea of chunking by
+predicting abstract observation sequences. We utilize Joint-Embedding
+Predictive Architecture to predict in abstract representation space, allowing
+the model to filter out irrelevant details, improve efficiency, and develop a
+robust world model. Our experiments show that ACT-JEPA improves the quality of
+representations by learning temporal environment dynamics. Additionally, the
+model's ability to predict abstract observation sequences results in
+representations that effectively generalize to action sequence prediction.
+ACT-JEPA performs on par with established baselines across a range of
+decision-making tasks.",http://arxiv.org/pdf/2501.14622v1,,False
+Single-neuron deep generative model uncovers underlying physics of neuronal activity in Ca imaging data,24/01/2025,"Jordi Abante, Angelo Piga, Berta Ros, Clara F López-León, Josep M Canals, Jordi Soriano","Calcium imaging has become a powerful alternative to electrophysiology for
+studying neuronal activity, offering spatial resolution and the ability to
+measure large populations of neurons in a minimally invasive manner. This
+technique has broad applications in neuroscience, neuroengineering, and
+medicine, enabling researchers to explore the relationship between neuron
+location and activity. Recent advancements in deep generative models (DGMs)
+have facilitated the modeling of neuronal population dynamics, uncovering
+latent representations that provide insights into behavior prediction and
+neuronal variance. However, these models often rely on spike inference
+algorithms and primarily focus on population-level dynamics, limiting their
+applicability for single-neuron analyses. To address this gap, we propose a
+novel framework for single-neuron representation learning using autoregressive
+variational autoencoders (AVAEs). Our approach embeds individual neurons'
+spatiotemporal signals into a reduced-dimensional space without the need for
+spike inference algorithms. The AVAE excels over traditional linear methods by
+generating more informative and discriminative latent representations,
+improving tasks such as visualization, clustering, and the understanding of
+neuronal activity. Additionally, the reconstruction performance of the AVAE
+outperforms the state of the art, demonstrating its ability to accurately
+recover the original fluorescence signal from the learned representation. Using
+realistic simulations, we show that our model captures underlying physical
+properties and connectivity patterns, enabling it to distinguish between
+different firing and connectivity types. These findings position the AVAE as a
+versatile and powerful tool for advancing single-neuron analysis and lays the
+groundwork for future integration of multimodal single-cell datasets in
+neuroscience.",http://arxiv.org/pdf/2501.14615v1,,False
+ZETA: Leveraging Z-order Curves for Efficient Top-k Attention,24/01/2025,"Qiuhao Zeng, Jerry Huang, Peng Lu, Gezheng Xu, Boxing Chen, Charles Ling, Boyu Wang","Over recent years, the Transformer has become a fundamental building block
+for sequence modeling architectures. Yet at its core is the use of
+self-attention, whose memory and computational cost grow quadratically with the
+sequence length $N$, rendering it prohibitively expensive for long sequences. A
+promising approach is top-$k$ attention, which selects only the $k$ most
+relevant tokens and achieves performance comparable to vanilla self-attention
+while significantly reducing space and computational demands. However, causal
+masks require the current query token to only attend to past tokens, preventing
+the existing top-$k$ attention method from efficiently searching for the most
+relevant tokens in parallel, thereby limiting training efficiency. In this
+work, we propose ZETA, leveraging \textbf{Z}-Order Curves for
+\textbf{E}fficient \textbf{T}op-$k$ \textbf{A}ttention, to enable parallel
+querying of past tokens for entire sequences. % in both space and time
+complexity of $\mathcal{O}(N \log N)$. We first theoretically show that the
+choice of key and query dimensions involves a trade-off between the curse of
+dimensionality and the preservation of relative distances after projection. In
+light of this insight, we propose reducing the dimensionality of keys and
+queries in contrast to values and further leverage $Z$-order curves to map
+low-dimensional keys and queries into \emph{one}-dimensional space, which
+permits parallel sorting, thereby largely improving the efficiency for top-$k$
+token selection. Experimental results demonstrate that ZETA matches the
+performance of standard attention on the synthetic \textsc{Multi-Query
+Associative Recall} task and outperforms attention and its variants on
+\textsc{Long Range Arena} and \textsc{WikiText-103} language modeling.",http://arxiv.org/pdf/2501.14577v1,,False
+A Recurrent Spiking Network with Hierarchical Intrinsic Excitability Modulation for Schema Learning,24/01/2025,"Yingchao Yu, Yaochu Jin, Yuchen Xiao, Yuping Yan","Schema, a form of structured knowledge that promotes transfer learning, is
+attracting growing attention in both neuroscience and artificial intelligence
+(AI). Current schema research in neural computation is largely constrained to a
+single behavioral paradigm and relies heavily on recurrent neural networks
+(RNNs) which lack the neural plausibility and biological interpretability. To
+address these limitations, this work first constructs a generalized behavioral
+paradigm framework for schema learning and introduces three novel cognitive
+tasks, thus supporting a comprehensive schema exploration. Second, we propose a
+new model using recurrent spiking neural networks with hierarchical intrinsic
+excitability modulation (HM-RSNNs). The top level of the model selects
+excitability properties for task-specific demands, while the bottom level
+fine-tunes these properties for intra-task problems. Finally, extensive
+visualization analyses of HM-RSNNs are conducted to showcase their
+computational advantages, track the intrinsic excitability evolution during
+schema learning, and examine neural coordination differences across tasks.
+Biologically inspired lesion studies further uncover task-specific
+distributions of intrinsic excitability within schemas. Experimental results
+show that HM-RSNNs significantly outperform RSNN baselines across all tasks and
+exceed RNNs in three novel cognitive tasks. Additionally, HM-RSNNs offer deeper
+insights into neural dynamics underlying schema learning.",http://arxiv.org/pdf/2501.14539v1,,False
+Deep-BrownConrady: Prediction of Camera Calibration and Distortion Parameters Using Deep Learning and Synthetic Data,24/01/2025,"Faiz Muhammad Chaudhry, Jarno Ralli, Jerome Leudet, Fahad Sohrab, Farhad Pakdaman, Pierre Corbani, Moncef Gabbouj","This research addresses the challenge of camera calibration and distortion
+parameter prediction from a single image using deep learning models. The main
+contributions of this work are: (1) demonstrating that a deep learning model,
+trained on a mix of real and synthetic images, can accurately predict camera
+and lens parameters from a single image, and (2) developing a comprehensive
+synthetic dataset using the AILiveSim simulation platform. This dataset
+includes variations in focal length and lens distortion parameters, providing a
+robust foundation for model training and testing. The training process
+predominantly relied on these synthetic images, complemented by a small subset
+of real images, to explore how well models trained on synthetic data can
+perform calibration tasks on real-world images. Traditional calibration methods
+require multiple images of a calibration object from various orientations,
+which is often not feasible due to the lack of such images in publicly
+available datasets. A deep learning network based on the ResNet architecture
+was trained on this synthetic dataset to predict camera calibration parameters
+following the Brown-Conrady lens model. The ResNet architecture, adapted for
+regression tasks, is capable of predicting continuous values essential for
+accurate camera calibration in applications such as autonomous driving,
+robotics, and augmented reality.
+  Keywords: Camera calibration, distortion, synthetic data, deep learning,
+residual networks (ResNet), AILiveSim, horizontal field-of-view, principal
+point, Brown-Conrady Model.",http://arxiv.org/pdf/2501.14510v1,,False
+Learning more with the same effort: how randomization improves the robustness of a robotic deep reinforcement learning agent,24/01/2025,"Lucía Güitta-López, Jaime Boal, Álvaro J. López-López","The industrial application of Deep Reinforcement Learning (DRL) is frequently
+slowed down because of the inability to generate the experience required to
+train the models. Collecting data often involves considerable time and economic
+effort that is unaffordable in most cases. Fortunately, devices like robots can
+be trained with synthetic experience thanks to virtual environments. With this
+approach, the sample efficiency problems of artificial agents are mitigated,
+but another issue arises: the need for efficiently transferring the synthetic
+experience into the real world (sim-to-real).
+  This paper analyzes the robustness of a state-of-the-art sim-to-real
+technique known as progressive neural networks (PNNs) and studies how adding
+diversity to the synthetic experience can complement it. To better understand
+the drivers that lead to a lack of robustness, the robotic agent is still
+tested in a virtual environment to ensure total control on the divergence
+between the simulated and real models.
+  The results show that a PNN-like agent exhibits a substantial decrease in its
+robustness at the beginning of the real training phase. Randomizing certain
+variables during simulation-based training significantly mitigates this issue.
+On average, the increase in the model's accuracy is around 25% when diversity
+is introduced in the training process. This improvement can be translated into
+a decrease in the required real experience for the same final robustness
+performance. Notwithstanding, adding real experience to agents should still be
+beneficial regardless of the quality of the virtual experience fed into the
+agent.",http://arxiv.org/pdf/2501.14443v1,10.1007/s10489-022-04227-3,False
+CENTS: Generating synthetic electricity consumption time series for rare and unseen scenarios,24/01/2025,"Michael Fuest, Alfredo Cuesta, Kalyan Veeramachaneni","Recent breakthroughs in large-scale generative modeling have demonstrated the
+potential of foundation models in domains such as natural language, computer
+vision, and protein structure prediction. However, their application in the
+energy and smart grid sector remains limited due to the scarcity and
+heterogeneity of high-quality data. In this work, we propose a method for
+creating high-fidelity electricity consumption time series data for rare and
+unseen context variables (e.g. location, building type, photovoltaics). Our
+approach, Context Encoding and Normalizing Time Series Generation, or CENTS,
+includes three key innovations: (i) A context normalization approach that
+enables inverse transformation for time series context variables unseen during
+training, (ii) a novel context encoder to condition any state-of-the-art
+time-series generator on arbitrary numbers and combinations of context
+variables, (iii) a framework for training this context encoder jointly with a
+time-series generator using an auxiliary context classification loss designed
+to increase expressivity of context embeddings and improve model performance.
+We further provide a comprehensive overview of different evaluation metrics for
+generative time series models. Our results highlight the efficacy of the
+proposed method in generating realistic household-level electricity consumption
+data, paving the way for training larger foundation models in the energy domain
+on synthetic as well as real-world data.",http://arxiv.org/pdf/2501.14426v1,,False
+Fat-to-Thin Policy Optimization: Offline RL with Sparse Policies,24/01/2025,"Lingwei Zhu, Han Wang, Yukie Nagai","Sparse continuous policies are distributions that can choose some actions at
+random yet keep strictly zero probability for the other actions, which are
+radically different from the Gaussian. They have important real-world
+implications, e.g. in modeling safety-critical tasks like medicine. The
+combination of offline reinforcement learning and sparse policies provides a
+novel paradigm that enables learning completely from logged datasets a
+safety-aware sparse policy. However, sparse policies can cause difficulty with
+the existing offline algorithms which require evaluating actions that fall
+outside of the current support. In this paper, we propose the first offline
+policy optimization algorithm that tackles this challenge: Fat-to-Thin Policy
+Optimization (FtTPO). Specifically, we maintain a fat (heavy-tailed) proposal
+policy that effectively learns from the dataset and injects knowledge to a thin
+(sparse) policy, which is responsible for interacting with the environment. We
+instantiate FtTPO with the general $q$-Gaussian family that encompasses both
+heavy-tailed and sparse policies and verify that it performs favorably in a
+safety-critical treatment simulation and the standard MuJoCo suite. Our code is
+available at \url{https://github.com/lingweizhu/fat2thin}.",http://arxiv.org/pdf/2501.14373v1,,False
+MASTER: A Multi-Agent System with LLM Specialized MCTS,24/01/2025,"Bingzheng Gan, Yufan Zhao, Tianyi Zhang, Jing Huang, Yusu Li, Shu Xian Teo, Changwang Zhang, Wei Shi","Large Language Models (LLM) are increasingly being explored for
+problem-solving tasks. However, their strategic planning capability is often
+viewed with skepticism. Recent studies have incorporated the Monte Carlo Tree
+Search (MCTS) algorithm to augment the planning capacity of LLM. Despite its
+potential, MCTS relies on extensive sampling simulations to approximate the
+true reward distribution, leading to two primary issues. Firstly, MCTS is
+effective for tasks like the Game of Go, where simulation results can yield
+objective rewards (e.g., 1 for a win and 0 for a loss). However, for tasks such
+as question answering, the result of a simulation is the answer to the
+question, which cannot obtain an objective reward without the ground truth.
+Secondly, obtaining statistically significant reward estimations typically
+requires a sample size exceeding 30 simulations, resulting in excessive token
+usage and time consumption. To address these challenges, we present Multi-Agent
+System with Tactical Execution and Reasoning using LLM Specialized MCTS
+(MASTER), a novel framework that coordinates agent recruitment and
+communication using LLM specialized MCTS. This system autonomously adjusts the
+number of agents based on task complexity and ensures focused communication
+among them. Comprehensive experiments across various tasks demonstrate the
+effectiveness of our proposed framework. It achieves 76% accuracy on HotpotQA
+and 80% on WebShop, setting new state-of-the-art performance on these datasets.",http://arxiv.org/pdf/2501.14304v1,,False
+GreedyPixel: Fine-Grained Black-Box Adversarial Attack Via Greedy Algorithm,24/01/2025,"Hanrui Wang, Ching-Chun Chang, Chun-Shien Lu, Christopher Leckie, Isao Echizen","A critical requirement for deep learning models is ensuring their robustness
+against adversarial attacks. These attacks commonly introduce noticeable
+perturbations, compromising the visual fidelity of adversarial examples.
+Another key challenge is that while white-box algorithms can generate effective
+adversarial perturbations, they require access to the model gradients, limiting
+their practicality in many real-world scenarios. Existing attack mechanisms
+struggle to achieve similar efficacy without access to these gradients. In this
+paper, we introduce GreedyPixel, a novel pixel-wise greedy algorithm designed
+to generate high-quality adversarial examples using only query-based feedback
+from the target model. GreedyPixel improves computational efficiency in what is
+typically a brute-force process by perturbing individual pixels in sequence,
+guided by a pixel-wise priority map. This priority map is constructed by
+ranking gradients obtained from a surrogate model, providing a structured path
+for perturbation. Our results demonstrate that GreedyPixel achieves attack
+success rates comparable to white-box methods without the need for gradient
+information, and surpasses existing algorithms in black-box settings, offering
+higher success rates, reduced computational time, and imperceptible
+perturbations. These findings underscore the advantages of GreedyPixel in terms
+of attack efficacy, time efficiency, and visual quality.",http://arxiv.org/pdf/2501.14230v1,,False
+VarDrop: Enhancing Training Efficiency by Reducing Variate Redundancy in Periodic Time Series Forecasting,24/01/2025,"Junhyeok Kang, Yooju Shin, Jae-Gil Lee","Variate tokenization, which independently embeds each variate as separate
+tokens, has achieved remarkable improvements in multivariate time series
+forecasting. However, employing self-attention with variate tokens incurs a
+quadratic computational cost with respect to the number of variates, thus
+limiting its training efficiency for large-scale applications. To address this
+issue, we propose VarDrop, a simple yet efficient strategy that reduces the
+token usage by omitting redundant variate tokens during training. VarDrop
+adaptively excludes redundant tokens within a given batch, thereby reducing the
+number of tokens used for dot-product attention while preserving essential
+information. Specifically, we introduce k-dominant frequency hashing (k-DFH),
+which utilizes the ranked dominant frequencies in the frequency domain as a
+hash value to efficiently group variate tokens exhibiting similar periodic
+behaviors. Then, only representative tokens in each group are sampled through
+stratified sampling. By performing sparse attention with these selected tokens,
+the computational cost of scaled dot-product attention is significantly
+alleviated. Experiments conducted on public benchmark datasets demonstrate that
+VarDrop outperforms existing efficient baselines.",http://arxiv.org/pdf/2501.14183v1,,False
+Dreamweaver: Learning Compositional World Representations from Pixels,24/01/2025,"Junyeob Baek, Yi-Fu Wu, Gautam Singh, Sungjin Ahn","Humans have an innate ability to decompose their perceptions of the world
+into objects and their attributes, such as colors, shapes, and movement
+patterns. This cognitive process enables us to imagine novel futures by
+recombining familiar concepts. However, replicating this ability in artificial
+intelligence systems has proven challenging, particularly when it comes to
+modeling videos into compositional concepts and generating unseen, recomposed
+futures without relying on auxiliary data, such as text, masks, or bounding
+boxes. In this paper, we propose Dreamweaver, a neural architecture designed to
+discover hierarchical and compositional representations from raw videos and
+generate compositional future simulations. Our approach leverages a novel
+Recurrent Block-Slot Unit (RBSU) to decompose videos into their constituent
+objects and attributes. In addition, Dreamweaver uses a multi-future-frame
+prediction objective to capture disentangled representations for dynamic
+concepts more effectively as well as static concepts. In experiments, we
+demonstrate our model outperforms current state-of-the-art baselines for world
+modeling when evaluated under the DCI framework across multiple datasets.
+Furthermore, we show how the modularized concept representations of our model
+enable compositional imagination, allowing the generation of novel videos by
+recombining attributes from different objects.",http://arxiv.org/pdf/2501.14174v1,,False
+Argos: Agentic Time-Series Anomaly Detection with Autonomous Rule Generation via Large Language Models,24/01/2025,"Yile Gu, Yifan Xiong, Jonathan Mace, Yuting Jiang, Yigong Hu, Baris Kasikci, Peng Cheng","Observability in cloud infrastructure is critical for service providers,
+driving the widespread adoption of anomaly detection systems for monitoring
+metrics. However, existing systems often struggle to simultaneously achieve
+explainability, reproducibility, and autonomy, which are three indispensable
+properties for production use. We introduce Argos, an agentic system for
+detecting time-series anomalies in cloud infrastructure by leveraging large
+language models (LLMs). Argos proposes to use explainable and reproducible
+anomaly rules as intermediate representation and employs LLMs to autonomously
+generate such rules. The system will efficiently train error-free and
+accuracy-guaranteed anomaly rules through multiple collaborative agents and
+deploy the trained rules for low-cost online anomaly detection. Through
+evaluation results, we demonstrate that Argos outperforms state-of-the-art
+methods, increasing $F_1$ scores by up to $9.5\%$ and $28.3\%$ on public
+anomaly detection datasets and an internal dataset collected from Microsoft,
+respectively.",http://arxiv.org/pdf/2501.14170v1,,False

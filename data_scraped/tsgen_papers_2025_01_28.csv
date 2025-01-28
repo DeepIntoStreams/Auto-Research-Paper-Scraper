@@ -1,0 +1,280 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Tailored Forecasting from Short Time Series via Meta-learning,27/01/2025,"Declan A. Norton, Edward Ott, Andrew Pomerance, Brian Hunt, Michelle Girvan","Machine learning (ML) models can be effective for forecasting the dynamics of
+unknown systems from time-series data, but they often require large amounts of
+data and struggle to generalize across systems with varying dynamics. Combined,
+these issues make forecasting from short time series particularly challenging.
+To address this problem, we introduce Meta-learning for Tailored Forecasting
+from Related Time Series (METAFORS), which uses related systems with longer
+time-series data to supplement limited data from the system of interest. By
+leveraging a library of models trained on related systems, METAFORS builds
+tailored models to forecast system evolution with limited data. Using a
+reservoir computing implementation and testing on simulated chaotic systems, we
+demonstrate METAFORS' ability to predict both short-term dynamics and long-term
+statistics, even when test and related systems exhibit significantly different
+behaviors and the available data are scarce, highlighting its robustness and
+versatility in data-limited scenarios.",http://arxiv.org/pdf/2501.16325v1,,False
+Evaluating The Performance of Using Large Language Models to Automate Summarization of CT Simulation Orders in Radiation Oncology,27/01/2025,"Meiyun Cao, Shaw Hu, Jason Sharp, Edward Clouser, Jason Holmes, Linda L. Lam, Xiaoning Ding, Diego Santos Toesca, Wendy S. Lindholm, Samir H. Patel, Sujay A. Vora, Peilong Wang, Wei Liu","Purpose: This study aims to use a large language model (LLM) to automate the
+generation of summaries from the CT simulation orders and evaluate its
+performance.
+  Materials and Methods: A total of 607 CT simulation orders for patients were
+collected from the Aria database at our institution. A locally hosted Llama 3.1
+405B model, accessed via the Application Programming Interface (API) service,
+was used to extract keywords from the CT simulation orders and generate
+summaries. The downloaded CT simulation orders were categorized into seven
+groups based on treatment modalities and disease sites. For each group, a
+customized instruction prompt was developed collaboratively with therapists to
+guide the Llama 3.1 405B model in generating summaries. The ground truth for
+the corresponding summaries was manually derived by carefully reviewing each CT
+simulation order and subsequently verified by therapists. The accuracy of the
+LLM-generated summaries was evaluated by therapists using the verified ground
+truth as a reference.
+  Results: About 98% of the LLM-generated summaries aligned with the manually
+generated ground truth in terms of accuracy. Our evaluations showed an improved
+consistency in format and enhanced readability of the LLM-generated summaries
+compared to the corresponding therapists-generated summaries. This automated
+approach demonstrated a consistent performance across all groups, regardless of
+modality or disease site.
+  Conclusions: This study demonstrated the high precision and consistency of
+the Llama 3.1 405B model in extracting keywords and summarizing CT simulation
+orders, suggesting that LLMs have great potential to help with this task,
+reduce the workload of therapists and improve workflow efficiency.",http://arxiv.org/pdf/2501.16309v1,,False
+Return of the Encoder: Maximizing Parameter Efficiency for SLMs,27/01/2025,"Mohamed Elfeki, Rui Liu, Chad Voegele","The dominance of large decoder-only language models has overshadowed
+encoder-decoder architectures, despite their fundamental efficiency advantages
+in sequence processing. For small language models (SLMs) - those with 1 billion
+parameters or fewer - our systematic analysis across GPU, CPU, and NPU
+platforms reveals that encoder-decoder architectures achieve 47% lower
+first-token latency and 4.7x higher throughput compared to decoder-only models
+on edge devices. These gains may be attributed to encoder-decoder's one-time
+input processing and efficient separation of understanding and generation
+phases.
+  We introduce a novel knowledge distillation framework that enables
+encoder-decoder models to leverage capabilities from large scalable
+decoder-only teachers while preserving their architectural advantages,
+achieving up to 6 average performance points improvement across diverse tasks,
+with significant gains in asymmetric sequence tasks where input and output
+distributions can benefit from different processing approaches.
+  When combined with modern advances like Rotary Positional Embeddings (RoPE)
+and Vision encoders, our systematic investigation demonstrates that
+encoder-decoder architectures provide a more practical path toward deploying
+capable language models in resource-constrained environments. Our findings
+challenge the prevailing trend toward decoder-only scaling, showing that
+architectural choices become increasingly crucial as parameter budgets
+decrease, particularly for on-device and edge deployments where computational
+efficiency is paramount.",http://arxiv.org/pdf/2501.16273v1,,False
+SWIFT: Mapping Sub-series with Wavelet Decomposition Improves Time Series Forecasting,27/01/2025,"Wenxuan Xie, Fanpu Cao","In recent work on time-series prediction, Transformers and even large
+language models have garnered significant attention due to their strong
+capabilities in sequence modeling. However, in practical deployments,
+time-series prediction often requires operation in resource-constrained
+environments, such as edge devices, which are unable to handle the
+computational overhead of large models. To address such scenarios, some
+lightweight models have been proposed, but they exhibit poor performance on
+non-stationary sequences. In this paper, we propose $\textit{SWIFT}$, a
+lightweight model that is not only powerful, but also efficient in deployment
+and inference for Long-term Time Series Forecasting (LTSF). Our model is based
+on three key points: (i) Utilizing wavelet transform to perform lossless
+downsampling of time series. (ii) Achieving cross-band information fusion with
+a learnable filter. (iii) Using only one shared linear layer or one shallow MLP
+for sub-series' mapping. We conduct comprehensive experiments, and the results
+show that $\textit{SWIFT}$ achieves state-of-the-art (SOTA) performance on
+multiple datasets, offering a promising method for edge computing and
+deployment in this task. Moreover, it is noteworthy that the number of
+parameters in $\textit{SWIFT-Linear}$ is only 25\% of what it would be with a
+single-layer linear model for time-domain prediction. Our code is available at
+https://github.com/LancelotXWX/SWIFT.",http://arxiv.org/pdf/2501.16178v1,,False
+BAG: Body-Aligned 3D Wearable Asset Generation,27/01/2025,"Zhongjin Luo, Yang Li, Mingrui Zhang, Senbo Wang, Han Yan, Xibin Song, Taizhang Shang, Wei Mao, Hongdong Li, Xiaoguang Han, Pan Ji","While recent advancements have shown remarkable progress in general 3D shape
+generation models, the challenge of leveraging these approaches to
+automatically generate wearable 3D assets remains unexplored. To this end, we
+present BAG, a Body-aligned Asset Generation method to output 3D wearable asset
+that can be automatically dressed on given 3D human bodies. This is achived by
+controlling the 3D generation process using human body shape and pose
+information. Specifically, we first build a general single-image to consistent
+multiview image diffusion model, and train it on the large Objaverse dataset to
+achieve diversity and generalizability. Then we train a Controlnet to guide the
+multiview generator to produce body-aligned multiview images. The control
+signal utilizes the multiview 2D projections of the target human body, where
+pixel values represent the XYZ coordinates of the body surface in a canonical
+space. The body-conditioned multiview diffusion generates body-aligned
+multiview images, which are then fed into a native 3D diffusion model to
+produce the 3D shape of the asset. Finally, by recovering the similarity
+transformation using multiview silhouette supervision and addressing asset-body
+penetration with physics simulators, the 3D asset can be accurately fitted onto
+the target human body. Experimental results demonstrate significant advantages
+over existing methods in terms of image prompt-following capability, shape
+diversity, and shape quality. Our project page is available at
+https://bag-3d.github.io/.",http://arxiv.org/pdf/2501.16177v1,,False
+Towards General-Purpose Model-Free Reinforcement Learning,27/01/2025,"Scott Fujimoto, Pierluca D'Oro, Amy Zhang, Yuandong Tian, Michael Rabbat","Reinforcement learning (RL) promises a framework for near-universal
+problem-solving. In practice however, RL algorithms are often tailored to
+specific benchmarks, relying on carefully tuned hyperparameters and algorithmic
+choices. Recently, powerful model-based RL methods have shown impressive
+general results across benchmarks but come at the cost of increased complexity
+and slow run times, limiting their broader applicability. In this paper, we
+attempt to find a unifying model-free deep RL algorithm that can address a
+diverse class of domains and problem settings. To achieve this, we leverage
+model-based representations that approximately linearize the value function,
+taking advantage of the denser task objectives used by model-based RL while
+avoiding the costs associated with planning or simulated trajectories. We
+evaluate our algorithm, MR.Q, on a variety of common RL benchmarks with a
+single set of hyperparameters and show a competitive performance against
+domain-specific and general baselines, providing a concrete step towards
+building general-purpose model-free deep RL algorithms.",http://arxiv.org/pdf/2501.16142v1,,False
+Using Generative Models to Produce Realistic Populations of UK Windstorms,27/01/2025,"Yee Chun Tsoi, Kieran M. R. Hunt, Len Shaffrey, Atta Badii, Richard Dixon, Ludovico Nicotina","This study evaluates the potential of generative models, trained on
+historical ERA5 reanalysis data, for simulating windstorms over the UK. Four
+generative models, including a standard GAN, a WGAN-GP, a U-net diffusion
+model, and a diffusion-GAN were assessed based on their ability to replicate
+spatial and statistical characteristics of windstorms. Different models have
+distinct strengths and limitations. The standard GAN displayed broader
+variability and limited alignment on the PCA dimensions. The WGAN-GP had a more
+balanced performance but occasionally misrepresented extreme events. The U-net
+diffusion model produced high-quality spatial patterns but consistently
+underestimated windstorm intensities. The diffusion-GAN performed better than
+the other models in general but overestimated extremes. An ensemble approach
+combining the strengths of these models could potentially improve their overall
+reliability. This study provides a foundation for such generative models in
+meteorological research and could potentially be applied in windstorm analysis
+and risk assessment.",http://arxiv.org/pdf/2501.16110v1,,False
+Generating Spatial Synthetic Populations Using Wasserstein Generative Adversarial Network: A Case Study with EU-SILC Data for Helsinki and Thessaloniki,27/01/2025,Vanja Falck,"Using agent-based social simulations can enhance our understanding of urban
+planning, public health, and economic forecasting. Realistic synthetic
+populations with numerous attributes strengthen these simulations. The
+Wasserstein Generative Adversarial Network, trained on census data like
+EU-SILC, can create robust synthetic populations. These methods, aided by
+external statistics or EU-SILC weights, generate spatial synthetic populations
+for agent-based models. The increased access to high-quality micro-data has
+sparked interest in synthetic populations, which preserve demographic profiles
+and analytical strength while ensuring privacy and preventing discrimination.
+This study uses national data from Finland and Greece for Helsinki and
+Thessaloniki to explore balanced spatial synthetic population generation.
+Results show challenges related to balancing data with or without aggregated
+statistics for the target population and the general under-representation of
+fringe profiles by deep generative methods. The latter can lead to
+discrimination in agent-based simulations.",http://arxiv.org/pdf/2501.16080v1,,False
+PISCO: Pretty Simple Compression for Retrieval-Augmented Generation,27/01/2025,"Maxime Louis, Hervé Déjean, Stéphane Clinchant","Retrieval-Augmented Generation (RAG) pipelines enhance Large Language Models
+(LLMs) by retrieving relevant documents, but they face scalability issues due
+to high inference costs and limited context size. Document compression is a
+practical solution, but current soft compression methods suffer from accuracy
+losses and require extensive pretraining. In this paper, we introduce PISCO, a
+novel method that achieves a 16x compression rate with minimal accuracy loss
+(0-3%) across diverse RAG-based question-answering (QA) tasks. Unlike existing
+approaches, PISCO requires no pretraining or annotated data, relying solely on
+sequence-level knowledge distillation from document-based questions. With the
+ability to fine-tune a 7-10B LLM in 48 hours on a single A100 GPU, PISCO offers
+a highly efficient and scalable solution. We present comprehensive experiments
+showing that PISCO outperforms existing compression models by 8% in accuracy.",http://arxiv.org/pdf/2501.16075v1,,False
+TimeHF: Billion-Scale Time Series Models Guided by Human Feedback,27/01/2025,"Yongzhi Qi, Hao Hu, Dazhou Lei, Jianshen Zhang, Zhengxin Shi, Yulin Huang, Zhengyu Chen, Xiaoming Lin, Zuo-Jun Max Shen","Time series neural networks perform exceptionally well in real-world
+applications but encounter challenges such as limited scalability, poor
+generalization, and suboptimal zero-shot performance. Inspired by large
+language models, there is interest in developing large time series models (LTM)
+to address these issues. However, current methods struggle with training
+complexity, adapting human feedback, and achieving high predictive accuracy. We
+introduce TimeHF, a novel pipeline for creating LTMs with 6 billion parameters,
+incorporating human feedback. We use patch convolutional embedding to capture
+long time series information and design a human feedback mechanism called
+time-series policy optimization. Deployed in JD.com's supply chain, TimeHF
+handles automated replenishment for over 20,000 products, improving prediction
+accuracy by 33.21% over existing methods. This work advances LTM technology and
+shows significant industrial benefits.",http://arxiv.org/pdf/2501.15942v1,,False
+Generative AI for Lyapunov Optimization Theory in UAV-based Low-Altitude Economy Networking,27/01/2025,"Zhang Liu, Dusit Niyato, Jiacheng Wang, Geng Sun, Lianfen Huang, Zhibin Gao, Xianbin Wang","Lyapunov optimization theory has recently emerged as a powerful mathematical
+framework for solving complex stochastic optimization problems by transforming
+long-term objectives into a sequence of real-time short-term decisions while
+ensuring system stability. This theory is particularly valuable in unmanned
+aerial vehicle (UAV)-based low-altitude economy (LAE) networking scenarios,
+where it could effectively address inherent challenges of dynamic network
+conditions, multiple optimization objectives, and stability requirements.
+Recently, generative artificial intelligence (GenAI) has garnered significant
+attention for its unprecedented capability to generate diverse digital content.
+Extending beyond content generation, in this paper, we propose a framework
+integrating generative diffusion models with reinforcement learning to address
+Lyapunov optimization problems in UAV-based LAE networking. We begin by
+introducing the fundamentals of Lyapunov optimization theory and analyzing the
+limitations of both conventional methods and traditional AI-enabled approaches.
+We then examine various GenAI models and comprehensively analyze their
+potential contributions to Lyapunov optimization. Subsequently, we develop a
+Lyapunov-guided generative diffusion model-based reinforcement learning
+framework and validate its effectiveness through a UAV-based LAE networking
+case study. Finally, we outline several directions for future research.",http://arxiv.org/pdf/2501.15928v1,,False
+SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Model,27/01/2025,"Delin Qu, Haoming Song, Qizhi Chen, Yuanqi Yao, Xinyi Ye, Yan Ding, Zhigang Wang, JiaYuan Gu, Bin Zhao, Dong Wang, Xuelong Li","In this paper, we claim that spatial understanding is the keypoint in robot
+manipulation, and propose SpatialVLA to explore effective spatial
+representations for the robot foundation model. Specifically, we introduce
+Ego3D Position Encoding to inject 3D information into the input observations of
+the visual-language-action model, and propose Adaptive Action Grids to
+represent spatial robot movement actions with adaptive discretized action
+grids, facilitating learning generalizable and transferrable spatial action
+knowledge for cross-robot control. SpatialVLA is first pre-trained on top of a
+vision-language model with 1.1 Million real-world robot episodes, to learn a
+generalist manipulation policy across multiple robot environments and tasks.
+After pre-training, SpatialVLA is directly applied to perform numerous tasks in
+a zero-shot manner. The superior results in both simulation and real-world
+robots demonstrate its advantage of inferring complex robot motion trajectories
+and its strong in-domain multi-task generalization ability. We further show the
+proposed Adaptive Action Grids offer a new and effective way to fine-tune the
+pre-trained SpatialVLA model for new simulation and real-world setups, where
+the pre-learned action grids are re-discretized to capture robot-specific
+spatial action movements of new setups. The superior results from extensive
+evaluations demonstrate the exceptional in-distribution generalization and
+out-of-distribution adaptation capability, highlighting the crucial benefit of
+the proposed spatial-aware representations for generalist robot policy
+learning. All the details and codes will be open-sourced.",http://arxiv.org/pdf/2501.15830v1,,False
+FuzzyLight: A Robust Two-Stage Fuzzy Approach for Traffic Signal Control Works in Real Cities,27/01/2025,"Mingyuan Li, Jiahao Wang, Bo Du, Jun Shen, Qiang Wu","Effective traffic signal control (TSC) is crucial in mitigating urban
+congestion and reducing emissions. Recently, reinforcement learning (RL) has
+been the research trend for TSC. However, existing RL algorithms face several
+real-world challenges that hinder their practical deployment in TSC: (1) Sensor
+accuracy deteriorates with increased sensor detection range, and data
+transmission is prone to noise, potentially resulting in unsafe TSC decisions.
+(2) During the training of online RL, interactions with the environment could
+be unstable, potentially leading to inappropriate traffic signal phase (TSP)
+selection and traffic congestion. (3) Most current TSC algorithms focus only on
+TSP decisions, overlooking the critical aspect of phase duration, affecting
+safety and efficiency. To overcome these challenges, we propose a robust
+two-stage fuzzy approach called FuzzyLight, which integrates compressed sensing
+and RL for TSC deployment. FuzzyLight offers several key contributions: (1) It
+employs fuzzy logic and compressed sensing to address sensor noise and enhances
+the efficiency of TSP decisions. (2) It maintains stable performance during
+training and combines fuzzy logic with RL to generate precise phases. (3) It
+works in real cities across 22 intersections and demonstrates superior
+performance in both real-world and simulated environments. Experimental results
+indicate that FuzzyLight enhances traffic efficiency by 48% compared to
+expert-designed timings in the real world. Furthermore, it achieves
+state-of-the-art (SOTA) performance in simulated environments using six
+real-world datasets with transmission noise. The code and deployment video are
+available at the URL1",http://arxiv.org/pdf/2501.15820v1,,False
+AdaF^2M^2: Comprehensive Learning and Responsive Leveraging Features in Recommendation System,27/01/2025,"Yongchun Zhu, Jingwu Chen, Ling Chen, Yitan Li, Feng Zhang, Xiao Yang, Zuotao Liu","Feature modeling, which involves feature representation learning and
+leveraging, plays an essential role in industrial recommendation systems.
+However, the data distribution in real-world applications usually follows a
+highly skewed long-tail pattern due to the popularity bias, which easily leads
+to over-reliance on ID-based features, such as user/item IDs and ID sequences
+of interactions. Such over-reliance makes it hard for models to learn features
+comprehensively, especially for those non-ID meta features, e.g., user/item
+characteristics. Further, it limits the feature leveraging ability in models,
+getting less generalized and more susceptible to data noise. Previous studies
+on feature modeling focus on feature extraction and interaction, hardly
+noticing the problems brought about by the long-tail data distribution. To
+achieve better feature representation learning and leveraging on real-world
+data, we propose a model-agnostic framework AdaF^2M^2, short for Adaptive
+Feature Modeling with Feature Mask. The feature-mask mechanism helps
+comprehensive feature learning via multi-forward training with augmented
+samples, while the adapter applies adaptive weights on features responsive to
+different user/item states. By arming base models with AdaF^2M^2, we conduct
+online A/B tests on multiple recommendation scenarios, obtaining +1.37% and
++1.89% cumulative improvements on user active days and app duration
+respectively. Besides, the extended offline experiments on different models
+show improvements as well. AdaF$^2$M$^2$ has been widely deployed on both
+retrieval and ranking tasks in multiple applications of Douyin Group,
+indicating its superior effectiveness and universality.",http://arxiv.org/pdf/2501.15816v1,,False
+Can Molecular Evolution Mechanism Enhance Molecular Representation?,27/01/2025,"Kun Li, Longtao Hu, Xiantao Cai, Jia Wu, Wenbin Hu","Molecular evolution is the process of simulating the natural evolution of
+molecules in chemical space to explore potential molecular structures and
+properties. The relationships between similar molecules are often described
+through transformations such as adding, deleting, and modifying atoms and
+chemical bonds, reflecting specific evolutionary paths. Existing molecular
+representation methods mainly focus on mining data, such as atomic-level
+structures and chemical bonds directly from the molecules, often overlooking
+their evolutionary history. Consequently, we aim to explore the possibility of
+enhancing molecular representations by simulating the evolutionary process. We
+extract and analyze the changes in the evolutionary pathway and explore
+combining it with existing molecular representations. Therefore, this paper
+proposes the molecular evolutionary network (MEvoN) for molecular
+representations. First, we construct the MEvoN using molecules with a small
+number of atoms and generate evolutionary paths utilizing similarity
+calculations. Then, by modeling the atomic-level changes, MEvoN reveals their
+impact on molecular properties. Experimental results show that the MEvoN-based
+molecular property prediction method significantly improves the performance of
+traditional end-to-end algorithms on several molecular datasets. The code is
+available at https://anonymous.4open.science/r/MEvoN-7416/.",http://arxiv.org/pdf/2501.15799v1,,False

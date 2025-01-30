@@ -1,0 +1,140 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+GRACE: Generalizing Robot-Assisted Caregiving with User Functionality Embeddings,29/01/2025,"Ziang Liu, Yuanchen Ju, Yu Da, Tom Silver, Pranav N. Thakkar, Jenna Li, Justin Guo, Katherine Dimitropoulou, Tapomayukh Bhattacharjee","Robot caregiving should be personalized to meet the diverse needs of care
+recipients -- assisting with tasks as needed, while taking user agency in
+action into account. In physical tasks such as handover, bathing, dressing, and
+rehabilitation, a key aspect of this diversity is the functional range of
+motion (fROM), which can vary significantly between individuals. In this work,
+we learn to predict personalized fROM as a way to generalize robot
+decision-making in a wide range of caregiving tasks. We propose a novel
+data-driven method for predicting personalized fROM using functional assessment
+scores from occupational therapy. We develop a neural model that learns to
+embed functional assessment scores into a latent representation of the user's
+physical function. The model is trained using motion capture data collected
+from users with emulated mobility limitations. After training, the model
+predicts personalized fROM for new users without motion capture. Through
+simulated experiments and a real-robot user study, we show that the
+personalized fROM predictions from our model enable the robot to provide
+personalized and effective assistance while improving the user's agency in
+action. See our website for more visualizations:
+https://emprise.cs.cornell.edu/grace/.",http://arxiv.org/pdf/2501.17855v1,,False
+Using Code Generation to Solve Open Instances of Combinatorial Design Problems,29/01/2025,Christopher D. Rosin,"The Handbook of Combinatorial Designs catalogs many types of combinatorial
+designs, together with lists of open instances for which existence has not yet
+been determined. We develop a constructive protocol CPro1, which uses Large
+Language Models (LLMs) to generate code that constructs combinatorial designs
+and resolves some of these open instances. The protocol starts from a
+definition of a particular type of design, and a verifier that reliably
+confirms whether a proposed design is valid. The LLM selects strategies and
+implements them in code, and scaffolding provides automated hyperparameter
+tuning and execution feedback using the verifier. Most generated code fails,
+but by generating many candidates, the protocol automates exploration of a
+variety of standard methods (e.g. simulated annealing, genetic algorithms) and
+experimentation with variations (e.g. cost functions) to find successful
+approaches. Testing on 16 different types of designs, CPro1 constructs
+solutions to open instances for 6 of them: Symmetric and Skew Weighing
+Matrices, Equidistant Permutation Arrays, Packing Arrays, Balanced Ternary
+Designs, and Florentine Rectangles.",http://arxiv.org/pdf/2501.17725v1,,False
+Machine-Learning-Enhanced Optimization of Noise-Resilient Variational Quantum Eigensolvers,29/01/2025,"Kim A. Nicoli, Luca J. Wagner, Lena Funcke","Variational Quantum Eigensolvers (VQEs) are a powerful class of hybrid
+quantum-classical algorithms designed to approximate the ground state of a
+quantum system described by its Hamiltonian. VQEs hold promise for various
+applications, including lattice field theory. However, the inherent noise of
+Noisy Intermediate-Scale Quantum (NISQ) devices poses a significant challenge
+for running VQEs as these algorithms are particularly susceptible to noise,
+e.g., measurement shot noise and hardware noise.
+  In a recent work, it was proposed to enhance the classical optimization of
+VQEs with Gaussian Processes (GPs) and Bayesian Optimization, as these
+machine-learning techniques are well-suited for handling noisy data. In these
+proceedings, we provide additional insights into this new algorithm and present
+further numerical experiments. In particular, we examine the impact of hardware
+noise and error mitigation on the algorithm's performance. We validate the
+algorithm using classical simulations of quantum hardware, including hardware
+noise benchmarks, which have not been considered in previous works. Our
+numerical experiments demonstrate that GP-enhanced algorithms can outperform
+state-of-the-art baselines, laying the foundation for future research on
+deploying these techniques to real quantum hardware and lattice field theory
+setups.",http://arxiv.org/pdf/2501.17689v1,,False
+Drivetrain simulation using variational autoencoders,29/01/2025,"Pallavi Sharma, Jorge-Humberto Urrea-Quintero, Bogdan Bogdan, Adrian-Dumitru Ciotec, Laura Vasilie, Henning Wessels, Matteo Skull","This work proposes variational autoencoders (VAEs) to predict a vehicle's
+jerk from a given torque demand, addressing the limitations of sparse
+real-world datasets. Specifically, we implement unconditional and conditional
+VAEs to generate jerk signals that integrate features from different drivetrain
+scenarios. The VAEs are trained on experimental data collected from two
+variants of a fully electric SUV, which differ in maximum torque delivery and
+drivetrain configuration. New meaningful jerk signals are generated within an
+engineering context through the interpretation of the VAE's latent space. A
+performance comparison with baseline physics-based and hybrid models confirms
+the effectiveness of the VAEs. We show that VAEs bypass the need for exhaustive
+manual system parametrization while maintaining physical plausibility by
+conditioning data generation on specific inputs.",http://arxiv.org/pdf/2501.17653v1,,False
+Music2Latent2: Audio Compression with Summary Embeddings and Autoregressive Decoding,29/01/2025,"Marco Pasini, Stefan Lattner, George Fazekas","Efficiently compressing high-dimensional audio signals into a compact and
+informative latent space is crucial for various tasks, including generative
+modeling and music information retrieval (MIR). Existing audio autoencoders,
+however, often struggle to achieve high compression ratios while preserving
+audio fidelity and facilitating efficient downstream applications. We introduce
+Music2Latent2, a novel audio autoencoder that addresses these limitations by
+leveraging consistency models and a novel approach to representation learning
+based on unordered latent embeddings, which we call summary embeddings. Unlike
+conventional methods that encode local audio features into ordered sequences,
+Music2Latent2 compresses audio signals into sets of summary embeddings, where
+each embedding can capture distinct global features of the input sample. This
+enables to achieve higher reconstruction quality at the same compression ratio.
+To handle arbitrary audio lengths, Music2Latent2 employs an autoregressive
+consistency model trained on two consecutive audio chunks with causal masking,
+ensuring coherent reconstruction across segment boundaries. Additionally, we
+propose a novel two-step decoding procedure that leverages the denoising
+capabilities of consistency models to further refine the generated audio at no
+additional cost. Our experiments demonstrate that Music2Latent2 outperforms
+existing continuous audio autoencoders regarding audio quality and performance
+on downstream tasks. Music2Latent2 paves the way for new possibilities in audio
+compression.",http://arxiv.org/pdf/2501.17578v1,,False
+Closing the Gap Between Synthetic and Ground Truth Time Series Distributions via Neural Mapping,29/01/2025,"Daesoo Lee, Sara Malacarne, Erlend Aune","In this paper, we introduce Neural Mapper for Vector Quantized Time Series
+Generator (NM-VQTSG), a novel method aimed at addressing fidelity challenges in
+vector quantized (VQ) time series generation. VQ-based methods, such as
+TimeVQVAE, have demonstrated success in generating time series but are hindered
+by two critical bottlenecks: information loss during compression into discrete
+latent spaces and deviations in the learned prior distribution from the ground
+truth distribution. These challenges result in synthetic time series with
+compromised fidelity and distributional accuracy. To overcome these
+limitations, NM-VQTSG leverages a U-Net-based neural mapping model to bridge
+the distributional gap between synthetic and ground truth time series. To be
+more specific, the model refines synthetic data by addressing artifacts
+introduced during generation, effectively aligning the distributions of
+synthetic and real data. Importantly, NM-VQTSG can be used for synthetic time
+series generated by any VQ-based generative method. We evaluate NM-VQTSG across
+diverse datasets from the UCR Time Series Classification archive, demonstrating
+its capability to consistently enhance fidelity in both unconditional and
+conditional generation tasks. The improvements are evidenced by significant
+improvements in FID, IS, and conditional FID, additionally backed up by visual
+inspection in a data space and a latent space. Our findings establish NM-VQTSG
+as a new method to improve the quality of synthetic time series. Our
+implementation is available on \url{https://github.com/ML4ITS/TimeVQVAE}.",http://arxiv.org/pdf/2501.17553v1,,False
+Gradual Domain Adaptation for Graph Learning,29/01/2025,"Pui Ieng Lei, Ximing Chen, Yijun Sheng, Yanyan Liu, Jingzhi Guo, Zhiguo Gong","Existing literature lacks a graph domain adaptation technique for handling
+large distribution shifts, primarily due to the difficulty in simulating an
+evolving path from source to target graph. To make a breakthrough, we present a
+graph gradual domain adaptation (GGDA) framework with the construction of a
+compact domain sequence that minimizes information loss in adaptations. Our
+approach starts with an efficient generation of knowledge-preserving
+intermediate graphs over the Fused Gromov-Wasserstein (FGW) metric. With the
+bridging data pool, GGDA domains are then constructed via a novel vertex-based
+domain progression, which comprises ""close"" vertex selections and adaptive
+domain advancement to enhance inter-domain information transferability.
+Theoretically, our framework concretizes the intractable inter-domain distance
+$W_p(\mu_t,\mu_{t+1})$ via implementable upper and lower bounds, enabling
+flexible adjustments of this metric for optimizing domain formation. Extensive
+experiments under various transfer scenarios validate the superior performance
+of our GGDA framework.",http://arxiv.org/pdf/2501.17443v1,,False
+Actions Speak Louder than Words: Agent Decisions Reveal Implicit Biases in Language Models,29/01/2025,"Yuxuan Li, Hirokazu Shirado, Sauvik Das","While advances in fairness and alignment have helped mitigate overt biases
+exhibited by large language models (LLMs) when explicitly prompted, we
+hypothesize that these models may still exhibit implicit biases when simulating
+human behavior. To test this hypothesis, we propose a technique to
+systematically uncover such biases across a broad range of sociodemographic
+categories by assessing decision-making disparities among agents with
+LLM-generated, sociodemographically-informed personas. Using our technique, we
+tested six LLMs across three sociodemographic groups and four decision-making
+scenarios. Our results show that state-of-the-art LLMs exhibit significant
+sociodemographic disparities in nearly all simulations, with more advanced
+models exhibiting greater implicit biases despite reducing explicit biases.
+Furthermore, when comparing our findings to real-world disparities reported in
+empirical studies, we find that the biases we uncovered are directionally
+aligned but markedly amplified. This directional alignment highlights the
+utility of our technique in uncovering systematic biases in LLMs rather than
+random variations; moreover, the presence and amplification of implicit biases
+emphasizes the need for novel strategies to address these biases.",http://arxiv.org/pdf/2501.17420v1,,False

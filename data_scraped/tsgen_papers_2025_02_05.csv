@@ -1,0 +1,713 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Minimax-Optimal Covariance Projected Spectral Clustering for High-Dimensional Nonspherical Mixtures,04/02/2025,"Chengzhu Huang, Yuqi Gu","In mixture models, nonspherical (anisotropic) noise within each cluster is
+widely present in real-world data. We study both the minimax rate and optimal
+statistical procedure for clustering under high-dimensional nonspherical
+mixture models. In high-dimensional settings, we first establish the
+information-theoretic limits for clustering under Gaussian mixtures. The
+minimax lower bound unveils an intriguing informational dimension-reduction
+phenomenon: there exists a substantial gap between the minimax rate and the
+oracle clustering risk, with the former determined solely by the projected
+centers and projected covariance matrices in a low-dimensional space. Motivated
+by the lower bound, we propose a novel computationally efficient clustering
+method: Covariance Projected Spectral Clustering (COPO). Its key step is to
+project the high-dimensional data onto the low-dimensional space spanned by the
+cluster centers and then use the projected covariance matrices in this space to
+enhance clustering. We establish tight algorithmic upper bounds for COPO, both
+for Gaussian noise with flexible covariance and general noise with local
+dependence. Our theory indicates the minimax-optimality of COPO in the Gaussian
+case and highlights its adaptivity to a broad spectrum of dependent noise.
+Extensive simulation studies under various noise structures and real data
+analysis demonstrate our method's superior performance.",http://arxiv.org/pdf/2502.02580v1,,False
+Hierarchical Sparse Bayesian Multitask Model with Scalable Inference for Microbiome Analysis,04/02/2025,"Haonan Zhu, Andre R. Goncalves, Camilo Valdes, Hiranmayi Ranganathan, Boya Zhang, Jose Manuel Martí, Car Reen Kok, Monica K. Borucki, Nisha J. Mulakken, James B. Thissen, Crystal Jaing, Alfred Hero, Nicholas A. Be","This paper proposes a hierarchical Bayesian multitask learning model that is
+applicable to the general multi-task binary classification learning problem
+where the model assumes a shared sparsity structure across different tasks. We
+derive a computationally efficient inference algorithm based on variational
+inference to approximate the posterior distribution. We demonstrate the
+potential of the new approach on various synthetic datasets and for predicting
+human health status based on microbiome profile. Our analysis incorporates data
+pooled from multiple microbiome studies, along with a comprehensive comparison
+with other benchmark methods. Results in synthetic datasets show that the
+proposed approach has superior support recovery property when the underlying
+regression coefficients share a common sparsity structure across different
+tasks. Our experiments on microbiome classification demonstrate the utility of
+the method in extracting informative taxa while providing well-calibrated
+predictions with uncertainty quantification and achieving competitive
+performance in terms of prediction metrics. Notably, despite the heterogeneity
+of the pooled datasets (e.g., different experimental objectives, laboratory
+setups, sequencing equipment, patient demographics), our method delivers robust
+results.",http://arxiv.org/pdf/2502.02552v1,,False
+A weak convergence approach to large deviations for stochastic approximations,04/02/2025,"Henrik Hult, Adam Lindhe, Pierre Nyquist, Guo-Jhen Wu","The theory of stochastic approximations form the theoretical foundation for
+studying convergence properties of many popular recursive learning algorithms
+in statistics, machine learning and statistical physics. Large deviations for
+stochastic approximations provide asymptotic estimates of the probability that
+the learning algorithm deviates from its expected path, given by a limit ODE,
+and the large deviation rate function gives insights to the most likely way
+that such deviations occur.
+  In this paper we prove a large deviation principle for general stochastic
+approximations with state-dependent Markovian noise and decreasing step size.
+Using the weak convergence approach to large deviations, we generalize previous
+results for stochastic approximations and identify the appropriate scaling
+sequence for the large deviation principle. We also give a new representation
+for the rate function, in which the rate function is expressed as an action
+functional involving the family of Markov transition kernels. Examples of
+learning algorithms that are covered by the large deviation principle include
+stochastic gradient descent, persistent contrastive divergence and the
+Wang-Landau algorithm.",http://arxiv.org/pdf/2502.02529v1,,False
+Learning to generate physical ocean states: Towards hybrid climate modeling,04/02/2025,"Etienne Meunier, David Kamm, Guillaume Gachon, Redouane Lguensat, Julie Deshayes","Ocean General Circulation Models require extensive computational resources to
+reach equilibrium states, while deep learning emulators, despite offering fast
+predictions, lack the physical interpretability and long-term stability
+necessary for climate scientists to understand climate sensitivity (to
+greenhouse gas emissions) and mechanisms of abrupt % variability such as
+tipping points. We propose to take the best from both worlds by leveraging deep
+generative models to produce physically consistent oceanic states that can
+serve as initial conditions for climate projections. We assess the viability of
+this hybrid approach through both physical metrics and numerical experiments,
+and highlight the benefits of enforcing physical constraints during generation.
+Although we train here on ocean variables from idealized numerical simulations,
+we claim that this hybrid approach, combining the computational efficiency of
+deep learning with the physical accuracy of numerical models, can effectively
+reduce the computational burden of running climate models to equilibrium, and
+reduce uncertainties in climate projections by minimizing drifts in baseline
+simulations.",http://arxiv.org/pdf/2502.02499v1,,False
+EasySpec: Layer-Parallel Speculative Decoding for Efficient Multi-GPU Utilization,04/02/2025,"Yize Wu, Ke Gao, Yanjun Wu","Speculative decoding is an effective and lossless method for Large Language
+Model (LLM) inference acceleration. It employs a smaller model to generate a
+draft token sequence, which is then verified by the original base model. In
+multi-GPU systems, inference latency can be further reduced through tensor
+parallelism (TP), while the optimal TP size of the draft model is typically
+smaller than that of the base model, leading to GPU idling during the drafting
+stage. To solve this problem, we propose EasySpec, a layer-parallel speculation
+strategy that optimizes the efficiency of multi-GPU utilization.EasySpec breaks
+the sequential execution order of layers in the drafting model, enabling
+multi-layer parallelization across devices, albeit with some induced
+approximation errors. After each drafting-and-verification iteration, the draft
+model's key-value (KV) cache is calibrated in a single forward pass, preventing
+long-term error accumulation at minimal additional latency. We evaluated
+EasySpec on several mainstream open-source LLMs, using smaller versions of
+models from the same series as drafters. The results demonstrate that EasySpec
+can achieve a peak speedup of 4.17x compared to vanilla decoding, while
+preserving the original distribution of the base LLMs. Specifically, the
+drafting stage can be accelerated by up to 1.62x with a maximum accuracy drop
+of only 7%, requiring no training or fine-tuning on the draft models.",http://arxiv.org/pdf/2502.02493v1,,False
+Stable Port-Hamiltonian Neural Networks,04/02/2025,"Fabian J. Roth, Dominik K. Klein, Maximilian Kannapinn, Jan Peters, Oliver Weeger","In recent years, nonlinear dynamic system identification using artificial
+neural networks has garnered attention due to its manifold potential
+applications in virtually all branches of science and engineering. However,
+purely data-driven approaches often struggle with extrapolation and may yield
+physically implausible forecasts. Furthermore, the learned dynamics can exhibit
+instabilities, making it difficult to apply such models safely and robustly.
+This article proposes stable port-Hamiltonian neural networks, a machine
+learning architecture that incorporates the physical biases of energy
+conservation or dissipation while guaranteeing global Lyapunov stability of the
+learned dynamics. Evaluations with illustrative examples and real-world
+measurement data demonstrate the model's ability to generalize from sparse
+data, outperforming purely data-driven approaches and avoiding instability
+issues. In addition, the model's potential for data-driven surrogate modeling
+is highlighted in application to multi-physics simulation data.",http://arxiv.org/pdf/2502.02480v1,,False
+SDE Matching: Scalable and Simulation-Free Training of Latent Stochastic Differential Equations,04/02/2025,"Grigory Bartosh, Dmitry Vetrov, Christian A. Naesseth","The Latent Stochastic Differential Equation (SDE) is a powerful tool for time
+series and sequence modeling. However, training Latent SDEs typically relies on
+adjoint sensitivity methods, which depend on simulation and backpropagation
+through approximate SDE solutions, which limit scalability. In this work, we
+propose SDE Matching, a new simulation-free method for training Latent SDEs.
+Inspired by modern Score- and Flow Matching algorithms for learning generative
+dynamics, we extend these ideas to the domain of stochastic dynamics for time
+series and sequence modeling, eliminating the need for costly numerical
+simulations. Our results demonstrate that SDE Matching achieves performance
+comparable to adjoint sensitivity methods while drastically reducing
+computational complexity.",http://arxiv.org/pdf/2502.02472v1,,False
+Orientation-aware interaction-based deep material network in polycrystalline materials modeling,04/02/2025,"Ting-Ju Wei, Tung-Huan Su, Chuin-Shan Chen","Multiscale simulations are indispensable for connecting microstructural
+features to the macroscopic behavior of polycrystalline materials, but their
+high computational demands limit their practicality. Deep material networks
+(DMNs) have been proposed as efficient surrogate models, yet they fall short of
+capturing texture evolution. To address this limitation, we propose the
+orientation-aware interaction-based deep material network (ODMN), which
+incorporates an orientation-aware mechanism and an interaction mechanism
+grounded in the Hill-Mandel principle. The orientation-aware mechanism learns
+the crystallographic textures, while the interaction mechanism captures
+stress-equilibrium directions among representative volume element (RVE)
+subregions, offering insight into internal microstructural mechanics. Notably,
+ODMN requires only linear elastic data for training yet generalizes effectively
+to complex nonlinear and anisotropic responses. Our results show that ODMN
+accurately predicts both mechanical responses and texture evolution under
+complex plastic deformation, thus expanding the applicability of DMNs to
+polycrystalline materials. By balancing computational efficiency with
+predictive fidelity, ODMN provides a robust framework for multiscale
+simulations of polycrystalline materials.",http://arxiv.org/pdf/2502.02457v1,,False
+Model Human Learners: Computational Models to Guide Instructional Design,04/02/2025,Christopher J. MacLellan,"Instructional designers face an overwhelming array of design choices, making
+it challenging to identify the most effective interventions. To address this
+issue, I propose the concept of a Model Human Learner, a unified computational
+model of learning that can aid designers in evaluating candidate interventions.
+This paper presents the first successful demonstration of this concept, showing
+that a computational model can accurately predict the outcomes of two human A/B
+experiments -- one testing a problem sequencing intervention and the other
+testing an item design intervention. It also demonstrates that such a model can
+generate learning curves without requiring human data and provide theoretical
+insights into why an instructional intervention is effective. These findings
+lay the groundwork for future Model Human Learners that integrate cognitive and
+learning theories to support instructional design across diverse tasks and
+interventions.",http://arxiv.org/pdf/2502.02456v1,,False
+Towards graph neural networks for provably solving convex optimization problems,04/02/2025,"Chendi Qian, Christopher Morris","Recently, message-passing graph neural networks (MPNNs) have shown potential
+for solving combinatorial and continuous optimization problems due to their
+ability to capture variable-constraint interactions. While existing approaches
+leverage MPNNs to approximate solutions or warm-start traditional solvers, they
+often lack guarantees for feasibility, particularly in convex optimization
+settings. Here, we propose an iterative MPNN framework to solve convex
+optimization problems with provable feasibility guarantees. First, we
+demonstrate that MPNNs can provably simulate standard interior-point methods
+for solving quadratic problems with linear constraints, covering relevant
+problems such as SVMs. Secondly, to ensure feasibility, we introduce a variant
+that starts from a feasible point and iteratively restricts the search within
+the feasible region. Experimental results show that our approach outperforms
+existing neural baselines in solution quality and feasibility, generalizes well
+to unseen problem sizes, and, in some cases, achieves faster solution times
+than state-of-the-art solvers such as Gurobi.",http://arxiv.org/pdf/2502.02446v1,,False
+Towards Fast Graph Generation via Autoregressive Noisy Filtration Modeling,04/02/2025,"Markus Krimmel, Jenna Wiens, Karsten Borgwardt, Dexiong Chen","Graph generative models often face a critical trade-off between learning
+complex distributions and achieving fast generation speed. We introduce
+Autoregressive Noisy Filtration Modeling (ANFM), a novel approach that
+addresses both challenges. ANFM leverages filtration, a concept from
+topological data analysis, to transform graphs into short sequences of
+monotonically increasing subgraphs. This formulation extends the sequence
+families used in previous autoregressive models. To learn from these sequences,
+we propose a novel autoregressive graph mixer model. Our experiments suggest
+that exposure bias might represent a substantial hurdle in autoregressive graph
+generation and we introduce two mitigation strategies to address it: noise
+augmentation and a reinforcement learning approach. Incorporating these
+techniques leads to substantial performance gains, making ANFM competitive with
+state-of-the-art diffusion models across diverse synthetic and real-world
+datasets. Notably, ANFM produces remarkably short sequences, achieving a
+100-fold speedup in generation time compared to diffusion models. This work
+marks a significant step toward high-throughput graph generation.",http://arxiv.org/pdf/2502.02415v1,,False
+Privacy Amplification by Structured Subsampling for Deep Differentially Private Time Series Forecasting,04/02/2025,"Jan Schuchardt, Mina Dalirrooyfard, Jed Guzelkabaagac, Anderson Schneider, Yuriy Nevmyvaka, Stephan Günnemann","Many forms of sensitive data, such as web traffic, mobility data, or hospital
+occupancy, are inherently sequential. The standard method for training machine
+learning models while ensuring privacy for units of sensitive information, such
+as individual hospital visits, is differentially private stochastic gradient
+descent (DP-SGD). However, we observe in this work that the formal guarantees
+of DP-SGD are incompatible with timeseries-specific tasks like forecasting,
+since they rely on the privacy amplification attained by training on small,
+unstructured batches sampled from an unstructured dataset. In contrast, batches
+for forecasting are generated by (1) sampling sequentially structured time
+series from a dataset, (2) sampling contiguous subsequences from these series,
+and (3) partitioning them into context and ground-truth forecast windows. We
+theoretically analyze the privacy amplification attained by this structured
+subsampling to enable the training of forecasting models with sound and tight
+event- and user-level privacy guarantees. Towards more private models, we
+additionally prove how data augmentation amplifies privacy in self-supervised
+training of sequence models. Our empirical evaluation demonstrates that
+amplification by structured subsampling enables the training of forecasting
+models with strong formal privacy guarantees.",http://arxiv.org/pdf/2502.02410v1,,False
+FewTopNER: Integrating Few-Shot Learning with Topic Modeling and Named Entity Recognition in a Multilingual Framework,04/02/2025,"Ibrahim Bouabdallaoui, Fatima Guerouate, Samya Bouhaddour, Chaimae Saadi, Mohammed Sbihi","We introduce FewTopNER, a novel framework that integrates few-shot named
+entity recognition (NER) with topic-aware contextual modeling to address the
+challenges of cross-lingual and low-resource scenarios. FewTopNER leverages a
+shared multilingual encoder based on XLM-RoBERTa, augmented with
+language-specific calibration mechanisms, to generate robust contextual
+embeddings. The architecture comprises a prototype-based entity recognition
+branch, employing BiLSTM and Conditional Random Fields for sequence labeling,
+and a topic modeling branch that extracts document-level semantic features
+through hybrid probabilistic and neural methods. A cross-task bridge
+facilitates dynamic bidirectional attention and feature fusion between entity
+and topic representations, thereby enhancing entity disambiguation by
+incorporating global semantic context. Empirical evaluations on multilingual
+benchmarks across English, French, Spanish, German, and Italian demonstrate
+that FewTopNER significantly outperforms existing state-of-the-art few-shot NER
+models. In particular, the framework achieves improvements of 2.5-4.0
+percentage points in F1 score and exhibits enhanced topic coherence, as
+measured by normalized pointwise mutual information. Ablation studies further
+confirm the critical contributions of the shared encoder and cross-task
+integration mechanisms to the overall performance. These results underscore the
+efficacy of incorporating topic-aware context into few-shot NER and highlight
+the potential of FewTopNER for robust cross-lingual applications in
+low-resource settings.",http://arxiv.org/pdf/2502.02391v1,,False
+Adaptive Resource Allocation Optimization Using Large Language Models in Dynamic Wireless Environments,04/02/2025,"Hyeonho Noh, Byonghyo Shim, Hyun Jong Yang","Deep learning (DL) has made notable progress in addressing complex radio
+access network control challenges that conventional analytic methods have
+struggled to solve. However, DL has shown limitations in solving constrained
+NP-hard problems often encountered in network optimization, such as those
+involving quality of service (QoS) or discrete variables like user indices.
+Current solutions rely on domain-specific architectures or heuristic
+techniques, and a general DL approach for constrained optimization remains
+undeveloped. Moreover, even minor changes in communication objectives demand
+time-consuming retraining, limiting their adaptability to dynamic environments
+where task objectives, constraints, environmental factors, and communication
+scenarios frequently change. To address these challenges, we propose a large
+language model for resource allocation optimizer (LLM-RAO), a novel approach
+that harnesses the capabilities of LLMs to address the complex resource
+allocation problem while adhering to QoS constraints. By employing a
+prompt-based tuning strategy to flexibly convey ever-changing task descriptions
+and requirements to the LLM, LLM-RAO demonstrates robust performance and
+seamless adaptability in dynamic environments without requiring extensive
+retraining. Simulation results reveal that LLM-RAO achieves up to a 40%
+performance enhancement compared to conventional DL methods and up to an $80$\%
+improvement over analytical approaches. Moreover, in scenarios with fluctuating
+communication objectives, LLM-RAO attains up to 2.9 times the performance of
+traditional DL-based networks.",http://arxiv.org/pdf/2502.02287v1,,False
+A User Guide to Sampling Strategies for Sliced Optimal Transport,04/02/2025,"Keanu Sisouk, Julie Delon, Julien Tierny","This paper serves as a user guide to sampling strategies for sliced optimal
+transport. We provide reminders and additional regularity results on the Sliced
+Wasserstein distance. We detail the construction methods, generation time
+complexity, theoretical guarantees, and conditions for each strategy.
+Additionally, we provide insights into their suitability for sliced optimal
+transport in theory. Extensive experiments on both simulated and real-world
+data offer a representative comparison of the strategies, culminating in
+practical recommendations for their best usage.",http://arxiv.org/pdf/2502.02275v1,,False
+Conversation AI Dialog for Medicare powered by Finetuning and Retrieval Augmented Generation,04/02/2025,"Atharva Mangeshkumar Agrawal, Rutika Pandurang Shinde, Vasanth Kumar Bhukya, Ashmita Chakraborty, Sagar Bharat Shah, Tanmay Shukla, Sree Pradeep Kumar Relangi, Nilesh Mutyam","Large language models (LLMs) have shown impressive capabilities in natural
+language processing tasks, including dialogue generation. This research aims to
+conduct a novel comparative analysis of two prominent techniques, fine-tuning
+with LoRA (Low-Rank Adaptation) and the Retrieval-Augmented Generation (RAG)
+framework, in the context of doctor-patient chat conversations with multiple
+datasets of mixed medical domains. The analysis involves three state-of-the-art
+models: Llama-2, GPT, and the LSTM model. Employing real-world doctor-patient
+dialogues, we comprehensively evaluate the performance of models, assessing key
+metrics such as language quality (perplexity, BLEU score), factual accuracy
+(fact-checking against medical knowledge bases), adherence to medical
+guidelines, and overall human judgments (coherence, empathy, safety). The
+findings provide insights into the strengths and limitations of each approach,
+shedding light on their suitability for healthcare applications. Furthermore,
+the research investigates the robustness of the models in handling diverse
+patient queries, ranging from general health inquiries to specific medical
+conditions. The impact of domain-specific knowledge integration is also
+explored, highlighting the potential for enhancing LLM performance through
+targeted data augmentation and retrieval strategies.",http://arxiv.org/pdf/2502.02249v1,,False
+Flatten Graphs as Sequences: Transformers are Scalable Graph Generators,04/02/2025,"Dexiong Chen, Markus Krimmel, Karsten Borgwardt","We introduce AutoGraph, a novel autoregressive framework for generating large
+attributed graphs using decoder-only transformers. At the core of our approach
+is a reversible ""flattening"" process that transforms graphs into random
+sequences. By sampling and learning from these sequences, AutoGraph enables
+transformers to model and generate complex graph structures in a manner akin to
+natural language. In contrast to diffusion models that rely on computationally
+intensive node features, our approach operates exclusively on these sequences.
+The sampling complexity and sequence length scale linearly with the number of
+edges, making AutoGraph highly scalable for generating large sparse graphs.
+Empirically, AutoGraph achieves state-of-the-art performance across diverse
+synthetic and molecular graph generation benchmarks, while delivering a
+100-fold generation and a 3-fold training speedup compared to leading diffusion
+models. Additionally, it demonstrates promising transfer capabilities and
+supports substructure-conditioned generation without additional fine-tuning. By
+extending language modeling techniques to graph generation, this work paves the
+way for developing graph foundation models.",http://arxiv.org/pdf/2502.02216v1,,False
+On the Expressivity of Selective State-Space Layers: A Multivariate Polynomial Approach,04/02/2025,"Edo Cohen-Karlik, Itamar Zimerman, Liane Galanti, Ido Atad, Amir Globerson, Lior Wolf","Recent advances in efficient sequence modeling have introduced selective
+state-space layers, a key component of the Mamba architecture, which have
+demonstrated remarkable success in a wide range of NLP and vision tasks. While
+Mamba's empirical performance has matched or surpassed SoTA transformers on
+such diverse benchmarks, the theoretical foundations underlying its powerful
+representational capabilities remain less explored. In this work, we
+investigate the expressivity of selective state-space layers using multivariate
+polynomials, and prove that they surpass linear transformers in expressiveness.
+Consequently, our findings reveal that Mamba offers superior representational
+power over linear attention-based models for long sequences, while not
+sacrificing their generalization. Our theoretical insights are validated by a
+comprehensive set of empirical experiments on various datasets.",http://arxiv.org/pdf/2502.02209v1,,False
+From Uncertain to Safe: Conformal Fine-Tuning of Diffusion Models for Safe PDE Control,04/02/2025,"Peiyan Hu, Xiaowei Qian, Wenhao Deng, Rui Wang, Haodong Feng, Ruiqi Feng, Tao Zhang, Long Wei, Yue Wang, Zhi-Ming Ma, Tailin Wu","The application of deep learning for partial differential equation
+(PDE)-constrained control is gaining increasing attention. However, existing
+methods rarely consider safety requirements crucial in real-world applications.
+To address this limitation, we propose Safe Diffusion Models for PDE Control
+(SafeDiffCon), which introduce the uncertainty quantile as model uncertainty
+quantification to achieve optimal control under safety constraints through both
+post-training and inference phases. Firstly, our approach post-trains a
+pre-trained diffusion model to generate control sequences that better satisfy
+safety constraints while achieving improved control objectives via a reweighted
+diffusion loss, which incorporates the uncertainty quantile estimated using
+conformal prediction. Secondly, during inference, the diffusion model
+dynamically adjusts both its generation process and parameters through
+iterative guidance and fine-tuning, conditioned on control targets while
+simultaneously integrating the estimated uncertainty quantile. We evaluate
+SafeDiffCon on three control tasks: 1D Burgers' equation, 2D incompressible
+fluid, and controlled nuclear fusion problem. Results demonstrate that
+SafeDiffCon is the only method that satisfies all safety constraints, whereas
+other classical and deep learning baselines fail. Furthermore, while adhering
+to safety constraints, SafeDiffCon achieves the best control performance.",http://arxiv.org/pdf/2502.02205v1,,False
+VLA-Cache: Towards Efficient Vision-Language-Action Model via Adaptive Token Caching in Robotic Manipulation,04/02/2025,"Siyu Xu, Yunke Wang, Chenghao Xia, Dihao Zhu, Tao Huang, Chang Xu","Vision-Language-Action (VLA) model can process instructions and visual
+perception to directly generate actions as output in an end-to-end fashion due
+to its strong multi-modal reasoning capabilities. While the performance of VLA
+models is promising, their computational cost can be substantial. This raises
+challenge for applying them on robotics tasks, which requires real-time
+decision-making to respond quickly to environmental changes. Since robotic
+control involves sequential decision-making, the visual input often exhibits
+minimal variation between successive steps. A natural idea is to reuse the
+computational results of unchanged visual tokens from the last step. Motivated
+by this idea, we propose VLA-Cache, an efficient vision-language-action model.
+VLA-Cache incorporates a token-selection mechanism that compares the visual
+input at each step with the input from the previous step, adaptively
+identifying visual tokens with minimal changes. The computational results for
+these unchanged tokens are then reused in subsequent steps via KV-cache,
+thereby significantly improving the efficiency of the VLA-Cache model.
+Experimental results on both simulation (e.g., LIBERO benchmark and SIMPLER)
+and real-world robot valid VLA-Cache can achieve practical acceleration with
+minimal sacrifice in success rate.",http://arxiv.org/pdf/2502.02175v1,,False
+Risk-Aware Driving Scenario Analysis with Large Language Models,04/02/2025,"Yuan Gao, Mattia Piccinini, Johannes Betz","Large Language Models (LLMs) can capture nuanced contextual relationships,
+reasoning, and complex problem-solving. By leveraging their ability to process
+and interpret large-scale information, LLMs have shown potential to address
+domain-specific challenges, including those in autonomous driving systems. This
+paper proposes a novel framework that leverages LLMs for risk-aware analysis of
+generated driving scenarios. We hypothesize that LLMs can effectively evaluate
+whether driving scenarios generated by autonomous driving testing simulators
+are safety-critical. To validate this hypothesis, we conducted an empirical
+evaluation to assess the effectiveness of LLMs in performing this task. This
+framework will also provide feedback to generate the new safety-critical
+scenario by using adversarial method to modify existing non-critical scenarios
+and test their effectiveness in validating motion planning algorithms. Code and
+scenarios are available at:
+https://github.com/yuangao-tum/Riskaware-Scenario-analyse",http://arxiv.org/pdf/2502.02145v1,,False
+AdaptBot: Combining LLM with Knowledge Graphs and Human Input for Generic-to-Specific Task Decomposition and Knowledge Refinement,04/02/2025,"Shivam Singh, Karthik Swaminathan, Nabanita Dash, Ramandeep Singh, Snehasis Banerjee, Mohan Sridharan, Madhava Krishna","Embodied agents assisting humans are often asked to complete a new task in a
+new scenario. An agent preparing a particular dish in the kitchen based on a
+known recipe may be asked to prepare a new dish or to perform cleaning tasks in
+the storeroom. There may not be sufficient resources, e.g., time or labeled
+examples, to train the agent for these new situations. Large Language Models
+(LLMs) trained on considerable knowledge across many domains are able to
+predict a sequence of abstract actions for such new tasks and scenarios,
+although it may not be possible for the agent to execute this action sequence
+due to task-, agent-, or domain-specific constraints. Our framework addresses
+these challenges by leveraging the generic predictions provided by LLM and the
+prior domain-specific knowledge encoded in a Knowledge Graph (KG), enabling an
+agent to quickly adapt to new tasks and scenarios. The robot also solicits and
+uses human input as needed to refine its existing knowledge. Based on
+experimental evaluation over cooking and cleaning tasks in simulation domains,
+we demonstrate that the interplay between LLM, KG, and human input leads to
+substantial performance gains compared with just using the LLM output.",http://arxiv.org/pdf/2502.02067v1,,False
+Anticipate & Act : Integrating LLMs and Classical Planning for Efficient Task Execution in Household Environments,04/02/2025,"Raghav Arora, Shivam Singh, Karthik Swaminathan, Ahana Datta, Snehasis Banerjee, Brojeshwar Bhowmick, Krishna Murthy Jatavallabhula, Mohan Sridharan, Madhava Krishna","Assistive agents performing household tasks such as making the bed or cooking
+breakfast often compute and execute actions that accomplish one task at a time.
+However, efficiency can be improved by anticipating upcoming tasks and
+computing an action sequence that jointly achieves these tasks.
+State-of-the-art methods for task anticipation use data-driven deep networks
+and Large Language Models (LLMs), but they do so at the level of high-level
+tasks and/or require many training examples. Our framework leverages the
+generic knowledge of LLMs through a small number of prompts to perform
+high-level task anticipation, using the anticipated tasks as goals in a
+classical planning system to compute a sequence of finer-granularity actions
+that jointly achieve these goals. We ground and evaluate our framework's
+abilities in realistic scenarios in the VirtualHome environment and demonstrate
+a 31% reduction in execution time compared with a system that does not consider
+upcoming tasks.",http://arxiv.org/pdf/2502.02066v1,,False
+RAPID: Robust and Agile Planner Using Inverse Reinforcement Learning for Vision-Based Drone Navigation,04/02/2025,"Minwoo Kim, Geunsik Bae, Jinwoo Lee, Woojae Shin, Changseung Kim, Myong-Yol Choi, Heejung Shin, Hyondong Oh","This paper introduces a learning-based visual planner for agile drone flight
+in cluttered environments. The proposed planner generates collision-free
+waypoints in milliseconds, enabling drones to perform agile maneuvers in
+complex environments without building separate perception, mapping, and
+planning modules. Learning-based methods, such as behavior cloning (BC) and
+reinforcement learning (RL), demonstrate promising performance in visual
+navigation but still face inherent limitations. BC is susceptible to
+compounding errors due to limited expert imitation, while RL struggles with
+reward function design and sample inefficiency. To address these limitations,
+this paper proposes an inverse reinforcement learning (IRL)-based framework for
+high-speed visual navigation. By leveraging IRL, it is possible to reduce the
+number of interactions with simulation environments and improve capability to
+deal with high-dimensional spaces while preserving the robustness of RL
+policies. A motion primitive-based path planning algorithm collects an expert
+dataset with privileged map data from diverse environments, ensuring
+comprehensive scenario coverage. By leveraging both the acquired expert and
+learner dataset gathered from the agent's interactions with the simulation
+environments, a robust reward function and policy are learned across diverse
+states. While the proposed method is trained in a simulation environment only,
+it can be directly applied to real-world scenarios without additional training
+or tuning. The performance of the proposed method is validated in both
+simulation and real-world environments, including forests and various
+structures. The trained policy achieves an average speed of 7 m/s and a maximum
+speed of 8.8 m/s in real flight experiments. To the best of our knowledge, this
+is the first work to successfully apply an IRL framework for high-speed visual
+navigation of drones.",http://arxiv.org/pdf/2502.02054v1,,False
+From Human Hands to Robotic Limbs: A Study in Motor Skill Embodiment for Telemanipulation,04/02/2025,"Haoyi Shi, Mingxi Su, Ted Morris, Vassilios Morellas, Nikolaos Papanikolopoulos","This paper presents a teleoperation system for controlling a redundant degree
+of freedom robot manipulator using human arm gestures. We propose a GRU-based
+Variational Autoencoder to learn a latent representation of the manipulator's
+configuration space, capturing its complex joint kinematics. A fully connected
+neural network maps human arm configurations into this latent space, allowing
+the system to mimic and generate corresponding manipulator trajectories in real
+time through the VAE decoder. The proposed method shows promising results in
+teleoperating the manipulator, enabling the generation of novel manipulator
+configurations from human features that were not present during training.",http://arxiv.org/pdf/2502.02036v1,,False
+MPIC: Position-Independent Multimodal Context Caching System for Efficient MLLM Serving,04/02/2025,"Shiju Zhao, Junhao Hu, Rongxiao Huang, Jiaqi Zheng, Guihai Chen","The context caching technique is employed to accelerate the Multimodal Large
+Language Model (MLLM) inference by prevailing serving platforms currently.
+However, this approach merely reuses the Key-Value (KV) cache of the initial
+sequence of prompt, resulting in full KV cache recomputation even if the prefix
+differs slightly. This becomes particularly inefficient in the context of
+interleaved text and images, as well as multimodal retrieval-augmented
+generation. This paper proposes position-independent caching as a more
+effective approach for multimodal information management. We have designed and
+implemented a caching system, named MPIC, to address both system-level and
+algorithm-level challenges. MPIC stores the KV cache on local or remote disks
+when receiving multimodal data, and calculates and loads the KV cache in
+parallel during inference. To mitigate accuracy degradation, we have
+incorporated integrated reuse and recompute mechanisms within the system. The
+experimental results demonstrate that MPIC can achieve up to 54% reduction in
+response time compared to existing context caching systems, while maintaining
+negligible or no accuracy loss.",http://arxiv.org/pdf/2502.01960v1,,False
+PolyhedronNet: Representation Learning for Polyhedra with Surface-attributed Graph,03/02/2025,"Dazhou Yu, Genpei Zhang, Liang Zhao","Ubiquitous geometric objects can be precisely and efficiently represented as
+polyhedra. The transformation of a polyhedron into a vector, known as polyhedra
+representation learning, is crucial for manipulating these shapes with
+mathematical and statistical tools for tasks like classification, clustering,
+and generation. Recent years have witnessed significant strides in this domain,
+yet most efforts focus on the vertex sequence of a polyhedron, neglecting the
+complex surface modeling crucial in real-world polyhedral objects. This study
+proposes \textbf{PolyhedronNet}, a general framework tailored for learning
+representations of 3D polyhedral objects. We propose the concept of the
+surface-attributed graph to seamlessly model the vertices, edges, faces, and
+their geometric interrelationships within a polyhedron. To effectively learn
+the representation of the entire surface-attributed graph, we first propose to
+break it down into local rigid representations to effectively learn each local
+region's relative positions against the remaining regions without geometric
+information loss. Subsequently, we propose PolyhedronGNN to hierarchically
+aggregate the local rigid representation via intra-face and inter-face
+geometric message passing modules, to obtain a global representation that
+minimizes information loss while maintaining rotation and translation
+invariance. Our experimental evaluations on four distinct datasets,
+encompassing both classification and retrieval tasks, substantiate
+PolyhedronNet's efficacy in capturing comprehensive and informative
+representations of 3D polyhedral objects. Code and data are available at
+{https://github.com/dyu62/3D_polyhedron}.",http://arxiv.org/pdf/2502.01814v1,,False
+Policy Design for Two-sided Platforms with Participation Dynamics,03/02/2025,"Haruka Kiyohara, Fan Yao, Sarah Dean","In two-sided platforms (e.g., video streaming or e-commerce), viewers and
+providers engage in interactive dynamics, where an increased provider
+population results in higher viewer utility and the increase of viewer
+population results in higher provider utility. Despite the importance of such
+""population effects"" on long-term platform health, recommendation policies do
+not generally take the participation dynamics into account. This paper thus
+studies the dynamics and policy design on two-sided platforms under the
+population effects for the first time. Our control- and game-theoretic findings
+warn against the use of myopic-greedy policy and shed light on the importance
+of provider-side considerations (i.e., effectively distributing exposure among
+provider groups) to improve social welfare via population growth. We also
+present a simple algorithm to optimize long-term objectives by considering the
+population effects, and demonstrate its effectiveness in synthetic and
+real-data experiments.",http://arxiv.org/pdf/2502.01792v1,,False
+GNN-DT: Graph Neural Network Enhanced Decision Transformer for Efficient Optimization in Dynamic Environments,03/02/2025,"Stavros Orfanoudakis, Nanda Kishor Panda, Peter Palensky, Pedro P. Vergara","Reinforcement Learning (RL) methods used for solving real-world optimization
+problems often involve dynamic state-action spaces, larger scale, and sparse
+rewards, leading to significant challenges in convergence, scalability, and
+efficient exploration of the solution space. This study introduces GNN-DT, a
+novel Decision Transformer (DT) architecture that integrates Graph Neural
+Network (GNN) embedders with a novel residual connection between input and
+output tokens crucial for handling dynamic environments. By learning from
+previously collected trajectories, GNN-DT reduces dependence on accurate
+simulators and tackles the sparse rewards limitations of online RL algorithms.
+We evaluate GNN-DT on the complex electric vehicle (EV) charging optimization
+problem and prove that its performance is superior and requires significantly
+fewer training trajectories, thus improving sample efficiency compared to
+existing DT baselines. Furthermore, GNN-DT exhibits robust generalization to
+unseen environments and larger action spaces, addressing a critical gap in
+prior DT-based approaches",http://arxiv.org/pdf/2502.01778v1,,False
+Improving Transformer World Models for Data-Efficient RL,03/02/2025,"Antoine Dedieu, Joseph Ortiz, Xinghua Lou, Carter Wendelken, Wolfgang Lehrach, J Swaroop Guntupalli, Miguel Lazaro-Gredilla, Kevin Patrick Murphy","We present an approach to model-based RL that achieves a new state of the art
+performance on the challenging Craftax-classic benchmark, an open-world 2D
+survival game that requires agents to exhibit a wide range of general abilities
+-- such as strong generalization, deep exploration, and long-term reasoning.
+With a series of careful design choices aimed at improving sample efficiency,
+our MBRL algorithm achieves a reward of 67.4% after only 1M environment steps,
+significantly outperforming DreamerV3, which achieves 53.2%, and, for the first
+time, exceeds human performance of 65.0%. Our method starts by constructing a
+SOTA model-free baseline, using a novel policy architecture that combines CNNs
+and RNNs. We then add three improvements to the standard MBRL setup: (a) ""Dyna
+with warmup"", which trains the policy on real and imaginary data, (b) ""nearest
+neighbor tokenizer"" on image patches, which improves the scheme to create the
+transformer world model (TWM) inputs, and (c) ""block teacher forcing"", which
+allows the TWM to reason jointly about the future tokens of the next timestep.",http://arxiv.org/pdf/2502.01591v1,,False
+A Differentiable Alignment Framework for Sequence-to-Sequence Modeling via Optimal Transport,03/02/2025,"Yacouba Kaloga, Shashi Kumar, Petr Motlicek, Ina Kodrasi","Accurate sequence-to-sequence (seq2seq) alignment is critical for
+applications like medical speech analysis and language learning tools relying
+on automatic speech recognition (ASR). State-of-the-art end-to-end (E2E) ASR
+systems, such as the Connectionist Temporal Classification (CTC) and
+transducer-based models, suffer from peaky behavior and alignment inaccuracies.
+In this paper, we propose a novel differentiable alignment framework based on
+one-dimensional optimal transport, enabling the model to learn a single
+alignment and perform ASR in an E2E manner. We introduce a pseudo-metric,
+called Sequence Optimal Transport Distance (SOTD), over the sequence space and
+discuss its theoretical properties. Based on the SOTD, we propose Optimal
+Temporal Transport Classification (OTTC) loss for ASR and contrast its behavior
+with CTC. Experimental results on the TIMIT, AMI, and LibriSpeech datasets show
+that our method considerably improves alignment performance, though with a
+trade-off in ASR performance when compared to CTC. We believe this work opens
+new avenues for seq2seq alignment research, providing a solid foundation for
+further exploration and development within the community.",http://arxiv.org/pdf/2502.01588v1,,False
+Heterogeneous Treatment Effect in Time-to-Event Outcomes: Harnessing Censored Data with Recursively Imputed Trees,03/02/2025,"Tomer Meir, Uri Shalit, Malka Gorfine","Tailoring treatments to individual needs is a central goal in fields such as
+medicine. A key step toward this goal is estimating Heterogeneous Treatment
+Effects (HTE) - the way treatments impact different subgroups. While crucial,
+HTE estimation is challenging with survival data, where time until an event
+(e.g., death) is key. Existing methods often assume complete observation, an
+assumption violated in survival data due to right-censoring, leading to bias
+and inefficiency. Cui et al. (2023) proposed a doubly-robust method for HTE
+estimation in survival data under no hidden confounders, combining a causal
+survival forest with an augmented inverse-censoring weighting estimator.
+However, we find it struggles under heavy censoring, which is common in
+rare-outcome problems such as Amyotrophic lateral sclerosis (ALS). Moreover,
+most current methods cannot handle instrumental variables, which are a crucial
+tool in the causal inference arsenal. We introduce Multiple Imputation for
+Survival Treatment Response (MISTR), a novel, general, and non-parametric
+method for estimating HTE in survival data. MISTR uses recursively imputed
+survival trees to handle censoring without directly modeling the censoring
+mechanism. Through extensive simulations and analysis of two real-world
+datasets-the AIDS Clinical Trials Group Protocol 175 and the Illinois
+unemployment dataset we show that MISTR outperforms prior methods under heavy
+censoring in the no-hidden-confounders setting, and extends to the instrumental
+variable setting. To our knowledge, MISTR is the first non-parametric approach
+for HTE estimation with unobserved confounders via instrumental variables.",http://arxiv.org/pdf/2502.01575v1,,False
+Memento No More: Coaching AI Agents to Master Multiple Tasks via Hints Internalization,03/02/2025,"Minttu Alakuijala, Ya Gao, Georgy Ananov, Samuel Kaski, Pekka Marttinen, Alexander Ilin, Harri Valpola","As the general capabilities of artificial intelligence (AI) agents continue
+to evolve, their ability to learn to master multiple complex tasks through
+experience remains a key challenge. Current LLM agents, particularly those
+based on proprietary language models, typically rely on prompts to incorporate
+knowledge about the target tasks. This approach does not allow the agent to
+internalize this information and instead relies on ever-expanding prompts to
+sustain its functionality in diverse scenarios. This resembles a system of
+notes used by a person affected by anterograde amnesia, the inability to form
+new memories. In this paper, we propose a novel method to train AI agents to
+incorporate knowledge and skills for multiple tasks without the need for either
+cumbersome note systems or prior high-quality demonstration data. Our approach
+employs an iterative process where the agent collects new experiences, receives
+corrective feedback from humans in the form of hints, and integrates this
+feedback into its weights via a context distillation training procedure. We
+demonstrate the efficacy of our approach by implementing it in a Llama-3-based
+agent which, after only a few rounds of feedback, outperforms advanced models
+GPT-4o and DeepSeek-V3 in a taskset requiring correct sequencing of information
+retrieval, tool use, and question answering.",http://arxiv.org/pdf/2502.01562v1,,False
+Transformers trained on proteins can learn to attend to Euclidean distance,03/02/2025,"Isaac Ellmen, Constantin Schneider, Matthew I. J. Raybould, Charlotte M. Deane","While conventional Transformers generally operate on sequence data, they can
+be used in conjunction with structure models, typically SE(3)-invariant or
+equivariant graph neural networks (GNNs), for 3D applications such as protein
+structure modelling. These hybrids typically involve either (1)
+preprocessing/tokenizing structural features as input for Transformers or (2)
+taking Transformer embeddings and processing them within a structural
+representation. However, there is evidence that Transformers can learn to
+process structural information on their own, such as the AlphaFold3 structural
+diffusion model. In this work we show that Transformers can function
+independently as structure models when passed linear embeddings of coordinates.
+We first provide a theoretical explanation for how Transformers can learn to
+filter attention as a 3D Gaussian with learned variance. We then validate this
+theory using both simulated 3D points and in the context of masked token
+prediction for proteins. Finally, we show that pre-training protein Transformer
+encoders with structure improves performance on a downstream task, yielding
+better performance than custom structural models. Together, this work provides
+a basis for using standard Transformers as hybrid structure-language models.",http://arxiv.org/pdf/2502.01533v1,,False
+Toward Task Generalization via Memory Augmentation in Meta-Reinforcement Learning,03/02/2025,"Kaixi Bao, Chenhao Li, Yarden As, Andreas Krause, Marco Hutter","In reinforcement learning (RL), agents often struggle to perform well on
+tasks that differ from those encountered during training. This limitation
+presents a challenge to the broader deployment of RL in diverse and dynamic
+task settings. In this work, we introduce memory augmentation, a memory-based
+RL approach to improve task generalization. Our approach leverages
+task-structured augmentations to simulate plausible out-of-distribution
+scenarios and incorporates memory mechanisms to enable context-aware policy
+adaptation. Trained on a predefined set of tasks, our policy demonstrates the
+ability to generalize to unseen tasks through memory augmentation without
+requiring additional interactions with the environment. Through extensive
+simulation experiments and real-world hardware evaluations on legged locomotion
+tasks, we demonstrate that our approach achieves zero-shot generalization to
+unseen tasks while maintaining robust in-distribution performance and high
+sample efficiency.",http://arxiv.org/pdf/2502.01521v1,,False
+Generalization Error Analysis for Selective State-Space Models Through the Lens of Attention,03/02/2025,"Arya Honarpisheh, Mustafa Bozdag, Mario Sznaier, Octavia Camps","State-space models (SSMs) are a new class of foundation models that have
+emerged as a compelling alternative to Transformers and their attention
+mechanisms for sequence processing tasks. This paper provides a detailed
+theoretical analysis of selective SSMs, the core components of the Mamba and
+Mamba-2 architectures. We leverage the connection between selective SSMs and
+the self-attention mechanism to highlight the fundamental similarities between
+these models. Building on this connection, we establish a length independent
+covering number-based generalization bound for selective SSMs, providing a
+deeper understanding of their theoretical performance guarantees. We analyze
+the effects of state matrix stability and input-dependent discretization,
+shedding light on the critical role played by these factors in the
+generalization capabilities of selective SSMs. Finally, we empirically
+demonstrate the sequence length independence of the derived bounds on two
+tasks.",http://arxiv.org/pdf/2502.01473v1,,False
+Assessing the use of Diffusion models for motion artifact correction in brain MRI,03/02/2025,"Paolo Angella, Vito Paolo Pastore, Matteo Santacesaria","Magnetic Resonance Imaging generally requires long exposure times, while
+being sensitive to patient motion, resulting in artifacts in the acquired
+images, which may hinder their diagnostic relevance. Despite research efforts
+to decrease the acquisition time, and designing efficient acquisition
+sequences, motion artifacts are still a persistent problem, pushing toward the
+need for the development of automatic motion artifact correction techniques.
+Recently, diffusion models have been proposed as a solution for the task at
+hand. While diffusion models can produce high-quality reconstructions, they are
+also susceptible to hallucination, which poses risks in diagnostic
+applications. In this study, we critically evaluate the use of diffusion models
+for correcting motion artifacts in 2D brain MRI scans. Using a popular
+benchmark dataset, we compare a diffusion model-based approach with
+state-of-the-art methods consisting of Unets trained in a supervised fashion on
+motion-affected images to reconstruct ground truth motion-free images. Our
+findings reveal mixed results: diffusion models can produce accurate
+predictions or generate harmful hallucinations in this context, depending on
+data heterogeneity and the acquisition planes considered as input.",http://arxiv.org/pdf/2502.01418v1,,False
+Accelerating Linear Recurrent Neural Networks for the Edge with Unstructured Sparsity,03/02/2025,"Alessandro Pierro, Steven Abreu, Jonathan Timcheck, Philipp Stratmann, Andreas Wild, Sumit Bam Shrestha","Linear recurrent neural networks enable powerful long-range sequence modeling
+with constant memory usage and time-per-token during inference. These
+architectures hold promise for streaming applications at the edge, but
+deployment in resource-constrained environments requires hardware-aware
+optimizations to minimize latency and energy consumption. Unstructured sparsity
+offers a compelling solution, enabling substantial reductions in compute and
+memory requirements--when accelerated by compatible hardware platforms. In this
+paper, we conduct a scaling study to investigate the Pareto front of
+performance and efficiency across inference compute budgets. We find that
+highly sparse linear RNNs consistently achieve better efficiency-performance
+trade-offs than dense baselines, with 2x less compute and 36% less memory at
+iso-accuracy. Our models achieve state-of-the-art results on a real-time
+streaming task for audio denoising. By quantizing our sparse models to
+fixed-point arithmetic and deploying them on the Intel Loihi 2 neuromorphic
+chip for real-time processing, we translate model compression into tangible
+gains of 42x lower latency and 149x lower energy consumption compared to a
+dense model on an edge GPU. Our findings showcase the transformative potential
+of unstructured sparsity, paving the way for highly efficient recurrent neural
+networks in real-world, resource-constrained environments.",http://arxiv.org/pdf/2502.01330v1,,False
+DRL-based Dolph-Tschebyscheff Beamforming in Downlink Transmission for Mobile Users,03/02/2025,"Nancy Nayak, Kin K. Leung, Lajos Hanzo","With the emergence of AI technologies in next-generation communication
+systems, machine learning plays a pivotal role due to its ability to address
+high-dimensional, non-stationary optimization problems within dynamic
+environments while maintaining computational efficiency. One such application
+is directional beamforming, achieved through learning-based blind beamforming
+techniques that utilize already existing radio frequency (RF) fingerprints of
+the user equipment obtained from the base stations and eliminate the need for
+additional hardware or channel and angle estimations. However, as the number of
+users and antenna dimensions increase, thereby expanding the problem's
+complexity, the learning process becomes increasingly challenging, and the
+performance of the learning-based method cannot match that of the optimal
+solution. In such a scenario, we propose a deep reinforcement learning-based
+blind beamforming technique using a learnable Dolph-Tschebyscheff antenna array
+that can change its beam pattern to accommodate mobile users. Our simulation
+results show that the proposed method can support data rates very close to the
+best possible values.",http://arxiv.org/pdf/2502.01278v1,,False
+Compressed Image Generation with Denoising Diffusion Codebook Models,03/02/2025,"Guy Ohayon, Hila Manor, Tomer Michaeli, Michael Elad","We present a novel generative approach based on Denoising Diffusion Models
+(DDMs), which produces high-quality image samples along with their losslessly
+compressed bit-stream representations. This is obtained by replacing the
+standard Gaussian noise sampling in the reverse diffusion with a selection of
+noise samples from pre-defined codebooks of fixed iid Gaussian vectors.
+Surprisingly, we find that our method, termed Denoising Diffusion Codebook
+Model (DDCM), retains sample quality and diversity of standard DDMs, even for
+extremely small codebooks. We leverage DDCM and pick the noises from the
+codebooks that best match a given image, converting our generative model into a
+highly effective lossy image codec achieving state-of-the-art perceptual image
+compression results. More generally, by setting other noise selections rules,
+we extend our compression method to any conditional image generation task
+(e.g., image restoration), where the generated images are produced jointly with
+their condensed bit-stream representations. Our work is accompanied by a
+mathematical interpretation of the proposed compressed conditional generation
+schemes, establishing a connection with score-based approximations of posterior
+samplers for the tasks considered.",http://arxiv.org/pdf/2502.01189v2,,False
+Skewed Memorization in Large Language Models: Quantification and Decomposition,03/02/2025,"Hao Li, Di Huang, Ziyu Wang, Amir M. Rahmani","Memorization in Large Language Models (LLMs) poses privacy and security
+risks, as models may unintentionally reproduce sensitive or copyrighted data.
+Existing analyses focus on average-case scenarios, often neglecting the highly
+skewed distribution of memorization. This paper examines memorization in LLM
+supervised fine-tuning (SFT), exploring its relationships with training
+duration, dataset size, and inter-sample similarity. By analyzing memorization
+probabilities over sequence lengths, we link this skewness to the token
+generation process, offering insights for estimating memorization and comparing
+it to established metrics. Through theoretical analysis and empirical
+evaluation, we provide a comprehensive understanding of memorization behaviors
+and propose strategies to detect and mitigate risks, contributing to more
+privacy-preserving LLMs.",http://arxiv.org/pdf/2502.01187v1,,False
+MIND: Modality-Informed Knowledge Distillation Framework for Multimodal Clinical Prediction Tasks,03/02/2025,"Alejandro Guerra-Manzanares, Farah E. Shamout","Multimodal fusion leverages information across modalities to learn better
+feature representations with the goal of improving performance in fusion-based
+tasks. However, multimodal datasets, especially in medical settings, are
+typically smaller than their unimodal counterparts, which can impede the
+performance of multimodal models. Additionally, the increase in the number of
+modalities is often associated with an overall increase in the size of the
+multimodal network, which may be undesirable in medical use cases. Utilizing
+smaller unimodal encoders may lead to sub-optimal performance, particularly
+when dealing with high-dimensional clinical data. In this paper, we propose the
+Modality-INformed knowledge Distillation (MIND) framework, a multimodal model
+compression approach based on knowledge distillation that transfers knowledge
+from ensembles of pre-trained deep neural networks of varying sizes into a
+smaller multimodal student. The teacher models consist of unimodal networks,
+allowing the student to learn from diverse representations. MIND employs
+multi-head joint fusion models, as opposed to single-head models, enabling the
+use of unimodal encoders in the case of unimodal samples without requiring
+imputation or masking of absent modalities. As a result, MIND generates an
+optimized multimodal model, enhancing both multimodal and unimodal
+representations. It can also be leveraged to balance multimodal learning during
+training. We evaluate MIND on binary and multilabel clinical prediction tasks
+using time series data and chest X-ray images. Additionally, we assess the
+generalizability of the MIND framework on three non-medical multimodal
+multiclass datasets. Experimental results demonstrate that MIND enhances the
+performance of the smaller multimodal network across all five tasks, as well as
+various fusion methods and multimodal architectures, compared to
+state-of-the-art baselines.",http://arxiv.org/pdf/2502.01158v1,,False
+Pushing the Boundaries of State Space Models for Image and Video Generation,03/02/2025,"Yicong Hong, Long Mai, Yuan Yao, Feng Liu","While Transformers have become the dominant architecture for visual
+generation, linear attention models, such as the state-space models (SSM), are
+increasingly recognized for their efficiency in processing long visual
+sequences. However, the essential efficiency of these models comes from
+formulating a limited recurrent state, enforcing causality among tokens that
+are prone to inconsistent modeling of N-dimensional visual data, leaving
+questions on their capacity to generate long non-causal sequences. In this
+paper, we explore the boundary of SSM on image and video generation by building
+the largest-scale diffusion SSM-Transformer hybrid model to date (5B
+parameters) based on the sub-quadratic bi-directional Hydra and self-attention,
+and generate up to 2K images and 360p 8 seconds (16 FPS) videos. Our results
+demonstrate that the model can produce faithful results aligned with complex
+text prompts and temporal consistent videos with high dynamics, suggesting the
+great potential of using SSMs for visual generation tasks.",http://arxiv.org/pdf/2502.00972v1,,False

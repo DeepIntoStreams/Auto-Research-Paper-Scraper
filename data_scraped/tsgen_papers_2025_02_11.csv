@@ -1,0 +1,218 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"No Trick, No Treat: Pursuits and Challenges Towards Simulation-free Training of Neural Samplers",10/02/2025,"Jiajun He, Yuanqi Du, Francisco Vargas, Dinghuai Zhang, Shreyas Padhy, RuiKang OuYang, Carla Gomes, José Miguel Hernández-Lobato","We consider the sampling problem, where the aim is to draw samples from a
+distribution whose density is known only up to a normalization constant. Recent
+breakthroughs in generative modeling to approximate a high-dimensional data
+distribution have sparked significant interest in developing neural
+network-based methods for this challenging problem. However, neural samplers
+typically incur heavy computational overhead due to simulating trajectories
+during training. This motivates the pursuit of simulation-free training
+procedures of neural samplers. In this work, we propose an elegant modification
+to previous methods, which allows simulation-free training with the help of a
+time-dependent normalizing flow. However, it ultimately suffers from severe
+mode collapse. On closer inspection, we find that nearly all successful neural
+samplers rely on Langevin preconditioning to avoid mode collapsing. We
+systematically analyze several popular methods with various objective functions
+and demonstrate that, in the absence of Langevin preconditioning, most of them
+fail to adequately cover even a simple target. Finally, we draw attention to a
+strong baseline by combining the state-of-the-art MCMC method, Parallel
+Tempering (PT), with an additional generative model to shed light on future
+explorations of neural samplers.",http://arxiv.org/pdf/2502.06685v1,,False
+RAILS: Risk-Aware Iterated Local Search for Joint SLA Decomposition and Service Provider Management in Multi-Domain Networks,10/02/2025,"Cyril Shih-Huan Hsu, Chrysa Papagianni, Paola Grosso","The emergence of the fifth generation (5G) technology has transformed mobile
+networks into multi-service environments, necessitating efficient network
+slicing to meet diverse Service Level Agreements (SLAs). SLA decomposition
+across multiple network domains, each potentially managed by different service
+providers, poses a significant challenge due to limited visibility into
+real-time underlying domain conditions. This paper introduces Risk-Aware
+Iterated Local Search (RAILS), a novel risk model-driven meta-heuristic
+framework designed to jointly address SLA decomposition and service provider
+selection in multi-domain networks. By integrating online risk modeling with
+iterated local search principles, RAILS effectively navigates the complex
+optimization landscape, utilizing historical feedback from domain controllers.
+We formulate the joint problem as a Mixed-Integer Nonlinear Programming (MINLP)
+problem and prove its NP-hardness. Extensive simulations demonstrate that RAILS
+achieves near-optimal performance, offering an efficient, real-time solution
+for adaptive SLA management in modern multi-domain networks.",http://arxiv.org/pdf/2502.06674v1,,False
+Covariates-Adjusted Mixed-Membership Estimation: A Novel Network Model with Optimal Guarantees,10/02/2025,"Jianqing Fan, Jiawei Ge, Jikai Hou","This paper addresses the problem of mixed-membership estimation in networks,
+where the goal is to efficiently estimate the latent mixed-membership structure
+from the observed network. Recognizing the widespread availability and valuable
+information carried by node covariates, we propose a novel network model that
+incorporates both community information, as represented by the Degree-Corrected
+Mixed Membership (DCMM) model, and node covariate similarities to determine
+connections.
+  We investigate the regularized maximum likelihood estimation (MLE) for this
+model and demonstrate that our approach achieves optimal estimation accuracy
+for both the similarity matrix and the mixed-membership, in terms of both the
+Frobenius norm and the entrywise loss. Since directly analyzing the original
+convex optimization problem is intractable, we employ nonconvex optimization to
+facilitate the analysis. A key contribution of our work is identifying a
+crucial assumption that bridges the gap between convex and nonconvex solutions,
+enabling the transfer of statistical guarantees from the nonconvex approach to
+its convex counterpart. Importantly, our analysis extends beyond the MLE loss
+and the mean squared error (MSE) used in matrix completion problems,
+generalizing to all the convex loss functions. Consequently, our analysis
+techniques extend to a broader set of applications, including ranking problems
+based on pairwise comparisons.
+  Finally, simulation experiments validate our theoretical findings, and
+real-world data analyses confirm the practical relevance of our model.",http://arxiv.org/pdf/2502.06671v1,,False
+Amortized In-Context Bayesian Posterior Estimation,10/02/2025,"Sarthak Mittal, Niels Leif Bracher, Guillaume Lajoie, Priyank Jaini, Marcus Brubaker","Bayesian inference provides a natural way of incorporating prior beliefs and
+assigning a probability measure to the space of hypotheses. Current solutions
+rely on iterative routines like Markov Chain Monte Carlo (MCMC) sampling and
+Variational Inference (VI), which need to be re-run whenever new observations
+are available. Amortization, through conditional estimation, is a viable
+strategy to alleviate such difficulties and has been the guiding principle
+behind simulation-based inference, neural processes and in-context methods
+using pre-trained models. In this work, we conduct a thorough comparative
+analysis of amortized in-context Bayesian posterior estimation methods from the
+lens of different optimization objectives and architectural choices. Such
+methods train an amortized estimator to perform posterior parameter inference
+by conditioning on a set of data examples passed as context to a sequence model
+such as a transformer. In contrast to language models, we leverage permutation
+invariant architectures as the true posterior is invariant to the ordering of
+context examples. Our empirical study includes generalization to
+out-of-distribution tasks, cases where the assumed underlying model is
+misspecified, and transfer from simulated to real problems. Subsequently, it
+highlights the superiority of the reverse KL estimator for predictive problems,
+especially when combined with the transformer architecture and normalizing
+flows.",http://arxiv.org/pdf/2502.06601v1,,False
+Model-Based Offline Reinforcement Learning with Reliability-Guaranteed Sequence Modeling,10/02/2025,Shenghong He,"Model-based offline reinforcement learning (MORL) aims to learn a policy by
+exploiting a dynamics model derived from an existing dataset. Applying
+conservative quantification to the dynamics model, most existing works on MORL
+generate trajectories that approximate the real data distribution to facilitate
+policy learning by using current information (e.g., the state and action at
+time step $t$). However, these works neglect the impact of historical
+information on environmental dynamics, leading to the generation of unreliable
+trajectories that may not align with the real data distribution. In this paper,
+we propose a new MORL algorithm \textbf{R}eliability-guaranteed
+\textbf{T}ransformer (RT), which can eliminate unreliable trajectories by
+calculating the cumulative reliability of the generated trajectory (i.e., using
+a weighted variational distance away from the real data). Moreover, by sampling
+candidate actions with high rewards, RT can efficiently generate high-return
+trajectories from the existing offline data. We theoretically prove the
+performance guarantees of RT in policy learning, and empirically demonstrate
+its effectiveness against state-of-the-art model-based methods on several
+benchmark tasks.",http://arxiv.org/pdf/2502.06491v1,,False
+FEMBA: Efficient and Scalable EEG Analysis with a Bidirectional Mamba Foundation Model,10/02/2025,"Anna Tegon, Thorir Mar Ingolfsson, Xiaying Wang, Luca Benini, Yawei Li","Accurate and efficient electroencephalography (EEG) analysis is essential for
+detecting seizures and artifacts in long-term monitoring, with applications
+spanning hospital diagnostics to wearable health devices. Robust EEG analytics
+have the potential to greatly improve patient care. However, traditional deep
+learning models, especially Transformer-based architectures, are hindered by
+their quadratic time and memory complexity, making them less suitable for
+resource-constrained environments. To address these challenges, we present
+FEMBA (Foundational EEG Mamba + Bidirectional Architecture), a novel
+self-supervised framework that establishes new efficiency benchmarks for EEG
+analysis through bidirectional state-space modeling. Unlike Transformer-based
+models, which incur quadratic time and memory complexity, FEMBA scales linearly
+with sequence length, enabling more scalable and efficient processing of
+extended EEG recordings. Trained on over 21,000 hours of unlabeled EEG and
+fine-tuned on three downstream tasks, FEMBA achieves competitive performance in
+comparison with transformer models, with significantly lower computational
+cost. Specifically, it reaches 81.82% balanced accuracy (0.8921 AUROC) on TUAB
+and 0.949 AUROC on TUAR, while a tiny 7.8M-parameter variant demonstrates
+viability for resource-constrained devices. These results pave the way for
+scalable, general-purpose EEG analytics in both clinical and highlight FEMBA as
+a promising candidate for wearable applications.",http://arxiv.org/pdf/2502.06438v1,,False
+DefTransNet: A Transformer-based Method for Non-Rigid Point Cloud Registration in the Simulation of Soft Tissue Deformation,10/02/2025,"Sara Monji-Azad, Marvin Kinz, Siddharth Kothari, Robin Khanna, Amrei Carla Mihan, David Maennel, Claudia Scherl, Juergen Hesser","Soft-tissue surgeries, such as tumor resections, are complicated by tissue
+deformations that can obscure the accurate location and shape of tissues. By
+representing tissue surfaces as point clouds and applying non-rigid point cloud
+registration (PCR) methods, surgeons can better understand tissue deformations
+before, during, and after surgery. Existing non-rigid PCR methods, such as
+feature-based approaches, struggle with robustness against challenges like
+noise, outliers, partial data, and large deformations, making accurate point
+correspondence difficult. Although learning-based PCR methods, particularly
+Transformer-based approaches, have recently shown promise due to their
+attention mechanisms for capturing interactions, their robustness remains
+limited in challenging scenarios. In this paper, we present DefTransNet, a
+novel end-to-end Transformer-based architecture for non-rigid PCR. DefTransNet
+is designed to address the key challenges of deformable registration, including
+large deformations, outliers, noise, and partial data, by inputting source and
+target point clouds and outputting displacement vector fields. The proposed
+method incorporates a learnable transformation matrix to enhance robustness to
+affine transformations, integrates global and local geometric information, and
+captures long-range dependencies among points using Transformers. We validate
+our approach on four datasets: ModelNet, SynBench, 4DMatch, and DeformedTissue,
+using both synthetic and real-world data to demonstrate the generalization of
+our proposed method. Experimental results demonstrate that DefTransNet
+outperforms current state-of-the-art registration networks across various
+challenging conditions. Our code and data are publicly available.",http://arxiv.org/pdf/2502.06336v1,,False
+Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions,10/02/2025,"Zhaoxian Wu, Quan Xian, Tayfun Gokmen, Omobayode Fagbohungbe, Tianyi Chen","As the economic and environmental costs of training and deploying large
+vision or language models increase dramatically, analog in-memory computing
+(AIMC) emerges as a promising energy-efficient solution. However, the training
+perspective, especially its training dynamic, is underexplored. In AIMC
+hardware, the trainable weights are represented by the conductance of resistive
+elements and updated using consecutive electrical pulses. Among all the
+physical properties of resistive elements, the response to the pulses directly
+affects the training dynamics. This paper first provides a theoretical
+foundation for gradient-based training on AIMC hardware and studies the impact
+of response functions. We demonstrate that noisy update and asymmetric response
+functions negatively impact Analog SGD by imposing an implicit penalty term on
+the objective. To overcome the issue, Tiki-Taka, a residual learning algorithm,
+converges exactly to a critical point by optimizing a main array and a residual
+array bilevelly. The conclusion is supported by simulations validating our
+theoretical insights.",http://arxiv.org/pdf/2502.06309v1,,False
+An Interpretable Implicit-Based Approach for Modeling Local Spatial Effects: A Case Study of Global Gross Primary Productivity,10/02/2025,"Siqi Du, Hongsheng Huang, Kaixin Shen, Ziqi Liu, Shengjun Tang","In Earth sciences, unobserved factors exhibit non-stationary spatial
+distributions, causing the relationships between features and targets to
+display spatial heterogeneity. In geographic machine learning tasks,
+conventional statistical learning methods often struggle to capture spatial
+heterogeneity, leading to unsatisfactory prediction accuracy and unreliable
+interpretability. While approaches like Geographically Weighted Regression
+(GWR) capture local variations, they fall short of uncovering global patterns
+and tracking the continuous evolution of spatial heterogeneity. Motivated by
+this limitation, we propose a novel perspective - that is, simultaneously
+modeling common features across different locations alongside spatial
+differences using deep neural networks. The proposed method is a dual-branch
+neural network with an encoder-decoder structure. In the encoding stage, the
+method aggregates node information in a spatiotemporal conditional graph using
+GCN and LSTM, encoding location-specific spatiotemporal heterogeneity as an
+implicit conditional vector. Additionally, a self-attention-based encoder is
+used to extract location-invariant common features from the data. In the
+decoding stage, the approach employs a conditional generation strategy that
+predicts response variables and interpretative weights based on data features
+under spatiotemporal conditions. The approach is validated by predicting
+vegetation gross primary productivity (GPP) using global climate and land cover
+data from 2001 to 2020. Trained on 50 million samples and tested on 2.8
+million, the proposed model achieves an RMSE of 0.836, outperforming LightGBM
+(1.063) and TabNet (0.944). Visualization analyses indicate that our method can
+reveal the distribution differences of the dominant factors of GPP across
+various times and locations.",http://arxiv.org/pdf/2502.06170v1,,False
+NLGR: Utilizing Neighbor Lists for Generative Rerank in Personalized Recommendation Systems,10/02/2025,"Shuli Wang, Xue Wei, Senjie Kou, Chi Wang, Wenshuai Chen, Qi Tang, Yinhua Zhu, Xiong Xiao, Xingxing Wang","Reranking plays a crucial role in modern multi-stage recommender systems by
+rearranging the initial ranking list. Due to the inherent challenges of
+combinatorial search spaces, some current research adopts an
+evaluator-generator paradigm, with a generator generating feasible sequences
+and an evaluator selecting the best sequence based on the estimated list
+utility. However, these methods still face two issues. Firstly, due to the goal
+inconsistency problem between the evaluator and generator, the generator tends
+to fit the local optimal solution of exposure distribution rather than
+combinatorial space optimization. Secondly, the strategy of generating target
+items one by one is difficult to achieve optimality because it ignores the
+information of subsequent items.
+  To address these issues, we propose a utilizing Neighbor Lists model for
+Generative Reranking (NLGR), which aims to improve the performance of the
+generator in the combinatorial space. NLGR follows the evaluator-generator
+paradigm and improves the generator's training and generating methods.
+Specifically, we use neighbor lists in combination space to enhance the
+training process, making the generator perceive the relative scores and find
+the optimization direction. Furthermore, we propose a novel sampling-based
+non-autoregressive generation method, which allows the generator to jump
+flexibly from the current list to any neighbor list. Extensive experiments on
+public and industrial datasets validate NLGR's effectiveness and we have
+successfully deployed NLGR on the Meituan food delivery platform.",http://arxiv.org/pdf/2502.06097v1,10.1145/3701716.3715251,False
+Physics-Guided Foundation Model for Scientific Discovery: An Application to Aquatic Science,10/02/2025,"Runlong Yu, Chonghao Qiu, Robert Ladwig, Paul Hanson, Yiqun Xie, Xiaowei Jia","Physics-guided machine learning (PGML) has become a prevalent approach in
+studying scientific systems due to its ability to integrate scientific theories
+for enhancing machine learning (ML) models. However, most PGML approaches are
+tailored to isolated and relatively simple tasks, which limits their
+applicability to complex systems involving multiple interacting processes and
+numerous influencing features. In this paper, we propose a
+\textit{\textbf{P}hysics-\textbf{G}uided \textbf{F}oundation \textbf{M}odel
+(\textbf{PGFM})} that combines pre-trained ML models and physics-based models
+and leverages their complementary strengths to improve the modeling of multiple
+coupled processes. To effectively conduct pre-training, we construct a
+simulated environmental system that encompasses a wide range of influencing
+features and various simulated variables generated by physics-based models. The
+model is pre-trained in this system to adaptively select important feature
+interactions guided by multi-task objectives. We then fine-tune the model for
+each specific task using true observations, while maintaining consistency with
+established physical theories, such as the principles of mass and energy
+conservation. We demonstrate the effectiveness of this methodology in modeling
+water temperature and dissolved oxygen dynamics in real-world lakes. The
+proposed PGFM is also broadly applicable to a range of scientific fields where
+physics-based models are being used.",http://arxiv.org/pdf/2502.06084v1,,False

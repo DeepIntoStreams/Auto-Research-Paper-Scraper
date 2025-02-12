@@ -1,0 +1,382 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+TMLC-Net: Transferable Meta Label Correction for Noisy Label Learning,11/02/2025,Mengyang Li,"The prevalence of noisy labels in real-world datasets poses a significant
+impediment to the effective deployment of deep learning models. While
+meta-learning strategies have emerged as a promising approach for addressing
+this challenge, existing methods often suffer from limited transferability and
+task-specific designs. This paper introduces TMLC-Net, a novel Transferable
+Meta-Learner for Correcting Noisy Labels, designed to overcome these
+limitations. TMLC-Net learns a general-purpose label correction strategy that
+can be readily applied across diverse datasets and model architectures without
+requiring extensive retraining or fine-tuning. Our approach integrates three
+core components: (1) Normalized Noise Perception, which captures and normalizes
+training dynamics to handle distribution shifts; (2) Time-Series Encoding,
+which models the temporal evolution of sample statistics using a recurrent
+neural network; and (3) Subclass Decoding, which predicts a corrected label
+distribution based on the learned representations. We conduct extensive
+experiments on benchmark datasets with various noise types and levels,
+demonstrating that TMLC-Net consistently outperforms state-of-the-art methods
+in terms of both accuracy and robustness to label noise. Furthermore, we
+analyze the transferability of TMLC-Net, showcasing its adaptability to new
+datasets and noise conditions, and establishing its potential as a broadly
+applicable solution for robust deep learning in noisy environments.",http://arxiv.org/pdf/2502.07721v1,,False
+Near-Optimal Sample Complexity in Reward-Free Kernel-Based Reinforcement Learning,11/02/2025,"Aya Kayal, Sattar Vakili, Laura Toni, Alberto Bernacchia","Reinforcement Learning (RL) problems are being considered under increasingly
+more complex structures. While tabular and linear models have been thoroughly
+explored, the analytical study of RL under nonlinear function approximation,
+especially kernel-based models, has recently gained traction for their strong
+representational capacity and theoretical tractability. In this context, we
+examine the question of statistical efficiency in kernel-based RL within the
+reward-free RL framework, specifically asking: how many samples are required to
+design a near-optimal policy? Existing work addresses this question under
+restrictive assumptions about the class of kernel functions. We first explore
+this question by assuming a generative model, then relax this assumption at the
+cost of increasing the sample complexity by a factor of H, the length of the
+episode. We tackle this fundamental problem using a broad class of kernels and
+a simpler algorithm compared to prior work. Our approach derives new confidence
+intervals for kernel ridge regression, specific to our RL setting, which may be
+of broader applicability. We further validate our theoretical findings through
+simulations.",http://arxiv.org/pdf/2502.07715v1,,False
+Distributional Instrumental Variable Method,11/02/2025,"Anastasiia Holovchak, Sorawit Saengkyongam, Nicolai Meinshausen, Xinwei Shen","The instrumental variable (IV) approach is commonly used to infer causal
+effects in the presence of unmeasured confounding. Conventional IV models
+commonly make the additive noise assumption, which is hard to ensure in
+practice, but also typically lack flexibility if the causal effects are
+complex. Further, the vast majority of the existing methods aims to estimate
+the mean causal effects only, a few other methods focus on the quantile
+effects. This work aims for estimation of the entire interventional
+distribution. We propose a novel method called distributional instrumental
+variables (DIV), which leverages generative modelling in a nonlinear
+instrumental variable setting. We establish identifiability of the
+interventional distribution under general assumptions and demonstrate an
+`under-identified' case where DIV can identify the causal effects while
+two-step least squares fails to. Our empirical results show that the DIV method
+performs well for a broad range of simulated data, exhibiting advantages over
+existing IV approaches in terms of the identifiability and estimation error of
+the mean or quantile treatment effects. Furthermore, we apply DIV to an
+economic data set to examine the causal relation between institutional quality
+and economic development and our results that closely align with the original
+study. We also apply DIV to a single-cell data set, where we study the
+generalizability and stability in predicting gene expression under unseen
+interventions. The software implementations of DIV are available in R and
+Python.",http://arxiv.org/pdf/2502.07641v1,,False
+Beyond Prompting: Time2Lang -- Bridging Time-Series Foundation Models and Large Language Models for Health Sensing,11/02/2025,"Arvind Pillai, Dimitris Spathis, Subigya Nepal, Amanda C Collins, Daniel M Mackin, Michael V Heinz, Tess Z Griffin, Nicholas C Jacobson, Andrew Campbell","Large language models (LLMs) show promise for health applications when
+combined with behavioral sensing data. Traditional approaches convert sensor
+data into text prompts, but this process is prone to errors, computationally
+expensive, and requires domain expertise. These challenges are particularly
+acute when processing extended time series data. While time series foundation
+models (TFMs) have recently emerged as powerful tools for learning
+representations from temporal data, bridging TFMs and LLMs remains challenging.
+Here, we present Time2Lang, a framework that directly maps TFM outputs to LLM
+representations without intermediate text conversion. Our approach first trains
+on synthetic data using periodicity prediction as a pretext task, followed by
+evaluation on mental health classification tasks. We validate Time2Lang on two
+longitudinal wearable and mobile sensing datasets: daily depression prediction
+using step count data (17,251 days from 256 participants) and flourishing
+classification based on conversation duration (46 participants over 10 weeks).
+Time2Lang maintains near constant inference times regardless of input length,
+unlike traditional prompting methods. The generated embeddings preserve
+essential time-series characteristics such as auto-correlation. Our results
+demonstrate that TFMs and LLMs can be effectively integrated while minimizing
+information loss and enabling performance transfer across these distinct
+modeling paradigms. To our knowledge, we are the first to integrate a TFM and
+an LLM for health, thus establishing a foundation for future research combining
+general-purpose large models for complex healthcare tasks.",http://arxiv.org/pdf/2502.07608v1,,False
+Generative Modeling with Bayesian Sample Inference,11/02/2025,"Marten Lienen, Marcel Kollovieh, Stephan Günnemann","We derive a novel generative model from the simple act of Gaussian posterior
+inference. Treating the generated sample as an unknown variable to infer lets
+us formulate the sampling process in the language of Bayesian probability. Our
+model uses a sequence of prediction and posterior update steps to narrow down
+the unknown sample from a broad initial belief. In addition to a rigorous
+theoretical analysis, we establish a connection between our model and diffusion
+models and show that it includes Bayesian Flow Networks (BFNs) as a special
+case. In our experiments, we demonstrate improved performance over both BFNs
+and Variational Diffusion Models, achieving competitive likelihood scores on
+CIFAR10 and ImageNet.",http://arxiv.org/pdf/2502.07580v1,,False
+LASP-2: Rethinking Sequence Parallelism for Linear Attention and Its Hybrid,11/02/2025,"Weigao Sun, Disen Lan, Yiran Zhong, Xiaoye Qu, Yu Cheng","Linear sequence modeling approaches, such as linear attention, provide
+advantages like linear-time training and constant-memory inference over
+sequence lengths. However, existing sequence parallelism (SP) methods are
+either not optimized for the right-product-first feature of linear attention or
+use a ring-style communication strategy, which results in lower computation
+parallelism, limits their scalability for longer sequences in distributed
+systems. In this paper, we introduce LASP-2, a new SP method to enhance both
+communication and computation parallelism when training linear attention
+transformer models with very-long input sequences. Compared to previous work
+LASP, LASP-2 rethinks the minimal communication requirement for SP on linear
+attention layers, reorganizes the whole communication-computation workflow of
+LASP. In this way, only one single AllGather collective communication is needed
+on intermediate memory states, whose sizes are independent of the sequence
+length, leading to significant improvements of both communication and
+computation parallelism, as well as their overlap. Additionally, we extend
+LASP-2 to LASP-2H by applying similar communication redesign to standard
+attention modules, offering an efficient SP solution for hybrid models that
+blend linear and standard attention layers. Our evaluation on a Linear-Llama3
+model, a variant of Llama3 with linear attention replacing standard attention,
+demonstrates the effectiveness of LASP-2 and LASP-2H. Specifically, LASP-2
+achieves training speed improvements of 15.2% over LASP and 36.6% over Ring
+Attention, with a sequence length of 2048K across 64 GPUs. The Code is released
+as a part of: https://github.com/OpenSparseLLMs/Linear-MoE.",http://arxiv.org/pdf/2502.07563v1,,False
+Exoplanet Transit Candidate Identification in TESS Full-Frame Images via a Transformer-Based Algorithm,11/02/2025,"Helem Salinas, Rafael Brahm, Greg Olmschenk, Richard K. Barry, Karim Pichara, Stela Ishitani Silva, Vladimir Araujo","The Transiting Exoplanet Survey Satellite (TESS) is surveying a large
+fraction of the sky, generating a vast database of photometric time series data
+that requires thorough analysis to identify exoplanetary transit signals.
+Automated learning approaches have been successfully applied to identify
+transit signals. However, most existing methods focus on the classification and
+validation of candidates, while few efforts have explored new techniques for
+the search of candidates. To search for new exoplanet transit candidates, we
+propose an approach to identify exoplanet transit signals without the need for
+phase folding or assuming periodicity in the transit signals, such as those
+observed in multi-transit light curves. To achieve this, we implement a new
+neural network inspired by Transformers to directly process Full Frame Image
+(FFI) light curves to detect exoplanet transits. Transformers, originally
+developed for natural language processing, have recently demonstrated
+significant success in capturing long-range dependencies compared to previous
+approaches focused on sequential data. This ability allows us to employ
+multi-head self-attention to identify exoplanet transit signals directly from
+the complete light curves, combined with background and centroid time series,
+without requiring prior transit parameters. The network is trained to learn
+characteristics of the transit signal, like the dip shape, which helps
+distinguish planetary transits from other variability sources. Our model
+successfully identified 214 new planetary system candidates, including 122
+multi-transit light curves, 88 single-transit and 4 multi-planet systems from
+TESS sectors 1-26 with a radius > 0.27 $R_{\mathrm{Jupiter}}$, demonstrating
+its ability to detect transits regardless of their periodicity.",http://arxiv.org/pdf/2502.07542v1,,False
+Forecasting the future development in quality and value of professional football players for applications in team management,11/02/2025,"Koen W. van Arem, Floris Goes-Smit, Jakob Söhl","Transfers in professional football (soccer) are risky investments because of
+the large transfer fees and high risks involved. Although data-driven models
+can be used to improve transfer decisions, existing models focus on describing
+players' historical progress, leaving their future performance unknown.
+Moreover, recent developments have called for the use of explainable models
+combined with uncertainty quantification of predictions. This paper assesses
+explainable machine learning models based on predictive accuracy and
+uncertainty quantification methods for the prediction of the future development
+in quality and transfer value of professional football players. Using a
+historical data set of data-driven indicators describing player quality and the
+transfer value of a football player, the models are trained to forecast player
+quality and player value one year ahead. These two prediction problems
+demonstrate the efficacy of tree-based models, particularly random forest and
+XGBoost, in making accurate predictions. In general, the random forest model is
+found to be the most suitable model because it provides accurate predictions as
+well as an uncertainty quantification method that naturally arises from the
+bagging procedure of the random forest model. Additionally, our research shows
+that the development of player performance contains nonlinear patterns and
+interactions between variables, and that time series information can provide
+useful information for the modeling of player performance metrics. Our research
+provides models to help football clubs make more informed, data-driven transfer
+decisions by forecasting player quality and transfer value.",http://arxiv.org/pdf/2502.07528v1,,False
+NatureLM: Deciphering the Language of Nature for Scientific Discovery,11/02/2025,"Yingce Xia, Peiran Jin, Shufang Xie, Liang He, Chuan Cao, Renqian Luo, Guoqing Liu, Yue Wang, Zequn Liu, Yuan-Jyue Chen, Zekun Guo, Yeqi Bai, Pan Deng, Yaosen Min, Ziheng Lu, Hongxia Hao, Han Yang, Jielan Li, Chang Liu, Jia Zhang, Jianwei Zhu, Kehan Wu, Wei Zhang, Kaiyuan Gao, Qizhi Pei, Qian Wang, Xixian Liu, Yanting Li, Houtian Zhu, Yeqing Lu, Mingqian Ma, Zun Wang, Tian Xie, Krzysztof Maziarz, Marwin Segler, Zhao Yang, Zilong Chen, Yu Shi, Shuxin Zheng, Lijun Wu, Chen Hu, Peggy Dai, Tie-Yan Liu, Haiguang Liu, Tao Qin","Foundation models have revolutionized natural language processing and
+artificial intelligence, significantly enhancing how machines comprehend and
+generate human languages. Inspired by the success of these foundation models,
+researchers have developed foundation models for individual scientific domains,
+including small molecules, materials, proteins, DNA, and RNA. However, these
+models are typically trained in isolation, lacking the ability to integrate
+across different scientific domains. Recognizing that entities within these
+domains can all be represented as sequences, which together form the ""language
+of nature"", we introduce Nature Language Model (briefly, NatureLM), a
+sequence-based science foundation model designed for scientific discovery.
+Pre-trained with data from multiple scientific domains, NatureLM offers a
+unified, versatile model that enables various applications including: (i)
+generating and optimizing small molecules, proteins, RNA, and materials using
+text instructions; (ii) cross-domain generation/design, such as
+protein-to-molecule and protein-to-RNA generation; and (iii) achieving
+state-of-the-art performance in tasks like SMILES-to-IUPAC translation and
+retrosynthesis on USPTO-50k. NatureLM offers a promising generalist approach
+for various scientific tasks, including drug discovery (hit
+generation/optimization, ADMET optimization, synthesis), novel material design,
+and the development of therapeutic proteins or nucleotides. We have developed
+NatureLM models in different sizes (1 billion, 8 billion, and 46.7 billion
+parameters) and observed a clear improvement in performance as the model size
+increases.",http://arxiv.org/pdf/2502.07527v1,,False
+URECA: The Chain of Two Minimum Set Cover Problems exists behind Adaptation to Shifts in Semantic Code Search,11/02/2025,"Seok-Ung Choi, Joonghyuk Hahn, Yo-Sub Han","Adaptation is to make model learn the patterns shifted from the training
+distribution. In general, this adaptation is formulated as the minimum entropy
+problem. However, the minimum entropy problem has inherent limitation --
+shifted initialization cascade phenomenon. We extend the relationship between
+the minimum entropy problem and the minimum set cover problem via Lebesgue
+integral. This extension reveals that internal mechanism of the minimum entropy
+problem ignores the relationship between disentangled representations, which
+leads to shifted initialization cascade. From the analysis, we introduce a new
+clustering algorithm, Union-find based Recursive Clustering Algorithm~(URECA).
+URECA is an efficient clustering algorithm for the leverage of the
+relationships between disentangled representations. The update rule of URECA
+depends on Thresholdly-Updatable Stationary Assumption to dynamics as a
+released version of Stationary Assumption. This assumption helps URECA to
+transport disentangled representations with no errors based on the
+relationships between disentangled representations. URECA also utilize
+simulation trick to efficiently cluster disentangled representations. The wide
+range of evaluations show that URECA achieves consistent performance gains for
+the few-shot adaptation to diverse types of shifts along with advancement to
+State-of-The-Art performance in CoSQA in the scenario of query shift.",http://arxiv.org/pdf/2502.07494v1,,False
+Physiome-ODE: A Benchmark for Irregularly Sampled Multivariate Time Series Forecasting Based on Biological ODEs,11/02/2025,"Christian Klötergens, Vijaya Krishna Yalavarthi, Randolf Scholz, Maximilian Stubbemann, Stefan Born, Lars Schmidt-Thieme","State-of-the-art methods for forecasting irregularly sampled time series with
+missing values predominantly rely on just four datasets and a few small toy
+examples for evaluation. While ordinary differential equations (ODE) are the
+prevalent models in science and engineering, a baseline model that forecasts a
+constant value outperforms ODE-based models from the last five years on three
+of these existing datasets. This unintuitive finding hampers further research
+on ODE-based models, a more plausible model family. In this paper, we develop a
+methodology to generate irregularly sampled multivariate time series (IMTS)
+datasets from ordinary differential equations and to select challenging
+instances via rejection sampling. Using this methodology, we create
+Physiome-ODE, a large and sophisticated benchmark of IMTS datasets consisting
+of 50 individual datasets, derived from real-world ordinary differential
+equations from research in biology. Physiome-ODE is the first benchmark for
+IMTS forecasting that we are aware of and an order of magnitude larger than the
+current evaluation setting of four datasets. Using our benchmark Physiome-ODE,
+we show qualitatively completely different results than those derived from the
+current four datasets: on Physiome-ODE ODE-based models can play to their
+strength and our benchmark can differentiate in a meaningful way between
+different IMTS forecasting models. This way, we expect to give a new impulse to
+research on ODE-based time series modeling.",http://arxiv.org/pdf/2502.07489v1,,False
+5D Neural Surrogates for Nonlinear Gyrokinetic Simulations of Plasma Turbulence,11/02/2025,"Gianluca Galletti, Fabian Paischer, Paul Setinek, William Hornsby, Lorenzo Zanisi, Naomi Carey, Stanislas Pamela, Johannes Brandstetter","Nuclear fusion plays a pivotal role in the quest for reliable and sustainable
+energy production. A major roadblock to achieving commercially viable fusion
+power is understanding plasma turbulence, which can significantly degrade
+plasma confinement. Modelling turbulence is crucial to design performing plasma
+scenarios for next-generation reactor-class devices and current experimental
+machines. The nonlinear gyrokinetic equation underpinning turbulence modelling
+evolves a 5D distribution function over time. Solving this equation numerically
+is extremely expensive, requiring up to weeks for a single run to converge,
+making it unfeasible for iterative optimisation and control studies. In this
+work, we propose a method for training neural surrogates for 5D gyrokinetic
+simulations. Our method extends a hierarchical vision transformer to five
+dimensions and is trained on the 5D distribution function for the adiabatic
+electron approximation. We demonstrate that our model can accurately infer
+downstream physical quantities such as heat flux time trace and electrostatic
+potentials for single-step predictions two orders of magnitude faster than
+numerical codes. Our work paves the way towards neural surrogates for plasma
+turbulence simulations to accelerate deployment of commercial energy production
+via nuclear fusion.",http://arxiv.org/pdf/2502.07469v1,,False
+TRAVEL: Training-Free Retrieval and Alignment for Vision-and-Language Navigation,11/02/2025,"Navid Rajabi, Jana Kosecka","In this work, we propose a modular approach for the Vision-Language
+Navigation (VLN) task by decomposing the problem into four sub-modules that use
+state-of-the-art Large Language Models (LLMs) and Vision-Language Models (VLMs)
+in a zero-shot setting. Given navigation instruction in natural language, we
+first prompt LLM to extract the landmarks and the order in which they are
+visited. Assuming the known model of the environment, we retrieve the top-k
+locations of the last landmark and generate $k$ path hypotheses from the
+starting location to the last landmark using the shortest path algorithm on the
+topological map of the environment. Each path hypothesis is represented by a
+sequence of panoramas. We then use dynamic programming to compute the alignment
+score between the sequence of panoramas and the sequence of landmark names,
+which match scores obtained from VLM. Finally, we compute the nDTW metric
+between the hypothesis that yields the highest alignment score to evaluate the
+path fidelity. We demonstrate superior performance compared to other approaches
+that use joint semantic maps like VLMaps \cite{vlmaps} on the complex
+R2R-Habitat \cite{r2r} instruction dataset and quantify in detail the effect of
+visual grounding on navigation performance.",http://arxiv.org/pdf/2502.07306v1,,False
+Generation of Drug-Induced Cardiac Reactions towards Virtual Clinical Trials,11/02/2025,"Qian Shao, Bang Du, Zepeng Li, Qiyuan Chen, Hongxia Xu, Jimeng Sun, Jian Wu, Jintai Chen","Clinical trials are pivotal in cardiac drug development, yet they often fail
+due to inadequate efficacy and unexpected safety issues, leading to significant
+financial losses. Using in-silico trials to replace a part of physical clinical
+trials, e.g., leveraging advanced generative models to generate drug-influenced
+electrocardiograms (ECGs), seems an effective method to reduce financial risk
+and potential harm to trial participants. While existing generative models have
+demonstrated progress in ECG generation, they fall short in modeling drug
+reactions due to limited fidelity and inability to capture individualized drug
+response patterns. In this paper, we propose a Drug-Aware Diffusion Model
+(DADM), which could simulate individualized drug reactions while ensuring
+fidelity. To ensure fidelity, we construct a set of ordinary differential
+equations to provide external physical knowledge (EPK) of the realistic ECG
+morphology. The EPK is used to adaptively constrain the morphology of the
+generated ECGs through a dynamic cross-attention (DCA) mechanism. Furthermore,
+we propose an extension of ControlNet to incorporate demographic and drug data,
+simulating individual drug reactions. We compare DADM with the other eight
+state-of-the-art ECG generative models on two real-world databases covering 8
+types of drug regimens. The results demonstrate that DADM can more accurately
+simulate drug-induced changes in ECGs, improving the accuracy by at least 5.79%
+and recall by 8%.",http://arxiv.org/pdf/2502.07297v1,,False
+Negative Dependence as a toolbox for machine learning : review and new developments,11/02/2025,"Hoang-Son Tran, Vladimir Petrovic, Remi Bardenet, Subhroshekhar Ghosh","Negative dependence is becoming a key driver in advancing learning
+capabilities beyond the limits of traditional independence. Recent developments
+have evidenced support towards negatively dependent systems as a learning
+paradigm in a broad range of fundamental machine learning challenges including
+optimization, sampling, dimensionality reduction and sparse signal recovery,
+often surpassing the performance of current methods based on statistical
+independence. The most popular negatively dependent model has been that of
+determinantal point processes (DPPs), which have their origins in quantum
+theory. However, other models, such as perturbed lattice models, strongly
+Rayleigh measures, zeros of random functions have gained salience in various
+learning applications. In this article, we review this burgeoning field of
+research, as it has developed over the past two decades or so. We also present
+new results on applications of DPPs to the parsimonious representation of
+neural networks. In the limited scope of the article, we mostly focus on
+aspects of this area to which the authors contributed over the recent years,
+including applications to Monte Carlo methods, coresets and stochastic gradient
+descent, stochastic networks, signal processing and connections to quantum
+computation. However, starting from basics of negative dependence for the
+uninitiated reader, extensive references are provided to a broad swath of
+related developments which could not be covered within our limited scope. While
+existing works and reviews generally focus on specific negatively dependent
+models (e.g. DPPs), a notable feature of this article is that it addresses
+negative dependence as a machine learning methodology as a whole. In this vein,
+it covers within its span an array of negatively dependent models and their
+applications well beyond DPPs, thereby putting forward a very general and
+rather unique perspective.",http://arxiv.org/pdf/2502.07285v1,,False
+NARCE: A Mamba-Based Neural Algorithmic Reasoner Framework for Online Complex Event Detection,11/02/2025,"Liying Han, Gaofeng Dong, Xiaomin Ouyang, Lance Kaplan, Federico Cerutti, Mani Srivastava","Current machine learning models excel in short-span perception tasks but
+struggle to derive high-level insights from long-term observation, a capability
+central to understanding complex events (CEs). CEs, defined as sequences of
+short-term atomic events (AEs) governed by spatiotemporal rules, are
+challenging to detect online due to the need to extract meaningful patterns
+from long and noisy sensor data while ignoring irrelevant events. We
+hypothesize that state-based methods are well-suited for CE detection, as they
+capture event progression through state transitions without requiring long-term
+memory. Baseline experiments validate this, demonstrating that the state-space
+model Mamba outperforms existing architectures. However, Mamba's reliance on
+extensive labeled data, which are difficult to obtain, motivates our second
+hypothesis: decoupling CE rule learning from noisy sensor data can reduce data
+requirements. To address this, we propose NARCE, a framework that combines
+Neural Algorithmic Reasoning (NAR) to split the task into two components: (i)
+learning CE rules independently of sensor data using synthetic concept traces
+generated by LLMs and (ii) mapping sensor inputs to these rules via an adapter.
+Our results show that NARCE outperforms baselines in accuracy, generalization
+to unseen and longer sensor data, and data efficiency, significantly reducing
+annotation costs while advancing robust CE detection.",http://arxiv.org/pdf/2502.07250v1,,False
+Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting,11/02/2025,"Jiecheng Lu, Shihao Yang","Autoregressive attention-based time series forecasting (TSF) has drawn
+increasing interest, with mechanisms like linear attention sometimes
+outperforming vanilla attention. However, deeper Transformer architectures
+frequently misalign with autoregressive objectives, obscuring the underlying
+VAR structure embedded within linear attention and hindering their ability to
+capture the data generative processes in TSF. In this work, we first show that
+a single linear attention layer can be interpreted as a dynamic vector
+autoregressive (VAR) structure. We then explain that existing multi-layer
+Transformers have structural mismatches with the autoregressive forecasting
+objective, which impair interpretability and generalization ability. To address
+this, we show that by rearranging the MLP, attention, and input-output flow,
+multi-layer linear attention can also be aligned as a VAR model. Then, we
+propose Structural Aligned Mixture of VAR (SAMoVAR), a linear Transformer
+variant that integrates interpretable dynamic VAR weights for multivariate TSF.
+By aligning the Transformer architecture with autoregressive objectives,
+SAMoVAR delivers improved performance, interpretability, and computational
+efficiency, comparing to SOTA TSF models.",http://arxiv.org/pdf/2502.07244v1,,False
+Contextual Gesture: Co-Speech Gesture Video Generation through Context-aware Gesture Representation,11/02/2025,"Pinxin Liu, Pengfei Zhang, Hyeongwoo Kim, Pablo Garrido, Ari Sharpio, Kyle Olszewski","Co-speech gesture generation is crucial for creating lifelike avatars and
+enhancing human-computer interactions by synchronizing gestures with speech.
+Despite recent advancements, existing methods struggle with accurately
+identifying the rhythmic or semantic triggers from audio for generating
+contextualized gesture patterns and achieving pixel-level realism. To address
+these challenges, we introduce Contextual Gesture, a framework that improves
+co-speech gesture video generation through three innovative components: (1) a
+chronological speech-gesture alignment that temporally connects two modalities,
+(2) a contextualized gesture tokenization that incorporate speech context into
+motion pattern representation through distillation, and (3) a structure-aware
+refinement module that employs edge connection to link gesture keypoints to
+improve video generation. Our extensive experiments demonstrate that Contextual
+Gesture not only produces realistic and speech-aligned gesture videos but also
+supports long-sequence generation and video gesture editing applications, shown
+in Fig.1 Project Page: https://andypinxinliu.github.io/Contextual-Gesture/.",http://arxiv.org/pdf/2502.07239v1,,False
+Does Training on Synthetic Data Make Models Less Robust?,11/02/2025,"Lingze Zhang, Ellie Pavlick","An increasingly common practice is to train large language models (LLMs)
+using synthetic data. Often this synthetic data is produced by the same or
+similar LLMs as those it is being used to train. This raises the question of
+whether the synthetic data might in fact exacerbate certain ""blindspots"" by
+reinforcing heuristics that the LLM already encodes. In this paper, we conduct
+simulated experiments on the natural language inference (NLI) task with
+Llama-2-7B-hf models. We use MultiNLI as the general task and HANS, a targeted
+evaluation set designed to measure the presence of specific heuristic
+strategies for NLI, as our ""blindspot"" task. Our goal is to determine whether
+performance disparities between the general and blind spot tasks emerge. Our
+results indicate that synthetic data does not reinforce blindspots in the way
+we expected. Specifically, we see that, while fine-tuning with synthetic data
+doesn't necessarily reduce the use of the heuristic, it also does not make it
+worse as we hypothesized.",http://arxiv.org/pdf/2502.07164v1,,False
+Language-TPP: Integrating Temporal Point Processes with Language Models for Event Analysis,11/02/2025,"Quyu Kong, Yixuan Zhang, Yang Liu, Panrong Tong, Enqi Liu, Feng Zhou","Temporal Point Processes (TPPs) have been widely used for event sequence
+modeling, but they often struggle to incorporate rich textual event
+descriptions effectively. Conversely, while Large Language Models (LLMs) have
+been shown remarkable capabilities in processing textual data, they lack
+mechanisms for handling temporal dynamics. To bridge this gap, we introduce
+Language-TPP, a unified framework that integrates TPPs with LLMs for enhanced
+event sequence modeling. Language-TPP introduces a novel temporal encoding
+mechanism that converts continuous time intervals into specialized byte-tokens,
+enabling seamless integration with standard LLM architectures. This approach
+allows Language-TPP to achieve state-of-the-art performance across multiple TPP
+tasks, including event time prediction, type prediction, and intensity
+estimation, on five datasets. Additionally, we demonstrate that incorporating
+temporal information significantly improves the quality of generated event
+descriptions.",http://arxiv.org/pdf/2502.07139v1,,False

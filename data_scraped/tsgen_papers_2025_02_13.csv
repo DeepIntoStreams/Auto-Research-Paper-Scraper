@@ -1,0 +1,217 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+A Real-to-Sim-to-Real Approach to Robotic Manipulation with VLM-Generated Iterative Keypoint Rewards,12/02/2025,"Shivansh Patel, Xinchen Yin, Wenlong Huang, Shubham Garg, Hooshang Nayyeri, Li Fei-Fei, Svetlana Lazebnik, Yunzhu Li","Task specification for robotic manipulation in open-world environments is
+challenging, requiring flexible and adaptive objectives that align with human
+intentions and can evolve through iterative feedback. We introduce Iterative
+Keypoint Reward (IKER), a visually grounded, Python-based reward function that
+serves as a dynamic task specification. Our framework leverages VLMs to
+generate and refine these reward functions for multi-step manipulation tasks.
+Given RGB-D observations and free-form language instructions, we sample
+keypoints in the scene and generate a reward function conditioned on these
+keypoints. IKER operates on the spatial relationships between keypoints,
+leveraging commonsense priors about the desired behaviors, and enabling precise
+SE(3) control. We reconstruct real-world scenes in simulation and use the
+generated rewards to train reinforcement learning (RL) policies, which are then
+deployed into the real world-forming a real-to-sim-to-real loop. Our approach
+demonstrates notable capabilities across diverse scenarios, including both
+prehensile and non-prehensile tasks, showcasing multi-step task execution,
+spontaneous error recovery, and on-the-fly strategy adjustments. The results
+highlight IKER's effectiveness in enabling robots to perform multi-step tasks
+in dynamic environments through iterative reward shaping.",http://arxiv.org/pdf/2502.08643v1,,False
+Two-stage hybrid models for enhancing forecasting accuracy on heterogeneous time series,12/02/2025,"Junru Ren, Shaomin Wu","Compared to local models built in a series-by-series manner, global models
+leverage relevant information across time series, resulting in improved
+forecasting performance and generalization capacity. Constructing global models
+on a set of time series is becoming mainstream in the field of time series
+forecasting. However, the advantages of global models may not always be
+realized when dealing with heterogeneous data. While they can adapt to
+heterogeneous datasets by increasing the model complexity, the model cannot be
+infinitely complex due to the finite sample size, which poses challenges for
+the application of global models. Additionally, determining whether the time
+series data is homogeneous or heterogeneous can be ambiguous in practice. To
+address these research gaps, this paper argues that the heterogeneity of the
+data should be defined by the global model used, and for each series, the
+portion not modelled by the global model represents heterogeneity. It further
+proposes two-stage hybrid models, which include a second stage to identify and
+model heterogeneous patterns. In this second stage, we can estimate either all
+local models or sub-global models across different domains divided based on
+heterogeneity. Experiments on four open datasets reveal that the proposed
+methods significantly outperform five existing models, indicating they
+contribute to fully unleash the potential of global models on heterogeneous
+datasets.",http://arxiv.org/pdf/2502.08600v1,,False
+Top-Theta Attention: Sparsifying Transformers by Compensated Thresholding,12/02/2025,"Konstantin Berestizshevsky, Renzo Andri, Lukas Cavigelli","The attention mechanism is essential for the impressive capabilities of
+transformer-based Large Language Models (LLMs). However, calculating attention
+is computationally intensive due to its quadratic dependency on the sequence
+length. We introduce a novel approach called Top-Theta Attention, or simply
+Top-$\theta$, which selectively prunes less essential attention elements by
+comparing them against carefully calibrated thresholds. This method greatly
+improves the efficiency of self-attention matrix multiplication while
+preserving model accuracy, reducing the number of required V cache rows by 3x
+during generative decoding and the number of attention elements by 10x during
+the prefill phase. Our method does not require model retraining; instead, it
+requires only a brief calibration phase to be resilient to distribution shifts,
+thus not requiring the thresholds for different datasets to be recalibrated.
+Unlike top-k attention, Top-$\theta$ eliminates full-vector dependency, making
+it suitable for tiling and scale-out and avoiding costly top-k search. A key
+innovation of our approach is the development of efficient numerical
+compensation techniques, which help preserve model accuracy even under
+aggressive pruning of attention scores.",http://arxiv.org/pdf/2502.08363v1,,False
+Hierarchical Learning-based Graph Partition for Large-scale Vehicle Routing Problems,12/02/2025,"Yuxin Pan, Ruohong Liu, Yize Chen, Zhiguang Cao, Fangzhen Lin","Neural solvers based on the divide-and-conquer approach for Vehicle Routing
+Problems (VRPs) in general, and capacitated VRP (CVRP) in particular,
+integrates the global partition of an instance with local constructions for
+each subproblem to enhance generalization. However, during the global partition
+phase, misclusterings within subgraphs have a tendency to progressively
+compound throughout the multi-step decoding process of the learning-based
+partition policy. This suboptimal behavior in the global partition phase, in
+turn, may lead to a dramatic deterioration in the performance of the overall
+decomposition-based system, despite using optimal local constructions. To
+address these challenges, we propose a versatile Hierarchical Learning-based
+Graph Partition (HLGP) framework, which is tailored to benefit the partition of
+CVRP instances by synergistically integrating global and local partition
+policies. Specifically, the global partition policy is tasked with creating the
+coarse multi-way partition to generate the sequence of simpler two-way
+partition subtasks. These subtasks mark the initiation of the subsequent K
+local partition levels. At each local partition level, subtasks exclusive for
+this level are assigned to the local partition policy which benefits from the
+insensitive local topological features to incrementally alleviate the
+compounded errors. This framework is versatile in the sense that it optimizes
+the involved partition policies towards a unified objective harmoniously
+compatible with both reinforcement learning (RL) and supervised learning (SL).
+(*Due to the notification of arXiv ""The Abstract field cannot be longer than
+1,920 characters"", the appeared Abstract is shortened. For the full Abstract,
+please download the Article.)",http://arxiv.org/pdf/2502.08340v1,,False
+HDT: Hierarchical Discrete Transformer for Multivariate Time Series Forecasting,12/02/2025,"Shibo Feng, Peilin Zhao, Liu Liu, Pengcheng Wu, Zhiqi Shen","Generative models have gained significant attention in multivariate time
+series forecasting (MTS), particularly due to their ability to generate
+high-fidelity samples. Forecasting the probability distribution of multivariate
+time series is a challenging yet practical task. Although some recent attempts
+have been made to handle this task, two major challenges persist: 1) some
+existing generative methods underperform in high-dimensional multivariate time
+series forecasting, which is hard to scale to higher dimensions; 2) the
+inherent high-dimensional multivariate attributes constrain the forecasting
+lengths of existing generative models. In this paper, we point out that
+discrete token representations can model high-dimensional MTS with faster
+inference time, and forecasting the target with long-term trends of itself can
+extend the forecasting length with high accuracy. Motivated by this, we propose
+a vector quantized framework called Hierarchical Discrete Transformer (HDT)
+that models time series into discrete token representations with l2
+normalization enhanced vector quantized strategy, in which we transform the MTS
+forecasting into discrete tokens generation. To address the limitations of
+generative models in long-term forecasting, we propose a hierarchical discrete
+Transformer. This model captures the discrete long-term trend of the target at
+the low level and leverages this trend as a condition to generate the discrete
+representation of the target at the high level that introduces the features of
+the target itself to extend the forecasting length in high-dimensional MTS.
+Extensive experiments on five popular MTS datasets verify the effectiveness of
+our proposed method.",http://arxiv.org/pdf/2502.08302v1,,False
+Exploring the Potential of Large Language Models to Simulate Personality,12/02/2025,"Maria Molchanova, Anna Mikhailova, Anna Korzanova, Lidiia Ostyakova, Alexandra Dolidze","With the advancement of large language models (LLMs), the focus in
+Conversational AI has shifted from merely generating coherent and relevant
+responses to tackling more complex challenges, such as personalizing dialogue
+systems. In an effort to enhance user engagement, chatbots are often designed
+to mimic human behaviour, responding within a defined emotional spectrum and
+aligning to a set of values. In this paper, we aim to simulate personal traits
+according to the Big Five model with the use of LLMs. Our research showed that
+generating personality-related texts is still a challenging task for the
+models. As a result, we present a dataset of generated texts with the
+predefined Big Five characteristics and provide an analytical framework for
+testing LLMs on a simulation of personality skills.",http://arxiv.org/pdf/2502.08265v1,,False
+GenIAS: Generator for Instantiating Anomalies in time Series,12/02/2025,"Zahra Zamanzadeh Darban, Qizhou Wang, Geoffrey I. Webb, Shirui Pan, Charu C. Aggarwal, Mahsa Salehi","A recent and promising approach for building time series anomaly detection
+(TSAD) models is to inject synthetic samples of anomalies within real data
+sets. The existing injection mechanisms have significant limitations - most of
+them rely on ad hoc, hand-crafted strategies which fail to capture the natural
+diversity of anomalous patterns, or are restricted to univariate time series
+settings. To address these challenges, we design a generative model for TSAD
+using a variational autoencoder, which is referred to as a Generator for
+Instantiating Anomalies in Time Series (GenIAS). GenIAS is designed to produce
+diverse and realistic synthetic anomalies for TSAD tasks. By employing a novel
+learned perturbation mechanism in the latent space and injecting the perturbed
+patterns in different segments of time series, GenIAS can generate anomalies
+with greater diversity and varying scales. Further, guided by a new triplet
+loss function, which uses a min-max margin and a new variance-scaling approach
+to further enforce the learning of compact normal patterns, GenIAS ensures that
+anomalies are distinct from normal samples while remaining realistic. The
+approach is effective for both univariate and multivariate time series. We
+demonstrate the diversity and realism of the generated anomalies. Our extensive
+experiments demonstrate that GenIAS - when integrated into a TSAD task -
+consistently outperforms seventeen traditional and deep anomaly detection
+models, thereby highlighting the potential of generative models for time series
+anomaly generation.",http://arxiv.org/pdf/2502.08262v1,,False
+Knowledge-Guided Wasserstein Distributionally Robust Optimization,12/02/2025,"Zitao Wang, Ziyuan Wang, Molei Liu, Nian Si","Transfer learning is a popular strategy to leverage external knowledge and
+improve statistical efficiency, particularly with a limited target sample. We
+propose a novel knowledge-guided Wasserstein Distributionally Robust
+Optimization (KG-WDRO) framework that adaptively incorporates multiple sources
+of external knowledge to overcome the conservativeness of vanilla WDRO, which
+often results in overly pessimistic shrinkage toward zero. Our method
+constructs smaller Wasserstein ambiguity sets by controlling the transportation
+along directions informed by the source knowledge. This strategy can alleviate
+perturbations on the predictive projection of the covariates and protect
+against information loss. Theoretically, we establish the equivalence between
+our WDRO formulation and the knowledge-guided shrinkage estimation based on
+collinear similarity, ensuring tractability and geometrizing the feasible set.
+This also reveals a novel and general interpretation for recent shrinkage-based
+transfer learning approaches from the perspective of distributional robustness.
+In addition, our framework can adjust for scaling differences in the regression
+models between the source and target and accommodates general types of
+regularization such as lasso and ridge. Extensive simulations demonstrate the
+superior performance and adaptivity of KG-WDRO in enhancing small-sample
+transfer learning.",http://arxiv.org/pdf/2502.08146v1,,False
+Generative AI-Enhanced Cooperative MEC of UAVs and Ground Stations for Unmanned Surface Vehicles,12/02/2025,"Jiahao You, Ziye Jia, Chao Dong, Qihui Wu, Zhu Han","The increasing deployment of unmanned surface vehicles (USVs) require
+computational support and coverage in applications such as maritime search and
+rescue. Unmanned aerial vehicles (UAVs) can offer low-cost, flexible aerial
+services, and ground stations (GSs) can provide powerful supports, which can
+cooperate to help the USVs in complex scenarios. However, the collaboration
+between UAVs and GSs for USVs faces challenges of task uncertainties, USVs
+trajectory uncertainties, heterogeneities, and limited computational resources.
+To address these issues, we propose a cooperative UAV and GS based robust
+multi-access edge computing framework to assist USVs in completing
+computational tasks. Specifically, we formulate the optimization problem of
+joint task offloading and UAV trajectory to minimize the total execution time,
+which is in the form of mixed integer nonlinear programming and NP-hard to
+tackle. Therefore, we propose the algorithm of generative artificial
+intelligence-enhanced heterogeneous agent proximal policy optimization
+(GAI-HAPPO). The proposed algorithm integrates GAI models to enhance the actor
+network ability to model complex environments and extract high-level features,
+thereby allowing the algorithm to predict uncertainties and adapt to dynamic
+conditions. Additionally, GAI stabilizes the critic network, addressing the
+instability of multi-agent reinforcement learning approaches. Finally,
+extensive simulations demonstrate that the proposed algorithm outperforms the
+existing benchmark methods, thus highlighting the potentials in tackling
+intricate, cross-domain issues in the considered scenarios.",http://arxiv.org/pdf/2502.08119v1,,False
+Rethinking Tokenized Graph Transformers for Node Classification,12/02/2025,"Jinsong Chen, Chenyang Li, GaiChao Li, John E. Hopcroft, Kun He","Node tokenized graph Transformers (GTs) have shown promising performance in
+node classification. The generation of token sequences is the key module in
+existing tokenized GTs which transforms the input graph into token sequences,
+facilitating the node representation learning via Transformer. In this paper,
+we observe that the generations of token sequences in existing GTs only focus
+on the first-order neighbors on the constructed similarity graphs, which leads
+to the limited usage of nodes to generate diverse token sequences, further
+restricting the potential of tokenized GTs for node classification. To this
+end, we propose a new method termed SwapGT. SwapGT first introduces a novel
+token swapping operation based on the characteristics of token sequences that
+fully leverages the semantic relevance of nodes to generate more informative
+token sequences. Then, SwapGT leverages a Transformer-based backbone to learn
+node representations from the generated token sequences. Moreover, SwapGT
+develops a center alignment loss to constrain the representation learning from
+multiple token sequences, further enhancing the model performance. Extensive
+empirical results on various datasets showcase the superiority of SwapGT for
+node classification.",http://arxiv.org/pdf/2502.08101v1,,False
+COMBO-Grasp: Learning Constraint-Based Manipulation for Bimanual Occluded Grasping,12/02/2025,"Jun Yamada, Alexander L. Mitchell, Jack Collins, Ingmar Posner","This paper addresses the challenge of occluded robot grasping, i.e. grasping
+in situations where the desired grasp poses are kinematically infeasible due to
+environmental constraints such as surface collisions. Traditional robot
+manipulation approaches struggle with the complexity of non-prehensile or
+bimanual strategies commonly used by humans in these circumstances.
+State-of-the-art reinforcement learning (RL) methods are unsuitable due to the
+inherent complexity of the task. In contrast, learning from demonstration
+requires collecting a significant number of expert demonstrations, which is
+often infeasible. Instead, inspired by human bimanual manipulation strategies,
+where two hands coordinate to stabilise and reorient objects, we focus on a
+bimanual robotic setup to tackle this challenge. In particular, we introduce
+Constraint-based Manipulation for Bimanual Occluded Grasping (COMBO-Grasp), a
+learning-based approach which leverages two coordinated policies: a constraint
+policy trained using self-supervised datasets to generate stabilising poses and
+a grasping policy trained using RL that reorients and grasps the target object.
+A key contribution lies in value function-guided policy coordination.
+Specifically, during RL training for the grasping policy, the constraint
+policy's output is refined through gradients from a jointly trained value
+function, improving bimanual coordination and task performance. Lastly,
+COMBO-Grasp employs teacher-student policy distillation to effectively deploy
+point cloud-based policies in real-world environments. Empirical evaluations
+demonstrate that COMBO-Grasp significantly improves task success rates compared
+to competitive baseline approaches, with successful generalisation to unseen
+objects in both simulated and real-world environments.",http://arxiv.org/pdf/2502.08054v1,,False

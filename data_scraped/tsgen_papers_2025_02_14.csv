@@ -1,0 +1,288 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Theoretical Benefit and Limitation of Diffusion Language Model,13/02/2025,"Guhao Feng, Yihan Geng, Jian Guan, Wei Wu, Liwei Wang, Di He","Diffusion language models have emerged as a promising approach for text
+generation. One would naturally expect this method to be an efficient
+replacement for autoregressive models since multiple tokens can be sampled in
+parallel during each diffusion step. However, its efficiency-accuracy trade-off
+is not yet well understood. In this paper, we present a rigorous theoretical
+analysis of a widely used type of diffusion language model, the Masked
+Diffusion Model (MDM), and find that its effectiveness heavily depends on the
+target evaluation metric. Under mild conditions, we prove that when using
+perplexity as the metric, MDMs can achieve near-optimal perplexity in sampling
+steps regardless of sequence length, demonstrating that efficiency can be
+achieved without sacrificing performance. However, when using the sequence
+error rate--which is important for understanding the ""correctness"" of a
+sequence, such as a reasoning chain--we show that the required sampling steps
+must scale linearly with sequence length to obtain ""correct"" sequences, thereby
+eliminating MDM's efficiency advantage over autoregressive models. Our analysis
+establishes the first theoretical foundation for understanding the benefits and
+limitations of MDMs. All theoretical findings are supported by empirical
+studies.",http://arxiv.org/pdf/2502.09622v1,,False
+Rolling Ahead Diffusion for Traffic Scene Simulation,13/02/2025,"Yunpeng Liu, Matthew Niedoba, William Harvey, Adam Scibior, Berend Zwartsenberg, Frank Wood","Realistic driving simulation requires that NPCs not only mimic natural
+driving behaviors but also react to the behavior of other simulated agents.
+Recent developments in diffusion-based scenario generation focus on creating
+diverse and realistic traffic scenarios by jointly modelling the motion of all
+the agents in the scene. However, these traffic scenarios do not react when the
+motion of agents deviates from their modelled trajectories. For example, the
+ego-agent can be controlled by a stand along motion planner. To produce
+reactive scenarios with joint scenario models, the model must regenerate the
+scenario at each timestep based on new observations in a Model Predictive
+Control (MPC) fashion. Although reactive, this method is time-consuming, as one
+complete possible future for all NPCs is generated per simulation step.
+Alternatively, one can utilize an autoregressive model (AR) to predict only the
+immediate next-step future for all NPCs. Although faster, this method lacks the
+capability for advanced planning. We present a rolling diffusion based traffic
+scene generation model which mixes the benefits of both methods by predicting
+the next step future and simultaneously predicting partially noised further
+future steps at the same time. We show that such model is efficient compared to
+diffusion model based AR, achieving a beneficial compromise between reactivity
+and computational efficiency.",http://arxiv.org/pdf/2502.09587v1,,False
+S$^2$-Diffusion: Generalizing from Instance-level to Category-level Skills in Robot Manipulation,13/02/2025,"Quantao Yang, Michael C. Welle, Danica Kragic, Olov Andersson","Recent advances in skill learning has propelled robot manipulation to new
+heights by enabling it to learn complex manipulation tasks from a practical
+number of demonstrations. However, these skills are often limited to the
+particular action, object, and environment \textit{instances} that are shown in
+the training data, and have trouble transferring to other instances of the same
+category. In this work we present an open-vocabulary Spatial-Semantic Diffusion
+policy (S$^2$-Diffusion) which enables generalization from instance-level
+training data to category-level, enabling skills to be transferable between
+instances of the same category. We show that functional aspects of skills can
+be captured via a promptable semantic module combined with a spatial
+representation. We further propose leveraging depth estimation networks to
+allow the use of only a single RGB camera. Our approach is evaluated and
+compared on a diverse number of robot manipulation tasks, both in simulation
+and in the real world. Our results show that S$^2$-Diffusion is invariant to
+changes in category-irrelevant factors as well as enables satisfying
+performance on other instances within the same category, even if it was not
+trained on that specific instance. Full videos of all real-world experiments
+are available in the supplementary material.",http://arxiv.org/pdf/2502.09389v1,,False
+A Deep Inverse-Mapping Model for a Flapping Robotic Wing,13/02/2025,"Hadar Sharvit, Raz Karl, Tsevi Beatus","In systems control, the dynamics of a system are governed by modulating its
+inputs to achieve a desired outcome. For example, to control the thrust of a
+quad-copter propeller the controller modulates its rotation rate, relying on a
+straightforward mapping between the input rotation rate and the resulting
+thrust. This mapping can be inverted to determine the rotation rate needed to
+generate a desired thrust. However, in complex systems, such as flapping-wing
+robots where intricate fluid motions are involved, mapping inputs (wing
+kinematics) to outcomes (aerodynamic forces) is nontrivial and inverting this
+mapping for real-time control is computationally impractical. Here, we report a
+machine-learning solution for the inverse mapping of a flapping-wing system
+based on data from an experimental system we have developed. Our model learns
+the input wing motion required to generate a desired aerodynamic force outcome.
+We used a sequence-to-sequence model tailored for time-series data and
+augmented it with a novel adaptive-spectrum layer that implements
+representation learning in the frequency domain. To train our model, we
+developed a flapping wing system that simultaneously measures the wing's
+aerodynamic force and its 3D motion using high-speed cameras. We demonstrate
+the performance of our system on an additional open-source dataset of a
+flapping wing in a different flow regime. Results show superior performance
+compared with more complex state-of-the-art transformer-based models, with 11%
+improvement on the test datasets median loss. Moreover, our model shows
+superior inference time, making it practical for onboard robotic control. Our
+open-source data and framework may improve modeling and real-time control of
+systems governed by complex dynamics, from biomimetic robots to biomedical
+devices.",http://arxiv.org/pdf/2502.09378v1,,False
+Machine learning for modelling unstructured grid data in computational physics: a review,13/02/2025,"Sibo Cheng, Marc Bocquet, Weiping Ding, Tobias Sebastian Finn, Rui Fu, Jinlong Fu, Yike Guo, Eleda Johnson, Siyi Li, Che Liu, Eric Newton Moro, Jie Pan, Matthew Piggott, Cesar Quilodran, Prakhar Sharma, Kun Wang, Dunhui Xiao, Xiao Xue, Yong Zeng, Mingrui Zhang, Hao Zhou, Kewei Zhu, Rossella Arcucci","Unstructured grid data are essential for modelling complex geometries and
+dynamics in computational physics. Yet, their inherent irregularity presents
+significant challenges for conventional machine learning (ML) techniques. This
+paper provides a comprehensive review of advanced ML methodologies designed to
+handle unstructured grid data in high-dimensional dynamical systems. Key
+approaches discussed include graph neural networks, transformer models with
+spatial attention mechanisms, interpolation-integrated ML methods, and meshless
+techniques such as physics-informed neural networks. These methodologies have
+proven effective across diverse fields, including fluid dynamics and
+environmental simulations. This review is intended as a guidebook for
+computational scientists seeking to apply ML approaches to unstructured grid
+data in their domains, as well as for ML researchers looking to address
+challenges in computational physics. It places special focus on how ML methods
+can overcome the inherent limitations of traditional numerical techniques and,
+conversely, how insights from computational physics can inform ML development.
+To support benchmarking, this review also provides a summary of open-access
+datasets of unstructured grid data in computational physics. Finally, emerging
+directions such as generative models with unstructured data, reinforcement
+learning for mesh generation, and hybrid physics-data-driven paradigms are
+discussed to inspire future advancements in this evolving field.",http://arxiv.org/pdf/2502.09346v1,,False
+Dynamic Rolling Horizon Optimization for Network-Constrained V2X Value Stacking of Electric Vehicles Under Uncertainties,13/02/2025,"Canchen Jiang, Ariel Liebman, Bo Jie, Hao Wang","Electric vehicle (EV) coordination can provide significant benefits through
+vehicle-to-everything (V2X) by interacting with the grid, buildings, and other
+EVs. This work aims to develop a V2X value-stacking framework, including
+vehicle-to-building (V2B), vehicle-to-grid (V2G), and energy trading, to
+maximize economic benefits for residential communities while maintaining
+distribution voltage. This work also seeks to quantify the impact of prediction
+errors related to building load, renewable energy, and EV arrivals. A dynamic
+rolling-horizon optimization (RHO) method is employed to leverage multiple
+revenue streams and maximize the potential of EV coordination. To address
+energy uncertainties, including hourly local building load, local photovoltaic
+(PV) generation, and EV arrivals, this work develops a Transformer-based
+forecasting model named Gated Recurrent Units-Encoder-Temporal Fusion Decoder
+(GRU-EN-TFD). The simulation results, using real data from Australia's National
+Electricity Market, and the Independent System Operators in New England and New
+York in the US, reveal that V2X value stacking can significantly reduce energy
+costs. The proposed GRU-EN-TFD model outperforms the benchmark forecast model.
+Uncertainties in EV arrivals have a more substantial impact on value-stacking
+performance, highlighting the significance of its accurate forecast. This work
+provides new insights into the dynamic interactions among residential
+communities, unlocking the full potential of EV batteries.",http://arxiv.org/pdf/2502.09290v1,,False
+An Uncertainty Principle for Linear Recurrent Neural Networks,13/02/2025,"Alexandre François, Antonio Orvieto, Francis Bach","We consider linear recurrent neural networks, which have become a key
+building block of sequence modeling due to their ability for stable and
+effective long-range modeling. In this paper, we aim at characterizing this
+ability on a simple but core copy task, whose goal is to build a linear filter
+of order $S$ that approximates the filter that looks $K$ time steps in the past
+(which we refer to as the shift-$K$ filter), where $K$ is larger than $S$.
+Using classical signal models and quadratic cost, we fully characterize the
+problem by providing lower bounds of approximation, as well as explicit filters
+that achieve this lower bound up to constants. The optimal performance
+highlights an uncertainty principle: the optimal filter has to average values
+around the $K$-th time step in the past with a range~(width) that is
+proportional to $K/S$.",http://arxiv.org/pdf/2502.09287v1,,False
+FE-LWS: Refined Image-Text Representations via Decoder Stacking and Fused Encodings for Remote Sensing Image Captioning,13/02/2025,"Swadhin Das, Raksha Sharma","Remote sensing image captioning aims to generate descriptive text from remote
+sensing images, typically employing an encoder-decoder framework. In this
+setup, a convolutional neural network (CNN) extracts feature representations
+from the input image, which then guide the decoder in a sequence-to-sequence
+caption generation process. Although much research has focused on refining the
+decoder, the quality of image representations from the encoder remains crucial
+for accurate captioning. This paper introduces a novel approach that integrates
+features from two distinct CNN based encoders, capturing complementary
+information to enhance caption generation. Additionally, we propose a weighted
+averaging technique to combine the outputs of all GRUs in the stacked decoder.
+Furthermore, a comparison-based beam search strategy is incorporated to refine
+caption selection. The results demonstrate that our fusion-based approach,
+along with the enhanced stacked decoder, significantly outperforms both the
+transformer-based state-of-the-art model and other LSTM-based baselines.",http://arxiv.org/pdf/2502.09282v1,,False
+GEVRM: Goal-Expressive Video Generation Model For Robust Visual Manipulation,13/02/2025,"Hongyin Zhang, Pengxiang Ding, Shangke Lyu, Ying Peng, Donglin Wang","With the rapid development of embodied artificial intelligence, significant
+progress has been made in vision-language-action (VLA) models for general robot
+decision-making. However, the majority of existing VLAs fail to account for the
+inevitable external perturbations encountered during deployment. These
+perturbations introduce unforeseen state information to the VLA, resulting in
+inaccurate actions and consequently, a significant decline in generalization
+performance. The classic internal model control (IMC) principle demonstrates
+that a closed-loop system with an internal model that includes external input
+signals can accurately track the reference input and effectively offset the
+disturbance. We propose a novel closed-loop VLA method GEVRM that integrates
+the IMC principle to enhance the robustness of robot visual manipulation. The
+text-guided video generation model in GEVRM can generate highly expressive
+future visual planning goals. Simultaneously, we evaluate perturbations by
+simulating responses, which are called internal embeddings and optimized
+through prototype contrastive learning. This allows the model to implicitly
+infer and distinguish perturbations from the external environment. The proposed
+GEVRM achieves state-of-the-art performance on both standard and perturbed
+CALVIN benchmarks and shows significant improvements in realistic robot tasks.",http://arxiv.org/pdf/2502.09268v1,,False
+Counterfactual Explanations as Plans,13/02/2025,Vaishak Belle,"There has been considerable recent interest in explainability in AI,
+especially with black-box machine learning models. As correctly observed by the
+planning community, when the application at hand is not a single-shot decision
+or prediction, but a sequence of actions that depend on observations, a richer
+notion of explanations are desirable.
+  In this paper, we look to provide a formal account of ``counterfactual
+explanations,"" based in terms of action sequences. We then show that this
+naturally leads to an account of model reconciliation, which might take the
+form of the user correcting the agent's model, or suggesting actions to the
+agent's plan. For this, we will need to articulate what is true versus what is
+known, and we appeal to a modal fragment of the situation calculus to formalise
+these intuitions. We consider various settings: the agent knowing partial
+truths, weakened truths and having false beliefs, and show that our definitions
+easily generalize to these different settings.",http://arxiv.org/pdf/2502.09205v1,10.4204/EPTCS.416.14,False
+Two-Stage Representation Learning for Analyzing Movement Behavior Dynamics in People Living with Dementia,13/02/2025,"Jin Cui, Alexander Capstick, Payam Barnaghi, Gregory Scott","In remote healthcare monitoring, time series representation learning reveals
+critical patient behavior patterns from high-frequency data. This study
+analyzes home activity data from individuals living with dementia by proposing
+a two-stage, self-supervised learning approach tailored to uncover low-rank
+structures. The first stage converts time-series activities into text sequences
+encoded by a pre-trained language model, providing a rich, high-dimensional
+latent state space using a PageRank-based method. This PageRank vector captures
+latent state transitions, effectively compressing complex behaviour data into a
+succinct form that enhances interpretability. This low-rank representation not
+only enhances model interpretability but also facilitates clustering and
+transition analysis, revealing key behavioral patterns correlated with
+clinicalmetrics such as MMSE and ADAS-COG scores. Our findings demonstrate the
+framework's potential in supporting cognitive status prediction, personalized
+care interventions, and large-scale health monitoring.",http://arxiv.org/pdf/2502.09173v1,,False
+LOB-Bench: Benchmarking Generative AI for Finance - an Application to Limit Order Book Data,13/02/2025,"Peer Nagy, Sascha Frey, Kang Li, Bidipta Sarkar, Svitlana Vyetrenko, Stefan Zohren, Ani Calinescu, Jakob Foerster","While financial data presents one of the most challenging and interesting
+sequence modelling tasks due to high noise, heavy tails, and strategic
+interactions, progress in this area has been hindered by the lack of consensus
+on quantitative evaluation paradigms. To address this, we present LOB-Bench, a
+benchmark, implemented in python, designed to evaluate the quality and realism
+of generative message-by-order data for limit order books (LOB) in the LOBSTER
+format. Our framework measures distributional differences in conditional and
+unconditional statistics between generated and real LOB data, supporting
+flexible multivariate statistical evaluation. The benchmark also includes
+features commonly used LOB statistics such as spread, order book volumes, order
+imbalance, and message inter-arrival times, along with scores from a trained
+discriminator network. Lastly, LOB-Bench contains ""market impact metrics"", i.e.
+the cross-correlations and price response functions for specific events in the
+data. We benchmark generative autoregressive state-space models, a (C)GAN, as
+well as a parametric LOB model and find that the autoregressive GenAI approach
+beats traditional model classes.",http://arxiv.org/pdf/2502.09172v1,,False
+Replay-free Online Continual Learning with Self-Supervised MultiPatches,13/02/2025,"Giacomo Cignoni, Andrea Cossu, Alex Gomez-Villa, Joost van de Weijer, Antonio Carta","Online Continual Learning (OCL) methods train a model on a non-stationary
+data stream where only a few examples are available at a time, often leveraging
+replay strategies. However, usage of replay is sometimes forbidden, especially
+in applications with strict privacy regulations. Therefore, we propose
+Continual MultiPatches (CMP), an effective plug-in for existing OCL
+self-supervised learning strategies that avoids the use of replay samples. CMP
+generates multiple patches from a single example and projects them into a
+shared feature space, where patches coming from the same example are pushed
+together without collapsing into a single point. CMP surpasses replay and other
+SSL-based strategies on OCL streams, challenging the role of replay as a go-to
+solution for self-supervised OCL.",http://arxiv.org/pdf/2502.09140v1,,False
+Interpreting and Steering Protein Language Models through Sparse Autoencoders,13/02/2025,"Edith Natalia Villegas Garcia, Alessio Ansuini","The rapid advancements in transformer-based language models have
+revolutionized natural language processing, yet understanding the internal
+mechanisms of these models remains a significant challenge. This paper explores
+the application of sparse autoencoders (SAE) to interpret the internal
+representations of protein language models, specifically focusing on the ESM-2
+8M parameter model. By performing a statistical analysis on each latent
+component's relevance to distinct protein annotations, we identify potential
+interpretations linked to various protein characteristics, including
+transmembrane regions, binding sites, and specialized motifs.
+  We then leverage these insights to guide sequence generation, shortlisting
+the relevant latent components that can steer the model towards desired targets
+such as zinc finger domains. This work contributes to the emerging field of
+mechanistic interpretability in biological sequence models, offering new
+perspectives on model steering for sequence design.",http://arxiv.org/pdf/2502.09135v1,,False
+CopySpec: Accelerating LLMs with Speculative Copy-and-Paste Without Compromising Quality,13/02/2025,"Razvan-Gabriel Dumitru, Minglai Yang, Vikas Yadav, Mihai Surdeanu","We introduce CopySpec, an innovative technique designed to tackle the
+inefficiencies LLMs face when generating responses that closely resemble
+previous outputs. CopySpec identifies repeated sequences in the model's chat
+history and speculates that the same tokens will follow, enabling seamless
+copying without compromising output quality or requiring additional GPU memory.
+To evaluate the effectiveness of our approach, we conducted experiments using
+five LLMs and five datasets: MT-Bench, CNN/DM, GSM-8K, HumanEval, and our newly
+created dataset, MT-Redundant. MT-Redundant, introduced in this paper,
+transforms the second turn of MT-Bench into a request for variations of the
+first turn's answer, simulating real-world scenarios where users request
+modifications to prior responses. Our results demonstrate significant
+speed-ups: up to 2.35x on CNN/DM, 3.08x on the second turn of select
+MT-Redundant categories, and 2.66x on the third turn of GSM-8K's
+self-correction tasks. Moreover, we show that CopySpec integrates seamlessly
+with speculative decoding, yielding an average 49% additional speed-up over
+speculative decoding for the second turn of MT-Redundant across all eight
+categories. While LLMs, even with speculative decoding, suffer from slower
+inference as context sizes grow, CopySpec leverages the expanded context to
+accelerate inference, making it faster as the context size increases. Our code
+and dataset are publicly available at https://github.com/RazvanDu/CopySpec.",http://arxiv.org/pdf/2502.08923v1,,False
+InfiniteHiP: Extending Language Model Context Up to 3 Million Tokens on a Single GPU,13/02/2025,"Heejun Lee, Geon Park, Jaduk Suh, Sung Ju Hwang","In modern large language models (LLMs), handling very long context lengths
+presents significant challenges as it causes slower inference speeds and
+increased memory costs. Additionally, most existing pre-trained LLMs fail to
+generalize beyond their original training sequence lengths. To enable efficient
+and practical long-context utilization, we introduce InfiniteHiP, a novel, and
+practical LLM inference framework that accelerates processing by dynamically
+eliminating irrelevant context tokens through a modular hierarchical token
+pruning algorithm. Our method also allows generalization to longer sequences by
+selectively applying various RoPE adjustment methods according to the internal
+attention patterns within LLMs. Furthermore, we offload the key-value cache to
+host memory during inference, significantly reducing GPU memory pressure. As a
+result, InfiniteHiP enables the processing of up to 3 million tokens on a
+single L40s 48GB GPU -- 3x larger -- without any permanent loss of context
+information. Our framework achieves an 18.95x speedup in attention decoding for
+a 1 million token context without requiring additional training. We implement
+our method in the SGLang framework and demonstrate its effectiveness and
+practicality through extensive evaluations.",http://arxiv.org/pdf/2502.08910v1,,False
+Harnessing Vision Models for Time Series Analysis: A Survey,13/02/2025,"Jingchao Ni, Ziming Zhao, ChengAo Shen, Hanghang Tong, Dongjin Song, Wei Cheng, Dongsheng Luo, Haifeng Chen","Time series analysis has witnessed the inspiring development from traditional
+autoregressive models, deep learning models, to recent Transformers and Large
+Language Models (LLMs). Efforts in leveraging vision models for time series
+analysis have also been made along the way but are less visible to the
+community due to the predominant research on sequence modeling in this domain.
+However, the discrepancy between continuous time series and the discrete token
+space of LLMs, and the challenges in explicitly modeling the correlations of
+variates in multivariate time series have shifted some research attentions to
+the equally successful Large Vision Models (LVMs) and Vision Language Models
+(VLMs). To fill the blank in the existing literature, this survey discusses the
+advantages of vision models over LLMs in time series analysis. It provides a
+comprehensive and in-depth overview of the existing methods, with dual views of
+detailed taxonomy that answer the key research questions including how to
+encode time series as images and how to model the imaged time series for
+various tasks. Additionally, we address the challenges in the pre- and
+post-processing steps involved in this framework and outline future directions
+to further advance time series analysis with vision models.",http://arxiv.org/pdf/2502.08869v1,,False

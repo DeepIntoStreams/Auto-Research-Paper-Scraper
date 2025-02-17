@@ -1,0 +1,298 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+(How) Can Transformers Predict Pseudo-Random Numbers?,14/02/2025,"Tao Tao, Darshil Doshi, Dayal Singh Kalra, Tianyu He, Maissam Barkeshli","Transformers excel at discovering patterns in sequential data, yet their
+fundamental limitations and learning mechanisms remain crucial topics of
+investigation. In this paper, we study the ability of Transformers to learn
+pseudo-random number sequences from linear congruential generators (LCGs),
+defined by the recurrence relation $x_{t+1} = a x_t + c \;\mathrm{mod}\; m$.
+Our analysis reveals that with sufficient architectural capacity and training
+data variety, Transformers can perform in-context prediction of LCG sequences
+with unseen moduli ($m$) and parameters ($a,c$). Through analysis of embedding
+layers and attention patterns, we uncover how Transformers develop algorithmic
+structures to learn these sequences in two scenarios of increasing complexity.
+First, we analyze how Transformers learn LCG sequences with unseen ($a, c$) but
+fixed modulus, and we demonstrate successful learning up to $m = 2^{32}$. Our
+analysis reveals that models learn to factorize the modulus and utilize
+digit-wise number representations to make sequential predictions. In the
+second, more challenging scenario of unseen moduli, we show that Transformers
+can generalize to unseen moduli up to $m_{\text{test}} = 2^{16}$. In this case,
+the model employs a two-step strategy: first estimating the unknown modulus
+from the context, then utilizing prime factorizations to generate predictions.
+For this task, we observe a sharp transition in the accuracy at a critical
+depth $=3$. We also find that the number of in-context sequence elements needed
+to reach high accuracy scales sublinearly with the modulus.",http://arxiv.org/pdf/2502.10390v1,,False
+AffinityFlow: Guided Flows for Antibody Affinity Maturation,14/02/2025,"Can Chen, Karla-Luise Herpoldt, Chenchao Zhao, Zichen Wang, Marcus Collins, Shang Shang, Ron Benson","Antibodies are widely used as therapeutics, but their development requires
+costly affinity maturation, involving iterative mutations to enhance binding
+affinity.This paper explores a sequence-only scenario for affinity maturation,
+using solely antibody and antigen sequences. Recently AlphaFlow wraps AlphaFold
+within flow matching to generate diverse protein structures, enabling a
+sequence-conditioned generative model of structure. Building on this, we
+propose an alternating optimization framework that (1) fixes the sequence to
+guide structure generation toward high binding affinity using a structure-based
+affinity predictor, then (2) applies inverse folding to create sequence
+mutations, refined by a sequence-based affinity predictor for post selection.
+To address this, we develop a co-teaching module that incorporates valuable
+information from noisy biophysical energies into predictor refinement. The
+sequence-based predictor selects consensus samples to teach the structure-based
+predictor, and vice versa. Our method, AffinityFlow, achieves state-of-the-art
+performance in affinity maturation experiments. We plan to open-source our code
+after acceptance.",http://arxiv.org/pdf/2502.10365v1,,False
+BeamDojo: Learning Agile Humanoid Locomotion on Sparse Footholds,14/02/2025,"Huayi Wang, Zirui Wang, Junli Ren, Qingwei Ben, Tao Huang, Weinan Zhang, Jiangmiao Pang","Traversing risky terrains with sparse footholds poses a significant challenge
+for humanoid robots, requiring precise foot placements and stable locomotion.
+Existing approaches designed for quadrupedal robots often fail to generalize to
+humanoid robots due to differences in foot geometry and unstable morphology,
+while learning-based approaches for humanoid locomotion still face great
+challenges on complex terrains due to sparse foothold reward signals and
+inefficient learning processes. To address these challenges, we introduce
+BeamDojo, a reinforcement learning (RL) framework designed for enabling agile
+humanoid locomotion on sparse footholds. BeamDojo begins by introducing a
+sampling-based foothold reward tailored for polygonal feet, along with a double
+critic to balancing the learning process between dense locomotion rewards and
+sparse foothold rewards. To encourage sufficient trail-and-error exploration,
+BeamDojo incorporates a two-stage RL approach: the first stage relaxes the
+terrain dynamics by training the humanoid on flat terrain while providing it
+with task terrain perceptive observations, and the second stage fine-tunes the
+policy on the actual task terrain. Moreover, we implement a onboard LiDAR-based
+elevation map to enable real-world deployment. Extensive simulation and
+real-world experiments demonstrate that BeamDojo achieves efficient learning in
+simulation and enables agile locomotion with precise foot placement on sparse
+footholds in the real world, maintaining a high success rate even under
+significant external disturbances.",http://arxiv.org/pdf/2502.10363v1,,False
+DeltaProduct: Increasing the Expressivity of DeltaNet Through Products of Householders,14/02/2025,"Julien Siems, Timur Carstensen, Arber Zela, Frank Hutter, Massimiliano Pontil, Riccardo Grazzi","Linear Recurrent Neural Networks (linear RNNs) have emerged as competitive
+alternatives to Transformers for sequence modeling, offering efficient training
+and linear-time inference. However, existing architectures face a fundamental
+trade-off between expressivity and efficiency, dictated by the structure of
+their state-transition matrices. While diagonal matrices used in architectures
+like Mamba, GLA, or mLSTM yield fast runtime, they suffer from severely limited
+expressivity. To address this, recent architectures such as (Gated) DeltaNet
+and RWKVv7 adopted a diagonal plus rank-1 structure, allowing simultaneous
+token-channel mixing, which overcomes some expressivity limitations with only a
+slight decrease in training efficiency. Building on the interpretation of
+DeltaNet's recurrence as performing one step of online gradient descent per
+token on an associative recall loss, we introduce DeltaProduct, which instead
+takes multiple ($n_h$) steps per token. This naturally leads to diagonal plus
+rank-$n_h$ state-transition matrices, formed as products of $n_h$ generalized
+Householder transformations, providing a tunable mechanism to balance
+expressivity and efficiency and a stable recurrence. Through extensive
+experiments, we demonstrate that DeltaProduct achieves superior state-tracking
+and language modeling capabilities while exhibiting significantly improved
+length extrapolation compared to DeltaNet. Additionally, we also strengthen the
+theoretical foundation of DeltaNet's expressivity by proving that it can solve
+dihedral group word problems in just two layers.",http://arxiv.org/pdf/2502.10297v1,,False
+Adversarial Mixup Unlearning,14/02/2025,"Zhuoyi Peng, Yixuan Tang, Yi Yang","Machine unlearning is a critical area of research aimed at safeguarding data
+privacy by enabling the removal of sensitive information from machine learning
+models. One unique challenge in this field is catastrophic unlearning, where
+erasing specific data from a well-trained model unintentionally removes
+essential knowledge, causing the model to deviate significantly from a
+retrained one. To address this, we introduce a novel approach that regularizes
+the unlearning process by utilizing synthesized mixup samples, which simulate
+the data susceptible to catastrophic effects. At the core of our approach is a
+generator-unlearner framework, MixUnlearn, where a generator adversarially
+produces challenging mixup examples, and the unlearner effectively forgets
+target information based on these synthesized data. Specifically, we first
+introduce a novel contrastive objective to train the generator in an
+adversarial direction: generating examples that prompt the unlearner to reveal
+information that should be forgotten, while losing essential knowledge. Then
+the unlearner, guided by two other contrastive loss terms, processes the
+synthesized and real data jointly to ensure accurate unlearning without losing
+critical knowledge, overcoming catastrophic effects. Extensive evaluations
+across benchmark datasets demonstrate that our method significantly outperforms
+state-of-the-art approaches, offering a robust solution to machine unlearning.
+This work not only deepens understanding of unlearning mechanisms but also lays
+the foundation for effective machine unlearning with mixup augmentation.",http://arxiv.org/pdf/2502.10288v1,,False
+Probabilistic Super-Resolution for High-Fidelity Physical System Simulations with Uncertainty Quantification,14/02/2025,"Pengyu Zhang, Connor Duffin, Alex Glyn-Davies, Arnaud Vadeboncoeur, Mark Girolami","Super-resolution (SR) is a promising tool for generating high-fidelity
+simulations of physical systems from low-resolution data, enabling fast and
+accurate predictions in engineering applications. However, existing
+deep-learning based SR methods, require large labeled datasets and lack
+reliable uncertainty quantification (UQ), limiting their applicability in
+real-world scenarios. To overcome these challenges, we propose a probabilistic
+SR framework that leverages the Statistical Finite Element Method and
+energy-based generative modeling. Our method enables efficient high-resolution
+predictions with inherent UQ, while eliminating the need for extensive labeled
+datasets. The method is validated on a 2D Poisson example and compared with
+bicubic interpolation upscaling. Results demonstrate a computational speed-up
+over high-resolution numerical solvers while providing reliable uncertainty
+estimates.",http://arxiv.org/pdf/2502.10280v1,,False
+Looking around you: external information enhances representations for event sequences,14/02/2025,"Maria Kovaleva, Petr Sokerin, Sofia Krehova, Alexey Zaytsev","Representation learning produces models in different domains, such as store
+purchases, client transactions, and general people's behaviour. However, such
+models for sequential data usually process a single sequence, ignoring context
+from other relevant ones, even in domains with rapidly changing external
+environments like finance or misguiding the prediction for a user with no
+recent events.
+  We are the first to propose a method that aggregates information from
+multiple user representations augmenting a specific user one for a scenario of
+multiple co-occurring event sequences. Our study considers diverse aggregation
+approaches, ranging from simple pooling techniques to trainable attention-based
+approaches, especially Kernel attention aggregation, that can highlight more
+complex information flow from other users. The proposed method operates atop an
+existing encoder and supports its efficient fine-tuning. Across considered
+datasets of financial transactions and downstream tasks, Kernel attention
+improves ROC AUC scores, both with and without fine-tuning, while mean pooling
+yields a smaller but still significant gain.",http://arxiv.org/pdf/2502.10205v1,,False
+From Markov to Laplace: How Mamba In-Context Learns Markov Chains,14/02/2025,"Marco Bondaschi, Nived Rajaraman, Xiuying Wei, Kannan Ramchandran, Razvan Pascanu, Caglar Gulcehre, Michael Gastpar, Ashok Vardhan Makkuva","While transformer-based language models have driven the AI revolution thus
+far, their computational complexity has spurred growing interest in viable
+alternatives, such as structured state space sequence models (SSMs) and
+Selective SSMs. Among these, Mamba (S6) and its variant Mamba-2 have shown
+remarkable inference speed ups over transformers while achieving comparable or
+superior performance on complex language modeling tasks. However, despite these
+architectural innovations and empirical successes, the fundamental learning
+capabilities of Mamba remain poorly understood. In this paper, we address this
+gap by studying in-context learning (ICL) on Markov chains and uncovering a
+surprising phenomenon: unlike transformers, even a single-layer Mamba
+efficiently learns the in-context Laplacian smoothing estimator, which is both
+Bayes and minimax optimal, for all Markovian orders. To explain this, we
+theoretically characterize the representation capacity of Mamba and reveal the
+fundamental role of convolution in enabling it to represent the optimal
+Laplacian smoothing. These theoretical insights align strongly with empirical
+results and, to the best of our knowledge, represent the first formal
+connection between Mamba and optimal statistical estimators. Finally, we
+outline promising research directions inspired by these findings.",http://arxiv.org/pdf/2502.10178v1,,False
+Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model,14/02/2025,"Bo Ni, Markus J. Buehler","Proteins are dynamic molecular machines whose biological functions, spanning
+enzymatic catalysis, signal transduction, and structural adaptation, are
+intrinsically linked to their motions. Designing proteins with targeted dynamic
+properties, however, remains a challenge due to the complex, degenerate
+relationships between sequence, structure, and molecular motion. Here, we
+introduce VibeGen, a generative AI framework that enables end-to-end de novo
+protein design conditioned on normal mode vibrations. VibeGen employs an
+agentic dual-model architecture, comprising a protein designer that generates
+sequence candidates based on specified vibrational modes and a protein
+predictor that evaluates their dynamic accuracy. This approach synergizes
+diversity, accuracy, and novelty during the design process. Via full-atom
+molecular simulations as direct validation, we demonstrate that the designed
+proteins accurately reproduce the prescribed normal mode amplitudes across the
+backbone while adopting various stable, functionally relevant structures.
+Notably, generated sequences are de novo, exhibiting no significant similarity
+to natural proteins, thereby expanding the accessible protein space beyond
+evolutionary constraints. Our work integrates protein dynamics into generative
+protein design, and establishes a direct, bidirectional link between sequence
+and vibrational behavior, unlocking new pathways for engineering biomolecules
+with tailored dynamical and functional properties. This framework holds broad
+implications for the rational design of flexible enzymes, dynamic scaffolds,
+and biomaterials, paving the way toward dynamics-informed AI-driven protein
+engineering.",http://arxiv.org/pdf/2502.10173v1,,False
+SessionRec: Next Session Prediction Paradigm For Generative Sequential Recommendation,14/02/2025,"Lei Huang, Hao Guo, Linzhi Peng, Long Zhang, Xiaoteng Wang, Daoyuan Wang, Shichao Wang, Jinpeng Wang, Lei Wang, Sheng Chen","We introduce SessionRec, a novel next-session prediction paradigm (NSPP) for
+generative sequential recommendation, addressing the fundamental misalignment
+between conventional next-item prediction paradigm (NIPP) and real-world
+recommendation scenarios. Unlike NIPP's item-level autoregressive generation
+that contradicts actual session-based user interactions, our framework
+introduces a session-aware representation learning through hierarchical
+sequence aggregation (intra/inter-session), reducing attention computation
+complexity while enabling implicit modeling of massive negative interactions,
+and a session-based prediction objective that better captures users' diverse
+interests through multi-item recommendation in next sessions. Moreover, we
+found that incorporating a rank loss for items within the session under the
+next session prediction paradigm can significantly improve the ranking
+effectiveness of generative sequence recommendation models. We also verified
+that SessionRec exhibits clear power-law scaling laws similar to those observed
+in LLMs. Extensive experiments conducted on public datasets and online A/B test
+in Meituan App demonstrate the effectiveness of SessionRec. The proposed
+paradigm establishes new foundations for developing industrial-scale generative
+recommendation systems through its model-agnostic architecture and
+computational efficiency.",http://arxiv.org/pdf/2502.10157v1,,False
+Video Soundtrack Generation by Aligning Emotions and Temporal Boundaries,14/02/2025,"Serkan Sulun, Paula Viana, Matthew E. P. Davies","We introduce EMSYNC, a video-based symbolic music generation model that
+aligns music with a video's emotional content and temporal boundaries. It
+follows a two-stage framework, where a pretrained video emotion classifier
+extracts emotional features, and a conditional music generator produces MIDI
+sequences guided by both emotional and temporal cues. We introduce boundary
+offsets, a novel temporal conditioning mechanism that enables the model to
+anticipate and align musical chords with scene cuts. Unlike existing models,
+our approach retains event-based encoding, ensuring fine-grained timing control
+and expressive musical nuances. We also propose a mapping scheme to bridge the
+video emotion classifier, which produces discrete emotion categories, with the
+emotion-conditioned MIDI generator, which operates on continuous-valued
+valence-arousal inputs. In subjective listening tests, EMSYNC outperforms
+state-of-the-art models across all subjective metrics, for music theory-aware
+participants as well as the general listeners.",http://arxiv.org/pdf/2502.10154v1,,False
+NeuroXVocal: Detection and Explanation of Alzheimer's Disease through Non-invasive Analysis of Picture-prompted Speech,14/02/2025,"Nikolaos Ntampakis, Konstantinos Diamantaras, Ioanna Chouvarda, Magda Tsolaki, Vasileios Argyriou, Panagiotis Sarigianndis","The early diagnosis of Alzheimer's Disease (AD) through non invasive methods
+remains a significant healthcare challenge. We present NeuroXVocal, a novel
+dual-component system that not only classifies but also explains potential AD
+cases through speech analysis. The classification component (Neuro) processes
+three distinct data streams: acoustic features capturing speech patterns and
+voice characteristics, textual features extracted from speech transcriptions,
+and precomputed embeddings representing linguistic patterns. These streams are
+fused through a custom transformer-based architecture that enables robust
+cross-modal interactions. The explainability component (XVocal) implements a
+Retrieval-Augmented Generation (RAG) approach, leveraging Large Language Models
+combined with a domain-specific knowledge base of AD research literature. This
+architecture enables XVocal to retrieve relevant clinical studies and research
+findings to generate evidence-based context-sensitive explanations of the
+acoustic and linguistic markers identified in patient speech. Using the IS2021
+ADReSSo Challenge benchmark dataset, our system achieved state-of-the-art
+performance with 95.77% accuracy in AD classification, significantly
+outperforming previous approaches. The explainability component was
+qualitatively evaluated using a structured questionnaire completed by medical
+professionals, validating its clinical relevance. NeuroXVocal's unique
+combination of high-accuracy classification and interpretable,
+literature-grounded explanations demonstrates its potential as a practical tool
+for supporting clinical AD diagnosis.",http://arxiv.org/pdf/2502.10108v1,,False
+Manual2Skill: Learning to Read Manuals and Acquire Robotic Skills for Furniture Assembly Using Vision-Language Models,14/02/2025,"Chenrui Tie, Shengxiang Sun, Jinxuan Zhu, Yiwei Liu, Jingxiang Guo, Yue Hu, Haonan Chen, Junting Chen, Ruihai Wu, Lin Shao","Humans possess an extraordinary ability to understand and execute complex
+manipulation tasks by interpreting abstract instruction manuals. For robots,
+however, this capability remains a substantial challenge, as they cannot
+interpret abstract instructions and translate them into executable actions. In
+this paper, we present Manual2Skill, a novel framework that enables robots to
+perform complex assembly tasks guided by high-level manual instructions. Our
+approach leverages a Vision-Language Model (VLM) to extract structured
+information from instructional images and then uses this information to
+construct hierarchical assembly graphs. These graphs represent parts,
+subassemblies, and the relationships between them. To facilitate task
+execution, a pose estimation model predicts the relative 6D poses of components
+at each assembly step. At the same time, a motion planning module generates
+actionable sequences for real-world robotic implementation. We demonstrate the
+effectiveness of Manual2Skill by successfully assembling several real-world
+IKEA furniture items. This application highlights its ability to manage
+long-horizon manipulation tasks with both efficiency and precision,
+significantly enhancing the practicality of robot learning from instruction
+manuals. This work marks a step forward in advancing robotic systems capable of
+understanding and executing complex manipulation tasks in a manner akin to
+human capabilities.",http://arxiv.org/pdf/2502.10090v1,,False
+Diverse Inference and Verification for Advanced Reasoning,14/02/2025,"Iddo Drori, Gaston Longhitano, Mao Mao, Seunghwan Hyun, Yuke Zhang, Sungjun Park, Zachary Meeks, Xin-Yu Zhang, Ben Segev, Howard Yong, Nakul Verma, Avi Shporer, Alon Amit, Madeleine Udell","Reasoning LLMs such as OpenAI o1, o3 and DeepSeek R1 have made significant
+progress in mathematics and coding, yet find challenging advanced tasks such as
+International Mathematical Olympiad (IMO) combinatorics problems, Abstraction
+and Reasoning Corpus (ARC) puzzles, and Humanity's Last Exam (HLE) questions.
+We use a diverse inference approach that combines multiple models and methods
+at test time. We find that verifying mathematics and code problems, and
+rejection sampling on other problems is simple and effective. We automatically
+verify correctness of solutions to IMO problems by Lean, and ARC puzzles by
+code, and find that best-of-N effectively answers HLE questions. Our approach
+increases answer accuracy on IMO combinatorics problems from 33.3% to 77.8%,
+accuracy on HLE questions from 8% to 37%, and solves 80% of ARC puzzles that
+948 humans could not and 26.5% of ARC puzzles that o3 high compute does not.
+Test-time simulations, reinforcement learning, and meta-learning with inference
+feedback improve generalization by adapting agent graph representations and
+varying prompts, code, and datasets. Our approach is reliable, robust, and
+scalable, and in the spirit of reproducible research, we will make it publicly
+available upon publication.",http://arxiv.org/pdf/2502.09955v1,,False
+Thompson Sampling for Repeated Newsvendor,14/02/2025,"Weizhou Zhang, Chen Li, Hanzhang Qin, Yunbei Xu, Ruihao Zhu","In this paper, we investigate the performance of Thompson Sampling (TS) for
+online learning with censored feedback, focusing primarily on the classic
+repeated newsvendor model--a foundational framework in inventory
+management--and demonstrating how our techniques can be naturally extended to a
+broader class of problems. We model demand using a Weibull distribution and
+initialize TS with a Gamma prior to dynamically adjust order quantities. Our
+analysis establishes optimal (up to logarithmic factors) frequentist regret
+bounds for TS without imposing restrictive prior assumptions. More importantly,
+it yields novel and highly interpretable insights on how TS addresses the
+exploration-exploitation trade-off in the repeated newsvendor setting.
+Specifically, our results show that when past order quantities are sufficiently
+large to overcome censoring, TS accurately estimates the unknown demand
+parameters, leading to near-optimal ordering decisions. Conversely, when past
+orders are relatively small, TS automatically increases future order quantities
+to gather additional demand information. Extensive numerical simulations
+further demonstrate that TS outperforms more conservative and widely-used
+approaches such as online convex optimization, upper confidence bounds, and
+myopic Bayesian dynamic programming. This study also lays the foundation for
+exploring general online learning problems with censored feedback.",http://arxiv.org/pdf/2502.09900v1,,False
+Video2Policy: Scaling up Manipulation Tasks in Simulation through Internet Videos,14/02/2025,"Weirui Ye, Fangchen Liu, Zheng Ding, Yang Gao, Oleh Rybkin, Pieter Abbeel","Simulation offers a promising approach for cheaply scaling training data for
+generalist policies. To scalably generate data from diverse and realistic
+tasks, existing algorithms either rely on large language models (LLMs) that may
+hallucinate tasks not interesting for robotics; or digital twins, which require
+careful real-to-sim alignment and are hard to scale. To address these
+challenges, we introduce Video2Policy, a novel framework that leverages
+internet RGB videos to reconstruct tasks based on everyday human behavior. Our
+approach comprises two phases: (1) task generation in simulation from videos;
+and (2) reinforcement learning utilizing in-context LLM-generated reward
+functions iteratively. We demonstrate the efficacy of Video2Policy by
+reconstructing over 100 videos from the Something-Something-v2 (SSv2) dataset,
+which depicts diverse and complex human behaviors on 9 different tasks. Our
+method can successfully train RL policies on such tasks, including complex and
+challenging tasks such as throwing. Finally, we show that the generated
+simulation data can be scaled up for training a general policy, and it can be
+transferred back to the real robot in a Real2Sim2Real way.",http://arxiv.org/pdf/2502.09886v1,,False

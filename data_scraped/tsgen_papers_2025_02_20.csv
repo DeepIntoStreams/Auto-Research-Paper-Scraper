@@ -1,0 +1,286 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+FlexTok: Resampling Images into 1D Token Sequences of Flexible Length,19/02/2025,"Roman Bachmann, Jesse Allardice, David Mizrahi, Enrico Fini, Oğuzhan Fatih Kar, Elmira Amirloo, Alaaeldin El-Nouby, Amir Zamir, Afshin Dehghan","Image tokenization has enabled major advances in autoregressive image
+generation by providing compressed, discrete representations that are more
+efficient to process than raw pixels. While traditional approaches use 2D grid
+tokenization, recent methods like TiTok have shown that 1D tokenization can
+achieve high generation quality by eliminating grid redundancies. However,
+these methods typically use a fixed number of tokens and thus cannot adapt to
+an image's inherent complexity. We introduce FlexTok, a tokenizer that projects
+2D images into variable-length, ordered 1D token sequences. For example, a
+256x256 image can be resampled into anywhere from 1 to 256 discrete tokens,
+hierarchically and semantically compressing its information. By training a
+rectified flow model as the decoder and using nested dropout, FlexTok produces
+plausible reconstructions regardless of the chosen token sequence length. We
+evaluate our approach in an autoregressive generation setting using a simple
+GPT-style Transformer. On ImageNet, this approach achieves an FID<2 across 8 to
+128 tokens, outperforming TiTok and matching state-of-the-art methods with far
+fewer tokens. We further extend the model to support to text-conditioned image
+generation and examine how FlexTok relates to traditional 2D tokenization. A
+key finding is that FlexTok enables next-token prediction to describe images in
+a coarse-to-fine ""visual vocabulary"", and that the number of tokens to generate
+depends on the complexity of the generation task.",http://arxiv.org/pdf/2502.13967v1,,False
+The Computational Advantage of Depth: Learning High-Dimensional Hierarchical Functions with Gradient Descent,19/02/2025,"Yatin Dandi, Luca Pesce, Lenka Zdeborová, Florent Krzakala","Understanding the advantages of deep neural networks trained by gradient
+descent (GD) compared to shallow models remains an open theoretical challenge.
+While the study of multi-index models with Gaussian data in high dimensions has
+provided analytical insights into the benefits of GD-trained neural networks
+over kernels, the role of depth in improving sample complexity and
+generalization in GD-trained networks remains poorly understood. In this paper,
+we introduce a class of target functions (single and multi-index Gaussian
+hierarchical targets) that incorporate a hierarchy of latent subspace
+dimensionalities. This framework enables us to analytically study the learning
+dynamics and generalization performance of deep networks compared to shallow
+ones in the high-dimensional limit. Specifically, our main theorem shows that
+feature learning with GD reduces the effective dimensionality, transforming a
+high-dimensional problem into a sequence of lower-dimensional ones. This
+enables learning the target function with drastically less samples than with
+shallow networks. While the results are proven in a controlled training
+setting, we also discuss more common training procedures and argue that they
+learn through the same mechanisms. These findings open the way to further
+quantitative studies of the crucial role of depth in learning hierarchical
+structures with deep networks.",http://arxiv.org/pdf/2502.13961v1,,False
+Playing Hex and Counter Wargames using Reinforcement Learning and Recurrent Neural Networks,19/02/2025,"Guilherme Palma, Pedro A. Santos, João Dias","Hex and Counter Wargames are adversarial two-player simulations of real
+military conflicts requiring complex strategic decision-making. Unlike
+classical board games, these games feature intricate terrain/unit interactions,
+unit stacking, large maps of varying sizes, and simultaneous move and combat
+decisions involving hundreds of units. This paper introduces a novel system
+designed to address the strategic complexity of Hex and Counter Wargames by
+integrating cutting-edge advancements in Recurrent Neural Networks with
+AlphaZero, a reliable modern Reinforcement Learning algorithm. The system
+utilizes a new Neural Network architecture developed from existing research,
+incorporating innovative state and action representations tailored to these
+specific game environments. With minimal training, our solution has shown
+promising results in typical scenarios, demonstrating the ability to generalize
+across different terrain and tactical situations. Additionally, we explore the
+system's potential to scale to larger map sizes. The developed system is openly
+accessible, facilitating continued research and exploration within this
+challenging domain.",http://arxiv.org/pdf/2502.13918v1,,False
+PSCon: Toward Conversational Product Search,19/02/2025,"Jie Zou, Mohammad Aliannejadi, Evangelos Kanoulas, Shuxi Han, Heli Ma, Zheng Wang, Yang Yang, Heng Tao Shen","Conversational Product Search (CPS) is confined to simulated conversations
+due to the lack of real-world CPS datasets that reflect human-like language.
+Additionally, current conversational datasets are limited to support
+cross-market and multi-lingual usage. In this paper, we introduce a new CPS
+data collection protocol and present PSCon, a novel CPS dataset designed to
+assist product search via human-like conversations. The dataset is constructed
+using a coached human-to-human data collection protocol and supports two
+languages and dual markets. Also, the dataset enables thorough exploration of
+six subtasks of CPS: user intent detection, keyword extraction, system action
+prediction, question selection, item ranking, and response generation.
+Furthermore, we also offer an analysis of the dataset and propose a benchmark
+model on the proposed CPS dataset.",http://arxiv.org/pdf/2502.13881v1,,False
+Poster: SpiderSim: Multi-Agent Driven Theoretical Cybersecurity Simulation for Industrial Digitalization,19/02/2025,"Jiaqi Li, Xizhong Guo, Yang Zhao, Lvyang Zhang, Lidong Zhai","Rapid industrial digitalization has created intricate cybersecurity demands
+that necessitate effective validation methods. While cyber ranges and
+simulation platforms are widely deployed, they frequently face limitations in
+scenario diversity and creation efficiency. In this paper, we present
+SpiderSim, a theoretical cybersecurity simulation platform enabling rapid and
+lightweight scenario generation for industrial digitalization security
+research. At its core, our platform introduces three key innovations: a
+structured framework for unified scenario modeling, a multi-agent collaboration
+mechanism for automated generation, and modular atomic security capabilities
+for flexible scenario composition. Extensive implementation trials across
+multiple industrial digitalization contexts, including marine ranch monitoring
+systems, validate our platform's capacity for broad scenario coverage with
+efficient generation processes. Built on solid theoretical foundations and
+released as open-source software, SpiderSim facilitates broader research and
+development in automated security testing for industrial digitalization.",http://arxiv.org/pdf/2502.13778v1,,False
+GPA: Grover Policy Agent for Generating Optimal Quantum Sensor Circuits,19/02/2025,"Ahmad Alomari, Sathish A. P. Kumar","This study proposes a GPA for designing optimal Quantum Sensor Circuits
+(QSCs) to address complex quantum physics problems. The GPA consists of two
+parts: the Quantum Policy Evaluation (QPE) and the Quantum Policy Improvement
+(QPI). The QPE performs phase estimation to generate the search space, while
+the QPI utilizes Grover search and amplitude amplification techniques to
+efficiently identify an optimal policy that generates optimal QSCs. The GPA
+generates QSCs by selecting sequences of gates that maximize the Quantum Fisher
+Information (QFI) while minimizing the number of gates. The QSCs generated by
+the GPA are capable of producing entangled quantum states, specifically the
+squeezed states. High QFI indicates increased sensitivity to parameter changes,
+making the circuit useful for quantum state estimation and control tasks.
+Evaluation of the GPA on a QSC that consists of two qubits and a sequence of
+R_x, R_y, and S gates demonstrates its efficiency in generating optimal QSCs
+with a QFI of 1. Compared to existing quantum agents, the GPA achieves higher
+QFI with fewer gates, demonstrating a more efficient and scalable approach to
+the design of QSCs. This work illustrates the potential computational power of
+quantum agents for solving quantum physics problems",http://arxiv.org/pdf/2502.13755v1,,False
+Reverse Markov Learning: Multi-Step Generative Models for Complex Distributions,19/02/2025,"Xinwei Shen, Nicolai Meinshausen, Tong Zhang","Learning complex distributions is a fundamental challenge in contemporary
+applications. Generative models, such as diffusion models, have demonstrated
+remarkable success in overcoming many limitations of traditional statistical
+methods. Shen and Meinshausen (2024) introduced engression, a generative
+approach based on scoring rules that maps noise (and covariates, if available)
+directly to data. While effective, engression struggles with highly complex
+distributions, such as those encountered in image data. In this work, we extend
+engression to improve its capability in learning complex distributions. We
+propose a framework that defines a general forward process transitioning from
+the target distribution to a known distribution (e.g., Gaussian) and then
+learns a reverse Markov process using multiple engression models. This reverse
+process reconstructs the target distribution step by step. Our approach
+supports general forward processes, allows for dimension reduction, and
+naturally discretizes the generative process. As a special case, when using a
+diffusion-based forward process, our framework offers a method to discretize
+the training and inference of diffusion models efficiently. Empirical
+evaluations on simulated and climate data validate our theoretical insights,
+demonstrating the effectiveness of our approach in capturing complex
+distributions.",http://arxiv.org/pdf/2502.13747v1,,False
+MoM: Linear Sequence Modeling with Mixture-of-Memories,19/02/2025,"Jusen Du, Weigao Sun, Disen Lan, Jiaxi Hu, Yu Cheng","Linear sequence modeling methods, such as linear attention, state space
+modeling, and linear RNNs, offer significant efficiency improvements by
+reducing the complexity of training and inference. However, these methods
+typically compress the entire input sequence into a single fixed-size memory
+state, which leads to suboptimal performance on recall-intensive downstream
+tasks. Drawing inspiration from neuroscience, particularly the brain's ability
+to maintain robust long-term memory while mitigating ""memory interference"", we
+introduce a novel architecture called Mixture-of-Memories (MoM). MoM utilizes
+multiple independent memory states, with a router network directing input
+tokens to specific memory states. This approach greatly enhances the overall
+memory capacity while minimizing memory interference. As a result, MoM performs
+exceptionally well on recall-intensive tasks, surpassing existing linear
+sequence modeling techniques. Despite incorporating multiple memory states, the
+computation of each memory state remains linear in complexity, allowing MoM to
+retain the linear-complexity advantage during training, while
+constant-complexity during inference. Our experimental results show that MoM
+significantly outperforms current linear sequence models on downstream language
+tasks, particularly recall-intensive tasks, and even achieves performance
+comparable to Transformer models. The code is released at
+https://github.com/OpenSparseLLMs/MoM and is also released as a part of
+https://github.com/OpenSparseLLMs/Linear-MoE.",http://arxiv.org/pdf/2502.13685v1,,False
+Integrating Inverse and Forward Modeling for Sparse Temporal Data from Sensor Networks,19/02/2025,"Julian Vexler, Björn Vieten, Martin Nelke, Stefan Kramer","We present CavePerception, a framework for the analysis of sparse data from
+sensor networks that incorporates elements of inverse modeling and forward
+modeling. By integrating machine learning with physical modeling in a
+hypotheses space, we aim to improve the interpretability of sparse, noisy, and
+potentially incomplete sensor data. The framework assumes data from a
+two-dimensional sensor network laid out in a graph structure that detects
+certain objects, with certain motion patterns. Examples of such sensors are
+magnetometers. Given knowledge about the objects and the way they act on the
+sensors, one can develop a data generator that produces data from simulated
+motions of the objects across the sensor field. The framework uses the
+simulated data to infer object behaviors across the sensor network. The
+approach is experimentally tested on real-world data, where magnetometers are
+used on an airport to detect and identify aircraft motions. Experiments
+demonstrate the value of integrating inverse and forward modeling, enabling
+intelligent systems to better understand and predict complex, sensor-driven
+events.",http://arxiv.org/pdf/2502.13638v1,,False
+ActionPiece: Contextually Tokenizing Action Sequences for Generative Recommendation,19/02/2025,"Yupeng Hou, Jianmo Ni, Zhankui He, Noveen Sachdeva, Wang-Cheng Kang, Ed H. Chi, Julian McAuley, Derek Zhiyuan Cheng","Generative recommendation (GR) is an emerging paradigm where user actions are
+tokenized into discrete token patterns and autoregressively generated as
+predictions. However, existing GR models tokenize each action independently,
+assigning the same fixed tokens to identical actions across all sequences
+without considering contextual relationships. This lack of context-awareness
+can lead to suboptimal performance, as the same action may hold different
+meanings depending on its surrounding context. To address this issue, we
+propose ActionPiece to explicitly incorporate context when tokenizing action
+sequences. In ActionPiece, each action is represented as a set of item
+features, which serve as the initial tokens. Given the action sequence corpora,
+we construct the vocabulary by merging feature patterns as new tokens, based on
+their co-occurrence frequency both within individual sets and across adjacent
+sets. Considering the unordered nature of feature sets, we further introduce
+set permutation regularization, which produces multiple segmentations of action
+sequences with the same semantics. Experiments on public datasets demonstrate
+that ActionPiece consistently outperforms existing action tokenization methods,
+improving NDCG@$10$ by $6.00\%$ to $12.82\%$.",http://arxiv.org/pdf/2502.13581v1,,False
+Model Evolution Framework with Genetic Algorithm for Multi-Task Reinforcement Learning,19/02/2025,"Yan Yu, Wengang Zhou, Yaodong Yang, Wanxuan Lu, Yingyan Hou, Houqiang Li","Multi-task reinforcement learning employs a single policy to complete various
+tasks, aiming to develop an agent with generalizability across different
+scenarios. Given the shared characteristics of tasks, the agent's learning
+efficiency can be enhanced through parameter sharing. Existing approaches
+typically use a routing network to generate specific routes for each task and
+reconstruct a set of modules into diverse models to complete multiple tasks
+simultaneously. However, due to the inherent difference between tasks, it is
+crucial to allocate resources based on task difficulty, which is constrained by
+the model's structure. To this end, we propose a Model Evolution framework with
+Genetic Algorithm (MEGA), which enables the model to evolve during training
+according to the difficulty of the tasks. When the current model is
+insufficient for certain tasks, the framework will automatically incorporate
+additional modules, enhancing the model's capabilities. Moreover, to adapt to
+our model evolution framework, we introduce a genotype module-level model,
+using binary sequences as genotype policies for model reconstruction, while
+leveraging a non-gradient genetic algorithm to optimize these genotype
+policies. Unlike routing networks with fixed output dimensions, our approach
+allows for the dynamic adjustment of the genotype policy length, enabling it to
+accommodate models with a varying number of modules. We conducted experiments
+on various robotics manipulation tasks in the Meta-World benchmark. Our
+state-of-the-art performance demonstrated the effectiveness of the MEGA
+framework. We will release our source code to the public.",http://arxiv.org/pdf/2502.13569v1,,False
+Enhancing Machine Learning Potentials through Transfer Learning across Chemical Elements,19/02/2025,"Sebastien Röcken, Julija Zavadlav","Machine Learning Potentials (MLPs) can enable simulations of ab initio
+accuracy at orders of magnitude lower computational cost. However, their
+effectiveness hinges on the availability of considerable datasets to ensure
+robust generalization across chemical space and thermodynamic conditions. The
+generation of such datasets can be labor-intensive, highlighting the need for
+innovative methods to train MLPs in data-scarce scenarios. Here, we introduce
+transfer learning of potential energy surfaces between chemically similar
+elements. Specifically, we leverage the trained MLP for silicon to initialize
+and expedite the training of an MLP for germanium. Utilizing classical force
+field and ab initio datasets, we demonstrate that transfer learning surpasses
+traditional training from scratch in force prediction, leading to more stable
+simulations and improved temperature transferability. These advantages become
+even more pronounced as the training dataset size decreases. The out-of-target
+property analysis shows that transfer learning leads to beneficial but
+sometimes adversarial effects. Our findings demonstrate that transfer learning
+across chemical elements is a promising technique for developing accurate and
+numerically stable MLPs, particularly in a data-scarce regime.",http://arxiv.org/pdf/2502.13522v1,,False
+Unlocking Multimodal Integration in EHRs: A Prompt Learning Framework for Language and Time Series Fusion,19/02/2025,"Shuai Niu, Jing Ma, Hongzhan Lin, Liang Bai, Zhihua Wang, Wei Bi, Yida Xu, Guo Li, Xian Yang","Large language models (LLMs) have shown remarkable performance in
+vision-language tasks, but their application in the medical field remains
+underexplored, particularly for integrating structured time series data with
+unstructured clinical notes. In clinical practice, dynamic time series data
+such as lab test results capture critical temporal patterns, while clinical
+notes provide rich semantic context. Merging these modalities is challenging
+due to the inherent differences between continuous signals and discrete text.
+To bridge this gap, we introduce ProMedTS, a novel self-supervised multimodal
+framework that employs prompt-guided learning to unify these heterogeneous data
+types. Our approach leverages lightweight anomaly detection to generate anomaly
+captions that serve as prompts, guiding the encoding of raw time series data
+into informative embeddings. These embeddings are aligned with textual
+representations in a shared latent space, preserving fine-grained temporal
+nuances alongside semantic insights. Furthermore, our framework incorporates
+tailored self-supervised objectives to enhance both intra- and inter-modal
+alignment. We evaluate ProMedTS on disease diagnosis tasks using real-world
+datasets, and the results demonstrate that our method consistently outperforms
+state-of-the-art approaches.",http://arxiv.org/pdf/2502.13509v1,,False
+Explore-Construct-Filter: An Automated Framework for Rich and Reliable API Knowledge Graph Construction,19/02/2025,"Yanbang Sun, Qing Huang, Xiaoxue Ren, Zhenchang Xing, Xiaohong Li, Junjie Wang","The API Knowledge Graph (API KG) is a structured network that models API
+entities and their relations, providing essential semantic insights for tasks
+such as API recommendation, code generation, and API misuse detection. However,
+constructing a knowledge-rich and reliable API KG presents several challenges.
+Existing schema-based methods rely heavily on manual annotations to design KG
+schemas, leading to excessive manual overhead. On the other hand, schema-free
+methods, due to the lack of schema guidance, are prone to introducing noise,
+reducing the KG's reliability. To address these issues, we propose the
+Explore-Construct-Filter framework, an automated approach for API KG
+construction based on large language models (LLMs). This framework consists of
+three key modules: 1) KG exploration: LLMs simulate the workflow of annotators
+to automatically design a schema with comprehensive type triples, minimizing
+human intervention; 2) KG construction: Guided by the schema, LLMs extract
+instance triples to construct a rich yet unreliable API KG; 3) KG filtering:
+Removing invalid type triples and suspicious instance triples to construct a
+rich and reliable API KG. Experimental results demonstrate that our method
+surpasses the state-of-the-art method, achieving a 25.2% improvement in F1
+score. Moreover, the Explore-Construct-Filter framework proves effective, with
+the KG exploration module increasing KG richness by 133.6% and the KG filtering
+module improving reliability by 26.6%. Finally, cross-model experiments confirm
+the generalizability of our framework.",http://arxiv.org/pdf/2502.13412v1,,False
+Generative Predictive Control: Flow Matching Policies for Dynamic and Difficult-to-Demonstrate Tasks,19/02/2025,"Vince Kurtz, Joel W. Burdick","Generative control policies have recently unlocked major progress in
+robotics. These methods produce action sequences via diffusion or flow
+matching, with training data provided by demonstrations. But despite enjoying
+considerable success on difficult manipulation problems, generative policies
+come with two key limitations. First, behavior cloning requires expert
+demonstrations, which can be time-consuming and expensive to obtain. Second,
+existing methods are limited to relatively slow, quasi-static tasks. In this
+paper, we leverage a tight connection between sampling-based predictive control
+and generative modeling to address each of these issues. In particular, we
+introduce generative predictive control, a supervised learning framework for
+tasks with fast dynamics that are easy to simulate but difficult to
+demonstrate. We then show how trained flow-matching policies can be
+warm-started at run-time, maintaining temporal consistency and enabling fast
+feedback rates. We believe that generative predictive control offers a
+complementary approach to existing behavior cloning methods, and hope that it
+paves the way toward generalist policies that extend beyond quasi-static
+demonstration-oriented tasks.",http://arxiv.org/pdf/2502.13406v1,,False
+MM-Verify: Enhancing Multimodal Reasoning with Chain-of-Thought Verification,19/02/2025,"Linzhuang Sun, Hao Liang, Jingxuan Wei, Bihui Yu, Tianpeng Li, Fan Yang, Zenan Zhou, Wentao Zhang","According to the Test-Time Scaling, the integration of External Slow-Thinking
+with the Verify mechanism has been demonstrated to enhance multi-round
+reasoning in large language models (LLMs). However, in the multimodal (MM)
+domain, there is still a lack of a strong MM-Verifier. In this paper, we
+introduce MM-Verifier and MM-Reasoner to enhance multimodal reasoning through
+longer inference and more robust verification. First, we propose a two-step MM
+verification data synthesis method, which combines a simulation-based tree
+search with verification and uses rejection sampling to generate high-quality
+Chain-of-Thought (COT) data. This data is then used to fine-tune the
+verification model, MM-Verifier. Additionally, we present a more efficient
+method for synthesizing MMCOT data, bridging the gap between text-based and
+multimodal reasoning. The synthesized data is used to fine-tune MM-Reasoner.
+Our MM-Verifier outperforms all larger models on the MathCheck, MathVista, and
+MathVerse benchmarks. Moreover, MM-Reasoner demonstrates strong effectiveness
+and scalability, with performance improving as data size increases. Finally,
+our approach achieves strong performance when combining MM-Reasoner and
+MM-Verifier, reaching an accuracy of 65.3 on MathVista, surpassing GPT-4o
+(63.8) with 12 rollouts.",http://arxiv.org/pdf/2502.13383v1,,False

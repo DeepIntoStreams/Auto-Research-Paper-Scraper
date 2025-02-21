@@ -1,0 +1,376 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Dynamic Concepts Personalization from Single Videos,20/02/2025,"Rameen Abdal, Or Patashnik, Ivan Skorokhodov, Willi Menapace, Aliaksandr Siarohin, Sergey Tulyakov, Daniel Cohen-Or, Kfir Aberman","Personalizing generative text-to-image models has seen remarkable progress,
+but extending this personalization to text-to-video models presents unique
+challenges. Unlike static concepts, personalizing text-to-video models has the
+potential to capture dynamic concepts, i.e., entities defined not only by their
+appearance but also by their motion. In this paper, we introduce
+Set-and-Sequence, a novel framework for personalizing Diffusion Transformers
+(DiTs)-based generative video models with dynamic concepts. Our approach
+imposes a spatio-temporal weight space within an architecture that does not
+explicitly separate spatial and temporal features. This is achieved in two key
+stages. First, we fine-tune Low-Rank Adaptation (LoRA) layers using an
+unordered set of frames from the video to learn an identity LoRA basis that
+represents the appearance, free from temporal interference. In the second
+stage, with the identity LoRAs frozen, we augment their coefficients with
+Motion Residuals and fine-tune them on the full video sequence, capturing
+motion dynamics. Our Set-and-Sequence framework results in a spatio-temporal
+weight space that effectively embeds dynamic concepts into the video model's
+output domain, enabling unprecedented editability and compositionality while
+setting a new benchmark for personalizing dynamic concepts.",http://arxiv.org/pdf/2502.14844v1,,False
+Making Universal Policies Universal,20/02/2025,"Niklas Höpner, David Kuric, Herke van Hoof","The development of a generalist agent capable of solving a wide range of
+sequential decision-making tasks remains a significant challenge. We address
+this problem in a cross-agent setup where agents share the same observation
+space but differ in their action spaces. Our approach builds on the universal
+policy framework, which decouples policy learning into two stages: a
+diffusion-based planner that generates observation sequences and an inverse
+dynamics model that assigns actions to these plans. We propose a method for
+training the planner on a joint dataset composed of trajectories from all
+agents. This method offers the benefit of positive transfer by pooling data
+from different agents, while the primary challenge lies in adapting shared
+plans to each agent's unique constraints. We evaluate our approach on the
+BabyAI environment, covering tasks of varying complexity, and demonstrate
+positive transfer across agents. Additionally, we examine the planner's
+generalisation ability to unseen agents and compare our method to traditional
+imitation learning approaches. By training on a pooled dataset from multiple
+agents, our universal policy achieves an improvement of up to $42.20\%$ in task
+completion accuracy compared to a policy trained on a dataset from a single
+agent.",http://arxiv.org/pdf/2502.14777v1,,False
+EAGER-LLM: Enhancing Large Language Models as Recommenders through Exogenous Behavior-Semantic Integration,20/02/2025,"Minjie Hong, Yan Xia, Zehan Wang, Jieming Zhu, Ye Wang, Sihang Cai, Xiaoda Yang, Quanyu Dai, Zhenhua Dong, Zhimeng Zhang, Zhou Zhao","Large language models (LLMs) are increasingly leveraged as foundational
+backbones in the development of advanced recommender systems, offering enhanced
+capabilities through their extensive knowledge and reasoning. Existing
+llm-based recommender systems (RSs) often face challenges due to the
+significant differences between the linguistic semantics of pre-trained LLMs
+and the collaborative semantics essential for RSs. These systems use
+pre-trained linguistic semantics but learn collaborative semantics from scratch
+via the llm-Backbone. However, LLMs are not designed for recommendations,
+leading to inefficient collaborative learning, weak result correlations, and
+poor integration of traditional RS features. To address these challenges, we
+propose EAGER-LLM, a decoder-only llm-based generative recommendation framework
+that integrates endogenous and exogenous behavioral and semantic information in
+a non-intrusive manner. Specifically, we propose 1)dual-source knowledge-rich
+item indices that integrates indexing sequences for exogenous signals, enabling
+efficient link-wide processing; 2)non-invasive multiscale alignment
+reconstruction tasks guide the model toward a deeper understanding of both
+collaborative and semantic signals; 3)an annealing adapter designed to finely
+balance the model's recommendation performance with its comprehension
+capabilities. We demonstrate EAGER-LLM's effectiveness through rigorous testing
+on three public benchmarks.",http://arxiv.org/pdf/2502.14735v1,10.1145/3696410.3714933,False
+Ranking Joint Policies in Dynamic Games using Evolutionary Dynamics,20/02/2025,"Natalia Koliou, George Vouros","Game-theoretic solution concepts, such as the Nash equilibrium, have been key
+to finding stable joint actions in multi-player games. However, it has been
+shown that the dynamics of agents' interactions, even in simple two-player
+games with few strategies, are incapable of reaching Nash equilibria,
+exhibiting complex and unpredictable behavior. Instead, evolutionary approaches
+can describe the long-term persistence of strategies and filter out transient
+ones, accounting for the long-term dynamics of agents' interactions. Our goal
+is to identify agents' joint strategies that result in stable behavior, being
+resistant to changes, while also accounting for agents' payoffs, in dynamic
+games. Towards this goal, and building on previous results, this paper proposes
+transforming dynamic games into their empirical forms by considering agents'
+strategies instead of agents' actions, and applying the evolutionary
+methodology $\alpha$-Rank to evaluate and rank strategy profiles according to
+their long-term dynamics. This methodology not only allows us to identify joint
+strategies that are strong through agents' long-term interactions, but also
+provides a descriptive, transparent framework regarding the high ranking of
+these strategies. Experiments report on agents that aim to collaboratively
+solve a stochastic version of the graph coloring problem. We consider different
+styles of play as strategies to define the empirical game, and train policies
+realizing these strategies, using the DQN algorithm. Then we run simulations to
+generate the payoff matrix required by $\alpha$-Rank to rank joint strategies.",http://arxiv.org/pdf/2502.14724v1,,False
+Building reliable sim driving agents by scaling self-play,20/02/2025,"Daphne Cornelisse, Aarav Pandya, Kevin Joseph, Joseph Suárez, Eugene Vinitsky","Simulation agents are essential for designing and testing systems that
+interact with humans, such as autonomous vehicles (AVs). These agents serve
+various purposes, from benchmarking AV performance to stress-testing the
+system's limits, but all use cases share a key requirement: reliability. A
+simulation agent should behave as intended by the designer, minimizing
+unintended actions like collisions that can compromise the signal-to-noise
+ratio of analyses. As a foundation for reliable sim agents, we propose scaling
+self-play to thousands of scenarios on the Waymo Open Motion Dataset under
+semi-realistic limits on human perception and control. Training from scratch on
+a single GPU, our agents nearly solve the full training set within a day. They
+generalize effectively to unseen test scenes, achieving a 99.8% goal completion
+rate with less than 0.8% combined collision and off-road incidents across
+10,000 held-out scenarios. Beyond in-distribution generalization, our agents
+show partial robustness to out-of-distribution scenes and can be fine-tuned in
+minutes to reach near-perfect performance in those cases. Demonstrations of
+agent behaviors can be found at this link. We open-source both the pre-trained
+agents and the complete code base. Demonstrations of agent behaviors can be
+found at \url{https://sites.google.com/view/reliable-sim-agents}.",http://arxiv.org/pdf/2502.14706v1,,False
+Not All Data are Good Labels: On the Self-supervised Labeling for Time Series Forecasting,20/02/2025,"Yuxuan Yang, Dalin Zhang, Yuxuan Liang, Hua Lu, Huan Li, Gang Chen","Time Series Forecasting (TSF) is a crucial task in various domains, yet
+existing TSF models rely heavily on high-quality data and insufficiently
+exploit all available data. This paper explores a novel self-supervised
+approach to re-label time series datasets by inherently constructing candidate
+datasets. During the optimization of a simple reconstruction network,
+intermediates are used as pseudo labels in a self-supervised paradigm,
+improving generalization for any predictor. We introduce the Self-Correction
+with Adaptive Mask (SCAM), which discards overfitted components and selectively
+replaces them with pseudo labels generated from reconstructions. Additionally,
+we incorporate Spectral Norm Regularization (SNR) to further suppress
+overfitting from a loss landscape perspective. Our experiments on eleven
+real-world datasets demonstrate that SCAM consistently improves the performance
+of various backbone models. This work offers a new perspective on constructing
+datasets and enhancing the generalization of TSF models through self-supervised
+learning.",http://arxiv.org/pdf/2502.14704v1,,False
+General Uncertainty Estimation with Delta Variances,20/02/2025,"Simon Schmitt, John Shawe-Taylor, Hado van Hasselt","Decision makers may suffer from uncertainty induced by limited data. This may
+be mitigated by accounting for epistemic uncertainty, which is however
+challenging to estimate efficiently for large neural networks. To this extent
+we investigate Delta Variances, a family of algorithms for epistemic
+uncertainty quantification, that is computationally efficient and convenient to
+implement. It can be applied to neural networks and more general functions
+composed of neural networks. As an example we consider a weather simulator with
+a neural-network-based step function inside -- here Delta Variances empirically
+obtain competitive results at the cost of a single gradient computation. The
+approach is convenient as it requires no changes to the neural network
+architecture or training procedure. We discuss multiple ways to derive Delta
+Variances theoretically noting that special cases recover popular techniques
+and present a unified perspective on multiple related methods. Finally we
+observe that this general perspective gives rise to a natural extension and
+empirically show its benefit.",http://arxiv.org/pdf/2502.14698v1,,False
+Confidence Estimation via Sequential Likelihood Mixing,20/02/2025,"Johannes Kirschner, Andreas Krause, Michele Meziu, Mojmir Mutny","We present a universal framework for constructing confidence sets based on
+sequential likelihood mixing. Building upon classical results from sequential
+analysis, we provide a unifying perspective on several recent lines of work,
+and establish fundamental connections between sequential mixing, Bayesian
+inference and regret inequalities from online estimation. The framework applies
+to any realizable family of likelihood functions and allows for non-i.i.d. data
+and anytime validity. Moreover, the framework seamlessly integrates standard
+approximate inference techniques, such as variational inference and
+sampling-based methods, and extends to misspecified model classes, while
+preserving provable coverage guarantees. We illustrate the power of the
+framework by deriving tighter confidence sequences for classical settings,
+including sequential linear regression and sparse estimation, with simplified
+proofs.",http://arxiv.org/pdf/2502.14689v1,,False
+seqKAN: Sequence processing with Kolmogorov-Arnold Networks,20/02/2025,"Tatiana Boura, Stasinos Konstantopoulos","Kolmogorov-Arnold Networks (KANs) have been recently proposed as a machine
+learning framework that is more interpretable and controllable than the
+multi-layer perceptron. Various network architectures have been proposed within
+the KAN framework targeting different tasks and application domains, including
+sequence processing.
+  This paper proposes seqKAN, a new KAN architecture for sequence processing.
+Although multiple sequence processing KAN architectures have already been
+proposed, we argue that seqKAN is more faithful to the core concept of the KAN
+framework. Furthermore, we empirically demonstrate that it achieves better
+results.
+  The empirical evaluation is performed on generated data from a complex
+physics problem on an interpolation and an extrapolation task. Using this
+dataset we compared seqKAN against a prior KAN network for timeseries
+prediction, recurrent deep networks, and symbolic regression. seqKAN
+substantially outperforms all architectures, particularly on the extrapolation
+dataset, while also being the most transparent.",http://arxiv.org/pdf/2502.14681v1,,False
+Disentangled Latent Spaces for Reduced Order Models using Deterministic Autoencoders,20/02/2025,"Henning Schwarz, Pyei Phyo Lin, Jens-Peter M. Zemke, Thomas Rung","Data-driven reduced-order models based on autoencoders generally lack
+interpretability compared to classical methods such as the proper orthogonal
+decomposition. More interpretability can be gained by disentangling the latent
+variables and analyzing the resulting modes. For this purpose, probabilistic
+$\beta$-variational autoencoders ($\beta$-VAEs) are frequently used in
+computational fluid dynamics and other simulation sciences. Using a benchmark
+periodic flow dataset, we show that competitive results can be achieved using
+non-probabilistic autoencoder approaches that either promote orthogonality or
+penalize correlation between latent variables. Compared to probabilistic
+autoencoders, these approaches offer more robustness with respect to the choice
+of hyperparameters entering the loss function. We further demonstrate the
+ability of a non-probabilistic approach to identify a reduced number of active
+latent variables by introducing a correlation penalty, a function also known
+from the use of $\beta$-VAE. The investigated probabilistic and
+non-probabilistic autoencoder models are finally used for the dimensionality
+reduction of aircraft ditching loads, which serves as an industrial application
+in this work.",http://arxiv.org/pdf/2502.14679v1,,False
+A Theory for Conditional Generative Modeling on Multiple Data Sources,20/02/2025,"Rongzhen Wang, Yan Zhang, Chenyu Zheng, Chongxuan Li, Guoqiang Wu","The success of large generative models has driven a paradigm shift,
+leveraging massive multi-source data to enhance model capabilities. However,
+the interaction among these sources remains theoretically underexplored. This
+paper takes the first step toward a rigorous analysis of multi-source training
+in conditional generative modeling, where each condition represents a distinct
+data source. Specifically, we establish a general distribution estimation error
+bound in average total variation distance for conditional maximum likelihood
+estimation based on the bracketing number. Our result shows that when source
+distributions share certain similarities and the model is expressive enough,
+multi-source training guarantees a sharper bound than single-source training.
+We further instantiate the general theory on conditional Gaussian estimation
+and deep generative models including autoregressive and flexible energy-based
+models, by characterizing their bracketing numbers. The results highlight that
+the number of sources and similarity among source distributions improve the
+advantage of multi-source training. Simulations and real-world experiments
+validate our theory. Code is available at:
+\url{https://github.com/ML-GSAI/Multi-Source-GM}.",http://arxiv.org/pdf/2502.14583v1,,False
+Multiscale Byte Language Models -- A Hierarchical Architecture for Causal Million-Length Sequence Modeling,20/02/2025,"Eric Egli, Matteo Manica, Jannis Born","Bytes form the basis of the digital world and thus are a promising building
+block for multimodal foundation models. Recently, Byte Language Models (BLMs)
+have emerged to overcome tokenization, yet the excessive length of bytestreams
+requires new architectural paradigms. Therefore, we present the Multiscale Byte
+Language Model (MBLM), a model-agnostic hierarchical decoder stack that allows
+training with context windows of $5$M bytes on single GPU in full model
+precision. We thoroughly examine MBLM's performance with Transformer and Mamba
+blocks on both unimodal and multimodal tasks. Our experiments demonstrate that
+hybrid architectures are efficient in handling extremely long byte sequences
+during training while achieving near-linear generational efficiency. To the
+best of our knowledge, we present the first evaluation of BLMs on visual Q\&A
+tasks and find that, despite serializing images and the absence of an encoder,
+a MBLM with pure next token prediction can match custom CNN-LSTM architectures
+with designated classification heads. We show that MBLMs exhibit strong
+adaptability in integrating diverse data representations, including pixel and
+image filestream bytes, underlining their potential toward omnimodal foundation
+models. Source code is publicly available at:
+https://github.com/ai4sd/multiscale-byte-lm",http://arxiv.org/pdf/2502.14553v1,,False
+Statistical Scenario Modelling and Lookalike Distributions for Multi-Variate AI Risk,20/02/2025,Elija Perrier,"Evaluating AI safety requires statistically rigorous methods and risk metrics
+for understanding how the use of AI affects aggregated risk. However, much AI
+safety literature focuses upon risks arising from AI models in isolation,
+lacking consideration of how modular use of AI affects risk distribution of
+workflow components or overall risk metrics. There is also a lack of
+statistical grounding enabling sensitisation of risk models in the presence of
+absence of AI to estimate causal contributions of AI. This is in part due to
+the dearth of AI impact data upon which to fit distributions. In this work, we
+address these gaps in two ways. First, we demonstrate how scenario modelling
+(grounded in established statistical techniques such as Markov chains, copulas
+and Monte Carlo simulation) can be used to model AI risk holistically. Second,
+we show how lookalike distributions from phenomena analogous to AI can be used
+to estimate AI impacts in the absence of directly observable data. We
+demonstrate the utility of our methods for benchmarking cumulative AI risk via
+risk analysis of a logistic scenario simulations.",http://arxiv.org/pdf/2502.14491v1,,False
+Entropy-UID: A Method for Optimizing Information Density,20/02/2025,Xinpeng Shou,"Balanced and efficient information flow is essential for optimizing language
+generation models. In this work, we propose Entropy-UID, a new token selection
+method that balances entropy and Uniform Information Density (UID) principles
+for enhanced efficiency of text generation. Our approach adaptively adjusts
+token selection by jointly minimizing entropy and surprisal, promoting more
+even information distribution across generated sequences. Theoretical
+validation demonstrates that Entropy-UID optimally reduces information spikes
+while maintaining fluency and coherence. The method has been evulated using
+information-theoretic metrics on multiple benchmark datasets, including
+WikiText-2, OpenWebText, and WMT. Experimental results show that Entropy-UID
+achieves lower surprisal and entropy variance compared to standard GPT-2 and
+alternative heuristics, leading to more balanced and human-like text
+generation. Our findings point towards the potential of leveraging
+information-theoretic constraints to refine token selection strategies in
+autoregressive language models.",http://arxiv.org/pdf/2502.14366v1,,False
+Textured 3D Regenerative Morphing with 3D Diffusion Prior,20/02/2025,"Songlin Yang, Yushi Lan, Honghua Chen, Xingang Pan","Textured 3D morphing creates smooth and plausible interpolation sequences
+between two 3D objects, focusing on transitions in both shape and texture. This
+is important for creative applications like visual effects in filmmaking.
+Previous methods rely on establishing point-to-point correspondences and
+determining smooth deformation trajectories, which inherently restrict them to
+shape-only morphing on untextured, topologically aligned datasets. This
+restriction leads to labor-intensive preprocessing and poor generalization. To
+overcome these challenges, we propose a method for 3D regenerative morphing
+using a 3D diffusion prior. Unlike previous methods that depend on explicit
+correspondences and deformations, our method eliminates the additional need for
+obtaining correspondence and uses the 3D diffusion prior to generate morphing.
+Specifically, we introduce a 3D diffusion model and interpolate the source and
+target information at three levels: initial noise, model parameters, and
+condition features. We then explore an Attention Fusion strategy to generate
+more smooth morphing sequences. To further improve the plausibility of semantic
+interpolation and the generated 3D surfaces, we propose two strategies: (a)
+Token Reordering, where we match approximate tokens based on semantic analysis
+to guide implicit correspondences in the denoising process of the diffusion
+model, and (b) Low-Frequency Enhancement, where we enhance low-frequency
+signals in the tokens to improve the quality of generated surfaces.
+Experimental results show that our method achieves superior smoothness and
+plausibility in 3D morphing across diverse cross-category object pairs,
+offering a novel regenerative method for 3D morphing with textured
+representations.",http://arxiv.org/pdf/2502.14316v1,,False
+μRL: Discovering Transient Execution Vulnerabilities Using Reinforcement Learning,20/02/2025,"M. Caner Tol, Kemal Derya, Berk Sunar","We propose using reinforcement learning to address the challenges of
+discovering microarchitectural vulnerabilities, such as Spectre and Meltdown,
+which exploit subtle interactions in modern processors. Traditional methods
+like random fuzzing fail to efficiently explore the vast instruction space and
+often miss vulnerabilities that manifest under specific conditions. To overcome
+this, we introduce an intelligent, feedback-driven approach using RL. Our RL
+agents interact with the processor, learning from real-time feedback to
+prioritize instruction sequences more likely to reveal vulnerabilities,
+significantly improving the efficiency of the discovery process.
+  We also demonstrate that RL systems adapt effectively to various
+microarchitectures, providing a scalable solution across processor generations.
+By automating the exploration process, we reduce the need for human
+intervention, enabling continuous learning that uncovers hidden
+vulnerabilities. Additionally, our approach detects subtle signals, such as
+timing anomalies or unusual cache behavior, that may indicate
+microarchitectural weaknesses. This proposal advances hardware security testing
+by introducing a more efficient, adaptive, and systematic framework for
+protecting modern processors.
+  When unleashed on Intel Skylake-X and Raptor Lake microarchitectures, our RL
+agent was indeed able to generate instruction sequences that cause significant
+observable byte leakages through transient execution without generating any
+$\mu$code assists, faults or interrupts. The newly identified leaky sequences
+stem from a variety of Intel instructions, e.g. including SERIALIZE, VERR/VERW,
+CLMUL, MMX-x87 transitions, LSL+RDSCP and LAR. These initial results give
+credence to the proposed approach.",http://arxiv.org/pdf/2502.14307v1,,False
+Towards efficient quantum algorithms for diffusion probability models,20/02/2025,"Yunfei Wang, Ruoxi Jiang, Yingda Fan, Xiaowei Jia, Jens Eisert, Junyu Liu, Jin-Peng Liu","A diffusion probabilistic model (DPM) is a generative model renowned for its
+ability to produce high-quality outputs in tasks such as image and audio
+generation. However, training DPMs on large, high-dimensional datasets such as
+high-resolution images or audio incurs significant computational, energy, and
+hardware costs. In this work, we introduce efficient quantum algorithms for
+implementing DPMs through various quantum ODE solvers. These algorithms
+highlight the potential of quantum Carleman linearization for diverse
+mathematical structures, leveraging state-of-the-art quantum linear system
+solvers (QLSS) or linear combination of Hamiltonian simulations (LCHS).
+Specifically, we focus on two approaches: DPM-solver-$k$ which employs exact
+$k$-th order derivatives to compute a polynomial approximation of
+$\epsilon_\theta(x_\lambda,\lambda)$; and UniPC which uses finite difference of
+$\epsilon_\theta(x_\lambda,\lambda)$ at different points $(x_{s_m},
+\lambda_{s_m})$ to approximate higher-order derivatives. As such, this work
+represents one of the most direct and pragmatic applications of quantum
+algorithms to large-scale machine learning models, presumably talking
+substantial steps towards demonstrating the practical utility of quantum
+computing.",http://arxiv.org/pdf/2502.14252v1,,False
+OG-Gaussian: Occupancy Based Street Gaussians for Autonomous Driving,20/02/2025,"Yedong Shen, Xinran Zhang, Yifan Duan, Shiqi Zhang, Heng Li, Yilong Wu, Jianmin Ji, Yanyong Zhang","Accurate and realistic 3D scene reconstruction enables the lifelike creation
+of autonomous driving simulation environments. With advancements in 3D Gaussian
+Splatting (3DGS), previous studies have applied it to reconstruct complex
+dynamic driving scenes. These methods typically require expensive LiDAR sensors
+and pre-annotated datasets of dynamic objects. To address these challenges, we
+propose OG-Gaussian, a novel approach that replaces LiDAR point clouds with
+Occupancy Grids (OGs) generated from surround-view camera images using
+Occupancy Prediction Network (ONet). Our method leverages the semantic
+information in OGs to separate dynamic vehicles from static street background,
+converting these grids into two distinct sets of initial point clouds for
+reconstructing both static and dynamic objects. Additionally, we estimate the
+trajectories and poses of dynamic objects through a learning-based approach,
+eliminating the need for complex manual annotations. Experiments on Waymo Open
+dataset demonstrate that OG-Gaussian is on par with the current
+state-of-the-art in terms of reconstruction quality and rendering speed,
+achieving an average PSNR of 35.13 and a rendering speed of 143 FPS, while
+significantly reducing computational costs and economic overhead.",http://arxiv.org/pdf/2502.14235v1,,False
+Real-Time Sampling-based Online Planning for Drone Interception,20/02/2025,"Gilhyun Ryou, Lukas Lao Beyer, Sertac Karaman","This paper studies high-speed online planning in dynamic environments. The
+problem requires finding time-optimal trajectories that conform to system
+dynamics, meeting computational constraints for real-time adaptation, and
+accounting for uncertainty from environmental changes. To address these
+challenges, we propose a sampling-based online planning algorithm that
+leverages neural network inference to replace time-consuming nonlinear
+trajectory optimization, enabling rapid exploration of multiple trajectory
+options under uncertainty. The proposed method is applied to the drone
+interception problem, where a defense drone must intercept a target while
+avoiding collisions and handling imperfect target predictions. The algorithm
+efficiently generates trajectories toward multiple potential target drone
+positions in parallel. It then assesses trajectory reachability by comparing
+traversal times with the target drone's predicted arrival time, ultimately
+selecting the minimum-time reachable trajectory. Through extensive validation
+in both simulated and real-world environments, we demonstrate our method's
+capability for high-rate online planning and its adaptability to unpredictable
+movements in unstructured settings.",http://arxiv.org/pdf/2502.14231v1,,False
+Enhancing Pavement Sensor Data Acquisition for AI-Driven Transportation Research,20/02/2025,"Manish Kumar Krishne Gowda, Andrew Balmos, Shin Boonam, James V. Krogmeier","Effective strategies for sensor data management are essential for advancing
+transportation research, especially in the current data-driven era, due to the
+advent of novel applications in artificial intelligence. This paper presents
+comprehensive guidelines for managing transportation sensor data, encompassing
+both archived static data and real-time data streams. The real-time system
+architecture integrates various applications with data acquisition systems
+(DAQ). By deploying the in-house designed, open-source Avena software platform
+alongside the NATS messaging system as a secure communication broker, reliable
+data exchange is ensured. While robust databases like TimescaleDB facilitate
+organized storage, visualization platforms like Grafana provide real-time
+monitoring capabilities.
+  In contrast, static data standards address the challenges in handling
+unstructured, voluminous datasets. The standards advocate for a combination of
+cost-effective bulk cloud storage for unprocessed sensor data and relational
+databases for recording summarized analyses. They highlight the role of cloud
+data transfer tools like FME for efficient migration of sensor data from local
+storages onto the cloud. Further, integration of robust visualization tools
+into the framework helps in deriving patterns and trends from these complex
+datasets.
+  The proposals were applied to INDOT's real-world case studies involving the
+I-65 and I-69 Greenfield districts. For real-time data collection, Campbell
+Scientific DAQ systems were used, enabling continuous generation and monitoring
+of sensor metrics. In the case of the archived I-69 database, summary data was
+compiled in Oracle, while the unprocessed data was stored in SharePoint. The
+results underline the effectiveness of the proposed guidelines and motivate
+their adoption in research projects.",http://arxiv.org/pdf/2502.14222v1,,False
+Efficient Inverse Multiagent Learning,20/02/2025,"Denizalp Goktas, Amy Greenwald, Sadie Zhao, Alec Koppel, Sumitra Ganesh","In this paper, we study inverse game theory (resp. inverse multiagent
+learning) in which the goal is to find parameters of a game's payoff functions
+for which the expected (resp. sampled) behavior is an equilibrium. We formulate
+these problems as generative-adversarial (i.e., min-max) optimization problems,
+for which we develop polynomial-time algorithms to solve, the former of which
+relies on an exact first-order oracle, and the latter, a stochastic one. We
+extend our approach to solve inverse multiagent simulacral learning in
+polynomial time and number of samples. In these problems, we seek a simulacrum,
+meaning parameters and an associated equilibrium that replicate the given
+observations in expectation. We find that our approach outperforms the
+widely-used ARIMA method in predicting prices in Spanish electricity markets
+based on time-series data.",http://arxiv.org/pdf/2502.14160v1,,False

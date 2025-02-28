@@ -1,0 +1,302 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids,27/02/2025,"Toru Lin, Kartik Sachdev, Linxi Fan, Jitendra Malik, Yuke Zhu","Reinforcement learning has delivered promising results in achieving human- or
+even superhuman-level capabilities across diverse problem domains, but success
+in dexterous robot manipulation remains limited. This work investigates the key
+challenges in applying reinforcement learning to solve a collection of
+contact-rich manipulation tasks on a humanoid embodiment. We introduce novel
+techniques to overcome the identified challenges with empirical validation. Our
+main contributions include an automated real-to-sim tuning module that brings
+the simulated environment closer to the real world, a generalized reward design
+scheme that simplifies reward engineering for long-horizon contact-rich
+manipulation tasks, a divide-and-conquer distillation process that improves the
+sample efficiency of hard-exploration problems while maintaining sim-to-real
+performance, and a mixture of sparse and dense object representations to bridge
+the sim-to-real perception gap. We show promising results on three humanoid
+dexterous manipulation tasks, with ablation studies on each technique. Our work
+presents a successful approach to learning humanoid dexterous manipulation
+using sim-to-real reinforcement learning, achieving robust generalization and
+high performance without the need for human demonstration.",http://arxiv.org/pdf/2502.20396v1,,False
+Physics-Driven Data Generation for Contact-Rich Manipulation via Trajectory Optimization,27/02/2025,"Lujie Yang, H. J. Terry Suh, Tong Zhao, Bernhard Paus Graesdal, Tarik Kelestemur, Jiuguang Wang, Tao Pang, Russ Tedrake","We present a low-cost data generation pipeline that integrates physics-based
+simulation, human demonstrations, and model-based planning to efficiently
+generate large-scale, high-quality datasets for contact-rich robotic
+manipulation tasks. Starting with a small number of embodiment-flexible human
+demonstrations collected in a virtual reality simulation environment, the
+pipeline refines these demonstrations using optimization-based kinematic
+retargeting and trajectory optimization to adapt them across various robot
+embodiments and physical parameters. This process yields a diverse, physically
+consistent dataset that enables cross-embodiment data transfer, and offers the
+potential to reuse legacy datasets collected under different hardware
+configurations or physical parameters. We validate the pipeline's effectiveness
+by training diffusion policies from the generated datasets for challenging
+contact-rich manipulation tasks across multiple robot embodiments, including a
+floating Allegro hand and bimanual robot arms. The trained policies are
+deployed zero-shot on hardware for bimanual iiwa arms, achieving high success
+rates with minimal human input. Project website:
+https://lujieyang.github.io/physicsgen/.",http://arxiv.org/pdf/2502.20382v1,,False
+"Thinking Slow, Fast: Scaling Inference Compute with Distilled Reasoners",27/02/2025,"Daniele Paliotta, Junxiong Wang, Matteo Pagliardini, Kevin Y. Li, Aviv Bick, J. Zico Kolter, Albert Gu, François Fleuret, Tri Dao","Recent advancements have demonstrated that the performance of large language
+models (LLMs) can be significantly enhanced by scaling computational resources
+at test time. A common strategy involves generating multiple Chain-of-Thought
+(CoT) trajectories and aggregating their outputs through various selection
+mechanisms. This raises a fundamental question: can models with lower
+complexity leverage their superior generation throughput to outperform
+similarly sized Transformers for a fixed computational budget? To address this
+question and overcome the lack of strong subquadratic reasoners, we distill
+pure and hybrid Mamba models from pretrained Transformers. Trained on only 8
+billion tokens, our distilled models show strong performance and scaling on
+mathematical reasoning datasets while being much faster at inference for large
+batches and long sequences. Despite the zero-shot performance hit due to
+distillation, both pure and hybrid Mamba models can scale their coverage and
+accuracy performance past their Transformer teacher models under fixed time
+budgets, opening a new direction for scaling inference compute.",http://arxiv.org/pdf/2502.20339v1,,False
+Fast $\ell_1$-Regularized EEG Source Localization Using Variable Projection,27/02/2025,"Jack Michael Solomon, Rosemary Renaut, Matthias Chung","Electroencephalograms (EEG) are invaluable for treating neurological
+disorders, however, mapping EEG electrode readings to brain activity requires
+solving a challenging inverse problem. Due to the time series data, the use of
+$\ell_1$ regularization quickly becomes intractable for many solvers, and,
+despite the reconstruction advantages of $\ell_1$ regularization,
+$\ell_2$-based approaches such as sLORETA are used in practice. In this work,
+we formulate EEG source localization as a graphical generalized elastic net
+inverse problem and present a variable projected algorithm (VPAL) suitable for
+fast EEG source localization. We prove convergence of this solver for a broad
+class of separable convex, potentially non-smooth functions subject to linear
+constraints and include a modification of VPAL that reconstructs time points in
+sequence, suitable for real-time reconstruction. Our proposed methods are
+compared to state-of-the-art approaches including sLORETA and other methods for
+$\ell_1$-regularized inverse problems.",http://arxiv.org/pdf/2502.20304v1,,False
+Multiple Linked Tensor Factorization,27/02/2025,"Zhiyu Kang, Raghavendra B. Rao, Eric F. Lock","In biomedical research and other fields, it is now common to generate high
+content data that are both multi-source and multi-way. Multi-source data are
+collected from different high-throughput technologies while multi-way data are
+collected over multiple dimensions, yielding multiple tensor arrays.
+Integrative analysis of these data sets is needed, e.g., to capture and
+synthesize different facets of complex biological systems. However, despite
+growing interest in multi-source and multi-way factorization techniques,
+methods that can handle data that are both multi-source and multi-way are
+limited. In this work, we propose a Multiple Linked Tensors Factorization
+(MULTIFAC) method extending the CANDECOMP/PARAFAC (CP) decomposition to
+simultaneously reduce the dimension of multiple multi-way arrays and
+approximate underlying signal. We first introduce a version of the CP
+factorization with L2 penalties on the latent factors, leading to rank
+sparsity. When extended to multiple linked tensors, the method automatically
+reveals latent components that are shared across data sources or individual to
+each data source. We also extend the decomposition algorithm to its
+expectation-maximization (EM) version to handle incomplete data with
+imputation. Extensive simulation studies are conducted to demonstrate
+MULTIFAC's ability to (i) approximate underlying signal, (ii) identify shared
+and unshared structures, and (iii) impute missing data. The approach yields an
+interpretable decomposition on multi-way multi-omics data for a study on
+early-life iron deficiency.",http://arxiv.org/pdf/2502.20286v1,,False
+Generative adversarial neural networks for simulating neutrino interactions,27/02/2025,"Jose L. Bonilla, Krzysztof M. Graczyk, Artur M. Ankowski, Rwik Dharmapal Banerjee, Beata E. Kowal, Hemant Prasad, Jan T. Sobczyk","We propose a new approach to simulate neutrino scattering events as an
+alternative to the standard Monte Carlo generator approach. Generative
+adversarial neural network (GAN) models are developed to simulate
+neutrino-carbon collisions in the few-GeV energy range. The models produce
+scattering events for a given neutrino energy. GAN models are trained on
+simulation data from NuWro Monte Carlo event generator. Two GAN models have
+been obtained: one simulating only quasielastic neutrino-nucleus scatterings
+and another simulating all interactions at given neutrino energy. The
+performance of both models has been assessed using two statistical metrics. It
+is shown that both GAN models successfully reproduce the event distributions.",http://arxiv.org/pdf/2502.20244v1,,False
+Teasing Apart Architecture and Initial Weights as Sources of Inductive Bias in Neural Networks,27/02/2025,"Gianluca Bencomo, Max Gupta, Ioana Marinescu, R. Thomas McCoy, Thomas L. Griffiths","Artificial neural networks can acquire many aspects of human knowledge from
+data, making them promising as models of human learning. But what those
+networks can learn depends upon their inductive biases -- the factors other
+than the data that influence the solutions they discover -- and the inductive
+biases of neural networks remain poorly understood, limiting our ability to
+draw conclusions about human learning from the performance of these systems.
+Cognitive scientists and machine learning researchers often focus on the
+architecture of a neural network as a source of inductive bias. In this paper
+we explore the impact of another source of inductive bias -- the initial
+weights of the network -- using meta-learning as a tool for finding initial
+weights that are adapted for specific problems. We evaluate four widely-used
+architectures -- MLPs, CNNs, LSTMs, and Transformers -- by meta-training 430
+different models across three tasks requiring different biases and forms of
+generalization. We find that meta-learning can substantially reduce or entirely
+eliminate performance differences across architectures and data
+representations, suggesting that these factors may be less important as sources
+of inductive bias than is typically assumed. When differences are present,
+architectures and data representations that perform well without meta-learning
+tend to meta-train more effectively. Moreover, all architectures generalize
+poorly on problems that are far from their meta-training experience,
+underscoring the need for stronger inductive biases for robust generalization.",http://arxiv.org/pdf/2502.20237v1,,False
+A Generative Model Enhanced Multi-Agent Reinforcement Learning Method for Electric Vehicle Charging Navigation,27/02/2025,"Tianyang Qi, Shibo Chen, Jun Zhang","With the widespread adoption of electric vehicles (EVs), navigating for EV
+drivers to select a cost-effective charging station has become an important yet
+challenging issue due to dynamic traffic conditions, fluctuating electricity
+prices, and potential competition from other EVs. The state-of-the-art deep
+reinforcement learning (DRL) algorithms for solving this task still require
+global information about all EVs at the execution stage, which not only
+increases communication costs but also raises privacy issues among EV drivers.
+To overcome these drawbacks, we introduce a novel generative model-enhanced
+multi-agent DRL algorithm that utilizes only the EV's local information while
+achieving performance comparable to these state-of-the-art algorithms.
+Specifically, the policy network is implemented on the EV side, and a
+Conditional Variational Autoencoder-Long Short Term Memory (CVAE-LSTM)-based
+recommendation model is developed to provide recommendation information.
+Furthermore, a novel future charging competition encoder is designed to
+effectively compress global information, enhancing training performance. The
+multi-gradient descent algorithm (MGDA) is also utilized to adaptively balance
+the weight between the two parts of the training objective, resulting in a more
+stable training process. Simulations are conducted based on a practical area in
+Xi\'an, China. Experimental results show that our proposed algorithm, which
+relies on local information, outperforms existing local information-based
+methods and achieves less than 8\% performance loss compared to global
+information-based methods.",http://arxiv.org/pdf/2502.20068v1,,False
+Efficient and Universal Neural-Network Decoder for Stabilizer-Based Quantum Error Correction,27/02/2025,"Gengyuan Hu, Wanli Ouyang, Chao-Yang Lu, Chen Lin, Han-Sen Zhong","Quantum error correction is crucial for large-scale quantum computing, but
+the absence of efficient decoders for new codes like quantum low-density
+parity-check (QLDPC) codes has hindered progress. Here we introduce a universal
+decoder based on linear attention sequence modeling and graph neural network
+that operates directly on any stabilizer code's graph structure. Our numerical
+experiments demonstrate that this decoder outperforms specialized algorithms in
+both accuracy and speed across diverse stabilizer codes, including surface
+codes, color codes, and QLDPC codes. The decoder maintains linear time scaling
+with syndrome measurements and requires no structural modifications between
+different codes. For the Bivariate Bicycle code with distance 12, our approach
+achieves a 39.4% lower logical error rate than previous best decoders while
+requiring only ~1% of the decoding time. These results provide a practical,
+universal solution for quantum error correction, eliminating the need for
+code-specific decoders.",http://arxiv.org/pdf/2502.19971v1,,False
+Do Sparse Autoencoders Generalize? A Case Study of Answerability,27/02/2025,"Lovis Heindrich, Philip Torr, Fazl Barez, Veronika Thost","Sparse autoencoders (SAEs) have emerged as a promising approach in language
+model interpretability, offering unsupervised extraction of sparse features.
+For interpretability methods to succeed, they must identify abstract features
+across domains, and these features can often manifest differently in each
+context. We examine this through ""answerability""-a model's ability to recognize
+answerable questions. We extensively evaluate SAE feature generalization across
+diverse answerability datasets for Gemma 2 SAEs. Our analysis reveals that
+residual stream probes outperform SAE features within domains, but
+generalization performance differs sharply. SAE features demonstrate
+inconsistent transfer ability, and residual stream probes similarly show high
+variance out of distribution. Overall, this demonstrates the need for
+quantitative methods to predict feature generalization in SAE-based
+interpretability.",http://arxiv.org/pdf/2502.19964v1,,False
+Shifting the Paradigm: A Diffeomorphism Between Time Series Data Manifolds for Achieving Shift-Invariancy in Deep Learning,27/02/2025,"Berken Utku Demirel, Christian Holz","Deep learning models lack shift invariance, making them sensitive to input
+shifts that cause changes in output. While recent techniques seek to address
+this for images, our findings show that these approaches fail to provide
+shift-invariance in time series, where the data generation mechanism is more
+challenging due to the interaction of low and high frequencies. Worse, they
+also decrease performance across several tasks. In this paper, we propose a
+novel differentiable bijective function that maps samples from their
+high-dimensional data manifold to another manifold of the same dimension,
+without any dimensional reduction. Our approach guarantees that samples -- when
+subjected to random shifts -- are mapped to a unique point in the manifold
+while preserving all task-relevant information without loss. We theoretically
+and empirically demonstrate that the proposed transformation guarantees
+shift-invariance in deep learning models without imposing any limits to the
+shift. Our experiments on six time series tasks with state-of-the-art methods
+show that our approach consistently improves the performance while enabling
+models to achieve complete shift-invariance without modifying or imposing
+restrictions on the model's topology. The source code is available on
+\href{https://github.com/eth-siplab/Shifting-the-Paradigm}{GitHub}.",http://arxiv.org/pdf/2502.19921v1,,False
+LLM-driven Effective Knowledge Tracing by Integrating Dual-channel Difficulty,27/02/2025,"Jiahui Cen, Jianghao Lin, Weizhong Xuan, Dong Zhou, Jin Chen, Aimin Yang, Yongmei Zhou","Knowledge Tracing (KT) is a fundamental technology in intelligent tutoring
+systems used to simulate changes in students' knowledge state during learning,
+track personalized knowledge mastery, and predict performance. However, current
+KT models face three major challenges: (1) When encountering new questions,
+models face cold-start problems due to sparse interaction records, making
+precise modeling difficult; (2) Traditional models only use historical
+interaction records for student personalization modeling, unable to accurately
+track individual mastery levels, resulting in unclear personalized modeling;
+(3) The decision-making process is opaque to educators, making it challenging
+for them to understand model judgments. To address these challenges, we propose
+a novel Dual-channel Difficulty-aware Knowledge Tracing (DDKT) framework that
+utilizes Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG)
+for subjective difficulty assessment, while integrating difficulty bias-aware
+algorithms and student mastery algorithms for precise difficulty measurement.
+Our framework introduces three key innovations: (1) Difficulty Balance
+Perception Sequence (DBPS) - students' subjective perceptions combined with
+objective difficulty, measuring gaps between LLM-assessed difficulty,
+mathematical-statistical difficulty, and students' subjective perceived
+difficulty through attention mechanisms; (2) Difficulty Mastery Ratio (DMR) -
+precise modeling of student mastery levels through different difficulty zones;
+(3) Knowledge State Update Mechanism - implementing personalized knowledge
+acquisition through gated networks and updating student knowledge state.
+Experimental results on two real datasets show our method consistently
+outperforms nine baseline models, improving AUC metrics by 2% to 10% while
+effectively addressing cold-start problems and enhancing model
+interpretability.",http://arxiv.org/pdf/2502.19915v1,,False
+ConvCodeWorld: Benchmarking Conversational Code Generation in Reproducible Feedback Environments,27/02/2025,"Hojae Han, Seung-won Hwang, Rajhans Samdani, Yuxiong He","Large language models (LLMs) have proven invaluable for code generation,
+particularly in interactive settings. However, existing code generation
+benchmarks fail to capture the diverse feedback encountered in multi-turn
+interactions, limiting our ability to evaluate LLMs in these contexts. To
+address this gap, we present a set of novel benchmarks that explicitly model
+the quality of feedback provided to code generation LLMs. Our contributions are
+threefold: First, we introduce CONVCODEWORLD, a novel and reproducible
+environment for benchmarking interactive code generation. CONVCODEWORLD
+simulates 9 distinct interactive code generation scenarios while systematically
+combining three types of feedback: (a) compilation feedback; (b) execution
+feedback with varying test coverage; (c) verbal feedback generated by GPT-4o
+with different levels of expertise. Second, we introduce CONVCODEBENCH, a fast,
+static version of benchmark that uses pre-generated feedback logs, eliminating
+the need for costly dynamic verbal feedback generation while maintaining strong
+Spearman's rank correlations (0.82 to 0.99) with CONVCODEWORLD. Third,
+extensive evaluations of both closed-source and open-source LLMs including
+R1-Distill on CONVCODEWORLD reveal key insights: (a) LLM performance varies
+significantly based on the feedback provided; (b) Weaker LLMs, with sufficient
+feedback, can outperform single-turn results of state-of-the-art LLMs without
+feedback; (c) Training on a specific feedback combination can limit an LLM's
+ability to utilize unseen combinations; (d) LLMs solve problems in fewer turns
+(high MRR) may not solve as many problems overall (high Recall), and vice
+versa. All implementations and benchmarks will be made publicly available at
+https://huggingface.co/spaces/ConvCodeWorld/ConvCodeWorld",http://arxiv.org/pdf/2502.19852v1,,False
+In-Context Learning with Hypothesis-Class Guidance,27/02/2025,"Ziqian Lin, Shubham Kumar Bharti, Kangwook Lee","Recent research has investigated the underlying mechanisms of in-context
+learning (ICL) both theoretically and empirically, often using data generated
+from simple function classes. However, the existing work often focuses on the
+sequence consisting solely of labeled examples, while in practice, labeled
+examples are typically accompanied by an instruction, providing some side
+information about the task. In this work, we propose ICL with hypothesis-class
+guidance (ICL-HCG), a novel synthetic data model for ICL where the input
+context consists of the literal description of a (finite) hypothesis class
+$\mathcal{H}$ and $(x,y)$ pairs from a hypothesis chosen from $\mathcal{H}$.
+Under our framework ICL-HCG, we conduct extensive experiments to explore: (i) a
+variety of generalization abilities to new hypothesis classes; (ii) different
+model architectures; (iii) sample complexity; (iv) in-context data imbalance;
+(v) the role of instruction; and (vi) the effect of pretraining hypothesis
+diversity. As a result, we show that (a) Transformers can successfully learn
+ICL-HCG and generalize to unseen hypotheses and unseen hypothesis classes, and
+(b) compared with ICL without instruction, ICL-HCG achieves significantly
+higher accuracy, demonstrating the role of instructions.",http://arxiv.org/pdf/2502.19787v1,,False
+Training Robust Graph Neural Networks by Modeling Noise Dependencies,27/02/2025,"Yeonjun In, Kanghoon Yoon, Sukwon Yun, Kibum Kim, Sungchul Kim, Chanyoung Park","In real-world applications, node features in graphs often contain noise from
+various sources, leading to significant performance degradation in GNNs.
+Although several methods have been developed to enhance robustness, they rely
+on the unrealistic assumption that noise in node features is independent of the
+graph structure and node labels, thereby limiting their applicability. To this
+end, we introduce a more realistic noise scenario, dependency-aware noise on
+graphs (DANG), where noise in node features create a chain of noise
+dependencies that propagates to the graph structure and node labels. We propose
+a novel robust GNN, DA-GNN, which captures the causal relationships among
+variables in the data generating process (DGP) of DANG using variational
+inference. In addition, we present new benchmark datasets that simulate DANG in
+real-world applications, enabling more practical research on robust GNNs.
+Extensive experiments demonstrate that DA-GNN consistently outperforms existing
+baselines across various noise scenarios, including both DANG and conventional
+noise models commonly considered in this field.",http://arxiv.org/pdf/2502.19670v1,,False
+Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success,27/02/2025,"Moo Jin Kim, Chelsea Finn, Percy Liang","Recent vision-language-action models (VLAs) build upon pretrained
+vision-language models and leverage diverse robot datasets to demonstrate
+strong task execution, language following ability, and semantic generalization.
+Despite these successes, VLAs struggle with novel robot setups and require
+fine-tuning to achieve good performance, yet how to most effectively fine-tune
+them is unclear given many possible strategies. In this work, we study key VLA
+adaptation design choices such as different action decoding schemes, action
+representations, and learning objectives for fine-tuning, using OpenVLA as our
+representative base model. Our empirical analysis informs an Optimized
+Fine-Tuning (OFT) recipe that integrates parallel decoding, action chunking, a
+continuous action representation, and a simple L1 regression-based learning
+objective to altogether improve inference efficiency, policy performance, and
+flexibility in the model's input-output specifications. We propose OpenVLA-OFT,
+an instantiation of this recipe, which sets a new state of the art on the
+LIBERO simulation benchmark, significantly boosting OpenVLA's average success
+rate across four task suites from 76.5% to 97.1% while increasing action
+generation throughput by 26$\times$. In real-world evaluations, our fine-tuning
+recipe enables OpenVLA to successfully execute dexterous, high-frequency
+control tasks on a bimanual ALOHA robot and outperform other VLAs ($\pi_0$ and
+RDT-1B) fine-tuned using their default recipes, as well as strong imitation
+learning policies trained from scratch (Diffusion Policy and ACT) by up to 15%
+(absolute) in average success rate. We release code for OFT and pretrained
+model checkpoints at https://openvla-oft.github.io/.",http://arxiv.org/pdf/2502.19645v1,,False
+Sensor-Invariant Tactile Representation,27/02/2025,"Harsh Gupta, Yuchen Mo, Shengmiao Jin, Wenzhen Yuan","High-resolution tactile sensors have become critical for embodied perception
+and robotic manipulation. However, a key challenge in the field is the lack of
+transferability between sensors due to design and manufacturing variations,
+which result in significant differences in tactile signals. This limitation
+hinders the ability to transfer models or knowledge learned from one sensor to
+another. To address this, we introduce a novel method for extracting
+Sensor-Invariant Tactile Representations (SITR), enabling zero-shot transfer
+across optical tactile sensors. Our approach utilizes a transformer-based
+architecture trained on a diverse dataset of simulated sensor designs, allowing
+it to generalize to new sensors in the real world with minimal calibration.
+Experimental results demonstrate the method's effectiveness across various
+tactile sensing applications, facilitating data and model transferability for
+future advancements in the field.",http://arxiv.org/pdf/2502.19638v1,,False

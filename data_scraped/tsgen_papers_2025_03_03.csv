@@ -1,0 +1,399 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+BAnG: Bidirectional Anchored Generation for Conditional RNA Design,28/02/2025,"Roman Klypa, Alberto Bietti, Sergei Grudinin","Designing RNA molecules that interact with specific proteins is a critical
+challenge in experimental and computational biology. Existing computational
+approaches require a substantial amount of experimentally determined RNA
+sequences for each specific protein or a detailed knowledge of RNA structure,
+restricting their utility in practice. To address this limitation, we develop
+RNA-BAnG, a deep learning-based model designed to generate RNA sequences for
+protein interactions without these requirements. Central to our approach is a
+novel generative method, Bidirectional Anchored Generation (BAnG), which
+leverages the observation that protein-binding RNA sequences often contain
+functional binding motifs embedded within broader sequence contexts. We first
+validate our method on generic synthetic tasks involving similar localized
+motifs to those appearing in RNAs, demonstrating its benefits over existing
+generative approaches. We then evaluate our model on biological sequences,
+showing its effectiveness for conditional RNA sequence design given a binding
+protein.",http://arxiv.org/pdf/2502.21274v1,,False
+TimesBERT: A BERT-Style Foundation Model for Time Series Understanding,28/02/2025,"Haoran Zhang, Yong Liu, Yunzhong Qiu, Haixuan Liu, Zhongyi Pei, Jianmin Wang, Mingsheng Long","Time series analysis is crucial in diverse scenarios. Beyond forecasting,
+considerable real-world tasks are categorized into classification, imputation,
+and anomaly detection, underscoring different capabilities termed time series
+understanding in this paper. While GPT-style models have been positioned as
+foundation models for time series forecasting, the BERT-style architecture,
+which has made significant advances in natural language understanding, has not
+been fully unlocked for time series understanding, possibly attributed to the
+undesirable dropout of essential elements of BERT. In this paper, inspired by
+the shared multi-granularity structure between multivariate time series and
+multisentence documents, we design TimesBERT to learn generic representations
+of time series including temporal patterns and variate-centric characteristics.
+In addition to a natural adaptation of masked modeling, we propose a parallel
+task of functional token prediction to embody vital multi-granularity
+structures. Our model is pre-trained on 260 billion time points across diverse
+domains. Leveraging multi-granularity representations, TimesBERT achieves
+state-of-the-art performance across four typical downstream understanding
+tasks, outperforming task-specific models and language pre-trained backbones,
+positioning it as a versatile foundation model for time series understanding.",http://arxiv.org/pdf/2502.21245v1,,False
+SYN-LUNGS: Towards Simulating Lung Nodules with Anatomy-Informed Digital Twins for AI Training,28/02/2025,"Fakrul Islam Tushar, Lavsen Dahal, Cindy McCabe, Fong Chi Ho, Paul Segars, Ehsan Abadi, Kyle J. Lafata, Ehsan Samei, Joseph Y. Lo","AI models for lung cancer screening are limited by data scarcity, impacting
+generalizability and clinical applicability. Generative models address this
+issue but are constrained by training data variability. We introduce SYN-LUNGS,
+a framework for generating high-quality 3D CT images with detailed annotations.
+SYN-LUNGS integrates XCAT3 phantoms for digital twin generation, X-Lesions for
+nodule simulation (varying size, location, and appearance), and DukeSim for CT
+image formation with vendor and parameter variability. The dataset includes
+3,072 nodule images from 1,044 simulated CT scans, with 512 lesions and 174
+digital twins. Models trained on clinical + simulated data outperform clinical
+only models, achieving 10% improvement in detection, 2-9% in segmentation and
+classification, and enhanced synthesis.By incorporating anatomy-informed
+simulations, SYN-LUNGS provides a scalable approach for AI model development,
+particularly in rare disease representation and improving model reliability.",http://arxiv.org/pdf/2502.21187v1,,False
+Multimodal Dreaming: A Global Workspace Approach to World Model-Based Reinforcement Learning,28/02/2025,"Léopold Maytié, Roland Bertin Johannet, Rufin VanRullen","Humans leverage rich internal models of the world to reason about the future,
+imagine counterfactuals, and adapt flexibly to new situations. In Reinforcement
+Learning (RL), world models aim to capture how the environment evolves in
+response to the agent's actions, facilitating planning and generalization.
+However, typical world models directly operate on the environment variables
+(e.g. pixels, physical attributes), which can make their training slow and
+cumbersome; instead, it may be advantageous to rely on high-level latent
+dimensions that capture relevant multimodal variables. Global Workspace (GW)
+Theory offers a cognitive framework for multimodal integration and information
+broadcasting in the brain, and recent studies have begun to introduce efficient
+deep learning implementations of GW. Here, we evaluate the capabilities of an
+RL system combining GW with a world model. We compare our GW-Dreamer with
+various versions of the standard PPO and the original Dreamer algorithms. We
+show that performing the dreaming process (i.e., mental simulation) inside the
+GW latent space allows for training with fewer environment steps. As an
+additional emergent property, the resulting model (but not its comparison
+baselines) displays strong robustness to the absence of one of its observation
+modalities (images or simulation attributes). We conclude that the combination
+of GW with World Models holds great potential for improving decision-making in
+RL agents.",http://arxiv.org/pdf/2502.21142v1,,False
+Are foundation models useful feature extractors for electroencephalography analysis?,28/02/2025,"Özgün Turgut, Felix S. Bott, Markus Ploner, Daniel Rueckert","The success of foundation models in natural language processing and computer
+vision has motivated similar approaches for general time series analysis. While
+these models are effective for a variety of tasks, their applicability in
+medical domains with limited data remains largely unexplored. To address this,
+we investigate the effectiveness of foundation models in medical time series
+analysis involving electroencephalography (EEG). Through extensive experiments
+on tasks such as age prediction, seizure detection, and the classification of
+clinically relevant EEG events, we compare their diagnostic accuracy with that
+of specialised EEG models. Our analysis shows that foundation models extract
+meaningful EEG features, outperform specialised models even without domain
+adaptation, and localise task-specific biomarkers. Moreover, we demonstrate
+that diagnostic accuracy is substantially influenced by architectural choices
+such as context length. Overall, our study reveals that foundation models with
+general time series understanding eliminate the dependency on large
+domain-specific datasets, making them valuable tools for clinical practice.",http://arxiv.org/pdf/2502.21086v1,,False
+Synthesizing Individualized Aging Brains in Health and Disease with Generative Models and Parallel Transport,28/02/2025,"Jingru Fu, Yuqi Zheng, Neel Dey, Daniel Ferreira, Rodrigo Moreno","Simulating prospective magnetic resonance imaging (MRI) scans from a given
+individual brain image is challenging, as it requires accounting for canonical
+changes in aging and/or disease progression while also considering the
+individual brain's current status and unique characteristics. While current
+deep generative models can produce high-resolution anatomically accurate
+templates for population-wide studies, their ability to predict future aging
+trajectories for individuals remains limited, particularly in capturing
+subject-specific neuroanatomical variations over time. In this study, we
+introduce Individualized Brain Synthesis (InBrainSyn), a framework for
+synthesizing high-resolution subject-specific longitudinal MRI scans that
+simulate neurodegeneration in both Alzheimer's disease (AD) and normal aging.
+InBrainSyn uses a parallel transport algorithm to adapt the population-level
+aging trajectories learned by a generative deep template network, enabling
+individualized aging synthesis. As InBrainSyn uses diffeomorphic
+transformations to simulate aging, the synthesized images are topologically
+consistent with the original anatomy by design. We evaluated InBrainSyn both
+quantitatively and qualitatively on AD and healthy control cohorts from the
+Open Access Series of Imaging Studies - version 3 dataset. Experimentally,
+InBrainSyn can also model neuroanatomical transitions between normal aging and
+AD. An evaluation of an external set supports its generalizability. Overall,
+with only a single baseline scan, InBrainSyn synthesizes realistic 3D
+spatiotemporal T1w MRI scans, producing personalized longitudinal aging
+trajectories. The code for InBrainSyn is available at:
+https://github.com/Fjr9516/InBrainSyn.",http://arxiv.org/pdf/2502.21049v1,,False
+Reward Learning from Multiple Feedback Types,28/02/2025,"Yannick Metz, András Geiszl, Raphaël Baur, Mennatallah El-Assady","Learning rewards from preference feedback has become an important tool in the
+alignment of agentic models. Preference-based feedback, often implemented as a
+binary comparison between multiple completions, is an established method to
+acquire large-scale human feedback. However, human feedback in other contexts
+is often much more diverse. Such diverse feedback can better support the goals
+of a human annotator, and the simultaneous use of multiple sources might be
+mutually informative for the learning process or carry type-dependent biases
+for the reward learning process. Despite these potential benefits, learning
+from different feedback types has yet to be explored extensively. In this
+paper, we bridge this gap by enabling experimentation and evaluating multi-type
+feedback in a broad set of environments. We present a process to generate
+high-quality simulated feedback of six different types. Then, we implement
+reward models and downstream RL training for all six feedback types. Based on
+the simulated feedback, we investigate the use of types of feedback across ten
+RL environments and compare them to pure preference-based baselines. We show
+empirically that diverse types of feedback can be utilized and lead to strong
+reward modeling performance. This work is the first strong indicator of the
+potential of multi-type feedback for RLHF.",http://arxiv.org/pdf/2502.21038v1,,False
+Measuring and identifying factors of individuals' trust in Large Language Models,28/02/2025,"Edoardo Sebastiano De Duro, Giuseppe Alessandro Veltri, Hudson Golino, Massimo Stella","Large Language Models (LLMs) can engage in human-looking conversational
+exchanges. Although conversations can elicit trust between users and LLMs,
+scarce empirical research has examined trust formation in human-LLM contexts,
+beyond LLMs' trustworthiness or human trust in AI in general. Here, we
+introduce the Trust-In-LLMs Index (TILLMI) as a new framework to measure
+individuals' trust in LLMs, extending McAllister's cognitive and affective
+trust dimensions to LLM-human interactions. We developed TILLMI as a
+psychometric scale, prototyped with a novel protocol we called LLM-simulated
+validity. The LLM-based scale was then validated in a sample of 1,000 US
+respondents. Exploratory Factor Analysis identified a two-factor structure. Two
+items were then removed due to redundancy, yielding a final 6-item scale with a
+2-factor structure. Confirmatory Factor Analysis on a separate subsample showed
+strong model fit ($CFI = .995$, $TLI = .991$, $RMSEA = .046$, $p_{X^2} > .05$).
+Convergent validity analysis revealed that trust in LLMs correlated positively
+with openness to experience, extraversion, and cognitive flexibility, but
+negatively with neuroticism. Based on these findings, we interpreted TILLMI's
+factors as ""closeness with LLMs"" (affective dimension) and ""reliance on LLMs""
+(cognitive dimension). Younger males exhibited higher closeness with- and
+reliance on LLMs compared to older women. Individuals with no direct experience
+with LLMs exhibited lower levels of trust compared to LLMs' users. These
+findings offer a novel empirical foundation for measuring trust in AI-driven
+verbal communication, informing responsible design, and fostering balanced
+human-AI collaboration.",http://arxiv.org/pdf/2502.21028v1,,False
+Robust and Efficient Writer-Independent IMU-Based Handwriting Recognization,28/02/2025,"Jindong Li, Tim Hamann, Jens Barth, Peter Kaempf, Dario Zanca, Bjoern Eskofier","Online handwriting recognition (HWR) using data from inertial measurement
+units (IMUs) remains challenging due to variations in writing styles and the
+limited availability of high-quality annotated datasets. Traditional models
+often struggle to recognize handwriting from unseen writers, making
+writer-independent (WI) recognition a crucial but difficult problem. This paper
+presents an HWR model with an encoder-decoder structure for IMU data, featuring
+a CNN-based encoder for feature extraction and a BiLSTM decoder for sequence
+modeling, which supports inputs of varying lengths. Our approach demonstrates
+strong robustness and data efficiency, outperforming existing methods on WI
+datasets, including the WI split of the OnHW dataset and our own dataset.
+Extensive evaluations show that our model maintains high accuracy across
+different age groups and writing conditions while effectively learning from
+limited data. Through comprehensive ablation studies, we analyze key design
+choices, achieving a balance between accuracy and efficiency. These findings
+contribute to the development of more adaptable and scalable HWR systems for
+real-world applications.",http://arxiv.org/pdf/2502.20954v1,,False
+Hierarchical and Modular Network on Non-prehensile Manipulation in General Environments,28/02/2025,"Yoonyoung Cho, Junhyek Han, Jisu Han, Beomjoon Kim","For robots to operate in general environments like households, they must be
+able to perform non-prehensile manipulation actions such as toppling and
+rolling to manipulate ungraspable objects. However, prior works on
+non-prehensile manipulation cannot yet generalize across environments with
+diverse geometries. The main challenge lies in adapting to varying
+environmental constraints: within a cabinet, the robot must avoid walls and
+ceilings; to lift objects to the top of a step, the robot must account for the
+step's pose and extent. While deep reinforcement learning (RL) has demonstrated
+impressive success in non-prehensile manipulation, accounting for such
+variability presents a challenge for the generalist policy, as it must learn
+diverse strategies for each new combination of constraints. To address this, we
+propose a modular and reconfigurable architecture that adaptively reconfigures
+network modules based on task requirements. To capture the geometric
+variability in environments, we extend the contact-based object representation
+(CORN) to environment geometries, and propose a procedural algorithm for
+generating diverse environments to train our agent. Taken together, the
+resulting policy can zero-shot transfer to novel real-world environments and
+objects despite training entirely within a simulator. We additionally release a
+simulation-based benchmark featuring nine digital twins of real-world scenes
+with 353 objects to facilitate non-prehensile manipulation research in
+realistic domains.",http://arxiv.org/pdf/2502.20843v1,,False
+Weakly Supervised Multiple Instance Learning for Whale Call Detection and Localization in Long-Duration Passive Acoustic Monitoring,28/02/2025,"Ragib Amin Nihal, Benjamin Yen, Runwu Shi, Kazuhiro Nakadai","Marine ecosystem monitoring via Passive Acoustic Monitoring (PAM) generates
+vast data, but deep learning often requires precise annotations and short
+segments. We introduce DSMIL-LocNet, a Multiple Instance Learning framework for
+whale call detection and localization using only bag-level labels. Our
+dual-stream model processes 2-30 minute audio segments, leveraging spectral and
+temporal features with attention-based instance selection. Tests on Antarctic
+whale data show longer contexts improve classification (F1: 0.8-0.9) while
+medium instances ensure localization precision (0.65-0.70). This suggests MIL
+can enhance scalable marine monitoring. Code:
+https://github.com/Ragib-Amin-Nihal/DSMIL-Loc",http://arxiv.org/pdf/2502.20838v1,,False
+Minimax Optimal Kernel Two-Sample Tests with Random Features,28/02/2025,"Soumya Mukherjee, Bharath K. Sriperumbudur","Reproducing Kernel Hilbert Space (RKHS) embedding of probability
+distributions has proved to be an effective approach, via MMD (maximum mean
+discrepancy) for nonparametric hypothesis testing problems involving
+distributions defined over general (non-Euclidean) domains. While a substantial
+amount of work has been done on this topic, only recently, minimax optimal
+two-sample tests have been constructed that incorporate, unlike MMD, both the
+mean element and a regularized version of the covariance operator. However, as
+with most kernel algorithms, the computational complexity of the optimal test
+scales cubically in the sample size, limiting its applicability. In this paper,
+we propose a spectral regularized two-sample test based on random Fourier
+feature (RFF) approximation and investigate the trade-offs between statistical
+optimality and computational efficiency. We show the proposed test to be
+minimax optimal if the approximation order of RFF (which depends on the
+smoothness of the likelihood ratio and the decay rate of the eigenvalues of the
+integral operator) is sufficiently large. We develop a practically
+implementable permutation-based version of the proposed test with a
+data-adaptive strategy for selecting the regularization parameter and the
+kernel. Finally, through numerical experiments on simulated and benchmark
+datasets, we demonstrate that the proposed RFF-based test is computationally
+efficient and performs almost similar (with a small drop in power) to the exact
+test.",http://arxiv.org/pdf/2502.20755v1,,False
+Generating Clinically Realistic EHR Data via a Hierarchy- and Semantics-Guided Transformer,28/02/2025,"Guanglin Zhou, Sebastiano Barbieri","Generating realistic synthetic electronic health records (EHRs) holds
+tremendous promise for accelerating healthcare research, facilitating AI model
+development and enhancing patient privacy. However, existing generative methods
+typically treat EHRs as flat sequences of discrete medical codes. This approach
+overlooks two critical aspects: the inherent hierarchical organization of
+clinical coding systems and the rich semantic context provided by code
+descriptions. Consequently, synthetic patient sequences often lack high
+clinical fidelity and have limited utility in downstream clinical tasks. In
+this paper, we propose the Hierarchy- and Semantics-Guided Transformer (HiSGT),
+a novel framework that leverages both hierarchical and semantic information for
+the generative process. HiSGT constructs a hierarchical graph to encode
+parent-child and sibling relationships among clinical codes and employs a graph
+neural network to derive hierarchy-aware embeddings. These are then fused with
+semantic embeddings extracted from a pre-trained clinical language model (e.g.,
+ClinicalBERT), enabling the Transformer-based generator to more accurately
+model the nuanced clinical patterns inherent in real EHRs. Extensive
+experiments on the MIMIC-III and MIMIC-IV datasets demonstrate that HiSGT
+significantly improves the statistical alignment of synthetic data with real
+patient records, as well as supports robust downstream applications such as
+chronic disease classification. By addressing the limitations of conventional
+raw code-based generative models, HiSGT represents a significant step toward
+clinically high-fidelity synthetic data generation and a general paradigm
+suitable for interpretable medical code representation, offering valuable
+applications in data augmentation and privacy-preserving healthcare analytics.",http://arxiv.org/pdf/2502.20719v1,,False
+ProAI: Proactive Multi-Agent Conversational AI with Structured Knowledge Base for Psychiatric Diagnosis,28/02/2025,"Yuqi Wu, Guangya Wan, Jingjing Li, Shengming Zhao, Lingfeng Ma, Tianyi Ye, Ion Pop, Yanbo Zhang, Jie Chen","Most LLM-driven conversational AI systems operate reactively, responding to
+user prompts without guiding the interaction. Most LLM-driven conversational AI
+systems operate reactively, responding to user prompts without guiding the
+interaction. However, many real-world applications-such as psychiatric
+diagnosis, consulting, and interviews-require AI to take a proactive role,
+asking the right questions and steering conversations toward specific
+objectives. Using mental health differential diagnosis as an application
+context, we introduce ProAI, a goal-oriented, proactive conversational AI
+framework. ProAI integrates structured knowledge-guided memory, multi-agent
+proactive reasoning, and a multi-faceted evaluation strategy, enabling LLMs to
+engage in clinician-style diagnostic reasoning rather than simple response
+generation. Through simulated patient interactions, user experience assessment,
+and professional clinical validation, we demonstrate that ProAI achieves up to
+83.3% accuracy in mental disorder differential diagnosis while maintaining
+professional and empathetic interaction standards. These results highlight the
+potential for more reliable, adaptive, and goal-driven AI diagnostic
+assistants, advancing LLMs beyond reactive dialogue systems.",http://arxiv.org/pdf/2502.20689v1,,False
+Unleashing the Potential of Two-Tower Models: Diffusion-Based Cross-Interaction for Large-Scale Matching,28/02/2025,"Yihan Wang, Fei Xiong, Zhexin Han, Qi Song, Kaiqiao Zhan, Ben Wang","Two-tower models are widely adopted in the industrial-scale matching stage
+across a broad range of application domains, such as content recommendations,
+advertisement systems, and search engines. This model efficiently handles
+large-scale candidate item screening by separating user and item
+representations. However, the decoupling network also leads to a neglect of
+potential information interaction between the user and item representations.
+Current state-of-the-art (SOTA) approaches include adding a shallow fully
+connected layer(i.e., COLD), which is limited by performance and can only be
+used in the ranking stage. For performance considerations, another approach
+attempts to capture historical positive interaction information from the other
+tower by regarding them as the input features(i.e., DAT). Later research showed
+that the gains achieved by this method are still limited because of lacking the
+guidance on the next user intent. To address the aforementioned challenges, we
+propose a ""cross-interaction decoupling architecture"" within our matching
+paradigm. This user-tower architecture leverages a diffusion module to
+reconstruct the next positive intention representation and employs a
+mixed-attention module to facilitate comprehensive cross-interaction. During
+the next positive intention generation, we further enhance the accuracy of its
+reconstruction by explicitly extracting the temporal drift within user behavior
+sequences. Experiments on two real-world datasets and one industrial dataset
+demonstrate that our method outperforms the SOTA two-tower models
+significantly, and our diffusion approach outperforms other generative models
+in reconstructing item representations.",http://arxiv.org/pdf/2502.20687v1,,False
+Fine-tuning BERT with Bidirectional LSTM for Fine-grained Movie Reviews Sentiment Analysis,28/02/2025,"Gibson Nkhata, Susan Gauch, Usman Anjum, Justin Zhan","Sentiment Analysis (SA) is instrumental in understanding peoples viewpoints
+facilitating social media monitoring recognizing products and brands and
+gauging customer satisfaction. Consequently SA has evolved into an active
+research domain within Natural Language Processing (NLP). Many approaches
+outlined in the literature devise intricate frameworks aimed at achieving high
+accuracy, focusing exclusively on either binary sentiment classification or
+fine-grained sentiment classification. In this paper our objective is to
+fine-tune the pre-trained BERT model with Bidirectional LSTM (BiLSTM) to
+enhance both binary and fine-grained SA specifically for movie reviews. Our
+approach involves conducting sentiment classification for each review followed
+by computing the overall sentiment polarity across all reviews. We present our
+findings on binary classification as well as fine-grained classification
+utilizing benchmark datasets. Additionally we implement and assess two accuracy
+improvement techniques Synthetic Minority Oversampling Technique (SMOTE) and
+NLP Augmenter (NLPAUG) to bolster the models generalization in fine-grained
+sentiment classification. Finally a heuristic algorithm is employed to
+calculate the overall polarity of predicted reviews from the BERT+BiLSTM output
+vector. Our approach performs comparably with state-of-the-art (SOTA)
+techniques in both classifications. For instance in binary classification we
+achieve 97.67% accuracy surpassing the leading SOTA model
+NB-weighted-BON+dv-cosine by 0.27% on the renowned IMDb dataset. Conversely for
+five-class classification on SST-5 while the top SOTA model
+RoBERTa+large+Self-explaining attains 55.5% accuracy our model achieves 59.48%
+accuracy surpassing the BERT-large baseline by 3.6%.",http://arxiv.org/pdf/2502.20682v1,,False
+OpenEarthSensing: Large-Scale Fine-Grained Benchmark for Open-World Remote Sensing,28/02/2025,"Xiang Xiang, Zhuo Xu, Yao Deng, Qinhao Zhou, Yifan Liang, Ke Chen, Qingfang Zheng, Yaowei Wang, Xilin Chen, Wen Gao","In open-world remote sensing, deployed models must continuously adapt to a
+steady influx of new data, which often exhibits various shifts compared to what
+the model encountered during the training phase. To effectively handle the new
+data, models are required to detect semantic shifts, adapt to covariate shifts,
+and continuously update themselves. These challenges give rise to a variety of
+open-world tasks. However, existing open-world remote sensing studies typically
+train and test within a single dataset to simulate open-world conditions.
+Currently, there is a lack of large-scale benchmarks capable of evaluating
+multiple open-world tasks. In this paper, we introduce OpenEarthSensing, a
+large-scale fine-grained benchmark for open-world remote sensing.
+OpenEarthSensing includes 189 scene and objects categories, covering the vast
+majority of potential semantic shifts that may occur in the real world.
+Additionally, OpenEarthSensing encompasses five data domains with significant
+covariate shifts, including two RGB satellite domians, one RGB aerial domian,
+one MS RGB domian, and one infrared domian. The various domains provide a more
+comprehensive testbed for evaluating the generalization performance of
+open-world models. We conduct the baseline evaluation of current mainstream
+open-world tasks and methods on OpenEarthSensing, demonstrating that it serves
+as a challenging benchmark for open-world remote sensing.",http://arxiv.org/pdf/2502.20668v1,,False
+Are LLMs Ready for Practical Adoption for Assertion Generation?,28/02/2025,"Vaishnavi Pulavarthi, Deeksha Nandal, Soham Dan, Debjit Pal","Assertions have been the de facto collateral for simulation-based and formal
+verification of hardware designs for over a decade. The quality of hardware
+verification, i.e., detection and diagnosis of corner-case design bugs, is
+critically dependent on the quality of the assertions. With the onset of
+generative AI such as Transformers and Large-Language Models (LLMs), there has
+been a renewed interest in developing novel, effective, and scalable techniques
+of generating functional and security assertions from design source code. While
+there have been recent works that use commercial-of-the-shelf (COTS) LLMs for
+assertion generation, there is no comprehensive study in quantifying the
+effectiveness of LLMs in generating syntactically and semantically correct
+assertions. In this paper, we first discuss AssertionBench from our prior work,
+a comprehensive set of designs and assertions to quantify the goodness of a
+broad spectrum of COTS LLMs for the task of assertion generations from hardware
+design source code. Our key insight was that COTS LLMs are not yet ready for
+prime-time adoption for assertion generation as they generate a considerable
+fraction of syntactically and semantically incorrect assertions. Motivated by
+the insight, we propose AssertionLLM, a first of its kind LLM model,
+specifically fine-tuned for assertion generation. Our initial experimental
+results show that AssertionLLM considerably improves the semantic and syntactic
+correctness of the generated assertions over COTS LLMs.",http://arxiv.org/pdf/2502.20633v1,,False
+Lattice Protein Folding with Variational Annealing,28/02/2025,"Shoummo Ahsan Khandoker, Estelle M. Inack, Mohamed Hibat-Allah","Understanding the principles of protein folding is a cornerstone of
+computational biology, with implications for drug design, bioengineering, and
+the understanding of fundamental biological processes. Lattice protein folding
+models offer a simplified yet powerful framework for studying the complexities
+of protein folding, enabling the exploration of energetically optimal folds
+under constrained conditions. However, finding these optimal folds is a
+computationally challenging combinatorial optimization problem. In this work,
+we introduce a novel upper-bound training scheme that employs masking to
+identify the lowest-energy folds in two-dimensional Hydrophobic-Polar (HP)
+lattice protein folding. By leveraging Dilated Recurrent Neural Networks (RNNs)
+integrated with an annealing process driven by temperature-like fluctuations,
+our method accurately predicts optimal folds for benchmark systems of up to 60
+beads. Our approach also effectively masks invalid folds from being sampled
+without compromising the autoregressive sampling properties of RNNs. This
+scheme is generalizable to three spatial dimensions and can be extended to
+lattice protein models with larger alphabets. Our findings emphasize the
+potential of advanced machine learning techniques in tackling complex protein
+folding problems and a broader class of constrained combinatorial optimization
+challenges.",http://arxiv.org/pdf/2502.20632v1,,False
+PersonaBench: Evaluating AI Models on Understanding Personal Information through Accessing (Synthetic) Private User Data,28/02/2025,"Juntao Tan, Liangwei Yang, Zuxin Liu, Zhiwei Liu, Rithesh Murthy, Tulika Manoj Awalgaonkar, Jianguo Zhang, Weiran Yao, Ming Zhu, Shirley Kokane, Silvio Savarese, Huan Wang, Caiming Xiong, Shelby Heinecke","Personalization is critical in AI assistants, particularly in the context of
+private AI models that work with individual users. A key scenario in this
+domain involves enabling AI models to access and interpret a user's private
+data (e.g., conversation history, user-AI interactions, app usage) to
+understand personal details such as biographical information, preferences, and
+social connections. However, due to the sensitive nature of such data, there
+are no publicly available datasets that allow us to assess an AI model's
+ability to understand users through direct access to personal information.
+  To address this gap, we introduce a synthetic data generation pipeline that
+creates diverse, realistic user profiles and private documents simulating human
+activities. Leveraging this synthetic data, we present PersonaBench, a
+benchmark designed to evaluate AI models' performance in understanding personal
+information derived from simulated private user data.
+  We evaluate Retrieval-Augmented Generation (RAG) pipelines using questions
+directly related to a user's personal information, supported by the relevant
+private documents provided to the models. Our results reveal that current
+retrieval-augmented AI models struggle to answer private questions by
+extracting personal information from user documents, highlighting the need for
+improved methodologies to enhance personalization capabilities in AI.",http://arxiv.org/pdf/2502.20616v1,,False
+Map Space Belief Prediction for Manipulation-Enhanced Mapping,28/02/2025,"Joao Marcos Correia Marques, Nils Dengler, Tobias Zaenker, Jesper Mucke, Shenlong Wang, Maren Bennewitz, Kris Hauser","Searching for objects in cluttered environments requires selecting efficient
+viewpoints and manipulation actions to remove occlusions and reduce uncertainty
+in object locations, shapes, and categories. In this work, we address the
+problem of manipulation-enhanced semantic mapping, where a robot has to
+efficiently identify all objects in a cluttered shelf. Although Partially
+Observable Markov Decision Processes~(POMDPs) are standard for decision-making
+under uncertainty, representing unstructured interactive worlds remains
+challenging in this formalism. To tackle this, we define a POMDP whose belief
+is summarized by a metric-semantic grid map and propose a novel framework that
+uses neural networks to perform map-space belief updates to reason efficiently
+and simultaneously about object geometries, locations, categories, occlusions,
+and manipulation physics. Further, to enable accurate information gain
+analysis, the learned belief updates should maintain calibrated estimates of
+uncertainty. Therefore, we propose Calibrated Neural-Accelerated Belief Updates
+(CNABUs) to learn a belief propagation model that generalizes to novel
+scenarios and provides confidence-calibrated predictions for unknown areas. Our
+experiments show that our novel POMDP planner improves map completeness and
+accuracy over existing methods in challenging simulations and successfully
+transfers to real-world cluttered shelves in zero-shot fashion.",http://arxiv.org/pdf/2502.20606v1,,False

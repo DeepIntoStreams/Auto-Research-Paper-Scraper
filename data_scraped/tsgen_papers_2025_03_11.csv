@@ -1,0 +1,328 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Is a Good Foundation Necessary for Efficient Reinforcement Learning? The Computational Role of the Base Model in Exploration,10/03/2025,"Dylan J. Foster, Zakaria Mhammedi, Dhruv Rohatgi","Language model alignment (or, reinforcement learning) techniques that
+leverage active exploration -- deliberately encouraging the model to produce
+diverse, informative responses -- offer the promise of super-human
+capabilities. However, current understanding of algorithm design primitives for
+computationally efficient exploration with language models is limited. To
+better understand how to leverage access to powerful pre-trained generative
+models to improve the efficiency of exploration, we introduce a new
+computational framework for RL with language models, in which the learner
+interacts with the model through a sampling oracle. Focusing on the linear
+softmax model parameterization, we provide new results that reveal the
+computational-statistical tradeoffs of efficient exploration:
+  1. Necessity of coverage: Coverage refers to the extent to which the
+pre-trained model covers near-optimal responses -- a form of hidden knowledge.
+We show that coverage, while not necessary for data efficiency, lower bounds
+the runtime of any algorithm in our framework.
+  2. Inference-time exploration: We introduce a new algorithm, SpannerSampling,
+which obtains optimal data efficiency and is computationally efficient whenever
+the pre-trained model enjoys sufficient coverage, matching our lower bound.
+SpannerSampling leverages inference-time computation with the pre-trained model
+to reduce the effective search space for exploration.
+  3. Insufficiency of training-time interventions: We contrast the result above
+by showing that training-time interventions that produce proper policies cannot
+achieve similar guarantees in polynomial time.
+  4. Computational benefits of multi-turn exploration: Finally, we show that
+under additional representational assumptions, one can achieve improved runtime
+(replacing sequence-level coverage with token-level coverage) through
+multi-turn exploration.",http://arxiv.org/pdf/2503.07453v1,,False
+PER-DPP Sampling Framework and Its Application in Path Planning,10/03/2025,Junzhe Wang,"Autonomous navigation in intelligent mobile systems represents a core
+research focus within artificial intelligence-driven robotics. Contemporary
+path planning approaches face constraints in dynamic environmental
+responsiveness and multi-objective task scalability, limiting their capacity to
+address growing intelligent operation requirements. Decision-centric
+reinforcement learning frameworks, capitalizing on their unique strengths in
+adaptive environmental interaction and self-optimization, have gained
+prominence in advanced control system research. This investigation introduces
+methodological improvements to address sample homogeneity challenges in
+reinforcement learning experience replay mechanisms. By incorporating
+determinant point processes (DPP) for diversity assessment, we develop a
+dual-criteria sampling framework with adaptive selection protocols. This
+approach resolves representation bias in conventional prioritized experience
+replay (PER) systems while preserving algorithmic interoperability, offering
+improved decision optimization for dynamic operational scenarios. Key
+contributions comprise: Develop a hybrid sampling paradigm (PER-DPP) combining
+priority sequencing with diversity maximization.Based on this,create an
+integrated optimization scheme (PER-DPP-Elastic DQN) merging diversity-aware
+sampling with adaptive step-size regulation. Comparative simulations in 2D
+navigation scenarios demonstrate that the elastic step-size component
+temporarily delays initial convergence speed but synergistically enhances
+final-stage optimization with PER-DPP integration. The synthesized method
+generates navigation paths with optimized length efficiency and directional
+stability.",http://arxiv.org/pdf/2503.07411v1,,False
+Brain Inspired Adaptive Memory Dual-Net for Few-Shot Image Classification,10/03/2025,"Kexin Di, Xiuxing Li, Yuyang Han, Ziyu Li, Qing Li, Xia Wu","Few-shot image classification has become a popular research topic for its
+wide application in real-world scenarios, however the problem of supervision
+collapse induced by single image-level annotation remains a major challenge.
+Existing methods aim to tackle this problem by locating and aligning relevant
+local features. However, the high intra-class variability in real-world images
+poses significant challenges in locating semantically relevant local regions
+under few-shot settings. Drawing inspiration from the human's complementary
+learning system, which excels at rapidly capturing and integrating semantic
+features from limited examples, we propose the generalization-optimized Systems
+Consolidation Adaptive Memory Dual-Network, SCAM-Net. This approach simulates
+the systems consolidation of complementary learning system with an adaptive
+memory module, which successfully addresses the difficulty of identifying
+meaningful features in few-shot scenarios. Specifically, we construct a
+Hippocampus-Neocortex dual-network that consolidates structured representation
+of each category, the structured representation is then stored and adaptively
+regulated following the generalization optimization principle in a long-term
+memory inside Neocortex. Extensive experiments on benchmark datasets show that
+the proposed model has achieved state-of-the-art performance.",http://arxiv.org/pdf/2503.07396v1,,False
+Self-Corrective Task Planning by Inverse Prompting with Large Language Models,10/03/2025,"Jiho Lee, Hayun Lee, Jonghyeon Kim, Kyungjae Lee, Eunwoo Kim","In robot task planning, large language models (LLMs) have shown significant
+promise in generating complex and long-horizon action sequences. However, it is
+observed that LLMs often produce responses that sound plausible but are not
+accurate. To address these problems, existing methods typically employ
+predefined error sets or external knowledge sources, requiring human efforts
+and computation resources. Recently, self-correction approaches have emerged,
+where LLM generates and refines plans, identifying errors by itself. Despite
+their effectiveness, they are more prone to failures in correction due to
+insufficient reasoning. In this paper, we introduce InversePrompt, a novel
+self-corrective task planning approach that leverages inverse prompting to
+enhance interpretability. Our method incorporates reasoning steps to provide
+clear, interpretable feedback. It generates inverse actions corresponding to
+the initially generated actions and verifies whether these inverse actions can
+restore the system to its original state, explicitly validating the logical
+coherence of the generated plans.The results on benchmark datasets show an
+average 16.3% higher success rate over existing LLM-based task planning
+methods. Our approach offers clearer justifications for feedback in real-world
+environments, resulting in more successful task completion than existing
+self-correction approaches across various scenarios.",http://arxiv.org/pdf/2503.07317v1,,False
+COMODO: Cross-Modal Video-to-IMU Distillation for Efficient Egocentric Human Activity Recognition,10/03/2025,"Baiyu Chen, Wilson Wongso, Zechen Li, Yonchanok Khaokaew, Hao Xue, Flora Salim","Egocentric video-based models capture rich semantic information and have
+demonstrated strong performance in human activity recognition (HAR). However,
+their high power consumption, privacy concerns, and dependence on lighting
+conditions limit their feasibility for continuous on-device recognition. In
+contrast, inertial measurement unit (IMU) sensors offer an energy-efficient and
+privacy-preserving alternative, yet they suffer from limited large-scale
+annotated datasets, leading to weaker generalization in downstream tasks. To
+bridge this gap, we propose COMODO, a cross-modal self-supervised distillation
+framework that transfers rich semantic knowledge from the video modality to the
+IMU modality without requiring labeled annotations. COMODO leverages a
+pretrained and frozen video encoder to construct a dynamic instance queue,
+aligning the feature distributions of video and IMU embeddings. By distilling
+knowledge from video representations, our approach enables the IMU encoder to
+inherit rich semantic information from video while preserving its efficiency
+for real-world applications. Experiments on multiple egocentric HAR datasets
+demonstrate that COMODO consistently improves downstream classification
+performance, achieving results comparable to or exceeding fully supervised
+fine-tuned models. Moreover, COMODO exhibits strong cross-dataset
+generalization. Benefiting from its simplicity, our method is also generally
+applicable to various video and time-series pre-trained models, offering the
+potential to leverage more powerful teacher and student foundation models in
+future research. The code is available at https://github.com/Breezelled/COMODO .",http://arxiv.org/pdf/2503.07259v1,,False
+MC-GRU:a Multi-Channel GRU network for generalized nonlinear structural response prediction across structures,10/03/2025,"Shan He, Ruiyang Zhang","Accurate prediction of seismic responses and quantification of structural
+damage are critical in civil engineering. Traditional approaches such as finite
+element analysis could lack computational efficiency, especially for complex
+structural systems under extreme hazards. Recently, artificial intelligence has
+provided an alternative to efficiently model highly nonlinear behaviors.
+However, existing models face challenges in generalizing across diverse
+structural systems. This paper proposes a novel multi-channel gated recurrent
+unit (MC-GRU) network aimed at achieving generalized nonlinear structural
+response prediction for varying structures. The key concept lies in the
+integration of a multi-channel input mechanism to GRU with an extra input of
+structural information to the candidate hidden state, which enables the network
+to learn the dynamic characteristics of diverse structures and thus empower the
+generalizability and adaptiveness to unseen structures. The performance of the
+proposed MC-GRU is validated through a series of case studies, including a
+single-degree-of-freedom linear system, a hysteretic Bouc-Wen system, and a
+nonlinear reinforced concrete column from experimental testing. Results
+indicate that the proposed MC-GRU overcomes the major generalizability issues
+of existing methods, with capability of accurately inferring seismic responses
+of varying structures. Additionally, it demonstrates enhanced capabilities in
+representing nonlinear structural dynamics compared to traditional models such
+as GRU and LSTM.",http://arxiv.org/pdf/2503.07258v1,,False
+Generative AI in Transportation Planning: A Survey,10/03/2025,"Longchao Da, Tiejin Chen, Zhuoheng Li, Shreyas Bachiraju, Huaiyuan Yao, Xiyang Hu, Zhengzhong Tu, Yue Zhao, Dongjie Wang, Xuanyu, Zhou, Ram Pendyala, Benjamin Stabler, Yezhou Yang, Xuesong Zhou, Hua Wei","The integration of generative artificial intelligence (GenAI) into
+transportation planning has the potential to revolutionize tasks such as demand
+forecasting, infrastructure design, policy evaluation, and traffic simulation.
+However, there is a critical need for a systematic framework to guide the
+adoption of GenAI in this interdisciplinary domain. In this survey, we, a
+multidisciplinary team of researchers spanning computer science and
+transportation engineering, present the first comprehensive framework for
+leveraging GenAI in transportation planning. Specifically, we introduce a new
+taxonomy that categorizes existing applications and methodologies into two
+perspectives: transportation planning tasks and computational techniques. From
+the transportation planning perspective, we examine the role of GenAI in
+automating descriptive, predictive, generative, simulation, and explainable
+tasks to enhance mobility systems. From the computational perspective, we
+detail advancements in data preparation, domain-specific fine-tuning, and
+inference strategies, such as retrieval-augmented generation and zero-shot
+learning tailored to transportation applications. Additionally, we address
+critical challenges, including data scarcity, explainability, bias mitigation,
+and the development of domain-specific evaluation frameworks that align with
+transportation goals like sustainability, equity, and system efficiency. This
+survey aims to bridge the gap between traditional transportation planning
+methodologies and modern AI techniques, fostering collaboration and innovation.
+By addressing these challenges and opportunities, we seek to inspire future
+research that ensures ethical, equitable, and impactful use of generative AI in
+transportation planning.",http://arxiv.org/pdf/2503.07158v1,,False
+Ideas in Inference-time Scaling can Benefit Generative Pre-training Algorithms,10/03/2025,"Jiaming Song, Linqi Zhou","Recent years have seen significant advancements in foundation models through
+generative pre-training, yet algorithmic innovation in this space has largely
+stagnated around autoregressive models for discrete signals and diffusion
+models for continuous signals. This stagnation creates a bottleneck that
+prevents us from fully unlocking the potential of rich multi-modal data, which
+in turn limits the progress on multimodal intelligence. We argue that an
+inference-first perspective, which prioritizes scaling efficiency during
+inference time across sequence length and refinement steps, can inspire novel
+generative pre-training algorithms. Using Inductive Moment Matching (IMM) as a
+concrete example, we demonstrate how addressing limitations in diffusion
+models' inference process through targeted modifications yields a stable,
+single-stage algorithm that achieves superior sample quality with over an order
+of magnitude greater inference efficiency.",http://arxiv.org/pdf/2503.07154v1,,False
+PTMs-TSCIL Pre-Trained Models Based Class-Incremental Learning,10/03/2025,"Yuanlong Wu, Mingxing Nie, Tao Zhu, Liming Chen, Huansheng Ning, Yaping Wan","Class-incremental learning (CIL) for time series data faces critical
+challenges in balancing stability against catastrophic forgetting and
+plasticity for new knowledge acquisition, particularly under real-world
+constraints where historical data access is restricted. While pre-trained
+models (PTMs) have shown promise in CIL for vision and NLP domains, their
+potential in time series class-incremental learning (TSCIL) remains
+underexplored due to the scarcity of large-scale time series pre-trained
+models. Prompted by the recent emergence of large-scale pre-trained models
+(PTMs) for time series data, we present the first exploration of PTM-based Time
+Series Class-Incremental Learning (TSCIL). Our approach leverages frozen PTM
+backbones coupled with incrementally tuning the shared adapter, preserving
+generalization capabilities while mitigating feature drift through knowledge
+distillation. Furthermore, we introduce a Feature Drift Compensation Network
+(DCN), designed with a novel two-stage training strategy to precisely model
+feature space transformations across incremental tasks. This allows for
+accurate projection of old class prototypes into the new feature space. By
+employing DCN-corrected prototypes, we effectively enhance the unified
+classifier retraining, mitigating model feature drift and alleviating
+catastrophic forgetting. Extensive experiments on five real-world datasets
+demonstrate state-of-the-art performance, with our method yielding final
+accuracy gains of 1.4%-6.1% across all datasets compared to existing PTM-based
+approaches. Our work establishes a new paradigm for TSCIL, providing insights
+into stability-plasticity optimization for continual learning systems.",http://arxiv.org/pdf/2503.07153v1,,False
+Hierarchical Neuro-Symbolic Decision Transformer,10/03/2025,"Ali Baheri, Cecilia O. Alm","We present a hierarchical neuro-symbolic control framework that couples
+classical symbolic planning with transformer-based policies to address complex,
+long-horizon decision-making tasks. At the high level, a symbolic planner
+constructs an interpretable sequence of operators based on logical
+propositions, ensuring systematic adherence to global constraints and goals. At
+the low level, each symbolic operator is translated into a sub-goal token that
+conditions a decision transformer to generate a fine-grained sequence of
+actions in uncertain, high-dimensional environments. We provide theoretical
+analysis showing how approximation errors from both the symbolic planner and
+the neural execution layer accumulate. Empirical evaluations in grid-worlds
+with multiple keys, locked doors, and item-collection tasks show that our
+hierarchical approach outperforms purely end-to-end neural approach in success
+rates and policy efficiency.",http://arxiv.org/pdf/2503.07148v1,,False
+Sequential Function-Space Variational Inference via Gaussian Mixture Approximation,10/03/2025,"Menghao Waiyan William Zhu, Pengcheng Hao, Ercan Engin Kuruoğlu","Continual learning is learning from a sequence of tasks with the aim of
+learning new tasks without forgetting old tasks. Sequential function-space
+variational inference (SFSVI) is a continual learning method based on
+variational inference which uses a Gaussian variational distribution to
+approximate the distribution of the outputs of a finite number of selected
+inducing points. Since the posterior distribution of a neural network is
+multi-modal, a Gaussian distribution could only match one mode of the posterior
+distribution, and a Gaussian mixture distribution could be used to better
+approximate the posterior distribution. We propose an SFSVI method which uses a
+Gaussian mixture variational distribution. We also compare different types of
+variational inference methods with and without a fixed pre-trained feature
+extractor. We find that in terms of final average accuracy, Gaussian mixture
+methods perform better than Gaussian methods and likelihood-focused methods
+perform better than prior-focused methods.",http://arxiv.org/pdf/2503.07114v1,,False
+NFIG: Autoregressive Image Generation with Next-Frequency Prediction,10/03/2025,"Zhihao Huang, Xi Qiu, Yukuo Ma, Yifu Zhou, Chi Zhang, Xuelong Li","Autoregressive models have achieved promising results in natural language
+processing. However, for image generation tasks, they encounter substantial
+challenges in effectively capturing long-range dependencies, managing
+computational costs, and most crucially, defining meaningful autoregressive
+sequences that reflect natural image hierarchies. To address these issues, we
+present \textbf{N}ext-\textbf{F}requency \textbf{I}mage \textbf{G}eneration
+(\textbf{NFIG}), a novel framework that decomposes the image generation process
+into multiple frequency-guided stages. Our approach first generates
+low-frequency components to establish global structure with fewer tokens, then
+progressively adds higher-frequency details, following the natural spectral
+hierarchy of images. This principled autoregressive sequence not only improves
+the quality of generated images by better capturing true causal relationships
+between image components, but also significantly reduces computational overhead
+during inference. Extensive experiments demonstrate that NFIG achieves
+state-of-the-art performance with fewer steps, offering a more efficient
+solution for image generation, with 1.25$\times$ speedup compared to VAR-d20
+while achieving better performance (FID: 2.81) on the ImageNet-256 benchmark.
+We hope that our insight of incorporating frequency-domain knowledge to guide
+autoregressive sequence design will shed light on future research. We will make
+our code publicly available upon acceptance of the paper.",http://arxiv.org/pdf/2503.07076v1,,False
+Erase Diffusion: Empowering Object Removal Through Calibrating Diffusion Pathways,10/03/2025,"Yi Liu, Hao Zhou, Wenxiang Shang, Ran Lin, Benlei Cui","Erase inpainting, or object removal, aims to precisely remove target objects
+within masked regions while preserving the overall consistency of the
+surrounding content. Despite diffusion-based methods have made significant
+strides in the field of image inpainting, challenges remain regarding the
+emergence of unexpected objects or artifacts. We assert that the inexact
+diffusion pathways established by existing standard optimization paradigms
+constrain the efficacy of object removal. To tackle these challenges, we
+propose a novel Erase Diffusion, termed EraDiff, aimed at unleashing the
+potential power of standard diffusion in the context of object removal. In
+contrast to standard diffusion, the EraDiff adapts both the optimization
+paradigm and the network to improve the coherence and elimination of the
+erasure results. We first introduce a Chain-Rectifying Optimization (CRO)
+paradigm, a sophisticated diffusion process specifically designed to align with
+the objectives of erasure. This paradigm establishes innovative diffusion
+transition pathways that simulate the gradual elimination of objects during
+optimization, allowing the model to accurately capture the intent of object
+removal. Furthermore, to mitigate deviations caused by artifacts during the
+sampling pathways, we develop a simple yet effective Self-Rectifying Attention
+(SRA) mechanism. The SRA calibrates the sampling pathways by altering
+self-attention activation, allowing the model to effectively bypass artifacts
+while further enhancing the coherence of the generated content. With this
+design, our proposed EraDiff achieves state-of-the-art performance on the
+OpenImages V5 dataset and demonstrates significant superiority in real-world
+scenarios.",http://arxiv.org/pdf/2503.07026v1,,False
+Combating Partial Perception Deficit in Autonomous Driving with Multimodal LLM Commonsense,10/03/2025,"Yuting Hu, Chenhui Xu, Ruiyang Qin, Dancheng Liu, Amir Nassereldine, Yiyu Shi, Jinjun Xiong","Partial perception deficits can compromise autonomous vehicle safety by
+disrupting environmental understanding. Current protocols typically respond
+with immediate stops or minimal-risk maneuvers, worsening traffic flow and
+lacking flexibility for rare driving scenarios. In this paper, we propose
+LLM-RCO, a framework leveraging large language models to integrate human-like
+driving commonsense into autonomous systems facing perception deficits. LLM-RCO
+features four key modules: hazard inference, short-term motion planner, action
+condition verifier, and safety constraint generator. These modules interact
+with the dynamic driving environment, enabling proactive and context-aware
+control actions to override the original control policy of autonomous agents.
+To improve safety in such challenging conditions, we construct DriveLM-Deficit,
+a dataset of 53,895 video clips featuring deficits of safety-critical objects,
+complete with annotations for LLM-based hazard inference and motion planning
+fine-tuning. Extensive experiments in adverse driving conditions with the CARLA
+simulator demonstrate that systems equipped with LLM-RCO significantly improve
+driving performance, highlighting its potential for enhancing autonomous
+driving resilience against adverse perception deficits. Our results also show
+that LLMs fine-tuned with DriveLM-Deficit can enable more proactive movements
+instead of conservative stops in the context of perception deficits.",http://arxiv.org/pdf/2503.07020v1,,False
+Graphormer-Guided Task Planning: Beyond Static Rules with LLM Safety Perception,10/03/2025,"Wanjing Huang, Tongjie Pan, Yalan Ye","Recent advancements in large language models (LLMs) have expanded their role
+in robotic task planning. However, while LLMs have been explored for generating
+feasible task sequences, their ability to ensure safe task execution remains
+underdeveloped. Existing methods struggle with structured risk perception,
+making them inadequate for safety-critical applications where low-latency
+hazard adaptation is required. To address this limitation, we propose a
+Graphormer-enhanced risk-aware task planning framework that combines LLM-based
+decision-making with structured safety modeling. Our approach constructs a
+dynamic spatio-semantic safety graph, capturing spatial and contextual risk
+factors to enable online hazard detection and adaptive task refinement. Unlike
+existing methods that rely on predefined safety constraints, our framework
+introduces a context-aware risk perception module that continuously refines
+safety predictions based on real-time task execution. This enables a more
+flexible and scalable approach to robotic planning, allowing for adaptive
+safety compliance beyond static rules. To validate our framework, we conduct
+experiments in the AI2-THOR environment. The experiments results validates
+improvements in risk detection accuracy, rising safety notice, and task
+adaptability of our framework in continuous environments compared to static
+rule-based and LLM-only baselines. Our project is available at
+https://github.com/hwj20/GGTP",http://arxiv.org/pdf/2503.06866v1,,False
+Unlocking Generalization for Robotics via Modularity and Scale,10/03/2025,Murtaza Dalal,"How can we build generalist robot systems? Scale may not be enough due to the
+significant multimodality of robotics tasks, lack of easily accessible data and
+the challenges of deploying on physical hardware. Meanwhile, most deployed
+robotic systems today are inherently modular and can leverage the independent
+generalization capabilities of each module to perform well. Therefore, this
+thesis seeks to tackle the task of building generalist robot agents by
+integrating these components into one: combining modularity with large-scale
+learning for general purpose robot control. The first question we consider is:
+how can we build modularity and hierarchy into learning systems? Our key
+insight is that rather than having the agent learn hierarchy and low-level
+control end-to-end, we can enforce modularity via planning to enable more
+efficient and capable robot learners. Next, we come to the role of scale in
+building generalist robot systems. To scale, neural networks require vast
+amounts of diverse data, expressive architectures to fit the data and a source
+of supervision to generate the data. We leverage a powerful supervision source:
+classical planning, which can generalize, but is expensive to run and requires
+access to privileged information to perform well in practice. We use these
+planners to supervise large-scale policy learning in simulation to produce
+generalist agents. Finally, we consider how to unify modularity with
+large-scale policy learning to build real-world robot systems capable of
+performing zero-shot manipulation. We do so by tightly integrating key
+ingredients of modular high and mid-level planning, learned local control,
+procedural scene generation and large-scale policy learning for sim2real
+transfer. We demonstrate that this recipe can produce a single, generalist
+agent that can solve challenging long-horizon manipulation tasks in the real
+world.",http://arxiv.org/pdf/2503.06814v1,,False

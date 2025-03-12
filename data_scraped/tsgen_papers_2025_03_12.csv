@@ -1,0 +1,399 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+CoLMDriver: LLM-based Negotiation Benefits Cooperative Autonomous Driving,11/03/2025,"Changxing Liu, Genjia Liu, Zijun Wang, Jinchang Yang, Siheng Chen","Vehicle-to-vehicle (V2V) cooperative autonomous driving holds great promise
+for improving safety by addressing the perception and prediction uncertainties
+inherent in single-agent systems. However, traditional cooperative methods are
+constrained by rigid collaboration protocols and limited generalization to
+unseen interactive scenarios. While LLM-based approaches offer generalized
+reasoning capabilities, their challenges in spatial planning and unstable
+inference latency hinder their direct application in cooperative driving. To
+address these limitations, we propose CoLMDriver, the first full-pipeline
+LLM-based cooperative driving system, enabling effective language-based
+negotiation and real-time driving control. CoLMDriver features a parallel
+driving pipeline with two key components: (i) an LLM-based negotiation module
+under an actor-critic paradigm, which continuously refines cooperation policies
+through feedback from previous decisions of all vehicles; and (ii) an
+intention-guided waypoint generator, which translates negotiation outcomes into
+executable waypoints. Additionally, we introduce InterDrive, a CARLA-based
+simulation benchmark comprising 10 challenging interactive driving scenarios
+for evaluating V2V cooperation. Experimental results demonstrate that
+CoLMDriver significantly outperforms existing approaches, achieving an 11%
+higher success rate across diverse highly interactive V2V driving scenarios.
+Code will be released on https://github.com/cxliu0314/CoLMDriver.",http://arxiv.org/pdf/2503.08683v1,,False
+Understanding and Mitigating Distribution Shifts For Machine Learning Force Fields,11/03/2025,"Tobias Kreiman, Aditi S. Krishnapriyan","Machine Learning Force Fields (MLFFs) are a promising alternative to
+expensive ab initio quantum mechanical molecular simulations. Given the
+diversity of chemical spaces that are of interest and the cost of generating
+new data, it is important to understand how MLFFs generalize beyond their
+training distributions. In order to characterize and better understand
+distribution shifts in MLFFs, we conduct diagnostic experiments on chemical
+datasets, revealing common shifts that pose significant challenges, even for
+large foundation models trained on extensive data. Based on these observations,
+we hypothesize that current supervised training methods inadequately regularize
+MLFFs, resulting in overfitting and learning poor representations of
+out-of-distribution systems. We then propose two new methods as initial steps
+for mitigating distribution shifts for MLFFs. Our methods focus on test-time
+refinement strategies that incur minimal computational cost and do not use
+expensive ab initio reference labels. The first strategy, based on spectral
+graph theory, modifies the edges of test graphs to align with graph structures
+seen during training. Our second strategy improves representations for
+out-of-distribution systems at test-time by taking gradient steps using an
+auxiliary objective, such as a cheap physical prior. Our test-time refinement
+strategies significantly reduce errors on out-of-distribution systems,
+suggesting that MLFFs are capable of and can move towards modeling diverse
+chemical spaces, but are not being effectively trained to do so. Our
+experiments establish clear benchmarks for evaluating the generalization
+capabilities of the next generation of MLFFs. Our code is available at
+https://tkreiman.github.io/projects/mlff_distribution_shifts/.",http://arxiv.org/pdf/2503.08674v1,,False
+Tuning-Free Multi-Event Long Video Generation via Synchronized Coupled Sampling,11/03/2025,"Subin Kim, Seoung Wug Oh, Jui-Hsien Wang, Joon-Young Lee, Jinwoo Shin","While recent advancements in text-to-video diffusion models enable
+high-quality short video generation from a single prompt, generating real-world
+long videos in a single pass remains challenging due to limited data and high
+computational costs. To address this, several works propose tuning-free
+approaches, i.e., extending existing models for long video generation,
+specifically using multiple prompts to allow for dynamic and controlled content
+changes. However, these methods primarily focus on ensuring smooth transitions
+between adjacent frames, often leading to content drift and a gradual loss of
+semantic coherence over longer sequences. To tackle such an issue, we propose
+Synchronized Coupled Sampling (SynCoS), a novel inference framework that
+synchronizes denoising paths across the entire video, ensuring long-range
+consistency across both adjacent and distant frames. Our approach combines two
+complementary sampling strategies: reverse and optimization-based sampling,
+which ensure seamless local transitions and enforce global coherence,
+respectively. However, directly alternating between these samplings misaligns
+denoising trajectories, disrupting prompt guidance and introducing unintended
+content changes as they operate independently. To resolve this, SynCoS
+synchronizes them through a grounded timestep and a fixed baseline noise,
+ensuring fully coupled sampling with aligned denoising paths. Extensive
+experiments show that SynCoS significantly improves multi-event long video
+generation, achieving smoother transitions and superior long-range coherence,
+outperforming previous approaches both quantitatively and qualitatively.",http://arxiv.org/pdf/2503.08605v1,,False
+Soft Actor-Critic-based Control Barrier Adaptation for Robust Autonomous Navigation in Unknown Environments,11/03/2025,"Nicholas Mohammad, Nicola Bezzo","Motion planning failures during autonomous navigation often occur when safety
+constraints are either too conservative, leading to deadlocks, or too liberal,
+resulting in collisions. To improve robustness, a robot must dynamically adapt
+its safety constraints to ensure it reaches its goal while balancing safety and
+performance measures. To this end, we propose a Soft Actor-Critic (SAC)-based
+policy for adapting Control Barrier Function (CBF) constraint parameters at
+runtime, ensuring safe yet non-conservative motion. The proposed approach is
+designed for a general high-level motion planner, low-level controller, and
+target system model, and is trained in simulation only. Through extensive
+simulations and physical experiments, we demonstrate that our framework
+effectively adapts CBF constraints, enabling the robot to reach its final goal
+without compromising safety.",http://arxiv.org/pdf/2503.08479v1,,False
+Data Driven Decision Making with Time Series and Spatio-temporal Data,11/03/2025,"Bin Yang, Yuxuan Liang, Chenjuan Guo, Christian S. Jensen","Time series data captures properties that change over time. Such data occurs
+widely, ranging from the scientific and medical domains to the industrial and
+environmental domains. When the properties in time series exhibit spatial
+variations, we often call the data spatio-temporal. As part of the continued
+digitalization of processes throughout society, increasingly large volumes of
+time series and spatio-temporal data are available. In this tutorial, we focus
+on data-driven decision making with such data, e.g., enabling greener and more
+efficient transportation based on traffic time series forecasting. The tutorial
+adopts the holistic paradigm of ""data-governance-analytics-decision."" We first
+introduce the data foundation of time series and spatio-temporal data, which is
+often heterogeneous. Next, we discuss data governance methods that aim to
+improve data quality. We then cover data analytics, focusing on five desired
+characteristics: automation, robustness, generality, explainability, and
+resource efficiency. We finally cover data-driven decision making strategies
+and briefly discuss promising research directions. We hope that the tutorial
+will serve as a primary resource for researchers and practitioners who are
+interested in value creation from time series and spatio-temporal data.",http://arxiv.org/pdf/2503.08473v1,,False
+MinGRU-Based Encoder for Turbo Autoencoder Frameworks,11/03/2025,"Rick Fritschek, Rafael F. Schaefer","Early neural channel coding approaches leveraged dense neural networks with
+one-hot encodings to design adaptive encoder-decoder pairs, improving block
+error rate (BLER) and automating the design process. However, these methods
+struggled with scalability as the size of message sets and block lengths
+increased. TurboAE addressed this challenge by focusing on bit-sequence inputs
+rather than symbol-level representations, transforming the scalability issue
+associated with large message sets into a sequence modeling problem. While
+recurrent neural networks (RNNs) were a natural fit for sequence processing,
+their reliance on sequential computations made them computationally expensive
+and inefficient for long sequences. As a result, TurboAE adopted convolutional
+network blocks, which were faster to train and more scalable, but lacked the
+sequential modeling advantages of RNNs. Recent advances in efficient RNN
+architectures, such as minGRU and minLSTM, and structured state space models
+(SSMs) like S4 and S6, overcome these limitations by significantly reducing
+memory and computational overhead. These models enable scalable sequence
+processing, making RNNs competitive for long-sequence tasks. In this work, we
+revisit RNNs for Turbo autoencoders by integrating the lightweight minGRU model
+with a Mamba block from SSMs into a parallel Turbo autoencoder framework. Our
+results demonstrate that this hybrid design matches the performance of
+convolutional network-based Turbo autoencoder approaches for short sequences
+while significantly improving scalability and training efficiency for long
+block lengths. This highlights the potential of efficient RNNs in advancing
+neural channel coding for long-sequence scenarios.",http://arxiv.org/pdf/2503.08451v1,,False
+Robust Latent Matters: Boosting Image Generation with Sampling Error,11/03/2025,"Kai Qiu, Xiang Li, Jason Kuen, Hao Chen, Xiaohao Xu, Jiuxiang Gu, Yinyi Luo, Bhiksha Raj, Zhe Lin, Marios Savvides","Recent image generation schemes typically capture image distribution in a
+pre-constructed latent space relying on a frozen image tokenizer. Though the
+performance of tokenizer plays an essential role to the successful generation,
+its current evaluation metrics (e.g. rFID) fail to precisely assess the
+tokenizer and correlate its performance to the generation quality (e.g. gFID).
+In this paper, we comprehensively analyze the reason for the discrepancy of
+reconstruction and generation qualities in a discrete latent space, and, from
+which, we propose a novel plug-and-play tokenizer training scheme to facilitate
+latent space construction. Specifically, a latent perturbation approach is
+proposed to simulate sampling noises, i.e., the unexpected tokens sampled, from
+the generative process. With the latent perturbation, we further propose (1) a
+novel tokenizer evaluation metric, i.e., pFID, which successfully correlates
+the tokenizer performance to generation quality and (2) a plug-and-play
+tokenizer training scheme, which significantly enhances the robustness of
+tokenizer thus boosting the generation quality and convergence speed. Extensive
+benchmarking are conducted with 11 advanced discrete image tokenizers with 2
+autoregressive generation models to validate our approach. The tokenizer
+trained with our proposed latent perturbation achieve a notable 1.60 gFID with
+classifier-free guidance (CFG) and 3.45 gFID without CFG with a $\sim$400M
+generator. Code: https://github.com/lxa9867/ImageFolder.",http://arxiv.org/pdf/2503.08354v1,,False
+Large Language Model as Meta-Surrogate for Data-Driven Many-Task Optimization: A Proof-of-Principle Study,11/03/2025,"Xian-Rong Zhang, Yue-Jiao Gong, Jun Zhang","In many-task optimization scenarios, surrogate models are valuable for
+mitigating the computational burden of repeated fitness evaluations across
+tasks. This study proposes a novel meta-surrogate framework to assist many-task
+optimization, by leveraging the knowledge transfer strengths and emergent
+capabilities of large language models (LLMs). We formulate a unified framework
+for many-task fitness prediction, by defining a universal model with metadata
+to fit a group of problems. Fitness prediction is performed on metadata and
+decision variables, enabling efficient knowledge sharing across tasks and
+adaptability to new tasks. The LLM-based meta-surrogate treats fitness
+prediction as conditional probability estimation, employing a unified token
+sequence representation for task metadata, inputs, and outputs. This approach
+facilitates efficient inter-task knowledge sharing through shared token
+embeddings and captures complex task dependencies via multi-task model
+training. Experimental results demonstrate the model's emergent generalization
+ability, including zero-shot performance on problems with unseen dimensions.
+When integrated into evolutionary transfer optimization (ETO), our framework
+supports dual-level knowledge transfer -- at both the surrogate and individual
+levels -- enhancing optimization efficiency and robustness. This work
+establishes a novel foundation for applying LLMs in surrogate modeling,
+offering a versatile solution for many-task optimization.",http://arxiv.org/pdf/2503.08301v1,,False
+D3PO: Preference-Based Alignment of Discrete Diffusion Models,11/03/2025,"Umberto Borso, Davide Paglieri, Jude Wells, Tim Rocktäschel","Diffusion models have achieved state-of-the-art performance across multiple
+domains, with recent advancements extending their applicability to discrete
+data. However, aligning discrete diffusion models with task-specific
+preferences remains challenging, particularly in scenarios where explicit
+reward functions are unavailable. In this work, we introduce Discrete Diffusion
+DPO (D3PO), the first adaptation of Direct Preference Optimization (DPO) to
+discrete diffusion models formulated as continuous-time Markov chains. Our
+approach derives a novel loss function that directly fine-tunes the generative
+process using preference data while preserving fidelity to a reference
+distribution. We validate D3PO on a structured binary sequence generation task,
+demonstrating that the method effectively aligns model outputs with preferences
+while maintaining structural validity. Our results highlight that D3PO enables
+controlled fine-tuning without requiring explicit reward models, making it a
+practical alternative to reinforcement learning-based approaches. Future
+research will explore extending D3PO to more complex generative tasks,
+including language modeling and protein sequence generation, as well as
+investigating alternative noise schedules, such as uniform noising, to enhance
+flexibility across different applications.",http://arxiv.org/pdf/2503.08295v1,,False
+LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization,11/03/2025,"Wenzhe Niu, Zongxia Xie, Yanru Sun, Wei He, Man Xu, Chao Hao","Recent research has shown an increasing interest in utilizing pre-trained
+large language models (LLMs) for a variety of time series applications.
+However, there are three main challenges when using LLMs as foundational models
+for time series forecasting: (1) Cross-domain generalization. (2)
+Cross-modality alignment. (3) Error accumulation in autoregressive frameworks.
+To address these challenges, we proposed LangTime, a language-guided unified
+model for time series forecasting that incorporates cross-domain pre-training
+with reinforcement learning-based fine-tuning. Specifically, LangTime
+constructs Temporal Comprehension Prompts (TCPs), which include dataset-wise
+and channel-wise instructions, to facilitate domain adaptation and condense
+time series into a single token, enabling LLMs to understand better and align
+temporal data. To improve autoregressive forecasting, we introduce TimePPO, a
+reinforcement learning-based fine-tuning algorithm. TimePPO mitigates error
+accumulation by leveraging a multidimensional rewards function tailored for
+time series and a repeat-based value estimation strategy. Extensive experiments
+demonstrate that LangTime achieves state-of-the-art cross-domain forecasting
+performance, while TimePPO fine-tuning effectively enhances the stability and
+accuracy of autoregressive forecasting.",http://arxiv.org/pdf/2503.08271v1,,False
+A Grey-box Text Attack Framework using Explainable AI,11/03/2025,"Esther Chiramal, Kelvin Soh Boon Kai","Explainable AI is a strong strategy implemented to understand complex
+black-box model predictions in a human interpretable language. It provides the
+evidence required to execute the use of trustworthy and reliable AI systems. On
+the other hand, however, it also opens the door to locating possible
+vulnerabilities in an AI model. Traditional adversarial text attack uses word
+substitution, data augmentation techniques and gradient-based attacks on
+powerful pre-trained Bidirectional Encoder Representations from Transformers
+(BERT) variants to generate adversarial sentences. These attacks are generally
+whitebox in nature and not practical as they can be easily detected by humans
+E.g. Changing the word from ""Poor"" to ""Rich"". We proposed a simple yet
+effective Grey-box cum Black-box approach that does not require the knowledge
+of the model while using a set of surrogate Transformer/BERT models to perform
+the attack using Explainable AI techniques. As Transformers are the current
+state-of-the-art models for almost all Natural Language Processing (NLP) tasks,
+an attack generated from BERT1 is transferable to BERT2. This transferability
+is made possible due to the attention mechanism in the transformer that allows
+the model to capture long-range dependencies in a sequence. Using the power of
+BERT generalisation via attention, we attempt to exploit how transformers learn
+by attacking a few surrogate transformer variants which are all based on a
+different architecture. We demonstrate that this approach is highly effective
+to generate semantically good sentences by changing as little as one word that
+is not detectable by humans while still fooling other BERT models.",http://arxiv.org/pdf/2503.08226v1,,False
+To Use or Not to Use a Universal Force Field,11/03/2025,"Denan Li, Jiyuan Yang, Xiangkai Chen, Lintao Yu, Shi Liu","Artificial intelligence (AI) is revolutionizing scientific research,
+particularly in computational materials science, by enabling more accurate and
+efficient simulations. Machine learning force fields (MLFFs) have emerged as
+powerful tools for molecular dynamics (MD) simulations, potentially offering
+quantum-mechanical accuracy with the efficiency of classical MD. This
+Perspective evaluates the viability of universal MLFFs for simulating complex
+materials systems from the standpoint of a potential practitioner. Using the
+temperature-driven ferroelectric-paraelectric phase transition of PbTiO$_3$ as
+a benchmark, we assess leading universal force fields, including CHGNet, MACE,
+M3GNet, and GPTFF, alongside specialized models like UniPero. While universal
+MLFFs trained on PBE-derived datasets perform well in predicting equilibrium
+properties, they largely fail to capture realistic finite-temperature phase
+transitions under constant-pressure MD, often exhibiting unphysical
+instabilities. These shortcomings stem from inherited biases in
+exchange-correlation functionals and limited generalization to anharmonic
+interactions governing dynamic behavior. However, fine-tuning universal models
+or employing system-specific MLFFs like UniPero successfully restores
+predictive accuracy. We advocates for hybrid approaches combining universal
+pretraining with targeted optimization, improved error quantification
+frameworks, and community-driven benchmarks to advance MLFFs as robust tools
+for computational materials discovery.",http://arxiv.org/pdf/2503.08207v1,,False
+ProTeX: Structure-In-Context Reasoning and Editing of Proteins with Large Language Models,11/03/2025,"Zicheng Ma, Chuanliu Fan, Zhicong Wang, Zhenyu Chen, Xiaohan Lin, Yanheng Li, Shihao Feng, Jun Zhang, Ziqiang Cao, Yi Qin Gao","Large language models have made remarkable progress in the field of molecular
+science, particularly in understanding and generating functional small
+molecules. This success is largely attributed to the effectiveness of molecular
+tokenization strategies. In protein science, the amino acid sequence serves as
+the sole tokenizer for LLMs. However, many fundamental challenges in protein
+science are inherently structure-dependent. The absence of structure-aware
+tokens significantly limits the capabilities of LLMs for comprehensive
+biomolecular comprehension and multimodal generation. To address these
+challenges, we introduce a novel framework, ProTeX, which tokenizes the protein
+sequences, structures, and textual information into a unified discrete space.
+This innovative approach enables joint training of the LLM exclusively through
+the Next-Token Prediction paradigm, facilitating multimodal protein reasoning
+and generation. ProTeX enables general LLMs to perceive and process protein
+structures through sequential text input, leverage structural information as
+intermediate reasoning components, and generate or manipulate structures via
+sequential text output. Experiments demonstrate that our model achieves
+significant improvements in protein function prediction, outperforming the
+state-of-the-art domain expert model with a twofold increase in accuracy. Our
+framework enables high-quality conformational generation and customizable
+protein design. For the first time, we demonstrate that by adopting the
+standard training and inference pipelines from the LLM domain, ProTeX empowers
+decoder-only LLMs to effectively address diverse spectrum of protein-related
+tasks.",http://arxiv.org/pdf/2503.08179v1,,False
+"Investigating the Effectiveness of a Socratic Chain-of-Thoughts Reasoning Method for Task Planning in Robotics, A Case Study",11/03/2025,"Veronica Bot, Zheyuan Xu","Large language models (LLMs) have demonstrated unprecedented capability in
+reasoning with natural language. Coupled with this development is the emergence
+of embodied AI in robotics. Despite showing promise for verbal and written
+reasoning tasks, it remains unknown whether LLMs are capable of navigating
+complex spatial tasks with physical actions in the real world. To this end, it
+is of interest to investigate applying LLMs to robotics in zero-shot learning
+scenarios, and in the absence of fine-tuning - a feat which could significantly
+improve human-robot interaction, alleviate compute cost, and eliminate
+low-level programming tasks associated with robot tasks.
+  To explore this question, we apply GPT-4(Omni) with a simulated Tiago robot
+in Webots engine for an object search task. We evaluate the effectiveness of
+three reasoning strategies based on Chain-of-Thought (CoT) sub-task list
+generation with the Socratic method (SocraCoT) (in order of increasing rigor):
+(1) Non-CoT/Non-SocraCoT, (2) CoT only, and (3) SocraCoT. Performance was
+measured in terms of the proportion of tasks successfully completed and
+execution time (N = 20). Our preliminary results show that when combined with
+chain-of-thought reasoning, the Socratic method can be used for code generation
+for robotic tasks that require spatial awareness. In extension of this finding,
+we propose EVINCE-LoC; a modified EVINCE method that could further enhance
+performance in highly complex and or dynamic testing scenarios.",http://arxiv.org/pdf/2503.08174v1,,False
+Toward Stable World Models: Measuring and Addressing World Instability in Generative Environments,11/03/2025,"Soonwoo Kwon, Jin-Young Kim, Hyojun Go, Kyungjune Baek","We present a novel study on enhancing the capability of preserving the
+content in world models, focusing on a property we term World Stability. Recent
+diffusion-based generative models have advanced the synthesis of immersive and
+realistic environments that are pivotal for applications such as reinforcement
+learning and interactive game engines. However, while these models excel in
+quality and diversity, they often neglect the preservation of previously
+generated scenes over time--a shortfall that can introduce noise into agent
+learning and compromise performance in safety-critical settings. In this work,
+we introduce an evaluation framework that measures world stability by having
+world models perform a sequence of actions followed by their inverses to return
+to their initial viewpoint, thereby quantifying the consistency between the
+starting and ending observations. Our comprehensive assessment of
+state-of-the-art diffusion-based world models reveals significant challenges in
+achieving high world stability. Moreover, we investigate several improvement
+strategies to enhance world stability. Our results underscore the importance of
+world stability in world modeling and provide actionable insights for future
+research in this domain.",http://arxiv.org/pdf/2503.08122v1,,False
+Uni$\textbf{F}^2$ace: Fine-grained Face Understanding and Generation with Unified Multimodal Models,11/03/2025,"Junzhe Li, Xuerui Qiu, Linrui Xu, Liya Guo, Delin Qu, Tingting Long, Chun Fan, Ming Li","Unified multimodal models (UMMs) have emerged as a powerful paradigm in
+foundational computer vision research, demonstrating significant potential in
+both image understanding and generation. However, existing research in the face
+domain primarily focuses on $\textbf{coarse}$ facial attribute understanding,
+with limited capacity to handle $\textbf{fine-grained}$ facial attributes and
+without addressing generation capabilities. To overcome these limitations, we
+propose Uni$\textbf{F}^2$ace, the first UMM tailored specifically for
+fine-grained face understanding and generation. In general, we train
+Uni$\textbf{F}^2$ace on a self-constructed, specialized dataset utilizing two
+mutually beneficial diffusion techniques and a two-level mixture-of-experts
+architecture. Specifically, we first build a large-scale facial dataset,
+Uni$\textbf{F}^2$ace-130K, which contains 130K image-text pairs with one
+million question-answering pairs that span a wide range of facial attributes.
+Second, we establish a theoretical connection between discrete diffusion score
+matching and masked generative models, optimizing both evidence lower bounds
+simultaneously, which significantly improves the model's ability to synthesize
+facial details. Finally, we introduce both token-level and sequence-level
+mixture-of-experts, enabling efficient fine-grained representation learning for
+both understanding and generation tasks. Extensive experiments on
+Uni$\textbf{F}^2$ace-130K demonstrate that Uni$\textbf{F}^2$ace outperforms
+existing UMMs and generative models, achieving superior performance across both
+understanding and generation tasks.",http://arxiv.org/pdf/2503.08120v1,,False
+LongProLIP: A Probabilistic Vision-Language Model with Long Context Text,11/03/2025,"Sanghyuk Chun, Sangdoo Yun","Recently, Probabilistic Language-Image Pre-Training (ProLIP) has been
+proposed to tackle the multiplicity issue of vision-language (VL) tasks.
+Despite their success in probabilistic representation learning at a scale, the
+ProLIP models cannot handle long context texts longer than 64 context length,
+which limits their ability to capture rich contextual information from longer
+text sequences. To address this issue, this paper proposes a fine-tuning
+strategy for ProLIP to accept longer texts, e.g., 256 text tokens. Experimental
+results on Urban-1k and the DataComp evaluation suite show that the proposed
+LongProLIP recipe can improve understanding of long contexts while minimizing
+the negative effect of fine-tuning. We also observe a trade-off between the
+long context understanding (measured by Urban-1k) and general zero-shot
+capability (measured by ImageNet or the average of 38 zero-shot evaluation
+datasets by DataComp).",http://arxiv.org/pdf/2503.08048v1,,False
+ObjectMover: Generative Object Movement with Video Prior,11/03/2025,"Xin Yu, Tianyu Wang, Soo Ye Kim, Paul Guerrero, Xi Chen, Qing Liu, Zhe Lin, Xiaojuan Qi","Simple as it seems, moving an object to another location within an image is,
+in fact, a challenging image-editing task that requires re-harmonizing the
+lighting, adjusting the pose based on perspective, accurately filling occluded
+regions, and ensuring coherent synchronization of shadows and reflections while
+maintaining the object identity. In this paper, we present ObjectMover, a
+generative model that can perform object movement in highly challenging scenes.
+Our key insight is that we model this task as a sequence-to-sequence problem
+and fine-tune a video generation model to leverage its knowledge of consistent
+object generation across video frames. We show that with this approach, our
+model is able to adjust to complex real-world scenarios, handling extreme
+lighting harmonization and object effect movement. As large-scale data for
+object movement are unavailable, we construct a data generation pipeline using
+a modern game engine to synthesize high-quality data pairs. We further propose
+a multi-task learning strategy that enables training on real-world video data
+to improve the model generalization. Through extensive experiments, we
+demonstrate that ObjectMover achieves outstanding results and adapts well to
+real-world scenarios.",http://arxiv.org/pdf/2503.08037v1,,False
+Regulatory DNA sequence Design with Reinforcement Learning,11/03/2025,"Zhao Yang, Bing Su, Chuan Cao, Ji-Rong Wen","Cis-regulatory elements (CREs), such as promoters and enhancers, are
+relatively short DNA sequences that directly regulate gene expression. The
+fitness of CREs, measured by their ability to modulate gene expression, highly
+depends on the nucleotide sequences, especially specific motifs known as
+transcription factor binding sites (TFBSs). Designing high-fitness CREs is
+crucial for therapeutic and bioengineering applications. Current CRE design
+methods are limited by two major drawbacks: (1) they typically rely on
+iterative optimization strategies that modify existing sequences and are prone
+to local optima, and (2) they lack the guidance of biological prior knowledge
+in sequence optimization. In this paper, we address these limitations by
+proposing a generative approach that leverages reinforcement learning (RL) to
+fine-tune a pre-trained autoregressive (AR) model. Our method incorporates
+data-driven biological priors by deriving computational inference-based rewards
+that simulate the addition of activator TFBSs and removal of repressor TFBSs,
+which are then integrated into the RL process. We evaluate our method on
+promoter design tasks in two yeast media conditions and enhancer design tasks
+for three human cell types, demonstrating its ability to generate high-fitness
+CREs while maintaining sequence diversity. The code is available at
+https://github.com/yangzhao1230/TACO.",http://arxiv.org/pdf/2503.07981v1,,False
+Discriminative versus Generative Approaches to Simulation-based Inference,11/03/2025,"Benjamin Sluijter, Sascha Diefenbacher, Wahid Bhimji, Benjamin Nachman","Most of the fundamental, emergent, and phenomenological parameters of
+particle and nuclear physics are determined through parametric template fits.
+Simulations are used to populate histograms which are then matched to data.
+This approach is inherently lossy, since histograms are binned and
+low-dimensional. Deep learning has enabled unbinned and high-dimensional
+parameter estimation through neural likelihiood(-ratio) estimation. We compare
+two approaches for neural simulation-based inference (NSBI): one based on
+discriminative learning (classification) and one based on generative modeling.
+These two approaches are directly evaluated on the same datasets, with a
+similar level of hyperparameter optimization in both cases. In addition to a
+Gaussian dataset, we study NSBI using a Higgs boson dataset from the FAIR
+Universe Challenge. We find that both the direct likelihood and likelihood
+ratio estimation are able to effectively extract parameters with reasonable
+uncertainties. For the numerical examples and within the set of hyperparameters
+studied, we found that the likelihood ratio method is more accurate and/or
+precise. Both methods have a significant spread from the network training and
+would require ensembling or other mitigation strategies in practice.",http://arxiv.org/pdf/2503.07962v1,,False
+A Theory of Learning with Autoregressive Chain of Thought,11/03/2025,"Nirmit Joshi, Gal Vardi, Adam Block, Surbhi Goel, Zhiyuan Li, Theodor Misiakiewicz, Nathan Srebro","For a given base class of sequence-to-next-token generators, we consider
+learning prompt-to-answer mappings obtained by iterating a fixed,
+time-invariant generator for multiple steps, thus generating a
+chain-of-thought, and then taking the final token as the answer. We formalize
+the learning problems both when the chain-of-thought is observed and when
+training only on prompt-answer pairs, with the chain-of-thought latent. We
+analyze the sample and computational complexity both in terms of general
+properties of the base class (e.g. its VC dimension) and for specific base
+classes such as linear thresholds. We present a simple base class that allows
+for universal representability and computationally tractable chain-of-thought
+learning. Central to our development is that time invariance allows for sample
+complexity that is independent of the length of the chain-of-thought. Attention
+arises naturally in our construction.",http://arxiv.org/pdf/2503.07932v1,,False

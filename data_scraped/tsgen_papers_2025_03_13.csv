@@ -1,0 +1,331 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Parsing the Language of Expression: Enhancing Symbolic Regression with Domain-Aware Symbolic Priors,12/03/2025,"Sikai Huang, Yixin Berry Wen, Tara Adusumilli, Kusum Choudhary, Haizhao Yang","Symbolic regression is essential for deriving interpretable expressions that
+elucidate complex phenomena by exposing the underlying mathematical and
+physical relationships in data. In this paper, we present an advanced symbolic
+regression method that integrates symbol priors from diverse scientific domains
+- including physics, biology, chemistry, and engineering - into the regression
+process. By systematically analyzing domain-specific expressions, we derive
+probability distributions of symbols to guide expression generation. We propose
+novel tree-structured recurrent neural networks (RNNs) that leverage these
+symbol priors, enabling domain knowledge to steer the learning process.
+Additionally, we introduce a hierarchical tree structure for representing
+expressions, where unary and binary operators are organized to facilitate more
+efficient learning. To further accelerate training, we compile characteristic
+expression blocks from each domain and include them in the operator dictionary,
+providing relevant building blocks. Experimental results demonstrate that
+leveraging symbol priors significantly enhances the performance of symbolic
+regression, resulting in faster convergence and higher accuracy.",http://arxiv.org/pdf/2503.09592v1,,False
+Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models,12/03/2025,"Marianne Arriola, Aaron Gokaslan, Justin T Chiu, Zhihan Yang, Zhixuan Qi, Jiaqi Han, Subham Sekhar Sahoo, Volodymyr Kuleshov","Diffusion language models offer unique benefits over autoregressive models
+due to their potential for parallelized generation and controllability, yet
+they lag in likelihood modeling and are limited to fixed-length generation. In
+this work, we introduce a class of block diffusion language models that
+interpolate between discrete denoising diffusion and autoregressive models.
+Block diffusion overcomes key limitations of both approaches by supporting
+flexible-length generation and improving inference efficiency with KV caching
+and parallel token sampling. We propose a recipe for building effective block
+diffusion models that includes an efficient training algorithm, estimators of
+gradient variance, and data-driven noise schedules to minimize the variance.
+Block diffusion sets a new state-of-the-art performance among diffusion models
+on language modeling benchmarks and enables generation of arbitrary-length
+sequences. We provide the code, along with the model weights and blog post on
+the project page: https://m-arriola.com/bd3lms/",http://arxiv.org/pdf/2503.09573v1,,False
+Federated Smoothing ADMM for Localization,12/03/2025,"Reza Mirzaeifard, Ashkan Moradi, Masahiro Yukawa, Stefan Werner","This paper addresses the challenge of localization in federated settings,
+which are characterized by distributed data, non-convexity, and non-smoothness.
+To tackle the scalability and outlier issues inherent in such environments, we
+propose a robust algorithm that employs an $\ell_1$-norm formulation within a
+novel federated ADMM framework. This approach addresses the problem by
+integrating an iterative smooth approximation for the total variation consensus
+term and employing a Moreau envelope approximation for the convex function that
+appears in a subtracted form. This transformation ensures that the problem is
+smooth and weakly convex in each iteration, which results in enhanced
+computational efficiency and improved estimation accuracy. The proposed
+algorithm supports asynchronous updates and multiple client updates per
+iteration, which ensures its adaptability to real-world federated systems. To
+validate the reliability of the proposed algorithm, we show that the method
+converges to a stationary point, and numerical simulations highlight its
+superior performance in convergence speed and outlier resilience compared to
+existing state-of-the-art localization methods.",http://arxiv.org/pdf/2503.09497v1,,False
+Multimodal Language Modeling for High-Accuracy Single Cell Transcriptomics Analysis and Generation,12/03/2025,"Yaorui Shi, Jiaqi Yang, Sihang Li, Junfeng Fang, Xiang Wang, Zhiyuan Liu, Yang Zhang","Pre-trained language models (PLMs) have revolutionized scientific research,
+yet their application to single-cell analysis remains limited. Text PLMs cannot
+process single-cell RNA sequencing data, while cell PLMs lack the ability to
+handle free text, restricting their use in multimodal tasks. Existing efforts
+to bridge these modalities often suffer from information loss or inadequate
+single-modal pre-training, leading to suboptimal performances. To address these
+challenges, we propose Single-Cell MultiModal Generative Pre-trained
+Transformer (scMMGPT), a unified PLM for joint cell and text modeling. scMMGPT
+effectively integrates the state-of-the-art cell and text PLMs, facilitating
+cross-modal knowledge sharing for improved performance. To bridge the text-cell
+modality gap, scMMGPT leverages dedicated cross-modal projectors, and undergoes
+extensive pre-training on 27 million cells -- the largest dataset for
+multimodal cell-text PLMs to date. This large-scale pre-training enables
+scMMGPT to excel in joint cell-text tasks, achieving an 84\% relative
+improvement of textual discrepancy for cell description generation, 20.5\%
+higher accuracy for cell type annotation, and 4\% improvement in $k$-NN
+accuracy for text-conditioned pseudo-cell generation, outperforming baselines.",http://arxiv.org/pdf/2503.09427v1,,False
+Context-aware Constrained Reinforcement Learning Based Energy-Efficient Power Scheduling for Non-stationary XR Data Traffic,12/03/2025,"Kexuan Wang, An Liu","In XR downlink transmission, energy-efficient power scheduling (EEPS) is
+essential for conserving power resource while delivering large data packets
+within hard-latency constraints. Traditional constrained reinforcement learning
+(CRL) algorithms show promise in EEPS but still struggle with non-convex
+stochastic constraints, non-stationary data traffic, and sparse delayed packet
+dropout feedback (rewards) in XR. To overcome these challenges, this paper
+models the EEPS in XR as a dynamic parameter-constrained Markov decision
+process (DP-CMDP) with a varying transition function linked to the
+non-stationary data traffic and solves it by a proposed context-aware
+constrained reinforcement learning (CACRL) algorithm, which consists of a
+context inference (CI) module and a CRL module. The CI module trains an encoder
+and multiple potential networks to characterize the current transition function
+and reshape the packet dropout rewards according to the context, transforming
+the original DP-CMDP into a general CMDP with immediate dense rewards. The CRL
+module employs a policy network to make EEPS decisions under this CMDP and
+optimizes the policy using a constrained stochastic successive convex
+approximation (CSSCA) method, which is better suited for non-convex stochastic
+constraints. Finally, theoretical analyses provide deep insights into the CADAC
+algorithm, while extensive simulations demonstrate that it outperforms advanced
+baselines in both power conservation and satisfying packet dropout constraints.",http://arxiv.org/pdf/2503.09391v1,,False
+RetSTA: An LLM-Based Approach for Standardizing Clinical Fundus Image Reports,12/03/2025,"Jiushen Cai, Weihang Zhang, Hanruo Liu, Ningli Wang, Huiqi Li","Standardization of clinical reports is crucial for improving the quality of
+healthcare and facilitating data integration. The lack of unified standards,
+including format, terminology, and style, is a great challenge in clinical
+fundus diagnostic reports, which increases the difficulty for large language
+models (LLMs) to understand the data. To address this, we construct a bilingual
+standard terminology, containing fundus clinical terms and commonly used
+descriptions in clinical diagnosis. Then, we establish two models,
+RetSTA-7B-Zero and RetSTA-7B. RetSTA-7B-Zero, fine-tuned on an augmented
+dataset simulating clinical scenarios, demonstrates powerful standardization
+behaviors. However, it encounters a challenge of limitation to cover a wider
+range of diseases. To further enhance standardization performance, we build
+RetSTA-7B, which integrates a substantial amount of standardized data generated
+by RetSTA-7B-Zero along with corresponding English data, covering diverse
+complex clinical scenarios and achieving report-level standardization for the
+first time. Experimental results demonstrate that RetSTA-7B outperforms other
+compared LLMs in bilingual standardization task, which validates its superior
+performance and generalizability. The checkpoints are available at
+https://github.com/AB-Story/RetSTA-7B.",http://arxiv.org/pdf/2503.09358v1,,False
+Automatic Operator-level Parallelism Planning for Distributed Deep Learning -- A Mixed-Integer Programming Approach,12/03/2025,"Ruifeng She, Bowen Pang, Kai Li, Zehua Liu, Tao Zhong","As the artificial intelligence community advances into the era of large
+models with billions of parameters, distributed training and inference have
+become essential. While various parallelism strategies-data, model, sequence,
+and pipeline-have been successfully implemented for popular neural networks on
+main-stream hardware, optimizing the distributed deployment schedule requires
+extensive expertise and manual effort. Further more, while existing frameworks
+with most simple chain-like structures, they struggle with complex non-linear
+architectures. Mixture-of-experts and multi-modal models feature intricate MIMO
+and branch-rich topologies that require fine-grained operator-level
+parallelization beyond the capabilities of existing frameworks. We propose
+formulating parallelism planning as a scheduling optimization problem using
+mixed-integer programming. We propose a bi-level solution framework balancing
+optimality with computational efficiency, automatically generating effective
+distributed plans that capture both the heterogeneous structure of modern
+neural networks and the underlying hardware constraints. In experiments
+comparing against expert-designed strategies like DeepSeek's DualPipe, our
+framework achieves comparable or superior performance, reducing computational
+bubbles by half under the same memory constraints. The framework's versatility
+extends beyond throughput optimization to incorporate hardware utilization
+maximization, memory capacity constraints, and other considerations or
+potential strategies. Such capabilities position our solution as both a
+valuable research tool for exploring optimal parallelization strategies and a
+practical industrial solution for large-scale AI deployment.",http://arxiv.org/pdf/2503.09357v1,,False
+CyberLLMInstruct: A New Dataset for Analysing Safety of Fine-Tuned LLMs Using Cyber Security Data,12/03/2025,"Adel ElZemity, Budi Arief, Shujun Li","The integration of large language models (LLMs) into cyber security
+applications presents significant opportunities, such as enhancing threat
+analysis and malware detection, but can also introduce critical risks and
+safety concerns, including personal data leakage and automated generation of
+new malware. To address these challenges, we developed CyberLLMInstruct, a
+dataset of 54,928 instruction-response pairs spanning cyber security tasks such
+as malware analysis, phishing simulations, and zero-day vulnerabilities. The
+dataset was constructed through a multi-stage process. This involved sourcing
+data from multiple resources, filtering and structuring it into
+instruction-response pairs, and aligning it with real-world scenarios to
+enhance its applicability. Seven open-source LLMs were chosen to test the
+usefulness of CyberLLMInstruct: Phi 3 Mini 3.8B, Mistral 7B, Qwen 2.5 7B, Llama
+3 8B, Llama 3.1 8B, Gemma 2 9B, and Llama 2 70B. In our primary example, we
+rigorously assess the safety of fine-tuned models using the OWASP top 10
+framework, finding that fine-tuning reduces safety resilience across all tested
+LLMs and every adversarial attack (e.g., the security score of Llama 3.1 8B
+against prompt injection drops from 0.95 to 0.15). In our second example, we
+show that these same fine-tuned models can also achieve up to 92.50 percent
+accuracy on the CyberMetric benchmark. These findings highlight a trade-off
+between performance and safety, showing the importance of adversarial testing
+and further research into fine-tuning methodologies that can mitigate safety
+risks while still improving performance across diverse datasets and domains.
+All scripts required to reproduce the dataset, along with examples and relevant
+resources for replicating our results, will be made available upon the paper's
+acceptance.",http://arxiv.org/pdf/2503.09334v1,,False
+Terrier: A Deep Learning Repeat Classifier,12/03/2025,"Robert Turnbull, Neil D. Young, Edoardo Tescari, Lee F. Skerratt, Tiffany A. Kosch","Repetitive DNA sequences underpin genome architecture and evolutionary
+processes, yet they remain challenging to classify accurately. Terrier is a
+deep learning model designed to overcome these challenges by classifying
+repetitive DNA sequences using a publicly available, curated repeat sequence
+library trained under the RepeatMasker schema. Existing tools often struggle to
+classify divergent taxa due to biases in reference libraries, limiting our
+understanding of repeat evolution and function. Terrier overcomes these
+challenges by leveraging deep learning for improved accuracy. Trained on
+RepBase, which includes over 100,000 repeat families -- four times more than
+Dfam -- Terrier maps 97.1% of RepBase sequences to RepeatMasker categories,
+offering the most comprehensive classification system available. When
+benchmarked against DeepTE, TERL, and TEclass2 in model organisms (rice and
+fruit flies), Terrier achieved superior accuracy while classifying a broader
+range of sequences. Further validation in non-model amphibian and flatworm
+genomes highlights its effectiveness in improving classification in non-model
+species, facilitating research on repeat-driven evolution, genomic instability,
+and phenotypic variation.",http://arxiv.org/pdf/2503.09312v1,,False
+Adaptive political surveys and GPT-4: Tackling the cold start problem with simulated user interactions,12/03/2025,"Fynn Bachmann, Daan van der Weijden, Lucien Heitz, Cristina Sarasua, Abraham Bernstein","Adaptive questionnaires dynamically select the next question for a survey
+participant based on their previous answers. Due to digitalisation, they have
+become a viable alternative to traditional surveys in application areas such as
+political science. One limitation, however, is their dependency on data to
+train the model for question selection. Often, such training data (i.e., user
+interactions) are unavailable a priori. To address this problem, we (i) test
+whether Large Language Models (LLM) can accurately generate such interaction
+data and (ii) explore if these synthetic data can be used to pre-train the
+statistical model of an adaptive political survey. To evaluate this approach,
+we utilise existing data from the Swiss Voting Advice Application (VAA)
+Smartvote in two ways: First, we compare the distribution of LLM-generated
+synthetic data to the real distribution to assess its similarity. Second, we
+compare the performance of an adaptive questionnaire that is randomly
+initialised with one pre-trained on synthetic data to assess their suitability
+for training. We benchmark these results against an ""oracle"" questionnaire with
+perfect prior knowledge. We find that an off-the-shelf LLM (GPT-4) accurately
+generates answers to the Smartvote questionnaire from the perspective of
+different Swiss parties. Furthermore, we demonstrate that initialising the
+statistical model with synthetic data can (i) significantly reduce the error in
+predicting user responses and (ii) increase the candidate recommendation
+accuracy of the VAA. Our work emphasises the considerable potential of LLMs to
+create training data to improve the data collection process in adaptive
+questionnaires in LLM-affine areas such as political surveys.",http://arxiv.org/pdf/2503.09311v1,,False
+Other Vehicle Trajectories Are Also Needed: A Driving World Model Unifies Ego-Other Vehicle Trajectories in Video Latant Space,12/03/2025,"Jian Zhu, Zhengyu Jia, Tian Gao, Jiaxin Deng, Shidi Li, Fu Liu, Peng Jia, Xianpeng Lang, Xiaolong Sun","Advanced end-to-end autonomous driving systems predict other vehicles'
+motions and plan ego vehicle's trajectory. The world model that can foresee the
+outcome of the trajectory has been used to evaluate the end-to-end autonomous
+driving system. However, existing world models predominantly emphasize the
+trajectory of the ego vehicle and leave other vehicles uncontrollable. This
+limitation hinders their ability to realistically simulate the interaction
+between the ego vehicle and the driving scenario. In addition, it remains a
+challenge to match multiple trajectories with each vehicle in the video to
+control the video generation. To address above issues, a driving \textbf{W}orld
+\textbf{M}odel named EOT-WM is proposed in this paper, unifying
+\textbf{E}go-\textbf{O}ther vehicle \textbf{T}rajectories in videos.
+Specifically, we first project ego and other vehicle trajectories in the BEV
+space into the image coordinate to match each trajectory with its corresponding
+vehicle in the video. Then, trajectory videos are encoded by the
+Spatial-Temporal Variational Auto Encoder to align with driving video latents
+spatially and temporally in the unified visual space. A trajectory-injected
+diffusion Transformer is further designed to denoise the noisy video latents
+for video generation with the guidance of ego-other vehicle trajectories. In
+addition, we propose a metric based on control latent similarity to evaluate
+the controllability of trajectories. Extensive experiments are conducted on the
+nuScenes dataset, and the proposed model outperforms the state-of-the-art
+method by 30\% in FID and 55\% in FVD. The model can also predict unseen
+driving scenes with self-produced trajectories.",http://arxiv.org/pdf/2503.09215v1,,False
+GRU: Mitigating the Trade-off between Unlearning and Retention for Large Language Models,12/03/2025,"Yue Wang, Qizhou Wang, Feng Liu, Wei Huang, Yali Du, Xiaojiang Du, Bo Han","Large language model (LLM) unlearning has demonstrated its essential role in
+removing privacy and copyright-related responses, crucial for their legal and
+safe applications. However, the pursuit of complete unlearning often comes with
+substantial costs due to its compromises in their general functionality,
+leading to a notorious trade-off between unlearning and retention. In examining
+the update process for unlearning dynamically, we find gradients hold essential
+information for revealing this trade-off. In particular, we look at the varying
+relationship between retention performance and directional disparities between
+gradients during unlearning. It motivates the sculpting of an update mechanism
+derived from gradients from two sources, i.e., harmful for retention and useful
+for unlearning. Accordingly, we propose Gradient Rectified Unlearning (GRU), an
+enhanced unlearning framework controlling the updating gradients in a
+geometry-focused and optimization-driven manner such that their side impacts on
+other, unrelated responses can be minimized. Specifically, GRU derives a
+closed-form solution to project the unlearning gradient onto the orthogonal
+space of that gradient harmful for retention, ensuring minimal deviation from
+its original direction under the condition that overall performance is
+retained. Comprehensive experiments are conducted to demonstrate that GRU, as a
+general framework, is straightforward to implement and efficiently enhances a
+range of baseline methods through its adaptable and compatible characteristics.
+Additionally, experimental results show its broad effectiveness across a
+diverse set of benchmarks for LLM unlearning.",http://arxiv.org/pdf/2503.09117v1,,False
+Self-Consistent Equation-guided Neural Networks for Censored Time-to-Event Data,12/03/2025,"Sehwan Kim, Rui Wang, Wenbin Lu","In survival analysis, estimating the conditional survival function given
+predictors is often of interest. There is a growing trend in the development of
+deep learning methods for analyzing censored time-to-event data, especially
+when dealing with high-dimensional predictors that are complexly interrelated.
+Many existing deep learning approaches for estimating the conditional survival
+functions extend the Cox regression models by replacing the linear function of
+predictor effects by a shallow feed-forward neural network while maintaining
+the proportional hazards assumption. Their implementation can be
+computationally intensive due to the use of the full dataset at each iteration
+because the use of batch data may distort the at-risk set of the partial
+likelihood function. To overcome these limitations, we propose a novel deep
+learning approach to non-parametric estimation of the conditional survival
+functions using the generative adversarial networks leveraging self-consistent
+equations. The proposed method is model-free and does not require any
+parametric assumptions on the structure of the conditional survival function.
+We establish the convergence rate of our proposed estimator of the conditional
+survival function. In addition, we evaluate the performance of the proposed
+method through simulation studies and demonstrate its application on a
+real-world dataset.",http://arxiv.org/pdf/2503.09097v1,,False
+ManeuverGPT Agentic Control for Safe Autonomous Stunt Maneuvers,12/03/2025,"Shawn Azdam, Pranav Doma, Aliasghar Moj Arab","The next generation of active safety features in autonomous vehicles should
+be capable of safely executing evasive hazard-avoidance maneuvers akin to those
+performed by professional stunt drivers to achieve high-agility motion at the
+limits of vehicle handling. This paper presents a novel framework, ManeuverGPT,
+for generating and executing high-dynamic stunt maneuvers in autonomous
+vehicles using large language model (LLM)-based agents as controllers. We
+target aggressive maneuvers, such as J-turns, within the CARLA simulation
+environment and demonstrate an iterative, prompt-based approach to refine
+vehicle control parameters, starting tabula rasa without retraining model
+weights. We propose an agentic architecture comprised of three specialized
+agents (1) a Query Enricher Agent for contextualizing user commands, (2) a
+Driver Agent for generating maneuver parameters, and (3) a Parameter Validator
+Agent that enforces physics-based and safety constraints. Experimental results
+demonstrate successful J-turn execution across multiple vehicle models through
+textual prompts that adapt to differing vehicle dynamics. We evaluate
+performance via established success criteria and discuss limitations regarding
+numeric precision and scenario complexity. Our findings underscore the
+potential of LLM-driven control for flexible, high-dynamic maneuvers, while
+highlighting the importance of hybrid approaches that combine language-based
+reasoning with algorithmic validation.",http://arxiv.org/pdf/2503.09035v1,,False
+Enhancing High-Quality Code Generation in Large Language Models with Comparative Prefix-Tuning,12/03/2025,"Yuan Jiang, Yujian Zhang, Liang Lu, Christoph Treude, Xiaohong Su, Shan Huang, Tiantian Wang","Large Language Models (LLMs) have been widely adopted in commercial code
+completion engines, significantly enhancing coding efficiency and productivity.
+However, LLMs may generate code with quality issues that violate coding
+standards and best practices, such as poor code style and maintainability, even
+when the code is functionally correct. This necessitates additional effort from
+developers to improve the code, potentially negating the efficiency gains
+provided by LLMs. To address this problem, we propose a novel comparative
+prefix-tuning method for controllable high-quality code generation. Our method
+introduces a single, property-specific prefix that is prepended to the
+activations of the LLM, serving as a lightweight alternative to fine-tuning.
+Unlike existing methods that require training multiple prefixes, our approach
+trains only one prefix and leverages pairs of high-quality and low-quality code
+samples, introducing a sequence-level ranking loss to guide the model's
+training. This comparative approach enables the model to better understand the
+differences between high-quality and low-quality code, focusing on aspects that
+impact code quality. Additionally, we design a data construction pipeline to
+collect and annotate pairs of high-quality and low-quality code, facilitating
+effective training. Extensive experiments on the Code Llama 7B model
+demonstrate that our method improves code quality by over 100% in certain task
+categories, while maintaining functional correctness. We also conduct ablation
+studies and generalization experiments, confirming the effectiveness of our
+method's components and its strong generalization capability.",http://arxiv.org/pdf/2503.09020v1,,False
+Natural Humanoid Robot Locomotion with Generative Motion Prior,12/03/2025,"Haodong Zhang, Liang Zhang, Zhenghan Chen, Lu Chen, Yue Wang, Rong Xiong","Natural and lifelike locomotion remains a fundamental challenge for humanoid
+robots to interact with human society. However, previous methods either neglect
+motion naturalness or rely on unstable and ambiguous style rewards. In this
+paper, we propose a novel Generative Motion Prior (GMP) that provides
+fine-grained motion-level supervision for the task of natural humanoid robot
+locomotion. To leverage natural human motions, we first employ whole-body
+motion retargeting to effectively transfer them to the robot. Subsequently, we
+train a generative model offline to predict future natural reference motions
+for the robot based on a conditional variational auto-encoder. During policy
+training, the generative motion prior serves as a frozen online motion
+generator, delivering precise and comprehensive supervision at the trajectory
+level, including joint angles and keypoint positions. The generative motion
+prior significantly enhances training stability and improves interpretability
+by offering detailed and dense guidance throughout the learning process.
+Experimental results in both simulation and real-world environments demonstrate
+that our method achieves superior motion naturalness compared to existing
+approaches. Project page can be found at
+https://sites.google.com/view/humanoid-gmp",http://arxiv.org/pdf/2503.09015v1,,False
+I Predict Therefore I Am: Is Next Token Prediction Enough to Learn Human-Interpretable Concepts from Data?,12/03/2025,"Yuhang Liu, Dong Gong, Erdun Gao, Zhen Zhang, Biwei Huang, Mingming Gong, Anton van den Hengel, Javen Qinfeng Shi","The remarkable achievements of large language models (LLMs) have led many to
+conclude that they exhibit a form of intelligence. This is as opposed to
+explanations of their capabilities based on their ability to perform relatively
+simple manipulations of vast volumes of data. To illuminate the distinction
+between these explanations, we introduce a novel generative model that
+generates tokens on the basis of human interpretable concepts represented as
+latent discrete variables. Under mild conditions, even when the mapping from
+the latent space to the observed space is non-invertible, we establish an
+identifiability result: the representations learned by LLMs through next-token
+prediction can be approximately modeled as the logarithm of the posterior
+probabilities of these latent discrete concepts, up to an invertible linear
+transformation. This theoretical finding not only provides evidence that LLMs
+capture underlying generative factors, but also strongly reinforces the linear
+representation hypothesis, which posits that LLMs learn linear representations
+of human-interpretable concepts. Empirically, we validate our theoretical
+results through evaluations on both simulation data and the Pythia, Llama, and
+DeepSeek model families.",http://arxiv.org/pdf/2503.08980v1,,False

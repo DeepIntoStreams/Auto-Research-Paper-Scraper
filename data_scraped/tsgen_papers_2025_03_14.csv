@@ -1,0 +1,213 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+NIL: No-data Imitation Learning by Leveraging Pre-trained Video Diffusion Models,13/03/2025,"Mert Albaba, Chenhao Li, Markos Diomataris, Omid Taheri, Andreas Krause, Michael Black","Acquiring physically plausible motor skills across diverse and unconventional
+morphologies-including humanoid robots, quadrupeds, and animals-is essential
+for advancing character simulation and robotics. Traditional methods, such as
+reinforcement learning (RL) are task- and body-specific, require extensive
+reward function engineering, and do not generalize well. Imitation learning
+offers an alternative but relies heavily on high-quality expert demonstrations,
+which are difficult to obtain for non-human morphologies. Video diffusion
+models, on the other hand, are capable of generating realistic videos of
+various morphologies, from humans to ants. Leveraging this capability, we
+propose a data-independent approach for skill acquisition that learns 3D motor
+skills from 2D-generated videos, with generalization capability to
+unconventional and non-human forms. Specifically, we guide the imitation
+learning process by leveraging vision transformers for video-based comparisons
+by calculating pair-wise distance between video embeddings. Along with
+video-encoding distance, we also use a computed similarity between segmented
+video frames as a guidance reward. We validate our method on locomotion tasks
+involving unique body configurations. In humanoid robot locomotion tasks, we
+demonstrate that 'No-data Imitation Learning' (NIL) outperforms baselines
+trained on 3D motion-capture data. Our results highlight the potential of
+leveraging generative video models for physically plausible skill learning with
+diverse morphologies, effectively replacing data collection with data
+generation for imitation learning.",http://arxiv.org/pdf/2503.10626v1,,False
+The Spectral Bias of Shallow Neural Network Learning is Shaped by the Choice of Non-linearity,13/03/2025,"Justin Sahs, Ryan Pyle, Fabio Anselmi, Ankit Patel","Despite classical statistical theory predicting severe overfitting, modern
+massively overparameterized neural networks still generalize well. This
+unexpected property is attributed to the network's so-called implicit bias,
+which describes its propensity to converge to solutions that generalize
+effectively, among the many possible that correctly label the training data.
+The aim of our research is to explore this bias from a new perspective,
+focusing on how non-linear activation functions contribute to shaping it.
+First, we introduce a reparameterization which removes a continuous weight
+rescaling symmetry. Second, in the kernel regime, we leverage this
+reparameterization to generalize recent findings that relate shallow Neural
+Networks to the Radon transform, deriving an explicit formula for the implicit
+bias induced by a broad class of activation functions. Specifically, by
+utilizing the connection between the Radon transform and the Fourier transform,
+we interpret the kernel regime's inductive bias as minimizing a spectral
+seminorm that penalizes high-frequency components, in a manner dependent on the
+activation function. Finally, in the adaptive regime, we demonstrate the
+existence of local dynamical attractors that facilitate the formation of
+clusters of hyperplanes where the input to a neuron's activation function is
+zero, yielding alignment between many neurons' response functions. We confirm
+these theoretical results with simulations. All together, our work provides a
+deeper understanding of the mechanisms underlying the generalization
+capabilities of overparameterized neural networks and its relation with the
+implicit bias, offering potential pathways for designing more efficient and
+robust models.",http://arxiv.org/pdf/2503.10587v1,,False
+Sample Compression for Continual Learning,13/03/2025,"Jacob Comeau, Mathieu Bazinet, Pascal Germain, Cem Subakan","Continual learning algorithms aim to learn from a sequence of tasks, making
+the training distribution non-stationary. The majority of existing continual
+learning approaches in the literature rely on heuristics and do not provide
+learning guarantees for the continual learning setup. In this paper, we present
+a new method called 'Continual Pick-to-Learn' (CoP2L), which is able to retain
+the most representative samples for each task in an efficient way. The
+algorithm is adapted from the Pick-to-Learn algorithm, rooted in the sample
+compression theory. This allows us to provide high-confidence upper bounds on
+the generalization loss of the learned predictors, numerically computable after
+every update of the learned model. We also empirically show on several standard
+continual learning benchmarks that our algorithm is able to outperform standard
+experience replay, significantly mitigating catastrophic forgetting.",http://arxiv.org/pdf/2503.10503v1,,False
+Streaming Generation of Co-Speech Gestures via Accelerated Rolling Diffusion,13/03/2025,"Evgeniia Vu, Andrei Boiarov, Dmitry Vetrov","Generating co-speech gestures in real time requires both temporal coherence
+and efficient sampling. We introduce Accelerated Rolling Diffusion, a novel
+framework for streaming gesture generation that extends rolling diffusion
+models with structured progressive noise scheduling, enabling seamless
+long-sequence motion synthesis while preserving realism and diversity. We
+further propose Rolling Diffusion Ladder Acceleration (RDLA), a new approach
+that restructures the noise schedule into a stepwise ladder, allowing multiple
+frames to be denoised simultaneously. This significantly improves sampling
+efficiency while maintaining motion consistency, achieving up to a 2x speedup
+with high visual fidelity and temporal coherence. We evaluate our approach on
+ZEGGS and BEAT, strong benchmarks for real-world applicability. Our framework
+is universally applicable to any diffusion-based gesture generation model,
+transforming it into a streaming approach. Applied to three state-of-the-art
+methods, it consistently outperforms them, demonstrating its effectiveness as a
+generalizable and efficient solution for real-time, high-fidelity co-speech
+gesture synthesis.",http://arxiv.org/pdf/2503.10488v1,,False
+RealGeneral: Unifying Visual Generation via Temporal In-Context Learning with Video Models,13/03/2025,"Yijing Lin, Mengqi Huang, Shuhan Zhuang, Zhendong Mao","Unifying diverse image generation tasks within a single framework remains a
+fundamental challenge in visual generation. While large language models (LLMs)
+achieve unification through task-agnostic data and generation, existing visual
+generation models fail to meet these principles. Current approaches either rely
+on per-task datasets and large-scale training or adapt pre-trained image models
+with task-specific modifications, limiting their generalizability. In this
+work, we explore video models as a foundation for unified image generation,
+leveraging their inherent ability to model temporal correlations. We introduce
+RealGeneral, a novel framework that reformulates image generation as a
+conditional frame prediction task, analogous to in-context learning in LLMs. To
+bridge the gap between video models and condition-image pairs, we propose (1) a
+Unified Conditional Embedding module for multi-modal alignment and (2) a
+Unified Stream DiT Block with decoupled adaptive LayerNorm and attention mask
+to mitigate cross-modal interference. RealGeneral demonstrates effectiveness in
+multiple important visual generation tasks, e.g., it achieves a 14.5%
+improvement in subject similarity for customized generation and a 10%
+enhancement in image quality for canny-to-image task. Project page:
+https://lyne1.github.io/RealGeneral/",http://arxiv.org/pdf/2503.10406v1,,False
+Probabilistic Forecasting via Autoregressive Flow Matching,13/03/2025,"Ahmed El-Gazzar, Marcel van Gerven","In this work, we propose FlowTime, a generative model for probabilistic
+forecasting of multivariate timeseries data. Given historical measurements and
+optional future covariates, we formulate forecasting as sampling from a learned
+conditional distribution over future trajectories. Specifically, we decompose
+the joint distribution of future observations into a sequence of conditional
+densities, each modeled via a shared flow that transforms a simple base
+distribution into the next observation distribution, conditioned on observed
+covariates. To achieve this, we leverage the flow matching (FM) framework,
+enabling scalable and simulation-free learning of these transformations. By
+combining this factorization with the FM objective, FlowTime retains the
+benefits of autoregressive models -- including strong extrapolation
+performance, compact model size, and well-calibrated uncertainty estimates --
+while also capturing complex multi-modal conditional distributions, as seen in
+modern transport-based generative models. We demonstrate the effectiveness of
+FlowTime on multiple dynamical systems and real-world forecasting tasks.",http://arxiv.org/pdf/2503.10375v1,,False
+KV-Distill: Nearly Lossless Learnable Context Compression for LLMs,13/03/2025,"Vivek Chari, Guanghui Qin, Benjamin Van Durme","Sequence-to-sequence tasks often benefit from long contexts, but the
+quadratic complexity of self-attention in standard Transformers renders this
+non-trivial. During generation, temporary representations -stored in the
+so-called KV cache-account for a large portion of GPU memory usage and scale
+linearly with context length. We introduce KV-Distill, a Transformer
+compression framework that distills long context KV caches into significantly
+shorter representations in a question-independent fashion. KV-Distill can be
+trained as a parameter-efficient adaptor for pretrained models, and enables the
+compression of arbitrary spans of a context while preserving pre-trained model
+capabilities. We treat a compressed-uncompressed cache as a student-teacher
+pairing and apply a KL-type divergence to match the generated outputs.
+KV-Distill outperforms other compression techniques in worst-case extractive
+tasks and approaches uncompressed performance in long context question
+answering and summarization, and it can be fine-tuned on domain-specific
+contexts to reduce lengths by up to 99% while preserving downstream
+performance. We demonstrate the generalizability of KV-Distill across various
+model sizes and architectures.",http://arxiv.org/pdf/2503.10337v1,,False
+Deep Learning for Time Series Forecasting: A Survey,13/03/2025,"Xiangjie Kong, Zhenghao Chen, Weiyao Liu, Kaili Ning, Lechao Zhang, Syauqie Muhammad Marier, Yichen Liu, Yuhao Chen, Feng Xia","Time series forecasting (TSF) has long been a crucial task in both industry
+and daily life. Most classical statistical models may have certain limitations
+when applied to practical scenarios in fields such as energy, healthcare,
+traffic, meteorology, and economics, especially when high accuracy is required.
+With the continuous development of deep learning, numerous new models have
+emerged in the field of time series forecasting in recent years. However,
+existing surveys have not provided a unified summary of the wide range of model
+architectures in this field, nor have they given detailed summaries of works in
+feature extraction and datasets. To address this gap, in this review, we
+comprehensively study the previous works and summarize the general paradigms of
+Deep Time Series Forecasting (DTSF) in terms of model architectures. Besides,
+we take an innovative approach by focusing on the composition of time series
+and systematically explain important feature extraction methods. Additionally,
+we provide an overall compilation of datasets from various domains in existing
+works. Finally, we systematically emphasize the significant challenges faced
+and future research directions in this field.",http://arxiv.org/pdf/2503.10198v1,10.1007/s13042-025-02560-w,False
+Multi-Agent Q-Learning Dynamics in Random Networks: Convergence due to Exploration and Sparsity,13/03/2025,"Aamal Hussain, Dan Leonte, Francesco Belardinelli, Raphael Huser, Dario Paccagnan","Beyond specific settings, many multi-agent learning algorithms fail to
+converge to an equilibrium solution, and instead display complex,
+non-stationary behaviours such as recurrent or chaotic orbits. In fact, recent
+literature suggests that such complex behaviours are likely to occur when the
+number of agents increases. In this paper, we study Q-learning dynamics in
+network polymatrix games where the network structure is drawn from classical
+random graph models. In particular, we focus on the Erdos-Renyi model, a
+well-studied model for social networks, and the Stochastic Block model, which
+generalizes the above by accounting for community structures within the
+network. In each setting, we establish sufficient conditions under which the
+agents' joint strategies converge to a unique equilibrium. We investigate how
+this condition depends on the exploration rates, payoff matrices and,
+crucially, the sparsity of the network. Finally, we validate our theoretical
+findings through numerical simulations and demonstrate that convergence can be
+reliably achieved in many-agent systems, provided network sparsity is
+controlled.",http://arxiv.org/pdf/2503.10186v1,,False
+Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding,13/03/2025,"Jinze Li, Yixing Xu, Haiduo Huang, Xuanwu Yin, Dong Li, Edith C. H. Ngai, Emad Barsoum","Speculative decoding (SPD) aims to accelerate the auto-regressive token
+generation process of a target Large Language Model (LLM). Some approaches
+employ a draft model with multiple heads to predict a sequence of future
+tokens, where each head handles a token in the sequence. The target LLM
+verifies the predicted sequence and accepts aligned tokens, enabling efficient
+multi-token generation. However, existing methods assume that all tokens within
+a sequence are equally important, employing identical head structures and
+relying on a single-generation paradigm, either serial or parallel. To this
+end, we theoretically demonstrate that initial tokens in the draft sequence are
+more important than later ones. Building on this insight, we propose Gumiho, a
+hybrid model combining serial and parallel heads. Specifically, given the
+critical importance of early tokens, we employ a sophisticated Transformer
+architecture for the early draft heads in a serial configuration to improve
+accuracy. For later tokens, we utilize multiple lightweight MLP heads operating
+in parallel to enhance efficiency. By allocating more advanced model structures
+and longer running times to the early heads, Gumiho achieves improved overall
+performance. The experimental results demonstrate that our method outperforms
+existing approaches, fully validating its effectiveness.",http://arxiv.org/pdf/2503.10135v1,,False
+Identifying Trustworthiness Challenges in Deep Learning Models for Continental-Scale Water Quality Prediction,13/03/2025,"Xiaobo Xia, Xiaofeng Liu, Jiale Liu, Kuai Fang, Lu Lu, Samet Oymak, William S. Currie, Tongliang Liu","Water quality is foundational to environmental sustainability, ecosystem
+resilience, and public health. Deep learning models, particularly Long
+Short-Term Memory (LSTM) networks, offer transformative potential for
+large-scale water quality prediction and scientific insights generation.
+However, their widespread adoption in high-stakes decision-making, such as
+pollution mitigation and equitable resource allocation, is prevented by
+unresolved trustworthiness challenges including fairness, uncertainty,
+interpretability, robustness, generalizability, and reproducibility. In this
+work, we present the first comprehensive evaluation of trustworthiness in a
+continental-scale multi-task LSTM model predicting 20 water quality variables
+(encompassing physical/chemical processes, geochemical weathering, and nutrient
+cycling) across 482 U.S. basins. Our investigation uncovers systematic patterns
+of model performance disparities linked to basin characteristics, the inherent
+complexity of biogeochemical processes, and variable predictability,
+emphasizing critical performance fairness concerns. We further propose
+methodological frameworks for quantitatively evaluating critical aspects of
+trustworthiness, including uncertainty, interpretability, and robustness,
+identifying key limitations that could challenge reliable real-world
+deployment. This work serves as a timely call to action for advancing
+trustworthy data-driven methods for water resources management and provides a
+pathway to offering critical insights for researchers, decision-makers, and
+practitioners seeking to leverage artificial intelligence (AI) responsibly in
+environmental management.",http://arxiv.org/pdf/2503.09947v1,,False
+Inter-environmental world modeling for continuous and compositional dynamics,13/03/2025,"Kohei Hayashi, Masanori Koyama, Julian Jorge Andrade Guerreiro","Various world model frameworks are being developed today based on
+autoregressive frameworks that rely on discrete representations of actions and
+observations, and these frameworks are succeeding in constructing interactive
+generative models for the target environment of interest. Meanwhile, humans
+demonstrate remarkable generalization abilities to combine experiences in
+multiple environments to mentally simulate and learn to control agents in
+diverse environments. Inspired by this human capability, we introduce World
+modeling through Lie Action (WLA), an unsupervised framework that learns
+continuous latent action representations to simulate across environments. WLA
+learns a control interface with high controllability and predictive ability by
+simultaneously modeling the dynamics of multiple environments using Lie group
+theory and object-centric autoencoder. On synthetic benchmark and real-world
+datasets, we demonstrate that WLA can be trained using only video frames and,
+with minimal or no action labels, can quickly adapt to new environments with
+novel action sets.",http://arxiv.org/pdf/2503.09911v1,,False

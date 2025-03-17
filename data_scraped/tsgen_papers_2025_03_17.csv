@@ -1,0 +1,299 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+HiTVideo: Hierarchical Tokenizers for Enhancing Text-to-Video Generation with Autoregressive Large Language Models,14/03/2025,"Ziqin Zhou, Yifan Yang, Yuqing Yang, Tianyu He, Houwen Peng, Kai Qiu, Qi Dai, Lili Qiu, Chong Luo, Lingqiao Liu","Text-to-video generation poses significant challenges due to the inherent
+complexity of video data, which spans both temporal and spatial dimensions. It
+introduces additional redundancy, abrupt variations, and a domain gap between
+language and vision tokens while generation. Addressing these challenges
+requires an effective video tokenizer that can efficiently encode video data
+while preserving essential semantic and spatiotemporal information, serving as
+a critical bridge between text and vision. Inspired by the observation in
+VQ-VAE-2 and workflows of traditional animation, we propose HiTVideo for
+text-to-video generation with hierarchical tokenizers. It utilizes a 3D causal
+VAE with a multi-layer discrete token framework, encoding video content into
+hierarchically structured codebooks. Higher layers capture semantic information
+with higher compression, while lower layers focus on fine-grained
+spatiotemporal details, striking a balance between compression efficiency and
+reconstruction quality. Our approach efficiently encodes longer video sequences
+(e.g., 8 seconds, 64 frames), reducing bits per pixel (bpp) by approximately
+70\% compared to baseline tokenizers, while maintaining competitive
+reconstruction quality. We explore the trade-offs between compression and
+reconstruction, while emphasizing the advantages of high-compressed semantic
+tokens in text-to-video tasks. HiTVideo aims to address the potential
+limitations of existing video tokenizers in text-to-video generation tasks,
+striving for higher compression ratios and simplify LLMs modeling under
+language guidance, offering a scalable and promising framework for advancing
+text to video generation. Demo page:
+https://ziqinzhou66.github.io/project/HiTVideo.",http://arxiv.org/pdf/2503.11513v1,,False
+Classifying Long-tailed and Label-noise Data via Disentangling and Unlearning,14/03/2025,"Chen Shu, Mengke Li, Yiqun Zhang, Yang Lu, Bo Han, Yiu-ming Cheung, Hanzi Wang","In real-world datasets, the challenges of long-tailed distributions and noisy
+labels often coexist, posing obstacles to the model training and performance.
+Existing studies on long-tailed noisy label learning (LTNLL) typically assume
+that the generation of noisy labels is independent of the long-tailed
+distribution, which may not be true from a practical perspective. In real-world
+situaiton, we observe that the tail class samples are more likely to be
+mislabeled as head, exacerbating the original degree of imbalance. We call this
+phenomenon as ``tail-to-head (T2H)'' noise. T2H noise severely degrades model
+performance by polluting the head classes and forcing the model to learn the
+tail samples as head. To address this challenge, we investigate the dynamic
+misleading process of the nosiy labels and propose a novel method called
+Disentangling and Unlearning for Long-tailed and Label-noisy data (DULL). It
+first employs the Inner-Feature Disentangling (IFD) to disentangle feature
+internally. Based on this, the Inner-Feature Partial Unlearning (IFPU) is then
+applied to weaken and unlearn incorrect feature regions correlated to wrong
+classes. This method prevents the model from being misled by noisy labels,
+enhancing the model's robustness against noise. To provide a controlled
+experimental environment, we further propose a new noise addition algorithm to
+simulate T2H noise. Extensive experiments on both simulated and real-world
+datasets demonstrate the effectiveness of our proposed method.",http://arxiv.org/pdf/2503.11414v1,,False
+Empowering Time Series Analysis with Synthetic Data: A Survey and Outlook in the Era of Foundation Models,14/03/2025,"Xu Liu, Taha Aksu, Juncheng Liu, Qingsong Wen, Yuxuan Liang, Caiming Xiong, Silvio Savarese, Doyen Sahoo, Junnan Li, Chenghao Liu","Time series analysis is crucial for understanding dynamics of complex
+systems. Recent advances in foundation models have led to task-agnostic Time
+Series Foundation Models (TSFMs) and Large Language Model-based Time Series
+Models (TSLLMs), enabling generalized learning and integrating contextual
+information. However, their success depends on large, diverse, and high-quality
+datasets, which are challenging to build due to regulatory, diversity, quality,
+and quantity constraints. Synthetic data emerge as a viable solution,
+addressing these challenges by offering scalable, unbiased, and high-quality
+alternatives. This survey provides a comprehensive review of synthetic data for
+TSFMs and TSLLMs, analyzing data generation strategies, their role in model
+pretraining, fine-tuning, and evaluation, and identifying future research
+directions.",http://arxiv.org/pdf/2503.11411v1,,False
+Exploring Performance-Complexity Trade-Offs in Sound Event Detection,14/03/2025,"Tobias Morocutti, Florian Schmid, Jonathan Greif, Francesco Foscarin, Gerhard Widmer","We target the problem of developing new low-complexity networks for the sound
+event detection task. Our goal is to meticulously analyze the
+performance-complexity trade-off, aiming to be competitive with the large
+state-of-the-art models, at a fraction of the computational requirements. We
+find that low-complexity convolutional models previously proposed for audio
+tagging can be effectively adapted for event detection (which requires
+frame-wise prediction) by adjusting convolutional strides, removing the global
+pooling, and, importantly, adding a sequence model before the (now frame-wise)
+classification heads. Systematic experiments reveal that the best choice for
+the sequence model type depends on which complexity metric is most important
+for the given application. We also investigate the impact of enhanced training
+strategies such as knowledge distillation. In the end, we show that combined
+with an optimized training strategy, we can reach event detection performance
+comparable to state-of-the-art transformers while requiring only around 5% of
+the parameters. We release all our pre-trained models and the code for
+reproducing this work to support future research in low-complexity sound event
+detection at https://github.com/theMoro/EfficientSED.",http://arxiv.org/pdf/2503.11373v1,,False
+Integrating Dynamical Systems Modeling with Spatiotemporal scRNA-seq Data Analysis,14/03/2025,"Zhenyi Zhang, Yuhao Sun, Qiangwei Peng, Tiejun Li, Peijie Zhou","Understanding the dynamic nature of biological systems is fundamental to
+deciphering cellular behavior, developmental processes, and disease
+progression. Single-cell RNA sequencing (scRNA-seq) has provided static
+snapshots of gene expression, offering valuable insights into cellular states
+at a single time point. Recent advancements in temporally resolved scRNA-seq,
+spatial transcriptomics (ST), and time-series spatial transcriptomics
+(temporal-ST) have further revolutionized our ability to study the
+spatiotemporal dynamics of individual cells. These technologies, when combined
+with computational frameworks such as Markov chains, stochastic differential
+equations (SDEs), and generative models like optimal transport and
+Schr\""odinger bridges, enable the reconstruction of dynamic cellular
+trajectories and cell fate decisions. This review discusses how these dynamical
+system approaches offer new opportunities to model and infer cellular dynamics
+from a systematic perspective.",http://arxiv.org/pdf/2503.11347v1,,False
+BriLLM: Brain-inspired Large Language Model,14/03/2025,"Hai Zhao, Hongqiu Wu, Dongjie Yang, Anni Zou, Jiale Hong","This paper reports the first brain-inspired large language model (BriLLM).
+This is a non-Transformer, non-GPT, non-traditional machine learning
+input-output controlled generative language model. The model is based on the
+Signal Fully-connected flowing (SiFu) definition on the directed graph in terms
+of the neural network, and has the interpretability of all nodes on the graph
+of the whole model, instead of the traditional machine learning model that only
+has limited interpretability at the input and output ends. In the language
+model scenario, the token is defined as a node in the graph. A randomly shaped
+or user-defined signal flow flows between nodes on the principle of ""least
+resistance"" along paths. The next token or node to be predicted or generated is
+the target of the signal flow. As a language model, BriLLM theoretically
+supports infinitely long $n$-gram models when the model size is independent of
+the input and predicted length of the model. The model's working signal flow
+provides the possibility of recall activation and innate multi-modal support
+similar to the cognitive patterns of the human brain. At present, we released
+the first BriLLM version in Chinese, with 4000 tokens, 32-dimensional node
+width, 16-token long sequence prediction ability, and language model prediction
+performance comparable to GPT-1. More computing power will help us explore the
+infinite possibilities depicted above.",http://arxiv.org/pdf/2503.11299v1,,False
+When Do Transformers Outperform Feedforward and Recurrent Networks? A Statistical Perspective,14/03/2025,"Alireza Mousavi-Hosseini, Clayton Sanford, Denny Wu, Murat A. Erdogdu","Theoretical efforts to prove advantages of Transformers in comparison with
+classical architectures such as feedforward and recurrent neural networks have
+mostly focused on representational power. In this work, we take an alternative
+perspective and prove that even with infinite compute, feedforward and
+recurrent networks may suffer from larger sample complexity compared to
+Transformers, as the latter can adapt to a form of dynamic sparsity.
+Specifically, we consider a sequence-to-sequence data generating model on
+sequences of length $N$, in which the output at each position depends only on
+$q$ relevant tokens with $q \ll N$, and the positions of these tokens are
+described in the input prompt. We prove that a single-layer Transformer can
+learn this model if and only if its number of attention heads is at least $q$,
+in which case it achieves a sample complexity almost independent of $N$, while
+recurrent networks require $N^{\Omega(1)}$ samples on the same problem. If we
+simplify this model, recurrent networks may achieve a complexity almost
+independent of $N$, while feedforward networks still require $N$ samples.
+Consequently, our proposed sparse retrieval model illustrates a natural
+hierarchy in sample complexity across these architectures.",http://arxiv.org/pdf/2503.11272v1,,False
+Federated Koopman-Reservoir Learning for Large-Scale Multivariate Time-Series Anomaly Detection,14/03/2025,"Long Tan Le, Tung-Anh Nguyen, Han Shu, Suranga Seneviratne, Choong Seon Hong, Nguyen H. Tran","The proliferation of edge devices has dramatically increased the generation
+of multivariate time-series (MVTS) data, essential for applications from
+healthcare to smart cities. Such data streams, however, are vulnerable to
+anomalies that signal crucial problems like system failures or security
+incidents. Traditional MVTS anomaly detection methods, encompassing statistical
+and centralized machine learning approaches, struggle with the heterogeneity,
+variability, and privacy concerns of large-scale, distributed environments. In
+response, we introduce FedKO, a novel unsupervised Federated Learning framework
+that leverages the linear predictive capabilities of Koopman operator theory
+along with the dynamic adaptability of Reservoir Computing. This enables
+effective spatiotemporal processing and privacy preservation for MVTS data.
+FedKO is formulated as a bi-level optimization problem, utilizing a specific
+federated algorithm to explore a shared Reservoir-Koopman model across diverse
+datasets. Such a model is then deployable on edge devices for efficient
+detection of anomalies in local MVTS streams. Experimental results across
+various datasets showcase FedKO's superior performance against state-of-the-art
+methods in MVTS anomaly detection. Moreover, FedKO reduces up to 8x
+communication size and 2x memory usage, making it highly suitable for
+large-scale systems.",http://arxiv.org/pdf/2503.11255v1,,False
+Optimal Transport and Adaptive Thresholding for Universal Domain Adaptation on Time Series,14/03/2025,"Romain Mussard, Fannia Pacheco, Maxime Berar, Gilles Gasso, Paul Honeine","Universal Domain Adaptation (UniDA) aims to transfer knowledge from a labeled
+source domain to an unlabeled target domain, even when their classes are not
+fully shared. Few dedicated UniDA methods exist for Time Series (TS), which
+remains a challenging case. In general, UniDA approaches align common class
+samples and detect unknown target samples from emerging classes. Such detection
+often results from thresholding a discriminability metric. The threshold value
+is typically either a fine-tuned hyperparameter or a fixed value, which limits
+the ability of the model to adapt to new data. Furthermore, discriminability
+metrics exhibit overconfidence for unknown samples, leading to
+misclassifications. This paper introduces UniJDOT, an optimal-transport-based
+method that accounts for the unknown target samples in the transport cost. Our
+method also proposes a joint decision space to improve the discriminability of
+the detection module. In addition, we use an auto-thresholding algorithm to
+reduce the dependence on fixed or fine-tuned thresholds. Finally, we rely on a
+Fourier transform-based layer inspired by the Fourier Neural Operator for
+better TS representation. Experiments on TS benchmarks demonstrate the
+discriminability, robustness, and state-of-the-art performance of UniJDOT.",http://arxiv.org/pdf/2503.11217v1,,False
+Can Large Reasoning Models do Analogical Reasoning under Perceptual Uncertainty?,14/03/2025,"Giacomo Camposampiero, Michael Hersche, Roger Wattenhofer, Abu Sebastian, Abbas Rahimi","This work presents a first evaluation of two state-of-the-art Large Reasoning
+Models (LRMs), OpenAI's o3-mini and DeepSeek R1, on analogical reasoning,
+focusing on well-established nonverbal human IQ tests based on Raven's
+progressive matrices. We benchmark with the I-RAVEN dataset and its more
+difficult extension, I-RAVEN-X, which tests the ability to generalize to longer
+reasoning rules and ranges of the attribute values. To assess the influence of
+visual uncertainties on these nonverbal analogical reasoning tests, we extend
+the I-RAVEN-X dataset, which otherwise assumes an oracle perception. We adopt a
+two-fold strategy to simulate this imperfect visual perception: 1) we introduce
+confounding attributes which, being sampled at random, do not contribute to the
+prediction of the correct answer of the puzzles and 2) smoothen the
+distributions of the input attributes' values. We observe a sharp decline in
+OpenAI's o3-mini task accuracy, dropping from 86.6% on the original I-RAVEN to
+just 17.0% -- approaching random chance -- on the more challenging I-RAVEN-X,
+which increases input length and range and emulates perceptual uncertainty.
+This drop occurred despite spending 3.4x more reasoning tokens. A similar trend
+is also observed for DeepSeek R1: from 80.6% to 23.2%. On the other hand, a
+neuro-symbolic probabilistic abductive model, ARLC, that achieves
+state-of-the-art performances on I-RAVEN, can robustly reason under all these
+out-of-distribution tests, maintaining strong accuracy with only a modest
+reduction from 98.6% to 88.0%. Our code is available at
+https://github.com/IBM/raven-large-language-models.",http://arxiv.org/pdf/2503.11207v1,,False
+Neurons: Emulating the Human Visual Cortex Improves Fidelity and Interpretability in fMRI-to-Video Reconstruction,14/03/2025,"Haonan Wang, Qixiang Zhang, Lehan Wang, Xuanqi Huang, Xiaomeng Li","Decoding visual stimuli from neural activity is essential for understanding
+the human brain. While fMRI methods have successfully reconstructed static
+images, fMRI-to-video reconstruction faces challenges due to the need for
+capturing spatiotemporal dynamics like motion and scene transitions. Recent
+approaches have improved semantic and perceptual alignment but struggle to
+integrate coarse fMRI data with detailed visual features. Inspired by the
+hierarchical organization of the visual system, we propose NEURONS, a novel
+framework that decouples learning into four correlated sub-tasks: key object
+segmentation, concept recognition, scene description, and blurry video
+reconstruction. This approach simulates the visual cortex's functional
+specialization, allowing the model to capture diverse video content. In the
+inference stage, NEURONS generates robust conditioning signals for a
+pre-trained text-to-video diffusion model to reconstruct the videos. Extensive
+experiments demonstrate that NEURONS outperforms state-of-the-art baselines,
+achieving solid improvements in video consistency (26.6%) and semantic-level
+accuracy (19.1%). Notably, NEURONS shows a strong functional correlation with
+the visual cortex, highlighting its potential for brain-computer interfaces and
+clinical applications. Code and model weights will be available at:
+https://github.com/xmed-lab/NEURONS.",http://arxiv.org/pdf/2503.11167v1,,False
+Direction-Aware Diagonal Autoregressive Image Generation,14/03/2025,"Yijia Xu, Jianzhong Ju, Jian Luan, Jinshi Cui","The raster-ordered image token sequence exhibits a significant Euclidean
+distance between index-adjacent tokens at line breaks, making it unsuitable for
+autoregressive generation. To address this issue, this paper proposes
+Direction-Aware Diagonal Autoregressive Image Generation (DAR) method, which
+generates image tokens following a diagonal scanning order. The proposed
+diagonal scanning order ensures that tokens with adjacent indices remain in
+close proximity while enabling causal attention to gather information from a
+broader range of directions. Additionally, two direction-aware modules: 4D-RoPE
+and direction embeddings are introduced, enhancing the model's capability to
+handle frequent changes in generation direction. To leverage the
+representational capacity of the image tokenizer, we use its codebook as the
+image token embeddings. We propose models of varying scales, ranging from 485M
+to 2.0B. On the 256$\times$256 ImageNet benchmark, our DAR-XL (2.0B)
+outperforms all previous autoregressive image generators, achieving a
+state-of-the-art FID score of 1.37.",http://arxiv.org/pdf/2503.11129v1,,False
+MoMa-Kitchen: A 100K+ Benchmark for Affordance-Grounded Last-Mile Navigation in Mobile Manipulation,14/03/2025,"Pingrui Zhang, Xianqiang Gao, Yuhan Wu, Kehui Liu, Dong Wang, Zhigang Wang, Bin Zhao, Yan Ding, Xuelong Li","In mobile manipulation, navigation and manipulation are often treated as
+separate problems, resulting in a significant gap between merely approaching an
+object and engaging with it effectively. Many navigation approaches primarily
+define success by proximity to the target, often overlooking the necessity for
+optimal positioning that facilitates subsequent manipulation. To address this,
+we introduce MoMa-Kitchen, a benchmark dataset comprising over 100k samples
+that provide training data for models to learn optimal final navigation
+positions for seamless transition to manipulation. Our dataset includes
+affordance-grounded floor labels collected from diverse kitchen environments,
+in which robotic mobile manipulators of different models attempt to grasp
+target objects amidst clutter. Using a fully automated pipeline, we simulate
+diverse real-world scenarios and generate affordance labels for optimal
+manipulation positions. Visual data are collected from RGB-D inputs captured by
+a first-person view camera mounted on the robotic arm, ensuring consistency in
+viewpoint during data collection. We also develop a lightweight baseline model,
+NavAff, for navigation affordance grounding that demonstrates promising
+performance on the MoMa-Kitchen benchmark. Our approach enables models to learn
+affordance-based final positioning that accommodates different arm types and
+platform heights, thereby paving the way for more robust and generalizable
+integration of navigation and manipulation in embodied AI. Project page:
+\href{https://momakitchen.github.io/}{https://momakitchen.github.io/}.",http://arxiv.org/pdf/2503.11081v1,,False
+MobiVital: Self-supervised Time-series Quality Estimation for Contactless Respiration Monitoring Using UWB Radar,14/03/2025,"Ziqi Wang, Derek Hua, Wenjun Jiang, Tianwei Xing, Xun Chen, Mani Srivastava","Respiration waveforms are increasingly recognized as important biomarkers,
+offering insights beyond simple respiration rates, such as detecting breathing
+irregularities for disease diagnosis or monitoring breath patterns to guide
+rehabilitation training. Previous works in wireless respiration monitoring have
+primarily focused on estimating respiration rate, where the breath waveforms
+are often generated as a by-product. As a result, issues such as waveform
+deformation and inversion have largely been overlooked, reducing the signal's
+utility for applications requiring breathing waveforms. To address this
+problem, we present a novel approach, MobiVital, that improves the quality of
+respiration waveforms obtained from ultra-wideband (UWB) radar data. MobiVital
+combines a self-supervised autoregressive model for breathing waveform
+extraction with a biology-informed algorithm to detect and correct waveform
+inversions. To encourage reproducible research efforts for developing wireless
+vital signal monitoring systems, we also release a 12-person, 24-hour UWB radar
+vital signal dataset, with time-synchronized ground truth obtained from
+wearable sensors. Our results show that the respiration waveforms produced by
+our system exhibit a 7-34% increase in fidelity to the ground truth compared to
+the baselines and can benefit downstream tasks such as respiration rate
+estimation.",http://arxiv.org/pdf/2503.11064v1,,False
+Fourier Neural Operator based surrogates for $CO_2$ storage in realistic geologies,14/03/2025,"Anirban Chandra, Marius Koch, Suraj Pawar, Aniruddha Panda, Kamyar Azizzadenesheli, Jeroen Snippe, Faruk O. Alpak, Farah Hariri, Clement Etienam, Pandu Devarakota, Anima Anandkumar, Detlef Hohl","This study aims to develop surrogate models for accelerating decision making
+processes associated with carbon capture and storage (CCS) technologies.
+Selection of sub-surface $CO_2$ storage sites often necessitates expensive and
+involved simulations of $CO_2$ flow fields. Here, we develop a Fourier Neural
+Operator (FNO) based model for real-time, high-resolution simulation of $CO_2$
+plume migration. The model is trained on a comprehensive dataset generated from
+realistic subsurface parameters and offers $O(10^5)$ computational acceleration
+with minimal sacrifice in prediction accuracy. We also explore super-resolution
+experiments to improve the computational cost of training the FNO based models.
+Additionally, we present various strategies for improving the reliability of
+predictions from the model, which is crucial while assessing actual geological
+sites. This novel framework, based on NVIDIA's Modulus library, will allow
+rapid screening of sites for CCS. The discussed workflows and strategies can be
+applied to other energy solutions like geothermal reservoir modeling and
+hydrogen storage. Our work scales scientific machine learning models to
+realistic 3D systems that are more consistent with real-life subsurface
+aquifers/reservoirs, paving the way for next-generation digital twins for
+subsurface CCS applications.",http://arxiv.org/pdf/2503.11031v1,,False
+From Dionysius Emerges Apollo -- Learning Patterns and Abstractions from Perceptual Sequences,14/03/2025,Shuchen Wu,"Cognition swiftly breaks high-dimensional sensory streams into familiar parts
+and uncovers their relations. Why do structures emerge, and how do they enable
+learning, generalization, and prediction? What computational principles
+underlie this core aspect of perception and intelligence? A sensory stream,
+simplified, is a one-dimensional sequence. In learning such sequences, we
+naturally segment them into parts -- a process known as chunking. In the first
+project, I investigated factors influencing chunking in a serial reaction time
+task and showed that humans adapt to underlying chunks while balancing speed
+and accuracy. Building on this, I developed models that learn chunks and parse
+sequences chunk by chunk. Normatively, I proposed chunking as a rational
+strategy for discovering recurring patterns and nested hierarchies, enabling
+efficient sequence factorization. Learned chunks serve as reusable primitives
+for transfer, composition, and mental simulation -- letting the model compose
+the new from the known. I demonstrated this model's ability to learn
+hierarchies in single and multi-dimensional sequences and highlighted its
+utility for unsupervised pattern discovery. The second part moves from concrete
+to abstract sequences. I taxonomized abstract motifs and examined their role in
+sequence memory. Behavioral evidence suggests that humans exploit pattern
+redundancies for compression and transfer. I proposed a non-parametric
+hierarchical variable model that learns both chunks and abstract variables,
+uncovering invariant symbolic patterns. I showed its similarity to human
+learning and compared it to large language models. Taken together, this thesis
+suggests that chunking and abstraction as simple computational principles
+enable structured knowledge acquisition in hierarchically organized sequences,
+from simple to complex, concrete to abstract.",http://arxiv.org/pdf/2503.10973v1,,False

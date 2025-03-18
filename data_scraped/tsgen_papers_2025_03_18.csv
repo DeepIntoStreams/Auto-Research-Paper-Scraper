@@ -1,0 +1,311 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Deep Belief Markov Models for POMDP Inference,17/03/2025,"Giacomo Arcieri, Konstantinos G. Papakonstantinou, Daniel Straub, Eleni Chatzi","This work introduces a novel deep learning-based architecture, termed the
+Deep Belief Markov Model (DBMM), which provides efficient, model-formulation
+agnostic inference in Partially Observable Markov Decision Process (POMDP)
+problems. The POMDP framework allows for modeling and solving sequential
+decision-making problems under observation uncertainty. In complex,
+high-dimensional, partially observable environments, existing methods for
+inference based on exact computations (e.g., via Bayes' theorem) or sampling
+algorithms do not scale well. Furthermore, ground truth states may not be
+available for learning the exact transition dynamics. DBMMs extend deep Markov
+models into the partially observable decision-making framework and allow
+efficient belief inference entirely based on available observation data via
+variational inference methods. By leveraging the potency of neural networks,
+DBMMs can infer and simulate non-linear relationships in the system dynamics
+and naturally scale to problems with high dimensionality and discrete or
+continuous variables. In addition, neural network parameters can be dynamically
+updated efficiently based on data availability. DBMMs can thus be used to infer
+a belief variable, thus enabling the derivation of POMDP solutions over the
+belief space. We evaluate the efficacy of the proposed methodology by
+evaluating the capability of model-formulation agnostic inference of DBMMs in
+benchmark problems that include discrete and continuous variables.",http://arxiv.org/pdf/2503.13438v1,,False
+Measuring In-Context Computation Complexity via Hidden State Prediction,17/03/2025,"Vincent Herrmann, Róbert Csordás, Jürgen Schmidhuber","Detecting when a neural sequence model does ""interesting"" computation is an
+open problem. The next token prediction loss is a poor indicator: Low loss can
+stem from trivially predictable sequences that are uninteresting, while high
+loss may reflect unpredictable but also irrelevant information that can be
+ignored by the model. We propose a better metric: measuring the model's ability
+to predict its own future hidden states. We show empirically that this metric
+-- in contrast to the next token prediction loss -- correlates with the
+intuitive interestingness of the task. To measure predictability, we introduce
+the architecture-agnostic ""prediction of hidden states"" (PHi) layer that serves
+as an information bottleneck on the main pathway of the network (e.g., the
+residual stream in Transformers). We propose a novel learned predictive prior
+that enables us to measure the novel information gained in each computation
+step, which serves as our metric. We show empirically that our metric predicts
+the description length of formal languages learned in-context, the complexity
+of mathematical reasoning problems, and the correctness of self-generated
+reasoning chains.",http://arxiv.org/pdf/2503.13431v1,,False
+FLEX: A Framework for Learning Robot-Agnostic Force-based Skills Involving Sustained Contact Object Manipulation,17/03/2025,"Shijie Fang, Wenchang Gao, Shivam Goel, Christopher Thierauf, Matthias Scheutz, Jivko Sinapov","Learning to manipulate objects efficiently, particularly those involving
+sustained contact (e.g., pushing, sliding) and articulated parts (e.g.,
+drawers, doors), presents significant challenges. Traditional methods, such as
+robot-centric reinforcement learning (RL), imitation learning, and hybrid
+techniques, require massive training and often struggle to generalize across
+different objects and robot platforms. We propose a novel framework for
+learning object-centric manipulation policies in force space, decoupling the
+robot from the object. By directly applying forces to selected regions of the
+object, our method simplifies the action space, reduces unnecessary
+exploration, and decreases simulation overhead. This approach, trained in
+simulation on a small set of representative objects, captures object dynamics
+-- such as joint configurations -- allowing policies to generalize effectively
+to new, unseen objects. Decoupling these policies from robot-specific dynamics
+enables direct transfer to different robotic platforms (e.g., Kinova, Panda,
+UR5) without retraining. Our evaluations demonstrate that the method
+significantly outperforms baselines, achieving over an order of magnitude
+improvement in training efficiency compared to other state-of-the-art methods.
+Additionally, operating in force space enhances policy transferability across
+diverse robot platforms and object types. We further showcase the applicability
+of our method in a real-world robotic setting. For supplementary materials and
+videos, please visit: https://tufts-ai-robotics-group.github.io/FLEX/",http://arxiv.org/pdf/2503.13418v1,,False
+RainScaleGAN: a Conditional Generative Adversarial Network for Rainfall Downscaling,17/03/2025,"Marcello Iotti, Paolo Davini, Jost von Hardenberg, Giuseppe Zappa","To this day, accurately simulating local-scale precipitation and reliably
+reproducing its distribution remains a challenging task. The limited horizontal
+resolution of Global Climate Models is among the primary factors undermining
+their skill in this context. The physical mechanisms driving the onset and
+development of precipitation, especially in extreme events, operate at
+spatio-temporal scales smaller than those numerically resolved, thus struggling
+to be captured accurately. In order to circumvent this limitation, several
+downscaling approaches have been developed over the last decades to address the
+discrepancy between the spatial resolution of models output and the resolution
+required by local-scale applications. In this paper, we introduce RainScaleGAN,
+a conditional deep convolutional Generative Adversarial Network (GAN) for
+precipitation downscaling. GANs have been effectively used in image
+super-resolution, an approach highly relevant for downscaling tasks.
+RainScaleGAN's capabilities are tested in a perfect-model setup, where the
+spatial resolution of a precipitation dataset is artificially degraded from
+0.25$^{\circ}\times$0.25$^{\circ}$ to 2$^{\circ}\times$2$^\circ$, and
+RainScaleGAN is used to restore it. The developed model outperforms one of the
+leading precipitation downscaling method found in the literature. RainScaleGAN
+not only generates a synthetic dataset featuring plausible high-resolution
+spatial patterns and intensities, but also produces a precipitation
+distribution with statistics closely mirroring those of the ground-truth
+dataset. Given that RainScaleGAN's approach is agnostic with respect to the
+underlying physics, the method has the potential to be applied to other
+physical variables such as surface winds or temperature.",http://arxiv.org/pdf/2503.13316v1,,False
+Computation Mechanism Behind LLM Position Generalization,17/03/2025,"Chi Han, Heng Ji","Most written natural languages are composed of sequences of words and
+sentences. Similar to humans, large language models (LLMs) exhibit flexibility
+in handling textual positions - a phenomenon we term position generalization.
+They can understand texts with position perturbations and generalize to longer
+texts than those encountered during training with the latest techniques. These
+phenomena suggest that LLMs handle positions tolerantly, but how LLMs
+computationally process positional relevance remains largely unexplored. This
+work connects the linguistic phenomenon with LLMs' computational mechanisms. We
+show how LLMs enforce certain computational mechanisms for the aforementioned
+tolerance in position perturbations. Despite the complex design of the
+self-attention mechanism, this work reveals that LLMs learn a counterintuitive
+disentanglement of attention logits. Their values show a 0.959 linear
+correlation with an approximation of the arithmetic sum of positional relevance
+and semantic importance. Furthermore, we identify a prevalent pattern in
+intermediate features, which we prove theoretically enables this effect. The
+pattern, which is different from how randomly initialized parameters would
+behave, suggests that it is a learned behavior rather than a natural result of
+the model architecture. Based on these findings, we provide computational
+explanations and criteria for LLMs' position flexibilities. This work takes a
+pioneering step in linking position generalization with modern LLMs' internal
+mechanisms.",http://arxiv.org/pdf/2503.13305v1,,False
+$φ$-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation,17/03/2025,"Fangzhi Xu, Hang Yan, Chang Ma, Haiteng Zhao, Jun Liu, Qika Lin, Zhiyong Wu","Inference-time optimization scales computation to derive deliberate reasoning
+steps for effective performance. While previous search-based strategies address
+the short-sightedness of auto-regressive generation, the vast search space
+leads to excessive exploration and insufficient exploitation. To strike an
+efficient balance to derive the optimal step, we frame the decoding strategy as
+foresight sampling, leveraging simulated future steps to obtain globally
+optimal step estimation. Built on it, we propose a novel decoding strategy,
+named $\phi$-Decoding. To provide a precise and expressive estimation of step
+value, $\phi$-Decoding approximates two distributions via foresight and
+clustering. Sampling from the joint distribution, the optimal steps can be
+selected for exploitation. To support adaptive computation allocation, we
+propose in-width and in-depth pruning strategies, featuring a light-weight
+solution to achieve inference efficiency. Extensive experiments across seven
+benchmarks show $\phi$-Decoding outperforms strong baselines in both
+performance and efficiency. Additional analysis demonstrates its generalization
+across various LLMs and scalability across a wide range of computing budgets.
+The code will be released at https://github.com/xufangzhi/phi-Decoding, and the
+open-source PyPI package is coming soon.",http://arxiv.org/pdf/2503.13288v1,,False
+Dense Policy: Bidirectional Autoregressive Learning of Actions,17/03/2025,"Yue Su, Xinyu Zhan, Hongjie Fang, Han Xue, Hao-Shu Fang, Yong-Lu Li, Cewu Lu, Lixin Yang","Mainstream visuomotor policies predominantly rely on generative models for
+holistic action prediction, while current autoregressive policies, predicting
+the next token or chunk, have shown suboptimal results. This motivates a search
+for more effective learning methods to unleash the potential of autoregressive
+policies for robotic manipulation. This paper introduces a bidirectionally
+expanded learning approach, termed Dense Policy, to establish a new paradigm
+for autoregressive policies in action prediction. It employs a lightweight
+encoder-only architecture to iteratively unfold the action sequence from an
+initial single frame into the target sequence in a coarse-to-fine manner with
+logarithmic-time inference. Extensive experiments validate that our dense
+policy has superior autoregressive learning capabilities and can surpass
+existing holistic generative policies. Our policy, example data, and training
+code will be publicly available upon publication. Project page: https:
+//selen-suyue.github.io/DspNet/.",http://arxiv.org/pdf/2503.13217v1,,False
+A representational framework for learning and encoding structurally enriched trajectories in complex agent environments,17/03/2025,"Corina Catarau-Cotutiu, Esther Mondragon, Eduardo Alonso","The ability of artificial intelligence agents to make optimal decisions and
+generalise them to different domains and tasks is compromised in complex
+scenarios. One way to address this issue has focused on learning efficient
+representations of the world and on how the actions of agents affect them, such
+as disentangled representations that exploit symmetries. Whereas such
+representations are procedurally efficient, they are based on the compression
+of low-level state-action transitions, which lack structural richness. To
+address this problem, we propose to enrich the agent's ontology and extend the
+traditional conceptualisation of trajectories to provide a more nuanced view of
+task execution. Structurally Enriched Trajectories (SETs) extend the encoding
+of sequences of states and their transitions by incorporating hierarchical
+relations between objects, interactions and affordances. SETs are built as
+multi-level graphs, providing a detailed representation of the agent dynamics
+and a transferable functional abstraction of the task. SETs are integrated into
+an architecture, Structurally Enriched Trajectory Learning and Encoding
+(SETLE), that employs a heterogeneous graph-based memory structure of
+multi-level relational dependencies essential for generalisation. Using
+reinforcement learning as a data generation tool, we demonstrate that SETLE can
+support downstream tasks, enabling agents to recognise task-relevant structural
+patterns across diverse environments.",http://arxiv.org/pdf/2503.13194v1,,False
+Efficient Imitation Under Misspecification,17/03/2025,"Nicolas Espinosa-Dice, Sanjiban Choudhury, Wen Sun, Gokul Swamy","Interactive imitation learning (IL) is a powerful paradigm for learning to
+make sequences of decisions from an expert demonstrating how to perform a task.
+Prior work in efficient imitation learning has focused on the realizable
+setting, where the expert's policy lies within the learner's policy class (i.e.
+the learner can perfectly imitate the expert in all states). However, in
+practice, perfect imitation of the expert is often impossible due to
+differences in state information and action space expressiveness (e.g.
+morphological differences between robots and humans.) In this paper, we
+consider the more general misspecified setting, where no assumptions are made
+about the expert policy's realizability. We introduce a novel structural
+condition, reward-agnostic policy completeness, and prove that it is sufficient
+for interactive IL algorithms to efficiently avoid the quadratically
+compounding errors that stymie offline approaches like behavioral cloning. We
+address an additional practical constraint-the case of limited expert data-and
+propose a principled method for using additional offline data to further
+improve the sample-efficiency of interactive IL algorithms. Finally, we
+empirically investigate the optimal reset distribution in efficient IL under
+misspecification with a suite of continuous control tasks.",http://arxiv.org/pdf/2503.13162v1,,False
+MIXPINN: Mixed-Material Simulations by Physics-Informed Neural Network,17/03/2025,"Xintian Yuan, Yunke Ao, Boqi Chen, Philipp Fuernstahl","Simulating the complex interactions between soft tissues and rigid anatomy is
+critical for applications in surgical training, planning, and robotic-assisted
+interventions. Traditional Finite Element Method (FEM)-based simulations, while
+accurate, are computationally expensive and impractical for real-time
+scenarios. Learning-based approaches have shown promise in accelerating
+predictions but have fallen short in modeling soft-rigid interactions
+effectively. We introduce MIXPINN, a physics-informed Graph Neural Network
+(GNN) framework for mixed-material simulations, explicitly capturing soft-rigid
+interactions using graph-based augmentations. Our approach integrates Virtual
+Nodes (VNs) and Virtual Edges (VEs) to enhance rigid body constraint
+satisfaction while preserving computational efficiency. By leveraging a
+graph-based representation of biomechanical structures, MIXPINN learns
+high-fidelity deformations from FEM-generated data and achieves real-time
+inference with sub-millimeter accuracy. We validate our method in a realistic
+clinical scenario, demonstrating superior performance compared to baseline GNN
+models and traditional FEM methods. Our results show that MIXPINN reduces
+computational cost by an order of magnitude while maintaining high physical
+accuracy, making it a viable solution for real-time surgical simulation and
+robotic-assisted procedures.",http://arxiv.org/pdf/2503.13123v1,,False
+PoseSyn: Synthesizing Diverse 3D Pose Data from In-the-Wild 2D Data,17/03/2025,"ChangHee Yang, Hyeonseop Song, Seokhun Choi, Seungwoo Lee, Jaechul Kim, Hoseok Do","Despite considerable efforts to enhance the generalization of 3D pose
+estimators without costly 3D annotations, existing data augmentation methods
+struggle in real world scenarios with diverse human appearances and complex
+poses. We propose PoseSyn, a novel data synthesis framework that transforms
+abundant in the wild 2D pose dataset into diverse 3D pose image pairs. PoseSyn
+comprises two key components: Error Extraction Module (EEM), which identifies
+challenging poses from the 2D pose datasets, and Motion Synthesis Module (MSM),
+which synthesizes motion sequences around the challenging poses. Then, by
+generating realistic 3D training data via a human animation model aligned with
+challenging poses and appearances PoseSyn boosts the accuracy of various 3D
+pose estimators by up to 14% across real world benchmarks including various
+backgrounds and occlusions, challenging poses, and multi view scenarios.
+Extensive experiments further confirm that PoseSyn is a scalable and effective
+approach for improving generalization without relying on expensive 3D
+annotations, regardless of the pose estimator's model size or design.",http://arxiv.org/pdf/2503.13025v1,,False
+Training Video Foundation Models with NVIDIA NeMo,17/03/2025,"Zeeshan Patel, Ethan He, Parth Mannan, Xiaowei Ren, Ryan Wolf, Niket Agarwal, Jacob Huffman, Zhuoyao Wang, Carl Wang, Jack Chang, Yan Bai, Tommy Huang, Linnan Wang, Sahil Jain, Shanmugam Ramasamy, Joseph Jennings, Ekaterina Sirazitdinova, Oleg Sudakov, Mingyuan Ma, Bobby Chen, Forrest Lin, Hao Wang, Vasanth Rao Naik Sabavat, Sriharsha Niverty, Rong Ou, Pallab Bhattacharya, David Page, Nima Tajbakhsh, Ashwath Aithal","Video Foundation Models (VFMs) have recently been used to simulate the real
+world to train physical AI systems and develop creative visual experiences.
+However, there are significant challenges in training large-scale, high quality
+VFMs that can generate high-quality videos. We present a scalable, open-source
+VFM training pipeline with NVIDIA NeMo, providing accelerated video dataset
+curation, multimodal data loading, and parallelized video diffusion model
+training and inference. We also provide a comprehensive performance analysis
+highlighting best practices for efficient VFM training and inference.",http://arxiv.org/pdf/2503.12964v1,,False
+VITED: Video Temporal Evidence Distillation,17/03/2025,"Yujie Lu, Yale Song, William Wang, Lorenzo Torresani, Tushar Nagarajan","We investigate complex video question answering via chain-of-evidence
+reasoning -- identifying sequences of temporal spans from multiple relevant
+parts of the video, together with visual evidence within them. Existing models
+struggle with multi-step reasoning as they uniformly sample a fixed number of
+frames, which can miss critical evidence distributed nonuniformly throughout
+the video. Moreover, they lack the ability to temporally localize such evidence
+in the broader context of the full video, which is required for answering
+complex questions. We propose a framework to enhance existing VideoQA datasets
+with evidence reasoning chains, automatically constructed by searching for
+optimal intervals of interest in the video with supporting evidence, that
+maximizes the likelihood of answering a given question. We train our model
+(VITED) to generate these evidence chains directly, enabling it to both
+localize evidence windows as well as perform multi-step reasoning across them
+in long-form video content. We show the value of our evidence-distilled models
+on a suite of long video QA benchmarks where we outperform state-of-the-art
+approaches that lack evidence reasoning capabilities.",http://arxiv.org/pdf/2503.12855v1,,False
+Versatile Physics-based Character Control with Hybrid Latent Representation,17/03/2025,"Jinseok Bae, Jungdam Won, Donggeun Lim, Inwoo Hwang, Young Min Kim","We present a versatile latent representation that enables physically
+simulated character to efficiently utilize motion priors. To build a powerful
+motion embedding that is shared across multiple tasks, the physics controller
+should employ rich latent space that is easily explored and capable of
+generating high-quality motion. We propose integrating continuous and discrete
+latent representations to build a versatile motion prior that can be adapted to
+a wide range of challenging control tasks. Specifically, we build a discrete
+latent model to capture distinctive posterior distribution without collapse,
+and simultaneously augment the sampled vector with the continuous residuals to
+generate high-quality, smooth motion without jittering. We further incorporate
+Residual Vector Quantization, which not only maximizes the capacity of the
+discrete motion prior, but also efficiently abstracts the action space during
+the task learning phase. We demonstrate that our agent can produce diverse yet
+smooth motions simply by traversing the learned motion prior through
+unconditional motion generation. Furthermore, our model robustly satisfies
+sparse goal conditions with highly expressive natural motions, including
+head-mounted device tracking and motion in-betweening at irregular intervals,
+which could not be achieved with existing latent representations.",http://arxiv.org/pdf/2503.12814v1,,False
+"Estimating stationary mass, frequency by frequency",17/03/2025,"Milind Nakul, Vidya Muthukumar, Ashwin Pananjady","Suppose we observe a trajectory of length $n$ from an $\alpha$-mixing
+stochastic process over a finite but potentially large state space. We consider
+the problem of estimating the probability mass placed by the stationary
+distribution of any such process on elements that occur with a certain
+frequency in the observed sequence. We estimate this vector of probabilities in
+total variation distance, showing universal consistency in $n$ and recovering
+known results for i.i.d. sequences as special cases. Our proposed methodology
+carefully combines the plug-in (or empirical) estimator with a
+recently-proposed modification of the Good--Turing estimator called
+\textsc{WingIt}, which was originally developed for Markovian sequences. En
+route to controlling the error of our estimator, we develop new performance
+bounds on \textsc{WingIt} and the plug-in estimator for $\alpha$-mixing
+stochastic processes. Importantly, the extensively used method of
+Poissonization can no longer be applied in our non i.i.d. setting, and so we
+develop complementary tools -- including concentration inequalities for a
+natural self-normalized statistic of mixing sequences -- that may prove
+independently useful in the design and analysis of estimators for related
+problems.",http://arxiv.org/pdf/2503.12808v1,,False
+Analyzing sequential activity and travel decisions with interpretable deep inverse reinforcement learning,17/03/2025,"Yuebing Liang, Shenhao Wang, Jiangbo Yu, Zhan Zhao, Jinhua Zhao, Sandy Pentland","Travel demand modeling has shifted from aggregated trip-based models to
+behavior-oriented activity-based models because daily trips are essentially
+driven by human activities. To analyze the sequential activity-travel
+decisions, deep inverse reinforcement learning (DIRL) has proven effective in
+learning the decision mechanisms by approximating a reward function to
+represent preferences and a policy function to replicate observed behavior
+using deep neural networks (DNNs). However, most existing research has focused
+on using DIRL to enhance only prediction accuracy, with limited exploration
+into interpreting the underlying decision mechanisms guiding sequential
+decision-making. To address this gap, we introduce an interpretable DIRL
+framework for analyzing activity-travel decision processes, bridging the gap
+between data-driven machine learning and theory-driven behavioral models. Our
+proposed framework adapts an adversarial IRL approach to infer the reward and
+policy functions of activity-travel behavior. The policy function is
+interpreted through a surrogate interpretable model based on choice
+probabilities from the policy function, while the reward function is
+interpreted by deriving both short-term rewards and long-term returns for
+various activity-travel patterns. Our analysis of real-world travel survey data
+reveals promising results in two key areas: (i) behavioral pattern insights
+from the policy function, highlighting critical factors in decision-making and
+variations among socio-demographic groups, and (ii) behavioral preference
+insights from the reward function, indicating the utility individuals gain from
+specific activity sequences.",http://arxiv.org/pdf/2503.12761v1,,False
+In-Context Linear Regression Demystified: Training Dynamics and Mechanistic Interpretability of Multi-Head Softmax Attention,17/03/2025,"Jianliang He, Xintian Pan, Siyu Chen, Zhuoran Yang","We study how multi-head softmax attention models are trained to perform
+in-context learning on linear data. Through extensive empirical experiments and
+rigorous theoretical analysis, we demystify the emergence of elegant attention
+patterns: a diagonal and homogeneous pattern in the key-query (KQ) weights, and
+a last-entry-only and zero-sum pattern in the output-value (OV) weights.
+Remarkably, these patterns consistently appear from gradient-based training
+starting from random initialization. Our analysis reveals that such emergent
+structures enable multi-head attention to approximately implement a debiased
+gradient descent predictor -- one that outperforms single-head attention and
+nearly achieves Bayesian optimality up to proportional factor. Furthermore,
+compared to linear transformers, the softmax attention readily generalizes to
+sequences longer than those seen during training. We also extend our study to
+scenarios with non-isotropic covariates and multi-task linear regression. In
+the former, multi-head attention learns to implement a form of pre-conditioned
+gradient descent. In the latter, we uncover an intriguing regime where the
+interplay between head number and task number triggers a superposition
+phenomenon that efficiently resolves multi-task in-context learning. Our
+results reveal that in-context learning ability emerges from the trained
+transformer as an aggregated effect of its architecture and the underlying data
+distribution, paving the way for deeper understanding and broader applications
+of in-context learning.",http://arxiv.org/pdf/2503.12734v1,,False

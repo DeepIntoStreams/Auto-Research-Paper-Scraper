@@ -1,0 +1,304 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal Control,18/03/2025,"NVIDIA, :, Hassan Abu Alhaija, Jose Alvarez, Maciej Bala, Tiffany Cai, Tianshi Cao, Liz Cha, Joshua Chen, Mike Chen, Francesco Ferroni, Sanja Fidler, Dieter Fox, Yunhao Ge, Jinwei Gu, Ali Hassani, Michael Isaev, Pooya Jannaty, Shiyi Lan, Tobias Lasser, Huan Ling, Ming-Yu Liu, Xian Liu, Yifan Lu, Alice Luo, Qianli Ma, Hanzi Mao, Fabio Ramos, Xuanchi Ren, Tianchang Shen, Shitao Tang, Ting-Chun Wang, Jay Wu, Jiashu Xu, Stella Xu, Kevin Xie, Yuchong Ye, Xiaodong Yang, Xiaohui Zeng, Yu Zeng","We introduce Cosmos-Transfer, a conditional world generation model that can
+generate world simulations based on multiple spatial control inputs of various
+modalities such as segmentation, depth, and edge. In the design, the spatial
+conditional scheme is adaptive and customizable. It allows weighting different
+conditional inputs differently at different spatial locations. This enables
+highly controllable world generation and finds use in various world-to-world
+transfer use cases, including Sim2Real. We conduct extensive evaluations to
+analyze the proposed model and demonstrate its applications for Physical AI,
+including robotics Sim2Real and autonomous vehicle data enrichment. We further
+demonstrate an inference scaling strategy to achieve real-time world generation
+with an NVIDIA GB200 NVL72 rack. To help accelerate research development in the
+field, we open-source our models and code at
+https://github.com/nvidia-cosmos/cosmos-transfer1.",http://arxiv.org/pdf/2503.14492v1,,False
+"RWKV-7 ""Goose"" with Expressive Dynamic State Evolution",18/03/2025,"Bo Peng, Ruichong Zhang, Daniel Goldstein, Eric Alcaide, Haowen Hou, Janna Lu, William Merrill, Guangyu Song, Kaifeng Tan, Saiteja Utpala, Nathan Wilce, Johan S. Wind, Tianyi Wu, Daniel Wuttke, Christian Zhou-Zheng","We present RWKV-7 ""Goose"", a new sequence modeling architecture, along with
+pre-trained language models that establish a new state-of-the-art in downstream
+performance at the 3 billion parameter scale on multilingual tasks, and match
+current SoTA English language performance despite being trained on dramatically
+fewer tokens than other top 3B models. Nevertheless, RWKV-7 models require only
+constant memory usage and constant inference time per token. RWKV-7 introduces
+a newly generalized formulation of the delta rule with vector-valued gating and
+in-context learning rates, as well as a relaxed value replacement rule. We show
+that RWKV-7 can perform state tracking and recognize all regular languages,
+while retaining parallelizability of training. This exceeds the capabilities of
+Transformers under standard complexity conjectures, which are limited to
+$\mathsf{TC}^0$. To demonstrate RWKV-7's language modeling capability, we also
+present an extended open source 3.1 trillion token multilingual corpus, and
+train four RWKV-7 models ranging from 0.19 billion to 2.9 billion parameters on
+this dataset.
+  To foster openness, reproduction, and adoption, we release our models and
+dataset component listing at https://huggingface.co/RWKV, and our training and
+inference code at https://github.com/RWKV/RWKV-LM all under the Apache 2.0
+License.",http://arxiv.org/pdf/2503.14456v1,,False
+Optimizing High-Dimensional Oblique Splits,18/03/2025,Chien-Ming Chi,"Orthogonal-split trees perform well, but evidence suggests oblique splits can
+enhance their performance. This paper explores optimizing high-dimensional
+$s$-sparse oblique splits from $\{(\vec{w}, \vec{w}^{\top}\boldsymbol{X}_{i}) :
+i\in \{1,\dots, n\}, \vec{w} \in \mathbb{R}^p, \| \vec{w} \|_{2} = 1, \|
+\vec{w} \|_{0} \leq s \}$ for growing oblique trees, where $ s $ is a
+user-defined sparsity parameter. We establish a connection between SID
+convergence and $s_0$-sparse oblique splits with $s_0\ge 1$, showing that the
+SID function class expands as $s_0$ increases, enabling the capture of more
+complex data-generating functions such as the $s_0$-dimensional XOR function.
+Thus, $s_0$ represents the unknown potential complexity of the underlying
+data-generating function. Learning these complex functions requires an
+$s$-sparse oblique tree with $s \geq s_0$ and greater computational resources.
+This highlights a trade-off between statistical accuracy, governed by the SID
+function class size depending on $s_0$, and computational cost. In contrast,
+previous studies have explored the problem of SID convergence using orthogonal
+splits with $ s_0 = s = 1 $, where runtime was less critical. Additionally, we
+introduce a practical framework for oblique trees that integrates optimized
+oblique splits alongside orthogonal splits into random forests. The proposed
+approach is assessed through simulations and real-data experiments, comparing
+its performance against various oblique tree models.",http://arxiv.org/pdf/2503.14381v1,,False
+Tiled Flash Linear Attention: More Efficient Linear RNN and xLSTM Kernels,18/03/2025,"Maximilian Beck, Korbinian Pöppel, Phillip Lippe, Sepp Hochreiter","Linear RNNs with gating recently demonstrated competitive performance
+compared to Transformers in language modeling. Although their linear compute
+scaling in sequence length offers theoretical runtime advantages over
+Transformers, realizing these benefits in practice requires optimized custom
+kernels, as Transformers rely on the highly efficient Flash Attention kernels.
+Leveraging the chunkwise-parallel formulation of linear RNNs, Flash Linear
+Attention (FLA) shows that linear RNN kernels are faster than Flash Attention,
+by parallelizing over chunks of the input sequence. However, since the chunk
+size of FLA is limited, many intermediate states must be materialized in GPU
+memory. This leads to low arithmetic intensity and causes high memory
+consumption and IO cost, especially for long-context pre-training. In this
+work, we present Tiled Flash Linear Attention (TFLA), a novel kernel algorithm
+for linear RNNs, that enables arbitrary large chunk sizes by introducing an
+additional level of sequence parallelization within each chunk. First, we apply
+TFLA to the xLSTM with matrix memory, the mLSTM. Second, we propose an mLSTM
+variant with sigmoid input gate and reduced computation for even faster kernel
+runtimes at equal language modeling performance. In our speed benchmarks, we
+show that our new mLSTM kernels based on TFLA outperform highly optimized Flash
+Attention, Linear Attention and Mamba kernels, setting a new state of the art
+for efficient long-context sequence modeling primitives.",http://arxiv.org/pdf/2503.14376v1,,False
+Retrospective: A CORDIC Based Configurable Activation Function for NN Applications,18/03/2025,"Omkar Kokane, Gopal Raut, Salim Ullah, Mukul Lokhande, Adam Teman, Akash Kumar, Santosh Kumar Vishvakarma","A CORDIC-based configuration for the design of Activation Functions (AF) was
+previously suggested to accelerate ASIC hardware design for
+resource-constrained systems by providing functional reconfigurability. Since
+its introduction, this new approach for neural network acceleration has gained
+widespread popularity, influencing numerous designs for activation functions in
+both academic and commercial AI processors. In this retrospective analysis, we
+explore the foundational aspects of this initiative, summarize key developments
+over recent years, and introduce the DA-VINCI AF tailored for the evolving
+needs of AI applications. This new generation of dynamically configurable and
+precision-adjustable activation function cores promise greater adaptability for
+a range of activation functions in AI workloads, including Swish, SoftMax,
+SeLU, and GeLU, utilizing the Shift-and-Add CORDIC technique. The previously
+presented design has been optimized for MAC, Sigmoid, and Tanh functionalities
+and incorporated into ReLU AFs, culminating in an accumulative NEURIC compute
+unit. These enhancements position NEURIC as a fundamental component in the
+resource-efficient vector engine for the realization of AI accelerators that
+focus on DNNs, RNNs/LSTMs, and Transformers, achieving a quality of results
+(QoR) of 98.5%.",http://arxiv.org/pdf/2503.14354v1,,False
+PENCIL: Long Thoughts with Short Memory,18/03/2025,"Chenxiao Yang, Nathan Srebro, David McAllester, Zhiyuan Li","While recent works (e.g. o1, DeepSeek R1) have demonstrated great promise of
+using long Chain-of-Thought (CoT) to improve reasoning capabilities of language
+models, scaling it up during test-time is challenging due to inefficient memory
+usage -- intermediate computations accumulate indefinitely in context even no
+longer needed for future thoughts. We propose PENCIL, which incorporates a
+reduction mechanism into the autoregressive generation process, allowing the
+model to recursively clean up intermediate thoughts based on patterns learned
+from training. With this reduction mechanism, PENCIL significantly reduces the
+maximal context length required during generation, and thus can generate longer
+thoughts with limited memory, solving larger-scale problems given more thinking
+time. For example, we demonstrate PENCIL achieves 97\% accuracy on the
+challenging Einstein's puzzle -- a task even large models like GPT-4 struggle
+with -- using only a small 25M-parameter transformer with 2048 context length.
+Theoretically, we prove PENCIL can perform universal space-efficient
+computation by simulating Turing machines with optimal time and space
+complexity, and thus can solve arbitrary computational tasks that would
+otherwise be intractable given context window constraints.",http://arxiv.org/pdf/2503.14337v1,,False
+PC-Talk: Precise Facial Animation Control for Audio-Driven Talking Face Generation,18/03/2025,"Baiqin Wang, Xiangyu Zhu, Fan Shen, Hao Xu, Zhen Lei","Recent advancements in audio-driven talking face generation have made great
+progress in lip synchronization. However, current methods often lack sufficient
+control over facial animation such as speaking style and emotional expression,
+resulting in uniform outputs. In this paper, we focus on improving two key
+factors: lip-audio alignment and emotion control, to enhance the diversity and
+user-friendliness of talking videos. Lip-audio alignment control focuses on
+elements like speaking style and the scale of lip movements, whereas emotion
+control is centered on generating realistic emotional expressions, allowing for
+modifications in multiple attributes such as intensity. To achieve precise
+control of facial animation, we propose a novel framework, PC-Talk, which
+enables lip-audio alignment and emotion control through implicit keypoint
+deformations. First, our lip-audio alignment control module facilitates precise
+editing of speaking styles at the word level and adjusts lip movement scales to
+simulate varying vocal loudness levels, maintaining lip synchronization with
+the audio. Second, our emotion control module generates vivid emotional facial
+features with pure emotional deformation. This module also enables the fine
+modification of intensity and the combination of multiple emotions across
+different facial regions. Our method demonstrates outstanding control
+capabilities and achieves state-of-the-art performance on both HDTF and MEAD
+datasets in extensive experiments.",http://arxiv.org/pdf/2503.14295v1,,False
+Ensemble Knowledge Distillation for Machine Learning Interatomic Potentials,18/03/2025,"Sakib Matin, Emily Shinkle, Yulia Pimonova, Galen T. Craven, Ying Wai Li, Kipton Barros, Nicholas Lubbers","Machine learning interatomic potentials (MLIPs) are a promising tool to
+accelerate atomistic simulations and molecular property prediction. The quality
+of MLIPs strongly depends on the quantity of available training data as well as
+the quantum chemistry (QC) level of theory used to generate that data. Datasets
+generated with high-fidelity QC methods, such as coupled cluster, are typically
+restricted to small molecules and may be missing energy gradients. With this
+limited quantity of data, it is often difficult to train good MLIP models. We
+present an ensemble knowledge distillation (EKD) method to improve MLIP
+accuracy when trained to energy-only datasets. In our EKD approach, first,
+multiple teacher models are trained to QC energies and then used to generate
+atomic forces for all configurations in the dataset. Next, a student MLIP is
+trained to both QC energies and to ensemble-averaged forces generated by the
+teacher models. We apply this workflow on the ANI-1ccx dataset which consists
+of organic molecules with configuration energies computed at the coupled
+cluster level of theory. The resulting student MLIPs achieve new
+state-of-the-art accuracy on the out-of-sample COMP6 benchmark and improved
+stability for molecular dynamics simulations. The EKD approach for MLIP is
+broadly applicable for chemical, biomolecular and materials science
+simulations.",http://arxiv.org/pdf/2503.14293v1,,False
+Quantization-Free Autoregressive Action Transformer,18/03/2025,"Ziyad Sheebaelhamd, Michael Tschannen, Michael Muehlebach, Claire Vernade","Current transformer-based imitation learning approaches introduce discrete
+action representations and train an autoregressive transformer decoder on the
+resulting latent code. However, the initial quantization breaks the continuous
+structure of the action space thereby limiting the capabilities of the
+generative model. We propose a quantization-free method instead that leverages
+Generative Infinite-Vocabulary Transformers (GIVT) as a direct, continuous
+policy parametrization for autoregressive transformers. This simplifies the
+imitation learning pipeline while achieving state-of-the-art performance on a
+variety of popular simulated robotics tasks. We enhance our policy roll-outs by
+carefully studying sampling algorithms, further improving the results.",http://arxiv.org/pdf/2503.14259v1,,False
+GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial Fusion SLAM for Dynamic Legged Robotics,18/03/2025,"Tingyang Xiao, Xiaolin Zhou, Liu Liu, Wei Sui, Wei Feng, Jiaxiong Qiu, Xinjie Wang, Zhizhong Su","This paper presents GeoFlow-SLAM, a robust and effective Tightly-Coupled
+RGBD-inertial SLAM for legged robots operating in highly dynamic
+environments.By integrating geometric consistency, legged odometry constraints,
+and dual-stream optical flow (GeoFlow), our method addresses three critical
+challenges:feature matching and pose initialization failures during fast
+locomotion and visual feature scarcity in texture-less scenes.Specifically, in
+rapid motion scenarios, feature matching is notably enhanced by leveraging
+dual-stream optical flow, which combines prior map points and poses.
+Additionally, we propose a robust pose initialization method for fast
+locomotion and IMU error in legged robots, integrating IMU/Legged odometry,
+inter-frame Perspective-n-Point (PnP), and Generalized Iterative Closest Point
+(GICP). Furthermore, a novel optimization framework that tightly couples
+depth-to-map and GICP geometric constraints is first introduced to improve the
+robustness and accuracy in long-duration, visually texture-less environments.
+The proposed algorithms achieve state-of-the-art (SOTA) on collected legged
+robots and open-source datasets. To further promote research and development,
+the open-source datasets and code will be made publicly available at
+https://github.com/NSN-Hello/GeoFlow-SLAM",http://arxiv.org/pdf/2503.14247v1,,False
+Concat-ID: Towards Universal Identity-Preserving Video Synthesis,18/03/2025,"Yong Zhong, Zhuoyi Yang, Jiayan Teng, Xiaotao Gu, Chongxuan Li","We present Concat-ID, a unified framework for identity-preserving video
+generation. Concat-ID employs Variational Autoencoders to extract image
+features, which are concatenated with video latents along the sequence
+dimension, leveraging solely 3D self-attention mechanisms without the need for
+additional modules. A novel cross-video pairing strategy and a multi-stage
+training regimen are introduced to balance identity consistency and facial
+editability while enhancing video naturalness. Extensive experiments
+demonstrate Concat-ID's superiority over existing methods in both single and
+multi-identity generation, as well as its seamless scalability to multi-subject
+scenarios, including virtual try-on and background-controllable generation.
+Concat-ID establishes a new benchmark for identity-preserving video synthesis,
+providing a versatile and scalable solution for a wide range of applications.",http://arxiv.org/pdf/2503.14151v1,,False
+"Fundamental Limits of Matrix Sensing: Exact Asymptotics, Universality, and Applications",18/03/2025,"Yizhou Xu, Antoine Maillard, Lenka Zdeborová, Florent Krzakala","In the matrix sensing problem, one wishes to reconstruct a matrix from
+(possibly noisy) observations of its linear projections along given directions.
+We consider this model in the high-dimensional limit: while previous works on
+this model primarily focused on the recovery of low-rank matrices, we consider
+in this work more general classes of structured signal matrices with
+potentially large rank, e.g. a product of two matrices of sizes proportional to
+the dimension. We provide rigorous asymptotic equations characterizing the
+Bayes-optimal learning performance from a number of samples which is
+proportional to the number of entries in the matrix. Our proof is composed of
+three key ingredients: $(i)$ we prove universality properties to handle
+structured sensing matrices, related to the ''Gaussian equivalence'' phenomenon
+in statistical learning, $(ii)$ we provide a sharp characterization of
+Bayes-optimal learning in generalized linear models with Gaussian data and
+structured matrix priors, generalizing previously studied settings, and $(iii)$
+we leverage previous works on the problem of matrix denoising. The generality
+of our results allow for a variety of applications: notably, we mathematically
+establish predictions obtained via non-rigorous methods from statistical
+physics in [ETB+24] regarding Bilinear Sequence Regression, a benchmark model
+for learning from sequences of tokens, and in [MTM+24] on Bayes-optimal
+learning in neural networks with quadratic activation function, and width
+proportional to the dimension.",http://arxiv.org/pdf/2503.14121v1,,False
+"PET-MAD, a universal interatomic potential for advanced materials modeling",18/03/2025,"Arslan Mazitov, Filippo Bigi, Matthias Kellner, Paolo Pegolo, Davide Tisi, Guillaume Fraux, Sergey Pozdnyakov, Philip Loche, Michele Ceriotti","Machine-learning interatomic potentials (MLIPs) have greatly extended the
+reach of atomic-scale simulations, offering the accuracy of first-principles
+calculations at a fraction of the effort. Leveraging large quantum mechanical
+databases and expressive architectures, recent ""universal"" models deliver
+qualitative accuracy across the periodic table but are often biased toward
+low-energy configurations. We introduce PET-MAD, a generally applicable MLIP
+trained on a dataset combining stable inorganic and organic solids,
+systematically modified to enhance atomic diversity. Using a moderate but
+highly-consistent level of electronic-structure theory, we assess PET-MAD's
+accuracy on established benchmarks and advanced simulations of six materials.
+PET-MAD rivals state-of-the-art MLIPs for inorganic solids, while also being
+reliable for molecules, organic materials, and surfaces. It is stable and fast,
+enabling, out-of-the-box, the near-quantitative study of thermal and quantum
+mechanical fluctuations, functional properties, and phase transitions. It can
+be efficiently fine-tuned to deliver full quantum mechanical accuracy with a
+minimal number of targeted calculations.",http://arxiv.org/pdf/2503.14118v1,,False
+Toward Large-Scale Distributed Quantum Long Short-Term Memory with Modular Quantum Computers,18/03/2025,"Kuan-Cheng Chen, Samuel Yen-Chi Chen, Chen-Yu Liu, Kin K. Leung","In this work, we introduce a Distributed Quantum Long Short-Term Memory
+(QLSTM) framework that leverages modular quantum computing to address
+scalability challenges on Noisy Intermediate-Scale Quantum (NISQ) devices. By
+embedding variational quantum circuits into LSTM cells, the QLSTM captures
+long-range temporal dependencies, while a distributed architecture partitions
+the underlying Variational Quantum Circuits (VQCs) into smaller, manageable
+subcircuits that can be executed on a network of quantum processing units. We
+assess the proposed framework using nontrivial benchmark problems such as
+damped harmonic oscillators and Nonlinear Autoregressive Moving Average
+sequences. Our results demonstrate that the distributed QLSTM achieves stable
+convergence and improved training dynamics compared to classical approaches.
+This work underscores the potential of modular, distributed quantum computing
+architectures for large-scale sequence modelling, providing a foundation for
+the future integration of hybrid quantum-classical solutions into advanced
+Quantum High-performance computing (HPC) ecosystems.",http://arxiv.org/pdf/2503.14088v1,,False
+"Theoretical Foundation of Flow-Based Time Series Generation: Provable Approximation, Generalization, and Efficiency",18/03/2025,"Jiangxuan Long, Zhao Song, Chiwun Yang","Recent studies suggest utilizing generative models instead of traditional
+auto-regressive algorithms for time series forecasting (TSF) tasks. These
+non-auto-regressive approaches involving different generative methods,
+including GAN, Diffusion, and Flow Matching for time series, have empirically
+demonstrated high-quality generation capability and accuracy. However, we still
+lack an appropriate understanding of how it processes approximation and
+generalization. This paper presents the first theoretical framework from the
+perspective of flow-based generative models to relieve the knowledge of
+limitations. In particular, we provide our insights with strict guarantees from
+three perspectives: $\textbf{Approximation}$, $\textbf{Generalization}$ and
+$\textbf{Efficiency}$. In detail, our analysis achieves the contributions as
+follows:
+  $\bullet$ By assuming a general data model, the fitting of the flow-based
+generative models is confirmed to converge to arbitrary error under the
+universal approximation of Diffusion Transformer (DiT).
+  $\bullet$ Introducing a polynomial-based regularization for flow matching,
+the generalization error thus be bounded since the generalization of polynomial
+approximation.
+  $\bullet$ The sampling for generation is considered as an optimization
+process, we demonstrate its fast convergence with updating standard first-order
+gradient descent of some objective.",http://arxiv.org/pdf/2503.14076v1,,False
+MoK-RAG: Mixture of Knowledge Paths Enhanced Retrieval-Augmented Generation for Embodied AI Environments,18/03/2025,"Zhengsheng Guo, Linwei Zheng, Xinyang Chen, Xuefeng Bai, Kehai Chen, Min Zhang","While human cognition inherently retrieves information from diverse and
+specialized knowledge sources during decision-making processes, current
+Retrieval-Augmented Generation (RAG) systems typically operate through
+single-source knowledge retrieval, leading to a cognitive-algorithmic
+discrepancy. To bridge this gap, we introduce MoK-RAG, a novel multi-source RAG
+framework that implements a mixture of knowledge paths enhanced retrieval
+mechanism through functional partitioning of a large language model (LLM)
+corpus into distinct sections, enabling retrieval from multiple specialized
+knowledge paths. Applied to the generation of 3D simulated environments, our
+proposed MoK-RAG3D enhances this paradigm by partitioning 3D assets into
+distinct sections and organizing them based on a hierarchical knowledge tree
+structure. Different from previous methods that only use manual evaluation, we
+pioneered the introduction of automated evaluation methods for 3D scenes. Both
+automatic and human evaluations in our experiments demonstrate that MoK-RAG3D
+can assist Embodied AI agents in generating diverse scenes.",http://arxiv.org/pdf/2503.13882v1,,False
+Out-of-Distribution Generalization in Time Series: A Survey,18/03/2025,"Xin Wu, Fei Teng, Xingwang Li, Ji Zhang, Tianrui Li, Qiang Duan","Time series frequently manifest distribution shifts, diverse latent features,
+and non-stationary learning dynamics, particularly in open and evolving
+environments. These characteristics pose significant challenges for
+out-of-distribution (OOD) generalization. While substantial progress has been
+made, a systematic synthesis of advancements remains lacking. To address this
+gap, we present the first comprehensive review of OOD generalization
+methodologies for time series, organized to delineate the field's evolutionary
+trajectory and contemporary research landscape. We organize our analysis across
+three foundational dimensions: data distribution, representation learning, and
+OOD evaluation. For each dimension, we present several popular algorithms in
+detail. Furthermore, we highlight key application scenarios, emphasizing their
+real-world impact. Finally, we identify persistent challenges and propose
+future research directions. A detailed summary of the methods reviewed for the
+generalization of OOD in time series can be accessed at
+https://tsood-generalization.com.",http://arxiv.org/pdf/2503.13868v1,,False
+The Empty Chair: Using LLMs to Raise Missing Perspectives in Policy Deliberations,18/03/2025,"Suyash Fulay, Deb Roy","Deliberation is essential to well-functioning democracies, yet physical,
+economic, and social barriers often exclude certain groups, reducing
+representativeness and contributing to issues like group polarization. In this
+work, we explore the use of large language model (LLM) personas to introduce
+missing perspectives in policy deliberations. We develop and evaluate a tool
+that transcribes conversations in real-time and simulates input from relevant
+but absent stakeholders. We deploy this tool in a 19-person student citizens'
+assembly on campus sustainability. Participants and facilitators found that the
+tool sparked new discussions and surfaced valuable perspectives they had not
+previously considered. However, they also noted that AI-generated responses
+were sometimes overly general. They raised concerns about overreliance on AI
+for perspective-taking. Our findings highlight both the promise and potential
+risks of using LLMs to raise missing points of view in group deliberation
+settings.",http://arxiv.org/pdf/2503.13812v1,,False

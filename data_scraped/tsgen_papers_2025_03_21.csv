@@ -1,0 +1,350 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Enhancing variational quantum algorithms by balancing training on classical and quantum hardware,20/03/2025,"Rahul Bhowmick, Harsh Wadhwa, Avinash Singh, Tania Sidana, Quoc Hoan Tran, Krishna Kumar Sabapathy","Quantum computers offer a promising route to tackling problems that are
+classically intractable such as in prime-factorization, solving large-scale
+linear algebra and simulating complex quantum systems, but require
+fault-tolerant quantum hardware. On the other hand, variational quantum
+algorithms (VQAs) have the potential to provide a near-term route to quantum
+utility or advantage, and is usually constructed by using parametrized quantum
+circuits (PQCs) in combination with a classical optimizer for training.
+Although VQAs have been proposed for a multitude of tasks such as ground-state
+estimation, combinatorial optimization and unitary compilation, there remain
+major challenges in its trainability and resource costs on quantum hardware.
+Here we address these challenges by adopting Hardware Efficient and dynamical
+LIe algebra Supported Ansatz (HELIA), and propose two training schemes that
+combine an existing g-sim method (that uses the underlying group structure of
+the operators) and the Parameter-Shift Rule (PSR). Our improvement comes from
+distributing the resources required for gradient estimation and training to
+both classical and quantum hardware. We numerically test our proposal for
+ground-state estimation using Variational Quantum Eigensolver (VQE) and
+classification of quantum phases using quantum neural networks. Our methods
+show better accuracy and success of trials, and also need fewer calls to the
+quantum hardware on an average than using only PSR (upto 60% reduction), that
+runs exclusively on quantum hardware. We also numerically demonstrate the
+capability of HELIA in mitigating barren plateaus, paving the way for training
+large-scale quantum models.",http://arxiv.org/pdf/2503.16361v1,,False
+Lyra: An Efficient and Expressive Subquadratic Architecture for Modeling Biological Sequences,20/03/2025,"Krithik Ramesh, Sameed M. Siddiqui, Albert Gu, Michael D. Mitzenmacher, Pardis C. Sabeti","Deep learning architectures such as convolutional neural networks and
+Transformers have revolutionized biological sequence modeling, with recent
+advances driven by scaling up foundation and task-specific models. The
+computational resources and large datasets required, however, limit their
+applicability in biological contexts. We introduce Lyra, a subquadratic
+architecture for sequence modeling, grounded in the biological framework of
+epistasis for understanding sequence-to-function relationships. Mathematically,
+we demonstrate that state space models efficiently capture global epistatic
+interactions and combine them with projected gated convolutions for modeling
+local relationships. We demonstrate that Lyra is performant across over 100
+wide-ranging biological tasks, achieving state-of-the-art (SOTA) performance in
+many key areas, including protein fitness landscape prediction, biophysical
+property prediction (e.g. disordered protein region functions) peptide
+engineering applications (e.g. antibody binding, cell-penetrating peptide
+prediction), RNA structure analysis, RNA function prediction, and CRISPR guide
+design. It achieves this with orders-of-magnitude improvements in inference
+speed and reduction in parameters (up to 120,000-fold in our tests) compared to
+recent biology foundation models. Using Lyra, we were able to train and run
+every task in this study on two or fewer GPUs in under two hours, democratizing
+access to biological sequence modeling at SOTA performance, with potential
+applications to many fields.",http://arxiv.org/pdf/2503.16351v1,,False
+Nonlinear action prediction models reveal multi-timescale locomotor control,20/03/2025,"Wei-Chen Wang, Antoine De Comite, Monica Daley, Alexandra Voloshina, Nidhi Seethapathi","Modeling movement in real-world tasks is a fundamental scientific goal.
+However, it is unclear whether existing models and their assumptions,
+overwhelmingly tested in laboratory-constrained settings, generalize to the
+real world. For example, data-driven models of foot placement control -- a
+crucial action for stable locomotion -- assume linear and single timescale
+mappings. We develop nonlinear foot placement prediction models, finding that
+neural network architectures with flexible input history-dependence like GRU
+and Transformer perform best across multiple contexts (walking and running,
+treadmill and overground, varying terrains) and input modalities (multiple body
+states, gaze), outperforming traditional models. These models reveal context-
+and modality-dependent timescales: there is more reliance on fast-timescale
+predictions in complex terrain, gaze predictions precede body state
+predictions, and full-body state predictions precede center-of-mass-relevant
+predictions. Thus, nonlinear action prediction models provide quantifiable
+insights into real-world motor control and can be extended to other actions,
+contexts, and populations.",http://arxiv.org/pdf/2503.16340v1,,False
+Uni-3DAR: Unified 3D Generation and Understanding via Autoregression on Compressed Spatial Tokens,20/03/2025,"Shuqi Lu, Haowei Lin, Lin Yao, Zhifeng Gao, Xiaohong Ji, Weinan E, Linfeng Zhang, Guolin Ke","Recent advancements in large language models and their multi-modal extensions
+have demonstrated the effectiveness of unifying generation and understanding
+through autoregressive next-token prediction. However, despite the critical
+role of 3D structural generation and understanding ({3D GU}) in AI for science,
+these tasks have largely evolved independently, with autoregressive methods
+remaining underexplored. To bridge this gap, we introduce Uni-3DAR, a unified
+framework that seamlessly integrates {3D GU} tasks via autoregressive
+prediction. At its core, Uni-3DAR employs a novel hierarchical tokenization
+that compresses 3D space using an octree, leveraging the inherent sparsity of
+3D structures. It then applies an additional tokenization for fine-grained
+structural details, capturing key attributes such as atom types and precise
+spatial coordinates in microscopic 3D structures. We further propose two
+optimizations to enhance efficiency and effectiveness. The first is a two-level
+subtree compression strategy, which reduces the octree token sequence by up to
+8x. The second is a masked next-token prediction mechanism tailored for
+dynamically varying token positions, significantly boosting model performance.
+By combining these strategies, Uni-3DAR successfully unifies diverse {3D GU}
+tasks within a single autoregressive framework. Extensive experiments across
+multiple microscopic {3D GU} tasks, including molecules, proteins, polymers,
+and crystals, validate its effectiveness and versatility. Notably, Uni-3DAR
+surpasses previous state-of-the-art diffusion models by a substantial margin,
+achieving up to 256\% relative improvement while delivering inference speeds up
+to 21.8x faster. The code is publicly available at
+https://github.com/dptech-corp/Uni-3DAR.",http://arxiv.org/pdf/2503.16278v1,,False
+PromptMobile: Efficient Promptus for Low Bandwidth Mobile Video Streaming,20/03/2025,"Liming Liu, Jiangkai Wu, Haoyang Wang, Peiheng Wang, Xinggong Zhang, Zongming Guo","Traditional video compression algorithms exhibit significant quality
+degradation at extremely low bitrates. Promptus emerges as a new paradigm for
+video streaming, substantially cutting down the bandwidth essential for video
+streaming. However, Promptus is computationally intensive and can not run in
+real-time on mobile devices. This paper presents PromptMobile, an efficient
+acceleration framework tailored for on-device Promptus. Specifically, we
+propose (1) a two-stage efficient generation framework to reduce computational
+cost by 8.1x, (2) a fine-grained inter-frame caching to reduce redundant
+computations by 16.6\%, (3) system-level optimizations to further enhance
+efficiency. The evaluations demonstrate that compared with the original
+Promptus, PromptMobile achieves a 13.6x increase in image generation speed.
+Compared with other streaming methods, PromptMobile achives an average LPIPS
+improvement of 0.016 (compared with H.265), reducing 60\% of severely distorted
+frames (compared to VQGAN).",http://arxiv.org/pdf/2503.16112v1,,False
+Allostatic Control of Persistent States in Spiking Neural Networks for perception and computation,20/03/2025,"Aung Htet, Alejandro Rodriguez Jimenez, Sarah Hamburg, Alessandro Di Nuovo","We introduce a novel model for updating perceptual beliefs about the
+environment by extending the concept of Allostasis to the control of internal
+representations. Allostasis is a fundamental regulatory mechanism observed in
+animal physiology that orchestrates responses to maintain a dynamic equilibrium
+in bodily needs and internal states. In this paper, we focus on an application
+in numerical cognition, where a bump of activity in an attractor network is
+used as a spatial numerical representation. While existing neural networks can
+maintain persistent states, to date, there is no unified framework for
+dynamically controlling spatial changes in neuronal activity in response to
+environmental changes. To address this, we couple a well known allostatic
+microcircuit, the Hammel model, with a ring attractor, resulting in a Spiking
+Neural Network architecture that can modulate the location of the bump as a
+function of some reference input. This localized activity in turn is used as a
+perceptual belief in a simulated subitization task a quick enumeration process
+without counting. We provide a general procedure to fine-tune the model and
+demonstrate the successful control of the bump location. We also study the
+response time in the model with respect to changes in parameters and compare it
+with biological data. Finally, we analyze the dynamics of the network to
+understand the selectivity and specificity of different neurons to distinct
+categories present in the input. The results of this paper, particularly the
+mechanism for moving persistent states, are not limited to numerical cognition
+but can be applied to a wide range of tasks involving similar representations.",http://arxiv.org/pdf/2503.16085v1,,False
+Incomplete Utterance Rewriting with Editing Operation Guidance and Utterance Augmentation,20/03/2025,"Zhiyu Cao, Peifeng Li, Yaxin Fan, Qiaoming Zhu","Although existing fashionable generation methods on Incomplete Utterance
+Rewriting (IUR) can generate coherent utterances, they often result in the
+inclusion of irrelevant and redundant tokens in rewritten utterances due to
+their inability to focus on critical tokens in dialogue context. Furthermore,
+the limited size of the training datasets also contributes to the insufficient
+training of the IUR model. To address the first issue, we propose a multi-task
+learning framework EO-IUR (Editing Operation-guided Incomplete Utterance
+Rewriting) that introduces the editing operation labels generated by sequence
+labeling module to guide generation model to focus on critical tokens.
+Furthermore, we introduce a token-level heterogeneous graph to represent
+dialogues. To address the second issue, we propose a two-dimensional utterance
+augmentation strategy, namely editing operation-based incomplete utterance
+augmentation and LLM-based historical utterance augmentation. The experimental
+results on three datasets demonstrate that our EO-IUR outperforms previous
+state-of-the-art (SOTA) baselines in both open-domain and task-oriented
+dialogue. The code will be available at https://github.com/Dewset/EO-IUR.",http://arxiv.org/pdf/2503.16043v1,,False
+Autonomous AI imitators increase diversity in homogeneous information ecosystems,20/03/2025,"Emil Bakkensen Johansen, Oliver Baumann","Recent breakthroughs in large language models (LLMs) have facilitated
+autonomous AI agents capable of imitating human-generated content. This
+technological advancement raises fundamental questions about AI's potential
+impact on the diversity and democratic value of information ecosystems. Here,
+we introduce a large-scale simulation framework to examine AI-based imitation
+in news, a context critically influential for public discourse. By
+systematically testing two distinct imitation strategies across a range of
+information environments varying in initial diversity, we demonstrate that
+AI-generated articles do not uniformly homogenize content. Instead, AI's
+influence is strongly context-dependent: AI-generated articles can introduce
+valuable diversity in originally homogeneous news environments, while
+potentially diminishing diversity in contexts that initially display high
+heterogeneity. These results illustrate that the baseline diversity of an
+information space critically shapes AI's impact, challenging assumptions that
+AI-driven imitation uniformly threatens information diversity. Instead, when
+information is initially homogeneous, AI-driven imitation can expand
+perspectives, styles, and topics. This is especially important in news
+contexts, where information diversity fosters richer public debate by exposing
+citizens to alternative viewpoints, challenging biases, and preventing
+narrative monopolies, which is essential for a resilient democracy.",http://arxiv.org/pdf/2503.16021v1,,False
+TVineSynth: A Truncated C-Vine Copula Generator of Synthetic Tabular Data to Balance Privacy and Utility,20/03/2025,"Elisabeth Griesbauer, Claudia Czado, Arnoldo Frigessi, Ingrid Hobæk Haff","We propose TVineSynth, a vine copula based synthetic tabular data generator,
+which is designed to balance privacy and utility, using the vine tree structure
+and its truncation to do the trade-off. Contrary to synthetic data generators
+that achieve DP by globally adding noise, TVineSynth performs a controlled
+approximation of the estimated data generating distribution, so that it does
+not suffer from poor utility of the resulting synthetic data for downstream
+prediction tasks. TVineSynth introduces a targeted bias into the vine copula
+model that, combined with the specific tree structure of the vine, causes the
+model to zero out privacy-leaking dependencies while relying on those that are
+beneficial for utility. Privacy is here measured with membership (MIA) and
+attribute inference attacks (AIA). Further, we theoretically justify how the
+construction of TVineSynth ensures AIA privacy under a natural privacy measure
+for continuous sensitive attributes. When compared to competitor models, with
+and without DP, on simulated and on real-world data, TVineSynth achieves a
+superior privacy-utility balance.",http://arxiv.org/pdf/2503.15972v1,,False
+GAN-enhanced Simulation-driven DNN Testing in Absence of Ground Truth,20/03/2025,"Mohammed Attaoui, Fabrizio Pastore","The generation of synthetic inputs via simulators driven by search algorithms
+is essential for cost-effective testing of Deep Neural Network (DNN) components
+for safety-critical systems. However, in many applications, simulators are
+unable to produce the ground-truth data needed for automated test oracles and
+to guide the search process.
+  To tackle this issue, we propose an approach for the generation of inputs for
+computer vision DNNs that integrates a generative network to ensure simulator
+fidelity and employs heuristic-based search fitnesses that leverage
+transformation consistency, noise resistance, surprise adequacy, and
+uncertainty estimation. We compare the performance of our fitnesses with that
+of a traditional fitness function leveraging ground truth; further, we assess
+how the integration of a GAN not leveraging the ground truth impacts on test
+and retraining effectiveness.
+  Our results suggest that leveraging transformation consistency is the best
+option to generate inputs for both DNN testing and retraining; it maximizes
+input diversity, spots the inputs leading to worse DNN performance, and leads
+to best DNN performance after retraining. Besides enabling simulator-based
+testing in the absence of ground truth, our findings pave the way for testing
+solutions that replace costly simulators with diffusion and large language
+models, which might be more affordable than simulators, but cannot generate
+ground-truth data.",http://arxiv.org/pdf/2503.15953v1,,False
+Jasmine: Harnessing Diffusion Prior for Self-supervised Depth Estimation,20/03/2025,"Jiyuan Wang, Chunyu Lin, Cheng Guan, Lang Nie, Jing He, Haodong Li, Kang Liao, Yao Zhao","In this paper, we propose Jasmine, the first Stable Diffusion (SD)-based
+self-supervised framework for monocular depth estimation, which effectively
+harnesses SD's visual priors to enhance the sharpness and generalization of
+unsupervised prediction. Previous SD-based methods are all supervised since
+adapting diffusion models for dense prediction requires high-precision
+supervision. In contrast, self-supervised reprojection suffers from inherent
+challenges (e.g., occlusions, texture-less regions, illumination variance), and
+the predictions exhibit blurs and artifacts that severely compromise SD's
+latent priors. To resolve this, we construct a novel surrogate task of hybrid
+image reconstruction. Without any additional supervision, it preserves the
+detail priors of SD models by reconstructing the images themselves while
+preventing depth estimation from degradation. Furthermore, to address the
+inherent misalignment between SD's scale and shift invariant estimation and
+self-supervised scale-invariant depth estimation, we build the Scale-Shift GRU.
+It not only bridges this distribution gap but also isolates the fine-grained
+texture of SD output against the interference of reprojection loss. Extensive
+experiments demonstrate that Jasmine achieves SoTA performance on the KITTI
+benchmark and exhibits superior zero-shot generalization across multiple
+datasets.",http://arxiv.org/pdf/2503.15905v1,,False
+Time After Time: Deep-Q Effect Estimation for Interventions on When and What to do,20/03/2025,"Yoav Wald, Mark Goldstein, Yonathan Efroni, Wouter A. C. van Amsterdam, Rajesh Ranganath","Problems in fields such as healthcare, robotics, and finance requires
+reasoning about the value both of what decision or action to take and when to
+take it. The prevailing hope is that artificial intelligence will support such
+decisions by estimating the causal effect of policies such as how to treat
+patients or how to allocate resources over time. However, existing methods for
+estimating the effect of a policy struggle with \emph{irregular time}. They
+either discretize time, or disregard the effect of timing policies. We present
+a new deep-Q algorithm that estimates the effect of both when and what to do
+called Earliest Disagreement Q-Evaluation (EDQ). EDQ makes use of recursion for
+the Q-function that is compatible with flexible sequence models, such as
+transformers. EDQ provides accurate estimates under standard assumptions. We
+validate the approach through experiments on survival time and tumor growth
+tasks.",http://arxiv.org/pdf/2503.15890v1,,False
+DeepPsy-Agent: A Stage-Aware and Deep-Thinking Emotional Support Agent System,20/03/2025,"Kai Chen, Zebing Sun","This paper introduces DeepPsy-Agent, an innovative psychological support
+system that combines the three-stage helping theory in psychology with deep
+learning techniques. The system consists of two core components: (1) a
+multi-stage response-capable dialogue model (\textit{deeppsy-chat}), which
+enhances reasoning capabilities through stage-awareness and deep-thinking
+analysis to generate high-quality responses; and (2) a real-time stage
+transition detection model that identifies contextual shifts to guide the
+dialogue towards more effective intervention stages. Based on 30,000 real
+psychological hotline conversations, we employ AI-simulated dialogues and
+expert re-annotation strategies to construct a high-quality multi-turn dialogue
+dataset. Experimental results demonstrate that DeepPsy-Agent outperforms
+general-purpose large language models (LLMs) in key metrics such as problem
+exposure completeness, cognitive restructuring success rate, and action
+adoption rate. Ablation studies further validate the effectiveness of
+stage-awareness and deep-thinking modules, showing that stage information
+contributes 42.3\% to performance, while the deep-thinking module increases
+root-cause identification by 58.3\% and reduces ineffective suggestions by
+72.1\%. This system addresses critical challenges in AI-based psychological
+support through dynamic dialogue management and deep reasoning, advancing
+intelligent mental health services.",http://arxiv.org/pdf/2503.15876v1,,False
+VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling,20/03/2025,"Hyojun Go, Byeongjun Park, Hyelin Nam, Byung-Hoon Kim, Hyungjin Chung, Changick Kim","We propose VideoRFSplat, a direct text-to-3D model leveraging a video
+generation model to generate realistic 3D Gaussian Splatting (3DGS) for
+unbounded real-world scenes. To generate diverse camera poses and unbounded
+spatial extent of real-world scenes, while ensuring generalization to arbitrary
+text prompts, previous methods fine-tune 2D generative models to jointly model
+camera poses and multi-view images. However, these methods suffer from
+instability when extending 2D generative models to joint modeling due to the
+modality gap, which necessitates additional models to stabilize training and
+inference. In this work, we propose an architecture and a sampling strategy to
+jointly model multi-view images and camera poses when fine-tuning a video
+generation model. Our core idea is a dual-stream architecture that attaches a
+dedicated pose generation model alongside a pre-trained video generation model
+via communication blocks, generating multi-view images and camera poses through
+separate streams. This design reduces interference between the pose and image
+modalities. Additionally, we propose an asynchronous sampling strategy that
+denoises camera poses faster than multi-view images, allowing rapidly denoised
+poses to condition multi-view generation, reducing mutual ambiguity and
+enhancing cross-modal consistency. Trained on multiple large-scale real-world
+datasets (RealEstate10K, MVImgNet, DL3DV-10K, ACID), VideoRFSplat outperforms
+existing text-to-3D direct generation methods that heavily depend on post-hoc
+refinement via score distillation sampling, achieving superior results without
+such refinement.",http://arxiv.org/pdf/2503.15855v1,,False
+Attention Pruning: Automated Fairness Repair of Language Models via Surrogate Simulated Annealing,20/03/2025,"Vishnu Asutosh Dasu, Md Rafi ur Rashid, Vipul Gupta, Saeid Tizpaz-Niari, Gang Tan","This paper explores pruning attention heads as a post-processing bias
+mitigation method for large language models (LLMs). Modern AI systems such as
+LLMs are expanding into sensitive social contexts where fairness concerns
+become especially crucial. Since LLMs develop decision-making patterns by
+training on massive datasets of human-generated content, they naturally encode
+and perpetuate societal biases. While modifying training datasets and
+algorithms is expensive and requires significant resources; post-processing
+techniques-such as selectively deactivating neurons and attention heads in
+pre-trained LLMs-can provide feasible and effective approaches to improve
+fairness. However, identifying the optimal subset of parameters to prune
+presents a combinatorial challenge within LLMs' immense parameter space,
+requiring solutions that efficiently balance competing objectives across the
+frontiers of model fairness and utility.
+  To address the computational challenges, we explore a search-based program
+repair approach via randomized simulated annealing. Given the prohibitive
+evaluation costs in billion-parameter LLMs, we develop surrogate deep neural
+networks that efficiently model the relationship between attention head states
+(active/inactive) and their corresponding fairness/utility metrics. This allows
+us to perform optimization over the surrogate models and efficiently identify
+optimal subsets of attention heads for selective pruning rather than directly
+searching through the LLM parameter space. This paper introduces Attention
+Pruning, a fairness-aware surrogate simulated annealing approach to prune
+attention heads in LLMs that disproportionately contribute to bias while
+minimally impacting overall model utility. Our experiments show that Attention
+Pruning achieves up to $40\%$ reduction in gender bias and outperforms the
+state-of-the-art bias mitigation strategies.",http://arxiv.org/pdf/2503.15815v1,,False
+MobiFuse: Learning Universal Human Mobility Patterns through Cross-domain Data Fusion,20/03/2025,"Haoxuan Ma, Xishun Liao, Yifan Liu, Qinhua Jiang, Chris Stanford, Shangqing Cao, Jiaqi Ma","Human mobility modeling is critical for urban planning and transportation
+management, yet existing datasets often lack the resolution and semantic
+richness required for comprehensive analysis. To address this, we proposed a
+cross-domain data fusion framework that integrates multi-modal data of distinct
+nature and spatio-temporal resolution, including geographical, mobility,
+socio-demographic, and traffic information, to construct a privacy-preserving
+and semantically enriched human travel trajectory dataset. This framework is
+demonstrated through two case studies in Los Angeles (LA) and Egypt, where a
+domain adaptation algorithm ensures its transferability across diverse urban
+contexts. Quantitative evaluation shows that the generated synthetic dataset
+accurately reproduces mobility patterns observed in empirical data. Moreover,
+large-scale traffic simulations for LA County based on the generated synthetic
+demand align well with observed traffic. On California's I-405 corridor, the
+simulation yields a Mean Absolute Percentage Error of 5.85% for traffic volume
+and 4.36% for speed compared to Caltrans PeMS observations.",http://arxiv.org/pdf/2503.15779v1,,False
+Accelerating Transient CFD through Machine Learning-Based Flow Initialization,20/03/2025,"Peter Sharpe, Rishikesh Ranade, Sanjay Choudhry","Transient computational fluid dynamics (CFD) simulations are essential for
+many industrial applications, but a significant portion of their computational
+cost stems from the time needed to reach statistical steadiness from initial
+conditions. We present a novel machine learning-based initialization method
+that reduces the cost of this subsequent transient solve substantially,
+achieving a 50% reduction in time-to-convergence compared to traditional
+uniform and potential flow-based initializations. Through a case study in
+automotive aerodynamics using a 16.7M-cell unsteady RANS simulation, we
+evaluate three ML-based initialization strategies. Two of these strategies are
+recommended for general use: (1) a physics-informed hybrid method combining ML
+predictions with potential flow solutions, and (2) a more versatile approach
+integrating ML predictions with uniform flow. Both strategies enable CFD
+solvers to achieve convergence times comparable to computationally expensive
+steady RANS initializations, while requiring only seconds of computation. We
+develop a robust statistical convergence metric based on windowed
+time-averaging for performance comparison between initialization strategies.
+Notably, these improvements are achieved using an ML model trained on a
+different dataset of automotive geometries, demonstrating strong generalization
+capabilities. The proposed methods integrate seamlessly with existing CFD
+workflows without requiring modifications to the underlying flow solver,
+providing a practical approach to accelerating industrial CFD simulations
+through improved ML-based initialization strategies.",http://arxiv.org/pdf/2503.15766v1,,False
+ATTENTION2D: Communication Efficient Distributed Self-Attention Mechanism,20/03/2025,Venmugil Elango,"Transformer-based models have emerged as a leading architecture for natural
+language processing, natural language generation, and image generation tasks. A
+fundamental element of the transformer architecture is self-attention, which
+allows the model to capture intricate dependencies within the data. However,
+the self-attention mechanism also incurs significant computational and memory
+costs, particularly for long sequences.
+  In this paper, we introduce ATTENTION2D, a novel approach that exploits
+parallelism along two dimensions - query and key/value - of the self-attention
+operation. This method enables efficient distribution and parallelization of
+computations across multiple devices. Our approach facilitates asymptotically
+faster training and inference phases compared to previous methods, without
+relying on approximations or incurring additional computational or memory
+overheads. Furthermore, unlike existing techniques that struggle to scale with
+an increasing number of processing units, our approach effectively scales with
+additional processing units.
+  Our experimental results confirm the effectiveness of our method in improving
+communication efficiency and scalability. Compared to Ring Attention, our
+approach demonstrated up to a 5x performance boost on a GPT-3-like model using
+64 NVIDIA A100 GPUs across 16 nodes, and up to a 9.4x performance boost on 64
+NVIDIA H100 GPUs across 64 nodes.",http://arxiv.org/pdf/2503.15758v1,,False

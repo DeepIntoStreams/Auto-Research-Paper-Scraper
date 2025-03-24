@@ -1,0 +1,269 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Gumbel-Softmax Flow Matching with Straight-Through Guidance for Controllable Biological Sequence Generation,21/03/2025,"Sophia Tang, Yinuo Zhang, Alexander Tong, Pranam Chatterjee","Flow matching in the continuous simplex has emerged as a promising strategy
+for DNA sequence design, but struggles to scale to higher simplex dimensions
+required for peptide and protein generation. We introduce Gumbel-Softmax Flow
+and Score Matching, a generative framework on the simplex based on a novel
+Gumbel-Softmax interpolant with a time-dependent temperature. Using this
+interpolant, we introduce Gumbel-Softmax Flow Matching by deriving a
+parameterized velocity field that transports from smooth categorical
+distributions to distributions concentrated at a single vertex of the simplex.
+We alternatively present Gumbel-Softmax Score Matching which learns to regress
+the gradient of the probability density. Our framework enables high-quality,
+diverse generation and scales efficiently to higher-dimensional simplices. To
+enable training-free guidance, we propose Straight-Through Guided Flows
+(STGFlow), a classifier-based guidance method that leverages straight-through
+estimators to steer the unconditional velocity field toward optimal vertices of
+the simplex. STGFlow enables efficient inference-time guidance using
+classifiers pre-trained on clean sequences, and can be used with any discrete
+flow method. Together, these components form a robust framework for
+controllable de novo sequence generation. We demonstrate state-of-the-art
+performance in conditional DNA promoter design, sequence-only protein
+generation, and target-binding peptide design for rare disease treatment.",http://arxiv.org/pdf/2503.17361v1,,False
+NdLinear Is All You Need for Representation Learning,21/03/2025,"Alex Reneau, Jerry Yao-Chieh Hu, Zhongfang Zhuang, Ting-Chun Liu","Many high-impact machine learning tasks involve multi-dimensional data (e.g.,
+images, volumetric medical scans, multivariate time-series). Yet, most neural
+architectures flatten inputs, discarding critical cross-dimension information.
+We introduce NdLinear, a novel linear transformation that preserves these
+structures without extra overhead. By operating separately along each
+dimension, NdLinear captures dependencies that standard fully connected layers
+overlook. Extensive experiments across convolutional, recurrent, and
+transformer-based networks show significant improvements in representational
+power and parameter efficiency. Crucially, NdLinear serves as a foundational
+building block for large-scale foundation models by operating on any unimodal
+or multimodal data in its native form. This removes the need for flattening or
+modality-specific preprocessing. Ndlinear rethinks core architectural
+priorities beyond attention, enabling more expressive, context-aware models at
+scale. We propose NdLinear as a drop-in replacement for standard linear layers
+-- marking an important step toward next-generation neural architectures.",http://arxiv.org/pdf/2503.17353v1,,False
+LLM+MAP: Bimanual Robot Task Planning using Large Language Models and Planning Domain Definition Language,21/03/2025,"Kun Chu, Xufeng Zhao, Cornelius Weber, Stefan Wermter","Bimanual robotic manipulation provides significant versatility, but also
+presents an inherent challenge due to the complexity involved in the spatial
+and temporal coordination between two hands. Existing works predominantly focus
+on attaining human-level manipulation skills for robotic hands, yet little
+attention has been paid to task planning on long-horizon timescales. With their
+outstanding in-context learning and zero-shot generation abilities, Large
+Language Models (LLMs) have been applied and grounded in diverse robotic
+embodiments to facilitate task planning. However, LLMs still suffer from errors
+in long-horizon reasoning and from hallucinations in complex robotic tasks,
+lacking a guarantee of logical correctness when generating the plan. Previous
+works, such as LLM+P, extended LLMs with symbolic planners. However, none have
+been successfully applied to bimanual robots. New challenges inevitably arise
+in bimanual manipulation, necessitating not only effective task decomposition
+but also efficient task allocation. To address these challenges, this paper
+introduces LLM+MAP, a bimanual planning framework that integrates LLM reasoning
+and multi-agent planning, automating effective and efficient bimanual task
+planning. We conduct simulated experiments on various long-horizon manipulation
+tasks of differing complexity. Our method is built using GPT-4o as the backend,
+and we compare its performance against plans generated directly by LLMs,
+including GPT-4o, V3 and also recent strong reasoning models o1 and R1. By
+analyzing metrics such as planning time, success rate, group debits, and
+planning-step reduction rate, we demonstrate the superior performance of
+LLM+MAP, while also providing insights into robotic reasoning. Code is
+available at https://github.com/Kchu/LLM-MAP.",http://arxiv.org/pdf/2503.17309v1,,False
+3D Neural Operator-Based Flow Surrogates around 3D geometries: Signed Distance Functions and Derivative Constraints,21/03/2025,"Ali Rabeh, Adarsh Krishnamurthy, Baskar Ganapathysubramanian","Accurate modeling of fluid dynamics around complex geometries is critical for
+applications such as aerodynamic optimization and biomedical device design.
+While advancements in numerical methods and high-performance computing have
+improved simulation capabilities, the computational cost of high-fidelity 3D
+flow simulations remains a significant challenge. Scientific machine learning
+(SciML) offers an efficient alternative, enabling rapid and reliable flow
+predictions. In this study, we evaluate Deep Operator Networks (DeepONet) and
+Geometric-DeepONet, a variant that incorporates geometry information via signed
+distance functions (SDFs), on steady-state 3D flow over complex objects. Our
+dataset consists of 1,000 high-fidelity simulations spanning Reynolds numbers
+from 10 to 1,000, enabling comprehensive training and evaluation across a range
+of flow regimes. To assess model generalization, we test our models on a random
+and extrapolatory train-test splitting. Additionally, we explore a
+derivative-informed training strategy that augments standard loss functions
+with velocity gradient penalties and incompressibility constraints, improving
+physics consistency in 3D flow prediction. Our results show that
+Geometric-DeepONet improves boundary-layer accuracy by up to 32% compared to
+standard DeepONet. Moreover, incorporating derivative constraints enhances
+gradient accuracy by 25% in interpolation tasks and up to 45% in extrapolatory
+test scenarios, suggesting significant improvement in generalization
+capabilities to unseen 3D Reynolds numbers.",http://arxiv.org/pdf/2503.17289v1,,False
+Unsupervised Joint Learning of Optical Flow and Intensity with Event Cameras,21/03/2025,"Shuang Guo, Friedhelm Hamann, Guillermo Gallego","Event cameras rely on motion to obtain information about scene appearance. In
+other words, for event cameras, motion and appearance are seen both or neither,
+which are encoded in the output event stream. Previous works consider
+recovering these two visual quantities as separate tasks, which does not fit
+with the nature of event cameras and neglects the inherent relations between
+both tasks. In this paper, we propose an unsupervised learning framework that
+jointly estimates optical flow (motion) and image intensity (appearance), with
+a single network. Starting from the event generation model, we newly derive the
+event-based photometric error as a function of optical flow and image
+intensity, which is further combined with the contrast maximization framework,
+yielding a comprehensive loss function that provides proper constraints for
+both flow and intensity estimation. Exhaustive experiments show that our model
+achieves state-of-the-art performance for both optical flow (achieves 20% and
+25% improvement in EPE and AE respectively in the unsupervised learning
+category) and intensity estimation (produces competitive results with other
+baselines, particularly in high dynamic range scenarios). Last but not least,
+our model achieves shorter inference time than all the other optical flow
+models and many of the image reconstruction models, while they output only one
+quantity. Project page: https://github.com/tub-rip/e2fai",http://arxiv.org/pdf/2503.17262v1,,False
+On Privately Estimating a Single Parameter,21/03/2025,"Hilal Asi, John C. Duchi, Kunal Talwar","We investigate differentially private estimators for individual parameters
+within larger parametric models. While generic private estimators exist, the
+estimators we provide repose on new local notions of estimand stability, and
+these notions allow procedures that provide private certificates of their own
+stability. By leveraging these private certificates, we provide computationally
+and statistical efficient mechanisms that release private statistics that are,
+at least asymptotically in the sample size, essentially unimprovable: they
+achieve instance optimal bounds. Additionally, we investigate the practicality
+of the algorithms both in simulated data and in real-world data from the
+American Community Survey and US Census, highlighting scenarios in which the
+new procedures are successful and identifying areas for future work.",http://arxiv.org/pdf/2503.17252v1,,False
+Generative adversarial framework to calibrate excursion set models for the 3D morphology of all-solid-state battery cathodes,21/03/2025,"Orkun Furat, Sabrina Weber, Johannes Schubert, René Rekers, Maximilian Luczak, Erik Glatt, Andreas Wiegmann, Jürgen Janek, Anja Bielefeld, Volker Schmidt","This paper presents a computational method for generating virtual 3D
+morphologies of functional materials using low-parametric stochastic geometry
+models, i.e., digital twins, calibrated with 2D microscopy images. These
+digital twins allow systematic parameter variations to simulate various
+morphologies, that can be deployed for virtual materials testing by means of
+spatially resolved numerical simulations of macroscopic properties. Generative
+adversarial networks (GANs) have gained popularity for calibrating models to
+generate realistic 3D morphologies. However, GANs often comprise of numerous
+uninterpretable parameters make systematic variation of morphologies for
+virtual materials testing challenging. In contrast, low-parametric stochastic
+geometry models (e.g., based on Gaussian random fields) enable targeted
+variation but may struggle to mimic complex morphologies. Combining GANs with
+advanced stochastic geometry models (e.g., excursion sets of more general
+random fields) addresses these limitations, allowing model calibration solely
+from 2D image data. This approach is demonstrated by generating a digital twin
+of all-solid-state battery (ASSB) cathodes. Since the digital twins are
+parametric, they support systematic exploration of structural scenarios and
+their macroscopic properties. The proposed method facilitates simulation
+studies for optimizing 3D morphologies, benefiting not only ASSB cathodes but
+also other materials with similar structures.",http://arxiv.org/pdf/2503.17171v1,,False
+DiTEC-WDN: A Large-Scale Dataset of Water Distribution Network Scenarios under Diverse Hydraulic Conditions,21/03/2025,"Huy Truong, Andrés Tello, Alexander Lazovik, Victoria Degeler","Privacy restrictions hinder the sharing of real-world Water Distribution
+Network (WDN) models, limiting the application of emerging data-driven machine
+learning, which typically requires extensive observations. To address this
+challenge, we propose the dataset DiTEC-WDN that comprises 36,000 unique
+scenarios simulated over either short-term (24 hours) or long-term (1 year)
+periods. We constructed this dataset using an automated pipeline that optimizes
+crucial parameters (e.g., pressure, flow rate, and demand patterns),
+facilitates large-scale simulations, and records discrete, synthetic but
+hydraulically realistic states under standard conditions via rule validation
+and post-hoc analysis. With a total of 228 million generated graph-based
+states, DiTEC-WDN can support a variety of machine-learning tasks, including
+graph-level, node-level, and link-level regression, as well as time-series
+forecasting. This contribution, released under a public license, encourages
+open scientific research in the critical water sector, eliminates the risk of
+exposing sensitive data, and fulfills the need for a large-scale water
+distribution network benchmark for study comparisons and scenario analysis.",http://arxiv.org/pdf/2503.17167v1,,False
+HiFi-Stream: Streaming Speech Enhancement with Generative Adversarial Networks,21/03/2025,"Ekaterina Dmitrieva, Maksim Kaledin","Speech Enhancement techniques have become core technologies in mobile devices
+and voice software simplifying downstream speech tasks. Still, modern Deep
+Learning (DL) solutions often require high amount of computational resources
+what makes their usage on low-resource devices challenging. We present
+HiFi-Stream, an optimized version of recently published HiFi++ model. Our
+experiments demonstrate that HiFiStream saves most of the qualities of the
+original model despite its size and computational complexity: the lightest
+version has only around 490k parameters which is 3.5x reduction in comparison
+to the original HiFi++ making it one of the smallest and fastest models
+available. The model is evaluated in streaming setting where it demonstrates
+its superior performance in comparison to modern baselines.",http://arxiv.org/pdf/2503.17141v1,,False
+Unitless Unrestricted Markov-Consistent SCM Generation: Better Benchmark Datasets for Causal Discovery,21/03/2025,"Rebecca J. Herman, Jonas Wahl, Urmi Ninad, Jakob Runge","Causal discovery aims to extract qualitative causal knowledge in the form of
+causal graphs from data. Because causal ground truth is rarely known in the
+real world, simulated data plays a vital role in evaluating the performance of
+the various causal discovery algorithms proposed in the literature. But recent
+work highlighted certain artifacts of commonly used data generation techniques
+for a standard class of structural causal models (SCM) that may be nonphysical,
+including var- and R2-sortability, where the variables' variance and
+coefficients of determination (R2) after regressing on all other variables,
+respectively, increase along the causal order. Some causal methods exploit such
+artifacts, leading to unrealistic expectations for their performance on
+real-world data. Some modifications have been proposed to remove these
+artifacts; notably, the internally-standardized structural causal model (iSCM)
+avoids varsortability and largely alleviates R2-sortability on sparse causal
+graphs, but exhibits a reversed R2-sortability pattern for denser graphs not
+featured in their work. We analyze which sortability patterns we expect to see
+in real data, and propose a method for drawing coefficients that we argue more
+effectively samples the space of SCMs. Finally, we propose a novel extension of
+our SCM generation method to the time series setting.",http://arxiv.org/pdf/2503.17037v1,,False
+Assessing Consistency and Reproducibility in the Outputs of Large Language Models: Evidence Across Diverse Finance and Accounting Tasks,21/03/2025,"Julian Junyan Wang, Victor Xiaoqi Wang","This study provides the first comprehensive assessment of consistency and
+reproducibility in Large Language Model (LLM) outputs in finance and accounting
+research. We evaluate how consistently LLMs produce outputs given identical
+inputs through extensive experimentation with 50 independent runs across five
+common tasks: classification, sentiment analysis, summarization, text
+generation, and prediction. Using three OpenAI models (GPT-3.5-turbo,
+GPT-4o-mini, and GPT-4o), we generate over 3.4 million outputs from diverse
+financial source texts and data, covering MD&As, FOMC statements, finance news
+articles, earnings call transcripts, and financial statements. Our findings
+reveal substantial but task-dependent consistency, with binary classification
+and sentiment analysis achieving near-perfect reproducibility, while complex
+tasks show greater variability. More advanced models do not consistently
+demonstrate better consistency and reproducibility, with task-specific patterns
+emerging. LLMs significantly outperform expert human annotators in consistency
+and maintain high agreement even where human experts significantly disagree. We
+further find that simple aggregation strategies across 3-5 runs dramatically
+improve consistency. Simulation analysis reveals that despite measurable
+inconsistency in LLM outputs, downstream statistical inferences remain
+remarkably robust. These findings address concerns about what we term
+""G-hacking,"" the selective reporting of favorable outcomes from multiple
+Generative AI runs, by demonstrating that such risks are relatively low for
+finance and accounting tasks.",http://arxiv.org/pdf/2503.16974v1,,False
+MerGen: Micro-electrode recording synthesis using a generative data-driven approach,21/03/2025,"Thibault Martin, Paul Sauleau, Claire Haegelen, Pierre Jannin, John S. H. Baxter","The analysis of electrophysiological data is crucial for certain surgical
+procedures such as deep brain stimulation, which has been adopted for the
+treatment of a variety of neurological disorders. During the procedure,
+auditory analysis of these signals helps the clinical team to infer the
+neuroanatomical location of the stimulation electrode and thus optimize
+clinical outcomes. This task is complex, and requires an expert who in turn
+requires significant training. In this paper, we propose a generative neural
+network, called MerGen, capable of simulating de novo electrophysiological
+recordings, with a view to providing a realistic learning tool for clinicians
+trainees for identifying these signals. We demonstrate that the generated
+signals are perceptually indistinguishable from real signals by experts in the
+field, and that it is even possible to condition the generation efficiently to
+provide a didactic simulator adapted to a particular surgical scenario. The
+efficacy of this conditioning is demonstrated, comparing it to intra-observer
+and inter-observer variability amongst experts. We also demonstrate the use of
+this network for data augmentation for automatic signal classification which
+can play a role in decision-making support in the operating theatre.",http://arxiv.org/pdf/2503.16928v1,,False
+DyWA: Dynamics-adaptive World Action Model for Generalizable Non-prehensile Manipulation,21/03/2025,"Jiangran Lyu, Ziming Li, Xuesong Shi, Chaoyi Xu, Yizhou Wang, He Wang","Nonprehensile manipulation is crucial for handling objects that are too thin,
+large, or otherwise ungraspable in unstructured environments. While
+conventional planning-based approaches struggle with complex contact modeling,
+learning-based methods have recently emerged as a promising alternative.
+However, existing learning-based approaches face two major limitations: they
+heavily rely on multi-view cameras and precise pose tracking, and they fail to
+generalize across varying physical conditions, such as changes in object mass
+and table friction. To address these challenges, we propose the
+Dynamics-Adaptive World Action Model (DyWA), a novel framework that enhances
+action learning by jointly predicting future states while adapting to dynamics
+variations based on historical trajectories. By unifying the modeling of
+geometry, state, physics, and robot actions, DyWA enables more robust policy
+learning under partial observability. Compared to baselines, our method
+improves the success rate by 31.5% using only single-view point cloud
+observations in the simulation. Furthermore, DyWA achieves an average success
+rate of 68% in real-world experiments, demonstrating its ability to generalize
+across diverse object geometries, adapt to varying table friction, and
+robustness in challenging scenarios such as half-filled water bottles and
+slippery surfaces.",http://arxiv.org/pdf/2503.16806v1,,False
+Auto-Regressive Diffusion for Generating 3D Human-Object Interactions,21/03/2025,"Zichen Geng, Zeeshan Hayder, Wei Liu, Ajmal Saeed Mian","Text-driven Human-Object Interaction (Text-to-HOI) generation is an emerging
+field with applications in animation, video games, virtual reality, and
+robotics. A key challenge in HOI generation is maintaining interaction
+consistency in long sequences. Existing Text-to-Motion-based approaches, such
+as discrete motion tokenization, cannot be directly applied to HOI generation
+due to limited data in this domain and the complexity of the modality. To
+address the problem of interaction consistency in long sequences, we propose an
+autoregressive diffusion model (ARDHOI) that predicts the next continuous
+token. Specifically, we introduce a Contrastive Variational Autoencoder (cVAE)
+to learn a physically plausible space of continuous HOI tokens, thereby
+ensuring that generated human-object motions are realistic and natural. For
+generating sequences autoregressively, we develop a Mamba-based context encoder
+to capture and maintain consistent sequential actions. Additionally, we
+implement an MLP-based denoiser to generate the subsequent token conditioned on
+the encoded context. Our model has been evaluated on the OMOMO and BEHAVE
+datasets, where it outperforms existing state-of-the-art methods in terms of
+both performance and inference speed. This makes ARDHOI a robust and efficient
+solution for text-driven HOI tasks",http://arxiv.org/pdf/2503.16801v1,,False
+Causally Aligned Curriculum Learning,21/03/2025,"Mingxuan Li, Junzhe Zhang, Elias Bareinboim","A pervasive challenge in Reinforcement Learning (RL) is the ""curse of
+dimensionality"" which is the exponential growth in the state-action space when
+optimizing a high-dimensional target task. The framework of curriculum learning
+trains the agent in a curriculum composed of a sequence of related and more
+manageable source tasks. The expectation is that when some optimal decision
+rules are shared across source tasks and the target task, the agent could more
+quickly pick up the necessary skills to behave optimally in the environment,
+thus accelerating the learning process. However, this critical assumption of
+invariant optimal decision rules does not necessarily hold in many practical
+applications, specifically when the underlying environment contains unobserved
+confounders. This paper studies the problem of curriculum RL through causal
+lenses. We derive a sufficient graphical condition characterizing causally
+aligned source tasks, i.e., the invariance of optimal decision rules holds. We
+further develop an efficient algorithm to generate a causally aligned
+curriculum, provided with qualitative causal knowledge of the target task.
+Finally, we validate our proposed methodology through experiments in discrete
+and continuous confounded tasks with pixel observations.",http://arxiv.org/pdf/2503.16799v1,,False

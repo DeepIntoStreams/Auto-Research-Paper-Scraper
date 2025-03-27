@@ -1,0 +1,632 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Reliable algorithm selection for machine learning-guided design,26/03/2025,"Clara Fannjiang, Ji Won Park","Algorithms for machine learning-guided design, or design algorithms, use
+machine learning-based predictions to propose novel objects with desired
+property values. Given a new design task -- for example, to design novel
+proteins with high binding affinity to a therapeutic target -- one must choose
+a design algorithm and specify any hyperparameters and predictive and/or
+generative models involved. How can these decisions be made such that the
+resulting designs are successful? This paper proposes a method for design
+algorithm selection, which aims to select design algorithms that will produce a
+distribution of design labels satisfying a user-specified success criterion --
+for example, that at least ten percent of designs' labels exceed a threshold.
+It does so by combining designs' predicted property values with held-out
+labeled data to reliably forecast characteristics of the label distributions
+produced by different design algorithms, building upon techniques from
+prediction-powered inference. The method is guaranteed with high probability to
+return design algorithms that yield successful label distributions (or the null
+set if none exist), if the density ratios between the design and labeled data
+distributions are known. We demonstrate the method's effectiveness in simulated
+protein and RNA design tasks, in settings with either known or estimated
+density ratios.",http://arxiv.org/pdf/2503.20767v1,,False
+Continual learning via probabilistic exchangeable sequence modelling,26/03/2025,"Hanwen Xing, Christopher Yau","Continual learning (CL) refers to the ability to continuously learn and
+accumulate new knowledge while retaining useful information from past
+experiences. Although numerous CL methods have been proposed in recent years,
+it is not straightforward to deploy them directly to real-world decision-making
+problems due to their computational cost and lack of uncertainty
+quantification. To address these issues, we propose CL-BRUNO, a probabilistic,
+Neural Process-based CL model that performs scalable and tractable Bayesian
+update and prediction. Our proposed approach uses deep-generative models to
+create a unified probabilistic framework capable of handling different types of
+CL problems such as task- and class-incremental learning, allowing users to
+integrate information across different CL scenarios using a single model. Our
+approach is able to prevent catastrophic forgetting through distributional and
+functional regularisation without the need of retaining any previously seen
+samples, making it appealing to applications where data privacy or storage
+capacity is of concern. Experiments show that CL-BRUNO outperforms existing
+methods on both natural image and biomedical data sets, confirming its
+effectiveness in real-world applications.",http://arxiv.org/pdf/2503.20725v1,,False
+Learning Straight Flows by Learning Curved Interpolants,26/03/2025,"Shiv Shankar, Tomas Geffner","Flow matching models typically use linear interpolants to define the
+forward/noise addition process. This, together with the independent coupling
+between noise and target distributions, yields a vector field which is often
+non-straight. Such curved fields lead to a slow inference/generation process.
+In this work, we propose to learn flexible (potentially curved) interpolants in
+order to learn straight vector fields to enable faster generation. We formulate
+this via a multi-level optimization problem and propose an efficient
+approximate procedure to solve it. Our framework provides an end-to-end and
+simulation-free optimization procedure, which can be leveraged to learn
+straight line generative trajectories.",http://arxiv.org/pdf/2503.20719v1,,False
+AccidentSim: Generating Physically Realistic Vehicle Collision Videos from Real-World Accident Reports,26/03/2025,"Xiangwen Zhang, Qian Zhang, Longfei Han, Qiang Qu, Xiaoming Chen","Collecting real-world vehicle accident videos for autonomous driving research
+is challenging due to their rarity and complexity. While existing driving video
+generation methods may produce visually realistic videos, they often fail to
+deliver physically realistic simulations because they lack the capability to
+generate accurate post-collision trajectories. In this paper, we introduce
+AccidentSim, a novel framework that generates physically realistic vehicle
+collision videos by extracting and utilizing the physical clues and contextual
+information available in real-world vehicle accident reports. Specifically,
+AccidentSim leverages a reliable physical simulator to replicate post-collision
+vehicle trajectories from the physical and contextual information in the
+accident reports and to build a vehicle collision trajectory dataset. This
+dataset is then used to fine-tune a language model, enabling it to respond to
+user prompts and predict physically consistent post-collision trajectories
+across various driving scenarios based on user descriptions. Finally, we employ
+Neural Radiance Fields (NeRF) to render high-quality backgrounds, merging them
+with the foreground vehicles that exhibit physically realistic trajectories to
+generate vehicle collision videos. Experimental results demonstrate that the
+videos produced by AccidentSim excel in both visual and physical authenticity.",http://arxiv.org/pdf/2503.20654v1,,False
+ProFed: a Benchmark for Proximity-based non-IID Federated Learning,26/03/2025,"Davide Domini, Gianluca Aguzzi, Mirko Viroli","In recent years, cro:flFederated learning (FL) has gained significant
+attention within the machine learning community. Although various FL algorithms
+have been proposed in the literature, their performance often degrades when
+data across clients is non-independently and identically distributed (non-IID).
+This skewness in data distribution often emerges from geographic patterns, with
+notable examples including regional linguistic variations in text data or
+localized traffic patterns in urban environments. Such scenarios result in IID
+data within specific regions but non-IID data across regions. However, existing
+FL algorithms are typically evaluated by randomly splitting non-IID data across
+devices, disregarding their spatial distribution. To address this gap, we
+introduce ProFed, a benchmark that simulates data splits with varying degrees
+of skewness across different regions. We incorporate several skewness methods
+from the literature and apply them to well-known datasets, including MNIST,
+FashionMNIST, CIFAR-10, and CIFAR-100. Our goal is to provide researchers with
+a standardized framework to evaluate FL algorithms more effectively and
+consistently against established baselines.",http://arxiv.org/pdf/2503.20618v1,,False
+Regression-Based Estimation of Causal Effects in the Presence of Selection Bias and Confounding,26/03/2025,"Marlies Hafer, Alexander Marx","We consider the problem of estimating the expected causal effect $E[Y|do(X)]$
+for a target variable $Y$ when treatment $X$ is set by intervention, focusing
+on continuous random variables. In settings without selection bias or
+confounding, $E[Y|do(X)] = E[Y|X]$, which can be estimated using standard
+regression methods. However, regression fails when systematic missingness
+induced by selection bias, or confounding distorts the data. Boeken et al.
+[2023] show that when training data is subject to selection, proxy variables
+unaffected by this process can, under certain constraints, be used to correct
+for selection bias to estimate $E[Y|X]$, and hence $E[Y|do(X)]$, reliably. When
+data is additionally affected by confounding, however, this equality is no
+longer valid.
+  Building on these results, we consider a more general setting and propose a
+framework that incorporates both selection bias and confounding. Specifically,
+we derive theoretical conditions ensuring identifiability and recoverability of
+causal effects under access to external data and proxy variables. We further
+introduce a two-step regression estimator (TSR), capable of exploiting proxy
+variables to adjust for selection bias while accounting for confounding. We
+show that TSR coincides with prior work if confounding is absent, but achieves
+a lower variance. Extensive simulation studies validate TSR's correctness for
+scenarios which may include both selection bias and confounding with proxy
+variables.",http://arxiv.org/pdf/2503.20546v1,,False
+GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving,26/03/2025,"Lloyd Russell, Anthony Hu, Lorenzo Bertoni, George Fedoseev, Jamie Shotton, Elahe Arani, Gianluca Corrado","Generative models offer a scalable and flexible paradigm for simulating
+complex environments, yet current approaches fall short in addressing the
+domain-specific requirements of autonomous driving - such as multi-agent
+interactions, fine-grained control, and multi-camera consistency. We introduce
+GAIA-2, Generative AI for Autonomy, a latent diffusion world model that unifies
+these capabilities within a single generative framework. GAIA-2 supports
+controllable video generation conditioned on a rich set of structured inputs:
+ego-vehicle dynamics, agent configurations, environmental factors, and road
+semantics. It generates high-resolution, spatiotemporally consistent
+multi-camera videos across geographically diverse driving environments (UK, US,
+Germany). The model integrates both structured conditioning and external latent
+embeddings (e.g., from a proprietary driving model) to facilitate flexible and
+semantically grounded scene synthesis. Through this integration, GAIA-2 enables
+scalable simulation of both common and rare driving scenarios, advancing the
+use of generative world models as a core tool in the development of autonomous
+systems. Videos are available at https://wayve.ai/thinking/gaia-2.",http://arxiv.org/pdf/2503.20523v1,,False
+Design and Evaluation of Neural Network-Based Receiver Architectures for Reliable Communication,26/03/2025,"Hüseyin Çevik, Erhan Karakoca, İbrahim Hökelek, Ali Görçin","Neural network-based receivers leverage deep learning to optimize signal
+detection and decoding, significantly improving bit-error rate (BER) and
+block-error rate (BLER) in challenging environments. This study evaluates
+various architectures and compares their BER and BLER performance across
+different noise levels. Two novel models, the Dual Attention Transformer (DAT)
+and the Residual Dual Non-Local Attention Network (RDNLA), integrate
+self-attention and residual learning to enhance signal reconstruction. These
+models bypass conventional channel estimation and equalization by directly
+predicting log-likelihood ratios (LLRs) from received signals, with noise
+variance as an additional input. Simulations show that DAT and RDNLA outperform
+traditional and other neural receiver models under varying signal-to-noise
+ratios (SNR), while their computational efficiency supports their feasibility
+for next-generation communication systems.",http://arxiv.org/pdf/2503.20500v1,,False
+"A multi-agentic framework for real-time, autonomous freeform metasurface design",26/03/2025,"Robert Lupoiu, Yixuan Shao, Tianxiang Dai, Chenkai Mao, Kofi Edee, Jonathan A. Fan","Innovation in nanophotonics currently relies on human experts who synergize
+specialized knowledge in photonics and coding with simulation and optimization
+algorithms, entailing design cycles that are time-consuming, computationally
+demanding, and frequently suboptimal. We introduce MetaChat, a multi-agentic
+design framework that can translate semantically described photonic design
+goals into high-performance, freeform device layouts in an automated, nearly
+real-time manner. Multi-step reasoning is enabled by our Agentic Iterative
+Monologue (AIM) paradigm, which coherently interfaces agents with code-based
+tools, other specialized agents, and human designers. Design acceleration is
+facilitated by Feature-wise Linear Modulation-conditioned Maxwell surrogate
+solvers that support the generalized evaluation of metasurface structures. We
+use freeform dielectric metasurfaces as a model system and demonstrate with
+MetaChat the design of multi-objective, multi-wavelength metasurfaces orders of
+magnitude faster than conventional methods. These concepts present a scientific
+computing blueprint for utilizing specialist design agents, surrogate solvers,
+and human interactions to drive multi-physics innovation and discovery.",http://arxiv.org/pdf/2503.20479v1,,False
+Data-driven Seasonal Climate Predictions via Variational Inference and Transformers,26/03/2025,"Lluís Palma, Alejandro Peraza, David Civantos, Amanda Duarte, Stefano Materia, Ángel G. Muñoz, Jesús Peña, Laia Romero, Albert Soret, Markus G. Donat","Most operational climate services providers base their seasonal predictions
+on initialised general circulation models (GCMs) or statistical techniques that
+fit past observations. GCMs require substantial computational resources, which
+limits their capacity. In contrast, statistical methods often lack robustness
+due to short historical records. Recent works propose machine learning methods
+trained on climate model output, leveraging larger sample sizes and simulated
+scenarios. Yet, many of these studies focus on prediction tasks that might be
+restricted in spatial extent or temporal coverage, opening a gap with existing
+operational predictions. Thus, the present study evaluates the effectiveness of
+a methodology that combines variational inference with transformer models to
+predict fields of seasonal anomalies. The predictions cover all four seasons
+and are initialised one month before the start of each season. The model was
+trained on climate model output from CMIP6 and tested using ERA5 reanalysis
+data. We analyse the method's performance in predicting interannual anomalies
+beyond the climate change-induced trend. We also test the proposed methodology
+in a regional context with a use case focused on Europe. While climate change
+trends dominate the skill of temperature predictions, the method presents
+additional skill over the climatological forecast in regions influenced by
+known teleconnections. We reach similar conclusions based on the validation of
+precipitation predictions. Despite underperforming SEAS5 in most tropics, our
+model offers added value in numerous extratropical inland regions. This work
+demonstrates the effectiveness of training generative models on climate model
+output for seasonal predictions, providing skilful predictions beyond the
+induced climate change trend at time scales and lead times relevant for user
+applications.",http://arxiv.org/pdf/2503.20466v1,,False
+Active Data Sampling and Generation for Bias Remediation,26/03/2025,"Antonio Maratea, Rita Perna","Adequate sampling space coverage is the keystone to effectively train
+trustworthy Machine Learning models. Unfortunately, real data do carry several
+inherent risks due to the many potential biases they exhibit when gathered
+without a proper random sampling over the reference population, and most of the
+times this is way too expensive or time consuming to be a viable option.
+Depending on how training data have been gathered, unmitigated biases can lead
+to harmful or discriminatory consequences that ultimately hinders large scale
+applicability of pre-trained models and undermine their truthfulness or
+fairness expectations. In this paper, a mixed active sampling and data
+generation strategy -- called samplation -- is proposed as a mean to compensate
+during fine-tuning of a pre-trained classifer the unfair classifications it
+produces, assuming that the training data come from a non-probabilistic
+sampling schema. Given a pre-trained classifier, first a fairness metric is
+evaluated on a test set, then new reservoirs of labeled data are generated and
+finally a number of reversely-biased artificial samples are generated for the
+fine-tuning of the model. Using as case study Deep Models for visual semantic
+role labeling, the proposed method has been able to fully cure a simulated
+gender bias starting from a 90/10 imbalance, with only a small percentage of
+new data and with a minor effect on accuracy.",http://arxiv.org/pdf/2503.20414v1,,False
+FastFT: Accelerating Reinforced Feature Transformation via Advanced Exploration Strategies,26/03/2025,"Tianqi He, Xiaohan Huang, Yi Du, Qingqing Long, Ziyue Qiao, Min Wu, Yanjie Fu, Yuanchun Zhou, Meng Xiao","Feature Transformation is crucial for classic machine learning that aims to
+generate feature combinations to enhance the performance of downstream tasks
+from a data-centric perspective. Current methodologies, such as manual
+expert-driven processes, iterative-feedback techniques, and
+exploration-generative tactics, have shown promise in automating such data
+engineering workflow by minimizing human involvement. However, three challenges
+remain in those frameworks: (1) It predominantly depends on downstream task
+performance metrics, as assessment is time-consuming, especially for large
+datasets. (2) The diversity of feature combinations will hardly be guaranteed
+after random exploration ends. (3) Rare significant transformations lead to
+sparse valuable feedback that hinders the learning processes or leads to less
+effective results. In response to these challenges, we introduce FastFT, an
+innovative framework that leverages a trio of advanced strategies.We first
+decouple the feature transformation evaluation from the outcomes of the
+generated datasets via the performance predictor. To address the issue of
+reward sparsity, we developed a method to evaluate the novelty of generated
+transformation sequences. Incorporating this novelty into the reward function
+accelerates the model's exploration of effective transformations, thereby
+improving the search productivity. Additionally, we combine novelty and
+performance to create a prioritized memory buffer, ensuring that essential
+experiences are effectively revisited during exploration. Our extensive
+experimental evaluations validate the performance, efficiency, and traceability
+of our proposed framework, showcasing its superiority in handling complex
+feature transformation tasks.",http://arxiv.org/pdf/2503.20394v1,,False
+MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation,26/03/2025,"Rongyu Zhang, Menghang Dong, Yuan Zhang, Liang Heng, Xiaowei Chi, Gaole Dai, Li Du, Dan Wang, Yuan Du, Shanghang Zhang","Multimodal Large Language Models (MLLMs) excel in understanding complex
+language and visual data, enabling generalist robotic systems to interpret
+instructions and perform embodied tasks. Nevertheless, their real-world
+deployment is hindered by substantial computational and storage demands. Recent
+insights into the homogeneous patterns in the LLM layer have inspired
+sparsification techniques to address these challenges, such as early exit and
+token pruning. However, these methods often neglect the critical role of the
+final layers that encode the semantic information most relevant to downstream
+robotic tasks. Aligning with the recent breakthrough of the Shallow Brain
+Hypothesis (SBH) in neuroscience and the mixture of experts in model
+sparsification, we conceptualize each LLM layer as an expert and propose a
+Mixture-of-Layers Vision-Language-Action model (MoLe-VLA, or simply MoLe)
+architecture for dynamic LLM layer activation. We introduce a Spatial-Temporal
+Aware Router (STAR) for MoLe to selectively activate only parts of the layers
+based on the robot's current state, mimicking the brain's distinct signal
+pathways specialized for cognition and causal reasoning. Additionally, to
+compensate for the cognitive ability of LLMs lost in MoLe, we devise a
+Cognition Self-Knowledge Distillation (CogKD) framework. CogKD enhances the
+understanding of task demands and improves the generation of task-relevant
+action sequences by leveraging cognitive features. Extensive experiments
+conducted in both RLBench simulation and real-world environments demonstrate
+the superiority of MoLe-VLA in both efficiency and performance. Specifically,
+MoLe-VLA achieves an 8% improvement in the mean success rate across ten tasks
+while reducing computational costs by up to x5.6 compared to standard LLMs.",http://arxiv.org/pdf/2503.20384v1,,False
+Enabling Heterogeneous Adversarial Transferability via Feature Permutation Attacks,26/03/2025,"Tao Wu, Tie Luo","Adversarial attacks in black-box settings are highly practical, with
+transfer-based attacks being the most effective at generating adversarial
+examples (AEs) that transfer from surrogate models to unseen target models.
+However, their performance significantly degrades when transferring across
+heterogeneous architectures -- such as CNNs, MLPs, and Vision Transformers
+(ViTs) -- due to fundamental architectural differences. To address this, we
+propose Feature Permutation Attack (FPA), a zero-FLOP, parameter-free method
+that enhances adversarial transferability across diverse architectures. FPA
+introduces a novel feature permutation (FP) operation, which rearranges pixel
+values in selected feature maps to simulate long-range dependencies,
+effectively making CNNs behave more like ViTs and MLPs. This enhances feature
+diversity and improves transferability both across heterogeneous architectures
+and within homogeneous CNNs. Extensive evaluations on 14 state-of-the-art
+architectures show that FPA achieves maximum absolute gains in attack success
+rates of 7.68% on CNNs, 14.57% on ViTs, and 14.48% on MLPs, outperforming
+existing black-box attacks. Additionally, FPA is highly generalizable and can
+seamlessly integrate with other transfer-based attacks to further boost their
+performance. Our findings establish FPA as a robust, efficient, and
+computationally lightweight strategy for enhancing adversarial transferability
+across heterogeneous architectures.",http://arxiv.org/pdf/2503.20310v1,,False
+Advancements in Natural Language Processing: Exploring Transformer-Based Architectures for Text Understanding,26/03/2025,"Tianhao Wu, Yu Wang, Ngoc Quach","Natural Language Processing (NLP) has witnessed a transformative leap with
+the advent of transformer-based architectures, which have significantly
+enhanced the ability of machines to understand and generate human-like text.
+This paper explores the advancements in transformer models, such as BERT and
+GPT, focusing on their superior performance in text understanding tasks
+compared to traditional methods like recurrent neural networks (RNNs). By
+analyzing statistical properties through visual representations-including
+probability density functions of text length distributions and feature space
+classifications-the study highlights the models' proficiency in handling
+long-range dependencies, adapting to conditional shifts, and extracting
+features for classification, even with overlapping classes. Drawing on recent
+2024 research, including enhancements in multi-hop knowledge graph reasoning
+and context-aware chat interactions, the paper outlines a methodology involving
+data preparation, model selection, pretraining, fine-tuning, and evaluation.
+The results demonstrate state-of-the-art performance on benchmarks like GLUE
+and SQuAD, with F1 scores exceeding 90%, though challenges such as high
+computational costs persist. This work underscores the pivotal role of
+transformers in modern NLP and suggests future directions, including efficiency
+optimization and multimodal integration, to further advance language-based AI
+systems.",http://arxiv.org/pdf/2503.20227v1,,False
+Learning Adaptive Dexterous Grasping from Single Demonstrations,26/03/2025,"Liangzhi Shi, Yulin Liu, Lingqi Zeng, Bo Ai, Zhengdong Hong, Hao Su","How can robots learn dexterous grasping skills efficiently and apply them
+adaptively based on user instructions? This work tackles two key challenges:
+efficient skill acquisition from limited human demonstrations and
+context-driven skill selection. We introduce AdaDexGrasp, a framework that
+learns a library of grasping skills from a single human demonstration per skill
+and selects the most suitable one using a vision-language model (VLM). To
+improve sample efficiency, we propose a trajectory following reward that guides
+reinforcement learning (RL) toward states close to a human demonstration while
+allowing flexibility in exploration. To learn beyond the single demonstration,
+we employ curriculum learning, progressively increasing object pose variations
+to enhance robustness. At deployment, a VLM retrieves the appropriate skill
+based on user instructions, bridging low-level learned skills with high-level
+intent. We evaluate AdaDexGrasp in both simulation and real-world settings,
+showing that our approach significantly improves RL efficiency and enables
+learning human-like grasp strategies across varied object configurations.
+Finally, we demonstrate zero-shot transfer of our learned policies to a
+real-world PSYONIC Ability Hand, with a 90% success rate across objects,
+significantly outperforming the baseline.",http://arxiv.org/pdf/2503.20208v1,,False
+Open Deep Search: Democratizing Search with Open-source Reasoning Agents,26/03/2025,"Salaheddin Alzubi, Creston Brooks, Purva Chiniya, Edoardo Contente, Chiara von Gerlach, Lucas Irwin, Yihan Jiang, Arda Kaz, Windsor Nguyen, Sewoong Oh, Himanshu Tyagi, Pramod Viswanath","We introduce Open Deep Search (ODS) to close the increasing gap between the
+proprietary search AI solutions, such as Perplexity's Sonar Reasoning Pro and
+OpenAI's GPT-4o Search Preview, and their open-source counterparts. The main
+innovation introduced in ODS is to augment the reasoning capabilities of the
+latest open-source LLMs with reasoning agents that can judiciously use web
+search tools to answer queries. Concretely, ODS consists of two components that
+work with a base LLM chosen by the user: Open Search Tool and Open Reasoning
+Agent. Open Reasoning Agent interprets the given task and completes it by
+orchestrating a sequence of actions that includes calling tools, one of which
+is the Open Search Tool. Open Search Tool is a novel web search tool that
+outperforms proprietary counterparts. Together with powerful open-source
+reasoning LLMs, such as DeepSeek-R1, ODS nearly matches and sometimes surpasses
+the existing state-of-the-art baselines on two benchmarks: SimpleQA and FRAMES.
+For example, on the FRAMES evaluation benchmark, ODS improves the best existing
+baseline of the recently released GPT-4o Search Preview by 9.7% in accuracy.
+ODS is a general framework for seamlessly augmenting any LLMs -- for example,
+DeepSeek-R1 that achieves 82.4% on SimpleQA and 30.1% on FRAMES -- with search
+and reasoning capabilities to achieve state-of-the-art performance: 88.3% on
+SimpleQA and 75.3% on FRAMES.",http://arxiv.org/pdf/2503.20201v1,,False
+Synthesizing world models for bilevel planning,26/03/2025,"Zergham Ahmed, Joshua B. Tenenbaum, Christopher J. Bates, Samuel J. Gershman","Modern reinforcement learning (RL) systems have demonstrated remarkable
+capabilities in complex environments, such as video games. However, they still
+fall short of achieving human-like sample efficiency and adaptability when
+learning new domains. Theory-based reinforcement learning (TBRL) is an
+algorithmic framework specifically designed to address this gap. Modeled on
+cognitive theories, TBRL leverages structured, causal world models - ""theories""
+- as forward simulators for use in planning, generalization and exploration.
+Although current TBRL systems provide compelling explanations of how humans
+learn to play video games, they face several technical limitations: their
+theory languages are restrictive, and their planning algorithms are not
+scalable. To address these challenges, we introduce TheoryCoder, an
+instantiation of TBRL that exploits hierarchical representations of theories
+and efficient program synthesis methods for more powerful learning and
+planning. TheoryCoder equips agents with general-purpose abstractions (e.g.,
+""move to""), which are then grounded in a particular environment by learning a
+low-level transition model (a Python program synthesized from observations by a
+large language model). A bilevel planning algorithm can exploit this
+hierarchical structure to solve large domains. We demonstrate that this
+approach can be successfully applied to diverse and challenging grid-world
+games, where approaches based on directly synthesizing a policy perform poorly.
+Ablation studies demonstrate the benefits of using hierarchical abstractions.",http://arxiv.org/pdf/2503.20124v1,,False
+Zero-Shot Human-Object Interaction Synthesis with Multimodal Priors,25/03/2025,"Yuke Lou, Yiming Wang, Zhen Wu, Rui Zhao, Wenjia Wang, Mingyi Shi, Taku Komura","Human-object interaction (HOI) synthesis is important for various
+applications, ranging from virtual reality to robotics. However, acquiring 3D
+HOI data is challenging due to its complexity and high cost, limiting existing
+methods to the narrow diversity of object types and interaction patterns in
+training datasets. This paper proposes a novel zero-shot HOI synthesis
+framework without relying on end-to-end training on currently limited 3D HOI
+datasets. The core idea of our method lies in leveraging extensive HOI
+knowledge from pre-trained Multimodal Models. Given a text description, our
+system first obtains temporally consistent 2D HOI image sequences using image
+or video generation models, which are then uplifted to 3D HOI milestones of
+human and object poses. We employ pre-trained human pose estimation models to
+extract human poses and introduce a generalizable category-level 6-DoF
+estimation method to obtain the object poses from 2D HOI images. Our estimation
+method is adaptive to various object templates obtained from text-to-3D models
+or online retrieval. A physics-based tracking of the 3D HOI kinematic milestone
+is further applied to refine both body motions and object poses, yielding more
+physically plausible HOI generation results. The experimental results
+demonstrate that our method is capable of generating open-vocabulary HOIs with
+physical realism and semantic diversity.",http://arxiv.org/pdf/2503.20118v1,,False
+Direct Post-Training Preference Alignment for Multi-Agent Motion Generation Models Using Implicit Feedback from Pre-training Demonstrations,25/03/2025,"Ran Tian, Kratarth Goel","Recent advancements in LLMs have revolutionized motion generation models in
+embodied applications. While LLM-type auto-regressive motion generation models
+benefit from training scalability, there remains a discrepancy between their
+token prediction objectives and human preferences. As a result, models
+pre-trained solely with token-prediction objectives often generate behaviors
+that deviate from what humans would prefer, making post-training preference
+alignment crucial for producing human-preferred motions. Unfortunately,
+post-training alignment requires extensive preference rankings of motions
+generated by the pre-trained model, which are costly to annotate, especially in
+multi-agent settings. Recently, there has been growing interest in leveraging
+pre-training demonstrations to scalably generate preference data for
+post-training alignment. However, these methods often adopt an adversarial
+assumption, treating all pre-trained model-generated samples as unpreferred
+examples. This adversarial approach overlooks the valuable signal provided by
+preference rankings among the model's own generations, ultimately reducing
+alignment effectiveness and potentially leading to misaligned behaviors. In
+this work, instead of treating all generated samples as equally bad, we
+leverage implicit preferences encoded in pre-training demonstrations to
+construct preference rankings among the pre-trained model's generations,
+offering more nuanced preference alignment guidance with zero human cost. We
+apply our approach to large-scale traffic simulation and demonstrate its
+effectiveness in improving the realism of pre-trained model's generated
+behaviors, making a lightweight 1M motion generation model comparable to SOTA
+large imitation-based models by relying solely on implicit feedback from
+pre-training demonstrations, without additional post-training human preference
+annotations or high computational costs.",http://arxiv.org/pdf/2503.20105v1,,False
+Abstracting Geo-specific Terrains to Scale Up Reinforcement Learning,25/03/2025,"Volkan Ustun, Soham Hans, Rajay Kumar, Yunzhe Wang","Multi-agent reinforcement learning (MARL) is increasingly ubiquitous in
+training dynamic and adaptive synthetic characters for interactive simulations
+on geo-specific terrains. Frameworks such as Unity's ML-Agents help to make
+such reinforcement learning experiments more accessible to the simulation
+community. Military training simulations also benefit from advances in MARL,
+but they have immense computational requirements due to their complex,
+continuous, stochastic, partially observable, non-stationary, and
+doctrine-based nature. Furthermore, these simulations require geo-specific
+terrains, further exacerbating the computational resources problem. In our
+research, we leverage Unity's waypoints to automatically generate multi-layered
+representation abstractions of the geo-specific terrains to scale up
+reinforcement learning while still allowing the transfer of learned policies
+between different representations. Our early exploratory results on a novel
+MARL scenario, where each side has differing objectives, indicate that
+waypoint-based navigation enables faster and more efficient learning while
+producing trajectories similar to those taken by expert human players in CSGO
+gaming environments. This research points out the potential of waypoint-based
+navigation for reducing the computational costs of developing and training MARL
+models for military training simulations, where geo-specific terrains and
+differing objectives are crucial.",http://arxiv.org/pdf/2503.20078v1,,False
+Peer Disambiguation in Self-Reported Surveys using Graph Attention Networks,25/03/2025,"Ajitesh Srivastava, Aryan Shetty, Eric Rice","Studying peer relationships is crucial in solving complex challenges
+underserved communities face and designing interventions. The effectiveness of
+such peer-based interventions relies on accurate network data regarding
+individual attributes and social influences. However, these datasets are often
+collected through self-reported surveys, introducing ambiguities in network
+construction. These ambiguities make it challenging to fully utilize the
+network data to understand the issues and to design the best interventions. We
+propose and solve two variations of link ambiguities in such network data --
+(i) which among the two candidate links exists, and (ii) if a candidate link
+exists. We design a Graph Attention Network (GAT) that accounts for personal
+attributes and network relationships on real-world data with real and simulated
+ambiguities. We also demonstrate that by resolving these ambiguities, we
+improve network accuracy, and in turn, improve suicide risk prediction. We also
+uncover patterns using GNNExplainer to provide additional insights into vital
+features and relationships. This research demonstrates the potential of Graph
+Neural Networks (GNN) to advance real-world network data analysis facilitating
+more effective peer interventions across various fields.",http://arxiv.org/pdf/2503.20076v1,,False
+IgCraft: A versatile sequence generation framework for antibody discovery and engineering,25/03/2025,"Matthew Greenig, Haowen Zhao, Vladimir Radenkovic, Aubin Ramon, Pietro Sormanni","Designing antibody sequences to better resemble those observed in natural
+human repertoires is a key challenge in biologics development. We introduce
+IgCraft: a multi-purpose model for paired human antibody sequence generation,
+built on Bayesian Flow Networks. IgCraft presents one of the first unified
+generative modeling frameworks capable of addressing multiple antibody sequence
+design tasks with a single model, including unconditional sampling, sequence
+inpainting, inverse folding, and CDR motif scaffolding. Our approach achieves
+competitive results across the full spectrum of these tasks while constraining
+generation to the space of human antibody sequences, exhibiting particular
+strengths in CDR motif scaffolding (grafting) where we achieve state-of-the-art
+performance in terms of humanness and preservation of structural properties. By
+integrating previously separate tasks into a single scalable generative model,
+IgCraft provides a versatile platform for sampling human antibody sequences
+under a variety of contexts relevant to antibody discovery and engineering.
+Model code and weights are publicly available at github.com/mgreenig/IgCraft.",http://arxiv.org/pdf/2503.19821v1,,False
+Thinking agents for zero-shot generalization to qualitatively novel tasks,25/03/2025,"Thomas Miconi, Kevin McKee, Yicong Zheng, Jed McCaleb","Intelligent organisms can solve truly novel problems which they have never
+encountered before, either in their lifetime or their evolution. An important
+component of this capacity is the ability to ``think'', that is, to mentally
+manipulate objects, concepts and behaviors in order to plan and evaluate
+possible solutions to novel problems, even without environment interaction. To
+generate problems that are truly qualitatively novel, while still solvable
+zero-shot (by mental simulation), we use the combinatorial nature of
+environments: we train the agent while withholding a specific combination of
+the environment's elements. The novel test task, based on this combination, is
+thus guaranteed to be truly novel, while still mentally simulable since the
+agent has been exposed to each individual element (and their pairwise
+interactions) during training. We propose a method to train agents endowed with
+world models to make use their mental simulation abilities, by selecting tasks
+based on the difference between the agent's pre-thinking and post-thinking
+performance. When tested on the novel, withheld problem, the resulting agent
+successfully simulated alternative scenarios and used the resulting information
+to guide its behavior in the actual environment, solving the novel task in a
+single real-environment trial (zero-shot).",http://arxiv.org/pdf/2503.19815v1,,False
+Interpretable Deep Regression Models with Interval-Censored Failure Time Data,25/03/2025,"Changhui Yuan, Shishun Zhao, Shuwei Li, Xinyuan Song, Zhao Chen","Deep neural networks (DNNs) have become powerful tools for modeling complex
+data structures through sequentially integrating simple functions in each
+hidden layer. In survival analysis, recent advances of DNNs primarily focus on
+enhancing model capabilities, especially in exploring nonlinear covariate
+effects under right censoring. However, deep learning methods for
+interval-censored data, where the unobservable failure time is only known to
+lie in an interval, remain underexplored and limited to specific data type or
+model. This work proposes a general regression framework for interval-censored
+data with a broad class of partially linear transformation models, where key
+covariate effects are modeled parametrically while nonlinear effects of
+nuisance multi-modal covariates are approximated via DNNs, balancing
+interpretability and flexibility. We employ sieve maximum likelihood estimation
+by leveraging monotone splines to approximate the cumulative baseline hazard
+function. To ensure reliable and tractable estimation, we develop an EM
+algorithm incorporating stochastic gradient descent. We establish the
+asymptotic properties of parameter estimators and show that the DNN estimator
+achieves minimax-optimal convergence. Extensive simulations demonstrate
+superior estimation and prediction accuracy over state-of-the-art methods.
+Applying our method to the Alzheimer's Disease Neuroimaging Initiative dataset
+yields novel insights and improved predictive performance compared to
+traditional approaches.",http://arxiv.org/pdf/2503.19763v1,,False
+Decoupled Dynamics Framework with Neural Fields for 3D Spatio-temporal Prediction of Vehicle Collisions,25/03/2025,"Sanghyuk Kim, Minsik Seo, Namwoo Kang","This study proposes a neural framework that predicts 3D vehicle collision
+dynamics by independently modeling global rigid-body motion and local
+structural deformation. Unlike approaches directly predicting absolute
+displacement, this method explicitly separates the vehicle's overall
+translation and rotation from its structural deformation. Two specialized
+networks form the core of the framework: a quaternion-based Rigid Net for rigid
+motion and a coordinate-based Deformation Net for local deformation. By
+independently handling fundamentally distinct physical phenomena, the proposed
+architecture achieves accurate predictions without requiring separate
+supervision for each component. The model, trained on only 10% of available
+simulation data, significantly outperforms baseline models, including single
+multi-layer perceptron (MLP) and deep operator networks (DeepONet), with
+prediction errors reduced by up to 83%. Extensive validation demonstrates
+strong generalization to collision conditions outside the training range,
+accurately predicting responses even under severe impacts involving extreme
+velocities and large impact angles. Furthermore, the framework successfully
+reconstructs high-resolution deformation details from low-resolution inputs
+without increased computational effort. Consequently, the proposed approach
+provides an effective, computationally efficient method for rapid and reliable
+assessment of vehicle safety across complex collision scenarios, substantially
+reducing the required simulation data and time while preserving prediction
+fidelity.",http://arxiv.org/pdf/2503.19712v1,,False
+Data-efficient rapid prediction of urban airflow and temperature fields for complex building geometries,25/03/2025,"Shaoxiang Qin, Dongxue Zhan, Ahmed Marey, Dingyang Geng, Theodore Potsis, Liangzhu Leon Wang","Accurately predicting urban microclimate, including wind speed and
+temperature, based solely on building geometry requires capturing complex
+interactions between buildings and airflow, particularly long-range wake
+effects influenced by directional geometry. Traditional methods relying on
+computational fluid dynamics (CFD) are prohibitively expensive for large-scale
+simulations, while data-driven approaches struggle with limited training data
+and the need to model both local and far-field dependencies. In response, we
+propose a novel framework that leverages a multi-directional distance feature
+(MDDF) combined with localized training to achieve effective wind field
+predictions with minimal CFD data. By reducing the problem's dimensionality,
+localized training effectively increases the number of training samples, while
+MDDF encodes the surrounding geometric information to accurately model wake
+dynamics and flow redirection. Trained on only 24 CFD simulations, our
+localized Fourier neural operator (Local-FNO) model generates full 3D wind
+velocity and temperature predictions in under one minute, yielding a 500-fold
+speedup over conventional CFD methods. With mean absolute errors of 0.3 m/s for
+wind speed and 0.3 $^{\circ}$C for temperature on unseen urban configurations,
+our method demonstrates strong generalization capabilities and significant
+potential for practical urban applications.",http://arxiv.org/pdf/2503.19708v1,,False
+Towards Reliable Time Series Forecasting under Future Uncertainty: Ambiguity and Novelty Rejection Mechanisms,25/03/2025,"Ninghui Feng, Songning Lai, Xin Zhou, Jiayu Yang, Kunlong Feng, Zhenxiao Yin, Fobao Zhou, Zhangyi Hu, Yutao Yue, Yuxuan Liang, Boyu Wang, Hang Zhao","In real-world time series forecasting, uncertainty and lack of reliable
+evaluation pose significant challenges. Notably, forecasting errors often arise
+from underfitting in-distribution data and failing to handle
+out-of-distribution inputs. To enhance model reliability, we introduce a dual
+rejection mechanism combining ambiguity and novelty rejection. Ambiguity
+rejection, using prediction error variance, allows the model to abstain under
+low confidence, assessed through historical error variance analysis without
+future ground truth. Novelty rejection, employing Variational Autoencoders and
+Mahalanobis distance, detects deviations from training data. This dual approach
+improves forecasting reliability in dynamic environments by reducing errors and
+adapting to data changes, advancing reliability in complex scenarios.",http://arxiv.org/pdf/2503.19656v1,,False
+OpenSDI: Spotting Diffusion-Generated Images in the Open World,25/03/2025,"Yabin Wang, Zhiwu Huang, Xiaopeng Hong","This paper identifies OpenSDI, a challenge for spotting diffusion-generated
+images in open-world settings. In response to this challenge, we define a new
+benchmark, the OpenSDI dataset (OpenSDID), which stands out from existing
+datasets due to its diverse use of large vision-language models that simulate
+open-world diffusion-based manipulations. Another outstanding feature of
+OpenSDID is its inclusion of both detection and localization tasks for images
+manipulated globally and locally by diffusion models. To address the OpenSDI
+challenge, we propose a Synergizing Pretrained Models (SPM) scheme to build up
+a mixture of foundation models. This approach exploits a collaboration
+mechanism with multiple pretrained foundation models to enhance generalization
+in the OpenSDI context, moving beyond traditional training by synergizing
+multiple pretrained models through prompting and attending strategies. Building
+on this scheme, we introduce MaskCLIP, an SPM-based model that aligns
+Contrastive Language-Image Pre-Training (CLIP) with Masked Autoencoder (MAE).
+Extensive evaluations on OpenSDID show that MaskCLIP significantly outperforms
+current state-of-the-art methods for the OpenSDI challenge, achieving
+remarkable relative improvements of 14.23% in IoU (14.11% in F1) and 2.05% in
+accuracy (2.38% in F1) compared to the second-best model in localization and
+detection tasks, respectively. Our dataset and code are available at
+https://github.com/iamwangyabin/OpenSDI.",http://arxiv.org/pdf/2503.19653v1,,False
+Body Discovery of Embodied AI,25/03/2025,"Zhe Sun, Pengfei Tian, Xiaozhu Hu, Xiaoyu Zhao, Huiying Li, Zhenliang Zhang","In the pursuit of realizing artificial general intelligence (AGI), the
+importance of embodied artificial intelligence (AI) becomes increasingly
+apparent. Following this trend, research integrating robots with AGI has become
+prominent. As various kinds of embodiments have been designed, adaptability to
+diverse embodiments will become important to AGI. We introduce a new challenge,
+termed ""Body Discovery of Embodied AI"", focusing on tasks of recognizing
+embodiments and summarizing neural signal functionality. The challenge
+encompasses the precise definition of an AI body and the intricate task of
+identifying embodiments in dynamic environments, where conventional approaches
+often prove inadequate. To address these challenges, we apply causal inference
+method and evaluate it by developing a simulator tailored for testing
+algorithms with virtual environments. Finally, we validate the efficacy of our
+algorithms through empirical testing, demonstrating their robust performance in
+various scenarios based on virtual environments.",http://arxiv.org/pdf/2503.19941v1,,False
+FuXi-RTM: A Physics-Guided Prediction Framework with Radiative Transfer Modeling,25/03/2025,"Qiusheng Huang, Xiaohui Zhong, Xu Fan, Lei Chen, Hao Li","Similar to conventional video generation, current deep learning-based weather
+prediction frameworks often lack explicit physical constraints, leading to
+unphysical outputs that limit their reliability for operational forecasting.
+Among various physical processes requiring proper representation, radiation
+plays a fundamental role as it drives Earth's weather and climate systems.
+However, accurate simulation of radiative transfer processes remains
+challenging for traditional numerical weather prediction (NWP) models due to
+their inherent complexity and high computational costs. Here, we propose
+FuXi-RTM, a hybrid physics-guided deep learning framework designed to enhance
+weather forecast accuracy while enforcing physical consistency. FuXi-RTM
+integrates a primary forecasting model (FuXi) with a fixed deep learning-based
+radiative transfer model (DLRTM) surrogate that efficiently replaces
+conventional radiation parameterization schemes. This represents the first deep
+learning-based weather forecasting framework to explicitly incorporate physical
+process modeling. Evaluated over a comprehensive 5-year dataset, FuXi-RTM
+outperforms its unconstrained counterpart in 88.51% of 3320 variable and lead
+time combinations, with improvements in radiative flux predictions. By
+incorporating additional physical processes, FuXi-RTM paves the way for
+next-generation weather forecasting systems that are both accurate and
+physically consistent.",http://arxiv.org/pdf/2503.19940v1,,False
+Observation Adaptation via Annealed Importance Resampling for Partially Observable Markov Decision Processes,25/03/2025,"Yunuo Zhang, Baiting Luo, Ayan Mukhopadhyay, Abhishek Dubey","Partially observable Markov decision processes (POMDPs) are a general
+mathematical model for sequential decision-making in stochastic environments
+under state uncertainty. POMDPs are often solved \textit{online}, which enables
+the algorithm to adapt to new information in real time. Online solvers
+typically use bootstrap particle filters based on importance resampling for
+updating the belief distribution. Since directly sampling from the ideal state
+distribution given the latest observation and previous state is infeasible,
+particle filters approximate the posterior belief distribution by propagating
+states and adjusting weights through prediction and resampling steps. However,
+in practice, the importance resampling technique often leads to particle
+degeneracy and sample impoverishment when the state transition model poorly
+aligns with the posterior belief distribution, especially when the received
+observation is highly informative. We propose an approach that constructs a
+sequence of bridge distributions between the state-transition and optimal
+distributions through iterative Monte Carlo steps, better accommodating noisy
+observations in online POMDP solvers. Our algorithm demonstrates significantly
+superior performance compared to state-of-the-art methods when evaluated across
+multiple challenging POMDP domains.",http://arxiv.org/pdf/2503.19302v1,,False
+CubeRobot: Grounding Language in Rubik's Cube Manipulation via Vision-Language Model,25/03/2025,"Feiyang Wang, Xiaomin Yu, Wangyu Wu","Proving Rubik's Cube theorems at the high level represents a notable
+milestone in human-level spatial imagination and logic thinking and reasoning.
+Traditional Rubik's Cube robots, relying on complex vision systems and fixed
+algorithms, often struggle to adapt to complex and dynamic scenarios. To
+overcome this limitation, we introduce CubeRobot, a novel vision-language model
+(VLM) tailored for solving 3x3 Rubik's Cubes, empowering embodied agents with
+multimodal understanding and execution capabilities. We used the CubeCoT image
+dataset, which contains multiple-level tasks (43 subtasks in total) that humans
+are unable to handle, encompassing various cube states. We incorporate a
+dual-loop VisionCoT architecture and Memory Stream, a paradigm for extracting
+task-related features from VLM-generated planning queries, thus enabling
+CubeRobot to independent planning, decision-making, reflection and separate
+management of high- and low-level Rubik's Cube tasks. Furthermore, in low-level
+Rubik's Cube restoration tasks, CubeRobot achieved a high accuracy rate of
+100%, similar to 100% in medium-level tasks, and achieved an accuracy rate of
+80% in high-level tasks.",http://arxiv.org/pdf/2503.19281v1,,False
+CoMAC: Conversational Agent for Multi-Source Auxiliary Context with Sparse and Symmetric Latent Interactions,25/03/2025,"Junfeng Liu, Christopher T. Symons, Ranga Raju Vatsavai","Recent advancements in AI-driven conversational agents have exhibited immense
+potential of AI applications. Effective response generation is crucial to the
+success of these agents. While extensive research has focused on leveraging
+multiple auxiliary data sources (e.g., knowledge bases and personas) to enhance
+response generation, existing methods often struggle to efficiently extract
+relevant information from these sources. There are still clear limitations in
+the ability to combine versatile conversational capabilities with adherence to
+known facts and adaptation to large variations in user preferences and belief
+systems, which continues to hinder the wide adoption of conversational AI
+tools. This paper introduces a novel method, Conversational Agent for
+Multi-Source Auxiliary Context with Sparse and Symmetric Latent Interactions
+(CoMAC), for conversation generation, which employs specialized encoding
+streams and post-fusion grounding networks for multiple data sources to
+identify relevant persona and knowledge information for the conversation. CoMAC
+also leverages a novel text similarity metric that allows bi-directional
+information sharing among multiple sources and focuses on a selective subset of
+meaningful words. Our experiments show that CoMAC improves the relevant persona
+and knowledge prediction accuracies and response generation quality
+significantly over two state-of-the-art methods.",http://arxiv.org/pdf/2503.19274v1,,False

@@ -1,0 +1,319 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness,28/03/2025,"Ruining Li, Chuanxia Zheng, Christian Rupprecht, Andrea Vedaldi","Most 3D object generators focus on aesthetic quality, often neglecting
+physical constraints necessary in applications. One such constraint is that the
+3D object should be self-supporting, i.e., remains balanced under gravity.
+Prior approaches to generating stable 3D objects used differentiable physics
+simulators to optimize geometry at test-time, which is slow, unstable, and
+prone to local optima. Inspired by the literature on aligning generative models
+to external feedback, we propose Direct Simulation Optimization (DSO), a
+framework to use the feedback from a (non-differentiable) simulator to increase
+the likelihood that the 3D generator outputs stable 3D objects directly. We
+construct a dataset of 3D objects labeled with a stability score obtained from
+the physics simulator. We can then fine-tune the 3D generator using the
+stability score as the alignment metric, via direct preference optimization
+(DPO) or direct reward optimization (DRO), a novel objective, which we
+introduce, to align diffusion models without requiring pairwise preferences.
+Our experiments show that the fine-tuned feed-forward generator, using either
+DPO or DRO objective, is much faster and more likely to produce stable objects
+than test-time optimization. Notably, the DSO framework works even without any
+ground-truth 3D objects for training, allowing the 3D generator to self-improve
+by automatically collecting simulation feedback on its own outputs.",http://arxiv.org/pdf/2503.22677v1,,False
+Think Before Recommend: Unleashing the Latent Reasoning Power for Sequential Recommendation,28/03/2025,"Jiakai Tang, Sunhao Dai, Teng Shi, Jun Xu, Xu Chen, Wen Chen, Wu Jian, Yuning Jiang","Sequential Recommendation (SeqRec) aims to predict the next item by capturing
+sequential patterns from users' historical interactions, playing a crucial role
+in many real-world recommender systems. However, existing approaches
+predominantly adopt a direct forward computation paradigm, where the final
+hidden state of the sequence encoder serves as the user representation. We
+argue that this inference paradigm, due to its limited computational depth,
+struggles to model the complex evolving nature of user preferences and lacks a
+nuanced understanding of long-tail items, leading to suboptimal performance. To
+address this issue, we propose \textbf{ReaRec}, the first inference-time
+computing framework for recommender systems, which enhances user
+representations through implicit multi-step reasoning. Specifically, ReaRec
+autoregressively feeds the sequence's last hidden state into the sequential
+recommender while incorporating special reasoning position embeddings to
+decouple the original item encoding space from the multi-step reasoning space.
+Moreover, we introduce two lightweight reasoning-based learning methods,
+Ensemble Reasoning Learning (ERL) and Progressive Reasoning Learning (PRL), to
+further effectively exploit ReaRec's reasoning potential. Extensive experiments
+on five public real-world datasets and different SeqRec architectures
+demonstrate the generality and effectiveness of our proposed ReaRec.
+Remarkably, post-hoc analyses reveal that ReaRec significantly elevates the
+performance ceiling of multiple sequential recommendation backbones by
+approximately 30\%-50\%. Thus, we believe this work can open a new and
+promising avenue for future research in inference-time computing for sequential
+recommendation.",http://arxiv.org/pdf/2503.22675v1,,False
+Evaluation of Machine-generated Biomedical Images via A Tally-based Similarity Measure,28/03/2025,"Frank J. Brooks, Rucha Deshpande","Super-resolution, in-painting, whole-image generation, unpaired
+style-transfer, and network-constrained image reconstruction each include an
+aspect of machine-learned image synthesis where the actual ground truth is not
+known at time of use. It is generally difficult to quantitatively and
+authoritatively evaluate the quality of synthetic images; however, in
+mission-critical biomedical scenarios robust evaluation is paramount. In this
+work, all practical image-to-image comparisons really are relative
+qualifications, not absolute difference quantifications; and, therefore,
+meaningful evaluation of generated image quality can be accomplished using the
+Tversky Index, which is a well-established measure for assessing perceptual
+similarity. This evaluation procedure is developed and then demonstrated using
+multiple image data sets, both real and simulated. The main result is that when
+the subjectivity and intrinsic deficiencies of any feature-encoding choice are
+put upfront, Tversky's method leads to intuitive results, whereas traditional
+methods based on summarizing distances in deep feature spaces do not.",http://arxiv.org/pdf/2503.22658v1,,False
+Differential equation quantum solvers: engineering measurements to reduce cost,28/03/2025,"Annie Paine, Casper Gyurik, Antonio Andrea Gentile","Quantum computers have been proposed as a solution for efficiently solving
+non-linear differential equations (DEs), a fundamental task across diverse
+technological and scientific domains. However, a crucial milestone in this
+regard is to design protocols that are hardware-aware, making efficient use of
+limited available quantum resources. We focus here on promising variational
+methods derived from scientific machine learning: differentiable quantum
+circuits (DQC), addressing specifically their cost in number of circuit
+evaluations. Reducing the number of quantum circuit evaluations is particularly
+valuable in hybrid quantum/classical protocols, where the time required to
+interface and run quantum hardware at each cycle can impact the total wall-time
+much more than relatively inexpensive classical post-processing overhead. Here,
+we propose and test two sample-efficient protocols for solving non-linear DEs,
+achieving exponential savings in quantum circuit evaluations. These protocols
+are based on redesigning the extraction of information from DQC in a
+``measure-first"" approach, by introducing engineered cost operators similar to
+the randomized-measurement toolbox (i.e. classical shadows). In benchmark
+simulations on one and two-dimensional DEs, we report up to $\sim$ 100 fold
+reductions in circuit evaluations. Our protocols thus hold the promise to
+unlock larger and more challenging non-linear differential equation
+demonstrations with existing quantum hardware.",http://arxiv.org/pdf/2503.22656v1,,False
+Empirical Analysis of Sim-and-Real Cotraining Of Diffusion Policies For Planar Pushing from Pixels,28/03/2025,"Adam Wei, Abhinav Agarwal, Boyuan Chen, Rohan Bosworth, Nicholas Pfaff, Russ Tedrake","In imitation learning for robotics, cotraining with demonstration data
+generated both in simulation and on real hardware has emerged as a powerful
+recipe to overcome the sim2real gap. This work seeks to elucidate basic
+principles of this sim-and-real cotraining to help inform simulation design,
+sim-and-real dataset creation, and policy training. Focusing narrowly on the
+canonical task of planar pushing from camera inputs enabled us to be thorough
+in our study. These experiments confirm that cotraining with simulated data
+\emph{can} dramatically improve performance in real, especially when real data
+is limited. Performance gains scale with simulated data, but eventually
+plateau; real-world data increases this performance ceiling. The results also
+suggest that reducing the domain gap in physics may be more important than
+visual fidelity for non-prehensile manipulation tasks. Perhaps surprisingly,
+having some visual domain gap actually helps the cotrained policy -- binary
+probes reveal that high-performing policies learn to distinguish simulated
+domains from real. We conclude by investigating this nuance and mechanisms that
+facilitate positive transfer between sim-and-real. In total, our experiments
+span over 40 real-world policies (evaluated on 800+ trials) and 200 simulated
+policies (evaluated on 40,000+ trials).",http://arxiv.org/pdf/2503.22634v1,,False
+Generative Latent Neural PDE Solver using Flow Matching,28/03/2025,"Zijie Li, Anthony Zhou, Amir Barati Farimani","Autoregressive next-step prediction models have become the de-facto standard
+for building data-driven neural solvers to forecast time-dependent partial
+differential equations (PDEs). Denoise training that is closely related to
+diffusion probabilistic model has been shown to enhance the temporal stability
+of neural solvers, while its stochastic inference mechanism enables ensemble
+predictions and uncertainty quantification. In principle, such training
+involves sampling a series of discretized diffusion timesteps during both
+training and inference, inevitably increasing computational overhead. In
+addition, most diffusion models apply isotropic Gaussian noise on structured,
+uniform grids, limiting their adaptability to irregular domains. We propose a
+latent diffusion model for PDE simulation that embeds the PDE state in a
+lower-dimensional latent space, which significantly reduces computational
+costs. Our framework uses an autoencoder to map different types of meshes onto
+a unified structured latent grid, capturing complex geometries. By analyzing
+common diffusion paths, we propose to use a coarsely sampled noise schedule
+from flow matching for both training and testing. Numerical experiments show
+that the proposed model outperforms several deterministic baselines in both
+accuracy and long-term stability, highlighting the potential of diffusion-based
+approaches for robust data-driven PDE learning.",http://arxiv.org/pdf/2503.22600v1,,False
+SafeCast: Risk-Responsive Motion Forecasting for Autonomous Vehicles,28/03/2025,"Haicheng Liao, Hanlin Kong, Bin Rao, Bonan Wang, Chengyue Wang, Guyang Yu, Yuming Huang, Ruru Tang, Chengzhong Xu, Zhenning Li","Accurate motion forecasting is essential for the safety and reliability of
+autonomous driving (AD) systems. While existing methods have made significant
+progress, they often overlook explicit safety constraints and struggle to
+capture the complex interactions among traffic agents, environmental factors,
+and motion dynamics. To address these challenges, we present SafeCast, a
+risk-responsive motion forecasting model that integrates safety-aware
+decision-making with uncertainty-aware adaptability. SafeCast is the first to
+incorporate the Responsibility-Sensitive Safety (RSS) framework into motion
+forecasting, encoding interpretable safety rules--such as safe distances and
+collision avoidance--based on traffic norms and physical principles. To further
+enhance robustness, we introduce the Graph Uncertainty Feature (GUF), a
+graph-based module that injects learnable noise into Graph Attention Networks,
+capturing real-world uncertainties and enhancing generalization across diverse
+scenarios. We evaluate SafeCast on four real-world benchmark datasets--Next
+Generation Simulation (NGSIM), Highway Drone (HighD), ApolloScape, and the
+Macao Connected Autonomous Driving (MoCAD)--covering highway, urban, and
+mixed-autonomy traffic environments. Our model achieves state-of-the-art (SOTA)
+accuracy while maintaining a lightweight architecture and low inference
+latency, underscoring its potential for real-time deployment in safety-critical
+AD systems.",http://arxiv.org/pdf/2503.22541v1,,False
+LIM: Large Interpolator Model for Dynamic Reconstruction,28/03/2025,"Remy Sabathier, Niloy J. Mitra, David Novotny","Reconstructing dynamic assets from video data is central to many in computer
+vision and graphics tasks. Existing 4D reconstruction approaches are limited by
+category-specific models or slow optimization-based methods. Inspired by the
+recent Large Reconstruction Model (LRM), we present the Large Interpolation
+Model (LIM), a transformer-based feed-forward solution, guided by a novel
+causal consistency loss, for interpolating implicit 3D representations across
+time. Given implicit 3D representations at times $t_0$ and $t_1$, LIM produces
+a deformed shape at any continuous time $t\in[t_0,t_1]$, delivering
+high-quality interpolated frames in seconds. Furthermore, LIM allows explicit
+mesh tracking across time, producing a consistently uv-textured mesh sequence
+ready for integration into existing production pipelines. We also use LIM, in
+conjunction with a diffusion-based multiview generator, to produce dynamic 4D
+reconstructions from monocular videos. We evaluate LIM on various dynamic
+datasets, benchmarking against image-space interpolation methods (e.g., FiLM)
+and direct triplane linear interpolation, and demonstrate clear advantages. In
+summary, LIM is the first feed-forward model capable of high-speed tracked 4D
+asset reconstruction across diverse categories.",http://arxiv.org/pdf/2503.22537v1,,False
+Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning,28/03/2025,Abdullah Vanlioglu,"We introduce Entropy-Guided Sequence Weighting (EGSW), a novel approach that
+enhances the exploration-exploitation tradeoff by dynamically assigning weights
+to generated outputs based on their advantage and entropy for Reinforcement
+Learning-based Large Language Model fine-tuning. EGSW integrates entropy
+regularization with advantage-based weighting to balance policy updates,
+enabling efficient exploration in high-dimensional state spaces. By employing
+temperature-scaled softmax weighting over sequences, EGSW prioritizing
+high-reward, high-uncertainty steps while maintaining training stability.
+Although originally developed to improve Group Relative Policy Optimization
+(GRPO) during large language model (LLM) fine-tuning, EGSW is generalizable to
+other reinforcement learning (RL) algorithms and can be implemented in both
+step-wise and trajectory-wise settings. Empirical evaluations demonstrate that
+EGSW enhances GRPO reasoning ability, yielding improvements in sample
+efficiency. Future work will explore the application of EGSW to advanced RL
+methodologies.",http://arxiv.org/pdf/2503.22456v1,,False
+MASCOTS: Model-Agnostic Symbolic COunterfactual explanations for Time Series,28/03/2025,"Dawid Płudowski, Francesco Spinnato, Piotr Wilczyński, Krzysztof Kotowski, Evridiki Vasileia Ntagiou, Riccardo Guidotti, Przemysław Biecek","Counterfactual explanations provide an intuitive way to understand model
+decisions by identifying minimal changes required to alter an outcome. However,
+applying counterfactual methods to time series models remains challenging due
+to temporal dependencies, high dimensionality, and the lack of an intuitive
+human-interpretable representation. We introduce MASCOTS, a method that
+leverages the Bag-of-Receptive-Fields representation alongside symbolic
+transformations inspired by Symbolic Aggregate Approximation. By operating in a
+symbolic feature space, it enhances interpretability while preserving fidelity
+to the original data and model. Unlike existing approaches that either depend
+on model structure or autoencoder-based sampling, MASCOTS directly generates
+meaningful and diverse counterfactual observations in a model-agnostic manner,
+operating on both univariate and multivariate data. We evaluate MASCOTS on
+univariate and multivariate benchmark datasets, demonstrating comparable
+validity, proximity, and plausibility to state-of-the-art methods, while
+significantly improving interpretability and sparsity. Its symbolic nature
+allows for explanations that can be expressed visually, in natural language, or
+through semantic representations, making counterfactual reasoning more
+accessible and actionable.",http://arxiv.org/pdf/2503.22389v1,,False
+Grasping a Handful: Sequential Multi-Object Dexterous Grasp Generation,28/03/2025,"Haofei Lu, Yifei Dong, Zehang Weng, Jens Lundell, Danica Kragic","We introduce the sequential multi-object robotic grasp sampling algorithm
+SeqGrasp that can robustly synthesize stable grasps on diverse objects using
+the robotic hand's partial Degrees of Freedom (DoF). We use SeqGrasp to
+construct the large-scale Allegro Hand sequential grasping dataset SeqDataset
+and use it for training the diffusion-based sequential grasp generator
+SeqDiffuser. We experimentally evaluate SeqGrasp and SeqDiffuser against the
+state-of-the-art non-sequential multi-object grasp generation method MultiGrasp
+in simulation and on a real robot. The experimental results demonstrate that
+SeqGrasp and SeqDiffuser reach an 8.71%-43.33% higher grasp success rate than
+MultiGrasp. Furthermore, SeqDiffuser is approximately 1000 times faster at
+generating grasps than SeqGrasp and MultiGrasp.",http://arxiv.org/pdf/2503.22370v1,,False
+Fuzzy Cluster-Aware Contrastive Clustering for Time Series,28/03/2025,"Congyu Wang, Mingjing Du, Xiang Jiang, Yongquan Dong","The rapid growth of unlabeled time series data, driven by the Internet of
+Things (IoT), poses significant challenges in uncovering underlying patterns.
+Traditional unsupervised clustering methods often fail to capture the complex
+nature of time series data. Recent deep learning-based clustering approaches,
+while effective, struggle with insufficient representation learning and the
+integration of clustering objectives. To address these issues, we propose a
+fuzzy cluster-aware contrastive clustering framework (FCACC) that jointly
+optimizes representation learning and clustering.
+  Our approach introduces a novel three-view data augmentation strategy to
+enhance feature extraction by leveraging various characteristics of time series
+data. Additionally, we propose a cluster-aware hard negative sample generation
+mechanism that dynamically constructs high-quality negative samples using
+clustering structure information, thereby improving the model's discriminative
+ability.
+  By leveraging fuzzy clustering, FCACC dynamically generates cluster
+structures to guide the contrastive learning process, resulting in more
+accurate clustering. Extensive experiments on 40 benchmark datasets show that
+FCACC outperforms the selected baseline methods (eight in total), providing an
+effective solution for unsupervised time series learning.",http://arxiv.org/pdf/2503.22211v1,,False
+"An Advanced Ensemble Deep Learning Framework for Stock Price Prediction Using VAE, Transformer, and LSTM Model",28/03/2025,"Anindya Sarkar, G. Vadivu","This research proposes a cutting-edge ensemble deep learning framework for
+stock price prediction by combining three advanced neural network
+architectures: The particular areas of interest for the research include but
+are not limited to: Variational Autoencoder (VAE), Transformer, and Long
+Short-Term Memory (LSTM) networks. The presented framework is aimed to
+substantially utilize the advantages of each model which would allow for
+achieving the identification of both linear and non-linear relations in stock
+price movements. To improve the accuracy of its predictions it uses rich set of
+technical indicators and it scales its predictors based on the current market
+situation. By trying out the framework on several stock data sets, and
+benchmarking the results against single models and conventional forecasting,
+the ensemble method exhibits consistently high accuracy and reliability. The
+VAE is able to learn linear representation on high-dimensional data while the
+Transformer outstandingly perform in recognizing long-term patterns on the
+stock price data. LSTM, based on its characteristics of being a model that can
+deal with sequences, brings additional improvements to the given framework,
+especially regarding temporal dynamics and fluctuations. Combined, these
+components provide exceptional directional performance and a very small
+disparity in the predicted results. The present solution has given a probable
+concept that can handle the inherent problem of stock price prediction with
+high reliability and scalability. Compared to the performance of individual
+proposals based on the neural network, as well as classical methods, the
+proposed ensemble framework demonstrates the advantages of combining different
+architectures. It has a very important application in algorithmic trading, risk
+analysis, and control and decision-making for finance professions and scholars.",http://arxiv.org/pdf/2503.22192v1,,False
+Long-Term Electricity Demand Prediction Using Non-negative Tensor Factorization and Genetic Algorithm-Driven Temporal Modeling,28/03/2025,"Toma Masaki, Kanta Tachibana","This study proposes a novel framework for long-term electricity demand
+prediction based solely on historical consumption data, without relying on
+external variables such as temperature or economic indicators. The method
+combines Non-negative Tensor Factorization (NTF) to extract low-dimensional
+temporal features from multi-way electricity usage data, with a Genetic
+Algorithm that optimizes the hyperparameters of time series models applied to
+the latent annual factors. We model the dataset as a third-order tensor
+spanning electric utilities, industrial sectors, and years, and apply canonical
+polyadic decomposition under non-negativity constraints. The annual component
+is forecasted using autoregressive models, with hyperparameter tuning guided by
+the prediction error or reconstruction accuracy on a validation set.
+Comparative experiments using real-world electricity data from Japan
+demonstrate that the proposed method achieves lower mean squared error than
+baseline approaches without tensor decomposition or evolutionary optimization.
+Moreover, we find that reducing the model's degrees of freedom via tensor
+decomposition improves generalization performance, and that initialization
+sensitivity in NTF can be mitigated through multiple runs or ensemble
+strategies. These findings suggest that the proposed framework offers an
+interpretable, flexible, and scalable approach to long-term electricity demand
+prediction and can be extended to other structured time series forecasting
+tasks.",http://arxiv.org/pdf/2503.22132v1,,False
+Multi-Task Semantic Communications via Large Models,28/03/2025,"Wanli Ni, Zhijin Qin, Haofeng Sun, Xiaoming Tao, Zhu Han","Artificial intelligence (AI) promises to revolutionize the design,
+optimization and management of next-generation communication systems. In this
+article, we explore the integration of large AI models (LAMs) into semantic
+communications (SemCom) by leveraging their multi-modal data processing and
+generation capabilities. Although LAMs bring unprecedented abilities to extract
+semantics from raw data, this integration entails multifaceted challenges
+including high resource demands, model complexity, and the need for
+adaptability across diverse modalities and tasks. To overcome these challenges,
+we propose a LAM-based multi-task SemCom (MTSC) architecture, which includes an
+adaptive model compression strategy and a federated split fine-tuning approach
+to facilitate the efficient deployment of LAM-based semantic models in
+resource-limited networks. Furthermore, a retrieval-augmented generation scheme
+is implemented to synthesize the most recent local and global knowledge bases
+to enhance the accuracy of semantic extraction and content generation, thereby
+improving the inference performance. Finally, simulation results demonstrate
+the efficacy of the proposed LAM-based MTSC architecture, highlighting the
+performance enhancements across various downstream tasks under varying channel
+conditions.",http://arxiv.org/pdf/2503.22064v1,,False
+Arch-LLM: Taming LLMs for Neural Architecture Generation via Unsupervised Discrete Representation Learning,28/03/2025,"Deshani Geethika Poddenige, Sachith Seneviratne, Damith Senanayake, Mahesan Niranjan, PN Suganthan, Saman Halgamuge","Unsupervised representation learning has been widely explored across various
+modalities, including neural architectures, where it plays a key role in
+downstream applications like Neural Architecture Search (NAS). These methods
+typically learn an unsupervised representation space before generating/
+sampling architectures for the downstream search. A common approach involves
+the use of Variational Autoencoders (VAEs) to map discrete architectures onto a
+continuous representation space, however, sampling from these spaces often
+leads to a high percentage of invalid or duplicate neural architectures. This
+could be due to the unnatural mapping of inherently discrete architectural
+space onto a continuous space, which emphasizes the need for a robust discrete
+representation of these architectures. To address this, we introduce a Vector
+Quantized Variational Autoencoder (VQ-VAE) to learn a discrete latent space
+more naturally aligned with the discrete neural architectures. In contrast to
+VAEs, VQ-VAEs (i) map each architecture into a discrete code sequence and (ii)
+allow the prior to be learned by any generative model rather than assuming a
+normal distribution. We then represent these architecture latent codes as
+numerical sequences and train a text-to-text model leveraging a Large Language
+Model to learn and generate sequences representing architectures. We experiment
+our method with Inception/ ResNet-like cell-based search spaces, namely
+NAS-Bench-101 and NAS-Bench-201. Compared to VAE-based methods, our approach
+improves the generation of valid and unique architectures by over 80% on
+NASBench-101 and over 8% on NASBench-201. Finally, we demonstrate the
+applicability of our method in NAS employing a sequence-modeling-based NAS
+algorithm.",http://arxiv.org/pdf/2503.22063v1,,False
+Non-Monotonic Attention-based Read/Write Policy Learning for Simultaneous Translation,28/03/2025,"Zeeshan Ahmed, Frank Seide, Zhe Liu, Rastislav Rabatin, Jachym Kolar, Niko Moritz, Ruiming Xie, Simone Merello, Christian Fuegen","Simultaneous or streaming machine translation generates translation while
+reading the input stream. These systems face a quality/latency trade-off,
+aiming to achieve high translation quality similar to non-streaming models with
+minimal latency. We propose an approach that efficiently manages this
+trade-off. By enhancing a pretrained non-streaming model, which was trained
+with a seq2seq mechanism and represents the upper bound in quality, we convert
+it into a streaming model by utilizing the alignment between source and target
+tokens. This alignment is used to learn a read/write decision boundary for
+reliable translation generation with minimal input. During training, the model
+learns the decision boundary through a read/write policy module, employing
+supervised learning on the alignment points (pseudo labels). The read/write
+policy module, a small binary classification unit, can control the
+quality/latency trade-off during inference. Experimental results show that our
+model outperforms several strong baselines and narrows the gap with the
+non-streaming baseline model.",http://arxiv.org/pdf/2503.22051v1,,False

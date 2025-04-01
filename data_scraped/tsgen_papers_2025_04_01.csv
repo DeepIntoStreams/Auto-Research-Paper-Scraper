@@ -1,0 +1,367 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Sim-and-Real Co-Training: A Simple Recipe for Vision-Based Robotic Manipulation,31/03/2025,"Abhiram Maddukuri, Zhenyu Jiang, Lawrence Yunliang Chen, Soroush Nasiriany, Yuqi Xie, Yu Fang, Wenqi Huang, Zu Wang, Zhenjia Xu, Nikita Chernyadev, Scott Reed, Ken Goldberg, Ajay Mandlekar, Linxi Fan, Yuke Zhu","Large real-world robot datasets hold great potential to train generalist
+robot models, but scaling real-world human data collection is time-consuming
+and resource-intensive. Simulation has great potential in supplementing
+large-scale data, especially with recent advances in generative AI and
+automated data generation tools that enable scalable creation of robot behavior
+datasets. However, training a policy solely in simulation and transferring it
+to the real world often demands substantial human effort to bridge the reality
+gap. A compelling alternative is to co-train the policy on a mixture of
+simulation and real-world datasets. Preliminary studies have recently shown
+this strategy to substantially improve the performance of a policy over one
+trained on a limited amount of real-world data. Nonetheless, the community
+lacks a systematic understanding of sim-and-real co-training and what it takes
+to reap the benefits of simulation data for real-robot learning. This work
+presents a simple yet effective recipe for utilizing simulation data to solve
+vision-based robotic manipulation tasks. We derive this recipe from
+comprehensive experiments that validate the co-training strategy on various
+simulation and real-world datasets. Using two domains--a robot arm and a
+humanoid--across diverse tasks, we demonstrate that simulation data can enhance
+real-world task performance by an average of 38%, even with notable differences
+between the simulation and real-world data. Videos and additional results can
+be found at https://co-training.github.io/",http://arxiv.org/pdf/2503.24361v1,,False
+Learning Velocity and Acceleration: Self-Supervised Motion Consistency for Pedestrian Trajectory Prediction,31/03/2025,"Yizhou Huang, Yihua Cheng, Kezhi Wang","Understanding human motion is crucial for accurate pedestrian trajectory
+prediction. Conventional methods typically rely on supervised learning, where
+ground-truth labels are directly optimized against predicted trajectories. This
+amplifies the limitations caused by long-tailed data distributions, making it
+difficult for the model to capture abnormal behaviors. In this work, we propose
+a self-supervised pedestrian trajectory prediction framework that explicitly
+models position, velocity, and acceleration. We leverage velocity and
+acceleration information to enhance position prediction through feature
+injection and a self-supervised motion consistency mechanism. Our model
+hierarchically injects velocity features into the position stream. Acceleration
+features are injected into the velocity stream. This enables the model to
+predict position, velocity, and acceleration jointly. From the predicted
+position, we compute corresponding pseudo velocity and acceleration, allowing
+the model to learn from data-generated pseudo labels and thus achieve
+self-supervised learning. We further design a motion consistency evaluation
+strategy grounded in physical principles; it selects the most reasonable
+predicted motion trend by comparing it with historical dynamics and uses this
+trend to guide and constrain trajectory generation. We conduct experiments on
+the ETH-UCY and Stanford Drone datasets, demonstrating that our method achieves
+state-of-the-art performance on both datasets.",http://arxiv.org/pdf/2503.24272v1,,False
+A Comparison of Parametric Dynamic Mode Decomposition Algorithms for Thermal-Hydraulics Applications,31/03/2025,"Stefano Riva, Andrea Missaglia, Carolina Introini, In Cheol Bang, Antonio Cammi","In recent years, algorithms aiming at learning models from available data
+have become quite popular due to two factors: 1) the significant developments
+in Artificial Intelligence techniques and 2) the availability of large amounts
+of data. Nevertheless, this topic has already been addressed by methodologies
+belonging to the Reduced Order Modelling framework, of which perhaps the most
+famous equation-free technique is Dynamic Mode Decomposition. This algorithm
+aims to learn the best linear model that represents the physical phenomena
+described by a time series dataset: its output is a best state operator of the
+underlying dynamical system that can be used, in principle, to advance the
+original dataset in time even beyond its span. However, in its standard
+formulation, this technique cannot deal with parametric time series, meaning
+that a different linear model has to be derived for each parameter realization.
+Research on this is ongoing, and some versions of a parametric Dynamic Mode
+Decomposition already exist. This work contributes to this research field by
+comparing the different algorithms presently deployed and assessing their
+advantages and shortcomings compared to each other. To this aim, three
+different thermal-hydraulics problems are considered: two benchmark 'flow over
+cylinder' test cases at diverse Reynolds numbers, whose datasets are,
+respectively, obtained with the FEniCS finite element solver and retrieved from
+the CFDbench dataset, and the DYNASTY experimental facility operating at
+Politecnico di Milano, which studies the natural circulation established by
+internally heated fluids for Generation IV nuclear applications, whose dataset
+was generated using the RELAP5 nodal solver.",http://arxiv.org/pdf/2503.24205v1,,False
+Agent-Based Simulations of Online Political Discussions: A Case Study on Elections in Germany,31/03/2025,"Abdul Sittar, Simon Münker, Fabio Sartori, Andreas Reitenbach, Achim Rettinger, Michael Mäs, Alenka Guček, Marko Grobelnik","User engagement on social media platforms is influenced by historical
+context, time constraints, and reward-driven interactions. This study presents
+an agent-based simulation approach that models user interactions, considering
+past conversation history, motivation, and resource constraints. Utilizing
+German Twitter data on political discourse, we fine-tune AI models to generate
+posts and replies, incorporating sentiment analysis, irony detection, and
+offensiveness classification. The simulation employs a myopic best-response
+model to govern agent behavior, accounting for decision-making based on
+expected rewards. Our results highlight the impact of historical context on
+AI-generated responses and demonstrate how engagement evolves under varying
+constraints.",http://arxiv.org/pdf/2503.24199v1,,False
+Predicting Targeted Therapy Resistance in Non-Small Cell Lung Cancer Using Multimodal Machine Learning,31/03/2025,"Peiying Hua, Andrea Olofson, Faraz Farhadi, Liesbeth Hondelink, Gregory Tsongalis, Konstantin Dragnev, Dagmar Hoegemann Savellano, Arief Suriawinata, Laura Tafe, Saeed Hassanpour","Lung cancer is the primary cause of cancer death globally, with non-small
+cell lung cancer (NSCLC) emerging as its most prevalent subtype. Among NSCLC
+patients, approximately 32.3% have mutations in the epidermal growth factor
+receptor (EGFR) gene. Osimertinib, a third-generation EGFR-tyrosine kinase
+inhibitor (TKI), has demonstrated remarkable efficacy in the treatment of NSCLC
+patients with activating and T790M resistance EGFR mutations. Despite its
+established efficacy, drug resistance poses a significant challenge for
+patients to fully benefit from osimertinib. The absence of a standard tool to
+accurately predict TKI resistance, including that of osimertinib, remains a
+critical obstacle. To bridge this gap, in this study, we developed an
+interpretable multimodal machine learning model designed to predict patient
+resistance to osimertinib among late-stage NSCLC patients with activating EGFR
+mutations, achieving a c-index of 0.82 on a multi-institutional dataset. This
+machine learning model harnesses readily available data routinely collected
+during patient visits and medical assessments to facilitate precision lung
+cancer management and informed treatment decisions. By integrating various data
+types such as histology images, next generation sequencing (NGS) data,
+demographics data, and clinical records, our multimodal model can generate
+well-informed recommendations. Our experiment results also demonstrated the
+superior performance of the multimodal model over single modality models
+(c-index 0.82 compared with 0.75 and 0.77), thus underscoring the benefit of
+combining multiple modalities in patient outcome prediction.",http://arxiv.org/pdf/2503.24165v1,,False
+Graph Neural Network-Based Predictive Modeling for Robotic Plaster Printing,31/03/2025,"Diego Machain Rivera, Selen Ercan Jenny, Ping Hsun Tsai, Ena Lloret-Fritschi, Luis Salamanca, Fernando Perez-Cruz, Konstantinos E. Tatsis","This work proposes a Graph Neural Network (GNN) modeling approach to predict
+the resulting surface from a particle based fabrication process. The latter
+consists of spray-based printing of cementitious plaster on a wall and is
+facilitated with the use of a robotic arm. The predictions are computed using
+the robotic arm trajectory features, such as position, velocity and direction,
+as well as the printing process parameters. The proposed approach, based on a
+particle representation of the wall domain and the end effector, allows for the
+adoption of a graph-based solution. The GNN model consists of an
+encoder-processor-decoder architecture and is trained using data from
+laboratory tests, while the hyperparameters are optimized by means of a
+Bayesian scheme. The aim of this model is to act as a simulator of the printing
+process, and ultimately used for the generation of the robotic arm trajectory
+and the optimization of the printing parameters, towards the materialization of
+an autonomous plastering process. The performance of the proposed model is
+assessed in terms of the prediction error against unseen ground truth data,
+which shows its generality in varied scenarios, as well as in comparison with
+the performance of an existing benchmark model. The results demonstrate a
+significant improvement over the benchmark model, with notably better
+performance and enhanced error scaling across prediction steps.",http://arxiv.org/pdf/2503.24130v1,,False
+New universal operator approximation theorem for encoder-decoder architectures (Preprint),31/03/2025,"Janek Gödeke, Pascal Fernsel","Motivated by the rapidly growing field of mathematics for operator
+approximation with neural networks, we present a novel universal operator
+approximation theorem for a broad class of encoder-decoder architectures. In
+this study, we focus on approximating continuous operators in
+$\mathcal{C}(\mathcal{X}, \mathcal{Y})$, where $\mathcal{X}$ and $\mathcal{Y}$
+are infinite-dimensional normed or metric spaces, and we consider uniform
+convergence on compact subsets of $\mathcal{X}$. Unlike standard results in the
+operator learning literature, we investigate the case where the approximating
+operator sequence can be chosen independently of the compact sets. Taking a
+topological perspective, we analyze different types of operator approximation
+and show that compact-set-independent approximation is a strictly stronger
+property in most relevant operator learning frameworks. To establish our
+results, we introduce a new approximation property tailored to encoder-decoder
+architectures, which enables us to prove a universal operator approximation
+theorem ensuring uniform convergence on every compact subset. This result
+unifies and extends existing universal operator approximation theorems for
+various encoder-decoder architectures, including classical DeepONets,
+BasisONets, special cases of MIONets, architectures based on frames and other
+related approaches.",http://arxiv.org/pdf/2503.24092v1,,False
+TransMamba: Flexibly Switching between Transformer and Mamba,31/03/2025,"Yixing Li, Ruobing Xie, Zhen Yang, Xingwu Sun, Shuaipeng Li, Weidong Han, Zhanhui Kang, Yu Cheng, Chengzhong Xu, Di Wang, Jie Jiang","Transformers are the cornerstone of modern large language models, but their
+quadratic computational complexity limits efficiency in long-sequence
+processing. Recent advancements in Mamba, a state space model (SSM) with linear
+complexity, offer promising efficiency gains but suffer from unstable
+contextual learning and multitask generalization. This paper proposes
+TransMamba, a novel framework that unifies Transformer and Mamba through shared
+parameter matrices (e.g., QKV and CBx), and thus could dynamically switch
+between attention and SSM mechanisms at different token lengths and layers. We
+design the Memory converter to bridge Transformer and Mamba by converting
+attention outputs into SSM-compatible states, ensuring seamless information
+flow at TransPoints where the transformation happens. The TransPoint scheduling
+is also thoroughly explored for further improvements. We conducted extensive
+experiments demonstrating that TransMamba achieves superior training efficiency
+and performance compared to baselines, and validated the deeper consistency
+between Transformer and Mamba paradigms, offering a scalable solution for
+next-generation sequence modeling.",http://arxiv.org/pdf/2503.24067v1,,False
+Accelerated Airfoil Design Using Neural Network Approaches,31/03/2025,"Anantram Patel, Nikhil Mogre, Mandar Mane, Jayavardhan Reddy Enumula, Vijay Kumar Sutrakar","In this paper, prediction of airfoil shape from targeted pressure
+distribution (suction and pressure sides) and vice versa is demonstrated using
+both Convolutional Neural Networks (CNNs) and Deep Neural Networks (DNNs)
+techniques. The dataset is generated for 1600 airfoil shapes, with simulations
+carried out at Reynolds numbers (Re) ranging from 10,000 and 90,00,000 and
+angles of attack (AoA) ranging from 0 to 15 degrees, ensuring the dataset
+captured diverse aerodynamic conditions. Five different CNN and DNN models are
+developed depending on the input/output parameters. Results demonstrate that
+the refined models exhibit improved efficiency, with the DNN model achieving a
+multi-fold reduction in training time compared to the CNN model for complex
+datasets consisting of varying airfoil, Re, and AoA. The predicted airfoil
+shapes/pressure distribution closely match the targeted values, validating the
+effectiveness of deep learning frameworks. However, the performance of CNN
+models is found to be better compared to DNN models. Lastly, a flying wing
+aircraft model of wingspan >10 m is considered for the prediction of pressure
+distribution along the chordwise. The proposed CNN and DNN models show
+promising results. This research underscores the potential of deep learning
+models accelerating aerodynamic optimization and advancing the design of
+high-performance airfoils.",http://arxiv.org/pdf/2503.24052v1,,False
+Towards Scientific Intelligence: A Survey of LLM-based Scientific Agents,31/03/2025,"Shuo Ren, Pu Jian, Zhenjiang Ren, Chunlin Leng, Can Xie, Jiajun Zhang","As scientific research becomes increasingly complex, innovative tools are
+needed to manage vast data, facilitate interdisciplinary collaboration, and
+accelerate discovery. Large language models (LLMs) are now evolving into
+LLM-based scientific agents that automate critical tasks, ranging from
+hypothesis generation and experiment design to data analysis and simulation.
+Unlike general-purpose LLMs, these specialized agents integrate domain-specific
+knowledge, advanced tool sets, and robust validation mechanisms, enabling them
+to handle complex data types, ensure reproducibility, and drive scientific
+breakthroughs. This survey provides a focused review of the architectures,
+design, benchmarks, applications, and ethical considerations surrounding
+LLM-based scientific agents. We highlight why they differ from general agents
+and the ways in which they advance research across various scientific fields.
+By examining their development and challenges, this survey offers a
+comprehensive roadmap for researchers and practitioners to harness these agents
+for more efficient, reliable, and ethically sound scientific discovery.",http://arxiv.org/pdf/2503.24047v1,,False
+Learning 3D-Gaussian Simulators from RGB Videos,31/03/2025,"Mikel Zhobro, Andreas René Geist, Georg Martius","Learning physics simulations from video data requires maintaining spatial and
+temporal consistency, a challenge often addressed with strong inductive biases
+or ground-truth 3D information -- limiting scalability and generalization. We
+introduce 3DGSim, a 3D physics simulator that learns object dynamics end-to-end
+from multi-view RGB videos. It encodes images into a 3D Gaussian particle
+representation, propagates dynamics via a transformer, and renders frames using
+3D Gaussian splatting. By jointly training inverse rendering with a dynamics
+transformer using a temporal encoding and merging layer, 3DGSimembeds physical
+properties into point-wise latent vectors without enforcing explicit
+connectivity constraints. This enables the model to capture diverse physical
+behaviors, from rigid to elastic and cloth-like interactions, along with
+realistic lighting effects that also generalize to unseen multi-body
+interactions and novel scene edits.",http://arxiv.org/pdf/2503.24009v1,,False
+H2VU-Benchmark: A Comprehensive Benchmark for Hierarchical Holistic Video Understanding,31/03/2025,"Qi Wu, Quanlong Zheng, Yanhao Zhang, Junlin Xie, Jinguo Luo, Kuo Wang, Peng Liu, Qingsong Xie, Ru Zhen, Haonan Lu, Zhenyu Yang","With the rapid development of multimodal models, the demand for assessing
+video understanding capabilities has been steadily increasing. However,
+existing benchmarks for evaluating video understanding exhibit significant
+limitations in coverage, task diversity, and scene adaptability. These
+shortcomings hinder the accurate assessment of models' comprehensive video
+understanding capabilities. To tackle this challenge, we propose a hierarchical
+and holistic video understanding (H2VU) benchmark designed to evaluate both
+general video and online streaming video comprehension. This benchmark
+contributes three key features:
+  Extended video duration: Spanning videos from brief 3-second clips to
+comprehensive 1.5-hour recordings, thereby bridging the temporal gaps found in
+current benchmarks. Comprehensive assessment tasks: Beyond traditional
+perceptual and reasoning tasks, we have introduced modules for
+countercommonsense comprehension and trajectory state tracking. These additions
+test the models' deep understanding capabilities beyond mere prior knowledge.
+Enriched video data: To keep pace with the rapid evolution of current AI
+agents, we have expanded first-person streaming video datasets. This expansion
+allows for the exploration of multimodal models' performance in understanding
+streaming videos from a first-person perspective. Extensive results from H2VU
+reveal that existing multimodal large language models (MLLMs) possess
+substantial potential for improvement in our newly proposed evaluation tasks.
+We expect that H2VU will facilitate advancements in video understanding
+research by offering a comprehensive and in-depth analysis of MLLMs.",http://arxiv.org/pdf/2503.24008v1,,False
+CITRAS: Covariate-Informed Transformer for Time Series Forecasting,31/03/2025,"Yosuke Yamaguchi, Issei Suemitsu, Wenpeng Wei","Covariates play an indispensable role in practical time series forecasting,
+offering rich context from the past and sometimes extending into the future.
+However, their availability varies depending on the scenario, and situations
+often involve multiple target variables simultaneously. Moreover, the
+cross-variate dependencies between them are multi-granular, with some
+covariates having a short-term impact on target variables and others showing
+long-term correlations. This heterogeneity and the intricate dependencies
+arising in covariate-informed forecasting present significant challenges to
+existing deep models. To address these issues, we propose CITRAS, a patch-based
+Transformer that flexibly leverages multiple targets and covariates covering
+both the past and the future forecasting horizon. While preserving the strong
+autoregressive capabilities of the canonical Transformer, CITRAS introduces two
+novel mechanisms in patch-wise cross-variate attention: Key-Value (KV) Shift
+and Attention Score Smoothing. KV Shift seamlessly incorporates future known
+covariates into the forecasting of target variables based on their concurrent
+dependencies. Additionally, Attention Score Smoothing transforms locally
+accurate patch-wise cross-variate dependencies into global variate-level
+dependencies by smoothing the past series of attention scores. Experimentally,
+CITRAS achieves state-of-the-art performance in both covariate-informed and
+multivariate forecasting, demonstrating its versatile ability to leverage
+cross-variate dependency for improved forecasting accuracy.",http://arxiv.org/pdf/2503.24007v1,,False
+DiffScale: Continuous Downscaling and Bias Correction of Subseasonal Wind Speed Forecasts using Diffusion Models,31/03/2025,"Maximilian Springenberg, Noelia Otero, Yuxin Xue, Jackie Ma","Renewable resources are strongly dependent on local and large-scale weather
+situations. Skillful subseasonal to seasonal (S2S) forecasts -- beyond two
+weeks and up to two months -- can offer significant socioeconomic advantages to
+the energy sector. This study aims to enhance wind speed predictions using a
+diffusion model with classifier-free guidance to downscale S2S forecasts of
+surface wind speed. We propose DiffScale, a diffusion model that super-resolves
+spatial information for continuous downscaling factors and lead times.
+Leveraging weather priors as guidance for the generative process of diffusion
+models, we adopt the perspective of conditional probabilities on sampling
+super-resolved S2S forecasts. We aim to directly estimate the density
+associated with the target S2S forecasts at different spatial resolutions and
+lead times without auto-regression or sequence prediction, resulting in an
+efficient and flexible model. Synthetic experiments were designed to
+super-resolve wind speed S2S forecasts from the European Center for
+Medium-Range Weather Forecast (ECMWF) from a coarse resolution to a finer
+resolution of ERA5 reanalysis data, which serves as a high-resolution target.
+The innovative aspect of DiffScale lies in its flexibility to downscale
+arbitrary scaling factors, enabling it to generalize across various grid
+resolutions and lead times -without retraining the model- while correcting
+model errors, making it a versatile tool for improving S2S wind speed
+forecasts. We achieve a significant improvement in prediction quality,
+outperforming baselines up to week 3.",http://arxiv.org/pdf/2503.23893v1,,False
+ZeroMimic: Distilling Robotic Manipulation Skills from Web Videos,31/03/2025,"Junyao Shi, Zhuolun Zhao, Tianyou Wang, Ian Pedroza, Amy Luo, Jie Wang, Jason Ma, Dinesh Jayaraman","Many recent advances in robotic manipulation have come through imitation
+learning, yet these rely largely on mimicking a particularly hard-to-acquire
+form of demonstrations: those collected on the same robot in the same room with
+the same objects as the trained policy must handle at test time. In contrast,
+large pre-recorded human video datasets demonstrating manipulation skills
+in-the-wild already exist, which contain valuable information for robots. Is it
+possible to distill a repository of useful robotic skill policies out of such
+data without any additional requirements on robot-specific demonstrations or
+exploration? We present the first such system ZeroMimic, that generates
+immediately deployable image goal-conditioned skill policies for several common
+categories of manipulation tasks (opening, closing, pouring, pick&place,
+cutting, and stirring) each capable of acting upon diverse objects and across
+diverse unseen task setups. ZeroMimic is carefully designed to exploit recent
+advances in semantic and geometric visual understanding of human videos,
+together with modern grasp affordance detectors and imitation policy classes.
+After training ZeroMimic on the popular EpicKitchens dataset of ego-centric
+human videos, we evaluate its out-of-the-box performance in varied real-world
+and simulated kitchen settings with two different robot embodiments,
+demonstrating its impressive abilities to handle these varied tasks. To enable
+plug-and-play reuse of ZeroMimic policies on other task setups and robots, we
+release software and policy checkpoints of our skill policies.",http://arxiv.org/pdf/2503.23877v1,,False
+GenSwarm: Scalable Multi-Robot Code-Policy Generation and Deployment via Language Models,31/03/2025,"Wenkang Ji, Huaben Chen, Mingyang Chen, Guobin Zhu, Lufeng Xu, Roderich Groß, Rui Zhou, Ming Cao, Shiyu Zhao","The development of control policies for multi-robot systems traditionally
+follows a complex and labor-intensive process, often lacking the flexibility to
+adapt to dynamic tasks. This has motivated research on methods to automatically
+create control policies. However, these methods require iterative processes of
+manually crafting and refining objective functions, thereby prolonging the
+development cycle. This work introduces \textit{GenSwarm}, an end-to-end system
+that leverages large language models to automatically generate and deploy
+control policies for multi-robot tasks based on simple user instructions in
+natural language. As a multi-language-agent system, GenSwarm achieves zero-shot
+learning, enabling rapid adaptation to altered or unseen tasks. The white-box
+nature of the code policies ensures strong reproducibility and
+interpretability. With its scalable software and hardware architectures,
+GenSwarm supports efficient policy deployment on both simulated and real-world
+multi-robot systems, realizing an instruction-to-execution end-to-end
+functionality that could prove valuable for robotics specialists and
+non-specialists alike.The code of the proposed GenSwarm system is available
+online: https://github.com/WindyLab/GenSwarm.",http://arxiv.org/pdf/2503.23875v1,,False
+Force-Free Molecular Dynamics Through Autoregressive Equivariant Networks,31/03/2025,"Fabian L. Thiemann, Thiago Reschützegger, Massimiliano Esposito, Tseden Taddese, Juan D. Olarte-Plata, Fausto Martelli","Molecular dynamics (MD) simulations play a crucial role in scientific
+research. Yet their computational cost often limits the timescales and system
+sizes that can be explored. Most data-driven efforts have been focused on
+reducing the computational cost of accurate interatomic forces required for
+solving the equations of motion. Despite their success, however, these machine
+learning interatomic potentials (MLIPs) are still bound to small time-steps. In
+this work, we introduce TrajCast, a transferable and data-efficient framework
+based on autoregressive equivariant message passing networks that directly
+updates atomic positions and velocities lifting the constraints imposed by
+traditional numerical integration. We benchmark our framework across various
+systems, including a small molecule, crystalline material, and bulk liquid,
+demonstrating excellent agreement with reference MD simulations for structural,
+dynamical, and energetic properties. Depending on the system, TrajCast allows
+for forecast intervals up to $30\times$ larger than traditional MD time-steps,
+generating over 15 ns of trajectory data per day for a solid with more than
+4,000 atoms. By enabling efficient large-scale simulations over extended
+timescales, TrajCast can accelerate materials discovery and explore physical
+phenomena beyond the reach of traditional simulations and experiments. An
+open-source implementation of TrajCast is accessible under
+https://github.com/IBM/trajcast.",http://arxiv.org/pdf/2503.23794v1,,False
+Time-Series Forecasting via Topological Information Supervised Framework with Efficient Topological Feature Learning,31/03/2025,"ZiXin Lin, Nur Fariha Syaqina Zulkepli","Topological Data Analysis (TDA) has emerged as a powerful tool for extracting
+meaningful features from complex data structures, driving significant
+advancements in fields such as neuroscience, biology, machine learning, and
+financial modeling. Despite its success, the integration of TDA with
+time-series prediction remains underexplored due to three primary challenges:
+the limited utilization of temporal dependencies within topological features,
+computational bottlenecks associated with persistent homology, and the
+deterministic nature of TDA pipelines restricting generalized feature learning.
+This study addresses these challenges by proposing the Topological Information
+Supervised (TIS) Prediction framework, which leverages neural networks and
+Conditional Generative Adversarial Networks (CGANs) to generate synthetic
+topological features, preserving their distribution while significantly
+reducing computational time. We propose a novel training strategy that
+integrates topological consistency loss to improve the predictive accuracy of
+deep learning models. Specifically, we introduce two state-of-the-art models,
+TIS-BiGRU and TIS-Informer, designed to capture short-term and long-term
+temporal dependencies, respectively. Comparative experimental results
+demonstrate the superior performance of TIS models over conventional
+predictors, validating the effectiveness of integrating topological
+information. This work not only advances TDA-based time-series prediction but
+also opens new avenues for utilizing topological features in deep learning
+architectures.",http://arxiv.org/pdf/2503.23757v1,,False
+Data-Driven Forecasting of High-Dimensional Transient and Stationary Processes via Space-Time Projection,31/03/2025,Oliver T. Schmidt,"Space-Time Projection (STP) is introduced as a data-driven forecasting
+approach for high-dimensional and time-resolved data. The method computes
+extended space-time proper orthogonal modes from training data spanning a
+prediction horizon comprising both hindcast and forecast intervals. Forecasts
+are then generated by projecting the hindcast portion of these modes onto new
+data, simultaneously leveraging their orthogonality and optimal correlation
+with the forecast extension. Rooted in Proper Orthogonal Decomposition (POD)
+theory, dimensionality reduction and time-delay embedding are intrinsic to the
+approach. For a given ensemble and fixed prediction horizon, the only tunable
+parameter is the truncation rank--no additional hyperparameters are required.
+The hindcast accuracy serves as a reliable indicator for short-term forecast
+accuracy and establishes a lower bound on forecast errors. The efficacy of the
+method is demonstrated using two datasets: transient, highly anisotropic
+simulations of supernova explosions in a turbulent interstellar medium, and
+experimental velocity fields of a turbulent high-subsonic engineering flow. In
+a comparative study with standard Long Short-Term Memory (LSTM) neural
+networks--acknowledging that alternative architectures or training strategies
+may yield different outcomes--the method consistently provided more accurate
+forecasts. Considering its simplicity and robust performance, STP offers an
+interpretable and competitive benchmark for forecasting high-dimensional
+transient and chaotic processes, relying purely on spatiotemporal correlation
+information.",http://arxiv.org/pdf/2503.23686v1,,False

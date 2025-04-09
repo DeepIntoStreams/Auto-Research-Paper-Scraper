@@ -1,0 +1,214 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+FEABench: Evaluating Language Models on Multiphysics Reasoning Ability,08/04/2025,"Nayantara Mudur, Hao Cui, Subhashini Venugopalan, Paul Raccuglia, Michael P. Brenner, Peter Norgaard","Building precise simulations of the real world and invoking numerical solvers
+to answer quantitative problems is an essential requirement in engineering and
+science. We present FEABench, a benchmark to evaluate the ability of large
+language models (LLMs) and LLM agents to simulate and solve physics,
+mathematics and engineering problems using finite element analysis (FEA). We
+introduce a comprehensive evaluation scheme to investigate the ability of LLMs
+to solve these problems end-to-end by reasoning over natural language problem
+descriptions and operating COMSOL Multiphysics$^\circledR$, an FEA software, to
+compute the answers. We additionally design a language model agent equipped
+with the ability to interact with the software through its Application
+Programming Interface (API), examine its outputs and use tools to improve its
+solutions over multiple iterations. Our best performing strategy generates
+executable API calls 88% of the time. LLMs that can successfully interact with
+and operate FEA software to solve problems such as those in our benchmark would
+push the frontiers of automation in engineering. Acquiring this capability
+would augment LLMs' reasoning skills with the precision of numerical solvers
+and advance the development of autonomous systems that can tackle complex
+problems in the real world. The code is available at
+https://github.com/google/feabench",http://arxiv.org/pdf/2504.06260v1,,False
+Can Performant LLMs Be Ethical? Quantifying the Impact of Web Crawling Opt-Outs,08/04/2025,"Dongyang Fan, Vinko Sabolčec, Matin Ansaripour, Ayush Kumar Tarun, Martin Jaggi, Antoine Bosselut, Imanol Schlag","The increasing adoption of web crawling opt-outs by copyright holders of
+online content raises critical questions about the impact of data compliance on
+large language model (LLM) performance. However, little is known about how
+these restrictions (and the resultant filtering of pretraining datasets) affect
+the capabilities of models trained using these corpora. In this work, we
+conceptualize this effect as the $\textit{data compliance gap}$ (DCG), which
+quantifies the performance difference between models trained on datasets that
+comply with web crawling opt-outs, and those that do not. We measure the data
+compliance gap in two settings: pretraining models from scratch and continual
+pretraining from existing compliant models (simulating a setting where
+copyrighted data could be integrated later in pretraining). Our experiments
+with 1.5B models show that, as of January 2025, compliance with web data
+opt-outs does not degrade general knowledge acquisition (close to 0\% DCG).
+However, in specialized domains such as biomedical research, excluding major
+publishers leads to performance declines. These findings suggest that while
+general-purpose LLMs can be trained to perform equally well using fully open
+data, performance in specialized domains may benefit from access to
+high-quality copyrighted sources later in training. Our study provides
+empirical insights into the long-debated trade-off between data compliance and
+downstream model performance, informing future discussions on AI training
+practices and policy decisions.",http://arxiv.org/pdf/2504.06219v1,,False
+From 128K to 4M: Efficient Training of Ultra-Long Context Large Language Models,08/04/2025,"Chejian Xu, Wei Ping, Peng Xu, Zihan Liu, Boxin Wang, Mohammad Shoeybi, Bo Li, Bryan Catanzaro","Long-context capabilities are essential for a wide range of applications,
+including document and video understanding, in-context learning, and
+inference-time scaling, all of which require models to process and reason over
+long sequences of text and multimodal data. In this work, we introduce a
+efficient training recipe for building ultra-long context LLMs from aligned
+instruct model, pushing the boundaries of context lengths from 128K to 1M, 2M,
+and 4M tokens. Our approach leverages efficient continued pretraining
+strategies to extend the context window and employs effective instruction
+tuning to maintain the instruction-following and reasoning abilities. Our
+UltraLong-8B, built on Llama3.1-Instruct with our recipe, achieves
+state-of-the-art performance across a diverse set of long-context benchmarks.
+Importantly, models trained with our approach maintain competitive performance
+on standard benchmarks, demonstrating balanced improvements for both long and
+short context tasks. We further provide an in-depth analysis of key design
+choices, highlighting the impacts of scaling strategies and data composition.
+Our findings establish a robust framework for efficiently scaling context
+lengths while preserving general model capabilities. We release all model
+weights at: https://ultralong.github.io/.",http://arxiv.org/pdf/2504.06214v1,,False
+NNN: Next-Generation Neural Networks for Marketing Mix Modeling,08/04/2025,"Thomas Mulc, Mike Anderson, Paul Cubre, Huikun Zhang, Ivy Liu, Saket Kumar","We present NNN, a Transformer-based neural network approach to Marketing Mix
+Modeling (MMM) designed to address key limitations of traditional methods.
+Unlike conventional MMMs which rely on scalar inputs and parametric decay
+functions, NNN uses rich embeddings to capture both quantitative and
+qualitative aspects of marketing and organic channels (e.g., search queries, ad
+creatives). This, combined with its attention mechanism, enables NNN to model
+complex interactions, capture long-term effects, and potentially improve sales
+attribution accuracy. We show that L1 regularization permits the use of such
+expressive models in typical data-constrained settings. Evaluating NNN on
+simulated and real-world data demonstrates its efficacy, particularly through
+considerable improvement in predictive power. Beyond attribution, NNN provides
+valuable, complementary insights through model probing, such as evaluating
+keyword or creative effectiveness, enhancing model interpretability.",http://arxiv.org/pdf/2504.06212v1,,False
+A Self-Supervised Framework for Space Object Behaviour Characterisation,08/04/2025,"Ian Groves, Andrew Campbell, James Fernandes, Diego Rodriguez, Paul Murray, Massimiliano Vasile, Victoria Nockles","Foundation Models, pre-trained on large unlabelled datasets before
+task-specific fine-tuning, are increasingly being applied to specialised
+domains. Recent examples include ClimaX for climate and Clay for satellite
+Earth observation, but a Foundation Model for Space Object Behavioural Analysis
+has not yet been developed. As orbital populations grow, automated methods for
+characterising space object behaviour are crucial for space safety. We present
+a Space Safety and Sustainability Foundation Model focusing on space object
+behavioural analysis using light curves (LCs). We implemented a
+Perceiver-Variational Autoencoder (VAE) architecture, pre-trained with
+self-supervised reconstruction and masked reconstruction on 227,000 LCs from
+the MMT-9 observatory. The VAE enables anomaly detection, motion prediction,
+and LC generation. We fine-tuned the model for anomaly detection & motion
+prediction using two independent LC simulators (CASSANDRA and GRIAL
+respectively), using CAD models of boxwing, Sentinel-3, SMOS, and Starlink
+platforms. Our pre-trained model achieved a reconstruction error of 0.01%,
+identifying potentially anomalous light curves through reconstruction
+difficulty. After fine-tuning, the model scored 88% and 82% accuracy, with 0.90
+and 0.95 ROC AUC scores respectively in both anomaly detection and motion mode
+prediction (sun-pointing, spin, etc.). Analysis of high-confidence anomaly
+predictions on real data revealed distinct patterns including characteristic
+object profiles and satellite glinting. Here, we demonstrate how
+self-supervised learning can simultaneously enable anomaly detection, motion
+prediction, and synthetic data generation from rich representations learned in
+pre-training. Our work therefore supports space safety and sustainability
+through automated monitoring and simulation capabilities.",http://arxiv.org/pdf/2504.06176v1,,False
+Hall Effect Thruster Forecasting using a Topological Approach for Data Assimilation,08/04/2025,"Max M. Chumley, Firas A. Khasawneh","Hall Effect Thrusters (HETs) are electric thrusters that eject heavy ionized
+gas particles from the spacecraft to generate thrust. Although traditionally
+they were used for station keeping, recently They have been used for
+interplanetary space missions due to their high delta-V potential and their
+operational longevity in contrast to other thrusters, e.g., chemical. However,
+the operation of HETs involves complex processes such as ionization of gases,
+strong magnetic fields, and complicated solar panel power supply interactions.
+Therefore, their operation is extremely difficult to model thus necessitating
+Data Assimilation (DA) approaches for estimating and predicting their
+operational states. Because HET's operating environment is often noisy with
+non-Gaussian sources, this significantly limits applicable DA tools. We
+describe a topological approach for data assimilation that bypasses these
+limitations that does not depend on the noise model, and utilize it to forecast
+spatiotemporal plume field states of HETs. Our approach is a generalization of
+the Topological Approach for Data Assimilation (TADA) method that allows
+including different forecast functions. We show how TADA can be combined with
+the Long Short-Term Memory network for accurate forecasting. We then apply our
+approach to high-fidelity Hall Effect Thruster (HET) simulation data from the
+Air Force Research Laboratory (AFRL) rocket propulsion division where we
+demonstrate the forecast resiliency of TADA on noise contaminated,
+high-dimensional data.",http://arxiv.org/pdf/2504.06157v1,,False
+PINP: Physics-Informed Neural Predictor with latent estimation of fluid flows,08/04/2025,"Huaguan Chen, Yang Liu, Hao Sun","Accurately predicting fluid dynamics and evolution has been a long-standing
+challenge in physical sciences. Conventional deep learning methods often rely
+on the nonlinear modeling capabilities of neural networks to establish mappings
+between past and future states, overlooking the fluid dynamics, or only
+modeling the velocity field, neglecting the coupling of multiple physical
+quantities. In this paper, we propose a new physics-informed learning approach
+that incorporates coupled physical quantities into the prediction process to
+assist with forecasting. Central to our method lies in the discretization of
+physical equations, which are directly integrated into the model architecture
+and loss function. This integration enables the model to provide robust,
+long-term future predictions. By incorporating physical equations, our model
+demonstrates temporal extrapolation and spatial generalization capabilities.
+Experimental results show that our approach achieves the state-of-the-art
+performance in spatiotemporal prediction across both numerical simulations and
+real-world extreme-precipitation nowcasting benchmarks.",http://arxiv.org/pdf/2504.06070v1,,False
+Evaluation of the impact of expert knowledge: How decision support scores impact the effectiveness of automatic knowledge-driven feature engineering (aKDFE),08/04/2025,"Olof Björneld, Tora Hammar, Daniel Nilsson, Alisa Lincke, Welf Löwe","Adverse Drug Events (ADEs), harmful medication effects, pose significant
+healthcare challenges, impacting patient safety and costs. This study evaluates
+automatic Knowledge-Driven Feature Engineering (aKDFE) for improved ADE
+prediction from Electronic Health Record (EHR) data, comparing it with
+automated event-based Knowledge Discovery in Databases (KDD). We investigated
+how incorporating domain-specific ADE risk scores for prolonged heart QT
+interval, extracted from the Janusmed Riskprofile (Janusmed) Clinical Decision
+Support System (CDSS), affects prediction performance using EHR data and
+medication handling events. Results indicate that, while aKDFE step 1
+(event-based feature generation) alone did not significantly improve ADE
+prediction performance, aKDFE step 2 (patient-centric transformation) enhances
+the prediction performance. High Area Under the Receiver Operating
+Characteristic curve (AUROC) values suggest strong feature correlations to the
+outcome, aligning with the predictive power of patients' prior healthcare
+history for ADEs. Statistical analysis did not confirm that incorporating the
+Janusmed information (i) risk scores and (ii) medication route of
+administration into the model's feature set enhanced predictive performance.
+However, the patient-centric transformation applied by aKDFE proved to be a
+highly effective feature engineering approach. Limitations include a
+single-project focus, potential bias from machine learning pipeline methods,
+and reliance on AUROC. In conclusion, aKDFE, particularly with patient-centric
+transformation, improves ADE prediction from EHR data. Future work will explore
+attention-based models, event feature sequences, and automatic methods for
+incorporating domain knowledge into the aKDFE framework.",http://arxiv.org/pdf/2504.05928v1,,False
+Physics-aware generative models for turbulent fluid flows through energy-consistent stochastic interpolants,08/04/2025,"Nikolaj T. Mücke, Benjamin Sanderse","Generative models have demonstrated remarkable success in domains such as
+text, image, and video synthesis. In this work, we explore the application of
+generative models to fluid dynamics, specifically for turbulence simulation,
+where classical numerical solvers are computationally expensive. We propose a
+novel stochastic generative model based on stochastic interpolants, which
+enables probabilistic forecasting while incorporating physical constraints such
+as energy stability and divergence-freeness. Unlike conventional stochastic
+generative models, which are often agnostic to underlying physical laws, our
+approach embeds energy consistency by making the parameters of the stochastic
+interpolant learnable coefficients. We evaluate our method on a benchmark
+turbulence problem - Kolmogorov flow - demonstrating superior accuracy and
+stability over state-of-the-art alternatives such as autoregressive conditional
+diffusion models (ACDMs) and PDE-Refiner. Furthermore, we achieve stable
+results for significantly longer roll-outs than standard stochastic
+interpolants. Our results highlight the potential of physics-aware generative
+models in accelerating and enhancing turbulence simulations while preserving
+fundamental conservation properties.",http://arxiv.org/pdf/2504.05852v1,,False
+Video Flow as Time Series: Discovering Temporal Consistency and Variability for VideoQA,08/04/2025,"Zijie Song, Zhenzhen Hu, Yixiao Ma, Jia Li, Richang Hong","Video Question Answering (VideoQA) is a complex video-language task that
+demands a sophisticated understanding of both visual content and temporal
+dynamics. Traditional Transformer-style architectures, while effective in
+integrating multimodal data, often simplify temporal dynamics through
+positional encoding and fail to capture non-linear interactions within video
+sequences. In this paper, we introduce the Temporal Trio Transformer (T3T), a
+novel architecture that models time consistency and time variability. The T3T
+integrates three key components: Temporal Smoothing (TS), Temporal Difference
+(TD), and Temporal Fusion (TF). The TS module employs Brownian Bridge for
+capturing smooth, continuous temporal transitions, while the TD module
+identifies and encodes significant temporal variations and abrupt changes
+within the video content. Subsequently, the TF module synthesizes these
+temporal features with textual cues, facilitating a deeper contextual
+understanding and response accuracy. The efficacy of the T3T is demonstrated
+through extensive testing on multiple VideoQA benchmark datasets. Our results
+underscore the importance of a nuanced approach to temporal modeling in
+improving the accuracy and depth of video-based question answering.",http://arxiv.org/pdf/2504.05783v1,,False
+DEL: Context-Aware Dynamic Exit Layer for Efficient Self-Speculative Decoding,08/04/2025,"Hossein Entezari Zarch, Lei Gao, Chaoyi Jiang, Murali Annavaram","Speculative Decoding (SD) is a widely used approach to accelerate the
+inference of large language models (LLMs) without reducing generation quality.
+It operates by first using a compact model to draft multiple tokens
+efficiently, followed by parallel verification using the target LLM. This
+approach leads to faster inference compared to auto-regressive decoding. While
+there are multiple approaches to create a draft model, one promising approach
+is to use early-exit methods. These methods draft candidate tokens by using a
+subset of layers of the primary model and applying the remaining layers for
+verification, allowing a single model to handle both drafting and verification.
+While this technique reduces memory usage and computational cost, its
+performance relies on the choice of the exit layer for drafting and the number
+of tokens drafted (speculation length) in each SD round. Prior works use
+hyperparameter exploration to statically select these values. However, our
+evaluations show that these hyperparameter values are task-specific, and even
+within a task they are dependent on the current sequence context. We introduce
+DEL, a plug-and-play method that adaptively selects the exit layer and
+speculation length during inference. DEL dynamically tracks the token
+acceptance rate if the tokens are drafted at each layer of an LLM and uses that
+knowledge to heuristically select the optimal exit layer and speculation
+length. Our experiments across a broad range of models and downstream tasks
+show that DEL achieves overall speedups of $2.16\times$$\sim$$2.50\times$ over
+vanilla auto-regressive decoding and improves upon the state-of-the-art SD
+methods by up to $0.27\times$.",http://arxiv.org/pdf/2504.05598v1,,False

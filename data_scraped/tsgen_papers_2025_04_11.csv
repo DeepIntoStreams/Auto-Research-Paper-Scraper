@@ -1,0 +1,227 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Trading Graph Neural Network,10/04/2025,Xian Wu,"This paper proposes a new algorithm -- Trading Graph Neural Network (TGNN)
+that can structurally estimate the impact of asset features, dealer features
+and relationship features on asset prices in trading networks. It combines the
+strength of the traditional simulated method of moments (SMM) and recent
+machine learning techniques -- Graph Neural Network (GNN). It outperforms
+existing reduced-form methods with network centrality measures in prediction
+accuracy. The method can be used on networks with any structure, allowing for
+heterogeneity among both traders and assets.",http://arxiv.org/pdf/2504.07923v1,,False
+Semantically Encoding Activity Labels for Context-Aware Human Activity Recognition,10/04/2025,"Wen Ge, Guanyi Mou, Emmanuel O. Agu, Kyumin Lee","Prior work has primarily formulated CA-HAR as a multi-label classification
+problem, where model inputs are time-series sensor data and target labels are
+binary encodings representing whether a given activity or context occurs. These
+CA-HAR methods either predicted each label independently or manually imposed
+relationships using graphs. However, both strategies often neglect an essential
+aspect: activity labels have rich semantic relationships. For instance,
+walking, jogging, and running activities share similar movement patterns but
+differ in pace and intensity, indicating that they are semantically related.
+Consequently, prior CA-HAR methods often struggled to accurately capture these
+inherent and nuanced relationships, particularly on datasets with noisy labels
+typically used for CA-HAR or situations where the ideal sensor type is
+unavailable (e.g., recognizing speech without audio sensors). To address this
+limitation, we propose SEAL, which leverage LMs to encode CA-HAR activity
+labels to capture semantic relationships. LMs generate vector embeddings that
+preserve rich semantic information from natural language. Our SEAL approach
+encodes input-time series sensor data from smart devices and their associated
+activity and context labels (text) as vector embeddings. During training, SEAL
+aligns the sensor data representations with their corresponding
+activity/context label embeddings in a shared embedding space. At inference
+time, SEAL performs a similarity search, returning the CA-HAR label with the
+embedding representation closest to the input data. Although LMs have been
+widely explored in other domains, surprisingly, their potential in CA-HAR has
+been underexplored, making our approach a novel contribution to the field. Our
+research opens up new possibilities for integrating more advanced LMs into
+CA-HAR tasks.",http://arxiv.org/pdf/2504.07916v1,,False
+DiverseFlow: Sample-Efficient Diverse Mode Coverage in Flows,10/04/2025,"Mashrur M. Morshed, Vishnu Boddeti","Many real-world applications of flow-based generative models desire a diverse
+set of samples that cover multiple modes of the target distribution. However,
+the predominant approach for obtaining diverse sets is not sample-efficient, as
+it involves independently obtaining many samples from the source distribution
+and mapping them through the flow until the desired mode coverage is achieved.
+As an alternative to repeated sampling, we introduce DiverseFlow: a
+training-free approach to improve the diversity of flow models. Our key idea is
+to employ a determinantal point process to induce a coupling between the
+samples that drives diversity under a fixed sampling budget. In essence,
+DiverseFlow allows exploration of more variations in a learned flow model with
+fewer samples. We demonstrate the efficacy of our method for tasks where
+sample-efficient diversity is desirable, such as text-guided image generation
+with polysemous words, inverse problems like large-hole inpainting, and
+class-conditional image synthesis.",http://arxiv.org/pdf/2504.07894v1,,False
+SpecReason: Fast and Accurate Inference-Time Compute via Speculative Reasoning,10/04/2025,"Rui Pan, Yinwei Dai, Zhihao Zhang, Gabriele Oliaro, Zhihao Jia, Ravi Netravali","Recent advances in inference-time compute have significantly improved
+performance on complex tasks by generating long chains of thought (CoTs) using
+Large Reasoning Models (LRMs). However, this improved accuracy comes at the
+cost of high inference latency due to the length of generated reasoning
+sequences and the autoregressive nature of decoding. Our key insight in
+tackling these overheads is that LRM inference, and the reasoning that it
+embeds, is highly tolerant of approximations: complex tasks are typically
+broken down into simpler steps, each of which brings utility based on the
+semantic insight it provides for downstream steps rather than the exact tokens
+it generates. Accordingly, we introduce SpecReason, a system that automatically
+accelerates LRM inference by using a lightweight model to (speculatively) carry
+out simpler intermediate reasoning steps and reserving the costly base model
+only to assess (and potentially correct) the speculated outputs. Importantly,
+SpecReason's focus on exploiting the semantic flexibility of thinking tokens in
+preserving final-answer accuracy is complementary to prior speculation
+techniques, most notably speculative decoding, which demands token-level
+equivalence at each step. Across a variety of reasoning benchmarks, SpecReason
+achieves 1.5-2.5$\times$ speedup over vanilla LRM inference while improving
+accuracy by 1.0-9.9\%. Compared to speculative decoding without SpecReason,
+their combination yields an additional 19.4-44.2\% latency reduction. We
+open-source SpecReason at https://github.com/ruipeterpan/specreason.",http://arxiv.org/pdf/2504.07891v1,,False
+Robust Hallucination Detection in LLMs via Adaptive Token Selection,10/04/2025,"Mengjia Niu, Hamed Haddadi, Guansong Pang","Hallucinations in large language models (LLMs) pose significant safety
+concerns that impede their broader deployment. Recent research in hallucination
+detection has demonstrated that LLMs' internal representations contain
+truthfulness hints, which can be harnessed for detector training. However, the
+performance of these detectors is heavily dependent on the internal
+representations of predetermined tokens, fluctuating considerably when working
+on free-form generations with varying lengths and sparse distributions of
+hallucinated entities. To address this, we propose HaMI, a novel approach that
+enables robust detection of hallucinations through adaptive selection and
+learning of critical tokens that are most indicative of hallucinations. We
+achieve this robustness by an innovative formulation of the Hallucination
+detection task as Multiple Instance (HaMI) learning over token-level
+representations within a sequence, thereby facilitating a joint optimisation of
+token selection and hallucination detection on generation sequences of diverse
+forms. Comprehensive experimental results on four hallucination benchmarks show
+that HaMI significantly outperforms existing state-of-the-art approaches.",http://arxiv.org/pdf/2504.07863v1,,False
+MOSAIC: Modeling Social AI for Content Dissemination and Regulation in Multi-Agent Simulations,10/04/2025,"Genglin Liu, Salman Rahman, Elisa Kreiss, Marzyeh Ghassemi, Saadia Gabriel","We present a novel, open-source social network simulation framework, MOSAIC,
+where generative language agents predict user behaviors such as liking,
+sharing, and flagging content. This simulation combines LLM agents with a
+directed social graph to analyze emergent deception behaviors and gain a better
+understanding of how users determine the veracity of online social content. By
+constructing user representations from diverse fine-grained personas, our
+system enables multi-agent simulations that model content dissemination and
+engagement dynamics at scale. Within this framework, we evaluate three
+different content moderation strategies with simulated misinformation
+dissemination, and we find that they not only mitigate the spread of
+non-factual content but also increase user engagement. In addition, we analyze
+the trajectories of popular content in our simulations, and explore whether
+simulation agents' articulated reasoning for their social interactions truly
+aligns with their collective engagement patterns. We open-source our simulation
+software to encourage further research within AI and social sciences.",http://arxiv.org/pdf/2504.07830v1,,False
+A Novel Deep Learning Approach for Emulating Computationally Expensive Postfire Debris Flows,10/04/2025,"Palak Patel, Luke McGuire, Abani Patra","Traditional physics-based models of geophysical flows, such as debris flows
+and landslides that pose significant risks to human lives and infrastructure
+are computationally expensive, limiting their utility for large-scale parameter
+sweeps, uncertainty quantification, inversions or real-time applications. This
+study presents an efficient alternative, a deep learning-based surrogate model
+built using a modified U-Net architecture to predict the dynamics of
+runoff-generated debris flows across diverse terrain based on data from physics
+based simulations. The study area is divided into smaller patches for localized
+predictions using a patch-predict-stitch methodology (complemented by limited
+global data to accelerate training). The patches are then combined to
+reconstruct spatially continuous flow maps, ensuring scalability for large
+domains. To enable fast training using limited expensive simulations, the deep
+learning model was trained on data from an ensemble of physics based
+simulations using parameters generated via Latin Hypercube Sampling and
+validated on unseen parameter sets and terrain, achieving maximum pointwise
+errors below 10% and robust generalization. Uncertainty quantification using
+Monte Carlo methods are enabled using the validated surrogate, which can
+facilitate probabilistic hazard assessments. This study highlights the
+potential of deep learning surrogates as powerful tools for geophysical flow
+analysis, enabling computationally efficient and reliable probabilistic hazard
+map predictions.",http://arxiv.org/pdf/2504.07736v1,,False
+Merging Embedded Topics with Optimal Transport for Online Topic Modeling on Data Streams,10/04/2025,"Federica Granese, Benjamin Navet, Serena Villata, Charles Bouveyron","Topic modeling is a key component in unsupervised learning, employed to
+identify topics within a corpus of textual data. The rapid growth of social
+media generates an ever-growing volume of textual data daily, making online
+topic modeling methods essential for managing these data streams that
+continuously arrive over time. This paper introduces a novel approach to online
+topic modeling named StreamETM. This approach builds on the Embedded Topic
+Model (ETM) to handle data streams by merging models learned on consecutive
+partial document batches using unbalanced optimal transport. Additionally, an
+online change point detection algorithm is employed to identify shifts in
+topics over time, enabling the identification of significant changes in the
+dynamics of text streams. Numerical experiments on simulated and real-world
+data show StreamETM outperforming competitors.",http://arxiv.org/pdf/2504.07711v1,,False
+Distilling Knowledge from Heterogeneous Architectures for Semantic Segmentation,10/04/2025,"Yanglin Huang, Kai Hu, Yuan Zhang, Zhineng Chen, Xieping Gao","Current knowledge distillation (KD) methods for semantic segmentation focus
+on guiding the student to imitate the teacher's knowledge within homogeneous
+architectures. However, these methods overlook the diverse knowledge contained
+in architectures with different inductive biases, which is crucial for enabling
+the student to acquire a more precise and comprehensive understanding of the
+data during distillation. To this end, we propose for the first time a generic
+knowledge distillation method for semantic segmentation from a heterogeneous
+perspective, named HeteroAKD. Due to the substantial disparities between
+heterogeneous architectures, such as CNN and Transformer, directly transferring
+cross-architecture knowledge presents significant challenges. To eliminate the
+influence of architecture-specific information, the intermediate features of
+both the teacher and student are skillfully projected into an aligned logits
+space. Furthermore, to utilize diverse knowledge from heterogeneous
+architectures and deliver customized knowledge required by the student, a
+teacher-student knowledge mixing mechanism (KMM) and a teacher-student
+knowledge evaluation mechanism (KEM) are introduced. These mechanisms are
+performed by assessing the reliability and its discrepancy between
+heterogeneous teacher-student knowledge. Extensive experiments conducted on
+three main-stream benchmarks using various teacher-student pairs demonstrate
+that our HeteroAKD outperforms state-of-the-art KD methods in facilitating
+distillation between heterogeneous architectures.",http://arxiv.org/pdf/2504.07691v1,,False
+Synthesizing High-Quality Programming Tasks with LLM-based Expert and Student Agents,10/04/2025,"Manh Hung Nguyen, Victor-Alexandru Pădurean, Alkis Gotovos, Sebastian Tschiatschek, Adish Singla","Generative AI is transforming computing education by enabling the automatic
+generation of personalized content and feedback. We investigate its
+capabilities in providing high-quality programming tasks to students. Despite
+promising advancements in task generation, a quality gap remains between
+AI-generated and expert-created tasks. The AI-generated tasks may not align
+with target programming concepts, could be incomprehensible for students to
+solve, or may contain critical issues such as incorrect tests. Existing works
+often require interventions from human teachers for validation. We address
+these challenges by introducing PyTaskSyn, a novel synthesis technique that
+first generates a programming task and then decides whether it meets certain
+quality criteria to be given to students. The key idea is to break this process
+into multiple stages performed by expert and student agents simulated using
+both strong and weaker generative models. Through extensive evaluation, we show
+that PyTaskSyn significantly improves task quality compared to baseline
+techniques and showcases the importance of each specialized agent type in our
+validation pipeline. Additionally, we conducted user studies using our publicly
+available web application and show that PyTaskSyn can deliver high-quality
+programming tasks comparable to expert-designed ones while reducing workload
+and costs, and being more engaging than programming tasks that are available in
+online resources.",http://arxiv.org/pdf/2504.07655v1,,False
+ms-Mamba: Multi-scale Mamba for Time-Series Forecasting,10/04/2025,"Yusuf Meric Karadag, Sinan Kalkan, Ipek Gursel Dino","The problem of Time-series Forecasting is generally addressed by recurrent,
+Transformer-based and the recently proposed Mamba-based architectures. However,
+existing architectures generally process their input at a single temporal
+scale, which may be sub-optimal for many tasks where information changes over
+multiple time scales. In this paper, we introduce a novel architecture called
+Multi-scale Mamba (ms-Mamba) to address this gap. ms-Mamba incorporates
+multiple temporal scales by using multiple Mamba blocks with different sampling
+rates ($\Delta$s). Our experiments on many benchmarks demonstrate that ms-Mamba
+outperforms state-of-the-art approaches, including the recently proposed
+Transformer-based and Mamba-based models.",http://arxiv.org/pdf/2504.07654v1,,False
+Beating Transformers using Synthetic Cognition,10/04/2025,"Alfredo Ibias, Miguel Rodriguez-Galindo, Hector Antona, Guillem Ramirez-Miranda, Enric Guinovart","The road to Artificial General Intelligence goes through the generation of
+episodic reactive behaviors, where the Transformer architecture has been proven
+to be the state-of-the-art. However, they still fail to develop reasoning.
+Recently, a novel approach for developing cognitive architectures, called
+Synthetic Cognition, has been proposed and implemented to develop instantaneous
+reactive behavior. In this study, we aim to explore the use of Synthetic
+Cognition to develop episodic reactive behaviors. We propose a mechanism to
+deal with sequences for the recent implementation of Synthetic Cognition, and
+test it against DNA foundation models in DNA sequence classification tasks. In
+our experiments, our proposal clearly outperforms the DNA foundation models,
+obtaining the best score on more benchmark tasks than the alternatives. Thus,
+we achieve two goals: expanding Synthetic Cognition to deal with sequences, and
+beating the Transformer architecture for sequence classification.",http://arxiv.org/pdf/2504.07619v1,,False
+Diffusion Transformers for Tabular Data Time Series Generation,10/04/2025,"Fabrizio Garuti, Enver Sangineto, Simone Luetto, Lorenzo Forni, Rita Cucchiara","Tabular data generation has recently attracted a growing interest due to its
+different application scenarios. However, generating time series of tabular
+data, where each element of the series depends on the others, remains a largely
+unexplored domain. This gap is probably due to the difficulty of jointly
+solving different problems, the main of which are the heterogeneity of tabular
+data (a problem common to non-time-dependent approaches) and the variable
+length of a time series. In this paper, we propose a Diffusion Transformers
+(DiTs) based approach for tabular data series generation. Inspired by the
+recent success of DiTs in image and video generation, we extend this framework
+to deal with heterogeneous data and variable-length sequences. Using extensive
+experiments on six datasets, we show that the proposed approach outperforms
+previous work by a large margin.",http://arxiv.org/pdf/2504.07566v1,,False
+ClimateBench-M: A Multi-Modal Climate Data Benchmark with a Simple Generative Method,10/04/2025,"Dongqi Fu, Yada Zhu, Zhining Liu, Lecheng Zheng, Xiao Lin, Zihao Li, Liri Fang, Katherine Tieu, Onkar Bhardwaj, Kommy Weldemariam, Hanghang Tong, Hendrik Hamann, Jingrui He","Climate science studies the structure and dynamics of Earth's climate system
+and seeks to understand how climate changes over time, where the data is
+usually stored in the format of time series, recording the climate features,
+geolocation, time attributes, etc. Recently, much research attention has been
+paid to the climate benchmarks. In addition to the most common task of weather
+forecasting, several pioneering benchmark works are proposed for extending the
+modality, such as domain-specific applications like tropical cyclone intensity
+prediction and flash flood damage estimation, or climate statement and
+confidence level in the format of natural language. To further motivate the
+artificial general intelligence development for climate science, in this paper,
+we first contribute a multi-modal climate benchmark, i.e., ClimateBench-M,
+which aligns (1) the time series climate data from ERA5, (2) extreme weather
+events data from NOAA, and (3) satellite image data from NASA HLS based on a
+unified spatial-temporal granularity. Second, under each data modality, we also
+propose a simple but strong generative method that could produce competitive
+performance in weather forecasting, thunderstorm alerts, and crop segmentation
+tasks in the proposed ClimateBench-M. The data and code of ClimateBench-M are
+publicly available at https://github.com/iDEA-iSAIL-Lab-UIUC/ClimateBench-M.",http://arxiv.org/pdf/2504.07394v1,,False

@@ -1,0 +1,224 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Dimension reduction for derivative-informed operator learning: An analysis of approximation errors,11/04/2025,"Dingcheng Luo, Thomas O'Leary-Roseberry, Peng Chen, Omar Ghattas","We study the derivative-informed learning of nonlinear operators between
+infinite-dimensional separable Hilbert spaces by neural networks. Such
+operators can arise from the solution of partial differential equations (PDEs),
+and are used in many simulation-based outer-loop tasks in science and
+engineering, such as PDE-constrained optimization, Bayesian inverse problems,
+and optimal experimental design. In these settings, the neural network
+approximations can be used as surrogate models to accelerate the solution of
+the outer-loop tasks. However, since outer-loop tasks in infinite dimensions
+often require knowledge of the underlying geometry, the approximation accuracy
+of the operator's derivatives can also significantly impact the performance of
+the surrogate model. Motivated by this, we analyze the approximation errors of
+neural operators in Sobolev norms over infinite-dimensional Gaussian input
+measures. We focus on the reduced basis neural operator (RBNO), which uses
+linear encoders and decoders defined on dominant input/output subspaces spanned
+by reduced sets of orthonormal bases. To this end, we study two methods for
+generating the bases; principal component analysis (PCA) and
+derivative-informed subspaces (DIS), which use the dominant eigenvectors of the
+covariance of the data or the derivatives as the reduced bases, respectively.
+We then derive bounds for errors arising from both the dimension reduction and
+the latent neural network approximation, including the sampling errors
+associated with the empirical estimation of the PCA/DIS. Our analysis is
+validated on numerical experiments with elliptic PDEs, where our results show
+that bases informed by the map (i.e., DIS or output PCA) yield accurate
+reconstructions and generalization errors for both the operator and its
+derivatives, while input PCA may underperform unless ranks and training sample
+sizes are sufficiently large.",http://arxiv.org/pdf/2504.08730v1,,False
+Offline Reinforcement Learning using Human-Aligned Reward Labeling for Autonomous Emergency Braking in Occluded Pedestrian Crossing,11/04/2025,"Vinal Asodia, Zhenhua Feng, Saber Fallah","Effective leveraging of real-world driving datasets is crucial for enhancing
+the training of autonomous driving systems. While Offline Reinforcement
+Learning enables the training of autonomous vehicles using such data, most
+available datasets lack meaningful reward labels. Reward labeling is essential
+as it provides feedback for the learning algorithm to distinguish between
+desirable and undesirable behaviors, thereby improving policy performance. This
+paper presents a novel pipeline for generating human-aligned reward labels. The
+proposed approach addresses the challenge of absent reward signals in
+real-world datasets by generating labels that reflect human judgment and safety
+considerations. The pipeline incorporates an adaptive safety component,
+activated by analyzing semantic segmentation maps, allowing the autonomous
+vehicle to prioritize safety over efficiency in potential collision scenarios.
+The proposed pipeline is applied to an occluded pedestrian crossing scenario
+with varying levels of pedestrian traffic, using synthetic and simulation data.
+The results indicate that the generated reward labels closely match the
+simulation reward labels. When used to train the driving policy using Behavior
+Proximal Policy Optimisation, the results are competitive with other baselines.
+This demonstrates the effectiveness of our method in producing reliable and
+human-aligned reward signals, facilitating the training of autonomous driving
+systems through Reinforcement Learning outside of simulation environments and
+in alignment with human values.",http://arxiv.org/pdf/2504.08704v1,,False
+SeaView: Software Engineering Agent Visual Interface for Enhanced Workflow,11/04/2025,"Timothy Bula, Saurabh Pujar, Luca Buratti, Mihaela Bornea, Avirup Sil","Auto-regressive LLM-based software engineering (SWE) agents, henceforth SWE
+agents, have made tremendous progress (>60% on SWE-Bench Verified) on
+real-world coding challenges including GitHub issue resolution. SWE agents use
+a combination of reasoning, environment interaction and self-reflection to
+resolve issues thereby generating ""trajectories"". Analysis of SWE agent
+trajectories is difficult, not only as they exceed LLM sequence length
+(sometimes, greater than 128k) but also because it involves a relatively
+prolonged interaction between an LLM and the environment managed by the agent.
+In case of an agent error, it can be hard to decipher, locate and understand
+its scope. Similarly, it can be hard to track improvements or regression over
+multiple runs or experiments. While a lot of research has gone into making
+these SWE agents reach state-of-the-art, much less focus has been put into
+creating tools to help analyze and visualize agent output. We propose a novel
+tool called SeaView: Software Engineering Agent Visual Interface for Enhanced
+Workflow, with a vision to assist SWE-agent researchers to visualize and
+inspect their experiments. SeaView's novel mechanisms help compare experimental
+runs with varying hyper-parameters or LLMs, and quickly get an understanding of
+LLM or environment related problems. Based on our user study, experienced
+researchers spend between 10 and 30 minutes to gather the information provided
+by SeaView, while researchers with little experience can spend between 30
+minutes to 1 hour to diagnose their experiment.",http://arxiv.org/pdf/2504.08696v1,,False
+Genius: A Generalizable and Purely Unsupervised Self-Training Framework For Advanced Reasoning,11/04/2025,"Fangzhi Xu, Hang Yan, Chang Ma, Haiteng Zhao, Qiushi Sun, Kanzhi Cheng, Junxian He, Jun Liu, Zhiyong Wu","Advancing LLM reasoning skills has captivated wide interest. However, current
+post-training techniques rely heavily on supervisory signals, such as outcome
+supervision or auxiliary reward models, which face the problem of scalability
+and high annotation costs. This motivates us to enhance LLM reasoning without
+the need for external supervision. We introduce a generalizable and purely
+unsupervised self-training framework, named Genius. Without external auxiliary,
+Genius requires to seek the optimal response sequence in a stepwise manner and
+optimize the LLM. To explore the potential steps and exploit the optimal ones,
+Genius introduces a stepwise foresight re-sampling strategy to sample and
+estimate the step value by simulating future outcomes. Further, we recognize
+that the unsupervised setting inevitably induces the intrinsic noise and
+uncertainty. To provide a robust optimization, we propose an
+advantage-calibrated optimization (ACO) loss function to mitigate estimation
+inconsistencies. Combining these techniques together, Genius provides an
+advanced initial step towards self-improve LLM reasoning with general queries
+and without supervision, revolutionizing reasoning scaling laws given the vast
+availability of general queries. The code will be released at
+https://github.com/xufangzhi/Genius.",http://arxiv.org/pdf/2504.08672v1,,False
+MooseAgent: A LLM Based Multi-agent Framework for Automating Moose Simulation,11/04/2025,"Tao Zhang, Zhenhai Liu, Yong Xin, Yongjun Jiao","The Finite Element Method (FEM) is widely used in engineering and scientific
+computing, but its pre-processing, solver configuration, and post-processing
+stages are often time-consuming and require specialized knowledge. This paper
+proposes an automated solution framework, MooseAgent, for the multi-physics
+simulation framework MOOSE, which combines large-scale pre-trained language
+models (LLMs) with a multi-agent system. The framework uses LLMs to understand
+user-described simulation requirements in natural language and employs task
+decomposition and multi-round iterative verification strategies to
+automatically generate MOOSE input files. To improve accuracy and reduce model
+hallucinations, the system builds and utilizes a vector database containing
+annotated MOOSE input cards and function documentation. We conducted
+experimental evaluations on several typical cases, including heat transfer,
+mechanics, phase field, and multi-physics coupling. The results show that
+MooseAgent can automate the MOOSE simulation process to a certain extent,
+especially demonstrating a high success rate when dealing with relatively
+simple single-physics problems. The main contribution of this research is the
+proposal of a multi-agent automated framework for MOOSE, which validates its
+potential in simplifying finite element simulation processes and lowering the
+user barrier, providing new ideas for the development of intelligent finite
+element simulation software. The code for the MooseAgent framework proposed in
+this paper has been open-sourced and is available at
+https://github.com/taozhan18/MooseAgent",http://arxiv.org/pdf/2504.08621v1,,False
+Digital Twin Catalog: A Large-Scale Photorealistic 3D Object Digital Twin Dataset,11/04/2025,"Zhao Dong, Ka Chen, Zhaoyang Lv, Hong-Xing Yu, Yunzhi Zhang, Cheng Zhang, Yufeng Zhu, Stephen Tian, Zhengqin Li, Geordie Moffatt, Sean Christofferson, James Fort, Xiaqing Pan, Mingfei Yan, Jiajun Wu, Carl Yuheng Ren, Richard Newcombe","We introduce Digital Twin Catalog (DTC), a new large-scale photorealistic 3D
+object digital twin dataset. A digital twin of a 3D object is a highly
+detailed, virtually indistinguishable representation of a physical object,
+accurately capturing its shape, appearance, physical properties, and other
+attributes. Recent advances in neural-based 3D reconstruction and inverse
+rendering have significantly improved the quality of 3D object reconstruction.
+Despite these advancements, there remains a lack of a large-scale, digital twin
+quality real-world dataset and benchmark that can quantitatively assess and
+compare the performance of different reconstruction methods, as well as improve
+reconstruction quality through training or fine-tuning. Moreover, to
+democratize 3D digital twin creation, it is essential to integrate creation
+techniques with next-generation egocentric computing platforms, such as AR
+glasses. Currently, there is no dataset available to evaluate 3D object
+reconstruction using egocentric captured images. To address these gaps, the DTC
+dataset features 2,000 scanned digital twin-quality 3D objects, along with
+image sequences captured under different lighting conditions using DSLR cameras
+and egocentric AR glasses. This dataset establishes the first comprehensive
+real-world evaluation benchmark for 3D digital twin creation tasks, offering a
+robust foundation for comparing and improving existing reconstruction methods.
+The DTC dataset is already released at
+https://www.projectaria.com/datasets/dtc/ and we will also make the baseline
+evaluations open-source.",http://arxiv.org/pdf/2504.08541v1,,False
+Statistically guided deep learning,11/04/2025,"Michael Kohler, Adam Krzyzak","We present a theoretically well-founded deep learning algorithm for
+nonparametric regression. It uses over-parametrized deep neural networks with
+logistic activation function, which are fitted to the given data via gradient
+descent. We propose a special topology of these networks, a special random
+initialization of the weights, and a data-dependent choice of the learning rate
+and the number of gradient descent steps. We prove a theoretical bound on the
+expected $L_2$ error of this estimate, and illustrate its finite sample size
+performance by applying it to simulated data. Our results show that a
+theoretical analysis of deep learning which takes into account simultaneously
+optimization, generalization and approximation can result in a new deep
+learning estimate which has an improved finite sample performance.",http://arxiv.org/pdf/2504.08489v1,,False
+Customizing Spider Silk: Generative Models with Mechanical Property Conditioning for Protein Engineering,11/04/2025,"Neeru Dubey, Elin Karlsson, Miguel Angel Redondo, Johan Reimegård, Anna Rising, Hedvig Kjellström","The remarkable mechanical properties of spider silk, including its tensile
+strength and extensibility, are primarily governed by the repetitive regions of
+the proteins that constitute the fiber, the major ampullate spidroins (MaSps).
+However, establishing correlations between mechanical characteristics and
+repeat sequences is challenging due to the intricate
+sequence-structure-function relationships of MaSps and the limited availability
+of annotated datasets. In this study, we present a novel computational
+framework for designing MaSp repeat sequences with customizable mechanical
+properties. To achieve this, we developed a lightweight GPT-based generative
+model by distilling the pre-trained ProtGPT2 protein language model. The
+distilled model was subjected to multilevel fine-tuning using curated subsets
+of the Spider Silkome dataset. Specifically, we adapt the model for MaSp repeat
+generation using 6,000 MaSp repeat sequences and further refine it with 572
+repeats associated with experimentally determined fiber-level mechanical
+properties. Our model generates biologically plausible MaSp repeat regions
+tailored to specific mechanical properties while also predicting those
+properties for given sequences. Validation includes sequence-level analysis,
+assessing physicochemical attributes and expected distribution of key motifs as
+well as secondary structure compositions. A correlation study using BLAST on
+the Spider Silkome dataset and a test set of MaSp repeats with known mechanical
+properties further confirmed the predictive accuracy of the model. This
+framework advances the rational design of spider silk-inspired biomaterials,
+offering a versatile tool for engineering protein sequences with tailored
+mechanical attributes.",http://arxiv.org/pdf/2504.08437v1,,False
+Single View Garment Reconstruction Using Diffusion Mapping Via Pattern Coordinates,11/04/2025,"Ren Li, Cong Cao, Corentin Dumery, Yingxuan You, Hao Li, Pascal Fua","Reconstructing 3D clothed humans from images is fundamental to applications
+like virtual try-on, avatar creation, and mixed reality. While recent advances
+have enhanced human body recovery, accurate reconstruction of garment geometry
+-- especially for loose-fitting clothing -- remains an open challenge. We
+present a novel method for high-fidelity 3D garment reconstruction from single
+images that bridges 2D and 3D representations. Our approach combines Implicit
+Sewing Patterns (ISP) with a generative diffusion model to learn rich garment
+shape priors in a 2D UV space. A key innovation is our mapping model that
+establishes correspondences between 2D image pixels, UV pattern coordinates,
+and 3D geometry, enabling joint optimization of both 3D garment meshes and the
+corresponding 2D patterns by aligning learned priors with image observations.
+Despite training exclusively on synthetically simulated cloth data, our method
+generalizes effectively to real-world images, outperforming existing approaches
+on both tight- and loose-fitting garments. The reconstructed garments maintain
+physical plausibility while capturing fine geometric details, enabling
+downstream applications including garment retargeting and texture manipulation.",http://arxiv.org/pdf/2504.08353v1,,False
+Millions of States: Designing a Scalable MoE Architecture with RWKV-7 Meta-learner,11/04/2025,"Liu Xiao, Li Zhiyuan, Lin Yueyu","State-based sequence models like RWKV-7 offer a compelling alternative to
+Transformer architectures, achieving linear complexity while demonstrating
+greater expressive power in short-context scenarios and enabling state tracking
+beyond the \(\text{TC}^0\) complexity class. However, RWKV-7 lacks mechanisms
+for token-parameter interactions and native scalability, limiting its
+adaptability and growth without retraining. In this paper, we propose
+\textbf{Meta-State}, a novel extension to RWKV-7 that replaces attention
+mechanisms with a fully state-driven approach, integrating token-parameter
+interactions through a \textbf{Self-State Encoder} (SSE) mechanism. The SSE
+repurposes a portion of the RWKV-7 Weighted Key-Value (WKV) state as
+transformation weights to encode token-parameter interactions in a linear,
+state-driven manner without introducing new trainable matrices or softmax
+operations, while preserving the autoregressive property of token processing.
+Meta-State supports progressive model scaling by expanding the WKV state and
+parameter tokens, reusing existing parameters without retraining. Our approach
+bridges the gap between state-based modeling, token-parameter interactions, and
+scalable architectures, offering a flexible framework for efficient and
+adaptable sequence modeling with linear complexity and constant memory usage.",http://arxiv.org/pdf/2504.08247v1,,False
+Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices,11/04/2025,"Shengyuan Ye, Bei Ouyang, Liekang Zeng, Tianyi Qian, Xiaowen Chu, Jian Tang, Xu Chen","Generative large language models (LLMs) have garnered significant attention
+due to their exceptional capabilities in various AI tasks. Traditionally
+deployed in cloud datacenters, LLMs are now increasingly moving towards more
+accessible edge platforms to protect sensitive user data and ensure privacy
+preservation. The limited computational resources of individual edge devices,
+however, can result in excessively prolonged inference latency and overwhelmed
+memory usage. While existing research has explored collaborative edge computing
+to break the resource wall of individual devices, these solutions yet suffer
+from massive communication overhead and under-utilization of edge resources.
+Furthermore, they focus exclusively on optimizing the prefill phase, neglecting
+the crucial autoregressive decoding phase for generative LLMs. To address that,
+we propose Jupiter, a fast, scalable, and resource-efficient collaborative edge
+AI system for generative LLM inference. Jupiter introduces a flexible pipelined
+architecture as a principle and differentiates its system design according to
+the differentiated characteristics of the prefill and decoding phases. For
+prefill phase, Jupiter submits a novel intra-sequence pipeline parallelism and
+develops a meticulous parallelism planning strategy to maximize resource
+efficiency; For decoding, Jupiter devises an effective outline-based pipeline
+parallel decoding mechanism combined with speculative decoding, which further
+magnifies inference acceleration. Extensive evaluation based on realistic
+implementation demonstrates that Jupiter remarkably outperforms
+state-of-the-art approaches under various edge environment setups, achieving up
+to 26.1x end-to-end latency reduction while rendering on-par generation
+quality.",http://arxiv.org/pdf/2504.08242v1,,False

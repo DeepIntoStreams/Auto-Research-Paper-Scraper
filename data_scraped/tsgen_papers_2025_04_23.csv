@@ -1,0 +1,270 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+LongMamba: Enhancing Mamba's Long Context Capabilities via Training-Free Receptive Field Enlargement,22/04/2025,"Zhifan Ye, Kejing Xia, Yonggan Fu, Xin Dong, Jihoon Hong, Xiangchi Yuan, Shizhe Diao, Jan Kautz, Pavlo Molchanov, Yingyan Celine Lin","State space models (SSMs) have emerged as an efficient alternative to
+Transformer models for language modeling, offering linear computational
+complexity and constant memory usage as context length increases. However,
+despite their efficiency in handling long contexts, recent studies have shown
+that SSMs, such as Mamba models, generally underperform compared to
+Transformers in long-context understanding tasks. To address this significant
+shortfall and achieve both efficient and accurate long-context understanding,
+we propose LongMamba, a training-free technique that significantly enhances the
+long-context capabilities of Mamba models. LongMamba builds on our discovery
+that the hidden channels in Mamba can be categorized into local and global
+channels based on their receptive field lengths, with global channels primarily
+responsible for long-context capability. These global channels can become the
+key bottleneck as the input context lengthens. Specifically, when input lengths
+largely exceed the training sequence length, global channels exhibit
+limitations in adaptively extend their receptive fields, leading to Mamba's
+poor long-context performance. The key idea of LongMamba is to mitigate the
+hidden state memory decay in these global channels by preventing the
+accumulation of unimportant tokens in their memory. This is achieved by first
+identifying critical tokens in the global channels and then applying token
+filtering to accumulate only those critical tokens. Through extensive
+benchmarking across synthetic and real-world long-context scenarios, LongMamba
+sets a new standard for Mamba's long-context performance, significantly
+extending its operational range without requiring additional training. Our code
+is available at https://github.com/GATECH-EIC/LongMamba.",http://arxiv.org/pdf/2504.16053v1,,False
+Universal Approximation with Softmax Attention,22/04/2025,"Jerry Yao-Chieh Hu, Hude Liu, Hong-Yu Chen, Weimin Wu, Han Liu","We prove that with linear transformations, both (i) two-layer self-attention
+and (ii) one-layer self-attention followed by a softmax function are universal
+approximators for continuous sequence-to-sequence functions on compact domains.
+Our main technique is a new interpolation-based method for analyzing
+attention's internal mechanism. This leads to our key insight: self-attention
+is able to approximate a generalized version of ReLU to arbitrary precision,
+and hence subsumes many known universal approximators. Building on these, we
+show that two-layer multi-head attention alone suffices as a
+sequence-to-sequence universal approximator. In contrast, prior works rely on
+feed-forward networks to establish universal approximation in Transformers.
+Furthermore, we extend our techniques to show that, (softmax-)attention-only
+layers are capable of approximating various statistical models in-context. We
+believe these techniques hold independent interest.",http://arxiv.org/pdf/2504.15956v1,,False
+"StreamRL: Scalable, Heterogeneous, and Elastic RL for LLMs with Disaggregated Stream Generation",22/04/2025,"Yinmin Zhong, Zili Zhang, Xiaoniu Song, Hanpeng Hu, Chao Jin, Bingyang Wu, Nuo Chen, Yukun Chen, Yu Zhou, Changyi Wan, Hongyu Zhou, Yimin Jiang, Yibo Zhu, Daxin Jiang","Reinforcement learning (RL) has become the core post-training technique for
+large language models (LLMs). RL for LLMs involves two stages: generation and
+training. The LLM first generates samples online, which are then used to derive
+rewards for training. The conventional view holds that the colocated
+architecture, where the two stages share resources via temporal multiplexing,
+outperforms the disaggregated architecture, in which dedicated resources are
+assigned to each stage. However, in real-world deployments, we observe that the
+colocated architecture suffers from resource coupling, where the two stages are
+constrained to use the same resources. This coupling compromises the
+scalability and cost-efficiency of colocated RL in large-scale training. In
+contrast, the disaggregated architecture allows for flexible resource
+allocation, supports heterogeneous training setups, and facilitates
+cross-datacenter deployment.
+  StreamRL is designed with disaggregation from first principles and fully
+unlocks its potential by addressing two types of performance bottlenecks in
+existing disaggregated RL frameworks: pipeline bubbles, caused by stage
+dependencies, and skewness bubbles, resulting from long-tail output length
+distributions. To address pipeline bubbles, StreamRL breaks the traditional
+stage boundary in synchronous RL algorithms through stream generation and
+achieves full overlapping in asynchronous RL. To address skewness bubbles,
+StreamRL employs an output-length ranker model to identify long-tail samples
+and reduces generation time via skewness-aware dispatching and scheduling.
+Experiments show that StreamRL improves throughput by up to 2.66x compared to
+existing state-of-the-art systems, and improves cost-effectiveness by up to
+1.33x in a heterogeneous, cross-datacenter setting.",http://arxiv.org/pdf/2504.15930v1,,False
+Ask2Loc: Learning to Locate Instructional Visual Answers by Asking Questions,22/04/2025,"Chang Zong, Bin Li, Shoujun Zhou, Jian Wan, Lei Zhang","Locating specific segments within an instructional video is an efficient way
+to acquire guiding knowledge. Generally, the task of obtaining video segments
+for both verbal explanations and visual demonstrations is known as visual
+answer localization (VAL). However, users often need multiple interactions to
+obtain answers that align with their expectations when using the system. During
+these interactions, humans deepen their understanding of the video content by
+asking themselves questions, thereby accurately identifying the location.
+Therefore, we propose a new task, named In-VAL, to simulate the multiple
+interactions between humans and videos in the procedure of obtaining visual
+answers. The In-VAL task requires interactively addressing several semantic gap
+issues, including 1) the ambiguity of user intent in the input questions, 2)
+the incompleteness of language in video subtitles, and 3) the fragmentation of
+content in video segments. To address these issues, we propose Ask2Loc, a
+framework for resolving In-VAL by asking questions. It includes three key
+modules: 1) a chatting module to refine initial questions and uncover clear
+intentions, 2) a rewriting module to generate fluent language and create
+complete descriptions, and 3) a searching module to broaden local context and
+provide integrated content. We conduct extensive experiments on three
+reconstructed In-VAL datasets. Compared to traditional end-to-end and two-stage
+methods, our proposed Ask2Loc can improve performance by up to 14.91 (mIoU) on
+the In-VAL task. Our code and datasets can be accessed at
+https://github.com/changzong/Ask2Loc.",http://arxiv.org/pdf/2504.15918v1,,False
+Dynamic Early Exit in Reasoning Models,22/04/2025,"Chenxu Yang, Qingyi Si, Yongjie Duan, Zheliang Zhu, Chenyu Zhu, Zheng Lin, Li Cao, Weiping Wang","Recent advances in large reasoning language models (LRLMs) rely on test-time
+scaling, which extends long chain-of-thought (CoT) generation to solve complex
+tasks. However, overthinking in long CoT not only slows down the efficiency of
+problem solving, but also risks accuracy loss due to the extremely detailed or
+redundant reasoning steps. We propose a simple yet effective method that allows
+LLMs to self-truncate CoT sequences by early exit during generation. Instead of
+relying on fixed heuristics, the proposed method monitors model behavior at
+potential reasoning transition points (e.g.,""Wait"" tokens) and dynamically
+terminates the next reasoning chain's generation when the model exhibits high
+confidence in a trial answer. Our method requires no additional training and
+can be seamlessly integrated into existing o1-like reasoning LLMs. Experiments
+on multiple reasoning benchmarks MATH-500, AMC 2023, GPQA Diamond and AIME 2024
+show that the proposed method is consistently effective on deepseek-series
+reasoning LLMs, reducing the length of CoT sequences by an average of 31% to
+43% while improving accuracy by 1.7% to 5.7%.",http://arxiv.org/pdf/2504.15895v1,,False
+Full waveform inversion with CNN-based velocity representation extension,22/04/2025,"Xinru Mu, Omar M. Saad, Tariq Alkhalifah","Full waveform inversion (FWI) updates the velocity model by minimizing the
+discrepancy between observed and simulated data. However, discretization errors
+in numerical modeling and incomplete seismic data acquisition can introduce
+noise, which propagates through the adjoint operator and affects the accuracy
+of the velocity gradient, thereby impacting the FWI inversion accuracy. To
+mitigate the influence of noise on the gradient, we employ a convolutional
+neural network (CNN) to refine the velocity model before performing the forward
+simulation, aiming to reduce noise and provide a more accurate velocity update
+direction. We use the same data misfit loss to update both the velocity and
+network parameters, thereby forming a self-supervised learning procedure. We
+propose two implementation schemes, which differ in whether the velocity update
+passes through the CNN. In both methodologies, the velocity representation is
+extended (VRE) by using a neural network in addition to the grid-based
+velocities. Thus, we refer to this general approach as VRE-FWI. Synthetic and
+real data tests demonstrate that the proposed VRE-FWI achieves higher velocity
+inversion accuracy compared to traditional FWI, at a marginal additional
+computational cost of approximately 1%.",http://arxiv.org/pdf/2504.15826v1,,False
+Human-Imperceptible Physical Adversarial Attack for NIR Face Recognition Models,22/04/2025,"Songyan Xie, Jinghang Wen, Encheng Su, Qiucheng Yu","Near-infrared (NIR) face recognition systems, which can operate effectively
+in low-light conditions or in the presence of makeup, exhibit vulnerabilities
+when subjected to physical adversarial attacks. To further demonstrate the
+potential risks in real-world applications, we design a novel, stealthy, and
+practical adversarial patch to attack NIR face recognition systems in a
+black-box setting. We achieved this by utilizing human-imperceptible
+infrared-absorbing ink to generate multiple patches with digitally optimized
+shapes and positions for infrared images. To address the optimization mismatch
+between digital and real-world NIR imaging, we develop a light reflection model
+for human skin to minimize pixel-level discrepancies by simulating NIR light
+reflection.
+  Compared to state-of-the-art (SOTA) physical attacks on NIR face recognition
+systems, the experimental results show that our method improves the attack
+success rate in both digital and physical domains, particularly maintaining
+effectiveness across various face postures. Notably, the proposed approach
+outperforms SOTA methods, achieving an average attack success rate of 82.46% in
+the physical domain across different models, compared to 64.18% for existing
+methods. The artifact is available at
+https://anonymous.4open.science/r/Human-imperceptible-adversarial-patch-0703/.",http://arxiv.org/pdf/2504.15823v1,,False
+Insights from Verification: Training a Verilog Generation LLM with Reinforcement Learning with Testbench Feedback,22/04/2025,"Ning Wang, Bingkun Yao, Jie Zhou, Yuchen Hu, Xi Wang, Nan Guan, Zhe Jiang","Large language models (LLMs) have shown strong performance in Verilog
+generation from natural language description. However, ensuring the functional
+correctness of the generated code remains a significant challenge. This paper
+introduces a method that integrates verification insights from testbench into
+the training of Verilog generation LLMs, aligning the training with the
+fundamental goal of hardware design: functional correctness. The main obstacle
+in using LLMs for Verilog code generation is the lack of sufficient functional
+verification data, particularly testbenches paired with design specifications
+and code. To address this problem, we introduce an automatic testbench
+generation pipeline that decomposes the process and uses feedback from the
+Verilog compiler simulator (VCS) to reduce hallucination and ensure
+correctness. We then use the testbench to evaluate the generated codes and
+collect them for further training, where verification insights are introduced.
+Our method applies reinforcement learning (RL), specifically direct preference
+optimization (DPO), to align Verilog code generation with functional
+correctness by training preference pairs based on testbench outcomes. In
+evaluations on VerilogEval-Machine, VerilogEval-Human, RTLLM v1.1, RTLLM v2,
+and VerilogEval v2, our approach consistently outperforms state-of-the-art
+baselines in generating functionally correct Verilog code. We open source all
+training code, data, and models at
+https://anonymous.4open.science/r/VeriPrefer-E88B.",http://arxiv.org/pdf/2504.15804v1,,False
+A closer look at how large language models trust humans: patterns and biases,22/04/2025,"Valeria Lerman, Yaniv Dover","As large language models (LLMs) and LLM-based agents increasingly interact
+with humans in decision-making contexts, understanding the trust dynamics
+between humans and AI agents becomes a central concern. While considerable
+literature studies how humans trust AI agents, it is much less understood how
+LLM-based agents develop effective trust in humans. LLM-based agents likely
+rely on some sort of implicit effective trust in trust-related contexts (e.g.,
+evaluating individual loan applications) to assist and affect decision making.
+Using established behavioral theories, we develop an approach that studies
+whether LLMs trust depends on the three major trustworthiness dimensions:
+competence, benevolence and integrity of the human subject. We also study how
+demographic variables affect effective trust. Across 43,200 simulated
+experiments, for five popular language models, across five different scenarios
+we find that LLM trust development shows an overall similarity to human trust
+development. We find that in most, but not all cases, LLM trust is strongly
+predicted by trustworthiness, and in some cases also biased by age, religion
+and gender, especially in financial scenarios. This is particularly true for
+scenarios common in the literature and for newer models. While the overall
+patterns align with human-like mechanisms of effective trust formation,
+different models exhibit variation in how they estimate trust; in some cases,
+trustworthiness and demographic factors are weak predictors of effective trust.
+These findings call for a better understanding of AI-to-human trust dynamics
+and monitoring of biases and trust development patterns to prevent unintended
+and potentially harmful outcomes in trust-sensitive applications of AI.",http://arxiv.org/pdf/2504.15801v1,,False
+VeriCoder: Enhancing LLM-Based RTL Code Generation through Functional Correctness Validation,22/04/2025,"Anjiang Wei, Huanmi Tan, Tarun Suresh, Daniel Mendoza, Thiago S. F. X. Teixeira, Ke Wang, Caroline Trippel, Alex Aiken","Recent advances in Large Language Models (LLMs) have sparked growing interest
+in applying them to Electronic Design Automation (EDA) tasks, particularly
+Register Transfer Level (RTL) code generation. While several RTL datasets have
+been introduced, most focus on syntactic validity rather than functional
+validation with tests, leading to training examples that compile but may not
+implement the intended behavior. We present VERICODER, a model for RTL code
+generation fine-tuned on a dataset validated for functional correctness. This
+fine-tuning dataset is constructed using a novel methodology that combines unit
+test generation with feedback-directed refinement. Given a natural language
+specification and an initial RTL design, we prompt a teacher model
+(GPT-4o-mini) to generate unit tests and iteratively revise the RTL design
+based on its simulation results using the generated tests. If necessary, the
+teacher model also updates the tests to ensure they comply with the natural
+language specification. As a result of this process, every example in our
+dataset is functionally validated, consisting of a natural language
+description, an RTL implementation, and passing tests. Fine-tuned on this
+dataset of over 125,000 examples, VERICODER achieves state-of-the-art metrics
+in functional correctness on VerilogEval and RTLLM, with relative gains of up
+to 71.7% and 27.4% respectively. An ablation study further shows that models
+trained on our functionally validated dataset outperform those trained on
+functionally non-validated datasets, underscoring the importance of
+high-quality datasets in RTL code generation.",http://arxiv.org/pdf/2504.15659v1,,False
+Enhancing Reinforcement learning in 3-Dimensional Hydrophobic-Polar Protein Folding Model with Attention-based layers,22/04/2025,"Peizheng Liu, Hitoshi Iba","Transformer-based architectures have recently propelled advances in sequence
+modeling across domains, but their application to the hydrophobic-hydrophilic
+(H-P) model for protein folding remains relatively unexplored. In this work, we
+adapt a Deep Q-Network (DQN) integrated with attention mechanisms
+(Transformers) to address the 3D H-P protein folding problem. Our system
+formulates folding decisions as a self-avoiding walk in a reinforced
+environment, and employs a specialized reward function based on favorable
+hydrophobic interactions. To improve performance, the method incorporates
+validity check including symmetry-breaking constraints, dueling and double
+Q-learning, and prioritized replay to focus learning on critical transitions.
+Experimental evaluations on standard benchmark sequences demonstrate that our
+approach achieves several known best solutions for shorter sequences, and
+obtains near-optimal results for longer chains. This study underscores the
+promise of attention-based reinforcement learning for protein folding, and
+created a prototype of Transformer-based Q-network structure for 3-dimensional
+lattice models.",http://arxiv.org/pdf/2504.15634v1,,False
+MetaMolGen: A Neural Graph Motif Generation Model for De Novo Molecular Design,22/04/2025,"Zimo Yan, Jie Zhang, Zheng Xie, Chang Liu, Yizhen Liu, Yiping Song","Molecular generation plays an important role in drug discovery and materials
+science, especially in data-scarce scenarios where traditional generative
+models often struggle to achieve satisfactory conditional generalization. To
+address this challenge, we propose MetaMolGen, a first-order
+meta-learning-based molecular generator designed for few-shot and
+property-conditioned molecular generation. MetaMolGen standardizes the
+distribution of graph motifs by mapping them to a normalized latent space, and
+employs a lightweight autoregressive sequence model to generate SMILES
+sequences that faithfully reflect the underlying molecular structure. In
+addition, it supports conditional generation of molecules with target
+properties through a learnable property projector integrated into the
+generative process.Experimental results demonstrate that MetaMolGen
+consistently generates valid and diverse SMILES sequences under low-data
+regimes, outperforming conventional baselines. This highlights its advantage in
+fast adaptation and efficient conditional generation for practical molecular
+design.",http://arxiv.org/pdf/2504.15587v1,,False
+A Multi-Agent Framework for Automated Qinqiang Opera Script Generation Using Large Language Models,22/04/2025,"Gengxian Cao, Fengyuan Li, Hong Duan, Ye Yang, Bofeng Wang, Donghe Li","This paper introduces a novel multi-Agent framework that automates the end to
+end production of Qinqiang opera by integrating Large Language Models , visual
+generation, and Text to Speech synthesis. Three specialized agents collaborate
+in sequence: Agent1 uses an LLM to craft coherent, culturally grounded
+scripts;Agent2 employs visual generation models to render contextually accurate
+stage scenes; and Agent3 leverages TTS to produce synchronized, emotionally
+expressive vocal performances. In a case study on Dou E Yuan, the system
+achieved expert ratings of 3.8 for script fidelity, 3.5 for visual coherence,
+and 3.8 for speech accuracy-culminating in an overall score of 3.6, a 0.3 point
+improvement over a Single Agent baseline. Ablation experiments demonstrate that
+removing Agent2 or Agent3 leads to drops of 0.4 and 0.5 points, respectively,
+underscoring the value of modular collaboration. This work showcases how AI
+driven pipelines can streamline and scale the preservation of traditional
+performing arts, and points toward future enhancements in cross modal
+alignment, richer emotional nuance, and support for additional opera genres.",http://arxiv.org/pdf/2504.15552v1,,False
+T2VShield: Model-Agnostic Jailbreak Defense for Text-to-Video Models,22/04/2025,"Siyuan Liang, Jiayang Liu, Jiecheng Zhai, Tianmeng Fang, Rongcheng Tu, Aishan Liu, Xiaochun Cao, Dacheng Tao","The rapid development of generative artificial intelligence has made text to
+video models essential for building future multimodal world simulators.
+However, these models remain vulnerable to jailbreak attacks, where specially
+crafted prompts bypass safety mechanisms and lead to the generation of harmful
+or unsafe content. Such vulnerabilities undermine the reliability and security
+of simulation based applications. In this paper, we propose T2VShield, a
+comprehensive and model agnostic defense framework designed to protect text to
+video models from jailbreak threats. Our method systematically analyzes the
+input, model, and output stages to identify the limitations of existing
+defenses, including semantic ambiguities in prompts, difficulties in detecting
+malicious content in dynamic video outputs, and inflexible model centric
+mitigation strategies. T2VShield introduces a prompt rewriting mechanism based
+on reasoning and multimodal retrieval to sanitize malicious inputs, along with
+a multi scope detection module that captures local and global inconsistencies
+across time and modalities. The framework does not require access to internal
+model parameters and works with both open and closed source systems. Extensive
+experiments on five platforms show that T2VShield can reduce jailbreak success
+rates by up to 35 percent compared to strong baselines. We further develop a
+human centered audiovisual evaluation protocol to assess perceptual safety,
+emphasizing the importance of visual level defense in enhancing the
+trustworthiness of next generation multimodal simulators.",http://arxiv.org/pdf/2504.15512v1,,False

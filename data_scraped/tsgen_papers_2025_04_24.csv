@@ -1,0 +1,293 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Latent Diffusion Planning for Imitation Learning,23/04/2025,"Amber Xie, Oleh Rybkin, Dorsa Sadigh, Chelsea Finn","Recent progress in imitation learning has been enabled by policy
+architectures that scale to complex visuomotor tasks, multimodal distributions,
+and large datasets. However, these methods often rely on learning from large
+amount of expert demonstrations. To address these shortcomings, we propose
+Latent Diffusion Planning (LDP), a modular approach consisting of a planner
+which can leverage action-free demonstrations, and an inverse dynamics model
+which can leverage suboptimal data, that both operate over a learned latent
+space. First, we learn a compact latent space through a variational
+autoencoder, enabling effective forecasting of future states in image-based
+domains. Then, we train a planner and an inverse dynamics model with diffusion
+objectives. By separating planning from action prediction, LDP can benefit from
+the denser supervision signals of suboptimal and action-free data. On simulated
+visual robotic manipulation tasks, LDP outperforms state-of-the-art imitation
+learning approaches, as they cannot leverage such additional data.",http://arxiv.org/pdf/2504.16925v1,,False
+Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light,23/04/2025,"Ali Hassani, Fengzhe Zhou, Aditya Kane, Jiannan Huang, Chieh-Yun Chen, Min Shi, Steven Walton, Markus Hoehnerbach, Vijay Thakkar, Michael Isaev, Qinsheng Zhang, Bing Xu, Haicheng Wu, Wen-mei Hwu, Ming-Yu Liu, Humphrey Shi","Many sparse attention mechanisms such as Neighborhood Attention have
+typically failed to consistently deliver speedup over the self attention
+baseline. This is largely due to the level of complexity in attention
+infrastructure, and the rapid evolution of AI hardware architecture. At the
+same time, many state-of-the-art foundational models, particularly in computer
+vision, are heavily bound by attention, and need reliable sparsity to escape
+the O(n^2) complexity. In this paper, we study a class of promising sparse
+attention mechanisms that focus on locality, and aim to develop a better
+analytical model of their performance improvements. We first introduce
+Generalized Neighborhood Attention (GNA), which can describe sliding window,
+strided sliding window, and blocked attention. We then consider possible design
+choices in implementing these approaches, and create a simulator that can
+provide much more realistic speedup upper bounds for any given setting.
+Finally, we implement GNA on top of a state-of-the-art fused multi-headed
+attention (FMHA) kernel designed for the NVIDIA Blackwell architecture in
+CUTLASS. Our implementation can fully realize the maximum speedup theoretically
+possible in many perfectly block-sparse cases, and achieves an effective
+utilization of 1.3 petaFLOPs/second in FP16. In addition, we plug various GNA
+configurations into off-the-shelf generative models, such as Cosmos-7B,
+HunyuanVideo, and FLUX, and show that it can deliver 28% to 46% end-to-end
+speedup on B200 without any fine-tuning. We will open source our simulator and
+Blackwell kernels directly through the NATTEN project.",http://arxiv.org/pdf/2504.16922v1,,False
+Exploring zero-shot structure-based protein fitness prediction,23/04/2025,"Arnav Sharma, Anthony Gitter","The ability to make zero-shot predictions about the fitness consequences of
+protein sequence changes with pre-trained machine learning models enables many
+practical applications. Such models can be applied for downstream tasks like
+genetic variant interpretation and protein engineering without additional
+labeled data. The advent of capable protein structure prediction tools has led
+to the availability of orders of magnitude more precomputed predicted
+structures, giving rise to powerful structure-based fitness prediction models.
+Through our experiments, we assess several modeling choices for structure-based
+models and their effects on downstream fitness prediction. Zero-shot fitness
+prediction models can struggle to assess the fitness landscape within
+disordered regions of proteins, those that lack a fixed 3D structure. We
+confirm the importance of matching protein structures to fitness assays and
+find that predicted structures for disordered regions can be misleading and
+affect predictive performance. Lastly, we evaluate an additional
+structure-based model on the ProteinGym substitution benchmark and show that
+simple multi-modal ensembles are strong baselines.",http://arxiv.org/pdf/2504.16886v1,,False
+Random Long-Context Access for Mamba via Hardware-aligned Hierarchical Sparse Attention,23/04/2025,"Xiang Hu, Jiaqi Leng, Jun Zhao, Kewei Tu, Wei Wu","A key advantage of Recurrent Neural Networks (RNNs) over Transformers is
+their linear computational and space complexity enables faster training and
+inference for long sequences. However, RNNs are fundamentally unable to
+randomly access historical context, and simply integrating attention mechanisms
+may undermine their efficiency advantages. To overcome this limitation, we
+propose \textbf{H}ierarchical \textbf{S}parse \textbf{A}ttention (HSA), a novel
+attention mechanism that enhances RNNs with long-range random access
+flexibility while preserving their merits in efficiency and length
+generalization. HSA divides inputs into chunks, selecting the top-$k$ chunks
+and hierarchically aggregates information. The core innovation lies in learning
+token-to-chunk relevance based on fine-grained token-level information inside
+each chunk. This approach enhances the precision of chunk selection across both
+in-domain and out-of-domain context lengths. To make HSA efficient, we further
+introduce a hardware-aligned kernel design. By combining HSA with Mamba, we
+introduce RAMba, which achieves perfect accuracy in passkey retrieval across 64
+million contexts despite pre-training on only 4K-length contexts, and
+significant improvements on various downstream tasks, with nearly constant
+memory footprint. These results show RAMba's huge potential in long-context
+modeling.",http://arxiv.org/pdf/2504.16795v1,,False
+Online model learning with data-assimilated reservoir computers,23/04/2025,"Andrea Nóvoa, Luca Magri","We propose an online learning framework for forecasting nonlinear
+spatio-temporal signals (fields). The method integrates (i) dimensionality
+reduction, here, a simple proper orthogonal decomposition (POD) projection;
+(ii) a generalized autoregressive model to forecast reduced dynamics, here, a
+reservoir computer; (iii) online adaptation to update the reservoir computer
+(the model), here, ensemble sequential data assimilation.We demonstrate the
+framework on a wake past a cylinder governed by the Navier-Stokes equations,
+exploring the assimilation of full flow fields (projected onto POD modes) and
+sparse sensors. Three scenarios are examined: a na\""ive physical state
+estimation; a two-fold estimation of physical and reservoir states; and a
+three-fold estimation that also adjusts the model parameters. The two-fold
+strategy significantly improves ensemble convergence and reduces reconstruction
+error compared to the na\""ive approach. The three-fold approach enables robust
+online training of partially-trained reservoir computers, overcoming
+limitations of a priori training. By unifying data-driven reduced order
+modelling with Bayesian data assimilation, this work opens new opportunities
+for scalable online model learning for nonlinear time series forecasting.",http://arxiv.org/pdf/2504.16767v1,,False
+MOSAIC: A Skill-Centric Algorithmic Framework for Long-Horizon Manipulation Planning,23/04/2025,"Itamar Mishani, Yorai Shaoul, Maxim Likhachev","Planning long-horizon motions using a set of predefined skills is a key
+challenge in robotics and AI. Addressing this challenge requires methods that
+systematically explore skill combinations to uncover task-solving sequences,
+harness generic, easy-to-learn skills (e.g., pushing, grasping) to generalize
+across unseen tasks, and bypass reliance on symbolic world representations that
+demand extensive domain and task-specific knowledge. Despite significant
+progress, these elements remain largely disjoint in existing approaches,
+leaving a critical gap in achieving robust, scalable solutions for complex,
+long-horizon problems. In this work, we present MOSAIC, a skill-centric
+framework that unifies these elements by using the skills themselves to guide
+the planning process. MOSAIC uses two families of skills: Generators compute
+executable trajectories and world configurations, and Connectors link these
+independently generated skill trajectories by solving boundary value problems,
+enabling progress toward completing the overall task. By breaking away from the
+conventional paradigm of incrementally discovering skills from predefined start
+or goal states--a limitation that significantly restricts exploration--MOSAIC
+focuses planning efforts on regions where skills are inherently effective. We
+demonstrate the efficacy of MOSAIC in both simulated and real-world robotic
+manipulation tasks, showcasing its ability to solve complex long-horizon
+planning problems using a diverse set of skills incorporating generative
+diffusion models, motion planning algorithms, and manipulation-specific models.
+Visit https://skill-mosaic.github.io for demonstrations and examples.",http://arxiv.org/pdf/2504.16738v1,,False
+PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation,23/04/2025,"Wenxuan Li, Hang Zhao, Zhiyuan Yu, Yu Du, Qin Zou, Ruizhen Hu, Kai Xu","While non-prehensile manipulation (e.g., controlled pushing/poking)
+constitutes a foundational robotic skill, its learning remains challenging due
+to the high sensitivity to complex physical interactions involving friction and
+restitution. To achieve robust policy learning and generalization, we opt to
+learn a world model of the 3D rigid body dynamics involved in non-prehensile
+manipulations and use it for model-based reinforcement learning. We propose
+PIN-WM, a Physics-INformed World Model that enables efficient end-to-end
+identification of a 3D rigid body dynamical system from visual observations.
+Adopting differentiable physics simulation, PIN-WM can be learned with only
+few-shot and task-agnostic physical interaction trajectories. Further, PIN-WM
+is learned with observational loss induced by Gaussian Splatting without
+needing state estimation. To bridge Sim2Real gaps, we turn the learned PIN-WM
+into a group of Digital Cousins via physics-aware randomizations which perturb
+physics and rendering parameters to generate diverse and meaningful variations
+of the PIN-WM. Extensive evaluations on both simulation and real-world tests
+demonstrate that PIN-WM, enhanced with physics-aware digital cousins,
+facilitates learning robust non-prehensile manipulation skills with Sim2Real
+transfer, surpassing the Real2Sim2Real state-of-the-arts.",http://arxiv.org/pdf/2504.16693v1,,False
+Offline Robotic World Model: Learning Robotic Policies without a Physics Simulator,23/04/2025,"Chenhao Li, Andreas Krause, Marco Hutter","Reinforcement Learning (RL) has demonstrated impressive capabilities in
+robotic control but remains challenging due to high sample complexity, safety
+concerns, and the sim-to-real gap. While offline RL eliminates the need for
+risky real-world exploration by learning from pre-collected data, it suffers
+from distributional shift, limiting policy generalization. Model-Based RL
+(MBRL) addresses this by leveraging predictive models for synthetic rollouts,
+yet existing approaches often lack robust uncertainty estimation, leading to
+compounding errors in offline settings. We introduce Offline Robotic World
+Model (RWM-O), a model-based approach that explicitly estimates epistemic
+uncertainty to improve policy learning without reliance on a physics simulator.
+By integrating these uncertainty estimates into policy optimization, our
+approach penalizes unreliable transitions, reducing overfitting to model errors
+and enhancing stability. Experimental results show that RWM-O improves
+generalization and safety, enabling policy learning purely from real-world data
+and advancing scalable, data-efficient RL for robotics.",http://arxiv.org/pdf/2504.16680v1,,False
+HERB: Human-augmented Efficient Reinforcement learning for Bin-packing,23/04/2025,"Gojko Perovic, Nuno Ferreira Duarte, Atabak Dehban, Gonçalo Teixeira, Egidio Falotico, José Santos-Victor","Packing objects efficiently is a fundamental problem in logistics, warehouse
+automation, and robotics. While traditional packing solutions focus on
+geometric optimization, packing irregular, 3D objects presents significant
+challenges due to variations in shape and stability. Reinforcement
+Learning~(RL) has gained popularity in robotic packing tasks, but training
+purely from simulation can be inefficient and computationally expensive. In
+this work, we propose HERB, a human-augmented RL framework for packing
+irregular objects. We first leverage human demonstrations to learn the best
+sequence of objects to pack, incorporating latent factors such as space
+optimization, stability, and object relationships that are difficult to model
+explicitly. Next, we train a placement algorithm that uses visual information
+to determine the optimal object positioning inside a packing container. Our
+approach is validated through extensive performance evaluations, analyzing both
+packing efficiency and latency. Finally, we demonstrate the real-world
+feasibility of our method on a robotic system. Experimental results show that
+our method outperforms geometric and purely RL-based approaches by leveraging
+human intuition, improving both packing robustness and adaptability. This work
+highlights the potential of combining human expertise-driven RL to tackle
+complex real-world packing challenges in robotic systems.",http://arxiv.org/pdf/2504.16595v1,,False
+Confidence Sequences for Generalized Linear Models via Regret Analysis,23/04/2025,"Eugenio Clerico, Hamish Flynn, Wojciech Kotłowski, Gergely Neu","We develop a methodology for constructing confidence sets for parameters of
+statistical models via a reduction to sequential prediction. Our key
+observation is that for any generalized linear model (GLM), one can construct
+an associated game of sequential probability assignment such that achieving low
+regret in the game implies a high-probability upper bound on the excess
+likelihood of the true parameter of the GLM. This allows us to develop a scheme
+that we call online-to-confidence-set conversions, which effectively reduces
+the problem of proving the desired statistical claim to an algorithmic
+question. We study two varieties of this conversion scheme: 1) analytical
+conversions that only require proving the existence of algorithms with low
+regret and provide confidence sets centered at the maximum-likelihood estimator
+2) algorithmic conversions that actively leverage the output of the online
+algorithm to construct confidence sets (and may be centered at other,
+adaptively constructed point estimators). The resulting methodology recovers
+all state-of-the-art confidence set constructions within a single framework,
+and also provides several new types of confidence sets that were previously
+unknown in the literature.",http://arxiv.org/pdf/2504.16555v1,,False
+Modern Computational Methods in Reinsurance Optimization: From Simulated Annealing to Quantum Branch & Bound,23/04/2025,"George Woodman, Ruben S. Andrist, Thomas Häner, Damien S. Steiger, Martin J. A. Schuetz, Helmut G. Katzgraber, Marcin Detyniecki","We propose and implement modern computational methods to enhance catastrophe
+excess-of-loss reinsurance contracts in practice. The underlying optimization
+problem involves attachment points, limits, and reinstatement clauses, and the
+objective is to maximize the expected profit while considering risk measures
+and regulatory constraints. We study the problem formulation, paving the way
+for practitioners, for two very different approaches: A local search optimizer
+using simulated annealing, which handles realistic constraints, and a branch &
+bound approach exploring the potential of a future speedup via quantum branch &
+bound. On the one hand, local search effectively generates contract structures
+within several constraints, proving useful for complex treaties that have
+multiple local optima. On the other hand, although our branch & bound
+formulation only confirms that solving the full problem with a future quantum
+computer would require a stronger, less expensive bound and substantial
+hardware improvements, we believe that the designed application-specific bound
+is sufficiently strong to serve as a basis for further works. Concisely, we
+provide insurance practitioners with a robust numerical framework for contract
+optimization that handles realistic constraints today, as well as an outlook
+and initial steps towards an approach which could leverage quantum computers in
+the future.",http://arxiv.org/pdf/2504.16530v1,,False
+The Dance of Atoms-De Novo Protein Design with Diffusion Model,23/04/2025,"Yujie Qin, Ming He, Changyong Yu, Ming Ni, Xian Liu, Xiaochen Bo","The de novo design of proteins refers to creating proteins with specific
+structures and functions that do not naturally exist. In recent years, the
+accumulation of high-quality protein structure and sequence data and
+technological advancements have paved the way for the successful application of
+generative artificial intelligence (AI) models in protein design. These models
+have surpassed traditional approaches that rely on fragments and
+bioinformatics. They have significantly enhanced the success rate of de novo
+protein design, and reduced experimental costs, leading to breakthroughs in the
+field. Among various generative AI models, diffusion models have yielded the
+most promising results in protein design. In the past two to three years, more
+than ten protein design models based on diffusion models have emerged. Among
+them, the representative model, RFDiffusion, has demonstrated success rates in
+25 protein design tasks that far exceed those of traditional methods, and other
+AI-based approaches like RFjoint and hallucination. This review will
+systematically examine the application of diffusion models in generating
+protein backbones and sequences. We will explore the strengths and limitations
+of different models, summarize successful cases of protein design using
+diffusion models, and discuss future development directions.",http://arxiv.org/pdf/2504.16479v1,,False
+Node Assigned physics-informed neural networks for thermal-hydraulic system simulation: CVH/FL module,23/04/2025,"Jeesuk Shin, Cheolwoong Kim, Sunwoong Yang, Minseo Lee, Sung Joong Kim, Joongoo Jeon","Severe accidents (SAs) in nuclear power plants have been analyzed using
+thermal-hydraulic (TH) system codes such as MELCOR and MAAP. These codes
+efficiently simulate the progression of SAs, while they still have inherent
+limitations due to their inconsistent finite difference schemes. The use of
+empirical schemes incorporating both implicit and explicit formulations
+inherently induces unidirectional coupling in multi-physics analyses. The
+objective of this study is to develop a novel numerical method for TH system
+codes using physics-informed neural network (PINN). They have shown strength in
+solving multi-physics due to the innate feature of neural networks-automatic
+differentiation. We propose a node-assigned PINN (NA-PINN) that is suitable for
+the control volume approach-based system codes. NA-PINN addresses the issue of
+spatial governing equation variation by assigning an individual network to each
+nodalization of the system code, such that spatial information is excluded from
+both the input and output domains, and each subnetwork learns to approximate a
+purely temporal solution. In this phase, we evaluated the accuracy of the PINN
+methods for the hydrodynamic module. In the 6 water tank simulation, PINN and
+NA-PINN showed maximum absolute errors of 1.678 and 0.007, respectively. It
+should be noted that only NA-PINN demonstrated acceptable accuracy. To the best
+of the authors' knowledge, this is the first study to successfully implement a
+system code using PINN. Our future work involves extending NA-PINN to a
+multi-physics solver and developing it in a surrogate manner.",http://arxiv.org/pdf/2504.16447v1,,False
+Towards a fast and robust deep hedging approach,23/04/2025,"Fabienne Schmid, Daniel Oeltz","We present a robust Deep Hedging framework for the pricing and hedging of
+option portfolios that significantly improves training efficiency and model
+robustness. In particular, we propose a neural model for training model
+embeddings which utilizes the paths of several advanced equity option models
+with stochastic volatility in order to learn the relationships that exist
+between hedging strategies. A key advantage of the proposed method is its
+ability to rapidly and reliably adapt to new market regimes through the
+recalibration of a low-dimensional embedding vector, rather than retraining the
+entire network. Moreover, we examine the observed Profit and Loss distributions
+on the parameter space of the models used to learn the embeddings. The results
+show that the proposed framework works well with data generated by complex
+models and can serve as a construction basis for an efficient and robust
+simulation tool for the systematic development of an entirely model-independent
+hedging strategy.",http://arxiv.org/pdf/2504.16436v1,,False
+iTFKAN: Interpretable Time Series Forecasting with Kolmogorov-Arnold Network,23/04/2025,"Ziran Liang, Rui An, Wenqi Fan, Yanghui Rao, Yuxuan Liang","As time evolves, data within specific domains exhibit predictability that
+motivates time series forecasting to predict future trends from historical
+data. However, current deep forecasting methods can achieve promising
+performance but generally lack interpretability, hindering trustworthiness and
+practical deployment in safety-critical applications such as auto-driving and
+healthcare. In this paper, we propose a novel interpretable model, iTFKAN, for
+credible time series forecasting. iTFKAN enables further exploration of model
+decision rationales and underlying data patterns due to its interpretability
+achieved through model symbolization. Besides, iTFKAN develops two strategies,
+prior knowledge injection, and time-frequency synergy learning, to effectively
+guide model learning under complex intertwined time series data. Extensive
+experimental results demonstrated that iTFKAN can achieve promising forecasting
+performance while simultaneously possessing high interpretive capabilities.",http://arxiv.org/pdf/2504.16432v1,,False
+PINN-MEP: Continuous Neural Representations for Minimum-Energy Path Discovery in Molecular Systems,23/04/2025,"Magnus Petersen, Roberto Covino","Characterizing conformational transitions in physical systems remains a
+fundamental challenge in the computational sciences. Traditional sampling
+methods like molecular dynamics (MD) or MCMC often struggle with the
+high-dimensional nature of molecular systems and the high energy barriers of
+transitions between stable states. While these transitions are rare events in
+simulation timescales, they often represent the most biologically significant
+processes - for example, the conformational change of an ion channel protein
+from its closed to open state, which controls cellular ion flow and is crucial
+for neural signaling. Such transitions in real systems may take milliseconds to
+seconds but could require months or years of continuous simulation to observe
+even once. We present a method that reformulates transition path generation as
+a continuous optimization problem solved through physics-informed neural
+networks (PINNs) inspired by string methods for minimum-energy path (MEP)
+generation. By representing transition paths as implicit neural functions and
+leveraging automatic differentiation with differentiable molecular dynamics
+force fields, our method enables the efficient discovery of physically
+realistic transition pathways without requiring expensive path sampling. We
+demonstrate our method's effectiveness on two proteins, including an explicitly
+hydrated bovine pancreatic trypsin inhibitor (BPTI) system with over 8,300
+atoms.",http://arxiv.org/pdf/2504.16381v1,,False
+Unbiased simulation of Asian options,23/04/2025,"Bruno Bouchard, Xiaolu Tan","We provide an extension of the unbiased simulation method for SDEs developed
+in Henry-Labordere et al. [Ann Appl Probab. 27:6 (2017) 1-37] to a class of
+path-dependent dynamics, pertaining for Asian options. In our setting, both the
+payoff and the SDE's coefficients depend on the (weighted) average of the
+process or, more precisely, on the integral of the solution to the SDE against
+a continuous function with bounded variations. In particular, this applies to
+the numerical resolution of the class of path-dependent PDEs whose regularity,
+in the sens of Dupire, is studied in Bouchard and Tan [Ann. I.H.P., to appear].",http://arxiv.org/pdf/2504.16349v1,,False

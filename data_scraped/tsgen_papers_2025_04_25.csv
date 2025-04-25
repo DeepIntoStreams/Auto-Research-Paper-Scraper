@@ -1,0 +1,205 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Revisiting Reset Mechanisms in Spiking Neural Networks for Sequential Modeling: Specialized Discretization for Binary Activated RNN,24/04/2025,Enqi Zhang,"In the field of image recognition, spiking neural networks (SNNs) have
+achieved performance comparable to conventional artificial neural networks
+(ANNs). In such applications, SNNs essentially function as traditional neural
+networks with quantized activation values. This article focuses on an another
+alternative perspective,viewing SNNs as binary-activated recurrent neural
+networks (RNNs) for sequential modeling tasks.From this viewpoint, current SNN
+architectures face several fundamental challenges in sequence modeling: (1)
+Traditional models lack effective memory mechanisms for long-range sequence
+modeling; (2) The biological-inspired components in SNNs (such as reset
+mechanisms and refractory period applications) remain theoretically
+under-explored for sequence tasks; (3) The RNN-like computational paradigm in
+SNNs prevents parallel training across different timesteps.To address these
+challenges, this study conducts a systematic analysis of the fundamental
+mechanisms underlying reset operations and refractory periods in
+binary-activated RNN-based SNN sequence models. We re-examine whether such
+biological mechanisms are strictly necessary for generating sparse spiking
+patterns, provide new theoretical explanations and insights, and ultimately
+propose the fixed-refractory-period SNN architecture for sequence modeling.",http://arxiv.org/pdf/2504.17751v1,,False
+"Effortless, Simulation-Efficient Bayesian Inference using Tabular Foundation Models",24/04/2025,"Julius Vetter, Manuel Gloeckler, Daniel Gedon, Jakob H. Macke","Simulation-based inference (SBI) offers a flexible and general approach to
+performing Bayesian inference: In SBI, a neural network is trained on synthetic
+data simulated from a model and used to rapidly infer posterior distributions
+for observed data. A key goal for SBI is to achieve accurate inference with as
+few simulations as possible, especially for expensive simulators. In this work,
+we address this challenge by repurposing recent probabilistic foundation models
+for tabular data: We show how tabular foundation models -- specifically TabPFN
+-- can be used as pre-trained autoregressive conditional density estimators for
+SBI. We propose Neural Posterior Estimation with Prior-data Fitted Networks
+(NPE-PF) and show that it is competitive with current SBI approaches in terms
+of accuracy for both benchmark tasks and two complex scientific inverse
+problems. Crucially, it often substantially outperforms them in terms of
+simulation efficiency, sometimes requiring orders of magnitude fewer
+simulations. NPE-PF eliminates the need for inference network selection,
+training, and hyperparameter tuning. We also show that it exhibits superior
+robustness to model misspecification and can be scaled to simulation budgets
+that exceed the context size limit of TabPFN. NPE-PF provides a new direction
+for SBI, where training-free, general-purpose inference models offer efficient,
+easy-to-use, and flexible solutions for a wide range of stochastic inverse
+problems.",http://arxiv.org/pdf/2504.17660v1,,False
+polyGen: A Learning Framework for Atomic-level Polymer Structure Generation,24/04/2025,"Ayush Jain, Rampi Ramprasad","Synthetic polymeric materials underpin fundamental technologies in the
+energy, electronics, consumer goods, and medical sectors, yet their development
+still suffers from prolonged design timelines. Although polymer informatics
+tools have supported speedup, polymer simulation protocols continue to face
+significant challenges: on-demand generation of realistic 3D atomic structures
+that respect the conformational diversity of polymer structures. Generative
+algorithms for 3D structures of inorganic crystals, bio-polymers, and small
+molecules exist, but have not addressed synthetic polymers. In this work, we
+introduce polyGen, the first latent diffusion model designed specifically to
+generate realistic polymer structures from minimal inputs such as the repeat
+unit chemistry alone, leveraging a molecular encoding that captures polymer
+connectivity throughout the architecture. Due to a scarce dataset of only 3855
+DFT-optimized polymer structures, we augment our training with DFT-optimized
+molecular structures, showing improvement in joint learning between similar
+chemical structures. We also establish structure matching criteria to benchmark
+our approach on this novel problem. polyGen effectively generates diverse
+conformations of both linear chains and complex branched structures, though its
+performance decreases when handling repeat units with a high atom count. Given
+these initial results, polyGen represents a paradigm shift in atomic-level
+structure generation for polymer science-the first proof-of-concept for
+predicting realistic atomic-level polymer conformations while accounting for
+their intrinsic structural flexibility.",http://arxiv.org/pdf/2504.17656v1,,False
+TarDiff: Target-Oriented Diffusion Guidance for Synthetic Electronic Health Record Time Series Generation,24/04/2025,"Bowen Deng, Chang Xu, Hao Li, Yuhao Huang, Min Hou, Jiang Bian","Synthetic Electronic Health Record (EHR) time-series generation is crucial
+for advancing clinical machine learning models, as it helps address data
+scarcity by providing more training data. However, most existing approaches
+focus primarily on replicating statistical distributions and temporal
+dependencies of real-world data. We argue that fidelity to observed data alone
+does not guarantee better model performance, as common patterns may dominate,
+limiting the representation of rare but important conditions. This highlights
+the need for generate synthetic samples to improve performance of specific
+clinical models to fulfill their target outcomes. To address this, we propose
+TarDiff, a novel target-oriented diffusion framework that integrates
+task-specific influence guidance into the synthetic data generation process.
+Unlike conventional approaches that mimic training data distributions, TarDiff
+optimizes synthetic samples by quantifying their expected contribution to
+improving downstream model performance through influence functions.
+Specifically, we measure the reduction in task-specific loss induced by
+synthetic samples and embed this influence gradient into the reverse diffusion
+process, thereby steering the generation towards utility-optimized data.
+Evaluated on six publicly available EHR datasets, TarDiff achieves
+state-of-the-art performance, outperforming existing methods by up to 20.4% in
+AUPRC and 18.4% in AUROC. Our results demonstrate that TarDiff not only
+preserves temporal fidelity but also enhances downstream model performance,
+offering a robust solution to data scarcity and class imbalance in healthcare
+analytics.",http://arxiv.org/pdf/2504.17613v1,,False
+TileLang: A Composable Tiled Programming Model for AI Systems,24/04/2025,"Lei Wang, Yu Cheng, Yining Shi, Zhengju Tang, Zhiwen Mo, Wenhao Xie, Lingxiao Ma, Yuqing Xia, Jilong Xue, Fan Yang, Zhi Yang","Modern AI workloads rely heavily on optimized computing kernels for both
+training and inference. These AI kernels follow well-defined data-flow
+patterns, such as moving tiles between DRAM and SRAM and performing a sequence
+of computations on those tiles. However, writing high-performance kernels
+remains complex despite the clarity of these patterns. Achieving peak
+performance requires careful, hardware-centric optimizations to fully leverage
+modern accelerators. While domain-specific compilers attempt to reduce the
+burden of writing high-performance kernels, they often struggle with usability
+and expressiveness gaps. In this paper, we present TileLang, a generalized
+tiled programming model for more efficient AI Kernel programming. TileLang
+decouples scheduling space (thread binding, layout, tensorize and pipeline)
+from dataflow, and encapsulated them as a set of customization annotations and
+primitives. This approach allows users to focus on the kernel's data-flow
+itself, while leaving most other optimizations to compilers. We conduct
+comprehensive experiments on commonly-used devices, across numerous
+experiments, our evaluation shows that TileLang can achieve state-of-the-art
+performance in key kernels, demonstrating that its unified block-and-thread
+paradigm and transparent scheduling capabilities deliver both the power and
+flexibility demanded by modern AI system development.",http://arxiv.org/pdf/2504.17577v1,,False
+Tailored minimal reservoir computing: on the bidirectional connection between nonlinearities in the reservoir and in data,24/04/2025,"Davide Prosperino, Haochun Ma, Christoph Räth","We study how the degree of nonlinearity in the input data affects the optimal
+design of reservoir computers, focusing on how closely the model's nonlinearity
+should align with that of the data. By reducing minimal RCs to a single tunable
+nonlinearity parameter, we explore how the predictive performance varies with
+the degree of nonlinearity in the reservoir. To provide controlled testbeds, we
+generalize to the fractional Halvorsen system, a novel chaotic system with
+fractional exponents. Our experiments reveal that the prediction performance is
+maximized when the reservoir's nonlinearity matches the nonlinearity present in
+the data. In cases where multiple nonlinearities are present in the data, we
+find that the correlation dimension of the predicted signal is reconstructed
+correctly when the smallest nonlinearity is matched. We use this observation to
+propose a method for estimating the minimal nonlinearity in unknown time series
+by sweeping the reservoir exponent and identifying the transition to a
+successful reconstruction. Applying this method to both synthetic and
+real-world datasets, including financial time series, we demonstrate its
+practical viability. Finally, we transfer these insights to classical RC by
+augmenting traditional architectures with fractional, generalized reservoir
+states. This yields performance gains, particularly in resource-constrained
+scenarios such as physical reservoirs, where increasing reservoir size is
+impractical or economically unviable. Our work provides a principled route
+toward tailoring RCs to the intrinsic complexity of the systems they aim to
+model.",http://arxiv.org/pdf/2504.17503v1,,False
+Doubly Adaptive Social Learning,24/04/2025,"Marco Carpentiero, Virginia Bordignon, Vincenzo Matta, Ali H. Sayed","In social learning, a network of agents assigns probability scores (beliefs)
+to some hypotheses of interest, which rule the generation of local streaming
+data observed by each agent. Belief formation takes place by means of an
+iterative two-step procedure where: i) the agents update locally their beliefs
+by using some likelihood model; and ii) the updated beliefs are combined with
+the beliefs of the neighboring agents, using a pooling rule. This procedure can
+fail to perform well in the presence of dynamic drifts, leading the agents to
+incorrect decision making. Here, we focus on the fully online setting where
+both the true hypothesis and the likelihood models can change over time. We
+propose the doubly adaptive social learning ($\text{A}^2\text{SL}$) strategy,
+which infuses social learning with the necessary adaptation capabilities. This
+goal is achieved by exploiting two adaptation stages: i) a stochastic gradient
+descent update to learn and track the drifts in the decision model; ii) and an
+adaptive belief update to track the true hypothesis changing over time. These
+stages are controlled by two adaptation parameters that govern the evolution of
+the error probability for each agent. We show that all agents learn
+consistently for sufficiently small adaptation parameters, in the sense that
+they ultimately place all their belief mass on the true hypothesis. In
+particular, the probability of choosing the wrong hypothesis converges to
+values on the order of the adaptation parameters. The theoretical analysis is
+illustrated both on synthetic data and by applying the $\text{A}^2\text{SL}$
+strategy to a social learning problem in the online setting using real data.",http://arxiv.org/pdf/2504.17370v1,,False
+Data-Driven Surrogate Modeling Techniques to Predict the Effective Contact Area of Rough Surface Contact Problems,24/04/2025,"Tarik Sahin, Jacopo Bonari, Sebastian Brandstaeter, Alexander Popp","The effective contact area in rough surface contact plays a critical role in
+multi-physics phenomena such as wear, sealing, and thermal or electrical
+conduction. Although accurate numerical methods, like the Boundary Element
+Method (BEM), are available to compute this quantity, their high computational
+cost limits their applicability in multi-query contexts, such as uncertainty
+quantification, parameter identification, and multi-scale algorithms, where
+many repeated evaluations are required. This study proposes a surrogate
+modeling framework for predicting the effective contact area using
+fast-to-evaluate data-driven techniques. Various machine learning algorithms
+are trained on a precomputed dataset, where the inputs are the imposed load and
+statistical roughness parameters, and the output is the corresponding effective
+contact area. All models undergo hyperparameter optimization to enable fair
+comparisons in terms of predictive accuracy and computational efficiency,
+evaluated using established quantitative metrics. Among the models, the Kernel
+Ridge Regressor demonstrates the best trade-off between accuracy and
+efficiency, achieving high predictive accuracy, low prediction time, and
+minimal training overhead-making it a strong candidate for general-purpose
+surrogate modeling. The Gaussian Process Regressor provides an attractive
+alternative when uncertainty quantification is required, although it incurs
+additional computational cost due to variance estimation. The generalization
+capability of the Kernel Ridge model is validated on an unseen simulation
+scenario, confirming its ability to transfer to new configurations. Database
+generation constitutes the dominant cost in the surrogate modeling process.
+Nevertheless, the approach proves practical and efficient for multi-query
+tasks, even when accounting for this initial expense.",http://arxiv.org/pdf/2504.17354v1,,False
+Dargana: fine-tuning EarthPT for dynamic tree canopy mapping from space,24/04/2025,"Michael J. Smith, Luke Fleming, James E. Geach, Ryan J. Roberts, Freddie Kalaitzis, James Banister","We present Dargana, a fine-tuned variant of the EarthPT time-series
+foundation model that achieves specialisation using <3% of its pre-training
+data volume and 5% of its pre-training compute. Dargana is fine-tuned to
+generate regularly updated classification of tree canopy cover at 10m
+resolution, distinguishing conifer and broadleaved tree types. Using Cornwall,
+UK, as a test case, the model achieves a pixel-level ROC-AUC of 0.98 and a
+PR-AUC of 0.83 on unseen satellite imagery. Dargana can identify fine
+structures like hedgerows and coppice below the training sample limit, and can
+track temporal changes to canopy cover such as new woodland establishment. Our
+results demonstrate how pre-trained Large Observation Models like EarthPT can
+be specialised for granular, dynamic land cover monitoring from space,
+providing a valuable, scalable tool for natural capital management and
+conservation.",http://arxiv.org/pdf/2504.17321v1,,False
+Causal rule ensemble approach for multi-arm data,24/04/2025,"Ke Wan, Kensuke Tanioka, Toshio Shimokawa","Heterogeneous treatment effect (HTE) estimation is critical in medical
+research. It provides insights into how treatment effects vary among
+individuals, which can provide statistical evidence for precision medicine.
+While most existing methods focus on binary treatment situations, real-world
+applications often involve multiple interventions. However, current HTE
+estimation methods are primarily designed for binary comparisons and often rely
+on black-box models, which limit their applicability and interpretability in
+multi-arm settings. To address these challenges, we propose an interpretable
+machine learning framework for HTE estimation in multi-arm trials. Our method
+employs a rule-based ensemble approach consisting of rule generation, rule
+ensemble, and HTE estimation, ensuring both predictive accuracy and
+interpretability. Through extensive simulation studies and real data
+applications, the performance of our method was evaluated against
+state-of-the-art multi-arm HTE estimation approaches. The results indicate that
+our approach achieved lower bias and higher estimation accuracy compared with
+those of existing methods. Furthermore, the interpretability of our framework
+allows clearer insights into how covariates influence treatment effects,
+facilitating clinical decision making. By bridging the gap between accuracy and
+interpretability, our study contributes a valuable tool for multi-arm HTE
+estimation, supporting precision medicine.",http://arxiv.org/pdf/2504.17166v1,,False

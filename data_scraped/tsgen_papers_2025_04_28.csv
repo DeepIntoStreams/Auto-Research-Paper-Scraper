@@ -1,0 +1,213 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+TRACE Back from the Future: A Probabilistic Reasoning Approach to Controllable Language Generation,25/04/2025,"Gwen Yidou Weng, Benjie Wang, Guy Van den Broeck","As large language models (LMs) advance, there is an increasing need to
+control their outputs to align with human values (e.g., detoxification) or
+desired attributes (e.g., personalization, topic). However, autoregressive
+models focus on next-token predictions and struggle with global properties that
+require looking ahead. Existing solutions either tune or post-train LMs for
+each new attribute - expensive and inflexible - or approximate the Expected
+Attribute Probability (EAP) of future sequences by sampling or training, which
+is slow and unreliable for rare attributes. We introduce TRACE (Tractable
+Probabilistic Reasoning for Adaptable Controllable gEneration), a novel
+framework that efficiently computes EAP and adapts to new attributes through
+tractable probabilistic reasoning and lightweight control. TRACE distills a
+Hidden Markov Model (HMM) from an LM and pairs it with a small classifier to
+estimate attribute probabilities, enabling exact EAP computation over the HMM's
+predicted futures. This EAP is then used to reweigh the LM's next-token
+probabilities for globally compliant continuations. Empirically, TRACE achieves
+state-of-the-art results in detoxification with only 10% decoding overhead,
+adapts to 76 low-resource personalized LLMs within seconds, and seamlessly
+extends to composite attributes.",http://arxiv.org/pdf/2504.18535v1,,False
+Representation Learning for Distributional Perturbation Extrapolation,25/04/2025,"Julius von Kügelgen, Jakob Ketterer, Xinwei Shen, Nicolai Meinshausen, Jonas Peters","We consider the problem of modelling the effects of unseen perturbations such
+as gene knockdowns or drug combinations on low-level measurements such as RNA
+sequencing data. Specifically, given data collected under some perturbations,
+we aim to predict the distribution of measurements for new perturbations. To
+address this challenging extrapolation task, we posit that perturbations act
+additively in a suitable, unknown embedding space. More precisely, we formulate
+the generative process underlying the observed data as a latent variable model,
+in which perturbations amount to mean shifts in latent space and can be
+combined additively. Unlike previous work, we prove that, given sufficiently
+diverse training perturbations, the representation and perturbation effects are
+identifiable up to affine transformation, and use this to characterize the
+class of unseen perturbations for which we obtain extrapolation guarantees. To
+estimate the model from data, we propose a new method, the perturbation
+distribution autoencoder (PDAE), which is trained by maximising the
+distributional similarity between true and predicted perturbation
+distributions. The trained model can then be used to predict previously unseen
+perturbation distributions. Empirical evidence suggests that PDAE compares
+favourably to existing methods and baselines at predicting the effects of
+unseen perturbations.",http://arxiv.org/pdf/2504.18522v1,,False
+Kimi-Audio Technical Report,25/04/2025,"KimiTeam, Ding Ding, Zeqian Ju, Yichong Leng, Songxiang Liu, Tong Liu, Zeyu Shang, Kai Shen, Wei Song, Xu Tan, Heyi Tang, Zhengtao Wang, Chu Wei, Yifei Xin, Xinran Xu, Jianwei Yu, Yutao Zhang, Xinyu Zhou, Y. Charles, Jun Chen, Yanru Chen, Yulun Du, Weiran He, Zhenxing Hu, Guokun Lai, Qingcheng Li, Yangyang Liu, Weidong Sun, Jianzhou Wang, Yuzhi Wang, Yuefeng Wu, Yuxin Wu, Dongchao Yang, Hao Yang, Ying Yang, Zhilin Yang, Aoxiong Yin, Ruibin Yuan, Yutong Zhang, Zaida Zhou","We present Kimi-Audio, an open-source audio foundation model that excels in
+audio understanding, generation, and conversation. We detail the practices in
+building Kimi-Audio, including model architecture, data curation, training
+recipe, inference deployment, and evaluation. Specifically, we leverage a
+12.5Hz audio tokenizer, design a novel LLM-based architecture with continuous
+features as input and discrete tokens as output, and develop a chunk-wise
+streaming detokenizer based on flow matching. We curate a pre-training dataset
+that consists of more than 13 million hours of audio data covering a wide range
+of modalities including speech, sound, and music, and build a pipeline to
+construct high-quality and diverse post-training data. Initialized from a
+pre-trained LLM, Kimi-Audio is continual pre-trained on both audio and text
+data with several carefully designed tasks, and then fine-tuned to support a
+diverse of audio-related tasks. Extensive evaluation shows that Kimi-Audio
+achieves state-of-the-art performance on a range of audio benchmarks including
+speech recognition, audio understanding, audio question answering, and speech
+conversation. We release the codes, model checkpoints, as well as the
+evaluation toolkits in https://github.com/MoonshotAI/Kimi-Audio.",http://arxiv.org/pdf/2504.18425v1,,False
+"Enhanced Sampling, Public Dataset and Generative Model for Drug-Protein Dissociation Dynamics",25/04/2025,"Maodong Li, Jiying Zhang, Bin Feng, Wenqi Zeng, Dechin Chen, Zhijun Pan, Yu Li, Zijing Liu, Yi Isaac Yang","Drug-protein binding and dissociation dynamics are fundamental to
+understanding molecular interactions in biological systems. While many tools
+for drug-protein interaction studies have emerged, especially artificial
+intelligence (AI)-based generative models, predictive tools on
+binding/dissociation kinetics and dynamics are still limited. We propose a
+novel research paradigm that combines molecular dynamics (MD) simulations,
+enhanced sampling, and AI generative models to address this issue. We propose
+an enhanced sampling strategy to efficiently implement the drug-protein
+dissociation process in MD simulations and estimate the free energy surface
+(FES). We constructed a program pipeline of MD simulations based on this
+sampling strategy, thus generating a dataset including 26,612 drug-protein
+dissociation trajectories containing about 13 million frames. We named this
+dissociation dynamics dataset DD-13M and used it to train a deep equivariant
+generative model UnbindingFlow, which can generate collision-free dissociation
+trajectories. The DD-13M database and UnbindingFlow model represent a
+significant advancement in computational structural biology, and we anticipate
+its broad applicability in machine learning studies of drug-protein
+interactions. Our ongoing efforts focus on expanding this methodology to
+encompass a broader spectrum of drug-protein complexes and exploring novel
+applications in pathway prediction.",http://arxiv.org/pdf/2504.18367v1,,False
+Deep Reinforcement Learning Based Navigation with Macro Actions and Topological Maps,25/04/2025,"Simon Hakenes, Tobias Glasmachers","This paper addresses the challenge of navigation in large, visually complex
+environments with sparse rewards. We propose a method that uses object-oriented
+macro actions grounded in a topological map, allowing a simple Deep Q-Network
+(DQN) to learn effective navigation policies. The agent builds a map by
+detecting objects from RGBD input and selecting discrete macro actions that
+correspond to navigating to these objects. This abstraction drastically reduces
+the complexity of the underlying reinforcement learning problem and enables
+generalization to unseen environments. We evaluate our approach in a
+photorealistic 3D simulation and show that it significantly outperforms a
+random baseline under both immediate and terminal reward conditions. Our
+results demonstrate that topological structure and macro-level abstraction can
+enable sample-efficient learning even from pixel data.",http://arxiv.org/pdf/2504.18300v1,,False
+Numerical Generalized Randomized Hamiltonian Monte Carlo for piecewise smooth target densities,25/04/2025,"Jimmy Huy Tran, Tore Selland Kleppe","Traditional gradient-based sampling methods, like standard Hamiltonian Monte
+Carlo, require that the desired target distribution is continuous and
+differentiable. This limits the types of models one can define, although the
+presented models capture the reality in the observations better. In this
+project, Generalized Randomized Hamiltonian Monte Carlo (GRHMC) processes for
+sampling continuous densities with discontinuous gradient and piecewise smooth
+targets are proposed. The methods combine the advantages of Hamiltonian Monte
+Carlo methods with the nature of continuous time processes in the form of
+piecewise deterministic Markov processes to sample from such distributions. It
+is argued that the techniques lead to GRHMC processes that admit the desired
+target distribution as the invariant distribution in both scenarios. Simulation
+experiments verifying this fact and several relevant real-life models are
+presented, including a new parameterization of the spike and slab prior for
+regularized linear regression that returns sparse coefficient estimates and a
+regime switching volatility model.",http://arxiv.org/pdf/2504.18210v1,,False
+An Open-Source and Reproducible Implementation of LSTM and GRU Networks for Time Series Forecasting,25/04/2025,"Gissel Velarde, Pedro Branez, Alejandro Bueno, Rodrigo Heredia, Mateo Lopez-Ledezma","This paper introduces an open-source and reproducible implementation of Long
+Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) Networks for time
+series forecasting. We evaluated LSTM and GRU networks because of their
+performance reported in related work. We describe our method and its results on
+two datasets. The first dataset is the S&P BSE BANKEX, composed of stock time
+series (closing prices) of ten financial institutions. The second dataset,
+called Activities, comprises ten synthetic time series resembling weekly
+activities with five days of high activity and two days of low activity. We
+report Root Mean Squared Error (RMSE) between actual and predicted values, as
+well as Directional Accuracy (DA). We show that a single time series from a
+dataset can be used to adequately train the networks if the sequences in the
+dataset contain patterns that repeat, even with certain variation, and are
+properly processed. For 1-step ahead and 20-step ahead forecasts, LSTM and GRU
+networks significantly outperform a baseline on the Activities dataset. The
+baseline simply repeats the last available value. On the stock market dataset,
+the networks perform just like the baseline, possibly due to the nature of
+these series. We release the datasets used as well as the implementation with
+all experiments performed to enable future comparisons and to make our research
+reproducible.",http://arxiv.org/pdf/2504.18185v1,10.3390/engproc2022018030,False
+Subject-independent Classification of Meditative State from the Resting State using EEG,25/04/2025,"Jerrin Thomas Panachakel, Pradeep Kumar G., Suryaa Seran, Kanishka Sharma, Ramakrishnan Angarai Ganesan","While it is beneficial to objectively determine whether a subject is
+meditating, most research in the literature reports good results only in a
+subject-dependent manner. This study aims to distinguish the modified state of
+consciousness experienced during Rajyoga meditation from the resting state of
+the brain in a subject-independent manner using EEG data. Three architectures
+have been proposed and evaluated: The CSP-LDA Architecture utilizes common
+spatial pattern (CSP) for feature extraction and linear discriminant analysis
+(LDA) for classification. The CSP-LDA-LSTM Architecture employs CSP for feature
+extraction, LDA for dimensionality reduction, and long short-term memory (LSTM)
+networks for classification, modeling the binary classification problem as a
+sequence learning problem. The SVD-NN Architecture uses singular value
+decomposition (SVD) to select the most relevant components of the EEG signals
+and a shallow neural network (NN) for classification. The CSP-LDA-LSTM
+architecture gives the best performance with 98.2% accuracy for intra-subject
+classification. The SVD-NN architecture provides significant performance with
+96.4\% accuracy for inter-subject classification. This is comparable to the
+best-reported accuracies in the literature for intra-subject classification.
+Both architectures are capable of capturing subject-invariant EEG features for
+effectively classifying the meditative state from the resting state. The high
+intra-subject and inter-subject classification accuracies indicate these
+systems' robustness and their ability to generalize across different subjects.",http://arxiv.org/pdf/2504.18095v1,,False
+Opportunistic Collaborative Planning with Large Vision Model Guided Control and Joint Query-Service Optimization,25/04/2025,"Jiayi Chen, Shuai Wang, Guoliang Li, Wei Xu, Guangxu Zhu, Derrick Wing Kwan Ng, Chengzhong Xu","Navigating autonomous vehicles in open scenarios is a challenge due to the
+difficulties in handling unseen objects. Existing solutions either rely on
+small models that struggle with generalization or large models that are
+resource-intensive. While collaboration between the two offers a promising
+solution, the key challenge is deciding when and how to engage the large model.
+To address this issue, this paper proposes opportunistic collaborative planning
+(OCP), which seamlessly integrates efficient local models with powerful cloud
+models through two key innovations. First, we propose large vision model guided
+model predictive control (LVM-MPC), which leverages the cloud for LVM
+perception and decision making. The cloud output serves as a global guidance
+for a local MPC, thereby forming a closed-loop perception-to-control system.
+Second, to determine the best timing for large model query and service, we
+propose collaboration timing optimization (CTO), including object detection
+confidence thresholding (ODCT) and cloud forward simulation (CFS), to decide
+when to seek cloud assistance and when to offer cloud service. Extensive
+experiments show that the proposed OCP outperforms existing methods in terms of
+both navigation time and success rate.",http://arxiv.org/pdf/2504.18057v1,,False
+Modes of Sequence Models and Learning Coefficients,25/04/2025,"Zhongtian Chen, Daniel Murfet","We develop a geometric account of sequence modelling that links patterns in
+the data to measurable properties of the loss landscape in transformer
+networks. First, we cast conditional sequence distributions into a
+Hilbert-space framework and apply tensor decompositions to identify their
+principal modes. Truncating the small-amplitude modes yields an effective data
+distribution that preserves dominant structure while discarding statistical
+detail. Second, we show theoretically that Local Learning Coefficient (LLC)
+estimates are insensitive to modes below a data-dependent threshold.
+Consequently, the LLC calculated in practice characterises the geometry of the
+effective rather than the true distribution. This insight clarifies why
+reliable LLC estimates can be obtained even when a network parameter is not a
+strict minimiser of the population loss, and it highlights how the inverse
+temperature in SGLD acts as a resolution dial on the landscape structure.",http://arxiv.org/pdf/2504.18048v1,,False
+Sky-Drive: A Distributed Multi-Agent Simulation Platform for Socially-Aware and Human-AI Collaborative Future Transportation,25/04/2025,"Zilin Huang, Zihao Sheng, Zhengyang Wan, Yansong Qu, Yuhao Luo, Boyue Wang, Pei Li, Yen-Jung Chen, Jiancong Chen, Keke Long, Jiayi Meng, Yue Leng, Sikai Chen","Recent advances in autonomous system simulation platforms have significantly
+enhanced the safe and scalable testing of driving policies. However, existing
+simulators do not yet fully meet the needs of future transportation research,
+particularly in modeling socially-aware driving agents and enabling effective
+human-AI collaboration. This paper introduces Sky-Drive, a novel distributed
+multi-agent simulation platform that addresses these limitations through four
+key innovations: (a) a distributed architecture for synchronized simulation
+across multiple terminals; (b) a multi-modal human-in-the-loop framework
+integrating diverse sensors to collect rich behavioral data; (c) a human-AI
+collaboration mechanism supporting continuous and adaptive knowledge exchange;
+and (d) a digital twin (DT) framework for constructing high-fidelity virtual
+replicas of real-world transportation environments. Sky-Drive supports diverse
+applications such as autonomous vehicle (AV)-vulnerable road user (VRU)
+interaction modeling, human-in-the-loop training, socially-aware reinforcement
+learning, personalized driving policy, and customized scenario generation.
+Future extensions will incorporate foundation models for context-aware decision
+support and hardware-in-the-loop (HIL) testing for real-world validation. By
+bridging scenario generation, data collection, algorithm training, and hardware
+integration, Sky-Drive has the potential to become a foundational platform for
+the next generation of socially-aware and human-centered autonomous
+transportation research. The demo video and code are available
+at:https://sky-lab-uw.github.io/Sky-Drive-website/",http://arxiv.org/pdf/2504.18010v1,,False
+"Streaming, Fast and Slow: Cognitive Load-Aware Streaming for Efficient LLM Serving",25/04/2025,"Chang Xiao, Brenda Yang","Generative conversational interfaces powered by large language models (LLMs)
+typically stream output token-by-token at a rate determined by computational
+budget, often neglecting actual human reading speeds and the cognitive load
+associated with the content. This mismatch frequently leads to inefficient use
+of computational resources. For example, in cloud-based services, streaming
+content faster than users can read appears unnecessary, resulting in wasted
+computational resources and potential delays for other users, particularly
+during peak usage periods. To address this issue, we propose an adaptive
+streaming method that dynamically adjusts the pacing of LLM streaming output in
+real-time based on inferred cognitive load. Our approach estimates the
+cognitive load associated with streaming content and strategically slows down
+the stream during complex or information-rich segments, thereby freeing
+computational resources for other users. Our statistical analysis of
+computational savings, combined with crowdsourced user studies, provides
+insights into the trade-offs between service efficiency and user satisfaction,
+demonstrating that our method can significantly reduce computational
+consumption up to 16.8\%. This context-aware computational resource management
+strategy presents a practical framework for enhancing system efficiency in
+cloud-based conversational AI interfaces without compromising user experience.",http://arxiv.org/pdf/2504.17999v1,,False

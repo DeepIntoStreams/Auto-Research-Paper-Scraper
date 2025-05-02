@@ -1,0 +1,279 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Robotic Visual Instruction,01/05/2025,"Yanbang Li, Ziyang Gong, Haoyang Li, Haoyang Li, Xiaoqi Huang, Haolan Kang, Guangping Bai, Xianzheng Ma","Recently, natural language has been the primary medium for human-robot
+interaction. However, its inherent lack of spatial precision for robotic
+control introduces challenges such as ambiguity and verbosity. To address these
+limitations, we introduce the Robotic Visual Instruction (RoVI), a novel
+paradigm to guide robotic tasks through an object-centric, hand-drawn symbolic
+representation. RoVI effectively encodes spatial-temporal information into
+human-interpretable visual instructions through 2D sketches, utilizing arrows,
+circles, colors, and numbers to direct 3D robotic manipulation. To enable
+robots to understand RoVI better and generate precise actions based on RoVI, we
+present Visual Instruction Embodied Workflow (VIEW), a pipeline formulated for
+RoVI-conditioned policies. This approach leverages Vision-Language Models
+(VLMs) to interpret RoVI inputs, decode spatial and temporal constraints from
+2D pixel space via keypoint extraction, and then transform them into executable
+3D action sequences. We additionally curate a specialized dataset of 15K
+instances to fine-tune small VLMs for edge deployment, enabling them to
+effectively learn RoVI capabilities. Our approach is rigorously validated
+across 11 novel tasks in both real and simulated environments, demonstrating
+significant generalization capability. Notably, VIEW achieves an 87.5% success
+rate in real-world scenarios involving unseen tasks that feature multi-step
+actions, with disturbances, and trajectory-following requirements. Code and
+Datasets in this paper will be released soon.",http://arxiv.org/pdf/2505.00693v1,,False
+Towards Autonomous Micromobility through Scalable Urban Simulation,01/05/2025,"Wayne Wu, Honglin He, Chaoyuan Zhang, Jack He, Seth Z. Zhao, Ran Gong, Quanyi Li, Bolei Zhou","Micromobility, which utilizes lightweight mobile machines moving in urban
+public spaces, such as delivery robots and mobility scooters, emerges as a
+promising alternative to vehicular mobility. Current micromobility depends
+mostly on human manual operation (in-person or remote control), which raises
+safety and efficiency concerns when navigating busy urban environments full of
+unpredictable obstacles and pedestrians. Assisting humans with AI agents in
+maneuvering micromobility devices presents a viable solution for enhancing
+safety and efficiency. In this work, we present a scalable urban simulation
+solution to advance autonomous micromobility. First, we build URBAN-SIM - a
+high-performance robot learning platform for large-scale training of embodied
+agents in interactive urban scenes. URBAN-SIM contains three critical modules:
+Hierarchical Urban Generation pipeline, Interactive Dynamics Generation
+strategy, and Asynchronous Scene Sampling scheme, to improve the diversity,
+realism, and efficiency of robot learning in simulation. Then, we propose
+URBAN-BENCH - a suite of essential tasks and benchmarks to gauge various
+capabilities of the AI agents in achieving autonomous micromobility.
+URBAN-BENCH includes eight tasks based on three core skills of the agents:
+Urban Locomotion, Urban Navigation, and Urban Traverse. We evaluate four robots
+with heterogeneous embodiments, such as the wheeled and legged robots, across
+these tasks. Experiments on diverse terrains and urban structures reveal each
+robot's strengths and limitations.",http://arxiv.org/pdf/2505.00690v1,,False
+Open-Source LLM-Driven Federated Transformer for Predictive IoV Management,01/05/2025,"Yazan Otoum, Arghavan Asad, Ishtiaq Ahmad","The proliferation of connected vehicles within the Internet of Vehicles (IoV)
+ecosystem presents critical challenges in ensuring scalable, real-time, and
+privacy-preserving traffic management. Existing centralized IoV solutions often
+suffer from high latency, limited scalability, and reliance on proprietary
+Artificial Intelligence (AI) models, creating significant barriers to
+widespread deployment, particularly in dynamic and privacy-sensitive
+environments. Meanwhile, integrating Large Language Models (LLMs) in vehicular
+systems remains underexplored, especially concerning prompt optimization and
+effective utilization in federated contexts. To address these challenges, we
+propose the Federated Prompt-Optimized Traffic Transformer (FPoTT), a novel
+framework that leverages open-source LLMs for predictive IoV management. FPoTT
+introduces a dynamic prompt optimization mechanism that iteratively refines
+textual prompts to enhance trajectory prediction. The architecture employs a
+dual-layer federated learning paradigm, combining lightweight edge models for
+real-time inference with cloud-based LLMs to retain global intelligence. A
+Transformer-driven synthetic data generator is incorporated to augment training
+with diverse, high-fidelity traffic scenarios in the Next Generation Simulation
+(NGSIM) format. Extensive evaluations demonstrate that FPoTT, utilizing
+EleutherAI Pythia-1B, achieves 99.86% prediction accuracy on real-world data
+while maintaining high performance on synthetic datasets. These results
+underscore the potential of open-source LLMs in enabling secure, adaptive, and
+scalable IoV management, offering a promising alternative to proprietary
+solutions in smart mobility ecosystems.",http://arxiv.org/pdf/2505.00651v1,,False
+FreqKV: Frequency Domain Key-Value Compression for Efficient Context Window Extension,01/05/2025,"Jushi Kai, Boyi Zeng, Yixuan Wang, Haoli Bai, Bo Jiang, Zhouhan Lin","Extending the context window in large language models (LLMs) is essential for
+applications involving long-form content generation. However, the linear
+increase in key-value (KV) cache memory requirements and the quadratic
+complexity of self-attention with respect to sequence length present
+significant challenges during fine-tuning and inference. Existing methods
+suffer from performance degradation when extending to longer contexts. In this
+work, we introduce a novel context extension method that optimizes both
+fine-tuning and inference efficiency. Our method exploits a key observation: in
+the frequency domain, the energy distribution of the KV cache is primarily
+concentrated in low-frequency components. By filtering out the high-frequency
+components, the KV cache can be effectively compressed with minimal information
+loss. Building on this insight, we propose an efficient compression technique,
+FreqKV, that iteratively compresses the increasing KV cache to a fixed size in
+the frequency domain, applicable to both fine-tuning and inference. FreqKV
+introduces no additional parameters or architectural modifications. With
+minimal fine-tuning, LLMs can learn to leverage the limited cache that is
+compressed in the frequency domain and extend the context window efficiently.
+Experiments on various long context language modeling and understanding tasks
+demonstrate the efficiency and efficacy of the proposed method.",http://arxiv.org/pdf/2505.00570v1,,False
+TeLoGraF: Temporal Logic Planning via Graph-encoded Flow Matching,01/05/2025,"Yue Meng, Chuchu Fan","Learning to solve complex tasks with signal temporal logic (STL)
+specifications is crucial to many real-world applications. However, most
+previous works only consider fixed or parametrized STL specifications due to
+the lack of a diverse STL dataset and encoders to effectively extract temporal
+logic information for downstream tasks. In this paper, we propose TeLoGraF,
+Temporal Logic Graph-encoded Flow, which utilizes Graph Neural Networks (GNN)
+encoder and flow-matching to learn solutions for general STL specifications. We
+identify four commonly used STL templates and collect a total of 200K
+specifications with paired demonstrations. We conduct extensive experiments in
+five simulation environments ranging from simple dynamical models in the 2D
+space to high-dimensional 7DoF Franka Panda robot arm and Ant quadruped
+navigation. Results show that our method outperforms other baselines in the STL
+satisfaction rate. Compared to classical STL planning algorithms, our approach
+is 10-100X faster in inference and can work on any system dynamics. Besides, we
+show our graph-encoding method's capability to solve complex STLs and
+robustness to out-distribution STL specifications. Code is available at
+https://github.com/mengyuest/TeLoGraF",http://arxiv.org/pdf/2505.00562v1,,False
+KnowEEG: Explainable Knowledge Driven EEG Classification,01/05/2025,"Amarpal Sahota, Navid Mohammadi Foumani, Raul Santos-Rodriguez, Zahraa S. Abdallah","Electroencephalography (EEG) is a method of recording brain activity that
+shows significant promise in applications ranging from disease classification
+to emotion detection and brain-computer interfaces. Recent advances in deep
+learning have improved EEG classification performance yet model explainability
+remains an issue. To address this key limitation of explainability we introduce
+KnowEEG; a novel explainable machine learning approach for EEG classification.
+KnowEEG extracts a comprehensive set of per-electrode features, filters them
+using statistical tests, and integrates between-electrode connectivity
+statistics. These features are then input to our modified Random Forest model
+(Fusion Forest) that balances per electrode statistics with between electrode
+connectivity features in growing the trees of the forest. By incorporating
+knowledge from both the generalized time-series and EEG-specific domains,
+KnowEEG achieves performance comparable to or exceeding state-of-the-art deep
+learning models across five different classification tasks: emotion detection,
+mental workload classification, eyes open/closed detection, abnormal EEG
+classification, and event detection. In addition to high performance, KnowEEG
+provides inherent explainability through feature importance scores for
+understandable features. We demonstrate by example on the eyes closed/open
+classification task that this explainability can be used to discover knowledge
+about the classes. This discovered knowledge for eyes open/closed
+classification was proven to be correct by current neuroscience literature.
+Therefore, the impact of KnowEEG will be significant for domains where EEG
+explainability is critical such as healthcare.",http://arxiv.org/pdf/2505.00541v1,,False
+Leveraging Partial SMILES Validation Scheme for Enhanced Drug Design in Reinforcement Learning Frameworks,01/05/2025,"Xinyu Wang, Jinbo Bi, Minghu Song","SMILES-based molecule generation has emerged as a powerful approach in drug
+discovery. Deep reinforcement learning (RL) using large language model (LLM)
+has been incorporated into the molecule generation process to achieve high
+matching score in term of likelihood of desired molecule candidates. However, a
+critical challenge in this approach is catastrophic forgetting during the RL
+phase, where knowledge such as molecule validity, which often exceeds 99\%
+during pretraining, significantly deteriorates. Current RL algorithms applied
+in drug discovery, such as REINVENT, use prior models as anchors to retian
+pretraining knowledge, but these methods lack robust exploration mechanisms. To
+address these issues, we propose Partial SMILES Validation-PPO (PSV-PPO), a
+novel RL algorithm that incorporates real-time partial SMILES validation to
+prevent catastrophic forgetting while encouraging exploration. Unlike
+traditional RL approaches that validate molecule structures only after
+generating entire sequences, PSV-PPO performs stepwise validation at each
+auto-regressive step, evaluating not only the selected token candidate but also
+all potential branches stemming from the prior partial sequence. This enables
+early detection of invalid partial SMILES across all potential paths. As a
+result, PSV-PPO maintains high validity rates even during aggressive
+exploration of the vast chemical space. Our experiments on the PMO and GuacaMol
+benchmark datasets demonstrate that PSV-PPO significantly reduces the number of
+invalid generated structures while maintaining competitive exploration and
+optimization performance. While our work primarily focuses on maintaining
+validity, the framework of PSV-PPO can be extended in future research to
+incorporate additional forms of valuable domain knowledge, further enhancing
+reinforcement learning applications in drug discovery.",http://arxiv.org/pdf/2505.00530v1,,False
+Safety-Critical Traffic Simulation with Guided Latent Diffusion Model,01/05/2025,"Mingxing Peng, Ruoyu Yao, Xusen Guo, Yuting Xie, Xianda Chen, Jun Ma","Safety-critical traffic simulation plays a crucial role in evaluating
+autonomous driving systems under rare and challenging scenarios. However,
+existing approaches often generate unrealistic scenarios due to insufficient
+consideration of physical plausibility and suffer from low generation
+efficiency. To address these limitations, we propose a guided latent diffusion
+model (LDM) capable of generating physically realistic and adversarial
+safety-critical traffic scenarios. Specifically, our model employs a
+graph-based variational autoencoder (VAE) to learn a compact latent space that
+captures complex multi-agent interactions while improving computational
+efficiency. Within this latent space, the diffusion model performs the
+denoising process to produce realistic trajectories. To enable controllable and
+adversarial scenario generation, we introduce novel guidance objectives that
+drive the diffusion process toward producing adversarial and behaviorally
+realistic driving behaviors. Furthermore, we develop a sample selection module
+based on physical feasibility checks to further enhance the physical
+plausibility of the generated scenarios. Extensive experiments on the nuScenes
+dataset demonstrate that our method achieves superior adversarial effectiveness
+and generation efficiency compared to existing baselines while maintaining a
+high level of realism. Our work provides an effective tool for realistic
+safety-critical scenario simulation, paving the way for more robust evaluation
+of autonomous driving systems.",http://arxiv.org/pdf/2505.00515v1,,False
+MULE: Multi-terrain and Unknown Load Adaptation for Effective Quadrupedal Locomotion,01/05/2025,"Vamshi Kumar Kurva, Shishir Kolathaya","Quadrupedal robots are increasingly deployed for load-carrying tasks across
+diverse terrains. While Model Predictive Control (MPC)-based methods can
+account for payload variations, they often depend on predefined gait schedules
+or trajectory generators, limiting their adaptability in unstructured
+environments. To address these limitations, we propose an Adaptive
+Reinforcement Learning (RL) framework that enables quadrupedal robots to
+dynamically adapt to both varying payloads and diverse terrains. The framework
+consists of a nominal policy responsible for baseline locomotion and an
+adaptive policy that learns corrective actions to preserve stability and
+improve command tracking under payload variations. We validate the proposed
+approach through large-scale simulation experiments in Isaac Gym and real-world
+hardware deployment on a Unitree Go1 quadruped. The controller was tested on
+flat ground, slopes, and stairs under both static and dynamic payload changes.
+Across all settings, our adaptive controller consistently outperformed the
+controller in tracking body height and velocity commands, demonstrating
+enhanced robustness and adaptability without requiring explicit gait design or
+manual tuning.",http://arxiv.org/pdf/2505.00488v1,,False
+Interpretable Spatial-Temporal Fusion Transformers: Multi-Output Prediction for Parametric Dynamical Systems with Time-Varying Inputs,01/05/2025,"Shuwen Sun, Lihong Feng, Peter Benner","We explore the promising performance of a transformer model in predicting
+outputs of parametric dynamical systems with external time-varying input
+signals. The outputs of such systems vary not only with physical parameters but
+also with external time-varying input signals. Accurately catching the dynamics
+of such systems is challenging. We have adapted and extended an existing
+transformer model for single output prediction to a multiple-output transformer
+that is able to predict multiple output responses of these systems. The
+multiple-output transformer generalizes the interpretability of the original
+transformer. The generalized interpretable attention weight matrix explores not
+only the temporal correlations in the sequence, but also the interactions
+between the multiple outputs, providing explanation for the spatial correlation
+in the output domain. This multiple-output transformer accurately predicts the
+sequence of multiple outputs, regardless of the nonlinearity of the system and
+the dimensionality of the parameter space.",http://arxiv.org/pdf/2505.00473v1,,False
+CICADA: Cross-Domain Interpretable Coding for Anomaly Detection and Adaptation in Multivariate Time Series,01/05/2025,"Tian Lan, Yifei Gao, Yimeng Lu, Chen Zhang","Unsupervised Time series anomaly detection plays a crucial role in
+applications across industries. However, existing methods face significant
+challenges due to data distributional shifts across different domains, which
+are exacerbated by the non-stationarity of time series over time. Existing
+models fail to generalize under multiple heterogeneous source domains and
+emerging unseen new target domains. To fill the research gap, we introduce
+CICADA (Cross-domain Interpretable Coding for Anomaly Detection and
+Adaptation), with four key innovations: (1) a mixture of experts (MOE)
+framework that captures domain-agnostic anomaly features with high flexibility
+and interpretability; (2) a novel selective meta-learning mechanism to prevent
+negative transfer between dissimilar domains, (3) an adaptive expansion
+algorithm for emerging heterogeneous domain expansion, and (4) a hierarchical
+attention structure that quantifies expert contributions during fusion to
+enhance interpretability further.Extensive experiments on synthetic and
+real-world industrial datasets demonstrate that CICADA outperforms
+state-of-the-art methods in both cross-domain detection performance and
+interpretability.",http://arxiv.org/pdf/2505.00415v1,,False
+Gateformer: Advancing Multivariate Time Series Forecasting through Temporal and Variate-Wise Attention with Gated Representations,01/05/2025,"Yu-Hsiang Lan, Anton Alyakin, Eric K. Oermann","There has been a recent surge of interest in time series modeling using the
+Transformer architecture. However, forecasting multivariate time series with
+Transformer presents a unique challenge as it requires modeling both temporal
+(cross-time) and variate (cross-variate) dependencies. While Transformer-based
+models have gained popularity for their flexibility in capturing both
+sequential and cross-variate relationships, it is unclear how to best integrate
+these two sources of information in the context of the Transformer architecture
+while optimizing for both performance and efficiency. We re-purpose the
+Transformer architecture to effectively model both cross-time and cross-variate
+dependencies. Our approach begins by embedding each variate independently into
+a variate-wise representation that captures its cross-time dynamics, and then
+models cross-variate dependencies through attention mechanisms on these learned
+embeddings. Gating operations in both cross-time and cross-variate modeling
+phases regulate information flow, allowing the model to focus on the most
+relevant features for accurate predictions. Our method achieves
+state-of-the-art performance across 13 real-world datasets and can be
+seamlessly integrated into other Transformer-based and LLM-based forecasters,
+delivering performance improvements up to 20.7\% over original models. Code is
+available at this repository: https://github.com/nyuolab/Gateformer.",http://arxiv.org/pdf/2505.00307v1,,False
+Temporal Attention Evolutional Graph Convolutional Network for Multivariate Time Series Forecasting,01/05/2025,"Xinlong Zhao, Liying Zhang, Tianbo Zou, Yan Zhang","Multivariate time series forecasting enables the prediction of future states
+by leveraging historical data, thereby facilitating decision-making processes.
+Each data node in a multivariate time series encompasses a sequence of multiple
+dimensions. These nodes exhibit interdependent relationships, forming a graph
+structure. While existing prediction methods often assume a fixed graph
+structure, many real-world scenarios involve dynamic graph structures.
+Moreover, interactions among time series observed at different time scales vary
+significantly. To enhance prediction accuracy by capturing precise temporal and
+spatial features, this paper introduces the Temporal Attention Evolutional
+Graph Convolutional Network (TAEGCN). This novel method not only integrates
+causal temporal convolution and a multi-head self-attention mechanism to learn
+temporal features of nodes, but also construct the dynamic graph structure
+based on these temporal features to keep the consistency of the changing in
+spatial feature with temporal series. TAEGCN adeptly captures temporal causal
+relationships and hidden spatial dependencies within the data. Furthermore,
+TAEGCN incorporates a unified neural network that seamlessly integrates these
+components to generate final predictions. Experimental results conducted on two
+public transportation network datasets, METR-LA and PEMS-BAY, demonstrate the
+superior performance of the proposed model.",http://arxiv.org/pdf/2505.00302v1,,False
+Empowering Agentic Video Analytics Systems with Video Language Models,01/05/2025,"Yuxuan Yan, Shiqi Jiang, Ting Cao, Yifan Yang, Qianqian Yang, Yuanchao Shu, Yuqing Yang, Lili Qiu","AI-driven video analytics has become increasingly pivotal across diverse
+domains. However, existing systems are often constrained to specific,
+predefined tasks, limiting their adaptability in open-ended analytical
+scenarios. The recent emergence of Video-Language Models (VLMs) as
+transformative technologies offers significant potential for enabling
+open-ended video understanding, reasoning, and analytics. Nevertheless, their
+limited context windows present challenges when processing ultra-long video
+content, which is prevalent in real-world applications. To address this, we
+introduce AVA, a VLM-powered system designed for open-ended, advanced video
+analytics. AVA incorporates two key innovations: (1) the near real-time
+construction of Event Knowledge Graphs (EKGs) for efficient indexing of long or
+continuous video streams, and (2) an agentic retrieval-generation mechanism
+that leverages EKGs to handle complex and diverse queries. Comprehensive
+evaluations on public benchmarks, LVBench and VideoMME-Long, demonstrate that
+AVA achieves state-of-the-art performance, attaining 62.3% and 64.1% accuracy,
+respectively, significantly surpassing existing VLM and video
+Retrieval-Augmented Generation (RAG) systems. Furthermore, to evaluate video
+analytics in ultra-long and open-world video scenarios, we introduce a new
+benchmark, AVA-100. This benchmark comprises 8 videos, each exceeding 10 hours
+in duration, along with 120 manually annotated, diverse, and complex
+question-answer pairs. On AVA-100, AVA achieves top-tier performance with an
+accuracy of 75.8%.",http://arxiv.org/pdf/2505.00254v1,,False

@@ -1,0 +1,161 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Giving Simulated Cells a Voice: Evolving Prompt-to-Intervention Models for Cellular Control,05/05/2025,"Nam H. Le, Patrick Erikson, Yanbo Zhang, Michael Levin, Josh Bongard","Guiding biological systems toward desired states, such as morphogenetic
+outcomes, remains a fundamental challenge with far-reaching implications for
+medicine and synthetic biology. While large language models (LLMs) have enabled
+natural language as an interface for interpretable control in AI systems, their
+use as mediators for steering biological or cellular dynamics remains largely
+unexplored.
+  In this work, we present a functional pipeline that translates natural
+language prompts into spatial vector fields capable of directing simulated
+cellular collectives. Our approach combines a large language model with an
+evolvable neural controller (Prompt-to-Intervention, or P2I), optimized via
+evolutionary strategies to generate behaviors such as clustering or scattering
+in a simulated 2D environment.
+  We demonstrate that even with constrained vocabulary and simplified cell
+models, evolved P2I networks can successfully align cellular dynamics with
+user-defined goals expressed in plain language. This work offers a complete
+loop from language input to simulated bioelectric-like intervention to
+behavioral output, providing a foundation for future systems capable of natural
+language-driven cellular control.",http://arxiv.org/pdf/2505.02766v1,,False
+LLaMA-Omni2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis,05/05/2025,"Qingkai Fang, Yan Zhou, Shoutao Guo, Shaolei Zhang, Yang Feng","Real-time, intelligent, and natural speech interaction is an essential part
+of the next-generation human-computer interaction. Recent advancements have
+showcased the potential of building intelligent spoken chatbots based on large
+language models (LLMs). In this paper, we introduce LLaMA-Omni 2, a series of
+speech language models (SpeechLMs) ranging from 0.5B to 14B parameters, capable
+of achieving high-quality real-time speech interaction. LLaMA-Omni 2 is built
+upon the Qwen2.5 series models, integrating a speech encoder and an
+autoregressive streaming speech decoder. Despite being trained on only 200K
+multi-turn speech dialogue samples, LLaMA-Omni 2 demonstrates strong
+performance on several spoken question answering and speech instruction
+following benchmarks, surpassing previous state-of-the-art SpeechLMs like
+GLM-4-Voice, which was trained on millions of hours of speech data.",http://arxiv.org/pdf/2505.02625v1,,False
+Towards Cross-Modality Modeling for Time Series Analytics: A Survey in the LLM Era,05/05/2025,"Chenxi Liu, Shaowen Zhou, Qianxiong Xu, Hao Miao, Cheng Long, Ziyue Li, Rui Zhao","The proliferation of edge devices has generated an unprecedented volume of
+time series data across different domains, motivating various well-customized
+methods. Recently, Large Language Models (LLMs) have emerged as a new paradigm
+for time series analytics by leveraging the shared sequential nature of textual
+data and time series. However, a fundamental cross-modality gap between time
+series and LLMs exists, as LLMs are pre-trained on textual corpora and are not
+inherently optimized for time series. Many recent proposals are designed to
+address this issue. In this survey, we provide an up-to-date overview of
+LLMs-based cross-modality modeling for time series analytics. We first
+introduce a taxonomy that classifies existing approaches into four groups based
+on the type of textual data employed for time series modeling. We then
+summarize key cross-modality strategies, e.g., alignment and fusion, and
+discuss their applications across a range of downstream tasks. Furthermore, we
+conduct experiments on multimodal datasets from different application domains
+to investigate effective combinations of textual data and cross-modality
+strategies for enhancing time series analytics. Finally, we suggest several
+promising directions for future research. This survey is designed for a range
+of professionals, researchers, and practitioners interested in LLM-based time
+series modeling.",http://arxiv.org/pdf/2505.02583v1,,False
+Large Language Model Partitioning for Low-Latency Inference at the Edge,05/05/2025,"Dimitrios Kafetzis, Ramin Khalili, Iordanis Koutsopoulos","Large Language Models (LLMs) based on autoregressive, decoder-only
+Transformers generate text one token at a time, where a token represents a
+discrete unit of text. As each newly produced token is appended to the partial
+output sequence, the length grows and so does the memory and compute load, due
+to the expanding key-value caches, which store intermediate representations of
+all previously generated tokens in the multi-head attention (MHA) layer. As
+this iterative process steadily increases memory and compute demands,
+layer-based partitioning in resource-constrained edge environments often
+results in memory overload or high inference latency. To address this and
+reduce inference latency, we propose a resource-aware Transformer architecture
+partitioning algorithm, where the partitioning decision is updated at regular
+intervals during token generation. The approach is myopic in that it is based
+on instantaneous information about device resource availability and network
+link bandwidths. When first executed, the algorithm places blocks on devices,
+and in later executions, it migrates these blocks among devices so that the sum
+of migration delay and inference delay remains low. Our approach partitions the
+decoder at the attention head level, co-locating each attention head with its
+key-value cache and allowing dynamic migrations whenever resources become
+tight. By allocating different attention heads to different devices, we exploit
+parallel execution of attention heads and thus achieve substantial reductions
+in inference delays. Our experiments show that in small-scale settings (3-5
+devices), the proposed method achieves within 15 to 20 percent of an exact
+optimal solver's latency, while in larger-scale tests it achieves notable
+improvements in inference speed and memory usage compared to state-of-the-art
+layer-based partitioning approaches.",http://arxiv.org/pdf/2505.02533v1,,False
+Uncovering Population PK Covariates from VAE-Generated Latent Spaces,05/05/2025,"Diego Perazzolo, Chiara Castellani, Enrico Grisan","Population pharmacokinetic (PopPK) modelling is a fundamental tool for
+understanding drug behaviour across diverse patient populations and enabling
+personalized dosing strategies to improve therapeutic outcomes. A key challenge
+in PopPK analysis lies in identifying and modelling covariates that influence
+drug absorption, as these relationships are often complex and nonlinear.
+Traditional methods may fail to capture hidden patterns within the data. In
+this study, we propose a data-driven, model-free framework that integrates
+Variational Autoencoders (VAEs) deep learning model and LASSO regression to
+uncover key covariates from simulated tacrolimus pharmacokinetic (PK) profiles.
+The VAE compresses high-dimensional PK signals into a structured latent space,
+achieving accurate reconstruction with a mean absolute percentage error (MAPE)
+of 2.26%. LASSO regression is then applied to map patient-specific covariates
+to the latent space, enabling sparse feature selection through L1
+regularization. This approach consistently identifies clinically relevant
+covariates for tacrolimus including SNP, age, albumin, and hemoglobin which are
+retained across the tested regularization strength levels, while effectively
+discarding non-informative features. The proposed VAE-LASSO methodology offers
+a scalable, interpretable, and fully data-driven solution for covariate
+selection, with promising applications in drug development and precision
+pharmacotherapy.",http://arxiv.org/pdf/2505.02514v1,,False
+Resolving Memorization in Empirical Diffusion Model for Manifold Data in High-Dimensional Spaces,05/05/2025,"Yang Lyu, Yuchun Qian, Tan Minh Nguyen, Xin T. Tong","Diffusion models is a popular computational tool to generate new data
+samples. It utilizes a forward diffusion process that add noise to the data
+distribution and then use a reverse process to remove noises to produce samples
+from the data distribution. However, when the empirical data distribution
+consists of $n$ data point, using the empirical diffusion model will
+necessarily produce one of the existing data points. This is often referred to
+as the memorization effect, which is usually resolved by sophisticated machine
+learning procedures in the current literature. This work shows that the
+memorization problem can be resolved by a simple inertia update step at the end
+of the empirical diffusion model simulation. Our inertial diffusion model
+requires only the empirical diffusion model score function and it does not
+require any further training. We show that choosing the inertia diffusion model
+sample distribution is an $O\left(n^{-\frac{2}{d+4}}\right)$ Wasserstein-1
+approximation of a data distribution lying on a $C^2$ manifold of dimension
+$d$. Since this estimate is significant smaller the Wasserstein1 distance
+between population and empirical distributions, it rigorously shows the
+inertial diffusion model produces new data samples. Remarkably, this upper
+bound is completely free of the ambient space dimension, since there is no
+training involved. Our analysis utilizes the fact that the inertial diffusion
+model samples are approximately distributed as the Gaussian kernel density
+estimator on the manifold. This reveals an interesting connection between
+diffusion model and manifold learning.",http://arxiv.org/pdf/2505.02508v1,,False
+T2S: High-resolution Time Series Generation with Text-to-Series Diffusion Models,05/05/2025,"Yunfeng Ge, Jiawei Li, Yiji Zhao, Haomin Wen, Zhao Li, Meikang Qiu, Hongyan Li, Ming Jin, Shirui Pan","Text-to-Time Series generation holds significant potential to address
+challenges such as data sparsity, imbalance, and limited availability of
+multimodal time series datasets across domains. While diffusion models have
+achieved remarkable success in Text-to-X (e.g., vision and audio data)
+generation, their use in time series generation remains in its nascent stages.
+Existing approaches face two critical limitations: (1) the lack of systematic
+exploration of general-proposed time series captions, which are often
+domain-specific and struggle with generalization; and (2) the inability to
+generate time series of arbitrary lengths, limiting their applicability to
+real-world scenarios. In this work, we first categorize time series captions
+into three levels: point-level, fragment-level, and instance-level.
+Additionally, we introduce a new fragment-level dataset containing over 600,000
+high-resolution time series-text pairs. Second, we propose Text-to-Series
+(T2S), a diffusion-based framework that bridges the gap between natural
+language and time series in a domain-agnostic manner. T2S employs a
+length-adaptive variational autoencoder to encode time series of varying
+lengths into consistent latent embeddings. On top of that, T2S effectively
+aligns textual representations with latent embeddings by utilizing Flow
+Matching and employing Diffusion Transformer as the denoiser. We train T2S in
+an interleaved paradigm across multiple lengths, allowing it to generate
+sequences of any desired length. Extensive evaluations demonstrate that T2S
+achieves state-of-the-art performance across 13 datasets spanning 12 domains.",http://arxiv.org/pdf/2505.02417v1,,False
+NeuroSim V1.5: Improved Software Backbone for Benchmarking Compute-in-Memory Accelerators with Device and Circuit-level Non-idealities,05/05/2025,"James Read, Ming-Yen Lee, Wei-Hsing Huang, Yuan-Chun Luo, Anni Lu, Shimeng Yu","The exponential growth of artificial intelligence (AI) applications has
+exposed the inefficiency of conventional von Neumann architectures, where
+frequent data transfers between compute units and memory create significant
+energy and latency bottlenecks. Analog Computing-in-Memory (ACIM) addresses
+this challenge by performing multiply-accumulate (MAC) operations directly in
+the memory arrays, substantially reducing data movement. However, designing
+robust ACIM accelerators requires accurate modeling of device- and
+circuit-level non-idealities. In this work, we present NeuroSim V1.5,
+introducing several key advances: (1) seamless integration with TensorRT's
+post-training quantization flow enabling support for more neural networks
+including transformers, (2) a flexible noise injection methodology built on
+pre-characterized statistical models, making it straightforward to incorporate
+data from SPICE simulations or silicon measurements, (3) expanded device
+support including emerging non-volatile capacitive memories, and (4) up to 6.5x
+faster runtime than NeuroSim V1.4 through optimized behavioral simulation. The
+combination of these capabilities uniquely enables systematic design space
+exploration across both accuracy and hardware efficiency metrics. Through
+multiple case studies, we demonstrate optimization of critical design
+parameters while maintaining network accuracy. By bridging high-fidelity noise
+modeling with efficient simulation, NeuroSim V1.5 advances the design and
+validation of next-generation ACIM accelerators. All NeuroSim versions are
+available open-source at https://github.com/neurosim/NeuroSim.",http://arxiv.org/pdf/2505.02314v1,,False

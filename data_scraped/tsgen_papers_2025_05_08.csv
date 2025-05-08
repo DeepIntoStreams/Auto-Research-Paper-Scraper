@@ -1,0 +1,213 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"Score Distillation Sampling for Audio: Source Separation, Synthesis, and Beyond",07/05/2025,"Jessie Richter-Powell, Antonio Torralba, Jonathan Lorraine","We introduce Audio-SDS, a generalization of Score Distillation Sampling (SDS)
+to text-conditioned audio diffusion models. While SDS was initially designed
+for text-to-3D generation using image diffusion, its core idea of distilling a
+powerful generative prior into a separate parametric representation extends to
+the audio domain. Leveraging a single pretrained model, Audio-SDS enables a
+broad range of tasks without requiring specialized datasets. In particular, we
+demonstrate how Audio-SDS can guide physically informed impact sound
+simulations, calibrate FM-synthesis parameters, and perform prompt-specified
+source separation. Our findings illustrate the versatility of
+distillation-based methods across modalities and establish a robust foundation
+for future work using generative priors in audio tasks.",http://arxiv.org/pdf/2505.04621v1,,False
+Likelihood-Free Adaptive Bayesian Inference via Nonparametric Distribution Matching,07/05/2025,"Wenhui Sophia Lu, Wing Hung Wong","When the likelihood is analytically unavailable and computationally
+intractable, approximate Bayesian computation (ABC) has emerged as a widely
+used methodology for approximate posterior inference; however, it suffers from
+severe computational inefficiency in high-dimensional settings or under diffuse
+priors. To overcome these limitations, we propose Adaptive Bayesian Inference
+(ABI), a framework that bypasses traditional data-space discrepancies and
+instead compares distributions directly in posterior space through
+nonparametric distribution matching. By leveraging a novel Marginally-augmented
+Sliced Wasserstein (MSW) distance on posterior measures and exploiting its
+quantile representation, ABI transforms the challenging problem of measuring
+divergence between posterior distributions into a tractable sequence of
+one-dimensional conditional quantile regression tasks. Moreover, we introduce a
+new adaptive rejection sampling scheme that iteratively refines the posterior
+approximation by updating the proposal distribution via generative density
+estimation. Theoretically, we establish parametric convergence rates for the
+trimmed MSW distance and prove that the ABI posterior converges to the true
+posterior as the tolerance threshold vanishes. Through extensive empirical
+evaluation, we demonstrate that ABI significantly outperforms data-based
+Wasserstein ABC, summary-based ABC, and state-of-the-art likelihood-free
+simulators, especially in high-dimensional or dependent observation regimes.",http://arxiv.org/pdf/2505.04603v1,,False
+Multitask LSTM for Arboviral Outbreak Prediction Using Public Health Data,07/05/2025,"Lucas R. C. Farias, Talita P. Silva, Pedro H. M. Araujo","This paper presents a multitask learning approach based on long-short-term
+memory (LSTM) networks for the joint prediction of arboviral outbreaks and case
+counts of dengue, chikungunya, and Zika in Recife, Brazil. Leveraging
+historical public health data from DataSUS (2017-2023), the proposed model
+concurrently performs binary classification (outbreak detection) and regression
+(case forecasting) tasks. A sliding window strategy was adopted to construct
+temporal features using varying input lengths (60, 90, and 120 days), with
+hyperparameter optimization carried out using Keras Tuner. Model evaluation
+used time series cross-validation for robustness and a held-out test from 2023
+for generalization assessment. The results show that longer windows improve
+dengue regression accuracy, while classification performance peaked at
+intermediate windows, suggesting an optimal trade-off between sequence length
+and generalization. The multitask architecture delivers competitive performance
+across diseases and tasks, demonstrating the feasibility and advantages of
+unified modeling strategies for scalable epidemic forecasting in data-limited
+public health scenarios.",http://arxiv.org/pdf/2505.04566v1,,False
+Bayesian Estimation of Extreme Quantiles and the Exceedance Distribution for Paretian Tails,07/05/2025,Douglas E. Johnston,"Estimating extreme quantiles is an important task in many applications,
+including financial risk management and climatology. More important than
+estimating the quantile itself is to insure zero coverage error, which implies
+the quantile estimate should, on average, reflect the desired probability of
+exceedance. In this research, we show that for unconditional distributions
+isomorphic to the exponential, a Bayesian quantile estimate results in zero
+coverage error. This compares to the traditional maximum likelihood method,
+where the coverage error can be significant under small sample sizes even
+though the quantile estimate is unbiased. More generally, we prove a sufficient
+condition for an unbiased quantile estimator to result in coverage error.
+Interestingly, our results hold by virtue of using a Jeffreys prior for the
+unknown parameters and is independent of the true prior. We also derive an
+expression for the distribution, and moments, of future exceedances which is
+vital for risk assessment. We extend our results to the conditional tail of
+distributions with asymptotic Paretian tails and, in particular, those in the
+Fr\'echet maximum domain of attraction. We illustrate our results using
+simulations for a variety of light and heavy-tailed distributions.",http://arxiv.org/pdf/2505.04501v1,,False
+Hamiltonian Normalizing Flows as kinetic PDE solvers: application to the 1D Vlasov-Poisson Equations,07/05/2025,"Vincent Souveton, Sébastien Terrana","Many conservative physical systems can be described using the Hamiltonian
+formalism. A notable example is the Vlasov-Poisson equations, a set of partial
+differential equations that govern the time evolution of a phase-space density
+function representing collisionless particles under a self-consistent
+potential. These equations play a central role in both plasma physics and
+cosmology. Due to the complexity of the potential involved, analytical
+solutions are rarely available, necessitating the use of numerical methods such
+as Particle-In-Cell. In this work, we introduce a novel approach based on
+Hamiltonian-informed Normalizing Flows, specifically a variant of Fixed-Kinetic
+Neural Hamiltonian Flows. Our method transforms an initial Gaussian
+distribution in phase space into the final distribution using a sequence of
+invertible, volume-preserving transformations derived from Hamiltonian
+dynamics. The model is trained on a dataset comprising initial and final states
+at a fixed time T, generated via numerical simulations. After training, the
+model enables fast sampling of the final distribution from any given initial
+state. Moreover, by automatically learning an interpretable physical potential,
+it can generalize to intermediate states not seen during training, offering
+insights into the system's evolution across time.",http://arxiv.org/pdf/2505.04471v1,,False
+Recognizing Ornaments in Vocal Indian Art Music with Active Annotation,07/05/2025,"Sumit Kumar, Parampreet Singh, Vipul Arora","Ornamentations, embellishments, or microtonal inflections are essential to
+melodic expression across many musical traditions, adding depth, nuance, and
+emotional impact to performances. Recognizing ornamentations in singing voices
+is key to MIR, with potential applications in music pedagogy, singer
+identification, genre classification, and controlled singing voice generation.
+However, the lack of annotated datasets and specialized modeling approaches
+remains a major obstacle for progress in this research area. In this work, we
+introduce R\=aga Ornamentation Detection (ROD), a novel dataset comprising
+Indian classical music recordings curated by expert musicians. The dataset is
+annotated using a custom Human-in-the-Loop tool for six vocal ornaments marked
+as event-based labels. Using this dataset, we develop an ornamentation
+detection model based on deep time-series analysis, preserving ornament
+boundaries during the chunking of long audio recordings. We conduct experiments
+using different train-test configurations within the ROD dataset and also
+evaluate our approach on a separate, manually annotated dataset of Indian
+classical concert recordings. Our experimental results support the superior
+performance of our proposed approach over the baseline CRNN.",http://arxiv.org/pdf/2505.04419v1,,False
+Clust-Splitter $-$ an Efficient Nonsmooth Optimization-Based Algorithm for Clustering Large Datasets,07/05/2025,"Jenni Lampainen, Kaisa Joki, Napsu Karmitsa, Marko M. Mäkelä","Clustering is a fundamental task in data mining and machine learning,
+particularly for analyzing large-scale data. In this paper, we introduce
+Clust-Splitter, an efficient algorithm based on nonsmooth optimization,
+designed to solve the minimum sum-of-squares clustering problem in very large
+datasets. The clustering task is approached through a sequence of three
+nonsmooth optimization problems: two auxiliary problems used to generate
+suitable starting points, followed by a main clustering formulation. To solve
+these problems effectively, the limited memory bundle method is combined with
+an incremental approach to develop the Clust-Splitter algorithm. We evaluate
+Clust-Splitter on real-world datasets characterized by both a large number of
+attributes and a large number of data points and compare its performance with
+several state-of-the-art large-scale clustering algorithms. Experimental
+results demonstrate the efficiency of the proposed method for clustering very
+large datasets, as well as the high quality of its solutions, which are on par
+with those of the best existing methods.",http://arxiv.org/pdf/2505.04389v1,,False
+"Consensus-Aware AV Behavior: Trade-offs Between Safety, Interaction, and Performance in Mixed Urban Traffic",07/05/2025,"Mohammad Elayan, Wissam Kontar","Transportation systems have long been shaped by complexity and heterogeneity,
+driven by the interdependency of agent actions and traffic outcomes. The
+deployment of automated vehicles (AVs) in such systems introduces a new
+challenge: achieving consensus across safety, interaction quality, and traffic
+performance. In this work, we position consensus as a fundamental property of
+the traffic system and aim to quantify it. We use high-resolution trajectory
+data from the Third Generation Simulation (TGSIM) dataset to empirically
+analyze AV and human-driven vehicle (HDV) behavior at a signalized urban
+intersection and around vulnerable road users (VRUs). Key metrics, including
+Time-to-Collision (TTC), Post-Encroachment Time (PET), deceleration patterns,
+headways, and string stability, are evaluated across the three performance
+dimensions. Results show that full consensus across safety, interaction, and
+performance is rare, with only 1.63% of AV-VRU interaction frames meeting all
+three conditions. These findings highlight the need for AV models that
+explicitly balance multi-dimensional performance in mixed-traffic environments.
+Full reproducibility is supported via our open-source codebase on
+https://github.com/wissamkontar/Consensus-AV-Analysis.",http://arxiv.org/pdf/2505.04379v1,,False
+KERAIA: An Adaptive and Explainable Framework for Dynamic Knowledge Representation and Reasoning,07/05/2025,"Stephen Richard Varey, Alessandro Di Stefano, The Anh Han","In this paper, we introduce KERAIA, a novel framework and software platform
+for symbolic knowledge engineering designed to address the persistent
+challenges of representing, reasoning with, and executing knowledge in dynamic,
+complex, and context-sensitive environments. The central research question that
+motivates this work is: How can unstructured, often tacit, human expertise be
+effectively transformed into computationally tractable algorithms that AI
+systems can efficiently utilise? KERAIA seeks to bridge this gap by building on
+foundational concepts such as Minsky's frame-based reasoning and K-lines, while
+introducing significant innovations. These include Clouds of Knowledge for
+dynamic aggregation, Dynamic Relations (DRels) for context-sensitive
+inheritance, explicit Lines of Thought (LoTs) for traceable reasoning, and
+Cloud Elaboration for adaptive knowledge transformation. This approach moves
+beyond the limitations of traditional, often static, knowledge representation
+paradigms. KERAIA is designed with Explainable AI (XAI) as a core principle,
+ensuring transparency and interpretability, particularly through the use of
+LoTs. The paper details the framework's architecture, the KSYNTH representation
+language, and the General Purpose Paradigm Builder (GPPB) to integrate diverse
+inference methods within a unified structure. We validate KERAIA's versatility,
+expressiveness, and practical applicability through detailed analysis of
+multiple case studies spanning naval warfare simulation, industrial diagnostics
+in water treatment plants, and strategic decision-making in the game of RISK.
+Furthermore, we provide a comparative analysis against established knowledge
+representation paradigms (including ontologies, rule-based systems, and
+knowledge graphs) and discuss the implementation aspects and computational
+considerations of the KERAIA platform.",http://arxiv.org/pdf/2505.04313v1,,False
+Non-stationary Diffusion For Probabilistic Time Series Forecasting,07/05/2025,"Weiwei Ye, Zhuopeng Xu, Ning Gui","Due to the dynamics of underlying physics and external influences, the
+uncertainty of time series often varies over time. However, existing Denoising
+Diffusion Probabilistic Models (DDPMs) often fail to capture this
+non-stationary nature, constrained by their constant variance assumption from
+the additive noise model (ANM). In this paper, we innovatively utilize the
+Location-Scale Noise Model (LSNM) to relax the fixed uncertainty assumption of
+ANM. A diffusion-based probabilistic forecasting framework, termed
+Non-stationary Diffusion (NsDiff), is designed based on LSNM that is capable of
+modeling the changing pattern of uncertainty. Specifically, NsDiff combines a
+denoising diffusion-based conditional generative model with a pre-trained
+conditional mean and variance estimator, enabling adaptive endpoint
+distribution modeling. Furthermore, we propose an uncertainty-aware noise
+schedule, which dynamically adjusts the noise levels to accurately reflect the
+data uncertainty at each step and integrates the time-varying variances into
+the diffusion process. Extensive experiments conducted on nine real-world and
+synthetic datasets demonstrate the superior performance of NsDiff compared to
+existing approaches. Code is available at https://github.com/wwy155/NsDiff.",http://arxiv.org/pdf/2505.04278v1,,False
+A Large Language Model for Feasible and Diverse Population Synthesis,07/05/2025,"Sung Yoo Lim, Hyunsoo Yun, Prateek Bansal, Dong-Kyu Kim, Eui-Jin Kim","Generating a synthetic population that is both feasible and diverse is
+crucial for ensuring the validity of downstream activity schedule simulation in
+activity-based models (ABMs). While deep generative models (DGMs), such as
+variational autoencoders and generative adversarial networks, have been applied
+to this task, they often struggle to balance the inclusion of rare but
+plausible combinations (i.e., sampling zeros) with the exclusion of implausible
+ones (i.e., structural zeros). To improve feasibility while maintaining
+diversity, we propose a fine-tuning method for large language models (LLMs)
+that explicitly controls the autoregressive generation process through
+topological orderings derived from a Bayesian Network (BN). Experimental
+results show that our hybrid LLM-BN approach outperforms both traditional DGMs
+and proprietary LLMs (e.g., ChatGPT-4o) with few-shot learning. Specifically,
+our approach achieves approximately 95% feasibility, significantly higher than
+the ~80% observed in DGMs, while maintaining comparable diversity, making it
+well-suited for practical applications. Importantly, the method is based on a
+lightweight open-source LLM, enabling fine-tuning and inference on standard
+personal computing environments. This makes the approach cost-effective and
+scalable for large-scale applications, such as synthesizing populations in
+megacities, without relying on expensive infrastructure. By initiating the ABM
+pipeline with high-quality synthetic populations, our method improves overall
+simulation reliability and reduces downstream error propagation. The source
+code for these methods is available for research and practical application.",http://arxiv.org/pdf/2505.04196v1,,False
+DOTA: Deformable Optimized Transformer Architecture for End-to-End Text Recognition with Retrieval-Augmented Generation,07/05/2025,"Naphat Nithisopa, Teerapong Panboonyuen","Text recognition in natural images remains a challenging yet essential task,
+with broad applications spanning computer vision and natural language
+processing. This paper introduces a novel end-to-end framework that combines
+ResNet and Vision Transformer backbones with advanced methodologies, including
+Deformable Convolutions, Retrieval-Augmented Generation, and Conditional Random
+Fields (CRF). These innovations collectively enhance feature representation and
+improve Optical Character Recognition (OCR) performance. Specifically, the
+framework substitutes standard convolution layers in the third and fourth
+blocks with Deformable Convolutions, leverages adaptive dropout for
+regularization, and incorporates CRF for more refined sequence modeling.
+Extensive experiments conducted on six benchmark datasets IC13, IC15, SVT,
+IIIT5K, SVTP, and CUTE80 validate the proposed method's efficacy, achieving
+notable accuracies: 97.32% on IC13, 58.26% on IC15, 88.10% on SVT, 74.13% on
+IIIT5K, 82.17% on SVTP, and 66.67% on CUTE80, resulting in an average accuracy
+of 77.77%. These results establish a new state-of-the-art for text recognition,
+demonstrating the robustness of the approach across diverse and challenging
+datasets.",http://arxiv.org/pdf/2505.04175v1,,False

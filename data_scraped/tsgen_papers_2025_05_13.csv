@@ -1,0 +1,329 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+H$^{\mathbf{3}}$DP: Triply-Hierarchical Diffusion Policy for Visuomotor Learning,12/05/2025,"Yiyang Lu, Yufeng Tian, Zhecheng Yuan, Xianbang Wang, Pu Hua, Zhengrong Xue, Huazhe Xu","Visuomotor policy learning has witnessed substantial progress in robotic
+manipulation, with recent approaches predominantly relying on generative models
+to model the action distribution. However, these methods often overlook the
+critical coupling between visual perception and action prediction. In this
+work, we introduce $\textbf{Triply-Hierarchical Diffusion
+Policy}~(\textbf{H$^{\mathbf{3}}$DP})$, a novel visuomotor learning framework
+that explicitly incorporates hierarchical structures to strengthen the
+integration between visual features and action generation. H$^{3}$DP contains
+$\mathbf{3}$ levels of hierarchy: (1) depth-aware input layering that organizes
+RGB-D observations based on depth information; (2) multi-scale visual
+representations that encode semantic features at varying levels of granularity;
+and (3) a hierarchically conditioned diffusion process that aligns the
+generation of coarse-to-fine actions with corresponding visual features.
+Extensive experiments demonstrate that H$^{3}$DP yields a $\mathbf{+27.5\%}$
+average relative improvement over baselines across $\mathbf{44}$ simulation
+tasks and achieves superior performance in $\mathbf{4}$ challenging bimanual
+real-world manipulation tasks. Project Page: https://lyy-iiis.github.io/h3dp/.",http://arxiv.org/pdf/2505.07819v1,,False
+"Imagine, Verify, Execute: Memory-Guided Agentic Exploration with Vision-Language Models",12/05/2025,"Seungjae Lee, Daniel Ekpo, Haowen Liu, Furong Huang, Abhinav Shrivastava, Jia-Bin Huang","Exploration is essential for general-purpose robotic learning, especially in
+open-ended environments where dense rewards, explicit goals, or task-specific
+supervision are scarce. Vision-language models (VLMs), with their semantic
+reasoning over objects, spatial relations, and potential outcomes, present a
+compelling foundation for generating high-level exploratory behaviors. However,
+their outputs are often ungrounded, making it difficult to determine whether
+imagined transitions are physically feasible or informative. To bridge the gap
+between imagination and execution, we present IVE (Imagine, Verify, Execute),
+an agentic exploration framework inspired by human curiosity. Human exploration
+is often driven by the desire to discover novel scene configurations and to
+deepen understanding of the environment. Similarly, IVE leverages VLMs to
+abstract RGB-D observations into semantic scene graphs, imagine novel scenes,
+predict their physical plausibility, and generate executable skill sequences
+through action tools. We evaluate IVE in both simulated and real-world tabletop
+environments. The results show that IVE enables more diverse and meaningful
+exploration than RL baselines, as evidenced by a 4.1 to 7.8x increase in the
+entropy of visited states. Moreover, the collected experience supports
+downstream learning, producing policies that closely match or exceed the
+performance of those trained on human-collected demonstrations.",http://arxiv.org/pdf/2505.07815v1,,False
+Improving Trajectory Stitching with Flow Models,12/05/2025,"Reece O'Mahoney, Wanming Yu, Ioannis Havoutis","Generative models have shown great promise as trajectory planners, given
+their affinity to modeling complex distributions and guidable inference
+process. Previous works have successfully applied these in the context of
+robotic manipulation but perform poorly when the required solution does not
+exist as a complete trajectory within the training set. We identify that this
+is a result of being unable to plan via stitching, and subsequently address the
+architectural and dataset choices needed to remedy this. On top of this, we
+propose a novel addition to the training and inference procedures to both
+stabilize and enhance these capabilities. We demonstrate the efficacy of our
+approach by generating plans with out of distribution boundary conditions and
+performing obstacle avoidance on the Franka Panda in simulation and on real
+hardware. In both of these tasks our method performs significantly better than
+the baselines and is able to avoid obstacles up to four times as large.",http://arxiv.org/pdf/2505.07802v1,,False
+Analytic theory of dropout regularization,12/05/2025,"Francesco Mori, Francesca Mignacco","Dropout is a regularization technique widely used in training artificial
+neural networks to mitigate overfitting. It consists of dynamically
+deactivating subsets of the network during training to promote more robust
+representations. Despite its widespread adoption, dropout probabilities are
+often selected heuristically, and theoretical explanations of its success
+remain sparse. Here, we analytically study dropout in two-layer neural networks
+trained with online stochastic gradient descent. In the high-dimensional limit,
+we derive a set of ordinary differential equations that fully characterize the
+evolution of the network during training and capture the effects of dropout. We
+obtain a number of exact results describing the generalization error and the
+optimal dropout probability at short, intermediate, and long training times.
+Our analysis shows that dropout reduces detrimental correlations between hidden
+nodes, mitigates the impact of label noise, and that the optimal dropout
+probability increases with the level of noise in the data. Our results are
+validated by extensive numerical simulations.",http://arxiv.org/pdf/2505.07792v1,,False
+Guiding Data Collection via Factored Scaling Curves,12/05/2025,"Lihan Zha, Apurva Badithela, Michael Zhang, Justin Lidard, Jeremy Bao, Emily Zhou, David Snyder, Allen Z. Ren, Dhruv Shah, Anirudha Majumdar","Generalist imitation learning policies trained on large datasets show great
+promise for solving diverse manipulation tasks. However, to ensure
+generalization to different conditions, policies need to be trained with data
+collected across a large set of environmental factor variations (e.g., camera
+pose, table height, distractors) $-$ a prohibitively expensive undertaking, if
+done exhaustively. We introduce a principled method for deciding what data to
+collect and how much to collect for each factor by constructing factored
+scaling curves (FSC), which quantify how policy performance varies as data
+scales along individual or paired factors. These curves enable targeted data
+acquisition for the most influential factor combinations within a given budget.
+We evaluate the proposed method through extensive simulated and real-world
+experiments, across both training-from-scratch and fine-tuning settings, and
+show that it boosts success rates in real-world tasks in new environments by up
+to 26% over existing data-collection strategies. We further demonstrate how
+factored scaling curves can effectively guide data collection using an offline
+metric, without requiring real-world evaluation at scale.",http://arxiv.org/pdf/2505.07728v1,,False
+Training neural control variates using correlated configurations,12/05/2025,Hyunwoo Oh,"Neural control variates (NCVs) have emerged as a powerful tool for variance
+reduction in Monte Carlo (MC) simulations, particularly in high-dimensional
+problems where traditional control variates are difficult to construct
+analytically. By training neural networks to learn auxiliary functions
+correlated with the target observable, NCVs can significantly reduce estimator
+variance while preserving unbiasedness. However, a critical but often
+overlooked aspect of NCV training is the role of autocorrelated samples
+generated by Markov Chain Monte Carlo (MCMC). While such samples are typically
+discarded for error estimation due to their statistical redundancy, they may
+contain useful information about the structure of the underlying probability
+distribution that can benefit the training process. In this work, we
+systematically examine the effect of using correlated configurations in
+training neural control variates. We demonstrate, both conceptually and
+numerically, that training on correlated data can improve control variate
+performance, especially in settings with limited computational resources. Our
+analysis includes empirical results from $U(1)$ gauge theory and scalar field
+theory, illustrating when and how autocorrelated samples enhance NCV
+construction. These findings provide practical guidance for the efficient use
+of MCMC data in training neural networks.",http://arxiv.org/pdf/2505.07719v1,,False
+Circuit Partitioning Using Large Language Models for Quantum Compilation and Simulations,12/05/2025,"Pranav Sinha, Sumit Kumar Jha, Sunny Raj","We are in the midst of the noisy intermediate-scale quantum (NISQ) era, where
+quantum computers are limited by noisy gates, some of which are more
+error-prone than others and can render the final computation incomprehensible.
+Quantum circuit compilation algorithms attempt to minimize these noisy gates
+when mapping quantum algorithms onto quantum hardware but face computational
+challenges that restrict their application to circuits with no more than 5-6
+qubits, necessitating the need to partition large circuits before the
+application of noisy quantum gate minimization algorithms. The existing
+generation of these algorithms is heuristic in nature and does not account for
+downstream gate minimization tasks. Large language models (LLMs) have the
+potential to change this and help improve quantum circuit partitions. This
+paper investigates the use of LLMs, such as Llama and Mistral, for partitioning
+quantum circuits by capitalizing on their abilities to understand and generate
+code, including QASM. Specifically, we teach LLMs to partition circuits using
+the quick partition approach of the Berkeley Quantum Synthesis Toolkit. Through
+experimental evaluations, we show that careful fine-tuning of open source LLMs
+enables us to obtain an accuracy of 53.4% for the partition task while
+over-the-shelf LLMs are unable to correctly partition circuits, using standard
+1-shot and few-shot training approaches.",http://arxiv.org/pdf/2505.07711v1,,False
+S-GRPO: Early Exit via Reinforcement Learning in Reasoning Models,12/05/2025,"Muzhi Dai, Chenxu Yang, Qingyi Si","As Test-Time Scaling emerges as an active research focus in the large
+language model community, advanced post-training methods increasingly emphasize
+extending chain-of-thought (CoT) generation length, thereby enhancing reasoning
+capabilities to approach Deepseek R1-like reasoning models. However, recent
+studies reveal that reasoning models (even Qwen3) consistently exhibit
+excessive thought redundancy in CoT generation. This overthinking problem stems
+from conventional outcome-reward reinforcement learning's systematic neglect in
+regulating intermediate reasoning steps. This paper proposes Serial-Group
+Decaying-Reward Policy Optimization (namely S-GRPO), a novel reinforcement
+learning method that empowers models with the capability to determine the
+sufficiency of reasoning steps, subsequently triggering early exit of CoT
+generation. Specifically, unlike GRPO, which samples multiple possible
+completions (parallel group) in parallel, we select multiple temporal positions
+in the generation of one CoT to allow the model to exit thinking and instead
+generate answers (serial group), respectively. For the correct answers in a
+serial group, we assign rewards that decay according to positions, with lower
+rewards towards the later ones, thereby reinforcing the model's behavior to
+generate higher-quality answers at earlier phases with earlier exits of
+thinking. Empirical evaluations demonstrate compatibility with state-of-the-art
+reasoning models, including Qwen3 and Deepseek-distill models, achieving 35.4%
+~ 61.1\% sequence length reduction with 0.72% ~ 6.08% accuracy improvements
+across GSM8K, AIME 2024, AMC 2023, MATH-500, and GPQA Diamond benchmarks.",http://arxiv.org/pdf/2505.07686v1,,False
+SpecRouter: Adaptive Routing for Multi-Level Speculative Decoding in Large Language Models,12/05/2025,"Hang Wu, Jianian Zhu, Yinghui Li, Haojie Wang, Biao Hou, Jidong Zhai","Large Language Models (LLMs) present a critical trade-off between inference
+quality and computational cost: larger models offer superior capabilities but
+incur significant latency, while smaller models are faster but less powerful.
+Existing serving strategies often employ fixed model scales or static two-stage
+speculative decoding, failing to dynamically adapt to the varying complexities
+of user requests or fluctuations in system performance. This paper introduces
+\systemname{}, a novel framework that reimagines LLM inference as an adaptive
+routing problem solved through multi-level speculative decoding. \systemname{}
+dynamically constructs and optimizes inference ""paths"" (chains of models) based
+on real-time feedback, addressing the limitations of static approaches. Our
+contributions are threefold: (1) An \textbf{adaptive model chain scheduling}
+mechanism that leverages performance profiling (execution times) and predictive
+similarity metrics (derived from token distribution divergence) to continuously
+select the optimal sequence of draft and verifier models, minimizing predicted
+latency per generated token. (2) A \textbf{multi-level collaborative
+verification} framework where intermediate models within the selected chain can
+validate speculative tokens, reducing the verification burden on the final,
+most powerful target model. (3) A \textbf{synchronized state management} system
+providing efficient, consistent KV cache handling across heterogeneous models
+in the chain, including precise, low-overhead rollbacks tailored for
+asynchronous batch processing inherent in multi-level speculation. Preliminary
+experiments demonstrate the validity of our method.",http://arxiv.org/pdf/2505.07680v1,,False
+Joint Graph Convolution and Sequential Modeling for Scalable Network Traffic Estimation,12/05/2025,"Nan Jiang, Wenxuan Zhu, Xu Han, Weiqiang Huang, Yumeng Sun","This study focuses on the challenge of predicting network traffic within
+complex topological environments. It introduces a spatiotemporal modeling
+approach that integrates Graph Convolutional Networks (GCN) with Gated
+Recurrent Units (GRU). The GCN component captures spatial dependencies among
+network nodes, while the GRU component models the temporal evolution of traffic
+data. This combination allows for precise forecasting of future traffic
+patterns. The effectiveness of the proposed model is validated through
+comprehensive experiments on the real-world Abilene network traffic dataset.
+The model is benchmarked against several popular deep learning methods.
+Furthermore, a set of ablation experiments is conducted to examine the
+influence of various components on performance, including changes in the number
+of graph convolution layers, different temporal modeling strategies, and
+methods for constructing the adjacency matrix. Results indicate that the
+proposed approach achieves superior performance across multiple metrics,
+demonstrating robust stability and strong generalization capabilities in
+complex network traffic forecasting scenarios.",http://arxiv.org/pdf/2505.07674v1,,False
+Convergence of Time-Averaged Mean Field Gradient Descent Dynamics for Continuous Multi-Player Zero-Sum Games,12/05/2025,"Yulong Lu, Pierre Monmarché","The approximation of mixed Nash equilibria (MNE) for zero-sum games with
+mean-field interacting players has recently raised much interest in machine
+learning. In this paper we propose a mean-field gradient descent dynamics for
+finding the MNE of zero-sum games involving $K$ players with $K\geq 2$. The
+evolution of the players' strategy distributions follows coupled mean-field
+gradient descent flows with momentum, incorporating an exponentially discounted
+time-averaging of gradients. First, in the case of a fixed entropic
+regularization, we prove an exponential convergence rate for the mean-field
+dynamics to the mixed Nash equilibrium with respect to the total variation
+metric. This improves a previous polynomial convergence rate for a similar
+time-averaged dynamics with different averaging factors. Moreover, unlike
+previous two-scale approaches for finding the MNE, our approach treats all
+player types on the same time scale. We also show that with a suitable choice
+of decreasing temperature, a simulated annealing version of the mean-field
+dynamics converges to an MNE of the initial unregularized problem.",http://arxiv.org/pdf/2505.07642v1,,False
+YuLan-OneSim: Towards the Next Generation of Social Simulator with Large Language Models,12/05/2025,"Lei Wang, Heyang Gao, Xiaohe Bo, Xu Chen, Ji-Rong Wen","Leveraging large language model (LLM) based agents to simulate human social
+behaviors has recently gained significant attention. In this paper, we
+introduce a novel social simulator called YuLan-OneSim. Compared to previous
+works, YuLan-OneSim distinguishes itself in five key aspects: (1) Code-free
+scenario construction: Users can simply describe and refine their simulation
+scenarios through natural language interactions with our simulator. All
+simulation code is automatically generated, significantly reducing the need for
+programming expertise. (2) Comprehensive default scenarios: We implement 50
+default simulation scenarios spanning 8 domains, including economics,
+sociology, politics, psychology, organization, demographics, law, and
+communication, broadening access for a diverse range of social researchers. (3)
+Evolvable simulation: Our simulator is capable of receiving external feedback
+and automatically fine-tuning the backbone LLMs, significantly enhancing the
+simulation quality. (4) Large-scale simulation: By developing a fully
+responsive agent framework and a distributed simulation architecture, our
+simulator can handle up to 100,000 agents, ensuring more stable and reliable
+simulation results. (5) AI social researcher: Leveraging the above features, we
+develop an AI social researcher. Users only need to propose a research topic,
+and the AI researcher will automatically analyze the input, construct
+simulation environments, summarize results, generate technical reports, review
+and refine the reports--completing the social science research loop. To
+demonstrate the advantages of YuLan-OneSim, we conduct experiments to evaluate
+the quality of the automatically generated scenarios, the reliability,
+efficiency, and scalability of the simulation process, as well as the
+performance of the AI social researcher.",http://arxiv.org/pdf/2505.07581v1,,False
+Web-Bench: A LLM Code Benchmark Based on Web Standards and Frameworks,12/05/2025,"Kai Xu, YiWei Mao, XinYi Guan, ZiLong Feng","The application of large language models (LLMs) in the field of coding is
+evolving rapidly: from code assistants, to autonomous coding agents, and then
+to generating complete projects through natural language. Early LLM code
+benchmarks primarily focused on code generation accuracy, but these benchmarks
+have gradually become saturated. Benchmark saturation weakens their guiding
+role for LLMs. For example, HumanEval Pass@1 has reached 99.4% and MBPP 94.2%.
+Among various attempts to address benchmark saturation, approaches based on
+software engineering have stood out, but the saturation of existing software
+engineering benchmarks is rapidly increasing. To address this, we propose a new
+benchmark, Web-Bench, which contains 50 projects, each consisting of 20 tasks
+with sequential dependencies. The tasks implement project features in sequence,
+simulating real-world human development workflows. When designing Web-Bench, we
+aim to cover the foundational elements of Web development: Web Standards and
+Web Frameworks. Given the scale and complexity of these projects, which were
+designed by engineers with 5 to 10 years of experience, each presents a
+significant challenge. On average, a single project takes 4 to 8 hours for a
+senior engineer to complete. On our given benchmark agent (Web-Agent), SOTA
+(Claude 3.7 Sonnet) achieves only 25.1% Pass@1, significantly lower (better)
+than SWE-Bench's Verified (65.4%) and Full (33.8%) scores. Finally, we discuss
+that in any development field, Standards and Frameworks represent foundational
+knowledge and efficiency tools, respectively, and LLMs require optimization
+tailored to them.",http://arxiv.org/pdf/2505.07473v1,,False
+Can Generative AI agents behave like humans? Evidence from laboratory market experiments,12/05/2025,"R. Maria del Rio-Chanona, Marco Pangallo, Cars Hommes","We explore the potential of Large Language Models (LLMs) to replicate human
+behavior in economic market experiments. Compared to previous studies, we focus
+on dynamic feedback between LLM agents: the decisions of each LLM impact the
+market price at the current step, and so affect the decisions of the other LLMs
+at the next step. We compare LLM behavior to market dynamics observed in
+laboratory settings and assess their alignment with human participants'
+behavior. Our findings indicate that LLMs do not adhere strictly to rational
+expectations, displaying instead bounded rationality, similarly to human
+participants. Providing a minimal context window i.e. memory of three previous
+time steps, combined with a high variability setting capturing response
+heterogeneity, allows LLMs to replicate broad trends seen in human experiments,
+such as the distinction between positive and negative feedback markets.
+However, differences remain at a granular level--LLMs exhibit less
+heterogeneity in behavior than humans. These results suggest that LLMs hold
+promise as tools for simulating realistic human behavior in economic contexts,
+though further research is needed to refine their accuracy and increase
+behavioral diversity.",http://arxiv.org/pdf/2505.07457v1,,False
+Prototype Augmented Hypernetworks for Continual Learning,12/05/2025,"Neil De La Fuente, Maria Pilligua, Daniel Vidal, Albin Soutiff, Cecilia Curreli, Daniel Cremers, Andrey Barsky","Continual learning (CL) aims to learn a sequence of tasks without forgetting
+prior knowledge, but gradient updates for a new task often overwrite the
+weights learned earlier, causing catastrophic forgetting (CF). We propose
+Prototype-Augmented Hypernetworks (PAH), a framework where a single
+hypernetwork, conditioned on learnable task prototypes, dynamically generates
+task-specific classifier heads on demand. To mitigate forgetting, PAH combines
+cross-entropy with dual distillation losses, one to align logits and another to
+align prototypes, ensuring stable feature representations across tasks.
+Evaluations on Split-CIFAR100 and TinyImageNet demonstrate that PAH achieves
+state-of-the-art performance, reaching 74.5 % and 63.7 % accuracy with only 1.7
+% and 4.4 % forgetting, respectively, surpassing prior methods without storing
+samples or heads.",http://arxiv.org/pdf/2505.07450v1,,False
+AIS Data-Driven Maritime Monitoring Based on Transformer: A Comprehensive Review,12/05/2025,"Zhiye Xie, Enmei Tu, Xianping Fu, Guoliang Yuan, Yi Han","With the increasing demands for safety, efficiency, and sustainability in
+global shipping, Automatic Identification System (AIS) data plays an
+increasingly important role in maritime monitoring. AIS data contains
+spatial-temporal variation patterns of vessels that hold significant research
+value in the marine domain. However, due to its massive scale, the full
+potential of AIS data has long remained untapped. With its powerful sequence
+modeling capabilities, particularly its ability to capture long-range
+dependencies and complex temporal dynamics, the Transformer model has emerged
+as an effective tool for processing AIS data. Therefore, this paper reviews the
+research on Transformer-based AIS data-driven maritime monitoring, providing a
+comprehensive overview of the current applications of Transformer models in the
+marine field. The focus is on Transformer-based trajectory prediction methods,
+behavior detection, and prediction techniques. Additionally, this paper
+collects and organizes publicly available AIS datasets from the reviewed
+papers, performing data filtering, cleaning, and statistical analysis. The
+statistical results reveal the operational characteristics of different vessel
+types, providing data support for further research on maritime monitoring
+tasks. Finally, we offer valuable suggestions for future research, identifying
+two promising research directions. Datasets are available at
+https://github.com/eyesofworld/Maritime-Monitoring.",http://arxiv.org/pdf/2505.07374v1,,False
+SAEN-BGS: Energy-Efficient Spiking AutoEncoder Network for Background Subtraction,12/05/2025,"Zhixuan Zhang, Xiaopeng Li, Qi Liu","Background subtraction (BGS) is utilized to detect moving objects in a video
+and is commonly employed at the onset of object tracking and human recognition
+processes. Nevertheless, existing BGS techniques utilizing deep learning still
+encounter challenges with various background noises in videos, including
+variations in lighting, shifts in camera angles, and disturbances like air
+turbulence or swaying trees. To address this problem, we design a spiking
+autoencoder network, termed SAEN-BGS, based on noise resilience and
+time-sequence sensitivity of spiking neural networks (SNNs) to enhance the
+separation of foreground and background. To eliminate unnecessary background
+noise and preserve the important foreground elements, we begin by creating the
+continuous spiking conv-and-dconv block, which serves as the fundamental
+building block for the decoder in SAEN-BGS. Moreover, in striving for enhanced
+energy efficiency, we introduce a novel self-distillation spiking supervised
+learning method grounded in ANN-to-SNN frameworks, resulting in decreased power
+consumption. In extensive experiments conducted on CDnet-2014 and DAVIS-2016
+datasets, our approach demonstrates superior segmentation performance relative
+to other baseline methods, even when challenged by complex scenarios with
+dynamic backgrounds.",http://arxiv.org/pdf/2505.07336v1,,False
+Causal View of Time Series Imputation: Some Identification Results on Missing Mechanism,12/05/2025,"Ruichu Cai, Kaitao Zheng, Junxian Huang, Zijian Li, Zhengming Chen, Boyan Xu, Zhifeng Hao","Time series imputation is one of the most challenge problems and has broad
+applications in various fields like health care and the Internet of Things.
+Existing methods mainly aim to model the temporally latent dependencies and the
+generation process from the observed time series data. In real-world scenarios,
+different types of missing mechanisms, like MAR (Missing At Random), and MNAR
+(Missing Not At Random) can occur in time series data. However, existing
+methods often overlook the difference among the aforementioned missing
+mechanisms and use a single model for time series imputation, which can easily
+lead to misleading results due to mechanism mismatching. In this paper, we
+propose a framework for time series imputation problem by exploring Different
+Missing Mechanisms (DMM in short) and tailoring solutions accordingly.
+Specifically, we first analyze the data generation processes with temporal
+latent states and missing cause variables for different mechanisms.
+Sequentially, we model these generation processes via variational inference and
+estimate prior distributions of latent variables via normalizing flow-based
+neural architecture. Furthermore, we establish identifiability results under
+the nonlinear independent component analysis framework to show that latent
+variables are identifiable. Experimental results show that our method surpasses
+existing time series imputation techniques across various datasets with
+different missing mechanisms, demonstrating its effectiveness in real-world
+applications.",http://arxiv.org/pdf/2505.07180v1,,False

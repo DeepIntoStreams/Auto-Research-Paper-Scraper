@@ -1,0 +1,407 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+ARC-NCA: Towards Developmental Solutions to the Abstraction and Reasoning Corpus,13/05/2025,"Etienne Guichard, Felix Reimers, Mia Kvalsund, Mikkel Lepperød, Stefano Nichele","The Abstraction and Reasoning Corpus (ARC), later renamed ARC-AGI, poses a
+fundamental challenge in artificial general intelligence (AGI), requiring
+solutions that exhibit robust abstraction and reasoning capabilities across
+diverse tasks, while only few (with median count of three) correct examples are
+presented. While ARC-AGI remains very challenging for artificial intelligence
+systems, it is rather easy for humans. This paper introduces ARC-NCA, a
+developmental approach leveraging standard Neural Cellular Automata (NCA) and
+NCA enhanced with hidden memories (EngramNCA) to tackle the ARC-AGI benchmark.
+NCAs are employed for their inherent ability to simulate complex dynamics and
+emergent patterns, mimicking developmental processes observed in biological
+systems. Developmental solutions may offer a promising avenue for enhancing
+AI's problem-solving capabilities beyond mere training data extrapolation.
+ARC-NCA demonstrates how integrating developmental principles into
+computational models can foster adaptive reasoning and abstraction. We show
+that our ARC-NCA proof-of-concept results may be comparable to, and sometimes
+surpass, that of ChatGPT 4.5, at a fraction of the cost.",http://arxiv.org/pdf/2505.08778v1,,False
+Implet: A Post-hoc Subsequence Explainer for Time Series Models,13/05/2025,"Fanyu Meng, Ziwen Kan, Shahbaz Rezaei, Zhaodan Kong, Xin Chen, Xin Liu","Explainability in time series models is crucial for fostering trust,
+facilitating debugging, and ensuring interpretability in real-world
+applications. In this work, we introduce Implet, a novel post-hoc explainer
+that generates accurate and concise subsequence-level explanations for time
+series models. Our approach identifies critical temporal segments that
+significantly contribute to the model's predictions, providing enhanced
+interpretability beyond traditional feature-attribution methods. Based on it,
+we propose a cohort-based (group-level) explanation framework designed to
+further improve the conciseness and interpretability of our explanations. We
+evaluate Implet on several standard time-series classification benchmarks,
+demonstrating its effectiveness in improving interpretability. The code is
+available at https://github.com/LbzSteven/implet",http://arxiv.org/pdf/2505.08748v1,,False
+Towards Foundation Models for Experimental Readout Systems Combining Discrete and Continuous Data,13/05/2025,"James Giroux, Cristiano Fanelli","We present a (proto) Foundation Model for Nuclear Physics, capable of
+operating on low-level detector inputs from Imaging Cherenkov Detectors at the
+future Electron Ion Collider. To address limitations in existing next-token
+prediction approaches-namely resolution loss from VQ-VAE tokenization and lack
+of conditional generation-we propose three key innovations: (i) separate
+vocabularies for discrete spatial features and continuous variates, combined
+via Causal Multi-Head Cross-Attention (CMHCA), (ii) continuous kinematic
+conditioning through prepended context embeddings, and (iii) scalable and
+simple, high-resolution continuous variate tokenization without joint
+vocabulary inflation. Our model enables fast, high-fidelity generation of pixel
+and time sequences for Cherenkov photons, validated through closure tests in
+the High Performance DIRC. We also show our model generalizes to reconstruction
+tasks such as pion and kaon identification, in which we show its ability to
+leverage fine-tuning.",http://arxiv.org/pdf/2505.08736v1,,False
+Memorization-Compression Cycles Improve Generalization,13/05/2025,Fangyuan Yu,"We prove theoretically that generalization improves not only through data
+scaling but also by compressing internal representations. To operationalize
+this insight, we introduce the Information Bottleneck Language Modeling (IBLM)
+objective, which reframes language modeling as a constrained optimization
+problem: minimizing representation entropy subject to optimal prediction
+performance. Empirically, we observe an emergent memorization-compression cycle
+during LLM pretraining, evidenced by oscillation positive/negative gradient
+alignment between cross-entropy and Matrix-Based Entropy (MBE), a measure of
+representation entropy. This pattern closely mirrors the predictive-compressive
+trade-off prescribed by IBLM and also parallels the biological alternation
+between awake learning and sleep consolidation. Motivated by this observation,
+we propose Gated Phase Transition (GAPT), a training algorithm that adaptively
+switches between memorization and compression phases. When applied to GPT-2
+pretraining on FineWeb dataset, GAPT reduces MBE by 50% and improves
+cross-entropy by 4.8%. GAPT improves OOD generalizatino by 35% in a pretraining
+task on arithmetic multiplication. In a setting designed to simulate
+catastrophic forgetting, GAPT reduces interference by compressing and
+separating representations, achieving a 97% improvement in separation -
+paralleling the functional role of sleep consolidation.",http://arxiv.org/pdf/2505.08727v1,,False
+Uncertainty-Aware Surrogate-based Amortized Bayesian Inference for Computationally Expensive Models,13/05/2025,"Stefania Scheurer, Philipp Reiser, Tim Brünnette, Wolfgang Nowak, Anneli Guthke, Paul-Christian Bürkner","Bayesian inference typically relies on a large number of model evaluations to
+estimate posterior distributions. Established methods like Markov Chain Monte
+Carlo (MCMC) and Amortized Bayesian Inference (ABI) can become computationally
+challenging. While ABI enables fast inference after training, generating
+sufficient training data still requires thousands of model simulations, which
+is infeasible for expensive models. Surrogate models offer a solution by
+providing approximate simulations at a lower computational cost, allowing the
+generation of large data sets for training. However, the introduced
+approximation errors and uncertainties can lead to overconfident posterior
+estimates. To address this, we propose Uncertainty-Aware Surrogate-based
+Amortized Bayesian Inference (UA-SABI) - a framework that combines surrogate
+modeling and ABI while explicitly quantifying and propagating surrogate
+uncertainties through the inference pipeline. Our experiments show that this
+approach enables reliable, fast, and repeated Bayesian inference for
+computationally expensive models, even under tight time constraints.",http://arxiv.org/pdf/2505.08683v1,,False
+WixQA: A Multi-Dataset Benchmark for Enterprise Retrieval-Augmented Generation,13/05/2025,"Dvir Cohen, Lin Burg, Sviatoslav Pykhnivskyi, Hagit Gur, Stanislav Kovynov, Olga Atzmon, Gilad Barkan","Retrieval-Augmented Generation (RAG) is a cornerstone of modern question
+answering (QA) systems, enabling grounded answers based on external knowledge.
+Although recent progress has been driven by open-domain datasets, enterprise QA
+systems need datasets that mirror the concrete, domain-specific issues users
+raise in day-to-day support scenarios. Critically, evaluating end-to-end RAG
+systems requires benchmarks comprising not only question--answer pairs but also
+the specific knowledge base (KB) snapshot from which answers were derived. To
+address this need, we introduce WixQA, a benchmark suite featuring QA datasets
+precisely grounded in the released KB corpus, enabling holistic evaluation of
+retrieval and generation components. WixQA includes three distinct QA datasets
+derived from Wix.com customer support interactions and grounded in a snapshot
+of the public Wix Help Center KB: (i) WixQA-ExpertWritten, 200 real user
+queries with expert-authored, multi-step answers; (ii) WixQA-Simulated, 200
+expert-validated QA pairs distilled from user dialogues; and (iii)
+WixQA-Synthetic, 6,222 LLM-generated QA pairs, with one pair systematically
+derived from each article in the knowledge base. We release the KB snapshot
+alongside the datasets under MIT license and provide comprehensive baseline
+results, forming a unique benchmark for evaluating enterprise RAG systems in
+realistic enterprise environments.",http://arxiv.org/pdf/2505.08643v1,,False
+Cost Function Estimation Using Inverse Reinforcement Learning with Minimal Observations,13/05/2025,"Sarmad Mehrdad, Avadesh Meduri, Ludovic Righetti","We present an iterative inverse reinforcement learning algorithm to infer
+optimal cost functions in continuous spaces. Based on a popular maximum entropy
+criteria, our approach iteratively finds a weight improvement step and proposes
+a method to find an appropriate step size that ensures learned cost function
+features remain similar to the demonstrated trajectory features. In contrast to
+similar approaches, our algorithm can individually tune the effectiveness of
+each observation for the partition function and does not need a large sample
+set, enabling faster learning. We generate sample trajectories by solving an
+optimal control problem instead of random sampling, leading to more informative
+trajectories. The performance of our method is compared to two state of the art
+algorithms to demonstrate its benefits in several simulated environments.",http://arxiv.org/pdf/2505.08619v1,,False
+MINIMALIST: switched-capacitor circuits for efficient in-memory computation of gated recurrent units,13/05/2025,"Sebastian Billaudelle, Laura Kriener, Filippo Moro, Tristan Torchet, Melika Payvand","Recurrent neural networks (RNNs) have been a long-standing candidate for
+processing of temporal sequence data, especially in memory-constrained systems
+that one may find in embedded edge computing environments. Recent advances in
+training paradigms have now inspired new generations of efficient RNNs. We
+introduce a streamlined and hardware-compatible architecture based on minimal
+gated recurrent units (GRUs), and an accompanying efficient mixed-signal
+hardware implementation of the model. The proposed design leverages
+switched-capacitor circuits not only for in-memory computation (IMC), but also
+for the gated state updates. The mixed-signal cores rely solely on commodity
+circuits consisting of metal capacitors, transmission gates, and a clocked
+comparator, thus greatly facilitating scaling and transfer to other technology
+nodes.
+  We benchmark the performance of our architecture on time series data,
+introducing all constraints required for a direct mapping to the hardware
+system. The direct compatibility is verified in mixed-signal simulations,
+reproducing data recorded from the software-only network model.",http://arxiv.org/pdf/2505.08599v1,,False
+Diffusion-assisted Model Predictive Control Optimization for Power System Real-Time Operation,13/05/2025,"Linna Xu, Yongli Zhu","This paper presents a modified model predictive control (MPC) framework for
+real-time power system operation. The framework incorporates a diffusion model
+tailored for time series generation to enhance the accuracy of the load
+forecasting module used in the system operation. In the absence of explicit
+state transition law, a model-identification procedure is leveraged to derive
+the system dynamics, thereby eliminating a barrier when applying MPC to a
+renewables-dominated power system. Case study results on an industry park
+system and the IEEE 30-bus system demonstrate that using the diffusion model to
+augment the training dataset significantly improves load-forecasting accuracy,
+and the inferred system dynamics are applicable to the real-time grid operation
+with solar and wind.",http://arxiv.org/pdf/2505.08535v1,,False
+The Truth Becomes Clearer Through Debate! Multi-Agent Systems with Large Language Models Unmask Fake News,13/05/2025,"Yuhan Liu, Yuxuan Liu, Xiaoqing Zhang, Xiuying Chen, Rui Yan","In today's digital environment, the rapid propagation of fake news via social
+networks poses significant social challenges. Most existing detection methods
+either employ traditional classification models, which suffer from low
+interpretability and limited generalization capabilities, or craft specific
+prompts for large language models (LLMs) to produce explanations and results
+directly, failing to leverage LLMs' reasoning abilities fully. Inspired by the
+saying that ""truth becomes clearer through debate,"" our study introduces a
+novel multi-agent system with LLMs named TruEDebate (TED) to enhance the
+interpretability and effectiveness of fake news detection. TED employs a
+rigorous debate process inspired by formal debate settings. Central to our
+approach are two innovative components: the DebateFlow Agents and the
+InsightFlow Agents. The DebateFlow Agents organize agents into two teams, where
+one supports and the other challenges the truth of the news. These agents
+engage in opening statements, cross-examination, rebuttal, and closing
+statements, simulating a rigorous debate process akin to human discourse
+analysis, allowing for a thorough evaluation of news content. Concurrently, the
+InsightFlow Agents consist of two specialized sub-agents: the Synthesis Agent
+and the Analysis Agent. The Synthesis Agent summarizes the debates and provides
+an overarching viewpoint, ensuring a coherent and comprehensive evaluation. The
+Analysis Agent, which includes a role-aware encoder and a debate graph,
+integrates role embeddings and models the interactions between debate roles and
+arguments using an attention mechanism, providing the final judgment.",http://arxiv.org/pdf/2505.08532v1,,False
+Distributed Quantum Neural Networks on Distributed Photonic Quantum Computing,13/05/2025,"Kuan-Cheng Chen, Chen-Yu Liu, Yu Shang, Felix Burt, Kin K. Leung","We introduce a distributed quantum-classical framework that synergizes
+photonic quantum neural networks (QNNs) with matrix-product-state (MPS) mapping
+to achieve parameter-efficient training of classical neural networks. By
+leveraging universal linear-optical decompositions of $M$-mode interferometers
+and photon-counting measurement statistics, our architecture generates neural
+parameters through a hybrid quantum-classical workflow: photonic QNNs with
+$M(M+1)/2$ trainable parameters produce high-dimensional probability
+distributions that are mapped to classical network weights via an MPS model
+with bond dimension $\chi$. Empirical validation on MNIST classification
+demonstrates that photonic QT achieves an accuracy of $95.50\% \pm 0.84\%$
+using 3,292 parameters ($\chi = 10$), compared to $96.89\% \pm 0.31\%$ for
+classical baselines with 6,690 parameters. Moreover, a ten-fold compression
+ratio is achieved at $\chi = 4$, with a relative accuracy loss of less than
+$3\%$. The framework outperforms classical compression techniques (weight
+sharing/pruning) by 6--12\% absolute accuracy while eliminating quantum
+hardware requirements during inference through classical deployment of
+compressed parameters. Simulations incorporating realistic photonic noise
+demonstrate the framework's robustness to near-term hardware imperfections.
+Ablation studies confirm quantum necessity: replacing photonic QNNs with random
+inputs collapses accuracy to chance level ($10.0\% \pm 0.5\%$). Photonic
+quantum computing's room-temperature operation, inherent scalability through
+spatial-mode multiplexing, and HPC-integrated architecture establish a
+practical pathway for distributed quantum machine learning, combining the
+expressivity of photonic Hilbert spaces with the deployability of classical
+neural networks.",http://arxiv.org/pdf/2505.08474v1,,False
+Learning Treatment Allocations with Risk Control Under Partial Identifiability,13/05/2025,"Sofia Ek, Dave Zachariah","Learning beneficial treatment allocations for a patient population is an
+important problem in precision medicine. Many treatments come with adverse side
+effects that are not commensurable with their potential benefits. Patients who
+do not receive benefits after such treatments are thereby subjected to
+unnecessary harm. This is a `treatment risk' that we aim to control when
+learning beneficial allocations. The constrained learning problem is challenged
+by the fact that the treatment risk is not in general identifiable using either
+randomized trial or observational data. We propose a certifiable learning
+method that controls the treatment risk with finite samples in the partially
+identified setting. The method is illustrated using both simulated and real
+data.",http://arxiv.org/pdf/2505.08378v1,,False
+Modeling Unseen Environments with Language-guided Composable Causal Components in Reinforcement Learning,13/05/2025,"Xinyue Wang, Biwei Huang","Generalization in reinforcement learning (RL) remains a significant
+challenge, especially when agents encounter novel environments with unseen
+dynamics. Drawing inspiration from human compositional reasoning -- where known
+components are reconfigured to handle new situations -- we introduce World
+Modeling with Compositional Causal Components (WM3C). This novel framework
+enhances RL generalization by learning and leveraging compositional causal
+components. Unlike previous approaches focusing on invariant representation
+learning or meta-learning, WM3C identifies and utilizes causal dynamics among
+composable elements, facilitating robust adaptation to new tasks. Our approach
+integrates language as a compositional modality to decompose the latent space
+into meaningful components and provides theoretical guarantees for their unique
+identification under mild assumptions. Our practical implementation uses a
+masked autoencoder with mutual information constraints and adaptive sparsity
+regularization to capture high-level semantic information and effectively
+disentangle transition dynamics. Experiments on numerical simulations and
+real-world robotic manipulation tasks demonstrate that WM3C significantly
+outperforms existing methods in identifying latent processes, improving policy
+learning, and generalizing to unseen tasks.",http://arxiv.org/pdf/2505.08361v1,,False
+STORYANCHORS: Generating Consistent Multi-Scene Story Frames for Long-Form Narratives,13/05/2025,"Bo Wang, Haoyang Huang, Zhiyin Lu, Fengyuan Liu, Guoqing Ma, Jianlong Yuan, Yuan Zhang, Nan Duan","This paper introduces StoryAnchors, a unified framework for generating
+high-quality, multi-scene story frames with strong temporal consistency. The
+framework employs a bidirectional story generator that integrates both past and
+future contexts to ensure temporal consistency, character continuity, and
+smooth scene transitions throughout the narrative. Specific conditions are
+introduced to distinguish story frame generation from standard video synthesis,
+facilitating greater scene diversity and enhancing narrative richness. To
+further improve generation quality, StoryAnchors integrates Multi-Event Story
+Frame Labeling and Progressive Story Frame Training, enabling the model to
+capture both overarching narrative flow and event-level dynamics. This approach
+supports the creation of editable and expandable story frames, allowing for
+manual modifications and the generation of longer, more complex sequences.
+Extensive experiments show that StoryAnchors outperforms existing open-source
+models in key areas such as consistency, narrative coherence, and scene
+diversity. Its performance in narrative consistency and story richness is also
+on par with GPT-4o. Ultimately, StoryAnchors pushes the boundaries of
+story-driven frame generation, offering a scalable, flexible, and highly
+editable foundation for future research.",http://arxiv.org/pdf/2505.08350v1,,False
+Low-Complexity Inference in Continual Learning via Compressed Knowledge Transfer,13/05/2025,"Zhenrong Liu, Janne M. J. Huttunen, Mikko Honkala","Continual learning (CL) aims to train models that can learn a sequence of
+tasks without forgetting previously acquired knowledge. A core challenge in CL
+is balancing stability -- preserving performance on old tasks -- and plasticity
+-- adapting to new ones. Recently, large pre-trained models have been widely
+adopted in CL for their ability to support both, offering strong generalization
+for new tasks and resilience against forgetting. However, their high
+computational cost at inference time limits their practicality in real-world
+applications, especially those requiring low latency or energy efficiency. To
+address this issue, we explore model compression techniques, including pruning
+and knowledge distillation (KD), and propose two efficient frameworks tailored
+for class-incremental learning (CIL), a challenging CL setting where task
+identities are unavailable during inference. The pruning-based framework
+includes pre- and post-pruning strategies that apply compression at different
+training stages. The KD-based framework adopts a teacher-student architecture,
+where a large pre-trained teacher transfers downstream-relevant knowledge to a
+compact student. Extensive experiments on multiple CIL benchmarks demonstrate
+that the proposed frameworks achieve a better trade-off between accuracy and
+inference complexity, consistently outperforming strong baselines. We further
+analyze the trade-offs between the two frameworks in terms of accuracy and
+efficiency, offering insights into their use across different scenarios.",http://arxiv.org/pdf/2505.08327v1,,False
+Efficient Unstructured Pruning of Mamba State-Space Models for Resource-Constrained Environments,13/05/2025,"Ibne Farabi Shihab, Sanjeda Akter, Anuj Sharma","State-space models (SSMs), particularly the Mamba architecture, have emerged
+as powerful alternatives to Transformers for sequence modeling, offering
+linear-time complexity and competitive performance across diverse tasks.
+However, their large parameter counts pose significant challenges for
+deployment in resource-constrained environments. We propose a novel
+unstructured pruning framework tailored for Mamba models that achieves up to
+70\% parameter reduction while retaining over 95\% of the original performance.
+Our approach integrates three key innovations: (1) a gradient-aware magnitude
+pruning technique that combines weight magnitude and gradient information to
+identify less critical parameters, (2) an iterative pruning schedule that
+gradually increases sparsity to maintain model stability, and (3) a global
+pruning strategy that optimizes parameter allocation across the entire model.
+Through extensive experiments on WikiText-103, Long Range Arena, and ETT
+time-series benchmarks, we demonstrate significant efficiency gains with
+minimal performance degradation. Our analysis of pruning effects on Mamba's
+components reveals critical insights into the architecture's redundancy and
+robustness, enabling practical deployment in resource-constrained settings
+while broadening Mamba's applicability.",http://arxiv.org/pdf/2505.08299v1,,False
+M3G: Multi-Granular Gesture Generator for Audio-Driven Full-Body Human Motion Synthesis,13/05/2025,"Zhizhuo Yin, Yuk Hang Tsui, Pan Hui","Generating full-body human gestures encompassing face, body, hands, and
+global movements from audio is a valuable yet challenging task in virtual
+avatar creation. Previous systems focused on tokenizing the human gestures
+framewisely and predicting the tokens of each frame from the input audio.
+However, one observation is that the number of frames required for a complete
+expressive human gesture, defined as granularity, varies among different human
+gesture patterns. Existing systems fail to model these gesture patterns due to
+the fixed granularity of their gesture tokens. To solve this problem, we
+propose a novel framework named Multi-Granular Gesture Generator (M3G) for
+audio-driven holistic gesture generation. In M3G, we propose a novel
+Multi-Granular VQ-VAE (MGVQ-VAE) to tokenize motion patterns and reconstruct
+motion sequences from different temporal granularities. Subsequently, we
+proposed a multi-granular token predictor that extracts multi-granular
+information from audio and predicts the corresponding motion tokens. Then M3G
+reconstructs the human gestures from the predicted tokens using the MGVQ-VAE.
+Both objective and subjective experiments demonstrate that our proposed M3G
+framework outperforms the state-of-the-art methods in terms of generating
+natural and expressive full-body human gestures.",http://arxiv.org/pdf/2505.08293v1,,False
+Automatic Curriculum Learning for Driving Scenarios: Towards Robust and Efficient Reinforcement Learning,13/05/2025,"Ahmed Abouelazm, Tim Weinstein, Tim Joseph, Philip Schörner, J. Marius Zöllner","This paper addresses the challenges of training end-to-end autonomous driving
+agents using Reinforcement Learning (RL). RL agents are typically trained in a
+fixed set of scenarios and nominal behavior of surrounding road users in
+simulations, limiting their generalization and real-life deployment. While
+domain randomization offers a potential solution by randomly sampling driving
+scenarios, it frequently results in inefficient training and sub-optimal
+policies due to the high variance among training scenarios. To address these
+limitations, we propose an automatic curriculum learning framework that
+dynamically generates driving scenarios with adaptive complexity based on the
+agent's evolving capabilities. Unlike manually designed curricula that
+introduce expert bias and lack scalability, our framework incorporates a
+``teacher'' that automatically generates and mutates driving scenarios based on
+their learning potential -- an agent-centric metric derived from the agent's
+current policy -- eliminating the need for expert design. The framework
+enhances training efficiency by excluding scenarios the agent has mastered or
+finds too challenging. We evaluate our framework in a reinforcement learning
+setting where the agent learns a driving policy from camera images. Comparative
+results against baseline methods, including fixed scenario training and domain
+randomization, demonstrate that our approach leads to enhanced generalization,
+achieving higher success rates: +9\% in low traffic density, +21\% in high
+traffic density, and faster convergence with fewer training steps. Our findings
+highlight the potential of ACL in improving the robustness and efficiency of
+RL-based autonomous driving agents.",http://arxiv.org/pdf/2505.08264v1,,False
+Object detection in adverse weather conditions for autonomous vehicles using Instruct Pix2Pix,13/05/2025,"Unai Gurbindo, Axel Brando, Jaume Abella, Caroline König","Enhancing the robustness of object detection systems under adverse weather
+conditions is crucial for the advancement of autonomous driving technology.
+This study presents a novel approach leveraging the diffusion model Instruct
+Pix2Pix to develop prompting methodologies that generate realistic datasets
+with weather-based augmentations aiming to mitigate the impact of adverse
+weather on the perception capabilities of state-of-the-art object detection
+models, including Faster R-CNN and YOLOv10. Experiments were conducted in two
+environments, in the CARLA simulator where an initial evaluation of the
+proposed data augmentation was provided, and then on the real-world image data
+sets BDD100K and ACDC demonstrating the effectiveness of the approach in real
+environments.
+  The key contributions of this work are twofold: (1) identifying and
+quantifying the performance gap in object detection models under challenging
+weather conditions, and (2) demonstrating how tailored data augmentation
+strategies can significantly enhance the robustness of these models. This
+research establishes a solid foundation for improving the reliability of
+perception systems in demanding environmental scenarios, and provides a pathway
+for future advancements in autonomous driving.",http://arxiv.org/pdf/2505.08228v1,,False
+An Effective Flow-based Method for Positive-Unlabeled Learning: 2-HNC,13/05/2025,"Dorit Hochbaum, Torpong Nitayanont","In many scenarios of binary classification, only positive instances are
+provided in the training data, leaving the rest of the data unlabeled. This
+setup, known as positive-unlabeled (PU) learning, is addressed here with a
+network flow-based method which utilizes pairwise similarities between samples.
+The method we propose here, 2-HNC, leverages Hochbaum's Normalized Cut (HNC)
+and the set of solutions it provides by solving a parametric minimum cut
+problem. The set of solutions, that are nested partitions of the samples into
+two sets, correspond to varying tradeoff values between the two goals: high
+intra-similarity inside the sets and low inter-similarity between the two sets.
+This nested sequence is utilized here to deliver a ranking of unlabeled samples
+by their likelihood of being negative. Building on this insight, our method,
+2-HNC, proceeds in two stages. The first stage generates this ranking without
+assuming any negative labels, using a problem formulation that is constrained
+only on positive labeled samples. The second stage augments the positive set
+with likely-negative samples and recomputes the classification. The final label
+prediction selects among all generated partitions in both stages, the one that
+delivers a positive class proportion, closest to a prior estimate of this
+quantity, which is assumed to be given. Extensive experiments across synthetic
+and real datasets show that 2-HNC yields strong performance and often surpasses
+existing state-of-the-art algorithms.",http://arxiv.org/pdf/2505.08212v1,,False
+A Multi-scale Representation Learning Framework for Long-Term Time Series Forecasting,13/05/2025,"Boshi Gao, Qingjian Ni, Fanbo Ju, Yu Chen, Ziqi Zhao","Long-term time series forecasting (LTSF) offers broad utility in practical
+settings like energy consumption and weather prediction. Accurately predicting
+long-term changes, however, is demanding due to the intricate temporal patterns
+and inherent multi-scale variations within time series. This work confronts key
+issues in LTSF, including the suboptimal use of multi-granularity information,
+the neglect of channel-specific attributes, and the unique nature of trend and
+seasonal components, by introducing a proficient MLP-based forecasting
+framework. Our method adeptly disentangles complex temporal dynamics using
+clear, concurrent predictions across various scales. These multi-scale
+forecasts are then skillfully integrated through a system that dynamically
+assigns importance to information from different granularities, sensitive to
+individual channel characteristics. To manage the specific features of temporal
+patterns, a two-pronged structure is utilized to model trend and seasonal
+elements independently. Experimental results on eight LTSF benchmarks
+demonstrate that MDMixer improves average MAE performance by 4.64% compared to
+the recent state-of-the-art MLP-based method (TimeMixer), while achieving an
+effective balance between training efficiency and model interpretability.",http://arxiv.org/pdf/2505.08199v1,,False
+Aitomia: Your Intelligent Assistant for AI-Driven Atomistic and Quantum Chemical Simulations,13/05/2025,"Jinming Hu, Hassan Nawaz, Yuting Rui, Lijie Chi, Arif Ullah, Pavlo O. Dral","We have developed Aitomia - a platform powered by AI to assist in performing
+AI-driven atomistic and quantum chemical (QC) simulations. This intelligent
+assistant platform is equipped with chatbots and AI agents to help experts and
+guide non-experts in setting up and running the atomistic simulations,
+monitoring their computation status, analyzing the simulation results, and
+summarizing them for the user in text and graphical forms. We achieve these
+goals by exploiting fine-tuned open-source large language models (LLMs),
+rule-based agents, and a retrieval-augmented generation (RAG) system. Aitomia
+leverages the versatility of our MLatom ecosystem for AI-enhanced computational
+chemistry. This intelligent assistant is going to be integrated into the
+Aitomistic Hub and XACS online computing services, with some functionality
+already publicly available as described at http://mlatom.com/aitomia. Aitomia
+is expected to lower the barrier to performing atomistic simulations,
+accelerating research and development in the relevant fields.",http://arxiv.org/pdf/2505.08195v1,,False
+Foundation Models Knowledge Distillation For Battery Capacity Degradation Forecast,13/05/2025,"Joey Chan, Zhen Chen, Ershun Pan","Accurate estimation of lithium-ion battery capacity degradation is critical
+for enhancing the reliability and safety of battery operations. Traditional
+expert models, tailored to specific scenarios, provide isolated estimations.
+With the rapid advancement of data-driven techniques, a series of
+general-purpose time-series foundation models have been developed. However,
+foundation models specifically designed for battery capacity degradation remain
+largely unexplored. To enable zero-shot generalization in battery degradation
+prediction using large model technology, this study proposes a
+degradation-aware fine-tuning strategy for time-series foundation models. We
+apply this strategy to fine-tune the Timer model on approximately 10 GB of
+open-source battery charge discharge data. Validation on our released
+CycleLife-SJTUIE dataset demonstrates that the fine-tuned Battery-Timer
+possesses strong zero-shot generalization capability in capacity degradation
+forecasting. To address the computational challenges of deploying large models,
+we further propose a knowledge distillation framework that transfers the
+knowledge of pre-trained foundation models into compact expert models.
+Distillation results across several state-of-the-art time-series expert models
+confirm that foundation model knowledge significantly improves the
+multi-condition generalization of expert models.",http://arxiv.org/pdf/2505.08151v1,,False
+Beyond Basic A/B testing: Improving Statistical Efficiency for Business Growth,13/05/2025,"Changshuai Wei, Phuc Nguyen, Benjamin Zelditch, Joyce Chen","The standard A/B testing approaches are mostly based on t-test in large scale
+industry applications. These standard approaches however suffers from low
+statistical power in business settings, due to nature of small sample-size or
+non-Gaussian distribution or return-on-investment (ROI) consideration. In this
+paper, we propose several approaches to addresses these challenges: (i)
+regression adjustment, generalized estimating equation, Man-Whitney U and
+Zero-Trimmed U that addresses each of these issues separately, and (ii) a novel
+doubly robust generalized U that handles ROI consideration, distribution
+robustness and small samples in one framework. We provide theoretical results
+on asymptotic normality and efficiency bounds, together with insights on the
+efficiency gain from theoretical analysis. We further conduct comprehensive
+simulation studies and apply the methods to multiple real A/B tests.",http://arxiv.org/pdf/2505.08128v1,,False

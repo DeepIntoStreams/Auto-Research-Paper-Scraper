@@ -1,0 +1,369 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Online Isolation Forest,14/05/2025,"Filippo Leveni, Guilherme Weigert Cassales, Bernhard Pfahringer, Albert Bifet, Giacomo Boracchi","The anomaly detection literature is abundant with offline methods, which
+require repeated access to data in memory, and impose impractical assumptions
+when applied to a streaming context. Existing online anomaly detection methods
+also generally fail to address these constraints, resorting to periodic
+retraining to adapt to the online context. We propose Online-iForest, a novel
+method explicitly designed for streaming conditions that seamlessly tracks the
+data generating process as it evolves over time. Experimental validation on
+real-world datasets demonstrated that Online-iForest is on par with online
+alternatives and closely rivals state-of-the-art offline anomaly detection
+techniques that undergo periodic retraining. Notably, Online-iForest
+consistently outperforms all competitors in terms of efficiency, making it a
+promising solution in applications where fast identification of anomalies is of
+primary importance such as cybersecurity, fraud and fault detection.",http://arxiv.org/pdf/2505.09593v1,10.5555/3692070.3693158,False
+Scalable Computations for Generalized Mixed Effects Models with Crossed Random Effects Using Krylov Subspace Methods,14/05/2025,"Pascal Kündig, Fabio Sigrist","Mixed effects models are widely used for modeling data with hierarchically
+grouped structures and high-cardinality categorical predictor variables.
+However, for high-dimensional crossed random effects, current standard
+computations relying on Cholesky decompositions can become prohibitively slow.
+In this work, we present novel Krylov subspace-based methods that address
+several existing computational bottlenecks. Among other things, we
+theoretically analyze and empirically evaluate various preconditioners for the
+conjugate gradient and stochastic Lanczos quadrature methods, derive new
+convergence results, and develop computationally efficient methods for
+calculating predictive variances. Extensive experiments using simulated and
+real-world data sets show that our proposed methods scale much better than
+Cholesky-based computations, for instance, achieving a runtime reduction of
+approximately two orders of magnitudes for both estimation and prediction.
+Moreover, our software implementation is up to 10'000 times faster and more
+stable than state-of-the-art implementations such as lme4 and glmmTMB when
+using default settings. Our methods are implemented in the free C++ software
+library GPBoost with high-level Python and R packages.",http://arxiv.org/pdf/2505.09552v1,,False
+Contactless Cardiac Pulse Monitoring Using Event Cameras,14/05/2025,"Mohamed Moustafa, Joseph Lemley, Peter Corcoran","Time event cameras are a novel technology for recording scene information at
+extremely low latency and with low power consumption. Event cameras output a
+stream of events that encapsulate pixel-level light intensity changes within
+the scene, capturing information with a higher dynamic range and temporal
+resolution than traditional cameras. This study investigates the contact-free
+reconstruction of an individual's cardiac pulse signal from time event
+recording of their face using a supervised convolutional neural network (CNN)
+model. An end-to-end model is trained to extract the cardiac signal from a
+two-dimensional representation of the event stream, with model performance
+evaluated based on the accuracy of the calculated heart rate. The experimental
+results confirm that physiological cardiac information in the facial region is
+effectively preserved within the event stream, showcasing the potential of this
+novel sensor for remote heart rate monitoring. The model trained on event
+frames achieves a root mean square error (RMSE) of 3.32 beats per minute (bpm)
+compared to the RMSE of 2.92 bpm achieved by the baseline model trained on
+standard camera frames. Furthermore, models trained on event frames generated
+at 60 and 120 FPS outperformed the 30 FPS standard camera results, achieving an
+RMSE of 2.54 and 2.13 bpm, respectively.",http://arxiv.org/pdf/2505.09529v1,,False
+CXMArena: Unified Dataset to benchmark performance in realistic CXM Scenarios,14/05/2025,"Raghav Garg, Kapil Sharma, Karan Gupta","Large Language Models (LLMs) hold immense potential for revolutionizing
+Customer Experience Management (CXM), particularly in contact center
+operations. However, evaluating their practical utility in complex operational
+environments is hindered by data scarcity (due to privacy concerns) and the
+limitations of current benchmarks. Existing benchmarks often lack realism,
+failing to incorporate deep knowledge base (KB) integration, real-world noise,
+or critical operational tasks beyond conversational fluency. To bridge this
+gap, we introduce CXMArena, a novel, large-scale synthetic benchmark dataset
+specifically designed for evaluating AI in operational CXM contexts. Given the
+diversity in possible contact center features, we have developed a scalable
+LLM-powered pipeline that simulates the brand's CXM entities that form the
+foundation of our datasets-such as knowledge articles including product
+specifications, issue taxonomies, and contact center conversations. The
+entities closely represent real-world distribution because of controlled noise
+injection (informed by domain experts) and rigorous automated validation.
+Building on this, we release CXMArena, which provides dedicated benchmarks
+targeting five important operational tasks: Knowledge Base Refinement, Intent
+Prediction, Agent Quality Adherence, Article Search, and Multi-turn RAG with
+Integrated Tools. Our baseline experiments underscore the benchmark's
+difficulty: even state of the art embedding and generation models achieve only
+68% accuracy on article search, while standard embedding methods yield a low F1
+score of 0.3 for knowledge base refinement, highlighting significant challenges
+for current models necessitating complex pipelines and solutions over
+conventional techniques.",http://arxiv.org/pdf/2505.09436v1,,False
+Train a Multi-Task Diffusion Policy on RLBench-18 in One Day with One GPU,14/05/2025,"Yutong Hu, Pinhao Song, Kehan Wen, Renaud Detry","We present a method for training multi-task vision-language robotic diffusion
+policies that reduces training time and memory usage by an order of magnitude.
+This improvement arises from a previously underexplored distinction between
+action diffusion and the image diffusion techniques that inspired it: image
+generation targets are high-dimensional, while robot actions lie in a much
+lower-dimensional space. Meanwhile, the vision-language conditions for action
+generation remain high-dimensional. Our approach, Mini-Diffuser, exploits this
+asymmetry by introducing Level-2 minibatching, which pairs multiple noised
+action samples with each vision-language condition, instead of the conventional
+one-to-one sampling strategy. To support this batching scheme, we introduce
+architectural adaptations to the diffusion transformer that prevent information
+leakage across samples while maintaining full conditioning access. In RLBench
+simulations, Mini-Diffuser achieves 95\% of the performance of state-of-the-art
+multi-task diffusion policies, while using only 5\% of the training time and
+7\% of the memory. Real-world experiments further validate that Mini-Diffuser
+preserves the key strengths of diffusion-based policies, including the ability
+to model multimodal action distributions and produce behavior conditioned on
+diverse perceptual inputs. Code available at
+github.com/utomm/mini-diffuse-actor.",http://arxiv.org/pdf/2505.09430v1,,False
+Independent Component Analysis by Robust Distance Correlation,14/05/2025,"Sarah Leyder, Jakob Raymaekers, Peter J. Rousseeuw, Tom Van Deuren, Tim Verdonck","Independent component analysis (ICA) is a powerful tool for decomposing a
+multivariate signal or distribution into fully independent sources, not just
+uncorrelated ones. Unfortunately, most approaches to ICA are not robust against
+outliers. Here we propose a robust ICA method called RICA, which estimates the
+components by minimizing a robust measure of dependence between multivariate
+random variables. The dependence measure used is the distance correlation
+(dCor). In order to make it more robust we first apply a new transformation
+called the bowl transform, which is bounded, one-to-one, continuous, and maps
+far outliers to points close to the origin. This preserves the crucial property
+that a zero dCor implies independence. RICA estimates the independent sources
+sequentially, by looking for the component that has the smallest dCor with the
+remainder. RICA is strongly consistent and has the usual parametric rate of
+convergence. Its robustness is investigated by a simulation study, in which it
+generally outperforms its competitors. The method is illustrated on three
+applications, including the well-known cocktail party problem.",http://arxiv.org/pdf/2505.09425v1,,False
+Multilingual Machine Translation with Quantum Encoder Decoder Attention-based Convolutional Variational Circuits,14/05/2025,"Subrit Dikshit, Ritu Tiwari, Priyank Jain","Cloud-based multilingual translation services like Google Translate and
+Microsoft Translator achieve state-of-the-art translation capabilities. These
+services inherently use large multilingual language models such as GRU, LSTM,
+BERT, GPT, T5, or similar encoder-decoder architectures with attention
+mechanisms as the backbone. Also, new age natural language systems, for
+instance ChatGPT and DeepSeek, have established huge potential in multiple
+tasks in natural language processing. At the same time, they also possess
+outstanding multilingual translation capabilities. However, these models use
+the classical computing realm as a backend. QEDACVC (Quantum Encoder Decoder
+Attention-based Convolutional Variational Circuits) is an alternate solution
+that explores the quantum computing realm instead of the classical computing
+realm to study and demonstrate multilingual machine translation. QEDACVC
+introduces the quantum encoder-decoder architecture that simulates and runs on
+quantum computing hardware via quantum convolution, quantum pooling, quantum
+variational circuit, and quantum attention as software alterations. QEDACVC
+achieves an Accuracy of 82% when trained on the OPUS dataset for English,
+French, German, and Hindi corpora for multilingual translations.",http://arxiv.org/pdf/2505.09407v1,,False
+TensorRL-QAS: Reinforcement learning with tensor networks for scalable quantum architecture search,14/05/2025,"Akash Kundu, Stefano Mangini","Variational quantum algorithms hold the promise to address meaningful quantum
+problems already on noisy intermediate-scale quantum hardware, but they face
+the challenge of designing quantum circuits that both solve the target problem
+and comply with device limitations. Quantum architecture search (QAS) automates
+this design process, with reinforcement learning (RL) emerging as a promising
+approach. Yet, RL-based QAS methods encounter significant scalability issues,
+as computational and training costs grow rapidly with the number of qubits,
+circuit depth, and noise, severely impacting performance. To address these
+challenges, we introduce $\textit{TensorRL-QAS}$, a scalable framework that
+combines tensor network (TN) methods with RL for designing quantum circuits. By
+warm-starting the architecture search with a matrix product state approximation
+of the target solution, TensorRL-QAS effectively narrows the search space to
+physically meaningful circuits, accelerating convergence to the desired
+solution. Tested on several quantum chemistry problems of up to 12-qubit,
+TensorRL-QAS achieves up to a 10-fold reduction in CNOT count and circuit depth
+compared to baseline methods, while maintaining or surpassing chemical
+accuracy. It reduces function evaluations by up to 100-fold, accelerates
+training episodes by up to $98\%$, and achieves up to $50\%$ success
+probability for 10-qubit systems-far exceeding the $<1\%$ rates of baseline
+approaches. Robustness and versatility are demonstrated both in the noiseless
+and noisy scenarios, where we report a simulation of up to 8-qubit. These
+advancements establish TensorRL-QAS as a promising candidate for a scalable and
+efficient quantum circuit discovery protocol on near-term quantum hardware.",http://arxiv.org/pdf/2505.09371v1,,False
+MUST: Multi-Scale Structural-Temporal Link Prediction Model for UAV Ad Hoc Networks,14/05/2025,"Cunlai Pu, Fangrui Wu, Rajput Ramiz Sharafat, Guangzhao Dai, Xiangbo Shu","Link prediction in unmanned aerial vehicle (UAV) ad hoc networks (UANETs)
+aims to predict the potential formation of future links between UAVs. In
+adversarial environments where the route information of UAVs is unavailable,
+predicting future links must rely solely on the observed historical topological
+information of UANETs. However, the highly dynamic and sparse nature of UANET
+topologies presents substantial challenges in effectively capturing meaningful
+structural and temporal patterns for accurate link prediction. Most existing
+link prediction methods focus on temporal dynamics at a single structural scale
+while neglecting the effects of sparsity, resulting in insufficient information
+capture and limited applicability to UANETs. In this paper, we propose a
+multi-scale structural-temporal link prediction model (MUST) for UANETs.
+Specifically, we first employ graph attention networks (GATs) to capture
+structural features at multiple levels, including the individual UAV level, the
+UAV community level, and the overall network level. Then, we use long
+short-term memory (LSTM) networks to learn the temporal dynamics of these
+multi-scale structural features. Additionally, we address the impact of
+sparsity by introducing a sophisticated loss function during model
+optimization. We validate the performance of MUST using several UANET datasets
+generated through simulations. Extensive experimental results demonstrate that
+MUST achieves state-of-the-art link prediction performance in highly dynamic
+and sparse UANETs.",http://arxiv.org/pdf/2505.09331v1,,False
+Accelerating Machine Learning Systems via Category Theory: Applications to Spherical Attention for Gene Regulatory Networks,14/05/2025,"Vincent Abbott, Kotaro Kamiya, Gerard Glowacki, Yu Atsumi, Gioele Zardini, Yoshihiro Maruyama","How do we enable artificial intelligence models to improve themselves? This
+is central to exponentially improving generalized artificial intelligence
+models, which can improve their own architecture to handle new problem domains
+in an efficient manner that leverages the latest hardware. However, current
+automated compilation methods are poor, and efficient algorithms require years
+of human development. In this paper, we use neural circuit diagrams, based in
+category theory, to prove a general theorem related to deep learning
+algorithms, guide the development of a novel attention algorithm catered to the
+domain of gene regulatory networks, and produce a corresponding efficient
+kernel. The algorithm we propose, spherical attention, shows that neural
+circuit diagrams enable a principled and systematic method for reasoning about
+deep learning architectures and providing high-performance code. By replacing
+SoftMax with an $L^2$ norm as suggested by diagrams, it overcomes the special
+function unit bottleneck of standard attention while retaining the streaming
+property essential to high-performance. Our diagrammatically derived
+\textit{FlashSign} kernel achieves comparable performance to the
+state-of-the-art, fine-tuned FlashAttention algorithm on an A100, and
+$3.6\times$ the performance of PyTorch. Overall, this investigation shows
+neural circuit diagrams' suitability as a high-level framework for the
+automated development of efficient, novel artificial intelligence
+architectures.",http://arxiv.org/pdf/2505.09326v1,,False
+"Reproducibility Study of ""Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents""",14/05/2025,"Pedro M. P. Curvo, Mara Dragomir, Salvador Torpes, Mohammadmahdi Rahimi","This study evaluates and extends the findings made by Piatti et al., who
+introduced GovSim, a simulation framework designed to assess the cooperative
+decision-making capabilities of large language models (LLMs) in
+resource-sharing scenarios. By replicating key experiments, we validate claims
+regarding the performance of large models, such as GPT-4-turbo, compared to
+smaller models. The impact of the universalization principle is also examined,
+with results showing that large models can achieve sustainable cooperation,
+with or without the principle, while smaller models fail without it. In
+addition, we provide multiple extensions to explore the applicability of the
+framework to new settings. We evaluate additional models, such as DeepSeek-V3
+and GPT-4o-mini, to test whether cooperative behavior generalizes across
+different architectures and model sizes. Furthermore, we introduce new
+settings: we create a heterogeneous multi-agent environment, study a scenario
+using Japanese instructions, and explore an ""inverse environment"" where agents
+must cooperate to mitigate harmful resource distributions. Our results confirm
+that the benchmark can be applied to new models, scenarios, and languages,
+offering valuable insights into the adaptability of LLMs in complex cooperative
+tasks. Moreover, the experiment involving heterogeneous multi-agent systems
+demonstrates that high-performing models can influence lower-performing ones to
+adopt similar behaviors. This finding has significant implications for other
+agent-based applications, potentially enabling more efficient use of
+computational resources and contributing to the development of more effective
+cooperative AI systems.",http://arxiv.org/pdf/2505.09289v1,,False
+Generating Full-field Evolution of Physical Dynamics from Irregular Sparse Observations,14/05/2025,"Panqi Chen, Yifan Sun, Lei Cheng, Yang Yang, Weichang Li, Yang Liu, Weiqing Liu, Jiang Bian, Shikai Fang","Modeling and reconstructing multidimensional physical dynamics from sparse
+and off-grid observations presents a fundamental challenge in scientific
+research. Recently, diffusion-based generative modeling shows promising
+potential for physical simulation. However, current approaches typically
+operate on on-grid data with preset spatiotemporal resolution, but struggle
+with the sparsely observed and continuous nature of real-world physical
+dynamics. To fill the gaps, we present SDIFT, Sequential DIffusion in
+Functional Tucker space, a novel framework that generates full-field evolution
+of physical dynamics from irregular sparse observations. SDIFT leverages the
+functional Tucker model as the latent space representer with proven universal
+approximation property, and represents observations as latent functions and
+Tucker core sequences. We then construct a sequential diffusion model with
+temporally augmented UNet in the functional Tucker space, denoising noise drawn
+from a Gaussian process to generate the sequence of core tensors.
+  At the posterior sampling stage, we propose a Message-Passing Posterior
+Sampling mechanism, enabling conditional generation of the entire sequence
+guided by observations at limited time steps. We validate SDIFT on three
+physical systems spanning astronomical (supernova explosions, light-year
+scale), environmental (ocean sound speed fields, kilometer scale), and
+molecular (organic liquid, millimeter scale) domains, demonstrating significant
+improvements in both reconstruction accuracy and computational efficiency
+compared to state-of-the-art approaches.",http://arxiv.org/pdf/2505.09284v1,,False
+Optimizing Urban Critical Green Space Development Using Machine Learning,14/05/2025,"Mohammad Ganjirad, Mahmoud Reza Delavar, Hossein Bagheri, Mohammad Mehdi Azizi","This paper presents a novel framework for prioritizing urban green space
+development in Tehran using diverse socio-economic, environmental, and
+sensitivity indices. The indices were derived from various sources including
+Google Earth Engine, air pollution measurements, municipal reports and the
+Weather Research & Forecasting (WRF) model. The WRF model was used to estimate
+the air temperature at a 1 km resolution due to insufficient meteorological
+stations, yielding RMSE and MAE values of 0.96{\deg}C and 0.92{\deg}C,
+respectively. After data preparation, several machine learning models were used
+for binary vegetation cover classification including XGBoost, LightGBM, Random
+Forest (RF) and Extra Trees. RF achieved the highest performance, exceeding 94%
+in Overall Accuracy, Recall, and F1-score. Then, the probability of areas
+lacking vegetation cover was assessed using socio-economic, environmental and
+sensitivity indices. This resulted in the RF generating an urban green space
+development prioritization map. Feature Importance Analysis revealed that the
+most significant indices were nightly land surface temperature (LST) and
+sensitive population. Finally, the framework performance was validated through
+microclimate simulation to assess the critical areas after and before the green
+space development by green roofs. The simulation demonstrated reducing air
+temperature by up to 0.67{\deg}C after utilizing the green roof technology in
+critical areas. As a result, this framework provides a valuable tool for urban
+planners to develop green spaces.",http://arxiv.org/pdf/2505.09175v1,10.1016/j.scs.2025.106158,False
+Online Learning of Neural Networks,14/05/2025,"Amit Daniely, Idan Mehalel, Elchanan Mossel","We study online learning of feedforward neural networks with the sign
+activation function that implement functions from the unit ball in
+$\mathbb{R}^d$ to a finite label set $\{1, \ldots, Y\}$.
+  First, we characterize a margin condition that is sufficient and in some
+cases necessary for online learnability of a neural network: Every neuron in
+the first hidden layer classifies all instances with some margin $\gamma$
+bounded away from zero. Quantitatively, we prove that for any net, the optimal
+mistake bound is at most approximately $\mathtt{TS}(d,\gamma)$, which is the
+$(d,\gamma)$-totally-separable-packing number, a more restricted variation of
+the standard $(d,\gamma)$-packing number. We complement this result by
+constructing a net on which any learner makes $\mathtt{TS}(d,\gamma)$ many
+mistakes. We also give a quantitative lower bound of approximately
+$\mathtt{TS}(d,\gamma) \geq \max\{1/(\gamma \sqrt{d})^d, d\}$ when $\gamma \geq
+1/2$, implying that for some nets and input sequences every learner will err
+for $\exp(d)$ many times, and that a dimension-free mistake bound is almost
+always impossible.
+  To remedy this inevitable dependence on $d$, it is natural to seek additional
+natural restrictions to be placed on the network, so that the dependence on $d$
+is removed. We study two such restrictions. The first is the multi-index model,
+in which the function computed by the net depends only on $k \ll d$ orthonormal
+directions. We prove a mistake bound of approximately $(1.5/\gamma)^{k + 2}$ in
+this model. The second is the extended margin assumption. In this setting, we
+assume that all neurons (in all layers) in the network classify every ingoing
+input from previous layer with margin $\gamma$ bounded away from zero. In this
+model, we prove a mistake bound of approximately $(\log Y)/ \gamma^{O(L)}$,
+where L is the depth of the network.",http://arxiv.org/pdf/2505.09167v1,,False
+Sequential Treatment Effect Estimation with Unmeasured Confounders,14/05/2025,"Yingrong Wang, Anpeng Wu, Baohong Li, Ziyang Xiao, Ruoxuan Xiong, Qing Han, Kun Kuang","This paper studies the cumulative causal effects of sequential treatments in
+the presence of unmeasured confounders. It is a critical issue in sequential
+decision-making scenarios where treatment decisions and outcomes dynamically
+evolve over time. Advanced causal methods apply transformer as a backbone to
+model such time sequences, which shows superiority in capturing long time
+dependence and periodic patterns via attention mechanism. However, even they
+control the observed confounding, these estimators still suffer from unmeasured
+confounders, which influence both treatment assignments and outcomes. How to
+adjust the latent confounding bias in sequential treatment effect estimation
+remains an open challenge. Therefore, we propose a novel Decomposing Sequential
+Instrumental Variable framework for CounterFactual Regression (DSIV-CFR),
+relying on a common negative control assumption. Specifically, an instrumental
+variable (IV) is a special negative control exposure, while the previous
+outcome serves as a negative control outcome. This allows us to recover the IVs
+latent in observation variables and estimate sequential treatment effects via a
+generalized moment condition. We conducted experiments on 4 datasets and
+achieved significant performance in one- and multi-step prediction, supported
+by which we can identify optimal treatments for dynamic systems.",http://arxiv.org/pdf/2505.09113v1,,False
+DPN-GAN: Inducing Periodic Activations in Generative Adversarial Networks for High-Fidelity Audio Synthesis,14/05/2025,"Zeeshan Ahmad, Shudi Bao, Meng Chen","In recent years, generative adversarial networks (GANs) have made significant
+progress in generating audio sequences. However, these models typically rely on
+bandwidth-limited mel-spectrograms, which constrain the resolution of generated
+audio sequences, and lead to mode collapse during conditional generation. To
+address this issue, we propose Deformable Periodic Network based GAN (DPN-GAN),
+a novel GAN architecture that incorporates a kernel-based periodic ReLU
+activation function to induce periodic bias in audio generation. This
+innovative approach enhances the model's ability to capture and reproduce
+intricate audio patterns. In particular, our proposed model features a DPN
+module for multi-resolution generation utilizing deformable convolution
+operations, allowing for adaptive receptive fields that improve the quality and
+fidelity of the synthetic audio. Additionally, we enhance the discriminator
+network using deformable convolution to better distinguish between real and
+generated samples, further refining the audio quality. We trained two versions
+of the model: DPN-GAN small (38.67M parameters) and DPN-GAN large (124M
+parameters). For evaluation, we use five different datasets, covering both
+speech synthesis and music generation tasks, to demonstrate the efficiency of
+the DPN-GAN. The experimental results demonstrate that DPN-GAN delivers
+superior performance on both out-of-distribution and noisy data, showcasing its
+robustness and adaptability. Trained across various datasets, DPN-GAN
+outperforms state-of-the-art GAN architectures on standard evaluation metrics,
+and exhibits increased robustness in synthesized audio.",http://arxiv.org/pdf/2505.09091v1,10.1109/ACCESS.2025.3561857,False
+Generating time-consistent dynamics with discriminator-guided image diffusion models,14/05/2025,"Philipp Hess, Maximilian Gelbrecht, Christof Schötz, Michael Aich, Yu Huang, Shangshang Yang, Niklas Boers","Realistic temporal dynamics are crucial for many video generation, processing
+and modelling applications, e.g. in computational fluid dynamics, weather
+prediction, or long-term climate simulations. Video diffusion models (VDMs) are
+the current state-of-the-art method for generating highly realistic dynamics.
+However, training VDMs from scratch can be challenging and requires large
+computational resources, limiting their wider application. Here, we propose a
+time-consistency discriminator that enables pretrained image diffusion models
+to generate realistic spatiotemporal dynamics. The discriminator guides the
+sampling inference process and does not require extensions or finetuning of the
+image diffusion model. We compare our approach against a VDM trained from
+scratch on an idealized turbulence simulation and a real-world global
+precipitation dataset. Our approach performs equally well in terms of temporal
+consistency, shows improved uncertainty calibration and lower biases compared
+to the VDM, and achieves stable centennial-scale climate simulations at daily
+time steps.",http://arxiv.org/pdf/2505.09089v1,,False
+Risk Bounds For Distributional Regression,14/05/2025,"Carlos Misael Madrid Padilla, Oscar Hernan Madrid Padilla, Sabyasachi Chatterjee","This work examines risk bounds for nonparametric distributional regression
+estimators. For convex-constrained distributional regression, general upper
+bounds are established for the continuous ranked probability score (CRPS) and
+the worst-case mean squared error (MSE) across the domain. These theoretical
+results are applied to isotonic and trend filtering distributional regression,
+yielding convergence rates consistent with those for mean estimation.
+Furthermore, a general upper bound is derived for distributional regression
+under non-convex constraints, with a specific application to neural
+network-based estimators. Comprehensive experiments on both simulated and real
+data validate the theoretical contributions, demonstrating their practical
+effectiveness.",http://arxiv.org/pdf/2505.09075v1,,False
+Single-shot prediction of parametric partial differential equations,14/05/2025,"Khalid Rafiq, Wenjing Liao, Aditya G. Nair","We introduce Flexi-VAE, a data-driven framework for efficient single-shot
+forecasting of nonlinear parametric partial differential equations (PDEs),
+eliminating the need for iterative time-stepping while maintaining high
+accuracy and stability. Flexi-VAE incorporates a neural propagator that
+advances latent representations forward in time, aligning latent evolution with
+physical state reconstruction in a variational autoencoder setting. We evaluate
+two propagation strategies, the Direct Concatenation Propagator (DCP) and the
+Positional Encoding Propagator (PEP), and demonstrate, through
+representation-theoretic analysis, that DCP offers superior long-term
+generalization by fostering disentangled and physically meaningful latent
+spaces. Geometric diagnostics, including Jacobian spectral analysis, reveal
+that propagated latent states reside in regions of lower decoder sensitivity
+and more stable local geometry than those derived via direct encoding,
+enhancing robustness for long-horizon predictions. We validate Flexi-VAE on
+canonical PDE benchmarks, the 1D viscous Burgers equation and the 2D
+advection-diffusion equation, achieving accurate forecasts across wide
+parametric ranges. The model delivers over 50x CPU and 90x GPU speedups
+compared to autoencoder-LSTM baselines for large temporal shifts. These results
+position Flexi-VAE as a scalable and interpretable surrogate modeling tool for
+accelerating high-fidelity simulations in computational fluid dynamics (CFD)
+and other parametric PDE-driven applications, with extensibility to
+higher-dimensional and more complex systems.",http://arxiv.org/pdf/2505.09063v1,,False

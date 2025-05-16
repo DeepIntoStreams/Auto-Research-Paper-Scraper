@@ -1,0 +1,200 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+An AI-driven framework for the prediction of personalised health response to air pollution,15/05/2025,"Nazanin Zounemat Kermani, Sadjad Naderi, Claire H. Dilliway, Claire E. Heaney, Shrreya Behll, Boyang Chen, Hisham Abubakar-Waziri, Alexandra E. Porter, Marc Chadeau-Hyam, Fangxin Fang, Ian M. Adcock, Kian Fan Chung, Christopher C. Pain","Air pollution poses a significant threat to public health, causing or
+exacerbating many respiratory and cardiovascular diseases. In addition, climate
+change is bringing about more extreme weather events such as wildfires and
+heatwaves, which can increase levels of pollution and worsen the effects of
+pollution exposure. Recent advances in personal sensing have transformed the
+collection of behavioural and physiological data, leading to the potential for
+new improvements in healthcare. We wish to capitalise on this data, alongside
+new capabilities in AI for making time series predictions, in order to monitor
+and predict health outcomes for an individual. Thus, we present a novel
+workflow for predicting personalised health responses to pollution by
+integrating physiological data from wearable fitness devices with real-time
+environmental exposures. The data is collected from various sources in a secure
+and ethical manner, and is used to train an AI model to predict individual
+health responses to pollution exposure within a cloud-based, modular framework.
+We demonstrate that the AI model -- an Adversarial Autoencoder neural network
+in this case -- accurately reconstructs time-dependent health signals and
+captures nonlinear responses to pollution. Transfer learning is applied using
+data from a personal smartwatch, which increases the generalisation abilities
+of the AI model and illustrates the adaptability of the approach to real-world,
+user-generated data.",http://arxiv.org/pdf/2505.10556v1,,False
+Real-Time Out-of-Distribution Failure Prevention via Multi-Modal Reasoning,15/05/2025,"Milan Ganai, Rohan Sinha, Christopher Agia, Daniel Morton, Marco Pavone","Foundation models can provide robust high-level reasoning on appropriate
+safety interventions in hazardous scenarios beyond a robot's training data,
+i.e. out-of-distribution (OOD) failures. However, due to the high inference
+latency of Large Vision and Language Models, current methods rely on manually
+defined intervention policies to enact fallbacks, thereby lacking the ability
+to plan generalizable, semantically safe motions. To overcome these challenges
+we present FORTRESS, a framework that generates and reasons about semantically
+safe fallback strategies in real time to prevent OOD failures. At a low
+frequency in nominal operations, FORTRESS uses multi-modal reasoners to
+identify goals and anticipate failure modes. When a runtime monitor triggers a
+fallback response, FORTRESS rapidly synthesizes plans to fallback goals while
+inferring and avoiding semantically unsafe regions in real time. By bridging
+open-world, multi-modal reasoning with dynamics-aware planning, we eliminate
+the need for hard-coded fallbacks and human safety interventions. FORTRESS
+outperforms on-the-fly prompting of slow reasoning models in safety
+classification accuracy on synthetic benchmarks and real-world ANYmal robot
+data, and further improves system safety and planning success in simulation and
+on quadrotor hardware for urban navigation.",http://arxiv.org/pdf/2505.10547v1,,False
+Multi-Token Prediction Needs Registers,15/05/2025,"Anastasios Gerontopoulos, Spyros Gidaris, Nikos Komodakis","Multi-token prediction has emerged as a promising objective for improving
+language model pretraining, but its benefits have not consistently generalized
+to other settings such as fine-tuning. In this paper, we propose MuToR, a
+simple and effective approach to multi-token prediction that interleaves
+learnable register tokens into the input sequence, each tasked with predicting
+future targets. Compared to existing methods, MuToR offers several key
+advantages: it introduces only a negligible number of additional parameters,
+requires no architectural changes--ensuring compatibility with off-the-shelf
+pretrained language models--and remains aligned with the next-token pretraining
+objective, making it especially well-suited for supervised fine-tuning.
+Moreover, it naturally supports scalable prediction horizons. We demonstrate
+the effectiveness and versatility of MuToR across a range of use cases,
+including supervised fine-tuning, parameter-efficient fine-tuning (PEFT), and
+pretraining, on challenging generative tasks in both language and vision
+domains. Our code will be available at: https://github.com/nasosger/MuToR.",http://arxiv.org/pdf/2505.10518v1,,False
+Score-based diffusion nowcasting of GOES imagery,15/05/2025,"Randy J. Chase, Katherine Haynes, Lander Ver Hoef, Imme Ebert-Uphoff","Clouds and precipitation are important for understanding weather and climate.
+Simulating clouds and precipitation with traditional numerical weather
+prediction is challenging because of the sub-grid parameterizations required.
+Machine learning has been explored for forecasting clouds and precipitation,
+but early machine learning methods often created blurry forecasts. In this
+paper we explore a newer method, named score-based diffusion, to nowcast (zero
+to three hour forecast) clouds and precipitation. We discuss the background and
+intuition of score-based diffusion models - thus providing a starting point for
+the community - while exploring the methodology's use for nowcasting
+geostationary infrared imagery. We experiment with three main types of
+diffusion models: a standard score-based diffusion model (Diff); a residual
+correction diffusion model (CorrDiff); and a latent diffusion model (LDM). Our
+results show that the diffusion models are able to not only advect existing
+clouds, but also generate and decay clouds, including convective initiation.
+These results are surprising because the forecasts are initiated with only the
+past 20 mins of infrared satellite imagery. A case study qualitatively shows
+the preservation of high resolution features longer into the forecast than a
+conventional mean-squared error trained U-Net. The best of the three diffusion
+models tested was the CorrDiff approach, outperforming all other diffusion
+models, the traditional U-Net, and a persistence forecast by one to two kelvin
+on root mean squared error. The diffusion models also enable out-of-the-box
+ensemble generation, which shows skillful calibration, with the spread of the
+ensemble correlating well to the error.",http://arxiv.org/pdf/2505.10432v1,,False
+Two-Stage Generative Model for Intracranial Aneurysm Meshes with Morphological Marker Conditioning,15/05/2025,"Wenhao Ding, Choon Hwai Yap, Kangjun Ji, Simão Castro","A generative model for the mesh geometry of intracranial aneurysms (IA) is
+crucial for training networks to predict blood flow forces in real time, which
+is a key factor affecting disease progression. This need is necessitated by the
+absence of a large IA image datasets. Existing shape generation methods
+struggle to capture realistic IA features and ignore the relationship between
+IA pouches and parent vessels, limiting physiological realism and their
+generation cannot be controlled to have specific morphological measurements. We
+propose AneuG, a two-stage Variational Autoencoder (VAE)-based IA mesh
+generator. In the first stage, AneuG generates low-dimensional Graph Harmonic
+Deformation (GHD) tokens to encode and reconstruct aneurysm pouch shapes,
+constrained to morphing energy statistics truths. GHD enables more accurate
+shape encoding than alternatives. In the second stage, AneuG generates parent
+vessels conditioned on GHD tokens, by generating vascular centreline and
+propagating the cross-section. AneuG's IA shape generation can further be
+conditioned to have specific clinically relevant morphological measurements.
+This is useful for studies to understand shape variations represented by
+clinical measurements, and for flow simulation studies to understand effects of
+specific clinical shape parameters on fluid dynamics. Source code and
+implementation details are available at
+https://github.com/anonymousaneug/AneuG.",http://arxiv.org/pdf/2505.10407v1,,False
+Deconstructing Subset Construction -- Reducing While Determinizing,15/05/2025,"John Nicol, Markus Frohme","We present a novel perspective on the NFA canonization problem, which
+introduces intermediate minimization steps to reduce the exploration space
+on-the-fly. Essential to our approach are so-called equivalence registries
+which manage information about equivalent states and allow for incorporating
+further optimization techniques such as convexity closures or simulation to
+boost performance. Due to the generality of our approach, these concepts can be
+embedded in classic subset construction or Brzozowski's approach. We evaluate
+our approach on a set of real-world examples from automatic sequences and
+observe that we are able to improve especially worst-case scenarios. We
+implement our approach in an open-source library for users to experiment with.",http://arxiv.org/pdf/2505.10319v1,,False
+Informed Forecasting: Leveraging Auxiliary Knowledge to Boost LLM Performance on Time Series Forecasting,15/05/2025,"Mohammadmahdi Ghasemloo, Alireza Moradi","With the widespread adoption of Large Language Models (LLMs), there is a
+growing need to establish best practices for leveraging their capabilities
+beyond traditional natural language tasks. In this paper, a novel cross-domain
+knowledge transfer framework is proposed to enhance the performance of LLMs in
+time series forecasting -- a task of increasing relevance in fields such as
+energy systems, finance, and healthcare. The approach systematically infuses
+LLMs with structured temporal information to improve their forecasting
+accuracy. This study evaluates the proposed method on a real-world time series
+dataset and compares it to a naive baseline where the LLM receives no auxiliary
+information. Results show that knowledge-informed forecasting significantly
+outperforms the uninformed baseline in terms of predictive accuracy and
+generalization. These findings highlight the potential of knowledge transfer
+strategies to bridge the gap between LLMs and domain-specific forecasting
+tasks.",http://arxiv.org/pdf/2505.10213v1,,False
+Topology-driven identification of repetitions in multi-variate time series,15/05/2025,"Simon Schindler, Elias Steffen Reich, Saverio Messineo, Simon Hoher, Stefan Huber","Many multi-variate time series obtained in the natural sciences and
+engineering possess a repetitive behavior, as for instance state-space
+trajectories of industrial machines in discrete automation. Recovering the
+times of recurrence from such a multi-variate time series is of a fundamental
+importance for many monitoring and control tasks. For a periodic time series
+this is equivalent to determining its period length. In this work we present a
+persistent homology framework to estimate recurrence times in multi-variate
+time series with different generalizations of cyclic behavior (periodic,
+repetitive, and recurring). To this end, we provide three specialized methods
+within our framework that are provably stable and validate them using
+real-world data, including a new benchmark dataset from an injection molding
+machine.",http://arxiv.org/pdf/2505.10004v1,,False
+Sybil-based Virtual Data Poisoning Attacks in Federated Learning,15/05/2025,"Changxun Zhu, Qilong Wu, Lingjuan Lyu, Shibei Xue","Federated learning is vulnerable to poisoning attacks by malicious
+adversaries. Existing methods often involve high costs to achieve effective
+attacks. To address this challenge, we propose a sybil-based virtual data
+poisoning attack, where a malicious client generates sybil nodes to amplify the
+poisoning model's impact. To reduce neural network computational complexity, we
+develop a virtual data generation method based on gradient matching. We also
+design three schemes for target model acquisition, applicable to online local,
+online global, and offline scenarios. In simulation, our method outperforms
+other attack algorithms since our method can obtain a global target model under
+non-independent uniformly distributed data.",http://arxiv.org/pdf/2505.09983v1,,False
+TransPL: VQ-Code Transition Matrices for Pseudo-Labeling of Time Series Unsupervised Domain Adaptation,15/05/2025,"Jaeho Kim, Seulki Lee","Unsupervised domain adaptation (UDA) for time series data remains a critical
+challenge in deep learning, with traditional pseudo-labeling strategies failing
+to capture temporal patterns and channel-wise shifts between domains, producing
+sub-optimal pseudo-labels. As such, we introduce TransPL, a novel approach that
+addresses these limitations by modeling the joint distribution $P(\mathbf{X},
+y)$ of the source domain through code transition matrices, where the codes are
+derived from vector quantization (VQ) of time series patches. Our method
+constructs class- and channel-wise code transition matrices from the source
+domain and employs Bayes' rule for target domain adaptation, generating
+pseudo-labels based on channel-wise weighted class-conditional likelihoods.
+TransPL offers three key advantages: explicit modeling of temporal transitions
+and channel-wise shifts between different domains, versatility towards
+different UDA scenarios (e.g., weakly-supervised UDA), and explainable
+pseudo-label generation. We validate TransPL's effectiveness through extensive
+analysis on four time series UDA benchmarks and confirm that it consistently
+outperforms state-of-the-art pseudo-labeling methods by a strong margin (6.1%
+accuracy improvement, 4.9% F1 improvement), while providing interpretable
+insights into the domain adaptation process through its learned code transition
+matrices.",http://arxiv.org/pdf/2505.09955v1,,False
+Reinforced Interactive Continual Learning via Real-time Noisy Human Feedback,15/05/2025,"Yutao Yang, Jie Zhou, Junsong Li, Qianjun Pan, Bihao Zhan, Qin Chen, Xipeng Qiu, Liang He","This paper introduces an interactive continual learning paradigm where AI
+models dynamically learn new skills from real-time human feedback while
+retaining prior knowledge. This paradigm distinctively addresses two major
+limitations of traditional continual learning: (1) dynamic model updates using
+streaming, real-time human-annotated data, rather than static datasets with
+fixed labels, and (2) the assumption of clean labels, by explicitly handling
+the noisy feedback common in real-world interactions. To tackle these problems,
+we propose RiCL, a Reinforced interactive Continual Learning framework
+leveraging Large Language Models (LLMs) to learn new skills effectively from
+dynamic feedback. RiCL incorporates three key components: a temporal
+consistency-aware purifier to automatically discern clean from noisy samples in
+data streams; an interaction-aware direct preference optimization strategy to
+align model behavior with human intent by reconciling AI-generated and
+human-provided feedback; and a noise-resistant contrastive learning module that
+captures robust representations by exploiting inherent data relationships, thus
+avoiding reliance on potentially unreliable labels. Extensive experiments on
+two benchmark datasets (FewRel and TACRED), contaminated with realistic noise
+patterns, demonstrate that our RiCL approach substantially outperforms existing
+combinations of state-of-the-art online continual learning and noisy-label
+learning methods.",http://arxiv.org/pdf/2505.09925v1,,False
+BINGO: A Novel Pruning Mechanism to Reduce the Size of Neural Networks,15/05/2025,Aditya Panangat,"Over the past decade, the use of machine learning has increased
+exponentially. Models are far more complex than ever before, growing to
+gargantuan sizes and housing millions of weights. Unfortunately, the fact that
+large models have become the state of the art means that it often costs
+millions of dollars to train and operate them. These expenses not only hurt
+companies but also bar non-wealthy individuals from contributing to new
+developments and force consumers to pay greater prices for AI. Current methods
+used to prune models, such as iterative magnitude pruning, have shown great
+accuracy but require an iterative training sequence that is incredibly
+computationally and environmentally taxing. To solve this problem, BINGO is
+introduced. BINGO, during the training pass, studies specific subsets of a
+neural network one at a time to gauge how significant of a role each weight
+plays in contributing to a network's accuracy. By the time training is done,
+BINGO generates a significance score for each weight, allowing for
+insignificant weights to be pruned in one shot. BINGO provides an
+accuracy-preserving pruning technique that is less computationally intensive
+than current methods, allowing for a world where AI growth does not have to
+mean model growth, as well.",http://arxiv.org/pdf/2505.09864v1,,False

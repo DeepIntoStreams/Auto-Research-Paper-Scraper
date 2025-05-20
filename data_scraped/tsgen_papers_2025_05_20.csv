@@ -1,0 +1,534 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+VTBench: Evaluating Visual Tokenizers for Autoregressive Image Generation,19/05/2025,"Huawei Lin, Tong Geng, Zhaozhuo Xu, Weijie Zhao","Autoregressive (AR) models have recently shown strong performance in image
+generation, where a critical component is the visual tokenizer (VT) that maps
+continuous pixel inputs to discrete token sequences. The quality of the VT
+largely defines the upper bound of AR model performance. However, current
+discrete VTs fall significantly behind continuous variational autoencoders
+(VAEs), leading to degraded image reconstructions and poor preservation of
+details and text. Existing benchmarks focus on end-to-end generation quality,
+without isolating VT performance. To address this gap, we introduce VTBench, a
+comprehensive benchmark that systematically evaluates VTs across three core
+tasks: Image Reconstruction, Detail Preservation, and Text Preservation, and
+covers a diverse range of evaluation scenarios. We systematically assess
+state-of-the-art VTs using a set of metrics to evaluate the quality of
+reconstructed images. Our findings reveal that continuous VAEs produce superior
+visual representations compared to discrete VTs, particularly in retaining
+spatial structure and semantic detail. In contrast, the degraded
+representations produced by discrete VTs often lead to distorted
+reconstructions, loss of fine-grained textures, and failures in preserving text
+and object integrity. Furthermore, we conduct experiments on GPT-4o image
+generation and discuss its potential AR nature, offering new insights into the
+role of visual tokenization. We release our benchmark and codebase publicly to
+support further research and call on the community to develop strong,
+general-purpose open-source VTs.",http://arxiv.org/pdf/2505.13439v1,,False
+Machine learning the first stage in 2SLS: Practical guidance from bias decomposition and simulation,19/05/2025,"Connor Lennon, Edward Rubin, Glen Waddell","Machine learning (ML) primarily evolved to solve ""prediction problems."" The
+first stage of two-stage least squares (2SLS) is a prediction problem,
+suggesting potential gains from ML first-stage assistance. However, little
+guidance exists on when ML helps 2SLS$\unicode{x2014}$or when it hurts. We
+investigate the implications of inserting ML into 2SLS, decomposing the bias
+into three informative components. Mechanically, ML-in-2SLS procedures face
+issues common to prediction and causal-inference settings$\unicode{x2014}$and
+their interaction. Through simulation, we show linear ML methods (e.g.,
+post-Lasso) work well, while nonlinear methods (e.g., random forests, neural
+nets) generate substantial bias in second-stage
+estimates$\unicode{x2014}$potentially exceeding the bias of endogenous OLS.",http://arxiv.org/pdf/2505.13422v1,,False
+Minimum-Excess-Work Guidance,19/05/2025,"Christopher Kolloff, Tobias Höppe, Emmanouil Angelis, Mathias Jacob Schreiner, Stefan Bauer, Andrea Dittadi, Simon Olsson","We propose a regularization framework inspired by thermodynamic work for
+guiding pre-trained probability flow generative models (e.g., continuous
+normalizing flows or diffusion models) by minimizing excess work, a concept
+rooted in statistical mechanics and with strong conceptual connections to
+optimal transport. Our approach enables efficient guidance in sparse-data
+regimes common to scientific applications, where only limited target samples or
+partial density constraints are available. We introduce two strategies: Path
+Guidance for sampling rare transition states by concentrating probability mass
+on user-defined subsets, and Observable Guidance for aligning generated
+distributions with experimental observables while preserving entropy. We
+demonstrate the framework's versatility on a coarse-grained protein model,
+guiding it to sample transition configurations between folded/unfolded states
+and correct systematic biases using experimental data. The method bridges
+thermodynamic principles with modern generative architectures, offering a
+principled, efficient, and physics-inspired alternative to standard fine-tuning
+in data-scarce domains. Empirical results highlight improved sample efficiency
+and bias reduction, underscoring its applicability to molecular simulations and
+beyond.",http://arxiv.org/pdf/2505.13375v1,,False
+Introducing Instruction-Accurate Simulators for Performance Estimation of Autotuning Workloads,19/05/2025,"Rebecca Pelke, Nils Bosbach, Lennart M. Reimann, Rainer Leupers","Accelerating Machine Learning (ML) workloads requires efficient methods due
+to their large optimization space. Autotuning has emerged as an effective
+approach for systematically evaluating variations of implementations.
+Traditionally, autotuning requires the workloads to be executed on the target
+hardware (HW). We present an interface that allows executing autotuning
+workloads on simulators. This approach offers high scalability when the
+availability of the target HW is limited, as many simulations can be run in
+parallel on any accessible HW. Additionally, we evaluate the feasibility of
+using fast instruction-accurate simulators for autotuning. We train various
+predictors to forecast the performance of ML workload implementations on the
+target HW based on simulation statistics. Our results demonstrate that the
+tuned predictors are highly effective. The best workload implementation in
+terms of actual run time on the target HW is always within the top 3 % of
+predictions for the tested x86, ARM, and RISC-V-based architectures. In the
+best case, this approach outperforms native execution on the target HW for
+embedded architectures when running as few as three samples on three simulators
+in parallel.",http://arxiv.org/pdf/2505.13357v1,,False
+Measuring Social Influence with Networked Synthetic Control,19/05/2025,Ho-Chun Herbert Chang,"Measuring social influence is difficult due to the lack of counter-factuals
+and comparisons. By combining machine learning-based modeling and network
+science, we present general properties of social value, a recent measure for
+social influence using synthetic control applicable to political behavior.
+Social value diverges from centrality measures on in that it relies on an
+external regressor to predict an output variable of interest, generates a
+synthetic measure of influence, then distributes individual contribution based
+on a social network. Through theoretical derivations, we show the properties of
+SV under linear regression with and without interaction, across lattice
+networks, power-law networks, and random graphs. A reduction in computation can
+be achieved for any ensemble model. Through simulation, we find that the
+generalized friendship paradox holds -- that in certain situations, your
+friends have on average more influence than you do.",http://arxiv.org/pdf/2505.13334v1,,False
+Level Generation with Quantum Reservoir Computing,19/05/2025,"João S. Ferreira, Pierre Fromholz, Hari Shaji, James R. Wootton","Reservoir computing is a form of machine learning particularly suited for
+time series analysis, including forecasting predictions. We take an
+implementation of \emph{quantum} reservoir computing that was initially
+designed to generate variants of musical scores and adapt it to create levels
+of Super Mario Bros. Motivated by our analysis of these levels, we develop a
+new Roblox \textit{obby} where the courses can be generated in real time on
+superconducting qubit hardware, and investigate some of the constraints placed
+by such real-time generation.",http://arxiv.org/pdf/2505.13287v1,,False
+MAGI-1: Autoregressive Video Generation at Scale,19/05/2025,"Sand. ai, Hansi Teng, Hongyu Jia, Lei Sun, Lingzhi Li, Maolin Li, Mingqiu Tang, Shuai Han, Tianning Zhang, W. Q. Zhang, Weifeng Luo, Xiaoyang Kang, Yuchen Sun, Yue Cao, Yunpeng Huang, Yutong Lin, Yuxin Fang, Zewei Tao, Zheng Zhang, Zhongshu Wang, Zixun Liu, Dai Shi, Guoli Su, Hanwen Sun, Hong Pan, Jie Wang, Jiexin Sheng, Min Cui, Min Hu, Ming Yan, Shucheng Yin, Siran Zhang, Tingting Liu, Xianping Yin, Xiaoyu Yang, Xin Song, Xuan Hu, Yankai Zhang, Yuqiao Li","We present MAGI-1, a world model that generates videos by autoregressively
+predicting a sequence of video chunks, defined as fixed-length segments of
+consecutive frames. Trained to denoise per-chunk noise that increases
+monotonically over time, MAGI-1 enables causal temporal modeling and naturally
+supports streaming generation. It achieves strong performance on image-to-video
+(I2V) tasks conditioned on text instructions, providing high temporal
+consistency and scalability, which are made possible by several algorithmic
+innovations and a dedicated infrastructure stack. MAGI-1 facilitates
+controllable generation via chunk-wise prompting and supports real-time,
+memory-efficient deployment by maintaining constant peak inference cost,
+regardless of video length. The largest variant of MAGI-1 comprises 24 billion
+parameters and supports context lengths of up to 4 million tokens,
+demonstrating the scalability and robustness of our approach. The code and
+models are available at https://github.com/SandAI-org/MAGI-1 and
+https://github.com/SandAI-org/MagiAttention. The product can be accessed at
+https://sand.ai.",http://arxiv.org/pdf/2505.13211v1,,False
+Rapidly Varying Completely Random Measures for Modeling Extremely Sparse Networks,19/05/2025,"Valentin Kilian, Benjamin Guedj, François Caron","Completely random measures (CRMs) are fundamental to Bayesian nonparametric
+models, with applications in clustering, feature allocation, and network
+analysis. A key quantity of interest is the Laplace exponent, whose asymptotic
+behavior determines how the random structures scale. When the Laplace exponent
+grows nearly linearly - known as rapid variation - the induced models exhibit
+approximately linear growth in the number of clusters, features, or edges with
+sample size or network nodes. This regime is especially relevant for modeling
+sparse networks, yet existing CRM constructions lack tractability under rapid
+variation. We address this by introducing a new class of CRMs with index of
+variation $\alpha\in(0,1]$, defined as mixtures of stable or generalized gamma
+processes. These models offer interpretable parameters, include well-known CRMs
+as limiting cases, and retain analytical tractability through a tractable
+Laplace exponent and simple size-biased representation. We analyze the
+asymptotic properties of this CRM class and apply it to the Caron-Fox framework
+for sparse graphs. The resulting models produce networks with near-linear edge
+growth, aligning with empirical evidence from large-scale networks.
+Additionally, we present efficient algorithms for simulation and posterior
+inference, demonstrating practical advantages through experiments on real-world
+sparse network datasets.",http://arxiv.org/pdf/2505.13206v1,,False
+MatPredict: a dataset and benchmark for learning material properties of diverse indoor objects,19/05/2025,"Yuzhen Chen, Hojun Son, Arpan Kusari","Determining material properties from camera images can expand the ability to
+identify complex objects in indoor environments, which is valuable for consumer
+robotics applications. To support this, we introduce MatPredict, a dataset that
+combines the high-quality synthetic objects from Replica dataset with MatSynth
+dataset's material properties classes - to create objects with diverse material
+properties. We select 3D meshes of specific foreground objects and render them
+with different material properties. In total, we generate \textbf{18} commonly
+occurring objects with \textbf{14} different materials. We showcase how we
+provide variability in terms of lighting and camera placement for these
+objects. Next, we provide a benchmark for inferring material properties from
+visual images using these perturbed models in the scene, discussing the
+specific neural network models involved and their performance based on
+different image comparison metrics. By accurately simulating light interactions
+with different materials, we can enhance realism, which is crucial for training
+models effectively through large-scale simulations. This research aims to
+revolutionize perception in consumer robotics. The dataset is provided
+\href{https://huggingface.co/datasets/UMTRI/MatPredict}{here} and the code is
+provided \href{https://github.com/arpan-kusari/MatPredict}{here}.",http://arxiv.org/pdf/2505.13201v1,,False
+True Zero-Shot Inference of Dynamical Systems Preserving Long-Term Statistics,19/05/2025,"Christoph Jürgen Hemmer, Daniel Durstewitz","Complex, temporally evolving phenomena, from climate to brain activity, are
+governed by dynamical systems (DS). DS reconstruction (DSR) seeks to infer
+generative surrogate models of these from observed data, reproducing their
+long-term behavior. Existing DSR approaches require purpose-training for any
+new system observed, lacking the zero-shot and in-context inference
+capabilities known from LLMs. Here we introduce DynaMix, a novel multivariate
+ALRNN-based mixture-of-experts architecture pre-trained for DSR, the first DSR
+model able to generalize zero-shot to out-of-domain DS. Just from a provided
+context signal, without any re-training, DynaMix faithfully forecasts the
+long-term evolution of novel DS where existing time series (TS) foundation
+models, like Chronos, fail -- at a fraction of the number of parameters and
+orders of magnitude faster inference times. DynaMix outperforms TS foundation
+models in terms of long-term statistics, and often also short-term forecasts,
+even on real-world time series, like traffic or weather data, typically used
+for training and evaluating TS models, but not at all part of DynaMix' training
+corpus. We illustrate some of the failure modes of TS models for DSR problems,
+and conclude that models built on DS principles may bear a huge potential also
+for advancing the TS prediction field.",http://arxiv.org/pdf/2505.13192v1,,False
+Enhancing LLMs for Time Series Forecasting via Structure-Guided Cross-Modal Alignment,19/05/2025,"Siming Sun, Kai Zhang, Xuejun Jiang, Wenchao Meng, Qinmin Yang","The emerging paradigm of leveraging pretrained large language models (LLMs)
+for time series forecasting has predominantly employed linguistic-temporal
+modality alignment strategies through token-level or layer-wise feature
+mapping. However, these approaches fundamentally neglect a critical insight:
+the core competency of LLMs resides not merely in processing localized token
+features but in their inherent capacity to model holistic sequence structures.
+This paper posits that effective cross-modal alignment necessitates structural
+consistency at the sequence level. We propose the Structure-Guided Cross-Modal
+Alignment (SGCMA), a framework that fully exploits and aligns the
+state-transition graph structures shared by time-series and linguistic data as
+sequential modalities, thereby endowing time series with language-like
+properties and delivering stronger generalization after modality alignment.
+SGCMA consists of two key components, namely Structure Alignment and Semantic
+Alignment. In Structure Alignment, a state transition matrix is learned from
+text data through Hidden Markov Models (HMMs), and a shallow transformer-based
+Maximum Entropy Markov Model (MEMM) receives the hot-start transition matrix
+and annotates each temporal patch into state probability, ensuring that the
+temporal representation sequence inherits language-like sequential dynamics. In
+Semantic Alignment, cross-attention is applied between temporal patches and the
+top-k tokens within each state, and the ultimate temporal embeddings are
+derived by the expected value of these embeddings using a weighted average
+based on state probabilities. Experiments on multiple benchmarks demonstrate
+that SGCMA achieves state-of-the-art performance, offering a novel approach to
+cross-modal alignment in time series forecasting.",http://arxiv.org/pdf/2505.13175v1,,False
+Why Knowledge Distillation Works in Generative Models: A Minimal Working Explanation,19/05/2025,"Sungmin Cha, Kyunghyun Cho","Knowledge distillation (KD) is a core component in the training and
+deployment of modern generative models, particularly large language models
+(LLMs). While its empirical benefits are well documented--enabling smaller
+student models to emulate the performance of much larger teachers--the
+underlying mechanisms by which KD improves generative quality remain poorly
+understood. In this work, we present a minimal working explanation of KD in
+generative modeling. Using a controlled simulation with mixtures of Gaussians,
+we demonstrate that distillation induces a trade-off between precision and
+recall in the student model. As the teacher distribution becomes more
+selective, the student concentrates more probability mass on high-likelihood
+regions at the expense of coverage--a behavior modulated by a single
+entropy-controlling parameter. We then validate this effect in a large-scale
+language modeling setup using the SmolLM2 family of models. Empirical results
+reveal the same precision-recall dynamics observed in simulation, where
+precision corresponds to sample quality and recall to distributional coverage.
+This precision-recall trade-off proves especially beneficial in scenarios where
+sample quality outweighs diversity, such as instruction tuning or downstream
+generation. Our analysis provides a simple and general explanation for the
+effectiveness of KD in generative modeling.",http://arxiv.org/pdf/2505.13111v1,,False
+Time series saliency maps: explaining models across multiple domains,19/05/2025,"Christodoulos Kechris, Jonathan Dan, David Atienza","Traditional saliency map methods, popularized in computer vision, highlight
+individual points (pixels) of the input that contribute the most to the model's
+output. However, in time-series they offer limited insights as semantically
+meaningful features are often found in other domains. We introduce Cross-domain
+Integrated Gradients, a generalization of Integrated Gradients. Our method
+enables feature attributions on any domain that can be formulated as an
+invertible, differentiable transformation of the time domain. Crucially, our
+derivation extends the original Integrated Gradients into the complex domain,
+enabling frequency-based attributions. We provide the necessary theoretical
+guarantees, namely, path independence and completeness. Our approach reveals
+interpretable, problem-specific attributions that time-domain methods cannot
+capture, on three real-world tasks: wearable sensor heart rate extraction,
+electroencephalography-based seizure detection, and zero-shot time-series
+forecasting. We release an open-source Tensorflow/PyTorch library to enable
+plug-and-play cross-domain explainability for time-series models. These results
+demonstrate the ability of cross-domain integrated gradients to provide
+semantically meaningful insights in time-series models that are impossible with
+traditional time-domain saliency.",http://arxiv.org/pdf/2505.13100v1,,False
+Walking the Tightrope: Disentangling Beneficial and Detrimental Drifts in Non-Stationary Custom-Tuning,19/05/2025,"Xiaoyu Yang, Jie Lu, En Yu","This paper uncovers a critical yet overlooked phenomenon in multi-modal large
+language models (MLLMs): detrimental concept drift within chain-of-thought
+(CoT) reasoning during non-stationary reinforcement fine-tuning (RFT), where
+reasoning token distributions evolve unpredictably, thereby introducing
+significant biases in final predictions. To address this, we are pioneers in
+establishing the theoretical bridge between concept drift theory and RFT
+processes by formalizing CoT's autoregressive token streams as non-stationary
+distributions undergoing arbitrary temporal shifts. Leveraging this framework,
+we propose a novel counterfact-aware RFT that systematically decouples
+beneficial distribution adaptation from harmful concept drift through concept
+graph-empowered LLM experts generating counterfactual reasoning trajectories.
+Our solution, Counterfactual Preference Optimization (CPO), enables stable RFT
+in non-stationary environments, particularly within the medical domain, through
+custom-tuning of counterfactual-aware preference alignment. Extensive
+experiments demonstrate our superior performance of robustness, generalization
+and coordination within RFT. Besides, we also contributed a large-scale dataset
+CXR-CounterFact (CCF), comprising 320,416 meticulously curated counterfactual
+reasoning trajectories derived from MIMIC-CXR. Our code and data are public.",http://arxiv.org/pdf/2505.13081v1,,False
+Advancing Sequential Numerical Prediction in Autoregressive Models,19/05/2025,"Xiang Fei, Jinghui Lu, Qi Sun, Hao Feng, Yanjie Wang, Wei Shi, An-Lan Wang, Jingqun Tang, Can Huang","Autoregressive models have become the de facto choice for sequence generation
+tasks, but standard approaches treat digits as independent tokens and apply
+cross-entropy loss, overlooking the coherent structure of numerical sequences.
+This paper introduces Numerical Token Integrity Loss (NTIL) to address this
+gap. NTIL operates at two levels: (1) token-level, where it extends the Earth
+Mover's Distance (EMD) to preserve ordinal relationships between numerical
+values, and (2) sequence-level, where it penalizes the overall discrepancy
+between the predicted and actual sequences. This dual approach improves
+numerical prediction and integrates effectively with LLMs/MLLMs. Extensive
+experiments show significant performance improvements with NTIL.",http://arxiv.org/pdf/2505.13077v1,,False
+SNAPE-PM: Building and Utilizing Dynamic Partner Models for Adaptive Explanation Generation,19/05/2025,"Amelie S. Robrecht, Christoph R. Kowalski, Stefan Kopp","Adapting to the addressee is crucial for successful explanations, yet poses
+significant challenges for dialogsystems. We adopt the approach of treating
+explanation generation as a non-stationary decision process, where the optimal
+strategy varies according to changing beliefs about the explainee and the
+interaction context. In this paper we address the questions of (1) how to track
+the interaction context and the relevant listener features in a formally
+defined computational partner model, and (2) how to utilize this model in the
+dynamically adjusted, rational decision process that determines the currently
+best explanation strategy. We propose a Bayesian inference-based approach to
+continuously update the partner model based on user feedback, and a
+non-stationary Markov Decision Process to adjust decision-making based on the
+partner model values. We evaluate an implementation of this framework with five
+simulated interlocutors, demonstrating its effectiveness in adapting to
+different partners with constant and even changing feedback behavior. The
+results show high adaptivity with distinct explanation strategies emerging for
+different partners, highlighting the potential of our approach to improve
+explainable AI systems and dialogsystems in general.",http://arxiv.org/pdf/2505.13053v1,,False
+TSPulse: Dual Space Tiny Pre-Trained Models for Rapid Time-Series Analysis,19/05/2025,"Vijay Ekambaram, Subodh Kumar, Arindam Jati, Sumanta Mukherjee, Tomoya Sakai, Pankaj Dayama, Wesley M. Gifford, Jayant Kalagnanam","The rise of time-series pre-trained models has advanced temporal
+representation learning, but current state-of-the-art models are often
+large-scale, requiring substantial compute. We introduce TSPulse, ultra-compact
+time-series pre-trained models with only 1M parameters, specialized to perform
+strongly across classification, anomaly detection, imputation, and retrieval
+tasks. TSPulse introduces innovations at both the architecture and task levels.
+At the architecture level, it employs a dual-space masked reconstruction,
+learning from both time and frequency domains to capture complementary signals.
+This is further enhanced by a dual-embedding disentanglement, generating both
+detailed embeddings for fine-grained analysis and high-level semantic
+embeddings for broader task understanding. Notably, TSPulse's semantic
+embeddings are robust to shifts in time, magnitude, and noise, which is
+important for robust retrieval. At the task level, TSPulse incorporates TSLens,
+a fine-tuning component enabling task-specific feature attention. It also
+introduces a multi-head triangulation technique that correlates deviations from
+multiple prediction heads, enhancing anomaly detection by fusing complementary
+model outputs. Additionally, a hybrid mask pretraining is proposed to improves
+zero-shot imputation by reducing pre-training bias. These architecture and task
+innovations collectively contribute to TSPulse's significant performance gains:
+5-16% on the UEA classification benchmarks, +20% on the TSB-AD anomaly
+detection leaderboard, +50% in zero-shot imputation, and +25% in time-series
+retrieval. Remarkably, these results are achieved with just 1M parameters,
+making TSPulse 10-100X smaller than existing pre-trained models. Its efficiency
+enables GPU-free inference and rapid pre-training, setting a new standard for
+efficient time-series pre-trained models. Models will be open-sourced soon.",http://arxiv.org/pdf/2505.13033v1,,False
+Step-wise Adaptive Integration of Supervised Fine-tuning and Reinforcement Learning for Task-Specific LLMs,19/05/2025,"Jack Chen, Fazhong Liu, Naruto Liu, Yuhan Luo, Erqu Qin, Harry Zheng, Tian Dong, Haojin Zhu, Yan Meng, Xiao Wang","Large language models (LLMs) excel at mathematical reasoning and logical
+problem-solving. The current popular training paradigms primarily use
+supervised fine-tuning (SFT) and reinforcement learning (RL) to enhance the
+models' reasoning abilities. However, when using SFT or RL alone, there are
+respective challenges: SFT may suffer from overfitting, while RL is prone to
+mode collapse. The state-of-the-art methods have proposed hybrid training
+schemes. However, static switching faces challenges such as poor generalization
+across different tasks and high dependence on data quality. In response to
+these challenges, inspired by the curriculum learning-quiz mechanism in human
+reasoning cultivation, We propose SASR, a step-wise adaptive hybrid training
+framework that theoretically unifies SFT and RL and dynamically balances the
+two throughout optimization. SASR uses SFT for initial warm-up to establish
+basic reasoning skills, and then uses an adaptive dynamic adjustment algorithm
+based on gradient norm and divergence relative to the original distribution to
+seamlessly integrate SFT with the online RL method GRPO. By monitoring the
+training status of LLMs and adjusting the training process in sequence, SASR
+ensures a smooth transition between training schemes, maintaining core
+reasoning abilities while exploring different paths. Experimental results
+demonstrate that SASR outperforms SFT, RL, and static hybrid training methods.",http://arxiv.org/pdf/2505.13026v1,,False
+Augmented Regression Models using Neurochaos Learning,19/05/2025,"Akhila Henry, Nithin Nagaraj","This study presents novel Augmented Regression Models using Neurochaos
+Learning (NL), where Tracemean features derived from the Neurochaos Learning
+framework are integrated with traditional regression algorithms : Linear
+Regression, Ridge Regression, Lasso Regression, and Support Vector Regression
+(SVR). Our approach was evaluated using ten diverse real-life datasets and a
+synthetically generated dataset of the form $y = mx + c + \epsilon$. Results
+show that incorporating the Tracemean feature (mean of the chaotic neural
+traces of the neurons in the NL architecture) significantly enhances regression
+performance, particularly in Augmented Lasso Regression and Augmented SVR,
+where six out of ten real-life datasets exhibited improved predictive accuracy.
+Among the models, Augmented Chaotic Ridge Regression achieved the highest
+average performance boost (11.35 %). Additionally, experiments on the simulated
+dataset demonstrated that the Mean Squared Error (MSE) of the augmented models
+consistently decreased and converged towards the Minimum Mean Squared Error
+(MMSE) as the sample size increased. This work demonstrates the potential of
+chaos-inspired features in regression tasks, offering a pathway to more
+accurate and computationally efficient prediction models.",http://arxiv.org/pdf/2505.12967v1,,False
+Power Allocation for Delay Optimization in Device-to-Device Networks: A Graph Reinforcement Learning Approach,19/05/2025,"Hao Fang, Kai Huang, Hao Ye, Chongtao Guo, Le Liang, Xiao Li, Shi Jin","The pursuit of rate maximization in wireless communication frequently
+encounters substantial challenges associated with user fairness. This paper
+addresses these challenges by exploring a novel power allocation approach for
+delay optimization, utilizing graph neural networks (GNNs)-based reinforcement
+learning (RL) in device-to-device (D2D) communication. The proposed approach
+incorporates not only channel state information but also factors such as packet
+delay, the number of backlogged packets, and the number of transmitted packets
+into the components of the state information. We adopt a centralized RL method,
+where a central controller collects and processes the state information. The
+central controller functions as an agent trained using the proximal policy
+optimization (PPO) algorithm. To better utilize topology information in the
+communication network and enhance the generalization of the proposed method, we
+embed GNN layers into both the actor and critic networks of the PPO algorithm.
+This integration allows for efficient parameter updates of GNNs and enables the
+state information to be parameterized as a low-dimensional embedding, which is
+leveraged by the agent to optimize power allocation strategies. Simulation
+results demonstrate that the proposed method effectively reduces average delay
+while ensuring user fairness, outperforms baseline methods, and exhibits
+scalability and generalization capability.",http://arxiv.org/pdf/2505.12902v1,,False
+"Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio",19/05/2025,"Jongmin Jung, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon Soh, Irmak Bukey, Chris Donahue, Dasaem Jeong","Music exists in various modalities, such as score images, symbolic scores,
+MIDI, and audio. Translations between each modality are established as core
+tasks of music information retrieval, such as automatic music transcription
+(audio-to-MIDI) and optical music recognition (score image to symbolic score).
+However, most past work on multimodal translation trains specialized models on
+individual translation tasks. In this paper, we propose a unified approach,
+where we train a general-purpose model on many translation tasks
+simultaneously. Two key factors make this unified approach viable: a new
+large-scale dataset and the tokenization of each modality. Firstly, we propose
+a new dataset that consists of more than 1,300 hours of paired audio-score
+image data collected from YouTube videos, which is an order of magnitude larger
+than any existing music modal translation datasets. Secondly, our unified
+tokenization framework discretizes score images, audio, MIDI, and MusicXML into
+a sequence of tokens, enabling a single encoder-decoder Transformer to tackle
+multiple cross-modal translation as one coherent sequence-to-sequence task.
+Experimental results confirm that our unified multitask model improves upon
+single-task baselines in several key areas, notably reducing the symbol error
+rate for optical music recognition from 24.58% to a state-of-the-art 13.67%,
+while similarly substantial improvements are observed across the other
+translation tasks. Notably, our approach achieves the first successful
+score-image-conditioned audio generation, marking a significant breakthrough in
+cross-modal music generation.",http://arxiv.org/pdf/2505.12863v1,,False
+PsyMem: Fine-grained psychological alignment and Explicit Memory Control for Advanced Role-Playing LLMs,19/05/2025,"Xilong Cheng, Yunxiao Qin, Yuting Tan, Zhengnan Li, Ye Wang, Hongjiang Xiao, Yuan Zhang","Existing LLM-based role-playing methods often rely on superficial textual
+descriptions or simplistic metrics, inadequately modeling both intrinsic and
+extrinsic character dimensions. Additionally, they typically simulate character
+memory with implicit model knowledge or basic retrieval augment generation
+without explicit memory alignment, compromising memory consistency. The two
+issues weaken reliability of role-playing LLMs in several applications, such as
+trustworthy social simulation. To address these limitations, we propose PsyMem,
+a novel framework integrating fine-grained psychological attributes and
+explicit memory control for role-playing. PsyMem supplements textual
+descriptions with 26 psychological indicators to detailed model character.
+Additionally, PsyMem implements memory alignment training, explicitly trains
+the model to align character's response with memory, thereby enabling dynamic
+memory-controlled responding during inference. By training Qwen2.5-7B-Instruct
+on our specially designed dataset (including 5,414 characters and 38,962
+dialogues extracted from novels), the resulting model, termed as PsyMem-Qwen,
+outperforms baseline models in role-playing, achieving the best performance in
+human-likeness and character fidelity.",http://arxiv.org/pdf/2505.12814v1,,False
+Enhancing Channel-Independent Time-Series Forecasting via Cross-Variate Patch Embedding,19/05/2025,"Donghwa Shin, Edwin Zhang","Transformers have recently gained popularity in time series forecasting due
+to their ability to capture long-term dependencies. However, many existing
+models focus only on capturing temporal dependencies while omitting intricate
+relationships between variables. Recent models have tried tackling this by
+explicitly modeling both cross-time and cross-variate dependencies through a
+sequential or unified attention mechanism, but they are entirely channel
+dependent (CD) across all layers, making them potentially susceptible to
+overfitting. To address this, we propose Cross-Variate Patch Embeddings (CVPE),
+a lightweight CD module that injects cross-variate context into
+channel-independent (CI) models by simply modifying the patch embedding
+process. We achieve this by adding a learnable positional encoding and a
+lightweight router-attention block to the vanilla patch embedding layer. We
+then integrate CVPE into Time-LLM, a multimodal CI forecasting model, to
+demonstrate its effectiveness in capturing cross-variate dependencies and
+enhance the CI model's performance. Extensive experimental results on seven
+real-world datasets show that our enhanced Time-LLM outperforms the original
+baseline model simply by incorporating the CVPE module, with no other changes.",http://arxiv.org/pdf/2505.12761v1,,False
+PEER pressure: Model-to-Model Regularization for Single Source Domain Generalization,19/05/2025,"Dong Kyu Cho, Inwoo Hwang, Sanghack Lee","Data augmentation is a popular tool for single source domain generalization,
+which expands the source domain by generating simulated ones, improving
+generalization on unseen target domains. In this work, we show that the
+performance of such augmentation-based methods in the target domains
+universally fluctuates during training, posing challenges in model selection
+under realistic scenarios. We argue that the fluctuation stems from the
+inability of the model to accumulate the knowledge learned from diverse
+augmentations, exacerbating feature distortion during training. Based on this
+observation, we propose a novel generalization method, coined Parameter-Space
+Ensemble with Entropy Regularization (PEER), that uses a proxy model to learn
+the augmented data on behalf of the main model. The main model is updated by
+averaging its parameters with the proxy model, progressively accumulating
+knowledge over the training steps. Maximizing the mutual information between
+the output representations of the two models guides the learning process of the
+proxy model, mitigating feature distortion during training. Experimental
+results demonstrate the effectiveness of PEER in reducing the OOD performance
+fluctuation and enhancing generalization across various datasets, including
+PACS, Digits, Office-Home, and VLCS. Notably, our method with simple random
+augmentation achieves state-of-the-art performance, surpassing prior approaches
+on sDG that utilize complex data augmentation strategies.",http://arxiv.org/pdf/2505.12745v1,,False
+Incentivizing Multimodal Reasoning in Large Models for Direct Robot Manipulation,19/05/2025,"Weiliang Tang, Dong Jing, Jia-Hui Pan, Zhiwu Lu, Yun-Hui Liu, Li Erran Li, Mingyu Ding, Chi-Wing Fu","Recent Large Multimodal Models have demonstrated remarkable reasoning
+capabilities, especially in solving complex mathematical problems and realizing
+accurate spatial perception. Our key insight is that these emerging abilities
+can naturally extend to robotic manipulation by enabling LMMs to directly infer
+the next goal in language via reasoning, rather than relying on a separate
+action head. However, this paradigm meets two main challenges: i) How to make
+LMMs understand the spatial action space, and ii) How to fully exploit the
+reasoning capacity of LMMs in solving these tasks. To tackle the former
+challenge, we propose a novel task formulation, which inputs the current states
+of object parts and the gripper, and reformulates rotation by a new axis
+representation instead of traditional Euler angles. This representation is more
+compatible with spatial reasoning and easier to interpret within a unified
+language space. For the latter challenge, we design a pipeline to utilize
+cutting-edge LMMs to generate a small but high-quality reasoning dataset of
+multi-round dialogues that successfully solve manipulation tasks for supervised
+fine-tuning. Then, we perform reinforcement learning by trial-and-error
+interactions in simulation to further enhance the model's reasoning abilities
+for robotic manipulation. Our resulting reasoning model built upon a 7B
+backbone, named ReasonManip, demonstrates three notable advantages driven by
+its system-2 level reasoning capabilities: i) exceptional generalizability to
+out-of-distribution environments, objects, and tasks; ii) inherent sim-to-real
+transfer ability enabled by the unified language representation shared across
+domains; iii) transparent interpretability connecting high-level reasoning and
+low-level control. Extensive experiments demonstrate the effectiveness of the
+proposed paradigm and its potential to advance LMM-driven robotic manipulation.",http://arxiv.org/pdf/2505.12744v1,,False
+DreamGen: Unlocking Generalization in Robot Learning through Neural Trajectories,19/05/2025,"Joel Jang, Seonghyeon Ye, Zongyu Lin, Jiannan Xiang, Johan Bjorck, Yu Fang, Fengyuan Hu, Spencer Huang, Kaushil Kundalia, Yen-Chen Lin, Loic Magne, Ajay Mandlekar, Avnish Narayan, You Liang Tan, Guanzhi Wang, Jing Wang, Qi Wang, Yinzhen Xu, Xiaohui Zeng, Kaiyuan Zheng, Ruijie Zheng, Ming-Yu Liu, Luke Zettlemoyer, Dieter Fox, Jan Kautz, Scott Reed, Yuke Zhu, Linxi Fan","We introduce DreamGen, a simple yet highly effective 4-stage pipeline for
+training robot policies that generalize across behaviors and environments
+through neural trajectories - synthetic robot data generated from video world
+models. DreamGen leverages state-of-the-art image-to-video generative models,
+adapting them to the target robot embodiment to produce photorealistic
+synthetic videos of familiar or novel tasks in diverse environments. Since
+these models generate only videos, we recover pseudo-action sequences using
+either a latent action model or an inverse-dynamics model (IDM). Despite its
+simplicity, DreamGen unlocks strong behavior and environment generalization: a
+humanoid robot can perform 22 new behaviors in both seen and unseen
+environments, while requiring teleoperation data from only a single
+pick-and-place task in one environment. To evaluate the pipeline
+systematically, we introduce DreamGen Bench, a video generation benchmark that
+shows a strong correlation between benchmark performance and downstream policy
+success. Our work establishes a promising new axis for scaling robot learning
+well beyond manual data collection.",http://arxiv.org/pdf/2505.12705v1,,False
+Counterfactual Explanations for Continuous Action Reinforcement Learning,19/05/2025,"Shuyang Dong, Shangtong Zhang, Lu Feng","Reinforcement Learning (RL) has shown great promise in domains like
+healthcare and robotics but often struggles with adoption due to its lack of
+interpretability. Counterfactual explanations, which address ""what if""
+scenarios, provide a promising avenue for understanding RL decisions but remain
+underexplored for continuous action spaces. We propose a novel approach for
+generating counterfactual explanations in continuous action RL by computing
+alternative action sequences that improve outcomes while minimizing deviations
+from the original sequence. Our approach leverages a distance metric for
+continuous actions and accounts for constraints such as adhering to predefined
+policies in specific states. Evaluations in two RL domains, Diabetes Control
+and Lunar Lander, demonstrate the effectiveness, efficiency, and generalization
+of our approach, enabling more interpretable and trustworthy RL applications.",http://arxiv.org/pdf/2505.12701v1,,False
+ChromFound: Towards A Universal Foundation Model for Single-Cell Chromatin Accessibility Data,19/05/2025,"Yifeng Jiao, Yuchen Liu, Yu Zhang, Xin Guo, Yushuai Wu, Chen Jiang, Jiyang Li, Hongwei Zhang, Limei Han, Xin Gao, Yuan Qi, Yuan Cheng","The advent of single-cell Assay for Transposase-Accessible Chromatin using
+sequencing (scATAC-seq) offers an innovative perspective for deciphering
+regulatory mechanisms by assembling a vast repository of single-cell chromatin
+accessibility data. While foundation models have achieved significant success
+in single-cell transcriptomics, there is currently no foundation model for
+scATAC-seq that supports zero-shot high-quality cell identification and
+comprehensive multi-omics analysis simultaneously. Key challenges lie in the
+high dimensionality and sparsity of scATAC-seq data, as well as the lack of a
+standardized schema for representing open chromatin regions (OCRs). Here, we
+present \textbf{ChromFound}, a foundation model tailored for scATAC-seq.
+ChromFound utilizes a hybrid architecture and genome-aware tokenization to
+effectively capture genome-wide long contexts and regulatory signals from
+dynamic chromatin landscapes. Pretrained on 1.97 million cells from 30 tissues
+and 6 disease conditions, ChromFound demonstrates broad applicability across 6
+diverse tasks. Notably, it achieves robust zero-shot performance in generating
+universal cell representations and exhibits excellent transferability in cell
+type annotation and cross-omics prediction. By uncovering enhancer-gene links
+undetected by existing computational methods, ChromFound offers a promising
+framework for understanding disease risk variants in the noncoding genome.",http://arxiv.org/pdf/2505.12638v1,,False
+Scalable Video-to-Dataset Generation for Cross-Platform Mobile Agents,19/05/2025,"Yunseok Jang, Yeda Song, Sungryull Sohn, Lajanugen Logeswaran, Tiange Luo, Dong-Ki Kim, Kyunghoon Bae, Honglak Lee","Recent advancements in Large Language Models (LLMs) and Vision-Language
+Models (VLMs) have sparked significant interest in developing GUI visual
+agents. We introduce MONDAY (Mobile OS Navigation Task Dataset for Agents from
+YouTube), a large-scale dataset of 313K annotated frames from 20K instructional
+videos capturing diverse real-world mobile OS navigation across multiple
+platforms. Models that include MONDAY in their pre-training phases demonstrate
+robust cross-platform generalization capabilities, consistently outperforming
+models trained on existing single OS datasets while achieving an average
+performance gain of 18.11%p on an unseen mobile OS platform. To enable
+continuous dataset expansion as mobile platforms evolve, we present an
+automated framework that leverages publicly available video content to create
+comprehensive task datasets without manual annotation. Our framework comprises
+robust OCR-based scene detection (95.04% F1score), near-perfect UI element
+detection (99.87% hit ratio), and novel multi-step action identification to
+extract reliable action sequences across diverse interface configurations. We
+contribute both the MONDAY dataset and our automated collection framework to
+facilitate future research in mobile OS navigation.",http://arxiv.org/pdf/2505.12632v1,,False
+Learning Robust Spectral Dynamics for Temporal Domain Generalization,19/05/2025,"En Yu, Jie Lu, Xiaoyu Yang, Guangquan Zhang, Zhen Fang","Modern machine learning models struggle to maintain performance in dynamic
+environments where temporal distribution shifts, \emph{i.e., concept drift},
+are prevalent. Temporal Domain Generalization (TDG) seeks to enable model
+generalization across evolving domains, yet existing approaches typically
+assume smooth incremental changes, struggling with complex real-world drifts
+involving long-term structure (incremental evolution/periodicity) and local
+uncertainties. To overcome these limitations, we introduce FreKoo, which
+tackles these challenges via a novel frequency-domain analysis of parameter
+trajectories. It leverages the Fourier transform to disentangle parameter
+evolution into distinct spectral bands. Specifically, low-frequency component
+with dominant dynamics are learned and extrapolated using the Koopman operator,
+robustly capturing diverse drift patterns including both incremental and
+periodicity. Simultaneously, potentially disruptive high-frequency variations
+are smoothed via targeted temporal regularization, preventing overfitting to
+transient noise and domain uncertainties. In addition, this dual spectral
+strategy is rigorously grounded through theoretical analysis, providing
+stability guarantees for the Koopman prediction, a principled Bayesian
+justification for the high-frequency regularization, and culminating in a
+multiscale generalization bound connecting spectral dynamics to improved
+generalization. Extensive experiments demonstrate FreKoo's significant
+superiority over SOTA TDG approaches, particularly excelling in real-world
+streaming scenarios with complex drifts and uncertainties.",http://arxiv.org/pdf/2505.12585v1,,False

@@ -1,0 +1,619 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions,23/05/2025,"Zizhang Li, Hong-Xing Yu, Wei Liu, Yin Yang, Charles Herrmann, Gordon Wetzstein, Jiajun Wu","WonderPlay is a novel framework integrating physics simulation with video
+generation for generating action-conditioned dynamic 3D scenes from a single
+image. While prior works are restricted to rigid body or simple elastic
+dynamics, WonderPlay features a hybrid generative simulator to synthesize a
+wide range of 3D dynamics. The hybrid generative simulator first uses a physics
+solver to simulate coarse 3D dynamics, which subsequently conditions a video
+generator to produce a video with finer, more realistic motion. The generated
+video is then used to update the simulated dynamic 3D scene, closing the loop
+between the physics solver and the video generator. This approach enables
+intuitive user control to be combined with the accurate dynamics of
+physics-based simulators and the expressivity of diffusion-based video
+generators. Experimental results demonstrate that WonderPlay enables users to
+interact with various scenes of diverse content, including cloth, sand, snow,
+liquid, smoke, elastic, and rigid bodies -- all using a single image input.
+Code will be made public. Project website:
+https://kyleleey.github.io/WonderPlay/",http://arxiv.org/pdf/2505.18151v1,,False
+Generative Distribution Embeddings,23/05/2025,"Nic Fishman, Gokul Gowri, Peng Yin, Jonathan Gootenberg, Omar Abudayyeh","Many real-world problems require reasoning across multiple scales, demanding
+models which operate not on single data points, but on entire distributions. We
+introduce generative distribution embeddings (GDE), a framework that lifts
+autoencoders to the space of distributions. In GDEs, an encoder acts on sets of
+samples, and the decoder is replaced by a generator which aims to match the
+input distribution. This framework enables learning representations of
+distributions by coupling conditional generative models with encoder networks
+which satisfy a criterion we call distributional invariance. We show that GDEs
+learn predictive sufficient statistics embedded in the Wasserstein space, such
+that latent GDE distances approximately recover the $W_2$ distance, and latent
+interpolation approximately recovers optimal transport trajectories for
+Gaussian and Gaussian mixture distributions. We systematically benchmark GDEs
+against existing approaches on synthetic datasets, demonstrating consistently
+stronger performance. We then apply GDEs to six key problems in computational
+biology: learning representations of cell populations from lineage-tracing data
+(150K cells), predicting perturbation effects on single-cell transcriptomes (1M
+cells), predicting perturbation effects on cellular phenotypes (20M single-cell
+images), modeling tissue-specific DNA methylation patterns (253M sequences),
+designing synthetic yeast promoters (34M sequences), and spatiotemporal
+modeling of viral protein sequences (1M sequences).",http://arxiv.org/pdf/2505.18150v1,,False
+CXReasonBench: A Benchmark for Evaluating Structured Diagnostic Reasoning in Chest X-rays,23/05/2025,"Hyungyung Lee, Geon Choi, Jung-Oh Lee, Hangyul Yoon, Hyuk Gi Hong, Edward Choi","Recent progress in Large Vision-Language Models (LVLMs) has enabled promising
+applications in medical tasks, such as report generation and visual question
+answering. However, existing benchmarks focus mainly on the final diagnostic
+answer, offering limited insight into whether models engage in clinically
+meaningful reasoning. To address this, we present CheXStruct and CXReasonBench,
+a structured pipeline and benchmark built on the publicly available
+MIMIC-CXR-JPG dataset. CheXStruct automatically derives a sequence of
+intermediate reasoning steps directly from chest X-rays, such as segmenting
+anatomical regions, deriving anatomical landmarks and diagnostic measurements,
+computing diagnostic indices, and applying clinical thresholds. CXReasonBench
+leverages this pipeline to evaluate whether models can perform clinically valid
+reasoning steps and to what extent they can learn from structured guidance,
+enabling fine-grained and transparent assessment of diagnostic reasoning. The
+benchmark comprises 18,988 QA pairs across 12 diagnostic tasks and 1,200 cases,
+each paired with up to 4 visual inputs, and supports multi-path, multi-stage
+evaluation including visual grounding via anatomical region selection and
+diagnostic measurements. Even the strongest of 10 evaluated LVLMs struggle with
+structured reasoning and generalization, often failing to link abstract
+knowledge with anatomically grounded visual interpretation. The code is
+available at https://github.com/ttumyche/CXReasonBench",http://arxiv.org/pdf/2505.18087v1,,False
+Stable Reinforcement Learning for Efficient Reasoning,23/05/2025,"Muzhi Dai, Shixuan Liu, Qingyi Si","The success of Deepseek-R1 has drawn the LLM community's attention to
+reinforcement learning (RL) methods like GRPO. However, such rule-based 0/1
+outcome reward methods lack the capability to regulate the intermediate
+reasoning processes during chain-of-thought (CoT) generation, leading to severe
+overthinking phenomena. In response, recent studies have designed reward
+functions to reinforce models' behaviors in producing shorter yet correct
+completions. Nevertheless, we observe that these length-penalty reward
+functions exacerbate RL training instability: as the completion length
+decreases, model accuracy abruptly collapses, often occurring early in
+training. To address this issue, we propose a simple yet effective solution
+GRPO-$\lambda$, an efficient and stabilized variant of GRPO, which dynamically
+adjusts the reward strategy by monitoring the correctness ratio among
+completions within each query-sampled group. A low correctness ratio indicates
+the need to avoid length penalty that compromises CoT quality, triggering a
+switch to length-agnostic 0/1 rewards that prioritize reasoning capability. A
+high ratio maintains length penalties to boost efficiency. Experimental results
+show that our approach avoids training instability caused by length penalty
+while maintaining the optimal accuracy-efficiency trade-off. On the GSM8K,
+GPQA, MATH-500, AMC 2023, and AIME 2024 benchmarks, it improves average
+accuracy by 1.48% while reducing CoT sequence length by 47.3%.",http://arxiv.org/pdf/2505.18086v1,,False
+Deep Operator Neural Network Model Predictive Control,23/05/2025,"Thomas Oliver de Jong, Khemraj Shukla, Mircea Lazar","In this paper, we consider the design of model predictive control (MPC)
+algorithms based on deep operator neural networks (DeepONets). These neural
+networks are capable of accurately approximating real and complex valued
+solutions of continuous time nonlinear systems without relying on recurrent
+architectures. The DeepONet architecture is made up of two feedforward neural
+networks: the branch network, which encodes the input function space, and the
+trunk network, which represents dependencies on temporal variables or initial
+conditions. Utilizing the original DeepONet architecture as a predictor within
+MPC for Multi Input Multi Output (MIMO) systems requires multiple branch
+networks, to generate multi output predictions, one for each input. Moreover,
+to predict multiple time steps into the future, the network has to be evaluated
+multiple times. Motivated by this, we introduce a multi step DeepONet
+(MS-DeepONet) architecture that computes in one shot multi step predictions of
+system outputs from multi step input sequences, which is better suited for MPC.
+We prove that the MS DeepONet is a universal approximator in terms of multi
+step sequence prediction. Additionally, we develop automated hyper parameter
+selection strategies and implement MPC frameworks using both the standard
+DeepONet and the proposed MS DeepONet architectures in PyTorch. The
+implementation is publicly available on GitHub. Simulation results demonstrate
+that MS-DeepONet consistently outperforms the standard DeepONet in learning and
+predictive control tasks across several nonlinear benchmark systems: the van
+der Pol oscillator, the quadruple tank process, and a cart pendulum unstable
+system, where it successfully learns and executes multiple swing up and
+stabilization policies.",http://arxiv.org/pdf/2505.18008v1,,False
+Towards Analyzing and Understanding the Limitations of VAPO: A Theoretical Perspective,23/05/2025,"Jintian Shao, Yiming Cheng, Hongyi Huang, Beiwen Zhang, Zhiyu Wu, You Shan, Mingkai Zheng","The VAPO framework has demonstrated significant empirical success in
+enhancing the efficiency and reliability of reinforcement learning for long
+chain-of-thought (CoT) reasoning tasks with large language models (LLMs). By
+systematically addressing challenges such as value model bias, heterogeneous
+sequence lengths, and sparse reward signals, VAPO achieves state-of-the-art
+performance. While its practical benefits are evident, a deeper theoretical
+understanding of its underlying mechanisms and potential limitations is crucial
+for guiding future advancements. This paper aims to initiate such a discussion
+by exploring VAPO from a theoretical perspective, highlighting areas where its
+assumptions might be challenged and where further investigation could yield
+more robust and generalizable reasoning agents. We delve into the intricacies
+of value function approximation in complex reasoning spaces, the optimality of
+adaptive advantage estimation, the impact of token-level optimization, and the
+enduring challenges of exploration and generalization.",http://arxiv.org/pdf/2505.17997v1,,False
+"ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Human Activity Modeling",23/05/2025,"Weihang You, Hanqi Jiang, Zishuai Liu, Zihang Xie, Tianming Liu, Jin Lu, Fei Dou","Real world collection of Activities of Daily Living data is challenging due
+to privacy concerns, costly deployment and labeling, and the inherent sparsity
+and imbalance of human behavior. We present ADLGen, a generative framework
+specifically designed to synthesize realistic, event triggered, and symbolic
+sensor sequences for ambient assistive environments. ADLGen integrates a
+decoder only Transformer with sign based symbolic temporal encoding, and a
+context and layout aware sampling mechanism to guide generation toward
+semantically rich and physically plausible sensor event sequences. To enhance
+semantic fidelity and correct structural inconsistencies, we further
+incorporate a large language model into an automatic generate evaluate refine
+loop, which verifies logical, behavioral, and temporal coherence and generates
+correction rules without manual intervention or environment specific tuning.
+Through comprehensive experiments with novel evaluation metrics, ADLGen is
+shown to outperform baseline generators in statistical fidelity, semantic
+richness, and downstream activity recognition, offering a scalable and
+privacy-preserving solution for ADL data synthesis.",http://arxiv.org/pdf/2505.17987v1,,False
+Selection Mechanisms for Sequence Modeling using Linear State Space Models,23/05/2025,"Umberto Casti, Sandro Zampieri, Fabio Pasqualetti","Recent advancements in language modeling tasks have been driven by
+architectures such as Transformers and, more recently, by Selective State Space
+Models (SSMs). In this paper, we introduce an alternative selection mechanism
+inspired by control theory methodologies. Specifically, we propose a novel
+residual generator for selection, drawing an analogy to fault detection
+strategies in Linear Time-Invariant (LTI) systems. Unlike Mamba, which utilizes
+Linear Time-Varying (LTV) systems, our approach combines multiple LTI systems,
+preserving their beneficial properties during training while achieving
+comparable selectivity. To evaluate the effectiveness of the proposed
+architecture, we test its performance on synthetic tasks. While these tasks are
+not inherently critical, they serve as benchmarks to test the selectivity
+properties of different cores architecture. This work highlights the potential
+of integrating theoretical insights with experimental advancements, offering a
+complementary perspective to deep learning innovations at the intersection of
+control theory and machine learning.",http://arxiv.org/pdf/2505.17932v1,,False
+Universal Domain Adaptation Benchmark for Time Series Data Representation,23/05/2025,"Romain Mussard, Fannia Pacheco, Maxime Berar, Gilles Gasso, Paul Honeine","Deep learning models have significantly improved the ability to detect
+novelties in time series (TS) data. This success is attributed to their strong
+representation capabilities. However, due to the inherent variability in TS
+data, these models often struggle with generalization and robustness. To
+address this, a common approach is to perform Unsupervised Domain Adaptation,
+particularly Universal Domain Adaptation (UniDA), to handle domain shifts and
+emerging novel classes. While extensively studied in computer vision, UniDA
+remains underexplored for TS data. This work provides a comprehensive
+implementation and comparison of state-of-the-art TS backbones in a UniDA
+framework. We propose a reliable protocol to evaluate their robustness and
+generalization across different domains. The goal is to provide practitioners
+with a framework that can be easily extended to incorporate future advancements
+in UniDA and TS architectures. Our results highlight the critical influence of
+backbone selection in UniDA performance and enable a robustness analysis across
+various datasets and architectures.",http://arxiv.org/pdf/2505.17899v1,,False
+BLAST: Balanced Sampling Time Series Corpus for Universal Forecasting Models,23/05/2025,"Zezhi Shao, Yujie Li, Fei Wang, Chengqing Yu, Yisong Fu, Tangwen Qian, Bin Xu, Boyu Diao, Yongjun Xu, Xueqi Cheng","The advent of universal time series forecasting models has revolutionized
+zero-shot forecasting across diverse domains, yet the critical role of data
+diversity in training these models remains underexplored. Existing large-scale
+time series datasets often suffer from inherent biases and imbalanced
+distributions, leading to suboptimal model performance and generalization. To
+address this gap, we introduce BLAST, a novel pre-training corpus designed to
+enhance data diversity through a balanced sampling strategy. First, BLAST
+incorporates 321 billion observations from publicly available datasets and
+employs a comprehensive suite of statistical metrics to characterize time
+series patterns. Then, to facilitate pattern-oriented sampling, the data is
+implicitly clustered using grid-based partitioning. Furthermore, by integrating
+grid sampling and grid mixup techniques, BLAST ensures a balanced and
+representative coverage of diverse patterns. Experimental results demonstrate
+that models pre-trained on BLAST achieve state-of-the-art performance with a
+fraction of the computational resources and training tokens required by
+existing methods. Our findings highlight the pivotal role of data diversity in
+improving both training efficiency and model performance for the universal
+forecasting task.",http://arxiv.org/pdf/2505.17871v1,10.1145/3711896.3736860,False
+Scaling Recurrent Neural Networks to a Billion Parameters with Zero-Order Optimization,23/05/2025,"Francois Chaubard, Mykel Kochenderfer","During inference, Recurrent Neural Networks (RNNs) scale constant in both
+FLOPs and GPU memory with increasing context length, as they compress all prior
+tokens into a fixed-size memory. In contrast, transformers scale linearly in
+FLOPs and, at best, linearly in memory during generation, since they must
+attend to all previous tokens explicitly. Despite this inference-time
+advantage, training large RNNs on long contexts remains impractical because
+standard optimization methods depend on Backpropagation Through Time (BPTT).
+BPTT requires retention of all intermediate activations during the forward
+pass, causing memory usage to scale linearly with both context length and model
+size. In this paper, we show that Zero-Order Optimization (ZOO) methods such as
+Random-vector Gradient Estimation (RGE) can successfully replace BPTT to train
+RNNs with convergence rates that match, or exceed BPTT by up to 19 fold, while
+using orders of magnitude less memory and cost, as the model remains in
+inference mode throughout training. We further demonstrate that
+Central-Difference RGE (CD-RGE) corresponds to optimizing a smoothed surrogate
+loss, inherently regularizing training and improving generalization. Our method
+matches or outperforms BPTT across three settings: (1) overfitting, (2)
+transduction, and (3) language modeling. Across all tasks, with sufficient
+perturbations, our models generalize as well as or better than those trained
+with BPTT, often in fewer steps. Despite the need for more forward passes per
+step, we can surpass BPTT wall-clock time per step using recent advancements
+such as FlashRNN and distributed inference.",http://arxiv.org/pdf/2505.17852v1,,False
+PatientSim: A Persona-Driven Simulator for Realistic Doctor-Patient Interactions,23/05/2025,"Daeun Kyung, Hyunseung Chung, Seongsu Bae, Jiho Kim, Jae Ho Sohn, Taerim Kim, Soo Kyung Kim, Edward Choi","Doctor-patient consultations require multi-turn, context-aware communication
+tailored to diverse patient personas. Training or evaluating doctor LLMs in
+such settings requires realistic patient interaction systems. However, existing
+simulators often fail to reflect the full range of personas seen in clinical
+practice. To address this, we introduce PatientSim, a patient simulator that
+generates realistic and diverse patient personas for clinical scenarios,
+grounded in medical expertise. PatientSim operates using: 1) clinical profiles,
+including symptoms and medical history, derived from real-world data in the
+MIMIC-ED and MIMIC-IV datasets, and 2) personas defined by four axes:
+personality, language proficiency, medical history recall level, and cognitive
+confusion level, resulting in 37 unique combinations. We evaluated eight LLMs
+for factual accuracy and persona consistency. The top-performing open-source
+model, Llama 3.3, was validated by four clinicians to confirm the robustness of
+our framework. As an open-source, customizable platform, PatientSim provides a
+reproducible and scalable solution that can be customized for specific training
+needs. Offering a privacy-compliant environment, it serves as a robust testbed
+for evaluating medical dialogue systems across diverse patient presentations
+and shows promise as an educational tool for healthcare.",http://arxiv.org/pdf/2505.17818v1,,False
+Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour,23/05/2025,"Bálint Gyevnár, Christopher G. Lucas, Stefano V. Albrecht, Shay B. Cohen","Autonomous multi-agent systems (MAS) are useful for automating complex tasks
+but raise trust concerns due to risks like miscoordination and goal
+misalignment. Explainability is vital for trust calibration, but explainable
+reinforcement learning for MAS faces challenges in state/action space
+complexity, stakeholder needs, and evaluation. Using the counterfactual theory
+of causation and LLMs' summarisation capabilities, we propose Agentic
+eXplanations via Interrogative Simulation (AXIS). AXIS generates intelligible
+causal explanations for pre-trained multi-agent policies by having an LLM
+interrogate an environment simulator using queries like 'whatif' and 'remove'
+to observe and synthesise counterfactual information over multiple rounds. We
+evaluate AXIS on autonomous driving across 10 scenarios for 5 LLMs with a novel
+evaluation methodology combining subjective preference, correctness, and
+goal/action prediction metrics, and an external LLM as evaluator. Compared to
+baselines, AXIS improves perceived explanation correctness by at least 7.7%
+across all models and goal prediction accuracy by 23% for 4 models, with
+improved or comparable action prediction accuracy, achieving the highest scores
+overall.",http://arxiv.org/pdf/2505.17801v1,,False
+Structured Linear CDEs: Maximally Expressive and Parallel-in-Time Sequence Models,23/05/2025,"Benjamin Walker, Lingyi Yang, Nicola Muca Cirone, Cristopher Salvi, Terry Lyons","Structured Linear Controlled Differential Equations (SLiCEs) provide a
+unifying framework for sequence models with structured, input-dependent
+state-transition matrices that retain the maximal expressivity of dense
+matrices whilst being cheaper to compute. The framework encompasses existing
+architectures, such as input-dependent block-diagonal linear recurrent neural
+networks and DeltaNet's diagonal-plus-low-rank structure, as well as two novel
+variants based on sparsity and the Walsh--Hadamard transform. We prove that,
+unlike the diagonal state-transition matrices of S4 and Mamba, SLiCEs employing
+block-diagonal, sparse, or Walsh--Hadamard matrices match the maximal
+expressivity of dense matrices. Empirically, SLiCEs solve the $A_5$
+state-tracking benchmark with a single layer, achieve best-in-class length
+generalisation on regular language tasks among parallel-in-time models, and
+match the state-of-the-art performance of log neural controlled differential
+equations on six multivariate time-series classification datasets while cutting
+the average time per training step by a factor of twenty.",http://arxiv.org/pdf/2505.17761v1,,False
+A tensor network approach for chaotic time series prediction,23/05/2025,"Rodrigo Martínez-Peña, Román Orús","Making accurate predictions of chaotic time series is a complex challenge.
+Reservoir computing, a neuromorphic-inspired approach, has emerged as a
+powerful tool for this task. It exploits the memory and nonlinearity of
+dynamical systems without requiring extensive parameter tuning. However,
+selecting and optimizing reservoir architectures remains an open problem.
+Next-generation reservoir computing simplifies this problem by employing
+nonlinear vector autoregression based on truncated Volterra series, thereby
+reducing hyperparameter complexity. Nevertheless, the latter suffers from
+exponential parameter growth in terms of the maximum monomial degree. Tensor
+networks offer a promising solution to this issue by decomposing
+multidimensional arrays into low-dimensional structures, thus mitigating the
+curse of dimensionality. This paper explores the application of a previously
+proposed tensor network model for predicting chaotic time series, demonstrating
+its advantages in terms of accuracy and computational efficiency compared to
+conventional echo state networks. Using a state-of-the-art tensor network
+approach enables us to bridge the gap between the tensor network and reservoir
+computing communities, fostering advances in both fields.",http://arxiv.org/pdf/2505.17740v1,,False
+Automating Safety Enhancement for LLM-based Agents with Synthetic Risk Scenarios,23/05/2025,"Xueyang Zhou, Weidong Wang, Lin Lu, Jiawen Shi, Guiyao Tie, Yongtian Xu, Lixing Chen, Pan Zhou, Neil Zhenqiang Gong, Lichao Sun","Large Language Model (LLM)-based agents are increasingly deployed in
+real-world applications such as ""digital assistants, autonomous customer
+service, and decision-support systems"", where their ability to ""interact in
+multi-turn, tool-augmented environments"" makes them indispensable. However,
+ensuring the safety of these agents remains a significant challenge due to the
+diverse and complex risks arising from dynamic user interactions, external tool
+usage, and the potential for unintended harmful behaviors. To address this
+critical issue, we propose AutoSafe, the first framework that systematically
+enhances agent safety through fully automated synthetic data generation.
+Concretely, 1) we introduce an open and extensible threat model, OTS, which
+formalizes how unsafe behaviors emerge from the interplay of user instructions,
+interaction contexts, and agent actions. This enables precise modeling of
+safety risks across diverse scenarios. 2) we develop a fully automated data
+generation pipeline that simulates unsafe user behaviors, applies
+self-reflective reasoning to generate safe responses, and constructs a
+large-scale, diverse, and high-quality safety training dataset-eliminating the
+need for hazardous real-world data collection. To evaluate the effectiveness of
+our framework, we design comprehensive experiments on both synthetic and
+real-world safety benchmarks. Results demonstrate that AutoSafe boosts safety
+scores by 45% on average and achieves a 28.91% improvement on real-world tasks,
+validating the generalization ability of our learned safety strategies. These
+results highlight the practical advancement and scalability of AutoSafe in
+building safer LLM-based agents for real-world deployment. We have released the
+project page at https://auto-safe.github.io/.",http://arxiv.org/pdf/2505.17735v1,,False
+Seek-CAD: A Self-refined Generative Modeling for 3D Parametric CAD Using Local Inference via DeepSeek,23/05/2025,"Xueyang Li, Jiahao Li, Yu Song, Yunzhong Lou, Xiangdong Zhou","The advent of Computer-Aided Design (CAD) generative modeling will
+significantly transform the design of industrial products. The recent research
+endeavor has extended into the realm of Large Language Models (LLMs). In
+contrast to fine-tuning methods, training-free approaches typically utilize the
+advanced closed-source LLMs, thereby offering enhanced flexibility and
+efficiency in the development of AI agents for generating CAD parametric
+models. However, the substantial cost and limitations of local deployment of
+the top-tier closed-source LLMs pose challenges in practical applications. The
+Seek-CAD is the pioneer exploration of locally deployed open-source inference
+LLM DeepSeek-R1 for CAD parametric model generation with a training-free
+methodology. This study is the first investigation to incorporate both visual
+and Chain-of-Thought (CoT) feedback within the self-refinement mechanism for
+generating CAD models. Specifically, the initial generated parametric CAD model
+is rendered into a sequence of step-wise perspective images, which are
+subsequently processed by a Vision Language Model (VLM) alongside the
+corresponding CoTs derived from DeepSeek-R1 to assess the CAD model generation.
+Then, the feedback is utilized by DeepSeek-R1 to refine the initial generated
+model for the next round of generation. Moreover, we present an innovative 3D
+CAD model dataset structured around the SSR (Sketch, Sketch-based feature, and
+Refinements) triple design paradigm. This dataset encompasses a wide range of
+CAD commands, thereby aligning effectively with industrial application
+requirements and proving suitable for the generation of LLMs. Extensive
+experiments validate the effectiveness of Seek-CAD under various metrics.",http://arxiv.org/pdf/2505.17702v1,,False
+Towards General Continuous Memory for Vision-Language Models,23/05/2025,"Wenyi Wu, Zixuan Song, Kun Zhou, Yifei Shao, Zhiting Hu, Biwei Huang","Language models (LMs) and their extension, vision-language models (VLMs),
+have achieved remarkable performance across various tasks. However, they still
+struggle with complex reasoning tasks that require multimodal or multilingual
+real-world knowledge. To support such capabilities, an external memory system
+that can efficiently provide relevant multimodal information is essential.
+Existing approaches generally concatenate image and text tokens into a long
+sequence as memory, which, however, may drastically increase context length and
+even degrade performance. In contrast, we propose using continuous memory, a
+compact set of dense embeddings to more effectively and efficiently represent
+multimodal and multilingual knowledge. Our key insight is that a VLM can serve
+as its own continuous memory encoder. We empirically show that this design
+improves performance on complex multimodal reasoning tasks. Building on this,
+we introduce a data-efficient and parameter-efficient method to fine-tune the
+VLM into a memory encoder, requiring only 1.2% of the model's parameters and a
+small corpus of 15.6K self-synthesized samples. Our approach CoMEM utilizes
+VLM's original capabilities to encode arbitrary multimodal and multilingual
+knowledge into just 8 continuous embeddings. Since the inference-time VLM
+remains frozen, our memory module is plug-and-play and can be flexibly
+integrated as needed. Extensive experiments across eight multimodal reasoning
+benchmarks demonstrate the effectiveness of our approach.",http://arxiv.org/pdf/2505.17670v1,,False
+Automating Versatile Time-Series Analysis with Tiny Transformers on Embedded FPGAs,23/05/2025,"Tianheng Ling, Chao Qian, Lukas Johannes Haßler, Gregor Schiele","Transformer-based models have shown strong performance across diverse
+time-series tasks, but their deployment on resource-constrained devices remains
+challenging due to high memory and computational demand. While prior work
+targeting Microcontroller Units (MCUs) has explored hardware-specific
+optimizations, such approaches are often task-specific and limited to 8-bit
+fixed-point precision. Field-Programmable Gate Arrays (FPGAs) offer greater
+flexibility, enabling fine-grained control over data precision and
+architecture. However, existing FPGA-based deployments of Transformers for
+time-series analysis typically focus on high-density platforms with manual
+configuration. This paper presents a unified and fully automated deployment
+framework for Tiny Transformers on embedded FPGAs. Our framework supports a
+compact encoder-only Transformer architecture across three representative
+time-series tasks (forecasting, classification, and anomaly detection). It
+combines quantization-aware training (down to 4 bits), hardware-aware
+hyperparameter search using Optuna, and automatic VHDL generation for seamless
+deployment. We evaluate our framework on six public datasets across two
+embedded FPGA platforms. Results show that our framework produces integer-only,
+task-specific Transformer accelerators achieving as low as 0.033 mJ per
+inference with millisecond latency on AMD Spartan-7, while also providing
+insights into deployment feasibility on Lattice iCE40. All source code will be
+released in the GitHub repository
+(https://github.com/Edwina1030/TinyTransformer4TS).",http://arxiv.org/pdf/2505.17662v1,,False
+Large language model as user daily behavior data generator: balancing population diversity and individual personality,23/05/2025,"Haoxin Li, Jingtao Ding, Jiahui Gong, Yong Li","Predicting human daily behavior is challenging due to the complexity of
+routine patterns and short-term fluctuations. While data-driven models have
+improved behavior prediction by leveraging empirical data from various
+platforms and devices, the reliance on sensitive, large-scale user data raises
+privacy concerns and limits data availability. Synthetic data generation has
+emerged as a promising solution, though existing methods are often limited to
+specific applications. In this work, we introduce BehaviorGen, a framework that
+uses large language models (LLMs) to generate high-quality synthetic behavior
+data. By simulating user behavior based on profiles and real events,
+BehaviorGen supports data augmentation and replacement in behavior prediction
+models. We evaluate its performance in scenarios such as pertaining
+augmentation, fine-tuning replacement, and fine-tuning augmentation, achieving
+significant improvements in human mobility and smartphone usage predictions,
+with gains of up to 18.9%. Our results demonstrate the potential of BehaviorGen
+to enhance user behavior modeling through flexible and privacy-preserving
+synthetic data generation.",http://arxiv.org/pdf/2505.17615v1,,False
+Controlled Agentic Planning & Reasoning for Mechanism Synthesis,23/05/2025,"João Pedro Gandarela, Thiago Rios, Stefan Menzel, André Freitas","This work presents a dual-agent Large Language Model (LLM)-based reasoning
+method for mechanism synthesis, capable of reasoning at both linguistic and
+symbolic levels to generate geometrical and dynamic outcomes. The model
+consists of a composition of well-defined functions that, starting from a
+natural language specification, references abstract properties through
+supporting equations, generates and parametrizes simulation code, and elicits
+feedback anchor points using symbolic regression and distance functions. This
+process closes an actionable refinement loop at the linguistic and symbolic
+layers. The approach is shown to be both effective and convergent in the
+context of planar mechanisms. Additionally, we introduce MSynth, a novel
+benchmark for planar mechanism synthesis, and perform a comprehensive analysis
+of the impact of the model components. We further demonstrate that symbolic
+regression prompts unlock mechanistic insights only when applied to
+sufficiently large architectures.",http://arxiv.org/pdf/2505.17607v1,,False
+CosyVoice 3: Towards In-the-wild Speech Generation via Scaling-up and Post-training,23/05/2025,"Zhihao Du, Changfeng Gao, Yuxuan Wang, Fan Yu, Tianyu Zhao, Hao Wang, Xiang Lv, Hui Wang, Xian Shi, Keyu An, Guanrou Yang, Yabin Li, Yanni Chen, Zhifu Gao, Qian Chen, Yue Gu, Mengzhe Chen, Yafeng Chen, Shiliang Zhang, Wen Wang, Jieping Ye","In our prior works, we introduced a scalable streaming speech synthesis
+model, CosyVoice 2, which integrates a large language model (LLM) and a
+chunk-aware flow matching (FM) model, and achieves low-latency bi-streaming
+speech synthesis and human-parity quality. Despite these advancements,
+CosyVoice 2 exhibits limitations in language coverage, domain diversity, data
+volume, text formats, and post-training techniques. In this paper, we present
+CosyVoice 3, an improved model designed for zero-shot multilingual speech
+synthesis in the wild, surpassing its predecessor in content consistency,
+speaker similarity, and prosody naturalness. Key features of CosyVoice 3
+include: 1) A novel speech tokenizer to improve prosody naturalness, developed
+via supervised multi-task training, including automatic speech recognition,
+speech emotion recognition, language identification, audio event detection, and
+speaker analysis. 2) A new differentiable reward model for post-training
+applicable not only to CosyVoice 3 but also to other LLM-based speech synthesis
+models. 3) Dataset Size Scaling: Training data is expanded from ten thousand
+hours to one million hours, encompassing 9 languages and 18 Chinese dialects
+across various domains and text formats. 4) Model Size Scaling: Model
+parameters are increased from 0.5 billion to 1.5 billion, resulting in enhanced
+performance on our multilingual benchmark due to the larger model capacity.
+These advancements contribute significantly to the progress of speech synthesis
+in the wild. We encourage readers to listen to the demo at
+https://funaudiollm.github.io/cosyvoice3.",http://arxiv.org/pdf/2505.17589v1,,False
+Multiphysics Bench: Benchmarking and Investigating Scientific Machine Learning for Multiphysics PDEs,23/05/2025,"Changfan Yang, Lichen Bai, Yinpeng Wang, Shufei Zhang, Zeke Xie","Solving partial differential equations (PDEs) with machine learning has
+recently attracted great attention, as PDEs are fundamental tools for modeling
+real-world systems that range from fundamental physical science to advanced
+engineering disciplines. Most real-world physical systems across various
+disciplines are actually involved in multiple coupled physical fields rather
+than a single field. However, previous machine learning studies mainly focused
+on solving single-field problems, but overlooked the importance and
+characteristics of multiphysics problems in real world. Multiphysics PDEs
+typically entail multiple strongly coupled variables, thereby introducing
+additional complexity and challenges, such as inter-field coupling. Both
+benchmarking and solving multiphysics problems with machine learning remain
+largely unexamined. To identify and address the emerging challenges in
+multiphysics problems, we mainly made three contributions in this work. First,
+we collect the first general multiphysics dataset, the Multiphysics Bench, that
+focuses on multiphysics PDE solving with machine learning. Multiphysics Bench
+is also the most comprehensive PDE dataset to date, featuring the broadest
+range of coupling types, the greatest diversity of PDE formulations, and the
+largest dataset scale. Second, we conduct the first systematic investigation on
+multiple representative learning-based PDE solvers, such as PINNs, FNO,
+DeepONet, and DiffusionPDE solvers, on multiphysics problems. Unfortunately,
+naively applying these existing solvers usually show very poor performance for
+solving multiphysics. Third, through extensive experiments and discussions, we
+report multiple insights and a bag of useful tricks for solving multiphysics
+with machine learning, motivating future directions in the study and simulation
+of complex, coupled physical systems.",http://arxiv.org/pdf/2505.17575v1,,False
+Universal Biological Sequence Reranking for Improved De Novo Peptide Sequencing,23/05/2025,"Zijie Qiu, Jiaqi Wei, Xiang Zhang, Sheng Xu, Kai Zou, Zhi Jin, Zhiqiang Gao, Nanqing Dong, Siqi Sun","De novo peptide sequencing is a critical task in proteomics. However, the
+performance of current deep learning-based methods is limited by the inherent
+complexity of mass spectrometry data and the heterogeneous distribution of
+noise signals, leading to data-specific biases. We present RankNovo, the first
+deep reranking framework that enhances de novo peptide sequencing by leveraging
+the complementary strengths of multiple sequencing models. RankNovo employs a
+list-wise reranking approach, modeling candidate peptides as multiple sequence
+alignments and utilizing axial attention to extract informative features across
+candidates. Additionally, we introduce two new metrics, PMD (Peptide Mass
+Deviation) and RMD (residual Mass Deviation), which offer delicate supervision
+by quantifying mass differences between peptides at both the sequence and
+residue levels. Extensive experiments demonstrate that RankNovo not only
+surpasses its base models used to generate training candidates for reranking
+pre-training, but also sets a new state-of-the-art benchmark. Moreover,
+RankNovo exhibits strong zero-shot generalization to unseen models whose
+generations were not exposed during training, highlighting its robustness and
+potential as a universal reranking framework for peptide sequencing. Our work
+presents a novel reranking strategy that fundamentally challenges existing
+single-model paradigms and advances the frontier of accurate de novo
+sequencing. Our source code is provided on GitHub.",http://arxiv.org/pdf/2505.17552v1,,False
+TimeCF: A TimeMixer-Based Model with adaptive Convolution and Sharpness-Aware Minimization Frequency Domain Loss for long-term time seris forecasting,23/05/2025,"Bin Wang, Heming Yang, Jinfang Sheng","Recent studies have shown that by introducing prior knowledge, multi-scale
+analysis of complex and non-stationary time series in real environments can
+achieve good results in the field of long-term forecasting. However, affected
+by channel-independent methods, models based on multi-scale analysis may
+produce suboptimal prediction results due to the autocorrelation between time
+series labels, which in turn affects the generalization ability of the model.
+To address this challenge, we are inspired by the idea of sharpness-aware
+minimization and the recently proposed FreDF method and design a deep learning
+model TimeCF for long-term time series forecasting based on the TimeMixer,
+combined with our designed adaptive convolution information aggregation module
+and Sharpness-Aware Minimization Frequency Domain Loss (SAMFre). Specifically,
+TimeCF first decomposes the original time series into sequences of different
+scales. Next, the same-sized convolution modules are used to adaptively
+aggregate information of different scales on sequences of different scales.
+Then, decomposing each sequence into season and trend parts and the two parts
+are mixed at different scales through bottom-up and top-down methods
+respectively. Finally, different scales are aggregated through a Feed-Forward
+Network. What's more, extensive experimental results on different real-world
+datasets show that our proposed TimeCF has excellent performance in the field
+of long-term forecasting.",http://arxiv.org/pdf/2505.17532v1,,False
+Spacetime Geometry of Denoising in Diffusion Models,23/05/2025,"Rafał Karczewski, Markus Heinonen, Alison Pouplin, Søren Hauberg, Vikas Garg","We present a novel perspective on diffusion models using the framework of
+information geometry. We show that the set of noisy samples, taken across all
+noise levels simultaneously, forms a statistical manifold -- a family of
+denoising probability distributions. Interpreting the noise level as a temporal
+parameter, we refer to this manifold as spacetime. This manifold naturally
+carries a Fisher-Rao metric, which defines geodesics -- shortest paths between
+noisy points. Notably, this family of distributions is exponential, enabling
+efficient geodesic computation even in high-dimensional settings without
+retraining or fine-tuning. We demonstrate the practical value of this geometric
+viewpoint in transition path sampling, where spacetime geodesics define smooth
+sequences of Boltzmann distributions, enabling the generation of continuous
+trajectories between low-energy metastable states. Code is available at:
+https://github.com/Aalto-QuML/diffusion-spacetime-geometry.",http://arxiv.org/pdf/2505.17517v1,,False
+Probe by Gaming: A Game-based Benchmark for Assessing Conceptual Knowledge in LLMs,23/05/2025,"Shuhang Xu, Weijian Deng, Yixuan Zhou, Fangwei Zhong","Concepts represent generalized abstractions that enable humans to categorize
+and reason efficiently, yet it is unclear to what extent Large Language Models
+(LLMs) comprehend these semantic relationships. Existing benchmarks typically
+focus on factual recall and isolated tasks, failing to evaluate the ability of
+LLMs to understand conceptual boundaries. To address this gap, we introduce
+CK-Arena, a multi-agent interaction game built upon the Undercover game,
+designed to evaluate the capacity of LLMs to reason with concepts in
+interactive settings. CK-Arena challenges models to describe, differentiate,
+and infer conceptual boundaries based on partial information, encouraging
+models to explore commonalities and distinctions between closely related
+concepts. By simulating real-world interaction, CK-Arena provides a scalable
+and realistic benchmark for assessing conceptual reasoning in dynamic
+environments. Experimental results show that LLMs' understanding of conceptual
+knowledge varies significantly across different categories and is not strictly
+aligned with parameter size or general model capabilities. The data and code
+are available at the project homepage: https://ck-arena.site.",http://arxiv.org/pdf/2505.17512v1,,False
+HiLAB: A Hybrid Inverse-Design Framework,23/05/2025,"Reza Marzban, Hamed Abiri, Raphael Pestourie, Ali Adibi","HiLAB (Hybrid inverse-design with Latent-space learning, Adjoint-based
+partial optimizations, and Bayesian optimization) is a new paradigm for inverse
+design of nanophotonic structures. Combining early-terminated topological
+optimization (TO) with a Vision Transformer-based variational autoencoder (VAE)
+and a Bayesian search, HiLAB addresses multi-functional device design by
+generating diverse freeform configurations at reduced simulation costs.
+Shortened adjoint-driven TO runs, coupled with randomized physical parameters,
+produce robust initial structures. These structures are compressed into a
+compact latent space by the VAE, enabling Bayesian optimization to co-optimize
+geometry and physical hyperparameters. Crucially, the trained VAE can be reused
+for alternative objectives or constraints by adjusting only the acquisition
+function. Compared to conventional TO pipelines prone to local optima, HiLAB
+systematically explores near-global optima with considerably fewer
+electromagnetic simulations. Even after accounting for training overhead, the
+total number of full simulations decreases by over an order of magnitude,
+accelerating the discovery of fabrication-friendly devices. Demonstrating its
+efficacy, HiLAB is used to design an achromatic beam deflector for red, green,
+and blue wavelengths, achieving balanced diffraction efficiencies of ~25% while
+mitigating chromatic aberrations-a performance surpassing existing
+demonstrations. Overall, HiLAB provides a flexible platform for robust,
+multi-parameter photonic designs and rapid adaptation to next-generation
+nanophotonic challenges.",http://arxiv.org/pdf/2505.17491v1,,False
+ExARNN: An Environment-Driven Adaptive RNN for Learning Non-Stationary Power Dynamics,23/05/2025,"Haoran Li, Muhao Guo, Yang Weng, Marija Ilic, Guangchun Ruan","Non-stationary power system dynamics, influenced by renewable energy
+variability, evolving demand patterns, and climate change, are becoming
+increasingly complex. Accurately capturing these dynamics requires a model
+capable of adapting to environmental factors. Traditional models, including
+Recurrent Neural Networks (RNNs), lack efficient mechanisms to encode external
+factors, such as time or environmental data, for dynamic adaptation. To address
+this, we propose the External Adaptive RNN (ExARNN), a novel framework that
+integrates external data (e.g., weather, time) to continuously adjust the
+parameters of a base RNN. ExARNN achieves this through a hierarchical
+hypernetwork design, using Neural Controlled Differential Equations (NCDE) to
+process external data and generate RNN parameters adaptively. This approach
+enables ExARNN to handle inconsistent timestamps between power and external
+measurements, ensuring continuous adaptation. Extensive forecasting tests
+demonstrate ExARNN's superiority over established baseline models.",http://arxiv.org/pdf/2505.17488v1,,False
+Simultaneous Modeling of Protein Conformation and Dynamics via Autoregression,23/05/2025,"Yuning Shen, Lihao Wang, Huizhuo Yuan, Yan Wang, Bangji Yang, Quanquan Gu","Understanding protein dynamics is critical for elucidating their biological
+functions. The increasing availability of molecular dynamics (MD) data enables
+the training of deep generative models to efficiently explore the
+conformational space of proteins. However, existing approaches either fail to
+explicitly capture the temporal dependencies between conformations or do not
+support direct generation of time-independent samples. To address these
+limitations, we introduce ConfRover, an autoregressive model that
+simultaneously learns protein conformation and dynamics from MD trajectories,
+supporting both time-dependent and time-independent sampling. At the core of
+our model is a modular architecture comprising: (i) an encoding layer, adapted
+from protein folding models, that embeds protein-specific information and
+conformation at each time frame into a latent space; (ii) a temporal module, a
+sequence model that captures conformational dynamics across frames; and (iii)
+an SE(3) diffusion model as the structure decoder, generating conformations in
+continuous space. Experiments on ATLAS, a large-scale protein MD dataset of
+diverse structures, demonstrate the effectiveness of our model in learning
+conformational dynamics and supporting a wide range of downstream tasks.
+ConfRover is the first model to sample both protein conformations and
+trajectories within a single framework, offering a novel and flexible approach
+for learning from protein MD data.",http://arxiv.org/pdf/2505.17478v1,,False
+Bootstrapping Imitation Learning for Long-horizon Manipulation via Hierarchical Data Collection Space,23/05/2025,"Jinrong Yang, Kexun Chen, Zhuoling Li, Shengkai Wu, Yong Zhao, Liangliang Ren, Wenqiu Luo, Chaohui Shang, Meiyu Zhi, Linfeng Gao, Mingshan Sun, Hui Cheng","Imitation learning (IL) with human demonstrations is a promising method for
+robotic manipulation tasks. While minimal demonstrations enable robotic action
+execution, achieving high success rates and generalization requires high cost,
+e.g., continuously adding data or incrementally conducting human-in-loop
+processes with complex hardware/software systems. In this paper, we rethink the
+state/action space of the data collection pipeline as well as the underlying
+factors responsible for the prediction of non-robust actions. To this end, we
+introduce a Hierarchical Data Collection Space (HD-Space) for robotic imitation
+learning, a simple data collection scheme, endowing the model to train with
+proactive and high-quality data. Specifically, We segment the fine manipulation
+task into multiple key atomic tasks from a high-level perspective and design
+atomic state/action spaces for human demonstrations, aiming to generate robust
+IL data. We conduct empirical evaluations across two simulated and five
+real-world long-horizon manipulation tasks and demonstrate that IL policy
+training with HD-Space-based data can achieve significantly enhanced policy
+performance. HD-Space allows the use of a small amount of demonstration data to
+train a more powerful policy, particularly for long-horizon manipulation tasks.
+We aim for HD-Space to offer insights into optimizing data quality and guiding
+data scaling. project page: https://hd-space-robotics.github.io.",http://arxiv.org/pdf/2505.17389v1,,False
+FRIREN: Beyond Trajectories -- A Spectral Lens on Time,23/05/2025,Qilin Wang,"Long-term time-series forecasting (LTSF) models are often presented as
+general-purpose solutions that can be applied across domains, implicitly
+assuming that all data is pointwise predictable. Using chaotic systems such as
+Lorenz-63 as a case study, we argue that geometric structure - not pointwise
+prediction - is the right abstraction for a dynamic-agnostic foundational
+model. Minimizing the Wasserstein-2 distance (W2), which captures geometric
+changes, and providing a spectral view of dynamics are essential for
+long-horizon forecasting. Our model, FRIREN (Flow-inspired Representations via
+Interpretable Eigen-networks), implements an augmented normalizing-flow block
+that embeds data into a normally distributed latent representation. It then
+generates a W2-efficient optimal path that can be decomposed into rotation,
+scaling, inverse rotation, and translation. This architecture yields locally
+generated, geometry-preserving predictions that are independent of the
+underlying dynamics, and a global spectral representation that functions as a
+finite Koopman operator with a small modification. This enables practitioners
+to identify which modes grow, decay, or oscillate, both locally and
+system-wide. FRIREN achieves an MSE of 11.4, MAE of 1.6, and SWD of 0.96 on
+Lorenz-63 in a 336-in, 336-out, dt=0.01 setting, surpassing TimeMixer (MSE
+27.3, MAE 2.8, SWD 2.1). The model maintains effective prediction for 274 out
+of 336 steps, approximately 2.5 Lyapunov times. On Rossler (96-in, 336-out),
+FRIREN achieves an MSE of 0.0349, MAE of 0.0953, and SWD of 0.0170,
+outperforming TimeMixer's MSE of 4.3988, MAE of 0.886, and SWD of 3.2065.
+FRIREN is also competitive on standard LTSF datasets such as ETT and Weather.
+By connecting modern generative flows with classical spectral analysis, FRIREN
+makes long-term forecasting both accurate and interpretable, setting a new
+benchmark for LTSF model design.",http://arxiv.org/pdf/2505.17370v1,,False
+CT-OT Flow: Estimating Continuous-Time Dynamics from Discrete Temporal Snapshots,23/05/2025,"Keisuke Kawano, Takuro Kutsuna, Naoki Hayashi, Yasushi Esaki, Hidenori Tanaka","In many real-world scenarios, such as single-cell RNA sequencing, data are
+observed only as discrete-time snapshots spanning finite time intervals and
+subject to noisy timestamps, with no continuous trajectories available.
+Recovering the underlying continuous-time dynamics from these snapshots with
+coarse and noisy observation times is a critical and challenging task. We
+propose Continuous-Time Optimal Transport Flow (CT-OT Flow), which first infers
+high-resolution time labels via partial optimal transport and then reconstructs
+a continuous-time data distribution through a temporal kernel smoothing. This
+reconstruction enables accurate training of dynamics models such as ODEs and
+SDEs. CT-OT Flow consistently outperforms state-of-the-art methods on synthetic
+benchmarks and achieves lower reconstruction errors on real scRNA-seq and
+typhoon-track datasets. Our results highlight the benefits of explicitly
+modeling temporal discretization and timestamp uncertainty, offering an
+accurate and general framework for bridging discrete snapshots and
+continuous-time processes.",http://arxiv.org/pdf/2505.17354v1,,False

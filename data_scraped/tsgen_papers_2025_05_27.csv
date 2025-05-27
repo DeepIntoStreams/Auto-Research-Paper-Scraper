@@ -1,0 +1,472 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+AdaTP: Attention-Debiased Token Pruning for Video Large Language Models,26/05/2025,"Fengyuan Sun, Leqi Shen, Hui Chen, Sicheng Zhao, Jungong Han, Guiguang Ding","Video Large Language Models (Video LLMs) have achieved remarkable results in
+video understanding tasks. However, they often suffer from heavy computational
+overhead due to the large number of visual tokens generated from multiple video
+frames. Existing visual token compression methods often rely on attention
+scores from language models as guidance. However, these scores exhibit inherent
+biases: global bias reflects a tendency to focus on the two ends of the visual
+token sequence, while local bias leads to an over-concentration on the same
+spatial positions across different frames. To address the issue of attention
+bias, we propose $\textbf{A}$ttention-$\textbf{D}$ebi$\textbf{a}$sed
+$\textbf{T}$oken $\textbf{P}$runing for Video Large Language Models
+($\textbf{AdaTP}$), a novel token pruning pipeline for Video LLMs. AdaTP
+integrates two dedicated debiasing modules into the pipeline, targeting global
+attention bias and local attention bias, respectively. Without the need for
+additional training, our method significantly reduces the computational
+overhead of Video LLMs while retaining the performance of vanilla models.
+Extensive evaluation shows that AdaTP achieves state-of-the-art performance in
+various commonly used video understanding benchmarks. In particular, on
+LLaVA-OneVision-7B, AdaTP maintains performance without degradation while using
+only up to $27.3\%$ FLOPs compared to the vanilla model. Our code will be
+released soon.",http://arxiv.org/pdf/2505.20100v1,,False
+SwarmThinkers: Learning Physically Consistent Atomic KMC Transitions at Scale,26/05/2025,"Qi Li, Kun Li, Haozhi Han, Honghui Shang, Xinfu He, Yunquan Zhang, Hong An, Ting Cao, Mao Yang","Can a scientific simulation system be physically consistent, interpretable by
+design, and scalable across regimes--all at once? Despite decades of progress,
+this trifecta remains elusive. Classical methods like Kinetic Monte Carlo
+ensure thermodynamic accuracy but scale poorly; learning-based methods offer
+efficiency but often sacrifice physical consistency and interpretability. We
+present SwarmThinkers, a reinforcement learning framework that recasts
+atomic-scale simulation as a physically grounded swarm intelligence system.
+Each diffusing particle is modeled as a local decision-making agent that
+selects transitions via a shared policy network trained under thermodynamic
+constraints. A reweighting mechanism fuses learned preferences with transition
+rates, preserving statistical fidelity while enabling interpretable, step-wise
+decision making. Training follows a centralized-training,
+decentralized-execution paradigm, allowing the policy to generalize across
+system sizes, concentrations, and temperatures without retraining. On a
+benchmark simulating radiation-induced Fe-Cu alloy precipitation, SwarmThinkers
+is the first system to achieve full-scale, physically consistent simulation on
+a single A100 GPU, previously attainable only via OpenKMC on a supercomputer.
+It delivers up to 4963x (3185x on average) faster computation with 485x lower
+memory usage. By treating particles as decision-makers, not passive samplers,
+SwarmThinkers marks a paradigm shift in scientific simulation--one that unifies
+physical consistency, interpretability, and scalability through agent-driven
+intelligence.",http://arxiv.org/pdf/2505.20094v1,,False
+Embracing Imperfection: Simulating Students with Diverse Cognitive Levels Using LLM-based Agents,26/05/2025,"Tao Wu, Jingyuan Chen, Wang Lin, Mengze Li, Yumeng Zhu, Ang Li, Kun Kuang, Fei Wu","Large language models (LLMs) are revolutionizing education, with LLM-based
+agents playing a key role in simulating student behavior. A major challenge in
+student simulation is modeling the diverse learning patterns of students at
+various cognitive levels. However, current LLMs, typically trained as ``helpful
+assistants'', target at generating perfect responses. As a result, they
+struggle to simulate students with diverse cognitive abilities, as they often
+produce overly advanced answers, missing the natural imperfections that
+characterize student learning and resulting in unrealistic simulations. To
+address this issue, we propose a training-free framework for student
+simulation. We begin by constructing a cognitive prototype for each student
+using a knowledge graph, which captures their understanding of concepts from
+past learning records. This prototype is then mapped to new tasks to predict
+student performance. Next, we simulate student solutions based on these
+predictions and iteratively refine them using a beam search method to better
+replicate realistic mistakes. To validate our approach, we construct the
+\texttt{Student\_100} dataset, consisting of $100$ students working on Python
+programming and $5,000$ learning records. Experimental results show that our
+method consistently outperforms baseline models, achieving $100\%$ improvement
+in simulation accuracy.",http://arxiv.org/pdf/2505.19997v1,,False
+Which Data Attributes Stimulate Math and Code Reasoning? An Investigation via Influence Functions,26/05/2025,"Siqi Kou, Qingyuan Tian, Hanwen Xu, Zihao Zeng, Zhijie Deng","Large language models (LLMs) have demonstrated remarkable reasoning
+capabilities in math and coding, often bolstered by post-training on the
+chain-of-thoughts (CoTs) generated by stronger models. However, existing
+strategies for curating such training data predominantly rely on heuristics,
+limiting generalizability and failing to capture subtleties underlying in data.
+To address these limitations, we leverage influence functions to systematically
+attribute LLMs' reasoning ability on math and coding to individual training
+examples, sequences, and tokens, enabling deeper insights into effective data
+characteristics. Our Influence-based Reasoning Attribution (Infra) uncovers
+nontrivial cross-domain effects across math and coding tasks: high-difficulty
+math examples improve both math and code reasoning, while low-difficulty code
+tasks most effectively benefit code reasoning. Based on these findings, we
+introduce a simple yet effective dataset reweighting strategy by flipping task
+difficulty, which doubles AIME24 accuracy from 10\% to 20\% and boosts
+LiveCodeBench accuracy from 33.8\% to 35.3\% for Qwen2.5-7B-Instruct. Moreover,
+our fine-grained attribution reveals that the sequence-level exploratory
+behaviors enhance reasoning performance in both math and code, and the
+token-level influence patterns are distinct for math and code reasoning: the
+former prefers natural language logic connectors and the latter emphasizes
+structural syntax.",http://arxiv.org/pdf/2505.19949v1,,False
+SaSi: A Self-augmented and Self-interpreted Deep Learning Approach for Few-shot Cryo-ET Particle Detection,26/05/2025,"Gokul Adethya, Bhanu Pratyush Mantha, Tianyang Wang, Xingjian Li, Min Xu","Cryo-electron tomography (cryo-ET) has emerged as a powerful technique for
+imaging macromolecular complexes in their near-native states. However, the
+localization of 3D particles in cellular environments still presents a
+significant challenge due to low signal-to-noise ratios and missing wedge
+artifacts. Deep learning approaches have shown great potential, but they need
+huge amounts of data, which can be a challenge in cryo-ET scenarios where
+labeled data is often scarce. In this paper, we propose a novel Self-augmented
+and Self-interpreted (SaSi) deep learning approach towards few-shot particle
+detection in 3D cryo-ET images. Our method builds upon self-augmentation
+techniques to further boost data utilization and introduces a self-interpreted
+segmentation strategy for alleviating dependency on labeled data, hence
+improving generalization and robustness. As demonstrated by experiments
+conducted on both simulated and real-world cryo-ET datasets, the SaSi approach
+significantly outperforms existing state-of-the-art methods for particle
+localization. This research increases understanding of how to detect particles
+with very few labels in cryo-ET and thus sets a new benchmark for few-shot
+learning in structural biology.",http://arxiv.org/pdf/2505.19948v1,,False
+"Subtle Risks, Critical Failures: A Framework for Diagnosing Physical Safety of LLMs for Embodied Decision Making",26/05/2025,"Yejin Son, Minseo Kim, Sungwoong Kim, Seungju Han, Jian Kim, Dongju Jang, Youngjae Yu, Chanyoung Park","Large Language Models (LLMs) are increasingly used for decision making in
+embodied agents, yet existing safety evaluations often rely on coarse success
+rates and domain-specific setups, making it difficult to diagnose why and where
+these models fail. This obscures our understanding of embodied safety and
+limits the selective deployment of LLMs in high-risk physical environments. We
+introduce SAFEL, the framework for systematically evaluating the physical
+safety of LLMs in embodied decision making. SAFEL assesses two key
+competencies: (1) rejecting unsafe commands via the Command Refusal Test, and
+(2) generating safe and executable plans via the Plan Safety Test. Critically,
+the latter is decomposed into functional modules, goal interpretation,
+transition modeling, action sequencing, enabling fine-grained diagnosis of
+safety failures. To support this framework, we introduce EMBODYGUARD, a
+PDDL-grounded benchmark containing 942 LLM-generated scenarios covering both
+overtly malicious and contextually hazardous instructions. Evaluation across 13
+state-of-the-art LLMs reveals that while models often reject clearly unsafe
+commands, they struggle to anticipate and mitigate subtle, situational risks.
+Our results highlight critical limitations in current LLMs and provide a
+foundation for more targeted, modular improvements in safe embodied reasoning.",http://arxiv.org/pdf/2505.19933v1,,False
+Editing as Unlearning: Are Knowledge Editing Methods Strong Baselines for Large Language Model Unlearning?,26/05/2025,"Zexi Li, Xiangzhu Wang, William F. Shen, Meghdad Kurmanji, Xinchi Qiu, Dongqi Cai, Chao Wu, Nicholas D. Lane","Large language Model (LLM) unlearning, i.e., selectively removing information
+from LLMs, is vital for responsible model deployment. Differently, LLM
+knowledge editing aims to modify LLM knowledge instead of removing it. Though
+editing and unlearning seem to be two distinct tasks, we find there is a tight
+connection between them. In this paper, we conceptualize unlearning as a
+special case of editing where information is modified to a refusal or ""empty
+set"" $\emptyset$ response, signifying its removal. This paper thus investigates
+if knowledge editing techniques are strong baselines for LLM unlearning. We
+evaluate state-of-the-art (SOTA) editing methods (e.g., ROME, MEMIT, GRACE,
+WISE, and AlphaEdit) against existing unlearning approaches on pretrained and
+finetuned knowledge. Results show certain editing methods, notably WISE and
+AlphaEdit, are effective unlearning baselines, especially for pretrained
+knowledge, and excel in generating human-aligned refusal answers. To better
+adapt editing methods for unlearning applications, we propose practical recipes
+including self-improvement and query merging. The former leverages the LLM's
+own in-context learning ability to craft a more human-aligned unlearning
+target, and the latter enables ROME and MEMIT to perform well in unlearning
+longer sample sequences. We advocate for the unlearning community to adopt SOTA
+editing methods as baselines and explore unlearning from an editing perspective
+for more holistic LLM memory control.",http://arxiv.org/pdf/2505.19855v1,,False
+PCDCNet: A Surrogate Model for Air Quality Forecasting with Physical-Chemical Dynamics and Constraints,26/05/2025,"Shuo Wang, Yun Cheng, Qingye Meng, Olga Saukh, Jiang Zhang, Jingfang Fan, Yuanting Zhang, Xingyuan Yuan, Lothar Thiele","Air quality forecasting (AQF) is critical for public health and environmental
+management, yet remains challenging due to the complex interplay of emissions,
+meteorology, and chemical transformations. Traditional numerical models, such
+as CMAQ and WRF-Chem, provide physically grounded simulations but are
+computationally expensive and rely on uncertain emission inventories. Deep
+learning models, while computationally efficient, often struggle with
+generalization due to their lack of physical constraints. To bridge this gap,
+we propose PCDCNet, a surrogate model that integrates numerical modeling
+principles with deep learning. PCDCNet explicitly incorporates emissions,
+meteorological influences, and domain-informed constraints to model pollutant
+formation, transport, and dissipation. By combining graph-based spatial
+transport modeling, recurrent structures for temporal accumulation, and
+representation enhancement for local interactions, PCDCNet achieves
+state-of-the-art (SOTA) performance in 72-hour station-level PM2.5 and O3
+forecasting while significantly reducing computational costs. Furthermore, our
+model is deployed in an online platform, providing free, real-time air quality
+forecasts, demonstrating its scalability and societal impact. By aligning deep
+learning with physical consistency, PCDCNet offers a practical and
+interpretable solution for AQF, enabling informed decision-making for both
+personal and regulatory applications.",http://arxiv.org/pdf/2505.19842v1,,False
+TeViR: Text-to-Video Reward with Diffusion Models for Efficient Reinforcement Learning,26/05/2025,"Yuhui Chen, Haoran Li, Zhennan Jiang, Haowei Wen, Dongbin Zhao","Developing scalable and generalizable reward engineering for reinforcement
+learning (RL) is crucial for creating general-purpose agents, especially in the
+challenging domain of robotic manipulation. While recent advances in reward
+engineering with Vision-Language Models (VLMs) have shown promise, their sparse
+reward nature significantly limits sample efficiency. This paper introduces
+TeViR, a novel method that leverages a pre-trained text-to-video diffusion
+model to generate dense rewards by comparing the predicted image sequence with
+current observations. Experimental results across 11 complex robotic tasks
+demonstrate that TeViR outperforms traditional methods leveraging sparse
+rewards and other state-of-the-art (SOTA) methods, achieving better sample
+efficiency and performance without ground truth environmental rewards. TeViR's
+ability to efficiently guide agents in complex environments highlights its
+potential to advance reinforcement learning applications in robotic
+manipulation.",http://arxiv.org/pdf/2505.19769v1,,False
+ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection,26/05/2025,"Juxin Niu, Xiangfeng Liu, Dan Niu, Xi Wang, Zhe Jiang, Nan Guan","Coding with hardware description languages (HDLs) such as Verilog is a
+time-intensive and laborious task. With the rapid advancement of large language
+models (LLMs), there is increasing interest in applying LLMs to assist with HDL
+coding. Recent efforts have demonstrated the potential of LLMs in translating
+natural language to traditional HDL Verilog. Chisel, a next-generation HDL
+based on Scala, introduces higher-level abstractions, facilitating more
+concise, maintainable, and scalable hardware designs. However, the potential of
+using LLMs for Chisel code generation remains largely unexplored. This work
+proposes ReChisel, an LLM-based agentic system designed to enhance the
+effectiveness of Chisel code generation. ReChisel incorporates a reflection
+mechanism to iteratively refine the quality of generated code using feedback
+from compilation and simulation processes, and introduces an escape mechanism
+to break free from non-progress loops. Experiments demonstrate that ReChisel
+significantly improves the success rate of Chisel code generation, achieving
+performance comparable to state-of-the-art LLM-based agentic systems for
+Verilog code generation.",http://arxiv.org/pdf/2505.19734v1,,False
+Zero-Shot Streaming Text to Speech Synthesis with Transducer and Auto-Regressive Modeling,26/05/2025,"Haiyang Sun, Shujie Hu, Shujie Liu, Lingwei Meng, Hui Wang, Bing Han, Yifan Yang, Yanqing Liu, Sheng Zhao, Yan Lu, Yanmin Qian","Zero-shot streaming text-to-speech is an important research topic in
+human-computer interaction. Existing methods primarily use a lookahead
+mechanism, relying on future text to achieve natural streaming speech
+synthesis, which introduces high processing latency. To address this issue, we
+propose SMLLE, a streaming framework for generating high-quality speech
+frame-by-frame. SMLLE employs a Transducer to convert text into semantic tokens
+in real time while simultaneously obtaining duration alignment information. The
+combined outputs are then fed into a fully autoregressive (AR) streaming model
+to reconstruct mel-spectrograms. To further stabilize the generation process,
+we design a Delete < Bos > Mechanism that allows the AR model to access future
+text introducing as minimal delay as possible. Experimental results suggest
+that the SMLLE outperforms current streaming TTS methods and achieves
+comparable performance over sentence-level TTS systems. Samples are available
+on https://anonymous.4open.science/w/demo_page-48B7/.",http://arxiv.org/pdf/2505.19669v1,,False
+LeCoDe: A Benchmark Dataset for Interactive Legal Consultation Dialogue Evaluation,26/05/2025,"Weikang Yuan, Kaisong Song, Zhuoren Jiang, Junjie Cao, Yujie Zhang, Jun Lin, Kun Kuang, Ji Zhang, Xiaozhong Liu","Legal consultation is essential for safeguarding individual rights and
+ensuring access to justice, yet remains costly and inaccessible to many
+individuals due to the shortage of professionals. While recent advances in
+Large Language Models (LLMs) offer a promising path toward scalable, low-cost
+legal assistance, current systems fall short in handling the interactive and
+knowledge-intensive nature of real-world consultations. To address these
+challenges, we introduce LeCoDe, a real-world multi-turn benchmark dataset
+comprising 3,696 legal consultation dialogues with 110,008 dialogue turns,
+designed to evaluate and improve LLMs' legal consultation capability. With
+LeCoDe, we innovatively collect live-streamed consultations from short-video
+platforms, providing authentic multi-turn legal consultation dialogues. The
+rigorous annotation by legal experts further enhances the dataset with
+professional insights and expertise. Furthermore, we propose a comprehensive
+evaluation framework that assesses LLMs' consultation capabilities in terms of
+(1) clarification capability and (2) professional advice quality. This unified
+framework incorporates 12 metrics across two dimensions. Through extensive
+experiments on various general and domain-specific LLMs, our results reveal
+significant challenges in this task, with even state-of-the-art models like
+GPT-4 achieving only 39.8% recall for clarification and 59% overall score for
+advice quality, highlighting the complexity of professional consultation
+scenarios. Based on these findings, we further explore several strategies to
+enhance LLMs' legal consultation abilities. Our benchmark contributes to
+advancing research in legal domain dialogue systems, particularly in simulating
+more real-world user-expert interactions.",http://arxiv.org/pdf/2505.19667v1,,False
+A Comprehensive Real-World Assessment of Audio Watermarking Algorithms: Will They Survive Neural Codecs?,26/05/2025,"Yigitcan Özer, Woosung Choi, Joan Serrà, Mayank Kumar Singh, Wei-Hsiang Liao, Yuki Mitsufuji","We present a framework to foster the evaluation of deep learning-based audio
+watermarking algorithms, establishing a standardized benchmark and allowing
+systematic comparisons. To simulate real-world usage, we introduce a
+comprehensive audio attack pipeline, featuring various distortions such as
+compression, background noise, and reverberation, and propose a diverse test
+dataset, including speech, environmental sounds, and music recordings. By
+assessing the performance of four existing watermarking algorithms on our
+framework, two main insights stand out: (i) neural compression techniques pose
+the most significant challenge, even when algorithms are trained with such
+compressions; and (ii) training with audio attacks generally improves
+robustness, although it is insufficient in some cases. Furthermore, we find
+that specific distortions, such as polarity inversion, time stretching, or
+reverb, seriously affect certain algorithms. Our contributions strengthen the
+robustness and perceptual assessment of audio watermarking algorithms across a
+wide range of applications, while ensuring a fair and consistent evaluation
+approach. The evaluation framework, including the attack pipeline, is
+accessible at github.com/SonyResearch/wm_robustness_eval.",http://arxiv.org/pdf/2505.19663v1,,False
+AgentRecBench: Benchmarking LLM Agent-based Personalized Recommender Systems,26/05/2025,"Yu Shang, Peijie Liu, Yuwei Yan, Zijing Wu, Leheng Sheng, Yuanqing Yu, Chumeng Jiang, An Zhang, Fengli Xu, Yu Wang, Min Zhang, Yong Li","The emergence of agentic recommender systems powered by Large Language Models
+(LLMs) represents a paradigm shift in personalized recommendations, leveraging
+LLMs' advanced reasoning and role-playing capabilities to enable autonomous,
+adaptive decision-making. Unlike traditional recommendation approaches, agentic
+recommender systems can dynamically gather and interpret user-item interactions
+from complex environments, generating robust recommendation strategies that
+generalize across diverse scenarios. However, the field currently lacks
+standardized evaluation protocols to systematically assess these methods. To
+address this critical gap, we propose: (1) an interactive textual
+recommendation simulator incorporating rich user and item metadata and three
+typical evaluation scenarios (classic, evolving-interest, and cold-start
+recommendation tasks); (2) a unified modular framework for developing and
+studying agentic recommender systems; and (3) the first comprehensive benchmark
+comparing 10 classical and agentic recommendation methods. Our findings
+demonstrate the superiority of agentic systems and establish actionable design
+guidelines for their core components. The benchmark environment has been
+rigorously validated through an open challenge and remains publicly available
+with a continuously maintained
+leaderboard~\footnote[2]{https://tsinghua-fib-lab.github.io/AgentSocietyChallenge/pages/overview.html},
+fostering ongoing community engagement and reproducible research. The benchmark
+is available at:
+\hyperlink{https://huggingface.co/datasets/SGJQovo/AgentRecBench}{https://huggingface.co/datasets/SGJQovo/AgentRecBench}.",http://arxiv.org/pdf/2505.19623v1,,False
+Situationally-Aware Dynamics Learning,26/05/2025,"Alejandro Murillo-Gonzalez, Lantao Liu","Autonomous robots operating in complex, unstructured environments face
+significant challenges due to latent, unobserved factors that obscure their
+understanding of both their internal state and the external world. Addressing
+this challenge would enable robots to develop a more profound grasp of their
+operational context. To tackle this, we propose a novel framework for online
+learning of hidden state representations, with which the robots can adapt in
+real-time to uncertain and dynamic conditions that would otherwise be ambiguous
+and result in suboptimal or erroneous behaviors. Our approach is formalized as
+a Generalized Hidden Parameter Markov Decision Process, which explicitly models
+the influence of unobserved parameters on both transition dynamics and reward
+structures. Our core innovation lies in learning online the joint distribution
+of state transitions, which serves as an expressive representation of latent
+ego- and environmental-factors. This probabilistic approach supports the
+identification and adaptation to different operational situations, improving
+robustness and safety. Through a multivariate extension of Bayesian Online
+Changepoint Detection, our method segments changes in the underlying data
+generating process governing the robot's dynamics. The robot's transition model
+is then informed with a symbolic representation of the current situation
+derived from the joint distribution of latest state transitions, enabling
+adaptive and context-aware decision-making. To showcase the real-world
+effectiveness, we validate our approach in the challenging task of unstructured
+terrain navigation, where unmodeled and unmeasured terrain characteristics can
+significantly impact the robot's motion. Extensive experiments in both
+simulation and real world reveal significant improvements in data efficiency,
+policy performance, and the emergence of safer, adaptive navigation strategies.",http://arxiv.org/pdf/2505.19574v1,,False
+LLM-Agent-Controller: A Universal Multi-Agent Large Language Model System as a Control Engineer,26/05/2025,"Rasoul Zahedifar, Sayyed Ali Mirghasemi, Mahdieh Soleymani Baghshah, Alireza Taheri","This study presents the LLM-Agent-Controller, a multi-agent large language
+model (LLM) system developed to address a wide range of problems in control
+engineering (Control Theory). The system integrates a central controller agent
+with multiple specialized auxiliary agents, responsible for tasks such as
+controller design, model representation, control analysis, time-domain
+response, and simulation. A supervisor oversees high-level decision-making and
+workflow coordination, enhancing the system's reliability and efficiency. The
+LLM-Agent-Controller incorporates advanced capabilities, including
+Retrieval-Augmented Generation (RAG), Chain-of-Thought reasoning,
+self-criticism and correction, efficient memory handling, and user-friendly
+natural language communication. It is designed to function without requiring
+users to have prior knowledge of Control Theory, enabling them to input
+problems in plain language and receive complete, real-time solutions. To
+evaluate the system, we propose new performance metrics assessing both
+individual agents and the system as a whole. We test five categories of Control
+Theory problems and benchmark performance across three advanced LLMs.
+Additionally, we conduct a comprehensive qualitative conversational analysis
+covering all key services. Results show that the LLM-Agent-Controller
+successfully solved 83% of general tasks, with individual agents achieving an
+average success rate of 87%. Performance improved with more advanced LLMs. This
+research demonstrates the potential of multi-agent LLM architectures to solve
+complex, domain-specific problems. By integrating specialized agents,
+supervisory control, and advanced reasoning, the LLM-Agent-Controller offers a
+scalable, robust, and accessible solution framework that can be extended to
+various technical domains.",http://arxiv.org/pdf/2505.19567v1,,False
+EuroCon: Benchmarking Parliament Deliberation for Political Consensus Finding,26/05/2025,"Zhaowei Zhang, Minghua Yi, Mengmeng Wang, Fengshuo Bai, Zilong Zheng, Yipeng Kang, Yaodong Yang","Achieving political consensus is crucial yet challenging for the effective
+functioning of social governance. However, although frontier AI systems
+represented by large language models (LLMs) have developed rapidly in recent
+years, their capabilities on this scope are still understudied. In this paper,
+we introduce EuroCon, a novel benchmark constructed from 2,225 high-quality
+deliberation records of the European Parliament over 13 years, ranging from
+2009 to 2022, to evaluate the ability of LLMs to reach political consensus
+among divergent party positions across diverse parliament settings.
+Specifically, EuroCon incorporates four factors to build each simulated
+parliament setting: specific political issues, political goals, participating
+parties, and power structures based on seat distribution. We also develop an
+evaluation framework for EuroCon to simulate real voting outcomes in different
+parliament settings, assessing whether LLM-generated resolutions meet
+predefined political goals. Our experimental results demonstrate that even
+state-of-the-art models remain undersatisfied with complex tasks like passing
+resolutions by a two-thirds majority and addressing security issues, while
+revealing some common strategies LLMs use to find consensus under different
+power structures, such as prioritizing the stance of the dominant party,
+highlighting EuroCon's promise as an effective platform for studying LLMs'
+ability to find political consensus.",http://arxiv.org/pdf/2505.19558v1,,False
+STRAP: Spatio-Temporal Pattern Retrieval for Out-of-Distribution Generalization,26/05/2025,"Haoyu Zhang, Wentao Zhang, Hao Miao, Xinke Jiang, Yuchen Fang, Yifan Zhang","Spatio-Temporal Graph Neural Networks (STGNNs) have emerged as a powerful
+tool for modeling dynamic graph-structured data across diverse domains.
+However, they often fail to generalize in Spatio-Temporal Out-of-Distribution
+(STOOD) scenarios, where both temporal dynamics and spatial structures evolve
+beyond the training distribution. To address this problem, we propose an
+innovative Spatio-Temporal Retrieval-Augmented Pattern Learning
+framework,STRAP, which enhances model generalization by integrating
+retrieval-augmented learning into the STGNN continue learning pipeline. The
+core of STRAP is a compact and expressive pattern library that stores
+representative spatio-temporal patterns enriched with historical, structural,
+and semantic information, which is obtained and optimized during the training
+phase. During inference, STRAP retrieves relevant patterns from this library
+based on similarity to the current input and injects them into the model via a
+plug-and-play prompting mechanism. This not only strengthens spatio-temporal
+representations but also mitigates catastrophic forgetting. Moreover, STRAP
+introduces a knowledge-balancing objective to harmonize new information with
+retrieved knowledge. Extensive experiments across multiple real-world streaming
+graph datasets show that STRAP consistently outperforms state-of-the-art STGNN
+baselines on STOOD tasks, demonstrating its robustness, adaptability, and
+strong generalization capability without task-specific fine-tuning.",http://arxiv.org/pdf/2505.19547v1,,False
+Navigating loss manifolds via rigid body dynamics: A promising avenue for robustness and generalisation,26/05/2025,"Mohammed D. Belgoumri, Mohamed Reda Bouadjenek, Hakim Hacid, Imran Razzak, Sunil Aryal","Training large neural networks through gradient-based optimization requires
+navigating high-dimensional loss landscapes, which often exhibit pathological
+geometry, leading to undesirable training dynamics. In particular, poor
+generalization frequently results from convergence to sharp minima that are
+highly sensitive to input perturbations, causing the model to overfit the
+training data while failing to generalize to unseen examples. Furthermore,
+these optimization procedures typically display strong dependence on the fine
+structure of the loss landscape, leading to unstable training dynamics, due to
+the fractal-like nature of the loss surface. In this work, we propose an
+alternative optimizer that simultaneously reduces this dependence, and avoids
+sharp minima, thereby improving generalization. This is achieved by simulating
+the motion of the center of a ball rolling on the loss landscape. The degree to
+which our optimizer departs from the standard gradient descent is controlled by
+a hyperparameter, representing the radius of the ball. Changing this
+hyperparameter allows for probing the loss landscape at different scales,
+making it a valuable tool for understanding its geometry.",http://arxiv.org/pdf/2505.19527v1,,False
+Automated CAD Modeling Sequence Generation from Text Descriptions via Transformer-Based Large Language Models,26/05/2025,"Jianxing Liao, Junyan Xu, Yatao Sun, Maowen Tang, Sicheng He, Jingxian Liao, Shui Yu, Yun Li, Hongguan Xiao","Designing complex computer-aided design (CAD) models is often time-consuming
+due to challenges such as computational inefficiency and the difficulty of
+generating precise models. We propose a novel language-guided framework for
+industrial design automation to address these issues, integrating large
+language models (LLMs) with computer-automated design (CAutoD).Through this
+framework, CAD models are automatically generated from parameters and
+appearance descriptions, supporting the automation of design tasks during the
+detailed CAD design phase. Our approach introduces three key innovations: (1) a
+semi-automated data annotation pipeline that leverages LLMs and vision-language
+large models (VLLMs) to generate high-quality parameters and appearance
+descriptions; (2) a Transformer-based CAD generator (TCADGen) that predicts
+modeling sequences via dual-channel feature aggregation; (3) an enhanced CAD
+modeling generation model, called CADLLM, that is designed to refine the
+generated sequences by incorporating the confidence scores from TCADGen.
+Experimental results demonstrate that the proposed approach outperforms
+traditional methods in both accuracy and efficiency, providing a powerful tool
+for automating industrial workflows and generating complex CAD models from
+textual prompts. The code is available at
+https://jianxliao.github.io/cadllm-page/",http://arxiv.org/pdf/2505.19490v1,,False
+VLMLight: Traffic Signal Control via Vision-Language Meta-Control and Dual-Branch Reasoning,26/05/2025,"Maonan Wang, Yirong Chen, Aoyu Pang, Yuxin Cai, Chung Shue Chen, Yuheng Kan, Man-On Pun","Traffic signal control (TSC) is a core challenge in urban mobility, where
+real-time decisions must balance efficiency and safety. Existing methods -
+ranging from rule-based heuristics to reinforcement learning (RL) - often
+struggle to generalize to complex, dynamic, and safety-critical scenarios. We
+introduce VLMLight, a novel TSC framework that integrates vision-language
+meta-control with dual-branch reasoning. At the core of VLMLight is the first
+image-based traffic simulator that enables multi-view visual perception at
+intersections, allowing policies to reason over rich cues such as vehicle type,
+motion, and spatial density. A large language model (LLM) serves as a
+safety-prioritized meta-controller, selecting between a fast RL policy for
+routine traffic and a structured reasoning branch for critical cases. In the
+latter, multiple LLM agents collaborate to assess traffic phases, prioritize
+emergency vehicles, and verify rule compliance. Experiments show that VLMLight
+reduces waiting times for emergency vehicles by up to 65% over RL-only systems,
+while preserving real-time performance in standard conditions with less than 1%
+degradation. VLMLight offers a scalable, interpretable, and safety-aware
+solution for next-generation traffic signal control.",http://arxiv.org/pdf/2505.19486v1,,False
+Win Fast or Lose Slow: Balancing Speed and Accuracy in Latency-Sensitive Decisions of LLMs,26/05/2025,"Hao Kang, Qingru Zhang, Han Cai, Weiyuan Xu, Tushar Krishna, Yilun Du, Tsachy Weissman","Large language models (LLMs) have shown remarkable performance across diverse
+reasoning and generation tasks, and are increasingly deployed as agents in
+dynamic environments such as code generation and recommendation systems.
+However, many real-world applications, such as high-frequency trading and
+real-time competitive gaming, require decisions under strict latency
+constraints, where faster responses directly translate into higher rewards.
+Despite the importance of this latency quality trade off, it remains
+underexplored in the context of LLM based agents. In this work, we present the
+first systematic study of this trade off in real time decision making tasks. To
+support our investigation, we introduce two new benchmarks: HFTBench, a high
+frequency trading simulation, and StreetFighter, a competitive gaming platform.
+Our analysis reveals that optimal latency quality balance varies by task, and
+that sacrificing quality for lower latency can significantly enhance downstream
+performance. To address this, we propose FPX, an adaptive framework that
+dynamically selects model size and quantization level based on real time
+demands. Our method achieves the best performance on both benchmarks, improving
+win rate by up to 80% in Street Fighter and boosting daily yield by up to
+26.52% in trading, underscoring the need for latency aware evaluation and
+deployment strategies for LLM based agents. These results demonstrate the
+critical importance of latency aware evaluation and deployment strategies for
+real world LLM based agents. Our benchmarks are available at Latency Sensitive
+Benchmarks.",http://arxiv.org/pdf/2505.19481v1,,False
+Recalibrating the Compass: Integrating Large Language Models into Classical Research Methods,26/05/2025,"Tai-Quan Peng, Xuzhen Yang","This paper examines how large language models (LLMs) are transforming core
+quantitative methods in communication research in particular, and in the social
+sciences more broadly-namely, content analysis, survey research, and
+experimental studies. Rather than replacing classical approaches, LLMs
+introduce new possibilities for coding and interpreting text, simulating
+dynamic respondents, and generating personalized and interactive stimuli.
+Drawing on recent interdisciplinary work, the paper highlights both the
+potential and limitations of LLMs as research tools, including issues of
+validity, bias, and interpretability. To situate these developments
+theoretically, the paper revisits Lasswell's foundational framework -- ""Who
+says what, in which channel, to whom, with what effect?"" -- and demonstrates
+how LLMs reconfigure message studies, audience analysis, and effects research
+by enabling interpretive variation, audience trajectory modeling, and
+counterfactual experimentation. Revisiting the metaphor of the methodological
+compass, the paper argues that classical research logics remain essential as
+the field integrates LLMs and generative AI. By treating LLMs not only as
+technical instruments but also as epistemic and cultural tools, the paper calls
+for thoughtful, rigorous, and imaginative use of LLMs in future communication
+and social science research.",http://arxiv.org/pdf/2505.19402v1,,False
+Force Prompting: Video Generation Models Can Learn and Generalize Physics-based Control Signals,26/05/2025,"Nate Gillman, Charles Herrmann, Michael Freeman, Daksh Aggarwal, Evan Luo, Deqing Sun, Chen Sun","Recent advances in video generation models have sparked interest in world
+models capable of simulating realistic environments. While navigation has been
+well-explored, physically meaningful interactions that mimic real-world forces
+remain largely understudied. In this work, we investigate using physical forces
+as a control signal for video generation and propose force prompts which enable
+users to interact with images through both localized point forces, such as
+poking a plant, and global wind force fields, such as wind blowing on fabric.
+We demonstrate that these force prompts can enable videos to respond
+realistically to physical control signals by leveraging the visual and motion
+prior in the original pretrained model, without using any 3D asset or physics
+simulator at inference. The primary challenge of force prompting is the
+difficulty in obtaining high quality paired force-video training data, both in
+the real world due to the difficulty of obtaining force signals, and in
+synthetic data due to limitations in the visual quality and domain diversity of
+physics simulators. Our key finding is that video generation models can
+generalize remarkably well when adapted to follow physical force conditioning
+from videos synthesized by Blender, even with limited demonstrations of few
+objects. Our method can generate videos which simulate forces across diverse
+geometries, settings, and materials. We also try to understand the source of
+this generalization and perform ablations that reveal two key elements: visual
+diversity and the use of specific text keywords during training. Our approach
+is trained on only around 15k training examples for a single day on four A100
+GPUs, and outperforms existing methods on force adherence and physics realism,
+bringing world models closer to real-world physics interactions. We release all
+datasets, code, weights, and interactive video demos at our project page.",http://arxiv.org/pdf/2505.19386v1,,False

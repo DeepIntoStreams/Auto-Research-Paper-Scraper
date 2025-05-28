@@ -1,0 +1,496 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Designing Cyclic Peptides via Harmonic SDE with Atom-Bond Modeling,27/05/2025,"Xiangxin Zhou, Mingyu Li, Yi Xiao, Jiahan Li, Dongyu Xue, Zaixiang Zheng, Jianzhu Ma, Quanquan Gu","Cyclic peptides offer inherent advantages in pharmaceuticals. For example,
+cyclic peptides are more resistant to enzymatic hydrolysis compared to linear
+peptides and usually exhibit excellent stability and affinity. Although deep
+generative models have achieved great success in linear peptide design, several
+challenges prevent the development of computational methods for designing
+diverse types of cyclic peptides. These challenges include the scarcity of 3D
+structural data on target proteins and associated cyclic peptide ligands, the
+geometric constraints that cyclization imposes, and the involvement of
+non-canonical amino acids in cyclization. To address the above challenges, we
+introduce CpSDE, which consists of two key components: AtomSDE, a generative
+structure prediction model based on harmonic SDE, and ResRouter, a residue type
+predictor. Utilizing a routed sampling algorithm that alternates between these
+two models to iteratively update sequences and structures, CpSDE facilitates
+the generation of cyclic peptides. By employing explicit all-atom and bond
+modeling, CpSDE overcomes existing data limitations and is proficient in
+designing a wide variety of cyclic peptides. Our experimental results
+demonstrate that the cyclic peptides designed by our method exhibit reliable
+stability and affinity.",http://arxiv.org/pdf/2505.21452v1,,False
+Learning Individual Behavior in Agent-Based Models with Graph Diffusion Networks,27/05/2025,"Francesco Cozzi, Marco Pangallo, Alan Perotti, André Panisson, Corrado Monti","Agent-Based Models (ABMs) are powerful tools for studying emergent properties
+in complex systems. In ABMs, agent behaviors are governed by local interactions
+and stochastic rules. However, these rules are, in general, non-differentiable,
+limiting the use of gradient-based methods for optimization, and thus
+integration with real-world data. We propose a novel framework to learn a
+differentiable surrogate of any ABM by observing its generated data. Our method
+combines diffusion models to capture behavioral stochasticity and graph neural
+networks to model agent interactions. Distinct from prior surrogate approaches,
+our method introduces a fundamental shift: rather than approximating
+system-level outputs, it models individual agent behavior directly, preserving
+the decentralized, bottom-up dynamics that define ABMs. We validate our
+approach on two ABMs (Schelling's segregation model and a Predator-Prey
+ecosystem) showing that it replicates individual-level patterns and accurately
+forecasts emergent dynamics beyond training. Our results demonstrate the
+potential of combining diffusion models and graph learning for data-driven ABM
+simulation.",http://arxiv.org/pdf/2505.21426v1,,False
+A Convergence Theory for Diffusion Language Models: An Information-Theoretic Perspective,27/05/2025,"Gen Li, Changxiao Cai","Diffusion models have emerged as a powerful paradigm for modern generative
+modeling, demonstrating strong potential for large language models (LLMs).
+Unlike conventional autoregressive (AR) models that generate tokens
+sequentially, diffusion models enable parallel token sampling, leading to
+faster generation and eliminating left-to-right generation constraints. Despite
+their empirical success, the theoretical understanding of diffusion model
+approaches remains underdeveloped. In this work, we develop convergence
+guarantees for diffusion language models from an information-theoretic
+perspective. Our analysis demonstrates that the sampling error, measured by the
+Kullback-Leibler (KL) divergence, decays inversely with the number of
+iterations $T$ and scales linearly with the mutual information between tokens
+in the target text sequence. In particular, we establish matching upper and
+lower bounds, up to some constant factor, to demonstrate the tightness of our
+convergence analysis. These results offer novel theoretical insights into the
+practical effectiveness of diffusion language models.",http://arxiv.org/pdf/2505.21400v1,,False
+"Factual Self-Awareness in Language Models: Representation, Robustness, and Scaling",27/05/2025,"Hovhannes Tamoyan, Subhabrata Dutta, Iryna Gurevych","Factual incorrectness in generated content is one of the primary concerns in
+ubiquitous deployment of large language models (LLMs). Prior findings suggest
+LLMs can (sometimes) detect factual incorrectness in their generated content
+(i.e., fact-checking post-generation). In this work, we provide evidence
+supporting the presence of LLMs' internal compass that dictate the correctness
+of factual recall at the time of generation. We demonstrate that for a given
+subject entity and a relation, LLMs internally encode linear features in the
+Transformer's residual stream that dictate whether it will be able to recall
+the correct attribute (that forms a valid entity-relation-attribute triplet).
+This self-awareness signal is robust to minor formatting variations. We
+investigate the effects of context perturbation via different example selection
+strategies. Scaling experiments across model sizes and training dynamics
+highlight that self-awareness emerges rapidly during training and peaks in
+intermediate layers. These findings uncover intrinsic self-monitoring
+capabilities within LLMs, contributing to their interpretability and
+reliability.",http://arxiv.org/pdf/2505.21399v1,,False
+AgriFM: A Multi-source Temporal Remote Sensing Foundation Model for Crop Mapping,27/05/2025,"Wenyuan Li, Shunlin Liang, Keyan Chen, Yongzhe Chen, Han Ma, Jianglei Xu, Yichuan Ma, Shikang Guan, Husheng Fang, Zhenwei Shi","Accurate crop mapping fundamentally relies on modeling multi-scale
+spatiotemporal patterns, where spatial scales range from individual field
+textures to landscape-level context, and temporal scales capture both
+short-term phenological transitions and full growing-season dynamics.
+Transformer-based remote sensing foundation models (RSFMs) offer promising
+potential for crop mapping due to their innate ability for unified
+spatiotemporal processing. However, current RSFMs remain suboptimal for crop
+mapping: they either employ fixed spatiotemporal windows that ignore the
+multi-scale nature of crop systems or completely disregard temporal information
+by focusing solely on spatial patterns. To bridge these gaps, we present
+AgriFM, a multi-source remote sensing foundation model specifically designed
+for agricultural crop mapping. Our approach begins by establishing the
+necessity of simultaneous hierarchical spatiotemporal feature extraction,
+leading to the development of a modified Video Swin Transformer architecture
+where temporal down-sampling is synchronized with spatial scaling operations.
+This modified backbone enables efficient unified processing of long time-series
+satellite inputs. AgriFM leverages temporally rich data streams from three
+satellite sources including MODIS, Landsat-8/9 and Sentinel-2, and is
+pre-trained on a global representative dataset comprising over 25 million image
+samples supervised by land cover products. The resulting framework incorporates
+a versatile decoder architecture that dynamically fuses these learned
+spatiotemporal representations, supporting diverse downstream tasks.
+Comprehensive evaluations demonstrate AgriFM's superior performance over
+conventional deep learning approaches and state-of-the-art general-purpose
+RSFMs across all downstream tasks. Codes will be available at
+urlhttps://github.com/flyakon/AgriFM.",http://arxiv.org/pdf/2505.21357v1,,False
+Scheduling with Uncertain Holding Costs and its Application to Content Moderation,27/05/2025,"Caner Gocmen, Thodoris Lykouris, Deeksha Sinha, Wentao Weng","In content moderation for social media platforms, the cost of delaying the
+review of a content is proportional to its view trajectory, which fluctuates
+and is apriori unknown. Motivated by such uncertain holding costs, we consider
+a queueing model where job states evolve based on a Markov chain with
+state-dependent instantaneous holding costs. We demonstrate that in the
+presence of such uncertain holding costs, the two canonical algorithmic
+principles, instantaneous-cost ($c\mu$-rule) and expected-remaining-cost
+($c\mu/\theta$-rule), are suboptimal. By viewing each job as a Markovian
+ski-rental problem, we develop a new index-based algorithm,
+Opportunity-adjusted Remaining Cost (OaRC), that adjusts to the opportunity of
+serving jobs in the future when uncertainty partly resolves. We show that the
+regret of OaRC scales as $\tilde{O}(L^{1.5}\sqrt{N})$, where $L$ is the maximum
+length of a job's holding cost trajectory and $N$ is the system size. This
+regret bound shows that OaRC achieves asymptotic optimality when the system
+size $N$ scales to infinity. Moreover, its regret is independent of the
+state-space size, which is a desirable property when job states contain
+contextual information. We corroborate our results with an extensive simulation
+study based on two holding cost patterns (online ads and user-generated
+content) that arise in content moderation for social media platforms. Our
+simulations based on synthetic and real datasets demonstrate that OaRC
+consistently outperforms existing practice, which is based on the two canonical
+algorithmic principles.",http://arxiv.org/pdf/2505.21331v1,,False
+UGCE: User-Guided Incremental Counterfactual Exploration,27/05/2025,"Christos Fragkathoulas, Evaggelia Pitoura","Counterfactual explanations (CFEs) are a popular approach for interpreting
+machine learning predictions by identifying minimal feature changes that alter
+model outputs. However, in real-world settings, users often refine feasibility
+constraints over time, requiring counterfactual generation to adapt
+dynamically. Existing methods fail to support such iterative updates, instead
+recomputing explanations from scratch with each change, an inefficient and
+rigid approach. We propose User-Guided Incremental Counterfactual Exploration
+(UGCE), a genetic algorithm-based framework that incrementally updates
+counterfactuals in response to evolving user constraints. Experimental results
+across five benchmark datasets demonstrate that UGCE significantly improves
+computational efficiency while maintaining high-quality solutions compared to a
+static, non-incremental approach. Our evaluation further shows that UGCE
+supports stable performance under varying constraint sequences, benefits from
+an efficient warm-start strategy, and reveals how different constraint types
+may affect search behavior.",http://arxiv.org/pdf/2505.21330v1,,False
+Assured Autonomy with Neuro-Symbolic Perception,27/05/2025,"R. Spencer Hallyburton, Miroslav Pajic","Many state-of-the-art AI models deployed in cyber-physical systems (CPS),
+while highly accurate, are simply pattern-matchers.~With limited security
+guarantees, there are concerns for their reliability in safety-critical and
+contested domains. To advance assured AI, we advocate for a paradigm shift that
+imbues data-driven perception models with symbolic structure, inspired by a
+human's ability to reason over low-level features and high-level context. We
+propose a neuro-symbolic paradigm for perception (NeuSPaPer) and illustrate how
+joint object detection and scene graph generation (SGG) yields deep scene
+understanding.~Powered by foundation models for offline knowledge extraction
+and specialized SGG algorithms for real-time deployment, we design a framework
+leveraging structured relational graphs that ensures the integrity of
+situational awareness in autonomy. Using physics-based simulators and
+real-world datasets, we demonstrate how SGG bridges the gap between low-level
+sensor perception and high-level reasoning, establishing a foundation for
+resilient, context-aware AI and advancing trusted autonomy in CPS.",http://arxiv.org/pdf/2505.21322v1,,False
+Wavelet Flow For Extragalactic Foreground Simulations,27/05/2025,"M. Mebratu, W. L. K. Wu","Extragalactic foregrounds in cosmic microwave background (CMB) observations
+are both a source of cosmological and astrophysical information and a nuisance
+to the CMB. Effective field-level modeling that captures their non-Gaussian
+statistical distributions is increasingly important for optimal information
+extraction, particularly given the precise and low-noise observations from
+current and upcoming experiments. We explore the use of Wavelet Flow (WF)
+models to tackle the novel task of modeling the field-level probability
+distributions of multi-component CMB secondaries. Specifically, we jointly
+train correlated CMB lensing convergence ($\kappa$) and cosmic infrared
+background (CIB) maps with a WF model and obtain a network that statistically
+recovers the input to high accuracy -- the trained network generates samples of
+$\kappa$ and CIB fields whose average power spectra are within a few percent of
+the inputs across all scales, and whose Minkowski functionals are similarly
+accurate compared to the inputs. Leveraging the multiscale architecture of
+these models, we fine-tune both the model parameters and the priors at each
+scale independently, optimizing performance across different resolutions. These
+results demonstrate that WF models can accurately simulate correlated
+components of CMB secondaries, supporting improved analysis of cosmological
+data. Our code and trained models can be found here
+(https://github.com/matiwosm/HybridPriorWavletFlow.git).",http://arxiv.org/pdf/2505.21220v1,,False
+Quantum AIXI: Universal Intelligence via Quantum Information,27/05/2025,Elija Perrier,"AIXI is a widely studied model of artificial general intelligence (AGI) based
+upon principles of induction and reinforcement learning. However, AIXI is
+fundamentally classical in nature - as are the environments in which it is
+modelled. Given the universe is quantum mechanical in nature and the
+exponential overhead required to simulate quantum mechanical systems
+classically, the question arises as to whether there are quantum mechanical
+analogues of AIXI which are theoretically consistent or practically feasible as
+models of universal intelligence. To address this question, we extend the
+framework to quantum information and present Quantum AIXI (QAIXI). We introduce
+a model of quantum agent/environment interaction based upon quantum and
+classical registers and channels, showing how quantum AIXI agents may take both
+classical and quantum actions. We formulate the key components of AIXI in
+quantum information terms, extending previous research on quantum Kolmogorov
+complexity and a QAIXI value function. We discuss conditions and limitations
+upon quantum Solomonoff induction and show how contextuality fundamentally
+affects QAIXI models.",http://arxiv.org/pdf/2505.21170v1,,False
+STEB: In Search of the Best Evaluation Approach for Synthetic Time Series,27/05/2025,"Michael Stenger, Robert Leppich, André Bauer, Samuel Kounev","The growing need for synthetic time series, due to data augmentation or
+privacy regulations, has led to numerous generative models, frameworks, and
+evaluation measures alike. Objectively comparing these measures on a large
+scale remains an open challenge. We propose the Synthetic Time series
+Evaluation Benchmark (STEB) -- the first benchmark framework that enables
+comprehensive and interpretable automated comparisons of synthetic time series
+evaluation measures. Using 10 diverse datasets, randomness injection, and 13
+configurable data transformations, STEB computes indicators for measure
+reliability and score consistency. It tracks running time, test errors, and
+features sequential and parallel modes of operation. In our experiments, we
+determine a ranking of 41 measures from literature and confirm that the choice
+of upstream time series embedding heavily impacts the final score.",http://arxiv.org/pdf/2505.21160v1,,False
+GGBond: Growing Graph-Based AI-Agent Society for Socially-Aware Recommender Simulation,27/05/2025,"Hailin Zhong, Hanlin Wang, Yujun Ye, Meiyi Zhang, Shengxin Zhu","Current personalized recommender systems predominantly rely on static offline
+data for algorithm design and evaluation, significantly limiting their ability
+to capture long-term user preference evolution and social influence dynamics in
+real-world scenarios. To address this fundamental challenge, we propose a
+high-fidelity social simulation platform integrating human-like cognitive
+agents and dynamic social interactions to realistically simulate user behavior
+evolution under recommendation interventions. Specifically, the system
+comprises a population of Sim-User Agents, each equipped with a five-layer
+cognitive architecture that encapsulates key psychological mechanisms,
+including episodic memory, affective state transitions, adaptive preference
+learning, and dynamic trust-risk assessments. In particular, we innovatively
+introduce the Intimacy--Curiosity--Reciprocity--Risk (ICR2) motivational engine
+grounded in psychological and sociological theories, enabling more realistic
+user decision-making processes. Furthermore, we construct a multilayer
+heterogeneous social graph (GGBond Graph) supporting dynamic relational
+evolution, effectively modeling users' evolving social ties and trust dynamics
+based on interest similarity, personality alignment, and structural homophily.
+During system operation, agents autonomously respond to recommendations
+generated by typical recommender algorithms (e.g., Matrix Factorization,
+MultVAE, LightGCN), deciding whether to consume, rate, and share content while
+dynamically updating their internal states and social connections, thereby
+forming a stable, multi-round feedback loop. This innovative design transcends
+the limitations of traditional static datasets, providing a controlled,
+observable environment for evaluating long-term recommender effects.",http://arxiv.org/pdf/2505.21154v1,,False
+SageAttention2++: A More Efficient Implementation of SageAttention2,27/05/2025,"Jintao Zhang, Xiaoming Xu, Jia Wei, Haofeng Huang, Pengle Zhang, Chendong Xiang, Jun Zhu, Jianfei Chen","The efficiency of attention is critical because its time complexity grows
+quadratically with sequence length. SageAttention2 addresses this by utilizing
+quantization to accelerate matrix multiplications (Matmul) in attention. To
+further accelerate SageAttention2, we propose to utilize the faster instruction
+of FP8 Matmul accumulated in FP16. The instruction is 2x faster than the FP8
+Matmul used in SageAttention2. Our experiments show that SageAttention2++
+achieves a 3.9x speedup over FlashAttention while maintaining the same
+attention accuracy as SageAttention2. This means SageAttention2++ effectively
+accelerates various models, including those for language, image, and video
+generation, with negligible end-to-end metrics loss. The code will be available
+at https://github.com/thu-ml/SageAttention.",http://arxiv.org/pdf/2505.21136v1,,False
+A domain adaptation neural network for digital twin-supported fault diagnosis,27/05/2025,"Zhenling Chen, Haiwei Fu, Zhiguo Zeng","Digital twins offer a promising solution to the lack of sufficient labeled
+data in deep learning-based fault diagnosis by generating simulated data for
+model training. However, discrepancies between simulation and real-world
+systems can lead to a significant drop in performance when models are applied
+in real scenarios. To address this issue, we propose a fault diagnosis
+framework based on Domain-Adversarial Neural Networks (DANN), which enables
+knowledge transfer from simulated (source domain) to real-world (target domain)
+data. We evaluate the proposed framework using a publicly available robotics
+fault diagnosis dataset, which includes 3,600 sequences generated by a digital
+twin model and 90 real sequences collected from physical systems. The DANN
+method is compared with commonly used lightweight deep learning models such as
+CNN, TCN, Transformer, and LSTM. Experimental results show that incorporating
+domain adaptation significantly improves the diagnostic performance. For
+example, applying DANN to a baseline CNN model improves its accuracy from
+70.00% to 80.22% on real-world test data, demonstrating the effectiveness of
+domain adaptation in bridging the sim-to-real gap.",http://arxiv.org/pdf/2505.21046v1,,False
+Cardiac Digital Twins at Scale from MRI: Open Tools and Representative Models from ~55000 UK Biobank Participants,27/05/2025,"Devran Ugurlu, Shuang Qian, Elliot Fairweather, Charlene Mauger, Bram Ruijsink, Laura Dal Toso, Yu Deng, Marina Strocchi, Reza Razavi, Alistair Young, Pablo Lamata, Steven Niederer, Martin Bishop","A cardiac digital twin is a virtual replica of a patient's heart for
+screening, diagnosis, prognosis, risk assessment, and treatment planning of
+cardiovascular diseases. This requires an anatomically accurate
+patient-specific 3D structural representation of the heart, suitable for
+electro-mechanical simulations or study of disease mechanisms. However,
+generation of cardiac digital twins at scale is demanding and there are no
+public repositories of models across demographic groups. We describe an
+automatic open-source pipeline for creating patient-specific left and right
+ventricular meshes from cardiovascular magnetic resonance images, its
+application to a large cohort of ~55000 participants from UK Biobank, and the
+construction of the most comprehensive cohort of adult heart models to date,
+comprising 1423 representative meshes across sex (male, female), body mass
+index (range: 16 - 42 kg/m$^2$) and age (range: 49 - 80 years). Our code is
+available at https://github.com/cdttk/biv-volumetric-meshing/tree/plos2025 ,
+and pre-trained networks, representative volumetric meshes with fibers and UVCs
+will be made available soon.",http://arxiv.org/pdf/2505.21019v1,,False
+Identifying Super Spreaders in Multilayer Networks,27/05/2025,"Michał Czuba, Mateusz Stolarski, Adam Piróg, Piotr Bielak, Piotr Bródka","Identifying super-spreaders can be framed as a subtask of the influence
+maximisation problem. It seeks to pinpoint agents within a network that, if
+selected as single diffusion seeds, disseminate information most effectively.
+Multilayer networks, a specific class of heterogeneous graphs, can capture
+diverse types of interactions (e.g., physical-virtual or professional-social),
+and thus offer a more accurate representation of complex relational structures.
+In this work, we introduce a novel approach to identifying super-spreaders in
+such networks by leveraging graph neural networks. To this end, we construct a
+dataset by simulating information diffusion across hundreds of networks - to
+the best of our knowledge, the first of its kind tailored specifically to
+multilayer networks. We further formulate the task as a variation of the
+ranking prediction problem based on a four-dimensional vector that quantifies
+each agent's spreading potential: (i) the number of activations; (ii) the
+duration of the diffusion process; (iii) the peak number of activations; and
+(iv) the simulation step at which this peak occurs. Our model,
+TopSpreadersNetwork, comprises a relationship-agnostic encoder and a custom
+aggregation layer. This design enables generalisation to previously unseen data
+and adapts to varying graph sizes. In an extensive evaluation, we compare our
+model against classic centrality-based heuristics and competitive deep learning
+methods. The results, obtained across a broad spectrum of real-world and
+synthetic multilayer networks, demonstrate that TopSpreadersNetwork achieves
+superior performance in identifying high-impact nodes, while also offering
+improved interpretability through its structured output.",http://arxiv.org/pdf/2505.20980v1,,False
+Unified Deep Learning Approach for Estimating the Metallicities of RR Lyrae Stars Using light curves from Gaia Data Release 3,27/05/2025,"Lorenzo Monti, Tatiana Muraveva, Alessia Garofalo, Gisella Clementini, Maria Letizia Valentini","RR Lyrae stars (RRLs) are old pulsating variables widely used as metallicity
+tracers due to the correlation between their metal abundances and light curve
+morphology. With ESA Gaia DR3 providing light curves for about 270,000 RRLs,
+there is a pressing need for scalable methods to estimate their metallicities
+from photometric data. We introduce a unified deep learning framework that
+estimates metallicities for both fundamental-mode (RRab) and first-overtone
+(RRc) RRLs using Gaia G-band light curves. This approach extends our previous
+work on RRab stars to include RRc stars, aiming for high predictive accuracy
+and broad generalization across both pulsation types. The model is based on a
+Gated Recurrent Unit (GRU) neural network optimized for time-series extrinsic
+regression. Our pipeline includes preprocessing steps such as phase folding,
+smoothing, and sample weighting, and uses photometric metallicities from the
+literature as training targets. The architecture is designed to handle
+morphological differences between RRab and RRc light curves without requiring
+separate models. On held-out validation sets, our GRU model achieves strong
+performance: for RRab stars, MAE = 0.0565 dex, RMSE = 0.0765 dex, R^2 = 0.9401;
+for RRc stars, MAE = 0.0505 dex, RMSE = 0.0720 dex, R^2 = 0.9625. These results
+show the effectiveness of deep learning for large-scale photometric metallicity
+estimation and support its application to studies of stellar populations and
+Galactic structure.",http://arxiv.org/pdf/2505.20947v1,,False
+HAD: Hybrid Architecture Distillation Outperforms Teacher in Genomic Sequence Modeling,27/05/2025,"Hexiong Yang, Mingrui Chen, Huaibo Huang, Junxian Duan, Jie Cao, Zhen Zhou, Ran He","Inspired by the great success of Masked Language Modeling (MLM) in the
+natural language domain, the paradigm of self-supervised pre-training and
+fine-tuning has also achieved remarkable progress in the field of DNA sequence
+modeling. However, previous methods often relied on massive pre-training data
+or large-scale base models with huge parameters, imposing a significant
+computational burden. To address this, many works attempted to use more compact
+models to achieve similar outcomes but still fell short by a considerable
+margin. In this work, we propose a Hybrid Architecture Distillation (HAD)
+approach, leveraging both distillation and reconstruction tasks for more
+efficient and effective pre-training. Specifically, we employ the NTv2-500M as
+the teacher model and devise a grouping masking strategy to align the feature
+embeddings of visible tokens while concurrently reconstructing the invisible
+tokens during MLM pre-training. To validate the effectiveness of our proposed
+method, we conducted comprehensive experiments on the Nucleotide Transformer
+Benchmark and Genomic Benchmark. Compared to models with similar parameters,
+our model achieved excellent performance. More surprisingly, it even surpassed
+the distillation ceiling-teacher model on some sub-tasks, which is more than
+500 $\times$ larger. Lastly, we utilize t-SNE for more intuitive visualization,
+which shows that our model can gain a sophisticated understanding of the
+intrinsic representation pattern in genomic sequences.",http://arxiv.org/pdf/2505.20836v1,,False
+"Leaner Transformers: More Heads, Less Depth",27/05/2025,"Hemanth Saratchandran, Damien Teney, Simon Lucey","Transformers have reshaped machine learning by utilizing attention mechanisms
+to capture complex patterns in large datasets, leading to significant
+improvements in performance. This success has contributed to the belief that
+""bigger means better"", leading to ever-increasing model sizes. This paper
+challenge this ideology by showing that many existing transformers might be
+unnecessarily oversized. We discover a theoretical principle that redefines the
+role of multi-head attention. An important benefit of the multiple heads is in
+improving the conditioning of the attention block. We exploit this theoretical
+insight and redesign popular architectures with an increased number of heads.
+The improvement in the conditioning proves so significant in practice that
+model depth can be decreased, reducing the parameter count by up to 30-50%
+while maintaining accuracy. We obtain consistent benefits across a variety of
+transformer-based architectures of various scales, on tasks in computer vision
+(ImageNet-1k) as well as language and sequence modeling (GLUE benchmark,
+TinyStories, and the Long-Range Arena benchmark).",http://arxiv.org/pdf/2505.20802v1,,False
+TimePro: Efficient Multivariate Long-term Time Series Forecasting with Variable- and Time-Aware Hyper-state,27/05/2025,"Xiaowen Ma, Zhenliang Ni, Shuai Xiao, Xinghao Chen","In long-term time series forecasting, different variables often influence the
+target variable over distinct time intervals, a challenge known as the
+multi-delay issue. Traditional models typically process all variables or time
+points uniformly, which limits their ability to capture complex variable
+relationships and obtain non-trivial time representations. To address this
+issue, we propose TimePro, an innovative Mamba-based model that constructs
+variate- and time-aware hyper-states. Unlike conventional approaches that
+merely transfer plain states across variable or time dimensions, TimePro
+preserves the fine-grained temporal features of each variate token and
+adaptively selects the focused time points to tune the plain state. The
+reconstructed hyper-state can perceive both variable relationships and salient
+temporal information, which helps the model make accurate forecasting. In
+experiments, TimePro performs competitively on eight real-world long-term
+forecasting benchmarks with satisfactory linear complexity. Code is available
+at https://github.com/xwmaxwma/TimePro.",http://arxiv.org/pdf/2505.20774v1,,False
+Robust and Explainable Detector of Time Series Anomaly via Augmenting Multiclass Pseudo-Anomalies,27/05/2025,"Kohei Obata, Yasuko Matsubara, Yasushi Sakurai","Unsupervised anomaly detection in time series has been a pivotal research
+area for decades. Current mainstream approaches focus on learning normality, on
+the assumption that all or most of the samples in the training set are normal.
+However, anomalies in the training set (i.e., anomaly contamination) can be
+misleading. Recent studies employ data augmentation to generate
+pseudo-anomalies and learn the boundary separating the training samples from
+the augmented samples. Although this approach mitigates anomaly contamination
+if augmented samples mimic unseen real anomalies, it suffers from several
+limitations. (1) Covering a wide range of time series anomalies is challenging.
+(2) It disregards augmented samples that resemble normal samples (i.e., false
+anomalies). (3) It places too much trust in the labels of training and
+augmented samples. In response, we propose RedLamp, which employs diverse data
+augmentations to generate multiclass pseudo-anomalies and learns the multiclass
+boundary. Such multiclass pseudo-anomalies cover a wide variety of time series
+anomalies. We conduct multiclass classification using soft labels, which
+prevents the model from being overconfident and ensures its robustness against
+contaminated/false anomalies. The learned latent space is inherently
+explainable as it is trained to separate pseudo-anomalies into multiclasses.
+Extensive experiments demonstrate the effectiveness of RedLamp in anomaly
+detection and its robustness against anomaly contamination.",http://arxiv.org/pdf/2505.20765v1,,False
+Semi-supervised Clustering Through Representation Learning of Large-scale EHR Data,27/05/2025,"Linshanshan Wang, Mengyan Li, Zongqi Xia, Molei Liu, Tianxi Cai","Electronic Health Records (EHR) offer rich real-world data for personalized
+medicine, providing insights into disease progression, treatment responses, and
+patient outcomes. However, their sparsity, heterogeneity, and high
+dimensionality make them difficult to model, while the lack of standardized
+ground truth further complicates predictive modeling. To address these
+challenges, we propose SCORE, a semi-supervised representation learning
+framework that captures multi-domain disease profiles through patient
+embeddings. SCORE employs a Poisson-Adapted Latent factor Mixture (PALM) Model
+with pre-trained code embeddings to characterize codified features and extract
+meaningful patient phenotypes and embeddings. To handle the computational
+challenges of large-scale data, it introduces a hybrid Expectation-Maximization
+(EM) and Gaussian Variational Approximation (GVA) algorithm, leveraging limited
+labeled data to refine estimates on a vast pool of unlabeled samples. We
+theoretically establish the convergence of this hybrid approach, quantify GVA
+errors, and derive SCORE's error rate under diverging embedding dimensions. Our
+analysis shows that incorporating unlabeled data enhances accuracy and reduces
+sensitivity to label scarcity. Extensive simulations confirm SCORE's superior
+finite-sample performance over existing methods. Finally, we apply SCORE to
+predict disability status for patients with multiple sclerosis (MS) using
+partially labeled EHR data, demonstrating that it produces more informative and
+predictive patient embeddings for multiple MS-related conditions compared to
+existing approaches.",http://arxiv.org/pdf/2505.20731v1,,False
+LeDiFlow: Learned Distribution-guided Flow Matching to Accelerate Image Generation,27/05/2025,"Pascal Zwick, Nils Friederich, Maximilian Beichter, Lennart Hilbert, Ralf Mikut, Oliver Bringmann","Enhancing the efficiency of high-quality image generation using Diffusion
+Models (DMs) is a significant challenge due to the iterative nature of the
+process. Flow Matching (FM) is emerging as a powerful generative modeling
+paradigm based on a simulation-free training objective instead of a score-based
+one used in DMs. Typical FM approaches rely on a Gaussian distribution prior,
+which induces curved, conditional probability paths between the prior and
+target data distribution. These curved paths pose a challenge for the Ordinary
+Differential Equation (ODE) solver, requiring a large number of inference calls
+to the flow prediction network. To address this issue, we present Learned
+Distribution-guided Flow Matching (LeDiFlow), a novel scalable method for
+training FM-based image generation models using a better-suited prior
+distribution learned via a regression-based auxiliary model. By initializing
+the ODE solver with a prior closer to the target data distribution, LeDiFlow
+enables the learning of more computationally tractable probability paths. These
+paths directly translate to fewer solver steps needed for high-quality image
+generation at inference time. Our method utilizes a State-Of-The-Art (SOTA)
+transformer architecture combined with latent space sampling and can be trained
+on a consumer workstation. We empirically demonstrate that LeDiFlow remarkably
+outperforms the respective FM baselines. For instance, when operating directly
+on pixels, our model accelerates inference by up to 3.75x compared to the
+corresponding pixel-space baseline. Simultaneously, our latent FM model
+enhances image quality on average by 1.32x in CLIP Maximum Mean Discrepancy
+(CMMD) metric against its respective baseline.",http://arxiv.org/pdf/2505.20723v1,,False
+Recurrent Neural Operators: Stable Long-Term PDE Prediction,27/05/2025,"Zaijun Ye, Chen-Song Zhang, Wansheng Wang","Neural operators have emerged as powerful tools for learning solution
+operators of partial differential equations. However, in time-dependent
+problems, standard training strategies such as teacher forcing introduce a
+mismatch between training and inference, leading to compounding errors in
+long-term autoregressive predictions. To address this issue, we propose
+Recurrent Neural Operators (RNOs)-a novel framework that integrates recurrent
+training into neural operator architectures. Instead of conditioning each
+training step on ground-truth inputs, RNOs recursively apply the operator to
+their own predictions over a temporal window, effectively simulating
+inference-time dynamics during training. This alignment mitigates exposure bias
+and enhances robustness to error accumulation. Theoretically, we show that
+recurrent training can reduce the worst-case exponential error growth typical
+of teacher forcing to linear growth. Empirically, we demonstrate that
+recurrently trained Multigrid Neural Operators significantly outperform their
+teacher-forced counterparts in long-term accuracy and stability on standard
+benchmarks. Our results underscore the importance of aligning training with
+inference dynamics for robust temporal generalization in neural operator
+learning.",http://arxiv.org/pdf/2505.20721v1,,False
+Sparsified State-Space Models are Efficient Highway Networks,27/05/2025,"Woomin Song, Jihoon Tack, Sangwoo Mo, Seunghyuk Oh, Jinwoo Shin","State-space models (SSMs) offer a promising architecture for sequence
+modeling, providing an alternative to Transformers by replacing expensive
+self-attention with linear recurrences. In this paper, we propose a simple yet
+effective trick to enhance SSMs within given computational budgets by
+sparsifying them. Our intuition is that tokens in SSMs are highly redundant due
+to gradual recurrent updates, and dense recurrence operations block the
+delivery of past information. In particular, we observe that upper layers of
+SSMs tend to be more redundant as they encode global information, while lower
+layers encode local information. Motivated by this, we introduce Simba, a
+hierarchical sparsification method for SSMs based on token pruning. Simba
+sparsifies upper layers more than lower layers, encouraging the upper layers to
+behave like highways. To achieve this, we propose a novel token pruning
+criterion for SSMs, measuring the global impact of tokens on the final output
+by accumulating local recurrences. We demonstrate that Simba outperforms the
+baseline model, Mamba, with the same FLOPS in various natural language tasks.
+Moreover, we illustrate the effect of highways, showing that Simba not only
+enhances efficiency but also improves the information flow across long
+sequences. Code is available at https://github.com/woominsong/Simba.",http://arxiv.org/pdf/2505.20698v1,,False
+Generating Hypotheses of Dynamic Causal Graphs in Neuroscience: Leveraging Generative Factor Models of Observed Time Series,27/05/2025,"Zachary C. Brown, David Carlson","The field of hypothesis generation promises to reduce costs in neuroscience
+by narrowing the range of interventional studies needed to study various
+phenomena. Existing machine learning methods can generate scientific hypotheses
+from complex datasets, but many approaches assume causal relationships are
+static over time, limiting their applicability to systems with dynamic,
+state-dependent behavior, such as the brain. While some techniques attempt
+dynamic causal discovery through factor models, they often restrict
+relationships to linear patterns or impose other simplifying assumptions. We
+propose a novel method that models dynamic graphs as a conditionally weighted
+superposition of static graphs, where each static graph can capture nonlinear
+relationships. This approach enables the detection of complex, time-varying
+interactions between variables beyond linear limitations. Our method improves
+f1-scores of predicted dynamic causal patterns by roughly 22-28% on average
+over baselines in some of our experiments, with some improvements reaching well
+over 60%. A case study on real brain data demonstrates our method's ability to
+uncover relationships linked to specific behavioral states, offering valuable
+insights into neural dynamics.",http://arxiv.org/pdf/2505.20697v1,,False
+Comparisons between a Large Language Model-based Real-Time Compound Diagnostic Medical AI Interface and Physicians for Common Internal Medicine Cases using Simulated Patients,27/05/2025,"Hyungjun Park, Chang-Yun Woo, Seungjo Lim, Seunghwan Lim, Keunho Kwak, Ju Young Jeong, Chong Hyun Suh","Objective To develop an LLM based realtime compound diagnostic medical AI
+interface and performed a clinical trial comparing this interface and
+physicians for common internal medicine cases based on the United States
+Medical License Exam (USMLE) Step 2 Clinical Skill (CS) style exams. Methods A
+nonrandomized clinical trial was conducted on August 20, 2024. We recruited one
+general physician, two internal medicine residents (2nd and 3rd year), and five
+simulated patients. The clinical vignettes were adapted from the USMLE Step 2
+CS style exams. We developed 10 representative internal medicine cases based on
+actual patients and included information available on initial diagnostic
+evaluation. Primary outcome was the accuracy of the first differential
+diagnosis. Repeatability was evaluated based on the proportion of agreement.
+Results The accuracy of the physicians' first differential diagnosis ranged
+from 50% to 70%, whereas the realtime compound diagnostic medical AI interface
+achieved an accuracy of 80%. The proportion of agreement for the first
+differential diagnosis was 0.7. The accuracy of the first and second
+differential diagnoses ranged from 70% to 90% for physicians, whereas the AI
+interface achieved an accuracy rate of 100%. The average time for the AI
+interface (557 sec) was 44.6% shorter than that of the physicians (1006 sec).
+The AI interface ($0.08) also reduced costs by 98.1% compared to the
+physicians' average ($4.2). Patient satisfaction scores ranged from 4.2 to 4.3
+for care by physicians and were 3.9 for the AI interface Conclusion An LLM
+based realtime compound diagnostic medical AI interface demonstrated diagnostic
+accuracy and patient satisfaction comparable to those of a physician, while
+requiring less time and lower costs. These findings suggest that AI interfaces
+may have the potential to assist primary care consultations for common internal
+medicine cases.",http://arxiv.org/pdf/2505.20609v1,,False

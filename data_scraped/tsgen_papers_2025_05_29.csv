@@ -1,0 +1,561 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+SimProcess: High Fidelity Simulation of Noisy ICS Physical Processes,28/05/2025,"Denis Donadel, Gabriele Crestanello, Giulio Morandini, Daniele Antonioli, Mauro Conti, Massimo Merro","Industrial Control Systems (ICS) manage critical infrastructures like power
+grids and water treatment plants. Cyberattacks on ICSs can disrupt operations,
+causing severe economic, environmental, and safety issues. For example,
+undetected pollution in a water plant can put the lives of thousands at stake.
+ICS researchers have increasingly turned to honeypots -- decoy systems designed
+to attract attackers, study their behaviors, and eventually improve defensive
+mechanisms. However, existing ICS honeypots struggle to replicate the ICS
+physical process, making them susceptible to detection. Accurately simulating
+the noise in ICS physical processes is challenging because different factors
+produce it, including sensor imperfections and external interferences.
+  In this paper, we propose SimProcess, a novel framework to rank the fidelity
+of ICS simulations by evaluating how closely they resemble real-world and noisy
+physical processes. It measures the simulation distance from a target system by
+estimating the noise distribution with machine learning models like Random
+Forest. Unlike existing solutions that require detailed mathematical models or
+are limited to simple systems, SimProcess operates with only a timeseries of
+measurements from the real system, making it applicable to a broader range of
+complex dynamic systems. We demonstrate the framework's effectiveness through a
+case study using real-world power grid data from the EPIC testbed. We compare
+the performance of various simulation methods, including static and generative
+noise techniques. Our model correctly classifies real samples with a recall of
+up to 1.0. It also identifies Gaussian and Gaussian Mixture as the best
+distribution to simulate our power systems, together with a generative solution
+provided by an autoencoder, thereby helping developers to improve honeypot
+fidelity. Additionally, we make our code publicly available.",http://arxiv.org/pdf/2505.22638v1,10.1145/3709017.3737711,False
+GLAMP: An Approximate Message Passing Framework for Transfer Learning with Applications to Lasso-based Estimators,28/05/2025,"Longlin Wang, Yanke Song, Kuanhao Jiang, Pragya Sur","Approximate Message Passing (AMP) algorithms enable precise characterization
+of certain classes of random objects in the high-dimensional limit, and have
+found widespread applications in fields such as statistics, deep learning,
+genetics, and communications. However, existing AMP frameworks cannot
+simultaneously handle matrix-valued iterates and non-separable denoising
+functions. This limitation prevents them from precisely characterizing
+estimators that draw information from multiple data sources with distribution
+shifts. In this work, we introduce Generalized Long Approximate Message Passing
+(GLAMP), a novel extension of AMP that addresses this limitation. We rigorously
+prove state evolution for GLAMP. GLAMP significantly broadens the scope of AMP,
+enabling the analysis of transfer learning estimators that were previously out
+of reach. We demonstrate the utility of GLAMP by precisely characterizing the
+risk of three Lasso-based transfer learning estimators: the Stacked Lasso, the
+Model Averaging Estimator, and the Second Step Estimator. We also demonstrate
+the remarkable finite sample accuracy of our theory via extensive simulations.",http://arxiv.org/pdf/2505.22594v1,,False
+IGNIS: A Neural Network Framework for Robust Parameter Estimation in Archimedean Copulas,28/05/2025,"Agnideep Aich, Ashit Baran Aich, Bruce Wade","Parameter estimation for Archimedean copulas remains a challenging problem,
+particularly for the recently developed A1 and A2 families that exhibit complex
+dependency structures. Traditional methods, such as the Method of Moments
+(MoM), Maximum Likelihood Estimation (MLE), and Maximum Pseudo-Likelihood
+(MPL), often struggle due to issues of non-monotonic relationship with
+dependency measures such as Kendall's tau (as in the case of A1) and numerical
+instability. In this paper, we present the IGNIS Network, a novel, unified
+neural framework that learns a direct mapping from observable dependency
+measures to copula parameters, thereby overcoming the limitations of classical
+approaches. Our approach is trained on simulated data spanning five Archimedean
+copula families including Clayton, Gumbel, Frank, A1, and A2, ensuring its
+general applicability across the entire family. Extensive simulation studies
+demonstrate that the IGNIS Network reduces estimation errors compared to MoM,
+while inherently enforcing parameter constraints through theory-guided
+post-processing. We further validate the practical utility of our method on
+diverse real-world datasets, including financial returns (AAPL-MSFT),
+healthcare metrics (CDC Diabetes indicators), and environmental measurements
+(PM2.5 air quality). Our results underscore the transformative potential of
+neural methods for robust and accurate dependence modeling in modern
+applications.",http://arxiv.org/pdf/2505.22518v1,,False
+ProSpero: Active Learning for Robust Protein Design Beyond Wild-Type Neighborhoods,28/05/2025,"Michal Kmicikiewicz, Vincent Fortuin, Ewa Szczurek","Designing protein sequences of both high fitness and novelty is a challenging
+task in data-efficient protein engineering. Exploration beyond wild-type
+neighborhoods often leads to biologically implausible sequences or relies on
+surrogate models that lose fidelity in novel regions. Here, we propose
+ProSpero, an active learning framework in which a frozen pre-trained generative
+model is guided by a surrogate updated from oracle feedback. By integrating
+fitness-relevant residue selection with biologically-constrained Sequential
+Monte Carlo sampling, our approach enables exploration beyond wild-type
+neighborhoods while preserving biological plausibility. We show that our
+framework remains effective even when the surrogate is misspecified. ProSpero
+consistently outperforms or matches existing methods across diverse protein
+engineering tasks, retrieving sequences of both high fitness and novelty.",http://arxiv.org/pdf/2505.22494v1,,False
+Pure Exploration with Infinite Answers,28/05/2025,"Riccardo Poiani, Martino Bernasconi, Andrea Celli","We study pure exploration problems where the set of correct answers is
+possibly infinite, e.g., the regression of any continuous function of the means
+of the bandit. We derive an instance-dependent lower bound for these problems.
+By analyzing it, we discuss why existing methods (i.e., Sticky Track-and-Stop)
+for finite answer problems fail at being asymptotically optimal in this more
+general setting. Finally, we present a framework, Sticky-Sequence
+Track-and-Stop, which generalizes both Track-and-Stop and Sticky
+Track-and-Stop, and that enjoys asymptotic optimality. Due to its generality,
+our analysis also highlights special cases where existing methods enjoy
+optimality.",http://arxiv.org/pdf/2505.22473v1,,False
+SOReL and TOReL: Two Methods for Fully Offline Reinforcement Learning,28/05/2025,"Mattie Fellows, Clarisse Wibault, Uljad Berdica, Johannes Forkel, Jakob N. Foerster, Michael A. Osborne","Sample efficiency remains a major obstacle for real world adoption of
+reinforcement learning (RL): success has been limited to settings where
+simulators provide access to essentially unlimited environment interactions,
+which in reality are typically costly or dangerous to obtain. Offline RL in
+principle offers a solution by exploiting offline data to learn a near-optimal
+policy before deployment. In practice, however, current offline RL methods rely
+on extensive online interactions for hyperparameter tuning, and have no
+reliable bound on their initial online performance. To address these two
+issues, we introduce two algorithms. Firstly, SOReL: an algorithm for safe
+offline reinforcement learning. Using only offline data, our Bayesian approach
+infers a posterior over environment dynamics to obtain a reliable estimate of
+the online performance via the posterior predictive uncertainty. Crucially, all
+hyperparameters are also tuned fully offline. Secondly, we introduce TOReL: a
+tuning for offline reinforcement learning algorithm that extends our
+information rate based offline hyperparameter tuning methods to general offline
+RL approaches. Our empirical evaluation confirms SOReL's ability to accurately
+estimate regret in the Bayesian setting whilst TOReL's offline hyperparameter
+tuning achieves competitive performance with the best online hyperparameter
+tuning methods using only offline data. Thus, SOReL and TOReL make a
+significant step towards safe and reliable offline RL, unlocking the potential
+for RL in the real world. Our implementations are publicly available:
+https://github.com/CWibault/sorel\_torel.",http://arxiv.org/pdf/2505.22442v1,,False
+Data-Driven Antenna Miniaturization: A Knowledge-Based System Integrating Quantum PSO and Predictive Machine Learning Models,28/05/2025,"Khan Masood Parvez, Sk Md Abidar Rahaman, Ali Shiri Sichani","The rapid evolution of wireless technologies necessitates automated design
+frameworks to address antenna miniaturization and performance optimization
+within constrained development cycles. This study demonstrates a machine
+learning enhanced workflow integrating Quantum-Behaved Dynamic Particle Swarm
+Optimization (QDPSO) with ANSYS HFSS simulations to accelerate antenna design.
+The QDPSO algorithm autonomously optimized loop dimensions in 11.53 seconds,
+achieving a resonance frequency of 1.4208 GHz a 12.7 percent reduction compared
+to conventional 1.60 GHz designs. Machine learning models (SVM, Random Forest,
+XGBoost, and Stacked ensembles) predicted resonance frequencies in 0.75 seconds
+using 936 simulation datasets, with stacked models showing superior training
+accuracy (R2=0.9825) and SVM demonstrating optimal validation performance
+(R2=0.7197). The complete design cycle, encompassing optimization, prediction,
+and ANSYS validation, required 12.42 minutes on standard desktop hardware
+(Intel i5-8500, 16GB RAM), contrasting sharply with the 50-hour benchmark of
+PSADEA-based approaches. This 240 times of acceleration eliminates traditional
+trial-and-error methods that often extend beyond seven expert-led days. The
+system enables precise specifications of performance targets with automated
+generation of fabrication-ready parameters, particularly benefiting compact
+consumer devices requiring rapid frequency tuning. By bridging AI-driven
+optimization with CAD validation, this framework reduces engineering workloads
+while ensuring production-ready designs, establishing a scalable paradigm for
+next-generation RF systems in 6G and IoT applications.",http://arxiv.org/pdf/2505.22440v1,,False
+A Divide-and-Conquer Approach for Modeling Arrival Times in Business Process Simulation,28/05/2025,"Lukas Kirchdorfer, Konrad Özdemir, Stjepan Kusenic, Han van der Aa, Heiner Stuckenschmidt","Business Process Simulation (BPS) is a critical tool for analyzing and
+improving organizational processes by estimating the impact of process changes.
+A key component of BPS is the case-arrival model, which determines the pattern
+of new case entries into a process. Although accurate case-arrival modeling is
+essential for reliable simulations, as it influences waiting and overall cycle
+times, existing approaches often rely on oversimplified static distributions of
+inter-arrival times. These approaches fail to capture the dynamic and temporal
+complexities inherent in organizational environments, leading to less accurate
+and reliable outcomes. To address this limitation, we propose Auto Time Kernel
+Density Estimation (AT-KDE), a divide-and-conquer approach that models arrival
+times of processes by incorporating global dynamics, day-of-week variations,
+and intraday distributional changes, ensuring both precision and scalability.
+Experiments conducted across 20 diverse processes demonstrate that AT-KDE is
+far more accurate and robust than existing approaches while maintaining
+sensible execution time efficiency.",http://arxiv.org/pdf/2505.22381v1,,False
+Rethinking BPS: A Utility-Based Evaluation Framework,28/05/2025,"Konrad Özdemir, Lukas Kirchdorfer, Keyvan Amiri Elyasi, Han van der Aa, Heiner Stuckenschmidt","Business process simulation (BPS) is a key tool for analyzing and optimizing
+organizational workflows, supporting decision-making by estimating the impact
+of process changes. The reliability of such estimates depends on the ability of
+a BPS model to accurately mimic the process under analysis, making rigorous
+accuracy evaluation essential. However, the state-of-the-art approach to
+evaluating BPS models has two key limitations. First, it treats simulation as a
+forecasting problem, testing whether models can predict unseen future events.
+This fails to assess how well a model captures the as-is process, particularly
+when process behavior changes from train to test period. Thus, it becomes
+difficult to determine whether poor results stem from an inaccurate model or
+the inherent complexity of the data, such as unpredictable drift. Second, the
+evaluation approach strongly relies on Earth Mover's Distance-based metrics,
+which can obscure temporal patterns and thus yield misleading conclusions about
+simulation quality. To address these issues, we propose a novel framework that
+evaluates simulation quality based on its ability to generate representative
+process behavior. Instead of comparing simulated logs to future real-world
+executions, we evaluate whether predictive process monitoring models trained on
+simulated data perform comparably to those trained on real data for downstream
+analysis tasks. Empirical results show that our framework not only helps
+identify sources of discrepancies but also distinguishes between model accuracy
+and data complexity, offering a more meaningful way to assess BPS quality.",http://arxiv.org/pdf/2505.22316v1,,False
+Neural Restoration of Greening Defects in Historical Autochrome Photographs Based on Purely Synthetic Data,28/05/2025,"Saptarshi Neil Sinha, P. Julius Kuehn, Johannes Koppe, Arjan Kuijper, Michael Weinmann","The preservation of early visual arts, particularly color photographs, is
+challenged by deterioration caused by aging and improper storage, leading to
+issues like blurring, scratches, color bleeding, and fading defects. In this
+paper, we present the first approach for the automatic removal of greening
+color defects in digitized autochrome photographs. Our main contributions
+include a method based on synthetic dataset generation and the use of
+generative AI with a carefully designed loss function for the restoration of
+visual arts. To address the lack of suitable training datasets for analyzing
+greening defects in damaged autochromes, we introduce a novel approach for
+accurately simulating such defects in synthetic data. We also propose a
+modified weighted loss function for the ChaIR method to account for color
+imbalances between defected and non-defected areas. While existing methods
+struggle with accurately reproducing original colors and may require
+significant manual effort, our method allows for efficient restoration with
+reduced time requirements.",http://arxiv.org/pdf/2505.22291v1,,False
+Full Domain Analysis in Fluid Dynamics,28/05/2025,"Alexander Hagg, Adam Gaier, Dominik Wilde, Alexander Asteroth, Holger Foysi, Dirk Reith","Novel techniques in evolutionary optimization, simulation and machine
+learning allow for a broad analysis of domains like fluid dynamics, in which
+computation is expensive and flow behavior is complex. Under the term of full
+domain analysis we understand the ability to efficiently determine the full
+space of solutions in a problem domain, and analyze the behavior of those
+solutions in an accessible and interactive manner. The goal of full domain
+analysis is to deepen our understanding of domains by generating many examples
+of flow, their diversification, optimization and analysis. We define a formal
+model for full domain analysis, its current state of the art, and requirements
+of subcomponents. Finally, an example is given to show what we can learn by
+using full domain analysis. Full domain analysis, rooted in optimization and
+machine learning, can be a helpful tool in understanding complex systems in
+computational physics and beyond.",http://arxiv.org/pdf/2505.22275v1,,False
+UDuo: Universal Dual Optimization Framework for Online Matching,28/05/2025,"Bin Li, Diwei Liu, Zehong Hu, Jia Jia","Online resource allocation under budget constraints critically depends on
+proper modeling of user arrival dynamics. Classical approaches employ
+stochastic user arrival models to derive near-optimal solutions through
+fractional matching formulations of exposed users for downstream allocation
+tasks. However, this is no longer a reasonable assumption when the environment
+changes dynamically. In this work, We propose the Universal Dual optimization
+framework UDuo, a novel paradigm that fundamentally rethinks online allocation
+through three key innovations: (i) a temporal user arrival representation
+vector that explicitly captures distribution shifts in user arrival patterns
+and resource consumption dynamics, (ii) a resource pacing learner with adaptive
+allocation policies that generalize to heterogeneous constraint scenarios, and
+(iii) an online time-series forecasting approach for future user arrival
+distributions that achieves asymptotically optimal solutions with constraint
+feasibility guarantees in dynamic environments. Experimental results show that
+UDuo achieves higher efficiency and faster convergence than the traditional
+stochastic arrival model in real-world pricing while maintaining rigorous
+theoretical validity for general online allocation problems.",http://arxiv.org/pdf/2505.22243v1,,False
+Yambda-5B -- A Large-Scale Multi-modal Dataset for Ranking And Retrieval,28/05/2025,"A. Ploshkin, V. Tytskiy, A. Pismenny, V. Baikalov, E. Taychinov, A. Permiakov, D. Burlakov, E. Krofto, N. Savushkin","We present Yambda-5B, a large-scale open dataset sourced from the
+Yandex.Music streaming platform. Yambda-5B contains 4.79 billion user-item
+interactions from 1 million users across 9.39 million tracks. The dataset
+includes two primary types of interactions: implicit feedback (listening
+events) and explicit feedback (likes, dislikes, unlikes and undislikes). In
+addition, we provide audio embeddings for most tracks, generated by a
+convolutional neural network trained on audio spectrograms. A key
+distinguishing feature of Yambda-5B is the inclusion of the is_organic flag,
+which separates organic user actions from recommendation-driven events. This
+distinction is critical for developing and evaluating machine learning
+algorithms, as Yandex.Music relies on recommender systems to personalize track
+selection for users. To support rigorous benchmarking, we introduce an
+evaluation protocol based on a Global Temporal Split, allowing recommendation
+algorithms to be assessed in conditions that closely mirror real-world use. We
+report benchmark results for standard baselines (ItemKNN, iALS) and advanced
+models (SANSA, SASRec) using a variety of evaluation metrics. By releasing
+Yambda-5B to the community, we aim to provide a readily accessible,
+industrial-scale resource to advance research, foster innovation, and promote
+reproducible results in recommender systems.",http://arxiv.org/pdf/2505.22238v1,,False
+Let's Predict Sentence by Sentence,28/05/2025,"Hyeonbin Hwang, Byeongguk Jeon, Seungone Kim, Jiyeon Kim, Hoyeon Chang, Sohee Yang, Seungpil Won, Dohaeng Lee, Youbin Ahn, Minjoon Seo","Autoregressive language models (LMs) generate one token at a time, yet human
+reasoning operates over higher-level abstractions - sentences, propositions,
+and concepts. This contrast raises a central question- Can LMs likewise learn
+to reason over structured semantic units rather than raw token sequences? In
+this work, we investigate whether pretrained LMs can be lifted into such
+abstract reasoning spaces by building on their learned representations. We
+present a framework that adapts a pretrained token-level LM to operate in
+sentence space by autoregressively predicting continuous embeddings of next
+sentences. We explore two embedding paradigms inspired by classical
+representation learning: 1) semantic embeddings, learned via autoencoding to
+preserve surface meaning; and 2) contextual embeddings, trained via
+next-sentence prediction to encode anticipatory structure. We evaluate both
+under two inference regimes: Discretized, which decodes each predicted
+embedding into text before re-encoding; and Continuous, which reasons entirely
+in embedding space for improved efficiency. Across four domains - mathematics,
+logic, commonsense, and planning - contextual embeddings under continuous
+inference show competitive performance with Chain-of-Thought (CoT) while
+reducing inference-time FLOPs on average by half. We also present early signs
+of scalability and modular adaptation. Finally, to visualize latent
+trajectories, we introduce SentenceLens, a diagnostic tool that decodes
+intermediate model states into interpretable sentences. Together, our results
+indicate that pretrained LMs can effectively transition to abstract, structured
+reasoning within latent embedding spaces.",http://arxiv.org/pdf/2505.22202v1,,False
+Sentiment Simulation using Generative AI Agents,28/05/2025,"Melrose Tia, Jezreel Sophia Lanuzo, Lei Rigi Baltazar, Marie Joy Lopez-Relente, Diwa Malaya Quiñones, Jason Albia","Traditional sentiment analysis relies on surface-level linguistic patterns
+and retrospective data, limiting its ability to capture the psychological and
+contextual drivers of human sentiment. These limitations constrain its
+effectiveness in applications that require predictive insight, such as policy
+testing, narrative framing, and behavioral forecasting. We present a robust
+framework for sentiment simulation using generative AI agents embedded with
+psychologically rich profiles. Agents are instantiated from a nationally
+representative survey of 2,485 Filipino respondents, combining sociodemographic
+information with validated constructs of personality traits, values, beliefs,
+and socio-political attitudes. The framework includes three stages: (1) agent
+embodiment via categorical or contextualized encodings, (2) exposure to
+real-world political and economic scenarios, and (3) generation of sentiment
+ratings accompanied by explanatory rationales. Using Quadratic Weighted
+Accuracy (QWA), we evaluated alignment between agent-generated and human
+responses. Contextualized encoding achieved 92% alignment in replicating
+original survey responses. In sentiment simulation tasks, agents reached
+81%--86% accuracy against ground truth sentiment, with contextualized profile
+encodings significantly outperforming categorical (p < 0.0001, Cohen's d =
+0.70). Simulation results remained consistent across repeated trials
+(+/-0.2--0.5% SD) and resilient to variation in scenario framing (p = 0.9676,
+Cohen's d = 0.02). Our findings establish a scalable framework for sentiment
+modeling through psychographically grounded AI agents. This work signals a
+paradigm shift in sentiment analysis from retrospective classification to
+prospective and dynamic simulation grounded in psychology of sentiment
+formation.",http://arxiv.org/pdf/2505.22125v1,,False
+Multimodal Forecasting of Sparse Intraoperative Hypotension Events Powered by Language Model,28/05/2025,"Jintao Zhang, Zirui Liu, Mingyue Cheng, Shilong Zhang, Tingyue Pan, Qi Liu, Yanhu Xie","Intraoperative hypotension (IOH) frequently occurs under general anesthesia
+and is strongly linked to adverse outcomes such as myocardial injury and
+increased mortality. Despite its significance, IOH prediction is hindered by
+event sparsity and the challenge of integrating static and dynamic data across
+diverse patients. In this paper, we propose \textbf{IOHFuseLM}, a multimodal
+language model framework. To accurately identify and differentiate sparse
+hypotensive events, we leverage a two-stage training strategy. The first stage
+involves domain adaptive pretraining on IOH physiological time series augmented
+through diffusion methods, thereby enhancing the model sensitivity to patterns
+associated with hypotension. Subsequently, task fine-tuning is performed on the
+original clinical dataset to further enhance the ability to distinguish
+normotensive from hypotensive states. To enable multimodal fusion for each
+patient, we align structured clinical descriptions with the corresponding
+physiological time series at the token level. Such alignment enables the model
+to capture individualized temporal patterns alongside their corresponding
+clinical semantics. In addition, we convert static patient attributes into
+structured text to enrich personalized information. Experimental evaluations on
+two intraoperative datasets demonstrate that IOHFuseLM outperforms established
+baselines in accurately identifying IOH events, highlighting its applicability
+in clinical decision support scenarios. Our code is publicly available to
+promote reproducibility at https://github.com/zjt-gpu/IOHFuseLM.",http://arxiv.org/pdf/2505.22116v1,,False
+The quest for the GRAph Level autoEncoder (GRALE),28/05/2025,"Paul Krzakala, Gabriel Melo, Charlotte Laclau, Florence d'Alché-Buc, Rémi Flamary","Although graph-based learning has attracted a lot of attention, graph
+representation learning is still a challenging task whose resolution may impact
+key application fields such as chemistry or biology. To this end, we introduce
+GRALE, a novel graph autoencoder that encodes and decodes graphs of varying
+sizes into a shared embedding space. GRALE is trained using an Optimal
+Transport-inspired loss that compares the original and reconstructed graphs and
+leverages a differentiable node matching module, which is trained jointly with
+the encoder and decoder. The proposed attention-based architecture relies on
+Evoformer, the core component of AlphaFold, which we extend to support both
+graph encoding and decoding. We show, in numerical experiments on simulated and
+molecular data, that GRALE enables a highly general form of pre-training,
+applicable to a wide range of downstream tasks, from classification and
+regression to more complex tasks such as graph interpolation, editing,
+matching, and prediction.",http://arxiv.org/pdf/2505.22109v1,,False
+Curse of High Dimensionality Issue in Transformer for Long-context Modeling,28/05/2025,"Shuhai Zhang, Zeng You, Yaofo Chen, Zhiquan Wen, Qianyue Wang, Zhijie Qiu, Yuanqing Li, Mingkui Tan","Transformer-based large language models (LLMs) excel in natural language
+processing tasks by capturing long-range dependencies through self-attention
+mechanisms. However, long-context modeling faces significant computational
+inefficiencies due to \textit{redundant} attention computations: while
+attention weights are often \textit{sparse}, all tokens consume \textit{equal}
+computational resources. In this paper, we reformulate traditional
+probabilistic sequence modeling as a \textit{supervised learning task},
+enabling the separation of relevant and irrelevant tokens and providing a
+clearer understanding of redundancy. Based on this reformulation, we
+theoretically analyze attention sparsity, revealing that only a few tokens
+significantly contribute to predictions. Building on this, we formulate
+attention optimization as a linear coding problem and propose a \textit{group
+coding strategy}, theoretically showing its ability to improve robustness
+against random noise and enhance learning efficiency. Motivated by this, we
+propose \textit{Dynamic Group Attention} (DGA), which leverages the group
+coding to explicitly reduce redundancy by aggregating less important tokens
+during attention computation. Empirical results show that our DGA significantly
+reduces computational costs while maintaining competitive performance.Code is
+available at https://github.com/bolixinyu/DynamicGroupAttention.",http://arxiv.org/pdf/2505.22107v1,,False
+High Volume Rate 3D Ultrasound Reconstruction with Diffusion Models,28/05/2025,"Tristan S. W. Stevens, Oisín Nolan, Oudom Somphone, Jean-Luc Robert, Ruud J. G. van Sloun","Three-dimensional ultrasound enables real-time volumetric visualization of
+anatomical structures. Unlike traditional 2D ultrasound, 3D imaging reduces the
+reliance on precise probe orientation, potentially making ultrasound more
+accessible to clinicians with varying levels of experience and improving
+automated measurements and post-exam analysis. However, achieving both high
+volume rates and high image quality remains a significant challenge. While 3D
+diverging waves can provide high volume rates, they suffer from limited tissue
+harmonic generation and increased multipath effects, which degrade image
+quality. One compromise is to retain the focusing in elevation while leveraging
+unfocused diverging waves in the lateral direction to reduce the number of
+transmissions per elevation plane. Reaching the volume rates achieved by full
+3D diverging waves, however, requires dramatically undersampling the number of
+elevation planes. Subsequently, to render the full volume, simple interpolation
+techniques are applied. This paper introduces a novel approach to 3D ultrasound
+reconstruction from a reduced set of elevation planes by employing diffusion
+models (DMs) to achieve increased spatial and temporal resolution. We compare
+both traditional and supervised deep learning-based interpolation methods on a
+3D cardiac ultrasound dataset. Our results show that DM-based reconstruction
+consistently outperforms the baselines in image quality and downstream task
+performance. Additionally, we accelerate inference by leveraging the temporal
+consistency inherent to ultrasound sequences. Finally, we explore the
+robustness of the proposed method by exploiting the probabilistic nature of
+diffusion posterior sampling to quantify reconstruction uncertainty and
+demonstrate improved recall on out-of-distribution data with synthetic
+anomalies under strong subsampling.",http://arxiv.org/pdf/2505.22090v1,,False
+Hyperbolic recurrent neural network as the first type of non-Euclidean neural quantum state ansatz,28/05/2025,H. L. Dao,"In this work, we introduce the first type of non-Euclidean neural quantum
+state (NQS) ansatz, in the form of the hyperbolic GRU (a variant of recurrent
+neural networks (RNNs)), to be used in the Variational Monte Carlo method of
+approximating the ground state wavefunction for quantum many-body systems. In
+particular, we examine the performances of NQS ansatzes constructed from both
+conventional or Euclidean RNN/GRU and from hyperbolic GRU in the prototypical
+settings of the one- and two-dimensional transverse field Ising models (TFIM)
+of up to 100 spins and the one-dimensional Heisenberg $J_1J_2$ and $J_1J_2J_3$
+systems of up 50 spins. By virtue of the fact that, for all of the experiments
+performed in this work, hyperbolic GRU can yield performances comparable to or
+better than Euclidean RNNs, which have been extensively studied in these
+settings in the literature, our work is a proof-of-concept for the viability of
+hyperbolic GRU as the first type of non-Euclidean NQS ansatz for quantum
+many-body systems. Furthermore, in settings where the Hamiltonian displays a
+clear hierarchical interaction structure, such as the 1D Heisenberg $J_1J_2$ &
+$J_1J_2J_3$ systems with the 1st, 2nd and even 3rd nearest neighbor
+interactions, our results show that hyperbolic GRU definitively outperforms its
+Euclidean version in all instances. The fact that these results are reminiscent
+of the established ones from natural language processing where hyperbolic GRU
+almost always outperforms Euclidean RNNs when the training data exhibit a
+tree-like or hierarchical structure leads us to hypothesize that hyperbolic GRU
+NQS ansatz would likely outperform Euclidean RNN/GRU NQS ansatz in quantum spin
+systems that involve different degrees of nearest neighbor interactions.
+Finally, with this work, we hope to initiate future studies of other types of
+non-Euclidean NQS beyond hyperbolic GRU.",http://arxiv.org/pdf/2505.22083v1,,False
+Analysis and Evaluation of Synthetic Data Generation in Speech Dysfluency Detection,28/05/2025,"Jinming Zhang, Xuanru Zhou, Jiachen Lian, Shuhe Li, William Li, Zoe Ezzes, Rian Bogley, Lisa Wauters, Zachary Miller, Jet Vonk, Brittany Morin, Maria Gorno-Tempini, Gopala Anumanchipalli","Speech dysfluency detection is crucial for clinical diagnosis and language
+assessment, but existing methods are limited by the scarcity of high-quality
+annotated data. Although recent advances in TTS model have enabled synthetic
+dysfluency generation, existing synthetic datasets suffer from unnatural
+prosody and limited contextual diversity. To address these limitations, we
+propose LLM-Dys -- the most comprehensive dysfluent speech corpus with
+LLM-enhanced dysfluency simulation. This dataset captures 11 dysfluency
+categories spanning both word and phoneme levels. Building upon this resource,
+we improve an end-to-end dysfluency detection framework. Experimental
+validation demonstrates state-of-the-art performance. All data, models, and
+code are open-sourced at https://github.com/Berkeley-Speech-Group/LLM-Dys.",http://arxiv.org/pdf/2505.22029v1,,False
+Learning Compositional Behaviors from Demonstration and Language,28/05/2025,"Weiyu Liu, Neil Nie, Ruohan Zhang, Jiayuan Mao, Jiajun Wu","We introduce Behavior from Language and Demonstration (BLADE), a framework
+for long-horizon robotic manipulation by integrating imitation learning and
+model-based planning. BLADE leverages language-annotated demonstrations,
+extracts abstract action knowledge from large language models (LLMs), and
+constructs a library of structured, high-level action representations. These
+representations include preconditions and effects grounded in visual perception
+for each high-level action, along with corresponding controllers implemented as
+neural network-based policies. BLADE can recover such structured
+representations automatically, without manually labeled states or symbolic
+definitions. BLADE shows significant capabilities in generalizing to novel
+situations, including novel initial states, external state perturbations, and
+novel goals. We validate the effectiveness of our approach both in simulation
+and on real robots with a diverse set of objects with articulated parts,
+partial observability, and geometric constraints.",http://arxiv.org/pdf/2505.21981v1,,False
+BOFormer: Learning to Solve Multi-Objective Bayesian Optimization via Non-Markovian RL,28/05/2025,"Yu-Heng Hung, Kai-Jie Lin, Yu-Heng Lin, Chien-YiWang, Cheng Sun, Ping-Chun Hsieh","Bayesian optimization (BO) offers an efficient pipeline for optimizing
+black-box functions with the help of a Gaussian process prior and an
+acquisition function (AF). Recently, in the context of single-objective BO,
+learning-based AFs witnessed promising empirical results given its favorable
+non-myopic nature. Despite this, the direct extension of these approaches to
+multi-objective Bayesian optimization (MOBO) suffer from the
+\textit{hypervolume identifiability issue}, which results from the
+non-Markovian nature of MOBO problems. To tackle this, inspired by the
+non-Markovian RL literature and the success of Transformers in language
+modeling, we present a generalized deep Q-learning framework and propose
+\textit{BOFormer}, which substantiates this framework for MOBO via sequence
+modeling. Through extensive evaluation, we demonstrate that BOFormer constantly
+outperforms the benchmark rule-based and learning-based algorithms in various
+synthetic MOBO and real-world multi-objective hyperparameter optimization
+problems. We have made the source code publicly available to encourage further
+research in this direction.",http://arxiv.org/pdf/2505.21974v1,,False
+MapStory: LLM-Powered Text-Driven Map Animation Prototyping with Human-in-the-Loop Editing,28/05/2025,"Aditya Gunturu, Ben Pearman, Keiichi Ihara, Morteza Faraji, Bryan Wang, Rubaiat Habib Kazi, Ryo Suzuki","We introduce MapStory, an LLM-powered animation authoring tool that generates
+editable map animation sequences directly from natural language text. Given a
+user-written script, MapStory leverages an agentic architecture to
+automatically produce a scene breakdown, which decomposes the script into key
+animation building blocks such as camera movements, visual highlights, and
+animated elements. Our system includes a researcher component that accurately
+queries geospatial information by leveraging an LLM with web search, enabling
+the automatic extraction of relevant regions, paths, and coordinates while
+allowing users to edit and query for changes or additional information to
+refine the results. Additionally, users can fine-tune parameters of these
+blocks through an interactive timeline editor. We detail the system's design
+and architecture, informed by formative interviews with professional animators
+and an analysis of 200 existing map animation videos. Our evaluation, which
+includes expert interviews (N=5) and a usability study (N=12), demonstrates
+that MapStory enables users to create map animations with ease, facilitates
+faster iteration, encourages creative exploration, and lowers barriers to
+creating map-centric stories.",http://arxiv.org/pdf/2505.21966v1,,False
+Higher-Order Group Synchronization,28/05/2025,"Adriana L. Duncan, Joe Kileel","Group synchronization is the problem of determining reliable global estimates
+from noisy local measurements on networks. The typical task for group
+synchronization is to assign elements of a group to the nodes of a graph in a
+way that respects group elements given on the edges which encode information
+about local pairwise relationships between the nodes. In this paper, we
+introduce a novel higher-order group synchronization problem which operates on
+a hypergraph and seeks to synchronize higher-order local measurements on the
+hyperedges to obtain global estimates on the nodes. Higher-order group
+synchronization is motivated by applications to computer vision and image
+processing, among other computational problems. First, we define the problem of
+higher-order group synchronization and discuss its mathematical foundations.
+Specifically, we give necessary and sufficient synchronizability conditions
+which establish the importance of cycle consistency in higher-order group
+synchronization. Then, we propose the first computational framework for general
+higher-order group synchronization; it acts globally and directly on
+higher-order measurements using a message passing algorithm. We discuss
+theoretical guarantees for our framework, including convergence analyses under
+outliers and noise. Finally, we show potential advantages of our method through
+numerical experiments. In particular, we show that in certain cases our
+higher-order method applied to rotational and angular synchronization
+outperforms standard pairwise synchronization methods and is more robust to
+outliers. We also show that our method has comparable performance on simulated
+cryo-electron microscopy (cryo-EM) data compared to a standard cryo-EM
+reconstruction package.",http://arxiv.org/pdf/2505.21932v1,,False
+FALCON: An ML Framework for Fully Automated Layout-Constrained Analog Circuit Design,28/05/2025,"Asal Mehradfar, Xuzhe Zhao, Yilun Huang, Emir Ceyani, Yankai Yang, Shihao Han, Hamidreza Aghasi, Salman Avestimehr","Designing analog circuits from performance specifications is a complex,
+multi-stage process encompassing topology selection, parameter inference, and
+layout feasibility. We introduce FALCON, a unified machine learning framework
+that enables fully automated, specification-driven analog circuit synthesis
+through topology selection and layout-constrained optimization. Given a target
+performance, FALCON first selects an appropriate circuit topology using a
+performance-driven classifier guided by human design heuristics. Next, it
+employs a custom, edge-centric graph neural network trained to map circuit
+topology and parameters to performance, enabling gradient-based parameter
+inference through the learned forward model. This inference is guided by a
+differentiable layout cost, derived from analytical equations capturing
+parasitic and frequency-dependent effects, and constrained by design rules. We
+train and evaluate FALCON on a large-scale custom dataset of 1M analog mm-wave
+circuits, generated and simulated using Cadence Spectre across 20
+expert-designed topologies. Through this evaluation, FALCON demonstrates >99\%
+accuracy in topology inference, <10\% relative error in performance prediction,
+and efficient layout-aware design that completes in under 1 second per
+instance. Together, these results position FALCON as a practical and extensible
+foundation model for end-to-end analog circuit design automation.",http://arxiv.org/pdf/2505.21923v1,,False
+Almost Linear Convergence under Minimal Score Assumptions: Quantized Transition Diffusion,28/05/2025,"Xunpeng Huang, Yingyu Lin, Nikki Lijing Kuang, Hanze Dong, Difan Zou, Yian Ma, Tong Zhang","Continuous diffusion models have demonstrated remarkable performance in data
+generation across various domains, yet their efficiency remains constrained by
+two critical limitations: (1) the local adjacency structure of the forward
+Markov process, which restricts long-range transitions in the data space, and
+(2) inherent biases introduced during the simulation of time-inhomogeneous
+reverse denoising processes. To address these challenges, we propose Quantized
+Transition Diffusion (QTD), a novel approach that integrates data quantization
+with discrete diffusion dynamics. Our method first transforms the continuous
+data distribution $p_*$ into a discrete one $q_*$ via histogram approximation
+and binary encoding, enabling efficient representation in a structured discrete
+latent space. We then design a continuous-time Markov chain (CTMC) with Hamming
+distance-based transitions as the forward process, which inherently supports
+long-range movements in the original data space. For reverse-time sampling, we
+introduce a \textit{truncated uniformization} technique to simulate the reverse
+CTMC, which can provably provide unbiased generation from $q_*$ under minimal
+score assumptions. Through a novel KL dynamic analysis of the reverse CTMC, we
+prove that QTD can generate samples with $O(d\ln^2(d/\epsilon))$ score
+evaluations in expectation to approximate the $d$--dimensional target
+distribution $p_*$ within an $\epsilon$ error tolerance. Our method not only
+establishes state-of-the-art inference efficiency but also advances the
+theoretical foundations of diffusion-based generative modeling by unifying
+discrete and continuous diffusion paradigms.",http://arxiv.org/pdf/2505.21892v1,,False
+SVRPBench: A Realistic Benchmark for Stochastic Vehicle Routing Problem,28/05/2025,"Ahmed Heakl, Yahia Salaheldin Shaaban, Martin Takac, Salem Lahlou, Zangir Iklassov","Robust routing under uncertainty is central to real-world logistics, yet most
+benchmarks assume static, idealized settings. We present SVRPBench, the first
+open benchmark to capture high-fidelity stochastic dynamics in vehicle routing
+at urban scale. Spanning more than 500 instances with up to 1000 customers, it
+simulates realistic delivery conditions: time-dependent congestion, log-normal
+delays, probabilistic accidents, and empirically grounded time windows for
+residential and commercial clients. Our pipeline generates diverse,
+constraint-rich scenarios, including multi-depot and multi-vehicle setups.
+Benchmarking reveals that state-of-the-art RL solvers like POMO and AM degrade
+by over 20% under distributional shift, while classical and metaheuristic
+methods remain robust. To enable reproducible research, we release the dataset
+and evaluation suite. SVRPBench challenges the community to design solvers that
+generalize beyond synthetic assumptions and adapt to real-world uncertainty.",http://arxiv.org/pdf/2505.21887v1,,False
+Incorporating LLMs for Large-Scale Urban Complex Mobility Simulation,28/05/2025,"Yu-Lun Song, Chung-En Tsern, Che-Cheng Wu, Yu-Ming Chang, Syuan-Bo Huang, Wei-Chu Chen, Michael Chia-Liang Lin, Yu-Ta Lin","This study presents an innovative approach to urban mobility simulation by
+integrating a Large Language Model (LLM) with Agent-Based Modeling (ABM).
+Unlike traditional rule-based ABM, the proposed framework leverages LLM to
+enhance agent diversity and realism by generating synthetic population
+profiles, allocating routine and occasional locations, and simulating
+personalized routes. Using real-world data, the simulation models individual
+behaviors and large-scale mobility patterns in Taipei City. Key insights, such
+as route heat maps and mode-specific indicators, provide urban planners with
+actionable information for policy-making. Future work focuses on establishing
+robust validation frameworks to ensure accuracy and reliability in urban
+planning applications.",http://arxiv.org/pdf/2505.21880v1,,False
+HelixDesign-Binder: A Scalable Production-Grade Platform for Binder Design Built on HelixFold3,28/05/2025,"Jie Gao, Jun Li, Jing Hu, Shanzhuo Zhang, Kunrui Zhu, Yueyang Huang, Xiaonan Zhang, Xiaomin Fang","Protein binder design is central to therapeutics, diagnostics, and synthetic
+biology, yet practical deployment remains challenging due to fragmented
+workflows, high computational costs, and complex tool integration. We present
+HelixDesign-Binder, a production-grade, high-throughput platform built on
+HelixFold3 that automates the full binder design pipeline, from backbone
+generation and sequence design to structural evaluation and multi-dimensional
+scoring. By unifying these stages into a scalable and user-friendly system,
+HelixDesign-Binder enables efficient exploration of binder candidates with
+favorable structural, energetic, and physicochemical properties. The platform
+leverages Baidu Cloud's high-performance infrastructure to support large-scale
+design and incorporates advanced scoring metrics, including ipTM, predicted
+binding free energy, and interface hydrophobicity. Benchmarking across six
+protein targets demonstrates that HelixDesign-Binder reliably produces diverse
+and high-quality binders, some of which match or exceed validated designs in
+predicted binding affinity. HelixDesign-Binder is accessible via an interactive
+web interface in PaddleHelix platform, supporting both academic research and
+industrial applications in antibody and protein binder development.",http://arxiv.org/pdf/2505.21873v1,,False
+A Physics-Informed Learning Framework to Solve the Infinite-Horizon Optimal Control Problem,28/05/2025,"Filippos Fotiadis, Kyriakos G. Vamvoudakis","We propose a physics-informed neural networks (PINNs) framework to solve the
+infinite-horizon optimal control problem of nonlinear systems. In particular,
+since PINNs are generally able to solve a class of partial differential
+equations (PDEs), they can be employed to learn the value function of the
+infinite-horizon optimal control problem via solving the associated
+steady-state Hamilton-Jacobi-Bellman (HJB) equation. However, an issue here is
+that the steady-state HJB equation generally yields multiple solutions; hence
+if PINNs are directly employed to it, they may end up approximating a solution
+that is different from the optimal value function of the problem. We tackle
+this by instead applying PINNs to a finite-horizon variant of the steady-state
+HJB that has a unique solution, and which uniformly approximates the optimal
+value function as the horizon increases. An algorithm to verify if the chosen
+horizon is large enough is also given, as well as a method to extend it -- with
+reduced computations and robustness to approximation errors -- in case it is
+not. Unlike many existing methods, the proposed technique works well with
+non-polynomial basis functions, does not require prior knowledge of a
+stabilizing controller, and does not perform iterative policy evaluations.
+Simulations are performed, which verify and clarify theoretical findings.",http://arxiv.org/pdf/2505.21842v1,,False

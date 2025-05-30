@@ -1,0 +1,494 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Differential Information: An Information-Theoretic Perspective on Preference Optimization,29/05/2025,"Yunjae Won, Hyunji Lee, Hyeonbin Hwang, Minjoon Seo","Direct Preference Optimization (DPO) has become a standard technique for
+aligning language models with human preferences in a supervised manner. Despite
+its empirical success, the theoretical justification behind its log-ratio
+reward parameterization remains incomplete. In this work, we address this gap
+by utilizing the Differential Information Distribution (DID): a distribution
+over token sequences that captures the information gained during policy
+updates. First, we show that when preference labels encode the differential
+information required to transform a reference policy into a target policy, the
+log-ratio reward in DPO emerges as the uniquely optimal form for learning the
+target policy via preference optimization. This result naturally yields a
+closed-form expression for the optimal sampling distribution over rejected
+responses. Second, we find that the condition for preferences to encode
+differential information is fundamentally linked to an implicit assumption
+regarding log-margin ordered policies-an inductive bias widely used in
+preference optimization yet previously unrecognized. Finally, by analyzing the
+entropy of the DID, we characterize how learning low-entropy differential
+information reinforces the policy distribution, while high-entropy differential
+information induces a smoothing effect, which explains the log-likelihood
+displacement phenomenon. We validate our theoretical findings in synthetic
+experiments and extend them to real-world instruction-following datasets. Our
+results suggest that learning high-entropy differential information is crucial
+for general instruction-following, while learning low-entropy differential
+information benefits knowledge-intensive question answering. Overall, our work
+presents a unifying perspective on the DPO objective, the structure of
+preference data, and resulting policy behaviors through the lens of
+differential information.",http://arxiv.org/pdf/2505.23761v1,,False
+REOrdering Patches Improves Vision Models,29/05/2025,"Declan Kutscher, David M. Chan, Yutong Bai, Trevor Darrell, Ritwik Gupta","Sequence models such as transformers require inputs to be represented as
+one-dimensional sequences. In vision, this typically involves flattening images
+using a fixed row-major (raster-scan) order. While full self-attention is
+permutation-equivariant, modern long-sequence transformers increasingly rely on
+architectural approximations that break this invariance and introduce
+sensitivity to patch ordering. We show that patch order significantly affects
+model performance in such settings, with simple alternatives like column-major
+or Hilbert curves yielding notable accuracy shifts. Motivated by this, we
+propose REOrder, a two-stage framework for discovering task-optimal patch
+orderings. First, we derive an information-theoretic prior by evaluating the
+compressibility of various patch sequences. Then, we learn a policy over
+permutations by optimizing a Plackett-Luce policy using REINFORCE. This
+approach enables efficient learning in a combinatorial permutation space.
+REOrder improves top-1 accuracy over row-major ordering on ImageNet-1K by up to
+3.01% and Functional Map of the World by 13.35%.",http://arxiv.org/pdf/2505.23751v1,,False
+ATLAS: Learning to Optimally Memorize the Context at Test Time,29/05/2025,"Ali Behrouz, Zeman Li, Praneeth Kacham, Majid Daliri, Yuan Deng, Peilin Zhong, Meisam Razaviyayn, Vahab Mirrokni","Transformers have been established as the most popular backbones in sequence
+modeling, mainly due to their effectiveness in in-context retrieval tasks and
+the ability to learn at scale. Their quadratic memory and time complexity,
+however, bound their applicability in longer sequences and so has motivated
+researchers to explore effective alternative architectures such as modern
+recurrent neural networks (a.k.a long-term recurrent memory module). Despite
+their recent success in diverse downstream tasks, they struggle in tasks that
+requires long context understanding and extrapolation to longer sequences. We
+observe that these shortcomings come from three disjoint aspects in their
+design: (1) limited memory capacity that is bounded by the architecture of
+memory and feature mapping of the input; (2) online nature of update, i.e.,
+optimizing the memory only with respect to the last input; and (3) less
+expressive management of their fixed-size memory. To enhance all these three
+aspects, we present ATLAS, a long-term memory module with high capacity that
+learns to memorize the context by optimizing the memory based on the current
+and past tokens, overcoming the online nature of long-term memory models.
+Building on this insight, we present a new family of Transformer-like
+architectures, called DeepTransformers, that are strict generalizations of the
+original Transformer architecture. Our experimental results on language
+modeling, common-sense reasoning, recall-intensive, and long-context
+understanding tasks show that ATLAS surpasses the performance of Transformers
+and recent linear recurrent models. ATLAS further improves the long context
+performance of Titans, achieving +80\% accuracy in 10M context length of
+BABILong benchmark.",http://arxiv.org/pdf/2505.23735v1,,False
+Exposing the Impact of GenAI for Cybercrime: An Investigation into the Dark Side,29/05/2025,"Truong, Luu, Binny M. Samuel","In recent years, the rapid advancement and democratization of generative AI
+models have sparked significant debate over safety, ethical risks, and dual-use
+concerns, particularly in the context of cybersecurity. While anecdotally
+known, this paper provides empirical evidence regarding generative AI's
+association with malicious internet-related activities and cybercrime by
+examining the phenomenon through psychological frameworks of technological
+amplification and affordance theory. Using a quasi-experimental design with
+interrupted time series analysis, we analyze two datasets, one general and one
+cryptocurrency-focused, to empirically assess generative AI's role in
+cybercrime. The findings contribute to ongoing discussions about AI governance
+by balancing control and fostering innovation, underscoring the need for
+strategies to guide policymakers, inform AI developers and cybersecurity
+professionals, and educate the public to maximize AI's benefits while
+mitigating its risks.",http://arxiv.org/pdf/2505.23733v1,,False
+Data-to-Dashboard: Multi-Agent LLM Framework for Insightful Visualization in Enterprise Analytics,29/05/2025,"Ran Zhang, Mohannad Elhamod","The rapid advancement of LLMs has led to the creation of diverse agentic
+systems in data analysis, utilizing LLMs' capabilities to improve insight
+generation and visualization. In this paper, we present an agentic system that
+automates the data-to-dashboard pipeline through modular LLM agents capable of
+domain detection, concept extraction, multi-perspective analysis generation,
+and iterative self-reflection. Unlike existing chart QA systems, our framework
+simulates the analytical reasoning process of business analysts by retrieving
+domain-relevant knowledge and adapting to diverse datasets without relying on
+closed ontologies or question templates.
+  We evaluate our system on three datasets across different domains.
+Benchmarked against GPT-4o with a single-prompt baseline, our approach shows
+improved insightfulness, domain relevance, and analytical depth, as measured by
+tailored evaluation metrics and qualitative human assessment.
+  This work contributes a novel modular pipeline to bridge the path from raw
+data to visualization, and opens new opportunities for human-in-the-loop
+validation by domain experts in business analytics. All code can be found here:
+https://github.com/77luvC/D2D_Data2Dashboard",http://arxiv.org/pdf/2505.23695v1,,False
+Mobi-$π$: Mobilizing Your Robot Learning Policy,29/05/2025,"Jingyun Yang, Isabella Huang, Brandon Vu, Max Bajracharya, Rika Antonova, Jeannette Bohg","Learned visuomotor policies are capable of performing increasingly complex
+manipulation tasks. However, most of these policies are trained on data
+collected from limited robot positions and camera viewpoints. This leads to
+poor generalization to novel robot positions, which limits the use of these
+policies on mobile platforms, especially for precise tasks like pressing
+buttons or turning faucets. In this work, we formulate the policy mobilization
+problem: find a mobile robot base pose in a novel environment that is in
+distribution with respect to a manipulation policy trained on a limited set of
+camera viewpoints. Compared to retraining the policy itself to be more robust
+to unseen robot base pose initializations, policy mobilization decouples
+navigation from manipulation and thus does not require additional
+demonstrations. Crucially, this problem formulation complements existing
+efforts to improve manipulation policy robustness to novel viewpoints and
+remains compatible with them. To study policy mobilization, we introduce the
+Mobi-$\pi$ framework, which includes: (1) metrics that quantify the difficulty
+of mobilizing a given policy, (2) a suite of simulated mobile manipulation
+tasks based on RoboCasa to evaluate policy mobilization, (3) visualization
+tools for analysis, and (4) several baseline methods. We also propose a novel
+approach that bridges navigation and manipulation by optimizing the robot's
+base pose to align with an in-distribution base pose for a learned policy. Our
+approach utilizes 3D Gaussian Splatting for novel view synthesis, a score
+function to evaluate pose suitability, and sampling-based optimization to
+identify optimal robot poses. We show that our approach outperforms baselines
+in both simulation and real-world environments, demonstrating its effectiveness
+for policy mobilization.",http://arxiv.org/pdf/2505.23692v1,,False
+LoLA: Low-Rank Linear Attention With Sparse Caching,29/05/2025,"Luke McDermott, Robert W. Heath Jr., Rahul Parhi","Transformer-based large language models suffer from quadratic complexity at
+inference on long sequences. Linear attention methods are efficient
+alternatives, however, they fail to provide an accurate approximation of
+softmax attention. By additionally incorporating sliding window attention into
+each linear attention head, this gap can be closed for short context-length
+tasks. Unfortunately, these approaches cannot recall important information from
+long contexts due to ""memory collisions"". In this paper , we propose LoLA:
+Low-rank Linear Attention with sparse caching. LoLA separately stores
+additional key-value pairs that would otherwise interfere with past associative
+memories. Moreover, LoLA further closes the gap between linear attention models
+and transformers by distributing past key-value pairs into three forms of
+memory: (i) recent pairs in a local sliding window; (ii) difficult-to-memorize
+pairs in a sparse, global cache; and (iii) generic pairs in the recurrent
+hidden state of linear attention. As an inference-only strategy, LoLA enables
+pass-key retrieval on up to 8K context lengths on needle-in-a-haystack tasks
+from RULER. It boosts the accuracy of the base subquadratic model from 0.6% to
+97.4% at 4K context lengths, with a 4.6x smaller cache than that of Llama-3.1
+8B. LoLA demonstrates strong performance on zero-shot commonsense reasoning
+tasks among 1B and 8B parameter subquadratic models. Finally, LoLA is an
+extremely lightweight approach: Nearly all of our results can be reproduced on
+a single consumer GPU.",http://arxiv.org/pdf/2505.23666v1,,False
+AMBER: Adaptive Mesh Generation by Iterative Mesh Resolution Prediction,29/05/2025,"Niklas Freymuth, Tobias Würth, Nicolas Schreiber, Balazs Gyenes, Andreas Boltres, Johannes Mitsch, Aleksandar Taranovic, Tai Hoang, Philipp Dahlinger, Philipp Becker, Luise Kärger, Gerhard Neumann","The cost and accuracy of simulating complex physical systems using the Finite
+Element Method (FEM) scales with the resolution of the underlying mesh.
+Adaptive meshes improve computational efficiency by refining resolution in
+critical regions, but typically require task-specific heuristics or cumbersome
+manual design by a human expert. We propose Adaptive Meshing By Expert
+Reconstruction (AMBER), a supervised learning approach to mesh adaptation.
+Starting from a coarse mesh, AMBER iteratively predicts the sizing field, i.e.,
+a function mapping from the geometry to the local element size of the target
+mesh, and uses this prediction to produce a new intermediate mesh using an
+out-of-the-box mesh generator. This process is enabled through a hierarchical
+graph neural network, and relies on data augmentation by automatically
+projecting expert labels onto AMBER-generated data during training. We evaluate
+AMBER on 2D and 3D datasets, including classical physics problems, mechanical
+components, and real-world industrial designs with human expert meshes. AMBER
+generalizes to unseen geometries and consistently outperforms multiple recent
+baselines, including ones using Graph and Convolutional Neural Networks, and
+Reinforcement Learning-based approaches.",http://arxiv.org/pdf/2505.23663v1,,False
+Optimization-Free Diffusion Model -- A Perturbation Theory Approach,29/05/2025,"Yuehaw Khoo, Mathias Oster, Yifan Peng","Diffusion models have emerged as a powerful framework in generative modeling,
+typically relying on optimizing neural networks to estimate the score function
+via forward SDE simulations. In this work, we propose an alternative method
+that is both optimization-free and forward SDE-free. By expanding the score
+function in a sparse set of eigenbasis of the backward Kolmogorov operator
+associated with the diffusion process, we reformulate score estimation as the
+solution to a linear system, avoiding iterative optimization and time-dependent
+sample generation. We analyze the approximation error using perturbation theory
+and demonstrate the effectiveness of our method on high-dimensional Boltzmann
+distributions and real-world datasets.",http://arxiv.org/pdf/2505.23652v1,,False
+Improving Time Series Forecasting via Instance-aware Post-hoc Revision,29/05/2025,"Zhiding Liu, Mingyue Cheng, Guanhao Zhao, Jiqian Yang, Qi Liu, Enhong Chen","Time series forecasting plays a vital role in various real-world applications
+and has attracted significant attention in recent decades. While recent methods
+have achieved remarkable accuracy by incorporating advanced inductive biases
+and training strategies, we observe that instance-level variations remain a
+significant challenge. These variations--stemming from distribution shifts,
+missing data, and long-tail patterns--often lead to suboptimal forecasts for
+specific instances, even when overall performance appears strong. To address
+this issue, we propose a model-agnostic framework, PIR, designed to enhance
+forecasting performance through Post-forecasting Identification and Revision.
+Specifically, PIR first identifies biased forecasting instances by estimating
+their accuracy. Based on this, the framework revises the forecasts using
+contextual information, including covariates and historical time series, from
+both local and global perspectives in a post-processing fashion. Extensive
+experiments on real-world datasets with mainstream forecasting models
+demonstrate that PIR effectively mitigates instance-level errors and
+significantly improves forecasting reliability.",http://arxiv.org/pdf/2505.23583v1,,False
+BioReason: Incentivizing Multimodal Biological Reasoning within a DNA-LLM Model,29/05/2025,"Adibvafa Fallahpour, Andrew Magnuson, Purav Gupta, Shihao Ma, Jack Naimer, Arnav Shah, Haonan Duan, Omar Ibrahim, Hani Goodarzi, Chris J. Maddison, Bo Wang","Unlocking deep, interpretable biological reasoning from complex genomic data
+is a major AI challenge hindering scientific discovery. Current DNA foundation
+models, despite strong sequence representation, struggle with multi-step
+reasoning and lack inherent transparent, biologically intuitive explanations.
+We introduce BioReason, a pioneering architecture that, for the first time,
+deeply integrates a DNA foundation model with a Large Language Model (LLM).
+This novel connection enables the LLM to directly process and reason with
+genomic information as a fundamental input, fostering a new form of multimodal
+biological understanding. BioReason's sophisticated multi-step reasoning is
+developed through supervised fine-tuning and targeted reinforcement learning,
+guiding the system to generate logical, biologically coherent deductions. On
+biological reasoning benchmarks including KEGG-based disease pathway prediction
+- where accuracy improves from 88% to 97% - and variant effect prediction,
+BioReason demonstrates an average 15% performance gain over strong
+single-modality baselines. BioReason reasons over unseen biological entities
+and articulates decision-making through interpretable, step-by-step biological
+traces, offering a transformative approach for AI in biology that enables
+deeper mechanistic insights and accelerates testable hypothesis generation from
+genomic data. Data, code, and checkpoints are publicly available at
+https://github.com/bowang-lab/BioReason",http://arxiv.org/pdf/2505.23579v1,,False
+Maximum Likelihood Learning of Latent Dynamics Without Reconstruction,29/05/2025,"Samo Hromadka, Kai Biegun, Lior Fox, James Heald, Maneesh Sahani","We introduce a novel unsupervised learning method for time series data with
+latent dynamical structure: the recognition-parametrized Gaussian state space
+model (RP-GSSM). The RP-GSSM is a probabilistic model that learns Markovian
+Gaussian latents explaining statistical dependence between observations at
+different time steps, combining the intuition of contrastive methods with the
+flexible tools of probabilistic generative models. Unlike contrastive
+approaches, the RP-GSSM is a valid probabilistic model learned via maximum
+likelihood. Unlike generative approaches, the RP-GSSM has no need for an
+explicit network mapping from latents to observations, allowing it to focus
+model capacity on inference of latents. The model is both tractable and
+expressive: it admits exact inference thanks to its jointly Gaussian latent
+prior, while maintaining expressivity with an arbitrarily nonlinear neural
+network link between observations and latents. These qualities allow the
+RP-GSSM to learn task-relevant latents without ad-hoc regularization, auxiliary
+losses, or optimizer scheduling. We show how this approach outperforms
+alternatives on problems that include learning nonlinear stochastic dynamics
+from video, with or without background distractors. Our results position the
+RP-GSSM as a useful foundation model for a variety of downstream applications.",http://arxiv.org/pdf/2505.23569v1,,False
+DeepFilterGAN: A Full-band Real-time Speech Enhancement System with GAN-based Stochastic Regeneration,29/05/2025,"Sanberk Serbest, Tijana Stojkovic, Milos Cernak, Andrew Harper","In this work, we propose a full-band real-time speech enhancement system with
+GAN-based stochastic regeneration. Predictive models focus on estimating the
+mean of the target distribution, whereas generative models aim to learn the
+full distribution. This behavior of predictive models may lead to
+over-suppression, i.e. the removal of speech content. In the literature, it was
+shown that combining a predictive model with a generative one within the
+stochastic regeneration framework can reduce the distortion in the output. We
+use this framework to obtain a real-time speech enhancement system. With 3.58M
+parameters and a low latency, our system is designed for real-time streaming
+with a lightweight architecture. Experiments show that our system improves over
+the first stage in terms of NISQA-MOS metric. Finally, through an ablation
+study, we show the importance of noisy conditioning in our system. We
+participated in 2025 Urgent Challenge with our model and later made further
+improvements.",http://arxiv.org/pdf/2505.23515v1,,False
+TimePoint: Accelerated Time Series Alignment via Self-Supervised Keypoint and Descriptor Learning,29/05/2025,"Ron Shapira Weber, Shahar Ben Ishay, Andrey Lavrinenko, Shahaf E. Finder, Oren Freifeld","Fast and scalable alignment of time series is a fundamental challenge in many
+domains. The standard solution, Dynamic Time Warping (DTW), struggles with poor
+scalability and sensitivity to noise. We introduce TimePoint, a self-supervised
+method that dramatically accelerates DTW-based alignment while typically
+improving alignment accuracy by learning keypoints and descriptors from
+synthetic data. Inspired by 2D keypoint detection but carefully adapted to the
+unique challenges of 1D signals, TimePoint leverages efficient 1D
+diffeomorphisms, which effectively model nonlinear time warping, to generate
+realistic training data. This approach, along with fully convolutional and
+wavelet convolutional architectures, enables the extraction of informative
+keypoints and descriptors. Applying DTW to these sparse representations yield
+major speedups and typically higher alignment accuracy than standard DTW
+applied to the full signals. TimePoint demonstrates strong generalization to
+real-world time series when trained solely on synthetic data, and further
+improves with fine-tuning on real data. Extensive experiments demonstrate that
+TimePoint consistently achieves faster and more accurate alignments than
+standard DTW, making it a scalable solution for time-series analysis. Our code
+is available at https://github.com/BGU-CS-VIL/TimePoint",http://arxiv.org/pdf/2505.23475v1,,False
+LCB-CV-UNet: Enhanced Detector for High Dynamic Range Radar Signals,29/05/2025,"Yanbin Wang, Xingyu Chen, Yumiao Wang, Xiang Wang, Chuanfei Zang, Guolong Cui, Jiahuan Liu","We propose the LCB-CV-UNet to tackle performance degradation caused by High
+Dynamic Range (HDR) radar signals. Initially, a hardware-efficient,
+plug-and-play module named Logarithmic Connect Block (LCB) is proposed as a
+phase coherence preserving solution to address the inherent challenges in
+handling HDR features. Then, we propose the Dual Hybrid Dataset Construction
+method to generate a semi-synthetic dataset, approximating typical HDR signal
+scenarios with adjustable target distributions. Simulation results show about
+1% total detection probability improvement with under 0.9% computational
+complexity added compared with the baseline. Furthermore, it excels 5% over the
+baseline at the range in 11-13 dB signal-to-noise ratio typical for urban
+targets. Finally, the real experiment validates the practicality of our model.",http://arxiv.org/pdf/2505.23454v1,,False
+A Unified Framework for Human AI Collaboration in Security Operations Centers with Trusted Autonomy,29/05/2025,"Ahmad Mohsin, Helge Janicke, Ahmed Ibrahim, Iqbal H. Sarker, Seyit Camtepe","This article presents a structured framework for Human-AI collaboration in
+Security Operations Centers (SOCs), integrating AI autonomy, trust calibration,
+and Human-in-the-loop decision making. Existing frameworks in SOCs often focus
+narrowly on automation, lacking systematic structures to manage human
+oversight, trust calibration, and scalable autonomy with AI. Many assume static
+or binary autonomy settings, failing to account for the varied complexity,
+criticality, and risk across SOC tasks considering Humans and AI collaboration.
+To address these limitations, we propose a novel autonomy tiered framework
+grounded in five levels of AI autonomy from manual to fully autonomous, mapped
+to Human-in-the-Loop (HITL) roles and task-specific trust thresholds. This
+enables adaptive and explainable AI integration across core SOC functions,
+including monitoring, protection, threat detection, alert triage, and incident
+response. The proposed framework differentiates itself from previous research
+by creating formal connections between autonomy, trust, and HITL across various
+SOC levels, which allows for adaptive task distribution according to
+operational complexity and associated risks. The framework is exemplified
+through a simulated cyber range that features the cybersecurity AI-Avatar, a
+fine-tuned LLM-based SOC assistant. The AI-Avatar case study illustrates
+human-AI collaboration for SOC tasks, reducing alert fatigue, enhancing
+response coordination, and strategically calibrating trust. This research
+systematically presents both the theoretical and practical aspects and
+feasibility of designing next-generation cognitive SOCs that leverage AI not to
+replace but to enhance human decision-making.",http://arxiv.org/pdf/2505.23397v1,,False
+Meta-Learning Approaches for Speaker-Dependent Voice Fatigue Models,29/05/2025,"Roseline Polle, Agnes Norbury, Alexandra Livia Georgescu, Nicholas Cummins, Stefano Goria","Speaker-dependent modelling can substantially improve performance in
+speech-based health monitoring applications. While mixed-effect models are
+commonly used for such speaker adaptation, they require computationally
+expensive retraining for each new observation, making them impractical in a
+production environment. We reformulate this task as a meta-learning problem and
+explore three approaches of increasing complexity: ensemble-based distance
+models, prototypical networks, and transformer-based sequence models. Using
+pre-trained speech embeddings, we evaluate these methods on a large
+longitudinal dataset of shift workers (N=1,185, 10,286 recordings), predicting
+time since sleep from speech as a function of fatigue, a symptom commonly
+associated with ill-health. Our results demonstrate that all meta-learning
+approaches tested outperformed both cross-sectional and conventional
+mixed-effects models, with a transformer-based method achieving the strongest
+performance.",http://arxiv.org/pdf/2505.23378v1,,False
+Sentinel: Scheduling Live Streams with Proactive Anomaly Detection in Crowdsourced Cloud-Edge Platforms,29/05/2025,"Yuting Li, Shaoyuan Huang, Tengwen Zhang, Cheng Zhang, Xiaofei Wang, Victor C. M. Leung","With the rapid growth of live streaming services, Crowdsourced Cloud-edge
+service Platforms (CCPs) are playing an increasingly important role in meeting
+the increasing demand. Although stream scheduling plays a critical role in
+optimizing CCPs' revenue, most optimization strategies struggle to achieve
+practical results due to various anomalies in unstable CCPs. Additionally, the
+substantial scale of CCPs magnifies the difficulties of anomaly detection in
+time-sensitive scheduling. To tackle these challenges, this paper proposes
+Sentinel, a proactive anomaly detection-based scheduling framework. Sentinel
+models the scheduling process as a two-stage Pre-Post-Scheduling paradigm: in
+the pre-scheduling stage, Sentinel conducts anomaly detection and constructs a
+strategy pool; in the post-scheduling stage, upon request arrival, it triggers
+an appropriate scheduling based on a pre-generated strategy to implement the
+scheduling process. Extensive experiments on realistic datasets show that
+Sentinel significantly reduces anomaly frequency by 70%, improves revenue by
+74%, and doubles the scheduling speed.",http://arxiv.org/pdf/2505.23347v1,,False
+OSS-UAgent: An Agent-based Usability Evaluation Framework for Open Source Software,29/05/2025,"Lingkai Meng, Yu Shao, Long Yuan, Longbin Lai, Peng Cheng, Wenyuan Yu, Wenjie Zhang, Xuemin Lin, Jingren Zhou","Usability evaluation is critical to the impact and adoption of open source
+software (OSS), yet traditional methods relying on human evaluators suffer from
+high costs and limited scalability. To address these limitations, we introduce
+OSS-UAgent, an automated, configurable, and interactive agent-based usability
+evaluation framework specifically designed for open source software. Our
+framework employs intelligent agents powered by large language models (LLMs) to
+simulate developers performing programming tasks across various experience
+levels (from Junior to Expert). By dynamically constructing platform-specific
+knowledge bases, OSS-UAgent ensures accurate and context-aware code generation.
+The generated code is automatically evaluated across multiple dimensions,
+including compliance, correctness, and readability, providing a comprehensive
+measure of the software's usability. Additionally, our demonstration showcases
+OSS-UAgent's practical application in evaluating graph analytics platforms,
+highlighting its effectiveness in automating usability evaluation.",http://arxiv.org/pdf/2505.23239v1,,False
+Trajectory Generator Matching for Time Series,29/05/2025,"T. Jahn, J. Chemseddine, P. Hagemann, C. Wald, G. Steidl","Accurately modeling time-continuous stochastic processes from irregular
+observations remains a significant challenge. In this paper, we leverage ideas
+from generative modeling of image data to push the boundary of time series
+generation. For this, we find new generators of SDEs and jump processes,
+inspired by trajectory flow matching, that have the marginal distributions of
+the time series of interest. Specifically, we can handle discontinuities of the
+underlying processes by parameterizing the jump kernel densities by scaled
+Gaussians that allow for closed form formulas of the corresponding
+Kullback-Leibler divergence in the loss. Unlike most other approaches, we are
+able to handle irregularly sampled time series.",http://arxiv.org/pdf/2505.23215v1,,False
+SAMamba: Adaptive State Space Modeling with Hierarchical Vision for Infrared Small Target Detection,29/05/2025,"Wenhao Xu, Shuchen Zheng, Changwei Wang, Zherui Zhang, Chuan Ren, Rongtao Xu, Shibiao Xu","Infrared small target detection (ISTD) is vital for long-range surveillance
+in military, maritime, and early warning applications. ISTD is challenged by
+targets occupying less than 0.15% of the image and low distinguishability from
+complex backgrounds. Existing deep learning methods often suffer from
+information loss during downsampling and inefficient global context modeling.
+This paper presents SAMamba, a novel framework integrating SAM2's hierarchical
+feature learning with Mamba's selective sequence modeling. Key innovations
+include: (1) A Feature Selection Adapter (FS-Adapter) for efficient
+natural-to-infrared domain adaptation via dual-stage selection (token-level
+with a learnable task embedding and channel-wise adaptive transformations); (2)
+A Cross-Channel State-Space Interaction (CSI) module for efficient global
+context modeling with linear complexity using selective state space modeling;
+and (3) A Detail-Preserving Contextual Fusion (DPCF) module that adaptively
+combines multi-scale features with a gating mechanism to balance
+high-resolution and low-resolution feature contributions. SAMamba addresses
+core ISTD challenges by bridging the domain gap, maintaining fine-grained
+details, and efficiently modeling long-range dependencies. Experiments on
+NUAA-SIRST, IRSTD-1k, and NUDT-SIRST datasets show SAMamba significantly
+outperforms state-of-the-art methods, especially in challenging scenarios with
+heterogeneous backgrounds and varying target scales. Code:
+https://github.com/zhengshuchen/SAMamba.",http://arxiv.org/pdf/2505.23214v1,,False
+FreRA: A Frequency-Refined Augmentation for Contrastive Learning on Time Series Classification,29/05/2025,"Tian Tian, Chunyan Miao, Hangwei Qian","Contrastive learning has emerged as a competent approach for unsupervised
+representation learning. However, the design of an optimal augmentation
+strategy, although crucial for contrastive learning, is less explored for time
+series classification tasks. Existing predefined time-domain augmentation
+methods are primarily adopted from vision and are not specific to time series
+data. Consequently, this cross-modality incompatibility may distort the
+semantically relevant information of time series by introducing mismatched
+patterns into the data. To address this limitation, we present a novel
+perspective from the frequency domain and identify three advantages for
+downstream classification: global, independent, and compact. To fully utilize
+the three properties, we propose the lightweight yet effective Frequency
+Refined Augmentation (FreRA) tailored for time series contrastive learning on
+classification tasks, which can be seamlessly integrated with contrastive
+learning frameworks in a plug-and-play manner. Specifically, FreRA
+automatically separates critical and unimportant frequency components.
+Accordingly, we propose semantic-aware Identity Modification and
+semantic-agnostic Self-adaptive Modification to protect semantically relevant
+information in the critical frequency components and infuse variance into the
+unimportant ones respectively. Theoretically, we prove that FreRA generates
+semantic-preserving views. Empirically, we conduct extensive experiments on two
+benchmark datasets, including UCR and UEA archives, as well as five large-scale
+datasets on diverse applications. FreRA consistently outperforms ten leading
+baselines on time series classification, anomaly detection, and transfer
+learning tasks, demonstrating superior capabilities in contrastive
+representation learning and generalization in transfer learning scenarios
+across diverse datasets.",http://arxiv.org/pdf/2505.23181v1,10.1145/3711896.3736969,False
+AgentAlign: Navigating Safety Alignment in the Shift from Informative to Agentic Large Language Models,29/05/2025,"Jinchuan Zhang, Lu Yin, Yan Zhou, Songlin Hu","The acquisition of agentic capabilities has transformed LLMs from ""knowledge
+providers"" to ""action executors"", a trend that while expanding LLMs' capability
+boundaries, significantly increases their susceptibility to malicious use.
+Previous work has shown that current LLM-based agents execute numerous
+malicious tasks even without being attacked, indicating a deficiency in agentic
+use safety alignment during the post-training phase. To address this gap, we
+propose AgentAlign, a novel framework that leverages abstract behavior chains
+as a medium for safety alignment data synthesis. By instantiating these
+behavior chains in simulated environments with diverse tool instances, our
+framework enables the generation of highly authentic and executable
+instructions while capturing complex multi-step dynamics. The framework further
+ensures model utility by proportionally synthesizing benign instructions
+through non-malicious interpretations of behavior chains, precisely calibrating
+the boundary between helpfulness and harmlessness. Evaluation results on
+AgentHarm demonstrate that fine-tuning three families of open-source models
+using our method substantially improves their safety (35.8% to 79.5%
+improvement) while minimally impacting or even positively enhancing their
+helpfulness, outperforming various prompting methods. The dataset and code have
+both been open-sourced.",http://arxiv.org/pdf/2505.23020v1,,False
+$K^2$VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting,29/05/2025,"Xingjian Wu, Xiangfei Qiu, Hongfan Gao, Jilin Hu, Bin Yang, Chenjuan Guo","Probabilistic Time Series Forecasting (PTSF) plays a crucial role in
+decision-making across various fields, including economics, energy, and
+transportation. Most existing methods excell at short-term forecasting, while
+overlooking the hurdles of Long-term Probabilistic Time Series Forecasting
+(LPTSF). As the forecast horizon extends, the inherent nonlinear dynamics have
+a significant adverse effect on prediction accuracy, and make generative models
+inefficient by increasing the cost of each iteration. To overcome these
+limitations, we introduce $K^2$VAE, an efficient VAE-based generative model
+that leverages a KoopmanNet to transform nonlinear time series into a linear
+dynamical system, and devises a KalmanNet to refine predictions and model
+uncertainty in such linear system, which reduces error accumulation in
+long-term forecasting. Extensive experiments demonstrate that $K^2$VAE
+outperforms state-of-the-art methods in both short- and long-term PTSF,
+providing a more efficient and accurate solution.",http://arxiv.org/pdf/2505.23017v1,,False
+Hybrid Cross-domain Robust Reinforcement Learning,29/05/2025,"Linh Le Pham Van, Minh Hoang Nguyen, Hung Le, Hung The Tran, Sunil Gupta","Robust reinforcement learning (RL) aims to learn policies that remain
+effective despite uncertainties in its environment, which frequently arise in
+real-world applications due to variations in environment dynamics. The robust
+RL methods learn a robust policy by maximizing value under the worst-case
+models within a predefined uncertainty set. Offline robust RL algorithms are
+particularly promising in scenarios where only a fixed dataset is available and
+new data cannot be collected. However, these approaches often require extensive
+offline data, and gathering such datasets for specific tasks in specific
+environments can be both costly and time-consuming. Using an imperfect
+simulator offers a faster, cheaper, and safer way to collect data for training,
+but it can suffer from dynamics mismatch. In this paper, we introduce HYDRO,
+the first Hybrid Cross-Domain Robust RL framework designed to address these
+challenges. HYDRO utilizes an online simulator to complement the limited amount
+of offline datasets in the non-trivial context of robust RL. By measuring and
+minimizing performance gaps between the simulator and the worst-case models in
+the uncertainty set, HYDRO employs novel uncertainty filtering and prioritized
+sampling to select the most relevant and reliable simulator samples. Our
+extensive experiments demonstrate HYDRO's superior performance over existing
+methods across various tasks, underscoring its potential to improve sample
+efficiency in offline robust RL.",http://arxiv.org/pdf/2505.23003v1,,False
+Theoretical Foundations of the Deep Copula Classifier: A Generative Approach to Modeling Dependent Features,29/05/2025,"Agnideep Aich, Ashit Baran Aich, Bruce Wade","Traditional classifiers often assume feature independence or rely on overly
+simplistic relationships, leading to poor performance in settings where
+real-world dependencies matter. We introduce the Deep Copula Classifier (DCC),
+a generative model that separates the learning of each feature's marginal
+distribution from the modeling of their joint dependence structure via neural
+network-parameterized copulas. For each class, lightweight neural networks are
+used to flexibly and adaptively capture feature interactions, making DCC
+particularly effective when classification is driven by complex dependencies.
+We establish that DCC converges to the Bayes-optimal classifier under standard
+conditions and provide explicit convergence rates of O(n^{-r/(2r + d)}) for
+r-smooth copula densities. Beyond theoretical guarantees, we outline several
+practical extensions, including high-dimensional scalability through vine and
+factor copula architectures, semi-supervised learning via entropy
+regularization, and online adaptation using streaming gradient methods. By
+unifying statistical rigor with the representational power of neural networks,
+DCC offers a mathematically grounded and interpretable framework for
+dependency-aware classification.",http://arxiv.org/pdf/2505.22997v1,,False
+Toward Memory-Aided World Models: Benchmarking via Spatial Consistency,29/05/2025,"Kewei Lian, Shaofei Cai, Yilun Du, Yitao Liang","The ability to simulate the world in a spatially consistent manner is a
+crucial requirements for effective world models. Such a model enables
+high-quality visual generation, and also ensures the reliability of world
+models for downstream tasks such as simulation and planning. Designing a memory
+module is a crucial component for addressing spatial consistency: such a model
+must not only retain long-horizon observational information, but also enables
+the construction of explicit or implicit internal spatial representations.
+However, there are no dataset designed to promote the development of memory
+modules by explicitly enforcing spatial consistency constraints. Furthermore,
+most existing benchmarks primarily emphasize visual coherence or generation
+quality, neglecting the requirement of long-range spatial consistency. To
+bridge this gap, we construct a dataset and corresponding benchmark by sampling
+150 distinct locations within the open-world environment of Minecraft,
+collecting about 250 hours (20 million frames) of loop-based navigation videos
+with actions. Our dataset follows a curriculum design of sequence lengths,
+allowing models to learn spatial consistency on increasingly complex navigation
+trajectories. Furthermore, our data collection pipeline is easily extensible to
+new Minecraft environments and modules. Four representative world model
+baselines are evaluated on our benchmark. Dataset, benchmark, and code are
+open-sourced to support future research.",http://arxiv.org/pdf/2505.22976v1,,False
+Directed Graph Grammars for Sequence-based Learning,29/05/2025,"Michael Sun, Orion Foo, Gang Liu, Wojciech Matusik, Jie Chen","Directed acyclic graphs (DAGs) are a class of graphs commonly used in
+practice, with examples that include electronic circuits, Bayesian networks,
+and neural architectures. While many effective encoders exist for DAGs, it
+remains challenging to decode them in a principled manner, because the nodes of
+a DAG can have many different topological orders. In this work, we propose a
+grammar-based approach to constructing a principled, compact and equivalent
+sequential representation of a DAG. Specifically, we view a graph as
+derivations over an unambiguous grammar, where the DAG corresponds to a unique
+sequence of production rules. Equivalently, the procedure to construct such a
+description can be viewed as a lossless compression of the data. Such a
+representation has many uses, including building a generative model for graph
+generation, learning a latent space for property prediction, and leveraging the
+sequence representational continuity for Bayesian Optimization over structured
+data. Code is available at https://github.com/shiningsunnyday/induction.",http://arxiv.org/pdf/2505.22949v1,,False

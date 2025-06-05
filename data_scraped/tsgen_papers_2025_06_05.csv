@@ -1,0 +1,396 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Pseudo-Simulation for Autonomous Driving,04/06/2025,"Wei Cao, Marcel Hallgarten, Tianyu Li, Daniel Dauner, Xunjiang Gu, Caojun Wang, Yakov Miron, Marco Aiello, Hongyang Li, Igor Gilitschenski, Boris Ivanovic, Marco Pavone, Andreas Geiger, Kashyap Chitta","Existing evaluation paradigms for Autonomous Vehicles (AVs) face critical
+limitations. Real-world evaluation is often challenging due to safety concerns
+and a lack of reproducibility, whereas closed-loop simulation can face
+insufficient realism or high computational costs. Open-loop evaluation, while
+being efficient and data-driven, relies on metrics that generally overlook
+compounding errors. In this paper, we propose pseudo-simulation, a novel
+paradigm that addresses these limitations. Pseudo-simulation operates on real
+datasets, similar to open-loop evaluation, but augments them with synthetic
+observations generated prior to evaluation using 3D Gaussian Splatting. Our key
+idea is to approximate potential future states the AV might encounter by
+generating a diverse set of observations that vary in position, heading, and
+speed. Our method then assigns a higher importance to synthetic observations
+that best match the AV's likely behavior using a novel proximity-based
+weighting scheme. This enables evaluating error recovery and the mitigation of
+causal confusion, as in closed-loop benchmarks, without requiring sequential
+interactive simulation. We show that pseudo-simulation is better correlated
+with closed-loop simulations (R^2=0.8) than the best existing open-loop
+approach (R^2=0.7). We also establish a public leaderboard for the community to
+benchmark new methodologies with pseudo-simulation. Our code is available at
+https://github.com/autonomousvision/navsim.",http://arxiv.org/pdf/2506.04218v1,,False
+Thinking Beyond Visibility: A Near-Optimal Policy Framework for Locally Interdependent Multi-Agent MDPs,04/06/2025,"Alex DeWeese, Guannan Qu","Decentralized Partially Observable Markov Decision Processes (Dec-POMDPs) are
+known to be NEXP-Complete and intractable to solve. However, for problems such
+as cooperative navigation, obstacle avoidance, and formation control, basic
+assumptions can be made about local visibility and local dependencies. The work
+DeWeese and Qu 2024 formalized these assumptions in the construction of the
+Locally Interdependent Multi-Agent MDP. In this setting, it establishes three
+closed-form policies that are tractable to compute in various situations and
+are exponentially close to optimal with respect to visibility. However, it is
+also shown that these solutions can have poor performance when the visibility
+is small and fixed, often getting stuck during simulations due to the so called
+""Penalty Jittering"" phenomenon. In this work, we establish the Extended Cutoff
+Policy Class which is, to the best of our knowledge, the first non-trivial
+class of near optimal closed-form partially observable policies that are
+exponentially close to optimal with respect to the visibility for any Locally
+Interdependent Multi-Agent MDP. These policies are able to remember agents
+beyond their visibilities which allows them to perform significantly better in
+many small and fixed visibility settings, resolve Penalty Jittering
+occurrences, and under certain circumstances guarantee fully observable joint
+optimal behavior despite the partial observability. We also propose a
+generalized form of the Locally Interdependent Multi-Agent MDP that allows for
+transition dependence and extended reward dependence, then replicate our
+theoretical results in this setting.",http://arxiv.org/pdf/2506.04215v1,,False
+A Kernel-Based Approach for Accurate Steady-State Detection in Performance Time Series,04/06/2025,"Martin Beseda, Vittorio Cortellessa, Daniele Di Pompeo, Luca Traini, Michele Tucci","This paper addresses the challenge of accurately detecting the transition
+from the warmup phase to the steady state in performance metric time series,
+which is a critical step for effective benchmarking. The goal is to introduce a
+method that avoids premature or delayed detection, which can lead to inaccurate
+or inefficient performance analysis. The proposed approach adapts techniques
+from the chemical reactors domain, detecting steady states online through the
+combination of kernel-based step detection and statistical methods. By using a
+window-based approach, it provides detailed information and improves the
+accuracy of identifying phase transitions, even in noisy or irregular time
+series. Results show that the new approach reduces total error by 14.5%
+compared to the state-of-the-art method. It offers more reliable detection of
+the steady-state onset, delivering greater precision for benchmarking tasks.
+For users, the new approach enhances the accuracy and stability of performance
+benchmarking, efficiently handling diverse time series data. Its robustness and
+adaptability make it a valuable tool for real-world performance evaluation,
+ensuring consistent and reproducible results.",http://arxiv.org/pdf/2506.04204v1,,False
+Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints,04/06/2025,"Utkarsh Utkarsh, Pengfei Cai, Alan Edelman, Rafael Gomez-Bombarelli, Christopher Vincent Rackauckas","Deep generative models have recently been applied to physical systems
+governed by partial differential equations (PDEs), offering scalable simulation
+and uncertainty-aware inference. However, enforcing physical constraints, such
+as conservation laws (linear and nonlinear) and physical consistencies, remains
+challenging. Existing methods often rely on soft penalties or architectural
+biases that fail to guarantee hard constraints. In this work, we propose
+Physics-Constrained Flow Matching (PCFM), a zero-shot inference framework that
+enforces arbitrary nonlinear constraints in pretrained flow-based generative
+models. PCFM continuously guides the sampling process through physics-based
+corrections applied to intermediate solution states, while remaining aligned
+with the learned flow and satisfying physical constraints. Empirically, PCFM
+outperforms both unconstrained and constrained baselines on a range of PDEs,
+including those with shocks, discontinuities, and sharp features, while
+ensuring exact constraint satisfaction at the final solution. Our method
+provides a general framework for enforcing hard constraints in both scientific
+and general-purpose generative models, especially in applications where
+constraint satisfaction is essential.",http://arxiv.org/pdf/2506.04171v1,,False
+Generating Automotive Code: Large Language Models for Software Development and Verification in Safety-Critical Systems,04/06/2025,"Sven Kirchner, Alois C. Knoll","Developing safety-critical automotive software presents significant
+challenges due to increasing system complexity and strict regulatory demands.
+This paper proposes a novel framework integrating Generative Artificial
+Intelligence (GenAI) into the Software Development Lifecycle (SDLC). The
+framework uses Large Language Models (LLMs) to automate code generation in
+languages such as C++, incorporating safety-focused practices such as static
+verification, test-driven development and iterative refinement. A
+feedback-driven pipeline ensures the integration of test, simulation and
+verification for compliance with safety standards. The framework is validated
+through the development of an Adaptive Cruise Control (ACC) system. Comparative
+benchmarking of LLMs ensures optimal model selection for accuracy and
+reliability. Results demonstrate that the framework enables automatic code
+generation while ensuring compliance with safety-critical requirements,
+systematically integrating GenAI into automotive software engineering. This
+work advances the use of AI in safety-critical domains, bridging the gap
+between state-of-the-art generative models and real-world safety requirements.",http://arxiv.org/pdf/2506.04038v1,,False
+Solving Inverse Problems via Diffusion-Based Priors: An Approximation-Free Ensemble Sampling Approach,04/06/2025,"Haoxuan Chen, Yinuo Ren, Martin Renqiang Min, Lexing Ying, Zachary Izzo","Diffusion models (DMs) have proven to be effective in modeling
+high-dimensional distributions, leading to their widespread adoption for
+representing complex priors in Bayesian inverse problems (BIPs). However,
+current DM-based posterior sampling methods proposed for solving common BIPs
+rely on heuristic approximations to the generative process. To exploit the
+generative capability of DMs and avoid the usage of such approximations, we
+propose an ensemble-based algorithm that performs posterior sampling without
+the use of heuristic approximations. Our algorithm is motivated by existing
+works that combine DM-based methods with the sequential Monte Carlo (SMC)
+method. By examining how the prior evolves through the diffusion process
+encoded by the pre-trained score function, we derive a modified partial
+differential equation (PDE) governing the evolution of the corresponding
+posterior distribution. This PDE includes a modified diffusion term and a
+reweighting term, which can be simulated via stochastic weighted particle
+methods. Theoretically, we prove that the error between the true posterior
+distribution can be bounded in terms of the training error of the pre-trained
+score function and the number of particles in the ensemble. Empirically, we
+validate our algorithm on several inverse problems in imaging to show that our
+method gives more accurate reconstructions compared to existing DM-based
+methods.",http://arxiv.org/pdf/2506.03979v1,,False
+Causality-Aware Contrastive Learning for Robust Multivariate Time-Series Anomaly Detection,04/06/2025,"HyunGi Kim, Jisoo Mok, Dongjun Lee, Jaihyun Lew, Sungjae Kim, Sungroh Yoon","Utilizing the complex inter-variable causal relationships within multivariate
+time-series provides a promising avenue toward more robust and reliable
+multivariate time-series anomaly detection (MTSAD) but remains an underexplored
+area of research. This paper proposes Causality-Aware contrastive learning for
+RObust multivariate Time-Series (CAROTS), a novel MTSAD pipeline that
+incorporates the notion of causality into contrastive learning. CAROTS employs
+two data augmentors to obtain causality-preserving and -disturbing samples that
+serve as a wide range of normal variations and synthetic anomalies,
+respectively. With causality-preserving and -disturbing samples as positives
+and negatives, CAROTS performs contrastive learning to train an encoder whose
+latent space separates normal and abnormal samples based on causality.
+Moreover, CAROTS introduces a similarity-filtered one-class contrastive loss
+that encourages the contrastive learning process to gradually incorporate more
+semantically diverse samples with common causal relationships. Extensive
+experiments on five real-world and two synthetic datasets validate that the
+integration of causal relationships endows CAROTS with improved MTSAD
+capabilities. The code is available at https://github.com/kimanki/CAROTS.",http://arxiv.org/pdf/2506.03964v1,,False
+Causal Explanations Over Time: Articulated Reasoning for Interactive Environments,04/06/2025,"Sebastian Rödling, Matej Zečević, Devendra Singh Dhami, Kristian Kersting","Structural Causal Explanations (SCEs) can be used to automatically generate
+explanations in natural language to questions about given data that are
+grounded in a (possibly learned) causal model. Unfortunately they work for
+small data only. In turn they are not attractive to offer reasons for events,
+e.g., tracking causal changes over multiple time steps, or a behavioral
+component that involves feedback loops through actions of an agent. To this
+end, we generalize SCEs to a (recursive) formulation of explanation trees to
+capture the temporal interactions between reasons. We show the benefits of this
+more general SCE algorithm on synthetic time-series data and a 2D grid game,
+and further compare it to the base SCE and other existing methods for causal
+explanations.",http://arxiv.org/pdf/2506.03915v1,,False
+Graph Neural Networks for Resource Allocation in Multi-Channel Wireless Networks,04/06/2025,"Lili Chen, Changyang She, Jingge Zhu, Jamie Evans","As the number of mobile devices continues to grow, interference has become a
+major bottleneck in improving data rates in wireless networks. Efficient joint
+channel and power allocation (JCPA) is crucial for managing interference. In
+this paper, we first propose an enhanced WMMSE (eWMMSE) algorithm to solve the
+JCPA problem in multi-channel wireless networks. To reduce the computational
+complexity of iterative optimization, we further introduce JCPGNN-M, a graph
+neural network-based solution that enables simultaneous multi-channel
+allocation for each user. We reformulate the problem as a Lagrangian function,
+which allows us to enforce the total power constraints systematically. Our
+solution involves combining this Lagrangian framework with GNNs and iteratively
+updating the Lagrange multipliers and resource allocation scheme. Unlike
+existing GNN-based methods that limit each user to a single channel, JCPGNN-M
+supports efficient spectrum reuse and scales well in dense network scenarios.
+Simulation results show that JCPGNN-M achieves better data rate compared to
+eWMMSE. Meanwhile, the inference time of JCPGNN-M is much lower than eWMMS, and
+it can generalize well to larger networks.",http://arxiv.org/pdf/2506.03813v1,,False
+RhoDARTS: Differentiable Quantum Architecture Search with Density Matrix Simulations,04/06/2025,"Swagat Kumar, Jan-Nico Zaech, Colin Michael Wilmott, Luc Van Gool","Variational Quantum Algorithms (VQAs) are a promising approach for leveraging
+powerful Noisy Intermediate-Scale Quantum (NISQ) computers. When applied to
+machine learning tasks, VQAs give rise to NISQ-compatible Quantum Neural
+Networks (QNNs), which have been shown to outperform classical neural networks
+with a similar number of trainable parameters. While the quantum circuit
+structures of VQAs for physics simulations are determined by the physical
+properties of the systems, identifying effective QNN architectures for general
+machine learning tasks is a difficult challenge due to the lack of
+domain-specific priors. Indeed, existing Quantum Architecture Search (QAS)
+algorithms, adaptations of classical neural architecture search techniques,
+often overlook the inherent quantum nature of the circuits they produce. By
+approaching QAS from the ground-up and from a quantum perspective, we resolve
+this limitation by proposing $\rho$DARTS, a differentiable QAS algorithm that
+models the search process as the evolution of a quantum mixed state, emerging
+from the search space of quantum architectures. We validate our method by
+finding circuits for state initialization, Hamiltonian optimization, and image
+classification. Further, we demonstrate better convergence against existing QAS
+techniques and show improved robustness levels to noise.",http://arxiv.org/pdf/2506.03697v1,,False
+Comprehensive Attribute Encoding and Dynamic LSTM HyperModels for Outcome Oriented Predictive Business Process Monitoring,04/06/2025,"Fang Wang, Paolo Ceravolo, Ernesto Damiani","Predictive Business Process Monitoring (PBPM) aims to forecast future
+outcomes of ongoing business processes. However, existing methods often lack
+flexibility to handle real-world challenges such as simultaneous events, class
+imbalance, and multi-level attributes. While prior work has explored static
+encoding schemes and fixed LSTM architectures, they struggle to support
+adaptive representations and generalize across heterogeneous datasets. To
+address these limitations, we propose a suite of dynamic LSTM HyperModels that
+integrate two-level hierarchical encoding for event and sequence attributes,
+character-based decomposition of event labels, and novel pseudo-embedding
+techniques for durations and attribute correlations. We further introduce
+specialized LSTM variants for simultaneous event modeling, leveraging
+multidimensional embeddings and time-difference flag augmentation. Experimental
+validation on four public and real-world datasets demonstrates up to 100%
+accuracy on balanced datasets and F1 scores exceeding 86\% on imbalanced ones.
+Our approach advances PBPM by offering modular and interpretable models better
+suited for deployment in complex settings. Beyond PBPM, it contributes to the
+broader AI community by improving temporal outcome prediction, supporting data
+heterogeneity, and promoting explainable process intelligence frameworks.",http://arxiv.org/pdf/2506.03696v1,,False
+How PARTs assemble into wholes: Learning the relative composition of images,04/06/2025,"Melika Ayoughi, Samira Abnar, Chen Huang, Chris Sandino, Sayeri Lala, Eeshan Gunesh Dhekane, Dan Busbridge, Shuangfei Zhai, Vimal Thilak, Josh Susskind, Pascal Mettes, Paul Groth, Hanlin Goh","The composition of objects and their parts, along with object-object
+positional relationships, provides a rich source of information for
+representation learning. Hence, spatial-aware pretext tasks have been actively
+explored in self-supervised learning. Existing works commonly start from a grid
+structure, where the goal of the pretext task involves predicting the absolute
+position index of patches within a fixed grid. However, grid-based approaches
+fall short of capturing the fluid and continuous nature of real-world object
+compositions. We introduce PART, a self-supervised learning approach that
+leverages continuous relative transformations between off-grid patches to
+overcome these limitations. By modeling how parts relate to each other in a
+continuous space, PART learns the relative composition of images-an off-grid
+structural relative positioning process that generalizes beyond occlusions and
+deformations. In tasks requiring precise spatial understanding such as object
+detection and time series prediction, PART outperforms strong grid-based
+methods like MAE and DropPos, while also maintaining competitive performance on
+global classification tasks with minimal hyperparameter tuning. By breaking
+free from grid constraints, PART opens up an exciting new trajectory for
+universal self-supervised pretraining across diverse datatypes-from natural
+images to EEG signals-with promising potential in video, medical imaging, and
+audio.",http://arxiv.org/pdf/2506.03682v1,,False
+MambaNeXt-YOLO: A Hybrid State Space Model for Real-time Object Detection,04/06/2025,"Xiaochun Lei, Siqi Wu, Weilin Wu, Zetao Jiang","Real-time object detection is a fundamental but challenging task in computer
+vision, particularly when computational resources are limited. Although
+YOLO-series models have set strong benchmarks by balancing speed and accuracy,
+the increasing need for richer global context modeling has led to the use of
+Transformer-based architectures. Nevertheless, Transformers have high
+computational complexity because of their self-attention mechanism, which
+limits their practicality for real-time and edge deployments. To overcome these
+challenges, recent developments in linear state space models, such as Mamba,
+provide a promising alternative by enabling efficient sequence modeling with
+linear complexity. Building on this insight, we propose MambaNeXt-YOLO, a novel
+object detection framework that balances accuracy and efficiency through three
+key contributions: (1) MambaNeXt Block: a hybrid design that integrates CNNs
+with Mamba to effectively capture both local features and long-range
+dependencies; (2) Multi-branch Asymmetric Fusion Pyramid Network (MAFPN): an
+enhanced feature pyramid architecture that improves multi-scale object
+detection across various object sizes; and (3) Edge-focused Efficiency: our
+method achieved 66.6\% mAP at 31.9 FPS on the PASCAL VOC dataset without any
+pre-training and supports deployment on edge devices such as the NVIDIA Jetson
+Xavier NX and Orin NX.",http://arxiv.org/pdf/2506.03654v1,,False
+VLMs Can Aggregate Scattered Training Patches,04/06/2025,"Zhanhui Zhou, Lingjie Chen, Chao Yang, Chaochao Lu","One way to mitigate risks in vision-language models (VLMs) is to remove
+dangerous samples in their training data. However, such data moderation can be
+easily bypassed when harmful images are split into small, benign-looking
+patches, scattered across many training samples. VLMs may then learn to piece
+these fragments together during training and generate harmful responses at
+inference, either from full images or text references. For instance, if trained
+on image patches from a bloody scene paired with the descriptions ""safe,"" VLMs
+may later describe, the full image or a text reference to the scene, as ""safe.""
+We define the core ability of VLMs enabling this attack as $\textit{visual
+stitching}$ -- the ability to integrate visual information spread across
+multiple training samples that share the same textual descriptions. In our
+work, we first demonstrate visual stitching abilities in common open-source
+VLMs on three datasets where each image is labeled with a unique synthetic ID:
+we split each $(\texttt{image}, \texttt{ID})$ pair into $\{(\texttt{patch},
+\texttt{ID})\}$ pairs at different granularity for finetuning, and we find that
+tuned models can verbalize the correct IDs from full images or text reference.
+Building on this, we simulate the adversarial data poisoning scenario mentioned
+above by using patches from dangerous images and replacing IDs with text
+descriptions like ``safe'' or ``unsafe'', demonstrating how harmful content can
+evade moderation in patches and later be reconstructed through visual
+stitching, posing serious VLM safety risks. Code is available at
+https://github.com/ZHZisZZ/visual-stitching.",http://arxiv.org/pdf/2506.03614v1,,False
+VCDiag: Classifying Erroneous Waveforms for Failure Triage Acceleration,04/06/2025,"Minh Luu, Surya Jasper, Khoi Le, Evan Pan, Michael Quinn, Aakash Tyagi, Jiang Hu","Failure triage in design functional verification is critical but
+time-intensive, relying on manual specification reviews, log inspections, and
+waveform analyses. While machine learning (ML) has improved areas like stimulus
+generation and coverage closure, its application to RTL-level simulation
+failure triage, particularly for large designs, remains limited. VCDiag offers
+an efficient, adaptable approach using VCD data to classify failing waveforms
+and pinpoint likely failure locations. In the largest experiment, VCDiag
+achieves over 94% accuracy in identifying the top three most likely modules.
+The framework introduces a novel signal selection and statistical compression
+approach, achieving over 120x reduction in raw data size while preserving
+features essential for classification. It can also be integrated into diverse
+Verilog/SystemVerilog designs and testbenches.",http://arxiv.org/pdf/2506.03590v1,,False
+SUMO-MCP: Leveraging the Model Context Protocol for Autonomous Traffic Simulation and Optimization,04/06/2025,"Chenglong Ye, Gang Xiong, Junyou Shang, Xingyuan Dai, Xiaoyan Gong, Yisheng Lv","Traffic simulation tools, such as SUMO, are essential for urban mobility
+research. However, such tools remain challenging for users due to complex
+manual workflows involving network download, demand generation, simulation
+setup, and result analysis. In this paper, we introduce SUMO-MCP, a novel
+platform that not only wraps SUMO' s core utilities into a unified tool suite
+but also provides additional auxiliary utilities for common preprocessing and
+postprocessing tasks. Using SUMO-MCP, users can issue simple natural-language
+prompts to generate traffic scenarios from OpenStreetMap data, create demand
+from origin-destination matrices or random patterns, run batch simulations with
+multiple signal-control strategies, perform comparative analyses with automated
+reporting, and detect congestion for signal-timing optimization. Furthermore,
+the platform allows flexible custom workflows by dynamically combining exposed
+SUMO tools without additional coding. Experiments demonstrate that SUMO-MCP
+significantly makes traffic simulation more accessible and reliable for
+researchers. We will release code for SUMO-MCP at
+https://github.com/ycycycl/SUMO-MCP in the future.",http://arxiv.org/pdf/2506.03548v1,,False
+From Virtual Agents to Robot Teams: A Multi-Robot Framework Evaluation in High-Stakes Healthcare Context,04/06/2025,"Yuanchen Bai, Zijian Ding, Angelique Taylor","Advancements in generative models have enabled multi-agent systems (MAS) to
+perform complex virtual tasks such as writing and code generation, which do not
+generalize well to physical multi-agent robotic teams. Current frameworks often
+treat agents as conceptual task executors rather than physically embodied
+entities, and overlook critical real-world constraints such as spatial context,
+robotic capabilities (e.g., sensing and navigation). To probe this gap, we
+reconfigure and stress-test a hierarchical multi-agent robotic team built on
+the CrewAI framework in a simulated emergency department onboarding scenario.
+We identify five persistent failure modes: role misalignment; tool access
+violations; lack of in-time handling of failure reports; noncompliance with
+prescribed workflows; bypassing or false reporting of task completion. Based on
+this analysis, we propose three design guidelines emphasizing process
+transparency, proactive failure recovery, and contextual grounding. Our work
+informs the development of more resilient and robust multi-agent robotic
+systems (MARS), including opportunities to extend virtual multi-agent
+frameworks to the real world.",http://arxiv.org/pdf/2506.03546v1,,False
+Learning Monotonic Probabilities with a Generative Cost Model,04/06/2025,"Yongxiang Tang, Yanhua Cheng, Xiaocheng Liu, Chenchen Jiao, Yanxiang Zeng, Ning Luo, Pengjia Yuan, Xialong Liu, Peng Jiang","In many machine learning tasks, it is often necessary for the relationship
+between input and output variables to be monotonic, including both strictly
+monotonic and implicitly monotonic relationships. Traditional methods for
+maintaining monotonicity mainly rely on construction or regularization
+techniques, whereas this paper shows that the issue of strict monotonic
+probability can be viewed as a partial order between an observable revenue
+variable and a latent cost variable. This perspective enables us to reformulate
+the monotonicity challenge into modeling the latent cost variable. To tackle
+this, we introduce a generative network for the latent cost variable, termed
+the Generative Cost Model (GCM), which inherently addresses the strict
+monotonic problem, and propose the Implicit Generative Cost Model (IGCM) to
+address the implicit monotonic problem. We further validate our approach with a
+numerical simulation of quantile regression and conduct multiple experiments on
+public datasets, showing that our method significantly outperforms existing
+monotonic modeling techniques. The code for our experiments can be found at
+https://github.com/tyxaaron/GCM.",http://arxiv.org/pdf/2506.03542v1,,False
+SemNav: A Model-Based Planner for Zero-Shot Object Goal Navigation Using Vision-Foundation Models,04/06/2025,"Arnab Debnath, Gregory J. Stein, Jana Kosecka","Object goal navigation is a fundamental task in embodied AI, where an agent
+is instructed to locate a target object in an unexplored environment.
+Traditional learning-based methods rely heavily on large-scale annotated data
+or require extensive interaction with the environment in a reinforcement
+learning setting, often failing to generalize to novel environments and
+limiting scalability. To overcome these challenges, we explore a zero-shot
+setting where the agent operates without task-specific training, enabling more
+scalable and adaptable solution. Recent advances in Vision Foundation Models
+(VFMs) offer powerful capabilities for visual understanding and reasoning,
+making them ideal for agents to comprehend scenes, identify relevant regions,
+and infer the likely locations of objects. In this work, we present a zero-shot
+object goal navigation framework that integrates the perceptual strength of
+VFMs with a model-based planner that is capable of long-horizon decision making
+through frontier exploration. We evaluate our approach on the HM3D dataset
+using the Habitat simulator and demonstrate that our method achieves
+state-of-the-art performance in terms of success weighted by path length for
+zero-shot object goal navigation.",http://arxiv.org/pdf/2506.03516v1,,False
+Computational Architects of Society: Quantum Machine Learning for Social Rule Genesis,04/06/2025,Shan Shan,"The quantification of social science remains a longstanding challenge,
+largely due to the philosophical nature of its foundational theories. Although
+quantum computing has advanced rapidly in recent years, its relevance to social
+theory remains underexplored. Most existing research focuses on micro-cognitive
+models or philosophical analogies, leaving a gap in system-level applications
+of quantum principles to the analysis of social systems. This study addresses
+that gap by proposing a theoretical and computational framework that combines
+quantum mechanics with Generative AI to simulate the emergence and evolution of
+social norms. Drawing on core quantum concepts--such as superposition,
+entanglement, and probabilistic measurement--this research models society as a
+dynamic, uncertain system and sets up five ideal-type experiments. These
+scenarios are simulated using 25 generative agents, each assigned evolving
+roles as compliers, resistors, or enforcers. Within a simulated environment
+monitored by a central observer (the Watcher), agents interact, respond to
+surveillance, and adapt to periodic normative disruptions. These interactions
+allow the system to self-organize under external stress and reveal emergent
+patterns. Key findings show that quantum principles, when integrated with
+generative AI, enable the modeling of uncertainty, emergence, and
+interdependence in complex social systems. Simulations reveal patterns
+including convergence toward normative order, the spread of resistance, and the
+spontaneous emergence of new equilibria in social rules. In conclusion, this
+study introduces a novel computational lens that lays the groundwork for a
+quantum-informed social theory. It offers interdisciplinary insights into how
+society can be understood not just as a structure to observe but as a dynamic
+system to simulate and redesign through quantum technologies.",http://arxiv.org/pdf/2506.03503v1,,False
+Measuring Human Involvement in AI-Generated Text: A Case Study on Academic Writing,04/06/2025,"Yuchen Guo, Zhicheng Dou, Huy H. Nguyen, Ching-Chun Chang, Saku Sugawara, Isao Echizen","Content creation has dramatically progressed with the rapid advancement of
+large language models like ChatGPT and Claude. While this progress has greatly
+enhanced various aspects of life and work, it has also negatively affected
+certain areas of society. A recent survey revealed that nearly 30% of college
+students use generative AI to help write academic papers and reports. Most
+countermeasures treat the detection of AI-generated text as a binary
+classification task and thus lack robustness. This approach overlooks human
+involvement in the generation of content even though human-machine
+collaboration is becoming mainstream. Besides generating entire texts, people
+may use machines to complete or revise texts. Such human involvement varies
+case by case, which makes binary classification a less than satisfactory
+approach. We refer to this situation as participation detection obfuscation. We
+propose using BERTScore as a metric to measure human involvement in the
+generation process and a multi-task RoBERTa-based regressor trained on a token
+classification task to address this problem. To evaluate the effectiveness of
+this approach, we simulated academic-based scenarios and created a continuous
+dataset reflecting various levels of human involvement. All of the existing
+detectors we examined failed to detect the level of human involvement on this
+dataset. Our method, however, succeeded (F1 score of 0.9423 and a regressor
+mean squared error of 0.004). Moreover, it demonstrated some generalizability
+across generative models. Our code is available at
+https://github.com/gyc-nii/CAS-CS-and-dual-head-detector",http://arxiv.org/pdf/2506.03501v1,,False
+CORE: Constraint-Aware One-Step Reinforcement Learning for Simulation-Guided Neural Network Accelerator Design,04/06/2025,"Yifeng Xiao, Yurong Xu, Ning Yan, Masood Mortazavi, Pierluigi Nuzzo","Simulation-based design space exploration (DSE) aims to efficiently optimize
+high-dimensional structured designs under complex constraints and expensive
+evaluation costs. Existing approaches, including heuristic and multi-step
+reinforcement learning (RL) methods, struggle to balance sampling efficiency
+and constraint satisfaction due to sparse, delayed feedback, and large hybrid
+action spaces. In this paper, we introduce CORE, a constraint-aware, one-step
+RL method for simulationguided DSE. In CORE, the policy agent learns to sample
+design configurations by defining a structured distribution over them,
+incorporating dependencies via a scaling-graph-based decoder, and by reward
+shaping to penalize invalid designs based on the feedback obtained from
+simulation. CORE updates the policy using a surrogate objective that compares
+the rewards of designs within a sampled batch, without learning a value
+function. This critic-free formulation enables efficient learning by
+encouraging the selection of higher-reward designs. We instantiate CORE for
+hardware-mapping co-design of neural network accelerators, demonstrating that
+it significantly improves sample efficiency and achieves better accelerator
+configurations compared to state-of-the-art baselines. Our approach is general
+and applicable to a broad class of discrete-continuous constrained design
+problems.",http://arxiv.org/pdf/2506.03474v1,,False

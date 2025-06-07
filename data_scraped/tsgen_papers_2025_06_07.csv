@@ -1,0 +1,299 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Inference-Time Hyper-Scaling with KV Cache Compression,05/06/2025,"Adrian Łańcucki, Konrad Staniszewski, Piotr Nawrot, Edoardo M. Ponti","Inference-time scaling trades efficiency for increased reasoning accuracy by
+generating longer or more parallel sequences. However, in Transformer LLMs,
+generation cost is bottlenecked by the size of the key-value (KV) cache, rather
+than the number of generated tokens. Hence, we explore inference-time
+hyper-scaling: by compressing the KV cache, we can generate more tokens within
+the same compute budget and further improve the accuracy of scaled inference.
+The success of this approach, however, hinges on the ability of compression
+methods to preserve accuracy even at high compression ratios. To make
+hyper-scaling practical, we introduce Dynamic Memory Sparsification (DMS), a
+novel method for sparsifying KV caches that only requires 1K training steps to
+achieve 8$\times$ compression, while maintaining better accuracy than
+training-free sparse attention. Instead of prematurely discarding cached
+tokens, DMS delays token eviction, implicitly merging representations and
+preserving critical information. We demonstrate the effectiveness of
+inference-time hyper-scaling with DMS on multiple families of LLMs, showing
+that it boosts accuracy for comparable inference runtime and memory load. For
+instance, we enhance Qwen-R1 32B by an average of 9.1 points on AIME 24, 7.6 on
+GPQA, and 9.6 on LiveCodeBench across compute budgets.",http://arxiv.org/pdf/2506.05345v1,,False
+Learning Beyond Experience: Generalizing to Unseen State Space with Reservoir Computing,05/06/2025,"Declan A. Norton, Yuanzhao Zhang, Michelle Girvan","Machine learning techniques offer an effective approach to modeling dynamical
+systems solely from observed data. However, without explicit structural priors
+-- built-in assumptions about the underlying dynamics -- these techniques
+typically struggle to generalize to aspects of the dynamics that are poorly
+represented in the training data. Here, we demonstrate that reservoir computing
+-- a simple, efficient, and versatile machine learning framework often used for
+data-driven modeling of dynamical systems -- can generalize to unexplored
+regions of state space without explicit structural priors. First, we describe a
+multiple-trajectory training scheme for reservoir computers that supports
+training across a collection of disjoint time series, enabling effective use of
+available training data. Then, applying this training scheme to multistable
+dynamical systems, we show that RCs trained on trajectories from a single basin
+of attraction can achieve out-of-domain generalization by capturing system
+behavior in entirely unobserved basins.",http://arxiv.org/pdf/2506.05292v1,,False
+Micro-Act: Mitigate Knowledge Conflict in Question Answering via Actionable Self-Reasoning,05/06/2025,"Nan Huo, Jinyang Li, Bowen Qin, Ge Qu, Xiaolong Li, Xiaodong Li, Chenhao Ma, Reynold Cheng","Retrieval-Augmented Generation (RAG) systems commonly suffer from Knowledge
+Conflicts, where retrieved external knowledge contradicts the inherent,
+parametric knowledge of large language models (LLMs). It adversely affects
+performance on downstream tasks such as question answering (QA). Existing
+approaches often attempt to mitigate conflicts by directly comparing two
+knowledge sources in a side-by-side manner, but this can overwhelm LLMs with
+extraneous or lengthy contexts, ultimately hindering their ability to identify
+and mitigate inconsistencies. To address this issue, we propose Micro-Act a
+framework with a hierarchical action space that automatically perceives context
+complexity and adaptively decomposes each knowledge source into a sequence of
+fine-grained comparisons. These comparisons are represented as actionable
+steps, enabling reasoning beyond the superficial context. Through extensive
+experiments on five benchmark datasets, Micro-Act consistently achieves
+significant increase in QA accuracy over state-of-the-art baselines across all
+5 datasets and 3 conflict types, especially in temporal and semantic types
+where all baselines fail significantly. More importantly, Micro-Act exhibits
+robust performance on non-conflict questions simultaneously, highlighting its
+practical value in real-world RAG applications.",http://arxiv.org/pdf/2506.05278v1,,False
+How to Unlock Time Series Editing? Diffusion-Driven Approach with Multi-Grained Control,05/06/2025,"Hao Yu, Chu Xin Cheng, Runlong Yu, Yuyang Ye, Shiwei Tong, Zhaofeng Liu, Defu Lian","Recent advances in time series generation have shown promise, yet controlling
+properties in generated sequences remains challenging. Time Series Editing
+(TSE) - making precise modifications while preserving temporal coherence -
+consider both point-level constraints and segment-level controls that current
+methods struggle to provide. We introduce the CocktailEdit framework to enable
+simultaneous, flexible control across different types of constraints. This
+framework combines two key mechanisms: a confidence-weighted anchor control for
+point-wise constraints and a classifier-based control for managing statistical
+properties such as sums and averages over segments. Our methods achieve precise
+local control during the denoising inference stage while maintaining temporal
+coherence and integrating seamlessly, with any conditionally trained
+diffusion-based time series models. Extensive experiments across diverse
+datasets and models demonstrate its effectiveness. Our work bridges the gap
+between pure generative modeling and real-world time series editing needs,
+offering a flexible solution for human-in-the-loop time series generation and
+editing. The code and demo are provided for validation.",http://arxiv.org/pdf/2506.05276v1,,False
+Learning long range dependencies through time reversal symmetry breaking,05/06/2025,"Guillaume Pourcel, Maxence Ernoult","Deep State Space Models (SSMs) reignite physics-grounded compute paradigms,
+as RNNs could natively be embodied into dynamical systems. This calls for
+dedicated learning algorithms obeying to core physical principles, with
+efficient techniques to simulate these systems and guide their design. We
+propose Recurrent Hamiltonian Echo Learning (RHEL), an algorithm which provably
+computes loss gradients as finite differences of physical trajectories of
+non-dissipative, Hamiltonian systems. In ML terms, RHEL only requires three
+""forward passes"" irrespective of model size, without explicit Jacobian
+computation, nor incurring any variance in the gradient estimation. Motivated
+by the physical realization of our algorithm, we first introduce RHEL in
+continuous time and demonstrate its formal equivalence with the continuous
+adjoint state method. To facilitate the simulation of Hamiltonian systems
+trained by RHEL, we propose a discrete-time version of RHEL which is equivalent
+to Backpropagation Through Time (BPTT) when applied to a class of recurrent
+modules which we call Hamiltonian Recurrent Units (HRUs). This setting allows
+us to demonstrate the scalability of RHEL by generalizing these results to
+hierarchies of HRUs, which we call Hamiltonian SSMs (HSSMs). We apply RHEL to
+train HSSMs with linear and nonlinear dynamics on a variety of time-series
+tasks ranging from mid-range to long-range classification and regression with
+sequence length reaching $\sim 50k$. We show that RHEL consistently matches the
+performance of BPTT across all models and tasks. This work opens new doors for
+the design of scalable, energy-efficient physical systems endowed with
+self-learning capabilities for sequence modelling.",http://arxiv.org/pdf/2506.05259v1,,False
+MesaNet: Sequence Modeling by Locally Optimal Test-Time Training,05/06/2025,"Johannes von Oswald, Nino Scherrer, Seijin Kobayashi, Luca Versari, Songlin Yang, Maximilian Schlegel, Kaitlin Maile, Yanick Schimpf, Oliver Sieberling, Alexander Meulemans, Rif A. Saurous, Guillaume Lajoie, Charlotte Frenkel, Razvan Pascanu, Blaise Agüera y Arcas, João Sacramento","Sequence modeling is currently dominated by causal transformer architectures
+that use softmax self-attention. Although widely adopted, transformers require
+scaling memory and compute linearly during inference. A recent stream of work
+linearized the softmax operation, resulting in powerful recurrent neural
+network (RNN) models with constant memory and compute costs such as DeltaNet,
+Mamba or xLSTM. These models can be unified by noting that their recurrent
+layer dynamics can all be derived from an in-context regression objective,
+approximately optimized through an online learning rule. Here, we join this
+line of work and introduce a numerically stable, chunkwise parallelizable
+version of the recently proposed Mesa layer (von Oswald et al., 2024), and
+study it in language modeling at the billion-parameter scale. This layer again
+stems from an in-context loss, but which is now minimized to optimality at
+every time point using a fast conjugate gradient solver. Through an extensive
+suite of experiments, we show that optimal test-time training enables reaching
+lower language modeling perplexity and higher downstream benchmark performance
+than previous RNNs, especially on tasks requiring long context understanding.
+This performance gain comes at the cost of additional flops spent during
+inference time. Our results are therefore intriguingly related to recent trends
+of increasing test-time compute to improve performance -- here by spending
+compute to solve sequential optimization problems within the neural network
+itself.",http://arxiv.org/pdf/2506.05233v1,,False
+Learning Theory of Decentralized Robust Kernel-Based Learning Algorithm,05/06/2025,Zhan Yu,"We propose a new decentralized robust kernel-based learning algorithm within
+the framework of reproducing kernel Hilbert space (RKHS) by utilizing a
+networked system that can be represented as a connected graph. The robust loss
+function $\mathcal{L}_\sigma$ induced by a windowing function $W$ and a
+robustness scaling parameter $\sigma>0$, can encompass a broad spectrum of
+robust losses. Consequently, the proposed algorithm effectively provides a
+unified decentralized learning framework for robust regression, which
+fundamentally differs from the existing distributed robust kernel learning
+schemes, all of which are divide-and-conquer based. We rigorously establish the
+learning theory and offer a comprehensive convergence analysis for the
+algorithm. We show each local robust estimator generated from the decentralized
+algorithm can be utilized to approximate the regression function. Based on
+kernel-based integral operator techniques, we derive general high confidence
+convergence bounds for each local approximating sequence in terms of the mean
+square distance, RKHS norm, and generalization error, respectively. Moreover,
+we provide rigorous selection rules for local sample size and show that, under
+properly selected step size and scaling parameter $\sigma$, the decentralized
+robust algorithm can achieve optimal learning rates (up to logarithmic factors)
+in both norms. The parameter $\sigma$ is shown to be essential for enhancing
+robustness while also ensuring favorable convergence behavior. The intrinsic
+connection among decentralization, sample selection, robustness of the
+algorithm, and its convergence is clearly reflected.",http://arxiv.org/pdf/2506.05215v1,,False
+Counterfactual reasoning: an analysis of in-context emergence,05/06/2025,"Moritz Miller, Bernhard Schölkopf, Siyuan Guo","Large-scale neural language models (LMs) exhibit remarkable performance in
+in-context learning: the ability to learn and reason the input context on the
+fly without parameter update. This work studies in-context counterfactual
+reasoning in language models, that is, to predict the consequences of changes
+under hypothetical scenarios. We focus on studying a well-defined synthetic
+setup: a linear regression task that requires noise abduction, where accurate
+prediction is based on inferring and copying the contextual noise from factual
+observations. We show that language models are capable of counterfactual
+reasoning in this controlled setup and provide insights that counterfactual
+reasoning for a broad class of functions can be reduced to a transformation on
+in-context observations; we find self-attention, model depth, and data
+diversity in pre-training drive performance in Transformers. More
+interestingly, our findings extend beyond regression tasks and show that
+Transformers can perform noise abduction on sequential data, providing
+preliminary evidence on the potential for counterfactual story generation. Our
+code is available under
+https://github.com/moXmiller/counterfactual-reasoning.git .",http://arxiv.org/pdf/2506.05188v1,,False
+Associative Memory and Generative Diffusion in the Zero-noise Limit,05/06/2025,"Joshua Hess, Quaid Morris","Connections between generative diffusion and continuous-state associative
+memory models are studied. Morse-Smale dynamical systems are emphasized as
+universal approximators of gradient-based associative memory models and
+diffusion models as white-noise perturbed systems thereof. Universal properties
+of associative memory that follow from this description are described and used
+to characterize a generic transition from generation to memory as noise levels
+diminish. Structural stability inherited by Morse-Smale flows is shown to imply
+a notion of stability for diffusions at vanishing noise levels. Applied to one-
+and two-parameter families of gradients, this indicates stability at all but
+isolated points of associative memory learning landscapes and the learning and
+generation landscapes of diffusion models with gradient drift in the zero-noise
+limit, at which small sets of generic bifurcations characterize qualitative
+transitions between stable systems. Examples illustrating the characterization
+of these landscapes by sequences of these bifurcations are given, along with
+structural stability criterion for classic and modern Hopfield networks
+(equivalently, the attention mechanism).",http://arxiv.org/pdf/2506.05178v1,,False
+Membership Inference Attacks on Sequence Models,05/06/2025,"Lorenzo Rossi, Michael Aerni, Jie Zhang, Florian Tramèr","Sequence models, such as Large Language Models (LLMs) and autoregressive
+image generators, have a tendency to memorize and inadvertently leak sensitive
+information. While this tendency has critical legal implications, existing
+tools are insufficient to audit the resulting risks. We hypothesize that those
+tools' shortcomings are due to mismatched assumptions. Thus, we argue that
+effectively measuring privacy leakage in sequence models requires leveraging
+the correlations inherent in sequential generation. To illustrate this, we
+adapt a state-of-the-art membership inference attack to explicitly model
+within-sequence correlations, thereby demonstrating how a strong existing
+attack can be naturally extended to suit the structure of sequence models.
+Through a case study, we show that our adaptations consistently improve the
+effectiveness of memorization audits without introducing additional
+computational costs. Our work hence serves as an important stepping stone
+toward reliable memorization audits for large sequence models.",http://arxiv.org/pdf/2506.05126v1,,False
+TIMING: Temporality-Aware Integrated Gradients for Time Series Explanation,05/06/2025,"Hyeongwon Jang, Changhun Kim, Eunho Yang","Recent explainable artificial intelligence (XAI) methods for time series
+primarily estimate point-wise attribution magnitudes, while overlooking the
+directional impact on predictions, leading to suboptimal identification of
+significant points. Our analysis shows that conventional Integrated Gradients
+(IG) effectively capture critical points with both positive and negative
+impacts on predictions. However, current evaluation metrics fail to assess this
+capability, as they inadvertently cancel out opposing feature contributions. To
+address this limitation, we propose novel evaluation metrics-Cumulative
+Prediction Difference (CPD) and Cumulative Prediction Preservation (CPP)-to
+systematically assess whether attribution methods accurately identify
+significant positive and negative points in time series XAI. Under these
+metrics, conventional IG outperforms recent counterparts. However, directly
+applying IG to time series data may lead to suboptimal outcomes, as generated
+paths ignore temporal relationships and introduce out-of-distribution samples.
+To overcome these challenges, we introduce TIMING, which enhances IG by
+incorporating temporal awareness while maintaining its theoretical properties.
+Extensive experiments on synthetic and real-world time series benchmarks
+demonstrate that TIMING outperforms existing time series XAI baselines. Our
+code is available at https://github.com/drumpt/TIMING.",http://arxiv.org/pdf/2506.05035v1,,False
+Robustness as Architecture: Designing IQA Models to Withstand Adversarial Perturbations,05/06/2025,"Igor Meleshin, Anna Chistyakova, Anastasia Antsiferova, Dmitriy Vatolin","Image Quality Assessment (IQA) models are increasingly relied upon to
+evaluate image quality in real-world systems -- from compression and
+enhancement to generation and streaming. Yet their adoption brings a
+fundamental risk: these models are inherently unstable. Adversarial
+manipulations can easily fool them, inflating scores and undermining trust.
+Traditionally, such vulnerabilities are addressed through data-driven defenses
+-- adversarial retraining, regularization, or input purification. But what if
+this is the wrong lens? What if robustness in perceptual models is not
+something to learn but something to design? In this work, we propose a
+provocative idea: robustness as an architectural prior. Rather than training
+models to resist perturbations, we reshape their internal structure to suppress
+sensitivity from the ground up. We achieve this by enforcing orthogonal
+information flow, constraining the network to norm-preserving operations -- and
+further stabilizing the system through pruning and fine-tuning. The result is a
+robust IQA architecture that withstands adversarial attacks without requiring
+adversarial training or significant changes to the original model. This
+approach suggests a shift in perspective: from optimizing robustness through
+data to engineering it through design.",http://arxiv.org/pdf/2506.04951v1,,False
+Simulating LLM-to-LLM Tutoring for Multilingual Math Feedback,05/06/2025,"Junior Cedric Tonga, KV Aditya Srivatsa, Kaushal Kumar Maurya, Fajri Koto, Ekaterina Kochmar","Large language models (LLMs) have demonstrated the ability to generate
+formative feedback and instructional hints in English, making them increasingly
+relevant for AI-assisted education. However, their ability to provide effective
+instructional support across different languages, especially for mathematically
+grounded reasoning tasks, remains largely unexamined. In this work, we present
+the first large-scale simulation of multilingual tutor-student interactions
+using LLMs. A stronger model plays the role of the tutor, generating feedback
+in the form of hints, while a weaker model simulates the student. We explore
+352 experimental settings across 11 typologically diverse languages, four
+state-of-the-art LLMs, and multiple prompting strategies to assess whether
+language-specific feedback leads to measurable learning gains. Our study
+examines how student input language, teacher feedback language, model choice,
+and language resource level jointly influence performance. Results show that
+multilingual hints can significantly improve learning outcomes, particularly in
+low-resource languages when feedback is aligned with the student's native
+language. These findings offer practical insights for developing multilingual,
+LLM-based educational tools that are both effective and inclusive.",http://arxiv.org/pdf/2506.04920v1,,False
+Log-Linear Attention,05/06/2025,"Han Guo, Songlin Yang, Tarushii Goel, Eric P. Xing, Tri Dao, Yoon Kim","The attention mechanism in Transformers is an important primitive for
+accurate and scalable sequence modeling. Its quadratic-compute and
+linear-memory complexity however remain significant bottlenecks. Linear
+attention and state-space models enable linear-time, constant-memory sequence
+modeling and can moreover be trained efficiently through matmul-rich
+parallelization across sequence length. However, at their core these models are
+still RNNs, and thus their use of a fixed-size hidden state to model the
+context is a fundamental limitation. This paper develops log-linear attention,
+an attention mechanism that balances linear attention's efficiency and the
+expressiveness of softmax attention. Log-linear attention replaces the
+fixed-size hidden state with a logarithmically growing set of hidden states. We
+show that with a particular growth function, log-linear attention admits a
+similarly matmul-rich parallel form whose compute cost is log-linear in
+sequence length. Log-linear attention is a general framework and can be applied
+on top of existing linear attention variants. As case studies, we instantiate
+log-linear variants of two recent architectures -- Mamba-2 and Gated DeltaNet
+-- and find they perform well compared to their linear-time variants.",http://arxiv.org/pdf/2506.04761v1,,False
+Physics Informed Capsule Enhanced Variational AutoEncoder for Underwater Image Enhancement,05/06/2025,"Niki Martinel, Rita Pucci","We present a novel dual-stream architecture that achieves state-of-the-art
+underwater image enhancement by explicitly integrating the Jaffe-McGlamery
+physical model with capsule clustering-based feature representation learning.
+Our method simultaneously estimates transmission maps and spatially-varying
+background light through a dedicated physics estimator while extracting
+entity-level features via capsule clustering in a parallel stream. This
+physics-guided approach enables parameter-free enhancement that respects
+underwater formation constraints while preserving semantic structures and
+fine-grained details. Our approach also features a novel optimization objective
+ensuring both physical adherence and perceptual quality across multiple spatial
+frequencies. To validate our approach, we conducted extensive experiments
+across six challenging benchmarks. Results demonstrate consistent improvements
+of $+0.5$dB PSNR over the best existing methods while requiring only one-third
+of their computational complexity (FLOPs), or alternatively, more than $+1$dB
+PSNR improvement when compared to methods with similar computational budgets.
+Code and data \textit{will} be available at https://github.com/iN1k1/.",http://arxiv.org/pdf/2506.04753v1,,False
+Empowering Economic Simulation for Massively Multiplayer Online Games through Generative Agent-Based Modeling,05/06/2025,"Bihan Xu, Shiwei Zhao, Runze Wu, Zhenya Huang, Jiawei Wang, Zhipeng Hu, Kai Wang, Haoyu Liu, Tangjie Lv, Le Li, Changjie Fan, Xin Tong, Jiangze Han","Within the domain of Massively Multiplayer Online (MMO) economy research,
+Agent-Based Modeling (ABM) has emerged as a robust tool for analyzing game
+economics, evolving from rule-based agents to decision-making agents enhanced
+by reinforcement learning. Nevertheless, existing works encounter significant
+challenges when attempting to emulate human-like economic activities among
+agents, particularly regarding agent reliability, sociability, and
+interpretability. In this study, we take a preliminary step in introducing a
+novel approach using Large Language Models (LLMs) in MMO economy simulation.
+Leveraging LLMs' role-playing proficiency, generative capacity, and reasoning
+aptitude, we design LLM-driven agents with human-like decision-making and
+adaptability. These agents are equipped with the abilities of role-playing,
+perception, memory, and reasoning, addressing the aforementioned challenges
+effectively. Simulation experiments focusing on in-game economic activities
+demonstrate that LLM-empowered agents can promote emergent phenomena like role
+specialization and price fluctuations in line with market rules.",http://arxiv.org/pdf/2506.04699v1,,False
+Neural MJD: Neural Non-Stationary Merton Jump Diffusion for Time Series Prediction,05/06/2025,"Yuanpei Gao, Qi Yan, Yan Leng, Renjie Liao","While deep learning methods have achieved strong performance in time series
+prediction, their black-box nature and inability to explicitly model underlying
+stochastic processes often limit their generalization to non-stationary data,
+especially in the presence of abrupt changes. In this work, we introduce Neural
+MJD, a neural network based non-stationary Merton jump diffusion (MJD) model.
+Our model explicitly formulates forecasting as a stochastic differential
+equation (SDE) simulation problem, combining a time-inhomogeneous It\^o
+diffusion to capture non-stationary stochastic dynamics with a
+time-inhomogeneous compound Poisson process to model abrupt jumps. To enable
+tractable learning, we introduce a likelihood truncation mechanism that caps
+the number of jumps within small time intervals and provide a theoretical error
+bound for this approximation. Additionally, we propose an Euler-Maruyama with
+restart solver, which achieves a provably lower error bound in estimating
+expected states and reduced variance compared to the standard solver.
+Experiments on both synthetic and real-world datasets demonstrate that Neural
+MJD consistently outperforms state-of-the-art deep learning and statistical
+learning methods.",http://arxiv.org/pdf/2506.04542v1,,False

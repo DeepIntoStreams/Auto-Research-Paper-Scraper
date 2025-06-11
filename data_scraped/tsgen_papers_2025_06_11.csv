@@ -1,0 +1,318 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Autoregressive Semantic Visual Reconstruction Helps VLMs Understand Better,10/06/2025,"Dianyi Wang, Wei Song, Yikun Wang, Siyuan Wang, Kaicheng Yu, Zhongyu Wei, Jiaqi Wang","Typical large vision-language models (LVLMs) apply autoregressive supervision
+solely to textual sequences, without fully incorporating the visual modality
+into the learning process. This results in three key limitations: (1) an
+inability to utilize images without accompanying captions, (2) the risk that
+captions omit critical visual details, and (3) the challenge that certain
+vision-centric content cannot be adequately conveyed through text. As a result,
+current LVLMs often prioritize vision-to-language alignment while potentially
+overlooking fine-grained visual information. While some prior works have
+explored autoregressive image generation, effectively leveraging autoregressive
+visual supervision to enhance image understanding remains an open challenge. In
+this paper, we introduce Autoregressive Semantic Visual Reconstruction (ASVR),
+which enables joint learning of visual and textual modalities within a unified
+autoregressive framework. We show that autoregressively reconstructing the raw
+visual appearance of images does not enhance and may even impair multimodal
+understanding. In contrast, autoregressively reconstructing the semantic
+representation of images consistently improves comprehension. Notably, we find
+that even when models are given continuous image features as input, they can
+effectively reconstruct discrete semantic tokens, resulting in stable and
+consistent improvements across a wide range of multimodal understanding
+benchmarks. Our approach delivers significant performance gains across varying
+data scales (556k-2M) and types of LLM bacbones. Specifically, ASVR improves
+LLaVA-1.5 by 5% in average scores across 14 multimodal benchmarks. The code is
+available at https://github.com/AlenjandroWang/ASVR.",http://arxiv.org/pdf/2506.09040v1,,False
+Edit Flows: Flow Matching with Edit Operations,10/06/2025,"Marton Havasi, Brian Karrer, Itai Gat, Ricky T. Q. Chen","Autoregressive generative models naturally generate variable-length
+sequences, while non-autoregressive models struggle, often imposing rigid,
+token-wise structures. We propose Edit Flows, a non-autoregressive model that
+overcomes these limitations by defining a discrete flow over sequences through
+edit operations-insertions, deletions, and substitutions. By modeling these
+operations within a Continuous-time Markov Chain over the sequence space, Edit
+Flows enable flexible, position-relative generation that aligns more closely
+with the structure of sequence data. Our training method leverages an expanded
+state space with auxiliary variables, making the learning process efficient and
+tractable. Empirical results show that Edit Flows outperforms both
+autoregressive and mask models on image captioning and significantly
+outperforms the mask construction in text and code generation.",http://arxiv.org/pdf/2506.09018v1,,False
+Branched Schrödinger Bridge Matching,10/06/2025,"Sophia Tang, Yinuo Zhang, Alexander Tong, Pranam Chatterjee","Predicting the intermediate trajectories between an initial and target
+distribution is a central problem in generative modeling. Existing approaches,
+such as flow matching and Schr\""odinger Bridge Matching, effectively learn
+mappings between two distributions by modeling a single stochastic path.
+However, these methods are inherently limited to unimodal transitions and
+cannot capture branched or divergent evolution from a common origin to multiple
+distinct outcomes. To address this, we introduce Branched Schr\""odinger Bridge
+Matching (BranchSBM), a novel framework that learns branched Schr\""odinger
+bridges. BranchSBM parameterizes multiple time-dependent velocity fields and
+growth processes, enabling the representation of population-level divergence
+into multiple terminal distributions. We show that BranchSBM is not only more
+expressive but also essential for tasks involving multi-path surface
+navigation, modeling cell fate bifurcations from homogeneous progenitor states,
+and simulating diverging cellular responses to perturbations.",http://arxiv.org/pdf/2506.09007v1,,False
+Propositional Logic for Probing Generalization in Neural Networks,10/06/2025,"Anna Langedijk, Jaap Jumelet, Willem Zuidema","The extent to which neural networks are able to acquire and represent
+symbolic rules remains a key topic of research and debate. Much current work
+focuses on the impressive capabilities of large language models, as well as
+their often ill-understood failures on a wide range of reasoning tasks. In this
+paper, in contrast, we investigate the generalization behavior of three key
+neural architectures (Transformers, Graph Convolution Networks and LSTMs) in a
+controlled task rooted in propositional logic. The task requires models to
+generate satisfying assignments for logical formulas, making it a structured
+and interpretable setting for studying compositionality. We introduce a
+balanced extension of an existing dataset to eliminate superficial patterns and
+enable testing on unseen operator combinations. Using this dataset, we evaluate
+the ability of the three architectures to generalize beyond the training
+distribution. While all models perform well in-distribution, we find that
+generalization to unseen patterns, particularly those involving negation,
+remains a significant challenge. Transformers fail to apply negation
+compositionally, unless structural biases are introduced. Our findings
+highlight persistent limitations in the ability of standard architectures to
+learn systematic representations of logical operators, suggesting the need for
+stronger inductive biases to support robust rule-based reasoning.",http://arxiv.org/pdf/2506.08978v1,,False
+Tailored Architectures for Time Series Forecasting: Evaluating Deep Learning Models on Gaussian Process-Generated Data,10/06/2025,"Victoria Hankemeier, Malte Schilling","Developments in Deep Learning have significantly improved time series
+forecasting by enabling more accurate modeling of complex temporal dependencies
+inherent in sequential data. The effectiveness of such models is often
+demonstrated on limited sets of specific real-world data. Although this allows
+for comparative analysis, it still does not demonstrate how specific data
+characteristics align with the architectural strengths of individual models.
+Our research aims at uncovering clear connections between time series
+characteristics and particular models. We introduce a novel dataset generated
+using Gaussian Processes, specifically designed to display distinct, known
+characteristics for targeted evaluations of model adaptability to them.
+Furthermore, we present TimeFlex, a new model that incorporates a modular
+architecture tailored to handle diverse temporal dynamics, including trends and
+periodic patterns. This model is compared to current state-of-the-art models,
+offering a deeper understanding of how models perform under varied time series
+conditions.",http://arxiv.org/pdf/2506.08977v1,,False
+IntTrajSim: Trajectory Prediction for Simulating Multi-Vehicle driving at Signalized Intersections,10/06/2025,"Yash Ranjan, Rahul Sengupta, Anand Rangarajan, Sanjay Ranka","Traffic simulators are widely used to study the operational efficiency of
+road infrastructure, but their rule-based approach limits their ability to
+mimic real-world driving behavior. Traffic intersections are critical
+components of the road infrastructure, both in terms of safety risk (nearly 28%
+of fatal crashes and 58% of nonfatal crashes happen at intersections) as well
+as the operational efficiency of a road corridor. This raises an important
+question: can we create a data-driven simulator that can mimic the macro- and
+micro-statistics of the driving behavior at a traffic intersection? Deep
+Generative Modeling-based trajectory prediction models provide a good starting
+point to model the complex dynamics of vehicles at an intersection. But they
+are not tested in a ""live"" micro-simulation scenario and are not evaluated on
+traffic engineering-related metrics. In this study, we propose traffic
+engineering-related metrics to evaluate generative trajectory prediction models
+and provide a simulation-in-the-loop pipeline to do so. We also provide a
+multi-headed self-attention-based trajectory prediction model that incorporates
+the signal information, which outperforms our previous models on the evaluation
+metrics.",http://arxiv.org/pdf/2506.08957v1,,False
+Product of Experts for Visual Generation,10/06/2025,"Yunzhi Zhang, Carson Murtuza-Lanier, Zizhang Li, Yilun Du, Jiajun Wu","Modern neural models capture rich priors and have complementary knowledge
+over shared data domains, e.g., images and videos. Integrating diverse
+knowledge from multiple sources -- including visual generative models, visual
+language models, and sources with human-crafted knowledge such as graphics
+engines and physics simulators -- remains under-explored. We propose a Product
+of Experts (PoE) framework that performs inference-time knowledge composition
+from heterogeneous models. This training-free approach samples from the product
+distribution across experts via Annealed Importance Sampling (AIS). Our
+framework shows practical benefits in image and video synthesis tasks, yielding
+better controllability than monolithic methods and additionally providing
+flexible user interfaces for specifying visual generation goals.",http://arxiv.org/pdf/2506.08894v1,,False
+InfoDPCCA: Information-Theoretic Dynamic Probabilistic Canonical Correlation Analysis,10/06/2025,"Shiqin Tang, Shujian Yu","Extracting meaningful latent representations from high-dimensional sequential
+data is a crucial challenge in machine learning, with applications spanning
+natural science and engineering. We introduce InfoDPCCA, a dynamic
+probabilistic Canonical Correlation Analysis (CCA) framework designed to model
+two interdependent sequences of observations. InfoDPCCA leverages a novel
+information-theoretic objective to extract a shared latent representation that
+captures the mutual structure between the data streams and balances
+representation compression and predictive sufficiency while also learning
+separate latent components that encode information specific to each sequence.
+Unlike prior dynamic CCA models, such as DPCCA, our approach explicitly
+enforces the shared latent space to encode only the mutual information between
+the sequences, improving interpretability and robustness. We further introduce
+a two-step training scheme to bridge the gap between information-theoretic
+representation learning and generative modeling, along with a residual
+connection mechanism to enhance training stability. Through experiments on
+synthetic and medical fMRI data, we demonstrate that InfoDPCCA excels as a tool
+for representation learning. Code of InfoDPCCA is available at
+https://github.com/marcusstang/InfoDPCCA.",http://arxiv.org/pdf/2506.08884v1,,False
+FreqPolicy: Efficient Flow-based Visuomotor Policy via Frequency Consistency,10/06/2025,"Yifei Su, Ning Liu, Dong Chen, Zhen Zhao, Kun Wu, Meng Li, Zhiyuan Xu, Zhengping Che, Jian Tang","Generative modeling-based visuomotor policies have been widely adopted in
+robotic manipulation attributed to their ability to model multimodal action
+distributions. However, the high inference cost of multi-step sampling limits
+their applicability in real-time robotic systems. To address this issue,
+existing approaches accelerate the sampling process in generative
+modeling-based visuomotor policies by adapting acceleration techniques
+originally developed for image generation. Despite this progress, a major
+distinction remains: image generation typically involves producing independent
+samples without temporal dependencies, whereas robotic manipulation involves
+generating time-series action trajectories that require continuity and temporal
+coherence. To effectively exploit temporal information in robotic manipulation,
+we propose FreqPolicy, a novel approach that first imposes frequency
+consistency constraints on flow-based visuomotor policies. Our work enables the
+action model to capture temporal structure effectively while supporting
+efficient, high-quality one-step action generation. We introduce a frequency
+consistency constraint that enforces alignment of frequency-domain action
+features across different timesteps along the flow, thereby promoting
+convergence of one-step action generation toward the target distribution. In
+addition, we design an adaptive consistency loss to capture structural temporal
+variations inherent in robotic manipulation tasks. We assess FreqPolicy on 53
+tasks across 3 simulation benchmarks, proving its superiority over existing
+one-step action generators. We further integrate FreqPolicy into the
+vision-language-action (VLA) model and achieve acceleration without performance
+degradation on the 40 tasks of Libero. Besides, we show efficiency and
+effectiveness in real-world robotic scenarios with an inference frequency
+93.5Hz. The code will be publicly available.",http://arxiv.org/pdf/2506.08822v1,,False
+JoFormer (Journey-based Transformer): Theory and Empirical Analysis on the Tiny Shakespeare Dataset,10/06/2025,Mahesh Godavarti,"Transformers have demonstrated remarkable success in sequence modeling, yet
+effectively incorporating positional information remains a challenging and
+active area of research. In this paper, we introduce JoFormer, a journey-based
+Transformer architecture grounded in a recently proposed non-commutative
+algebra for composing transformations across positions. JoFormer represents
+relative positions through learnable directional transforms that are
+sequentially composed along the input, thereby extending and generalizing
+existing approaches based on relative position representations. We derive the
+JoFormer attention mechanism from first principles and show that it subsumes
+standard methods such as rotary transformations as special cases. To evaluate
+its effectiveness, we compare JoFormer to the RoFormer baseline on the Tiny
+Shakespeare character-level language modeling task. Our results demonstrate
+that
+  JoFormer consistently achieves lower perplexity and faster convergence,
+highlighting the advantages of its more expressive, journey-based treatment of
+position. Notably, the per-token JoFormer is still a primitive, conceptual
+variant with layer-independent angles, yet it already demonstrates strong
+performance-underscoring its promise as a proof of concept for more expressive
+architectures. We conclude by discussing how JoFormer offers a principled
+approach to integrating positional structure into Transformer architectures.
+The code used in this work is available at
+https://github.com/mahesh-godavarti/joformer.",http://arxiv.org/pdf/2506.08652v1,,False
+Flow Matching Meets PDEs: A Unified Framework for Physics-Constrained Generation,10/06/2025,"Giacomo Baldan, Qiang Liu, Alberto Guardone, Nils Thuerey","Generative machine learning methods, such as diffusion models and flow
+matching, have shown great potential in modeling complex system behaviors and
+building efficient surrogate models. However, these methods typically learn the
+underlying physics implicitly from data. We propose Physics-Based Flow Matching
+(PBFM), a novel generative framework that explicitly embeds physical
+constraints, both PDE residuals and algebraic relations, into the flow matching
+objective. We also introduce temporal unrolling at training time that improves
+the accuracy of the final, noise-free sample prediction. Our method jointly
+minimizes the flow matching loss and the physics-based residual loss without
+requiring hyperparameter tuning of their relative weights. Additionally, we
+analyze the role of the minimum noise level, $\sigma_{\min}$, in the context of
+physical constraints and evaluate a stochastic sampling strategy that helps to
+reduce physical residuals. Through extensive benchmarks on three representative
+PDE problems, we show that our approach yields up to an $8\times$ more accurate
+physical residuals compared to FM, while clearly outperforming existing
+algorithms in terms of distributional accuracy. PBFM thus provides a principled
+and efficient framework for surrogate modeling, uncertainty quantification, and
+accelerated simulation in physics and engineering applications.",http://arxiv.org/pdf/2506.08604v1,,False
+Diffusion-based Time Series Forecasting for Sewerage Systems,10/06/2025,"Nicholas A. Pearson, Francesca Cairoli, Luca Bortolussi, Davide Russo, Francesca Zanello","We introduce a novel deep learning approach that harnesses the power of
+generative artificial intelligence to enhance the accuracy of contextual
+forecasting in sewerage systems. By developing a diffusion-based model that
+processes multivariate time series data, our system excels at capturing complex
+correlations across diverse environmental signals, enabling robust predictions
+even during extreme weather events. To strengthen the model's reliability, we
+further calibrate its predictions with a conformal inference technique,
+tailored for probabilistic time series data, ensuring that the resulting
+prediction intervals are statistically reliable and cover the true target
+values with a desired confidence level. Our empirical tests on real sewerage
+system data confirm the model's exceptional capability to deliver reliable
+contextual predictions, maintaining accuracy even under severe weather
+conditions.",http://arxiv.org/pdf/2506.08577v1,,False
+Flow-Lenia: Emergent evolutionary dynamics in mass conservative continuous cellular automata,10/06/2025,"Erwan Plantec, Gautier Hamon, Mayalen Etcheverry, Bert Wang-Chak Chan, Pierre-Yves Oudeyer, Clément Moulin-Frier","Central to the artificial life endeavour is the creation of artificial
+systems spontaneously generating properties found in the living world such as
+autopoiesis, self-replication, evolution and open-endedness. While numerous
+models and paradigms have been proposed, cellular automata (CA) have taken a
+very important place in the field notably as they enable the study of
+phenomenons like self-reproduction and autopoiesis. Continuous CA like Lenia
+have been showed to produce life-like patterns reminiscent, on an aesthetic and
+ontological point of view, of biological organisms we call creatures. We
+propose in this paper Flow-Lenia, a mass conservative extension of Lenia. We
+present experiments demonstrating its effectiveness in generating
+spatially-localized patters (SLPs) with complex behaviors and show that the
+update rule parameters can be optimized to generate complex creatures showing
+behaviors of interest. Furthermore, we show that Flow-Lenia allows us to embed
+the parameters of the model, defining the properties of the emerging patterns,
+within its own dynamics thus allowing for multispecies simulations. By using
+the evolutionary activity framework as well as other metrics, we shed light on
+the emergent evolutionary dynamics taking place in this system.",http://arxiv.org/pdf/2506.08569v1,10.1162/artl_a_00471,False
+Teaching Physical Awareness to LLMs through Sounds,10/06/2025,"Weiguo Wang, Andy Nie, Wenrui Zhou, Yi Kai, Chengchen Hu","Large Language Models (LLMs) have shown remarkable capabilities in text and
+multimodal processing, yet they fundamentally lack physical
+awareness--understanding of real-world physical phenomena. In this work, we
+present ACORN, a framework that teaches LLMs physical awareness through sound,
+focusing on fundamental physical phenomena like the Doppler effect, multipath
+effect, and spatial relationships. To overcome data scarcity, ACORN introduce a
+physics-based simulator combining real-world sound sources with controlled
+physical channels to generate diverse training data. Using this simulator, we
+build AQA-PHY, a comprehensive Audio Question-Answer dataset, and propose an
+audio encoder that processes both magnitude and phase information. By
+connecting our audio encoder to state-of-the-art LLMs, we demonstrate
+reasonable results in both simulated and real-world tasks, such as
+line-of-sight detection, Doppler effect estimation, and Direction-of-Arrival
+estimation, paving the way for enabling LLMs to understand physical world.",http://arxiv.org/pdf/2506.08524v1,,False
+NeurIPS 2024 ML4CFD Competition: Results and Retrospective Analysis,10/06/2025,"Mouadh Yagoubi, David Danan, Milad Leyli-Abadi, Ahmed Mazari, Jean-Patrick Brunet, Abbas Kabalan, Fabien Casenave, Yuxin Ma, Giovanni Catalani, Jean Fesquet, Jacob Helwig, Xuan Zhang, Haiyang Yu, Xavier Bertrand, Frederic Tost, Michael Baurheim, Joseph Morlier, Shuiwang Ji","The integration of machine learning (ML) into the physical sciences is
+reshaping computational paradigms, offering the potential to accelerate
+demanding simulations such as computational fluid dynamics (CFD). Yet,
+persistent challenges in accuracy, generalization, and physical consistency
+hinder the practical deployment of ML models in scientific domains. To address
+these limitations and systematically benchmark progress, we organized the
+ML4CFD competition, centered on surrogate modeling for aerodynamic simulations
+over two-dimensional airfoils. The competition attracted over 240 teams, who
+were provided with a curated dataset generated via OpenFOAM and evaluated
+through a multi-criteria framework encompassing predictive accuracy, physical
+fidelity, computational efficiency, and out-of-distribution generalization.
+This retrospective analysis reviews the competition outcomes, highlighting
+several approaches that outperformed baselines under our global evaluation
+score. Notably, the top entry exceeded the performance of the original OpenFOAM
+solver on aggregate metrics, illustrating the promise of ML-based surrogates to
+outperform traditional solvers under tailored criteria. Drawing from these
+results, we analyze the key design principles of top submissions, assess the
+robustness of our evaluation framework, and offer guidance for future
+scientific ML challenges.",http://arxiv.org/pdf/2506.08516v1,,False
+The interplay of robustness and generalization in quantum machine learning,10/06/2025,"Julian Berberich, Tobias Fellner, Christian Holm","While adversarial robustness and generalization have individually received
+substantial attention in the recent literature on quantum machine learning,
+their interplay is much less explored. In this chapter, we address this
+interplay for variational quantum models, which were recently proposed as
+function approximators in supervised learning. We discuss recent results
+quantifying both robustness and generalization via Lipschitz bounds, which
+explicitly depend on model parameters. Thus, they give rise to a
+regularization-based training approach for robust and generalizable quantum
+models, highlighting the importance of trainable data encoding strategies. The
+practical implications of the theoretical results are demonstrated with an
+application to time series analysis.",http://arxiv.org/pdf/2506.08455v1,,False
+Learning to Hear Broken Motors: Signature-Guided Data Augmentation for Induction-Motor Diagnostics,10/06/2025,"Saraa Ali, Aleksandr Khizhik, Stepan Svirin, Artem Ryzhikov, Denis Derkach","The application of machine learning (ML) algorithms in the intelligent
+diagnosis of three-phase engines has the potential to significantly enhance
+diagnostic performance and accuracy. Traditional methods largely rely on
+signature analysis, which, despite being a standard practice, can benefit from
+the integration of advanced ML techniques. In our study, we innovate by
+combining ML algorithms with a novel unsupervised anomaly generation
+methodology that takes into account the engine physics model. We propose
+Signature-Guided Data Augmentation (SGDA), an unsupervised framework that
+synthesizes physically plausible faults directly in the frequency domain of
+healthy current signals. Guided by Motor Current Signature Analysis, SGDA
+creates diverse and realistic anomalies without resorting to computationally
+intensive simulations. This hybrid approach leverages the strengths of both
+supervised ML and unsupervised signature analysis, achieving superior
+diagnostic accuracy and reliability along with wide industrial application. The
+findings highlight the potential of our approach to contribute significantly to
+the field of engine diagnostics, offering a robust and efficient solution for
+real-world applications.",http://arxiv.org/pdf/2506.08412v1,,False
+Re4MPC: Reactive Nonlinear MPC for Multi-model Motion Planning via Deep Reinforcement Learning,10/06/2025,"Neşet Ünver Akmandor, Sarvesh Prajapati, Mark Zolotas, Taşkın Padır","Traditional motion planning methods for robots with many degrees-of-freedom,
+such as mobile manipulators, are often computationally prohibitive for
+real-world settings. In this paper, we propose a novel multi-model motion
+planning pipeline, termed Re4MPC, which computes trajectories using Nonlinear
+Model Predictive Control (NMPC). Re4MPC generates trajectories in a
+computationally efficient manner by reactively selecting the model, cost, and
+constraints of the NMPC problem depending on the complexity of the task and
+robot state. The policy for this reactive decision-making is learned via a Deep
+Reinforcement Learning (DRL) framework. We introduce a mathematical formulation
+to integrate NMPC into this DRL framework. To validate our methodology and
+design choices, we evaluate DRL training and test outcomes in a physics-based
+simulation involving a mobile manipulator. Experimental results demonstrate
+that Re4MPC is more computationally efficient and achieves higher success rates
+in reaching end-effector goals than the NMPC baseline, which computes
+whole-body trajectories without our learning mechanism.",http://arxiv.org/pdf/2506.08344v1,,False
+Private Evolution Converges,10/06/2025,"Tomás González, Giulia Fanti, Aaditya Ramdas","Private Evolution (PE) is a promising training-free method for differentially
+private (DP) synthetic data generation. While it achieves strong performance in
+some domains (e.g., images and text), its behavior in others (e.g., tabular
+data) is less consistent. To date, the only theoretical analysis of the
+convergence of PE depends on unrealistic assumptions about both the algorithm's
+behavior and the structure of the sensitive dataset. In this work, we develop a
+new theoretical framework to explain PE's practical behavior and identify
+sufficient conditions for its convergence. For $d$-dimensional sensitive
+datasets with $n$ data points from a bounded domain, we prove that PE produces
+an $(\epsilon, \delta)$-DP synthetic dataset with expected 1-Wasserstein
+distance of order $\tilde{O}(d(n\epsilon)^{-1/d})$ from the original,
+establishing worst-case convergence of the algorithm as $n \to \infty$. Our
+analysis extends to general Banach spaces as well. We also connect PE to the
+Private Signed Measure Mechanism, a method for DP synthetic data generation
+that has thus far not seen much practical adoption. We demonstrate the
+practical relevance of our theoretical findings in simulations.",http://arxiv.org/pdf/2506.08312v1,,False

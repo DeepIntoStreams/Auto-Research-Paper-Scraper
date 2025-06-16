@@ -1,0 +1,1440 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+SIMSHIFT: A Benchmark for Adapting Neural Surrogates to Distribution Shifts,13/06/2025,"Paul Setinek, Gianluca Galletti, Thomas Gross, Dominik Schnürer, Johannes Brandstetter, Werner Zellinger","Neural surrogates for Partial Differential Equations (PDEs) often suffer
+significant performance degradation when evaluated on unseen problem
+configurations, such as novel material types or structural dimensions.
+Meanwhile, Domain Adaptation (DA) techniques have been widely used in vision
+and language processing to generalize from limited information about unseen
+configurations. In this work, we address this gap through two focused
+contributions. First, we introduce SIMSHIFT, a novel benchmark dataset and
+evaluation suite composed of four industrial simulation tasks: hot rolling,
+sheet metal forming, electric motor design and heatsink design. Second, we
+extend established domain adaptation methods to state of the art neural
+surrogates and systematically evaluate them. These approaches use parametric
+descriptions and ground truth simulations from multiple source configurations,
+together with only parametric descriptions from target configurations. The goal
+is to accurately predict target simulations without access to ground truth
+simulation data. Extensive experiments on SIMSHIFT highlight the challenges of
+out of distribution neural surrogate modeling, demonstrate the potential of DA
+in simulation, and reveal open problems in achieving robust neural surrogates
+under distribution shifts in industrially relevant scenarios. Our codebase is
+available at https://github.com/psetinek/simshift",http://arxiv.org/pdf/2506.12007v1,,False
+pLSTM: parallelizable Linear Source Transition Mark networks,13/06/2025,"Korbinian Pöppel, Richard Freinschlag, Thomas Schmied, Wei Lin, Sepp Hochreiter","Modern recurrent architectures, such as xLSTM and Mamba, have recently
+challenged the Transformer in language modeling. However, their structure
+constrains their applicability to sequences only or requires processing
+multi-dimensional data structures, such as images or molecular graphs, in a
+pre-defined sequential order. In contrast, Multi-Dimensional RNNs (MDRNNs) are
+well suited for data with a higher level structure, like 2D grids, trees, and
+directed acyclic graphs (DAGs). In this work, we extend the notion of
+multi-dimensionality to linear RNNs. We introduce parallelizable Linear Source
+Transition Mark networks (pLSTMs) using Source, Transition, and Mark gates that
+act on the line graph of a general DAG. This enables parallelization in analogy
+to parallel associative scans and the chunkwise-recurrent form of sequential
+linear RNNs, but for DAGs. For regular grids (1D and 2D), like images, this
+scheme can be efficiently implemented using einsum operations, concatenations,
+and padding in logarithmic time. pLSTMs tackle the vanishing/exploding
+activation/gradient problem for long distances in DAGs via two distinct modes:
+a directed propagation mode (P-mode) and a diffusive distribution mode
+(D-mode). To showcase the long-range capabilities of pLSTM, we introduce
+arrow-pointing extrapolation as a synthetic computer vision task that contains
+long-distance directional information. We demonstrate that pLSTMs generalize
+well to larger image sizes, whereas Transformers struggle to extrapolate. On
+established molecular graph and computer vision benchmarks, pLSTMs also show
+strong performance. Code and Datasets are available at:
+https://github.com/ml-jku/plstm_experiments.",http://arxiv.org/pdf/2506.11997v1,,False
+Self-Regulating Cars: Automating Traffic Control in Free Flow Road Networks,13/06/2025,"Ankit Bhardwaj, Rohail Asim, Sachin Chauhan, Yasir Zaki, Lakshminarayanan Subramanian","Free-flow road networks, such as suburban highways, are increasingly
+experiencing traffic congestion due to growing commuter inflow and limited
+infrastructure. Traditional control mechanisms, such as traffic signals or
+local heuristics, are ineffective or infeasible in these high-speed,
+signal-free environments. We introduce self-regulating cars, a reinforcement
+learning-based traffic control protocol that dynamically modulates vehicle
+speeds to optimize throughput and prevent congestion, without requiring new
+physical infrastructure. Our approach integrates classical traffic flow theory,
+gap acceptance models, and microscopic simulation into a physics-informed RL
+framework. By abstracting roads into super-segments, the agent captures
+emergent flow dynamics and learns robust speed modulation policies from
+instantaneous traffic observations. Evaluated in the high-fidelity PTV Vissim
+simulator on a real-world highway network, our method improves total throughput
+by 5%, reduces average delay by 13%, and decreases total stops by 3% compared
+to the no-control setting. It also achieves smoother, congestion-resistant flow
+while generalizing across varied traffic patterns, demonstrating its potential
+for scalable, ML-driven traffic management.",http://arxiv.org/pdf/2506.11973v1,,False
+Spectra-to-Structure and Structure-to-Spectra Inference Across the Periodic Table,13/06/2025,"Yufeng Wang, Peiyao Wang, Lu Ma, Yuewei Lin, Qun Liu, Haibin Ling","X-ray Absorption Spectroscopy (XAS) is a powerful technique for probing local
+atomic environments, yet its interpretation remains limited by the need for
+expert-driven analysis, computationally expensive simulations, and
+element-specific heuristics. Recent advances in machine learning have shown
+promise for accelerating XAS interpretation, but many existing models are
+narrowly focused on specific elements, edge types, or spectral regimes. In this
+work, we present XAStruct, a learning framework capable of both predicting XAS
+spectra from crystal structures and inferring local structural descriptors from
+XAS input. XAStruct is trained on a large-scale dataset spanning over 70
+elements across the periodic table, enabling generalization to a wide variety
+of chemistries and bonding environments. The model includes the first machine
+learning approach for predicting neighbor atom types directly from XAS spectra,
+as well as a unified regression model for mean nearest-neighbor distance that
+requires no element-specific tuning. While we explored integrating the two
+pipelines into a single end-to-end model, empirical results showed performance
+degradation. As a result, the two tasks were trained independently to ensure
+optimal accuracy and task-specific performance. By combining deep neural
+networks for complex structure-property mappings with efficient baseline models
+for simpler tasks, XAStruct offers a scalable and extensible solution for
+data-driven XAS analysis and local structure inference. The source code will be
+released upon paper acceptance.",http://arxiv.org/pdf/2506.11908v1,,False
+Enter: Graduated Realism: A Pedagogical Framework for AI-Powered Avatars in Virtual Reality Teacher Training,13/06/2025,Judson Leroy Dean Haynes IV,"Virtual Reality simulators offer a powerful tool for teacher training, yet
+the integration of AI-powered student avatars presents a critical challenge:
+determining the optimal level of avatar realism for effective pedagogy. This
+literature review examines the evolution of avatar realism in VR teacher
+training, synthesizes its theoretical implications, and proposes a new
+pedagogical framework to guide future design. Through a systematic review, this
+paper traces the progression from human-controlled avatars to generative AI
+prototypes. Applying learning theories like Cognitive Load Theory, we argue
+that hyper-realism is not always optimal, as high-fidelity avatars can impose
+excessive extraneous cognitive load on novices, a stance supported by recent
+empirical findings. A significant gap exists between the technological drive
+for photorealism and the pedagogical need for scaffolded learning. To address
+this gap, we propose Graduated Realism, a framework advocating for starting
+trainees with lower-fidelity avatars and progressively increasing behavioral
+complexity as skills develop. To make this computationally feasible, we outline
+a novel single-call architecture, Crazy Slots, which uses a probabilistic
+engine and a Retrieval-Augmented Generation database to generate authentic,
+real-time responses without the latency and cost of multi-step reasoning
+models. This review provides evidence-based principles for designing the next
+generation of AI simulators, arguing that a pedagogically grounded approach to
+realism is essential for creating scalable and effective teacher education
+tools.",http://arxiv.org/pdf/2506.11890v1,,False
+Persona-driven Simulation of Voting Behavior in the European Parliament with Large Language Models,13/06/2025,"Maximilian Kreutner, Marlene Lutz, Markus Strohmaier","Large Language Models (LLMs) display remarkable capabilities to understand or
+even produce political discourse, but have been found to consistently display a
+progressive left-leaning bias. At the same time, so-called persona or identity
+prompts have been shown to produce LLM behavior that aligns with socioeconomic
+groups that the base model is not aligned with. In this work, we analyze
+whether zero-shot persona prompting with limited information can accurately
+predict individual voting decisions and, by aggregation, accurately predict
+positions of European groups on a diverse set of policies. We evaluate if
+predictions are stable towards counterfactual arguments, different persona
+prompts and generation methods. Finally, we find that we can simulate voting
+behavior of Members of the European Parliament reasonably well with a weighted
+F1 score of approximately 0.793. Our persona dataset of politicians in the 2024
+European Parliament and our code are available at
+https://github.com/dess-mannheim/european_parliament_simulation.",http://arxiv.org/pdf/2506.11798v1,,False
+Why Do Class-Dependent Evaluation Effects Occur with Time Series Feature Attributions? A Synthetic Data Investigation,13/06/2025,"Gregor Baer, Isel Grau, Chao Zhang, Pieter Van Gorp","Evaluating feature attribution methods represents a critical challenge in
+explainable AI (XAI), as researchers typically rely on perturbation-based
+metrics when ground truth is unavailable. However, recent work demonstrates
+that these evaluation metrics can show different performance across predicted
+classes within the same dataset. These ""class-dependent evaluation effects""
+raise questions about whether perturbation analysis reliably measures
+attribution quality, with direct implications for XAI method development and
+the trustworthiness of evaluation techniques. We investigate under which
+conditions these class-dependent effects arise by conducting controlled
+experiments with synthetic time series data where ground truth feature
+locations are known. We systematically vary feature types and class contrasts
+across binary classification tasks, then compare perturbation-based degradation
+scores with ground truth-based precision-recall metrics using multiple
+attribution methods. Our experiments demonstrate that class-dependent effects
+emerge with both evaluation approaches even in simple scenarios with temporally
+localized features, triggered by basic variations in feature amplitude or
+temporal extent between classes. Most critically, we find that
+perturbation-based and ground truth metrics frequently yield contradictory
+assessments of attribution quality across classes, with weak correlations
+between evaluation approaches. These findings suggest that researchers should
+interpret perturbation-based metrics with care, as they may not always align
+with whether attributions correctly identify discriminating features. These
+findings reveal opportunities to reconsider what attribution evaluation
+actually measures and to develop more comprehensive evaluation frameworks that
+capture multiple dimensions of attribution quality.",http://arxiv.org/pdf/2506.11790v1,,False
+Long-Short Alignment for Effective Long-Context Modeling in LLMs,13/06/2025,"Tianqi Du, Haotian Huang, Yifei Wang, Yisen Wang","Large language models (LLMs) have exhibited impressive performance and
+surprising emergent properties. However, their effectiveness remains limited by
+the fixed context window of the transformer architecture, posing challenges for
+long-context modeling. Among these challenges, length generalization -- the
+ability to generalize to sequences longer than those seen during training -- is
+a classical and fundamental problem. In this work, we propose a fresh
+perspective on length generalization, shifting the focus from the conventional
+emphasis on input features such as positional encodings or data structures to
+the output distribution of the model. Specifically, through case studies on
+synthetic tasks, we highlight the critical role of \textbf{long-short
+alignment} -- the consistency of output distributions across sequences of
+varying lengths. Extending this insight to natural language tasks, we propose a
+metric called Long-Short Misalignment to quantify this phenomenon, uncovering a
+strong correlation between the metric and length generalization performance.
+Building on these findings, we develop a regularization term that promotes
+long-short alignment during training. Extensive experiments validate the
+effectiveness of our approach, offering new insights for achieving more
+effective long-context modeling in LLMs. Code is available at
+https://github.com/PKU-ML/LongShortAlignment.",http://arxiv.org/pdf/2506.11769v1,,False
+On the performance of multi-fidelity and reduced-dimensional neural emulators for inference of physiologic boundary conditions,13/06/2025,"Chloe H. Choi, Andrea Zanoni, Daniele E. Schiavazzi, Alison L. Marsden","Solving inverse problems in cardiovascular modeling is particularly
+challenging due to the high computational cost of running high-fidelity
+simulations. In this work, we focus on Bayesian parameter estimation and
+explore different methods to reduce the computational cost of sampling from the
+posterior distribution by leveraging low-fidelity approximations. A common
+approach is to construct a surrogate model for the high-fidelity simulation
+itself. Another is to build a surrogate for the discrepancy between high- and
+low-fidelity models. This discrepancy, which is often easier to approximate, is
+modeled with either a fully connected neural network or a nonlinear
+dimensionality reduction technique that enables surrogate construction in a
+lower-dimensional space. A third possible approach is to treat the discrepancy
+between the high-fidelity and surrogate models as random noise and estimate its
+distribution using normalizing flows. This allows us to incorporate the
+approximation error into the Bayesian inverse problem by modifying the
+likelihood function. We validate five different methods which are variations of
+the above on analytical test cases by comparing them to posterior distributions
+derived solely from high-fidelity models, assessing both accuracy and
+computational cost. Finally, we demonstrate our approaches on two
+cardiovascular examples of increasing complexity: a lumped-parameter Windkessel
+model and a patient-specific three-dimensional anatomy.",http://arxiv.org/pdf/2506.11683v1,,False
+DaMO: A Data-Efficient Multimodal Orchestrator for Temporal Reasoning with Video LLMs,13/06/2025,"Bo-Cheng Chiu, Jen-Jee Chen, Yu-Chee Tseng, Feng-Chi Chen","Large Language Models (LLMs) have recently been extended to the video domain,
+enabling sophisticated video-language understanding. However, existing Video
+LLMs often exhibit limitations in fine-grained temporal reasoning, restricting
+their ability to precisely attribute responses to specific video moments,
+especially under constrained supervision. We introduce DaMO, a data-efficient
+Video LLM explicitly designed for accurate temporal reasoning and multimodal
+understanding. At its core, the proposed Temporal-aware Fuseformer employs a
+hierarchical dual-stream architecture that progressively captures temporal
+dynamics within each modality and effectively fuses complementary visual and
+audio information. To further enhance computational efficiency, DaMO integrates
+a global residual that reduces spatial redundancy while preserving essential
+semantic details. We train DaMO via a structured four-stage progressive
+training paradigm, incrementally equipping the model with multimodal alignment,
+semantic grounding, and temporal reasoning capabilities. This work also
+contributes multiple datasets augmented from existing ones with GPT-generated
+temporally grounded QA pairs for tasks requiring temporal supervision.
+Comprehensive experiments on temporal grounding and video QA benchmarks
+demonstrate that DaMO consistently surpasses prior methods, particularly in
+tasks demanding precise temporal alignment and reasoning. Our work establishes
+a promising direction for data-efficient video-language modeling.",http://arxiv.org/pdf/2506.11558v1,,False
+Robust Filtering -- Novel Statistical Learning and Inference Algorithms with Applications,13/06/2025,Aamir Hussain Chughtai,"State estimation or filtering serves as a fundamental task to enable
+intelligent decision-making in applications such as autonomous vehicles,
+robotics, healthcare monitoring, smart grids, intelligent transportation, and
+predictive maintenance. Standard filtering assumes prior knowledge of noise
+statistics to extract latent system states from noisy sensor data. However,
+real-world scenarios involve abnormalities like outliers, biases, drifts, and
+missing observations with unknown or partially known statistics, limiting
+conventional approaches. This thesis presents novel robust nonlinear filtering
+methods to mitigate these challenges. Based on insights from our filtering
+proposals, we extend the formulations to offline estimation/learning setups and
+propose smoothing extensions. Our methods leverage Bayesian inference
+frameworks, employing both deterministic and stochastic approximation
+techniques including Variational Inference (VI) and Particle Filters/Sequential
+Monte Carlo (SMC). We also study theoretical estimation limits using Bayesian
+Cram\'er-Rao bounds (BCRBs) in the context of measurement abnormalities. To
+validate the performance gains of the proposed methods, we perform simulations
+and experiments in scenarios including target tracking, indoor localization, 3D
+point cloud registration, mesh registration, and pose graph optimization. The
+fundamental nature of the work makes it useful in diverse applications, with
+possible future extensions toward developing outlier-robust machine learning
+pipelines, learning system dynamics from anomalous data, and addressing
+challenges in generative AI where standard diffusion models struggle with
+outliers, imbalanced datasets, and mode collapse.",http://arxiv.org/pdf/2506.11530v1,,False
+Foundation Models in Autonomous Driving: A Survey on Scenario Generation and Scenario Analysis,13/06/2025,"Yuan Gao, Mattia Piccinini, Yuchen Zhang, Dingrui Wang, Korbinian Moller, Roberto Brusnicki, Baha Zarrouki, Alessio Gambi, Jan Frederik Totz, Kai Storms, Steven Peters, Andrea Stocco, Bassam Alrifaee, Marco Pavone, Johannes Betz","For autonomous vehicles, safe navigation in complex environments depends on
+handling a broad range of diverse and rare driving scenarios. Simulation- and
+scenario-based testing have emerged as key approaches to development and
+validation of autonomous driving systems. Traditional scenario generation
+relies on rule-based systems, knowledge-driven models, and data-driven
+synthesis, often producing limited diversity and unrealistic safety-critical
+cases. With the emergence of foundation models, which represent a new
+generation of pre-trained, general-purpose AI models, developers can process
+heterogeneous inputs (e.g., natural language, sensor data, HD maps, and control
+actions), enabling the synthesis and interpretation of complex driving
+scenarios. In this paper, we conduct a survey about the application of
+foundation models for scenario generation and scenario analysis in autonomous
+driving (as of May 2025). Our survey presents a unified taxonomy that includes
+large language models, vision-language models, multimodal large language
+models, diffusion models, and world models for the generation and analysis of
+autonomous driving scenarios. In addition, we review the methodologies,
+open-source datasets, simulation platforms, and benchmark challenges, and we
+examine the evaluation metrics tailored explicitly to scenario generation and
+analysis. Finally, the survey concludes by highlighting the open challenges and
+research questions, and outlining promising future research directions. All
+reviewed papers are listed in a continuously maintained repository, which
+contains supplementary materials and is available at
+https://github.com/TUM-AVS/FM-for-Scenario-Generation-Analysis.",http://arxiv.org/pdf/2506.11526v1,,False
+Fast Bayesian Optimization of Function Networks with Partial Evaluations,13/06/2025,"Poompol Buathong, Peter I. Frazier","Bayesian optimization of function networks (BOFN) is a framework for
+optimizing expensive-to-evaluate objective functions structured as networks,
+where some nodes' outputs serve as inputs for others. Many real-world
+applications, such as manufacturing and drug discovery, involve function
+networks with additional properties - nodes that can be evaluated independently
+and incur varying costs. A recent BOFN variant, p-KGFN, leverages this
+structure and enables cost-aware partial evaluations, selectively querying only
+a subset of nodes at each iteration. p-KGFN reduces the number of expensive
+objective function evaluations needed but has a large computational overhead:
+choosing where to evaluate requires optimizing a nested Monte Carlo-based
+acquisition function for each node in the network. To address this, we propose
+an accelerated p-KGFN algorithm that reduces computational overhead with only a
+modest loss in query efficiency. Key to our approach is generation of
+node-specific candidate inputs for each node in the network via one inexpensive
+global Monte Carlo simulation. Numerical experiments show that our method
+maintains competitive query efficiency while achieving up to a 16x speedup over
+the original p-KGFN algorithm.",http://arxiv.org/pdf/2506.11456v1,,False
+Resolve Highway Conflict in Multi-Autonomous Vehicle Controls with Local State Attention,13/06/2025,"Xuan Duy Ta, Bang Giang Le, Thanh Ha Le, Viet Cuong Ta","In mixed-traffic environments, autonomous vehicles must adapt to
+human-controlled vehicles and other unusual driving situations. This setting
+can be framed as a multi-agent reinforcement learning (MARL) environment with
+full cooperative reward among the autonomous vehicles. While methods such as
+Multi-agent Proximal Policy Optimization can be effective in training MARL
+tasks, they often fail to resolve local conflict between agents and are unable
+to generalize to stochastic events. In this paper, we propose a Local State
+Attention module to assist the input state representation. By relying on the
+self-attention operator, the module is expected to compress the essential
+information of nearby agents to resolve the conflict in traffic situations.
+Utilizing a simulated highway merging scenario with the priority vehicle as the
+unexpected event, our approach is able to prioritize other vehicles'
+information to manage the merging process. The results demonstrate significant
+improvements in merging efficiency compared to popular baselines, especially in
+high-density traffic settings.",http://arxiv.org/pdf/2506.11445v1,,False
+PPDiff: Diffusing in Hybrid Sequence-Structure Space for Protein-Protein Complex Design,13/06/2025,"Zhenqiao Song, Tiaoxiao Li, Lei Li, Martin Renqiang Min","Designing protein-binding proteins with high affinity is critical in
+biomedical research and biotechnology. Despite recent advancements targeting
+specific proteins, the ability to create high-affinity binders for arbitrary
+protein targets on demand, without extensive rounds of wet-lab testing, remains
+a significant challenge. Here, we introduce PPDiff, a diffusion model to
+jointly design the sequence and structure of binders for arbitrary protein
+targets in a non-autoregressive manner. PPDiffbuilds upon our developed
+Sequence Structure Interleaving Network with Causal attention layers (SSINC),
+which integrates interleaved self-attention layers to capture global amino acid
+correlations, k-nearest neighbor (kNN) equivariant graph layers to model local
+interactions in three-dimensional (3D) space, and causal attention layers to
+simplify the intricate interdependencies within the protein sequence. To assess
+PPDiff, we curate PPBench, a general protein-protein complex dataset comprising
+706,360 complexes from the Protein Data Bank (PDB). The model is pretrained on
+PPBenchand finetuned on two real-world applications: target-protein mini-binder
+complex design and antigen-antibody complex design. PPDiffconsistently
+surpasses baseline methods, achieving success rates of 50.00%, 23.16%, and
+16.89% for the pretraining task and the two downstream applications,
+respectively.",http://arxiv.org/pdf/2506.11420v1,,False
+Node Splitting SVMs for Survival Trees Based on an L2-Regularized Dipole Splitting Criteria,13/06/2025,"Aye Aye Maung, Drew Lazar, Qi Zheng","This paper proposes a novel, node-splitting support vector machine (SVM) for
+creating survival trees. This approach is capable of non-linearly partitioning
+survival data which includes continuous, right-censored outcomes. Our method
+improves on an existing non-parametric method, which uses at most oblique
+splits to induce survival regression trees. In the prior work, these oblique
+splits were created via a non-SVM approach, by minimizing a piece-wise linear
+objective, called a dipole splitting criterion, constructed from pairs of
+covariates and their associated survival information. We extend this method by
+enabling splits from a general class of non-linear surfaces. We achieve this by
+ridge regularizing the dipole-splitting criterion to enable application of
+kernel methods in a manner analogous to classical SVMs. The ridge
+regularization provides robustness and can be tuned. Using various kernels, we
+induce both linear and non-linear survival trees to compare their sizes and
+predictive powers on real and simulated data sets. We compare traditional
+univariate log-rank splits, oblique splits using the original dipole-splitting
+criterion and a variety of non-linear splits enabled by our method. In these
+tests, trees created by non-linear splits, using polynomial and Gaussian
+kernels show similar predictive power while often being of smaller sizes
+compared to trees created by univariate and oblique splits. This approach
+provides a novel and flexible array of survival trees that can be applied to
+diverse survival data sets.",http://arxiv.org/pdf/2506.11416v1,,False
+Time-Varying Home Field Advantage in Football: Learning from a Non-Stationary Causal Process,13/06/2025,"Minhao Qi, Hengrui Cai, Guanyu Hu, Weining Shen","In sports analytics, home field advantage is a robust phenomenon where the
+home team wins more games than the away team. However, discovering the causal
+factors behind home field advantage presents unique challenges due to the
+non-stationary, time-varying environment of sports matches. In response, we
+propose a novel causal discovery method, DYnamic Non-stAtionary local
+M-estimatOrs (DYNAMO), to learn the time-varying causal structures of home
+field advantage. DYNAMO offers flexibility by integrating various loss
+functions, making it practical for learning linear and non-linear causal
+structures from a general class of non-stationary causal processes. By
+leveraging local information, we provide theoretical guarantees for the
+identifiability and estimation consistency of non-stationary causal structures
+without imposing additional assumptions. Simulation studies validate the
+efficacy of DYNAMO in recovering time-varying causal structures. We apply our
+method to high-resolution event data from the 2020-2021 and 2021-2022 English
+Premier League seasons, during which the former season had no audience
+presence. Our results reveal intriguing, time-varying, team-specific field
+advantages influenced by referee bias, which differ significantly with and
+without crowd support. Furthermore, the time-varying causal structures learned
+by our method improve goal prediction accuracy compared to existing methods.",http://arxiv.org/pdf/2506.11399v1,,False
+Coefficient Shape Transfer Learning for Functional Linear Regression,13/06/2025,"Shuhao Jiao, Ian W. Mckeague, N. -H. Chan","In this paper, we develop a novel transfer learning methodology to tackle the
+challenge of data scarcity in functional linear models. The methodology
+incorporates samples from the target model (target domain) alongside those from
+auxiliary models (source domains), transferring knowledge of coefficient shape
+from the source domains to the target domain. This shape-based knowledge
+transfer offers two key advantages. First, it is robust to covariate scaling,
+ensuring effectiveness despite variations in data distributions across
+different source domains. Second, the notion of coefficient shape homogeneity
+represents a meaningful advance beyond traditional coefficient homogeneity,
+allowing the method to exploit a wider range of source domains and achieve
+significantly improved model estimation. We rigorously analyze the convergence
+rates of the proposed estimator and examine the minimax optimality. Our
+findings show that the degree of improvement depends not only on the similarity
+of coefficient shapes between the target and source domains, but also on
+coefficient magnitudes and the spectral decay rates of the functional
+covariates covariance operators. To address situations where only a subset of
+auxiliary models is informative for the target model, we further develop a
+data-driven procedure for identifying such informative sources. The
+effectiveness of the proposed methodology is demonstrated through comprehensive
+simulation studies and an application to occupation time analysis using
+physical activity data from the U.S. National Health and Nutrition Examination
+Survey.",http://arxiv.org/pdf/2506.11367v1,,False
+TARDIS STRIDE: A Spatio-Temporal Road Image Dataset for Exploration and Autonomy,12/06/2025,"Héctor Carrión, Yutong Bai, Víctor A. Hernández Castro, Kishan Panaganti, Ayush Zenith, Matthew Trang, Tony Zhang, Pietro Perona, Jitendra Malik","World models aim to simulate environments and enable effective agent
+behavior. However, modeling real-world environments presents unique challenges
+as they dynamically change across both space and, crucially, time. To capture
+these composed dynamics, we introduce a Spatio-Temporal Road Image Dataset for
+Exploration (STRIDE) permuting 360-degree panoramic imagery into rich
+interconnected observation, state and action nodes. Leveraging this structure,
+we can simultaneously model the relationship between egocentric views,
+positional coordinates, and movement commands across both space and time. We
+benchmark this dataset via TARDIS, a transformer-based generative world model
+that integrates spatial and temporal dynamics through a unified autoregressive
+framework trained on STRIDE. We demonstrate robust performance across a range
+of agentic tasks such as controllable photorealistic image synthesis,
+instruction following, autonomous self-control, and state-of-the-art
+georeferencing. These results suggest a promising direction towards
+sophisticated generalist agents--capable of understanding and manipulating the
+spatial and temporal aspects of their material environments--with enhanced
+embodied reasoning capabilities. Training code, datasets, and model checkpoints
+are made available at https://huggingface.co/datasets/Tera-AI/STRIDE.",http://arxiv.org/pdf/2506.11302v1,,False
+Shapley Machine: A Game-Theoretic Framework for N-Agent Ad Hoc Teamwork,12/06/2025,"Jianhong Wang, Yang Li, Samuel Kaski, Jonathan Lawry","Open multi-agent systems are increasingly important in modeling real-world
+applications, such as smart grids, swarm robotics, etc. In this paper, we aim
+to investigate a recently proposed problem for open multi-agent systems,
+referred to as n-agent ad hoc teamwork (NAHT), where only a number of agents
+are controlled. Existing methods tend to be based on heuristic design and
+consequently lack theoretical rigor and ambiguous credit assignment among
+agents. To address these limitations, we model and solve NAHT through the lens
+of cooperative game theory. More specifically, we first model an open
+multi-agent system, characterized by its value, as an instance situated in a
+space of cooperative games, generated by a set of basis games. We then extend
+this space, along with the state space, to accommodate dynamic scenarios,
+thereby characterizing NAHT. Exploiting the justifiable assumption that basis
+game values correspond to a sequence of n-step returns with different horizons,
+we represent the state values for NAHT in a form similar to $\lambda$-returns.
+Furthermore, we derive Shapley values to allocate state values to the
+controlled agents, as credits for their contributions to the ad hoc team.
+Different from the conventional approach to shaping Shapley values in an
+explicit form, we shape Shapley values by fulfilling the three axioms uniquely
+describing them, well defined on the extended game space describing NAHT. To
+estimate Shapley values in dynamic scenarios, we propose a TD($\lambda$)-like
+algorithm. The resulting reinforcement learning (RL) algorithm is referred to
+as Shapley Machine. To our best knowledge, this is the first time that the
+concepts from cooperative game theory are directly related to RL concepts. In
+experiments, we demonstrate the effectiveness of Shapley Machine and verify
+reasonableness of our theory.",http://arxiv.org/pdf/2506.11285v1,,False
+Invocable APIs derived from NL2SQL datasets for LLM Tool-Calling Evaluation,12/06/2025,"Benjamin Elder, Anupama Murthi, Jungkoo Kang, Ankita Rajaram Naik, Kiran Kate, Kinjal Basu, Danish Contractor","Large language models (LLMs) are routinely deployed as agentic systems, with
+access to tools that interact with live environments to accomplish tasks. In
+enterprise deployments these systems need to interact with API collections that
+can be extremely large and complex, often backed by databases. In order to
+create datasets with such characteristics, we explore how existing NL2SQL
+(Natural Language to SQL query) datasets can be used to automatically create
+NL2API datasets. Specifically, this work describes a novel data generation
+pipeline that exploits the syntax of SQL queries to construct a functionally
+equivalent sequence of API calls. We apply this pipeline to one of the largest
+NL2SQL datasets, BIRD-SQL to create a collection of over 2500 APIs that can be
+served as invocable tools or REST-endpoints. We pair natural language queries
+from BIRD-SQL to ground-truth API sequences based on this API pool. We use this
+collection to study the performance of 10 public LLMs and find that all models
+struggle to determine the right set of tools (consisting of tasks of intent
+detection, sequencing with nested function calls, and slot-filling). We find
+that models have extremely low task completion rates (7-47 percent - depending
+on the dataset) which marginally improves to 50 percent when models are
+employed as ReACT agents that interact with the live API environment. The best
+task completion rates are far below what may be required for effective
+general-use tool-calling agents, suggesting substantial scope for improvement
+in current state-of-the-art tool-calling LLMs. We also conduct detailed
+ablation studies, such as assessing the impact of the number of tools available
+as well as the impact of tool and slot-name obfuscation. We compare the
+performance of models on the original SQL generation tasks and find that
+current models are sometimes able to exploit SQL better than APIs.",http://arxiv.org/pdf/2506.11266v1,,False
+Gondola: Grounded Vision Language Planning for Generalizable Robotic Manipulation,12/06/2025,"Shizhe Chen, Ricardo Garcia, Paul Pacaud, Cordelia Schmid","Robotic manipulation faces a significant challenge in generalizing across
+unseen objects, environments and tasks specified by diverse language
+instructions. To improve generalization capabilities, recent research has
+incorporated large language models (LLMs) for planning and action execution.
+While promising, these methods often fall short in generating grounded plans in
+visual environments. Although efforts have been made to perform visual
+instructional tuning on LLMs for robotic manipulation, existing methods are
+typically constrained by single-view image input and struggle with precise
+object grounding. In this work, we introduce Gondola, a novel grounded
+vision-language planning model based on LLMs for generalizable robotic
+manipulation. Gondola takes multi-view images and history plans to produce the
+next action plan with interleaved texts and segmentation masks of target
+objects and locations. To support the training of Gondola, we construct three
+types of datasets using the RLBench simulator, namely robot grounded planning,
+multi-view referring expression and pseudo long-horizon task datasets. Gondola
+outperforms the state-of-the-art LLM-based method across all four
+generalization levels of the GemBench dataset, including novel placements,
+rigid objects, articulated objects and long-horizon tasks.",http://arxiv.org/pdf/2506.11261v1,,False
+Can Time-Series Foundation Models Perform Building Energy Management Tasks?,12/06/2025,"Ozan Baris Mulayim, Pengrui Quan, Liying Han, Xiaomin Ouyang, Dezhi Hong, Mario Bergés, Mani Srivastava","Building energy management (BEM) tasks require processing and learning from a
+variety of time-series data. Existing solutions rely on bespoke task- and
+data-specific models to perform these tasks, limiting their broader
+applicability. Inspired by the transformative success of Large Language Models
+(LLMs), Time-Series Foundation Models (TSFMs), trained on diverse datasets,
+have the potential to change this. Were TSFMs to achieve a level of
+generalizability across tasks and contexts akin to LLMs, they could
+fundamentally address the scalability challenges pervasive in BEM. To
+understand where they stand today, we evaluate TSFMs across four dimensions:
+(1) generalizability in zero-shot univariate forecasting, (2) forecasting with
+covariates for thermal behavior modeling, (3) zero-shot representation learning
+for classification tasks, and (4) robustness to performance metrics and varying
+operational conditions. Our results reveal that TSFMs exhibit \emph{limited}
+generalizability, performing only marginally better than statistical models on
+unseen datasets and modalities for univariate forecasting. Similarly, inclusion
+of covariates in TSFMs does not yield performance improvements, and their
+performance remains inferior to conventional models that utilize covariates.
+While TSFMs generate effective zero-shot representations for downstream
+classification tasks, they may remain inferior to statistical models in
+forecasting when statistical models perform test-time fitting. Moreover, TSFMs
+forecasting performance is sensitive to evaluation metrics, and they struggle
+in more complex building environments compared to statistical models. These
+findings underscore the need for targeted advancements in TSFM design,
+particularly their handling of covariates and incorporating context and
+temporal dynamics into prediction mechanisms, to develop more adaptable and
+scalable solutions for BEM.",http://arxiv.org/pdf/2506.11250v1,,False
+SpectralAR: Spectral Autoregressive Visual Generation,12/06/2025,"Yuanhui Huang, Weiliang Chen, Wenzhao Zheng, Yueqi Duan, Jie Zhou, Jiwen Lu","Autoregressive visual generation has garnered increasing attention due to its
+scalability and compatibility with other modalities compared with diffusion
+models. Most existing methods construct visual sequences as spatial patches for
+autoregressive generation. However, image patches are inherently parallel,
+contradicting the causal nature of autoregressive modeling. To address this, we
+propose a Spectral AutoRegressive (SpectralAR) visual generation framework,
+which realizes causality for visual sequences from the spectral perspective.
+Specifically, we first transform an image into ordered spectral tokens with
+Nested Spectral Tokenization, representing lower to higher frequency
+components. We then perform autoregressive generation in a coarse-to-fine
+manner with the sequences of spectral tokens. By considering different levels
+of detail in images, our SpectralAR achieves both sequence causality and token
+efficiency without bells and whistles. We conduct extensive experiments on
+ImageNet-1K for image reconstruction and autoregressive generation, and
+SpectralAR achieves 3.02 gFID with only 64 tokens and 310M parameters. Project
+page: https://huang-yh.github.io/spectralar/.",http://arxiv.org/pdf/2506.10962v1,,False
+Coupled reaction and diffusion governing interface evolution in solid-state batteries,12/06/2025,"Jingxuan Ding, Laura Zichi, Matteo Carli, Menghang Wang, Albert Musaelian, Yu Xie, Boris Kozinsky","Understanding and controlling the atomistic-level reactions governing the
+formation of the solid-electrolyte interphase (SEI) is crucial for the
+viability of next-generation solid state batteries. However, challenges persist
+due to difficulties in experimentally characterizing buried interfaces and
+limits in simulation speed and accuracy. We conduct large-scale explicit
+reactive simulations with quantum accuracy for a symmetric battery cell,
+{\symcell}, enabled by active learning and deep equivariant neural network
+interatomic potentials. To automatically characterize the coupled reactions and
+interdiffusion at the interface, we formulate and use unsupervised
+classification techniques based on clustering in the space of local atomic
+environments. Our analysis reveals the formation of a previously unreported
+crystalline disordered phase, Li$_2$S$_{0.72}$P$_{0.14}$Cl$_{0.14}$, in the
+SEI, that evaded previous predictions based purely on thermodynamics,
+underscoring the importance of explicit modeling of full reaction and transport
+kinetics. Our simulations agree with and explain experimental observations of
+the SEI formations and elucidate the Li creep mechanisms, critical to dendrite
+initiation, characterized by significant Li motion along the interface. Our
+approach is to crease a digital twin from first principles, without adjustable
+parameters fitted to experiment. As such, it offers capabilities to gain
+insights into atomistic dynamics governing complex heterogeneous processes in
+solid-state synthesis and electrochemistry.",http://arxiv.org/pdf/2506.10944v1,,False
+VINCIE: Unlocking In-context Image Editing from Video,12/06/2025,"Leigang Qu, Feng Cheng, Ziyan Yang, Qi Zhao, Shanchuan Lin, Yichun Shi, Yicong Li, Wenjie Wang, Tat-Seng Chua, Lu Jiang","In-context image editing aims to modify images based on a contextual sequence
+comprising text and previously generated images. Existing methods typically
+depend on task-specific pipelines and expert models (e.g., segmentation and
+inpainting) to curate training data. In this work, we explore whether an
+in-context image editing model can be learned directly from videos. We
+introduce a scalable approach to annotate videos as interleaved multimodal
+sequences. To effectively learn from this data, we design a block-causal
+diffusion transformer trained on three proxy tasks: next-image prediction,
+current segmentation prediction, and next-segmentation prediction.
+Additionally, we propose a novel multi-turn image editing benchmark to advance
+research in this area. Extensive experiments demonstrate that our model
+exhibits strong in-context image editing capabilities and achieves
+state-of-the-art results on two multi-turn image editing benchmarks. Despite
+being trained exclusively on videos, our model also shows promising abilities
+in multi-concept composition, story generation, and chain-of-editing
+applications.",http://arxiv.org/pdf/2506.10941v1,,False
+Sequential-Parallel Duality in Prefix Scannable Models,12/06/2025,"Morris Yau, Sharut Gupta, Valerie Engelmayer, Kazuki Irie, Stefanie Jegelka, Jacob Andreas","Modern neural sequence models are designed to meet the dual mandate of
+parallelizable training and fast sequential inference. Recent developments have
+given rise to various models, such as Gated Linear Attention (GLA) and Mamba,
+that achieve such ``sequential-parallel duality.'' This raises a natural
+question: can we characterize the full class of neural sequence models that
+support near-constant-time parallel evaluation and linear-time, constant-space
+sequential inference? We begin by describing a broad class of such models --
+state space models -- as those whose state updates can be computed using the
+classic parallel prefix scan algorithm with a custom associative aggregation
+operator. We then define a more general class, Prefix-Scannable Models (PSMs),
+by relaxing the state aggregation operator to allow arbitrary (potentially
+non-associative) functions such as softmax attention. This generalization
+unifies many existing architectures, including element-wise RNNs (e.g., Mamba)
+and linear transformers (e.g., GLA, Mamba2, mLSTM), while also introducing new
+models with softmax-like operators that achieve O(1) amortized compute per
+token and log(N) memory for sequence length N. We empirically evaluate such
+models on illustrative small-scale language modeling and canonical synthetic
+tasks, including state tracking and associative recall. Empirically, we find
+that PSMs retain the expressivity of transformer-based architectures while
+matching the inference efficiency of state space models -- in some cases
+exhibiting better length generalization than either.",http://arxiv.org/pdf/2506.10918v1,,False
+M4V: Multi-Modal Mamba for Text-to-Video Generation,12/06/2025,"Jiancheng Huang, Gengwei Zhang, Zequn Jie, Siyu Jiao, Yinlong Qian, Ling Chen, Yunchao Wei, Lin Ma","Text-to-video generation has significantly enriched content creation and
+holds the potential to evolve into powerful world simulators. However, modeling
+the vast spatiotemporal space remains computationally demanding, particularly
+when employing Transformers, which incur quadratic complexity in sequence
+processing and thus limit practical applications. Recent advancements in
+linear-time sequence modeling, particularly the Mamba architecture, offer a
+more efficient alternative. Nevertheless, its plain design limits its direct
+applicability to multi-modal and spatiotemporal video generation tasks. To
+address these challenges, we introduce M4V, a Multi-Modal Mamba framework for
+text-to-video generation. Specifically, we propose a multi-modal diffusion
+Mamba (MM-DiM) block that enables seamless integration of multi-modal
+information and spatiotemporal modeling through a multi-modal token
+re-composition design. As a result, the Mamba blocks in M4V reduce FLOPs by 45%
+compared to the attention-based alternative when generating videos at
+768$\times$1280 resolution. Additionally, to mitigate the visual quality
+degradation in long-context autoregressive generation processes, we introduce a
+reward learning strategy that further enhances per-frame visual realism.
+Extensive experiments on text-to-video benchmarks demonstrate M4V's ability to
+produce high-quality videos while significantly lowering computational costs.
+Code and models will be publicly available at
+https://huangjch526.github.io/M4V_project.",http://arxiv.org/pdf/2506.10915v1,,False
+GenPlanX. Generation of Plans and Execution,12/06/2025,"Daniel Borrajo, Giuseppe Canonaco, Tomás de la Rosa, Alfredo Garrachón, Sriram Gopalakrishnan, Simerjot Kaur, Marianela Morales, Sunandita Patra, Alberto Pozanco, Keshav Ramani, Charese Smiley, Pietro Totis, Manuela Veloso","Classical AI Planning techniques generate sequences of actions for complex
+tasks. However, they lack the ability to understand planning tasks when
+provided using natural language. The advent of Large Language Models (LLMs) has
+introduced novel capabilities in human-computer interaction. In the context of
+planning tasks, LLMs have shown to be particularly good in interpreting human
+intents among other uses. This paper introduces GenPlanX that integrates LLMs
+for natural language-based description of planning tasks, with a classical AI
+planning engine, alongside an execution and monitoring framework. We
+demonstrate the efficacy of GenPlanX in assisting users with office-related
+tasks, highlighting its potential to streamline workflows and enhance
+productivity through seamless human-AI collaboration.",http://arxiv.org/pdf/2506.10897v1,,False
+Data-Driven Prediction of Dynamic Interactions Between Robot Appendage and Granular Material,12/06/2025,"Guanjin Wang, Xiangxue Zhao, Shapour Azarm, Balakumar Balachandran","An alternative data-driven modeling approach has been proposed and employed
+to gain fundamental insights into robot motion interaction with granular
+terrain at certain length scales. The approach is based on an integration of
+dimension reduction (Sequentially Truncated Higher-Order Singular Value
+Decomposition), surrogate modeling (Gaussian Process), and data assimilation
+techniques (Reduced Order Particle Filter). This approach can be used online
+and is based on offline data, obtained from the offline collection of
+high-fidelity simulation data and a set of sparse experimental data. The
+results have shown that orders of magnitude reduction in computational time can
+be obtained from the proposed data-driven modeling approach compared with
+physics-based high-fidelity simulations. With only simulation data as input,
+the data-driven prediction technique can generate predictions that have
+comparable accuracy as simulations. With both simulation data and sparse
+physical experimental measurement as input, the data-driven approach with its
+embedded data assimilation techniques has the potential in outperforming only
+high-fidelity simulations for the long-horizon predictions. In addition, it is
+demonstrated that the data-driven modeling approach can also reproduce the
+scaling relationship recovered by physics-based simulations for maximum
+resistive forces, which may indicate its general predictability beyond a
+case-by-case basis. The results are expected to help robot navigation and
+exploration in unknown and complex terrains during both online and offline
+phases.",http://arxiv.org/pdf/2506.10875v1,,False
+Multimodal Modeling of CRISPR-Cas12 Activity Using Foundation Models and Chromatin Accessibility Data,12/06/2025,"Azim Dehghani Amirabad, Yanfei Zhang, Artem Moskalev, Sowmya Rajesh, Tommaso Mansi, Shuwei Li, Mangal Prakash, Rui Liao","Predicting guide RNA (gRNA) activity is critical for effective CRISPR-Cas12
+genome editing but remains challenging due to limited data, variation across
+protospacer adjacent motifs (PAMs-short sequence requirements for Cas binding),
+and reliance on large-scale training. We investigate whether pre-trained
+biological foundation model originally trained on transcriptomic data can
+improve gRNA activity estimation even without domain-specific pre-training.
+Using embeddings from existing RNA foundation model as input to lightweight
+regressor, we show substantial gains over traditional baselines. We also
+integrate chromatin accessibility data to capture regulatory context, improving
+performance further. Our results highlight the effectiveness of pre-trained
+foundation models and chromatin accessibility data for gRNA activity
+prediction.",http://arxiv.org/pdf/2506.11182v1,,False
+A Study on Individual Spatiotemporal Activity Generation Method Using MCP-Enhanced Chain-of-Thought Large Language Models,12/06/2025,"Yu Zhang, Yang Hu, De Wang","Human spatiotemporal behavior simulation is critical for urban planning
+research, yet traditional rule-based and statistical approaches suffer from
+high computational costs, limited generalizability, and poor scalability. While
+large language models (LLMs) show promise as ""world simulators,"" they face
+challenges in spatiotemporal reasoning including limited spatial cognition,
+lack of physical constraint understanding, and group homogenization tendencies.
+This paper introduces a framework integrating chain-of-thought (CoT) reasoning
+with Model Context Protocol (MCP) to enhance LLMs' capability in simulating
+spatiotemporal behaviors that correspond with validation data patterns. The
+methodology combines human-like progressive reasoning through a five-stage
+cognitive framework with comprehensive data processing via six specialized MCP
+tool categories: temporal management, spatial navigation, environmental
+perception, personal memory, social collaboration, and experience evaluation.
+Experiments in Shanghai's Lujiazui district validate the framework's
+effectiveness across 1,000 generated samples. Results demonstrate high
+similarity with real mobile signaling data, achieving generation quality scores
+of 7.86 to 8.36 across different base models. Parallel processing experiments
+show efficiency improvements, with generation times decreasing from 1.30 to
+0.17 minutes per sample when scaling from 2 to 12 processes. This work
+contributes to integrating CoT reasoning with MCP for urban behavior modeling,
+advancing LLMs applications in urban computing and providing a practical
+approach for synthetic mobility data generation. The framework offers a
+foundation for smart city planning, transportation forecasting, and
+participatory urban design applications.",http://arxiv.org/pdf/2506.10853v1,,False
+Grounded Vision-Language Navigation for UAVs with Open-Vocabulary Goal Understanding,12/06/2025,"Yuhang Zhang, Haosheng Yu, Jiaping Xiao, Mir Feroskhan","Vision-and-language navigation (VLN) is a long-standing challenge in
+autonomous robotics, aiming to empower agents with the ability to follow human
+instructions while navigating complex environments. Two key bottlenecks remain
+in this field: generalization to out-of-distribution environments and reliance
+on fixed discrete action spaces. To address these challenges, we propose
+Vision-Language Fly (VLFly), a framework tailored for Unmanned Aerial Vehicles
+(UAVs) to execute language-guided flight. Without the requirement for
+localization or active ranging sensors, VLFly outputs continuous velocity
+commands purely from egocentric observations captured by an onboard monocular
+camera. The VLFly integrates three modules: an instruction encoder based on a
+large language model (LLM) that reformulates high-level language into
+structured prompts, a goal retriever powered by a vision-language model (VLM)
+that matches these prompts to goal images via vision-language similarity, and a
+waypoint planner that generates executable trajectories for real-time UAV
+control. VLFly is evaluated across diverse simulation environments without
+additional fine-tuning and consistently outperforms all baselines. Moreover,
+real-world VLN tasks in indoor and outdoor environments under direct and
+indirect instructions demonstrate that VLFly achieves robust open-vocabulary
+goal understanding and generalized navigation capabilities, even in the
+presence of abstract language input.",http://arxiv.org/pdf/2506.10756v1,,False
+Deep Learning-based Multi Project InP Wafer Simulation for Unsupervised Surface Defect Detection,12/06/2025,"Emílio Dolgener Cantú, Rolf Klemens Wittmann, Oliver Abdeen, Patrick Wagner, Wojciech Samek, Moritz Baier, Sebastian Lapuschkin","Quality management in semiconductor manufacturing often relies on template
+matching with known golden standards. For Indium-Phosphide (InP) multi-project
+wafer manufacturing, low production scale and high design variability lead to
+such golden standards being typically unavailable. Defect detection, in turn,
+is manual and labor-intensive. This work addresses this challenge by proposing
+a methodology to generate a synthetic golden standard using Deep Neural
+Networks, trained to simulate photo-realistic InP wafer images from CAD data.
+We evaluate various training objectives and assess the quality of the simulated
+images on both synthetic data and InP wafer photographs. Our
+deep-learning-based method outperforms a baseline decision-tree-based approach,
+enabling the use of a 'simulated golden die' from CAD plans in any user-defined
+region of a wafer for more efficient defect detection. We apply our method to a
+template matching procedure, to demonstrate its practical utility in surface
+defect detection.",http://arxiv.org/pdf/2506.10713v1,,False
+Pushing the Limits of Extreme Weather: Constructing Extreme Heatwave Storylines with Differentiable Climate Models,12/06/2025,"Tim Whittaker, Alejandro Di Luca","Understanding the plausible upper bounds of extreme weather events is
+essential for risk assessment in a warming climate. Existing methods, based on
+large ensembles of physics-based models, are often computationally expensive or
+lack the fidelity needed to simulate rare, high-impact extremes. Here, we
+present a novel framework that leverages a differentiable hybrid climate model,
+NeuralGCM, to optimize initial conditions and generate physically consistent
+worst-case heatwave trajectories. Applied to the 2021 Pacific Northwest
+heatwave, our method produces temperature anomalies up to 3.7 $^\circ$C above
+the most extreme member of a 75-member ensemble. These trajectories feature
+intensified atmospheric blocking and amplified Rossby wave patterns--hallmarks
+of severe heat events. Our results demonstrate that differentiable climate
+models can efficiently explore the upper tails of event likelihoods, providing
+a powerful new approach for constructing targeted storylines of extreme weather
+under climate change.",http://arxiv.org/pdf/2506.10660v1,,False
+Time Series Forecasting as Reasoning: A Slow-Thinking Approach with Reinforced LLMs,12/06/2025,"Yucong Luo, Yitong Zhou, Mingyue Cheng, Jiahao Wang, Daoyu Wang, Tingyue Pan, Jintao Zhang","To advance time series forecasting (TSF), various methods have been proposed
+to improve prediction accuracy, evolving from statistical techniques to
+data-driven deep learning architectures. Despite their effectiveness, most
+existing methods still adhere to a fast thinking paradigm-relying on extracting
+historical patterns and mapping them to future values as their core modeling
+philosophy, lacking an explicit thinking process that incorporates intermediate
+time series reasoning. Meanwhile, emerging slow-thinking LLMs (e.g., OpenAI-o1)
+have shown remarkable multi-step reasoning capabilities, offering an
+alternative way to overcome these issues. However, prompt engineering alone
+presents several limitations - including high computational cost, privacy
+risks, and limited capacity for in-depth domain-specific time series reasoning.
+To address these limitations, a more promising approach is to train LLMs to
+develop slow thinking capabilities and acquire strong time series reasoning
+skills. For this purpose, we propose Time-R1, a two-stage reinforcement
+fine-tuning framework designed to enhance multi-step reasoning ability of LLMs
+for time series forecasting. Specifically, the first stage conducts supervised
+fine-tuning for warmup adaptation, while the second stage employs reinforcement
+learning to improve the model's generalization ability. Particularly, we design
+a fine-grained multi-objective reward specifically for time series forecasting,
+and then introduce GRIP (group-based relative importance for policy
+optimization), which leverages non-uniform sampling to further encourage and
+optimize the model's exploration of effective reasoning paths. Experiments
+demonstrate that Time-R1 significantly improves forecast performance across
+diverse datasets.",http://arxiv.org/pdf/2506.10630v1,,False
+SDialog: A Python Toolkit for Synthetic Dialogue Generation and Analysis,12/06/2025,"Sergio Burdisso, Esaú Villatoro-Tello, Petr Motlicek","The advancement of conversational AI systems relies on the availability of
+high-quality, flexible, and reproducible synthetic dialogues for training,
+evaluation, and benchmarking. SDialog is a modular, extensible Python toolkit
+designed to address the challenges of synthetic dialogue generation and
+analysis. By leveraging instruction-tuned Large Language Models (LLMs), SDialog
+provides abstractions for personas, orchestration, and scenario management,
+enabling the creation of realistic, diverse, and controllable conversational
+data for research and development. SDialog supports workflows such as
+multi-agent simulation and scenario-driven generation, and represents a step
+forward in the standardization of tools and frameworks for synthetic data
+generation, a crucial advancement for ensuring reproducibility in today's
+fast-evolving research landscape.",http://arxiv.org/pdf/2506.10622v1,,False
+Data Driven Diagnosis for Large Cyber-Physical-Systems with Minimal Prior Information,12/06/2025,"Henrik Sebastian Steude, Alexander Diedrich, Ingo Pill, Lukas Moddemann, Daniel Vranješ, Oliver Niggemann","Diagnostic processes for complex cyber-physical systems often require
+extensive prior knowledge in the form of detailed system models or
+comprehensive training data. However, obtaining such information poses a
+significant challenge. To address this issue, we present a new diagnostic
+approach that operates with minimal prior knowledge, requiring only a basic
+understanding of subsystem relationships and data from nominal operations. Our
+method combines a neural network-based symptom generator, which employs
+subsystem-level anomaly detection, with a new graph diagnosis algorithm that
+leverages minimal causal relationship information between
+subsystems-information that is typically available in practice. Our experiments
+with fully controllable simulated datasets show that our method includes the
+true causal component in its diagnosis set for 82 p.c. of all cases while
+effectively reducing the search space in 73 p.c. of the scenarios. Additional
+tests on the real-world Secure Water Treatment dataset showcase the approach's
+potential for practical scenarios. Our results thus highlight our approach's
+potential for practical applications with large and complex cyber-physical
+systems where limited prior knowledge is available.",http://arxiv.org/pdf/2506.10613v1,,False
+Primender Sequence: A Novel Mathematical Construct for Testing Symbolic Inference and AI Reasoning,12/06/2025,Mohd Anwar Jamal Faiz,"This paper introduces the Primender sequence, a novel integer sequence
+defined by a hybrid rule that combines classical primality with modular
+digit-based conditions. Specifically, a number n is included in the sequence if
+it is prime or ends with a prime number of unit digit or any length. In other
+words, numbers which are primes or have at least one prime suffix. The
+resulting sequence exhibits a deterministic yet non-trivial structure, blending
+number-theoretic properties with symbolic patterning. We propose the Primender
+sequence as a benchmark for evaluating the symbolic reasoning capabilities of
+Large Language Models (LLMs). The study is motivated by the need for
+interpretable, rule-based testbeds that can assess an LLM's ability to infer
+hidden rules, validate mathematical hypotheses, and generalize symbolic logic
+at scale. A key hypothesis explored is: Whenever a number in the Primender
+sequence is exactly one more than the largest prime less than or equal to it,
+the difference between it and the previous number in the sequence is also 1. We
+design a structured prompt and evaluation framework to test this hypothesis
+across multiple state-of-the-art LLMs, including ChatGPT, Copilot, DeepSeek,
+Gemini, Grok, and LLaMA. The models are tasked with identifying the underlying
+rule, validating the hypothesis, and generating the next 100,000 terms of the
+sequence. Comparative metrics such as rule inference accuracy, hypothesis
+evaluation, sequence validity, and symbolic explanation quality are used to
+assess model performance. This work contributes a novel mathematical construct
+and a reproducible methodology for benchmarking LLMs in symbolic reasoning,
+hypothesis testing, and scalable pattern generalization - bridging the domains
+of number theory, artificial intelligence, and software engineering.",http://arxiv.org/pdf/2506.10585v1,,False
+DreamActor-H1: High-Fidelity Human-Product Demonstration Video Generation via Motion-designed Diffusion Transformers,12/06/2025,"Lizhen Wang, Zhurong Xia, Tianshu Hu, Pengrui Wang, Pengfei Wang, Zerong Zheng, Ming Zhou","In e-commerce and digital marketing, generating high-fidelity human-product
+demonstration videos is important for effective product presentation. However,
+most existing frameworks either fail to preserve the identities of both humans
+and products or lack an understanding of human-product spatial relationships,
+leading to unrealistic representations and unnatural interactions. To address
+these challenges, we propose a Diffusion Transformer (DiT)-based framework. Our
+method simultaneously preserves human identities and product-specific details,
+such as logos and textures, by injecting paired human-product reference
+information and utilizing an additional masked cross-attention mechanism. We
+employ a 3D body mesh template and product bounding boxes to provide precise
+motion guidance, enabling intuitive alignment of hand gestures with product
+placements. Additionally, structured text encoding is used to incorporate
+category-level semantics, enhancing 3D consistency during small rotational
+changes across frames. Trained on a hybrid dataset with extensive data
+augmentation strategies, our approach outperforms state-of-the-art techniques
+in maintaining the identity integrity of both humans and products and
+generating realistic demonstration motions. Project page:
+https://submit2025-dream.github.io/DreamActor-H1/.",http://arxiv.org/pdf/2506.10568v1,,False
+On the role of non-linear latent features in bipartite generative neural networks,12/06/2025,"Tony Bonnaire, Giovanni Catania, Aurélien Decelle, Beatriz Seoane","We investigate the phase diagram and memory retrieval capabilities of
+bipartite energy-based neural networks, namely Restricted Boltzmann Machines
+(RBMs), as a function of the prior distribution imposed on their hidden units -
+including binary, multi-state, and ReLU-like activations. Drawing connections
+to the Hopfield model and employing analytical tools from statistical physics
+of disordered systems, we explore how the architectural choices and activation
+functions shape the thermodynamic properties of these models. Our analysis
+reveals that standard RBMs with binary hidden nodes and extensive connectivity
+suffer from reduced critical capacity, limiting their effectiveness as
+associative memories. To address this, we examine several modifications, such
+as introducing local biases and adopting richer hidden unit priors. These
+adjustments restore ordered retrieval phases and markedly improve recall
+performance, even at finite temperatures. Our theoretical findings, supported
+by finite-size Monte Carlo simulations, highlight the importance of hidden unit
+design in enhancing the expressive power of RBMs.",http://arxiv.org/pdf/2506.10552v1,,False
+CogStream: Context-guided Streaming Video Question Answering,12/06/2025,"Zicheng Zhao, Kangyu Wang, Shijie Li, Rui Qian, Weiyao Lin, Huabin Liu","Despite advancements in Video Large Language Models (Vid-LLMs) improving
+multimodal understanding, challenges persist in streaming video reasoning due
+to its reliance on contextual information. Existing paradigms feed all
+available historical contextual information into Vid-LLMs, resulting in a
+significant computational burden for visual data processing. Furthermore, the
+inclusion of irrelevant context distracts models from key details. This paper
+introduces a challenging task called Context-guided Streaming Video Reasoning
+(CogStream), which simulates real-world streaming video scenarios, requiring
+models to identify the most relevant historical contextual information to
+deduce answers for questions about the current stream. To support CogStream, we
+present a densely annotated dataset featuring extensive and hierarchical
+question-answer pairs, generated by a semi-automatic pipeline. Additionally, we
+present CogReasoner as a baseline model. It efficiently tackles this task by
+leveraging visual stream compression and historical dialogue retrieval.
+Extensive experiments prove the effectiveness of this method. Code will be
+released soon.",http://arxiv.org/pdf/2506.10516v1,,False
+Generative Algorithms for Wildfire Progression Reconstruction from Multi-Modal Satellite Active Fire Measurements and Terrain Height,12/06/2025,"Bryan Shaddy, Brianna Binder, Agnimitra Dasgupta, Haitong Qin, James Haley, Angel Farguell, Kyle Hilburn, Derek V. Mallia, Adam Kochanski, Jan Mandel, Assad Oberai","Increasing wildfire occurrence has spurred growing interest in wildfire
+spread prediction. However, even the most complex wildfire models diverge from
+observed progression during multi-day simulations, motivating need for data
+assimilation. A useful approach to assimilating measurement data into complex
+coupled atmosphere-wildfire models is to estimate wildfire progression from
+measurements and use this progression to develop a matching atmospheric state.
+In this study, an approach is developed for estimating fire progression from
+VIIRS active fire measurements, GOES-derived ignition times, and terrain height
+data. A conditional Generative Adversarial Network is trained with simulations
+of historic wildfires from the atmosphere-wildfire model WRF-SFIRE, thus
+allowing incorporation of WRF-SFIRE physics into estimates. Fire progression is
+succinctly represented by fire arrival time, and measurements for training are
+obtained by applying an approximate observation operator to WRF-SFIRE
+solutions, eliminating need for satellite data during training. The model is
+trained on tuples of fire arrival times, measurements, and terrain, and once
+trained leverages measurements of real fires and corresponding terrain data to
+generate samples of fire arrival times. The approach is validated on five
+Pacific US wildfires, with results compared against high-resolution perimeters
+measured via aircraft, finding an average Sorensen-Dice coefficient of 0.81.
+The influence of terrain height on the arrival time inference is also evaluated
+and it is observed that terrain has minimal influence when the inference is
+conditioned on satellite measurements.",http://arxiv.org/pdf/2506.10404v1,,False
+History-Aware Neural Operator: Robust Data-Driven Constitutive Modeling of Path-Dependent Materials,12/06/2025,"Binyao Guo, Zihan Lin, QiZhi He","This study presents an end-to-end learning framework for data-driven modeling
+of path-dependent inelastic materials using neural operators. The framework is
+built on the premise that irreversible evolution of material responses,
+governed by hidden dynamics, can be inferred from observable data.
+  We develop the History-Aware Neural Operator (HANO), an autoregressive model
+that predicts path-dependent material responses from short segments of recent
+strain-stress history without relying on hidden state variables, thereby
+overcoming self-consistency issues commonly encountered in recurrent neural
+network (RNN)-based models. Built on a Fourier-based neural operator backbone,
+HANO enables discretization-invariant learning. To enhance its ability to
+capture both global loading patterns and critical local path dependencies, we
+embed a hierarchical self-attention mechanism that facilitates multiscale
+feature extraction.
+  Beyond ensuring self-consistency, HANO mitigates sensitivity to initial
+hidden states, a commonly overlooked issue that can lead to instability in
+recurrent models when applied to generalized loading paths. By modeling
+stress-strain evolution as a continuous operator rather than relying on fixed
+input-output mappings, HANO naturally accommodates varying path discretizations
+and exhibits robust performance under complex conditions, including irregular
+sampling, multi-cycle loading, noisy data, and pre-stressed states. We evaluate
+HANO on two benchmark problems: elastoplasticity with hardening and progressive
+anisotropic damage in brittle solids. Results show that HANO consistently
+outperforms baseline models in predictive accuracy, generalization, and
+robustness. With its demonstrated capabilities, HANO provides an effective
+data-driven surrogate for simulating inelastic materials and is well-suited for
+integration with classical numerical solvers.",http://arxiv.org/pdf/2506.10352v1,,False
+VQC-MLPNet: An Unconventional Hybrid Quantum-Classical Architecture for Scalable and Robust Quantum Machine Learning,12/06/2025,"Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh","Variational Quantum Circuits (VQCs) offer a novel pathway for quantum machine
+learning, yet their practical application is hindered by inherent limitations
+such as constrained linear expressivity, optimization challenges, and acute
+sensitivity to quantum hardware noise. This work introduces VQC-MLPNet, a
+scalable and robust hybrid quantum-classical architecture designed to overcome
+these obstacles. By innovatively employing quantum circuits to dynamically
+generate parameters for classical Multi-Layer Perceptrons (MLPs) via amplitude
+encoding and parameterized quantum operations, VQC-MLPNet substantially expands
+representation capabilities and augments training stability. We provide
+rigorous theoretical guarantees via statistical learning techniques and Neural
+Tangent Kernel analysis, explicitly deriving upper bounds on approximation,
+uniform deviation, and optimization errors. These theoretical insights
+demonstrate exponential improvements in representation capacity relative to
+quantum circuit depth and the number of qubits, providing clear computational
+advantages over standalone quantum circuits and existing hybrid quantum
+architectures. Our theoretical claims are empirically corroborated through
+extensive experiments, including classifying semiconductor quantum-dot charge
+states and predicting genomic transcription factor binding sites, demonstrating
+resilient performance even under realistic IBM quantum noise simulations. This
+research establishes a theoretically sound and practically robust framework,
+advancing the frontiers of quantum-enhanced learning for unconventional
+computing paradigms in the Noisy Intermediate-Scale Quantum era and beyond.",http://arxiv.org/pdf/2506.10275v1,,False
+Predicting function of evolutionarily implausible DNA sequences,12/06/2025,"Shiyu Jiang, Xuyin Liu, Zitong Jerry Wang","Genomic language models (gLMs) show potential for generating novel,
+functional DNA sequences for synthetic biology, but doing so requires them to
+learn not just evolutionary plausibility, but also sequence-to-function
+relationships. We introduce a set of prediction tasks called Nullsettes, which
+assesses a model's ability to predict loss-of-function mutations created by
+translocating key control elements in synthetic expression cassettes. Across 12
+state-of-the-art models, we find that mutation effect prediction performance
+strongly correlates with the predicted likelihood of the nonmutant.
+Furthermore, the range of likelihood values predictive of strong model
+performance is highly dependent on sequence length. Our work highlights the
+importance of considering both sequence likelihood and sequence length when
+using gLMs for mutation effect prediction.",http://arxiv.org/pdf/2506.10271v1,,False
+Do Language Models Have Bayesian Brains? Distinguishing Stochastic and Deterministic Decision Patterns within Large Language Models,12/06/2025,"Andrea Yaoyun Cui, Pengfei Yu","Language models are essentially probability distributions over token
+sequences. Auto-regressive models generate sentences by iteratively computing
+and sampling from the distribution of the next token. This iterative sampling
+introduces stochasticity, leading to the assumption that language models make
+probabilistic decisions, similar to sampling from unknown distributions.
+Building on this assumption, prior research has used simulated Gibbs sampling,
+inspired by experiments designed to elicit human priors, to infer the priors of
+language models. In this paper, we revisit a critical question: Do language
+models possess Bayesian brains? Our findings show that under certain
+conditions, language models can exhibit near-deterministic decision-making,
+such as producing maximum likelihood estimations, even with a non-zero sampling
+temperature. This challenges the sampling assumption and undermines previous
+methods for eliciting human-like priors. Furthermore, we demonstrate that
+without proper scrutiny, a system with deterministic behavior undergoing
+simulated Gibbs sampling can converge to a ""false prior."" To address this, we
+propose a straightforward approach to distinguish between stochastic and
+deterministic decision patterns in Gibbs sampling, helping to prevent the
+inference of misleading language model priors. We experiment on a variety of
+large language models to identify their decision patterns under various
+circumstances. Our results provide key insights in understanding decision
+making of large language models.",http://arxiv.org/pdf/2506.10268v1,,False
+LaMAGIC2: Advanced Circuit Formulations for Language Model-Based Analog Topology Generation,11/06/2025,"Chen-Chia Chang, Wan-Hsuan Lin, Yikang Shen, Yiran Chen, Xin Zhang","Automation of analog topology design is crucial due to customized
+requirements of modern applications with heavily manual engineering efforts.
+The state-of-the-art work applies a sequence-to-sequence approach and
+supervised finetuning on language models to generate topologies given user
+specifications. However, its circuit formulation is inefficient due to O(|V |2)
+token length and suffers from low precision sensitivity to numeric inputs. In
+this work, we introduce LaMAGIC2, a succinct float-input canonical formulation
+with identifier (SFCI) for language model-based analog topology generation.
+SFCI addresses these challenges by improving component-type recognition through
+identifier-based representations, reducing token length complexity to O(|V |),
+and enhancing numeric precision sensitivity for better performance under tight
+tolerances. Our experiments demonstrate that LaMAGIC2 achieves 34% higher
+success rates under a tight tolerance of 0.01 and 10X lower MSEs compared to a
+prior method. LaMAGIC2 also exhibits better transferability for circuits with
+more vertices with up to 58.5% improvement. These advancements establish
+LaMAGIC2 as a robust framework for analog topology generation.",http://arxiv.org/pdf/2506.10235v1,,False
+Fine-Grained control over Music Generation with Activation Steering,11/06/2025,"Dipanshu Panda, Jayden Koshy Joe, Harshith M R, Swathi Narashiman, Pranay Mathur, Anish Veerakumar, Aniruddh Krishna, Keerthiharan A","We present a method for fine-grained control over music generation through
+inference-time interventions on an autoregressive generative music transformer
+called MusicGen. Our approach enables timbre transfer, style transfer, and
+genre fusion by steering the residual stream using weights of linear probes
+trained on it, or by steering the attention layer activations in a similar
+manner. We observe that modelling this as a regression task provides improved
+performance, hypothesizing that the mean-squared-error better preserve
+meaningful directional information in the activation space. Combined with the
+global conditioning offered by text prompts in MusicGen, our method provides
+both global and local control over music generation. Audio samples illustrating
+our method are available at our demo page.",http://arxiv.org/pdf/2506.10225v1,,False
+"Towards Responsible AI: Advances in Safety, Fairness, and Accountability of Autonomous Systems",11/06/2025,Filip Cano,"Ensuring responsible use of artificial intelligence (AI) has become
+imperative as autonomous systems increasingly influence critical societal
+domains. However, the concept of trustworthy AI remains broad and
+multi-faceted. This thesis advances knowledge in the safety, fairness,
+transparency, and accountability of AI systems. In safety, we extend classical
+deterministic shielding techniques to become resilient against delayed
+observations, enabling practical deployment in real-world conditions. We also
+implement both deterministic and probabilistic safety shields into simulated
+autonomous vehicles to prevent collisions with road users, validating the use
+of these techniques in realistic driving simulators. We introduce fairness
+shields, a novel post-processing approach to enforce group fairness in
+sequential decision-making settings over finite and periodic time horizons. By
+optimizing intervention costs while strictly ensuring fairness constraints,
+this method efficiently balances fairness with minimal interference. For
+transparency and accountability, we propose a formal framework for assessing
+intentional behaviour in probabilistic decision-making agents, introducing
+quantitative metrics of agency and intention quotient. We use these metrics to
+propose a retrospective analysis of intention, useful for determining
+responsibility when autonomous systems cause unintended harm. Finally, we unify
+these contributions through the ``reactive decision-making'' framework,
+providing a general formalization that consolidates previous approaches.
+Collectively, the advancements presented contribute practically to the
+realization of safer, fairer, and more accountable AI systems, laying the
+foundations for future research in trustworthy AI.",http://arxiv.org/pdf/2506.10192v1,,False
+Geometric Regularity in Deterministic Sampling of Diffusion-based Generative Models,11/06/2025,"Defang Chen, Zhenyu Zhou, Can Wang, Siwei Lyu","Diffusion-based generative models employ stochastic differential equations
+(SDEs) and their equivalent probability flow ordinary differential equations
+(ODEs) to establish a smooth transformation between complex high-dimensional
+data distributions and tractable prior distributions. In this paper, we reveal
+a striking geometric regularity in the deterministic sampling dynamics: each
+simulated sampling trajectory lies within an extremely low-dimensional
+subspace, and all trajectories exhibit an almost identical ''boomerang'' shape,
+regardless of the model architecture, applied conditions, or generated content.
+We characterize several intriguing properties of these trajectories,
+particularly under closed-form solutions based on kernel-estimated data
+modeling. We also demonstrate a practical application of the discovered
+trajectory regularity by proposing a dynamic programming-based scheme to better
+align the sampling time schedule with the underlying trajectory structure. This
+simple strategy requires minimal modification to existing ODE-based numerical
+solvers, incurs negligible computational overhead, and achieves superior image
+generation performance, especially in regions with only $5 \sim 10$ function
+evaluations.",http://arxiv.org/pdf/2506.10177v1,,False
+A Navigation Framework Utilizing Vision-Language Models,11/06/2025,"Yicheng Duan, Kaiyu tang","Vision-and-Language Navigation (VLN) presents a complex challenge in embodied
+AI, requiring agents to interpret natural language instructions and navigate
+through visually rich, unfamiliar environments. Recent advances in large
+vision-language models (LVLMs), such as CLIP and Flamingo, have significantly
+improved multimodal understanding but introduced new challenges related to
+computational cost and real-time deployment. In this project, we propose a
+modular, plug-and-play navigation framework that decouples vision-language
+understanding from action planning. By integrating a frozen vision-language
+model, Qwen2.5-VL-7B-Instruct, with lightweight planning logic, we aim to
+achieve flexible, fast, and adaptable navigation without extensive model
+fine-tuning. Our framework leverages prompt engineering, structured history
+management, and a two-frame visual input strategy to enhance decision-making
+continuity across navigation steps. We evaluate our system on the Room-to-Room
+benchmark within the VLN-CE setting using the Matterport3D dataset and
+Habitat-Lab simulation environment. Although our initial results reveal
+challenges in generalizing to unseen environments under strict evaluation
+settings, our modular approach lays a foundation for scalable and efficient
+navigation systems, highlighting promising directions for future improvement
+through enhanced environmental priors and expanded multimodal input
+integration.",http://arxiv.org/pdf/2506.10172v1,,False
+Synthetic Geology -- Structural Geology Meets Deep Learning,11/06/2025,"Simon Ghyselincks, Valeriia Okhmak, Stefano Zampini, George Turkiyyah, David Keyes, Eldad Haber","Visualizing the first few kilometers of the Earth's subsurface, a
+long-standing challenge gating a virtually inexhaustible list of important
+applications, is coming within reach through deep learning. Building on
+techniques of generative artificial intelligence applied to voxelated images,
+we demonstrate a method that extends surface geological data supplemented by
+boreholes to a three-dimensional subsurface region by training a neural
+network. The Earth's land area having been extensively mapped for geological
+features, the bottleneck of this or any related technique is the availability
+of data below the surface. We close this data gap in the development of
+subsurface deep learning by designing a synthetic data-generator process that
+mimics eons of geological activity such as sediment compaction, volcanic
+intrusion, and tectonic dynamics to produce a virtually limitless number of
+samples of the near lithosphere. A foundation model trained on such synthetic
+data is able to generate a 3D image of the subsurface from a previously unseen
+map of surface topography and geology, showing increasing fidelity with
+increasing access to borehole data, depicting such structures as layers,
+faults, folds, dikes, and sills. We illustrate the early promise of the
+combination of a synthetic lithospheric generator with a trained neural network
+model using generative flow matching. Ultimately, such models will be
+fine-tuned on data from applicable campaigns, such as mineral prospecting in a
+given region. Though useful in itself, a regionally fine-tuned models may be
+employed not as an end but as a means: as an AI-based regularizer in a more
+traditional inverse problem application, in which the objective function
+represents the mismatch of additional data with physical models with
+applications in resource exploration, hazard assessment, and geotechnical
+engineering.",http://arxiv.org/pdf/2506.11164v1,,False
+Attention on flow control: transformer-based reinforcement learning for lift regulation in highly disturbed flows,11/06/2025,"Zhecheng Liu, Jeff D. Eldredge","A linear flow control strategy designed for weak disturbances may not remain
+effective in sequences of strong disturbances due to nonlinear interactions,
+but it is sensible to leverage it for developing a better strategy. In the
+present study, we propose a transformer-based reinforcement learning (RL)
+framework to learn an effective control strategy for regulating aerodynamic
+lift in gust sequences via pitch control. The transformer addresses the
+challenge of partial observability from limited surface pressure sensors. We
+demonstrate that the training can be accelerated with two techniques --
+pretraining with an expert policy (here, linear control) and task-level
+transfer learning (here, extending a policy trained on isolated gusts to
+multiple gusts). We show that the learned strategy outperforms the best
+proportional control, with the performance gap widening as the number of gusts
+increases. The control strategy learned in an environment with a small number
+of successive gusts is shown to effectively generalize to an environment with
+an arbitrarily long sequence of gusts. We investigate the pivot configuration
+and show that quarter-chord pitching control can achieve superior lift
+regulation with substantially less control effort compared to mid-chord
+pitching control. Through a decomposition of the lift, we attribute this
+advantage to the dominant added-mass contribution accessible via quarter-chord
+pitching. The success on multiple configurations shows the generalizability of
+the proposed transformer-based RL framework, which offers a promising approach
+to solve more computationally demanding flow control problems when combined
+with the proposed acceleration techniques.",http://arxiv.org/pdf/2506.10153v1,,False
+NnD: Diffusion-based Generation of Physically-Nonnegative Objects,11/06/2025,"Nadav Torem, Tamar Sde-Chen, Yoav Y. Schechner","Most natural objects have inherent complexity and variability. While some
+simple objects can be modeled from first principles, many real-world phenomena,
+such as cloud formation, require computationally expensive simulations that
+limit scalability. This work focuses on a class of physically meaningful,
+nonnegative objects that are computationally tractable but costly to simulate.
+To dramatically reduce computational costs, we propose nonnegative diffusion
+(NnD). This is a learned generative model using score based diffusion. It
+adapts annealed Langevin dynamics to enforce, by design, non-negativity
+throughout iterative scene generation and analysis (inference). NnD trains on
+high-quality physically simulated objects. Once trained, it can be used for
+generation and inference. We demonstrate generation of 3D volumetric clouds,
+comprising inherently nonnegative microphysical fields. Our generated clouds
+are consistent with cloud physics trends. They are effectively not
+distinguished as non-physical by expert perception.",http://arxiv.org/pdf/2506.10112v1,,False
+Patient-Specific Deep Reinforcement Learning for Automatic Replanning in Head-and-Neck Cancer Proton Therapy,11/06/2025,"Malvern Madondo, Yuan Shao, Yingzi Liu, Jun Zhou, Xiaofeng Yang, Zhen Tian","Anatomical changes during intensity-modulated proton therapy (IMPT) for
+head-and-neck cancer (HNC) can shift Bragg peaks, risking tumor underdosing and
+organ-at-risk overdosing. As a result, treatment replanning is often required
+to maintain clinically acceptable treatment quality. However, current manual
+replanning processes are resource-intensive and time-consuming. We propose a
+patient-specific deep reinforcement learning (DRL) framework for automated IMPT
+replanning, with a reward-shaping mechanism based on a $150$-point plan quality
+score addressing competing clinical objectives. We formulate the planning
+process as an RL problem where agents learn control policies to adjust
+optimization priorities, maximizing plan quality. Unlike population-based
+approaches, our framework trains personalized agents for each patient using
+their planning CT (Computed Tomography) and augmented anatomies simulating
+anatomical changes (tumor progression and regression). This patient-specific
+approach leverages anatomical similarities throughout treatment, enabling
+effective plan adaptation. We implemented two DRL algorithms, Deep Q-Network
+and Proximal Policy Optimization, using dose-volume histograms (DVHs) as state
+representations and a $22$-dimensional action space of priority adjustments.
+Evaluation on five HNC patients using actual replanning CT data showed both DRL
+agents improved initial plan scores from $120.63 \pm 21.40$ to $139.78 \pm
+6.84$ (DQN) and $142.74 \pm 5.16$ (PPO), surpassing manual replans generated by
+a human planner ($137.20 \pm 5.58$). Clinical validation confirms that
+improvements translate to better tumor coverage and OAR sparing across diverse
+anatomical changes. This work demonstrates DRL's potential in addressing
+geometric and dosimetric complexities of adaptive proton therapy, offering
+efficient offline adaptation solutions and advancing online adaptive proton
+therapy.",http://arxiv.org/pdf/2506.10073v1,,False
+Flipping Against All Odds: Reducing LLM Coin Flip Bias via Verbalized Rejection Sampling,11/06/2025,"Tim Z. Xiao, Johannes Zenn, Zhen Liu, Weiyang Liu, Robert Bamler, Bernhard Schölkopf","Large language models (LLMs) can often accurately describe probability
+distributions using natural language, yet they still struggle to generate
+faithful samples from them. This mismatch limits their use in tasks requiring
+reliable stochasticity, such as Monte Carlo methods, agent-based simulations,
+and randomized decision-making. We investigate this gap between knowledge and
+sampling in the context of Bernoulli distributions. We introduce Verbalized
+Rejection Sampling (VRS), a natural-language adaptation of classical rejection
+sampling that prompts the LLM to reason about and accept or reject proposed
+samples. Despite relying on the same Bernoulli mechanism internally, VRS
+substantially reduces sampling bias across models. We provide theoretical
+analysis showing that, under mild assumptions, VRS improves over direct
+sampling, with gains attributable to both the algorithm and prompt design. More
+broadly, our results show how classical probabilistic tools can be verbalized
+and embedded into LLM workflows to improve reliability, without requiring
+access to model internals or heavy prompt engineering.",http://arxiv.org/pdf/2506.09998v1,,False
+SAFE: Multitask Failure Detection for Vision-Language-Action Models,11/06/2025,"Qiao Gu, Yuanliang Ju, Shengxiang Sun, Igor Gilitschenski, Haruki Nishimura, Masha Itkina, Florian Shkurti","While vision-language-action models (VLAs) have shown promising robotic
+behaviors across a diverse set of manipulation tasks, they achieve limited
+success rates when deployed on novel tasks out-of-the-box. To allow these
+policies to safely interact with their environments, we need a failure detector
+that gives a timely alert such that the robot can stop, backtrack, or ask for
+help. However, existing failure detectors are trained and tested only on one or
+a few specific tasks, while VLAs require the detector to generalize and detect
+failures also in unseen tasks and novel environments. In this paper, we
+introduce the multitask failure detection problem and propose SAFE, a failure
+detector for generalist robot policies such as VLAs. We analyze the VLA feature
+space and find that VLAs have sufficient high-level knowledge about task
+success and failure, which is generic across different tasks. Based on this
+insight, we design SAFE to learn from VLA internal features and predict a
+single scalar indicating the likelihood of task failure. SAFE is trained on
+both successful and failed rollouts, and is evaluated on unseen tasks. SAFE is
+compatible with different policy architectures. We test it on OpenVLA, $\pi_0$,
+and $\pi_0$-FAST in both simulated and real-world environments extensively. We
+compare SAFE with diverse baselines and show that SAFE achieves
+state-of-the-art failure detection performance and the best trade-off between
+accuracy and detection time using conformal prediction. More qualitative
+results can be found at https://vla-safe.github.io/.",http://arxiv.org/pdf/2506.09937v1,,False
+A Deep Generative Model for the Simulation of Discrete Karst Networks,11/06/2025,"Dany Lauzon, Julien Straubhaar, Philippe Renard","The simulation of discrete karst networks presents a significant challenge
+due to the complexity of the physicochemical processes occurring within various
+geological and hydrogeological contexts over extended periods. This complex
+interplay leads to a wide variety of karst network patterns, each intricately
+linked to specific hydrogeological conditions. We explore a novel approach that
+represents karst networks as graphs and applies graph generative models (deep
+learning techniques) to capture the intricate nature of karst environments. In
+this representation, nodes retain spatial information and properties, while
+edges signify connections between nodes. Our generative process consists of two
+main steps. First, we utilize graph recurrent neural networks (GraphRNN) to
+learn the topological distribution of karst networks. GraphRNN decomposes the
+graph simulation into a sequential generation of nodes and edges, informed by
+previously generated structures. Second, we employ denoising diffusion
+probabilistic models on graphs (G-DDPM) to learn node features (spatial
+coordinates and other properties). G-DDPMs enable the generation of nodes
+features on the graphs produced by the GraphRNN that adhere to the learned
+statistical properties by sampling from the derived probability distribution,
+ensuring that the generated graphs are realistic and capture the essential
+features of the original data. We test our approach using real-world karst
+networks and compare generated subgraphs with actual subgraphs from the
+database, by using geometry and topology metrics. Our methodology allows
+stochastic simulation of discrete karst networks across various types of
+formations, a useful tool for studying the behavior of physical processes such
+as flow and transport.",http://arxiv.org/pdf/2506.09832v1,,False
+"EmoNet-Voice: A Fine-Grained, Expert-Verified Benchmark for Speech Emotion Detection",11/06/2025,"Christoph Schuhmann, Robert Kaczmarczyk, Gollam Rabby, Felix Friedrich, Maurice Kraus, Kourosh Nadi, Huu Nguyen, Kristian Kersting, Sören Auer","The advancement of text-to-speech and audio generation models necessitates
+robust benchmarks for evaluating the emotional understanding capabilities of AI
+systems. Current speech emotion recognition (SER) datasets often exhibit
+limitations in emotional granularity, privacy concerns, or reliance on acted
+portrayals. This paper introduces EmoNet-Voice, a new resource for speech
+emotion detection, which includes EmoNet-Voice Big, a large-scale pre-training
+dataset (featuring over 4,500 hours of speech across 11 voices, 40 emotions,
+and 4 languages), and EmoNet-Voice Bench, a novel benchmark dataset with human
+expert annotations. EmoNet-Voice is designed to evaluate SER models on a
+fine-grained spectrum of 40 emotion categories with different levels of
+intensities. Leveraging state-of-the-art voice generation, we curated synthetic
+audio snippets simulating actors portraying scenes designed to evoke specific
+emotions. Crucially, we conducted rigorous validation by psychology experts who
+assigned perceived intensity labels. This synthetic, privacy-preserving
+approach allows for the inclusion of sensitive emotional states often absent in
+existing datasets. Lastly, we introduce Empathic Insight Voice models that set
+a new standard in speech emotion recognition with high agreement with human
+experts. Our evaluations across the current model landscape exhibit valuable
+findings, such as high-arousal emotions like anger being much easier to detect
+than low-arousal states like concentration.",http://arxiv.org/pdf/2506.09827v1,,False
+Feature Engineering for Agents: An Adaptive Cognitive Architecture for Interpretable ML Monitoring,11/06/2025,"Gusseppe Bravo-Rocca, Peini Liu, Jordi Guitart, Rodrigo M Carrillo-Larco, Ajay Dholakia, David Ellison","Monitoring Machine Learning (ML) models in production environments is
+crucial, yet traditional approaches often yield verbose, low-interpretability
+outputs that hinder effective decision-making. We propose a cognitive
+architecture for ML monitoring that applies feature engineering principles to
+agents based on Large Language Models (LLMs), significantly enhancing the
+interpretability of monitoring outputs. Central to our approach is a Decision
+Procedure module that simulates feature engineering through three key steps:
+Refactor, Break Down, and Compile. The Refactor step improves data
+representation to better capture feature semantics, allowing the LLM to focus
+on salient aspects of the monitoring data while reducing noise and irrelevant
+information. Break Down decomposes complex information for detailed analysis,
+and Compile integrates sub-insights into clear, interpretable outputs. This
+process leads to a more deterministic planning approach, reducing dependence on
+LLM-generated planning, which can sometimes be inconsistent and overly general.
+The combination of feature engineering-driven planning and selective LLM
+utilization results in a robust decision support system, capable of providing
+highly interpretable and actionable insights. Experiments using multiple LLMs
+demonstrate the efficacy of our approach, achieving significantly higher
+accuracy compared to various baselines across several domains.",http://arxiv.org/pdf/2506.09742v1,,False
+TRIDENT: Temporally Restricted Inference via DFA-Enhanced Neural Traversal,11/06/2025,"Vincenzo Collura, Karim Tit, Laura Bussi, Eleonora Giunchiglia, Maxime Cordy","Large Language Models (LLMs) and other neural architectures have achieved
+impressive results across a variety of generative and classification tasks.
+However, they remain fundamentally ill-equipped to ensure that their outputs
+satisfy temporal constraints, such as those expressible in Linear Temporal
+Logic over finite traces (LTLf). In this paper, we introduce TRIDENT: a general
+and model-agnostic inference-time algorithm that guarantees compliance with
+such constraints without requiring any retraining. TRIDENT compiles LTLf
+formulas into a Deterministic Finite Automaton (DFA), which is used to guide a
+constrained variant of beam search. At each decoding step, transitions that
+would lead to constraint violations are masked, while remaining paths are
+dynamically re-ranked based on both the model's probabilities and the DFA's
+acceptance structure. We formally prove that the resulting sequences are
+guaranteed to satisfy the given LTLf constraints, and we empirically
+demonstrate that TRIDENT also improves output quality. We validate our approach
+on two distinct tasks: temporally constrained image-stream classification and
+controlled text generation. In both settings, TRIDENT achieves perfect
+constraint satisfaction, while comparison with the state of the art shows
+improved efficiency and high standard quality metrics.",http://arxiv.org/pdf/2506.09701v1,,False
+DipLLM: Fine-Tuning LLM for Strategic Decision-making in Diplomacy,11/06/2025,"Kaixuan Xu, Jiajun Chai, Sicheng Li, Yuqian Fu, Yuanheng Zhu, Dongbin Zhao","Diplomacy is a complex multiplayer game that requires both cooperation and
+competition, posing significant challenges for AI systems. Traditional methods
+rely on equilibrium search to generate extensive game data for training, which
+demands substantial computational resources. Large Language Models (LLMs) offer
+a promising alternative, leveraging pre-trained knowledge to achieve strong
+performance with relatively small-scale fine-tuning. However, applying LLMs to
+Diplomacy remains challenging due to the exponential growth of possible action
+combinations and the intricate strategic interactions among players. To address
+this challenge, we propose DipLLM, a fine-tuned LLM-based agent that learns
+equilibrium policies for Diplomacy. DipLLM employs an autoregressive
+factorization framework to simplify the complex task of multi-unit action
+assignment into a sequence of unit-level decisions. By defining an equilibrium
+policy within this framework as the learning objective, we fine-tune the model
+using only 1.5% of the data required by the state-of-the-art Cicero model,
+surpassing its performance. Our results demonstrate the potential of fine-tuned
+LLMs for tackling complex strategic decision-making in multiplayer games.",http://arxiv.org/pdf/2506.09655v1,,False
+HopaDIFF: Holistic-Partial Aware Fourier Conditioned Diffusion for Referring Human Action Segmentation in Multi-Person Scenarios,11/06/2025,"Kunyu Peng, Junchao Huang, Xiangsheng Huang, Di Wen, Junwei Zheng, Yufan Chen, Kailun Yang, Jiamin Wu, Chongqing Hao, Rainer Stiefelhagen","Action segmentation is a core challenge in high-level video understanding,
+aiming to partition untrimmed videos into segments and assign each a label from
+a predefined action set. Existing methods primarily address single-person
+activities with fixed action sequences, overlooking multi-person scenarios. In
+this work, we pioneer textual reference-guided human action segmentation in
+multi-person settings, where a textual description specifies the target person
+for segmentation. We introduce the first dataset for Referring Human Action
+Segmentation, i.e., RHAS133, built from 133 movies and annotated with 137
+fine-grained actions with 33h video data, together with textual descriptions
+for this new task. Benchmarking existing action recognition methods on RHAS133
+using VLM-based feature extractors reveals limited performance and poor
+aggregation of visual cues for the target person. To address this, we propose a
+holistic-partial aware Fourier-conditioned diffusion framework, i.e., HopaDIFF,
+leveraging a novel cross-input gate attentional xLSTM to enhance
+holistic-partial long-range reasoning and a novel Fourier condition to
+introduce more fine-grained control to improve the action segmentation
+generation. HopaDIFF achieves state-of-the-art results on RHAS133 in diverse
+evaluation settings. The code is available at
+https://github.com/KPeng9510/HopaDIFF.git.",http://arxiv.org/pdf/2506.09650v1,,False
+Neural Functions for Learning Periodic Signal,11/06/2025,"Woojin Cho, Minju Jo, Kookjin Lee, Noseong Park","As function approximators, deep neural networks have served as an effective
+tool to represent various signal types. Recent approaches utilize multi-layer
+perceptrons (MLPs) to learn a nonlinear mapping from a coordinate to its
+corresponding signal, facilitating the learning of continuous neural
+representations from discrete data points. Despite notable successes in
+learning diverse signal types, coordinate-based MLPs often face issues of
+overfitting and limited generalizability beyond the training region, resulting
+in subpar extrapolation performance. This study addresses scenarios where the
+underlying true signals exhibit periodic properties, either spatially or
+temporally. We propose a novel network architecture, which extracts periodic
+patterns from measurements and leverages this information to represent the
+signal, thereby enhancing generalization and improving extrapolation
+performance. We demonstrate the efficacy of the proposed method through
+comprehensive experiments, including the learning of the periodic solutions for
+differential equations, and time series imputation (interpolation) and
+forecasting (extrapolation) on real-world datasets.",http://arxiv.org/pdf/2506.09526v1,,False
+LLM-Powered CPI Prediction Inference with Online Text Time Series,11/06/2025,"Yingying Fan, Jinchi Lv, Ao Sun, Yurou Wang","Forecasting the Consumer Price Index (CPI) is an important yet challenging
+task in economics, where most existing approaches rely on low-frequency,
+survey-based data. With the recent advances of large language models (LLMs),
+there is growing potential to leverage high-frequency online text data for
+improved CPI prediction, an area still largely unexplored. This paper proposes
+LLM-CPI, an LLM-based approach for CPI prediction inference incorporating
+online text time series. We collect a large set of high-frequency online texts
+from a popularly used Chinese social network site and employ LLMs such as
+ChatGPT and the trained BERT models to construct continuous inflation labels
+for posts that are related to inflation. Online text embeddings are extracted
+via LDA and BERT. We develop a joint time series framework that combines
+monthly CPI data with LLM-generated daily CPI surrogates. The monthly model
+employs an ARX structure combining observed CPI data with text embeddings and
+macroeconomic variables, while the daily model uses a VARX structure built on
+LLM-generated CPI surrogates and text embeddings. We establish the asymptotic
+properties of the method and provide two forms of constructed prediction
+intervals. The finite-sample performance and practical advantages of LLM-CPI
+are demonstrated through both simulation and real data examples.",http://arxiv.org/pdf/2506.09516v1,,False
+TransXSSM: A Hybrid Transformer State Space Model with Unified Rotary Position Embedding,11/06/2025,"Bingheng Wu, Jingze Shi, Yifan Wu, Nan Tang, Yuyu Luo","Transformers exhibit proficiency in capturing long-range dependencies,
+whereas State Space Models (SSMs) facilitate linear-time sequence modeling.
+Notwithstanding their synergistic potential, the integration of these
+architectures presents a significant challenge, primarily attributable to a
+fundamental incongruity in their respective positional encoding mechanisms:
+Transformers rely on explicit Rotary Position Embeddings (RoPE), while SSMs
+leverage implicit positional representations via convolutions. This divergence
+often precipitates discontinuities and suboptimal performance. To address this
+impediment, we propose a unified rotary position embedding (Unified RoPE)
+methodology, thereby establishing a consistent positional encoding framework
+for both self-attention and state-space components. Using this Unified RoPE, we
+introduce TransXSSM, a hybrid architecture that coherently integrates the
+Transformer and SSM layers under this unified positional encoding scheme. At a
+4K sequence length, TransXSSM exhibits training and inference speeds that are
+42.3\% and 29.5\% faster, respectively, relative to standard Transformer
+models. It also delivers higher accuracy: under comparable settings, it
+surpasses a Transformer baseline by over 4\% on language modeling
+benchmarks.TransXSSM furthermore scales more effectively: TransXSSM-1.3B gains
+7.22\% in average accuracy over its 320M version (versus about 6\% gains for
+equivalent Transformers or SSMs). Our results show that unified positional
+encoding resolves positional incompatibility in hybrid models, enabling
+efficient, high-performance long-context modeling.",http://arxiv.org/pdf/2506.09507v2,,False
+EnerBridge-DPO: Energy-Guided Protein Inverse Folding with Markov Bridges and Direct Preference Optimization,11/06/2025,"Dingyi Rong, Haotian Lu, Wenzhuo Zheng, Fan Zhang, Shuangjia Zheng, Ning Liu","Designing protein sequences with optimal energetic stability is a key
+challenge in protein inverse folding, as current deep learning methods are
+primarily trained by maximizing sequence recovery rates, often neglecting the
+energy of the generated sequences. This work aims to overcome this limitation
+by developing a model that directly generates low-energy, stable protein
+sequences. We propose EnerBridge-DPO, a novel inverse folding framework focused
+on generating low-energy, high-stability protein sequences. Our core innovation
+lies in: First, integrating Markov Bridges with Direct Preference Optimization
+(DPO), where energy-based preferences are used to fine-tune the Markov Bridge
+model. The Markov Bridge initiates optimization from an information-rich prior
+sequence, providing DPO with a pool of structurally plausible sequence
+candidates. Second, an explicit energy constraint loss is introduced, which
+enhances the energy-driven nature of DPO based on prior sequences, enabling the
+model to effectively learn energy representations from a wealth of prior
+knowledge and directly predict sequence energy values, thereby capturing
+quantitative features of the energy landscape. Our evaluations demonstrate that
+EnerBridge-DPO can design protein complex sequences with lower energy while
+maintaining sequence recovery rates comparable to state-of-the-art models, and
+accurately predicts $\Delta \Delta G$ values between various sequences.",http://arxiv.org/pdf/2506.09496v1,,False
+Improving the performance of optical inverse design of multilayer thin films using CNN-LSTM tandem neural networks,11/06/2025,"Uijun Jung, Deokho Jang, Sungchul Kim, Jungho Kim","Optical properties of thin film are greatly influenced by the thickness of
+each layer. Accurately predicting these thicknesses and their corresponding
+optical properties is important in the optical inverse design of thin films.
+However, traditional inverse design methods usually demand extensive numerical
+simulations and optimization procedures, which are time-consuming. In this
+paper, we utilize deep learning for the inverse design of the transmission
+spectra of SiO2/TiO2 multilayer thin films. We implement a tandem neural
+network (TNN), which can solve the one-to-many mapping problem that greatly
+degrades the performance of deep-learning-based inverse designs. In general,
+the TNN has been implemented by a back-to-back connection of an inverse neural
+network and a pre-trained forward neural network, both of which have been
+implemented based on multilayer perceptron (MLP) algorithms. In this paper, we
+propose to use not only MLP, but also convolutional neural network (CNN) or
+long short-term memory (LSTM) algorithms in the configuration of the TNN. We
+show that an LSTM-LSTM-based TNN yields the highest accuracy but takes the
+longest training time among nine configurations of TNNs. We also find that a
+CNN-LSTM-based TNN will be an optimal solution in terms of accuracy and speed
+because it could integrate the strengths of the CNN and LSTM algorithms.",http://arxiv.org/pdf/2506.10044v1,,False
+A theoretical basis for model collapse in recursive training,11/06/2025,Vivek Shripad Borkar,"It is known that recursive training from generative models can lead to the so
+called `collapse' of the simulated probability distribution. This note shows
+that one in fact gets two different asymptotic behaviours depending on whether
+an external source, howsoever minor, is also contributing samples.",http://arxiv.org/pdf/2506.09401v1,,False
+Bipedal Balance Control with Whole-body Musculoskeletal Standing and Falling Simulations,11/06/2025,"Chengtian Ma, Yunyue Wei, Chenhui Zuo, Chen Zhang, Yanan Sui","Balance control is important for human and bipedal robotic systems. While
+dynamic balance during locomotion has received considerable attention,
+quantitative understanding of static balance and falling remains limited. This
+work presents a hierarchical control pipeline for simulating human balance via
+a comprehensive whole-body musculoskeletal system. We identified spatiotemporal
+dynamics of balancing during stable standing, revealed the impact of muscle
+injury on balancing behavior, and generated fall contact patterns that aligned
+with clinical data. Furthermore, our simulated hip exoskeleton assistance
+demonstrated improvement in balance maintenance and reduced muscle effort under
+perturbation. This work offers unique muscle-level insights into human balance
+dynamics that are challenging to capture experimentally. It could provide a
+foundation for developing targeted interventions for individuals with balance
+impairments and support the advancement of humanoid robotic systems.",http://arxiv.org/pdf/2506.09383v1,,False
+Anomaly Detection and Generation with Diffusion Models: A Survey,11/06/2025,"Yang Liu, Jing Liu, Chengfang Li, Rui Xi, Wenchao Li, Liang Cao, Jin Wang, Laurence T. Yang, Junsong Yuan, Wei Zhou","Anomaly detection (AD) plays a pivotal role across diverse domains, including
+cybersecurity, finance, healthcare, and industrial manufacturing, by
+identifying unexpected patterns that deviate from established norms in
+real-world data. Recent advancements in deep learning, specifically diffusion
+models (DMs), have sparked significant interest due to their ability to learn
+complex data distributions and generate high-fidelity samples, offering a
+robust framework for unsupervised AD. In this survey, we comprehensively review
+anomaly detection and generation with diffusion models (ADGDM), presenting a
+tutorial-style analysis of the theoretical foundations and practical
+implementations and spanning images, videos, time series, tabular, and
+multimodal data. Crucially, unlike existing surveys that often treat anomaly
+detection and generation as separate problems, we highlight their inherent
+synergistic relationship. We reveal how DMs enable a reinforcing cycle where
+generation techniques directly address the fundamental challenge of anomaly
+data scarcity, while detection methods provide critical feedback to improve
+generation fidelity and relevance, advancing both capabilities beyond their
+individual potential. A detailed taxonomy categorizes ADGDM methods based on
+anomaly scoring mechanisms, conditioning strategies, and architectural designs,
+analyzing their strengths and limitations. We final discuss key challenges
+including scalability and computational efficiency, and outline promising
+future directions such as efficient architectures, conditioning strategies, and
+integration with foundation models (e.g., visual-language models and large
+language models). By synthesizing recent advances and outlining open research
+questions, this survey aims to guide researchers and practitioners in
+leveraging DMs for innovative AD solutions across diverse applications.",http://arxiv.org/pdf/2506.09368v1,,False
+"""Is This Really a Human Peer Supporter?"": Misalignments Between Peer Supporters and Experts in LLM-Supported Interactions",11/06/2025,"Kellie Yu Hui Sim, Roy Ka-Wei Lee, Kenny Tsu Wei Choo","Mental health is a growing global concern, prompting interest in AI-driven
+solutions to expand access to psychosocial support. Peer support, grounded in
+lived experience, offers a valuable complement to professional care. However,
+variability in training, effectiveness, and definitions raises concerns about
+quality, consistency, and safety. Large Language Models (LLMs) present new
+opportunities to enhance peer support interactions, particularly in real-time,
+text-based interactions. We present and evaluate an AI-supported system with an
+LLM-simulated distressed client, context-sensitive LLM-generated suggestions,
+and real-time emotion visualisations. 2 mixed-methods studies with 12 peer
+supporters and 5 mental health professionals (i.e., experts) examined the
+system's effectiveness and implications for practice. Both groups recognised
+its potential to enhance training and improve interaction quality. However, we
+found a key tension emerged: while peer supporters engaged meaningfully,
+experts consistently flagged critical issues in peer supporter responses, such
+as missed distress cues and premature advice-giving. This misalignment
+highlights potential limitations in current peer support training, especially
+in emotionally charged contexts where safety and fidelity to best practices are
+essential. Our findings underscore the need for standardised, psychologically
+grounded training, especially as peer support scales globally. They also
+demonstrate how LLM-supported systems can scaffold this development--if
+designed with care and guided by expert oversight. This work contributes to
+emerging conversations on responsible AI integration in mental health and the
+evolving role of LLMs in augmenting peer-delivered care.",http://arxiv.org/pdf/2506.09354v1,,False
+Autoregressive Adversarial Post-Training for Real-Time Interactive Video Generation,11/06/2025,"Shanchuan Lin, Ceyuan Yang, Hao He, Jianwen Jiang, Yuxi Ren, Xin Xia, Yang Zhao, Xuefeng Xiao, Lu Jiang","Existing large-scale video generation models are computationally intensive,
+preventing adoption in real-time and interactive applications. In this work, we
+propose autoregressive adversarial post-training (AAPT) to transform a
+pre-trained latent video diffusion model into a real-time, interactive video
+generator. Our model autoregressively generates a latent frame at a time using
+a single neural function evaluation (1NFE). The model can stream the result to
+the user in real time and receive interactive responses as controls to generate
+the next latent frame. Unlike existing approaches, our method explores
+adversarial training as an effective paradigm for autoregressive generation.
+This not only allows us to design an architecture that is more efficient for
+one-step generation while fully utilizing the KV cache, but also enables
+training the model in a student-forcing manner that proves to be effective in
+reducing error accumulation during long video generation. Our experiments
+demonstrate that our 8B model achieves real-time, 24fps, streaming video
+generation at 736x416 resolution on a single H100, or 1280x720 on 8xH100 up to
+a minute long (1440 frames). Visit our research website at
+https://seaweed-apt.com/2",http://arxiv.org/pdf/2506.09350v1,,False
+Natural Language Guided Ligand-Binding Protein Design,11/06/2025,"Zhenqiao Song, Ramith Hettiarachchi, Chuan Li, Jianwen Xie, Lei Li","Can AI protein models follow human language instructions and design proteins
+with desired functions (e.g. binding to a ligand)? Designing proteins that bind
+to a given ligand is crucial in a wide range of applications in biology and
+chemistry. Most prior AI models are trained on protein-ligand complex data,
+which is scarce due to the high cost and time requirements of laboratory
+experiments. In contrast, there is a substantial body of human-curated text
+descriptions about protein-ligand interactions and ligand formula. In this
+paper, we propose InstructPro, a family of protein generative models that
+follow natural language instructions to design ligand-binding proteins. Given a
+textual description of the desired function and a ligand formula in SMILES,
+InstructPro generates protein sequences that are functionally consistent with
+the specified instructions. We develop the model architecture, training
+strategy, and a large-scale dataset, InstructProBench, to support both training
+and evaluation. InstructProBench consists of 9,592,829 triples of (function
+description, ligand formula, protein sequence). We train two model variants:
+InstructPro-1B (with 1 billion parameters) and InstructPro-3B~(with 3 billion
+parameters). Both variants consistently outperform strong baselines, including
+ProGen2, ESM3, and Pinal. Notably, InstructPro-1B achieves the highest docking
+success rate (81.52% at moderate confidence) and the lowest average root mean
+square deviation (RMSD) compared to ground truth structures (4.026{\AA}).
+InstructPro-3B further descreases the average RMSD to 2.527{\AA}, demonstrating
+InstructPro's ability to generate ligand-binding proteins that align with the
+functional specifications.",http://arxiv.org/pdf/2506.09332v1,,False

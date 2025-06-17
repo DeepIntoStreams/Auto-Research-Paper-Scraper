@@ -1,0 +1,458 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"Evaluating Large Language Models for Phishing Detection, Self-Consistency, Faithfulness, and Explainability",16/06/2025,"Shova Kuikel, Aritran Piplai, Palvi Aggarwal","Phishing attacks remain one of the most prevalent and persistent
+cybersecurity threat with attackers continuously evolving and intensifying
+tactics to evade the general detection system. Despite significant advances in
+artificial intelligence and machine learning, faithfully reproducing the
+interpretable reasoning with classification and explainability that underpin
+phishing judgments remains challenging. Due to recent advancement in Natural
+Language Processing, Large Language Models (LLMs) show a promising direction
+and potential for improving domain specific phishing classification tasks.
+However, enhancing the reliability and robustness of classification models
+requires not only accurate predictions from LLMs but also consistent and
+trustworthy explanations aligning with those predictions. Therefore, a key
+question remains: can LLMs not only classify phishing emails accurately but
+also generate explanations that are reliably aligned with their predictions and
+internally self-consistent? To answer these questions, we have fine-tuned
+transformer based models, including BERT, Llama models, and Wizard, to improve
+domain relevance and make them more tailored to phishing specific distinctions,
+using Binary Sequence Classification, Contrastive Learning (CL) and Direct
+Preference Optimization (DPO). To that end, we examined their performance in
+phishing classification and explainability by applying the ConsistenCy measure
+based on SHAPley values (CC SHAP), which measures prediction explanation token
+alignment to test the model's internal faithfulness and consistency and uncover
+the rationale behind its predictions and reasoning. Overall, our findings show
+that Llama models exhibit stronger prediction explanation token alignment with
+higher CC SHAP scores despite lacking reliable decision making accuracy,
+whereas Wizard achieves better prediction accuracy but lower CC SHAP scores.",http://arxiv.org/pdf/2506.13746v1,,False
+TimeMaster: Training Time-Series Multimodal LLMs to Reason via Reinforcement Learning,16/06/2025,"Junru Zhang, Lang Feng, Xu Guo, Yuhan Wu, Yabo Dong, Duanqing Xu","Time-series reasoning remains a significant challenge in multimodal large
+language models (MLLMs) due to the dynamic temporal patterns, ambiguous
+semantics, and lack of temporal priors. In this work, we introduce TimeMaster,
+a reinforcement learning (RL)-based method that enables time-series MLLMs to
+perform structured, interpretable reasoning directly over visualized
+time-series inputs and task prompts. TimeMaster adopts a three-part structured
+output format, reasoning, classification, and domain-specific extension, and is
+optimized via a composite reward function that aligns format adherence,
+prediction accuracy, and open-ended insight quality. The model is trained using
+a two-stage pipeline: we first apply supervised fine-tuning (SFT) to establish
+a good initialization, followed by Group Relative Policy Optimization (GRPO) at
+the token level to enable stable and targeted reward-driven improvement in
+time-series reasoning. We evaluate TimeMaster on the TimerBed benchmark across
+six real-world classification tasks based on Qwen2.5-VL-3B-Instruct. TimeMaster
+achieves state-of-the-art performance, outperforming both classical time-series
+models and few-shot GPT-4o by over 14.6% and 7.3% performance gain,
+respectively. Notably, TimeMaster goes beyond time-series classification: it
+also exhibits expert-like reasoning behavior, generates context-aware
+explanations, and delivers domain-aligned insights. Our results highlight that
+reward-driven RL can be a scalable and promising path toward integrating
+temporal understanding into time-series MLLMs.",http://arxiv.org/pdf/2506.13705v1,,False
+Gradient Boosting for Spatial Regression Models with Autoregressive Disturbances,16/06/2025,Michael Balzer,"Researchers in urban and regional studies increasingly deal with spatial data
+that reflects geographic location and spatial relationships. As a framework for
+dealing with the unique nature of spatial data, various spatial regression
+models have been introduced. In this article, a novel model-based gradient
+boosting algorithm for spatial regression models with autoregressive
+disturbances is proposed. Due to the modular nature, the approach provides an
+alternative estimation procedure which is feasible even in high-dimensional
+settings where established quasi-maximum likelihood or generalized method of
+moments estimators do not yield unique solutions. The approach additionally
+enables data-driven variable and model selection in low- as well as
+high-dimensional settings. Since the bias-variance trade-off is also controlled
+in the algorithm, implicit regularization is imposed which improves prediction
+accuracy on out-of-sample spatial data. Detailed simulation studies regarding
+the performance of estimation, prediction and variable selection in low- and
+high-dimensional settings confirm proper functionality of the proposed
+methodology. To illustrative the functionality of the model-based gradient
+boosting algorithm, a case study is presented where the life expectancy in
+German districts is modeled incorporating a potential spatial dependence
+structure.",http://arxiv.org/pdf/2506.13682v1,,False
+ROSA: Harnessing Robot States for Vision-Language and Action Alignment,16/06/2025,"Yuqing Wen, Kefan Gu, Haoxuan Liu, Yucheng Zhao, Tiancai Wang, Haoqiang Fan, Xiaoyan Sun","Vision-Language-Action (VLA) models have recently made significant advance in
+multi-task, end-to-end robotic control, due to the strong generalization
+capabilities of Vision-Language Models (VLMs). A fundamental challenge in
+developing such models is effectively aligning the vision-language space with
+the robotic action space. Existing approaches typically rely on directly
+fine-tuning VLMs using expert demonstrations. However, this strategy suffers
+from a spatio-temporal gap, resulting in considerable data inefficiency and
+heavy reliance on human labor. Spatially, VLMs operate within a high-level
+semantic space, whereas robotic actions are grounded in low-level 3D physical
+space; temporally, VLMs primarily interpret the present, while VLA models
+anticipate future actions. To overcome these challenges, we propose a novel
+training paradigm, ROSA, which leverages robot state estimation to improve
+alignment between vision-language and action spaces. By integrating robot state
+estimation data obtained via an automated process, ROSA enables the VLA model
+to gain enhanced spatial understanding and self-awareness, thereby boosting
+performance and generalization. Extensive experiments in both simulated and
+real-world environments demonstrate the effectiveness of ROSA, particularly in
+low-data regimes.",http://arxiv.org/pdf/2506.13679v1,,False
+CAMS: A CityGPT-Powered Agentic Framework for Urban Human Mobility Simulation,16/06/2025,"Yuwei Du, Jie Feng, Jian Yuan, Yong Li","Human mobility simulation plays a crucial role in various real-world
+applications. Recently, to address the limitations of traditional data-driven
+approaches, researchers have explored leveraging the commonsense knowledge and
+reasoning capabilities of large language models (LLMs) to accelerate human
+mobility simulation. However, these methods suffer from several critical
+shortcomings, including inadequate modeling of urban spaces and poor
+integration with both individual mobility patterns and collective mobility
+distributions. To address these challenges, we propose \textbf{C}ityGPT-Powered
+\textbf{A}gentic framework for \textbf{M}obility \textbf{S}imulation
+(\textbf{CAMS}), an agentic framework that leverages the language based urban
+foundation model to simulate human mobility in urban space. \textbf{CAMS}
+comprises three core modules, including MobExtractor to extract template
+mobility patterns and synthesize new ones based on user profiles, GeoGenerator
+to generate anchor points considering collective knowledge and generate
+candidate urban geospatial knowledge using an enhanced version of CityGPT,
+TrajEnhancer to retrieve spatial knowledge based on mobility patterns and
+generate trajectories with real trajectory preference alignment via DPO.
+Experiments on real-world datasets show that \textbf{CAMS} achieves superior
+performance without relying on externally provided geospatial information.
+Moreover, by holistically modeling both individual mobility patterns and
+collective mobility constraints, \textbf{CAMS} generates more realistic and
+plausible trajectories. In general, \textbf{CAMS} establishes a new paradigm
+that integrates the agentic framework with urban-knowledgeable LLMs for human
+mobility simulation.",http://arxiv.org/pdf/2506.13599v1,,False
+A Production Scheduling Framework for Reinforcement Learning Under Real-World Constraints,16/06/2025,"Jonathan Hoss, Felix Schelling, Noah Klarmann","The classical Job Shop Scheduling Problem (JSSP) focuses on optimizing
+makespan under deterministic constraints. Real-world production environments
+introduce additional complexities that cause traditional scheduling approaches
+to be less effective. Reinforcement learning (RL) holds potential in addressing
+these challenges, as it allows agents to learn adaptive scheduling strategies.
+However, there is a lack of a comprehensive, general-purpose frameworks for
+effectively training and evaluating RL agents under real-world constraints. To
+address this gap, we propose a modular framework that extends classical JSSP
+formulations by incorporating key \mbox{real-world} constraints inherent to the
+shopfloor, including transport logistics, buffer management, machine
+breakdowns, setup times, and stochastic processing conditions, while also
+supporting multi-objective optimization. The framework is a customizable
+solution that offers flexibility in defining problem instances and configuring
+simulation parameters, enabling adaptation to diverse production scenarios. A
+standardized interface ensures compatibility with various RL approaches,
+providing a robust environment for training RL agents and facilitating the
+standardized comparison of different scheduling methods under dynamic and
+uncertain conditions. We release JobShopLab as an open-source tool for both
+research and industrial applications, accessible at:
+https://github.com/proto-lab-ro/jobshoplab",http://arxiv.org/pdf/2506.13566v1,,False
+What Matters in Learning from Large-Scale Datasets for Robot Manipulation,16/06/2025,"Vaibhav Saxena, Matthew Bronars, Nadun Ranawaka Arachchige, Kuancheng Wang, Woo Chul Shin, Soroush Nasiriany, Ajay Mandlekar, Danfei Xu","Imitation learning from large multi-task demonstration datasets has emerged
+as a promising path for building generally-capable robots. As a result, 1000s
+of hours have been spent on building such large-scale datasets around the
+globe. Despite the continuous growth of such efforts, we still lack a
+systematic understanding of what data should be collected to improve the
+utility of a robotics dataset and facilitate downstream policy learning. In
+this work, we conduct a large-scale dataset composition study to answer this
+question. We develop a data generation framework to procedurally emulate common
+sources of diversity in existing datasets (such as sensor placements and object
+types and arrangements), and use it to generate large-scale robot datasets with
+controlled compositions, enabling a suite of dataset composition studies that
+would be prohibitively expensive in the real world. We focus on two practical
+settings: (1) what types of diversity should be emphasized when future
+researchers collect large-scale datasets for robotics, and (2) how should
+current practitioners retrieve relevant demonstrations from existing datasets
+to maximize downstream policy performance on tasks of interest. Our study
+yields several critical insights -- for example, we find that camera poses and
+spatial arrangements are crucial dimensions for both diversity in collection
+and alignment in retrieval. In real-world robot learning settings, we find that
+not only do our insights from simulation carry over, but our retrieval
+strategies on existing datasets such as DROID allow us to consistently
+outperform existing training strategies by up to 70%. More results at
+https://robo-mimiclabs.github.io/",http://arxiv.org/pdf/2506.13536v1,,False
+Curriculum Learning for Biological Sequence Prediction: The Case of De Novo Peptide Sequencing,16/06/2025,"Xiang Zhang, Jiaqi Wei, Zijie Qiu, Sheng Xu, Nanqing Dong, Zhiqiang Gao, Siqi Sun","Peptide sequencing-the process of identifying amino acid sequences from mass
+spectrometry data-is a fundamental task in proteomics. Non-Autoregressive
+Transformers (NATs) have proven highly effective for this task, outperforming
+traditional methods. Unlike autoregressive models, which generate tokens
+sequentially, NATs predict all positions simultaneously, leveraging
+bidirectional context through unmasked self-attention. However, existing NAT
+approaches often rely on Connectionist Temporal Classification (CTC) loss,
+which presents significant optimization challenges due to CTC's complexity and
+increases the risk of training failures. To address these issues, we propose an
+improved non-autoregressive peptide sequencing model that incorporates a
+structured protein sequence curriculum learning strategy. This approach adjusts
+protein's learning difficulty based on the model's estimated protein
+generational capabilities through a sampling process, progressively learning
+peptide generation from simple to complex sequences. Additionally, we introduce
+a self-refining inference-time module that iteratively enhances predictions
+using learned NAT token embeddings, improving sequence accuracy at a
+fine-grained level. Our curriculum learning strategy reduces NAT training
+failures frequency by more than 90% based on sampled training over various data
+distributions. Evaluations on nine benchmark species demonstrate that our
+approach outperforms all previous methods across multiple metrics and species.",http://arxiv.org/pdf/2506.13485v1,,False
+Balancing Intensity and Focality in Directional DBS Under Uncertainty: A Simulation Study of Electrode Optimization via a Metaheuristic L1L1 Approach,16/06/2025,"Fernando Galaz Prieto, Antti Lassila, Maryam Samavaki, Sampsa Pursiainen","As DBS technology advances toward directional leads and optimization-based
+current steering, this study aims to improve the selection of electrode contact
+configurations using the recently developed L1-norm regularized L1-norm fitting
+(L1L1) method. The focus is in particular on L1L1's capability to incorporate a
+priori lead field uncertainty, offering a potential advantage over conventional
+approaches that do not account for such variability. Our optimization framework
+incorporates uncertainty by constraining the solution space based on lead field
+attenuation. This reflects physiological expectations about the VTA and serves
+to avoid overfitting. By applying this method to 8- and 40-contact electrode
+configurations, we optimize current distributions within a discretized finite
+element (FE) model, focusing on the lead field's characteristics. The model
+accounts for uncertainty through these explicit constraints, enhancing the
+feasibility, focality, and robustness of the resulting solutions. The L1L1
+method was validated through a series of numerical experiments using both
+noiseless and noisy lead fields, where the noise level was selected to reflect
+attenuation within VTA. It successfully fits and regularizes the current
+distribution across target structures, with hyperparameter optimization
+extracting either bipolar or multipolar electrode configurations. These
+configurations aim to maximize focused current density or prioritize a high
+gain field ratio in a discretized FE model. Compared to traditional methods,
+the L1L1 approach showed competitive performance in concentrating stimulation
+within the target region while minimizing unintended current spread,
+particularly under noisy conditions. By incorporating uncertainty directly into
+the optimization process, we obtain a noise-robust framework for current
+steering, allowing for variations in lead field models and simulation
+parameters.",http://arxiv.org/pdf/2506.13452v1,,False
+Delving Into the Psychology of Machines: Exploring the Structure of Self-Regulated Learning via LLM-Generated Survey Responses,16/06/2025,"Leonie V. D. E. Vogelsmeier, Eduardo Oliveira, Kamila Misiejuk, Sonsoles López-Pernas, Mohammed Saqr","Large language models (LLMs) offer the potential to simulate human-like
+responses and behaviors, creating new opportunities for psychological science.
+In the context of self-regulated learning (SRL), if LLMs can reliably simulate
+survey responses at scale and speed, they could be used to test intervention
+scenarios, refine theoretical models, augment sparse datasets, and represent
+hard-to-reach populations. However, the validity of LLM-generated survey
+responses remains uncertain, with limited research focused on SRL and existing
+studies beyond SRL yielding mixed results. Therefore, in this study, we
+examined LLM-generated responses to the 44-item Motivated Strategies for
+Learning Questionnaire (MSLQ; Pintrich \& De Groot, 1990), a widely used
+instrument assessing students' learning strategies and academic motivation.
+Particularly, we used the LLMs GPT-4o, Claude 3.7 Sonnet, Gemini 2 Flash, LLaMA
+3.1-8B, and Mistral Large. We analyzed item distributions, the psychological
+network of the theoretical SRL dimensions, and psychometric validity based on
+the latent factor structure. Our results suggest that Gemini 2 Flash was the
+most promising LLM, showing considerable sampling variability and producing
+underlying dimensions and theoretical relationships that align with prior
+theory and empirical findings. At the same time, we observed discrepancies and
+limitations, underscoring both the potential and current constraints of using
+LLMs for simulating psychological survey data and applying it in educational
+contexts.",http://arxiv.org/pdf/2506.13384v1,,False
+LapDDPM: A Conditional Graph Diffusion Model for scRNA-seq Generation with Spectral Adversarial Perturbations,16/06/2025,"Lorenzo Bini, Stephane Marchand-Maillet","Generating high-fidelity and biologically plausible synthetic single-cell RNA
+sequencing (scRNA-seq) data, especially with conditional control, is
+challenging due to its high dimensionality, sparsity, and complex biological
+variations. Existing generative models often struggle to capture these unique
+characteristics and ensure robustness to structural noise in cellular networks.
+We introduce LapDDPM, a novel conditional Graph Diffusion Probabilistic Model
+for robust and high-fidelity scRNA-seq generation. LapDDPM uniquely integrates
+graph-based representations with a score-based diffusion model, enhanced by a
+novel spectral adversarial perturbation mechanism on graph edge weights. Our
+contributions are threefold: we leverage Laplacian Positional Encodings (LPEs)
+to enrich the latent space with crucial cellular relationship information; we
+develop a conditional score-based diffusion model for effective learning and
+generation from complex scRNA-seq distributions; and we employ a unique
+spectral adversarial training scheme on graph edge weights, boosting robustness
+against structural variations. Extensive experiments on diverse scRNA-seq
+datasets demonstrate LapDDPM's superior performance, achieving high fidelity
+and generating biologically-plausible, cell-type-specific samples. LapDDPM sets
+a new benchmark for conditional scRNA-seq data generation, offering a robust
+tool for various downstream biological applications.",http://arxiv.org/pdf/2506.13344v1,,False
+SeqPE: Transformer with Sequential Position Encoding,16/06/2025,"Huyang Li, Yahui Liu, Hongyu Sun, Deng Cai, Leyang Cui, Wei Bi, Peilin Zhao, Taro Watanabe","Since self-attention layers in Transformers are permutation invariant by
+design, positional encodings must be explicitly incorporated to enable spatial
+understanding. However, fixed-size lookup tables used in traditional learnable
+position embeddings (PEs) limit extrapolation capabilities beyond pre-trained
+sequence lengths. Expert-designed methods such as ALiBi and RoPE, mitigate this
+limitation but demand extensive modifications for adapting to new modalities,
+underscoring fundamental challenges in adaptability and scalability. In this
+work, we present SeqPE, a unified and fully learnable position encoding
+framework that represents each $n$-dimensional position index as a symbolic
+sequence and employs a lightweight sequential position encoder to learn their
+embeddings in an end-to-end manner. To regularize SeqPE's embedding space, we
+introduce two complementary objectives: a contrastive objective that aligns
+embedding distances with a predefined position-distance function, and a
+knowledge distillation loss that anchors out-of-distribution position
+embeddings to in-distribution teacher representations, further enhancing
+extrapolation performance. Experiments across language modeling, long-context
+question answering, and 2D image classification demonstrate that SeqPE not only
+surpasses strong baselines in perplexity, exact match (EM), and
+accuracy--particularly under context length extrapolation--but also enables
+seamless generalization to multi-dimensional inputs without requiring manual
+architectural redesign. We release our code, data, and checkpoints at
+https://github.com/ghrua/seqpe.",http://arxiv.org/pdf/2506.13277v1,,False
+Energy-Efficient Digital Design: A Comparative Study of Event-Driven and Clock-Driven Spiking Neurons,16/06/2025,"Filippo Marostica, Alessio Carpegna, Alessandro Savino, Stefano Di Carlo","This paper presents a comprehensive evaluation of Spiking Neural Network
+(SNN) neuron models for hardware acceleration by comparing event driven and
+clock-driven implementations. We begin our investigation in software, rapidly
+prototyping and testing various SNN models based on different variants of the
+Leaky Integrate and Fire (LIF) neuron across multiple datasets. This phase
+enables controlled performance assessment and informs design refinement. Our
+subsequent hardware phase, implemented on FPGA, validates the simulation
+findings and offers practical insights into design trade offs. In particular,
+we examine how variations in input stimuli influence key performance metrics
+such as latency, power consumption, energy efficiency, and resource
+utilization. These results yield valuable guidelines for constructing energy
+efficient, real time neuromorphic systems. Overall, our work bridges software
+simulation and hardware realization, advancing the development of next
+generation SNN accelerators.",http://arxiv.org/pdf/2506.13268v1,,False
+A Game-Theoretic Negotiation Framework for Cross-Cultural Consensus in LLMs,16/06/2025,"Guoxi Zhang, Jiawei Chen, Tianzhuo Yang, Jiaming Ji, Yaodong Yang, Juntao Dai","The increasing prevalence of large language models (LLMs) is influencing
+global value systems. However, these models frequently exhibit a pronounced
+WEIRD (Western, Educated, Industrialized, Rich, Democratic) cultural bias due
+to lack of attention to minority values. This monocultural perspective may
+reinforce dominant values and marginalize diverse cultural viewpoints, posing
+challenges for the development of equitable and inclusive AI systems. In this
+work, we introduce a systematic framework designed to boost fair and robust
+cross-cultural consensus among LLMs. We model consensus as a Nash Equilibrium
+and employ a game-theoretic negotiation method based on Policy-Space Response
+Oracles (PSRO) to simulate an organized cross-cultural negotiation process. To
+evaluate this approach, we construct regional cultural agents using data
+transformed from the World Values Survey (WVS). Beyond the conventional
+model-level evaluation method, We further propose two quantitative metrics,
+Perplexity-based Acceptence and Values Self-Consistency, to assess consensus
+outcomes. Experimental results indicate that our approach generates consensus
+of higher quality while ensuring more balanced compromise compared to
+baselines. Overall, it mitigates WEIRD bias by guiding agents toward
+convergence through fair and gradual negotiation steps.",http://arxiv.org/pdf/2506.13245v1,,False
+No-Regret Learning Under Adversarial Resource Constraints: A Spending Plan Is All You Need!,16/06/2025,"Francesco Emanuele Stradi, Matteo Castiglioni, Alberto Marchesi, Nicola Gatti, Christian Kroer","We study online decision making problems under resource constraints, where
+both reward and cost functions are drawn from distributions that may change
+adversarially over time. We focus on two canonical settings: $(i)$ online
+resource allocation where rewards and costs are observed before action
+selection, and $(ii)$ online learning with resource constraints where they are
+observed after action selection, under full feedback or bandit feedback. It is
+well known that achieving sublinear regret in these settings is impossible when
+reward and cost distributions may change arbitrarily over time. To address this
+challenge, we analyze a framework in which the learner is guided by a spending
+plan--a sequence prescribing expected resource usage across rounds. We design
+general (primal-)dual methods that achieve sublinear regret with respect to
+baselines that follow the spending plan. Crucially, the performance of our
+algorithms improves when the spending plan ensures a well-balanced distribution
+of the budget across rounds. We additionally provide a robust variant of our
+methods to handle worst-case scenarios where the spending plan is highly
+imbalanced. To conclude, we study the regret of our algorithms when competing
+against benchmarks that deviate from the prescribed spending plan.",http://arxiv.org/pdf/2506.13244v1,,False
+Align-then-Unlearn: Embedding Alignment for LLM Unlearning,16/06/2025,"Philipp Spohn, Leander Girrbach, Jessica Bader, Zeynep Akata","As large language models (LLMs) are trained on massive datasets, they have
+raised significant privacy and ethical concerns due to their potential to
+inadvertently retain sensitive information. Unlearning seeks to selectively
+remove specific data from trained models, such as personal information or
+copyrighted content. Current approaches targeting specific output sequences at
+the token level often fail to achieve complete forgetting and remain
+susceptible to prompt rephrasing. We propose Align-then-Unlearn, a novel
+framework that performs unlearning in the semantic embedding space rather than
+directly on output tokens. Align-then-Unlearn first augments the LLM with an
+embedding prediction module trained to anticipate future context
+representations. Unlearning is then achieved by fine-tuning the model to
+minimize the similarity between these predicted embeddings and a target
+embedding that represents the concept to be removed. Initial results show that
+Align-then-Unlearn effectively removes targeted knowledge with minimal
+degradation in overall model utility. These findings suggest that
+embedding-based unlearning offers a promising and robust approach to removing
+conceptual knowledge. Our code is available at
+https://github.com/ExplainableML/align-then-unlearn.",http://arxiv.org/pdf/2506.13181v1,,False
+SAGDA: Open-Source Synthetic Agriculture Data for Africa,16/06/2025,"Abdelghani Belgaid, Oumnia Ennaji","Data scarcity in African agriculture hampers machine learning (ML) model
+performance, limiting innovations in precision agriculture. The Synthetic
+Agriculture Data for Africa (SAGDA) library, a Python-based open-source
+toolkit, addresses this gap by generating, augmenting, and validating synthetic
+agricultural datasets. We present SAGDA's design and development practices,
+highlighting its core functions: generate, model, augment, validate, visualize,
+optimize, and simulate, as well as their roles in applications of ML for
+agriculture. Two use cases are detailed: yield prediction enhanced via data
+augmentation, and multi-objective NPK (nitrogen, phosphorus, potassium)
+fertilizer recommendation. We conclude with future plans for expanding SAGDA's
+capabilities, underscoring the vital role of open-source, data-driven practices
+for African agriculture.",http://arxiv.org/pdf/2506.13123v1,,False
+Dynamic Reinsurance Treaty Bidding via Multi-Agent Reinforcement Learning,16/06/2025,"Stella C. Dong, James R. Finlay","This paper develops a novel multi-agent reinforcement learning (MARL)
+framework for reinsurance treaty bidding, addressing long-standing
+inefficiencies in traditional broker-mediated placement processes. We pose the
+core research question: Can autonomous, learning-based bidding systems improve
+risk transfer efficiency and outperform conventional pricing approaches in
+reinsurance markets?
+  In our model, each reinsurer is represented by an adaptive agent that
+iteratively refines its bidding strategy within a competitive, partially
+observable environment. The simulation explicitly incorporates institutional
+frictions including broker intermediation, incumbent advantages, last-look
+privileges, and asymmetric access to underwriting information.
+  Empirical analysis demonstrates that MARL agents achieve up to 15% higher
+underwriting profit, 20% lower tail risk (CVaR), and over 25% improvement in
+Sharpe ratios relative to actuarial and heuristic baselines. Sensitivity tests
+confirm robustness across hyperparameter settings, and stress testing reveals
+strong resilience under simulated catastrophe shocks and capital constraints.
+  These findings suggest that MARL offers a viable path toward more
+transparent, adaptive, and risk-sensitive reinsurance markets. The proposed
+framework contributes to emerging literature at the intersection of algorithmic
+market design, strategic bidding, and AI-enabled financial decision-making.",http://arxiv.org/pdf/2506.13113v1,,False
+Overcoming Overfitting in Reinforcement Learning via Gaussian Process Diffusion Policy,16/06/2025,"Amornyos Horprasert, Esa Apriaskar, Xingyu Liu, Lanlan Su, Lyudmila S. Mihaylova","One of the key challenges that Reinforcement Learning (RL) faces is its
+limited capability to adapt to a change of data distribution caused by
+uncertainties. This challenge arises especially in RL systems using deep neural
+networks as decision makers or policies, which are prone to overfitting after
+prolonged training on fixed environments. To address this challenge, this paper
+proposes Gaussian Process Diffusion Policy (GPDP), a new algorithm that
+integrates diffusion models and Gaussian Process Regression (GPR) to represent
+the policy. GPR guides diffusion models to generate actions that maximize
+learned Q-function, resembling the policy improvement in RL. Furthermore, the
+kernel-based nature of GPR enhances the policy's exploration efficiency under
+distribution shifts at test time, increasing the chance of discovering new
+behaviors and mitigating overfitting. Simulation results on the Walker2d
+benchmark show that our approach outperforms state-of-the-art algorithms under
+distribution shift condition by achieving around 67.74% to 123.18% improvement
+in the RL's objective function while maintaining comparable performance under
+normal conditions.",http://arxiv.org/pdf/2506.13111v1,,False
+A Memetic Walrus Algorithm with Expert-guided Strategy for Adaptive Curriculum Sequencing,16/06/2025,"Qionghao Huang, Lingnuo Lu, Xuemei Wu, Fan Jiang, Xizhe Wang, Xun Wang","Adaptive Curriculum Sequencing (ACS) is essential for personalized online
+learning, yet current approaches struggle to balance complex educational
+constraints and maintain optimization stability. This paper proposes a Memetic
+Walrus Optimizer (MWO) that enhances optimization performance through three key
+innovations: (1) an expert-guided strategy with aging mechanism that improves
+escape from local optima; (2) an adaptive control signal framework that
+dynamically balances exploration and exploitation; and (3) a three-tier
+priority mechanism for generating educationally meaningful sequences. We
+formulate ACS as a multi-objective optimization problem considering concept
+coverage, time constraints, and learning style compatibility. Experiments on
+the OULAD dataset demonstrate MWO's superior performance, achieving 95.3%
+difficulty progression rate (compared to 87.2% in baseline methods) and
+significantly better convergence stability (standard deviation of 18.02 versus
+28.29-696.97 in competing algorithms). Additional validation on benchmark
+functions confirms MWO's robust optimization capability across diverse
+scenarios. The results demonstrate MWO's effectiveness in generating
+personalized learning sequences while maintaining computational efficiency and
+solution quality.",http://arxiv.org/pdf/2506.13092v1,,False
+CoIFNet: A Unified Framework for Multivariate Time Series Forecasting with Missing Values,16/06/2025,"Kai Tang, Ji Zhang, Hua Meng, Minbo Ma, Qi Xiong, Jie Xu, Tianrui Li","Multivariate time series forecasting (MTSF) is a critical task with broad
+applications in domains such as meteorology, transportation, and economics.
+Nevertheless, pervasive missing values caused by sensor failures or human
+errors significantly degrade forecasting accuracy. Prior efforts usually employ
+an impute-then-forecast paradigm, leading to suboptimal predictions due to
+error accumulation and misaligned objectives between the two stages. To address
+this challenge, we propose the Collaborative Imputation-Forecasting Network
+(CoIFNet), a novel framework that unifies imputation and forecasting to achieve
+robust MTSF in the presence of missing values. Specifically, CoIFNet takes the
+observed values, mask matrix and timestamp embeddings as input, processing them
+sequentially through the Cross-Timestep Fusion (CTF) and Cross-Variate Fusion
+(CVF) modules to capture temporal dependencies that are robust to missing
+values. We provide theoretical justifications on how our CoIFNet learning
+objective improves the performance bound of MTSF with missing values. Through
+extensive experiments on challenging MSTF benchmarks, we demonstrate the
+effectiveness and computational efficiency of our proposed approach across
+diverse missing-data scenarios, e.g., CoIFNet outperforms the state-of-the-art
+method by $\underline{\textbf{24.40}}$% ($\underline{\textbf{23.81}}$%) at a
+point (block) missing rate of 0.6, while improving memory and time efficiency
+by $\underline{\boldsymbol{4.3\times}}$ and
+$\underline{\boldsymbol{2.1\times}}$, respectively.",http://arxiv.org/pdf/2506.13064v1,,False
+Rethinking Explainability in the Era of Multimodal AI,16/06/2025,Chirag Agarwal,"While multimodal AI systems (models jointly trained on heterogeneous data
+types such as text, time series, graphs, and images) have become ubiquitous and
+achieved remarkable performance across high-stakes applications, transparent
+and accurate explanation algorithms are crucial for their safe deployment and
+ensure user trust. However, most existing explainability techniques remain
+unimodal, generating modality-specific feature attributions, concepts, or
+circuit traces in isolation and thus failing to capture cross-modal
+interactions. This paper argues that such unimodal explanations systematically
+misrepresent and fail to capture the cross-modal influence that drives
+multimodal model decisions, and the community should stop relying on them for
+interpreting multimodal models. To support our position, we outline key
+principles for multimodal explanations grounded in modality: Granger-style
+modality influence (controlled ablations to quantify how removing one modality
+changes the explanation for another), Synergistic faithfulness (explanations
+capture the model's predictive power when modalities are combined), and Unified
+stability (explanations remain consistent under small, cross-modal
+perturbations). This targeted shift to multimodal explanations will help the
+community uncover hidden shortcuts, mitigate modality bias, improve model
+reliability, and enhance safety in high-stakes settings where incomplete
+explanations can have serious consequences.",http://arxiv.org/pdf/2506.13060v1,,False
+Beyond the First Read: AI-Assisted Perceptual Error Detection in Chest Radiography Accounting for Interobserver Variability,16/06/2025,"Adhrith Vutukuri, Akash Awasthi, David Yang, Carol C. Wu, Hien Van Nguyen","Chest radiography is widely used in diagnostic imaging. However, perceptual
+errors -- especially overlooked but visible abnormalities -- remain common and
+clinically significant. Current workflows and AI systems provide limited
+support for detecting such errors after interpretation and often lack
+meaningful human--AI collaboration. We introduce RADAR (Radiologist--AI
+Diagnostic Assistance and Review), a post-interpretation companion system.
+RADAR ingests finalized radiologist annotations and CXR images, then performs
+regional-level analysis to detect and refer potentially missed abnormal
+regions. The system supports a ""second-look"" workflow and offers suggested
+regions of interest (ROIs) rather than fixed labels to accommodate
+inter-observer variation. We evaluated RADAR on a simulated perceptual-error
+dataset derived from de-identified CXR cases, using F1 score and Intersection
+over Union (IoU) as primary metrics. RADAR achieved a recall of 0.78, precision
+of 0.44, and an F1 score of 0.56 in detecting missed abnormalities in the
+simulated perceptual-error dataset. Although precision is moderate, this
+reduces over-reliance on AI by encouraging radiologist oversight in human--AI
+collaboration. The median IoU was 0.78, with more than 90% of referrals
+exceeding 0.5 IoU, indicating accurate regional localization. RADAR effectively
+complements radiologist judgment, providing valuable post-read support for
+perceptual-error detection in CXR interpretation. Its flexible ROI suggestions
+and non-intrusive integration position it as a promising tool in real-world
+radiology workflows. To facilitate reproducibility and further evaluation, we
+release a fully open-source web implementation alongside a simulated error
+dataset. All code, data, demonstration videos, and the application are publicly
+available at https://github.com/avutukuri01/RADAR.",http://arxiv.org/pdf/2506.13049v1,,False

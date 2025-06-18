@@ -1,0 +1,312 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Optimizing Length Compression in Large Reasoning Models,17/06/2025,"Zhengxiang Cheng, Dongping Chen, Mingyang Fu, Tianyi Zhou","Large Reasoning Models (LRMs) have achieved remarkable success, yet they
+often suffer from producing unnecessary and verbose reasoning chains. We
+identify a core aspect of this issue as ""invalid thinking"" -- models tend to
+repeatedly double-check their work after having derived the correct answer. To
+address this specific inefficiency, we move beyond the general principles of
+Efficacy and Efficiency to propose two new, fine-grained principles: Brevity,
+which advocates for eliminating redundancy, and Sufficiency, which ensures
+critical reasoning steps are preserved. Guided by these principles, we
+introduce LC-R1, a post-training method based on Group Relative Policy
+Optimization (GRPO). LC-R1 employs a novel combination of a Length Reward for
+overall conciseness and a Compress Reward that is specifically designed to
+remove the invalid portion of the thinking process. Extensive experiments on
+multiple reasoning benchmarks demonstrate that LC-R1 achieves a significant
+reduction in sequence length (~50%) with only a marginal (~2%) drop in
+accuracy, achieving a favorable trade-off point on the Pareto frontier that
+prioritizes high compression. Our analysis further validates the robustness of
+LC-R1 and provides valuable insights for developing more powerful yet
+computationally efficient LRMs. Our code is released at
+https://github.com/zxiangx/LC-R1.",http://arxiv.org/pdf/2506.14755v1,,False
+Exploring Speaker Diarization with Mixture of Experts,17/06/2025,"Gaobin Yang, Maokui He, Shutong Niu, Ruoyu Wang, Hang Chen, Jun Du","In this paper, we propose a novel neural speaker diarization system using
+memory-aware multi-speaker embedding with sequence-to-sequence architecture
+(NSD-MS2S), which integrates a memory-aware multi-speaker embedding module with
+a sequence-to-sequence architecture. The system leverages a memory module to
+enhance speaker embeddings and employs a Seq2Seq framework to efficiently map
+acoustic features to speaker labels. Additionally, we explore the application
+of mixture of experts in speaker diarization, and introduce a Shared and Soft
+Mixture of Experts (SS-MoE) module to further mitigate model bias and enhance
+performance. Incorporating SS-MoE leads to the extended model NSD-MS2S-SSMoE.
+Experiments on multiple complex acoustic datasets, including CHiME-6, DiPCo,
+Mixer 6 and DIHARD-III evaluation sets, demonstrate meaningful improvements in
+robustness and generalization. The proposed methods achieve state-of-the-art
+results, showcasing their effectiveness in challenging real-world scenarios.",http://arxiv.org/pdf/2506.14750v1,,False
+Design an Editable Speech-to-Sign-Language Transformer System: A Human-Centered AI Approach,17/06/2025,Yingchao Li,"This paper presents a human-centered, real-time, user-adaptive speech-to-sign
+language animation system that integrates Transformer-based motion generation
+with a transparent, user-editable JSON intermediate layer. The framework
+overcomes key limitations in prior sign language technologies by enabling
+direct user inspection and modification of sign segments, thus enhancing
+naturalness, expressiveness, and user agency. Leveraging a streaming Conformer
+encoder and autoregressive Transformer-MDN decoder, the system synchronizes
+spoken input into upper-body and facial motion for 3D avatar rendering. Edits
+and user ratings feed into a human-in-the-loop optimization loop for continuous
+improvement. Experiments with 20 deaf signers and 5 interpreters show that the
+editable interface and participatory feedback significantly improve
+comprehension, naturalness, usability, and trust, while lowering cognitive
+load. With sub-20 ms per-frame inference on standard hardware, the system is
+ready for real-time communication and education. This work illustrates how
+technical and participatory innovation together enable accessible, explainable,
+and user-adaptive AI for sign language technology.",http://arxiv.org/pdf/2506.14677v1,,False
+Accurate and scalable exchange-correlation with deep learning,17/06/2025,"Giulia Luise, Chin-Wei Huang, Thijs Vogels, Derk P. Kooi, Sebastian Ehlert, Stephanie Lanius, Klaas J. H. Giesbertz, Amir Karton, Deniz Gunceler, Megan Stanley, Wessel P. Bruinsma, Lin Huang, Xinran Wei, José Garrido Torres, Abylay Katbashev, Bálint Máté, Sékou-Oumar Kaba, Roberto Sordillo, Yingrong Chen, David B. Williams-Young, Christopher M. Bishop, Jan Hermann, Rianne van den Berg, Paola Gori-Giorgi","Density Functional Theory (DFT) is the most widely used electronic structure
+method for predicting the properties of molecules and materials. Although DFT
+is, in principle, an exact reformulation of the Schr\""odinger equation,
+practical applications rely on approximations to the unknown
+exchange-correlation (XC) functional. Most existing XC functionals are
+constructed using a limited set of increasingly complex, hand-crafted features
+that improve accuracy at the expense of computational efficiency. Yet, no
+current approximation achieves the accuracy and generality for predictive
+modeling of laboratory experiments at chemical accuracy -- typically defined as
+errors below 1 kcal/mol. In this work, we present Skala, a modern deep
+learning-based XC functional that bypasses expensive hand-designed features by
+learning representations directly from data. Skala achieves chemical accuracy
+for atomization energies of small molecules while retaining the computational
+efficiency typical of semi-local DFT. This performance is enabled by training
+on an unprecedented volume of high-accuracy reference data generated using
+computationally intensive wavefunction-based methods. Notably, Skala
+systematically improves with additional training data covering diverse
+chemistry. By incorporating a modest amount of additional high-accuracy data
+tailored to chemistry beyond atomization energies, Skala achieves accuracy
+competitive with the best-performing hybrid functionals across general main
+group chemistry, at the cost of semi-local DFT. As the training dataset
+continues to expand, Skala is poised to further enhance the predictive power of
+first-principles simulations.",http://arxiv.org/pdf/2506.14665v1,,False
+On Quantum BSDE Solver for High-Dimensional Parabolic PDEs,17/06/2025,"Howard Su, Huan-Hsin Tseng","We propose a quantum machine learning framework for approximating solutions
+to high-dimensional parabolic partial differential equations (PDEs) that can be
+reformulated as backward stochastic differential equations (BSDEs). In contrast
+to popular quantum-classical network hybrid approaches, this study employs the
+pure Variational Quantum Circuit (VQC) as the core solver without trainable
+classical neural networks. The quantum BSDE solver performs pathwise
+approximation via temporal discretization and Monte Carlo simulation, framed as
+model-based reinforcement learning. We benchmark VQCbased and classical deep
+neural network (DNN) solvers on two canonical PDEs as representatives: the
+Black-Scholes and nonlinear Hamilton-Jacobi-Bellman (HJB) equations. The VQC
+achieves lower variance and improved accuracy in most cases, particularly in
+highly nonlinear regimes and for out-of-themoney options, demonstrating greater
+robustness than DNNs. These results, obtained via quantum circuit simulation,
+highlight the potential of VQCs as scalable and stable solvers for
+highdimensional stochastic control problems.",http://arxiv.org/pdf/2506.14612v1,,False
+Single-Example Learning in a Mixture of GPDMs with Latent Geometries,17/06/2025,"Jesse St. Amand, Leonardo Gizzi, Martin A. Giese","We present the Gaussian process dynamical mixture model (GPDMM) and show its
+utility in single-example learning of human motion data. The Gaussian process
+dynamical model (GPDM) is a form of the Gaussian process latent variable model
+(GPLVM), but optimized with a hidden Markov model dynamical prior. The GPDMM
+combines multiple GPDMs in a probabilistic mixture-of-experts framework,
+utilizing embedded geometric features to allow for diverse sequences to be
+encoded in a single latent space, enabling the categorization and generation of
+each sequence class. GPDMs and our mixture model are particularly advantageous
+in addressing the challenges of modeling human movement in scenarios where data
+is limited and model interpretability is vital, such as in patient-specific
+medical applications like prosthesis control. We score the GPDMM on
+classification accuracy and generative ability in single-example learning,
+showcase model variations, and benchmark it against LSTMs, VAEs, and
+transformers.",http://arxiv.org/pdf/2506.14563v1,,False
+GUI-Robust: A Comprehensive Dataset for Testing GUI Agent Robustness in Real-World Anomalies,17/06/2025,"Jingqi Yang, Zhilong Song, Jiawei Chen, Mingli Song, Sheng Zhou, linjun sun, Xiaogang Ouyang, Chun Chen, Can Wang","The development of high-quality datasets is crucial for benchmarking and
+advancing research in Graphical User Interface (GUI) agents. Despite their
+importance, existing datasets are often constructed under idealized conditions,
+overlooking the diverse anomalies frequently encountered in real-world
+deployments. To address this limitation, we introduce GUI-Robust, a novel
+dataset designed for comprehensive GUI agent evaluation, explicitly
+incorporating seven common types of anomalies observed in everyday GUI
+interactions. Furthermore, we propose a semi-automated dataset construction
+paradigm that collects user action sequences from natural interactions via RPA
+tools and then generate corresponding step and task descriptions for these
+actions with the assistance of MLLMs. This paradigm significantly reduces
+annotation time cost by a factor of over 19 times. Finally, we assess
+state-of-the-art GUI agents using the GUI-Robust dataset, revealing their
+substantial performance degradation in abnormal scenarios. We anticipate that
+our work will highlight the importance of robustness in GUI agents and inspires
+more future research in this direction. The dataset and code are available at
+https://github.com/chessbean1/GUI-Robust..",http://arxiv.org/pdf/2506.14477v1,,False
+Decoupled Classifier-Free Guidance for Counterfactual Diffusion Models,17/06/2025,"Tian Xia, Fabio De Sousa Ribeiro, Rajat R Rasal, Avinash Kori, Raghav Mehta, Ben Glocker","Counterfactual image generation aims to simulate realistic visual outcomes
+under specific causal interventions. Diffusion models have recently emerged as
+a powerful tool for this task, combining DDIM inversion with conditional
+generation via classifier-free guidance (CFG). However, standard CFG applies a
+single global weight across all conditioning variables, which can lead to poor
+identity preservation and spurious attribute changes - a phenomenon known as
+attribute amplification. To address this, we propose Decoupled Classifier-Free
+Guidance (DCFG), a flexible and model-agnostic framework that introduces
+group-wise conditioning control. DCFG builds on an attribute-split embedding
+strategy that disentangles semantic inputs, enabling selective guidance on
+user-defined attribute groups. For counterfactual generation, we partition
+attributes into intervened and invariant sets based on a causal graph and apply
+distinct guidance to each. Experiments on CelebA-HQ, MIMIC-CXR, and EMBED show
+that DCFG improves intervention fidelity, mitigates unintended changes, and
+enhances reversibility, enabling more faithful and interpretable counterfactual
+image generation.",http://arxiv.org/pdf/2506.14399v1,,False
+HiLight: A Hierarchical Reinforcement Learning Framework with Global Adversarial Guidance for Large-Scale Traffic Signal Control,17/06/2025,"Yaqiao Zhu, Hongkai Wen, Geyong Min, Man Luo","Efficient traffic signal control (TSC) is essential for mitigating urban
+congestion, yet existing reinforcement learning (RL) methods face challenges in
+scaling to large networks while maintaining global coordination. Centralized RL
+suffers from scalability issues, while decentralized approaches often lack
+unified objectives, resulting in limited network-level efficiency. In this
+paper, we propose HiLight, a hierarchical reinforcement learning framework with
+global adversarial guidance for large-scale TSC. HiLight consists of a
+high-level Meta-Policy, which partitions the traffic network into subregions
+and generates sub-goals using a Transformer-LSTM architecture, and a low-level
+Sub-Policy, which controls individual intersections with global awareness. To
+improve the alignment between global planning and local execution, we introduce
+an adversarial training mechanism, where the Meta-Policy generates challenging
+yet informative sub-goals, and the Sub-Policy learns to surpass these targets,
+leading to more effective coordination. We evaluate HiLight across both
+synthetic and real-world benchmarks, and additionally construct a large-scale
+Manhattan network with diverse traffic conditions, including peak transitions,
+adverse weather, and holiday surges. Experimental results show that HiLight
+exhibits significant advantages in large-scale scenarios and remains
+competitive across standard benchmarks of varying sizes.",http://arxiv.org/pdf/2506.14391v1,,False
+AviationLLM: An LLM-based Knowledge System for Aviation Training,17/06/2025,"Jia'ang Wan, Feng Shen, Fujuan Li, Yanjin Sun, Yan Li, Shiwen Zhang","Aviation training is a core link in ensuring flight safety, improving
+industry efficiency and promoting sustainable development. It not only involves
+flight simulation but also requires the learning of a great deal of
+professional aviation theory knowledge. In the existing training system, the
+knowledge is mainly imparted by the the instructors. However, the number of
+instructors is limited and the professional answers obtained from the Internet
+are not accurate enough, resulting in low training efficiency. To address this,
+we introduced LLM, but the basic pre-trained model cannot provide accurate
+answers to professional fields, so we fine-tuned it. Traditional Supervised
+Fine-Tuning (SFT) risk generating superficially plausible but factually
+incorrect responses due to insufficient data coverage. To address this, we
+employ Direct Preference Optimization(DPO). This paper proposes
+Retrieval-Augmented LLM Alignment via Direct Preference Optimization(RALA-DPO).
+We select open source pre-trained LLM Qwen and adapt it to aviation theory
+training through DPO-based domain alignment. Simultaneously, to mitigate
+hallucinations caused by training data biases, knowledge obsolescence, or
+domain knowledge gaps, we implement Retrieval-Augmented Generation(RAG)
+technology that combines generative and retrieval models. RALA-DPO effectively
+retrieves relevant information from external knowledge bases and delivers
+precise and high-quality responses through the generative model. Experimental
+results demonstrate that RALA-DPO can improve accuracy in response to
+professional aviation knowledge. With integrated RAG mechanisms, this system
+can further improve the accuracy of answers and achieve zero-cost knowledge
+updates simultaneously.",http://arxiv.org/pdf/2506.14336v1,,False
+orGAN: A Synthetic Data Augmentation Pipeline for Simultaneous Generation of Surgical Images and Ground Truth Labels,17/06/2025,"Niran Nataraj, Maina Sogabe, Kenji Kawashima","Deep learning in medical imaging faces obstacles: limited data diversity,
+ethical issues, high acquisition costs, and the need for precise annotations.
+Bleeding detection and localization during surgery is especially challenging
+due to the scarcity of high-quality datasets that reflect real surgical
+scenarios. We propose orGAN, a GAN-based system for generating high-fidelity,
+annotated surgical images of bleeding. By leveraging small ""mimicking organ""
+datasets, synthetic models that replicate tissue properties and bleeding, our
+approach reduces ethical concerns and data-collection costs. orGAN builds on
+StyleGAN with Relational Positional Learning to simulate bleeding events
+realistically and mark bleeding coordinates. A LaMa-based inpainting module
+then restores clean, pre-bleed visuals, enabling precise pixel-level
+annotations. In evaluations, a balanced dataset of orGAN and mimicking-organ
+images achieved 90% detection accuracy in surgical settings and up to 99%
+frame-level accuracy. While our development data lack diverse organ
+morphologies and contain intraoperative artifacts, orGAN markedly advances
+ethical, efficient, and cost-effective creation of realistic annotated bleeding
+datasets, supporting broader integration of AI in surgical practice.",http://arxiv.org/pdf/2506.14303v1,,False
+Latent Anomaly Detection: Masked VQ-GAN for Unsupervised Segmentation in Medical CBCT,17/06/2025,Pengwei Wang,"Advances in treatment technology now allow for the use of customizable
+3D-printed hydrogel wound dressings for patients with osteoradionecrosis (ORN)
+of the jaw (ONJ). Meanwhile, deep learning has enabled precise segmentation of
+3D medical images using tools like nnUNet.
+  However, the scarcity of labeled data in ONJ imaging makes supervised
+training impractical. This study aims to develop an unsupervised training
+approach for automatically identifying anomalies in imaging scans.
+  We propose a novel two-stage training pipeline. In the first stage, a VQ-GAN
+is trained to accurately reconstruct normal subjects. In the second stage,
+random cube masking and ONJ-specific masking are applied to train a new encoder
+capable of recovering the data.
+  The proposed method achieves successful segmentation on both simulated and
+real patient data.
+  This approach provides a fast initial segmentation solution, reducing the
+burden of manual labeling. Additionally, it has the potential to be directly
+used for 3D printing when combined with hand-tuned post-processing.",http://arxiv.org/pdf/2506.14209v1,,False
+Hard Contacts with Soft Gradients: Refining Differentiable Simulators for Learning and Control,17/06/2025,"Anselm Paulus, A. René Geist, Pierre Schumacher, Vít Musil, Georg Martius","Contact forces pose a major challenge for gradient-based optimization of
+robot dynamics as they introduce jumps in the system's velocities.
+Penalty-based simulators, such as MuJoCo, simplify gradient computation by
+softening the contact forces. However, realistically simulating hard contacts
+requires very stiff contact settings, which leads to incorrect gradients when
+using automatic differentiation. On the other hand, using non-stiff settings
+strongly increases the sim-to-real gap. We analyze the contact computation of
+penalty-based simulators to identify the causes of gradient errors. Then, we
+propose DiffMJX, which combines adaptive integration with MuJoCo XLA, to
+notably improve gradient quality in the presence of hard contacts. Finally, we
+address a key limitation of contact gradients: they vanish when objects do not
+touch. To overcome this, we introduce Contacts From Distance (CFD), a mechanism
+that enables the simulator to generate informative contact gradients even
+before objects are in contact. To preserve physical realism, we apply CFD only
+in the backward pass using a straight-through trick, allowing us to compute
+useful gradients without modifying the forward simulation.",http://arxiv.org/pdf/2506.14186v1,,False
+VideoMAR: Autoregressive Video Generatio with Continuous Tokens,17/06/2025,"Hu Yu, Biao Gong, Hangjie Yuan, DanDan Zheng, Weilong Chai, Jingdong Chen, Kecheng Zheng, Feng Zhao","Masked-based autoregressive models have demonstrated promising image
+generation capability in continuous space. However, their potential for video
+generation remains under-explored. In this paper, we propose \textbf{VideoMAR},
+a concise and efficient decoder-only autoregressive image-to-video model with
+continuous tokens, composing temporal frame-by-frame and spatial masked
+generation. We first identify temporal causality and spatial bi-directionality
+as the first principle of video AR models, and propose the next-frame diffusion
+loss for the integration of mask and video generation. Besides, the huge cost
+and difficulty of long sequence autoregressive modeling is a basic but crucial
+issue. To this end, we propose the temporal short-to-long curriculum learning
+and spatial progressive resolution training, and employ progressive temperature
+strategy at inference time to mitigate the accumulation error. Furthermore,
+VideoMAR replicates several unique capacities of language models to video
+generation. It inherently bears high efficiency due to simultaneous
+temporal-wise KV cache and spatial-wise parallel generation, and presents the
+capacity of spatial and temporal extrapolation via 3D rotary embeddings. On the
+VBench-I2V benchmark, VideoMAR surpasses the previous state-of-the-art (Cosmos
+I2V) while requiring significantly fewer parameters ($9.3\%$), training data
+($0.5\%$), and GPU resources ($0.2\%$).",http://arxiv.org/pdf/2506.14168v1,,False
+StorySage: Conversational Autobiography Writing Powered by a Multi-Agent Framework,17/06/2025,"Shayan Talaei, Meijin Li, Kanu Grover, James Kent Hippler, Diyi Yang, Amin Saberi","Every individual carries a unique and personal life story shaped by their
+memories and experiences. However, these memories are often scattered and
+difficult to organize into a coherent narrative, a challenge that defines the
+task of autobiography writing. Existing conversational writing assistants tend
+to rely on generic user interactions and pre-defined guidelines, making it
+difficult for these systems to capture personal memories and develop a complete
+biography over time. We introduce StorySage, a user-driven software system
+designed to meet the needs of a diverse group of users that supports a flexible
+conversation and a structured approach to autobiography writing. Powered by a
+multi-agent framework composed of an Interviewer, Session Scribe, Planner,
+Section Writer, and Session Coordinator, our system iteratively collects user
+memories, updates their autobiography, and plans for future conversations. In
+experimental simulations, StorySage demonstrates its ability to navigate
+multiple sessions and capture user memories across many conversations. User
+studies (N=28) highlight how StorySage maintains improved conversational flow,
+narrative completeness, and higher user satisfaction when compared to a
+baseline. In summary, StorySage contributes both a novel architecture for
+autobiography writing and insights into how multi-agent systems can enhance
+human-AI creative partnerships.",http://arxiv.org/pdf/2506.14159v1,,False
+SKOLR: Structured Koopman Operator Linear RNN for Time-Series Forecasting,17/06/2025,"Yitian Zhang, Liheng Ma, Antonios Valkanas, Boris N. Oreshkin, Mark Coates","Koopman operator theory provides a framework for nonlinear dynamical system
+analysis and time-series forecasting by mapping dynamics to a space of
+real-valued measurement functions, enabling a linear operator representation.
+Despite the advantage of linearity, the operator is generally
+infinite-dimensional. Therefore, the objective is to learn measurement
+functions that yield a tractable finite-dimensional Koopman operator
+approximation. In this work, we establish a connection between Koopman operator
+approximation and linear Recurrent Neural Networks (RNNs), which have recently
+demonstrated remarkable success in sequence modeling. We show that by
+considering an extended state consisting of lagged observations, we can
+establish an equivalence between a structured Koopman operator and linear RNN
+updates. Building on this connection, we present SKOLR, which integrates a
+learnable spectral decomposition of the input signal with a multilayer
+perceptron (MLP) as the measurement functions and implements a structured
+Koopman operator via a highly parallel linear RNN stack. Numerical experiments
+on various forecasting benchmarks and dynamical systems show that this
+streamlined, Koopman-theory-based design delivers exceptional performance.",http://arxiv.org/pdf/2506.14113v1,,False
+Toward a Graph Foundation Model: Pre-Training Transformers With Random Walks,17/06/2025,"Ziyuan Tang, Jie Chen","A foundation model like GPT elicits many emergent abilities, owing to the
+pre-training with broad inclusion of data and the use of the powerful
+Transformer architecture. While foundation models in natural languages are
+prevalent, can we build similar models for graphs? This paper describes an
+approach toward a graph foundation model that is pre-trained with diverse graph
+datasets by adapting the Transformer backbone. A central challenge toward this
+end is how a sequence model encodes graphs of varying sizes and from different
+domains. We propose representing a node as multiple random walks, such that the
+Transformer can extract node representations from sequences, which in turn form
+edge and graph representations. We develop a novel context prediction loss for
+these random walks and theoretically analyze their expressive power in
+distinguishing neighborhoods and graphs. We also demonstrate the pre-training
+of our model and its adaptation to downstream tasks, showcasing its potential
+as a foundation for processing and reasoning with graph-structured data.",http://arxiv.org/pdf/2506.14098v1,,False
+Multi-Scale Finetuning for Encoder-based Time Series Foundation Models,17/06/2025,"Zhongzheng Qiao, Chenghao Liu, Yiming Zhang, Ming Jin, Quang Pham, Qingsong Wen, P. N. Suganthan, Xudong Jiang, Savitha Ramasamy","Time series foundation models (TSFMs) demonstrate impressive zero-shot
+performance for time series forecasting. However, an important yet
+underexplored challenge is how to effectively finetune TSFMs on specific
+downstream tasks. While naive finetuning can yield performance gains, we argue
+that it falls short of fully leveraging TSFMs' capabilities, often resulting in
+overfitting and suboptimal performance. Given the diverse temporal patterns
+across sampling scales and the inherent multi-scale forecasting capabilities of
+TSFMs, we adopt a causal perspective to analyze finetuning process, through
+which we highlight the critical importance of explicitly modeling multiple
+scales and reveal the shortcomings of naive approaches. Focusing on
+\textit{encoder-based} TSFMs, we propose \textbf{M}ulti\textbf{\textsc{s}}cale
+\textbf{\textsc{f}}ine\textbf{\textsc{t}}uning (\textbf{MSFT}), a simple yet
+general framework that explicitly integrates multi-scale modeling into the
+finetuning process. Experimental results on three different backbones (\moirai,
+\moment\ and \units) demonstrate that TSFMs finetuned with MSFT not only
+outperform naive and typical parameter efficient finetuning methods but also
+surpass state-of-the-art deep learning methods.",http://arxiv.org/pdf/2506.14087v1,,False

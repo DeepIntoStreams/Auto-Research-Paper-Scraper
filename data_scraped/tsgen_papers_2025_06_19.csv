@@ -1,0 +1,162 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Particle-Grid Neural Dynamics for Learning Deformable Object Models from RGB-D Videos,18/06/2025,"Kaifeng Zhang, Baoyu Li, Kris Hauser, Yunzhu Li","Modeling the dynamics of deformable objects is challenging due to their
+diverse physical properties and the difficulty of estimating states from
+limited visual information. We address these challenges with a neural dynamics
+framework that combines object particles and spatial grids in a hybrid
+representation. Our particle-grid model captures global shape and motion
+information while predicting dense particle movements, enabling the modeling of
+objects with varied shapes and materials. Particles represent object shapes,
+while the spatial grid discretizes the 3D space to ensure spatial continuity
+and enhance learning efficiency. Coupled with Gaussian Splattings for visual
+rendering, our framework achieves a fully learning-based digital twin of
+deformable objects and generates 3D action-conditioned videos. Through
+experiments, we demonstrate that our model learns the dynamics of diverse
+objects -- such as ropes, cloths, stuffed animals, and paper bags -- from
+sparse-view RGB-D recordings of robot-object interactions, while also
+generalizing at the category level to unseen instances. Our approach
+outperforms state-of-the-art learning-based and physics-based simulators,
+particularly in scenarios with limited camera views. Furthermore, we showcase
+the utility of our learned models in model-based planning, enabling
+goal-conditioned object manipulation across a range of tasks. The project page
+is available at https://kywind.github.io/pgnd .",http://arxiv.org/pdf/2506.15680v1,,False
+deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses,18/06/2025,"Georgios Androutsopoulos, Antonio Bianchi","Although Rust ensures memory safety by default, it also permits the use of
+unsafe code, which can introduce memory safety vulnerabilities if misused.
+Unfortunately, existing tools for detecting memory bugs in Rust typically
+exhibit limited detection capabilities, inadequately handle Rust-specific
+types, or rely heavily on manual intervention.
+  To address these limitations, we present deepSURF, a tool that integrates
+static analysis with Large Language Model (LLM)-guided fuzzing harness
+generation to effectively identify memory safety vulnerabilities in Rust
+libraries, specifically targeting unsafe code. deepSURF introduces a novel
+approach for handling generics by substituting them with custom types and
+generating tailored implementations for the required traits, enabling the
+fuzzer to simulate user-defined behaviors within the fuzzed library.
+Additionally, deepSURF employs LLMs to augment fuzzing harnesses dynamically,
+facilitating exploration of complex API interactions and significantly
+increasing the likelihood of exposing memory safety vulnerabilities. We
+evaluated deepSURF on 27 real-world Rust crates, successfully rediscovering 20
+known memory safety bugs and uncovering 6 previously unknown vulnerabilities,
+demonstrating clear improvements over state-of-the-art tools.",http://arxiv.org/pdf/2506.15648v1,,False
+GenHOI: Generalizing Text-driven 4D Human-Object Interaction Synthesis for Unseen Objects,18/06/2025,"Shujia Li, Haiyu Zhang, Xinyuan Chen, Yaohui Wang, Yutong Ban","While diffusion models and large-scale motion datasets have advanced
+text-driven human motion synthesis, extending these advances to 4D human-object
+interaction (HOI) remains challenging, mainly due to the limited availability
+of large-scale 4D HOI datasets. In our study, we introduce GenHOI, a novel
+two-stage framework aimed at achieving two key objectives: 1) generalization to
+unseen objects and 2) the synthesis of high-fidelity 4D HOI sequences. In the
+initial stage of our framework, we employ an Object-AnchorNet to reconstruct
+sparse 3D HOI keyframes for unseen objects, learning solely from 3D HOI
+datasets, thereby mitigating the dependence on large-scale 4D HOI datasets.
+Subsequently, we introduce a Contact-Aware Diffusion Model (ContactDM) in the
+second stage to seamlessly interpolate sparse 3D HOI keyframes into densely
+temporally coherent 4D HOI sequences. To enhance the quality of generated 4D
+HOI sequences, we propose a novel Contact-Aware Encoder within ContactDM to
+extract human-object contact patterns and a novel Contact-Aware HOI Attention
+to effectively integrate the contact signals into diffusion models.
+Experimental results show that we achieve state-of-the-art results on the
+publicly available OMOMO and 3D-FUTURE datasets, demonstrating strong
+generalization abilities to unseen objects, while enabling high-fidelity 4D HOI
+generation.",http://arxiv.org/pdf/2506.15483v1,,False
+Efficient and Generalizable Environmental Understanding for Visual Navigation,18/06/2025,"Ruoyu Wang, Xinshu Li, Chen Wang, Lina Yao","Visual Navigation is a core task in Embodied AI, enabling agents to navigate
+complex environments toward given objectives. Across diverse settings within
+Navigation tasks, many necessitate the modelling of sequential data accumulated
+from preceding time steps. While existing methods perform well, they typically
+process all historical observations simultaneously, overlooking the internal
+association structure within the data, which may limit the potential for
+further improvements in task performance. We address this by examining the
+unique characteristics of Navigation tasks through the lens of causality,
+introducing a causal framework to highlight the limitations of conventional
+sequential methods. Leveraging this insight, we propose Causality-Aware
+Navigation (CAN), which incorporates a Causal Understanding Module to enhance
+the agent's environmental understanding capability. Empirical evaluations show
+that our approach consistently outperforms baselines across various tasks and
+simulation environments. Extensive ablations studies attribute these gains to
+the Causal Understanding Module, which generalizes effectively in both
+Reinforcement and Supervised Learning settings without computational overhead.",http://arxiv.org/pdf/2506.15377v1,,False
+Knowledge Distillation Framework for Accelerating High-Accuracy Neural Network-Based Molecular Dynamics Simulations,18/06/2025,"Naoki Matsumura, Yuta Yoshimoto, Yuto Iwasaki, Meguru Yamazaki, Yasufumi Sakai","Neural network potentials (NNPs) offer a powerful alternative to traditional
+force fields for molecular dynamics (MD) simulations. Accurate and stable MD
+simulations, crucial for evaluating material properties, require training data
+encompassing both low-energy stable structures and high-energy structures.
+Conventional knowledge distillation (KD) methods fine-tune a pre-trained NNP as
+a teacher model to generate training data for a student model. However, in
+material-specific models, this fine-tuning process increases energy barriers,
+making it difficult to create training data containing high-energy structures.
+To address this, we propose a novel KD framework that leverages a
+non-fine-tuned, off-the-shelf pre-trained NNP as a teacher. Its gentler energy
+landscape facilitates the exploration of a wider range of structures, including
+the high-energy structures crucial for stable MD simulations. Our framework
+employs a two-stage training process: first, the student NNP is trained with a
+dataset generated by the off-the-shelf teacher; then, it is fine-tuned with a
+smaller, high-accuracy density functional theory (DFT) dataset. We demonstrate
+the effectiveness of our framework by applying it to both organic (polyethylene
+glycol) and inorganic (L$_{10}$GeP$_{2}$S$_{12}$) materials, achieving
+comparable or superior accuracy in reproducing physical properties compared to
+existing methods. Importantly, our method reduces the number of expensive DFT
+calculations by 10x compared to existing NNP generation methods, without
+sacrificing accuracy.",http://arxiv.org/pdf/2506.15337v1,,False
+Active Learning-Guided Seq2Seq Variational Autoencoder for Multi-target Inhibitor Generation,18/06/2025,"Júlia Vilalta-Mor, Alexis Molina, Laura Ortega Varga, Isaac Filella-Merce, Victor Guallar","Simultaneously optimizing molecules against multiple therapeutic targets
+remains a profound challenge in drug discovery, particularly due to sparse
+rewards and conflicting design constraints. We propose a structured active
+learning (AL) paradigm integrating a sequence-to-sequence (Seq2Seq) variational
+autoencoder (VAE) into iterative loops designed to balance chemical diversity,
+molecular quality, and multi-target affinity. Our method alternates between
+expanding chemically feasible regions of latent space and progressively
+constraining molecules based on increasingly stringent multi-target docking
+thresholds. In a proof-of-concept study targeting three related coronavirus
+main proteases (SARS-CoV-2, SARS-CoV, MERS-CoV), our approach efficiently
+generated a structurally diverse set of pan-inhibitor candidates. We
+demonstrate that careful timing and strategic placement of chemical filters
+within this active learning pipeline markedly enhance exploration of beneficial
+chemical space, transforming the sparse-reward, multi-objective drug design
+problem into an accessible computational task. Our framework thus provides a
+generalizable roadmap for efficiently navigating complex polypharmacological
+landscapes.",http://arxiv.org/pdf/2506.15309v1,,False
+Human Motion Capture from Loose and Sparse Inertial Sensors with Garment-aware Diffusion Models,18/06/2025,"Andela Ilic, Jiaxi Jiang, Paul Streli, Xintong Liu, Christian Holz","Motion capture using sparse inertial sensors has shown great promise due to
+its portability and lack of occlusion issues compared to camera-based tracking.
+Existing approaches typically assume that IMU sensors are tightly attached to
+the human body. However, this assumption often does not hold in real-world
+scenarios. In this paper, we present a new task of full-body human pose
+estimation using sparse, loosely attached IMU sensors. To solve this task, we
+simulate IMU recordings from an existing garment-aware human motion dataset. We
+developed transformer-based diffusion models to synthesize loose IMU data and
+estimate human poses based on this challenging loose IMU data. In addition, we
+show that incorporating garment-related parameters while training the model on
+simulated loose data effectively maintains expressiveness and enhances the
+ability to capture variations introduced by looser or tighter garments.
+Experiments show that our proposed diffusion methods trained on simulated and
+synthetic data outperformed the state-of-the-art methods quantitatively and
+qualitatively, opening up a promising direction for future research.",http://arxiv.org/pdf/2506.15290v1,,False
+"In-Context Learning for Gradient-Free Receiver Adaptation: Principles, Applications, and Theory",18/06/2025,"Matteo Zecchin, Tomer Raviv, Dileep Kalathil, Krishna Narayanan, Nir Shlezinger, Osvaldo Simeone","In recent years, deep learning has facilitated the creation of wireless
+receivers capable of functioning effectively in conditions that challenge
+traditional model-based designs. Leveraging programmable hardware
+architectures, deep learning-based receivers offer the potential to dynamically
+adapt to varying channel environments. However, current adaptation strategies,
+including joint training, hypernetwork-based methods, and meta-learning, either
+demonstrate limited flexibility or necessitate explicit optimization through
+gradient descent. This paper presents gradient-free adaptation techniques
+rooted in the emerging paradigm of in-context learning (ICL). We review
+architectural frameworks for ICL based on Transformer models and structured
+state-space models (SSMs), alongside theoretical insights into how sequence
+models effectively learn adaptation from contextual information. Further, we
+explore the application of ICL to cell-free massive MIMO networks, providing
+both theoretical analyses and empirical evidence. Our findings indicate that
+ICL represents a principled and efficient approach to real-time receiver
+adaptation using pilot signals and auxiliary contextual information-without
+requiring online retraining.",http://arxiv.org/pdf/2506.15176v1,,False
+CWGAN-GP Augmented CAE for Jamming Detection in 5G-NR in Non-IID Datasets,18/06/2025,"Samhita Kuili, Mohammadreza Amini, Burak Kantarci","In the ever-expanding domain of 5G-NR wireless cellular networks,
+over-the-air jamming attacks are prevalent as security attacks, compromising
+the quality of the received signal. We simulate a jamming environment by
+incorporating additive white Gaussian noise (AWGN) into the real-world In-phase
+and Quadrature (I/Q) OFDM datasets. A Convolutional Autoencoder (CAE) is
+exploited to implement a jamming detection over various characteristics such as
+heterogenous I/Q datasets; extracting relevant information on Synchronization
+Signal Blocks (SSBs), and fewer SSB observations with notable class imbalance.
+Given the characteristics of datasets, balanced datasets are acquired by
+employing a Conv1D conditional Wasserstein Generative Adversarial
+Network-Gradient Penalty(CWGAN-GP) on both majority and minority SSB
+observations. Additionally, we compare the performance and detection ability of
+the proposed CAE model on augmented datasets with benchmark models:
+Convolutional Denoising Autoencoder (CDAE) and Convolutional Sparse Autoencoder
+(CSAE). Despite the complexity of data heterogeneity involved across all
+datasets, CAE depicts the robustness in detection performance of jammed signal
+by achieving average values of 97.33% precision, 91.33% recall, 94.08%
+F1-score, and 94.35% accuracy over CDAE and CSAE.",http://arxiv.org/pdf/2506.15075v1,,False

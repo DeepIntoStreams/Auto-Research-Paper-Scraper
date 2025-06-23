@@ -1,0 +1,509 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Long-term Traffic Simulation with Interleaved Autoregressive Motion and Scenario Generation,20/06/2025,"Xiuyu Yang, Shuhan Tan, Philipp Krähenbühl","An ideal traffic simulator replicates the realistic long-term point-to-point
+trip that a self-driving system experiences during deployment. Prior models and
+benchmarks focus on closed-loop motion simulation for initial agents in a
+scene. This is problematic for long-term simulation. Agents enter and exit the
+scene as the ego vehicle enters new regions. We propose InfGen, a unified
+next-token prediction model that performs interleaved closed-loop motion
+simulation and scene generation. InfGen automatically switches between
+closed-loop motion simulation and scene generation mode. It enables stable
+long-term rollout simulation. InfGen performs at the state-of-the-art in
+short-term (9s) traffic simulation, and significantly outperforms all other
+methods in long-term (30s) simulation. The code and model of InfGen will be
+released at https://orangesodahub.github.io/InfGen",http://arxiv.org/pdf/2506.17213v1,,False
+Consistent Sampling and Simulation: Molecular Dynamics with Energy-Based Diffusion Models,20/06/2025,"Michael Plainer, Hao Wu, Leon Klein, Stephan Günnemann, Frank Noé","Diffusion models have recently gained significant attention due to their
+effectiveness in various scientific domains, including biochemistry. When
+trained on equilibrium molecular distributions, diffusion models provide both:
+a generative procedure to sample equilibrium conformations and associated
+forces derived from the model's scores. However, using the forces for
+coarse-grained molecular dynamics simulations uncovers inconsistencies in the
+samples generated via classical diffusion inference and simulation, despite
+both originating from the same model. Particularly at the small diffusion
+timesteps required for simulations, diffusion models fail to satisfy the
+Fokker-Planck equation, which governs how the score should evolve over time. We
+interpret this deviation as an indication of the observed inconsistencies and
+propose an energy-based diffusion model with a Fokker-Planck-derived
+regularization term enforcing consistency. We demonstrate the effectiveness of
+our approach on toy systems, alanine dipeptide, and introduce a
+state-of-the-art transferable Boltzmann emulator for dipeptides that supports
+simulation and demonstrates enhanced consistency and efficient sampling.",http://arxiv.org/pdf/2506.17139v1,,False
+Searching for a Hidden Markov Anomaly over Multiple Processes,20/06/2025,"Levli Citron, Kobi Cohen, Qing Zhao","We address the problem of detecting an anomalous process among a large number
+of processes. At each time t, normal processes are in state zero (normal
+state), while the abnormal process may be in either state zero (normal state)
+or state one (abnormal state), with the states being hidden. The transition
+between states for the abnormal process is governed by a Markov chain over
+time. At each time step, observations can be drawn from a selected subset of
+processes. Each probed process generates an observation depending on its hidden
+state, either a typical distribution under state zero or an abnormal
+distribution under state one. The objective is to design a sequential search
+strategy that minimizes the expected detection time, subject to an error
+probability constraint. In contrast to prior works that assume i.i.d.
+observations, we address a new setting where anomalies evolve according to a
+hidden Markov model. To this end, we propose a novel algorithm, dubbed Anomaly
+Detection under Hidden Markov model (ADHM), which dynamically adapts the
+probing strategy based on accumulated statistical evidence and predictive
+belief updates over hidden states. ADHM effectively leverages temporal
+correlations to focus sensing resources on the most informative processes. The
+algorithm is supported by an asymptotic theoretical foundation, grounded in an
+oracle analysis that characterizes the fundamental limits of detection under
+the assumption of a known distribution of the hidden states. In addition, the
+algorithm demonstrates strong empirical performance, consistently outperforming
+existing methods in extensive simulations.",http://arxiv.org/pdf/2506.17108v1,,False
+Flow-Based Non-stationary Temporal Regime Causal Structure Learning,20/06/2025,"Abdellah Rahmani, Pascal Frossard","Understanding causal relationships in multivariate time series is crucial in
+many scenarios, such as those dealing with financial or neurological data. Many
+such time series exhibit multiple regimes, i.e., consecutive temporal segments
+with a priori unknown boundaries, with each regime having its own causal
+structure. Inferring causal dependencies and regime shifts is critical for
+analyzing the underlying processes. However, causal structure learning in this
+setting is challenging due to (1) non stationarity, i.e., each regime can have
+its own causal graph and mixing function, and (2) complex noise distributions,
+which may be non Gaussian or heteroscedastic. Existing causal discovery
+approaches cannot address these challenges, since generally assume stationarity
+or Gaussian noise with constant variance. Hence, we introduce FANTOM, a unified
+framework for causal discovery that handles non stationary processes along with
+non Gaussian and heteroscedastic noises. FANTOM simultaneously infers the
+number of regimes and their corresponding indices and learns each regime's
+Directed Acyclic Graph. It uses a Bayesian Expectation Maximization algorithm
+that maximizes the evidence lower bound of the data log likelihood. On the
+theoretical side, we prove, under mild assumptions, that temporal
+heteroscedastic causal models, introduced in FANTOM's formulation, are
+identifiable in both stationary and non stationary settings. In addition,
+extensive experiments on synthetic and real data show that FANTOM outperforms
+existing methods.",http://arxiv.org/pdf/2506.17065v1,,False
+Bayesian Joint Model of Multi-Sensor and Failure Event Data for Multi-Mode Failure Prediction,20/06/2025,"Sina Aghaee Dabaghan Fard, Minhee Kim, Akash Deep, Jaesung Lee","Modern industrial systems are often subject to multiple failure modes, and
+their conditions are monitored by multiple sensors, generating multiple
+time-series signals. Additionally, time-to-failure data are commonly available.
+Accurately predicting a system's remaining useful life (RUL) requires
+effectively leveraging multi-sensor time-series data alongside multi-mode
+failure event data. In most existing models, failure modes and RUL prediction
+are performed independently, ignoring the inherent relationship between these
+two tasks. Some models integrate multiple failure modes and event prediction
+using black-box machine learning approaches, which lack statistical rigor and
+cannot characterize the inherent uncertainty in the model and data. This paper
+introduces a unified approach to jointly model the multi-sensor time-series
+data and failure time concerning multiple failure modes. This proposed model
+integrate a Cox proportional hazards model, a Convolved Multi-output Gaussian
+Process, and multinomial failure mode distributions in a hierarchical Bayesian
+framework with corresponding priors, enabling accurate prediction with robust
+uncertainty quantification. Posterior distributions are effectively obtained by
+Variational Bayes, and prediction is performed with Monte Carlo sampling. The
+advantages of the proposed model is validated through extensive numerical and
+case studies with jet-engine dataset.",http://arxiv.org/pdf/2506.17036v1,,False
+A Quantile Regression Approach for Remaining Useful Life Estimation with State Space Models,20/06/2025,"Davide Frizzo, Francesco Borsatti, Gian Antonio Susto","Predictive Maintenance (PdM) is pivotal in Industry 4.0 and 5.0, proactively
+enhancing efficiency through accurate equipment Remaining Useful Life (RUL)
+prediction, thus optimizing maintenance scheduling and reducing unexpected
+failures and premature interventions. This paper introduces a novel RUL
+estimation approach leveraging State Space Models (SSM) for efficient long-term
+sequence modeling. To handle model uncertainty, Simoultaneous Quantile
+Regression (SQR) is integrated into the SSM, enabling multiple quantile
+estimations. The proposed method is benchmarked against traditional sequence
+modelling techniques (LSTM, Transformer, Informer) using the C-MAPSS dataset.
+Results demonstrate superior accuracy and computational efficiency of SSM
+models, underscoring their potential for high-stakes industrial applications.",http://arxiv.org/pdf/2506.17018v1,,False
+Robust Group Anomaly Detection for Quasi-Periodic Network Time Series,20/06/2025,"Kai Yang, Shaoyu Dou, Pan Luo, Xin Wang, H. Vincent Poor","Many real-world multivariate time series are collected from a network of
+physical objects embedded with software, electronics, and sensors. The
+quasi-periodic signals generated by these objects often follow a similar
+repetitive and periodic pattern, but have variations in the period, and come in
+different lengths caused by timing (synchronization) errors. Given a multitude
+of such quasi-periodic time series, can we build machine learning models to
+identify those time series that behave differently from the majority of the
+observations? In addition, can the models help human experts to understand how
+the decision was made? We propose a sequence to Gaussian Mixture Model
+(seq2GMM) framework. The overarching goal of this framework is to identify
+unusual and interesting time series within a network time series database. We
+further develop a surrogate-based optimization algorithm that can efficiently
+train the seq2GMM model. Seq2GMM exhibits strong empirical performance on a
+plurality of public benchmark datasets, outperforming state-of-the-art anomaly
+detection techniques by a significant margin. We also theoretically analyze the
+convergence property of the proposed training algorithm and provide numerical
+results to substantiate our theoretical claims.",http://arxiv.org/pdf/2506.16815v1,10.1109/TNSE.2022.3170364,False
+SIDE: Semantic ID Embedding for effective learning from sequences,20/06/2025,"Dinesh Ramasamy, Shakti Kumar, Chris Cadonic, Jiaxin Yang, Sohini Roychowdhury, Esam Abdel Rhman, Srihari Reddy","Sequence-based recommendations models are driving the state-of-the-art for
+industrial ad-recommendation systems. Such systems typically deal with user
+histories or sequence lengths ranging in the order of O(10^3) to O(10^4)
+events. While adding embeddings at this scale is manageable in pre-trained
+models, incorporating them into real-time prediction models is challenging due
+to both storage and inference costs. To address this scaling challenge, we
+propose a novel approach that leverages vector quantization (VQ) to inject a
+compact Semantic ID (SID) as input to the recommendation models instead of a
+collection of embeddings. Our method builds on recent works of SIDs by
+introducing three key innovations: (i) a multi-task VQ-VAE framework, called VQ
+fusion that fuses multiple content embeddings and categorical predictions into
+a single Semantic ID; (ii) a parameter-free, highly granular SID-to-embedding
+conversion technique, called SIDE, that is validated with two content embedding
+collections, thereby eliminating the need for a large parameterized lookup
+table; and (iii) a novel quantization method called Discrete-PCA (DPCA) which
+generalizes and enhances residual quantization techniques. The proposed
+enhancements when applied to a large-scale industrial ads-recommendation system
+achieves 2.4X improvement in normalized entropy (NE) gain and 3X reduction in
+data footprint compared to traditional SID methods.",http://arxiv.org/pdf/2506.16698v1,,False
+Long-Context Generalization with Sparse Attention,19/06/2025,"Pavlo Vasylenko, Marcos Treviso, André F. T. Martins","Transformer-based architectures traditionally employ softmax to compute
+attention weights, which produces dense distributions over all tokens in a
+sequence. While effective in many settings, this density has been shown to be
+detrimental for tasks that demand precise focus on fixed-size patterns: as
+sequence length increases, non-informative tokens accumulate attention
+probability mass, leading to dispersion and representational collapse. We show
+in this paper that sparse attention mechanisms using $\alpha$-entmax can avoid
+these issues, due to their ability to assign exact zeros to irrelevant tokens.
+Furthermore, we introduce Adaptive-Scalable Entmax (ASEntmax), which endows
+$\alpha$-entmax with a learnable temperature parameter, allowing the attention
+distribution to interpolate between sparse (pattern-focused) and dense
+(softmax-like) regimes. Finally, we show that the ability to locate and
+generalize fixed-size patterns can be further improved through a careful design
+of position encodings, which impacts both dense and sparse attention methods.
+By integrating ASEntmax into standard transformer layers alongside proper
+positional encodings, we show that our models greatly outperform softmax,
+scalable softmax, and fixed-temperature $\alpha$-entmax baselines on
+long-context generalization.",http://arxiv.org/pdf/2506.16640v1,,False
+Spotting tell-tale visual artifacts in face swapping videos: strengths and pitfalls of CNN detectors,19/06/2025,"Riccardo Ziglio, Cecilia Pasquini, Silvio Ranise","Face swapping manipulations in video streams represents an increasing threat
+in remote video communications, due to advances
+  in automated and real-time tools. Recent literature proposes to characterize
+and exploit visual artifacts introduced in video frames
+  by swapping algorithms when dealing with challenging physical scenes, such as
+face occlusions. This paper investigates the
+  effectiveness of this approach by benchmarking CNN-based data-driven models
+on two data corpora (including a newly collected
+  one) and analyzing generalization capabilities with respect to different
+acquisition sources and swapping algorithms. The results
+  confirm excellent performance of general-purpose CNN architectures when
+operating within the same data source, but a significant
+  difficulty in robustly characterizing occlusion-based visual cues across
+datasets. This highlights the need for specialized detection
+  strategies to deal with such artifacts.",http://arxiv.org/pdf/2506.16497v1,,False
+Progressive Inference-Time Annealing of Diffusion Models for Sampling from Boltzmann Densities,19/06/2025,"Tara Akhound-Sadegh, Jungyoon Lee, Avishek Joey Bose, Valentin De Bortoli, Arnaud Doucet, Michael M. Bronstein, Dominique Beaini, Siamak Ravanbakhsh, Kirill Neklyudov, Alexander Tong","Sampling efficiently from a target unnormalized probability density remains a
+core challenge, with relevance across countless high-impact scientific
+applications. A promising approach towards this challenge is the design of
+amortized samplers that borrow key ideas, such as probability path design, from
+state-of-the-art generative diffusion models. However, all existing
+diffusion-based samplers remain unable to draw samples from distributions at
+the scale of even simple molecular systems. In this paper, we propose
+Progressive Inference-Time Annealing (PITA), a novel framework to learn
+diffusion-based samplers that combines two complementary interpolation
+techniques: I.) Annealing of the Boltzmann distribution and II.) Diffusion
+smoothing. PITA trains a sequence of diffusion models from high to low
+temperatures by sequentially training each model at progressively higher
+temperatures, leveraging engineered easy access to samples of the
+temperature-annealed target density. In the subsequent step, PITA enables
+simulating the trained diffusion model to procure training samples at a lower
+temperature for the next diffusion model through inference-time annealing using
+a novel Feynman-Kac PDE combined with Sequential Monte Carlo. Empirically, PITA
+enables, for the first time, equilibrium sampling of N-body particle systems,
+Alanine Dipeptide, and tripeptides in Cartesian coordinates with dramatically
+lower energy function evaluations. Code available at:
+https://github.com/taraak/pita",http://arxiv.org/pdf/2506.16471v1,,False
+On Continuous Monitoring of Risk Violations under Unknown Shift,19/06/2025,"Alexander Timans, Rajeev Verma, Eric Nalisnick, Christian A. Naesseth","Machine learning systems deployed in the real world must operate under
+dynamic and often unpredictable distribution shifts. This challenges the
+validity of statistical safety assurances on the system's risk established
+beforehand. Common risk control frameworks rely on fixed assumptions and lack
+mechanisms to continuously monitor deployment reliability. In this work, we
+propose a general framework for the real-time monitoring of risk violations in
+evolving data streams. Leveraging the 'testing by betting' paradigm, we propose
+a sequential hypothesis testing procedure to detect violations of bounded risks
+associated with the model's decision-making mechanism, while ensuring control
+on the false alarm rate. Our method operates under minimal assumptions on the
+nature of encountered shifts, rendering it broadly applicable. We illustrate
+the effectiveness of our approach by monitoring risks in outlier detection and
+set prediction under a variety of shifts.",http://arxiv.org/pdf/2506.16416v1,,False
+Generating Directed Graphs with Dual Attention and Asymmetric Encoding,19/06/2025,"Alba Carballo-Castro, Manuel Madeira, Yiming Qin, Dorina Thanou, Pascal Frossard","Directed graphs naturally model systems with asymmetric, ordered
+relationships, essential to applications in biology, transportation, social
+networks, and visual understanding. Generating such graphs enables tasks such
+as simulation, data augmentation and novel instance discovery; however,
+directed graph generation remains underexplored. We identify two key factors
+limiting progress in this direction: first, modeling edge directionality
+introduces a substantially larger dependency space, making the underlying
+distribution harder to learn; second, the absence of standardized benchmarks
+hinders rigorous evaluation. Addressing the former requires more expressive
+models that are sensitive to directional topologies. We propose Directo, the
+first generative model for directed graphs built upon the discrete flow
+matching framework. Our approach combines: (i) principled positional encodings
+tailored to asymmetric pairwise relations, (ii) a dual-attention mechanism
+capturing both incoming and outgoing dependencies, and (iii) a robust, discrete
+generative framework. To support evaluation, we introduce a benchmark suite
+covering synthetic and real-world datasets. It shows that our method performs
+strongly across diverse settings and even competes with specialized models for
+particular classes, such as directed acyclic graphs. Our results highlight the
+effectiveness and generality of our approach, establishing a solid foundation
+for future research in directed graph generation.",http://arxiv.org/pdf/2506.16404v1,,False
+Data-Driven Policy Mapping for Safe RL-based Energy Management Systems,19/06/2025,"Theo Zangato, Aomar Osmani, Pegah Alizadeh","Increasing global energy demand and renewable integration complexity have
+placed buildings at the center of sustainable energy management. We present a
+three-step reinforcement learning(RL)-based Building Energy Management System
+(BEMS) that combines clustering, forecasting, and constrained policy learning
+to address scalability, adaptability, and safety challenges. First, we cluster
+non-shiftable load profiles to identify common consumption patterns, enabling
+policy generalization and transfer without retraining for each new building.
+Next, we integrate an LSTM based forecasting module to anticipate future
+states, improving the RL agents' responsiveness to dynamic conditions. Lastly,
+domain-informed action masking ensures safe exploration and operation,
+preventing harmful decisions. Evaluated on real-world data, our approach
+reduces operating costs by up to 15% for certain building types, maintains
+stable environmental performance, and quickly classifies and optimizes new
+buildings with limited data. It also adapts to stochastic tariff changes
+without retraining. Overall, this framework delivers scalable, robust, and
+cost-effective building energy management.",http://arxiv.org/pdf/2506.16352v1,,False
+Watermarking Autoregressive Image Generation,19/06/2025,"Nikola Jovanović, Ismail Labiad, Tomáš Souček, Martin Vechev, Pierre Fernandez","Watermarking the outputs of generative models has emerged as a promising
+approach for tracking their provenance. Despite significant interest in
+autoregressive image generation models and their potential for misuse, no prior
+work has attempted to watermark their outputs at the token level. In this work,
+we present the first such approach by adapting language model watermarking
+techniques to this setting. We identify a key challenge: the lack of reverse
+cycle-consistency (RCC), wherein re-tokenizing generated image tokens
+significantly alters the token sequence, effectively erasing the watermark. To
+address this and to make our method robust to common image transformations,
+neural compression, and removal attacks, we introduce (i) a custom
+tokenizer-detokenizer finetuning procedure that improves RCC, and (ii) a
+complementary watermark synchronization layer. As our experiments demonstrate,
+our approach enables reliable and robust watermark detection with theoretically
+grounded p-values.",http://arxiv.org/pdf/2506.16349v1,,False
+Improved Exploration in GFlownets via Enhanced Epistemic Neural Networks,19/06/2025,"Sajan Muhammad, Salem Lahlou","Efficiently identifying the right trajectories for training remains an open
+problem in GFlowNets. To address this, it is essential to prioritize
+exploration in regions of the state space where the reward distribution has not
+been sufficiently learned. This calls for uncertainty-driven exploration, in
+other words, the agent should be aware of what it does not know. This attribute
+can be measured by joint predictions, which are particularly important for
+combinatorial and sequential decision problems. In this research, we integrate
+epistemic neural networks (ENN) with the conventional architecture of GFlowNets
+to enable more efficient joint predictions and better uncertainty
+quantification, thereby improving exploration and the identification of optimal
+trajectories. Our proposed algorithm, ENN-GFN-Enhanced, is compared to the
+baseline method in GFlownets and evaluated in grid environments and structured
+sequence generation in various settings, demonstrating both its efficacy and
+efficiency.",http://arxiv.org/pdf/2506.16313v1,,False
+Category-based Galaxy Image Generation via Diffusion Models,19/06/2025,"Xingzhong Fan, Hongming Tang, Yue Zeng, M. B. N. Kouwenhoven, Guangquan Zeng","Conventional galaxy generation methods rely on semi-analytical models and
+hydrodynamic simulations, which are highly dependent on physical assumptions
+and parameter tuning. In contrast, data-driven generative models do not have
+explicit physical parameters pre-determined, and instead learn them efficiently
+from observational data, making them alternative solutions to galaxy
+generation. Among these, diffusion models outperform Variational Autoencoders
+(VAEs) and Generative Adversarial Networks (GANs) in quality and diversity.
+Leveraging physical prior knowledge to these models can further enhance their
+capabilities. In this work, we present GalCatDiff, the first framework in
+astronomy to leverage both galaxy image features and astrophysical properties
+in the network design of diffusion models. GalCatDiff incorporates an enhanced
+U-Net and a novel block entitled Astro-RAB (Residual Attention Block), which
+dynamically combines attention mechanisms with convolution operations to ensure
+global consistency and local feature fidelity. Moreover, GalCatDiff uses
+category embeddings for class-specific galaxy generation, avoiding the high
+computational costs of training separate models for each category. Our
+experimental results demonstrate that GalCatDiff significantly outperforms
+existing methods in terms of the consistency of sample color and size
+distributions, and the generated galaxies are both visually realistic and
+physically consistent. This framework will enhance the reliability of galaxy
+simulations and can potentially serve as a data augmentor to support future
+galaxy classification algorithm development.",http://arxiv.org/pdf/2506.16255v1,,False
+Can AI Dream of Unseen Galaxies? Conditional Diffusion Model for Galaxy Morphology Augmentation,19/06/2025,"Chenrui Ma, Zechang Sun, Tao Jing, Zheng Cai, Yuan-Sen Ting, Song Huang, Mingyu Li","Observational astronomy relies on visual feature identification to detect
+critical astrophysical phenomena. While machine learning (ML) increasingly
+automates this process, models often struggle with generalization in
+large-scale surveys due to the limited representativeness of labeled datasets
+-- whether from simulations or human annotation -- a challenge pronounced for
+rare yet scientifically valuable objects. To address this, we propose a
+conditional diffusion model to synthesize realistic galaxy images for
+augmenting ML training data. Leveraging the Galaxy Zoo 2 dataset which contains
+visual feature -- galaxy image pairs from volunteer annotation, we demonstrate
+that our model generates diverse, high-fidelity galaxy images closely adhere to
+the specified morphological feature conditions. Moreover, this model enables
+generative extrapolation to project well-annotated data into unseen domains and
+advancing rare object detection. Integrating synthesized images into ML
+pipelines improves performance in standard morphology classification, boosting
+completeness and purity by up to 30\% across key metrics. For rare object
+detection, using early-type galaxies with prominent dust lane features (
+$\sim$0.1\% in GZ2 dataset) as a test case, our approach doubled the number of
+detected instances from 352 to 872, compared to previous studies based on
+visual inspection. This study highlights the power of generative models to
+bridge gaps between scarce labeled data and the vast, uncharted parameter space
+of observational astronomy and sheds insight for future astrophysical
+foundation model developments. Our project homepage is available at
+https://galaxysd-webpage.streamlit.app/.",http://arxiv.org/pdf/2506.16233v1,,False
+CF-Seg: Counterfactuals meet Segmentation,19/06/2025,"Raghav Mehta, Fabio De Sousa Ribeiro, Tian Xia, Melanie Roschewitz, Ainkaran Santhirasekaram, Dominic C. Marshall, Ben Glocker","Segmenting anatomical structures in medical images plays an important role in
+the quantitative assessment of various diseases. However, accurate segmentation
+becomes significantly more challenging in the presence of disease. Disease
+patterns can alter the appearance of surrounding healthy tissues, introduce
+ambiguous boundaries, or even obscure critical anatomical structures. As such,
+segmentation models trained on real-world datasets may struggle to provide good
+anatomical segmentation, leading to potential misdiagnosis. In this paper, we
+generate counterfactual (CF) images to simulate how the same anatomy would
+appear in the absence of disease without altering the underlying structure. We
+then use these CF images to segment structures of interest, without requiring
+any changes to the underlying segmentation model. Our experiments on two
+real-world clinical chest X-ray datasets show that the use of counterfactual
+images improves anatomical segmentation, thereby aiding downstream clinical
+decision-making.",http://arxiv.org/pdf/2506.16213v1,,False
+Diffusion-Based Hypothesis Testing and Change-Point Detection,19/06/2025,"Sean Moushegian, Taposh Banerjee, Vahid Tarokh","Score-based methods have recently seen increasing popularity in modeling and
+generation. Methods have been constructed to perform hypothesis testing and
+change-point detection with score functions, but these methods are in general
+not as powerful as their likelihood-based peers. Recent works consider
+generalizing the score-based Fisher divergence into a diffusion-divergence by
+transforming score functions via multiplication with a matrix-valued function
+or a weight matrix. In this paper, we extend the score-based hypothesis test
+and change-point detection stopping rule into their diffusion-based analogs.
+Additionally, we theoretically quantify the performance of these
+diffusion-based algorithms and study scenarios where optimal performance is
+achievable. We propose a method of numerically optimizing the weight matrix and
+present numerical simulations to illustrate the advantages of diffusion-based
+algorithms.",http://arxiv.org/pdf/2506.16089v1,,False
+Consistency Verification in Ontology-Based Process Models with Parameter Interdependencies,19/06/2025,"Tom Jeleniewski, Hamied Nabizada, Jonathan Reif, Felix Gehlhoff, Alexander Fay","The formalization of process knowledge using ontologies enables consistent
+modeling of parameter interdependencies in manufacturing. These
+interdependencies are typically represented as mathematical expressions that
+define relations between process parameters, supporting tasks such as
+calculation, validation, and simulation. To support cross-context application
+and knowledge reuse, such expressions are often defined in a generic form and
+applied across multiple process contexts. This highlights the necessity of a
+consistent and semantically coherent model to ensure the correctness of data
+retrieval and interpretation. Consequently, dedicated mechanisms are required
+to address key challenges such as selecting context-relevant data, ensuring
+unit compatibility between variables and data elements, and verifying the
+completeness of input data required for evaluating mathematical expressions.
+This paper presents a set of verification mechanisms for a previously developed
+ontology-based process model that integrates standardized process semantics,
+data element definitions, and formal mathematical constructs. The approach
+includes (i) SPARQL-based filtering to retrieve process-relevant data, (ii) a
+unit consistency check based on expected-unit annotations and semantic
+classification, and (iii) a data completeness check to validate the
+evaluability of interdependencies. The applicability of the approach is
+demonstrated with a use case from Resin Transfer Molding (RTM), supporting the
+development of machine-interpretable and verifiable engineering models.",http://arxiv.org/pdf/2506.16087v1,,False
+A Lightweight RL-Driven Deep Unfolding Network for Robust WMMSE Precoding in Massive MU-MIMO-OFDM Systems,19/06/2025,"Kexuan Wang, An Liu","Weighted Minimum Mean Square Error (WMMSE) precoding is widely recognized for
+its near-optimal weighted sum rate performance. However, its practical
+deployment in massive multi-user (MU) multiple-input multiple-output (MIMO)
+orthogonal frequency-division multiplexing (OFDM) systems is hindered by the
+assumption of perfect channel state information (CSI) and high computational
+complexity. To address these issues, we first develop a wideband stochastic
+WMMSE (SWMMSE) algorithm that iteratively maximizes the ergodic weighted
+sum-rate (EWSR) under imperfect CSI. Building on this, we propose a lightweight
+reinforcement learning (RL)-driven deep unfolding (DU) network (RLDDU-Net),
+where each SWMMSE iteration is mapped to a network layer. Specifically, its DU
+module integrates approximation techniques and leverages beam-domain sparsity
+as well as frequency-domain subcarrier correlation, significantly accelerating
+convergence and reducing computational overhead. Furthermore, the RL module
+adaptively adjusts the network depth and generates compensation matrices to
+mitigate approximation errors. Simulation results under imperfect CSI
+demonstrate that RLDDU-Net outperforms existing baselines in EWSR performance
+while offering superior computational and convergence efficiency.",http://arxiv.org/pdf/2506.16072v1,,False
+AutoHFormer: Efficient Hierarchical Autoregressive Transformer for Time Series Prediction,19/06/2025,"Qianru Zhang, Honggang Wen, Ming Li, Dong Huang, Siu-Ming Yiu, Christian S. Jensen, Pietro Liò","Time series forecasting requires architectures that simultaneously achieve
+three competing objectives: (1) strict temporal causality for reliable
+predictions, (2) sub-quadratic complexity for practical scalability, and (3)
+multi-scale pattern recognition for accurate long-horizon forecasting. We
+introduce AutoHFormer, a hierarchical autoregressive transformer that addresses
+these challenges through three key innovations: 1) Hierarchical Temporal
+Modeling: Our architecture decomposes predictions into segment-level blocks
+processed in parallel, followed by intra-segment sequential refinement. This
+dual-scale approach maintains temporal coherence while enabling efficient
+computation. 2) Dynamic Windowed Attention: The attention mechanism employs
+learnable causal windows with exponential decay, reducing complexity while
+preserving precise temporal relationships. This design avoids both the
+anti-causal violations of standard transformers and the sequential bottlenecks
+of RNN hybrids. 3) Adaptive Temporal Encoding: a novel position encoding system
+is adopted to capture time patterns at multiple scales. It combines fixed
+oscillating patterns for short-term variations with learnable decay rates for
+long-term trends. Comprehensive experiments demonstrate that AutoHFormer 10.76X
+faster training and 6.06X memory reduction compared to PatchTST on PEMS08,
+while maintaining consistent accuracy across 96-720 step horizons in most of
+cases. These breakthroughs establish new benchmarks for efficient and precise
+time series modeling. Implementations of our method and all baselines in
+hierarchical autoregressive mechanism are available at
+https://github.com/lizzyhku/Autotime.",http://arxiv.org/pdf/2506.16001v1,,False
+Advanced Sign Language Video Generation with Compressed and Quantized Multi-Condition Tokenization,19/06/2025,"Cong Wang, Zexuan Deng, Zhiwei Jiang, Fei Shen, Yafeng Yin, Shiwei Gan, Zifeng Cheng, Shiping Ge, Qing Gu","Sign Language Video Generation (SLVG) seeks to generate identity-preserving
+sign language videos from spoken language texts. Existing methods primarily
+rely on the single coarse condition (\eg, skeleton sequences) as the
+intermediary to bridge the translation model and the video generation model,
+which limits both the naturalness and expressiveness of the generated videos.
+To overcome these limitations, we propose SignViP, a novel SLVG framework that
+incorporates multiple fine-grained conditions for improved generation fidelity.
+Rather than directly translating error-prone high-dimensional conditions,
+SignViP adopts a discrete tokenization paradigm to integrate and represent
+fine-grained conditions (\ie, fine-grained poses and 3D hands). SignViP
+contains three core components. (1) Sign Video Diffusion Model is jointly
+trained with a multi-condition encoder to learn continuous embeddings that
+encapsulate fine-grained motion and appearance. (2) Finite Scalar Quantization
+(FSQ) Autoencoder is further trained to compress and quantize these embeddings
+into discrete tokens for compact representation of the conditions. (3)
+Multi-Condition Token Translator is trained to translate spoken language text
+to discrete multi-condition tokens. During inference, Multi-Condition Token
+Translator first translates the spoken language text into discrete
+multi-condition tokens. These tokens are then decoded to continuous embeddings
+by FSQ Autoencoder, which are subsequently injected into Sign Video Diffusion
+Model to guide video generation. Experimental results show that SignViP
+achieves state-of-the-art performance across metrics, including video quality,
+temporal coherence, and semantic fidelity. The code is available at
+https://github.com/umnooob/signvip/.",http://arxiv.org/pdf/2506.15980v1,,False
+LazyEviction: Lagged KV Eviction with Attention Pattern Observation for Efficient Long Reasoning,19/06/2025,"Haoyue Zhang, Hualei Zhang, Xiaosong Ma, Jie Zhang, Song Guo","Large Language Models (LLMs) exhibit enhanced reasoning capabilities by
+employing Chain-of-Thought (CoT). However, the extended reasoning sequences
+introduce significant GPU memory overhead due to increased key-value (KV) cache
+size, particularly in tasks requiring long reasoning sequences, such as
+mathematics and programming. Existing KV cache compression methods mitigate
+memory bottlenecks but struggle in long reasoning tasks. In this paper, we
+analyze attention patterns in reasoning tasks and reveal a Token Importance
+Recurrence phenomenon: a large proportion of tokens receive renewed attention
+after multiple decoding steps, which is failed to capture by existing works and
+may lead to unpredictable eviction on such periodically critical tokens. To
+address this, we propose LazyEviction, a lagged KV eviction framework designed
+to maintain reasoning performance while reducing KV memory. LazyEviction is an
+Observation Window-based Lagged Eviction Mechanism retaining latent recurring
+tokens by performing lagged evictions across decoding steps, which contains two
+key components: (1) Recurrence Interval Tracking for capturing temporal
+variations in token importance, and (2) an Maximum Recurrence Interval-Centric
+Eviction Policy that prioritizes eviction based on tokens' recurrence patterns.
+Extensive experiments demonstrate that LazyEviction reduces KV cache size by
+50% while maintaining comparable accuracy on mathematics reasoning datasets,
+outperforming state-of-the-art methods. Our findings highlight the importance
+of preserving recurring tokens, which are critical for maintaining knowledge
+continuity in multi-step reasoning tasks.",http://arxiv.org/pdf/2506.15969v1,,False
+Contactless Precision Steering of Particles in a Fluid inside a Cube with Rotating Walls,19/06/2025,"Lucas Amoudruz, Petr Karnakov, Petros Koumoutsakos","Contactless manipulation of small objects is essential for biomedical and
+chemical applications, such as cell analysis, assisted fertilisation, and
+precision chemistry. Established methods, including optical, acoustic, and
+magnetic tweezers, are now complemented by flow control techniques that use
+flow-induced motion to enable precise and versatile manipulation. However,
+trapping multiple particles in fluid remains a challenge. This study introduces
+a novel control algorithm capable of steering multiple particles in flow. The
+system uses rotating disks to generate flow fields that transport particles to
+precise locations. Disk rotations are governed by a feedback control policy
+based on the Optimising a Discrete Loss (ODIL) framework, which combines fluid
+dynamics equations with path objectives into a single loss function. Our
+experiments, conducted in both simulations and with the physical device,
+demonstrate the capability of the approach to transport two beads
+simultaneously to predefined locations, advancing robust contactless particle
+manipulation for biomedical applications.",http://arxiv.org/pdf/2506.15958v1,10.1017/jfm.2025.10174,False
+Beyond Audio and Pose: A General-Purpose Framework for Video Synchronization,19/06/2025,"Yosub Shin, Igor Molybog","Video synchronization-aligning multiple video streams capturing the same
+event from different angles-is crucial for applications such as reality TV show
+production, sports analysis, surveillance, and autonomous systems. Prior work
+has heavily relied on audio cues or specific visual events, limiting
+applicability in diverse settings where such signals may be unreliable or
+absent. Additionally, existing benchmarks for video synchronization lack
+generality and reproducibility, restricting progress in the field. In this
+work, we introduce VideoSync, a video synchronization framework that operates
+independently of specific feature extraction methods, such as human pose
+estimation, enabling broader applicability across different content types. We
+evaluate our system on newly composed datasets covering single-human,
+multi-human, and non-human scenarios, providing both the methodology and code
+for dataset creation to establish reproducible benchmarks. Our analysis reveals
+biases in prior SOTA work, particularly in SeSyn-Net's preprocessing pipeline,
+leading to inflated performance claims. We correct these biases and propose a
+more rigorous evaluation framework, demonstrating that VideoSync outperforms
+existing approaches, including SeSyn-Net, under fair experimental conditions.
+Additionally, we explore various synchronization offset prediction methods,
+identifying a convolutional neural network (CNN)-based model as the most
+effective. Our findings advance video synchronization beyond domain-specific
+constraints, making it more generalizable and robust for real-world
+applications.",http://arxiv.org/pdf/2506.15937v1,,False
+Exploring Big Five Personality and AI Capability Effects in LLM-Simulated Negotiation Dialogues,19/06/2025,"Myke C. Cohen, Zhe Su, Hsien-Te Kao, Daniel Nguyen, Spencer Lynch, Maarten Sap, Svitlana Volkova","This paper presents an evaluation framework for agentic AI systems in
+mission-critical negotiation contexts, addressing the need for AI agents that
+can adapt to diverse human operators and stakeholders. Using Sotopia as a
+simulation testbed, we present two experiments that systematically evaluated
+how personality traits and AI agent characteristics influence LLM-simulated
+social negotiation outcomes--a capability essential for a variety of
+applications involving cross-team coordination and civil-military interactions.
+Experiment 1 employs causal discovery methods to measure how personality traits
+impact price bargaining negotiations, through which we found that Agreeableness
+and Extraversion significantly affect believability, goal achievement, and
+knowledge acquisition outcomes. Sociocognitive lexical measures extracted from
+team communications detected fine-grained differences in agents' empathic
+communication, moral foundations, and opinion patterns, providing actionable
+insights for agentic AI systems that must operate reliably in high-stakes
+operational scenarios. Experiment 2 evaluates human-AI job negotiations by
+manipulating both simulated human personality and AI system characteristics,
+specifically transparency, competence, adaptability, demonstrating how AI agent
+trustworthiness impact mission effectiveness. These findings establish a
+repeatable evaluation methodology for experimenting with AI agent reliability
+across diverse operator personalities and human-agent team dynamics, directly
+supporting operational requirements for reliable AI systems. Our work advances
+the evaluation of agentic AI workflows by moving beyond standard performance
+metrics to incorporate social dynamics essential for mission success in complex
+operations.",http://arxiv.org/pdf/2506.15928v1,,False

@@ -1,0 +1,336 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+MinD: Unified Visual Imagination and Control via Hierarchical World Models,23/06/2025,"Xiaowei Chi, Kuangzhi Ge, Jiaming Liu, Siyuan Zhou, Peidong Jia, Zichen He, Yuzhen Liu, Tingguang Li, Lei Han, Sirui Han, Shanghang Zhang, Yike Guo","Video generation models (VGMs) offer a promising pathway for unified world
+modeling in robotics by integrating simulation, prediction, and manipulation.
+However, their practical application remains limited due to (1) slowgeneration
+speed, which limits real-time interaction, and (2) poor consistency between
+imagined videos and executable actions. To address these challenges, we propose
+Manipulate in Dream (MinD), a hierarchical diffusion-based world model
+framework that employs a dual-system design for vision-language manipulation.
+MinD executes VGM at low frequencies to extract video prediction features,
+while leveraging a high-frequency diffusion policy for real-time interaction.
+This architecture enables low-latency, closed-loop control in manipulation with
+coherent visual guidance. To better coordinate the two systems, we introduce a
+video-action diffusion matching module (DiffMatcher), with a novel co-training
+strategy that uses separate schedulers for each diffusion model. Specifically,
+we introduce a diffusion-forcing mechanism to DiffMatcher that aligns their
+intermediate representations during training, helping the fast action model
+better understand video-based predictions. Beyond manipulation, MinD also
+functions as a world simulator, reliably predicting task success or failure in
+latent space before execution. Trustworthy analysis further shows that VGMs can
+preemptively evaluate task feasibility and mitigate risks. Extensive
+experiments across multiple benchmarks demonstrate that MinD achieves
+state-of-the-art manipulation (63%+) in RL-Bench, advancing the frontier of
+unified world modeling in robotics.",http://arxiv.org/pdf/2506.18897v1,,False
+TAMMs: Temporal-Aware Multimodal Model for Satellite Image Change Understanding and Forecasting,23/06/2025,"Zhongbin Guo, Yuhao Wang, Ping Jian, Xinyue Chen, Wei Peng, Ertai E","Satellite image time-series analysis demands fine-grained spatial-temporal
+reasoning, which remains a challenge for existing multimodal large language
+models (MLLMs). In this work, we study the capabilities of MLLMs on a novel
+task that jointly targets temporal change understanding and future scene
+generation, aiming to assess their potential for modeling complex multimodal
+dynamics over time. We propose TAMMs, a Temporal-Aware Multimodal Model for
+satellite image change understanding and forecasting, which enhances frozen
+MLLMs with lightweight temporal modules for structured sequence encoding and
+contextual prompting. To guide future image generation, TAMMs introduces a
+Semantic-Fused Control Injection (SFCI) mechanism that adaptively combines
+high-level semantic reasoning and structural priors within an enhanced
+ControlNet. This dual-path conditioning enables temporally consistent and
+semantically grounded image synthesis. Experiments demonstrate that TAMMs
+outperforms strong MLLM baselines in both temporal change understanding and
+future image forecasting tasks, highlighting how carefully designed temporal
+reasoning and semantic fusion can unlock the full potential of MLLMs for
+spatio-temporal understanding.",http://arxiv.org/pdf/2506.18862v1,,False
+LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement Learning,23/06/2025,"Yuhao Wu, Yushi Bai, Zhiqiang Hu, Roy Ka-Wei Lee, Juanzi Li","Ultra-long generation by large language models (LLMs) is a widely demanded
+scenario, yet it remains a significant challenge due to their maximum
+generation length limit and overall quality degradation as sequence length
+increases. Previous approaches, exemplified by LongWriter, typically rely on
+''teaching'', which involves supervised fine-tuning (SFT) on synthetic
+long-form outputs. However, this strategy heavily depends on synthetic SFT
+data, which is difficult and costly to construct, often lacks coherence and
+consistency, and tends to be overly artificial and structurally monotonous. In
+this work, we propose an incentivization-based approach that, starting entirely
+from scratch and without relying on any annotated or synthetic data, leverages
+reinforcement learning (RL) to foster the emergence of ultra-long, high-quality
+text generation capabilities in LLMs. We perform RL training starting from a
+base model, similar to R1-Zero, guiding it to engage in reasoning that
+facilitates planning and refinement during the writing process. To support
+this, we employ specialized reward models that steer the LLM towards improved
+length control, writing quality, and structural formatting. Experimental
+evaluations show that our LongWriter-Zero model, trained from Qwen2.5-32B,
+consistently outperforms traditional SFT methods on long-form writing tasks,
+achieving state-of-the-art results across all metrics on WritingBench and
+Arena-Write, and even surpassing 100B+ models such as DeepSeek R1 and
+Qwen3-235B. We open-source our data and model checkpoints under
+https://huggingface.co/THU-KEG/LongWriter-Zero-32B",http://arxiv.org/pdf/2506.18841v1,,False
+Understanding Software Engineering Agents: A Study of Thought-Action-Result Trajectories,23/06/2025,"Islem Bouzenia, Michael Pradel","Large Language Model (LLM)-based agents are increasingly employed to automate
+complex software engineering tasks such as program repair and issue resolution.
+These agents operate by autonomously generating natural language thoughts,
+invoking external tools, and iteratively refining their solutions. Despite
+their widespread adoption, the internal decision-making processes of these
+agents remain largely unexplored, limiting our understanding of their
+operational dynamics and failure modes. In this paper, we present a large-scale
+empirical study of the thought-action-result trajectories of three
+state-of-the-art LLM-based agents: \textsc{RepairAgent},
+\textsc{AutoCodeRover}, and \textsc{OpenHands}. We unify their interaction logs
+into a common format, capturing 120 trajectories and 2822 LLM interactions
+focused on program repair and issue resolution. Our study combines quantitative
+analyses of structural properties, action patterns, and token usage with
+qualitative assessments of reasoning coherence and feedback integration. We
+identify key trajectory characteristics such as iteration counts and token
+consumption, recurring action sequences, and the semantic coherence linking
+thoughts, actions, and their results. Our findings reveal behavioral motifs and
+anti-patterns that distinguish successful from failed executions, providing
+actionable insights for improving agent design, including prompting strategies,
+failure diagnosis, and anti-pattern detection. We release our dataset and
+annotation framework to support further research on transparent and robust
+autonomous software engineering agents.",http://arxiv.org/pdf/2506.18824v1,,False
+The Within-Orbit Adaptive Leapfrog No-U-Turn Sampler,23/06/2025,"Nawaf Bou-Rabee, Bob Carpenter, Tore Selland Kleppe, Sifan Liu","Locally adapting parameters within Markov chain Monte Carlo methods while
+preserving reversibility is notoriously difficult. The success of the No-U-Turn
+Sampler (NUTS) largely stems from its clever local adaptation of the
+integration time in Hamiltonian Monte Carlo via a geometric U-turn condition.
+However, posterior distributions frequently exhibit multi-scale geometries with
+extreme variations in scale, making it necessary to also adapt the leapfrog
+integrator's step size locally and dynamically. Despite its practical
+importance, this problem has remained largely open since the introduction of
+NUTS by Hoffman and Gelman (2014). To address this issue, we introduce the
+Within-orbit Adaptive Leapfrog No-U-Turn Sampler (WALNUTS), a generalization of
+NUTS that adapts the leapfrog step size at fixed intervals of simulated time as
+the orbit evolves. At each interval, the algorithm selects the largest step
+size from a dyadic schedule that keeps the energy error below a user-specified
+threshold. Like NUTS, WALNUTS employs biased progressive state selection to
+favor states with positions that are further from the initial point along the
+orbit. Empirical evaluations on multiscale target distributions, including
+Neal's funnel and the Stock-Watson stochastic volatility time-series model,
+demonstrate that WALNUTS achieves substantial improvements in sampling
+efficiency and robustness compared to standard NUTS.",http://arxiv.org/pdf/2506.18746v1,,False
+"Experimenting, Fast and Slow: Bayesian Optimization of Long-term Outcomes with Online Experiments",23/06/2025,"Qing Feng, Samuel Dalton, Benjamin Letham, Maximilian Balandat, Eytan Bakshy","Online experiments in internet systems, also known as A/B tests, are used for
+a wide range of system tuning problems, such as optimizing recommender system
+ranking policies and learning adaptive streaming controllers. Decision-makers
+generally wish to optimize for long-term treatment effects of the system
+changes, which often requires running experiments for a long time as short-term
+measurements can be misleading due to non-stationarity in treatment effects
+over time. The sequential experimentation strategies--which typically involve
+several iterations--can be prohibitively long in such cases. We describe a
+novel approach that combines fast experiments (e.g., biased experiments run
+only for a few hours or days) and/or offline proxies (e.g., off-policy
+evaluation) with long-running, slow experiments to perform sequential, Bayesian
+optimization over large action spaces in a short amount of time.",http://arxiv.org/pdf/2506.18744v1,10.1145/3690624.3709419,False
+Simulation-Free Differential Dynamics through Neural Conservation Laws,23/06/2025,"Mengjian Hua, Eric Vanden-Eijnden, Ricky T. Q. Chen","We present a novel simulation-free framework for training continuous-time
+diffusion processes over very general objective functions. Existing methods
+typically involve either prescribing the optimal diffusion process -- which
+only works for heavily restricted problem formulations -- or require expensive
+simulation to numerically obtain the time-dependent densities and sample from
+the diffusion process. In contrast, we propose a coupled parameterization which
+jointly models a time-dependent density function, or probability path, and the
+dynamics of a diffusion process that generates this probability path. To
+accomplish this, our approach directly bakes in the Fokker-Planck equation and
+density function requirements as hard constraints, by extending and greatly
+simplifying the construction of Neural Conservation Laws. This enables
+simulation-free training for a large variety of problem formulations, from
+data-driven objectives as in generative modeling and dynamical optimal
+transport, to optimality-based objectives as in stochastic optimal control,
+with straightforward extensions to mean-field objectives due to the ease of
+accessing exact density functions. We validate our method in a diverse range of
+application domains from modeling spatio-temporal events to learning optimal
+dynamics from population data.",http://arxiv.org/pdf/2506.18604v1,,False
+No Training Wheels: Steering Vectors for Bias Correction at Inference Time,23/06/2025,"Aviral Gupta, Armaan Sethi, Ameesh Sethi","Neural network classifiers trained on datasets with uneven group
+representation often inherit class biases and learn spurious correlations.
+These models may perform well on average but consistently fail on atypical
+groups. For example, in hair color classification, datasets may over-represent
+females with blond hair, reinforcing stereotypes. Although various algorithmic
+and data-centric methods have been proposed to address such biases, they often
+require retraining or significant compute. In this work, we propose a cheap,
+training-free method inspired by steering vectors used to edit behaviors in
+large language models. We compute the difference in mean activations between
+majority and minority groups to define a ""bias vector,"" which we subtract from
+the model's residual stream. This leads to reduced classification bias and
+improved worst-group accuracy. We explore multiple strategies for extracting
+and applying these vectors in transformer-like classifiers, showing that
+steering vectors, traditionally used in generative models, can also be
+effective in classification. More broadly, we showcase an extremely cheap,
+inference time, training free method to mitigate bias in classification models.",http://arxiv.org/pdf/2506.18598v1,,False
+A Question Bank to Assess AI Inclusivity: Mapping out the Journey from Diversity Errors to Inclusion Excellence,23/06/2025,"Rifat Ara Shams, Didar Zowghi, Muneera Bano","Ensuring diversity and inclusion (D&I) in artificial intelligence (AI) is
+crucial for mitigating biases and promoting equitable decision-making. However,
+existing AI risk assessment frameworks often overlook inclusivity, lacking
+standardized tools to measure an AI system's alignment with D&I principles.
+This paper introduces a structured AI inclusivity question bank, a
+comprehensive set of 253 questions designed to evaluate AI inclusivity across
+five pillars: Humans, Data, Process, System, and Governance. The development of
+the question bank involved an iterative, multi-source approach, incorporating
+insights from literature reviews, D&I guidelines, Responsible AI frameworks,
+and a simulated user study. The simulated evaluation, conducted with 70
+AI-generated personas related to different AI jobs, assessed the question
+bank's relevance and effectiveness for AI inclusivity across diverse roles and
+application domains. The findings highlight the importance of integrating D&I
+principles into AI development workflows and governance structures. The
+question bank provides an actionable tool for researchers, practitioners, and
+policymakers to systematically assess and enhance the inclusivity of AI
+systems, paving the way for more equitable and responsible AI technologies.",http://arxiv.org/pdf/2506.18538v1,,False
+Theoretical guarantees for neural estimators in parametric statistics,23/06/2025,"Almut Rödder, Manuel Hentschel, Sebastian Engelke","Neural estimators are simulation-based estimators for the parameters of a
+family of statistical models, which build a direct mapping from the sample to
+the parameter vector. They benefit from the versatility of available network
+architectures and efficient training methods developed in the field of deep
+learning. Neural estimators are amortized in the sense that, once trained, they
+can be applied to any new data set with almost no computational cost. While
+many papers have shown very good performance of these methods in simulation
+studies and real-world applications, so far no statistical guarantees are
+available to support these observations theoretically. In this work, we study
+the risk of neural estimators by decomposing it into several terms that can be
+analyzed separately. We formulate easy-to-check assumptions ensuring that each
+term converges to zero, and we verify them for popular applications of neural
+estimators. Our results provide a general recipe to derive theoretical
+guarantees also for broader classes of architectures and estimation problems.",http://arxiv.org/pdf/2506.18508v1,,False
+A Motivational Architecture for Open-Ended Learning Challenges in Robots,23/06/2025,"Alejandro Romero, Gianluca Baldassarre, Richard J. Duro, Vieri Giuliano Santucci","Developing agents capable of autonomously interacting with complex and
+dynamic environments, where task structures may change over time and prior
+knowledge cannot be relied upon, is a key prerequisite for deploying artificial
+systems in real-world settings. The open-ended learning framework identifies
+the core challenges for creating such agents, including the ability to
+autonomously generate new goals, acquire the necessary skills (or curricula of
+skills) to achieve them, and adapt to non-stationary environments. While many
+existing works tackles various aspects of these challenges in isolation, few
+propose integrated solutions that address them simultaneously. In this paper,
+we introduce H-GRAIL, a hierarchical architecture that, through the use of
+different typologies of intrinsic motivations and interconnected learning
+mechanisms, autonomously discovers new goals, learns the required skills for
+their achievement, generates skill sequences for tackling interdependent tasks,
+and adapts to non-stationary environments. We tested H-GRAIL in a real robotic
+scenario, demonstrating how the proposed solutions effectively address the
+various challenges of open-ended learning.",http://arxiv.org/pdf/2506.18454v1,,False
+PERSCEN: Learning Personalized Interaction Pattern and Scenario Preference for Multi-Scenario Matching,23/06/2025,"Haotong Du, Yaqing Wang, Fei Xiong, Lei Shao, Ming Liu, Hao Gu, Quanming Yao, Zhen Wang","With the expansion of business scales and scopes on online platforms,
+multi-scenario matching has become a mainstream solution to reduce maintenance
+costs and alleviate data sparsity. The key to effective multi-scenario
+recommendation lies in capturing both user preferences shared across all
+scenarios and scenario-aware preferences specific to each scenario. However,
+existing methods often overlook user-specific modeling, limiting the generation
+of personalized user representations. To address this, we propose PERSCEN, an
+innovative approach that incorporates user-specific modeling into
+multi-scenario matching. PERSCEN constructs a user-specific feature graph based
+on user characteristics and employs a lightweight graph neural network to
+capture higher-order interaction patterns, enabling personalized extraction of
+preferences shared across scenarios. Additionally, we leverage vector
+quantization techniques to distil scenario-aware preferences from users'
+behavior sequence within individual scenarios, facilitating user-specific and
+scenario-aware preference modeling. To enhance efficient and flexible
+information transfer, we introduce a progressive scenario-aware gated linear
+unit that allows fine-grained, low-latency fusion. Extensive experiments
+demonstrate that PERSCEN outperforms existing methods. Further efficiency
+analysis confirms that PERSCEN effectively balances performance with
+computational cost, ensuring its practicality for real-world industrial
+systems.",http://arxiv.org/pdf/2506.18382v1,10.1145/3711896.3737079,False
+Dynamic Knowledge Exchange and Dual-diversity Review: Concisely Unleashing the Potential of a Multi-Agent Research Team,23/06/2025,"Weilun Yu, Shixiang Tang, Yonggui Huang, Nanqing Dong, Li Fan, Honggang Qi, Wei Liu, Xiaoli Diao, Xi Chen, Wanli Ouyang","Scientific progress increasingly relies on effective collaboration among
+researchers, a dynamic that large language models (LLMs) have only begun to
+emulate. While recent LLM-based scientist agents show promise in autonomous
+scientific discovery, they often lack the interactive reasoning and evaluation
+mechanisms essential to real-world research. We propose IDVSCI (Internal
+Discussion and Vote SCIentists), a multi-agent framework built on LLMs that
+incorporates two key innovations: a Dynamic Knowledge Exchange mechanism
+enabling iterative feedback among agents, and a Dual-Diversity Review paradigm
+that simulates heterogeneous expert evaluation. These components jointly
+promote deeper reasoning and the generation of more creative and impactful
+scientific ideas. To evaluate the effectiveness and generalizability of our
+approach, we conduct experiments on two datasets: a widely used benchmark in
+computer science and a new dataset we introduce in the health sciences domain.
+Results show that IDVSCI consistently achieves the best performance across both
+datasets, outperforming existing systems such as AI Scientist and VIRSCI. These
+findings highlight the value of modeling interaction and peer review dynamics
+in LLM-based autonomous research.",http://arxiv.org/pdf/2506.18348v1,,False
+Quantifying Uncertainty in the Presence of Distribution Shifts,23/06/2025,"Yuli Slavutsky, David M. Blei","Neural networks make accurate predictions but often fail to provide reliable
+uncertainty estimates, especially under covariate distribution shifts between
+training and testing. To address this problem, we propose a Bayesian framework
+for uncertainty estimation that explicitly accounts for covariate shifts. While
+conventional approaches rely on fixed priors, the key idea of our method is an
+adaptive prior, conditioned on both training and new covariates. This prior
+naturally increases uncertainty for inputs that lie far from the training
+distribution in regions where predictive performance is likely to degrade. To
+efficiently approximate the resulting posterior predictive distribution, we
+employ amortized variational inference. Finally, we construct synthetic
+environments by drawing small bootstrap samples from the training data,
+simulating a range of plausible covariate shift using only the original
+dataset. We evaluate our method on both synthetic and real-world data. It
+yields substantially improved uncertainty estimates under distribution shifts.",http://arxiv.org/pdf/2506.18283v1,,False
+Phase retrieval with rank $d$ measurements -- \emph{descending} algorithms phase transitions,23/06/2025,Mihailo Stojnic,"Companion paper [118] developed a powerful \emph{Random duality theory} (RDT)
+based analytical program to statistically characterize performance of
+\emph{descending} phase retrieval algorithms (dPR) (these include all variants
+of gradient descents and among them widely popular Wirtinger flows). We here
+generalize the program and show how it can be utilized to handle rank $d$
+positive definite phase retrieval (PR) measurements (with special cases $d=1$
+and $d=2$ serving as emulations of the real and complex phase retrievals,
+respectively). In particular, we observe that the minimal sample complexity
+ratio (number of measurements scaled by the dimension of the unknown signal)
+which ensures dPR's success exhibits a phase transition (PT) phenomenon. For
+both plain and lifted RDT we determine phase transitions locations. To
+complement theoretical results we implement a log barrier gradient descent
+variant and observe that, even in small dimensional scenarios (with problem
+sizes on the order of 100), the simulated phase transitions are in an excellent
+agreement with the theoretical predictions.",http://arxiv.org/pdf/2506.18282v1,,False
+Optimal spectral initializers impact on phase retrieval phase transitions -- an RDT view,23/06/2025,Mihailo Stojnic,"We analyze the relation between spectral initializers and theoretical limits
+of \emph{descending} phase retrieval algorithms (dPR). In companion paper
+[104], for any sample complexity ratio, $\alpha$, \emph{parametric manifold},
+${\mathcal {PM}}(\alpha)$, is recognized as a critically important structure
+that generically determines dPRs abilities to solve phase retrieval (PR).
+Moreover, overlap between the algorithmic solution and the true signal is
+positioned as a key ${\mathcal {PM}}$'s component. We here consider the
+so-called \emph{overlap optimal} spectral initializers (OptSpins) as dPR's
+starting points and develop a generic \emph{Random duality theory} (RDT) based
+program to statistically characterize them. In particular, we determine the
+functional structure of OptSpins and evaluate the starting overlaps that they
+provide for the dPRs. Since ${\mathcal {PM}}$'s so-called \emph{flat regions}
+are highly susceptible to \emph{local jitteriness} and as such are key
+obstacles on dPR's path towards PR's global optimum, a precise characterization
+of the starting overlap allows to determine if such regions can be successfully
+circumvented. Through the presented theoretical analysis we observe two key
+points in that regard: \textbf{\emph{(i)}} dPR's theoretical phase transition
+(critical $\alpha$ above which they solve PR) might be difficult to practically
+achieve as the ${\mathcal {PM}}$'s flat regions are large causing the
+associated OptSpins to fall exactly within them; and \textbf{\emph{(ii)}}
+Opting for so-called ``\emph{safer compression}'' and slightly increasing
+$\alpha$ (by say $15\%$) shrinks flat regions and allows OptSpins to fall
+outside them and dPRs to ultimately solve PR. Numerical simulations are
+conducted as well and shown to be in an excellent agreement with theoretical
+predictions.",http://arxiv.org/pdf/2506.18279v1,,False
+Phase transition of \emph{descending} phase retrieval algorithms,23/06/2025,Mihailo Stojnic,"We study theoretical limits of \emph{descending} phase retrieval algorithms.
+Utilizing \emph{Random duality theory} (RDT) we develop a generic program that
+allows statistical characterization of various algorithmic performance metrics.
+Through these we identify the concepts of \emph{parametric manifold} and its
+\emph{funneling points} as key mathematical objects that govern the underlying
+algorithms' behavior. An isomorphism between single funneling point manifolds
+and global convergence of descending algorithms is established. The structure
+and shape of the parametric manifold as well as its dependence on the sample
+complexity are studied through both plain and lifted RDT. Emergence of a phase
+transition is observed. Namely, as sample complexity increases, parametric
+manifold transitions from a multi to a single funneling point structure. This
+in return corresponds to a transition from the scenarios where descending
+algorithms generically fail to the scenarios where they succeed in solving
+phase retrieval. We also develop and implement a practical algorithmic variant
+that in a hybrid alternating fashion combines a barrier and a plain gradient
+descent. Even though the theoretical results are obtained for infinite
+dimensional scenarios (and consequently non-jittery parametric manifolds), we
+observe a strong agrement between theoretical and simulated phase transitions
+predictions for fairly small dimensions on the order of a few hundreds.",http://arxiv.org/pdf/2506.18275v1,,False
+Leveraging Large Language Models for Information Verification -- an Engineering Approach,23/06/2025,"Nguyen Nang Hung, Nguyen Thanh Trong, Vuong Thanh Toan, Nguyen An Phuoc, Dao Minh Tu, Nguyen Manh Duc Tuan, Nguyen Dinh Mau","For the ACMMM25 challenge, we present a practical engineering approach to
+multimedia news source verification, utilizing Large Language Models (LLMs)
+like GPT-4o as the backbone of our pipeline. Our method processes images and
+videos through a streamlined sequence of steps: First, we generate metadata
+using general-purpose queries via Google tools, capturing relevant content and
+links. Multimedia data is then segmented, cleaned, and converted into frames,
+from which we select the top-K most informative frames. These frames are
+cross-referenced with metadata to identify consensus or discrepancies.
+Additionally, audio transcripts are extracted for further verification.
+Noticeably, the entire pipeline is automated using GPT-4o through prompt
+engineering, with human intervention limited to final validation.",http://arxiv.org/pdf/2506.18274v1,,False
+Make It Efficient: Dynamic Sparse Attention for Autoregressive Image Generation,23/06/2025,"Xunzhi Xiang, Qi Fan","Autoregressive conditional image generation models have emerged as a dominant
+paradigm in text-to-image synthesis. These methods typically convert images
+into one-dimensional token sequences and leverage the self-attention mechanism,
+which has achieved remarkable success in natural language processing, to
+capture long-range dependencies, model global context, and ensure semantic
+coherence. However, excessively long contexts during inference lead to
+significant memory overhead caused by KV-cache and computational delays. To
+alleviate these challenges, we systematically analyze how global semantics,
+spatial layouts, and fine-grained textures are formed during inference, and
+propose a novel training-free context optimization method called Adaptive
+Dynamic Sparse Attention (ADSA). Conceptually, ADSA dynamically identifies
+historical tokens crucial for maintaining local texture consistency and those
+essential for ensuring global semantic coherence, thereby efficiently
+streamlining attention computation. Additionally, we introduce a dynamic
+KV-cache update mechanism tailored for ADSA, reducing GPU memory consumption
+during inference by approximately $50\%$. Extensive qualitative and
+quantitative experiments demonstrate the effectiveness and superiority of our
+approach in terms of both generation quality and resource efficiency.",http://arxiv.org/pdf/2506.18226v1,,False

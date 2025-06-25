@@ -1,0 +1,324 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Convergence of Mean Shift Algorithms for Large Bandwidths and Simultaneous Accurate Clustering,24/06/2025,"Susovan Pal, Praneeth Vepakomma","The mean shift (MS) is a non-parametric, density-based, iterative algorithm
+that has prominent usage in clustering and image segmentation. A rigorous proof
+for its convergence in full generality remains unknown. Two significant steps
+in this direction were taken in the paper \cite{Gh1}, which proved that for
+\textit{sufficiently large bandwidth}, the MS algorithm with the Gaussian
+kernel always converges in any dimension, and also by the same author in
+\cite{Gh2}, proved that MS always converges in one dimension for kernels with
+differentiable, strictly decreasing, convex profiles. In the more recent paper
+\cite{YT}, they have proved the convergence in more generality,\textit{ without
+any restriction on the bandwidth}, with the assumption that the KDE $f$ has a
+continuous Lipschitz gradient on the closure of the convex hull of the
+trajectory of the iterated sequence of the mode estimate, and also satisfies
+the {\L}ojasiewicz property there.
+  The main theoretical result of this paper is a generalization of those of
+\cite{Gh1}, where we show that (1) for\textit{ sufficiently large bandwidth}
+convergence is guaranteed in any dimension with \textit{any radially symmetric
+and strictly positive definite kernels}. The proof uses two alternate
+characterizations of radially symmetric positive definite smooth kernels by
+Schoenberg and Bernstein \cite{Fass}, and borrows some steps from the proofs in
+\cite{Gh1}. Although the authors acknowledge that the result in that paper is
+more restrictive than that of \cite{YT} due to the lower bandwidth limit, it
+uses a different set of assumptions than \cite{YT}, and the proof technique is
+different.",http://arxiv.org/pdf/2506.19837v1,,False
+Machine Learning with Privacy for Protected Attributes,24/06/2025,"Saeed Mahloujifar, Chuan Guo, G. Edward Suh, Kamalika Chaudhuri","Differential privacy (DP) has become the standard for private data analysis.
+Certain machine learning applications only require privacy protection for
+specific protected attributes. Using naive variants of differential privacy in
+such use cases can result in unnecessary degradation of utility. In this work,
+we refine the definition of DP to create a more general and flexible framework
+that we call feature differential privacy (FDP). Our definition is
+simulation-based and allows for both addition/removal and replacement variants
+of privacy, and can handle arbitrary and adaptive separation of protected and
+non-protected features. We prove the properties of FDP, such as adaptive
+composition, and demonstrate its implications for limiting attribute inference
+attacks. We also propose a modification of the standard DP-SGD algorithm that
+satisfies FDP while leveraging desirable properties such as amplification via
+sub-sampling. We apply our framework to various machine learning tasks and show
+that it can significantly improve the utility of DP-trained models when public
+features are available. For example, we train diffusion models on the AFHQ
+dataset of animal faces and observe a drastic improvement in FID compared to
+DP, from 286.7 to 101.9 at $\epsilon=8$, assuming that the blurred version of a
+training image is available as a public feature. Overall, our work provides a
+new approach to private data analysis that can help reduce the utility cost of
+DP while still providing strong privacy guarantees.",http://arxiv.org/pdf/2506.19836v1,,False
+Learning-aided Bigraph Matching Approach to Multi-Crew Restoration of Damaged Power Networks Coupled with Road Transportation Networks,24/06/2025,"Nathan Maurer, Harshal Kaushik, Roshni Anna Jacob, Jie Zhang, Souma Chowdhury","The resilience of critical infrastructure networks (CINs) after disruptions,
+such as those caused by natural hazards, depends on both the speed of
+restoration and the extent to which operational functionality can be regained.
+Allocating resources for restoration is a combinatorial optimal planning
+problem that involves determining which crews will repair specific network
+nodes and in what order. This paper presents a novel graph-based formulation
+that merges two interconnected graphs, representing crew and transportation
+nodes and power grid nodes, into a single heterogeneous graph. To enable
+efficient planning, graph reinforcement learning (GRL) is integrated with
+bigraph matching. GRL is utilized to design the incentive function for
+assigning crews to repair tasks based on the graph-abstracted state of the
+environment, ensuring generalization across damage scenarios. Two learning
+techniques are employed: a graph neural network trained using Proximal Policy
+Optimization and another trained via Neuroevolution. The learned incentive
+functions inform a bipartite graph that links crews to repair tasks, enabling
+weighted maximum matching for crew-to-task allocations. An efficient simulation
+environment that pre-computes optimal node-to-node path plans is used to train
+the proposed restoration planning methods. An IEEE 8500-bus power distribution
+test network coupled with a 21 square km transportation network is used as the
+case study, with scenarios varying in terms of numbers of damaged nodes,
+depots, and crews. Results demonstrate the approach's generalizability and
+scalability across scenarios, with learned policies providing 3-fold better
+performance than random policies, while also outperforming optimization-based
+solutions in both computation time (by several orders of magnitude) and power
+restored.",http://arxiv.org/pdf/2506.19703v1,,False
+Operator Forces For Coarse-Grained Molecular Dynamics,24/06/2025,"Leon Klein, Atharva Kelkar, Aleksander Durumeric, Yaoyi Chen, Frank Noé","Coarse-grained (CG) molecular dynamics simulations extend the length and time
+scale of atomistic simulations by replacing groups of correlated atoms with CG
+beads. Machine-learned coarse-graining (MLCG) has recently emerged as a
+promising approach to construct highly accurate force fields for CG molecular
+dynamics. However, the calibration of MLCG force fields typically hinges on
+force matching, which demands extensive reference atomistic trajectories with
+corresponding force labels. In practice, atomistic forces are often not
+recorded, making traditional force matching infeasible on pre-existing
+datasets. Recently, noise-based kernels have been introduced to adapt force
+matching to the low-data regime, including situations in which reference
+atomistic forces are not present. While this approach produces force fields
+which recapitulate slow collective motion, it introduces significant local
+distortions due to the corrupting effects of the noise-based kernel. In this
+work, we introduce more general kernels based on normalizing flows that
+substantially reduce these local distortions while preserving global
+conformational accuracy. We demonstrate our method on small proteins, showing
+that flow-based kernels can generate high-quality CG forces solely from
+configurational samples.",http://arxiv.org/pdf/2506.19628v1,,False
+Adaptive Domain Modeling with Language Models: A Multi-Agent Approach to Task Planning,24/06/2025,"Harisankar Babu, Philipp Schillinger, Tamim Asfour","We introduce TAPAS (Task-based Adaptation and Planning using AgentS), a
+multi-agent framework that integrates Large Language Models (LLMs) with
+symbolic planning to solve complex tasks without the need for manually defined
+environment models. TAPAS employs specialized LLM-based agents that
+collaboratively generate and adapt domain models, initial states, and goal
+specifications as needed using structured tool-calling mechanisms. Through this
+tool-based interaction, downstream agents can request modifications from
+upstream agents, enabling adaptation to novel attributes and constraints
+without manual domain redefinition. A ReAct (Reason+Act)-style execution agent,
+coupled with natural language plan translation, bridges the gap between
+dynamically generated plans and real-world robot capabilities. TAPAS
+demonstrates strong performance in benchmark planning domains and in the
+VirtualHome simulated real-world environment.",http://arxiv.org/pdf/2506.19592v1,,False
+ConStellaration: A dataset of QI-like stellarator plasma boundaries and optimization benchmarks,24/06/2025,"Santiago A. Cadena, Andrea Merlo, Emanuel Laude, Alexander Bauer, Atul Agrawal, Maria Pascu, Marija Savtchouk, Enrico Guiraud, Lukas Bonauer, Stuart Hudson, Markus Kaiser","Stellarators are magnetic confinement devices under active development to
+deliver steady-state carbon-free fusion energy. Their design involves a
+high-dimensional, constrained optimization problem that requires expensive
+physics simulations and significant domain expertise. Recent advances in plasma
+physics and open-source tools have made stellarator optimization more
+accessible. However, broader community progress is currently bottlenecked by
+the lack of standardized optimization problems with strong baselines and
+datasets that enable data-driven approaches, particularly for quasi-isodynamic
+(QI) stellarator configurations, considered as a promising path to commercial
+fusion due to their inherent resilience to current-driven disruptions. Here, we
+release an open dataset of diverse QI-like stellarator plasma boundary shapes,
+paired with their ideal magnetohydrodynamic (MHD) equilibria and performance
+metrics. We generated this dataset by sampling a variety of QI fields and
+optimizing corresponding stellarator plasma boundaries. We introduce three
+optimization benchmarks of increasing complexity: (1) a single-objective
+geometric optimization problem, (2) a ""simple-to-build"" QI stellarator, and (3)
+a multi-objective ideal-MHD stable QI stellarator that investigates trade-offs
+between compactness and coil simplicity. For every benchmark, we provide
+reference code, evaluation scripts, and strong baselines based on classical
+optimization techniques. Finally, we show how learned models trained on our
+dataset can efficiently generate novel, feasible configurations without
+querying expensive physics oracles. By openly releasing the dataset along with
+benchmark problems and baselines, we aim to lower the entry barrier for
+optimization and machine learning researchers to engage in stellarator design
+and to accelerate cross-disciplinary progress toward bringing fusion energy to
+the grid.",http://arxiv.org/pdf/2506.19583v1,,False
+Towards an Introspective Dynamic Model of Globally Distributed Computing Infrastructures,24/06/2025,"Ozgur O. Kilic, David K. Park, Yihui Ren, Tatiana Korchuganova, Sairam Sri Vatsavai, Joseph Boudreau, Tasnuva Chowdhury, Shengyu Feng, Raees Khan, Jaehyung Kim, Scott Klasky, Tadashi Maeno, Paul Nilsson, Verena Ingrid Martinez Outschoorn, Norbert Podhorszki, Frédéric Suter, Wei Yang, Yiming Yang, Shinjae Yoo, Alexei Klimentov, Adolfy Hoisie","Large-scale scientific collaborations like ATLAS, Belle II, CMS, DUNE, and
+others involve hundreds of research institutes and thousands of researchers
+spread across the globe. These experiments generate petabytes of data, with
+volumes soon expected to reach exabytes. Consequently, there is a growing need
+for computation, including structured data processing from raw data to
+consumer-ready derived data, extensive Monte Carlo simulation campaigns, and a
+wide range of end-user analysis. To manage these computational and storage
+demands, centralized workflow and data management systems are implemented.
+However, decisions regarding data placement and payload allocation are often
+made disjointly and via heuristic means. A significant obstacle in adopting
+more effective heuristic or AI-driven solutions is the absence of a quick and
+reliable introspective dynamic model to evaluate and refine alternative
+approaches. In this study, we aim to develop such an interactive system using
+real-world data. By examining job execution records from the PanDA workflow
+management system, we have pinpointed key performance indicators such as
+queuing time, error rate, and the extent of remote data access. The dataset
+includes five months of activity. Additionally, we are creating a generative AI
+model to simulate time series of payloads, which incorporate visible features
+like category, event count, and submitting group, as well as hidden features
+like the total computational load-derived from existing PanDA records and
+computing site capabilities. These hidden features, which are not visible to
+job allocators, whether heuristic or AI-driven, influence factors such as
+queuing times and data movement.",http://arxiv.org/pdf/2506.19578v1,,False
+FAF: A Feature-Adaptive Framework for Few-Shot Time Series Forecasting,24/06/2025,"Pengpeng Ouyang, Dong Chen, Tong Yang, Shuo Feng, Zhao Jin, Mingliang Xu","Multi-task and few-shot time series forecasting tasks are commonly
+encountered in scenarios such as the launch of new products in different
+cities. However, traditional time series forecasting methods suffer from
+insufficient historical data, which stems from a disregard for the generalized
+and specific features among different tasks. For the aforementioned challenges,
+we propose the Feature-Adaptive Time Series Forecasting Framework (FAF), which
+consists of three key components: the Generalized Knowledge Module (GKM), the
+Task-Specific Module (TSM), and the Rank Module (RM). During training phase,
+the GKM is updated through a meta-learning mechanism that enables the model to
+extract generalized features across related tasks. Meanwhile, the TSM is
+trained to capture diverse local dynamics through multiple functional regions,
+each of which learns specific features from individual tasks. During testing
+phase, the RM dynamically selects the most relevant functional region from the
+TSM based on input sequence features, which is then combined with the
+generalized knowledge learned by the GKM to generate accurate forecasts. This
+design enables FAF to achieve robust and personalized forecasting even with
+sparse historical observations We evaluate FAF on five diverse real-world
+datasets under few-shot time series forecasting settings. Experimental results
+demonstrate that FAF consistently outperforms baselines that include three
+categories of time series forecasting methods. In particular, FAF achieves a
+41.81\% improvement over the best baseline, iTransformer, on the CO$_2$
+emissions dataset.",http://arxiv.org/pdf/2506.19567v1,,False
+Is an object-centric representation beneficial for robotic manipulation ?,24/06/2025,"Alexandre Chapin, Emmanuel Dellandrea, Liming Chen","Object-centric representation (OCR) has recently become a subject of interest
+in the computer vision community for learning a structured representation of
+images and videos. It has been several times presented as a potential way to
+improve data-efficiency and generalization capabilities to learn an agent on
+downstream tasks. However, most existing work only evaluates such models on
+scene decomposition, without any notion of reasoning over the learned
+representation. Robotic manipulation tasks generally involve multi-object
+environments with potential inter-object interaction. We thus argue that they
+are a very interesting playground to really evaluate the potential of existing
+object-centric work. To do so, we create several robotic manipulation tasks in
+simulated environments involving multiple objects (several distractors, the
+robot, etc.) and a high-level of randomization (object positions, colors,
+shapes, background, initial positions, etc.). We then evaluate one classical
+object-centric method across several generalization scenarios and compare its
+results against several state-of-the-art hollistic representations. Our results
+exhibit that existing methods are prone to failure in difficult scenarios
+involving complex scene structures, whereas object-centric methods help
+overcome these challenges.",http://arxiv.org/pdf/2506.19408v1,,False
+Automated Detection of Pre-training Text in Black-box LLMs,24/06/2025,"Ruihan Hu, Yu-Ming Shang, Jiankun Peng, Wei Luo, Yazhe Wang, Xi Zhang","Detecting whether a given text is a member of the pre-training data of Large
+Language Models (LLMs) is crucial for ensuring data privacy and copyright
+protection. Most existing methods rely on the LLM's hidden information (e.g.,
+model parameters or token probabilities), making them ineffective in the
+black-box setting, where only input and output texts are accessible. Although
+some methods have been proposed for the black-box setting, they rely on massive
+manual efforts such as designing complicated questions or instructions. To
+address these issues, we propose VeilProbe, the first framework for
+automatically detecting LLMs' pre-training texts in a black-box setting without
+human intervention. VeilProbe utilizes a sequence-to-sequence mapping model to
+infer the latent mapping feature between the input text and the corresponding
+output suffix generated by the LLM. Then it performs the key token
+perturbations to obtain more distinguishable membership features. Additionally,
+considering real-world scenarios where the ground-truth training text samples
+are limited, a prototype-based membership classifier is introduced to alleviate
+the overfitting issue. Extensive evaluations on three widely used datasets
+demonstrate that our framework is effective and superior in the black-box
+setting.",http://arxiv.org/pdf/2506.19399v1,,False
+CAM-NET: An AI Model for Whole Atmosphere with Thermosphere and Ionosphere Extension,24/06/2025,"Jiahui Hu, Wenjun Dong","We present Compressible Atmospheric Model-Network (CAM-NET), an AI model
+designed to predict neutral atmospheric variables from the Earth's surface to
+the ionosphere with high accuracy and computational efficiency. Accurate
+modeling of the entire atmosphere is critical for understanding the upward
+propagation of gravity waves, which influence upper-atmospheric dynamics and
+coupling across atmospheric layers. CAM-NET leverages the Spherical Fourier
+Neural Operator (SFNO) to capture global-scale atmospheric dynamics while
+preserving the Earth's spherical structure. Trained on a decade of datasets
+from the Whole Atmosphere Community Climate Model with thermosphere and
+ionosphere eXtension (WACCM-X), CAM-NET demonstrates accuracy comparable to
+WACCM-X while achieving a speedup of over 1000x in inference time, can provide
+one year simulation within a few minutes once trained. The model effectively
+predicts key atmospheric parameters, including zonal and meridional winds,
+temperature, and time rate of pressure. Inspired by traditional modeling
+approaches that use external couplers to simulate tracer transport, CAM-NET
+introduces a modular architecture that explicitly separates tracer prediction
+from core dynamics. The core backbone of CAM-NET focuses on forecasting primary
+physical variables (e.g., temperature, wind velocity), while tracer variables
+are predicted through a lightweight, fine-tuned model. This design allows for
+efficient adaptation to specific tracer scenarios with minimal computational
+cost, avoiding the need to retrain the entire model. We have validated this
+approach on the $O^2$ tracer, demonstrating strong performance and
+generalization capabilities.",http://arxiv.org/pdf/2506.19340v1,,False
+The Effect of Depth on the Expressivity of Deep Linear State-Space Models,24/06/2025,"Zeyu Bao, Penghao Yu, Haotian Jiang, Qianxiao Li","Deep state-space models (SSMs) have gained increasing popularity in sequence
+modelling. While there are numerous theoretical investigations of shallow SSMs,
+how the depth of the SSM affects its expressiveness remains a crucial problem.
+In this paper, we systematically investigate the role of depth and width in
+deep linear SSMs, aiming to characterize how they influence the expressive
+capacity of the architecture. First, we rigorously prove that in the absence of
+parameter constraints, increasing depth and increasing width are generally
+equivalent, provided that the parameter count remains within the same order of
+magnitude. However, under the assumption that the parameter norms are
+constrained, the effects of depth and width differ significantly. We show that
+a shallow linear SSM with large parameter norms can be represented by a deep
+linear SSM with smaller norms using a constructive method. In particular, this
+demonstrates that deep SSMs are more capable of representing targets with large
+norms than shallow SSMs under norm constraints. Finally, we derive upper bounds
+on the minimal depth required for a deep linear SSM to represent a given
+shallow linear SSM under constrained parameter norms. We also validate our
+theoretical results with numerical experiments",http://arxiv.org/pdf/2506.19296v1,,False
+A Qubit-Efficient Hybrid Quantum Encoding Mechanism for Quantum Machine Learning,24/06/2025,"Hevish Cowlessur, Tansu Alpcan, Chandra Thapa, Seyit Camtepe, Neel Kanth Kundu","Efficiently embedding high-dimensional datasets onto noisy and low-qubit
+quantum systems is a significant barrier to practical Quantum Machine Learning
+(QML). Approaches such as quantum autoencoders can be constrained by current
+hardware capabilities and may exhibit vulnerabilities to reconstruction attacks
+due to their invertibility. We propose Quantum Principal Geodesic Analysis
+(qPGA), a novel, non-invertible method for dimensionality reduction and
+qubit-efficient encoding. Executed classically, qPGA leverages Riemannian
+geometry to project data onto the unit Hilbert sphere, generating outputs
+inherently suitable for quantum amplitude encoding. This technique preserves
+the neighborhood structure of high-dimensional datasets within a compact latent
+space, significantly reducing qubit requirements for amplitude encoding. We
+derive theoretical bounds quantifying qubit requirements for effective encoding
+onto noisy systems. Empirical results on MNIST, Fashion-MNIST, and CIFAR-10
+show that qPGA preserves local structure more effectively than both quantum and
+hybrid autoencoders. Additionally, we demonstrate that qPGA enhances resistance
+to reconstruction attacks due to its non-invertible nature. In downstream QML
+classification tasks, qPGA can achieve over 99% accuracy and F1-score on MNIST
+and Fashion-MNIST, outperforming quantum-dependent baselines. Initial tests on
+real hardware and noisy simulators confirm its potential for noise-resilient
+performance, offering a scalable solution for advancing QML applications.",http://arxiv.org/pdf/2506.19275v1,,False
+Continuous-variable Quantum Diffusion Model for State Generation and Restoration,24/06/2025,"Haitao Huang, Chuangtao Chen, Qinglin Zhao","The generation and preservation of complex quantum states against
+environmental noise are paramount challenges in advancing continuous-variable
+(CV) quantum information processing. This paper introduces a novel framework
+based on continuous-variable quantum diffusion principles, synergizing them
+with CV quantum neural networks (CVQNNs) to address these dual challenges. For
+the task of state generation, our Continuous-Variable Quantum Diffusion
+Generative model (CVQD-G) employs a physically driven forward diffusion process
+using a thermal loss channel, which is then inverted by a learnable,
+parameter-efficient backward denoising process based on a CVQNN with
+time-embedding. This framework's capability is further extended for state
+recovery by the Continuous-Variable Quantum Diffusion Restoration model
+(CVQD-R), a specialized variant designed to restore quantum states,
+particularly coherent states with unknown parameters, from thermal degradation.
+Extensive numerical simulations validate these dual capabilities, demonstrating
+the high-fidelity generation of diverse Gaussian (coherent, squeezed) and
+non-Gaussian (Fock, cat) states, typically with fidelities exceeding 99%, and
+confirming the model's ability to robustly restore corrupted states.
+Furthermore, a comprehensive complexity analysis reveals favorable training and
+inference costs, highlighting the framework's efficiency, scalability, and its
+potential as a robust tool for quantum state engineering and noise mitigation
+in realistic CV quantum systems.",http://arxiv.org/pdf/2506.19270v1,,False
+AnchorDP3: 3D Affordance Guided Sparse Diffusion Policy for Robotic Manipulation,24/06/2025,"Ziyan Zhao, Ke Fan, He-Yang Xu, Ning Qiao, Bo Peng, Wenlong Gao, Dongjiang Li, Hui Shen","We present AnchorDP3, a diffusion policy framework for dual-arm robotic
+manipulation that achieves state-of-the-art performance in highly randomized
+environments. AnchorDP3 integrates three key innovations: (1)
+Simulator-Supervised Semantic Segmentation, using rendered ground truth to
+explicitly segment task-critical objects within the point cloud, which provides
+strong affordance priors; (2) Task-Conditioned Feature Encoders, lightweight
+modules processing augmented point clouds per task, enabling efficient
+multi-task learning through a shared diffusion-based action expert; (3)
+Affordance-Anchored Keypose Diffusion with Full State Supervision, replacing
+dense trajectory prediction with sparse, geometrically meaningful action
+anchors, i.e., keyposes such as pre-grasp pose, grasp pose directly anchored to
+affordances, drastically simplifying the prediction space; the action expert is
+forced to predict both robot joint angles and end-effector poses
+simultaneously, which exploits geometric consistency to accelerate convergence
+and boost accuracy. Trained on large-scale, procedurally generated simulation
+data, AnchorDP3 achieves a 98.7% average success rate in the RoboTwin benchmark
+across diverse tasks under extreme randomization of objects, clutter, table
+height, lighting, and backgrounds. This framework, when integrated with the
+RoboTwin real-to-sim pipeline, has the potential to enable fully autonomous
+generation of deployable visuomotor policies from only scene and instruction,
+totally eliminating human demonstrations from learning manipulation skills.",http://arxiv.org/pdf/2506.19269v1,,False
+Personality Prediction from Life Stories using Language Models,24/06/2025,"Rasiq Hussain, Jerry Ma, Rithik Khandelwal, Joshua Oltmanns, Mehak Gupta","Natural Language Processing (NLP) offers new avenues for personality
+assessment by leveraging rich, open-ended text, moving beyond traditional
+questionnaires. In this study, we address the challenge of modeling long
+narrative interview where each exceeds 2000 tokens so as to predict Five-Factor
+Model (FFM) personality traits. We propose a two-step approach: first, we
+extract contextual embeddings using sliding-window fine-tuning of pretrained
+language models; then, we apply Recurrent Neural Networks (RNNs) with attention
+mechanisms to integrate long-range dependencies and enhance interpretability.
+This hybrid method effectively bridges the strengths of pretrained transformers
+and sequence modeling to handle long-context data. Through ablation studies and
+comparisons with state-of-the-art long-context models such as LLaMA and
+Longformer, we demonstrate improvements in prediction accuracy, efficiency, and
+interpretability. Our results highlight the potential of combining
+language-based features with long-context modeling to advance personality
+assessment from life narratives.",http://arxiv.org/pdf/2506.19258v1,,False

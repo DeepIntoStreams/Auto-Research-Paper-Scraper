@@ -1,0 +1,221 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Dense Video Captioning using Graph-based Sentence Summarization,25/06/2025,"Zhiwang Zhang, Dong Xu, Wanli Ouyang, Luping Zhou","Recently, dense video captioning has made attractive progress in detecting
+and captioning all events in a long untrimmed video. Despite promising results
+were achieved, most existing methods do not sufficiently explore the scene
+evolution within an event temporal proposal for captioning, and therefore
+perform less satisfactorily when the scenes and objects change over a
+relatively long proposal. To address this problem, we propose a graph-based
+partition-and-summarization (GPaS) framework for dense video captioning within
+two stages. For the ``partition"" stage, a whole event proposal is split into
+short video segments for captioning at a finer level. For the ``summarization""
+stage, the generated sentences carrying rich description information for each
+segment are summarized into one sentence to describe the whole event. We
+particularly focus on the ``summarization"" stage, and propose a framework that
+effectively exploits the relationship between semantic words for summarization.
+We achieve this goal by treating semantic words as nodes in a graph and
+learning their interactions by coupling Graph Convolutional Network (GCN) and
+Long Short Term Memory (LSTM), with the aid of visual cues. Two schemes of
+GCN-LSTM Interaction (GLI) modules are proposed for seamless integration of GCN
+and LSTM. The effectiveness of our approach is demonstrated via an extensive
+comparison with the state-of-the-arts methods on the two benchmarks ActivityNet
+Captions dataset and YouCook II dataset.",http://arxiv.org/pdf/2506.20583v1,,False
+"Show, Tell and Summarize: Dense Video Captioning Using Visual Cue Aided Sentence Summarization",25/06/2025,"Zhiwang Zhang, Dong Xu, Wanli Ouyang, Chuanqi Tan","In this work, we propose a division-and-summarization (DaS) framework for
+dense video captioning. After partitioning each untrimmed long video as
+multiple event proposals, where each event proposal consists of a set of short
+video segments, we extract visual feature (e.g., C3D feature) from each segment
+and use the existing image/video captioning approach to generate one sentence
+description for this segment. Considering that the generated sentences contain
+rich semantic descriptions about the whole event proposal, we formulate the
+dense video captioning task as a visual cue aided sentence summarization
+problem and propose a new two stage Long Short Term Memory (LSTM) approach
+equipped with a new hierarchical attention mechanism to summarize all generated
+sentences as one descriptive sentence with the aid of visual features.
+Specifically, the first-stage LSTM network takes all semantic words from the
+generated sentences and the visual features from all segments within one event
+proposal as the input, and acts as the encoder to effectively summarize both
+semantic and visual information related to this event proposal. The
+second-stage LSTM network takes the output from the first-stage LSTM network
+and the visual features from all video segments within one event proposal as
+the input, and acts as the decoder to generate one descriptive sentence for
+this event proposal. Our comprehensive experiments on the ActivityNet Captions
+dataset demonstrate the effectiveness of our newly proposed DaS framework for
+dense video captioning.",http://arxiv.org/pdf/2506.20567v1,,False
+Physics-Informed Machine Learning Regulated by Finite Element Analysis for Simulation Acceleration of Laser Powder Bed Fusion,25/06/2025,"R. Sharma, M. Raissi, Y. B. Guo","Efficient simulation of Laser Powder Bed Fusion (LPBF) is crucial for process
+prediction due to the lasting issue of high computation cost using traditional
+numerical methods such as finite element analysis (FEA). This study presents an
+efficient modeling framework termed FEA-Regulated Physics-Informed Neural
+Network (FEA-PINN) to accelerate the thermal field prediction in a LPBF process
+while maintaining the FEA accuracy. A novel dynamic material updating strategy
+is developed to capture the dynamic phase change of powder-liquid-solid in the
+PINN model. The PINN model incorporates temperature-dependent material
+properties and phase change behavior using the apparent heat capacity method.
+While the PINN model demonstrates high accuracy with a small training data and
+enables generalization of new process parameters via transfer learning, it
+faces the challenge of high computation cost in time-dependent problems due to
+the residual accumulation. To overcome this issue, the FEA-PINN framework
+integrates corrective FEA simulations during inference to enforce physical
+consistency and reduce error drift. A comparative analysis shows that FEA-PINN
+achieves equivalent accuracy to FEA while significantly reducing computational
+cost. The framework has been validated using the benchmark FEA data and
+demonstrated through single-track scanning in LPBF.",http://arxiv.org/pdf/2506.20537v1,,False
+Industrial Energy Disaggregation with Digital Twin-generated Dataset and Efficient Data Augmentation,25/06/2025,"Christian Internò, Andrea Castellani, Sebastian Schmitt, Fabio Stella, Barbara Hammer","Industrial Non-Intrusive Load Monitoring (NILM) is limited by the scarcity of
+high-quality datasets and the complex variability of industrial energy
+consumption patterns. To address data scarcity and privacy issues, we introduce
+the Synthetic Industrial Dataset for Energy Disaggregation (SIDED), an
+open-source dataset generated using Digital Twin simulations. SIDED includes
+three types of industrial facilities across three different geographic
+locations, capturing diverse appliance behaviors, weather conditions, and load
+profiles. We also propose the Appliance-Modulated Data Augmentation (AMDA)
+method, a computationally efficient technique that enhances NILM model
+generalization by intelligently scaling appliance power contributions based on
+their relative impact. We show in experiments that NILM models trained with
+AMDA-augmented data significantly improve the disaggregation of energy
+consumption of complex industrial appliances like combined heat and power
+systems. Specifically, in our out-of-sample scenarios, models trained with AMDA
+achieved a Normalized Disaggregation Error of 0.093, outperforming models
+trained without data augmentation (0.451) and those trained with random data
+augmentation (0.290). Data distribution analyses confirm that AMDA effectively
+aligns training and test data distributions, enhancing model generalization.",http://arxiv.org/pdf/2506.20525v1,,False
+SV-LLM: An Agentic Approach for SoC Security Verification using Large Language Models,25/06/2025,"Dipayan Saha, Shams Tarek, Hasan Al Shaikh, Khan Thamid Hasan, Pavan Sai Nalluri, Md. Ajoad Hasan, Nashmin Alam, Jingbo Zhou, Sujan Kumar Saha, Mark Tehranipoor, Farimah Farahmandi","Ensuring the security of complex system-on-chips (SoCs) designs is a critical
+imperative, yet traditional verification techniques struggle to keep pace due
+to significant challenges in automation, scalability, comprehensiveness, and
+adaptability. The advent of large language models (LLMs), with their remarkable
+capabilities in natural language understanding, code generation, and advanced
+reasoning, presents a new paradigm for tackling these issues. Moving beyond
+monolithic models, an agentic approach allows for the creation of multi-agent
+systems where specialized LLMs collaborate to solve complex problems more
+effectively. Recognizing this opportunity, we introduce SV-LLM, a novel
+multi-agent assistant system designed to automate and enhance SoC security
+verification. By integrating specialized agents for tasks like verification
+question answering, security asset identification, threat modeling, test plan
+and property generation, vulnerability detection, and simulation-based bug
+validation, SV-LLM streamlines the workflow. To optimize their performance in
+these diverse tasks, agents leverage different learning paradigms, such as
+in-context learning, fine-tuning, and retrieval-augmented generation (RAG). The
+system aims to reduce manual intervention, improve accuracy, and accelerate
+security analysis, supporting proactive identification and mitigation of risks
+early in the design cycle. We demonstrate its potential to transform hardware
+security practices through illustrative case studies and experiments that
+showcase its applicability and efficacy.",http://arxiv.org/pdf/2506.20415v1,,False
+TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis,25/06/2025,"Zhengpeng Feng, Sadiq Jaffer, Jovana Knezevic, Silja Sormunen, Robin Young, Madeline Lisaius, Markus Immitzer, James Ball, Clement Atzberger, David A. Coomes, Anil Madhavapeddy, Andrew Blake, Srinivasan Keshav","Satellite remote sensing (RS) enables a wide array of downstream Earth
+observation (EO) applications, including climate modeling, carbon accounting,
+and strategies for conservation and sustainable land use. We present TESSERA, a
+novel Remote Sensing Foundation Model (RSFM) that uses Self-Supervised Learning
+(SSL) to generate global, robust representations at 10m scale from pixel-level
+satellite time series data. TESSERA combines information from only optical and
+SAR data streams using two parallel Transformer-based encoders: one dedicated
+to Sentinel-1 SAR polarizations and another to Sentinel-2 MSI data (10 selected
+spectral bands) to create representations that are then fused using a
+multilayer perceptron (MLP), resulting in a global representation map covering
+the years 2017 to 2024. Our precomputed representations set a new
+state-of-the-art performance benchmark and our open-source approach
+democratizes access to high-performance, high-resolution representations. We
+benchmark the performance of TESSERA in five diverse tasks, comparing our work
+with state-of-the-art task-specific models and other foundation models. Our
+results show that TESSERA outperforms both traditional RS baselines and the
+leading geospatial foundation models in these diverse downstream tasks.",http://arxiv.org/pdf/2506.20380v1,,False
+A foundation model with multi-variate parallel attention to generate neuronal activity,25/06/2025,"Francesco Carzaniga, Michael Hersche, Abu Sebastian, Kaspar Schindler, Abbas Rahimi","Learning from multi-variate time-series with heterogeneous channel
+configurations remains a fundamental challenge for deep neural networks (DNNs),
+particularly in clinical domains such as intracranial electroencephalography
+(iEEG), where channel setups vary widely across subjects. In this work, we
+introduce multi-variate parallel attention (MVPA), a novel self-attention
+mechanism that disentangles content, temporal, and spatial attention, enabling
+flexible, generalizable, and efficient modeling of time-series data with
+varying channel counts and configurations. We use MVPA to build MVPFormer, a
+generative foundation model for human electrophysiology, trained to predict the
+evolution of iEEG signals across diverse subjects. To support this and future
+effort by the community, we release the SWEC iEEG dataset, the largest publicly
+available iEEG dataset to date, comprising nearly 10,000 hours of recordings
+from heterogeneous clinical sources. MVPFormer leverages MVPA to achieve strong
+generalization across subjects, demonstrating expert-level performance in
+seizure detection and outperforming state-of-the-art Transformer baselines on
+our SWEC, the MAYO, and the FNUSA dataset. We further validate MVPA on standard
+time-series forecasting and classification tasks, where it matches or exceeds
+existing attention-based models. Together, our contributions establish MVPA as
+a general-purpose attention mechanism for heterogeneous time-series and
+MVPFormer as the first open-source, open-weights, and open-data iEEG foundation
+model with state-of-the-art clinical performance. The code is available at
+https://github.com/IBM/multi-variate-parallel-transformer. The SWEC iEEG
+dataset is available at
+https://mb-neuro.medical-blocks.ch/public_access/databases/ieeg/swec_ieeg.",http://arxiv.org/pdf/2506.20354v1,,False
+On the ability of Deep Neural Networks to Learn Granger Causality in Multi-Variate Time Series Data,25/06/2025,"Malik Shahid Sultan, Hernando Ombao","Granger Causality (GC) offers an elegant statistical framework to study the
+association between multivariate time series data. Linear Vector Autoregressive
+models (VAR) though have nice interpretation properties but have limited
+practical application due to underlying assumptions on the kind of associations
+that can be captured by these models. Numerous attempts have already been made
+in the literature that exploit the functional approximation power of Deep
+Neural Networks (DNNs) for the task of GC estimation. These methods however
+treat GC as a variable selection problem. We present a novel paradigm for
+approaching GC. We present this idea that GC is essentially linked with
+prediction and if a deep learning model is used to model the time series
+collectively or jointly, a well regularized model may learn the true granger
+causal structure from the data, given that there is enough training data. We
+propose to uncover the learned GC structure by comparing the model uncertainty
+or distribution of the residuals when the past of everything is used as
+compared to the one where a specific time series component is dropped from the
+model. We also compare the effect of input layer dropout on the ability of a
+neural network to learn granger causality from the data. We show that a well
+regularized model infact can learn the true GC structure from the data without
+explicitly adding terms in the loss function that guide the model to select
+variables or perform sparse regression.",http://arxiv.org/pdf/2506.20347v1,,False
+Time-series surrogates from energy consumers generated by machine learning approaches for long-term forecasting scenarios,25/06/2025,"Ben Gerhards, Nikita Popkov, Annekatrin König, Marcel Arpogaus, Bastian Schäfermeier, Leonie Riedl, Stephan Vogt, Philip Hehlert","Forecasting attracts a lot of research attention in the electricity value
+chain. However, most studies concentrate on short-term forecasting of
+generation or consumption with a focus on systems and less on individual
+consumers. Even more neglected is the topic of long-term forecasting of
+individual power consumption.
+  Here, we provide an in-depth comparative evaluation of data-driven methods
+for generating synthetic time series data tailored to energy consumption
+long-term forecasting. High-fidelity synthetic data is crucial for a wide range
+of applications, including state estimations in energy systems or power grid
+planning. In this study, we assess and compare the performance of multiple
+state-of-the-art but less common techniques: a hybrid Wasserstein Generative
+Adversarial Network (WGAN), Denoising Diffusion Probabilistic Model (DDPM),
+Hidden Markov Model (HMM), and Masked Autoregressive Bernstein polynomial
+normalizing Flows (MABF). We analyze the ability of each method to replicate
+the temporal dynamics, long-range dependencies, and probabilistic transitions
+characteristic of individual energy consumption profiles. Our comparative
+evaluation highlights the strengths and limitations of: WGAN, DDPM, HMM and
+MABF aiding in selecting the most suitable approach for state estimations and
+other energy-related tasks. Our generation and analysis framework aims to
+enhance the accuracy and reliability of synthetic power consumption data while
+generating data that fulfills criteria like anonymisation - preserving privacy
+concerns mitigating risks of specific profiling of single customers. This study
+utilizes an open-source dataset from households in Germany with 15min time
+resolution. The generated synthetic power profiles can readily be used in
+applications like state estimations or consumption forecasting.",http://arxiv.org/pdf/2506.20253v1,,False
+Language Modeling by Language Models,25/06/2025,"Junyan Cheng, Peter Clark, Kyle Richardson","Can we leverage LLMs to model the process of discovering novel language model
+(LM) architectures? Inspired by real research, we propose a multi-agent LLM
+approach that simulates the conventional stages of research, from ideation and
+literature search (proposal stage) to design implementation (code generation),
+generative pre-training, and downstream evaluation (verification). Using ideas
+from scaling laws, our system, Genesys, employs a Ladder of Scales approach;
+new designs are proposed, adversarially reviewed, implemented, and selectively
+verified at increasingly larger model scales (14M$\sim$350M parameters) with a
+narrowing budget (the number of models we can train at each scale). To help
+make discovery efficient and factorizable, Genesys uses a novel genetic
+programming backbone, which we show has empirical advantages over commonly used
+direct prompt generation workflows (e.g., $\sim$86\% percentage point
+improvement in successful design generation, a key bottleneck). We report
+experiments involving 1,162 newly discovered designs (1,062 fully verified
+through pre-training) and find the best designs to be highly competitive with
+known architectures (e.g., outperform GPT2, Mamba2, etc., on 6/9 common
+benchmarks). We couple these results with comprehensive system-level ablations
+and formal results, which give broader insights into the design of effective
+autonomous discovery systems.",http://arxiv.org/pdf/2506.20249v1,,False
+SEED: A Structural Encoder for Embedding-Driven Decoding in Time Series Prediction with LLMs,25/06/2025,"Fengze Li, Yue Wang, Yangle Liu, Ming Huang, Dou Hong, Jieming Ma","Multivariate time series forecasting requires models to simultaneously
+capture variable-wise structural dependencies and generalize across diverse
+tasks. While structural encoders are effective in modeling feature
+interactions, they lack the capacity to support semantic-level reasoning or
+task adaptation. Conversely, large language models (LLMs) possess strong
+generalization capabilities but remain incompatible with raw time series
+inputs. This gap limits the development of unified, transferable prediction
+systems. Therefore, we introduce SEED, a structural encoder for
+embedding-driven decoding, which integrates four stages: a token-aware encoder
+for patch extraction, a projection module that aligns patches with language
+model embeddings, a semantic reprogramming mechanism that maps patches to
+task-aware prototypes, and a frozen language model for prediction. This modular
+architecture decouples representation learning from inference, enabling
+efficient alignment between numerical patterns and semantic reasoning.
+Empirical results demonstrate that the proposed method achieves consistent
+improvements over strong baselines, and comparative studies on various datasets
+confirm SEED's role in addressing the structural-semantic modeling gap.",http://arxiv.org/pdf/2506.20167v1,,False

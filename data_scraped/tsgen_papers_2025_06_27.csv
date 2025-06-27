@@ -1,0 +1,355 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+WorldVLA: Towards Autoregressive Action World Model,26/06/2025,"Jun Cen, Chaohui Yu, Hangjie Yuan, Yuming Jiang, Siteng Huang, Jiayan Guo, Xin Li, Yibing Song, Hao Luo, Fan Wang, Deli Zhao, Hao Chen","We present WorldVLA, an autoregressive action world model that unifies action
+and image understanding and generation. Our WorldVLA intergrates
+Vision-Language-Action (VLA) model and world model in one single framework. The
+world model predicts future images by leveraging both action and image
+understanding, with the purpose of learning the underlying physics of the
+environment to improve action generation. Meanwhile, the action model generates
+the subsequent actions based on image observations, aiding in visual
+understanding and in turn helps visual generation of the world model. We
+demonstrate that WorldVLA outperforms standalone action and world models,
+highlighting the mutual enhancement between the world model and the action
+model. In addition, we find that the performance of the action model
+deteriorates when generating sequences of actions in an autoregressive manner.
+This phenomenon can be attributed to the model's limited generalization
+capability for action prediction, leading to the propagation of errors from
+earlier actions to subsequent ones. To address this issue, we propose an
+attention mask strategy that selectively masks prior actions during the
+generation of the current action, which shows significant performance
+improvement in the action chunk generation task.",http://arxiv.org/pdf/2506.21539v1,,False
+Evaluation of Traffic Signals for Daily Traffic Pattern,26/06/2025,"Mohammad Shokrolah Shirazi, Hung-Fu Chang","The turning movement count data is crucial for traffic signal design,
+intersection geometry planning, traffic flow, and congestion analysis. This
+work proposes three methods called dynamic, static, and hybrid configuration
+for TMC-based traffic signals. A vision-based tracking system is developed to
+estimate the TMC of six intersections in Las Vegas using traffic cameras. The
+intersection design, route (e.g. vehicle movement directions), and signal
+configuration files with compatible formats are synthesized and imported into
+Simulation of Urban MObility for signal evaluation with realistic data. The
+initial experimental results based on estimated waiting times indicate that the
+cycle time of 90 and 120 seconds works best for all intersections. In addition,
+four intersections show better performance for dynamic signal timing
+configuration, and the other two with lower performance have a lower ratio of
+total vehicle count to total lanes of the intersection leg. Since daily traffic
+flow often exhibits a bimodal pattern, we propose a hybrid signal method that
+switches between dynamic and static methods, adapting to peak and off-peak
+traffic conditions for improved flow management. So, a built-in traffic
+generator module creates vehicle routes for 4 hours, including peak hours, and
+a signal design module produces signal schedule cycles according to static,
+dynamic, and hybrid methods. Vehicle count distributions are weighted
+differently for each zone (i.e., West, North, East, South) to generate diverse
+traffic patterns. The extended experimental results for 6 intersections with 4
+hours of simulation time imply that zone-based traffic pattern distributions
+affect signal design selection. Although the static method works great for
+evenly zone-based traffic distribution, the hybrid method works well for highly
+weighted traffic at intersection pairs of the West-East and North-South zones.",http://arxiv.org/pdf/2506.21469v1,,False
+Spatial Mental Modeling from Limited Views,26/06/2025,"Baiqiao Yin, Qineng Wang, Pingyue Zhang, Jianshu Zhang, Kangrui Wang, Zihan Wang, Jieyu Zhang, Keshigeyan Chandrasegaran, Han Liu, Ranjay Krishna, Saining Xie, Manling Li, Jiajun Wu, Li Fei-Fei","Can Vision Language Models (VLMs) imagine the full scene from just a few
+views, like humans do? Humans form spatial mental models, internal
+representations of unseen space, to reason about layout, perspective, and
+motion. Our new MindCube benchmark with 21,154 questions across 3,268 images
+exposes this critical gap, where existing VLMs exhibit near-random performance.
+Using MindCube, we systematically evaluate how well VLMs build robust spatial
+mental models through representing positions (cognitive mapping), orientations
+(perspective-taking), and dynamics (mental simulation for ""what-if"" movements).
+We then explore three approaches to help VLMs approximate spatial mental
+models, including unseen intermediate views, natural language reasoning chains,
+and cognitive maps. The significant improvement comes from a synergistic
+approach, ""map-then-reason"", that jointly trains the model to first generate a
+cognitive map and then reason upon it. By training models to reason over these
+internal maps, we boosted accuracy from 37.8% to 60.8% (+23.0%). Adding
+reinforcement learning pushed performance even further to 70.7% (+32.9%). Our
+key insight is that such scaffolding of spatial mental models, actively
+constructing and utilizing internal structured spatial representations with
+flexible reasoning processes, significantly improves understanding of
+unobservable space.",http://arxiv.org/pdf/2506.21458v1,,False
+Active Inference AI Systems for Scientific Discovery,26/06/2025,Karthik Duraisamy,"The rapid evolution of artificial intelligence has led to expectations of
+transformative scientific discovery, yet current systems remain fundamentally
+limited by their operational architectures, brittle reasoning mechanisms, and
+their separation from experimental reality. Building on earlier work, we
+contend that progress in AI-driven science now depends on closing three
+fundamental gaps -- the abstraction gap, the reasoning gap, and the reality gap
+-- rather than on model size/data/test time compute. Scientific reasoning
+demands internal representations that support simulation of actions and
+response, causal structures that distinguish correlation from mechanism, and
+continuous calibration. We define active inference AI systems for scientific
+discovery as those that (i) maintain long-lived research memories grounded in
+causal self-supervised foundation models, (ii) symbolic or neuro-symbolic
+planners equipped with Bayesian guardrails, (iii) grow persistent knowledge
+graphs where thinking generates novel conceptual nodes, reasoning establishes
+causal edges, and real-world interaction prunes false connections while
+strengthening verified pathways, and (iv) refine their internal representations
+through closed-loop interaction with both high-fidelity simulators and
+automated laboratories - an operational loop where mental simulation guides
+action and empirical surprise reshapes understanding. In essence, we outline an
+architecture where discovery arises from the interplay between internal models
+that enable counterfactual reasoning and external validation that grounds
+hypotheses in reality. It is also argued that the inherent ambiguity in
+feedback from simulations and experiments, and underlying uncertainties makes
+human judgment indispensable, not as a temporary scaffold but as a permanent
+architectural component.",http://arxiv.org/pdf/2506.21329v1,,False
+Stochastic Quantum Spiking Neural Networks with Quantum Memory and Local Learning,26/06/2025,"Jiechen Chen, Bipin Rajendran, Osvaldo Simeone","Neuromorphic and quantum computing have recently emerged as promising
+paradigms for advancing artificial intelligence, each offering complementary
+strengths. Neuromorphic systems built on spiking neurons excel at processing
+time-series data efficiently through sparse, event-driven computation,
+consuming energy only upon input events. Quantum computing, on the other hand,
+leverages superposition and entanglement to explore feature spaces that are
+exponentially large in the number of qubits. Hybrid approaches combining these
+paradigms have begun to show potential, but existing quantum spiking models
+have important limitations. Notably, prior quantum spiking neuron
+implementations rely on classical memory mechanisms on single qubits, requiring
+repeated measurements to estimate firing probabilities, and they use
+conventional backpropagation on classical simulators for training. Here we
+propose a stochastic quantum spiking (SQS) neuron model that addresses these
+challenges. The SQS neuron uses multi-qubit quantum circuits to realize a
+spiking unit with internal quantum memory, enabling event-driven probabilistic
+spike generation in a single shot. Furthermore, we outline how networks of SQS
+neurons -- dubbed SQS neural networks (SQSNNs) -- can be trained via a
+hardware-friendly local learning rule, eliminating the need for global
+classical backpropagation. The proposed SQSNN model fuses the time-series
+efficiency of neuromorphic computing with the exponentially large inner state
+space of quantum computing, paving the way for quantum spiking neural networks
+that are modular, scalable, and trainable on quantum hardware.",http://arxiv.org/pdf/2506.21324v1,,False
+BitMark for Infinity: Watermarking Bitwise Autoregressive Image Generative Models,26/06/2025,"Louis Kerner, Michel Meintz, Bihe Zhao, Franziska Boenisch, Adam Dziedzic","State-of-the-art text-to-image models like Infinity generate photorealistic
+images at an unprecedented speed. These models operate in a bitwise
+autoregressive manner over a discrete set of tokens that is practically
+infinite in size. However, their impressive generative power comes with a
+growing risk: as their outputs increasingly populate the Internet, they are
+likely to be scraped and reused as training data-potentially by the very same
+models. This phenomenon has been shown to lead to model collapse, where
+repeated training on generated content, especially from the models' own
+previous versions, causes a gradual degradation in performance. A promising
+mitigation strategy is watermarking, which embeds human-imperceptible yet
+detectable signals into generated images-enabling the identification of
+generated content. In this work, we introduce BitMark, a robust bitwise
+watermarking framework for Infinity. Our method embeds a watermark directly at
+the bit level of the token stream across multiple scales (also referred to as
+resolutions) during Infinity's image generation process. Our bitwise watermark
+subtly influences the bits to preserve visual fidelity and generation speed
+while remaining robust against a spectrum of removal techniques. Furthermore,
+it exhibits high radioactivity, i.e., when watermarked generated images are
+used to train another image generative model, this second model's outputs will
+also carry the watermark. The radioactive traces remain detectable even when
+only fine-tuning diffusion or image autoregressive models on images watermarked
+with our BitMark. Overall, our approach provides a principled step toward
+preventing model collapse in image generative models by enabling reliable
+detection of generated outputs.",http://arxiv.org/pdf/2506.21209v1,,False
+Diverse Mini-Batch Selection in Reinforcement Learning for Efficient Chemical Exploration in de novo Drug Design,26/06/2025,"Hampus Gummesson Svensson, Ola Engkvist, Jon Paul Janet, Christian Tyrchan, Morteza Haghir Chehreghani","In many real-world applications, evaluating the goodness of instances is
+often costly and time-consuming, e.g., human feedback and physics simulations,
+in contrast to proposing new instances. In particular, this is even more
+critical in reinforcement learning, as new interactions with the environment
+(i.e., new instances) need to be evaluated to provide a reward signal to learn
+from. As sufficient exploration is crucial, learning from a diverse mini-batch
+can have a large impact and help mitigate mode collapse. In this paper, we
+introduce diverse mini-batch selection for reinforcement learning and propose
+to use determinantal point processes for this task. We study this framework in
+the context of a real-world problem, namely drug discovery. We experimentally
+study how our proposed framework can improve the effectiveness of chemical
+exploration in de novo drug design, where finding diverse and high-quality
+solutions is essential. We conduct a comprehensive evaluation with three
+well-established molecular generation oracles over numerous generative steps.
+Our experiments conclude that our diverse mini-batch selection framework can
+substantially improve the diversity of the solutions, while still obtaining
+solutions of high quality. In drug discovery, such outcome can potentially lead
+to fulfilling unmet medication needs faster.",http://arxiv.org/pdf/2506.21158v1,,False
+Transformer-Based Spatial-Temporal Counterfactual Outcomes Estimation,26/06/2025,"He Li, Haoang Chi, Mingyu Liu, Wanrong Huang, Liyang Xu, Wenjing Yang","The real world naturally has dimensions of time and space. Therefore,
+estimating the counterfactual outcomes with spatial-temporal attributes is a
+crucial problem. However, previous methods are based on classical statistical
+models, which still have limitations in performance and generalization. This
+paper proposes a novel framework for estimating counterfactual outcomes with
+spatial-temporal attributes using the Transformer, exhibiting stronger
+estimation ability. Under mild assumptions, the proposed estimator within this
+framework is consistent and asymptotically normal. To validate the
+effectiveness of our approach, we conduct simulation experiments and real data
+experiments. Simulation experiments show that our estimator has a stronger
+estimation capability than baseline methods. Real data experiments provide a
+valuable conclusion to the causal effect of conflicts on forest loss in
+Colombia. The source code is available at
+https://github.com/lihe-maxsize/DeppSTCI_Release_Version-master.",http://arxiv.org/pdf/2506.21154v1,,False
+Curriculum-Guided Antifragile Reinforcement Learning for Secure UAV Deconfliction under Observation-Space Attacks,26/06/2025,"Deepak Kumar Panda, Adolfo Perrusquia, Weisi Guo","Reinforcement learning (RL) policies deployed in safety-critical systems,
+such as unmanned aerial vehicle (UAV) navigation in dynamic airspace, are
+vulnerable to out-ofdistribution (OOD) adversarial attacks in the observation
+space. These attacks induce distributional shifts that significantly degrade
+value estimation, leading to unsafe or suboptimal decision making rendering the
+existing policy fragile. To address this vulnerability, we propose an
+antifragile RL framework designed to adapt against curriculum of incremental
+adversarial perturbations. The framework introduces a simulated attacker which
+incrementally increases the strength of observation-space perturbations which
+enables the RL agent to adapt and generalize across a wider range of OOD
+observations and anticipate previously unseen attacks. We begin with a
+theoretical characterization of fragility, formally defining catastrophic
+forgetting as a monotonic divergence in value function distributions with
+increasing perturbation strength. Building on this, we define antifragility as
+the boundedness of such value shifts and derive adaptation conditions under
+which forgetting is stabilized. Our method enforces these bounds through
+iterative expert-guided critic alignment using Wasserstein distance
+minimization across incrementally perturbed observations. We empirically
+evaluate the approach in a UAV deconfliction scenario involving dynamic 3D
+obstacles. Results show that the antifragile policy consistently outperforms
+standard and robust RL baselines when subjected to both projected gradient
+descent (PGD) and GPS spoofing attacks, achieving up to 15% higher cumulative
+reward and over 30% fewer conflict events. These findings demonstrate the
+practical and theoretical viability of antifragile reinforcement learning for
+secure and resilient decision-making in environments with evolving threat
+scenarios.",http://arxiv.org/pdf/2506.21129v1,,False
+Robust Policy Switching for Antifragile Reinforcement Learning for UAV Deconfliction in Adversarial Environments,26/06/2025,"Deepak Kumar Panda, Weisi Guo","The increasing automation of navigation for unmanned aerial vehicles (UAVs)
+has exposed them to adversarial attacks that exploit vulnerabilities in
+reinforcement learning (RL) through sensor manipulation. Although existing
+robust RL methods aim to mitigate such threats, their effectiveness has limited
+generalization to out-of-distribution shifts from the optimal value
+distribution, as they are primarily designed to handle fixed perturbation. To
+address this limitation, this paper introduces an antifragile RL framework that
+enhances adaptability to broader distributional shifts by incorporating a
+switching mechanism based on discounted Thompson sampling (DTS). This mechanism
+dynamically selects among multiple robust policies to minimize adversarially
+induced state-action-value distribution shifts. The proposed approach first
+derives a diverse ensemble of action robust policies by accounting for a range
+of perturbations in the policy space. These policies are then modeled as a
+multiarmed bandit (MAB) problem, where DTS optimally selects policies in
+response to nonstationary Bernoulli rewards, effectively adapting to evolving
+adversarial strategies. Theoretical framework has also been provided where by
+optimizing the DTS to minimize the overall regrets due to distributional shift,
+results in effective adaptation against unseen adversarial attacks thus
+inducing antifragility. Extensive numerical simulations validate the
+effectiveness of the proposed framework in complex navigation environments with
+multiple dynamic three-dimensional obstacles and with stronger projected
+gradient descent (PGD) and spoofing attacks. Compared to conventional robust,
+non-adaptive RL methods, the antifragile approach achieves superior
+performance, demonstrating shorter navigation path lengths and a higher rate of
+conflict-free navigation trajectories compared to existing robust RL techniques",http://arxiv.org/pdf/2506.21127v1,,False
+Unlasting: Unpaired Single-Cell Multi-Perturbation Estimation by Dual Conditional Diffusion Implicit Bridges,26/06/2025,"Changxi Chi, Jun Xia, Yufei Huang, Jingbo Zhou, Siyuan Li, Yunfan Liu, Chang Yu, Stan Z. Li","Estimating single-cell responses across various perturbations facilitates the
+identification of key genes and enhances drug screening, significantly boosting
+experimental efficiency. However, single-cell sequencing is a destructive
+process, making it impossible to capture the same cell's phenotype before and
+after perturbation. Consequently, data collected under perturbed and
+unperturbed conditions are inherently unpaired. Existing methods either attempt
+to forcibly pair unpaired data using random sampling, or neglect the inherent
+relationship between unperturbed and perturbed cells during the modeling. In
+this work, we propose a framework based on Dual Diffusion Implicit Bridges
+(DDIB) to learn the mapping between different data distributions, effectively
+addressing the challenge of unpaired data. We further interpret this framework
+as a form of data augmentation. We integrate gene regulatory network (GRN)
+information to propagate perturbation signals in a biologically meaningful way,
+and further incorporate a masking mechanism to predict silent genes, improving
+the quality of generated profiles. Moreover, gene expression under the same
+perturbation often varies significantly across cells, frequently exhibiting a
+bimodal distribution that reflects intrinsic heterogeneity. To capture this, we
+introduce a more suitable evaluation metric. We propose Unlasting, dual
+conditional diffusion models that overcome the problem of unpaired single-cell
+perturbation data and strengthen the model's insight into perturbations under
+the guidance of the GRN, with a dedicated mask model designed to improve
+generation quality by predicting silent genes. In addition, we introduce a
+biologically grounded evaluation metric that better reflects the inherent
+heterogeneity in single-cell responses.",http://arxiv.org/pdf/2506.21107v1,,False
+V2X-REALM: Vision-Language Model-Based Robust End-to-End Cooperative Autonomous Driving with Adaptive Long-Tail Modeling,26/06/2025,"Junwei You, Pei Li, Zhuoyu Jiang, Zilin Huang, Rui Gan, Haotian Shi, Bin Ran","Ensuring robust planning and decision-making under rare, diverse, and
+visually degraded long-tail scenarios remains a fundamental challenge for
+autonomous driving in urban environments. This issue becomes more critical in
+cooperative settings, where vehicles and infrastructure jointly perceive and
+reason across complex environments. To address this challenge, we propose
+V2X-REALM, a vision-language model (VLM)-based framework with adaptive
+multimodal learning for robust cooperative autonomous driving under long-tail
+scenarios. V2X-REALM introduces three core innovations: (i) a prompt-driven
+long-tail scenario generation and evaluation pipeline that leverages foundation
+models to synthesize realistic long-tail conditions such as snow and fog across
+vehicle- and infrastructure-side views, enriching training diversity
+efficiently; (ii) a gated multi-scenario adaptive attention module that
+modulates the visual stream using scenario priors to recalibrate ambiguous or
+corrupted features; and (iii) a multi-task scenario-aware contrastive learning
+objective that improves multimodal alignment and promotes cross-scenario
+feature separability. Extensive experiments demonstrate that V2X-REALM
+significantly outperforms existing baselines in robustness, semantic reasoning,
+safety, and planning accuracy under complex, challenging driving conditions,
+advancing the scalability of end-to-end cooperative autonomous driving.",http://arxiv.org/pdf/2506.21041v1,,False
+An Information-Theoretic Analysis for Federated Learning under Concept Drift,26/06/2025,"Fu Peng, Meng Zhang, Ming Tang","Recent studies in federated learning (FL) commonly train models on static
+datasets. However, real-world data often arrives as streams with shifting
+distributions, causing performance degradation known as concept drift. This
+paper analyzes FL performance under concept drift using information theory and
+proposes an algorithm to mitigate the performance degradation. We model concept
+drift as a Markov chain and introduce the \emph{Stationary Generalization
+Error} to assess a model's capability to capture characteristics of future
+unseen data. Its upper bound is derived using KL divergence and mutual
+information. We study three drift patterns (periodic, gradual, and random) and
+their impact on FL performance. Inspired by this, we propose an algorithm that
+regularizes the empirical risk minimization approach with KL divergence and
+mutual information, thereby enhancing long-term performance. We also explore
+the performance-cost tradeoff by identifying a Pareto front. To validate our
+approach, we build an FL testbed using Raspberry Pi4 devices. Experimental
+results corroborate with theoretical findings, confirming that drift patterns
+significantly affect performance. Our method consistently outperforms existing
+approaches for these three patterns, demonstrating its effectiveness in
+adapting concept drift in FL.",http://arxiv.org/pdf/2506.21036v1,,False
+Can Gradient Descent Simulate Prompting?,26/06/2025,"Eric Zhang, Leshem Choshen, Jacob Andreas","There are two primary ways of incorporating new information into a language
+model (LM): changing its prompt or changing its parameters, e.g. via
+fine-tuning. Parameter updates incur no long-term storage cost for model
+changes. However, for many model updates, prompting is significantly more
+effective: prompted models can generalize robustly from single examples and
+draw logical inferences that do not occur under standard fine-tuning. Can
+models be modified so that fine-tuning does emulate prompting? This paper
+describes a method for meta-training LMs such that gradient updates emulate the
+effects of conditioning on new information. Our approach uses tools from
+gradient-based meta-learning but uses an LM's own prompted predictions as
+targets, eliminating the need for ground-truth labels. Subsequent gradient
+descent training recovers some (and occasionally all) of prompted model
+performance -- showing improvement on the ``reversal curse'' tasks, and
+answering questions about text passages after a single gradient update. These
+results suggest that, with appropriate initialization, gradient descent can be
+surprisingly expressive. Our results suggest new avenues for long-context
+modeling and offer insight into the generalization capabilities of
+gradient-based learning.",http://arxiv.org/pdf/2506.20989v1,,False
+Antibody Design and Optimization with Multi-scale Equivariant Graph Diffusion Models for Accurate Complex Antigen Binding,26/06/2025,"Jiameng Chen, Xiantao Cai, Jia Wu, Wenbin Hu","Antibody design remains a critical challenge in therapeutic and diagnostic
+development, particularly for complex antigens with diverse binding interfaces.
+Current computational methods face two main limitations: (1) capturing
+geometric features while preserving symmetries, and (2) generalizing novel
+antigen interfaces. Despite recent advancements, these methods often fail to
+accurately capture molecular interactions and maintain structural integrity. To
+address these challenges, we propose \textbf{AbMEGD}, an end-to-end framework
+integrating \textbf{M}ulti-scale \textbf{E}quivariant \textbf{G}raph
+\textbf{D}iffusion for antibody sequence and structure co-design. Leveraging
+advanced geometric deep learning, AbMEGD combines atomic-level geometric
+features with residue-level embeddings, capturing local atomic details and
+global sequence-structure interactions. Its E(3)-equivariant diffusion method
+ensures geometric precision, computational efficiency, and robust
+generalizability for complex antigens. Furthermore, experiments using the
+SAbDab database demonstrate a 10.13\% increase in amino acid recovery, 3.32\%
+rise in improvement percentage, and a 0.062~\AA\ reduction in root mean square
+deviation within the critical CDR-H3 region compared to DiffAb, a leading
+antibody design model. These results highlight AbMEGD's ability to balance
+structural integrity with improved functionality, establishing a new benchmark
+for sequence-structure co-design and affinity optimization. The code is
+available at: https://github.com/Patrick221215/AbMEGD.",http://arxiv.org/pdf/2506.20957v1,,False
+Beyond Reactive Safety: Risk-Aware LLM Alignment via Long-Horizon Simulation,26/06/2025,"Chenkai Sun, Denghui Zhang, ChengXiang Zhai, Heng Ji","Given the growing influence of language model-based agents on high-stakes
+societal decisions, from public policy to healthcare, ensuring their beneficial
+impact requires understanding the far-reaching implications of their
+suggestions. We propose a proof-of-concept framework that projects how
+model-generated advice could propagate through societal systems on a
+macroscopic scale over time, enabling more robust alignment. To assess the
+long-term safety awareness of language models, we also introduce a dataset of
+100 indirect harm scenarios, testing models' ability to foresee adverse,
+non-obvious outcomes from seemingly harmless user prompts. Our approach
+achieves not only over 20% improvement on the new dataset but also an average
+win rate exceeding 70% against strong baselines on existing safety benchmarks
+(AdvBench, SafeRLHF, WildGuardMix), suggesting a promising direction for safer
+agents.",http://arxiv.org/pdf/2506.20949v1,,False
+LLM-guided Chemical Process Optimization with a Multi-Agent Approach,26/06/2025,"Tong Zeng, Srivathsan Badrinarayanan, Janghoon Ock, Cheng-Kai Lai, Amir Barati Farimani","Chemical process optimization is crucial to maximize production efficiency
+and economic performance. Traditional methods, including gradient-based
+solvers, evolutionary algorithms, and parameter grid searches, become
+impractical when operating constraints are ill-defined or unavailable,
+requiring engineers to rely on subjective heuristics to estimate feasible
+parameter ranges. To address this constraint definition bottleneck, we present
+a multi-agent framework of large language model (LLM) agents that autonomously
+infer operating constraints from minimal process descriptions, then
+collaboratively guide optimization using the inferred constraints. Our
+AutoGen-based agentic framework employs OpenAI's o3 model, with specialized
+agents for constraint generation, parameter validation, simulation execution,
+and optimization guidance. Through two phases - autonomous constraint
+generation using embedded domain knowledge, followed by iterative multi-agent
+optimization - the framework eliminates the need for predefined operational
+bounds. Validated on the hydrodealkylation process across cost, yield, and
+yield-to-cost ratio metrics, the framework demonstrated competitive performance
+with conventional optimization methods while achieving better computational
+efficiency, requiring fewer iterations to converge. Our approach converged in
+under 20 minutes, achieving a 31-fold speedup over grid search. Beyond
+computational efficiency, the framework's reasoning-guided search demonstrates
+sophisticated process understanding, correctly identifying utility trade-offs,
+and applying domain-informed heuristics. This approach shows significant
+potential for optimization scenarios where operational constraints are poorly
+characterized or unavailable, particularly for emerging processes and retrofit
+applications.",http://arxiv.org/pdf/2506.20921v1,,False

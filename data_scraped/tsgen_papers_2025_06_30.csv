@@ -1,0 +1,376 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Sheaf-Based Decentralized Multimodal Learning for Next-Generation Wireless Communication Systems,27/06/2025,"Abdulmomen Ghalkha, Zhuojun Tian, Chaouki Ben Issaid, Mehdi Bennis","In large-scale communication systems, increasingly complex scenarios require
+more intelligent collaboration among edge devices collecting various multimodal
+sensory data to achieve a more comprehensive understanding of the environment
+and improve decision-making accuracy. However, conventional federated learning
+(FL) algorithms typically consider unimodal datasets, require identical model
+architectures, and fail to leverage the rich information embedded in multimodal
+data, limiting their applicability to real-world scenarios with diverse
+modalities and varying client capabilities. To address this issue, we propose
+Sheaf-DMFL, a novel decentralized multimodal learning framework leveraging
+sheaf theory to enhance collaboration among devices with diverse modalities.
+Specifically, each client has a set of local feature encoders for its different
+modalities, whose outputs are concatenated before passing through a
+task-specific layer. While encoders for the same modality are trained
+collaboratively across clients, we capture the intrinsic correlations among
+clients' task-specific layers using a sheaf-based structure. To further enhance
+learning capability, we propose an enhanced algorithm named Sheaf-DMFL-Att,
+which tailors the attention mechanism within each client to capture
+correlations among different modalities. A rigorous convergence analysis of
+Sheaf-DMFL-Att is provided, establishing its theoretical guarantees. Extensive
+simulations are conducted on real-world link blockage prediction and mmWave
+beamforming scenarios, demonstrate the superiority of the proposed algorithms
+in such heterogeneous wireless communication systems.",http://arxiv.org/pdf/2506.22374v1,,False
+DiffSoundStream: Efficient Speech Tokenization via Diffusion Decoding,27/06/2025,"Yang Yang, Yunpeng Li, George Sung, Shao-Fu Shih, Craig Dooley, Alessio Centazzo, Ramanan Rajeswaran","Token-based language modeling is a prominent approach for speech generation,
+where tokens are obtained by quantizing features from self-supervised learning
+(SSL) models and extracting codes from neural speech codecs, generally referred
+to as semantic tokens and acoustic tokens. These tokens are often modeled
+autoregressively, with the inference speed being constrained by the token rate.
+In this work, we propose DiffSoundStream, a solution that improves the
+efficiency of speech tokenization in non-streaming scenarios through two
+techniques: (1) conditioning the neural codec on semantic tokens to minimize
+redundancy between semantic and acoustic tokens, and (2) leveraging latent
+diffusion models to synthesize high-quality waveforms from semantic and
+coarse-level acoustic tokens. Experiments show that at 50 tokens per second,
+DiffSoundStream achieves speech quality on par with a standard SoundStream
+model operating at twice the token rate. Additionally, we achieve step-size
+distillation using just four diffusion sampling steps with only a minor quality
+loss.",http://arxiv.org/pdf/2506.22362v1,,False
+Robust quantum reservoir computers for forecasting chaotic dynamics: generalized synchronization and stability,27/06/2025,"Osama Ahmed, Felix Tennie, Luca Magri","We show that recurrent quantum reservoir computers (QRCs) and their
+recurrence-free architectures (RF-QRCs) are robust tools for learning and
+forecasting chaotic dynamics from time-series data. First, we formulate and
+interpret quantum reservoir computers as coupled dynamical systems, where the
+reservoir acts as a response system driven by training data; in other words,
+quantum reservoir computers are generalized-synchronization (GS) systems.
+Second, we show that quantum reservoir computers can learn chaotic dynamics and
+their invariant properties, such as Lyapunov spectra, attractor dimensions, and
+geometric properties such as the covariant Lyapunov vectors. This analysis is
+enabled by deriving the Jacobian of the quantum reservoir update. Third, by
+leveraging tools from generalized synchronization, we provide a method for
+designing robust quantum reservoir computers. We propose the criterion
+$GS=ESP$: GS implies the echo state property (ESP), and vice versa. We
+analytically show that RF-QRCs, by design, fulfill $GS=ESP$. Finally, we
+analyze the effect of simulated noise. We find that dissipation from noise
+enhances the robustness of quantum reservoir computers. Numerical verifications
+on systems of different dimensions support our conclusions. This work opens
+opportunities for designing robust quantum machines for chaotic time series
+forecasting on near-term quantum hardware.",http://arxiv.org/pdf/2506.22335v1,,False
+A Practical Approach to Power Saving in Hearables Using Sub-Nyquist Sampling with Bandwidth Extension,27/06/2025,"Tarikul Islam Tamiti, Anomadarshi Barua","Hearables are wearable computers that are worn on the ear. Bone conduction
+microphones (BCMs) are used with air conduction microphones (ACMs) in hearables
+as a supporting modality for multimodal speech enhancement (SE) in noisy
+conditions. However, existing works don't consider the following practical
+aspects for low-power implementations on hearables: (i) They do not explore how
+lowering the sampling frequencies and bit resolutions in analog-to-digital
+converters (ADCs) of hearables jointly impact low-power processing and
+multimodal SE in terms of speech quality and intelligibility. (ii) They don't
+discuss how GAN-like audio quality can be achieved without using actual GAN
+discriminators. And (iii) They don't process signals from ACMs/BCMs at
+sub-Nyquist sampling rate because, in their frameworks, they lack a wideband
+reconstruction methodology from their narrowband parts. We propose SUBARU
+(\textbf{Sub}-Nyquist \textbf{A}udio \textbf{R}esolution \textbf{U}psampling),
+which achieves the following: SUBARU (i) intentionally uses sub-Nyquist
+sampling and low bit resolution in ADCs, achieving a 3.31x reduction in power
+consumption; (ii) introduces novel multi-scale and multi-period virtual
+discriminators, which achieve GAN-like audio quality without using GANs'
+adversarial training; and (iii) achieves streaming operations on mobile
+platforms and SE in in-the-wild noisy conditions with an inference time of
+1.74ms and a memory footprint of less than 13.77MB.",http://arxiv.org/pdf/2506.22321v1,,False
+Unfolding Generative Flows with Koopman Operators: Fast and Interpretable Sampling,27/06/2025,"Erkan Turan, Aristotelis Siozopoulos, Maks Ovsjanikov","Conditional Flow Matching (CFM) offers a simulation-free framework for
+training continuous-time generative models, bridging diffusion and flow-based
+approaches. However, sampling from CFM still relies on numerically solving
+non-linear ODEs which can be computationally expensive and difficult to
+interpret. Recent alternatives address sampling speed via trajectory
+straightening, mini-batch coupling or distillation. However, these methods
+typically do not shed light on the underlying \textit{structure} of the
+generative process. In this work, we propose to accelerate CFM and introduce an
+interpretable representation of its dynamics by integrating Koopman operator
+theory, which models non-linear flows as linear evolution in a learned space of
+observables. We introduce a decoder-free Koopman-CFM architecture that learns
+an embedding where the generative dynamics become linear, enabling closed-form,
+one-step sampling via matrix exponentiation. This results in significant
+speedups over traditional CFM as demonstrated on controlled 2D datasets and
+real-world benchmarks, MNIST, Fashion-MNIST (F-MNIST), and the Toronto Face
+Dataset (TFD). Unlike previous methods, our approach leads to a well-structured
+Koopman generator, whose spectral properties, eigenvalues, and eigenfunctions
+offer principled tools for analyzing generative behavior such as temporal
+scaling, mode stability, and decomposition in Koopman latent space. By
+combining sampling efficiency with analytical structure, Koopman-enhanced flow
+matching offers a potential step toward fast and interpretable generative
+modeling.",http://arxiv.org/pdf/2506.22304v1,,False
+RoomCraft: Controllable and Complete 3D Indoor Scene Generation,27/06/2025,"Mengqi Zhou, Xipeng Wang, Yuxi Wang, Zhaoxiang Zhang","Generating realistic 3D indoor scenes from user inputs remains a challenging
+problem in computer vision and graphics, requiring careful balance of geometric
+consistency, spatial relationships, and visual realism. While neural generation
+methods often produce repetitive elements due to limited global spatial
+reasoning, procedural approaches can leverage constraints for controllable
+generation but struggle with multi-constraint scenarios. When constraints
+become numerous, object collisions frequently occur, forcing the removal of
+furniture items and compromising layout completeness.
+  To address these limitations, we propose RoomCraft, a multi-stage pipeline
+that converts real images, sketches, or text descriptions into coherent 3D
+indoor scenes. Our approach combines a scene generation pipeline with a
+constraint-driven optimization framework. The pipeline first extracts
+high-level scene information from user inputs and organizes it into a
+structured format containing room type, furniture items, and spatial relations.
+It then constructs a spatial relationship network to represent furniture
+arrangements and generates an optimized placement sequence using a
+heuristic-based depth-first search (HDFS) algorithm to ensure layout coherence.
+To handle complex multi-constraint scenarios, we introduce a unified constraint
+representation that processes both formal specifications and natural language
+inputs, enabling flexible constraint-oriented adjustments through a
+comprehensive action space design. Additionally, we propose a Conflict-Aware
+Positioning Strategy (CAPS) that dynamically adjusts placement weights to
+minimize furniture collisions and ensure layout completeness.
+  Extensive experiments demonstrate that RoomCraft significantly outperforms
+existing methods in generating realistic, semantically coherent, and visually
+appealing room layouts across diverse input modalities.",http://arxiv.org/pdf/2506.22291v1,,False
+Hybrid Generative Modeling for Incomplete Physics: Deep Grey-Box Meets Optimal Transport,27/06/2025,"Gurjeet Sangra Singh, Maciej Falkiewicz, Alexandros Kalousis","Physics phenomena are often described by ordinary and/or partial differential
+equations (ODEs/PDEs), and solved analytically or numerically. Unfortunately,
+many real-world systems are described only approximately with missing or
+unknown terms in the equations. This makes the distribution of the physics
+model differ from the true data-generating process (DGP). Using limited and
+unpaired data between DGP observations and the imperfect model simulations, we
+investigate this particular setting by completing the known-physics model,
+combining theory-driven models and data-driven to describe the shifted
+distribution involved in the DGP. We present a novel hybrid generative model
+approach combining deep grey-box modelling with Optimal Transport (OT) methods
+to enhance incomplete physics models. Our method implements OT maps in data
+space while maintaining minimal source distribution distortion, demonstrating
+superior performance in resolving the unpaired problem and ensuring correct
+usage of physics parameters. Unlike black-box alternatives, our approach
+leverages physics-based inductive biases to accurately learn system dynamics
+while preserving interpretability through its domain knowledge foundation.
+Experimental results validate our method's effectiveness in both generation
+tasks and model transparency, offering detailed insights into learned physics
+dynamics.",http://arxiv.org/pdf/2506.22204v1,,False
+Frequency-Semantic Enhanced Variational Autoencoder for Zero-Shot Skeleton-based Action Recognition,27/06/2025,"Wenhan Wu, Zhishuai Guo, Chen Chen, Hongfei Xue, Aidong Lu","Zero-shot skeleton-based action recognition aims to develop models capable of
+identifying actions beyond the categories encountered during training. Previous
+approaches have primarily focused on aligning visual and semantic
+representations but often overlooked the importance of fine-grained action
+patterns in the semantic space (e.g., the hand movements in drinking water and
+brushing teeth). To address these limitations, we propose a Frequency-Semantic
+Enhanced Variational Autoencoder (FS-VAE) to explore the skeleton semantic
+representation learning with frequency decomposition. FS-VAE consists of three
+key components: 1) a frequency-based enhancement module with high- and
+low-frequency adjustments to enrich the skeletal semantics learning and improve
+the robustness of zero-shot action recognition; 2) a semantic-based action
+description with multilevel alignment to capture both local details and global
+correspondence, effectively bridging the semantic gap and compensating for the
+inherent loss of information in skeleton sequences; 3) a calibrated
+cross-alignment loss that enables valid skeleton-text pairs to counterbalance
+ambiguous ones, mitigating discrepancies and ambiguities in skeleton and text
+features, thereby ensuring robust alignment. Evaluations on the benchmarks
+demonstrate the effectiveness of our approach, validating that
+frequency-enhanced semantic features enable robust differentiation of visually
+and semantically similar action clusters, improving zero-shot action
+recognition.",http://arxiv.org/pdf/2506.22179v1,,False
+ASVSim (AirSim for Surface Vehicles): A High-Fidelity Simulation Framework for Autonomous Surface Vehicle Research,27/06/2025,"Bavo Lesy, Siemen Herremans, Robin Kerstens, Jan Steckel, Walter Daems, Siegfried Mercelis, Ali Anwar","The transport industry has recently shown significant interest in unmanned
+surface vehicles (USVs), specifically for port and inland waterway transport.
+These systems can improve operational efficiency and safety, which is
+especially relevant in the European Union, where initiatives such as the Green
+Deal are driving a shift towards increased use of inland waterways. At the same
+time, a shortage of qualified personnel is accelerating the adoption of
+autonomous solutions. However, there is a notable lack of open-source,
+high-fidelity simulation frameworks and datasets for developing and evaluating
+such solutions. To address these challenges, we introduce AirSim For Surface
+Vehicles (ASVSim), an open-source simulation framework specifically designed
+for autonomous shipping research in inland and port environments. The framework
+combines simulated vessel dynamics with marine sensor simulation capabilities,
+including radar and camera systems and supports the generation of synthetic
+datasets for training computer vision models and reinforcement learning agents.
+Built upon Cosys-AirSim, ASVSim provides a comprehensive platform for
+developing autonomous navigation algorithms and generating synthetic datasets.
+The simulator supports research of both traditional control methods and deep
+learning-based approaches. Through limited experiments, we demonstrate the
+potential of the simulator in these research areas. ASVSim is provided as an
+open-source project under the MIT license, making autonomous navigation
+research accessible to a larger part of the ocean engineering community.",http://arxiv.org/pdf/2506.22174v1,,False
+UniCA: Adapting Time Series Foundation Model to General Covariate-Aware Forecasting,27/06/2025,"Lu Han, Yu Liu, Qiwen Deng, Jian Jiang, Yinbo Sun, Zhe Yu, Binfeng Wang, Xingyu Lu, Lintao Ma, Han-Jia Ye, De-Chuan Zhan","Time Series Foundation Models (TSFMs) have achieved remarkable success
+through large-scale pretraining. However, their design primarily targets
+real-valued series, limiting their ability to handle general forecasting tasks
+involving diverse and often heterogeneous covariates--such as categorical
+variables and multimodal data (e.g., images, text)--which are typically
+task-specific and difficult to leverage during pretraining. To address this
+gap, we propose Unified Covariate Adaptation (UniCA), a framework to bridge
+TSFMs with general covariate-aware forecasting. UniCA first performs covariate
+homogenization to transform heterogeneous covariates into high-level
+homogeneous series representations and then fuses them via a unified
+attention-based fusion mechanism. UniCA is compatible and universal for
+adaptation with both homogeneous and heterogeneous covariates, incorporating
+extra covariate information while preserving the generalization ability of
+TSFMs.Extensive experiments on multiple unimodal and multimodal covariate-aware
+forecasting benchmarks demonstrate the superiority of UniCA, highlighting the
+promise of covariate-aware TSFM adaptation in real-world forecasting scenarios.
+Codes are released on https://github.com/hanlu-nju/UniCA.",http://arxiv.org/pdf/2506.22039v1,,False
+AlphaBeta is not as good as you think: a new probabilistic model to better analyze deterministic game-solving algorithms,27/06/2025,"Raphaël Boige, Amine Boumaza, Bruno Scherrer","Deterministic game-solving algorithms are conventionally analyzed in the
+light of their average-case complexity against a distribution of random
+game-trees, where leaf values are independently sampled from a fixed
+distribution. This simplified model enables uncluttered mathematical analysis,
+revealing two key properties: root value distributions asymptotically collapse
+to a single fixed value for finite-valued trees, and all reasonable algorithms
+achieve global optimality. However, these findings are artifacts of the model's
+design-its long criticized independence assumption strips games of structural
+complexity, producing trivial instances where no algorithm faces meaningful
+challenges. To address this limitation, we introduce a new probabilistic model
+that incrementally constructs game-trees using a fixed level-wise conditional
+distribution. By enforcing ancestor dependency, a critical structural feature
+of real-world games, our framework generates problems with adjustable
+difficulty while retaining some form of analytical tractability. For several
+algorithms, including AlphaBeta and Scout, we derive recursive formulas
+characterizing their average-case complexities under this model. These allow us
+to rigorously compare algorithms on deep game-trees, where Monte-Carlo
+simulations are no longer feasible. While asymptotically, all algorithms seem
+to converge to identical branching factor (a result analogous to those of
+independence-based models), deep finite trees reveal stark differences:
+AlphaBeta incurs a significantly larger constant multiplicative factor compared
+to algorithms like Scout, leading to a substantial practical slowdown. Our
+framework sheds new light on classical game-solving algorithms, offering
+rigorous evidence and analytical tools to advance the understanding of these
+methods under a more realistic, challenging, and yet tractable model.",http://arxiv.org/pdf/2506.21996v1,,False
+Analyzing and Fine-Tuning Whisper Models for Multilingual Pilot Speech Transcription in the Cockpit,27/06/2025,"Kartheek Kumar Reddy Nareddy, Sarah Ternus, Julia Niebling","The developments in transformer encoder-decoder architectures have led to
+significant breakthroughs in machine translation, Automatic Speech Recognition
+(ASR), and instruction-based chat machines, among other applications. The
+pre-trained models were trained on vast amounts of generic data over a few
+epochs (fewer than five in most cases), resulting in their strong
+generalization capabilities. Nevertheless, the performance of these models does
+suffer when applied to niche domains like transcribing pilot speech in the
+cockpit, which involves a lot of specific vocabulary and multilingual
+conversations. This paper investigates and improves the transcription accuracy
+of cockpit conversations with Whisper models. We have collected around 85
+minutes of cockpit simulator recordings and 130 minutes of interview recordings
+with pilots and manually labeled them. The speakers are middle aged men
+speaking both German and English. To improve the accuracy of transcriptions, we
+propose multiple normalization schemes to refine the transcripts and improve
+Word Error Rate (WER). We then employ fine-tuning to enhance ASR performance,
+utilizing performance-efficient fine-tuning with Low-Rank Adaptation (LoRA).
+Hereby, WER decreased from 68.49 \% (pretrained whisper Large model without
+normalization baseline) to 26.26\% (finetuned whisper Large model with the
+proposed normalization scheme).",http://arxiv.org/pdf/2506.21990v1,,False
+SceneDiffuser++: City-Scale Traffic Simulation via a Generative World Model,27/06/2025,"Shuhan Tan, John Lambert, Hong Jeon, Sakshum Kulshrestha, Yijing Bai, Jing Luo, Dragomir Anguelov, Mingxing Tan, Chiyu Max Jiang","The goal of traffic simulation is to augment a potentially limited amount of
+manually-driven miles that is available for testing and validation, with a much
+larger amount of simulated synthetic miles. The culmination of this vision
+would be a generative simulated city, where given a map of the city and an
+autonomous vehicle (AV) software stack, the simulator can seamlessly simulate
+the trip from point A to point B by populating the city around the AV and
+controlling all aspects of the scene, from animating the dynamic agents (e.g.,
+vehicles, pedestrians) to controlling the traffic light states. We refer to
+this vision as CitySim, which requires an agglomeration of simulation
+technologies: scene generation to populate the initial scene, agent behavior
+modeling to animate the scene, occlusion reasoning, dynamic scene generation to
+seamlessly spawn and remove agents, and environment simulation for factors such
+as traffic lights. While some key technologies have been separately studied in
+various works, others such as dynamic scene generation and environment
+simulation have received less attention in the research community. We propose
+SceneDiffuser++, the first end-to-end generative world model trained on a
+single loss function capable of point A-to-B simulation on a city scale
+integrating all the requirements above. We demonstrate the city-scale traffic
+simulation capability of SceneDiffuser++ and study its superior realism under
+long simulation conditions. We evaluate the simulation quality on an augmented
+version of the Waymo Open Motion Dataset (WOMD) with larger map regions to
+support trip-level simulation.",http://arxiv.org/pdf/2506.21976v1,,False
+Optimal Return-to-Go Guided Decision Transformer for Auto-Bidding in Advertisement,27/06/2025,"Hao Jiang, Yongxiang Tang, Yanxiang Zeng, Pengjia Yuan, Yanhua Cheng, Teng Sha, Xialong Liu, Peng Jiang","In the realm of online advertising, advertisers partake in ad auctions to
+obtain advertising slots, frequently taking advantage of auto-bidding tools
+provided by demand-side platforms. To improve the automation of these bidding
+systems, we adopt generative models, namely the Decision Transformer (DT), to
+tackle the difficulties inherent in automated bidding. Applying the Decision
+Transformer to the auto-bidding task enables a unified approach to sequential
+modeling, which efficiently overcomes short-sightedness by capturing long-term
+dependencies between past bidding actions and user behavior. Nevertheless,
+conventional DT has certain drawbacks: (1) DT necessitates a preset
+return-to-go (RTG) value before generating actions, which is not inherently
+produced; (2) The policy learned by DT is restricted by its training data,
+which is consists of mixed-quality trajectories. To address these challenges,
+we introduce the R* Decision Transformer (R* DT), developed in a three-step
+process: (1) R DT: Similar to traditional DT, R DT stores actions based on
+state and RTG value, as well as memorizing the RTG for a given state using the
+training set; (2) R^ DT: We forecast the highest value (within the training
+set) of RTG for a given state, deriving a suboptimal policy based on the
+current state and the forecasted supreme RTG value; (3) R* DT: Based on R^ DT,
+we generate trajectories and select those with high rewards (using a simulator)
+to augment our training dataset. This data enhancement has been shown to
+improve the RTG of trajectories in the training data and gradually leads the
+suboptimal policy towards optimality. Comprehensive tests on a publicly
+available bidding dataset validate the R* DT's efficacy and highlight its
+superiority when dealing with mixed-quality trajectories.",http://arxiv.org/pdf/2506.21956v1,10.1145/3701716.3715564,False
+Universal Modelling of Autocovariance Functions via Spline Kernels,27/06/2025,Lachlan Astfalck,"Flexible modelling of the autocovariance function (ACF) is central to
+time-series, spatial, and spatio-temporal analysis. Modern applications often
+demand flexibility beyond classical parametric models, motivating
+non-parametric descriptions of the ACF. Bochner's Theorem guarantees that any
+positive spectral measure yields a valid ACF via the inverse Fourier transform;
+however, existing non-parametric approaches in the spectral domain rarely
+return closed-form expressions for the ACF itself. We develop a flexible,
+closed-form class of non-parametric ACFs by deriving the inverse Fourier
+transform of B-spline spectral bases with arbitrary degree and knot placement.
+This yields a general class of ACF with three key features: (i) it is provably
+dense, under an $L^1$ metric, in the space of weakly stationary, mean-square
+continuous ACFs with mild regularity conditions; (ii) it accommodates
+univariate, multivariate, and multidimensional processes; and (iii) it
+naturally supports non-separable structure without requiring explicit
+imposition. Jackson-type approximation bounds establish convergence rates, and
+empirical results on simulated and real-world data demonstrate accurate process
+recovery. The method provides a practical and theoretically grounded approach
+for constructing a non-parametric class of ACF.",http://arxiv.org/pdf/2506.21953v1,,False
+Physics-informed network paradigm with data generation and background noise removal for diverse distributed acoustic sensing applications,27/06/2025,"Yangyang Wan, Haotian Wang, Xuhui Yu, Jiageng Chen, Xinyu Fan, Zuyuan He","Distributed acoustic sensing (DAS) has attracted considerable attention
+across various fields and artificial intelligence (AI) technology plays an
+important role in DAS applications to realize event recognition and denoising.
+Existing AI models require real-world data (RWD), whether labeled or not, for
+training, which is contradictory to the fact of limited available event data in
+real-world scenarios. Here, a physics-informed DAS neural network paradigm is
+proposed, which does not need real-world events data for training. By
+physically modeling target events and the constraints of real world and DAS
+system, physical functions are derived to train a generative network for
+generation of DAS events data. DAS debackground net is trained by using the
+generated DAS events data to eliminate background noise in DAS data. The
+effectiveness of the proposed paradigm is verified in event identification
+application based on a public dataset of DAS spatiotemporal data and in belt
+conveyor fault monitoring application based on DAS time-frequency data, and
+achieved comparable or better performance than data-driven networks trained
+with RWD. Owing to the introduction of physical information and capability of
+background noise removal, the paradigm demonstrates generalization in same
+application on different sites. A fault diagnosis accuracy of 91.8% is achieved
+in belt conveyor field with networks which transferred from simulation test
+site without any fault events data of test site and field for training. The
+proposed paradigm is a prospective solution to address significant obstacles of
+data acquisition and intense noise in practical DAS applications and explore
+more potential fields for DAS.",http://arxiv.org/pdf/2506.21952v1,,False
+Joint Task Offloading and Resource Allocation in Low-Altitude MEC via Graph Attention Diffusion,27/06/2025,"Yifan Xue, Ruihuai Liang, Bo Yang, Xuelin Cao, Zhiwen Yu, Mérouane Debbah, Chau Yuen","With the rapid development of the low-altitude economy, air-ground integrated
+multi-access edge computing (MEC) systems are facing increasing demands for
+real-time and intelligent task scheduling. In such systems, task offloading and
+resource allocation encounter multiple challenges, including node
+heterogeneity, unstable communication links, and dynamic task variations. To
+address these issues, this paper constructs a three-layer heterogeneous MEC
+system architecture for low-altitude economic networks, encompassing aerial and
+ground users as well as edge servers. The system is systematically modeled from
+the perspectives of communication channels, computational costs, and constraint
+conditions, and the joint optimization problem of offloading decisions and
+resource allocation is uniformly abstracted into a graph-structured modeling
+task. On this basis, we propose a graph attention diffusion-based solution
+generator (GADSG). This method integrates the contextual awareness of graph
+attention networks with the solution distribution learning capability of
+diffusion models, enabling joint modeling and optimization of discrete
+offloading variables and continuous resource allocation variables within a
+high-dimensional latent space. We construct multiple simulation datasets with
+varying scales and topologies. Extensive experiments demonstrate that the
+proposed GADSG model significantly outperforms existing baseline methods in
+terms of optimization performance, robustness, and generalization across task
+structures, showing strong potential for efficient task scheduling in dynamic
+and complex low-altitude economic network environments.",http://arxiv.org/pdf/2506.21933v1,,False
+Do Vision-Language Models Have Internal World Models? Towards an Atomic Evaluation,27/06/2025,"Qiyue Gao, Xinyu Pi, Kevin Liu, Junrong Chen, Ruolan Yang, Xinqi Huang, Xinyu Fang, Lu Sun, Gautham Kishore, Bo Ai, Stone Tao, Mengyang Liu, Jiaxi Yang, Chao-Jung Lai, Chuanyang Jin, Jiannan Xiang, Benhao Huang, Zeming Chen, David Danks, Hao Su, Tianmin Shu, Ziqiao Ma, Lianhui Qin, Zhiting Hu","Internal world models (WMs) enable agents to understand the world's state and
+predict transitions, serving as the basis for advanced deliberative reasoning.
+Recent large Vision-Language Models (VLMs), such as OpenAI o3, GPT-4o and
+Gemini, exhibit potential as general-purpose WMs. While the latest studies have
+evaluated and shown limitations in specific capabilities such as visual
+understanding, a systematic evaluation of VLMs' fundamental WM abilities
+remains absent. Drawing on comparative psychology and cognitive science, we
+propose a two-stage framework that assesses Perception (visual, spatial,
+temporal, quantitative, and motion) and Prediction (mechanistic simulation,
+transitive inference, compositional inference) to provide an atomic evaluation
+of VLMs as WMs. Guided by this framework, we introduce WM-ABench, a large-scale
+benchmark comprising 23 fine-grained evaluation dimensions across 6 diverse
+simulated environments with controlled counterfactual simulations. Through 660
+experiments on 15 latest commercial and open-source VLMs, we find that these
+models exhibit striking limitations in basic world modeling abilities. For
+instance, almost all models perform at near-random accuracy when distinguishing
+motion trajectories. Additionally, they lack disentangled understanding --
+e.g., some models tend to believe blue objects move faster than green ones.
+More rich results and analyses reveal significant gaps between VLMs and
+human-level world modeling.",http://arxiv.org/pdf/2506.21876v1,,False

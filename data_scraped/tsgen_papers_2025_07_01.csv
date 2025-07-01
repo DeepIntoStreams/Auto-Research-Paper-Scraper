@@ -1,0 +1,211 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Teaching Time Series to See and Speak: Forecasting with Aligned Visual and Textual Perspectives,30/06/2025,"Dong Sixun, Fan Wei, Teresa Wu, Fu Yanjie","Time series forecasting traditionally relies on unimodal numerical inputs,
+which often struggle to capture high-level semantic patterns due to their dense
+and unstructured nature. While recent approaches have explored representing
+time series as text using large language models (LLMs), these methods remain
+limited by the discrete nature of token sequences and lack the perceptual
+intuition humans typically apply, such as interpreting visual patterns. In this
+paper, we propose a multimodal contrastive learning framework that transforms
+raw time series into structured visual and textual perspectives. Rather than
+using natural language or real-world images, we construct both modalities
+directly from numerical sequences. We then align these views in a shared
+semantic space via contrastive learning, enabling the model to capture richer
+and more complementary representations. Furthermore, we introduce a variate
+selection module that leverages the aligned representations to identify the
+most informative variables for multivariate forecasting. Extensive experiments
+on fifteen short-term and six long-term forecasting benchmarks demonstrate that
+our approach consistently outperforms strong unimodal and cross-modal
+baselines, highlighting the effectiveness of multimodal alignment in enhancing
+time series forecasting. Code is available at:
+https://github.com/Ironieser/TimesCLIP.",http://arxiv.org/pdf/2506.24124v1,,False
+Constructing Non-Markovian Decision Process via History Aggregator,30/06/2025,"Yongyi Wang, Wenxin Li","In the domain of algorithmic decision-making, non-Markovian dynamics manifest
+as a significant impediment, especially for paradigms such as Reinforcement
+Learning (RL), thereby exerting far-reaching consequences on the advancement
+and effectiveness of the associated systems. Nevertheless, the existing
+benchmarks are deficient in comprehensively assessing the capacity of decision
+algorithms to handle non-Markovian dynamics. To address this deficiency, we
+have devised a generalized methodology grounded in category theory. Notably, we
+established the category of Markov Decision Processes (MDP) and the category of
+non-Markovian Decision Processes (NMDP), and proved the equivalence
+relationship between them. This theoretical foundation provides a novel
+perspective for understanding and addressing non-Markovian dynamics. We further
+introduced non-Markovianity into decision-making problem settings via the
+History Aggregator for State (HAS). With HAS, we can precisely control the
+state dependency structure of decision-making problems in the time series. Our
+analysis demonstrates the effectiveness of our method in representing a broad
+range of non-Markovian dynamics. This approach facilitates a more rigorous and
+flexible evaluation of decision algorithms by testing them in problem settings
+where non-Markovian dynamics are explicitly constructed.",http://arxiv.org/pdf/2506.24026v1,,False
+UMA: A Family of Universal Models for Atoms,30/06/2025,"Brandon M. Wood, Misko Dzamba, Xiang Fu, Meng Gao, Muhammed Shuaibi, Luis Barroso-Luque, Kareem Abdelmaqsoud, Vahe Gharakhanyan, John R. Kitchin, Daniel S. Levine, Kyle Michel, Anuroop Sriram, Taco Cohen, Abhishek Das, Ammar Rizvi, Sushree Jagriti Sahoo, Zachary W. Ulissi, C. Lawrence Zitnick","The ability to quickly and accurately compute properties from atomic
+simulations is critical for advancing a large number of applications in
+chemistry and materials science including drug discovery, energy storage, and
+semiconductor manufacturing. To address this need, Meta FAIR presents a family
+of Universal Models for Atoms (UMA), designed to push the frontier of speed,
+accuracy, and generalization. UMA models are trained on half a billion unique
+3D atomic structures (the largest training runs to date) by compiling data
+across multiple chemical domains, e.g. molecules, materials, and catalysts. We
+develop empirical scaling laws to help understand how to increase model
+capacity alongside dataset size to achieve the best accuracy. The UMA small and
+medium models utilize a novel architectural design we refer to as mixture of
+linear experts that enables increasing model capacity without sacrificing
+speed. For example, UMA-medium has 1.4B parameters but only ~50M active
+parameters per atomic structure. We evaluate UMA models on a diverse set of
+applications across multiple domains and find that, remarkably, a single model
+without any fine-tuning can perform similarly or better than specialized
+models. We are releasing the UMA code, weights, and associated data to
+accelerate computational workflows and enable the community to continue to
+build increasingly capable AI models.",http://arxiv.org/pdf/2506.23971v1,,False
+Learning robust parameter inference and density reconstruction in flyer plate impact experiments,30/06/2025,"Evan Bell, Daniel A. Serino, Ben S. Southworth, Trevor Wilcox, Marc L. Klasky","Estimating physical parameters or material properties from experimental
+observations is a common objective in many areas of physics and material
+science. In many experiments, especially in shock physics, radiography is the
+primary means of observing the system of interest. However, radiography does
+not provide direct access to key state variables, such as density, which
+prevents the application of traditional parameter estimation approaches. Here
+we focus on flyer plate impact experiments on porous materials, and resolving
+the underlying parameterized equation of state (EoS) and crush porosity model
+parameters given radiographic observation(s). We use machine learning as a tool
+to demonstrate with high confidence that using only high impact velocity data
+does not provide sufficient information to accurately infer both EoS and crush
+model parameters, even with fully resolved density fields or a dynamic sequence
+of images. We thus propose an observable data set consisting of low and high
+impact velocity experiments/simulations that capture different regimes of
+compaction and shock propagation, and proceed to introduce a generative machine
+learning approach which produces a posterior distribution of physical
+parameters directly from radiographs. We demonstrate the effectiveness of the
+approach in estimating parameters from simulated flyer plate impact
+experiments, and show that the obtained estimates of EoS and crush model
+parameters can then be used in hydrodynamic simulations to obtain accurate and
+physically admissible density reconstructions. Finally, we examine the
+robustness of the approach to model mismatches, and find that the learned
+approach can provide useful parameter estimates in the presence of
+out-of-distribution radiographic noise and previously unseen physics, thereby
+promoting a potential breakthrough in estimating material properties from
+experimental radiographic images.",http://arxiv.org/pdf/2506.23914v1,,False
+Emergent musical properties of a transformer under contrastive self-supervised learning,30/06/2025,"Yuexuan Kong, Gabriel Meseguer-Brocal, Vincent Lostanlen, Mathieu Lagrange, Romain Hennequin","In music information retrieval (MIR), contrastive self-supervised learning
+for general-purpose representation models is effective for global tasks such as
+automatic tagging. However, for local tasks such as chord estimation, it is
+widely assumed that contrastively trained general-purpose self-supervised
+models are inadequate and that more sophisticated SSL is necessary; e.g.,
+masked modeling. Our paper challenges this assumption by revealing the
+potential of contrastive SSL paired with a transformer in local MIR tasks. We
+consider a lightweight vision transformer with one-dimensional patches in the
+time--frequency domain (ViT-1D) and train it with simple contrastive SSL
+through normalized temperature-scaled cross-entropy loss (NT-Xent). Although
+NT-Xent operates only over the class token, we observe that, potentially thanks
+to weight sharing, informative musical properties emerge in ViT-1D's sequence
+tokens. On global tasks, the temporal average of class and sequence tokens
+offers a performance increase compared to the class token alone, showing useful
+properties in the sequence tokens. On local tasks, sequence tokens perform
+unexpectedly well, despite not being specifically trained for. Furthermore,
+high-level musical features such as onsets emerge from layer-wise attention
+maps and self-similarity matrices show different layers capture different
+musical dimensions. Our paper does not focus on improving performance but
+advances the musical interpretation of transformers and sheds light on some
+overlooked abilities of contrastive SSL paired with transformers for sequence
+modeling in MIR.",http://arxiv.org/pdf/2506.23873v1,,False
+Differentially Private Synthetic Data Release for Topics API Outputs,30/06/2025,"Travis Dick, Alessandro Epasto, Adel Javanmard, Josh Karlin, Andres Munoz Medina, Vahab Mirrokni, Sergei Vassilvitskii, Peilin Zhong","The analysis of the privacy properties of Privacy-Preserving Ads APIs is an
+area of research that has received strong interest from academics, industry,
+and regulators. Despite this interest, the empirical study of these methods is
+hindered by the lack of publicly available data. Reliable empirical analysis of
+the privacy properties of an API, in fact, requires access to a dataset
+consisting of realistic API outputs; however, privacy concerns prevent the
+general release of such data to the public.
+  In this work, we develop a novel methodology to construct synthetic API
+outputs that are simultaneously realistic enough to enable accurate study and
+provide strong privacy protections. We focus on one Privacy-Preserving Ads
+APIs: the Topics API, part of Google Chrome's Privacy Sandbox. We developed a
+methodology to generate a differentially-private dataset that closely matches
+the re-identification risk properties of the real Topics API data. The use of
+differential privacy provides strong theoretical bounds on the leakage of
+private user information from this release.
+  Our methodology is based on first computing a large number of
+differentially-private statistics describing how output API traces evolve over
+time. Then, we design a parameterized distribution over sequences of API traces
+and optimize its parameters so that they closely match the statistics obtained.
+Finally, we create the synthetic data by drawing from this distribution.
+  Our work is complemented by an open-source release of the anonymized dataset
+obtained by this methodology. We hope this will enable external researchers to
+analyze the API in-depth and replicate prior and future work on a realistic
+large-scale dataset. We believe that this work will contribute to fostering
+transparency regarding the privacy properties of Privacy-Preserving Ads APIs.",http://arxiv.org/pdf/2506.23855v1,10.1145/3711896.3737391,False
+Adaptive Out-of-Control Point Pattern Detection in Sequential Random Finite Set Observations,30/06/2025,"Konstantinos Bourazas, Savvas Papaioannou, Panayiotis Kolios","In this work we introduce a novel adaptive anomaly detection framework
+specifically designed for monitoring sequential random finite set (RFS)
+observations. Our approach effectively distinguishes between In-Control data
+(normal) and Out-Of-Control data (anomalies) by detecting deviations from the
+expected statistical behavior of the process. The primary contributions of this
+study include the development of an innovative RFS-based framework that not
+only learns the normal behavior of the data-generating process online but also
+dynamically adapts to behavioral shifts to accurately identify abnormal point
+patterns. To achieve this, we introduce a new class of RFS-based posterior
+distributions, named Power Discounting Posteriors (PD), which facilitate
+adaptation to systematic changes in data while enabling anomaly detection of
+point pattern data through a novel predictive posterior density function. The
+effectiveness of the proposed approach is demonstrated by extensive qualitative
+and quantitative simulation experiments.",http://arxiv.org/pdf/2506.23802v1,,False
+PAC Bench: Do Foundation Models Understand Prerequisites for Executing Manipulation Policies?,30/06/2025,"Atharva Gundawar, Som Sagar, Ransalu Senanayake","Vision-Language Models (VLMs) are increasingly pivotal for generalist robot
+manipulation, enabling tasks such as physical reasoning, policy generation, and
+failure detection. However, their proficiency in these high-level applications
+often assumes a deep understanding of low-level physical prerequisites, a
+capability that remains largely unverified. For robots to perform actions
+reliably, they must comprehend intrinsic object properties (e.g., material,
+weight), action affordances (e.g., graspable, stackable), and physical
+constraints (e.g., stability, reachability, or an object's state, such as being
+closed). Despite the widespread use of VLMs in manipulation tasks, we argue
+that off-the-shelf models may lack this granular, physically grounded
+understanding, as such prerequisites are often overlooked during training.
+  To address this critical gap, we introduce PAC Bench, a comprehensive
+benchmark designed to systematically evaluate VLMs on their understanding of
+core Properties, Affordances, and Constraints (PAC) from a task executability
+perspective. PAC Bench features a diverse dataset with over 30,000 annotations,
+comprising 673 real-world images (115 object classes, 15 property types, and 1
+to 3 affordances defined per class), 100 real-world humanoid-view scenarios,
+and 120 unique simulated constraint scenarios across four tasks.
+  Our evaluations reveal significant gaps in the ability of current VLMs to
+grasp fundamental physical concepts, highlighting limitations in their
+suitability for reliable robot manipulation and pointing to key areas for
+targeted research. PAC Bench also serves as a standardized benchmark for
+rigorously evaluating physical reasoning in VLMs and guiding the development of
+more robust, physically grounded models for robotic applications.
+  Project Page: https://pacbench.github.io/",http://arxiv.org/pdf/2506.23725v1,,False
+ChemActor: Enhancing Automated Extraction of Chemical Synthesis Actions with LLM-Generated Data,30/06/2025,"Yu Zhang, Ruijie Yu, Jidong Tian, Feng Zhu, Jiapeng Liu, Xiaokang Yang, Yaohui Jin, Yanyan Xu","With the increasing interest in robotic synthesis in the context of organic
+chemistry, the automated extraction of chemical procedures from literature is
+critical. However, this task remains challenging due to the inherent ambiguity
+of chemical language and the high cost of human annotation required for
+developing reliable computer-aided extraction protocols. Here, we present
+ChemActor, a fully fine-tuned large language model (LLM), as a chemical
+executor to convert between unstructured experimental procedures and structured
+action sequences. We propose a sequential LLM-generated data framework to
+address the challenges of insufficient and low-quality annotated data. This
+framework integrates a data selection module that selects data based on
+distribution divergence, with a general-purpose LLM, to generate
+machine-executable actions from a single molecule input. Additionally, we
+introduce a novel multi-round LLMs circle review metric, which reflects the
+model's advanced understanding of chemical experimental procedures. Extensive
+experiments on reaction-to-description (R2D) and description-to-action (D2A)
+tasks demonstrate that ChemActor, augmented by LLM-generated data, achieves
+state-of-the-art performance, outperforming the baseline model by 10%. The code
+is available at: https://github.com/Zhanghahah/ChemActor.",http://arxiv.org/pdf/2506.23520v1,,False
+Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent,30/06/2025,"Haocheng Yu, Yaxiong Wu, Hao Wang, Wei Guo, Yong Liu, Yawen Li, Yuyang Ye, Junping Du, Enhong Chen","Interactive recommendation is a typical information-seeking task that allows
+users to interactively express their needs through natural language and obtain
+personalized recommendations. Large language model-powered (LLM-powered) agents
+have become a new paradigm in interactive recommendations, effectively
+capturing users' real-time needs and enhancing personalized experiences.
+However, due to limited planning and generalization capabilities, existing
+formulations of LLM-powered interactive recommender agents struggle to
+effectively address diverse and complex user intents, such as intuitive,
+unrefined, or occasionally ambiguous requests. To tackle this challenge, we
+propose a novel thought-augmented interactive recommender agent system (TAIRA)
+that addresses complex user intents through distilled thought patterns.
+Specifically, TAIRA is designed as an LLM-powered multi-agent system featuring
+a manager agent that orchestrates recommendation tasks by decomposing user
+needs and planning subtasks, with its planning capacity strengthened through
+Thought Pattern Distillation (TPD), a thought-augmentation method that extracts
+high-level thoughts from the agent's and human experts' experiences. Moreover,
+we designed a set of user simulation schemes to generate personalized queries
+of different difficulties and evaluate the recommendations based on specific
+datasets. Through comprehensive experiments conducted across multiple datasets,
+TAIRA exhibits significantly enhanced performance compared to existing methods.
+Notably, TAIRA shows a greater advantage on more challenging tasks while
+generalizing effectively on novel tasks, further validating its superiority in
+managing complex user intents within interactive recommendation systems. The
+code is publicly available at:https://github.com/Alcein/TAIRA.",http://arxiv.org/pdf/2506.23485v1,,False

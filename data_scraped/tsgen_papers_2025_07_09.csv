@@ -1,0 +1,306 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+EC-Flow: Enabling Versatile Robotic Manipulation from Action-Unlabeled Videos via Embodiment-Centric Flow,08/07/2025,"Yixiang Chen, Peiyan Li, Yan Huang, Jiabing Yang, Kehan Chen, Liang Wang","Current language-guided robotic manipulation systems often require low-level
+action-labeled datasets for imitation learning. While object-centric flow
+prediction methods mitigate this issue, they remain limited to scenarios
+involving rigid objects with clear displacement and minimal occlusion. In this
+work, we present Embodiment-Centric Flow (EC-Flow), a framework that directly
+learns manipulation from action-unlabeled videos by predicting
+embodiment-centric flow. Our key insight is that incorporating the embodiment's
+inherent kinematics significantly enhances generalization to versatile
+manipulation scenarios, including deformable object handling, occlusions, and
+non-object-displacement tasks. To connect the EC-Flow with language
+instructions and object interactions, we further introduce a goal-alignment
+module by jointly optimizing movement consistency and goal-image prediction.
+Moreover, translating EC-Flow to executable robot actions only requires a
+standard robot URDF (Unified Robot Description Format) file to specify
+kinematic constraints across joints, which makes it easy to use in practice. We
+validate EC-Flow on both simulation (Meta-World) and real-world tasks,
+demonstrating its state-of-the-art performance in occluded object handling (62%
+improvement), deformable object manipulation (45% improvement), and
+non-object-displacement tasks (80% improvement) than prior state-of-the-art
+object-centric flow methods. For more information, see our project website at
+https://ec-flow1.github.io .",http://arxiv.org/pdf/2507.06224v1,,False
+Differential Mamba,08/07/2025,"Nadav Schneider, Itamar Zimerman, Eliya Nachmani","Sequence models like Transformers and RNNs often overallocate attention to
+irrelevant context, leading to noisy intermediate representations. This
+degrades LLM capabilities by promoting hallucinations, weakening long-range and
+retrieval abilities, and reducing robustness. Recent work has shown that
+differential design can mitigate this issue in Transformers, improving their
+effectiveness across various applications. In this paper, we explore whether
+these techniques, originally developed for Transformers, can be applied to
+Mamba, a recent architecture based on selective state-space layers that
+achieves Transformer-level performance with greater efficiency. We show that a
+naive adaptation of differential design to Mamba is insufficient and requires
+careful architectural modifications. To address this, we introduce a novel
+differential mechanism for Mamba, empirically validated on language modeling
+benchmarks, demonstrating improved retrieval capabilities and superior
+performance over vanilla Mamba. Finally, we conduct extensive ablation studies
+and empirical analyses to justify our design choices and provide evidence that
+our approach effectively mitigates the overallocation problem in Mamba-based
+models. Our code is publicly available.",http://arxiv.org/pdf/2507.06204v1,,False
+Safe Domain Randomization via Uncertainty-Aware Out-of-Distribution Detection and Policy Adaptation,08/07/2025,"Mohamad H. Danesh, Maxime Wabartha, Stanley Wu, Joelle Pineau, Hsiu-Chin Lin","Deploying reinforcement learning (RL) policies in real-world involves
+significant challenges, including distribution shifts, safety concerns, and the
+impracticality of direct interactions during policy refinement. Existing
+methods, such as domain randomization (DR) and off-dynamics RL, enhance policy
+robustness by direct interaction with the target domain, an inherently unsafe
+practice. We propose Uncertainty-Aware RL (UARL), a novel framework that
+prioritizes safety during training by addressing Out-Of-Distribution (OOD)
+detection and policy adaptation without requiring direct interactions in target
+domain. UARL employs an ensemble of critics to quantify policy uncertainty and
+incorporates progressive environmental randomization to prepare the policy for
+diverse real-world conditions. By iteratively refining over high-uncertainty
+regions of the state space in simulated environments, UARL enhances robust
+generalization to the target domain without explicitly training on it. We
+evaluate UARL on MuJoCo benchmarks and a quadrupedal robot, demonstrating its
+effectiveness in reliable OOD detection, improved performance, and enhanced
+sample efficiency compared to baselines.",http://arxiv.org/pdf/2507.06111v1,,False
+Few-Shot Learning by Explicit Physics Integration: An Application to Groundwater Heat Transport,08/07/2025,"Julia Pelzer, Corné Verburg, Alexander Heinlein, Miriam Schulte","Machine learning methods often struggle with real-world applications in
+science and engineering due to limited or low-quality training data. In this
+work, the example of groundwater flow with heat transport is considered; this
+corresponds to an advection-diffusion process under heterogeneous flow
+conditions, that is, spatially distributed material parameters and heat
+sources. Classical numerical simulations are costly and challenging due to high
+spatio-temporal resolution requirements and large domains. While often
+computationally more efficient, purely data-driven surrogate models face
+difficulties, particularly in predicting the advection process, which is highly
+sensitive to input variations and involves long-range spatial interactions.
+Therefore, in this work, a Local-Global Convolutional Neural Network (LGCNN)
+approach is introduced. It combines a lightweight numerical surrogate for the
+transport process (global) with convolutional neural networks for the
+groundwater velocity and heat diffusion processes (local). With the LGCNN, a
+city-wide subsurface temperature field is modeled, involving a heterogeneous
+groundwater flow field and one hundred groundwater heat pump injection points
+forming interacting heat plumes over long distances. The model is first
+systematically analyzed based on random subsurface input fields. Then, the
+model is trained on a handful of cut-outs from a real-world subsurface map of
+the Munich region in Germany, and it scales to larger cut-outs without
+retraining. All datasets, our code, and trained models are published for
+reproducibility.",http://arxiv.org/pdf/2507.06062v1,,False
+Kernel Trace Distance: Quantum Statistical Metric between Measures through RKHS Density Operators,08/07/2025,"Arturo Castellanos, Anna Korba, Pavlo Mozharovskyi, Hicham Janati","Distances between probability distributions are a key component of many
+statistical machine learning tasks, from two-sample testing to generative
+modeling, among others. We introduce a novel distance between measures that
+compares them through a Schatten norm of their kernel covariance operators. We
+show that this new distance is an integral probability metric that can be
+framed between a Maximum Mean Discrepancy (MMD) and a Wasserstein distance. In
+particular, we show that it avoids some pitfalls of MMD, by being more
+discriminative and robust to the choice of hyperparameters. Moreover, it
+benefits from some compelling properties of kernel methods, that can avoid the
+curse of dimensionality for their sample complexity. We provide an algorithm to
+compute the distance in practice by introducing an extension of kernel matrix
+for difference of distributions that could be of independent interest. Those
+advantages are illustrated by robust approximate Bayesian computation under
+contamination as well as particle flow simulations.",http://arxiv.org/pdf/2507.06055v1,,False
+TextPixs: Glyph-Conditioned Diffusion with Character-Aware Attention and OCR-Guided Supervision,08/07/2025,"Syeda Anshrah Gillani, Mirza Samad Ahmed Baig, Osama Ahmed Khan, Shahid Munir Shah, Umema Mujeeb, Maheen Ali","The modern text-to-image diffusion models boom has opened a new era in
+digital content production as it has proven the previously unseen ability to
+produce photorealistic and stylistically diverse imagery based on the semantics
+of natural-language descriptions. However, the consistent disadvantage of these
+models is that they cannot generate readable, meaningful, and correctly spelled
+text in generated images, which significantly limits the use of practical
+purposes like advertising, learning, and creative design. This paper introduces
+a new framework, namely Glyph-Conditioned Diffusion with Character-Aware
+Attention (GCDA), using which a typical diffusion backbone is extended by three
+well-designed modules. To begin with, the model has a dual-stream text encoder
+that encodes both semantic contextual information and explicit glyph
+representations, resulting in a character-aware representation of the input
+text that is rich in nature. Second, an attention mechanism that is aware of
+the character is proposed with a new attention segregation loss that aims to
+limit the attention distribution of each character independently in order to
+avoid distortion artifacts. Lastly, GCDA has an OCR-in-the-loop fine-tuning
+phase, where a full text perceptual loss, directly optimises models to be
+legible and accurately spell. Large scale experiments to benchmark datasets,
+such as MARIO-10M and T2I-CompBench, reveal that GCDA sets a new
+state-of-the-art on all metrics, with better character based metrics on text
+rendering (Character Error Rate: 0.08 vs 0.21 for the previous best; Word Error
+Rate: 0.15 vs 0.25), human perception, and comparable image synthesis quality
+on high-fidelity (FID: 14.3).",http://arxiv.org/pdf/2507.06033v1,,False
+Generalized and Unified Equivalences between Hardness and Pseudoentropy,08/07/2025,"Lunjia Hu, Salil Vadhan","Pseudoentropy characterizations provide a quantitatively precise
+demonstration of the close relationship between computational hardness and
+computational randomness. We prove a unified pseudoentropy characterization
+that generalizes and strengthens previous results for both uniform and
+non-uniform models of computation. Our characterization holds for a general
+family of entropy notions that encompasses the common notions of Shannon
+entropy and min entropy as special cases. Moreover, we show that the
+characterizations for different entropy notions can be simultaneously achieved
+by a single, universal function that simultaneously witnesses computational
+hardness and computational randomness. A key technical insight of our work is
+that the notion of weight-restricted calibration from the recent literature on
+algorithm fairness, along with standard computational indistinguishability
+(known as multiaccuracy in the fairness literature), suffices for proving
+pseudoentropy characterizations for general entropy notions. This demonstrates
+the power of weight-restricted calibration to enhance the classic
+Complexity-Theoretic Regularity Lemma (Trevisan, Tulsiani, and Vadhan, 2009)
+and Leakage Simulation Lemma (Jetchev and Pietrzak, 2014) and allows us to
+achieve an exponential improvement in the complexity dependency on the alphabet
+size compared to the pseudoentropy characterizations by Casacuberta, Dwork, and
+Vadhan (2024) based on the much stronger notion of multicalibration. We show
+that the exponential dependency on the alphabet size is inevitable for
+multicalibration as well as for the weaker notion of calibrated multiaccuracy.",http://arxiv.org/pdf/2507.05972v1,,False
+Psychometric Item Validation Using Virtual Respondents with Trait-Response Mediators,08/07/2025,"Sungjib Lim, Woojung Song, Eun-Ju Lee, Yohan Jo","As psychometric surveys are increasingly used to assess the traits of large
+language models (LLMs), the need for scalable survey item generation suited for
+LLMs has also grown. A critical challenge here is ensuring the construct
+validity of generated items, i.e., whether they truly measure the intended
+trait. Traditionally, this requires costly, large-scale human data collection.
+To make it efficient, we present a framework for virtual respondent simulation
+using LLMs. Our central idea is to account for mediators: factors through which
+the same trait can give rise to varying responses to a survey item. By
+simulating respondents with diverse mediators, we identify survey items that
+robustly measure intended traits. Experiments on three psychological trait
+theories (Big5, Schwartz, VIA) show that our mediator generation methods and
+simulation framework effectively identify high-validity items. LLMs demonstrate
+the ability to generate plausible mediators from trait definitions and to
+simulate respondent behavior for item validation. Our problem formulation,
+metrics, methodology, and dataset open a new direction for cost-effective
+survey development and a deeper understanding of how LLMs replicate human-like
+behavior. We will publicly release our dataset and code to support future work.",http://arxiv.org/pdf/2507.05890v1,,False
+Empowering Bridge Digital Twins by Bridging the Data Gap with a Unified Synthesis Framework,08/07/2025,"Wang Wang, Mingyu Shi, Jun Jiang, Wenqian Ma, Chong Liu, Yasutaka Narazaki, Xuguang Wang","As critical transportation infrastructure, bridges face escalating challenges
+from aging and deterioration, while traditional manual inspection methods
+suffer from low efficiency. Although 3D point cloud technology provides a new
+data-driven paradigm, its application potential is often constrained by the
+incompleteness of real-world data, which results from missing labels and
+scanning occlusions. To overcome the bottleneck of insufficient generalization
+in existing synthetic data methods, this paper proposes a systematic framework
+for generating 3D bridge data.
+  This framework can automatically generate complete point clouds featuring
+component-level instance annotations, high-fidelity color, and precise normal
+vectors. It can be further extended to simulate the creation of diverse and
+physically realistic incomplete point clouds, designed to support the training
+of segmentation and completion networks, respectively. Experiments demonstrate
+that a PointNet++ model trained with our synthetic data achieves a mean
+Intersection over Union (mIoU) of 84.2% in real-world bridge semantic
+segmentation. Concurrently, a fine-tuned KT-Net exhibits superior performance
+on the component completion task.
+  This research offers an innovative methodology and a foundational dataset for
+the 3D visual analysis of bridge structures, holding significant implications
+for advancing the automated management and maintenance of infrastructure.",http://arxiv.org/pdf/2507.05814v1,,False
+An autonomous agent for auditing and improving the reliability of clinical AI models,08/07/2025,"Lukas Kuhn, Florian Buettner","The deployment of AI models in clinical practice faces a critical challenge:
+models achieving expert-level performance on benchmarks can fail
+catastrophically when confronted with real-world variations in medical imaging.
+Minor shifts in scanner hardware, lighting or demographics can erode accuracy,
+but currently reliability auditing to identify such catastrophic failure cases
+before deployment is a bespoke and time-consuming process. Practitioners lack
+accessible and interpretable tools to expose and repair hidden failure modes.
+Here we introduce ModelAuditor, a self-reflective agent that converses with
+users, selects task-specific metrics, and simulates context-dependent,
+clinically relevant distribution shifts. ModelAuditor then generates
+interpretable reports explaining how much performance likely degrades during
+deployment, discussing specific likely failure modes and identifying root
+causes and mitigation strategies. Our comprehensive evaluation across three
+real-world clinical scenarios - inter-institutional variation in
+histopathology, demographic shifts in dermatology, and equipment heterogeneity
+in chest radiography - demonstrates that ModelAuditor is able correctly
+identify context-specific failure modes of state-of-the-art models such as the
+established SIIM-ISIC melanoma classifier. Its targeted recommendations recover
+15-25% of performance lost under real-world distribution shift, substantially
+outperforming both baseline models and state-of-the-art augmentation methods.
+These improvements are achieved through a multi-agent architecture and execute
+on consumer hardware in under 10 minutes, costing less than US$0.50 per audit.",http://arxiv.org/pdf/2507.05755v1,,False
+LeAD: The LLM Enhanced Planning System Converged with End-to-end Autonomous Driving,08/07/2025,"Yuhang Zhang, Jiaqi Liu, Chengkai Xu, Peng Hang, Jian Sun","A principal barrier to large-scale deployment of urban autonomous driving
+systems lies in the prevalence of complex scenarios and edge cases. Existing
+systems fail to effectively interpret semantic information within traffic
+contexts and discern intentions of other participants, consequently generating
+decisions misaligned with skilled drivers' reasoning patterns. We present LeAD,
+a dual-rate autonomous driving architecture integrating imitation
+learning-based end-to-end (E2E) frameworks with large language model (LLM)
+augmentation. The high-frequency E2E subsystem maintains real-time
+perception-planning-control cycles, while the low-frequency LLM module enhances
+scenario comprehension through multi-modal perception fusion with HD maps and
+derives optimal decisions via chain-of-thought (CoT) reasoning when baseline
+planners encounter capability limitations. Our experimental evaluation in the
+CARLA Simulator demonstrates LeAD's superior handling of unconventional
+scenarios, achieving 71 points on Leaderboard V1 benchmark, with a route
+completion of 93%.",http://arxiv.org/pdf/2507.05754v1,,False
+GATMesh: Clock Mesh Timing Analysis using Graph Neural Networks,08/07/2025,"Muhammad Hadir Khan, Matthew Guthaus","Clock meshes are essential in high-performance VLSI systems for minimizing
+skew and handling PVT variations, but analyzing them is difficult due to
+reconvergent paths, multi-source driving, and input mesh buffer skew. SPICE
+simulations are accurate but slow; yet simplified models miss key effects like
+slew and input skew. We propose GATMesh, a Graph Neural Network (GNN)-based
+framework that models the clock mesh as a graph with augmented structural and
+physical features. Trained on SPICE data, GATMesh achieves high accuracy with
+average delay error of 5.27ps on unseen benchmarks, while achieving speed-ups
+of 47146x over multi-threaded SPICE simulation.",http://arxiv.org/pdf/2507.05681v1,,False
+MedGen: Unlocking Medical Video Generation by Scaling Granularly-annotated Medical Videos,08/07/2025,"Rongsheng Wang, Junying Chen, Ke Ji, Zhenyang Cai, Shunian Chen, Yunjin Yang, Benyou Wang","Recent advances in video generation have shown remarkable progress in
+open-domain settings, yet medical video generation remains largely
+underexplored. Medical videos are critical for applications such as clinical
+training, education, and simulation, requiring not only high visual fidelity
+but also strict medical accuracy. However, current models often produce
+unrealistic or erroneous content when applied to medical prompts, largely due
+to the lack of large-scale, high-quality datasets tailored to the medical
+domain. To address this gap, we introduce MedVideoCap-55K, the first
+large-scale, diverse, and caption-rich dataset for medical video generation. It
+comprises over 55,000 curated clips spanning real-world medical scenarios,
+providing a strong foundation for training generalist medical video generation
+models. Built upon this dataset, we develop MedGen, which achieves leading
+performance among open-source models and rivals commercial systems across
+multiple benchmarks in both visual quality and medical accuracy. We hope our
+dataset and model can serve as a valuable resource and help catalyze further
+research in medical video generation. Our code and data is available at
+https://github.com/FreedomIntelligence/MedGen",http://arxiv.org/pdf/2507.05675v1,,False
+Learnable quantum spectral filters for hybrid graph neural networks,08/07/2025,Ammar Daskin,"In this paper, we describe a parameterized quantum circuit that can be
+considered as convolutional and pooling layers for graph neural networks. The
+circuit incorporates the parameterized quantum Fourier circuit where the qubit
+connections for the controlled gates derived from the Laplacian operator.
+Specifically, we show that the eigenspace of the Laplacian operator of a graph
+can be approximated by using QFT based circuit whose connections are determined
+from the adjacency matrix. For an $N\times N$ Laplacian, this approach yields
+an approximate polynomial-depth circuit requiring only $n=log(N)$ qubits. These
+types of circuits can eliminate the expensive classical computations for
+approximating the learnable functions of the Laplacian through Chebyshev
+polynomial or Taylor expansions.
+  Using this circuit as a convolutional layer provides an $n-$ dimensional
+probability vector that can be considered as the filtered and compressed graph
+signal. Therefore, the circuit along with the measurement can be considered a
+very efficient convolution plus pooling layer that transforms an
+$N$-dimensional signal input into $n-$dimensional signal with an exponential
+compression. We then apply a classical neural network prediction head to the
+output of the circuit to construct a complete graph neural network. Since the
+circuit incorporates geometric structure through its graph connection-based
+approach, we present graph classification results for the benchmark datasets
+listed in TUDataset library. Using only [1-100] learnable parameters for the
+quantum circuit and minimal classical layers (1000-5000 parameters) in a
+generic setting, the obtained results are comparable to and in some cases
+better than many of the baseline results, particularly for the cases when
+geometric structure plays a significant role.",http://arxiv.org/pdf/2507.05640v1,,False
+LLMs are Introvert,08/07/2025,"Litian Zhang, Xiaoming Zhang, Bingyu Yan, Ziyi Zhou, Bo Zhang, Zhenyu Guan, Xi Zhang, Chaozhuo Li","The exponential growth of social media and generative AI has transformed
+information dissemination, fostering connectivity but also accelerating the
+spread of misinformation. Understanding information propagation dynamics and
+developing effective control strategies is essential to mitigate harmful
+content. Traditional models, such as SIR, provide basic insights but
+inadequately capture the complexities of online interactions. Advanced methods,
+including attention mechanisms and graph neural networks, enhance accuracy but
+typically overlook user psychology and behavioral dynamics. Large language
+models (LLMs), with their human-like reasoning, offer new potential for
+simulating psychological aspects of information spread. We introduce an
+LLM-based simulation environment capturing agents' evolving attitudes,
+emotions, and responses. Initial experiments, however, revealed significant
+gaps between LLM-generated behaviors and authentic human dynamics, especially
+in stance detection and psychological realism. A detailed evaluation through
+Social Information Processing Theory identified major discrepancies in
+goal-setting and feedback evaluation, stemming from the lack of emotional
+processing in standard LLM training. To address these issues, we propose the
+Social Information Processing-based Chain of Thought (SIP-CoT) mechanism
+enhanced by emotion-guided memory. This method improves the interpretation of
+social cues, personalization of goals, and evaluation of feedback. Experimental
+results confirm that SIP-CoT-enhanced LLM agents more effectively process
+social information, demonstrating behaviors, attitudes, and emotions closer to
+real human interactions. In summary, this research highlights critical
+limitations in current LLM-based propagation simulations and demonstrates how
+integrating SIP-CoT and emotional memory significantly enhances the social
+intelligence and realism of LLM agents.",http://arxiv.org/pdf/2507.05638v1,,False
+Preemptive Solving of Future Problems: Multitask Preplay in Humans and Machines,08/07/2025,"Wilka Carvalho, Sam Hall-McMaster, Honglak Lee, Samuel J. Gershman","Humans can pursue a near-infinite variety of tasks, but typically can only
+pursue a small number at the same time. We hypothesize that humans leverage
+experience on one task to preemptively learn solutions to other tasks that were
+accessible but not pursued. We formalize this idea as Multitask Preplay, a
+novel algorithm that replays experience on one task as the starting point for
+""preplay"" -- counterfactual simulation of an accessible but unpursued task.
+Preplay is used to learn a predictive representation that can support fast,
+adaptive task performance later on. We first show that, compared to traditional
+planning and predictive representation methods, multitask preplay better
+predicts how humans generalize to tasks that were accessible but not pursued in
+a small grid-world, even when people didn't know they would need to generalize
+to these tasks. We then show these predictions generalize to Craftax, a
+partially observable 2D Minecraft environment. Finally, we show that Multitask
+Preplay enables artificial agents to learn behaviors that transfer to novel
+Craftax worlds sharing task co-occurrence structure. These findings demonstrate
+that Multitask Preplay is a scalable theory of how humans counterfactually
+learn and generalize across multiple tasks; endowing artificial agents with the
+same capacity can significantly improve their performance in challenging
+multitask environments.",http://arxiv.org/pdf/2507.05561v1,,False

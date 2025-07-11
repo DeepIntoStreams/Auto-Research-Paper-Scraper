@@ -1,0 +1,294 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Skip a Layer or Loop it? Test-Time Depth Adaptation of Pretrained LLMs,10/07/2025,"Ziyue Li, Yang Li, Tianyi Zhou","Can a pretrained neural network adapt its architecture to different inputs
+without any finetuning? Do we need all layers for simple tasks, and are they
+adequate for challenging tasks? We found that the layers of a pretrained large
+language model (LLM) can be manipulated as separate modules to build a better
+and even shallower model customized for each test sample. In particular, each
+layer from the pretrained model can be skipped/pruned or repeated multiple
+times as recurrent neural networks (RNN), and stacked with others in arbitrary
+orders, yielding a chain-of-layers (CoLa) per sample. This compositional space
+greatly expands the scope of existing works on looped/recurrent pretrained
+modules, layer pruning, or early-exit networks. We develop a Monte Carlo Tree
+Search (MCTS) protocol to explore and identify the optimal CoLa for each sample
+from math and commonsense reasoning benchmarks. Compared to a static model of a
+fixed depth, CoLa allows shortcut paths (fast thinking), recurrence of the same
+layer(s) (slow thinking), and combining both, offering more flexible, dynamic
+architectures for different inputs. We conduct an extensive analysis of the
+MCTS-optimized CoLa, which leads to two key findings: (1) For >75% of samples
+with correct predictions by the original LLM, we can find shorter CoLa,
+suggesting a large space for improving inference efficiency; (2) For >60% of
+samples with originally incorrect predictions, we can identify CoLa achieving
+correct predictions, suggesting a large space of performance enhancement. Our
+results highlight the shortcomings of using a fixed architecture of pre-trained
+LLMs for inference on different samples and pave the way to unlock the
+generalization power of test-time depth adaptation.",http://arxiv.org/pdf/2507.07996v1,,False
+Scaling RL to Long Videos,10/07/2025,"Yukang Chen, Wei Huang, Baifeng Shi, Qinghao Hu, Hanrong Ye, Ligeng Zhu, Zhijian Liu, Pavlo Molchanov, Jan Kautz, Xiaojuan Qi, Sifei Liu, Hongxu Yin, Yao Lu, Song Han","We introduce a full-stack framework that scales up reasoning in
+vision-language models (VLMs) to long videos, leveraging reinforcement
+learning. We address the unique challenges of long video reasoning by
+integrating three critical components: (1) a large-scale dataset,
+LongVideo-Reason, comprising 52K long video QA pairs with high-quality
+reasoning annotations across diverse domains such as sports, games, and vlogs;
+(2) a two-stage training pipeline that extends VLMs with chain-of-thought
+supervised fine-tuning (CoT-SFT) and reinforcement learning (RL); and (3) a
+training infrastructure for long video RL, named Multi-modal Reinforcement
+Sequence Parallelism (MR-SP), which incorporates sequence parallelism and a
+vLLM-based engine tailored for long video, using cached video embeddings for
+efficient rollout and prefilling. In experiments, LongVILA-R1-7B achieves
+strong performance on long video QA benchmarks such as VideoMME. It also
+outperforms Video-R1-7B and even matches Gemini-1.5-Pro across temporal
+reasoning, goal and purpose reasoning, spatial reasoning, and plot reasoning on
+our LongVideo-Reason-eval benchmark. Notably, our MR-SP system achieves up to
+2.1x speedup on long video RL training. LongVILA-R1 demonstrates consistent
+performance gains as the number of input video frames scales. LongVILA-R1 marks
+a firm step towards long video reasoning in VLMs. In addition, we release our
+training system for public availability that supports RL training on various
+modalities (video, text, and audio), various models (VILA and Qwen series), and
+even image and video generation models. On a single A100 node (8 GPUs), it
+supports RL training on hour-long videos (e.g., 3,600 frames / around 256k
+tokens).",http://arxiv.org/pdf/2507.07966v1,,False
+Dynamic Chunking for End-to-End Hierarchical Sequence Modeling,10/07/2025,"Sukjun Hwang, Brandon Wang, Albert Gu","Despite incredible progress in language models (LMs) in recent years, largely
+resulting from moving away from specialized models designed for specific tasks
+to general models based on powerful architectures (e.g. the Transformer) that
+learn everything from raw data, pre-processing steps such as tokenization
+remain a barrier to true end-to-end foundation models. We introduce a
+collection of new techniques that enable a dynamic chunking mechanism which
+automatically learns content -- and context -- dependent segmentation
+strategies learned jointly with the rest of the model. Incorporating this into
+an explicit hierarchical network (H-Net) allows replacing the (implicitly
+hierarchical) tokenization-LM-detokenization pipeline with a single model
+learned fully end-to-end. When compute- and data- matched, an H-Net with one
+stage of hierarchy operating at the byte level outperforms a strong Transformer
+language model operating over BPE tokens. Iterating the hierarchy to multiple
+stages further increases its performance by modeling multiple levels of
+abstraction, demonstrating significantly better scaling with data and matching
+a token-based Transformer of twice its size. H-Nets pretrained on English show
+significantly increased character-level robustness, and qualitatively learn
+meaningful data-dependent chunking strategies without any heuristics or
+explicit supervision. Finally, the H-Net's improvement over tokenized pipelines
+is further increased in languages and modalities with weaker tokenization
+heuristics, such as Chinese and code, or DNA sequences (nearly 4x improvement
+in data efficiency over baselines), showing the potential of true end-to-end
+models that learn and scale better from unprocessed data.",http://arxiv.org/pdf/2507.07955v1,,False
+BEAVER: Building Environments with Assessable Variation for Evaluating Multi-Objective Reinforcement Learning,10/07/2025,"Ruohong Liu, Jack Umenberger, Yize Chen","Recent years have seen significant advancements in designing reinforcement
+learning (RL)-based agents for building energy management. While individual
+success is observed in simulated or controlled environments, the scalability of
+RL approaches in terms of efficiency and generalization across building
+dynamics and operational scenarios remains an open question. In this work, we
+formally characterize the generalization space for the cross-environment,
+multi-objective building energy management task, and formulate the
+multi-objective contextual RL problem. Such a formulation helps understand the
+challenges of transferring learned policies across varied operational contexts
+such as climate and heat convection dynamics under multiple control objectives
+such as comfort level and energy consumption. We provide a principled way to
+parameterize such contextual information in realistic building RL environments,
+and construct a novel benchmark to facilitate the evaluation of generalizable
+RL algorithms in practical building control tasks. Our results show that
+existing multi-objective RL methods are capable of achieving reasonable
+trade-offs between conflicting objectives. However, their performance degrades
+under certain environment variations, underscoring the importance of
+incorporating dynamics-dependent contextual information into the policy
+learning process.",http://arxiv.org/pdf/2507.07769v1,,False
+Adaptive Gaussian Mixture Models-based Anomaly Detection for under-constrained Cable-Driven Parallel Robots,10/07/2025,"Julio Garrido, Javier Vales, Diego Silva-Muñiz, Enrique Riveiro, Pablo López-Matencio, Josué Rivera-Andrade","Cable-Driven Parallel Robots (CDPRs) are increasingly used for load
+manipulation tasks involving predefined toolpaths with intermediate stops. At
+each stop, where the platform maintains a fixed pose and the motors keep the
+cables under tension, the system must evaluate whether it is safe to proceed by
+detecting anomalies that could compromise performance (e.g., wind gusts or
+cable impacts). This paper investigates whether anomalies can be detected using
+only motor torque data, without additional sensors. It introduces an adaptive,
+unsupervised outlier detection algorithm based on Gaussian Mixture Models
+(GMMs) to identify anomalies from torque signals. The method starts with a
+brief calibration period, just a few seconds, during which a GMM is fit on
+known anomaly-free data. Real-time torque measurements are then evaluated using
+Mahalanobis distance from the GMM, with statistically derived thresholds
+triggering anomaly flags. Model parameters are periodically updated using the
+latest segments identified as anomaly-free to adapt to changing conditions.
+Validation includes 14 long-duration test sessions simulating varied wind
+intensities. The proposed method achieves a 100% true positive rate and 95.4%
+average true negative rate, with 1-second detection latency. Comparative
+evaluation against power threshold and non-adaptive GMM methods indicates
+higher robustness to drift and environmental variation.",http://arxiv.org/pdf/2507.07714v1,,False
+PlanQA: A Benchmark for Spatial Reasoning in LLMs using Structured Representations,10/07/2025,"Fedor Rodionov, Abdelrahman Eldesokey, Michael Birsak, John Femiani, Bernard Ghanem, Peter Wonka","We introduce PlanQA, a diagnostic benchmark for evaluating geometric and
+spatial reasoning in large-language models (LLMs). PlanQA is grounded in
+structured representations of indoor scenes, such as kitchens, living rooms,
+and bedrooms, encoded in a symbolic format (e.g., JSON, XML layouts). The
+benchmark includes diverse question types that test not only metric and
+topological reasoning (e.g., distance, visibility, shortest paths) but also
+interior design constraints such as affordance, clearance, balance, and
+usability. Our results across a variety of frontier open-source and commercial
+LLMs show that while models may succeed in shallow queries, they often fail to
+simulate physical constraints, preserve spatial coherence, or generalize under
+layout perturbation. PlanQA uncovers a clear blind spot in today's LLMs: they
+do not consistently reason about real-world layouts. We hope that this
+benchmark inspires new work on language models that can accurately infer and
+manipulate spatial and geometric properties in practical settings.",http://arxiv.org/pdf/2507.07644v1,,False
+Teaching LLM to Reason: Reinforcement Learning from Algorithmic Problems without Code,10/07/2025,"Keqin Bao, Nuo Chen, Xiaoyuan Li, Binyuan Hui, Bowen Yu, Fuli Feng, Junyang Lin, Xiangnan He, Dayiheng Liu","Enhancing reasoning capabilities remains a central focus in the LLM reasearch
+community. A promising direction involves requiring models to simulate code
+execution step-by-step to derive outputs for given inputs. However, as code is
+often designed for large-scale systems, direct application leads to
+over-reliance on complex data structures and algorithms, even for simple cases,
+resulting in overfitting to algorithmic patterns rather than core reasoning
+structures. To address this, we propose TeaR, which aims at teaching LLMs to
+reason better. TeaR leverages careful data curation and reinforcement learning
+to guide models in discovering optimal reasoning paths through code-related
+tasks, thereby improving general reasoning abilities. We conduct extensive
+experiments using two base models and three long-CoT distillation models, with
+model sizes ranging from 1.5 billion to 32 billion parameters, and across 17
+benchmarks spanning Math, Knowledge, Code, and Logical Reasoning. The results
+consistently show significant performance improvements. Notably, TeaR achieves
+a 35.9% improvement on Qwen2.5-7B and 5.9% on R1-Distilled-7B.",http://arxiv.org/pdf/2507.07498v1,,False
+Galerkin-ARIMA: A Two-Stage Polynomial Regression Framework for Fast Rolling One-Step-Ahead Forecasting,10/07/2025,"Haojie Liu, Zihan Lin","Time-series models like ARIMA remain widely used for forecasting but limited
+to linear assumptions and high computational cost in large and complex
+datasets. We propose Galerkin-ARIMA that generalizes the AR component of ARIMA
+and replace it with a flexible spline-based function estimated by Galerkin
+projection. This enables the model to capture nonlinear dependencies in lagged
+values and retain the MA component and Gaussian noise assumption. We derive a
+closed-form OLS estimator for the Galerkin coefficients and show the model is
+asymptotically unbiased and consistent under standard conditions. Our method
+bridges classical time-series modeling and nonparametric regression, which
+offering improved forecasting performance and computational efficiency.",http://arxiv.org/pdf/2507.07469v1,,False
+Towards Interpretable Time Series Foundation Models,10/07/2025,"Matthieu Boileau, Philippe Helluy, Jeremy Pawlus, Svitlana Vyetrenko","In this paper, we investigate the distillation of time series reasoning
+capabilities into small, instruction-tuned language models as a step toward
+building interpretable time series foundation models. Leveraging a synthetic
+dataset of mean-reverting time series with systematically varied trends and
+noise levels, we generate natural language annotations using a large multimodal
+model and use these to supervise the fine-tuning of compact Qwen models. We
+introduce evaluation metrics that assess the quality of the distilled reasoning
+- focusing on trend direction, noise intensity, and extremum localization - and
+show that the post-trained models acquire meaningful interpretive capabilities.
+Our results highlight the feasibility of compressing time series understanding
+into lightweight, language-capable models suitable for on-device or
+privacy-sensitive deployment. This work contributes a concrete foundation
+toward developing small, interpretable models that explain temporal patterns in
+natural language.",http://arxiv.org/pdf/2507.07439v1,,False
+Neural networks leverage nominally quantum and post-quantum representations,10/07/2025,"Paul M. Riechers, Thomas J. Elliott, Adam S. Shai","We show that deep neural networks, including transformers and RNNs,
+pretrained as usual on next-token prediction, intrinsically discover and
+represent beliefs over 'quantum' and 'post-quantum' low-dimensional generative
+models of their training data -- as if performing iterative Bayesian updates
+over the latent state of this world model during inference as they observe more
+context. Notably, neural nets easily find these representation whereas there is
+no finite classical circuit that would do the job. The corresponding geometric
+relationships among neural activations induced by different input sequences are
+found to be largely independent of neural-network architecture. Each point in
+this geometry corresponds to a history-induced probability density over all
+possible futures, and the relative displacement of these points reflects the
+difference in mechanism and magnitude for how these distinct pasts affect the
+future.",http://arxiv.org/pdf/2507.07432v1,,False
+Probabilistic Approximate Optimization: A New Variational Monte Carlo Algorithm,10/07/2025,"Abdelrahman S. Abdelrahman, Shuvro Chowdhury, Flaviano Morone, Kerem Y. Camsari","We introduce a generalized \textit{Probabilistic Approximate Optimization
+Algorithm (PAOA)}, a classical variational Monte Carlo framework that extends
+and formalizes prior work by Weitz \textit{et al.}~\cite{Combes_2023}, enabling
+parameterized and fast sampling on present-day Ising machines and probabilistic
+computers. PAOA operates by iteratively modifying the couplings of a network of
+binary stochastic units, guided by cost evaluations from independent samples.
+We establish a direct correspondence between derivative-free updates and the
+gradient of the full $2^N \times 2^N$ Markov flow, showing that PAOA admits a
+principled variational formulation. Simulated annealing emerges as a limiting
+case under constrained parameterizations, and we implement this regime on an
+FPGA-based probabilistic computer with on-chip annealing to solve large 3D
+spin-glass problems. Benchmarking PAOA against QAOA on the canonical 26-spin
+Sherrington-Kirkpatrick model with matched parameters reveals superior
+performance for PAOA. We show that PAOA naturally extends simulated annealing
+by optimizing multiple temperature profiles, leading to improved performance
+over SA on heavy-tailed problems such as SK-L\'evy.",http://arxiv.org/pdf/2507.07420v1,,False
+Learning Collective Variables from Time-lagged Generation,10/07/2025,"Seonghyun Park, Kiyoung Seong, Soojung Yang, Rafael Gómez-Bombarelli, Sungsoo Ahn","Rare events such as state transitions are difficult to observe directly with
+molecular dynamics simulations due to long timescales. Enhanced sampling
+techniques overcome this by introducing biases along carefully chosen
+low-dimensional features, known as collective variables (CVs), which capture
+the slow degrees of freedom. Machine learning approaches (MLCVs) have automated
+CV discovery, but existing methods typically focus on discriminating
+meta-stable states without fully encoding the detailed dynamics essential for
+accurate sampling. We propose TLC, a framework that learns CVs directly from
+time-lagged conditions of a generative model. Instead of modeling the static
+Boltzmann distribution, TLC models a time-lagged conditional distribution
+yielding CVs to capture the slow dynamic behavior. We validate TLC on the
+Alanine Dipeptide system using two CV-based enhanced sampling tasks: (i)
+steered molecular dynamics (SMD) and (ii) on-the-fly probability enhanced
+sampling (OPES), demonstrating equal or superior performance compared to
+existing MLCV methods in both transition path sampling and state
+discrimination.",http://arxiv.org/pdf/2507.07390v1,,False
+Data-driven Kinematic Modeling in Soft Robots: System Identification and Uncertainty Quantification,10/07/2025,"Zhanhong Jiang, Dylan Shah, Hsin-Jung Yang, Soumik Sarkar","Precise kinematic modeling is critical in calibration and controller design
+for soft robots, yet remains a challenging issue due to their highly nonlinear
+and complex behaviors. To tackle the issue, numerous data-driven machine
+learning approaches have been proposed for modeling nonlinear dynamics.
+However, these models suffer from prediction uncertainty that can negatively
+affect modeling accuracy, and uncertainty quantification for kinematic modeling
+in soft robots is underexplored. In this work, using limited simulation and
+real-world data, we first investigate multiple linear and nonlinear machine
+learning models commonly used for kinematic modeling of soft robots. The
+results reveal that nonlinear ensemble methods exhibit the most robust
+generalization performance. We then develop a conformal kinematic modeling
+framework for soft robots by utilizing split conformal prediction to quantify
+predictive position uncertainty, ensuring distribution-free prediction
+intervals with a theoretical guarantee.",http://arxiv.org/pdf/2507.07370v1,,False
+Goal-Oriented Sequential Bayesian Experimental Design for Causal Learning,10/07/2025,"Zheyu Zhang, Jiayuan Dong, Jie Liu, Xun Huan","We present GO-CBED, a goal-oriented Bayesian framework for sequential causal
+experimental design. Unlike conventional approaches that select interventions
+aimed at inferring the full causal model, GO-CBED directly maximizes the
+expected information gain (EIG) on user-specified causal quantities of
+interest, enabling more targeted and efficient experimentation. The framework
+is both non-myopic, optimizing over entire intervention sequences, and
+goal-oriented, targeting only model aspects relevant to the causal query. To
+address the intractability of exact EIG computation, we introduce a variational
+lower bound estimator, optimized jointly through a transformer-based policy
+network and normalizing flow-based variational posteriors. The resulting policy
+enables real-time decision-making via an amortized network. We demonstrate that
+GO-CBED consistently outperforms existing baselines across various causal
+reasoning and discovery tasks-including synthetic structural causal models and
+semi-synthetic gene regulatory networks-particularly in settings with limited
+experimental budgets and complex causal mechanisms. Our results highlight the
+benefits of aligning experimental design objectives with specific research
+goals and of forward-looking sequential planning.",http://arxiv.org/pdf/2507.07359v1,,False
+Supply Chain Optimization via Generative Simulation and Iterative Decision Policies,10/07/2025,"Haoyue Bai, Haoyu Wang, Nanxu Gong, Xinyuan Wang, Wangyang Ying, Haifeng Chen, Yanjie Fu","High responsiveness and economic efficiency are critical objectives in supply
+chain transportation, both of which are influenced by strategic decisions on
+shipping mode. An integrated framework combining an efficient simulator with an
+intelligent decision-making algorithm can provide an observable, low-risk
+environment for transportation strategy design. An ideal simulation-decision
+framework must (1) generalize effectively across various settings, (2) reflect
+fine-grained transportation dynamics, (3) integrate historical experience with
+predictive insights, and (4) maintain tight integration between simulation
+feedback and policy refinement. We propose Sim-to-Dec framework to satisfy
+these requirements. Specifically, Sim-to-Dec consists of a generative
+simulation module, which leverages autoregressive modeling to simulate
+continuous state changes, reducing dependence on handcrafted domain-specific
+rules and enhancing robustness against data fluctuations; and a history-future
+dual-aware decision model, refined iteratively through end-to-end optimization
+with simulator interactions. Extensive experiments conducted on three
+real-world datasets demonstrate that Sim-to-Dec significantly improves timely
+delivery rates and profit.",http://arxiv.org/pdf/2507.07355v1,,False
+Machine Learning-driven Multiscale MD Workflows: The Mini-MuMMI Experience,10/07/2025,"Loïc Pottier, Konstantia Georgouli, Timothy S. Carpenter, Fikret Aydin, Jeremy O. B. Tempkin, Dwight V. Nissley, Frederick H. Streitz, Thomas R. W. Scogland, Peer-Timo Bremer, Felice C. Lightstone, Helgi I. Ingólfsson","Computational models have become one of the prevalent methods to model
+complex phenomena. To accurately model complex interactions, such as detailed
+biomolecular interactions, scientists often rely on multiscale models comprised
+of several internal models operating at difference scales, ranging from
+microscopic to macroscopic length and time scales. Bridging the gap between
+different time and length scales has historically been challenging but the
+advent of newer machine learning (ML) approaches has shown promise for tackling
+that task. Multiscale models require massive amounts of computational power and
+a powerful workflow management system. Orchestrating ML-driven multiscale
+studies on parallel systems with thousands of nodes is challenging, the
+workflow must schedule, allocate and control thousands of simulations operating
+at different scales. Here, we discuss the massively parallel Multiscale
+Machine-Learned Modeling Infrastructure (MuMMI), a multiscale workflow
+management infrastructure, that can orchestrate thousands of molecular dynamics
+(MD) simulations operating at different timescales, spanning from millisecond
+to nanosecond. More specifically, we introduce a novel version of MuMMI called
+""mini-MuMMI"". Mini-MuMMI is a curated version of MuMMI designed to run on
+modest HPC systems or even laptops whereas MuMMI requires larger HPC systems.
+We demonstrate mini-MuMMI utility by exploring RAS-RAF membrane interactions
+and discuss the different challenges behind the generalization of multiscale
+workflows and how mini-MuMMI can be leveraged to target a broader range of
+applications outside of MD and RAS-RAF interactions.",http://arxiv.org/pdf/2507.07352v1,,False
+Zero-Shot Context Generalization in Reinforcement Learning from Few Training Contexts,10/07/2025,"James Chapman, Kedar Karhadkar, Guido Montufar","Deep reinforcement learning (DRL) has achieved remarkable success across
+multiple domains, including competitive games, natural language processing, and
+robotics. Despite these advancements, policies trained via DRL often struggle
+to generalize to evaluation environments with different parameters. This
+challenge is typically addressed by training with multiple contexts and/or by
+leveraging additional structure in the problem. However, obtaining sufficient
+training data across diverse contexts can be impractical in real-world
+applications. In this work, we consider contextual Markov decision processes
+(CMDPs) with transition and reward functions that exhibit regularity in context
+parameters. We introduce the context-enhanced Bellman equation (CEBE) to
+improve generalization when training on a single context. We prove both
+analytically and empirically that the CEBE yields a first-order approximation
+to the Q-function trained across multiple contexts. We then derive context
+sample enhancement (CSE) as an efficient data augmentation method for
+approximating the CEBE in deterministic control environments. We numerically
+validate the performance of CSE in simulation environments, showcasing its
+potential to improve generalization in DRL.",http://arxiv.org/pdf/2507.07348v1,,False

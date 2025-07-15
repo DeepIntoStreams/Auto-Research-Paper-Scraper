@@ -1,0 +1,408 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+ScaffoldAvatar: High-Fidelity Gaussian Avatars with Patch Expressions,14/07/2025,"Shivangi Aneja, Sebastian Weiss, Irene Baeza, Prashanth Chandran, Gaspard Zoss, Matthias Nießner, Derek Bradley","Generating high-fidelity real-time animated sequences of photorealistic 3D
+head avatars is important for many graphics applications, including immersive
+telepresence and movies. This is a challenging problem particularly when
+rendering digital avatar close-ups for showing character's facial microfeatures
+and expressions. To capture the expressive, detailed nature of human heads,
+including skin furrowing and finer-scale facial movements, we propose to couple
+locally-defined facial expressions with 3D Gaussian splatting to enable
+creating ultra-high fidelity, expressive and photorealistic 3D head avatars. In
+contrast to previous works that operate on a global expression space, we
+condition our avatar's dynamics on patch-based local expression features and
+synthesize 3D Gaussians at a patch level. In particular, we leverage a
+patch-based geometric 3D face model to extract patch expressions and learn how
+to translate these into local dynamic skin appearance and motion by coupling
+the patches with anchor points of Scaffold-GS, a recent hierarchical scene
+representation. These anchors are then used to synthesize 3D Gaussians
+on-the-fly, conditioned by patch-expressions and viewing direction. We employ
+color-based densification and progressive training to obtain high-quality
+results and faster convergence for high resolution 3K training images. By
+leveraging patch-level expressions, ScaffoldAvatar consistently achieves
+state-of-the-art performance with visually natural motion, while encompassing
+diverse facial expressions and styles in real time.",http://arxiv.org/pdf/2507.10542v1,,False
+Scene-Aware Conversational ADAS with Generative AI for Real-Time Driver Assistance,14/07/2025,"Kyungtae Han, Yitao Chen, Rohit Gupta, Onur Altintas","While autonomous driving technologies continue to advance, current Advanced
+Driver Assistance Systems (ADAS) remain limited in their ability to interpret
+scene context or engage with drivers through natural language. These systems
+typically rely on predefined logic and lack support for dialogue-based
+interaction, making them inflexible in dynamic environments or when adapting to
+driver intent. This paper presents Scene-Aware Conversational ADAS (SC-ADAS), a
+modular framework that integrates Generative AI components including large
+language models, vision-to-text interpretation, and structured function calling
+to enable real-time, interpretable, and adaptive driver assistance. SC-ADAS
+supports multi-turn dialogue grounded in visual and sensor context, allowing
+natural language recommendations and driver-confirmed ADAS control. Implemented
+in the CARLA simulator with cloud-based Generative AI, the system executes
+confirmed user intents as structured ADAS commands without requiring model
+fine-tuning. We evaluate SC-ADAS across scene-aware, conversational, and
+revisited multi-turn interactions, highlighting trade-offs such as increased
+latency from vision-based context retrieval and token growth from accumulated
+dialogue history. These results demonstrate the feasibility of combining
+conversational reasoning, scene perception, and modular ADAS control to support
+the next generation of intelligent driver assistance.",http://arxiv.org/pdf/2507.10500v1,,False
+Cameras as Relative Positional Encoding,14/07/2025,"Ruilong Li, Brent Yi, Junchen Liu, Hang Gao, Yi Ma, Angjoo Kanazawa","Transformers are increasingly prevalent for multi-view computer vision tasks,
+where geometric relationships between viewpoints are critical for 3D
+perception. To leverage these relationships, multi-view transformers must use
+camera geometry to ground visual tokens in 3D space. In this work, we compare
+techniques for conditioning transformers on cameras: token-level raymap
+encodings, attention-level relative pose encodings, and a new relative encoding
+we propose -- Projective Positional Encoding (PRoPE) -- that captures complete
+camera frustums, both intrinsics and extrinsics, as a relative positional
+encoding. Our experiments begin by showing how relative camera conditioning
+improves performance in feedforward novel view synthesis, with further gains
+from PRoPE. This holds across settings: scenes with both shared and varying
+intrinsics, when combining token- and attention-level conditioning, and for
+generalization to inputs with out-of-distribution sequence lengths and camera
+intrinsics. We then verify that these benefits persist for different tasks,
+stereo depth estimation and discriminative spatial cognition, as well as larger
+model sizes.",http://arxiv.org/pdf/2507.10496v1,,False
+Some remarks on gradient dominance and LQR policy optimization,14/07/2025,Eduardo D. Sontag,"Solutions of optimization problems, including policy optimization in
+reinforcement learning, typically rely upon some variant of gradient descent.
+There has been much recent work in the machine learning, control, and
+optimization communities applying the Polyak-{\L}ojasiewicz Inequality (PLI) to
+such problems in order to establish an exponential rate of convergence (a.k.a.
+``linear convergence'' in the local-iteration language of numerical analysis)
+of loss functions to their minima under the gradient flow. Often, as is the
+case of policy iteration for the continuous-time LQR problem, this rate
+vanishes for large initial conditions, resulting in a mixed globally linear /
+locally exponential behavior. This is in sharp contrast with the discrete-time
+LQR problem, where there is global exponential convergence. That gap between CT
+and DT behaviors motivates the search for various generalized PLI-like
+conditions, and this talk will address that topic. Moreover, these
+generalizations are key to understanding the transient and asymptotic effects
+of errors in the estimation of the gradient, errors which might arise from
+adversarial attacks, wrong evaluation by an oracle, early stopping of a
+simulation, inaccurate and very approximate digital twins, stochastic
+computations (algorithm ``reproducibility''), or learning by sampling from
+limited data. We describe an ``input to state stability'' (ISS) analysis of
+this issue. The lecture also discussed convergence and PLI-like properties of
+``linear feedforward neural networks'' in feedback control, but this arXiv
+skips that part (to be updated). Much of the work described here was done in
+collaboration with Arthur Castello B. de Oliveira, Leilei Cui, Zhong-Ping
+Jiang, and Milad Siami.",http://arxiv.org/pdf/2507.10452v1,,False
+Referential ambiguity and clarification requests: comparing human and LLM behaviour,14/07/2025,"Chris Madge, Matthew Purver, Massimo Poesio","In this work we examine LLMs' ability to ask clarification questions in
+task-oriented dialogues that follow the asynchronous
+instruction-giver/instruction-follower format. We present a new corpus that
+combines two existing annotations of the Minecraft Dialogue Corpus -- one for
+reference and ambiguity in reference, and one for SDRT including clarifications
+-- into a single common format providing the necessary information to
+experiment with clarifications and their relation to ambiguity. With this
+corpus we compare LLM actions with original human-generated clarification
+questions, examining how both humans and LLMs act in the case of ambiguity. We
+find that there is only a weak link between ambiguity and humans producing
+clarification questions in these dialogues, and low correlation between humans
+and LLMs. Humans hardly ever produce clarification questions for referential
+ambiguity, but often do so for task-based uncertainty. Conversely, LLMs produce
+more clarification questions for referential ambiguity, but less so for task
+uncertainty. We question if LLMs' ability to ask clarification questions is
+predicated on their recent ability to simulate reasoning, and test this with
+different reasoning approaches, finding that reasoning does appear to increase
+question frequency and relevancy.",http://arxiv.org/pdf/2507.10445v1,,False
+Extracting Important Tokens in E-Commerce Queries with a Tag Interaction-Aware Transformer Model,14/07/2025,"Md. Ahsanul Kabir, Mohammad Al Hasan, Aritra Mandal, Liyang Hao, Ishita Khan, Daniel Tunkelang, Zhe Wu","The major task of any e-commerce search engine is to retrieve the most
+relevant inventory items, which best match the user intent reflected in a
+query. This task is non-trivial due to many reasons, including ambiguous
+queries, misaligned vocabulary between buyers, and sellers, over- or
+under-constrained queries by the presence of too many or too few tokens. To
+address these challenges, query reformulation is used, which modifies a user
+query through token dropping, replacement or expansion, with the objective to
+bridge semantic gap between query tokens and users' search intent. Early
+methods of query reformulation mostly used statistical measures derived from
+token co-occurrence frequencies from selective user sessions having clicks or
+purchases. In recent years, supervised deep learning approaches, specifically
+transformer-based neural language models, or sequence-to-sequence models are
+being used for query reformulation task. However, these models do not utilize
+the semantic tags of a query token, which are significant for capturing user
+intent of an e-commerce query. In this work, we pose query reformulation as a
+token classification task, and solve this task by designing a dependency-aware
+transformer-based language model, TagBERT, which makes use of semantic tags of
+a token for learning superior query phrase embedding. Experiments on large,
+real-life e-commerce datasets show that TagBERT exhibits superior performance
+than plethora of competing models, including BERT, eBERT, and
+Sequence-to-Sequence transformer model for important token classification task.",http://arxiv.org/pdf/2507.10385v1,,False
+MoCap-Impute: A Comprehensive Benchmark and Comparative Analysis of Imputation Methods for IMU-based Motion Capture Data,14/07/2025,"Mahmoud Bekhit, Ahmad Salah, Ahmed Salim Alrawahi, Tarek Attia, Ahmed Ali, Esraa Eldesokey, Ahmed Fathalla","Motion capture (MoCap) data from wearable Inertial Measurement Units (IMUs)
+is vital for applications in sports science, but its utility is often
+compromised by missing data. Despite numerous imputation techniques, a
+systematic performance evaluation for IMU-derived MoCap time-series data is
+lacking. We address this gap by conducting a comprehensive comparative analysis
+of statistical, machine learning, and deep learning imputation methods. Our
+evaluation considers three distinct contexts: univariate time-series,
+multivariate across subjects, and multivariate across kinematic angles. To
+facilitate this benchmark, we introduce the first publicly available MoCap
+dataset designed specifically for imputation, featuring data from 53 karate
+practitioners. We simulate three controlled missingness mechanisms: missing
+completely at random (MCAR), block missingness, and a novel value-dependent
+pattern at signal transition points. Our experiments, conducted on 39 kinematic
+variables across all subjects, reveal that multivariate imputation frameworks
+consistently outperform univariate approaches, particularly for complex
+missingness. For instance, multivariate methods achieve up to a 50% mean
+absolute error reduction (MAE from 10.8 to 5.8) compared to univariate
+techniques for transition point missingness. Advanced models like Generative
+Adversarial Imputation Networks (GAIN) and Iterative Imputers demonstrate the
+highest accuracy in these challenging scenarios. This work provides a critical
+baseline for future research and offers practical recommendations for improving
+the integrity and robustness of Mo-Cap data analysis.",http://arxiv.org/pdf/2507.10334v1,,False
+Bridging Robustness and Generalization Against Word Substitution Attacks in NLP via the Growth Bound Matrix Approach,14/07/2025,"Mohammed Bouri, Adnane Saoud","Despite advancements in Natural Language Processing (NLP), models remain
+vulnerable to adversarial attacks, such as synonym substitutions. While prior
+work has focused on improving robustness for feed-forward and convolutional
+architectures, the robustness of recurrent networks and modern state space
+models (SSMs), such as S4, remains understudied. These architectures pose
+unique challenges due to their sequential processing and complex parameter
+dynamics. In this paper, we introduce a novel regularization technique based on
+Growth Bound Matrices (GBM) to improve NLP model robustness by reducing the
+impact of input perturbations on model outputs. We focus on computing the GBM
+for three architectures: Long Short-Term Memory (LSTM), State Space models
+(S4), and Convolutional Neural Networks (CNN). Our method aims to (1) enhance
+resilience against word substitution attacks, (2) improve generalization on
+clean text, and (3) providing the first systematic analysis of SSM (S4)
+robustness. Extensive experiments across multiple architectures and benchmark
+datasets demonstrate that our method improves adversarial robustness by up to
+8.8% over existing baselines. These results highlight the effectiveness of our
+approach, outperforming several state-of-the-art methods in adversarial
+defense. Codes are available at https://github.com/BouriMohammed/GBM",http://arxiv.org/pdf/2507.10330v1,,False
+MF-GLaM: A multifidelity stochastic emulator using generalized lambda models,14/07/2025,"K. Giannoukou, X. Zhu, S. Marelli, B. Sudret","Stochastic simulators exhibit intrinsic stochasticity due to unobservable,
+uncontrollable, or unmodeled input variables, resulting in random outputs even
+at fixed input conditions. Such simulators are common across various scientific
+disciplines; however, emulating their entire conditional probability
+distribution is challenging, as it is a task traditional deterministic
+surrogate modeling techniques are not designed for. Additionally, accurately
+characterizing the response distribution can require prohibitively large
+datasets, especially for computationally expensive high-fidelity (HF)
+simulators. When lower-fidelity (LF) stochastic simulators are available, they
+can enhance limited HF information within a multifidelity surrogate modeling
+(MFSM) framework. While MFSM techniques are well-established for deterministic
+settings, constructing multifidelity emulators to predict the full conditional
+response distribution of stochastic simulators remains a challenge. In this
+paper, we propose multifidelity generalized lambda models (MF-GLaMs) to
+efficiently emulate the conditional response distribution of HF stochastic
+simulators by exploiting data from LF stochastic simulators. Our approach
+builds upon the generalized lambda model (GLaM), which represents the
+conditional distribution at each input by a flexible, four-parameter
+generalized lambda distribution. MF-GLaMs are non-intrusive, requiring no
+access to the internal stochasticity of the simulators nor multiple
+replications of the same input values. We demonstrate the efficacy of MF-GLaM
+through synthetic examples of increasing complexity and a realistic earthquake
+application. Results show that MF-GLaMs can achieve improved accuracy at the
+same cost as single-fidelity GLaMs, or comparable performance at significantly
+reduced cost.",http://arxiv.org/pdf/2507.10303v1,,False
+Conditional Chemical Language Models are Versatile Tools in Drug Discovery,14/07/2025,"Lu Zhu, Emmanuel Noutahi","Generative chemical language models (CLMs) have demonstrated strong
+capabilities in molecular design, yet their impact in drug discovery remains
+limited by the absence of reliable reward signals and the lack of
+interpretability in their outputs. We present SAFE-T, a generalist chemical
+modeling framework that conditions on biological context -- such as protein
+targets or mechanisms of action -- to prioritize and design molecules without
+relying on structural information or engineered scoring functions. SAFE-T
+models the conditional likelihood of fragment-based molecular sequences given a
+biological prompt, enabling principled scoring of molecules across tasks such
+as virtual screening, drug-target interaction prediction, and activity cliff
+detection. Moreover, it supports goal-directed generation by sampling from this
+learned distribution, aligning molecular design with biological objectives. In
+comprehensive zero-shot evaluations across predictive (LIT-PCBA, DAVIS, KIBA,
+ACNet) and generative (DRUG, PMO) benchmarks, SAFE-T consistently achieves
+performance comparable to or better than existing approaches while being
+significantly faster. Fragment-level attribution further reveals that SAFE-T
+captures known structure-activity relationships, supporting interpretable and
+biologically grounded design. Together with its computational efficiency, these
+results demonstrate that conditional generative CLMs can unify scoring and
+generation to accelerate early-stage drug discovery.",http://arxiv.org/pdf/2507.10273v1,,False
+Pimba: A Processing-in-Memory Acceleration for Post-Transformer Large Language Model Serving,14/07/2025,"Wonung Kim, Yubin Lee, Yoonsung Kim, Jinwoo Hwang, Seongryong Oh, Jiyong Jung, Aziz Huseynov, Woong Gyu Park, Chang Hyun Park, Divya Mahajan, Jongse Park","Transformers are the driving force behind today's Large Language Models
+(LLMs), serving as the foundation for their performance and versatility. Yet,
+their compute and memory costs grow with sequence length, posing scalability
+challenges for long-context inferencing. In response, the algorithm community
+is exploring alternative architectures, such as state space models (SSMs),
+linear attention, and recurrent neural networks (RNNs), which we refer to as
+post-transformers. This shift presents a key challenge: building a serving
+system that efficiently supports both transformer and post-transformer LLMs
+within a unified framework. To address this challenge, we analyze the
+performance characteristics of transformer and post-transformer LLMs. Despite
+their algorithmic differences, both are fundamentally limited by memory
+bandwidth under batched inference due to attention in transformers and state
+updates in post-transformers. Further analyses suggest two additional insights:
+(1) state update operations, unlike attention, incur high hardware cost, making
+per-bank PIM acceleration inefficient, and (2) different low-precision
+arithmetic methods offer varying accuracy-area tradeoffs, while we identify
+Microsoft's MX as the Pareto-optimal choice. Building on these insights, we
+design Pimba as an array of State-update Processing Units (SPUs), each shared
+between two banks to enable interleaved access to PIM. Each SPU includes a
+State-update Processing Engine (SPE) that comprises element-wise multipliers
+and adders using MX-based quantized arithmetic, enabling efficient execution of
+state update and attention operations. Our evaluation shows that, compared to
+LLM-optimized GPU and GPU+PIM systems, Pimba achieves up to 3.2x and 2.1x
+higher token generation throughput, respectively.",http://arxiv.org/pdf/2507.10178v1,,False
+Should We Ever Prefer Decision Transformer for Offline Reinforcement Learning?,14/07/2025,"Yumi Omori, Zixuan Dong, Keith Ross","In recent years, extensive work has explored the application of the
+Transformer architecture to reinforcement learning problems. Among these,
+Decision Transformer (DT) has gained particular attention in the context of
+offline reinforcement learning due to its ability to frame return-conditioned
+policy learning as a sequence modeling task. Most recently, Bhargava et al.
+(2024) provided a systematic comparison of DT with more conventional MLP-based
+offline RL algorithms, including Behavior Cloning (BC) and Conservative
+Q-Learning (CQL), and claimed that DT exhibits superior performance in
+sparse-reward and low-quality data settings.
+  In this paper, through experimentation on robotic manipulation tasks
+(Robomimic) and locomotion benchmarks (D4RL), we show that MLP-based Filtered
+Behavior Cloning (FBC) achieves competitive or superior performance compared to
+DT in sparse-reward environments. FBC simply filters out low-performing
+trajectories from the dataset and then performs ordinary behavior cloning on
+the filtered dataset. FBC is not only very straightforward, but it also
+requires less training data and is computationally more efficient. The results
+therefore suggest that DT is not preferable for sparse-reward environments.
+From prior work, arguably, DT is also not preferable for dense-reward
+environments. Thus, we pose the question: Is DT ever preferable?",http://arxiv.org/pdf/2507.10174v1,,False
+Simulating Biases for Interpretable Fairness in Offline and Online Classifiers,14/07/2025,"Ricardo Inácio, Zafeiris Kokkinogenis, Vitor Cerqueira, Carlos Soares","Predictive models often reinforce biases which were originally embedded in
+their training data, through skewed decisions. In such cases, mitigation
+methods are critical to ensure that, regardless of the prevailing disparities,
+model outcomes are adjusted to be fair. To assess this, datasets could be
+systematically generated with specific biases, to train machine learning
+classifiers. Then, predictive outcomes could aid in the understanding of this
+bias embedding process. Hence, an agent-based model (ABM), depicting a loan
+application process that represents various systemic biases across two
+demographic groups, was developed to produce synthetic datasets. Then, by
+applying classifiers trained on them to predict loan outcomes, we can assess
+how biased data leads to unfairness. This highlights a main contribution of
+this work: a framework for synthetic dataset generation with controllable bias
+injection. We also contribute with a novel explainability technique, which
+shows how mitigations affect the way classifiers leverage data features, via
+second-order Shapley values. In experiments, both offline and online learning
+approaches are employed. Mitigations are applied at different stages of the
+modelling pipeline, such as during pre-processing and in-processing.",http://arxiv.org/pdf/2507.10154v1,,False
+FRSICL: LLM-Enabled In-Context Learning Flight Resource Allocation for Fresh Data Collection in UAV-Assisted Wildfire Monitoring,14/07/2025,"Yousef Emami, Hao Zhou, Miguel Gutierrez Gaitan, Kai Li, Luis Almeida","Unmanned Aerial Vehicles (UAVs) are vital for public safety, particularly in
+wildfire monitoring, where early detection minimizes environmental impact. In
+UAV-Assisted Wildfire Monitoring (UAWM) systems, joint optimization of sensor
+transmission scheduling and velocity is critical for minimizing Age of
+Information (AoI) from stale sensor data. Deep Reinforcement Learning (DRL) has
+been used for such optimization; however, its limitations such as low sampling
+efficiency, simulation-to-reality gaps, and complex training render it
+unsuitable for time-critical applications like wildfire monitoring. This paper
+introduces a new online Flight Resource Allocation scheme based on LLM-Enabled
+In-Context Learning (FRSICL) to jointly optimize the UAV's flight control and
+data collection schedule along the trajectory in real time, thereby
+asymptotically minimizing the average AoI across ground sensors. In contrast to
+DRL, FRSICL generates data collection schedules and controls velocity using
+natural language task descriptions and feedback from the environment, enabling
+dynamic decision-making without extensive retraining. Simulation results
+confirm the effectiveness of the proposed FRSICL compared to Proximal Policy
+Optimization (PPO) and Nearest-Neighbor baselines.",http://arxiv.org/pdf/2507.10134v1,,False
+Improving monotonic optimization in heterogeneous multi-agent reinforcement learning with optimal marginal deterministic policy gradient,14/07/2025,"Xiaoyang Yu, Youfang Lin, Shuo Wang, Sheng Han","In heterogeneous multi-agent reinforcement learning (MARL), achieving
+monotonic improvement plays a pivotal role in enhancing performance. The HAPPO
+algorithm proposes a feasible solution by introducing a sequential update
+scheme, which requires independent learning with No Parameter-sharing (NoPS).
+However, heterogeneous MARL generally requires Partial Parameter-sharing
+(ParPS) based on agent grouping to achieve high cooperative performance. Our
+experiments prove that directly combining ParPS with the sequential update
+scheme leads to the policy updating baseline drift problem, thereby failing to
+achieve improvement. To solve the conflict between monotonic improvement and
+ParPS, we propose the Optimal Marginal Deterministic Policy Gradient (OMDPG)
+algorithm. First, we replace the sequentially computed $Q_{\psi}^s(s,a_{1:i})$
+with the Optimal Marginal Q (OMQ) function $\phi_{\psi}^*(s,a_{1:i})$ derived
+from Q-functions. This maintains MAAD's monotonic improvement while eliminating
+the conflict through optimal joint action sequences instead of sequential
+policy ratio calculations. Second, we introduce the Generalized Q Critic (GQC)
+as the critic function, employing pessimistic uncertainty-constrained loss to
+optimize different Q-value estimations. This provides the required Q-values for
+OMQ computation and stable baselines for actor updates. Finally, we implement a
+Centralized Critic Grouped Actor (CCGA) architecture that simultaneously
+achieves ParPS in local policy networks and accurate global Q-function
+computation. Experimental results in SMAC and MAMuJoCo environments demonstrate
+that OMDPG outperforms various state-of-the-art MARL baselines.",http://arxiv.org/pdf/2507.09989v1,,False
+Text-Driven Causal Representation Learning for Source-Free Domain Generalization,14/07/2025,"Lihua Zhou, Mao Ye, Nianxin Li, Shuaifeng Li, Jinlin Wu, Xiatian Zhu, Lei Deng, Hongbin Liu, Jiebo Luo, Zhen Lei","Deep learning often struggles when training and test data distributions
+differ. Traditional domain generalization (DG) tackles this by including data
+from multiple source domains, which is impractical due to expensive data
+collection and annotation. Recent vision-language models like CLIP enable
+source-free domain generalization (SFDG) by using text prompts to simulate
+visual representations, reducing data demands. However, existing SFDG methods
+struggle with domain-specific confounders, limiting their generalization
+capabilities. To address this issue, we propose TDCRL
+(\textbf{T}ext-\textbf{D}riven \textbf{C}ausal \textbf{R}epresentation
+\textbf{L}earning), the first method to integrate causal inference into the
+SFDG setting. TDCRL operates in two steps: first, it employs data augmentation
+to generate style word vectors, combining them with class information to
+generate text embeddings to simulate visual representations; second, it trains
+a causal intervention network with a confounder dictionary to extract
+domain-invariant features. Grounded in causal learning, our approach offers a
+clear and effective mechanism to achieve robust, domain-invariant features,
+ensuring robust generalization. Extensive experiments on PACS, VLCS,
+OfficeHome, and DomainNet show state-of-the-art performance, proving TDCRL
+effectiveness in SFDG.",http://arxiv.org/pdf/2507.09961v1,,False
+Radial Neighborhood Smoothing Recommender System,14/07/2025,"Zerui Zhang, Yumou Qiu","Recommender systems inherently exhibit a low-rank structure in latent space.
+A key challenge is to define meaningful and measurable distances in the latent
+space to capture user-user, item-item, user-item relationships effectively. In
+this work, we establish that distances in the latent space can be
+systematically approximated using row-wise and column-wise distances in the
+observed matrix, providing a novel perspective on distance estimation. To
+refine the distance estimation, we introduce the correction based on empirical
+variance estimator to account for noise-induced non-centrality. The novel
+distance estimation enables a more structured approach to constructing
+neighborhoods, leading to the Radial Neighborhood Estimator (RNE), which
+constructs neighborhoods by including both overlapped and partially overlapped
+user-item pairs and employs neighborhood smoothing via localized kernel
+regression to improve imputation accuracy. We provide the theoretical
+asymptotic analysis for the proposed estimator. We perform evaluations on both
+simulated and real-world datasets, demonstrating that RNE achieves superior
+performance compared to existing collaborative filtering and matrix
+factorization methods. While our primary focus is on distance estimation in
+latent space, we find that RNE also mitigates the ``cold-start'' problem.",http://arxiv.org/pdf/2507.09952v1,,False
+Memorization Sinks: Isolating Memorization during LLM Training,14/07/2025,"Gaurav R. Ghosal, Pratyush Maini, Aditi Raghunathan","Large language models are susceptible to memorizing repeated sequences,
+posing privacy and copyright concerns. A popular mitigation strategy is to
+remove memorized information from specific neurons post-hoc. However, such
+approaches have shown limited success so far. In a controlled setting, we show
+that the memorization of natural sequences (those that resemble linguistically
+plausible text) become mechanistically entangled with general language
+abilities, thereby becoming challenging to remove post-hoc. In this work, we
+put forward a new paradigm of MemSinks that promotes isolation of memorization
+by design. We leverage a sequence identifier that activates a unique set of
+memorization neurons for each sequence across repetitions. By analyzing the
+dynamics of learning and forgetting, we argue that MemSinks facilitates
+isolation of memorized content, making it easier to remove without compromising
+general language capabilities. We implement MemSinks at the billion-parameter
+and billion-token scale, and observe both effective isolation and strong
+generalization. To our knowledge, this is the first proof-of-concept on real
+data demonstrating that simultaneous generalization and isolation is
+achievable. We open-source our code at http://github.com/grghosal/MemSinks.",http://arxiv.org/pdf/2507.09937v1,,False
+Solving dynamic portfolio selection problems via score-based diffusion models,14/07/2025,"Ahmad Aghapour, Erhan Bayraktar, Fengyi Yuan","In this paper, we tackle the dynamic mean-variance portfolio selection
+problem in a {\it model-free} manner, based on (generative) diffusion models.
+We propose using data sampled from the real model $\mathcal P$ (which is
+unknown) with limited size to train a generative model $\mathcal Q$ (from which
+we can easily and adequately sample). With adaptive training and sampling
+methods that are tailor-made for time series data, we obtain quantification
+bounds between $\mathcal P$ and $\mathcal Q$ in terms of the adapted
+Wasserstein metric $\mathcal A W_2$. Importantly, the proposed adapted sampling
+method also facilitates {\it conditional sampling}. In the second part of this
+paper, we provide the stability of the mean-variance portfolio optimization
+problems in $\mathcal A W _2$. Then, combined with the error bounds and the
+stability result, we propose a policy gradient algorithm based on the
+generative environment, in which our innovative adapted sampling method
+provides approximate scenario generators. We illustrate the performance of our
+algorithm on both simulated and real data. For real data, the algorithm based
+on the generative environment produces portfolios that beat several important
+baselines, including the Markowitz portfolio, the equal weight (naive)
+portfolio, and S\&P 500.",http://arxiv.org/pdf/2507.09916v1,,False
+Algorithm Development in Neural Networks: Insights from the Streaming Parity Task,14/07/2025,"Loek van Rossem, Andrew M. Saxe","Even when massively overparameterized, deep neural networks show a remarkable
+ability to generalize. Research on this phenomenon has focused on
+generalization within distribution, via smooth interpolation. Yet in some
+settings neural networks also learn to extrapolate to data far beyond the
+bounds of the original training set, sometimes even allowing for infinite
+generalization, implying that an algorithm capable of solving the task has been
+learned. Here we undertake a case study of the learning dynamics of recurrent
+neural networks (RNNs) trained on the streaming parity task in order to develop
+an effective theory of algorithm development. The streaming parity task is a
+simple but nonlinear task defined on sequences up to arbitrary length. We show
+that, with sufficient finite training experience, RNNs exhibit a phase
+transition to perfect infinite generalization. Using an effective theory for
+the representational dynamics, we find an implicit representational merger
+effect which can be interpreted as the construction of a finite automaton that
+reproduces the task. Overall, our results disclose one mechanism by which
+neural networks can generalize infinitely from finite training experience.",http://arxiv.org/pdf/2507.09897v1,,False
+Sequence-Model-Guided Measurement Selection for Quantum State Learning,14/07/2025,"Jiaxin Huang, Yan Zhu, Giulio Chiribella, Ya-Dong Wu","Characterization of quantum systems from experimental data is a central
+problem in quantum science and technology. But which measurements should be
+used to gather data in the first place? While optimal measurement choices can
+be worked out for small quantum systems, the optimization becomes intractable
+as the system size grows large. To address this problem, we introduce a deep
+neural network with a sequence model architecture that searches for efficient
+measurement choices in a data-driven, adaptive manner. The model can be applied
+to a variety of tasks, including the prediction of linear and nonlinear
+properties of quantum states, as well as state clustering and state tomography
+tasks. In all these tasks, we find that the measurement choices identified by
+our neural network consistently outperform the uniformly random choice.
+Intriguingly, for topological quantum systems, our model tends to recommend
+measurements at the system's boundaries, even when the task is to predict bulk
+properties. This behavior suggests that the neural network may have
+independently discovered a connection between boundaries and bulk, without
+having been provided any built-in knowledge of quantum physics.",http://arxiv.org/pdf/2507.09891v1,,False

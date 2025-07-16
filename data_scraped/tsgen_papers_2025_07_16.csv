@@ -1,0 +1,301 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Canonical Bayesian Linear System Identification,15/07/2025,"Andrey Bryutkin, Matthew E. Levine, Iñigo Urteaga, Youssef Marzouk","Standard Bayesian approaches for linear time-invariant (LTI) system
+identification are hindered by parameter non-identifiability; the resulting
+complex, multi-modal posteriors make inference inefficient and impractical. We
+solve this problem by embedding canonical forms of LTI systems within the
+Bayesian framework. We rigorously establish that inference in these minimal
+parameterizations fully captures all invariant system dynamics (e.g., transfer
+functions, eigenvalues, predictive distributions of system outputs) while
+resolving identifiability. This approach unlocks the use of meaningful,
+structure-aware priors (e.g., enforcing stability via eigenvalues) and ensures
+conditions for a Bernstein--von Mises theorem -- a link between Bayesian and
+frequentist large-sample asymptotics that is broken in standard forms.
+Extensive simulations with modern MCMC methods highlight advantages over
+standard parameterizations: canonical forms achieve higher computational
+efficiency, generate interpretable and well-behaved posteriors, and provide
+robust uncertainty estimates, particularly from limited data.",http://arxiv.org/pdf/2507.11535v1,,False
+Elk: Exploring the Efficiency of Inter-core Connected AI Chips with Deep Learning Compiler Techniques,15/07/2025,"Yiqi Liu, Yuqi Xue, Noelle Crawford, Jilong Xue, Jian Huang","To meet the increasing demand of deep learning (DL) models, AI chips are
+employing both off-chip memory (e.g., HBM) and high-bandwidth low-latency
+interconnect for direct inter-core data exchange. However, it is not easy to
+explore the efficiency of these inter-core connected AI (ICCA) chips, due to a
+fundamental tussle among compute (per-core execution), communication
+(inter-core data exchange), and I/O (off-chip data access).
+  In this paper, we develop Elk, a DL compiler framework to maximize the
+efficiency of ICCA chips by jointly trading off all the three performance
+factors discussed above. Elk structures these performance factors into
+configurable parameters and forms a global trade-off space in the DL compiler.
+To systematically explore this space and maximize overall efficiency, Elk
+employs a new inductive operator scheduling policy and a cost-aware on-chip
+memory allocation algorithm. It generates globally optimized execution plans
+that best overlap off-chip data loading and on-chip execution. To examine the
+efficiency of Elk, we build a full-fledged emulator based on a real ICCA chip
+IPU-POD4, and an ICCA chip simulator for sensitivity analysis with different
+interconnect network topologies. Elk achieves 94% of the ideal roofline
+performance of ICCA chips on average, showing the benefits of supporting large
+DL models on ICCA chips. We also show Elk's capability of enabling architecture
+design space exploration for new ICCA chip development.",http://arxiv.org/pdf/2507.11506v1,,False
+D3FL: Data Distribution and Detrending for Robust Federated Learning in Non-linear Time-series Data,15/07/2025,"Harsha Varun Marisetty, Manik Gupta, Yogesh Simmhan","With advancements in computing and communication technologies, the Internet
+of Things (IoT) has seen significant growth. IoT devices typically collect data
+from various sensors, such as temperature, humidity, and energy meters. Much of
+this data is temporal in nature. Traditionally, data from IoT devices is
+centralized for analysis, but this approach introduces delays and increased
+communication costs. Federated learning (FL) has emerged as an effective
+alternative, allowing for model training across distributed devices without the
+need to centralize data. In many applications, such as smart home energy and
+environmental monitoring, the data collected by IoT devices across different
+locations can exhibit significant variation in trends and seasonal patterns.
+Accurately forecasting such non-stationary, non-linear time-series data is
+crucial for applications like energy consumption estimation and weather
+forecasting. However, these data variations can severely impact prediction
+accuracy. The key contributions of this paper are: (1) Investigating how
+non-linear, non-stationary time-series data distributions, like generalized
+extreme value (gen-extreme) and log norm distributions, affect FL performance.
+(2) Analyzing how different detrending techniques for non-linear time-series
+data influence the forecasting model's performance in a FL setup. We generated
+several synthetic time-series datasets using non-linear data distributions and
+trained an LSTM-based forecasting model using both centralized and FL
+approaches. Additionally, we evaluated the impact of detrending on real-world
+datasets with non-linear time-series data distributions. Our experimental
+results show that: (1) FL performs worse than centralized approaches when
+dealing with non-linear data distributions. (2) The use of appropriate
+detrending techniques improves FL performance, reducing loss across different
+data distributions.",http://arxiv.org/pdf/2507.11471v1,,False
+Data Augmentation in Time Series Forecasting through Inverted Framework,15/07/2025,"Hongming Tan, Ting Chen, Ruochong Jin, Wai Kin Chan","Currently, iTransformer is one of the most popular and effective models for
+multivariate time series (MTS) forecasting. Thanks to its inverted framework,
+iTransformer effectively captures multivariate correlation. However, the
+inverted framework still has some limitations. It diminishes temporal
+interdependency information, and introduces noise in cases of nonsignificant
+variable correlation. To address these limitations, we introduce a novel data
+augmentation method on inverted framework, called DAIF. Unlike previous data
+augmentation methods, DAIF stands out as the first real-time augmentation
+specifically designed for the inverted framework in MTS forecasting. We first
+define the structure of the inverted sequence-to-sequence framework, then
+propose two different DAIF strategies, Frequency Filtering and Cross-variation
+Patching to address the existing challenges of the inverted framework.
+Experiments across multiple datasets and inverted models have demonstrated the
+effectiveness of our DAIF.",http://arxiv.org/pdf/2507.11439v1,,False
+CogDDN: A Cognitive Demand-Driven Navigation with Decision Optimization and Dual-Process Thinking,15/07/2025,"Yuehao Huang, Liang Liu, Shuangming Lei, Yukai Ma, Hao Su, Jianbiao Mei, Pengxiang Zhao, Yaqing Gu, Yong Liu, Jiajun Lv","Mobile robots are increasingly required to navigate and interact within
+unknown and unstructured environments to meet human demands. Demand-driven
+navigation (DDN) enables robots to identify and locate objects based on
+implicit human intent, even when object locations are unknown. However,
+traditional data-driven DDN methods rely on pre-collected data for model
+training and decision-making, limiting their generalization capability in
+unseen scenarios. In this paper, we propose CogDDN, a VLM-based framework that
+emulates the human cognitive and learning mechanisms by integrating fast and
+slow thinking systems and selectively identifying key objects essential to
+fulfilling user demands. CogDDN identifies appropriate target objects by
+semantically aligning detected objects with the given instructions.
+Furthermore, it incorporates a dual-process decision-making module, comprising
+a Heuristic Process for rapid, efficient decisions and an Analytic Process that
+analyzes past errors, accumulates them in a knowledge base, and continuously
+improves performance. Chain of Thought (CoT) reasoning strengthens the
+decision-making process. Extensive closed-loop evaluations on the AI2Thor
+simulator with the ProcThor dataset show that CogDDN outperforms single-view
+camera-only methods by 15%, demonstrating significant improvements in
+navigation accuracy and adaptability. The project page is available at
+https://yuehaohuang.github.io/CogDDN/.",http://arxiv.org/pdf/2507.11334v1,,False
+Generative Click-through Rate Prediction with Applications to Search Advertising,15/07/2025,"Lingwei Kong, Lu Wang, Changping Peng, Zhangang Lin, Ching Law, Jingping Shao","Click-Through Rate (CTR) prediction models are integral to a myriad of
+industrial settings, such as personalized search advertising. Current methods
+typically involve feature extraction from users' historical behavior sequences
+combined with product information, feeding into a discriminative model that is
+trained on user feedback to estimate CTR. With the success of models such as
+GPT, the potential for generative models to enrich expressive power beyond
+discriminative models has become apparent. In light of this, we introduce a
+novel model that leverages generative models to enhance the precision of CTR
+predictions in discriminative models. To reconcile the disparate data
+aggregation needs of both model types, we design a two-stage training process:
+1) Generative pre-training for next-item prediction with the given item
+category in user behavior sequences; 2) Fine-tuning the well-trained generative
+model within a discriminative CTR prediction framework. Our method's efficacy
+is substantiated through extensive experiments on a new dataset, and its
+significant utility is further corroborated by online A/B testing results.
+Currently, the model is deployed on one of the world's largest e-commerce
+platforms, and we intend to release the associated code and dataset in the
+future.",http://arxiv.org/pdf/2507.11246v1,,False
+Role-Playing LLM-Based Multi-Agent Support Framework for Detecting and Addressing Family Communication Bias,15/07/2025,"Rushia Harada, Yuken Kimura, Keito Inoshita","Well-being in family settings involves subtle psychological dynamics that
+conventional metrics often overlook. In particular, unconscious parental
+expectations, termed ideal parent bias, can suppress children's emotional
+expression and autonomy. This suppression, referred to as suppressed emotion,
+often stems from well-meaning but value-driven communication, which is
+difficult to detect or address from outside the family. Focusing on these
+latent dynamics, this study explores Large Language Model (LLM)-based support
+for psychologically safe family communication. We constructed a Japanese
+parent-child dialogue corpus of 30 scenarios, each annotated with metadata on
+ideal parent bias and suppressed emotion. Based on this corpus, we developed a
+Role-Playing LLM-based multi-agent dialogue support framework that analyzes
+dialogue and generates feedback. Specialized agents detect suppressed emotion,
+describe implicit ideal parent bias in parental speech, and infer contextual
+attributes such as the child's age and background. A meta-agent compiles these
+outputs into a structured report, which is then passed to five selected expert
+agents. These agents collaboratively generate empathetic and actionable
+feedback through a structured four-step discussion process. Experiments show
+that the system can detect categories of suppressed emotion with moderate
+accuracy and produce feedback rated highly in empathy and practicality.
+Moreover, simulated follow-up dialogues incorporating this feedback exhibited
+signs of improved emotional expression and mutual understanding, suggesting the
+framework's potential in supporting positive transformation in family
+interactions.",http://arxiv.org/pdf/2507.11210v1,,False
+Recent Advances in Simulation-based Inference for Gravitational Wave Data Analysis,15/07/2025,"Bo Liang, He Wang","The detection of gravitational waves by the LIGO-Virgo-KAGRA collaboration
+has ushered in a new era of observational astronomy, emphasizing the need for
+rapid and detailed parameter estimation and population-level analyses.
+Traditional Bayesian inference methods, particularly Markov chain Monte Carlo,
+face significant computational challenges when dealing with the
+high-dimensional parameter spaces and complex noise characteristics inherent in
+gravitational wave data. This review examines the emerging role of
+simulation-based inference methods in gravitational wave astronomy, with a
+focus on approaches that leverage machine-learning techniques such as
+normalizing flows and neural posterior estimation. We provide a comprehensive
+overview of the theoretical foundations underlying various simulation-based
+inference methods, including neural posterior estimation, neural ratio
+estimation, neural likelihood estimation, flow matching, and consistency
+models. We explore the applications of these methods across diverse
+gravitational wave data processing scenarios, from single-source parameter
+estimation and overlapping signal analysis to testing general relativity and
+conducting population studies. Although these techniques demonstrate speed
+improvements over traditional methods in controlled studies, their
+model-dependent nature and sensitivity to prior assumptions are barriers to
+their widespread adoption. Their accuracy, which is similar to that of
+conventional methods, requires further validation across broader parameter
+spaces and noise conditions.",http://arxiv.org/pdf/2507.11192v1,10.61977/ati2025020,False
+Standards-Compliant DM-RS Allocation via Temporal Channel Prediction for Massive MIMO Systems,15/07/2025,"Sehyun Ryu, Hyun Jong Yang","Reducing feedback overhead in beyond 5G networks is a critical challenge, as
+the growing number of antennas in modern massive MIMO systems substantially
+increases the channel state information (CSI) feedback demand in frequency
+division duplex (FDD) systems. To address this, extensive research has focused
+on CSI compression and prediction, with neural network-based approaches gaining
+momentum and being considered for integration into the 3GPP 5G-Advanced
+standards. While deep learning has been effectively applied to CSI-limited
+beamforming and handover optimization, reference signal allocation under such
+constraints remains surprisingly underexplored. To fill this gap, we introduce
+the concept of channel prediction-based reference signal allocation (CPRS),
+which jointly optimizes channel prediction and DM-RS allocation to improve data
+throughput without requiring CSI feedback. We further propose a
+standards-compliant ViViT/CNN-based architecture that implements CPRS by
+treating evolving CSI matrices as sequential image-like data, enabling
+efficient and adaptive transmission in dynamic environments. Simulation results
+using ray-tracing channel data generated in NVIDIA Sionna validate the proposed
+method, showing up to 36.60% throughput improvement over benchmark strategies.",http://arxiv.org/pdf/2507.11064v1,,False
+Personalized Exercise Recommendation with Semantically-Grounded Knowledge Tracing,15/07/2025,"Yilmazcan Ozyurt, Tunaberk Almaci, Stefan Feuerriegel, Mrinmaya Sachan","We introduce ExRec, a general framework for personalized exercise
+recommendation with semantically-grounded knowledge tracing. Our method builds
+on the observation that existing exercise recommendation approaches simulate
+student performance via knowledge tracing (KT) but they often overlook two key
+aspects: (a) the semantic content of questions and (b) the sequential,
+structured progression of student learning. To address this, our ExRec presents
+an end-to-end pipeline, from annotating the KCs of questions and learning their
+semantic representations to training KT models and optimizing several
+reinforcement learning (RL) methods. Moreover, we improve standard
+Q-learning-based continuous RL methods via a tailored model-based value
+estimation (MVE) approach that directly leverages the components of KT model in
+estimating cumulative knowledge improvement. We validate the effectiveness of
+our ExRec using various RL methods across four real-world tasks with different
+educational goals in online math learning. We further show that ExRec
+generalizes robustly to new, unseen questions and that it produces
+interpretable student learning trajectories. Together, our findings highlight
+the promise of KT-guided RL for effective personalization in education.",http://arxiv.org/pdf/2507.11060v1,,False
+Diffusion Decoding for Peptide De Novo Sequencing,15/07/2025,"Chi-en Amy Tai, Alexander Wong","Peptide de novo sequencing is a method used to reconstruct amino acid
+sequences from tandem mass spectrometry data without relying on existing
+protein sequence databases. Traditional deep learning approaches, such as
+Casanovo, mainly utilize autoregressive decoders and predict amino acids
+sequentially. Subsequently, they encounter cascading errors and fail to
+leverage high-confidence regions effectively. To address these issues, this
+paper investigates using diffusion decoders adapted for the discrete data
+domain. These decoders provide a different approach, allowing sequence
+generation to start from any peptide segment, thereby enhancing prediction
+accuracy. We experiment with three different diffusion decoder designs,
+knapsack beam search, and various loss functions. We find knapsack beam search
+did not improve performance metrics and simply replacing the transformer
+decoder with a diffusion decoder lowered performance. Although peptide
+precision and recall were still 0, the best diffusion decoder design with the
+DINOISER loss function obtained a statistically significant improvement in
+amino acid recall by 0.373 compared to the baseline autoregressive
+decoder-based Casanovo model. These findings highlight the potential of
+diffusion decoders to not only enhance model sensitivity but also drive
+significant advancements in peptide de novo sequencing.",http://arxiv.org/pdf/2507.10955v1,,False
+Enhancing Safe and Controllable Protein Generation via Knowledge Preference Optimization,15/07/2025,"Yuhao Wang, Keyan Ding, Kehua Feng, Zeyuan Wang, Ming Qin, Xiaotong Li, Qiang Zhang, Huajun Chen","Protein language models have emerged as powerful tools for sequence
+generation, offering substantial advantages in functional optimization and
+denovo design. However, these models also present significant risks of
+generating harmful protein sequences, such as those that enhance viral
+transmissibility or evade immune responses. These concerns underscore critical
+biosafety and ethical challenges. To address these issues, we propose a
+Knowledge-guided Preference Optimization (KPO) framework that integrates prior
+knowledge via a Protein Safety Knowledge Graph. This framework utilizes an
+efficient graph pruning strategy to identify preferred sequences and employs
+reinforcement learning to minimize the risk of generating harmful proteins.
+Experimental results demonstrate that KPO effectively reduces the likelihood of
+producing hazardous sequences while maintaining high functionality, offering a
+robust safety assurance framework for applying generative models in
+biotechnology.",http://arxiv.org/pdf/2507.10923v1,,False
+Lessons Learned from Evaluation of LLM based Multi-agents in Safer Therapy Recommendation,15/07/2025,"Yicong Wu, Ting Chen, Irit Hochberg, Zhoujian Sun, Ruth Edry, Zhengxing Huang, Mor Peleg","Therapy recommendation for chronic patients with multimorbidity is
+challenging due to risks of treatment conflicts. Existing decision support
+systems face scalability limitations. Inspired by the way in which general
+practitioners (GP) manage multimorbidity patients, occasionally convening
+multidisciplinary team (MDT) collaboration, this study investigated the
+feasibility and value of using a Large Language Model (LLM)-based multi-agent
+system (MAS) for safer therapy recommendations. We designed a single agent and
+a MAS framework simulating MDT decision-making by enabling discussion among LLM
+agents to resolve medical conflicts. The systems were evaluated on therapy
+planning tasks for multimorbidity patients using benchmark cases. We compared
+MAS performance with single-agent approaches and real-world benchmarks. An
+important contribution of our study is the definition of evaluation metrics
+that go beyond the technical precision and recall and allow the inspection of
+clinical goals met and medication burden of the proposed advices to a gold
+standard benchmark. Our results show that with current LLMs, a single agent GP
+performs as well as MDTs. The best-scoring models provide correct
+recommendations that address all clinical goals, yet the advices are
+incomplete. Some models also present unnecessary medications, resulting in
+unnecessary conflicts between medication and conditions or drug-drug
+interactions.",http://arxiv.org/pdf/2507.10911v1,,False
+Commuting Distance Regularization for Timescale-Dependent Label Inconsistency in EEG Emotion Recognition,15/07/2025,"Xiaocong Zeng, Craig Michoski, Yan Pang, Dongyang Kuang","In this work, we address the often-overlooked issue of Timescale Dependent
+Label Inconsistency (TsDLI) in training neural network models for EEG-based
+human emotion recognition. To mitigate TsDLI and enhance model generalization
+and explainability, we propose two novel regularization strategies: Local
+Variation Loss (LVL) and Local-Global Consistency Loss (LGCL). Both methods
+incorporate classical mathematical principles--specifically, functions of
+bounded variation and commute-time distances--within a graph theoretic
+framework. Complementing our regularizers, we introduce a suite of new
+evaluation metrics that better capture the alignment between temporally local
+predictions and their associated global emotion labels. We validate our
+approach through comprehensive experiments on two widely used EEG emotion
+datasets, DREAMER and DEAP, across a range of neural architectures including
+LSTM and transformer-based models. Performance is assessed using five distinct
+metrics encompassing both quantitative accuracy and qualitative consistency.
+Results consistently show that our proposed methods outperform state-of-the-art
+baselines, delivering superior aggregate performance and offering a principled
+trade-off between interpretability and predictive power under label
+inconsistency. Notably, LVL achieves the best aggregate rank across all
+benchmarked backbones and metrics, while LGCL frequently ranks the second,
+highlighting the effectiveness of our framework.",http://arxiv.org/pdf/2507.10895v1,,False
+Learning from Imperfect Data: Robust Inference of Dynamic Systems using Simulation-based Generative Model,15/07/2025,"Hyunwoo Cho, Hyeontae Jo, Hyung Ju Hwang","System inference for nonlinear dynamic models, represented by ordinary
+differential equations (ODEs), remains a significant challenge in many fields,
+particularly when the data are noisy, sparse, or partially observable. In this
+paper, we propose a Simulation-based Generative Model for Imperfect Data
+(SiGMoID) that enables precise and robust inference for dynamic systems. The
+proposed approach integrates two key methods: (1) physics-informed neural
+networks with hyper-networks that constructs an ODE solver, and (2) Wasserstein
+generative adversarial networks that estimates ODE parameters by effectively
+capturing noisy data distributions. We demonstrate that SiGMoID quantifies data
+noise, estimates system parameters, and infers unobserved system components.
+Its effectiveness is validated validated through realistic experimental
+examples, showcasing its broad applicability in various domains, from
+scientific research to engineered systems, and enabling the discovery of full
+system dynamics.",http://arxiv.org/pdf/2507.10884v1,,False
+Domain-Adaptive Small Language Models for Structured Tax Code Prediction,15/07/2025,"Souvik Nath, Sumit Wadhwa, Luiz Perez","Every day, multinational firms process thousands of transactions, each of
+which must adhere to tax regulations that vary by jurisdiction and are often
+nuanced. The determination of product and service tax codes, such as HSN or SAC
+is a major use case in Tax compliance. An accurate determination of such codes
+is imperative to avoid any tax penalties. This paper proposes a domain-adaptive
+small language model (SLM) with an encoder-decoder architecture for the
+enhanced prediction of product and service tax codes. In this approach, we
+address the problem of predicting hierarchical tax code sequences using
+unstructured product and services data. We employ an SLM based upon
+encoder-decoder architecture as this enables sequential generation of tax codes
+to capture the hierarchical dependencies present within the tax codes. Our
+experiments demonstrate that encoder-decoder SLMs can be successfully applied
+to the sequential prediction of structured tax codes, a domain that remains
+comparatively unexplored in current NLP research. In this paper, we demonstrate
+the superior performance of the domain-adaptive encoder-decoder SLMs over flat
+classifiers when applied to the Harmonized System of Nomenclature (HSN), and
+achieve superior results compared to decoder-only and encoder-only
+architectures for structured sequence generation tasks. This approach can also
+be scaled to other government-mandated tax commodity codes, such as United
+Nations Standard Products and Services Codes (UNSPSC), or Brazil's Nomenclatura
+Comum do Mercosul (NCM).",http://arxiv.org/pdf/2507.10880v1,,False

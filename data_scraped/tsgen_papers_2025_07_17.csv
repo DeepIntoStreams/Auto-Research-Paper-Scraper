@@ -1,0 +1,166 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Mixture of Raytraced Experts,16/07/2025,"Andrea Perin, Giacomo Lagomarsini, Claudio Gallicchio, Giuseppe Nuti","We introduce a Mixture of Raytraced Experts, a stacked Mixture of Experts
+(MoE) architecture which can dynamically select sequences of experts, producing
+computational graphs of variable width and depth. Existing MoE architectures
+generally require a fixed amount of computation for a given sample. Our
+approach, in contrast, yields predictions with increasing accuracy as the
+computation cycles through the experts' sequence. We train our model by
+iteratively sampling from a set of candidate experts, unfolding the sequence
+akin to how Recurrent Neural Networks are trained. Our method does not require
+load-balancing mechanisms, and preliminary experiments show a reduction in
+training epochs of 10\% to 40\% with a comparable/higher accuracy. These
+results point to new research directions in the field of MoEs, allowing the
+design of potentially faster and more expressive models. The code is available
+at https://github.com/nutig/RayTracing",http://arxiv.org/pdf/2507.12419v1,,False
+"Compositional Discrete Latent Code for High Fidelity, Productive Diffusion Models",16/07/2025,"Samuel Lavoie, Michael Noukhovitch, Aaron Courville","We argue that diffusion models' success in modeling complex distributions is,
+for the most part, coming from their input conditioning. This paper
+investigates the representation used to condition diffusion models from the
+perspective that ideal representations should improve sample fidelity, be easy
+to generate, and be compositional to allow out-of-training samples generation.
+We introduce Discrete Latent Code (DLC), an image representation derived from
+Simplicial Embeddings trained with a self-supervised learning objective. DLCs
+are sequences of discrete tokens, as opposed to the standard continuous image
+embeddings. They are easy to generate and their compositionality enables
+sampling of novel images beyond the training distribution. Diffusion models
+trained with DLCs have improved generation fidelity, establishing a new
+state-of-the-art for unconditional image generation on ImageNet. Additionally,
+we show that composing DLCs allows the image generator to produce
+out-of-distribution samples that coherently combine the semantics of images in
+diverse ways. Finally, we showcase how DLCs can enable text-to-image generation
+by leveraging large-scale pretrained language models. We efficiently finetune a
+text diffusion language model to generate DLCs that produce novel samples
+outside of the image generator training distribution.",http://arxiv.org/pdf/2507.12318v1,,False
+PROL : Rehearsal Free Continual Learning in Streaming Data via Prompt Online Learning,16/07/2025,"M. Anwar Ma'sum, Mahardhika Pratama, Savitha Ramasamy, Lin Liu, Habibullah Habibullah, Ryszard Kowalczyk","The data privacy constraint in online continual learning (OCL), where the
+data can be seen only once, complicates the catastrophic forgetting problem in
+streaming data. A common approach applied by the current SOTAs in OCL is with
+the use of memory saving exemplars or features from previous classes to be
+replayed in the current task. On the other hand, the prompt-based approach
+performs excellently in continual learning but with the cost of a growing
+number of trainable parameters. The first approach may not be applicable in
+practice due to data openness policy, while the second approach has the issue
+of throughput associated with the streaming data. In this study, we propose a
+novel prompt-based method for online continual learning that includes 4 main
+components: (1) single light-weight prompt generator as a general knowledge,
+(2) trainable scaler-and-shifter as specific knowledge, (3) pre-trained model
+(PTM) generalization preserving, and (4) hard-soft updates mechanism. Our
+proposed method achieves significantly higher performance than the current
+SOTAs in CIFAR100, ImageNet-R, ImageNet-A, and CUB dataset. Our complexity
+analysis shows that our method requires a relatively smaller number of
+parameters and achieves moderate training time, inference time, and throughput.
+For further study, the source code of our method is available at
+https://github.com/anwarmaxsum/PROL.",http://arxiv.org/pdf/2507.12305v1,,False
+Fast Variational Bayes for Large Spatial Data,16/07/2025,"Jiafang Song, Abhirup Datta","Recent variational Bayes methods for geospatial regression, proposed as an
+alternative to computationally expensive Markov chain Monte Carlo (MCMC)
+sampling, have leveraged Nearest Neighbor Gaussian processes (NNGP) to achieve
+scalability. Yet, these variational methods remain inferior in accuracy and
+speed compared to spNNGP, the state-of-the-art MCMC-based software for NNGP. We
+introduce spVarBayes, a suite of fast variational Bayesian approaches for
+large-scale geospatial data analysis using NNGP. Our contributions are
+primarily computational. We replace auto-differentiation with a combination of
+calculus of variations, closed-form gradient updates, and linear response
+corrections for improved variance estimation. We also accommodate covariates
+(fixed effects) in the model and offer inference on the variance parameters.
+Simulation experiments demonstrate that we achieve comparable accuracy to
+spNNGP but with reduced computational costs, and considerably outperform
+existing variational inference methods in terms of both accuracy and speed.
+Analysis of a large forest canopy height dataset illustrates the practical
+implementation of proposed methods and shows that the inference results are
+consistent with those obtained from the MCMC approach. The proposed methods are
+implemented in publicly available Github R-package spVarBayes.",http://arxiv.org/pdf/2507.12251v1,,False
+HyDRA: A Hybrid Dual-Mode Network for Closed- and Open-Set RFFI with Optimized VMD,16/07/2025,"Hanwen Liu, Yuhe Huang, Yifeng Gong, Yanjie Zhai, Jiaxuan Lu","Device recognition is vital for security in wireless communication systems,
+particularly for applications like access control. Radio Frequency Fingerprint
+Identification (RFFI) offers a non-cryptographic solution by exploiting
+hardware-induced signal distortions. This paper proposes HyDRA, a Hybrid
+Dual-mode RF Architecture that integrates an optimized Variational Mode
+Decomposition (VMD) with a novel architecture based on the fusion of
+Convolutional Neural Networks (CNNs), Transformers, and Mamba components,
+designed to support both closed-set and open-set classification tasks. The
+optimized VMD enhances preprocessing efficiency and classification accuracy by
+fixing center frequencies and using closed-form solutions. HyDRA employs the
+Transformer Dynamic Sequence Encoder (TDSE) for global dependency modeling and
+the Mamba Linear Flow Encoder (MLFE) for linear-complexity processing, adapting
+to varying conditions. Evaluation on public datasets demonstrates
+state-of-the-art (SOTA) accuracy in closed-set scenarios and robust performance
+in our proposed open-set classification method, effectively identifying
+unauthorized devices. Deployed on NVIDIA Jetson Xavier NX, HyDRA achieves
+millisecond-level inference speed with low power consumption, providing a
+practical solution for real-time wireless authentication in real-world
+environments.",http://arxiv.org/pdf/2507.12133v1,,False
+Quantum Machine Learning in Multi-Qubit Phase-Space Part I: Foundations,16/07/2025,"Timothy Heightman, Edward Jiang, Ruth Mora-Soto, Maciej Lewenstein, Marcin Płodzień","Quantum machine learning (QML) seeks to exploit the intrinsic properties of
+quantum mechanical systems, including superposition, coherence, and quantum
+entanglement for classical data processing. However, due to the exponential
+growth of the Hilbert space, QML faces practical limits in classical
+simulations with the state-vector representation of quantum system. On the
+other hand, phase-space methods offer an alternative by encoding quantum states
+as quasi-probability functions. Building on prior work in qubit phase-space and
+the Stratonovich-Weyl (SW) correspondence, we construct a closed, composable
+dynamical formalism for one- and many-qubit systems in phase-space. This
+formalism replaces the operator algebra of the Pauli group with function
+dynamics on symplectic manifolds, and recasts the curse of dimensionality in
+terms of harmonic support on a domain that scales linearly with the number of
+qubits. It opens a new route for QML based on variational modelling over
+phase-space.",http://arxiv.org/pdf/2507.12117v1,,False
+FloGAN: Scenario-Based Urban Mobility Flow Generation via Conditional GANs and Dynamic Region Decoupling,16/07/2025,"Seanglidet Yean, Jiazu Zhou, Bu-Sung Lee, Markus Schläpfer","The mobility patterns of people in cities evolve alongside changes in land
+use and population. This makes it crucial for urban planners to simulate and
+analyze human mobility patterns for purposes such as transportation
+optimization and sustainable urban development. Existing generative models
+borrowed from machine learning rely heavily on historical trajectories and
+often overlook evolving factors like changes in population density and land
+use. Mechanistic approaches incorporate population density and facility
+distribution but assume static scenarios, limiting their utility for future
+projections where historical data for calibration is unavailable. This study
+introduces a novel, data-driven approach for generating origin-destination
+mobility flows tailored to simulated urban scenarios. Our method leverages
+adaptive factors such as dynamic region sizes and land use archetypes, and it
+utilizes conditional generative adversarial networks (cGANs) to blend
+historical data with these adaptive parameters. The approach facilitates rapid
+mobility flow generation with adjustable spatial granularity based on regions
+of interest, without requiring extensive calibration data or complex behavior
+modeling. The promising performance of our approach is demonstrated by its
+application to mobile phone data from Singapore, and by its comparison with
+existing methods.",http://arxiv.org/pdf/2507.12053v1,,False
+Robust Planning for Autonomous Vehicles with Diffusion-Based Failure Samplers,16/07/2025,"Juanran Wang, Marc R. Schlichting, Mykel J. Kochenderfer","High-risk traffic zones such as intersections are a major cause of
+collisions. This study leverages deep generative models to enhance the safety
+of autonomous vehicles in an intersection context. We train a 1000-step
+denoising diffusion probabilistic model to generate collision-causing sensor
+noise sequences for an autonomous vehicle navigating a four-way intersection
+based on the current relative position and velocity of an intruder. Using the
+generative adversarial architecture, the 1000-step model is distilled into a
+single-step denoising diffusion model which demonstrates fast inference speed
+while maintaining similar sampling quality. We demonstrate one possible
+application of the single-step model in building a robust planner for the
+autonomous vehicle. The planner uses the single-step model to efficiently
+sample potential failure cases based on the currently measured traffic state to
+inform its decision-making. Through simulation experiments, the robust planner
+demonstrates significantly lower failure rate and delay rate compared with the
+baseline Intelligent Driver Model controller.",http://arxiv.org/pdf/2507.11991v1,,False
+Your LLM Knows the Future: Uncovering Its Multi-Token Prediction Potential,16/07/2025,"Mohammad Samragh, Arnav Kundu, David Harrison, Kumari Nishu, Devang Naik, Minsik Cho, Mehrdad Farajtabar","Autoregressive language models are constrained by their inherently sequential
+nature, generating one token at a time. This paradigm limits inference speed
+and parallelism, especially during later stages of generation when the
+direction and semantics of text are relatively certain. In this work, we
+propose a novel framework that leverages the inherent knowledge of vanilla
+autoregressive language models about future tokens, combining techniques to
+realize this potential and enable simultaneous prediction of multiple
+subsequent tokens. Our approach introduces several key innovations: (1) a
+masked-input formulation where multiple future tokens are jointly predicted
+from a common prefix; (2) a gated LoRA formulation that preserves the original
+LLM's functionality, while equipping it for multi-token prediction; (3) a
+lightweight, learnable sampler module that generates coherent sequences from
+the predicted future tokens; (4) a set of auxiliary training losses, including
+a consistency loss, to enhance the coherence and accuracy of jointly generated
+tokens; and (5) a speculative generation strategy that expands tokens
+quadratically in the future while maintaining high fidelity. Our method
+achieves significant speedups through supervised fine-tuning on pretrained
+models. For example, it generates code and math nearly 5x faster, and improves
+general chat and knowledge tasks by almost 2.5x. These gains come without any
+loss in quality.",http://arxiv.org/pdf/2507.11851v1,,False
+CosmoFlow: Scale-Aware Representation Learning for Cosmology with Flow Matching,16/07/2025,"Sidharth Kannan, Tian Qiu, Carolina Cuesta-Lazaro, Haewon Jeong","Generative machine learning models have been demonstrated to be able to learn
+low dimensional representations of data that preserve information required for
+downstream tasks. In this work, we demonstrate that flow matching based
+generative models can learn compact, semantically rich latent representations
+of field level cold dark matter (CDM) simulation data without supervision. Our
+model, CosmoFlow, learns representations 32x smaller than the raw field data,
+usable for field level reconstruction, synthetic data generation, and parameter
+inference. Our model also learns interpretable representations, in which
+different latent channels correspond to features at different cosmological
+scales.",http://arxiv.org/pdf/2507.11842v1,,False

@@ -1,0 +1,171 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+VITA: Vision-to-Action Flow Matching Policy,17/07/2025,"Dechen Gao, Boqi Zhao, Andrew Lee, Ian Chuang, Hanchu Zhou, Hang Wang, Zhe Zhao, Junshan Zhang, Iman Soltani","We present VITA, a Vision-To-Action flow matching policy that evolves latent
+visual representations into latent actions for visuomotor control. Traditional
+flow matching and diffusion policies sample from standard source distributions
+(e.g., Gaussian noise) and require additional conditioning mechanisms like
+cross-attention to condition action generation on visual information, creating
+time and space overheads. VITA proposes a novel paradigm that treats latent
+images as the flow source, learning an inherent mapping from vision to action
+while eliminating separate conditioning modules and preserving generative
+modeling capabilities. Learning flows between fundamentally different
+modalities like vision and action is challenging due to sparse action data
+lacking semantic structures and dimensional mismatches between high-dimensional
+visual representations and raw actions. We address this by creating a
+structured action latent space via an autoencoder as the flow matching target,
+up-sampling raw actions to match visual representation shapes. Crucially, we
+supervise flow matching with both encoder targets and final action outputs
+through flow latent decoding, which backpropagates action reconstruction loss
+through sequential flow matching ODE solving steps for effective end-to-end
+learning. Implemented as simple MLP layers, VITA is evaluated on challenging
+bi-manual manipulation tasks on the ALOHA platform, including 5 simulation and
+2 real-world tasks. Despite its simplicity, MLP-only VITA outperforms or
+matches state-of-the-art generative policies while reducing inference latency
+by 50-130% compared to conventional flow matching policies requiring different
+conditioning mechanisms or complex architectures. To our knowledge, VITA is the
+first MLP-only flow matching policy capable of solving complex bi-manual
+manipulation tasks like those in ALOHA benchmarks.",http://arxiv.org/pdf/2507.13231v1,,False
+MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling,17/07/2025,"Etienne Le Naour, Tahar Nabil, Ghislain Agoua","Recent years have witnessed a growing interest for time series foundation
+models, with a strong emphasis on the forecasting task. Yet, the crucial task
+of out-of-domain imputation of missing values remains largely underexplored. We
+propose a first step to fill this gap by leveraging implicit neural
+representations (INRs). INRs model time series as continuous functions and
+naturally handle various missing data scenarios and sampling rates. While they
+have shown strong performance within specific distributions, they struggle
+under distribution shifts. To address this, we introduce MoTM (Mixture of
+Timeflow Models), a step toward a foundation model for time series imputation.
+Building on the idea that a new time series is a mixture of previously seen
+patterns, MoTM combines a basis of INRs, each trained independently on a
+distinct family of time series, with a ridge regressor that adapts to the
+observed context at inference. We demonstrate robust in-domain and
+out-of-domain generalization across diverse imputation scenarios (e.g., block
+and pointwise missingness, variable sampling rates), paving the way for
+adaptable foundation imputation models.",http://arxiv.org/pdf/2507.13207v1,,False
+GraspGen: A Diffusion-based Framework for 6-DOF Grasping with On-Generator Training,17/07/2025,"Adithyavairavan Murali, Balakumar Sundaralingam, Yu-Wei Chao, Wentao Yuan, Jun Yamada, Mark Carlson, Fabio Ramos, Stan Birchfield, Dieter Fox, Clemens Eppner","Grasping is a fundamental robot skill, yet despite significant research
+advancements, learning-based 6-DOF grasping approaches are still not turnkey
+and struggle to generalize across different embodiments and in-the-wild
+settings. We build upon the recent success on modeling the object-centric grasp
+generation process as an iterative diffusion process. Our proposed framework,
+GraspGen, consists of a DiffusionTransformer architecture that enhances grasp
+generation, paired with an efficient discriminator to score and filter sampled
+grasps. We introduce a novel and performant on-generator training recipe for
+the discriminator. To scale GraspGen to both objects and grippers, we release a
+new simulated dataset consisting of over 53 million grasps. We demonstrate that
+GraspGen outperforms prior methods in simulations with singulated objects
+across different grippers, achieves state-of-the-art performance on the
+FetchBench grasping benchmark, and performs well on a real robot with noisy
+visual observations.",http://arxiv.org/pdf/2507.13097v1,,False
+The Power of Architecture: Deep Dive into Transformer Architectures for Long-Term Time Series Forecasting,17/07/2025,"Lefei Shen, Mouxiang Chen, Han Fu, Xiaoxue Ren, Xiaoyun Joy Wang, Jianling Sun, Zhuo Li, Chenghao Liu","Transformer-based models have recently become dominant in Long-term Time
+Series Forecasting (LTSF), yet the variations in their architecture, such as
+encoder-only, encoder-decoder, and decoder-only designs, raise a crucial
+question: What Transformer architecture works best for LTSF tasks? However,
+existing models are often tightly coupled with various time-series-specific
+designs, making it difficult to isolate the impact of the architecture itself.
+To address this, we propose a novel taxonomy that disentangles these designs,
+enabling clearer and more unified comparisons of Transformer architectures. Our
+taxonomy considers key aspects such as attention mechanisms, forecasting
+aggregations, forecasting paradigms, and normalization layers. Through
+extensive experiments, we uncover several key insights: bi-directional
+attention with joint-attention is most effective; more complete forecasting
+aggregation improves performance; and the direct-mapping paradigm outperforms
+autoregressive approaches. Furthermore, our combined model, utilizing optimal
+architectural choices, consistently outperforms several existing models,
+reinforcing the validity of our conclusions. We hope these findings offer
+valuable guidance for future research on Transformer architectural designs in
+LTSF. Our code is available at https://github.com/HALF111/TSF_architecture.",http://arxiv.org/pdf/2507.13043v1,,False
+Fault detection and diagnosis for the engine electrical system of a space launcher based on a temporal convolutional autoencoder and calibrated classifiers,17/07/2025,"Luis Basora, Louison Bocquet-Nouaille, Elinirina Robinson, Serge Le Gonidec","In the context of the health monitoring for the next generation of reusable
+space launchers, we outline a first step toward developing an onboard fault
+detection and diagnostic capability for the electrical system that controls the
+engine valves. Unlike existing approaches in the literature, our solution is
+designed to meet a broader range of key requirements. This includes estimating
+confidence levels for predictions, detecting out-of-distribution (OOD) cases,
+and controlling false alarms. The proposed solution is based on a temporal
+convolutional autoencoder to automatically extract low-dimensional features
+from raw sensor data. Fault detection and diagnosis are respectively carried
+out using a binary and a multiclass classifier trained on the autoencoder
+latent and residual spaces. The classifiers are histogram-based gradient
+boosting models calibrated to output probabilities that can be interpreted as
+confidence levels. A relatively simple technique, based on inductive conformal
+anomaly detection, is used to identify OOD data. We leverage other simple yet
+effective techniques, such as cumulative sum control chart (CUSUM) to limit the
+false alarms, and threshold moving to address class imbalance in fault
+detection. The proposed framework is highly configurable and has been evaluated
+on simulated data, covering both nominal and anomalous operational scenarios.
+The results indicate that our solution is a promising first step, though
+testing with real data will be necessary to ensure that it achieves the
+required maturity level for operational use.",http://arxiv.org/pdf/2507.13022v1,,False
+Trace Reconstruction with Language Models,17/07/2025,"Franziska Weindel, Michael Girsch, Reinhard Heckel","The general trace reconstruction problem seeks to recover an original
+sequence from its noisy copies independently corrupted by deletions,
+insertions, and substitutions. This problem arises in applications such as DNA
+data storage, a promising storage medium due to its high information density
+and longevity. However, errors introduced during DNA synthesis, storage, and
+sequencing require correction through algorithms and codes, with trace
+reconstruction often used as part of the data retrieval process. In this work,
+we propose TReconLM, which leverages language models trained on next-token
+prediction for trace reconstruction. We pretrain language models on synthetic
+data and fine-tune on real-world data to adapt to technology-specific error
+patterns. TReconLM outperforms state-of-the-art trace reconstruction
+algorithms, including prior deep learning approaches, recovering a
+substantially higher fraction of sequences without error.",http://arxiv.org/pdf/2507.12927v1,,False
+Bayesian Modeling and Estimation of Linear Time-Variant Systems using Neural Networks and Gaussian Processes,17/07/2025,Yaniv Shulman,"The identification of Linear Time-Variant (LTV) systems from input-output
+data is a fundamental yet challenging ill-posed inverse problem. This work
+introduces a unified Bayesian framework that models the system's impulse
+response, $h(t, \tau)$, as a stochastic process. We decompose the response into
+a posterior mean and a random fluctuation term, a formulation that provides a
+principled approach for quantifying uncertainty and naturally defines a new,
+useful system class we term Linear Time-Invariant in Expectation (LTIE). To
+perform inference, we leverage modern machine learning techniques, including
+Bayesian neural networks and Gaussian Processes, using scalable variational
+inference. We demonstrate through a series of experiments that our framework
+can robustly infer the properties of an LTI system from a single noisy
+observation, show superior data efficiency compared to classical methods in a
+simulated ambient noise tomography problem, and successfully track a
+continuously varying LTV impulse response by using a structured Gaussian
+Process prior. This work provides a flexible and robust methodology for
+uncertainty-aware system identification in dynamic environments.",http://arxiv.org/pdf/2507.12878v1,,False
+Generative Multi-Target Cross-Domain Recommendation,17/07/2025,"Jinqiu Jin, Yang Zhang, Junwei Pan, Fuli Feng, Hua Lu, Haijie Gu, Xiangnan He","Recently, there has been a surge of interest in Multi-Target Cross-Domain
+Recommendation (MTCDR), which aims to enhance recommendation performance across
+multiple domains simultaneously. Existing MTCDR methods primarily rely on
+domain-shared entities (\eg users or items) to fuse and transfer cross-domain
+knowledge, which may be unavailable in non-overlapped recommendation scenarios.
+Some studies model user preferences and item features as domain-sharable
+semantic representations, which can be utilized to tackle the MTCDR task.
+Nevertheless, they often require extensive auxiliary data for pre-training.
+Developing more effective solutions for MTCDR remains an important area for
+further exploration.
+  Inspired by recent advancements in generative recommendation, this paper
+introduces GMC, a generative paradigm-based approach for multi-target
+cross-domain recommendation. The core idea of GMC is to leverage semantically
+quantized discrete item identifiers as a medium for integrating multi-domain
+knowledge within a unified generative model. GMC first employs an item
+tokenizer to generate domain-shared semantic identifiers for each item, and
+then formulates item recommendation as a next-token generation task by training
+a domain-unified sequence-to-sequence model. To further leverage the domain
+information to enhance performance, we incorporate a domain-aware contrastive
+loss into the semantic identifier learning, and perform domain-specific
+fine-tuning on the unified recommender. Extensive experiments on five public
+datasets demonstrate the effectiveness of GMC compared to a range of baseline
+methods.",http://arxiv.org/pdf/2507.12871v1,,False
+Information-Theoretic Aggregation of Ethical Attributes in Simulated-Command,17/07/2025,"Hussein Abbass, Taylan Akay, Harrison Tolley","In the age of AI, human commanders need to use the computational powers
+available in today's environment to simulate a very large number of scenarios.
+Within each scenario, situations occur where different decision design options
+could have ethical consequences. Making these decisions reliant on human
+judgement is both counter-productive to the aim of exploring very large number
+of scenarios in a timely manner and infeasible when considering the workload
+needed to involve humans in each of these choices. In this paper, we move human
+judgement outside the simulation decision cycle. Basically, the human will
+design the ethical metric space, leaving it to the simulated environment to
+explore the space. When the simulation completes its testing cycles, the
+testing environment will come back to the human commander with a few options to
+select from. The human commander will then exercise human-judgement to select
+the most appropriate course of action, which will then get executed
+accordingly. We assume that the problem of designing metrics that are
+sufficiently granular to assess the ethical implications of decisions is
+solved. Subsequently, the fundamental problem we look at in this paper is how
+to weight ethical decisions during the running of these simulations; that is,
+how to dynamically weight the ethical attributes when agents are faced with
+decision options with ethical implications during generative simulations. The
+multi-criteria decision making literature has started to look at nearby
+problems, where the concept of entropy has been used to determine the weights
+during aggregation. We draw from that literature different approaches to
+automatically calculate the weights for ethical attributes during
+simulation-based testing and evaluation.",http://arxiv.org/pdf/2507.12862v1,,False

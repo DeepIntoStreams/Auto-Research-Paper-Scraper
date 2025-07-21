@@ -1,0 +1,273 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Generative AI-Driven High-Fidelity Human Motion Simulation,18/07/2025,"Hari Iyer, Neel Macwan, Atharva Jitendra Hude, Heejin Jeong, Shenghan Guo","Human motion simulation (HMS) supports cost-effective evaluation of worker
+behavior, safety, and productivity in industrial tasks. However, existing
+methods often suffer from low motion fidelity. This study introduces
+Generative-AI-Enabled HMS (G-AI-HMS), which integrates text-to-text and
+text-to-motion models to enhance simulation quality for physical tasks.
+G-AI-HMS tackles two key challenges: (1) translating task descriptions into
+motion-aware language using Large Language Models aligned with MotionGPT's
+training vocabulary, and (2) validating AI-enhanced motions against real human
+movements using computer vision. Posture estimation algorithms are applied to
+real-time videos to extract joint landmarks, and motion similarity metrics are
+used to compare them with AI-enhanced sequences. In a case study involving
+eight tasks, the AI-enhanced motions showed lower error than human created
+descriptions in most scenarios, performing better in six tasks based on spatial
+accuracy, four tasks based on alignment after pose normalization, and seven
+tasks based on overall temporal similarity. Statistical analysis showed that
+AI-enhanced prompts significantly (p $<$ 0.0001) reduced joint error and
+temporal misalignment while retaining comparable posture accuracy.",http://arxiv.org/pdf/2507.14097v1,,False
+DENSE: Longitudinal Progress Note Generation with Temporal Modeling of Heterogeneous Clinical Notes Across Hospital Visits,18/07/2025,"Garapati Keerthana, Manik Gupta","Progress notes are among the most clinically meaningful artifacts in an
+Electronic Health Record (EHR), offering temporally grounded insights into a
+patient's evolving condition, treatments, and care decisions. Despite their
+importance, they are severely underrepresented in large-scale EHR datasets. For
+instance, in the widely used Medical Information Mart for Intensive Care III
+(MIMIC-III) dataset, only about $8.56\%$ of hospital visits include progress
+notes, leaving gaps in longitudinal patient narratives. In contrast, the
+dataset contains a diverse array of other note types, each capturing different
+aspects of care.
+  We present DENSE (Documenting Evolving Progress Notes from Scattered
+Evidence), a system designed to align with clinical documentation workflows by
+simulating how physicians reference past encounters while drafting progress
+notes. The system introduces a fine-grained note categorization and a temporal
+alignment mechanism that organizes heterogeneous notes across visits into
+structured, chronological inputs. At its core, DENSE leverages a clinically
+informed retrieval strategy to identify temporally and semantically relevant
+content from both current and prior visits. This retrieved evidence is used to
+prompt a large language model (LLM) to generate clinically coherent and
+temporally aware progress notes.
+  We evaluate DENSE on a curated cohort of patients with multiple visits and
+complete progress note documentation. The generated notes demonstrate strong
+longitudinal fidelity, achieving a temporal alignment ratio of $1.089$,
+surpassing the continuity observed in original notes. By restoring narrative
+coherence across fragmented documentation, our system supports improved
+downstream tasks such as summarization, predictive modeling, and clinical
+decision support, offering a scalable solution for LLM-driven note synthesis in
+real-world healthcare settings.",http://arxiv.org/pdf/2507.14079v1,,False
+D2IP: Deep Dynamic Image Prior for 3D Time-sequence Pulmonary Impedance Imaging,18/07/2025,"Hao Fang, Hao Yu, Sihao Teng, Tao Zhang, Siyi Yuan, Huaiwu He, Zhe Liu, Yunjie Yang","Unsupervised learning methods, such as Deep Image Prior (DIP), have shown
+great potential in tomographic imaging due to their training-data-free nature
+and high generalization capability. However, their reliance on numerous network
+parameter iterations results in high computational costs, limiting their
+practical application, particularly in complex 3D or time-sequence tomographic
+imaging tasks. To overcome these challenges, we propose Deep Dynamic Image
+Prior (D2IP), a novel framework for 3D time-sequence imaging. D2IP introduces
+three key strategies - Unsupervised Parameter Warm-Start (UPWS), Temporal
+Parameter Propagation (TPP), and a customized lightweight reconstruction
+backbone, 3D-FastResUNet - to accelerate convergence, enforce temporal
+coherence, and improve computational efficiency. Experimental results on both
+simulated and clinical pulmonary datasets demonstrate that D2IP enables fast
+and accurate 3D time-sequence Electrical Impedance Tomography (tsEIT)
+reconstruction. Compared to state-of-the-art baselines, D2IP delivers superior
+image quality, with a 24.8% increase in average MSSIM and an 8.1% reduction in
+ERR, alongside significantly reduced computational time (7.1x faster),
+highlighting its promise for clinical dynamic pulmonary imaging.",http://arxiv.org/pdf/2507.14046v1,,False
+QuantEIT: Ultra-Lightweight Quantum-Assisted Inference for Chest Electrical Impedance Tomography,18/07/2025,"Hao Fang, Sihao Teng, Hao Yu, Siyi Yuan, Huaiwu He, Zhe Liu, Yunjie Yang","Electrical Impedance Tomography (EIT) is a non-invasive, low-cost bedside
+imaging modality with high temporal resolution, making it suitable for bedside
+monitoring. However, its inherently ill-posed inverse problem poses significant
+challenges for accurate image reconstruction. Deep learning (DL)-based
+approaches have shown promise but often rely on complex network architectures
+with a large number of parameters, limiting efficiency and scalability. Here,
+we propose an Ultra-Lightweight Quantum-Assisted Inference (QuantEIT) framework
+for EIT image reconstruction. QuantEIT leverages a Quantum-Assisted Network
+(QA-Net), combining parallel 2-qubit quantum circuits to generate expressive
+latent representations that serve as implicit nonlinear priors, followed by a
+single linear layer for conductivity reconstruction. This design drastically
+reduces model complexity and parameter number. Uniquely, QuantEIT operates in
+an unsupervised, training-data-free manner and represents the first integration
+of quantum circuits into EIT image reconstruction. Extensive experiments on
+simulated and real-world 2D and 3D EIT lung imaging data demonstrate that
+QuantEIT outperforms conventional methods, achieving comparable or superior
+reconstruction accuracy using only 0.2% of the parameters, with enhanced
+robustness to noise.",http://arxiv.org/pdf/2507.14031v1,,False
+Structural Connectome Harmonization Using Deep Learning: The Strength of Graph Neural Networks,18/07/2025,"Jagruti Patel, Thomas A. W. Bolton, Mikkel Schöttner, Anjali Tarun, Sebastien Tourbier, Yasser Alemàn-Gòmez, Jonas Richiardi, Patric Hagmann","Small sample sizes in neuroimaging in general, and in structural connectome
+(SC) studies in particular limit the development of reliable biomarkers for
+neurological and psychiatric disorders - such as Alzheimer's disease and
+schizophrenia - by reducing statistical power, reliability, and
+generalizability. Large-scale multi-site studies have exist, but they have
+acquisition-related biases due to scanner heterogeneity, compromising imaging
+consistency and downstream analyses. While existing SC harmonization methods -
+such as linear regression (LR), ComBat, and deep learning techniques - mitigate
+these biases, they often rely on detailed metadata, traveling subjects (TS), or
+overlook the graph-topology of SCs. To address these limitations, we propose a
+site-conditioned deep harmonization framework that harmonizes SCs across
+diverse acquisition sites without requiring metadata or TS that we test in a
+simulated scenario based on the Human Connectome Dataset. Within this
+framework, we benchmark three deep architectures - a fully connected
+autoencoder (AE), a convolutional AE, and a graph convolutional AE - against a
+top-performing LR baseline. While non-graph models excel in edge-weight
+prediction and edge existence detection, the graph AE demonstrates superior
+preservation of topological structure and subject-level individuality, as
+reflected by graph metrics and fingerprinting accuracy, respectively. Although
+the LR baseline achieves the highest numerical performance by explicitly
+modeling acquisition parameters, it lacks applicability to real-world
+multi-site use cases as detailed acquisition metadata is often unavailable. Our
+results highlight the critical role of model architecture in SC harmonization
+performance and demonstrate that graph-based approaches are particularly
+well-suited for structure-aware, domain-generalizable SC harmonization in
+large-scale multi-site SC studies.",http://arxiv.org/pdf/2507.13992v1,,False
+DUALRec: A Hybrid Sequential and Language Model Framework for Context-Aware Movie Recommendation,18/07/2025,"Yitong Li, Raoul Grasman","The modern recommender systems are facing an increasing challenge of
+modelling and predicting the dynamic and context-rich user preferences.
+Traditional collaborative filtering and content-based methods often struggle to
+capture the temporal patternings and evolving user intentions. While Large
+Language Models (LLMs) have gained gradual attention in recent years, by their
+strong semantic understanding and reasoning abilities, they are not inherently
+designed to model chronologically evolving user preference and intentions. On
+the other hand, for sequential models like LSTM (Long-Short-Term-Memory) which
+is good at capturing the temporal dynamics of user behaviour and evolving user
+preference over time, but still lacks a rich semantic understanding for
+comprehensive recommendation generation. In this study, we propose DUALRec
+(Dynamic User-Aware Language-based Recommender), a novel recommender that
+leverages the complementary strength of both models, which combines the
+temporal modelling abilities of LSTM networks with semantic reasoning power of
+the fine-tuned Large Language Models. The LSTM component will capture users
+evolving preference through their viewing history, while the fine-tuned LLM
+variants will leverage these temporal user insights to generate next movies
+that users might enjoy. Experimental results on MovieLens-1M dataset shows that
+the DUALRec model outperforms a wide range of baseline models, with
+comprehensive evaluation matrices of Hit Rate (HR@k), Normalized Discounted
+Cumulative Gain (NDCG@k), and genre similarity metrics. This research proposes
+a novel architecture that bridges the gap between temporal sequence modeling
+and semantic reasoning, and offers a promising direction for developing more
+intelligent and context-aware recommenders.",http://arxiv.org/pdf/2507.13957v1,,False
+MoDyGAN: Combining Molecular Dynamics With GANs to Investigate Protein Conformational Space,18/07/2025,"Jingbo Liang, Bruna Jacobson","Extensively exploring protein conformational landscapes remains a major
+challenge in computational biology due to the high computational cost involved
+in dynamic physics-based simulations. In this work, we propose a novel
+pipeline, MoDyGAN, that leverages molecular dynamics (MD) simulations and
+generative adversarial networks (GANs) to explore protein conformational
+spaces. MoDyGAN contains a generator that maps Gaussian distributions into
+MD-derived protein trajectories, and a refinement module that combines ensemble
+learning with a dual-discriminator to further improve the plausibility of
+generated conformations. Central to our approach is an innovative
+representation technique that reversibly transforms 3D protein structures into
+2D matrices, enabling the use of advanced image-based GAN architectures. We use
+three rigid proteins to demonstrate that MoDyGAN can generate plausible new
+conformations. We also use deca-alanine as a case study to show that
+interpolations within the latent space closely align with trajectories obtained
+from steered molecular dynamics (SMD) simulations. Our results suggest that
+representing proteins as image-like data unlocks new possibilities for applying
+advanced deep learning techniques to biomolecular simulation, leading to an
+efficient sampling of conformational states. Additionally, the proposed
+framework holds strong potential for extension to other complex 3D structures.",http://arxiv.org/pdf/2507.13950v1,,False
+Causal Knowledge Transfer for Multi-Agent Reinforcement Learning in Dynamic Environments,18/07/2025,"Kathrin Korte, Christian Medeiros Adriano, Sona Ghahremani, Holger Giese","[Context] Multi-agent reinforcement learning (MARL) has achieved notable
+success in environments where agents must learn coordinated behaviors. However,
+transferring knowledge across agents remains challenging in non-stationary
+environments with changing goals. [Problem] Traditional knowledge transfer
+methods in MARL struggle to generalize, and agents often require costly
+retraining to adapt. [Approach] This paper introduces a causal knowledge
+transfer framework that enables RL agents to learn and share compact causal
+representations of paths within a non-stationary environment. As the
+environment changes (new obstacles), agents' collisions require adaptive
+recovery strategies. We model each collision as a causal intervention
+instantiated as a sequence of recovery actions (a macro) whose effect
+corresponds to a causal knowledge of how to circumvent the obstacle while
+increasing the chances of achieving the agent's goal (maximizing cumulative
+reward). This recovery action macro is transferred online from a second agent
+and is applied in a zero-shot fashion, i.e., without retraining, just by
+querying a lookup model with local context information (collisions). [Results]
+Our findings reveal two key insights: (1) agents with heterogeneous goals were
+able to bridge about half of the gap between random exploration and a fully
+retrained policy when adapting to new environments, and (2) the impact of
+causal knowledge transfer depends on the interplay between environment
+complexity and agents' heterogeneous goals.",http://arxiv.org/pdf/2507.13846v1,,False
+On-the-Fly Fine-Tuning of Foundational Neural Network Potentials: A Bayesian Neural Network Approach,18/07/2025,"Tim Rensmeyer, Denis Kramer, Oliver Niggemann","Due to the computational complexity of evaluating interatomic forces from
+first principles, the creation of interatomic machine learning force fields has
+become a highly active field of research. However, the generation of training
+datasets of sufficient size and sample diversity itself comes with a
+computational burden that can make this approach impractical for modeling rare
+events or systems with a large configuration space. Fine-tuning foundation
+models that have been pre-trained on large-scale material or molecular
+databases offers a promising opportunity to reduce the amount of training data
+necessary to reach a desired level of accuracy. However, even if this approach
+requires less training data overall, creating a suitable training dataset can
+still be a very challenging problem, especially for systems with rare events
+and for end-users who don't have an extensive background in machine learning.
+In on-the-fly learning, the creation of a training dataset can be largely
+automated by using model uncertainty during the simulation to decide if the
+model is accurate enough or if a structure should be recalculated with
+classical methods and used to update the model. A key challenge for applying
+this form of active learning to the fine-tuning of foundation models is how to
+assess the uncertainty of those models during the fine-tuning process, even
+though most foundation models lack any form of uncertainty quantification. In
+this paper, we overcome this challenge by introducing a fine-tuning approach
+based on Bayesian neural network methods and a subsequent on-the-fly workflow
+that automatically fine-tunes the model while maintaining a pre-specified
+accuracy and can detect rare events such as transition states and sample them
+at an increased rate relative to their occurrence.",http://arxiv.org/pdf/2507.13805v1,,False
+CogniQ-H: A Soft Hierarchical Reinforcement Learning Paradigm for Automated Data Preparation,18/07/2025,"Jing Chang, Chang Liu, Jinbin Huang, Rui Mao, Jianbin Qin","Data preparation is a foundational yet notoriously challenging component of
+the machine learning lifecycle, characterized by a vast combinatorial search
+space of potential operator sequences. While reinforcement learning (RL) offers
+a promising direction, existing approaches are inefficient as they fail to
+capture the structured, hierarchical nature of the problem. We argue that
+Hierarchical Reinforcement Learning (HRL), a paradigm that has been successful
+in other domains, provides a conceptually ideal yet previously unexplored
+framework for this task. However, a naive HRL implementation with a `hard
+hierarchy' is prone to suboptimal, irreversible decisions. To address this, we
+introduce CogniQ-H, the first framework to implement a soft hierarchical
+paradigm for robust, end-to-end automated data preparation. CogniQ-H formulates
+action selection as a Bayesian inference problem. A high-level strategic prior,
+generated by a Large Language Model (LLM), guides exploration
+probabilistically. This prior is synergistically combined with a fine-grained
+operator quality score from a supervised Learning-to-Rank (LTR) model and a
+long-term value estimate from the agent's own Q-function. This hybrid
+architecture allows CogniQ-H to balance strategic guidance with adaptive,
+evidence-based decision-making. Through extensive experiments on 18 diverse
+datasets spanning multiple domains, we demonstrate that CogniQ-H achieves up to
+13.9\% improvement in pipeline quality and 2.8$\times$ faster convergence
+compared to state-of-the-art RL-based methods.",http://arxiv.org/pdf/2507.13710v1,,False
+When Person Re-Identification Meets Event Camera: A Benchmark Dataset and An Attribute-guided Re-Identification Framework,18/07/2025,"Xiao Wang, Qian Zhu, Shujuan Wu, Bo Jiang, Shiliang Zhang, Yaowei Wang, Yonghong Tian, Bin Luo","Recent researchers have proposed using event cameras for person
+re-identification (ReID) due to their promising performance and better balance
+in terms of privacy protection, event camera-based person ReID has attracted
+significant attention. Currently, mainstream event-based person ReID algorithms
+primarily focus on fusing visible light and event stream, as well as preserving
+privacy. Although significant progress has been made, these methods are
+typically trained and evaluated on small-scale or simulated event camera
+datasets, making it difficult to assess their real identification performance
+and generalization ability. To address the issue of data scarcity, this paper
+introduces a large-scale RGB-event based person ReID dataset, called EvReID.
+The dataset contains 118,988 image pairs and covers 1200 pedestrian identities,
+with data collected across multiple seasons, scenes, and lighting conditions.
+We also evaluate 15 state-of-the-art person ReID algorithms, laying a solid
+foundation for future research in terms of both data and benchmarking. Based on
+our newly constructed dataset, this paper further proposes a pedestrian
+attribute-guided contrastive learning framework to enhance feature learning for
+person re-identification, termed TriPro-ReID. This framework not only
+effectively explores the visual features from both RGB frames and event
+streams, but also fully utilizes pedestrian attributes as mid-level semantic
+features. Extensive experiments on the EvReID dataset and MARS datasets fully
+validated the effectiveness of our proposed RGB-Event person ReID framework.
+The benchmark dataset and source code will be released on
+https://github.com/Event-AHU/Neuromorphic_ReID",http://arxiv.org/pdf/2507.13659v1,,False
+Improved particle swarm optimization algorithm: multi-target trajectory optimization for swarm drones,18/07/2025,"Minze Li, Wei Zhao, Ran Chen, Mingqiang Wei","Real-time trajectory planning for unmanned aerial vehicles (UAVs) in dynamic
+environments remains a key challenge due to high computational demands and the
+need for fast, adaptive responses. Traditional Particle Swarm Optimization
+(PSO) methods, while effective for offline planning, often struggle with
+premature convergence and latency in real-time scenarios. To overcome these
+limitations, we propose PE-PSO, an enhanced PSO-based online trajectory
+planner. The method introduces a persistent exploration mechanism to preserve
+swarm diversity and an entropy-based parameter adjustment strategy to
+dynamically adapt optimization behavior. UAV trajectories are modeled using
+B-spline curves, which ensure path smoothness while reducing optimization
+complexity. To extend this capability to UAV swarms, we develop a multi-agent
+framework that combines genetic algorithm (GA)-based task allocation with
+distributed PE-PSO, supporting scalable and coordinated trajectory generation.
+The distributed architecture allows for parallel computation and decentralized
+control, enabling effective cooperation among agents while maintaining
+real-time performance. Comprehensive simulations demonstrate that the proposed
+framework outperforms conventional PSO and other swarm-based planners across
+several metrics, including trajectory quality, energy efficiency, obstacle
+avoidance, and computation time. These results confirm the effectiveness and
+applicability of PE-PSO in real-time multi-UAV operations under complex
+environmental conditions.",http://arxiv.org/pdf/2507.13647v1,,False
+A Comprehensive Review of Transformer-based language models for Protein Sequence Analysis and Design,18/07/2025,"Nimisha Ghosh, Daniele Santoni, Debaleena Nawn, Eleonora Ottaviani, Giovanni Felici","The impact of Transformer-based language models has been unprecedented in
+Natural Language Processing (NLP). The success of such models has also led to
+their adoption in other fields including bioinformatics. Taking this into
+account, this paper discusses recent advances in Transformer-based models for
+protein sequence analysis and design. In this review, we have discussed and
+analysed a significant number of works pertaining to such applications. These
+applications encompass gene ontology, functional and structural protein
+identification, generation of de novo proteins and binding of proteins. We
+attempt to shed light on the strength and weaknesses of the discussed works to
+provide a comprehensive insight to readers. Finally, we highlight shortcomings
+in existing research and explore potential avenues for future developments. We
+believe that this review will help researchers working in this field to have an
+overall idea of the state of the art in this field, and to orient their future
+studies.",http://arxiv.org/pdf/2507.13646v1,,False

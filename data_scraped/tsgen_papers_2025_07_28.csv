@@ -1,0 +1,233 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Integrating LLM in Agent-Based Social Simulation: Opportunities and Challenges,25/07/2025,"Patrick Taillandier, Jean Daniel Zucker, Arnaud Grignard, Benoit Gaudou, Nghi Quang Huynh, Alexis Drogoul","This position paper examines the use of Large Language Models (LLMs) in
+social simulation, analyzing both their potential and their limitations from a
+computational social science perspective. The first part reviews recent
+findings on the ability of LLMs to replicate key aspects of human cognition,
+including Theory of Mind reasoning and social inference, while also
+highlighting significant limitations such as cognitive biases, lack of true
+understanding, and inconsistencies in behavior. The second part surveys
+emerging applications of LLMs in multi-agent simulation frameworks, focusing on
+system architectures, scale, and validation strategies. Notable projects such
+as Generative Agents (Smallville) and AgentSociety are discussed in terms of
+their design choices, empirical grounding, and methodological innovations.
+Particular attention is given to the challenges of behavioral fidelity,
+calibration, and reproducibility in large-scale LLM-driven simulations. The
+final section distinguishes between contexts where LLMs, like other black-box
+systems, offer direct value-such as interactive simulations and serious
+games-and those where their use is more problematic, notably in explanatory or
+predictive modeling. The paper concludes by advocating for hybrid approaches
+that integrate LLMs into traditional agent-based modeling platforms (GAMA,
+Netlogo, etc), enabling modelers to combine the expressive flexibility of
+language-based reasoning with the transparency and analytical rigor of
+classical rule-based systems.",http://arxiv.org/pdf/2507.19364v1,,False
+A Markov Categorical Framework for Language Modeling,25/07/2025,Yifan Zhang,"Auto-regressive language models factorize sequence probabilities and are
+trained by minimizing the negative log-likelihood (NLL) objective. While
+empirically powerful, a deep theoretical understanding of why this simple
+objective yields such versatile representations remains elusive. This work
+introduces a unifying analytical framework using Markov Categories (MCs) to
+deconstruct the AR generation process and the NLL objective. We model the
+single-step generation map as a composition of Markov kernels in the category
+Stoch. This compositional view, when enriched with statistical divergences,
+allows us to dissect information flow and learned geometry. Our framework makes
+three main contributions. First, we provide a formal, information-theoretic
+rationale for the success of modern speculative decoding methods like EAGLE,
+quantifying the information surplus in hidden states that these methods
+exploit. Second, we formalize how NLL minimization forces the model to learn
+not just the next token, but the data's intrinsic conditional stochasticity, a
+process we analyze using categorical entropy. Third, and most centrally, we
+prove that NLL training acts as an implicit form of spectral contrastive
+learning. By analyzing the information geometry of the model's prediction head,
+we show that NLL implicitly forces the learned representation space to align
+with the eigenspectrum of a predictive similarity operator, thereby learning a
+geometrically structured space without explicit contrastive pairs. This
+compositional and information-geometric perspective reveals the deep structural
+principles underlying the effectiveness of modern LMs. Project Page:
+https://github.com/asiresearch/lm-theory",http://arxiv.org/pdf/2507.19247v1,,False
+Virne: A Comprehensive Benchmark for Deep RL-based Network Resource Allocation in NFV,25/07/2025,"Tianfu Wang, Liwei Deng, Xi Chen, Junyang Wang, Huiguo He, Leilei Ding, Wei Wu, Qilin Fan, Hui Xiong","Resource allocation (RA) is critical to efficient service deployment in
+Network Function Virtualization (NFV), a transformative networking paradigm.
+Recently, deep Reinforcement Learning (RL)-based methods have been showing
+promising potential to address this complexity. However, the lack of a
+systematic benchmarking framework and thorough analysis hinders the exploration
+of emerging networks and the development of more robust algorithms while
+causing inconsistent evaluation. In this paper, we introduce Virne, a
+comprehensive benchmarking framework for the NFV-RA problem, with a focus on
+supporting deep RL-based methods. Virne provides customizable simulations for
+diverse network scenarios, including cloud, edge, and 5G environments. It also
+features a modular and extensible implementation pipeline that supports over 30
+methods of various types, and includes practical evaluation perspectives beyond
+effectiveness, such as scalability, generalization, and scalability.
+Furthermore, we conduct in-depth analysis through extensive experiments to
+provide valuable insights into performance trade-offs for efficient
+implementation and offer actionable guidance for future research directions.
+Overall, with its diverse simulations, rich implementations, and extensive
+evaluation capabilities, Virne could serve as a comprehensive benchmark for
+advancing NFV-RA methods and deep RL applications. The code is publicly
+available at https://github.com/GeminiLight/virne.",http://arxiv.org/pdf/2507.19234v1,,False
+Pareto-NRPA: A Novel Monte-Carlo Search Algorithm for Multi-Objective Optimization,25/07/2025,"Noé Lallouet, Tristan Cazenave, Cyrille Enderli","We introduce Pareto-NRPA, a new Monte-Carlo algorithm designed for
+multi-objective optimization problems over discrete search spaces. Extending
+the Nested Rollout Policy Adaptation (NRPA) algorithm originally formulated for
+single-objective problems, Pareto-NRPA generalizes the nested search and policy
+update mechanism to multi-objective optimization. The algorithm uses a set of
+policies to concurrently explore different regions of the solution space and
+maintains non-dominated fronts at each level of search. Policy adaptation is
+performed with respect to the diversity and isolation of sequences within the
+Pareto front. We benchmark Pareto-NRPA on two classes of problems: a novel
+bi-objective variant of the Traveling Salesman Problem with Time Windows
+problem (MO-TSPTW), and a neural architecture search task on well-known
+benchmarks. Results demonstrate that Pareto-NRPA achieves competitive
+performance against state-of-the-art multi-objective algorithms, both in terms
+of convergence and diversity of solutions. Particularly, Pareto-NRPA strongly
+outperforms state-of-the-art evolutionary multi-objective algorithms on
+constrained search spaces. To our knowledge, this work constitutes the first
+adaptation of NRPA to the multi-objective setting.",http://arxiv.org/pdf/2507.19109v1,,False
+ProGMLP: A Progressive Framework for GNN-to-MLP Knowledge Distillation with Efficient Trade-offs,25/07/2025,"Weigang Lu, Ziyu Guan, Wei Zhao, Yaming Yang, Yujie Sun, Zheng Liang, Yibing Zhan, Dapeng Tao","GNN-to-MLP (G2M) methods have emerged as a promising approach to accelerate
+Graph Neural Networks (GNNs) by distilling their knowledge into simpler
+Multi-Layer Perceptrons (MLPs). These methods bridge the gap between the
+expressive power of GNNs and the computational efficiency of MLPs, making them
+well-suited for resource-constrained environments. However, existing G2M
+methods are limited by their inability to flexibly adjust inference cost and
+accuracy dynamically, a critical requirement for real-world applications where
+computational resources and time constraints can vary significantly. To address
+this, we introduce a Progressive framework designed to offer flexible and
+on-demand trade-offs between inference cost and accuracy for GNN-to-MLP
+knowledge distillation (ProGMLP). ProGMLP employs a Progressive Training
+Structure (PTS), where multiple MLP students are trained in sequence, each
+building on the previous one. Furthermore, ProGMLP incorporates Progressive
+Knowledge Distillation (PKD) to iteratively refine the distillation process
+from GNNs to MLPs, and Progressive Mixup Augmentation (PMA) to enhance
+generalization by progressively generating harder mixed samples. Our approach
+is validated through comprehensive experiments on eight real-world graph
+datasets, demonstrating that ProGMLP maintains high accuracy while dynamically
+adapting to varying runtime scenarios, making it highly effective for
+deployment in diverse application settings.",http://arxiv.org/pdf/2507.19031v1,,False
+Nonparametric Linear Discriminant Analysis for High Dimensional Matrix-Valued Data,25/07/2025,"Seungyeon Oh, Seongoh Park, Hoyoung Park","This paper addresses classification problems with matrix-valued data, which
+commonly arises in applications such as neuroimaging and signal processing.
+Building on the assumption that the data from each class follows a matrix
+normal distribution, we propose a novel extension of Fisher's Linear
+Discriminant Analysis (LDA) tailored for matrix-valued observations. To
+effectively capture structural information while maintaining estimation
+flexibility, we adopt a nonparametric empirical Bayes framework based on
+Nonparametric Maximum Likelihood Estimation (NPMLE), applied to vectorized and
+scaled matrices. The NPMLE method has been shown to provide robust, flexible,
+and accurate estimates for vector-valued data with various structures in the
+mean vector or covariance matrix. By leveraging its strengths, our method is
+effectively generalized to the matrix setting, thereby improving classification
+performance. Through extensive simulation studies and real data applications,
+including electroencephalography (EEG) and magnetic resonance imaging (MRI)
+analysis, we demonstrate that the proposed method consistently outperforms
+existing approaches across a variety of data structures.",http://arxiv.org/pdf/2507.19028v1,,False
+A diffusion-based generative model for financial time series via geometric Brownian motion,25/07/2025,"Gihun Kim, Sun-Yong Choi, Yeoneung Kim","We propose a novel diffusion-based generative framework for financial time
+series that incorporates geometric Brownian motion (GBM), the foundation of the
+Black--Scholes theory, into the forward noising process. Unlike standard
+score-based models that treat price trajectories as generic numerical
+sequences, our method injects noise proportionally to asset prices at each time
+step, reflecting the heteroskedasticity observed in financial time series. By
+accurately balancing the drift and diffusion terms, we show that the resulting
+log-price process reduces to a variance-exploding stochastic differential
+equation, aligning with the formulation in score-based generative models. The
+reverse-time generative process is trained via denoising score matching using a
+Transformer-based architecture adapted from the Conditional Score-based
+Diffusion Imputation (CSDI) framework. Empirical evaluations on historical
+stock data demonstrate that our model reproduces key stylized facts
+heavy-tailed return distributions, volatility clustering, and the leverage
+effect more realistically than conventional diffusion models.",http://arxiv.org/pdf/2507.19003v1,,False
+KASPER: Kolmogorov Arnold Networks for Stock Prediction and Explainable Regimes,25/07/2025,"Vidhi Oad, Param Pathak, Nouhaila Innan, Shalini D, Muhammad Shafique","Forecasting in financial markets remains a significant challenge due to their
+nonlinear and regime-dependent dynamics. Traditional deep learning models, such
+as long short-term memory networks and multilayer perceptrons, often struggle
+to generalize across shifting market conditions, highlighting the need for a
+more adaptive and interpretable approach. To address this, we introduce
+Kolmogorov-Arnold networks for stock prediction and explainable regimes
+(KASPER), a novel framework that integrates regime detection, sparse
+spline-based function modeling, and symbolic rule extraction. The framework
+identifies hidden market conditions using a Gumbel-Softmax-based mechanism,
+enabling regime-specific forecasting. For each regime, it employs
+Kolmogorov-Arnold networks with sparse spline activations to capture intricate
+price behaviors while maintaining robustness. Interpretability is achieved
+through symbolic learning based on Monte Carlo Shapley values, which extracts
+human-readable rules tailored to each regime. Applied to real-world financial
+time series from Yahoo Finance, the model achieves an $R^2$ score of 0.89, a
+Sharpe Ratio of 12.02, and a mean squared error as low as 0.0001, outperforming
+existing methods. This research establishes a new direction for regime-aware,
+transparent, and robust forecasting in financial markets.",http://arxiv.org/pdf/2507.18983v1,,False
+"A Systematic Review of Key Retrieval-Augmented Generation (RAG) Systems: Progress, Gaps, and Future Directions",25/07/2025,"Agada Joseph Oche, Ademola Glory Folashade, Tirthankar Ghosal, Arpan Biswas","Retrieval-Augmented Generation (RAG) represents a major advancement in
+natural language processing (NLP), combining large language models (LLMs) with
+information retrieval systems to enhance factual grounding, accuracy, and
+contextual relevance. This paper presents a comprehensive systematic review of
+RAG, tracing its evolution from early developments in open domain question
+answering to recent state-of-the-art implementations across diverse
+applications. The review begins by outlining the motivations behind RAG,
+particularly its ability to mitigate hallucinations and outdated knowledge in
+parametric models. Core technical components-retrieval mechanisms,
+sequence-to-sequence generation models, and fusion strategies are examined in
+detail. A year-by-year analysis highlights key milestones and research trends,
+providing insight into RAG's rapid growth. The paper further explores the
+deployment of RAG in enterprise systems, addressing practical challenges
+related to retrieval of proprietary data, security, and scalability. A
+comparative evaluation of RAG implementations is conducted, benchmarking
+performance on retrieval accuracy, generation fluency, latency, and
+computational efficiency. Persistent challenges such as retrieval quality,
+privacy concerns, and integration overhead are critically assessed. Finally,
+the review highlights emerging solutions, including hybrid retrieval
+approaches, privacy-preserving techniques, optimized fusion strategies, and
+agentic RAG architectures. These innovations point toward a future of more
+reliable, efficient, and context-aware knowledge-intensive NLP systems.",http://arxiv.org/pdf/2507.18910v1,,False
+HH-Codec: High Compression High-fidelity Discrete Neural Codec for Spoken Language Modeling,25/07/2025,"Rongkun Xue, Yazhe Niu, Shuai Hu, Zixin Yin, Yongqiang Yao, Jing Yang","Discrete speech tokenization is a fundamental component in speech codecs.
+However, in large-scale speech-to-speech systems, the complexity of parallel
+streams from multiple quantizers and the computational cost of
+high-time-dimensional codecs pose significant challenges. In this paper, we
+introduce HH-Codec, a neural codec that achieves extreme compression at 24
+tokens per second for 24 kHz audio while relying on single-quantizer inference.
+Our approach involves a carefully designed Vector Quantization space for Spoken
+Language Modeling, optimizing compression efficiency while minimizing
+information loss. Building on this, we propose an asymmetric encoder-decoder
+architecture (Audio-VQ-Mel-Audio) that leverages dual supervision and
+progressive training to enhance reconstruction stability and fidelity. HH-Codec
+achieves state-of-the-art performance in speech reconstruction with an
+ultra-low bandwidth of 0.3 kbps. We further evaluate its effectiveness in
+codebook utilization and generative model adaptation, with extensive ablations
+validating the necessity of each module. HH-Codec is available at
+https://github.com/opendilab/HH-Codec.",http://arxiv.org/pdf/2507.18897v1,,False
+Success in Humanoid Reinforcement Learning under Partial Observation,25/07/2025,"Wuhao Wang, Zhiyong Chen","Reinforcement learning has been widely applied to robotic control, but
+effective policy learning under partial observability remains a major
+challenge, especially in high-dimensional tasks like humanoid locomotion. To
+date, no prior work has demonstrated stable training of humanoid policies with
+incomplete state information in the benchmark Gymnasium Humanoid-v4
+environment. The objective in this environment is to walk forward as fast as
+possible without falling, with rewards provided for staying upright and moving
+forward, and penalties incurred for excessive actions and external contact
+forces. This research presents the first successful instance of learning under
+partial observability in this environment. The learned policy achieves
+performance comparable to state-of-the-art results with full state access,
+despite using only one-third to two-thirds of the original states. Moreover,
+the policy exhibits adaptability to robot properties, such as variations in
+body part masses. The key to this success is a novel history encoder that
+processes a fixed-length sequence of past observations in parallel. Integrated
+into a standard model-free algorithm, the encoder enables performance on par
+with fully observed baselines. We hypothesize that it reconstructs essential
+contextual information from recent observations, thereby enabling robust
+decision-making.",http://arxiv.org/pdf/2507.18883v1,,False
+A Neuroscience-Inspired Dual-Process Model of Compositional Generalization,25/07/2025,"Alex Noviello, Claas Beger, Jacob Groner, Kevin Ellis, Weinan Sun","Systematic compositional generalization - constructing and understanding
+novel combinations of known building blocks - remains a core challenge for AI
+systems. Human cognition achieves this flexibility via the interplay of the
+hippocampus (HPC) and prefrontal cortex (PFC): the hippocampus rapidly encodes
+episodes, and the prefrontal cortex consolidates them into reusable schemas for
+reasoning. Drawing on these insights, we present MIRAGE (Meta-Inference with
+Rules and Abstractions from Generalized Experience), a framework that achieves
+systematic generalization on compositional tasks. MIRAGE has two interacting
+modules mirroring the brain's deliberative HPC-PFC loop and intuitive
+neocortical pattern recognition. (1) The meta-trained Transformer Neural
+Decomposer, paralleling neocortical ""System 1"" computation, is trained on a
+task-agnostic stream of randomly sampled compositional grammars and applies one
+decomposition step per pass, with successive passes iteratively refining the
+sequence representation. (2) The Schema Engine, analogous to the HPC-PFC
+""System 2"" loop, dynamically extracts, ranks, and applies reusable schemas,
+storing variable bindings in episodic memory and expanding them when needed. By
+explicitly equipping the Transformer component of MIRAGE with actively managed
+schematic structures, our model performs systematic compositional operations
+through explicit schema application and transformation, relying solely on
+frozen weights when solving entirely novel tasks. This approach demonstrates
+systematic compositional generalization on the SCAN benchmark, achieving > 99%
+accuracy on all task splits with only 1.19M parameters in the transformer
+module. Ablation studies confirm that MIRAGE's systematicity critically depends
+on the quality of extracted schemas and the model's iterative refinement
+process.",http://arxiv.org/pdf/2507.18868v1,,False

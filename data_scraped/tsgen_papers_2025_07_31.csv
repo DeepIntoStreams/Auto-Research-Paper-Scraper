@@ -1,0 +1,208 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+A Bit of Freedom Goes a Long Way: Classical and Quantum Algorithms for Reinforcement Learning under a Generative Model,30/07/2025,"Andris Ambainis, Joao F. Doriguello, Debbie Lim","We propose novel classical and quantum online algorithms for learning
+finite-horizon and infinite-horizon average-reward Markov Decision Processes
+(MDPs). Our algorithms are based on a hybrid exploration-generative
+reinforcement learning (RL) model wherein the agent can, from time to time,
+freely interact with the environment in a generative sampling fashion, i.e., by
+having access to a ""simulator"". By employing known classical and new quantum
+algorithms for approximating optimal policies under a generative model within
+our learning algorithms, we show that it is possible to avoid several paradigms
+from RL like ""optimism in the face of uncertainty"" and ""posterior sampling"" and
+instead compute and use optimal policies directly, which yields better regret
+bounds compared to previous works. For finite-horizon MDPs, our quantum
+algorithms obtain regret bounds which only depend logarithmically on the number
+of time steps $T$, thus breaking the $O(\sqrt{T})$ classical barrier. This
+matches the time dependence of the prior quantum works of Ganguly et al.
+(arXiv'23) and Zhong et al. (ICML'24), but with improved dependence on other
+parameters like state space size $S$ and action space size $A$. For
+infinite-horizon MDPs, our classical and quantum bounds still maintain the
+$O(\sqrt{T})$ dependence but with better $S$ and $A$ factors. Nonetheless, we
+propose a novel measure of regret for infinite-horizon MDPs with respect to
+which our quantum algorithms have $\operatorname{poly}\log{T}$ regret,
+exponentially better compared to classical algorithms. Finally, we generalise
+all of our results to compact state spaces.",http://arxiv.org/pdf/2507.22854v1,,False
+Order Book Filtration and Directional Signal Extraction at High Frequency,30/07/2025,"Aditya Nittur Anantha, Shashi Jain, Prithwish Maiti","With the advent of electronic capital markets and algorithmic trading agents,
+the number of events in tick-by-tick market data has exploded. A large fraction
+of these orders is transient. Their ephemeral character degrades the
+informativeness of directional alphas derived from the limit order book (LOB)
+state. We investigate whether directional signals such as order book imbalance
+(OBI) can be improved by structurally filtering high-frequency LOB data. Three
+real-time, observable filtration schemes: based on order lifetime, update
+count, and inter-update delay. These are used to recompute OBI on structurally
+filtered event streams. To assess the effect of filtration, we implement a
+three-layer diagnostic framework: contemporaneous correlation with returns,
+explanatory power under discretized regime counts, and causal coherence via
+Hawkes excitation norms. Empirical results show that structural filtration
+improves directional signal clarity in correlation and regime-based metrics,
+but leads to only limited gains in causal excitation strength. In contrast, OBI
+computed using trade events exhibits stronger causal alignment with future
+price movements. These findings highlight the importance of differentiating
+between associative and causal diagnostics when designing high-frequency
+directional signals.",http://arxiv.org/pdf/2507.22712v1,,False
+Safe Deployment of Offline Reinforcement Learning via Input Convex Action Correction,30/07/2025,"Alex Durkin, Jasper Stolte, Matthew Jones, Raghuraman Pitchumani, Bei Li, Christian Michler, Mehmet Mercangöz","Offline reinforcement learning (offline RL) offers a promising framework for
+developing control strategies in chemical process systems using historical
+data, without the risks or costs of online experimentation. This work
+investigates the application of offline RL to the safe and efficient control of
+an exothermic polymerisation continuous stirred-tank reactor. We introduce a
+Gymnasium-compatible simulation environment that captures the reactor's
+nonlinear dynamics, including reaction kinetics, energy balances, and
+operational constraints. The environment supports three industrially relevant
+scenarios: startup, grade change down, and grade change up. It also includes
+reproducible offline datasets generated from proportional-integral controllers
+with randomised tunings, providing a benchmark for evaluating offline RL
+algorithms in realistic process control tasks.
+  We assess behaviour cloning and implicit Q-learning as baseline algorithms,
+highlighting the challenges offline agents face, including steady-state offsets
+and degraded performance near setpoints. To address these issues, we propose a
+novel deployment-time safety layer that performs gradient-based action
+correction using input convex neural networks (PICNNs) as learned cost models.
+The PICNN enables real-time, differentiable correction of policy actions by
+descending a convex, state-conditioned cost surface, without requiring
+retraining or environment interaction.
+  Experimental results show that offline RL, particularly when combined with
+convex action correction, can outperform traditional control approaches and
+maintain stability across all scenarios. These findings demonstrate the
+feasibility of integrating offline RL with interpretable and safety-aware
+corrections for high-stakes chemical process control, and lay the groundwork
+for more reliable data-driven automation in industrial systems.",http://arxiv.org/pdf/2507.22640v1,,False
+Pre-trained Models Perform the Best When Token Distributions Follow Zipf's Law,30/07/2025,"Yanjin He, Qingkai Zeng, Meng Jiang","Tokenization is a fundamental step in natural language processing (NLP) and
+other sequence modeling domains, where the choice of vocabulary size
+significantly impacts model performance. Despite its importance, selecting an
+optimal vocabulary size remains underexplored, typically relying on heuristics
+or dataset-specific choices. In this work, we propose a principled method for
+determining the vocabulary size by analyzing token frequency distributions
+through Zipf's law. We show that downstream task performance correlates with
+how closely token distributions follow power-law behavior, and that aligning
+with Zipfian scaling improves both model efficiency and effectiveness.
+Extensive experiments across NLP, genomics, and chemistry demonstrate that
+models consistently achieve peak performance when the token distribution
+closely adheres to Zipf's law, establishing Zipfian alignment as a robust and
+generalizable criterion for vocabulary size selection.",http://arxiv.org/pdf/2507.22543v1,,False
+Physics-constrained generative machine learning-based high-resolution downscaling of Greenland's surface mass balance and surface temperature,30/07/2025,"Nils Bochow, Philipp Hess, Alexander Robinson","Accurate, high-resolution projections of the Greenland ice sheet's surface
+mass balance (SMB) and surface temperature are essential for understanding
+future sea-level rise, yet current approaches are either computationally
+demanding or limited to coarse spatial scales. Here, we introduce a novel
+physics-constrained generative modeling framework based on a consistency model
+(CM) to downscale low-resolution SMB and surface temperature fields by a factor
+of up to 32 (from 160 km to 5 km grid spacing) in a few sampling steps. The CM
+is trained on monthly outputs of the regional climate model MARv3.12 and
+conditioned on ice-sheet topography and insolation. By enforcing a hard
+conservation constraint during inference, we ensure approximate preservation of
+SMB and temperature sums on the coarse spatial scale as well as robust
+generalization to extreme climate states without retraining. On the test set,
+our constrained CM achieves a continued ranked probability score of 6.31 mmWE
+for the SMB and 0.1 K for the surface temperature, outperforming
+interpolation-based downscaling. Together with spatial power-spectral analysis,
+we demonstrate that the CM faithfully reproduces variability across spatial
+scales. We further apply bias-corrected outputs of the NorESM2 Earth System
+Model as inputs to our CM, to demonstrate the potential of our model to
+directly downscale ESM fields. Our approach delivers realistic, high-resolution
+climate forcing for ice-sheet simulations with fast inference and can be
+readily integrated into Earth-system and ice-sheet model workflows to improve
+projections of the future contribution to sea-level rise from Greenland and
+potentially other ice sheets and glaciers too.",http://arxiv.org/pdf/2507.22485v1,,False
+Comparing Normalizing Flows with Kernel Density Estimation in Estimating Risk of Automated Driving Systems,30/07/2025,"Erwin de Gelder, Maren Buermann, Olaf Op den Camp","The development of safety validation methods is essential for the safe
+deployment and operation of Automated Driving Systems (ADSs). One of the goals
+of safety validation is to prospectively evaluate the risk of an ADS dealing
+with real-world traffic. Scenario-based assessment is a widely-used approach,
+where test cases are derived from real-world driving data. To allow for a
+quantitative analysis of the system performance, the exposure of the scenarios
+must be accurately estimated. The exposure of scenarios at parameter level is
+expressed using a Probability Density Function (PDF). However, assumptions
+about the PDF, such as parameter independence, can introduce errors, while
+avoiding assumptions often leads to oversimplified models with limited
+parameters to mitigate the curse of dimensionality.
+  This paper considers the use of Normalizing Flows (NF) for estimating the PDF
+of the parameters. NF are a class of generative models that transform a simple
+base distribution into a complex one using a sequence of invertible and
+differentiable mappings, enabling flexible, high-dimensional density estimation
+without restrictive assumptions on the PDF's shape. We demonstrate the
+effectiveness of NF in quantifying risk and risk uncertainty of an ADS,
+comparing its performance with Kernel Density Estimation (KDE), a traditional
+method for non-parametric PDF estimation. While NF require more computational
+resources compared to KDE, NF is less sensitive to the curse of dimensionality.
+As a result, NF can improve risk uncertainty estimation, offering a more
+precise assessment of an ADS's safety.
+  This work illustrates the potential of NF in scenario-based safety. Future
+work involves experimenting more with using NF for scenario generation and
+optimizing the NF architecture, transformation types, and training
+hyperparameters to further enhance their applicability.",http://arxiv.org/pdf/2507.22429v1,,False
+Efficient Spatial-Temporal Modeling for Real-Time Video Analysis: A Unified Framework for Action Recognition and Object Tracking,30/07/2025,Shahla John,"Real-time video analysis remains a challenging problem in computer vision,
+requiring efficient processing of both spatial and temporal information while
+maintaining computational efficiency. Existing approaches often struggle to
+balance accuracy and speed, particularly in resource-constrained environments.
+In this work, we present a unified framework that leverages advanced
+spatial-temporal modeling techniques for simultaneous action recognition and
+object tracking. Our approach builds upon recent advances in parallel sequence
+modeling and introduces a novel hierarchical attention mechanism that
+adaptively focuses on relevant spatial regions across temporal sequences. We
+demonstrate that our method achieves state-of-the-art performance on standard
+benchmarks while maintaining real-time inference speeds. Extensive experiments
+on UCF-101, HMDB-51, and MOT17 datasets show improvements of 3.2% in action
+recognition accuracy and 2.8% in tracking precision compared to existing
+methods, with 40% faster inference time.",http://arxiv.org/pdf/2507.22421v1,,False
+Aleatoric Uncertainty Medical Image Segmentation Estimation via Flow Matching,30/07/2025,"Phi Van Nguyen, Ngoc Huynh Trinh, Duy Minh Lam Nguyen, Phu Loc Nguyen, Quoc Long Tran","Quantifying aleatoric uncertainty in medical image segmentation is critical
+since it is a reflection of the natural variability observed among expert
+annotators. A conventional approach is to model the segmentation distribution
+using the generative model, but current methods limit the expression ability of
+generative models. While current diffusion-based approaches have demonstrated
+impressive performance in approximating the data distribution, their inherent
+stochastic sampling process and inability to model exact densities limit their
+effectiveness in accurately capturing uncertainty. In contrast, our proposed
+method leverages conditional flow matching, a simulation-free flow-based
+generative model that learns an exact density, to produce highly accurate
+segmentation results. By guiding the flow model on the input image and sampling
+multiple data points, our approach synthesizes segmentation samples whose
+pixel-wise variance reliably reflects the underlying data distribution. This
+sampling strategy captures uncertainties in regions with ambiguous boundaries,
+offering robust quantification that mirrors inter-annotator differences.
+Experimental results demonstrate that our method not only achieves competitive
+segmentation accuracy but also generates uncertainty maps that provide deeper
+insights into the reliability of the segmentation outcomes. The code for this
+paper is freely available at https://github.com/huynhspm/Data-Uncertainty",http://arxiv.org/pdf/2507.22418v1,,False
+Improving Generalization Ability of Robotic Imitation Learning by Resolving Causal Confusion in Observations,30/07/2025,"Yifei Chen, Yuzhe Zhang, Giovanni D'urso, Nicholas Lawrance, Brendan Tidd","Recent developments in imitation learning have considerably advanced robotic
+manipulation. However, current techniques in imitation learning can suffer from
+poor generalization, limiting performance even under relatively minor domain
+shifts. In this work, we aim to enhance the generalization capabilities of
+complex imitation learning algorithms to handle unpredictable changes from the
+training environments to deployment environments. To avoid confusion caused by
+observations that are not relevant to the target task, we propose to explicitly
+learn the causal relationship between observation components and expert
+actions, employing a framework similar to [6], where a causal structural
+function is learned by intervention on the imitation learning policy.
+Disentangling the feature representation from image input as in [6] is hard to
+satisfy in complex imitation learning process in robotic manipulation, we
+theoretically clarify that this requirement is not necessary in causal
+relationship learning. Therefore, we propose a simple causal structure learning
+framework that can be easily embedded in recent imitation learning
+architectures, such as the Action Chunking Transformer [31]. We demonstrate our
+approach using a simulation of the ALOHA [31] bimanual robot arms in Mujoco,
+and show that the method can considerably mitigate the generalization problem
+of existing complex imitation learning algorithms.",http://arxiv.org/pdf/2507.22380v1,,False
+CS-SHRED: Enhancing SHRED for Robust Recovery of Spatiotemporal Dynamics,30/07/2025,"Romulo B. da Silva, Cássio M. Oishi, Diego Passos, J. Nathan Kutz","We present $\textbf{CS-SHRED}$, a novel deep learning architecture that
+integrates Compressed Sensing (CS) into a Shallow Recurrent Decoder
+($\textbf{SHRED}$) to reconstruct spatiotemporal dynamics from incomplete,
+compressed, or corrupted data. Our approach introduces two key innovations.
+First, by incorporating CS techniques into the $\textbf{SHRED}$ architecture,
+our method leverages a batch-based forward framework with $\ell_1$
+regularization to robustly recover signals even in scenarios with sparse sensor
+placements, noisy measurements, and incomplete sensor acquisitions. Second, an
+adaptive loss function dynamically combines Mean Squared Error (MSE) and Mean
+Absolute Error (MAE) terms with a piecewise Signal-to-Noise Ratio (SNR)
+regularization, which suppresses noise and outliers in low-SNR regions while
+preserving fine-scale features in high-SNR regions.
+  We validate $\textbf{CS-SHRED}$ on challenging problems including
+viscoelastic fluid flows, maximum specific humidity fields, sea surface
+temperature distributions, and rotating turbulent flows. Compared to the
+traditional $\textbf{SHRED}$ approach, $\textbf{CS-SHRED}$ achieves
+significantly higher reconstruction fidelity - as demonstrated by improved SSIM
+and PSNR values, lower normalized errors, and enhanced LPIPS scores-thereby
+providing superior preservation of small-scale structures and increased
+robustness against noise and outliers.
+  Our results underscore the advantages of the jointly trained CS and SHRED
+design architecture which includes an LSTM sequence model for characterizing
+the temporal evolution with a shallow decoder network (SDN) for modeling the
+high-dimensional state space. The SNR-guided adaptive loss function for the
+spatiotemporal data recovery establishes $\textbf{CS-SHRED}$ as a promising
+tool for a wide range of applications in environmental, climatic, and
+scientific data analyses.",http://arxiv.org/pdf/2507.22303v1,,False

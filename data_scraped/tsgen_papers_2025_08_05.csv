@@ -1,0 +1,262 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents,04/08/2025,"Yibin Liu, Zhixuan Liang, Zanxin Chen, Tianxing Chen, Mengkang Hu, Wanxi Dong, Congsheng Xu, Zhaoming Han, Yusen Qin, Yao Mu","Recent advances in multimodal large language models (MLLMs) have enabled
+richer perceptual grounding for code policy generation in embodied agents.
+However, most existing systems lack effective mechanisms to adaptively monitor
+policy execution and repair codes during task completion. In this work, we
+introduce HyCodePolicy, a hybrid language-based control framework that
+systematically integrates code synthesis, geometric grounding, perceptual
+monitoring, and iterative repair into a closed-loop programming cycle for
+embodied agents. Technically, given a natural language instruction, our system
+first decomposes it into subgoals and generates an initial executable program
+grounded in object-centric geometric primitives. The program is then executed
+in simulation, while a vision-language model (VLM) observes selected
+checkpoints to detect and localize execution failures and infer failure
+reasons. By fusing structured execution traces capturing program-level events
+with VLM-based perceptual feedback, HyCodePolicy infers failure causes and
+repairs programs. This hybrid dual feedback mechanism enables self-correcting
+program synthesis with minimal human supervision. Our results demonstrate that
+HyCodePolicy significantly improves the robustness and sample efficiency of
+robot manipulation policies, offering a scalable strategy for integrating
+multimodal reasoning into autonomous decision-making pipelines.",http://arxiv.org/pdf/2508.02629v1,,False
+DeepKoopFormer: A Koopman Enhanced Transformer Based Architecture for Time Series Forecasting,04/08/2025,"Ali Forootani, Mohammad Khosravi, Masoud Barati","Time series forecasting plays a vital role across scientific, industrial, and
+environmental domains, especially when dealing with high-dimensional and
+nonlinear systems. While Transformer-based models have recently achieved
+state-of-the-art performance in long-range forecasting, they often suffer from
+interpretability issues and instability in the presence of noise or dynamical
+uncertainty. In this work, we propose DeepKoopFormer, a principled forecasting
+framework that combines the representational power of Transformers with the
+theoretical rigor of Koopman operator theory. Our model features a modular
+encoder-propagator-decoder structure, where temporal dynamics are learned via a
+spectrally constrained, linear Koopman operator in a latent space. We impose
+structural guarantees-such as bounded spectral radius, Lyapunov based energy
+regularization, and orthogonal parameterization to ensure stability and
+interpretability. Comprehensive evaluations are conducted on both synthetic
+dynamical systems, real-world climate dataset (wind speed and surface
+pressure), financial time series (cryptocurrency), and electricity generation
+dataset using the Python package that is prepared for this purpose. Across all
+experiments, DeepKoopFormer consistently outperforms standard LSTM and baseline
+Transformer models in terms of accuracy, robustness to noise, and long-term
+forecasting stability. These results establish DeepKoopFormer as a flexible,
+interpretable, and robust framework for forecasting in high dimensional and
+dynamical settings.",http://arxiv.org/pdf/2508.02616v1,,False
+AnalogCoder-Pro: Unifying Analog Circuit Generation and Optimization via Multi-modal LLMs,04/08/2025,"Yao Lai, Souradip Poddar, Sungyoung Lee, Guojin Chen, Mengkang Hu, Bei Yu, Ping Luo, David Z. Pan","Despite advances in analog design automation, analog front-end design still
+heavily depends on expert intuition and iterative simulations, underscoring
+critical gaps in fully automated optimization for performance-critical
+applications. Recently, the rapid development of Large Language Models (LLMs)
+has brought new promise to analog design automation. However, existing work
+remains in its early stages, and holistic joint optimization for practical
+end-to-end solutions remains largely unexplored. We propose AnalogCoder-Pro, a
+unified multimodal LLM-based framework that integrates generative capabilities
+and optimization techniques to jointly explore circuit topologies and optimize
+device sizing, automatically generating performance-specific, fully sized
+schematic netlists. AnalogCoder-Pro employs rejection sampling for fine-tuning
+LLMs on high-quality synthesized circuit data and introduces a multimodal
+diagnosis and repair workflow based on functional specifications and waveform
+images. By leveraging LLMs to interpret generated circuit netlists,
+AnalogCoder-Pro automates the extraction of critical design parameters and the
+formulation of parameter spaces, establishing an end-to-end workflow for
+simultaneous topology generation and device sizing optimization. Extensive
+experiments demonstrate that these orthogonal approaches significantly improve
+the success rate of analog circuit design and enhance circuit performance.",http://arxiv.org/pdf/2508.02518v1,,False
+Text2Lip: Progressive Lip-Synced Talking Face Generation from Text via Viseme-Guided Rendering,04/08/2025,"Xu Wang, Shengeng Tang, Fei Wang, Lechao Cheng, Dan Guo, Feng Xue, Richang Hong","Generating semantically coherent and visually accurate talking faces requires
+bridging the gap between linguistic meaning and facial articulation. Although
+audio-driven methods remain prevalent, their reliance on high-quality paired
+audio visual data and the inherent ambiguity in mapping acoustics to lip motion
+pose significant challenges in terms of scalability and robustness. To address
+these issues, we propose Text2Lip, a viseme-centric framework that constructs
+an interpretable phonetic-visual bridge by embedding textual input into
+structured viseme sequences. These mid-level units serve as a linguistically
+grounded prior for lip motion prediction. Furthermore, we design a progressive
+viseme-audio replacement strategy based on curriculum learning, enabling the
+model to gradually transition from real audio to pseudo-audio reconstructed
+from enhanced viseme features via cross-modal attention. This allows for robust
+generation in both audio-present and audio-free scenarios. Finally, a
+landmark-guided renderer synthesizes photorealistic facial videos with accurate
+lip synchronization. Extensive evaluations show that Text2Lip outperforms
+existing approaches in semantic fidelity, visual realism, and modality
+robustness, establishing a new paradigm for controllable and flexible talking
+face generation. Our project homepage is https://plyon1.github.io/Text2Lip/.",http://arxiv.org/pdf/2508.02362v1,,False
+A Compression Based Classification Framework Using Symbolic Dynamics of Chaotic Maps,04/08/2025,"Parth Naik, Harikrishnan N B","We propose a novel classification framework grounded in symbolic dynamics and
+data compression using chaotic maps. The core idea is to model each class by
+generating symbolic sequences from thresholded real-valued training data, which
+are then evolved through a one-dimensional chaotic map. For each class, we
+compute the transition probabilities of symbolic patterns (e.g., `00', `01',
+`10', and `11' for the second return map) and aggregate these statistics to
+form a class-specific probabilistic model. During testing phase, the test data
+are thresholded and symbolized, and then encoded using the class-wise symbolic
+statistics via back iteration, a dynamical reconstruction technique. The
+predicted label corresponds to the class yielding the shortest compressed
+representation, signifying the most efficient symbolic encoding under its
+respective chaotic model. This approach fuses concepts from dynamical systems,
+symbolic representations, and compression-based learning. We evaluate the
+proposed method: \emph{ChaosComp} on both synthetic and real-world datasets,
+demonstrating competitive performance compared to traditional machine learning
+algorithms (e.g., macro F1-scores for the proposed method on Breast Cancer
+Wisconsin = 0.9531, Seeds = 0.9475, Iris = 0.8317 etc.). Rather than aiming for
+state-of-the-art performance, the goal of this research is to reinterpret the
+classification problem through the lens of dynamical systems and compression,
+which are foundational perspectives in learning theory and information
+processing.",http://arxiv.org/pdf/2508.02330v1,,False
+AirTrafficGen: Configurable Air Traffic Scenario Generation with Large Language Models,04/08/2025,"Dewi Sid William Gould, George De Ath, Ben Carvell, Nick Pepper","The manual design of scenarios for Air Traffic Control (ATC) training is a
+demanding and time-consuming bottleneck that limits the diversity of
+simulations available to controllers. To address this, we introduce a novel,
+end-to-end approach, AirTrafficGen, that leverages large language models (LLMs)
+to automate and control the generation of complex ATC scenarios. Our method
+uses a purpose-built, graph-based representation to encode sector topology
+(including airspace geometry, routes, and fixes) into a format LLMs can
+process. Through rigorous benchmarking, we show that state-of-the-art models
+like Gemini 2.5 Pro and OpenAI o3 can generate high-traffic scenarios whilst
+maintaining operational realism. Our engineered prompting enables fine-grained
+control over interaction presence, type, and location. Initial findings suggest
+these models are also capable of iterative refinement, correcting flawed
+scenarios based on simple textual feedback. This approach provides a scalable
+alternative to manual scenario design, addressing the need for a greater volume
+and variety of ATC training and validation simulations. More broadly, this work
+showcases the potential of LLMs for complex planning in safety-critical
+domains.",http://arxiv.org/pdf/2508.02269v1,,False
+ByteGen: A Tokenizer-Free Generative Model for Orderbook Events in Byte Space,04/08/2025,"Yang Li, Zhi Chen","Generative modeling of high-frequency limit order book (LOB) dynamics is a
+critical yet unsolved challenge in quantitative finance, essential for robust
+market simulation and strategy backtesting. Existing approaches are often
+constrained by simplifying stochastic assumptions or, in the case of modern
+deep learning models like Transformers, rely on tokenization schemes that
+affect the high-precision, numerical nature of financial data through
+discretization and binning. To address these limitations, we introduce ByteGen,
+a novel generative model that operates directly on the raw byte streams of LOB
+events. Our approach treats the problem as an autoregressive next-byte
+prediction task, for which we design a compact and efficient 32-byte packed
+binary format to represent market messages without information loss. The core
+novelty of our work is the complete elimination of feature engineering and
+tokenization, enabling the model to learn market dynamics from its most
+fundamental representation. We achieve this by adapting the H-Net architecture,
+a hybrid Mamba-Transformer model that uses a dynamic chunking mechanism to
+discover the inherent structure of market messages without predefined rules.
+Our primary contributions are: 1) the first end-to-end, byte-level framework
+for LOB modeling; 2) an efficient packed data representation; and 3) a
+comprehensive evaluation on high-frequency data. Trained on over 34 million
+events from CME Bitcoin futures, ByteGen successfully reproduces key stylized
+facts of financial markets, generating realistic price distributions,
+heavy-tailed returns, and bursty event timing. Our findings demonstrate that
+learning directly from byte space is a promising and highly flexible paradigm
+for modeling complex financial systems, achieving competitive performance on
+standard market quality metrics without the biases of tokenization.",http://arxiv.org/pdf/2508.02247v1,,False
+Balancing Information Accuracy and Response Timeliness in Networked LLMs,04/08/2025,"Yigit Turkmen, Baturalp Buyukates, Melih Bastopcu","Recent advancements in Large Language Models (LLMs) have transformed many
+fields including scientific discovery, content generation, biomedical text
+mining, and educational technology. However, the substantial requirements for
+training data, computational resources, and energy consumption pose significant
+challenges for their practical deployment. A promising alternative is to
+leverage smaller, specialized language models and aggregate their outputs to
+improve overall response quality. In this work, we investigate a networked LLM
+system composed of multiple users, a central task processor, and clusters of
+topic-specialized LLMs. Each user submits categorical binary (true/false)
+queries, which are routed by the task processor to a selected cluster of $m$
+LLMs. After gathering individual responses, the processor returns a final
+aggregated answer to the user. We characterize both the information accuracy
+and response timeliness in this setting, and formulate a joint optimization
+problem to balance these two competing objectives. Our extensive simulations
+demonstrate that the aggregated responses consistently achieve higher accuracy
+than those of individual LLMs. Notably, this improvement is more significant
+when the participating LLMs exhibit similar standalone performance.",http://arxiv.org/pdf/2508.02209v1,,False
+Attractive Metadata Attack: Inducing LLM Agents to Invoke Malicious Tools,04/08/2025,"Kanghua Mo, Li Hu, Yucheng Long, Zhihao Li","Large language model (LLM) agents have demonstrated remarkable capabilities
+in complex reasoning and decision-making by leveraging external tools. However,
+this tool-centric paradigm introduces a previously underexplored attack
+surface: adversaries can manipulate tool metadata -- such as names,
+descriptions, and parameter schemas -- to influence agent behavior. We identify
+this as a new and stealthy threat surface that allows malicious tools to be
+preferentially selected by LLM agents, without requiring prompt injection or
+access to model internals. To demonstrate and exploit this vulnerability, we
+propose the Attractive Metadata Attack (AMA), a black-box in-context learning
+framework that generates highly attractive but syntactically and semantically
+valid tool metadata through iterative optimization. Our attack integrates
+seamlessly into standard tool ecosystems and requires no modification to the
+agent's execution framework. Extensive experiments across ten realistic,
+simulated tool-use scenarios and a range of popular LLM agents demonstrate
+consistently high attack success rates (81\%-95\%) and significant privacy
+leakage, with negligible impact on primary task execution. Moreover, the attack
+remains effective even under prompt-level defenses and structured
+tool-selection protocols such as the Model Context Protocol, revealing systemic
+vulnerabilities in current agent architectures. These findings reveal that
+metadata manipulation constitutes a potent and stealthy attack surface,
+highlighting the need for execution-level security mechanisms that go beyond
+prompt-level defenses.",http://arxiv.org/pdf/2508.02110v1,,False
+Everyone Contributes! Incentivizing Strategic Cooperation in Multi-LLM Systems via Sequential Public Goods Games,04/08/2025,"Yunhao Liang, Yuan Qu, Jingyuan Yang, Shaochong Lin, Zuo-Jun Max Shen","Coordinating multiple large language models (LLMs) to solve complex tasks
+collaboratively poses a fundamental trade-off between the computation costs and
+collective performance compared with individual model. We introduce a novel,
+game-theoretically grounded reinforcement learning (RL) framework, the
+Multi-Agent Cooperation Sequential Public Goods Game (MAC-SPGG), to
+systematically incentivize cooperation in multi-LLM ensembles. In MAC-SPGG, LLM
+agents move in sequence, observing predecessors' outputs and updating beliefs
+to condition their own contributions. By redesigning the public-goods reward,
+effortful contributions become the unique Subgame Perfect Nash Equilibrium
+(SPNE), which eliminates free-riding under traditional SPGG or PGG. Its
+sequential protocol replaces costly round-based information exchanges with a
+streamlined decision flow, cutting communication overhead while retaining
+strategic depth. We prove the existence and uniqueness of the SPNE under
+realistic parameters, and empirically show that MAC-SPGG-trained ensembles
+outperform single-agent baselines, chain-of-thought prompting, and other
+cooperative methods, even achieving comparable performance to large-scale
+models across reasoning, math, code generation, and NLP tasks. Our results
+highlight the power of structured, incentive-aligned MAC-SPGG cooperation for
+scalable and robust multi-agent language generation.",http://arxiv.org/pdf/2508.02076v1,,False
+An Evolving Scenario Generation Method based on Dual-modal Driver Model Trained by Multi-Agent Reinforcement Learning,04/08/2025,"Xinzheng Wu, Junyi Chen, Shaolingfeng Ye, Wei Jiang, Yong Shen","In the autonomous driving testing methods based on evolving scenarios, the
+construction method of the driver model, which determines the driving maneuvers
+of background vehicles (BVs) in the scenario, plays a critical role in
+generating safety-critical scenarios. In particular, the cooperative
+adversarial driving characteristics between BVs can contribute to the efficient
+generation of safety-critical scenarios with high testing value. In this paper,
+a multi-agent reinforcement learning (MARL) method is used to train and
+generate a dual-modal driver model (Dual-DM) with non-adversarial and
+adversarial driving modalities. The model is then connected to a continuous
+simulated traffic environment to generate complex, diverse and strong
+interactive safety-critical scenarios through evolving scenario generation
+method. After that, the generated evolving scenarios are evaluated in terms of
+fidelity, test efficiency, complexity and diversity. Results show that without
+performance degradation in scenario fidelity (>85% similarity to real-world
+scenarios) and complexity (complexity metric: 0.45, +32.35% and +12.5% over two
+baselines), Dual-DM achieves a substantial enhancement in the efficiency of
+generating safety-critical scenarios (efficiency metric: 0.86, +195% over two
+baselines). Furthermore, statistical analysis and case studies demonstrate the
+diversity of safety-critical evolving scenarios generated by Dual-DM in terms
+of the adversarial interaction patterns. Therefore, Dual-DM can greatly improve
+the performance of the generation of safety-critical scenarios through evolving
+scenario generation method.",http://arxiv.org/pdf/2508.02027v1,,False
+Convolutions are Competitive with Transformers for Encrypted Traffic Classification with Pre-training,04/08/2025,"Chungang Lin, Weiyao Zhang, Tianyu Zuo, Chao Zha, Yilong Jiang, Ruiqi Meng, Haitong Luo, Xuying Meng, Yujun Zhang","Encrypted traffic classification is vital for modern network management and
+security. To reduce reliance on handcrafted features and labeled data, recent
+methods focus on learning generic representations through pre-training on
+large-scale unlabeled data. However, current pre-trained models face two
+limitations originating from the adopted Transformer architecture: (1) Limited
+model efficiency due to the self-attention mechanism with quadratic complexity;
+(2) Unstable traffic scalability to longer byte sequences, as the explicit
+positional encodings fail to generalize to input lengths not seen during
+pre-training. In this paper, we investigate whether convolutions, with linear
+complexity and implicit positional encoding, are competitive with Transformers
+in encrypted traffic classification with pre-training. We first conduct a
+systematic comparison, and observe that convolutions achieve higher efficiency
+and scalability, with lower classification performance. To address this
+trade-off, we propose NetConv, a novel pre-trained convolution model for
+encrypted traffic classification. NetConv employs stacked traffic convolution
+layers, which enhance the ability to capture localized byte-sequence patterns
+through window-wise byte scoring and sequence-wise byte gating. We design a
+continuous byte masking pre-training task to help NetConv learn
+protocol-specific patterns. Experimental results on four tasks demonstrate that
+NetConv improves average classification performance by 6.88% and model
+throughput by 7.41X over existing pre-trained models.",http://arxiv.org/pdf/2508.02001v1,,False
+Revitalizing Canonical Pre-Alignment for Irregular Multivariate Time Series Forecasting,04/08/2025,"Ziyu Zhou, Yiming Huang, Yanyun Wang, Yuankai Wu, James Kwok, Yuxuan Liang","Irregular multivariate time series (IMTS), characterized by uneven sampling
+and inter-variate asynchrony, fuel many forecasting applications yet remain
+challenging to model efficiently. Canonical Pre-Alignment (CPA) has been widely
+adopted in IMTS modeling by padding zeros at every global timestamp, thereby
+alleviating inter-variate asynchrony and unifying the series length, but its
+dense zero-padding inflates the pre-aligned series length, especially when
+numerous variates are present, causing prohibitive compute overhead. Recent
+graph-based models with patching strategies sidestep CPA, but their local
+message passing struggles to capture global inter-variate correlations.
+Therefore, we posit that CPA should be retained, with the pre-aligned series
+properly handled by the model, enabling it to outperform state-of-the-art
+graph-based baselines that sidestep CPA. Technically, we propose KAFNet, a
+compact architecture grounded in CPA for IMTS forecasting that couples (1)
+Pre-Convolution module for sequence smoothing and sparsity mitigation, (2)
+Temporal Kernel Aggregation module for learnable compression and modeling of
+intra-series irregularity, and (3) Frequency Linear Attention blocks for the
+low-cost inter-series correlations modeling in the frequency domain.
+Experiments on multiple IMTS datasets show that KAFNet achieves
+state-of-the-art forecasting performance, with a 7.2$\times$ parameter
+reduction and a 8.4$\times$ training-inference acceleration.",http://arxiv.org/pdf/2508.01971v1,,False

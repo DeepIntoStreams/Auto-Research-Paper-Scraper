@@ -1,0 +1,455 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Live Music Models,06/08/2025,"Lyria Team, Antoine Caillon, Brian McWilliams, Cassie Tarakajian, Ian Simon, Ilaria Manco, Jesse Engel, Noah Constant, Pen Li, Timo I. Denk, Alberto Lalama, Andrea Agostinelli, Anna Huang, Ethan Manilow, George Brower, Hakan Erdogan, Heidi Lei, Itai Rolnick, Ivan Grishchenko, Manu Orsini, Matej Kastelic, Mauricio Zuluaga, Mauro Verzetti, Michael Dooley, Ondrej Skopek, Rafael Ferrer, Zalán Borsos, Äaron van den Oord, Douglas Eck, Eli Collins, Jason Baldridge, Tom Hume, Chris Donahue, Kehang Han, Adam Roberts","We introduce a new class of generative models for music called live music
+models that produce a continuous stream of music in real-time with synchronized
+user control. We release Magenta RealTime, an open-weights live music model
+that can be steered using text or audio prompts to control acoustic style. On
+automatic metrics of music quality, Magenta RealTime outperforms other
+open-weights music generation models, despite using fewer parameters and
+offering first-of-its-kind live generation capabilities. We also release Lyria
+RealTime, an API-based model with extended controls, offering access to our
+most powerful model with wide prompt coverage. These models demonstrate a new
+paradigm for AI-assisted music creation that emphasizes human-in-the-loop
+interaction for live music performance.",http://arxiv.org/pdf/2508.04651v1,,False
+CaPulse: Detecting Anomalies by Tuning in to the Causal Rhythms of Time Series,06/08/2025,"Yutong Xia, Yingying Zhang, Yuxuan Liang, Lunting Fan, Qingsong Wen, Roger Zimmermann","Time series anomaly detection has garnered considerable attention across
+diverse domains. While existing methods often fail to capture the underlying
+mechanisms behind anomaly generation in time series data. In addition, time
+series anomaly detection often faces several data-related inherent challenges,
+i.e., label scarcity, data imbalance, and complex multi-periodicity. In this
+paper, we leverage causal tools and introduce a new causality-based framework,
+CaPulse, which tunes in to the underlying causal pulse of time series data to
+effectively detect anomalies. Concretely, we begin by building a structural
+causal model to decipher the generation processes behind anomalies. To tackle
+the challenges posed by the data, we propose Periodical Normalizing Flows with
+a novel mask mechanism and carefully designed periodical learners, creating a
+periodicity-aware, density-based anomaly detection approach. Extensive
+experiments on seven real-world datasets demonstrate that CaPulse consistently
+outperforms existing methods, achieving AUROC improvements of 3% to 17%, with
+enhanced interpretability.",http://arxiv.org/pdf/2508.04630v1,,False
+"A Reproducible, Scalable Pipeline for Synthesizing Autoregressive Model Literature",06/08/2025,"Faruk Alpay, Bugra Kilictas, Hamdi Alakkad","The accelerating pace of research on autoregressive generative models has
+produced thousands of papers, making manual literature surveys and reproduction
+studies increasingly impractical. We present a fully open-source, reproducible
+pipeline that automatically retrieves candidate documents from public
+repositories, filters them for relevance, extracts metadata, hyper-parameters
+and reported results, clusters topics, produces retrieval-augmented summaries
+and generates containerised scripts for re-running selected experiments.
+Quantitative evaluation on 50 manually-annotated papers shows F1 scores above
+0.85 for relevance classification, hyper-parameter extraction and citation
+identification. Experiments on corpora of up to 1000 papers demonstrate
+near-linear scalability with eight CPU workers. Three case studies -- AWD-LSTM
+on WikiText-2, Transformer-XL on WikiText-103 and an autoregressive music model
+on the Lakh MIDI dataset -- confirm that the extracted settings support
+faithful reproduction, achieving test perplexities within 1--3% of the original
+reports.",http://arxiv.org/pdf/2508.04612v1,,False
+A Comprehensive Framework for Uncertainty Quantification of Voxel-wise Supervised Models in IVIM MRI,06/08/2025,"Nicola Casali, Alessandro Brusaferri, Giuseppe Baselli, Stefano Fumagalli, Edoardo Micotti, Gianluigi Forloni, Riaz Hussein, Giovanna Rizzo, Alfonso Mastropietro","Accurate estimation of intravoxel incoherent motion (IVIM) parameters from
+diffusion-weighted MRI remains challenging due to the ill-posed nature of the
+inverse problem and high sensitivity to noise, particularly in the perfusion
+compartment. In this work, we propose a probabilistic deep learning framework
+based on Deep Ensembles (DE) of Mixture Density Networks (MDNs), enabling
+estimation of total predictive uncertainty and decomposition into aleatoric
+(AU) and epistemic (EU) components. The method was benchmarked against non
+probabilistic neural networks, a Bayesian fitting approach and a probabilistic
+network with single Gaussian parametrization. Supervised training was performed
+on synthetic data, and evaluation was conducted on both simulated and two in
+vivo datasets. The reliability of the quantified uncertainties was assessed
+using calibration curves, output distribution sharpness, and the Continuous
+Ranked Probability Score (CRPS). MDNs produced more calibrated and sharper
+predictive distributions for the D and f parameters, although slight
+overconfidence was observed in D*. The Robust Coefficient of Variation (RCV)
+indicated smoother in vivo estimates for D* with MDNs compared to Gaussian
+model. Despite the training data covering the expected physiological range,
+elevated EU in vivo suggests a mismatch with real acquisition conditions,
+highlighting the importance of incorporating EU, which was allowed by DE.
+Overall, we present a comprehensive framework for IVIM fitting with uncertainty
+quantification, which enables the identification and interpretation of
+unreliable estimates. The proposed approach can also be adopted for fitting
+other physical models through appropriate architectural and simulation
+adjustments.",http://arxiv.org/pdf/2508.04588v1,,False
+Augmentation-based Domain Generalization and Joint Training from Multiple Source Domains for Whole Heart Segmentation,06/08/2025,"Franz Thaler, Darko Stern, Gernot Plank, Martin Urschler","As the leading cause of death worldwide, cardiovascular diseases motivate the
+development of more sophisticated methods to analyze the heart and its
+substructures from medical images like Computed Tomography (CT) and Magnetic
+Resonance (MR). Semantic segmentations of important cardiac structures that
+represent the whole heart are useful to assess patient-specific cardiac
+morphology and pathology. Furthermore, accurate semantic segmentations can be
+used to generate cardiac digital twin models which allows e.g.
+electrophysiological simulation and personalized therapy planning. Even though
+deep learning-based methods for medical image segmentation achieved great
+advancements over the last decade, retaining good performance under domain
+shift -- i.e. when training and test data are sampled from different data
+distributions -- remains challenging. In order to perform well on domains known
+at training-time, we employ a (1) balanced joint training approach that
+utilizes CT and MR data in equal amounts from different source domains.
+Further, aiming to alleviate domain shift towards domains only encountered at
+test-time, we rely on (2) strong intensity and spatial augmentation techniques
+to greatly diversify the available training data. Our proposed whole heart
+segmentation method, a 5-fold ensemble with our contributions, achieves the
+best performance for MR data overall and a performance similar to the best
+performance for CT data when compared to a model trained solely on CT. With
+93.33% DSC and 0.8388 mm ASSD for CT and 89.30% DSC and 1.2411 mm ASSD for MR
+data, our method demonstrates great potential to efficiently obtain accurate
+semantic segmentations from which patient-specific cardiac twin models can be
+generated.",http://arxiv.org/pdf/2508.04552v1,10.1007/978-3-031-87009-5_17,False
+Metric Learning in an RKHS,06/08/2025,"Gokcan Tatli, Yi Chen, Blake Mason, Robert Nowak, Ramya Korlakai Vinayak","Metric learning from a set of triplet comparisons in the form of ""Do you
+think item h is more similar to item i or item j?"", indicating similarity and
+differences between items, plays a key role in various applications including
+image retrieval, recommendation systems, and cognitive psychology. The goal is
+to learn a metric in the RKHS that reflects the comparisons. Nonlinear metric
+learning using kernel methods and neural networks have shown great empirical
+promise. While previous works have addressed certain aspects of this problem,
+there is little or no theoretical understanding of such methods. The exception
+is the special (linear) case in which the RKHS is the standard Euclidean space
+$\mathbb{R}^d$; there is a comprehensive theory for metric learning in
+$\mathbb{R}^d$. This paper develops a general RKHS framework for metric
+learning and provides novel generalization guarantees and sample complexity
+bounds. We validate our findings through a set of simulations and experiments
+on real datasets. Our code is publicly available at
+https://github.com/RamyaLab/metric-learning-RKHS.",http://arxiv.org/pdf/2508.04476v1,,False
+GFocal: A Global-Focal Neural Operator for Solving PDEs on Arbitrary Geometries,06/08/2025,"Fangzhi Fei, Jiaxin Hu, Qiaofeng Li, Zhenyu Liu","Transformer-based neural operators have emerged as promising surrogate
+solvers for partial differential equations, by leveraging the effectiveness of
+Transformers for capturing long-range dependencies and global correlations,
+profoundly proven in language modeling. However, existing methodologies
+overlook the coordinated learning of interdependencies between local physical
+details and global features, which are essential for tackling multiscale
+problems, preserving physical consistency and numerical stability in long-term
+rollouts, and accurately capturing transitional dynamics. In this work, we
+propose GFocal, a Transformer-based neural operator method that enforces
+simultaneous global and local feature learning and fusion. Global correlations
+and local features are harnessed through Nystr\""{o}m attention-based
+\textbf{g}lobal blocks and slices-based \textbf{focal} blocks to generate
+physics-aware tokens, subsequently modulated and integrated via
+convolution-based gating blocks, enabling dynamic fusion of multiscale
+information. GFocal achieves accurate modeling and prediction of physical
+features given arbitrary geometries and initial conditions. Experiments show
+that GFocal achieves state-of-the-art performance with an average 15.2\%
+relative gain in five out of six benchmarks and also excels in industry-scale
+simulations such as aerodynamics simulation of automotives and airfoils.",http://arxiv.org/pdf/2508.04463v1,,False
+CARD: Cache-Assisted Parallel Speculative Decoding for Efficient Large Language Model Inference,06/08/2025,"Enyu Zhou, Kai Sheng, Hao Chen, Xin He","Speculative decoding (SD), where an extra draft model first provides multiple
+draft tokens and the original target model then verifies these tokens in
+parallel, has shown great power for LLM inference acceleration. However,
+existing SD methods must adhere to the 'draft-then-verify' paradigm, which
+forces drafting and verification processes to execute sequentially during SD,
+resulting in inefficient inference performance and limiting the size of the
+draft model. Furthermore, once a single token in the candidate sequence is
+rejected during the drafting process, all subsequent candidate tokens must be
+discarded, leading to inefficient drafting. To address these challenges, we
+propose a cache-based parallel speculative decoding framework employing a
+'query-and-correct' paradigm. Specifically, CARD decouples drafting and
+verification: the draft model generates candidate tokens to populate a shared
+cache, while the target model concurrently rectifies the draft model's
+generation direction. This effectively enables the target model to perform
+inference at speed approaching that of the draft model. Our approach achieves
+up to 4.83 speedup over vanilla decoding without requiring fine-tuning of
+either the draft or target models. Our code is available at
+https://github.com/hunzhizi/CARD.",http://arxiv.org/pdf/2508.04462v1,,False
+Small transformer architectures for task switching,06/08/2025,Claudius Gros,"The rapid progress seen in terms of large-scale generative AI is largely
+based on the attention mechanism. It is conversely non-trivial to conceive
+small-scale applications for which attention-based architectures outperform
+traditional approaches, such as multi-layer perceptrons or recurrent networks.
+We examine this problem in the context of 'task switching'. In this framework
+models work on ongoing token sequences with the current task being determined
+by stochastically interspersed control tokens. We show that standard
+transformers cannot solve a basic task switching reference model based on
+finite domain arithmetics which contains subtasks dedicated to increment /
+addition / reverse copy / context (IARC). We show that transformers, long
+short-term memory recurrent networks (LSTM), and plain multi-layer perceptrons
+(MLPs) achieve similar, but only modest prediction accuracies. We enlarge our
+comparative study by including an extension of the standard transformer
+architecture to its non-translational invariant counterpart, the cisformer, and
+an alternative attention mechanism, extensive attention. A combination of the
+latter is found to be the only model able to achieve considerable performance
+levels, of around 95%. Our results indicate that the workings of attention can
+be understood better, and even improved, when comparing qualitatively different
+formulations in task-switching settings.",http://arxiv.org/pdf/2508.04461v1,,False
+\textsc{SimInstruct}: A Responsible Tool for Collecting Scaffolding Dialogues Between Experts and LLM-Simulated Novices,06/08/2025,"Si Chen, Izzy Molnar, Ting Hua, Peiyu Li, Le Huy Khiem, G. Alex Ambrose, Jim Lang, Ronald Metoyer, Nitesh V. Chawla","High-quality, multi-turn instructional dialogues between novices and experts
+are essential for developing AI systems that support teaching, learning, and
+decision-making. These dialogues often involve scaffolding -- the process by
+which an expert supports a novice's thinking through questions, feedback, and
+step-by-step guidance. However, such data are scarce due to privacy concerns in
+recording and the vulnerability inherent in help-seeking. We present
+SimInstruct, a scalable, expert-in-the-loop tool for collecting scaffolding
+dialogues. Using teaching development coaching as an example domain,
+SimInstruct simulates novice instructors via LLMs, varying their teaching
+challenges and LLM's persona traits, while human experts provide multi-turn
+feedback, reasoning, and instructional support. This design enables the
+creation of realistic, pedagogically rich dialogues without requiring real
+novice participants. Our results reveal that persona traits, such as
+extroversion and introversion, meaningfully influence how experts engage.
+Compared to real mentoring recordings, SimInstruct dialogues demonstrate
+comparable pedagogical relevance and cognitive depth. Experts also reported the
+process as engaging and reflective, improving both data quality and their own
+professional insight. We further fine-tuned a LLaMA model to be an expert model
+using the augmented dataset, which outperformed GPT-4o in instructional
+quality. Our analysis highlights GPT-4o's limitations in weak reflective
+questioning, overuse of generic praise, a condescending tone, and a tendency to
+overwhelm novices with excessive suggestions.",http://arxiv.org/pdf/2508.04428v1,,False
+Deep Learning-based Scalable Image-to-3D Facade Parser for Generating Thermal 3D Building Models,06/08/2025,"Yinan Yu, Alex Gonzalez-Caceres, Samuel Scheidegger, Sanjay Somanath, Alexander Hollberg","Renovating existing buildings is essential for climate impact. Early-phase
+renovation planning requires simulations based on thermal 3D models at Level of
+Detail (LoD) 3, which include features like windows. However, scalable and
+accurate identification of such features remains a challenge. This paper
+presents the Scalable Image-to-3D Facade Parser (SI3FP), a pipeline that
+generates LoD3 thermal models by extracting geometries from images using both
+computer vision and deep learning. Unlike existing methods relying on
+segmentation and projection, SI3FP directly models geometric primitives in the
+orthographic image plane, providing a unified interface while reducing
+perspective distortions. SI3FP supports both sparse (e.g., Google Street View)
+and dense (e.g., hand-held camera) data sources. Tested on typical Swedish
+residential buildings, SI3FP achieved approximately 5% error in window-to-wall
+ratio estimates, demonstrating sufficient accuracy for early-stage renovation
+analysis. The pipeline facilitates large-scale energy renovation planning and
+has broader applications in urban development and planning.",http://arxiv.org/pdf/2508.04406v1,,False
+Generative Flexible Latent Structure Regression (GFLSR) model,06/08/2025,"Clara Grazian, Qian Jin, Pierre Lafaye De Micheaux","Latent structure methods, specifically linear continuous latent structure
+methods, are a type of fundamental statistical learning strategy. They are
+widely used for dimension reduction, regression and prediction, in the fields
+of chemometrics, economics, social science and etc. However, due to the lack of
+model inference, generative form, and unidentifiable parameters, most of these
+methods are always used as an algorithm, instead of a model. This paper
+proposed a Generative Flexible Latent Structure Regression (GFLSR) model
+structure to address this problem. Moreover, we show that most linear
+continuous latent variable methods can be represented under the proposed
+framework. The recursive structure allows potential model inference and
+residual analysis. Then, the traditional Partial Least Squares (PLS) is
+focused; we show that the PLS can be specialised in the proposed model
+structure, named Generative-PLS. With a model structure, we analyse the
+convergence of the parameters and the latent variables. Under additional
+distribution assumptions, we show that the proposed model structure can lead to
+model inference without solving the probabilistic model. Additionally, we
+proposed a novel bootstrap algorithm that enables uncertainty on parameters and
+on prediction for new datasets. A simulation study and a Real-world dataset are
+used to verify the proposed Generative-PLS model structure. Although the
+traditional PLS is a special case, this proposed GFLSRM structure leads to a
+potential inference structure for all the linear continuous latent variable
+methods.",http://arxiv.org/pdf/2508.04393v1,,False
+VisionTS++: Cross-Modal Time Series Foundation Model with Continual Pre-trained Visual Backbones,06/08/2025,"Lefei Shen, Mouxiang Chen, Xu Liu, Han Fu, Xiaoxue Ren, Jianling Sun, Zhuo Li, Chenghao Liu","Recent studies have revealed that vision models pre-trained on images can
+perform well in time series forecasting by reformulating forecasting as an
+image reconstruction task, suggesting their potential as universal time series
+foundation models. However, effective cross-modal transfer from vision to time
+series remains challenging due to three key discrepancies: (1) data-modality
+gap between structured, bounded image data and unbounded, heterogeneous time
+series; (2) multivariate-forecasting gap between standard RGB
+three-channel-based vision models and the need to model time series with
+arbitrary numbers of variates; and (3) probabilistic-forecasting gap between
+the deterministic output formats of most vision models and the requirement for
+uncertainty-aware probabilistic predictions. To bridge these gaps, we propose
+VisionTS++, a vision-model-based TSFM that performs continual pre-training on
+large-scale time series datasets, including 3 innovations: (1) a
+vision-model-based filtering mechanism to identify high-quality time series
+data, thereby mitigating modality gap and improving pre-training stability, (2)
+a colorized multivariate conversion method that transforms multivariate time
+series into multi-subfigure RGB images, capturing complex inter-variate
+dependencies; and (3) a multi-quantile forecasting approach using parallel
+reconstruction heads to generate forecasts of different quantile levels, thus
+more flexibly approximating arbitrary output distributions without restrictive
+prior distributional assumptions. Evaluated on both in-distribution and
+out-of-distribution TSF benchmarks, \model achieves SOTA results, outperforming
+specialized TSFMs by 6%-44% in MSE reduction and ranking first in 9 out of 12
+probabilistic forecasting settings. Our work establishes a new paradigm for
+cross-modal knowledge transfer, advancing the development of universal TSFMs.",http://arxiv.org/pdf/2508.04379v1,,False
+Compressing Large Language Models with PCA Without Performance Loss,06/08/2025,Magnus Bengtsson,"We demonstrate that Principal Component Analysis (PCA), when applied in a
+structured manner, either to polar-transformed images or segment-wise to token
+sequences, enables extreme compression of neural models without sacrificing
+performance. Across three case studies, we show that a one-layer classifier
+trained on PCA-compressed polar MNIST achieves over 98 percent accuracy using
+only 840 parameters. A two-layer transformer trained on 70-dimensional
+PCA-reduced MiniLM embeddings reaches 76.62 percent accuracy on the 20
+Newsgroups dataset with just 81000 parameters. A decoder-only transformer
+generates coherent token sequences from 70-dimensional PCA embeddings while
+preserving over 97 percent cosine similarity with full MiniLM representations,
+using less than 17 percent of the parameter count of GPT-2. These results
+highlight PCA-based input compression as a general and effective strategy for
+aligning model capacity with information content, enabling lightweight
+architectures across multiple modalities.",http://arxiv.org/pdf/2508.04307v1,,False
+Challenges in Applying Variational Quantum Algorithms to Dynamic Satellite Network Routing,06/08/2025,"Phuc Hao Do, Tran Duc Le","Applying near-term variational quantum algorithms to the problem of dynamic
+satellite network routing represents a promising direction for quantum
+computing. In this work, we provide a critical evaluation of two major
+approaches: static quantum optimizers such as the Variational Quantum
+Eigensolver (VQE) and the Quantum Approximate Optimization Algorithm (QAOA) for
+offline route computation, and Quantum Reinforcement Learning (QRL) methods for
+online decision-making. Using ideal, noise-free simulations, we find that these
+algorithms face significant challenges. Specifically, static optimizers are
+unable to solve even a classically easy 4-node shortest path problem due to the
+complexity of the optimization landscape. Likewise, a basic QRL agent based on
+policy gradient methods fails to learn a useful routing strategy in a dynamic
+8-node environment and performs no better than random actions. These negative
+findings highlight key obstacles that must be addressed before quantum
+algorithms can offer real advantages in communication networks. We discuss the
+underlying causes of these limitations, including barren plateaus and learning
+instability, and suggest future research directions to overcome them.",http://arxiv.org/pdf/2508.04288v1,,False
+Enhancing Vision-Language Model Training with Reinforcement Learning in Synthetic Worlds for Real-World Success,06/08/2025,"George Bredis, Stanislav Dereka, Viacheslav Sinii, Ruslan Rakhimov, Daniil Gavrilov","Interactive multimodal agents must convert raw visual observations into
+coherent sequences of language-conditioned actions -- a capability that current
+vision-language models (VLMs) still lack. Earlier reinforcement-learning (RL)
+efforts could, in principle, endow VLMs with such skills, but they have seldom
+tested whether the learned behaviours generalize beyond their training
+simulators, and they depend either on brittle hyperparameter tuning or on
+dense-reward environments with low state variability. We introduce
+Vision-Language Decoupled Actor-Critic (VL-DAC), a lightweight,
+hyperparameter-free RL algorithm. VL-DAC applies PPO updates to action tokens
+while learning value only at the environment-step level: an arrangement, to our
+knowledge, not previously explored for large VLMs or LLMs. This simple
+decoupling removes unstable weighting terms and yields faster, more reliable
+convergence. Training a single VLM with VL-DAC in one inexpensive simulator at
+a time (MiniWorld, Gym-Cards, ALFWorld, or WebShop) already produces policies
+that generalize widely: +50\% relative on BALROG (game-centric agentic
+control), +5\% relative on the hardest part of VSI-Bench (spatial planning),
+and +2\% on VisualWebBench (web navigation), all without degrading general
+image understanding accuracy. These results provide the first evidence that a
+simple RL algorithm can train VLMs entirely in cheap synthetic worlds while
+delivering measurable gains on real-image agentic, spatial-reasoning, and
+web-navigation benchmarks.",http://arxiv.org/pdf/2508.04280v1,,False
+T3Time: Tri-Modal Time Series Forecasting via Adaptive Multi-Head Alignment and Residual Fusion,06/08/2025,"Abdul Monaf Chowdhury, Rabeya Akter, Safaeid Hossain Arib","Multivariate time series forecasting (MTSF) seeks to model temporal dynamics
+among variables to predict future trends. Transformer-based models and large
+language models (LLMs) have shown promise due to their ability to capture
+long-range dependencies and patterns. However, current methods often rely on
+rigid inductive biases, ignore intervariable interactions, or apply static
+fusion strategies that limit adaptability across forecast horizons. These
+limitations create bottlenecks in capturing nuanced, horizon-specific
+relationships in time-series data. To solve this problem, we propose T3Time, a
+novel trimodal framework consisting of time, spectral, and prompt branches,
+where the dedicated frequency encoding branch captures the periodic structures
+along with a gating mechanism that learns prioritization between temporal and
+spectral features based on the prediction horizon. We also proposed a mechanism
+which adaptively aggregates multiple cross-modal alignment heads by dynamically
+weighting the importance of each head based on the features. Extensive
+experiments on benchmark datasets demonstrate that our model consistently
+outperforms state-of-the-art baselines, achieving an average reduction of 3.28%
+in MSE and 2.29% in MAE. Furthermore, it shows strong generalization in
+few-shot learning settings: with 5% training data, we see a reduction in MSE
+and MAE by 4.13% and 1.91%, respectively; and with 10% data, by 3.62% and 1.98%
+on average. Code - https://github.com/monaf-chowdhury/T3Time/",http://arxiv.org/pdf/2508.04251v1,,False
+TalkDep: Clinically Grounded LLM Personas for Conversation-Centric Depression Screening,06/08/2025,"Xi Wang, Anxo Perez, Javier Parapar, Fabio Crestani","The increasing demand for mental health services has outpaced the
+availability of real training data to develop clinical professionals, leading
+to limited support for the diagnosis of depression. This shortage has motivated
+the development of simulated or virtual patients to assist in training and
+evaluation, but existing approaches often fail to generate clinically valid,
+natural, and diverse symptom presentations. In this work, we embrace the recent
+advanced language models as the backbone and propose a novel
+clinician-in-the-loop patient simulation pipeline, TalkDep, with access to
+diversified patient profiles to develop simulated patients. By conditioning the
+model on psychiatric diagnostic criteria, symptom severity scales, and
+contextual factors, our goal is to create authentic patient responses that can
+better support diagnostic model training and evaluation. We verify the
+reliability of these simulated patients with thorough assessments conducted by
+clinical professionals. The availability of validated simulated patients offers
+a scalable and adaptable resource for improving the robustness and
+generalisability of automatic depression diagnosis systems.",http://arxiv.org/pdf/2508.04248v1,,False
+Generic-to-Specific Reasoning and Learning for Scalable Ad Hoc Teamwork,06/08/2025,"Hasra Dodampegama, Mohan Sridharan","AI agents deployed in assistive roles often have to collaborate with other
+agents (humans, AI systems) without prior coordination. Methods considered
+state of the art for such ad hoc teamwork often pursue a data-driven approach
+that needs a large labeled dataset of prior observations, lacks transparency,
+and makes it difficult to rapidly revise existing knowledge in response to
+changes. As the number of agents increases, the complexity of decision-making
+makes it difficult to collaborate effectively. This paper advocates leveraging
+the complementary strengths of knowledge-based and data-driven methods for
+reasoning and learning for ad hoc teamwork. For any given goal, our
+architecture enables each ad hoc agent to determine its actions through
+non-monotonic logical reasoning with: (a) prior commonsense domain-specific
+knowledge; (b) models learned and revised rapidly to predict the behavior of
+other agents; and (c) anticipated abstract future goals based on generic
+knowledge of similar situations in an existing foundation model. We
+experimentally evaluate our architecture's capabilities in VirtualHome, a
+realistic physics-based 3D simulation environment.",http://arxiv.org/pdf/2508.04163v1,,False
+Hybrid Quantum--Classical Machine Learning Potential with Variational Quantum Circuits,06/08/2025,"Soohaeng Yoo Willow, D. ChangMo Yang, Chang Woo Myung","Quantum algorithms for simulating large and complex molecular systems are
+still in their infancy, and surpassing state-of-the-art classical techniques
+remains an ever-receding goal post. A promising avenue of inquiry in the
+meanwhile is to seek practical advantages through hybrid quantum-classical
+algorithms, which combine conventional neural networks with variational quantum
+circuits (VQCs) running on today's noisy intermediate-scale quantum (NISQ)
+hardware. Such hybrids are well suited to NISQ hardware. The classical
+processor performs the bulk of the computation, while the quantum processor
+executes targeted sub-tasks that supply additional non-linearity and
+expressivity. Here, we benchmark a purely classical E(3)-equivariant
+message-passing machine learning potential (MLP) against a hybrid
+quantum-classical MLP for predicting density functional theory (DFT) properties
+of liquid silicon. In our hybrid architecture, every readout in the
+message-passing layers is replaced by a VQC. Molecular dynamics simulations
+driven by the HQC-MLP reveal that an accurate reproduction of high-temperature
+structural and thermodynamic properties is achieved with VQCs. These findings
+demonstrate a concrete scenario in which NISQ-compatible HQC algorithm could
+deliver a measurable benefit over the best available classical alternative,
+suggesting a viable pathway toward near-term quantum advantage in materials
+modeling.",http://arxiv.org/pdf/2508.04098v1,,False
+Model Inversion Attacks on Vision-Language Models: Do They Leak What They Learn?,06/08/2025,"Ngoc-Bao Nguyen, Sy-Tuyen Ho, Koh Jun Hao, Ngai-Man Cheung","Model inversion (MI) attacks pose significant privacy risks by reconstructing
+private training data from trained neural networks. While prior works have
+focused on conventional unimodal DNNs, the vulnerability of vision-language
+models (VLMs) remains underexplored. In this paper, we conduct the first study
+to understand VLMs' vulnerability in leaking private visual training data. To
+tailored for VLMs' token-based generative nature, we propose a suite of novel
+token-based and sequence-based model inversion strategies. Particularly, we
+propose Token-based Model Inversion (TMI), Convergent Token-based Model
+Inversion (TMI-C), Sequence-based Model Inversion (SMI), and Sequence-based
+Model Inversion with Adaptive Token Weighting (SMI-AW). Through extensive
+experiments and user study on three state-of-the-art VLMs and multiple
+datasets, we demonstrate, for the first time, that VLMs are susceptible to
+training data leakage. The experiments show that our proposed sequence-based
+methods, particularly SMI-AW combined with a logit-maximization loss based on
+vocabulary representation, can achieve competitive reconstruction and
+outperform token-based methods in attack accuracy and visual similarity.
+Importantly, human evaluation of the reconstructed images yields an attack
+accuracy of 75.31\%, underscoring the severity of model inversion threats in
+VLMs. Notably we also demonstrate inversion attacks on the publicly released
+VLMs. Our study reveals the privacy vulnerability of VLMs as they become
+increasingly popular across many applications such as healthcare and finance.",http://arxiv.org/pdf/2508.04097v1,,False
+The Ubiquitous Sparse Matrix-Matrix Products,06/08/2025,Aydın Buluç,"Multiplication of a sparse matrix with another (dense or sparse) matrix is a
+fundamental operation that captures the computational patterns of many data
+science applications, including but not limited to graph algorithms, sparsely
+connected neural networks, graph neural networks, clustering, and many-to-many
+comparisons of biological sequencing data.
+  In many application scenarios, the matrix multiplication takes places on an
+arbitrary algebraic semiring where the scalar operations are overloaded with
+user-defined functions with certain properties or a more general heterogenous
+algebra where even the domains of the input matrices can be different. Here, we
+provide a unifying treatment of the sparse matrix-matrix operation and its rich
+application space including machine learning, computational biology and
+chemistry, graph algorithms, and scientific computing.",http://arxiv.org/pdf/2508.04077v1,,False
+Quantum Temporal Fusion Transformer,06/08/2025,"Krishnakanta Barik, Goutam Paul","The Temporal Fusion Transformer (TFT), proposed by Lim et al.
+[\textit{International Journal of Forecasting}, 2021], is a state-of-the-art
+attention-based deep neural network architecture specifically designed for
+multi-horizon time series forecasting. It has demonstrated significant
+performance improvements over existing benchmarks. In this work, we propose a
+Quantum Temporal Fusion Transformer (QTFT), a quantum-enhanced hybrid
+quantum-classical architecture that extends the capabilities of the classical
+TFT framework. Our results demonstrate that QTFT is successfully trained on the
+forecasting datasets and is capable of accurately predicting future values. In
+particular, our experimental results display that in certain test cases, the
+model outperforms its classical counterpart in terms of both training and test
+loss, while in the remaining cases, it achieves comparable performance. A key
+advantage of our approach lies in its foundation on a variational quantum
+algorithm, enabling implementation on current noisy intermediate-scale quantum
+(NISQ) devices without strict requirements on the number of qubits or circuit
+depth.",http://arxiv.org/pdf/2508.04048v1,,False
+FeDaL: Federated Dataset Learning for Time Series Foundation Models,06/08/2025,"Shengchao Chen, Guodong Long, Jing Jiang","Dataset-wise heterogeneity introduces significant domain biases that
+fundamentally degrade generalization on Time Series Foundation Models (TSFMs),
+yet this challenge remains underexplored. This paper rethink the development of
+TSFMs using the paradigm of federated learning. We propose a novel Federated
+Dataset Learning (FeDaL) approach to tackle heterogeneous time series by
+learning dataset-agnostic temporal representations. Specifically, the
+distributed architecture of federated learning is a nature solution to
+decompose heterogeneous TS datasets into shared generalized knowledge and
+preserved personalized knowledge. Moreover, based on the TSFM architecture,
+FeDaL explicitly mitigates both local and global biases by adding two
+complementary mechanisms: Domain Bias Elimination (DBE) and Global Bias
+Elimination (GBE). FeDaL`s cross-dataset generalization has been extensively
+evaluated in real-world datasets spanning eight tasks, including both
+representation learning and downstream time series analysis, against 54
+baselines. We further analyze federated scaling behavior, showing how data
+volume, client count, and join rate affect model performance under
+decentralization.",http://arxiv.org/pdf/2508.04045v1,,False
+Dynamic User-controllable Privacy-preserving Few-shot Sensing Framework,06/08/2025,"Ajesh Koyatan Chathoth, Shuhao Yu, Stephen Lee","User-controllable privacy is important in modern sensing systems, as privacy
+preferences can vary significantly from person to person and may evolve over
+time. This is especially relevant in devices equipped with Inertial Measurement
+Unit (IMU) sensors, such as smartphones and wearables, which continuously
+collect rich time-series data that can inadvertently expose sensitive user
+behaviors. While prior work has proposed privacy-preserving methods for sensor
+data, most rely on static, predefined privacy labels or require large
+quantities of private training data, limiting their adaptability and user
+agency. In this work, we introduce PrivCLIP, a dynamic, user-controllable,
+few-shot privacy-preserving sensing framework. PrivCLIP allows users to specify
+and modify their privacy preferences by categorizing activities as sensitive
+(black-listed), non-sensitive (white-listed), or neutral (gray-listed).
+Leveraging a multimodal contrastive learning approach, PrivCLIP aligns IMU
+sensor data with natural language activity descriptions in a shared embedding
+space, enabling few-shot detection of sensitive activities. When a
+privacy-sensitive activity is identified, the system uses a language-guided
+activity sanitizer and a motion generation module (IMU-GPT) to transform the
+original data into a privacy-compliant version that semantically resembles a
+non-sensitive activity. We evaluate PrivCLIP on multiple human activity
+recognition datasets and demonstrate that it significantly outperforms baseline
+methods in terms of both privacy protection and data utility.",http://arxiv.org/pdf/2508.03989v1,,False

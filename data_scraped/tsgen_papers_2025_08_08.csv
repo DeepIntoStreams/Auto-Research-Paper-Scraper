@@ -1,0 +1,328 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Simulating Human-Like Learning Dynamics with LLM-Empowered Agents,07/08/2025,"Yu Yuan, Lili Zhao, Wei Chen, Guangting Zheng, Kai Zhang, Mengdi Zhang, Qi Liu","Capturing human learning behavior based on deep learning methods has become a
+major research focus in both psychology and intelligent systems. Recent
+approaches rely on controlled experiments or rule-based models to explore
+cognitive processes. However, they struggle to capture learning dynamics, track
+progress over time, or provide explainability. To address these challenges, we
+introduce LearnerAgent, a novel multi-agent framework based on Large Language
+Models (LLMs) to simulate a realistic teaching environment. To explore
+human-like learning dynamics, we construct learners with psychologically
+grounded profiles-such as Deep, Surface, and Lazy-as well as a persona-free
+General Learner to inspect the base LLM's default behavior. Through weekly
+knowledge acquisition, monthly strategic choices, periodic tests, and peer
+interaction, we can track the dynamic learning progress of individual learners
+over a full-year journey. Our findings are fourfold: 1) Longitudinal analysis
+reveals that only Deep Learner achieves sustained cognitive growth. Our
+specially designed ""trap questions"" effectively diagnose Surface Learner's
+shallow knowledge. 2) The behavioral and cognitive patterns of distinct
+learners align closely with their psychological profiles. 3) Learners'
+self-concept scores evolve realistically, with the General Learner developing
+surprisingly high self-efficacy despite its cognitive limitations. 4)
+Critically, the default profile of base LLM is a ""diligent but brittle Surface
+Learner""-an agent that mimics the behaviors of a good student but lacks true,
+generalizable understanding. Extensive simulation experiments demonstrate that
+LearnerAgent aligns well with real scenarios, yielding more insightful findings
+about LLMs' behavior.",http://arxiv.org/pdf/2508.05622v1,,False
+Adapting Vision-Language Models Without Labels: A Comprehensive Survey,07/08/2025,"Hao Dong, Lijun Sheng, Jian Liang, Ran He, Eleni Chatzi, Olga Fink","Vision-Language Models (VLMs) have demonstrated remarkable generalization
+capabilities across a wide range of tasks. However, their performance often
+remains suboptimal when directly applied to specific downstream scenarios
+without task-specific adaptation. To enhance their utility while preserving
+data efficiency, recent research has increasingly focused on unsupervised
+adaptation methods that do not rely on labeled data. Despite the growing
+interest in this area, there remains a lack of a unified, task-oriented survey
+dedicated to unsupervised VLM adaptation. To bridge this gap, we present a
+comprehensive and structured overview of the field. We propose a taxonomy based
+on the availability and nature of unlabeled visual data, categorizing existing
+approaches into four key paradigms: Data-Free Transfer (no data), Unsupervised
+Domain Transfer (abundant data), Episodic Test-Time Adaptation (batch data),
+and Online Test-Time Adaptation (streaming data). Within this framework, we
+analyze core methodologies and adaptation strategies associated with each
+paradigm, aiming to establish a systematic understanding of the field.
+Additionally, we review representative benchmarks across diverse applications
+and highlight open challenges and promising directions for future research. An
+actively maintained repository of relevant literature is available at
+https://github.com/tim-learn/Awesome-LabelFree-VLMs.",http://arxiv.org/pdf/2508.05547v1,,False
+EnergyPatchTST: Multi-scale Time Series Transformers with Uncertainty Estimation for Energy Forecasting,07/08/2025,"Wei Li, Zixin Wang, Qizheng Sun, Qixiang Gao, Fenglei Yang","Accurate and reliable energy time series prediction is of great significance
+for power generation planning and allocation. At present, deep learning time
+series prediction has become the mainstream method. However, the multi-scale
+time dynamics and the irregularity of real data lead to the limitations of the
+existing methods. Therefore, we propose EnergyPatchTST, which is an extension
+of the Patch Time Series Transformer specially designed for energy forecasting.
+The main innovations of our method are as follows: (1) multi-scale feature
+extraction mechanism to capture patterns with different time resolutions; (2)
+probability prediction framework to estimate uncertainty through Monte Carlo
+elimination; (3) integration path of future known variables (such as
+temperature and wind conditions); And (4) Pre-training and Fine-tuning examples
+to enhance the performance of limited energy data sets. A series of experiments
+on common energy data sets show that EnergyPatchTST is superior to other
+commonly used methods, the prediction error is reduced by 7-12%, and reliable
+uncertainty estimation is provided, which provides an important reference for
+time series prediction in the energy field.",http://arxiv.org/pdf/2508.05454v1,10.1007/978-981-96-9815-8_27,False
+Echo: Decoupling Inference and Training for Large-Scale RL Alignment on Heterogeneous Swarms,07/08/2025,"Jie Xiao, Shaoduo Gan, Changyuan Fan, Qingnan Ren, Alfred Long, Yuchen Zhang, Rymon Yu, Eric Yang, Lynn Ai","Modern RL-based post-training for large language models (LLMs) co-locate
+trajectory sampling and policy optimisation on the same GPU cluster, forcing
+the system to switch between inference and training workloads. This serial
+context switching violates the single-program-multiple-data (SPMD) assumption
+underlying today's distributed training systems. We present Echo, the RL system
+that cleanly decouples these two phases across heterogeneous ""inference"" and
+""training"" swarms while preserving statistical efficiency. Echo introduces two
+lightweight synchronization protocols: a sequential pull mode that refreshes
+sampler weights on every API call for minimal bias, and an asynchronous
+push-pull mode that streams version-tagged rollouts through a replay buffer to
+maximise hardware utilisation. Training three representative RL workloads with
+Qwen3-4B, Qwen2.5-7B and Qwen3-32B on a geographically distributed cluster,
+Echo matches a fully co-located Verl baseline in convergence speed and final
+reward while off-loading trajectory generation to commodity edge hardware.
+These promising results demonstrate that large-scale RL for LLMs could achieve
+datacentre-grade performance using decentralised, heterogeneous resources.",http://arxiv.org/pdf/2508.05387v1,,False
+ASkDAgger: Active Skill-level Data Aggregation for Interactive Imitation Learning,07/08/2025,"Jelle Luijkx, Zlatan Ajanović, Laura Ferranti, Jens Kober","Human teaching effort is a significant bottleneck for the broader
+applicability of interactive imitation learning. To reduce the number of
+required queries, existing methods employ active learning to query the human
+teacher only in uncertain, risky, or novel situations. However, during these
+queries, the novice's planned actions are not utilized despite containing
+valuable information, such as the novice's capabilities, as well as
+corresponding uncertainty levels. To this end, we allow the novice to say: ""I
+plan to do this, but I am uncertain."" We introduce the Active Skill-level Data
+Aggregation (ASkDAgger) framework, which leverages teacher feedback on the
+novice plan in three key ways: (1) S-Aware Gating (SAG): Adjusts the gating
+threshold to track sensitivity, specificity, or a minimum success rate; (2)
+Foresight Interactive Experience Replay (FIER), which recasts valid and
+relabeled novice action plans into demonstrations; and (3) Prioritized
+Interactive Experience Replay (PIER), which prioritizes replay based on
+uncertainty, novice success, and demonstration age. Together, these components
+balance query frequency with failure incidence, reduce the number of required
+demonstration annotations, improve generalization, and speed up adaptation to
+changing domains. We validate the effectiveness of ASkDAgger through
+language-conditioned manipulation tasks in both simulation and real-world
+environments. Code, data, and videos are available at
+https://askdagger.github.io.",http://arxiv.org/pdf/2508.05310v1,,False
+FlowState: Sampling Rate Invariant Time Series Forecasting,07/08/2025,"Lars Graf, Thomas Ortner, Stanisław Woźniak, Angeliki Pantazi","Foundation models (FMs) have transformed natural language processing, but
+their success has not yet translated to time series forecasting. Existing time
+series foundation models (TSFMs), often based on transformer variants, struggle
+with generalization across varying context and target lengths, lack
+adaptability to different sampling rates, and are computationally inefficient.
+We introduce FlowState, a novel TSFM architecture that addresses these
+challenges through two key innovations: a state space model (SSM) based encoder
+and a functional basis decoder. This design enables continuous-time modeling
+and dynamic time-scale adjustment, allowing FlowState to inherently generalize
+across all possible temporal resolutions, and dynamically adjust the
+forecasting horizons. In contrast to other state-of-the-art TSFMs, which
+require training data across all possible sampling rates to memorize patterns
+at each scale, FlowState inherently adapts its internal dynamics to the input
+scale, enabling smaller models, reduced data requirements, and improved
+efficiency. We further propose an efficient pretraining strategy that improves
+robustness and accelerates training. Despite being the smallest model,
+FlowState outperforms all other models and is state-of-the-art for the GIFT-ZS
+and the Chronos-ZS benchmarks. Ablation studies confirm the effectiveness of
+its components, and we demonstrate its unique ability to adapt online to
+varying input sampling rates.",http://arxiv.org/pdf/2508.05287v1,,False
+Understanding and Mitigating Errors of LLM-Generated RTL Code,07/08/2025,"Jiazheng Zhang, Cheng Liu, Huawei Li","Despite the promising potential of large language model (LLM) based
+register-transfer-level (RTL) code generation, the overall success rate remains
+unsatisfactory. Errors arise from various factors, with limited understanding
+of specific failure causes hindering improvement. To address this, we conduct a
+comprehensive error analysis and manual categorization. Our findings reveal
+that most errors stem not from LLM reasoning limitations, but from insufficient
+RTL programming knowledge, poor understanding of circuit concepts, ambiguous
+design descriptions, or misinterpretation of complex multimodal inputs.
+Leveraging in-context learning, we propose targeted error correction
+techniques. Specifically, we construct a domain-specific knowledge base and
+employ retrieval-augmented generation (RAG) to supply necessary RTL knowledge.
+To mitigate ambiguity errors, we introduce design description rules and
+implement a rule-checking mechanism. For multimodal misinterpretation, we
+integrate external tools to convert inputs into LLM-compatible meta-formats.
+For remaining errors, we adopt an iterative debugging loop (simulation-error
+localization-correction). Integrating these techniques into an LLM-based
+framework significantly improves performance. We incorporate these error
+correction techniques into a foundational LLM-based RTL code generation
+framework, resulting in significantly improved performance. Experimental
+results show that our enhanced framework achieves 91.0\% accuracy on the
+VerilogEval benchmark, surpassing the baseline code generation approach by
+32.7\%, demonstrating the effectiveness of our methods.",http://arxiv.org/pdf/2508.05266v1,,False
+ReasoningTrack: Chain-of-Thought Reasoning for Long-term Vision-Language Tracking,07/08/2025,"Xiao Wang, Liye Jin, Xufeng Lou, Shiao Wang, Lan Chen, Bo Jiang, Zhipeng Zhang","Vision-language tracking has received increasing attention in recent years,
+as textual information can effectively address the inflexibility and inaccuracy
+associated with specifying the target object to be tracked. Existing works
+either directly fuse the fixed language with vision features or simply modify
+using attention, however, their performance is still limited. Recently, some
+researchers have explored using text generation to adapt to the variations in
+the target during tracking, however, these works fail to provide insights into
+the model's reasoning process and do not fully leverage the advantages of large
+models, which further limits their overall performance. To address the
+aforementioned issues, this paper proposes a novel reasoning-based
+vision-language tracking framework, named ReasoningTrack, based on a
+pre-trained vision-language model Qwen2.5-VL. Both SFT (Supervised Fine-Tuning)
+and reinforcement learning GRPO are used for the optimization of reasoning and
+language generation. We embed the updated language descriptions and feed them
+into a unified tracking backbone network together with vision features. Then,
+we adopt a tracking head to predict the specific location of the target object.
+In addition, we propose a large-scale long-term vision-language tracking
+benchmark dataset, termed TNLLT, which contains 200 video sequences. 20
+baseline visual trackers are re-trained and evaluated on this dataset, which
+builds a solid foundation for the vision-language visual tracking task.
+Extensive experiments on multiple vision-language tracking benchmark datasets
+fully validated the effectiveness of our proposed reasoning-based natural
+language generation strategy. The source code of this paper will be released on
+https://github.com/Event-AHU/Open_VLTrack",http://arxiv.org/pdf/2508.05221v1,,False
+Hybrid quantum tensor networks for aeroelastic applications,07/08/2025,"M. Lautaro Hickmann, Pedro Alves, David Quero, Friedhelm Schwenker, Hans-Martin Rieser","We investigate the application of hybrid quantum tensor networks to
+aeroelastic problems, harnessing the power of Quantum Machine Learning (QML).
+By combining tensor networks with variational quantum circuits, we demonstrate
+the potential of QML to tackle complex time series classification and
+regression tasks. Our results showcase the ability of hybrid quantum tensor
+networks to achieve high accuracy in binary classification. Furthermore, we
+observe promising performance in regressing discrete variables. While
+hyperparameter selection remains a challenge, requiring careful optimisation to
+unlock the full potential of these models, this work contributes significantly
+to the development of QML for solving intricate problems in aeroelasticity. We
+present an end-to-end trainable hybrid algorithm. We first encode time series
+into tensor networks to then utilise trainable tensor networks for
+dimensionality reduction, and convert the resulting tensor to a quantum circuit
+in the encoding step. Then, a tensor network inspired trainable variational
+quantum circuit is applied to solve either a classification or a multivariate
+or univariate regression task in the aeroelasticity domain.",http://arxiv.org/pdf/2508.05169v1,,False
+FCBV-Net: Category-Level Robotic Garment Smoothing via Feature-Conditioned Bimanual Value Prediction,07/08/2025,"Mohammed Daba, Jing Qiu","Category-level generalization for robotic garment manipulation, such as
+bimanual smoothing, remains a significant hurdle due to high dimensionality,
+complex dynamics, and intra-category variations. Current approaches often
+struggle, either overfitting with concurrently learned visual features for a
+specific instance or, despite category-level perceptual generalization, failing
+to predict the value of synergistic bimanual actions. We propose the
+Feature-Conditioned Bimanual Value Network (FCBV-Net), operating on 3D point
+clouds to specifically enhance category-level policy generalization for garment
+smoothing. FCBV-Net conditions bimanual action value prediction on pre-trained,
+frozen dense geometric features, ensuring robustness to intra-category garment
+variations. Trainable downstream components then learn a task-specific policy
+using these static features. In simulated GarmentLab experiments with the
+CLOTH3D dataset, FCBV-Net demonstrated superior category-level generalization.
+It exhibited only an 11.5% efficiency drop (Steps80) on unseen garments
+compared to 96.2% for a 2D image-based baseline, and achieved 89% final
+coverage, outperforming an 83% coverage from a 3D correspondence-based baseline
+that uses identical per-point geometric features but a fixed primitive. These
+results highlight that the decoupling of geometric understanding from bimanual
+action value learning enables better category-level generalization.",http://arxiv.org/pdf/2508.05153v1,,False
+Analyzing the Impact of Multimodal Perception on Sample Complexity and Optimization Landscapes in Imitation Learning,07/08/2025,"Luai Abuelsamen, Temitope Lukman Adebanjo","This paper examines the theoretical foundations of multimodal imitation
+learning through the lens of statistical learning theory. We analyze how
+multimodal perception (RGB-D, proprioception, language) affects sample
+complexity and optimization landscapes in imitation policies. Building on
+recent advances in multimodal learning theory, we show that properly integrated
+multimodal policies can achieve tighter generalization bounds and more
+favorable optimization landscapes than their unimodal counterparts. We provide
+a comprehensive review of theoretical frameworks that explain why multimodal
+architectures like PerAct and CLIPort achieve superior performance, connecting
+these empirical results to fundamental concepts in Rademacher complexity, PAC
+learning, and information theory.",http://arxiv.org/pdf/2508.05077v1,,False
+Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits,07/08/2025,"Chi-Sheng Chen, Samuel Yen-Chi Chen","Time series forecasting is vital in domains where data sensitivity is
+paramount, such as finance and energy systems. While Differential Privacy (DP)
+provides theoretical guarantees to protect individual data contributions, its
+integration especially via DP-SGD often impairs model performance due to
+injected noise. In this paper, we propose Q-DPTS, a hybrid quantum-classical
+framework for Quantum Differentially Private Time Series Forecasting. Q-DPTS
+combines Variational Quantum Circuits (VQCs) with per-sample gradient clipping
+and Gaussian noise injection, ensuring rigorous $(\epsilon,
+\delta)$-differential privacy. The expressiveness of quantum models enables
+improved robustness against the utility loss induced by DP mechanisms. We
+evaluate Q-DPTS on the ETT (Electricity Transformer Temperature) dataset, a
+standard benchmark for long-term time series forecasting. Our approach is
+compared against both classical and quantum baselines, including LSTM, QASA,
+QRWKV, and QLSTM. Results demonstrate that Q-DPTS consistently achieves lower
+prediction error under the same privacy budget, indicating a favorable
+privacy-utility trade-off. This work presents one of the first explorations
+into quantum-enhanced differentially private forecasting, offering promising
+directions for secure and accurate time series modeling in privacy-critical
+scenarios.",http://arxiv.org/pdf/2508.05036v1,,False
+Towards Hallucination-Free Music: A Reinforcement Learning Preference Optimization Framework for Reliable Song Generation,07/08/2025,"Huaicheng Zhang, Wei Tan, Guangzheng Li, Yixuan Zhang, Hangting Chen, Shun Lei, Chenyu Yang, Zhiyong Wu, Shuai Wang, Qijun Huang, Dong Yu","Recent advances in audio-based generative language models have accelerated
+AI-driven lyric-to-song generation. However, these models frequently suffer
+from content hallucination, producing outputs misaligned with the input lyrics
+and undermining musical coherence. Current supervised fine-tuning (SFT)
+approaches, limited by passive label-fitting, exhibit constrained
+self-improvement and poor hallucination mitigation. To address this core
+challenge, we propose a novel reinforcement learning (RL) framework leveraging
+preference optimization for hallucination control. Our key contributions
+include: (1) Developing a robust hallucination preference dataset constructed
+via phoneme error rate (PER) computation and rule-based filtering to capture
+alignment with human expectations; (2) Implementing and evaluating three
+distinct preference optimization strategies within the RL framework: Direct
+Preference Optimization (DPO), Proximal Policy Optimization (PPO), and Group
+Relative Policy Optimization (GRPO). DPO operates off-policy to enhance
+positive token likelihood, achieving a significant 7.4% PER reduction. PPO and
+GRPO employ an on-policy approach, training a PER-based reward model to
+iteratively optimize sequences via reward maximization and KL-regularization,
+yielding PER reductions of 4.9% and 4.7%, respectively. Comprehensive objective
+and subjective evaluations confirm that our methods effectively suppress
+hallucinations while preserving musical quality. Crucially, this work presents
+a systematic, RL-based solution to hallucination control in lyric-to-song
+generation. The framework's transferability also unlocks potential for music
+style adherence and musicality enhancement, opening new avenues for future
+generative song research.",http://arxiv.org/pdf/2508.05011v1,,False
+Hierarchical Deep Deterministic Policy Gradient for Autonomous Maze Navigation of Mobile Robots,07/08/2025,"Wenjie Hu, Ye Zhou, Hann Woei Ho","Maze navigation is a fundamental challenge in robotics, requiring agents to
+traverse complex environments efficiently. While the Deep Deterministic Policy
+Gradient (DDPG) algorithm excels in control tasks, its performance in maze
+navigation suffers from sparse rewards, inefficient exploration, and
+long-horizon planning difficulties, often leading to low success rates and
+average rewards, sometimes even failing to achieve effective navigation. To
+address these limitations, this paper proposes an efficient Hierarchical DDPG
+(HDDPG) algorithm, which includes high-level and low-level policies. The
+high-level policy employs an advanced DDPG framework to generate intermediate
+subgoals from a long-term perspective and on a higher temporal scale. The
+low-level policy, also powered by the improved DDPG algorithm, generates
+primitive actions by observing current states and following the subgoal
+assigned by the high-level policy. The proposed method enhances stability with
+off-policy correction, refining subgoal assignments by relabeling historical
+experiences. Additionally, adaptive parameter space noise is utilized to
+improve exploration, and a reshaped intrinsic-extrinsic reward function is
+employed to boost learning efficiency. Further optimizations, including
+gradient clipping and Xavier initialization, are employed to improve
+robustness. The proposed algorithm is rigorously evaluated through numerical
+simulation experiments executed using the Robot Operating System (ROS) and
+Gazebo. Regarding the three distinct final targets in autonomous maze
+navigation tasks, HDDPG significantly overcomes the limitations of standard
+DDPG and its variants, improving the success rate by at least 56.59% and
+boosting the average reward by a minimum of 519.03 compared to baseline
+algorithms.",http://arxiv.org/pdf/2508.04994v1,,False
+RCUKF: Data-Driven Modeling Meets Bayesian Estimation,07/08/2025,"Kumar Anurag, Kasra Azizi, Francesco Sorrentino, Wenbin Wan","Accurate modeling is crucial in many engineering and scientific applications,
+yet obtaining a reliable process model for complex systems is often
+challenging. To address this challenge, we propose a novel framework, reservoir
+computing with unscented Kalman filtering (RCUKF), which integrates data-driven
+modeling via reservoir computing (RC) with Bayesian estimation through the
+unscented Kalman filter (UKF). The RC component learns the nonlinear system
+dynamics directly from data, serving as a surrogate process model in the UKF
+prediction step to generate state estimates in high-dimensional or chaotic
+regimes where nominal mathematical models may fail. Meanwhile, the UKF
+measurement update integrates real-time sensor data to correct potential drift
+in the data-driven model. We demonstrate RCUKF effectiveness on well-known
+benchmark problems and a real-time vehicle trajectory estimation task in a
+high-fidelity simulation environment.",http://arxiv.org/pdf/2508.04985v1,,False
+REINA: Regularized Entropy Information-Based Loss for Efficient Simultaneous Speech Translation,07/08/2025,"Nameer Hirschkind, Joseph Liu, Mahesh Kumar Nandwana, Xiao Yu","Simultaneous Speech Translation (SimulST) systems stream in audio while
+simultaneously emitting translated text or speech. Such systems face the
+significant challenge of balancing translation quality and latency. We
+introduce a strategy to optimize this tradeoff: wait for more input only if you
+gain information by doing so. Based on this strategy, we present Regularized
+Entropy INformation Adaptation (REINA), a novel loss to train an adaptive
+policy using an existing non-streaming translation model. We derive REINA from
+information theory principles and show that REINA helps push the reported
+Pareto frontier of the latency/quality tradeoff over prior works. Utilizing
+REINA, we train a SimulST model on French, Spanish and German, both from and
+into English. Training on only open source or synthetically generated data, we
+achieve state-of-the-art (SOTA) streaming results for models of comparable
+size. We also introduce a metric for streaming efficiency, quantitatively
+showing REINA improves the latency/quality trade-off by as much as 21% compared
+to prior approaches, normalized against non-streaming baseline BLEU scores.",http://arxiv.org/pdf/2508.04946v1,,False
+TRKT: Weakly Supervised Dynamic Scene Graph Generation with Temporal-enhanced Relation-aware Knowledge Transferring,07/08/2025,"Zhu Xu, Ting Lei, Zhimin Li, Guan Wang, Qingchao Chen, Yuxin Peng, Yang liu","Dynamic Scene Graph Generation (DSGG) aims to create a scene graph for each
+video frame by detecting objects and predicting their relationships. Weakly
+Supervised DSGG (WS-DSGG) reduces annotation workload by using an unlocalized
+scene graph from a single frame per video for training. Existing WS-DSGG
+methods depend on an off-the-shelf external object detector to generate pseudo
+labels for subsequent DSGG training. However, detectors trained on static,
+object-centric images struggle in dynamic, relation-aware scenarios required
+for DSGG, leading to inaccurate localization and low-confidence proposals. To
+address the challenges posed by external object detectors in WS-DSGG, we
+propose a Temporal-enhanced Relation-aware Knowledge Transferring (TRKT)
+method, which leverages knowledge to enhance detection in relation-aware
+dynamic scenarios. TRKT is built on two key components:(1)Relation-aware
+knowledge mining: we first employ object and relation class decoders that
+generate category-specific attention maps to highlight both object regions and
+interactive areas. Then we propose an Inter-frame Attention Augmentation
+strategy that exploits optical flow for neighboring frames to enhance the
+attention maps, making them motion-aware and robust to motion blur. This step
+yields relation- and motion-aware knowledge mining for WS-DSGG. (2) we
+introduce a Dual-stream Fusion Module that integrates category-specific
+attention maps into external detections to refine object localization and boost
+confidence scores for object proposals. Extensive experiments demonstrate that
+TRKT achieves state-of-the-art performance on Action Genome dataset. Our code
+is avaliable at https://github.com/XZPKU/TRKT.git.",http://arxiv.org/pdf/2508.04943v1,,False

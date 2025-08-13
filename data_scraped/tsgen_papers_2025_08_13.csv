@@ -1,0 +1,263 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+MechaFormer: Sequence Learning for Kinematic Mechanism Design Automation,12/08/2025,"Diana Bolanos, Mohammadmehdi Ataei, Pradeep Kumar Jayaraman","Designing mechanical mechanisms to trace specific paths is a classic yet
+notoriously difficult engineering problem, characterized by a vast and complex
+search space of discrete topologies and continuous parameters. We introduce
+MechaFormer, a Transformer-based model that tackles this challenge by treating
+mechanism design as a conditional sequence generation task. Our model learns to
+translate a target curve into a domain-specific language (DSL) string,
+simultaneously determining the mechanism's topology and geometric parameters in
+a single, unified process. MechaFormer significantly outperforms existing
+baselines, achieving state-of-the-art path-matching accuracy and generating a
+wide diversity of novel and valid designs. We demonstrate a suite of sampling
+strategies that can dramatically improve solution quality and offer designers
+valuable flexibility. Furthermore, we show that the high-quality outputs from
+MechaFormer serve as excellent starting points for traditional optimizers,
+creating a hybrid approach that finds superior solutions with remarkable
+efficiency.",http://arxiv.org/pdf/2508.09005v1,,False
+Retrospective Sparse Attention for Efficient Long-Context Generation,12/08/2025,"Seonghwan Choi, Beomseok Kang, Dongwon Jo, Jae-Joon Kim","Large Language Models (LLMs) are increasingly deployed in long-context tasks
+such as reasoning, code generation, and multi-turn dialogue. However, inference
+over extended contexts is bottlenecked by the Key-Value (KV) cache, whose
+memory footprint grows linearly with sequence length and dominates latency at
+each decoding step. While recent KV cache compression methods identify and load
+important tokens, they focus predominantly on input contexts and fail to
+address the cumulative attention errors that arise during long decoding. In
+this paper, we introduce RetroAttention, a novel KV cache update technique that
+retrospectively revises past attention outputs using newly arrived KV entries
+from subsequent decoding steps. By maintaining a lightweight output cache,
+RetroAttention enables past queries to efficiently access more relevant
+context, while incurring minimal latency overhead. This breaks the
+fixed-attention-output paradigm and allows continual correction of prior
+approximations. Extensive experiments on long-generation benchmarks show that
+RetroAttention consistently outperforms state-of-the-art (SOTA) KV compression
+methods, increasing effective KV exposure by up to 1.6$\times$ and accuracy by
+up to 21.9\%.",http://arxiv.org/pdf/2508.09001v1,,False
+Automatic and standardized surgical reporting for central nervous system tumors,12/08/2025,"David Bouget, Mathilde Gajda Faanes, Asgeir Store Jakola, Frederik Barkhof, Hilko Ardon, Lorenzo Bello, Mitchel S. Berger, Shawn L. Hervey-Jumper, Julia Furtner, Albert J. S. Idema, Barbara Kiesel, Georg Widhalm, Rishi Nandoe Tewarie, Emmanuel Mandonnet, Pierre A. Robe, Michiel Wagemakers, Timothy R. Smith, Philip C. De Witt Hamer, Ole solheim, Ingerid Reinertsen","Magnetic resonance (MR) imaging is essential for evaluating central nervous
+system (CNS) tumors, guiding surgical planning, treatment decisions, and
+assessing postoperative outcomes and complication risks. While recent work has
+advanced automated tumor segmentation and report generation, most efforts have
+focused on preoperative data, with limited attention to postoperative imaging
+analysis. This study introduces a comprehensive pipeline for standardized
+postsurtical reporting in CNS tumors. Using the Attention U-Net architecture,
+segmentation models were trained for the preoperative (non-enhancing) tumor
+core, postoperative contrast-enhancing residual tumor, and resection cavity.
+Additionally, MR sequence classification and tumor type identification for
+contrast-enhancing lesions were explored using the DenseNet architecture. The
+models were integrated into a reporting pipeline, following the RANO 2.0
+guidelines. Training was conducted on multicentric datasets comprising 2000 to
+7000 patients, using a 5-fold cross-validation. Evaluation included patient-,
+voxel-, and object-wise metrics, with benchmarking against the latest BraTS
+challenge results. The segmentation models achieved average voxel-wise Dice
+scores of 87%, 66%, 70%, and 77% for the tumor core, non-enhancing tumor core,
+contrast-enhancing residual tumor, and resection cavity, respectively.
+Classification models reached 99.5% balanced accuracy in MR sequence
+classification and 80% in tumor type classification. The pipeline presented in
+this study enables robust, automated segmentation, MR sequence classification,
+and standardized report generation aligned with RANO 2.0 guidelines, enhancing
+postoperative evaluation and clinical decision-making. The proposed models and
+methods were integrated into Raidionics, open-source software platform for CNS
+tumor analysis, now including a dedicated module for postsurgical analysis.",http://arxiv.org/pdf/2508.08916v1,,False
+Geometry-Aware Global Feature Aggregation for Real-Time Indirect Illumination,12/08/2025,"Meng Gai, Guoping Wang, Sheng Li","Real-time rendering with global illumination is crucial to afford the user
+realistic experience in virtual environments. We present a learning-based
+estimator to predict diffuse indirect illumination in screen space, which then
+is combined with direct illumination to synthesize globally-illuminated high
+dynamic range (HDR) results. Our approach tackles the challenges of capturing
+long-range/long-distance indirect illumination when employing neural networks
+and is generalized to handle complex lighting and scenarios.
+  From the neural network thinking of the solver to the rendering equation, we
+present a novel network architecture to predict indirect illumination. Our
+network is equipped with a modified attention mechanism that aggregates global
+information guided by spacial geometry features, as well as a monochromatic
+design that encodes each color channel individually.
+  We conducted extensive evaluations, and the experimental results demonstrate
+our superiority over previous learning-based techniques. Our approach excels at
+handling complex lighting such as varying-colored lighting and environment
+lighting. It can successfully capture distant indirect illumination and
+simulates the interreflections between textured surfaces well (i.e., color
+bleeding effects); it can also effectively handle new scenes that are not
+present in the training dataset.",http://arxiv.org/pdf/2508.08826v1,,False
+Efficient Agent: Optimizing Planning Capability for Multimodal Retrieval Augmented Generation,12/08/2025,"Yuechen Wang, Yuming Qiao, Dan Meng, Jun Yang, Haonan Lu, Zhenyu Yang, Xudong Zhang","Multimodal Retrieval-Augmented Generation (mRAG) has emerged as a promising
+solution to address the temporal limitations of Multimodal Large Language
+Models (MLLMs) in real-world scenarios like news analysis and trending topics.
+However, existing approaches often suffer from rigid retrieval strategies and
+under-utilization of visual information. To bridge this gap, we propose
+E-Agent, an agent framework featuring two key innovations: a mRAG planner
+trained to dynamically orchestrate multimodal tools based on contextual
+reasoning, and a task executor employing tool-aware execution sequencing to
+implement optimized mRAG workflows. E-Agent adopts a one-time mRAG planning
+strategy that enables efficient information retrieval while minimizing
+redundant tool invocations. To rigorously assess the planning capabilities of
+mRAG systems, we introduce the Real-World mRAG Planning (RemPlan) benchmark.
+This novel benchmark contains both retrieval-dependent and
+retrieval-independent question types, systematically annotated with essential
+retrieval tools required for each instance. The benchmark's explicit mRAG
+planning annotations and diverse question design enhance its practical
+relevance by simulating real-world scenarios requiring dynamic mRAG decisions.
+Experiments across RemPlan and three established benchmarks demonstrate
+E-Agent's superiority: 13% accuracy gain over state-of-the-art mRAG methods
+while reducing redundant searches by 37%.",http://arxiv.org/pdf/2508.08816v1,,False
+TempOpt -- Unsupervised Alarm Relation Learning for Telecommunication Networks,12/08/2025,"Sathiyanaryanan Sampath, Pratyush Uppuluri, Thirumaran Ekambaram","In a telecommunications network, fault alarms generated by network nodes are
+monitored in a Network Operations Centre (NOC) to ensure network availability
+and continuous network operations. The monitoring process comprises of tasks
+such as active alarms analysis, root alarm identification, and resolution of
+the underlying problem. Each network node potentially can generate alarms of
+different types, while nodes can be from multiple vendors, a network can have
+hundreds of nodes thus resulting in an enormous volume of alarms at any time.
+Since network nodes are inter-connected, a single fault in the network would
+trigger multiple sequences of alarms across a variety of nodes and from a
+monitoring point of view, it is a challenging task for a NOC engineer to be
+aware of relations between the various alarms, when trying to identify, for
+example, a root alarm on which an action needs to be taken. To effectively
+identify root alarms, it is essential to learn relation among the alarms for
+accurate and faster resolution. In this work we propose a novel unsupervised
+alarm relation learning technique Temporal Optimization (TempOpt) that is
+practical and overcomes the limitations of an existing class of alarm
+relational learning method-temporal dependency methods. Experiments have been
+carried on real-world network datasets, that demonstrate the improved quality
+of alarm relations learned by TempOpt as compared to temporal dependency
+method.",http://arxiv.org/pdf/2508.08814v1,10.1109/INDICON63790.2024.10958479,False
+ReQuestNet: A Foundational Learning model for Channel Estimation,12/08/2025,"Kumar Pratik, Pouriya Sadeghi, Gabriele Cesa, Sanaz Barghi, Joseph B. Soriaga, Yuanning Yu, Supratik Bhattacharjee, Arash Behboodi","In this paper, we present a novel neural architecture for channel estimation
+(CE) in 5G and beyond, the Recurrent Equivariant UERS Estimation Network
+(ReQuestNet). It incorporates several practical considerations in wireless
+communication systems, such as ability to handle variable number of resource
+block (RB), dynamic number of transmit layers, physical resource block groups
+(PRGs) bundling size (BS), demodulation reference signal (DMRS) patterns with a
+single unified model, thereby, drastically simplifying the CE pipeline. Besides
+it addresses several limitations of the legacy linear MMSE solutions, for
+example, by being independent of other reference signals and particularly by
+jointly processing MIMO layers and differently precoded channels with unknown
+precoding at the receiver. ReQuestNet comprises of two sub-units, CoarseNet
+followed by RefinementNet. CoarseNet performs per PRG, per transmit-receive
+(Tx-Rx) stream channel estimation, while RefinementNet refines the CoarseNet
+channel estimate by incorporating correlations across differently precoded
+PRGs, and correlation across multiple input multiple output (MIMO) channel
+spatial dimensions (cross-MIMO). Simulation results demonstrate that ReQuestNet
+significantly outperforms genie minimum mean squared error (MMSE) CE across a
+wide range of channel conditions, delay-Doppler profiles, achieving up to 10dB
+gain at high SNRs. Notably, ReQuestNet generalizes effectively to unseen
+channel profiles, efficiently exploiting inter-PRG and cross-MIMO correlations
+under dynamic PRG BS and varying transmit layer allocations.",http://arxiv.org/pdf/2508.08790v1,,False
+Visual Prompting for Robotic Manipulation with Annotation-Guided Pick-and-Place Using ACT,12/08/2025,"Muhammad A. Muttaqien, Tomohiro Motoda, Ryo Hanai, Yukiyasu Domae","Robotic pick-and-place tasks in convenience stores pose challenges due to
+dense object arrangements, occlusions, and variations in object properties such
+as color, shape, size, and texture. These factors complicate trajectory
+planning and grasping. This paper introduces a perception-action pipeline
+leveraging annotation-guided visual prompting, where bounding box annotations
+identify both pickable objects and placement locations, providing structured
+spatial guidance. Instead of traditional step-by-step planning, we employ
+Action Chunking with Transformers (ACT) as an imitation learning algorithm,
+enabling the robotic arm to predict chunked action sequences from human
+demonstrations. This facilitates smooth, adaptive, and data-driven
+pick-and-place operations. We evaluate our system based on success rate and
+visual analysis of grasping behavior, demonstrating improved grasp accuracy and
+adaptability in retail environments.",http://arxiv.org/pdf/2508.08748v1,,False
+Simulating Generative Social Agents via Theory-Informed Workflow Design,12/08/2025,"Yuwei Yan, Jinghua Piao, Xiaochong Lan, Chenyang Shao, Pan Hui, Yong Li","Recent advances in large language models have demonstrated strong reasoning
+and role-playing capabilities, opening new opportunities for agent-based social
+simulations. However, most existing agents' implementations are
+scenario-tailored, without a unified framework to guide the design. This lack
+of a general social agent limits their ability to generalize across different
+social contexts and to produce consistent, realistic behaviors. To address this
+challenge, we propose a theory-informed framework that provides a systematic
+design process for LLM-based social agents. Our framework is grounded in
+principles from Social Cognition Theory and introduces three key modules:
+motivation, action planning, and learning. These modules jointly enable agents
+to reason about their goals, plan coherent actions, and adapt their behavior
+over time, leading to more flexible and contextually appropriate responses.
+Comprehensive experiments demonstrate that our theory-driven agents reproduce
+realistic human behavior patterns under complex conditions, achieving up to 75%
+lower deviation from real-world behavioral data across multiple fidelity
+metrics compared to classical generative baselines. Ablation studies further
+show that removing motivation, planning, or learning modules increases errors
+by 1.5 to 3.2 times, confirming their distinct and essential contributions to
+generating realistic and coherent social behaviors.",http://arxiv.org/pdf/2508.08726v1,,False
+IROTE: Human-like Traits Elicitation of Large Language Model via In-Context Self-Reflective Optimization,12/08/2025,"Yuzhuo Bai, Shitong Duan, Muhua Huang, Jing Yao, Zhenghao Liu, Peng Zhang, Tun Lu, Xiaoyuan Yi, Maosong Sun, Xing Xie","Trained on various human-authored corpora, Large Language Models (LLMs) have
+demonstrated a certain capability of reflecting specific human-like traits
+(e.g., personality or values) by prompting, benefiting applications like
+personalized LLMs and social simulations. However, existing methods suffer from
+the superficial elicitation problem: LLMs can only be steered to mimic shallow
+and unstable stylistic patterns, failing to embody the desired traits precisely
+and consistently across diverse tasks like humans. To address this challenge,
+we propose IROTE, a novel in-context method for stable and transferable trait
+elicitation. Drawing on psychological theories suggesting that traits are
+formed through identity-related reflection, our method automatically generates
+and optimizes a textual self-reflection within prompts, which comprises
+self-perceived experience, to stimulate LLMs' trait-driven behavior. The
+optimization is performed by iteratively maximizing an information-theoretic
+objective that enhances the connections between LLMs' behavior and the target
+trait, while reducing noisy redundancy in reflection without any fine-tuning,
+leading to evocative and compact trait reflection. Extensive experiments across
+three human trait systems manifest that one single IROTE-generated
+self-reflection can induce LLMs' stable impersonation of the target trait
+across diverse downstream tasks beyond simple questionnaire answering,
+consistently outperforming existing strong baselines.",http://arxiv.org/pdf/2508.08719v1,,False
+Expert-Guided Diffusion Planner for Auto-bidding,12/08/2025,"Yunshan Peng, Wenzheng Shu, Jiahao Sun, Yanxiang Zeng, Jinan Pang, Wentao Bai, Yunke Bai, Xialong Liu, Peng Jiang","Auto-bidding is extensively applied in advertising systems, serving a
+multitude of advertisers. Generative bidding is gradually gaining traction due
+to its robust planning capabilities and generalizability. In contrast to
+traditional reinforcement learning-based bidding, generative bidding does not
+rely on the Markov Decision Process (MDP) exhibiting superior planning
+capabilities in long-horizon scenarios. Conditional diffusion modeling
+approaches have demonstrated significant potential in the realm of
+auto-bidding. However, relying solely on return as the optimality condition is
+weak to guarantee the generation of genuinely optimal decision sequences,
+lacking personalized structural information. Moreover, diffusion models' t-step
+autoregressive generation mechanism inherently carries timeliness risks. To
+address these issues, we propose a novel conditional diffusion modeling method
+based on expert trajectory guidance combined with a skip-step sampling strategy
+to enhance generation efficiency. We have validated the effectiveness of this
+approach through extensive offline experiments and achieved statistically
+significant results in online A/B testing, achieving an increase of 11.29% in
+conversion and a 12.35% in revenue compared with the baseline.",http://arxiv.org/pdf/2508.08687v1,,False
+In-Context Learning as Nonparametric Conditional Probability Estimation: Risk Bounds and Optimality,12/08/2025,"Chenrui Liu, Falong Tan, Chuanlong Xie, Yicheng Zeng, Lixing Zhu","This paper investigates the expected excess risk of In-Context Learning (ICL)
+for multiclass classification. We model each task as a sequence of labeled
+prompt samples and a query input, where a pre-trained model estimates the
+conditional class probabilities of the query. The expected excess risk is
+defined as the average truncated Kullback-Leibler (KL) divergence between the
+predicted and ground-truth conditional class distributions, averaged over a
+specified family of tasks. We establish a new oracle inequality for the
+expected excess risk based on KL divergence in multiclass classification. This
+allows us to derive tight upper and lower bounds for the expected excess risk
+in transformer-based models, demonstrating that the ICL estimator achieves the
+minimax optimal rate - up to a logarithmic factor - for conditional probability
+estimation. From a technical standpoint, our results introduce a novel method
+for controlling generalization error using the uniform empirical covering
+entropy of the log-likelihood function class. Furthermore, we show that
+multilayer perceptrons (MLPs) can also perform ICL and achieve this optimal
+rate under specific assumptions, suggesting that transformers may not be the
+exclusive architecture capable of effective ICL.",http://arxiv.org/pdf/2508.08673v1,,False
+UGM2N: An Unsupervised and Generalizable Mesh Movement Network via M-Uniform Loss,12/08/2025,"Zhichao Wang, Xinhai Chen, Qinglin Wang, Xiang Gao, Qingyang Zhang, Menghan Jia, Xiang Zhang, Jie Liu","Partial differential equations (PDEs) form the mathematical foundation for
+modeling physical systems in science and engineering, where numerical solutions
+demand rigorous accuracy-efficiency tradeoffs. Mesh movement techniques address
+this challenge by dynamically relocating mesh nodes to rapidly-varying regions,
+enhancing both simulation accuracy and computational efficiency. However,
+traditional approaches suffer from high computational complexity and geometric
+inflexibility, limiting their applicability, and existing supervised
+learning-based approaches face challenges in zero-shot generalization across
+diverse PDEs and mesh topologies.In this paper, we present an Unsupervised and
+Generalizable Mesh Movement Network (UGM2N). We first introduce unsupervised
+mesh adaptation through localized geometric feature learning, eliminating the
+dependency on pre-adapted meshes. We then develop a physics-constrained loss
+function, M-Uniform loss, that enforces mesh equidistribution at the nodal
+level.Experimental results demonstrate that the proposed network exhibits
+equation-agnostic generalization and geometric independence in efficient mesh
+adaptation. It demonstrates consistent superiority over existing methods,
+including robust performance across diverse PDEs and mesh geometries,
+scalability to multi-scale resolutions and guaranteed error reduction without
+mesh tangling.",http://arxiv.org/pdf/2508.08615v1,,False
+Yan: Foundational Interactive Video Generation,12/08/2025,Yan Team,"We present Yan, a foundational framework for interactive video generation,
+covering the entire pipeline from simulation and generation to editing.
+Specifically, Yan comprises three core modules. AAA-level Simulation: We design
+a highly-compressed, low-latency 3D-VAE coupled with a KV-cache-based
+shift-window denoising inference process, achieving real-time 1080P/60FPS
+interactive simulation. Multi-Modal Generation: We introduce a hierarchical
+autoregressive caption method that injects game-specific knowledge into
+open-domain multi-modal video diffusion models (VDMs), then transforming the
+VDM into a frame-wise, action-controllable, real-time infinite interactive
+video generator. Notably, when the textual and visual prompts are sourced from
+different domains, the model demonstrates strong generalization, allowing it to
+blend and compose the style and mechanics across domains flexibly according to
+user prompts. Multi-Granularity Editing: We propose a hybrid model that
+explicitly disentangles interactive mechanics simulation from visual rendering,
+enabling multi-granularity video content editing during interaction through
+text. Collectively, Yan offers an integration of these modules, pushing
+interactive video generation beyond isolated capabilities toward a
+comprehensive AI-driven interactive creation paradigm, paving the way for the
+next generation of creative tools, media, and entertainment. The project page
+is: https://greatx3.github.io/Yan/.",http://arxiv.org/pdf/2508.08601v1,,False

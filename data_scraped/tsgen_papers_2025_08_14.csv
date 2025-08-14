@@ -1,0 +1,312 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Vision-driven River Following of UAV via Safe Reinforcement Learning using Semantic Dynamics Model,13/08/2025,"Zihan Wang, Nina Mahmoudian","Vision-driven autonomous river following by Unmanned Aerial Vehicles is
+critical for applications such as rescue, surveillance, and environmental
+monitoring, particularly in dense riverine environments where GPS signals are
+unreliable. We formalize river following as a coverage control problem in which
+the reward function is submodular, yielding diminishing returns as more unique
+river segments are visited, thereby framing the task as a Submodular Markov
+Decision Process. First, we introduce Marginal Gain Advantage Estimation, which
+refines the reward advantage function by using a sliding window baseline
+computed from historical episodic returns, thus aligning the advantage
+estimation with the agent's evolving recognition of action value in
+non-Markovian settings. Second, we develop a Semantic Dynamics Model based on
+patchified water semantic masks that provides more interpretable and
+data-efficient short-term prediction of future observations compared to latent
+vision dynamics models. Third, we present the Constrained Actor Dynamics
+Estimator architecture, which integrates the actor, the cost estimator, and SDM
+for cost advantage estimation to form a model-based SafeRL framework capable of
+solving partially observable Constrained Submodular Markov Decision Processes.
+Simulation results demonstrate that MGAE achieves faster convergence and
+superior performance over traditional critic-based methods like Generalized
+Advantage Estimation. SDM provides more accurate short-term state predictions
+that enable the cost estimator to better predict potential violations. Overall,
+CADE effectively integrates safety regulation into model-based RL, with the
+Lagrangian approach achieving the soft balance of reward and safety during
+training, while the safety layer enhances performance during inference by hard
+action overlay.",http://arxiv.org/pdf/2508.09971v1,,False
+Specialised or Generic? Tokenization Choices for Radiology Language Models,13/08/2025,"Hermione Warr, Wentian Xu, Harry Anthony, Yasin Ibrahim, Daniel McGowan, Konstantinos Kamnitsas","The vocabulary used by language models (LM) - defined by the tokenizer -
+plays a key role in text generation quality. However, its impact remains
+under-explored in radiology. In this work, we address this gap by
+systematically comparing general, medical, and domain-specific tokenizers on
+the task of radiology report summarisation across three imaging modalities. We
+also investigate scenarios with and without LM pre-training on PubMed
+abstracts. Our findings demonstrate that medical and domain-specific
+vocabularies outperformed widely used natural language alternatives when models
+are trained from scratch. Pre-training partially mitigates performance
+differences between tokenizers, whilst the domain-specific tokenizers achieve
+the most favourable results. Domain-specific tokenizers also reduce memory
+requirements due to smaller vocabularies and shorter sequences. These results
+demonstrate that adapting the vocabulary of LMs to the clinical domain provides
+practical benefits, including improved performance and reduced computational
+demands, making such models more accessible and effective for both research and
+real-world healthcare settings.",http://arxiv.org/pdf/2508.09952v1,,False
+Perceptual Reality Transformer: Neural Architectures for Simulating Neurological Perception Conditions,13/08/2025,Baihan Lin,"Neurological conditions affecting visual perception create profound
+experiential divides between affected individuals and their caregivers,
+families, and medical professionals. We present the Perceptual Reality
+Transformer, a comprehensive framework employing six distinct neural
+architectures to simulate eight neurological perception conditions with
+scientifically-grounded visual transformations. Our system learns mappings from
+natural images to condition-specific perceptual states, enabling others to
+experience approximations of simultanagnosia, prosopagnosia, ADHD attention
+deficits, visual agnosia, depression-related changes, anxiety tunnel vision,
+and Alzheimer's memory effects. Through systematic evaluation across ImageNet
+and CIFAR-10 datasets, we demonstrate that Vision Transformer architectures
+achieve optimal performance, outperforming traditional CNN and generative
+approaches. Our work establishes the first systematic benchmark for
+neurological perception simulation, contributes novel condition-specific
+perturbation functions grounded in clinical literature, and provides
+quantitative metrics for evaluating simulation fidelity. The framework has
+immediate applications in medical education, empathy training, and assistive
+technology development, while advancing our fundamental understanding of how
+neural networks can model atypical human perception.",http://arxiv.org/pdf/2508.09852v1,,False
+Speed Always Wins: A Survey on Efficient Architectures for Large Language Models,13/08/2025,"Weigao Sun, Jiaxi Hu, Yucheng Zhou, Jusen Du, Disen Lan, Kexin Wang, Tong Zhu, Xiaoye Qu, Yu Zhang, Xiaoyu Mo, Daizong Liu, Yuxuan Liang, Wenliang Chen, Guoqi Li, Yu Cheng","Large Language Models (LLMs) have delivered impressive results in language
+understanding, generation, reasoning, and pushes the ability boundary of
+multimodal models. Transformer models, as the foundation of modern LLMs, offer
+a strong baseline with excellent scaling properties. However, the traditional
+transformer architecture requires substantial computations and poses
+significant obstacles for large-scale training and practical deployment. In
+this survey, we offer a systematic examination of innovative LLM architectures
+that address the inherent limitations of transformers and boost the efficiency.
+Starting from language modeling, this survey covers the background and
+technical details of linear and sparse sequence modeling methods, efficient
+full attention variants, sparse mixture-of-experts, hybrid model architectures
+incorporating the above techniques, and emerging diffusion LLMs. Additionally,
+we discuss applications of these techniques to other modalities and consider
+their wider implications for developing scalable, resource-aware foundation
+models. By grouping recent studies into the above category, this survey
+presents a blueprint of modern efficient LLM architectures, and we hope this
+could help motivate future research toward more efficient, versatile AI
+systems.",http://arxiv.org/pdf/2508.09834v1,,False
+Provable In-Context Vector Arithmetic via Retrieving Task Concepts,13/08/2025,"Dake Bu, Wei Huang, Andi Han, Atsushi Nitanda, Qingfu Zhang, Hau-San Wong, Taiji Suzuki","In-context learning (ICL) has garnered significant attention for its ability
+to grasp functions/tasks from demonstrations. Recent studies suggest the
+presence of a latent task/function vector in LLMs during ICL. Merullo et al.
+(2024) showed that LLMs leverage this vector alongside the residual stream for
+Word2Vec-like vector arithmetic, solving factual-recall ICL tasks.
+Additionally, recent work empirically highlighted the key role of
+Question-Answer data in enhancing factual-recall capabilities. Despite these
+insights, a theoretical explanation remains elusive. To move one step forward,
+we propose a theoretical framework building on empirically grounded
+hierarchical concept modeling. We develop an optimization theory, showing how
+nonlinear residual transformers trained via gradient descent on cross-entropy
+loss perform factual-recall ICL tasks via vector arithmetic. We prove 0-1 loss
+convergence and show the strong generalization, including robustness to concept
+recombination and distribution shifts. These results elucidate the advantages
+of transformers over static embedding predecessors. Empirical simulations
+corroborate our theoretical insights.",http://arxiv.org/pdf/2508.09820v1,,False
+Structured Kernel Regression VAE: A Computationally Efficient Surrogate for GP-VAEs in ICA,13/08/2025,"Yuan-Hao Wei, Fu-Hao Deng, Lin-Yong Cui, Yan-Jie Sun","The interpretability of generative models is considered a key factor in
+demonstrating their effectiveness and controllability. The generated data are
+believed to be determined by latent variables that are not directly observable.
+Therefore, disentangling, decoupling, decomposing, causal inference, or
+performing Independent Component Analysis (ICA) in the latent variable space
+helps uncover the independent factors that influence the attributes or features
+affecting the generated outputs, thereby enhancing the interpretability of
+generative models. As a generative model, Variational Autoencoders (VAEs)
+combine with variational Bayesian inference algorithms. Using VAEs, the inverse
+process of ICA can be equivalently framed as a variational inference process.
+In some studies, Gaussian processes (GPs) have been introduced as priors for
+each dimension of latent variables in VAEs, structuring and separating each
+dimension from temporal or spatial perspectives, and encouraging different
+dimensions to control various attributes of the generated data. However, GPs
+impose a significant computational burden, resulting in substantial resource
+consumption when handling large datasets. Essentially, GPs model different
+temporal or spatial structures through various kernel functions. Structuring
+the priors of latent variables via kernel functions-so that different kernel
+functions model the correlations among sequence points within different latent
+dimensions-is at the core of achieving disentanglement in VAEs. The proposed
+Structured Kernel Regression VAE (SKR-VAE) leverages this core idea in a more
+efficient way, avoiding the costly kernel matrix inversion required in GPs.
+This research demonstrates that, while maintaining ICA performance, SKR-VAE
+achieves greater computational efficiency and significantly reduced
+computational burden compared to GP-VAE.",http://arxiv.org/pdf/2508.09721v1,,False
+TimeMKG: Knowledge-Infused Causal Reasoning for Multivariate Time Series Modeling,13/08/2025,"Yifei Sun, Junming Liu, Ding Wang, Yirong Chen, Xuefeng Yan","Multivariate time series data typically comprises two distinct modalities:
+variable semantics and sampled numerical observations. Traditional time series
+models treat variables as anonymous statistical signals, overlooking the rich
+semantic information embedded in variable names and data descriptions. However,
+these textual descriptors often encode critical domain knowledge that is
+essential for robust and interpretable modeling. Here we present TimeMKG, a
+multimodal causal reasoning framework that elevates time series modeling from
+low-level signal processing to knowledge informed inference. TimeMKG employs
+large language models to interpret variable semantics and constructs structured
+Multivariate Knowledge Graphs that capture inter-variable relationships. A
+dual-modality encoder separately models the semantic prompts, generated from
+knowledge graph triplets, and the statistical patterns from historical time
+series. Cross-modality attention aligns and fuses these representations at the
+variable level, injecting causal priors into downstream tasks such as
+forecasting and classification, providing explicit and interpretable priors to
+guide model reasoning. The experiment in diverse datasets demonstrates that
+incorporating variable-level knowledge significantly improves both predictive
+performance and generalization.",http://arxiv.org/pdf/2508.09630v1,,False
+Physics- and geometry-aware spatio-spectral graph neural operator for time-independent and time-dependent PDEs,13/08/2025,"Subhankar Sarkar, Souvik Chakraborty","Solving partial differential equations (PDEs) efficiently and accurately
+remains a cornerstone challenge in science and engineering, especially for
+problems involving complex geometries and limited labeled data. We introduce a
+Physics- and Geometry- Aware Spatio-Spectral Graph Neural Operator
+($\pi$G-Sp$^2$GNO) for learning the solution operators of time-independent and
+time-dependent PDEs. The proposed approach first improves upon the recently
+developed Sp$^2$GNO by enabling geometry awareness and subsequently exploits
+the governing physics to learn the underlying solution operator in a
+simulation-free setup. While the spatio-spectral structure present in the
+proposed architecture allows multiscale learning, two separate strategies for
+enabling geometry awareness is introduced in this paper. For time dependent
+problems, we also introduce a novel hybrid physics informed loss function that
+combines higher-order time-marching scheme with upscaled theory inspired
+stochastic projection scheme. This allows accurate integration of the
+physics-information into the loss function. The performance of the proposed
+approach is illustrated on number of benchmark examples involving regular and
+complex domains, variation in geometry during inference, and time-independent
+and time-dependent problems. The results obtained illustrate the efficacy of
+the proposed approach as compared to the state-of-the-art physics-informed
+neural operator algorithms in the literature.",http://arxiv.org/pdf/2508.09627v1,,False
+EvoCurr: Self-evolving Curriculum with Behavior Code Generation for Complex Decision-making,13/08/2025,"Yang Cheng, Zilai Wang, Weiyu Ma, Wenhui Zhu, Yue Deng, Jian Zhao","Large Language Models (LLMs) have demonstrated remarkable capabilities across
+diverse domains, including programming, planning, and decision-making. However,
+their performance often degrades when faced with highly complex problem
+instances that require deep reasoning over long horizons. In such cases, direct
+problem-solving approaches can lead to inefficiency or failure due to the lack
+of structured intermediate guidance. To address this, we propose a novel
+self-evolve framework, EvoCurr, in which a dedicated curriculum-generation LLM
+constructs a sequence of problem instances with gradually increasing
+difficulty, tailored to the solver LLM's learning progress. The curriculum
+dynamically adapts easing challenges when the solver struggles and escalating
+them when success is consistent, thus maintaining an optimal learning
+trajectory. This approach enables the solver LLM, implemented as a
+code-generation model producing Python decision-tree scripts, to progressively
+acquire the skills needed for complex decision-making tasks. Experimental
+results on challenging decision-making benchmarks show that our method
+significantly improves task success rates and solution efficiency compared to
+direct-solving baselines. These findings suggest that LLM-driven curriculum
+learning holds strong potential for enhancing automated reasoning in
+real-world, high-complexity domains.",http://arxiv.org/pdf/2508.09586v1,,False
+"Edge General Intelligence Through World Models and Agentic AI: Fundamentals, Solutions, and Challenges",13/08/2025,"Changyuan Zhao, Guangyuan Liu, Ruichen Zhang, Yinqiu Liu, Jiacheng Wang, Jiawen Kang, Dusit Niyato, Zan Li, Xuemin, Shen, Zhu Han, Sumei Sun, Chau Yuen, Dong In Kim","Edge General Intelligence (EGI) represents a transformative evolution of edge
+computing, where distributed agents possess the capability to perceive, reason,
+and act autonomously across diverse, dynamic environments. Central to this
+vision are world models, which act as proactive internal simulators that not
+only predict but also actively imagine future trajectories, reason under
+uncertainty, and plan multi-step actions with foresight. This proactive nature
+allows agents to anticipate potential outcomes and optimize decisions ahead of
+real-world interactions. While prior works in robotics and gaming have
+showcased the potential of world models, their integration into the wireless
+edge for EGI remains underexplored. This survey bridges this gap by offering a
+comprehensive analysis of how world models can empower agentic artificial
+intelligence (AI) systems at the edge. We first examine the architectural
+foundations of world models, including latent representation learning, dynamics
+modeling, and imagination-based planning. Building on these core capabilities,
+we illustrate their proactive applications across EGI scenarios such as
+vehicular networks, unmanned aerial vehicle (UAV) networks, the Internet of
+Things (IoT) systems, and network functions virtualization, thereby
+highlighting how they can enhance optimization under latency, energy, and
+privacy constraints. We then explore their synergy with foundation models and
+digital twins, positioning world models as the cognitive backbone of EGI.
+Finally, we highlight open challenges, such as safety guarantees, efficient
+training, and constrained deployment, and outline future research directions.
+This survey provides both a conceptual foundation and a practical roadmap for
+realizing the next generation of intelligent, autonomous edge systems.",http://arxiv.org/pdf/2508.09561v1,,False
+AI Blob! LLM-Driven Recontextualization of Italian Television Archives,13/08/2025,Roberto Balestri,"This paper introduces AI Blob!, an experimental system designed to explore
+the potential of semantic cataloging and Large Language Models (LLMs) for the
+retrieval and recontextualization of archival television footage. Drawing
+methodological inspiration from Italian television programs such as Blob (RAI
+Tre, 1989-), AI Blob! integrates automatic speech recognition (ASR), semantic
+embeddings, and retrieval-augmented generation (RAG) to organize and
+reinterpret archival content. The system processes a curated dataset of 1,547
+Italian television videos by transcribing audio, segmenting it into
+sentence-level units, and embedding these segments into a vector database for
+semantic querying. Upon user input of a thematic prompt, the LLM generates a
+range of linguistically and conceptually related queries, guiding the retrieval
+and recombination of audiovisual fragments. These fragments are algorithmically
+selected and structured into narrative sequences producing montages that
+emulate editorial practices of ironic juxtaposition and thematic coherence. By
+foregrounding dynamic, content-aware retrieval over static metadata schemas, AI
+Blob! demonstrates how semantic technologies can facilitate new approaches to
+archival engagement, enabling novel forms of automated narrative construction
+and cultural analysis. The project contributes to ongoing debates in media
+historiography and AI-driven archival research, offering both a conceptual
+framework and a publicly available dataset to support further interdisciplinary
+experimentation.",http://arxiv.org/pdf/2508.09535v1,,False
+Large-Small Model Collaborative Framework for Federated Continual Learning,13/08/2025,"Hao Yu, Xin Yang, Boyang Fan, Xuemei Cao, Hanlin Gu, Lixin Fan, Qiang Yang","Continual learning (CL) for Foundation Models (FMs) is an essential yet
+underexplored challenge, especially in Federated Continual Learning (FCL),
+where each client learns from a private, evolving task stream under strict data
+and communication constraints. Despite their powerful generalization abilities,
+FMs often exhibit suboptimal performance on local downstream tasks, as they are
+unable to utilize private local data. Furthermore, enabling FMs to learn new
+tasks without forgetting prior knowledge is inherently a challenging problem,
+primarily due to their immense parameter count and high model complexity. In
+contrast, small models can be trained locally under resource-constrained
+conditions and benefit from more mature CL techniques. To bridge the gap
+between small models and FMs, we propose the first collaborative framework in
+FCL, where lightweight local models act as a dynamic bridge, continually
+adapting to new tasks while enhancing the utility of the large model. Two novel
+components are also included: Small Model Continual Fine-tuning is for
+preventing small models from temporal forgetting; One-by-One Distillation
+performs personalized fusion of heterogeneous local knowledge on the server.
+Experimental results demonstrate its superior performance, even when clients
+utilize heterogeneous small models.",http://arxiv.org/pdf/2508.09489v1,,False
+"DeepFeatIoT: Unifying Deep Learned, Randomized, and LLM Features for Enhanced IoT Time Series Sensor Data Classification in Smart Industries",13/08/2025,"Muhammad Sakib Khan Inan, Kewen Liao","Internet of Things (IoT) sensors are ubiquitous technologies deployed across
+smart cities, industrial sites, and healthcare systems. They continuously
+generate time series data that enable advanced analytics and automation in
+industries. However, challenges such as the loss or ambiguity of sensor
+metadata, heterogeneity in data sources, varying sampling frequencies,
+inconsistent units of measurement, and irregular timestamps make raw IoT time
+series data difficult to interpret, undermining the effectiveness of smart
+systems. To address these challenges, we propose a novel deep learning model,
+DeepFeatIoT, which integrates learned local and global features with
+non-learned randomized convolutional kernel-based features and features from
+large language models (LLMs). This straightforward yet unique fusion of diverse
+learned and non-learned features significantly enhances IoT time series sensor
+data classification, even in scenarios with limited labeled data. Our model's
+effectiveness is demonstrated through its consistent and generalized
+performance across multiple real-world IoT sensor datasets from diverse
+critical application domains, outperforming state-of-the-art benchmark models.
+These results highlight DeepFeatIoT's potential to drive significant
+advancements in IoT analytics and support the development of next-generation
+smart systems.",http://arxiv.org/pdf/2508.09468v1,,False
+RelayFormer: A Unified Local-Global Attention Framework for Scalable Image and Video Manipulation Localization,13/08/2025,"Wen Huang, Jiarui Yang, Tao Dai, Jiawei Li, Shaoxiong Zhan, Bin Wang, Shu-Tao Xia","Visual manipulation localization (VML) -- across both images and videos -- is
+a crucial task in digital forensics that involves identifying tampered regions
+in visual content. However, existing methods often lack cross-modal
+generalization and struggle to handle high-resolution or long-duration inputs
+efficiently.
+  We propose RelayFormer, a unified and modular architecture for visual
+manipulation localization across images and videos. By leveraging flexible
+local units and a Global-Local Relay Attention (GLoRA) mechanism, it enables
+scalable, resolution-agnostic processing with strong generalization. Our
+framework integrates seamlessly with existing Transformer-based backbones, such
+as ViT and SegFormer, via lightweight adaptation modules that require only
+minimal architectural changes, ensuring compatibility without disrupting
+pretrained representations.
+  Furthermore, we design a lightweight, query-based mask decoder that supports
+one-shot inference across video sequences with linear complexity. Extensive
+experiments across multiple benchmarks demonstrate that our approach achieves
+state-of-the-art localization performance, setting a new baseline for scalable
+and modality-agnostic VML. Code is available at:
+https://github.com/WenOOI/RelayFormer.",http://arxiv.org/pdf/2508.09459v1,,False
+A Unified Contrastive-Generative Framework for Time Series Classification,13/08/2025,"Ziyu Liu, Azadeh Alavi, Minyi Li, Xiang Zhang","Self-supervised learning (SSL) for multivariate time series mainly includes
+two paradigms: contrastive methods that excel at instance discrimination and
+generative approaches that model data distributions. While effective
+individually, their complementary potential remains unexplored. We propose a
+Contrastive Generative Time series framework (CoGenT), the first framework to
+unify these paradigms through joint contrastive-generative optimization. CoGenT
+addresses fundamental limitations of both approaches: it overcomes contrastive
+learning's sensitivity to high intra-class similarity in temporal data while
+reducing generative methods' dependence on large datasets. We evaluate CoGenT
+on six diverse time series datasets. The results show consistent improvements,
+with up to 59.2% and 14.27% F1 gains over standalone SimCLR and MAE,
+respectively. Our analysis reveals that the hybrid objective preserves
+discriminative power while acquiring generative robustness. These findings
+establish a foundation for hybrid SSL in temporal domains. We will release the
+code shortly.",http://arxiv.org/pdf/2508.09451v1,,False
+Integrating Feature Attention and Temporal Modeling for Collaborative Financial Risk Assessment,13/08/2025,"Yue Yao, Zhen Xu, Youzhu Liu, Kunyuan Ma, Yuxiu Lin, Mohan Jiang","This paper addresses the challenges of data privacy and collaborative
+modeling in cross-institution financial risk analysis. It proposes a risk
+assessment framework based on federated learning. Without sharing raw data, the
+method enables joint modeling and risk identification across multiple
+institutions. This is achieved by incorporating a feature attention mechanism
+and temporal modeling structure. Specifically, the model adopts a distributed
+optimization strategy. Each financial institution trains a local sub-model. The
+model parameters are protected using differential privacy and noise injection
+before being uploaded. A central server then aggregates these parameters to
+generate a global model. This global model is used for systemic risk
+identification. To validate the effectiveness of the proposed method, multiple
+experiments are conducted. These evaluate communication efficiency, model
+accuracy, systemic risk detection, and cross-market generalization. The results
+show that the proposed model outperforms both traditional centralized methods
+and existing federated learning variants across all evaluation metrics. It
+demonstrates strong modeling capabilities and practical value in sensitive
+financial environments. The method enhances the scope and efficiency of risk
+identification while preserving data sovereignty. It offers a secure and
+efficient solution for intelligent financial risk analysis.",http://arxiv.org/pdf/2508.09399v1,,False

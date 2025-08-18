@@ -1,0 +1,193 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Nonparametric learning of stochastic differential equations from sparse and noisy data,15/08/2025,"Arnab Ganguly, Riten Mitra, Jinpu Zhou","The paper proposes a systematic framework for building data-driven stochastic
+differential equation (SDE) models from sparse, noisy observations. Unlike
+traditional parametric approaches, which assume a known functional form for the
+drift, our goal here is to learn the entire drift function directly from data
+without strong structural assumptions, making it especially relevant in
+scientific disciplines where system dynamics are partially understood or highly
+complex. We cast the estimation problem as minimization of the penalized
+negative log-likelihood functional over a reproducing kernel Hilbert space
+(RKHS). In the sparse observation regime, the presence of unobserved trajectory
+segments makes the SDE likelihood intractable. To address this, we develop an
+Expectation-Maximization (EM) algorithm that employs a novel Sequential Monte
+Carlo (SMC) method to approximate the filtering distribution and generate Monte
+Carlo estimates of the E-step objective. The M-step then reduces to a penalized
+empirical risk minimization problem in the RKHS, whose minimizer is given by a
+finite linear combination of kernel functions via a generalized representer
+theorem. To control model complexity across EM iterations, we also develop a
+hybrid Bayesian variant of the algorithm that uses shrinkage priors to identify
+significant coefficients in the kernel expansion. We establish important
+theoretical convergence results for both the exact and approximate EM
+sequences. The resulting EM-SMC-RKHS procedure enables accurate estimation of
+the drift function of stochastic dynamical systems in low-data regimes and is
+broadly applicable across domains requiring continuous-time modeling under
+observational constraints. We demonstrate the effectiveness of our method
+through a series of numerical experiments.",http://arxiv.org/pdf/2508.11597v1,,False
+Physics-Informed Diffusion Models for Unsupervised Anomaly Detection in Multivariate Time Series,15/08/2025,"Juhi Soni, Markus Lange-Hegermann, Stefan Windmann","We propose an unsupervised anomaly detection approach based on a
+physics-informed diffusion model for multivariate time series data. Over the
+past years, diffusion model has demonstrated its effectiveness in forecasting,
+imputation, generation, and anomaly detection in the time series domain. In
+this paper, we present a new approach for learning the physics-dependent
+temporal distribution of multivariate time series data using a weighted
+physics-informed loss during diffusion model training. A weighted
+physics-informed loss is constructed using a static weight schedule. This
+approach enables a diffusion model to accurately approximate underlying data
+distribution, which can influence the unsupervised anomaly detection
+performance. Our experiments on synthetic and real-world datasets show that
+physics-informed training improves the F1 score in anomaly detection; it
+generates better data diversity and log-likelihood. Our model outperforms
+baseline approaches, additionally, it surpasses prior physics-informed work and
+purely data-driven diffusion models on a synthetic dataset and one real-world
+dataset while remaining competitive on others.",http://arxiv.org/pdf/2508.11528v1,,False
+Sim2Dust: Mastering Dynamic Waypoint Tracking on Granular Media,15/08/2025,"Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez, Carol Martinez","Reliable autonomous navigation across the unstructured terrains of distant
+planetary surfaces is a critical enabler for future space exploration. However,
+the deployment of learning-based controllers is hindered by the inherent
+sim-to-real gap, particularly for the complex dynamics of wheel interactions
+with granular media. This work presents a complete sim-to-real framework for
+developing and validating robust control policies for dynamic waypoint tracking
+on such challenging surfaces. We leverage massively parallel simulation to
+train reinforcement learning agents across a vast distribution of procedurally
+generated environments with randomized physics. These policies are then
+transferred zero-shot to a physical wheeled rover operating in a lunar-analogue
+facility. Our experiments systematically compare multiple reinforcement
+learning algorithms and action smoothing filters to identify the most effective
+combinations for real-world deployment. Crucially, we provide strong empirical
+evidence that agents trained with procedural diversity achieve superior
+zero-shot performance compared to those trained on static scenarios. We also
+analyze the trade-offs of fine-tuning with high-fidelity particle physics,
+which offers minor gains in low-speed precision at a significant computational
+cost. Together, these contributions establish a validated workflow for creating
+reliable learning-based navigation systems, marking a critical step towards
+deploying autonomous robots in the final frontier.",http://arxiv.org/pdf/2508.11503v1,,False
+Inclusion Arena: An Open Platform for Evaluating Large Foundation Models with Real-World Apps,15/08/2025,"Kangyu Wang, Hongliang He, Lin Liu, Ruiqi Liang, Zhenzhong Lan, Jianguo Li","Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs)
+have ushered in a new era of AI capabilities, demonstrating near-human-level
+performance across diverse scenarios. While numerous benchmarks (e.g., MMLU)
+and leaderboards (e.g., Chatbot Arena) have been proposed to help evolve the
+development of LLMs and MLLMs, most rely on static datasets or crowdsourced
+general-domain prompts, often falling short of reflecting performance in
+real-world applications. To bridge this critical gap, we present Inclusion
+Arena, a live leaderboard that ranks models based on human feedback collected
+directly from AI-powered applications. Our platform integrates pairwise model
+comparisons into natural user interactions, ensuring evaluations reflect
+practical usage scenarios. For robust model ranking, we employ the
+Bradley-Terry model augmented with two key innovations: (1) Placement Matches,
+a cold-start mechanism to quickly estimate initial ratings for newly integrated
+models, and (2) Proximity Sampling, an intelligent comparison strategy that
+prioritizes battles between models of similar capabilities to maximize
+information gain and enhance rating stability. Extensive empirical analyses and
+simulations demonstrate that Inclusion Arena yields reliable and stable
+rankings, exhibits higher data transitivity compared to general crowdsourced
+datasets, and significantly mitigates the risk of malicious manipulation. By
+fostering an open alliance between foundation models and real-world
+applications, Inclusion Arena aims to accelerate the development of LLMs and
+MLLMs truly optimized for practical, user-centric deployments. The platform is
+publicly accessible at https://doraemon.alipay.com/model-ranking.",http://arxiv.org/pdf/2508.11452v1,,False
+Generative Co-Design of Antibody Sequences and Structures via Black-Box Guidance in a Shared Latent Space,15/08/2025,"Yinghua Yao, Yuangang Pan, Xixian Chen","Advancements in deep generative models have enabled the joint modeling of
+antibody sequence and structure, given the antigen-antibody complex as context.
+However, existing approaches for optimizing complementarity-determining regions
+(CDRs) to improve developability properties operate in the raw data space,
+leading to excessively costly evaluations due to the inefficient search
+process. To address this, we propose LatEnt blAck-box Design (LEAD), a
+sequence-structure co-design framework that optimizes both sequence and
+structure within their shared latent space. Optimizing shared latent codes can
+not only break through the limitations of existing methods, but also ensure
+synchronization of different modality designs. Particularly, we design a
+black-box guidance strategy to accommodate real-world scenarios where many
+property evaluators are non-differentiable. Experimental results demonstrate
+that our LEAD achieves superior optimization performance for both single and
+multi-property objectives. Notably, LEAD reduces query consumption by a half
+while surpassing baseline methods in property optimization. The code is
+available at https://github.com/EvaFlower/LatEnt-blAck-box-Design.",http://arxiv.org/pdf/2508.11424v1,,False
+Trustworthy AI Psychotherapy: Multi-Agent LLM Workflow for Counseling and Explainable Mental Disorder Diagnosis,15/08/2025,"Mithat Can Ozgun, Jiahuan Pei, Koen Hindriks, Lucia Donatelli, Qingzhi Liu, Xin Sun, Junxiao Wang","LLM-based agents have emerged as transformative tools capable of executing
+complex tasks through iterative planning and action, achieving significant
+advancements in understanding and addressing user needs. Yet, their
+effectiveness remains limited in specialized domains such as mental health
+diagnosis, where they underperform compared to general applications. Current
+approaches to integrating diagnostic capabilities into LLMs rely on scarce,
+highly sensitive mental health datasets, which are challenging to acquire.
+These methods also fail to emulate clinicians' proactive inquiry skills, lack
+multi-turn conversational comprehension, and struggle to align outputs with
+expert clinical reasoning. To address these gaps, we propose DSM5AgentFlow, the
+first LLM-based agent workflow designed to autonomously generate DSM-5 Level-1
+diagnostic questionnaires. By simulating therapist-client dialogues with
+specific client profiles, the framework delivers transparent, step-by-step
+disorder predictions, producing explainable and trustworthy results. This
+workflow serves as a complementary tool for mental health diagnosis, ensuring
+adherence to ethical and legal standards. Through comprehensive experiments, we
+evaluate leading LLMs across three critical dimensions: conversational realism,
+diagnostic accuracy, and explainability. Our datasets and implementations are
+fully open-sourced.",http://arxiv.org/pdf/2508.11398v1,,False
+Fusing Rewards and Preferences in Reinforcement Learning,15/08/2025,"Sadegh Khorasani, Saber Salehkaleybar, Negar Kiyavash, Matthias Grossglauser","We present Dual-Feedback Actor (DFA), a reinforcement learning algorithm that
+fuses both individual rewards and pairwise preferences (if available) into a
+single update rule. DFA uses the policy's log-probabilities directly to model
+the preference probability, avoiding a separate reward-modeling step.
+Preferences can be provided by human-annotators (at state-level or
+trajectory-level) or be synthesized online from Q-values stored in an
+off-policy replay buffer. Under a Bradley-Terry model, we prove that minimizing
+DFA's preference loss recovers the entropy-regularized Soft Actor-Critic (SAC)
+policy. Our simulation results show that DFA trained on generated preferences
+matches or exceeds SAC on six control environments and demonstrates a more
+stable training process. With only a semi-synthetic preference dataset under
+Bradley-Terry model, our algorithm outperforms reward-modeling reinforcement
+learning from human feedback (RLHF) baselines in a stochastic GridWorld and
+approaches the performance of an oracle with true rewards.",http://arxiv.org/pdf/2508.11363v1,,False
+Air Quality PM2.5 Index Prediction Model Based on CNN-LSTM,15/08/2025,"Zicheng Guo, Shuqi Wu, Meixing Zhu, He Guandi","With the intensification of global climate change, accurate prediction of air
+quality indicators, especially PM2.5 concentration, has become increasingly
+important in fields such as environmental protection, public health, and urban
+management. To address this, we propose an air quality PM2.5 index prediction
+model based on a hybrid CNN-LSTM architecture. The model effectively combines
+Convolutional Neural Networks (CNN) for local spatial feature extraction and
+Long Short-Term Memory (LSTM) networks for modeling temporal dependencies in
+time series data. Using a multivariate dataset collected from an industrial
+area in Beijing between 2010 and 2015 -- which includes hourly records of PM2.5
+concentration, temperature, dew point, pressure, wind direction, wind speed,
+and precipitation -- the model predicts the average PM2.5 concentration over
+6-hour intervals. Experimental results show that the model achieves a root mean
+square error (RMSE) of 5.236, outperforming traditional time series models in
+both accuracy and generalization. This demonstrates its strong potential in
+real-world applications such as air pollution early warning systems. However,
+due to the complexity of multivariate inputs, the model demands high
+computational resources, and its ability to handle diverse atmospheric factors
+still requires optimization. Future work will focus on enhancing scalability
+and expanding support for more complex multivariate weather prediction tasks.",http://arxiv.org/pdf/2508.11215v1,,False
+Visuomotor Grasping with World Models for Surgical Robots,15/08/2025,"Hongbin Lin, Bin Li, Kwok Wai Samuel Au","Grasping is a fundamental task in robot-assisted surgery (RAS), and
+automating it can reduce surgeon workload while enhancing efficiency, safety,
+and consistency beyond teleoperated systems. Most prior approaches rely on
+explicit object pose tracking or handcrafted visual features, limiting their
+generalization to novel objects, robustness to visual disturbances, and the
+ability to handle deformable objects. Visuomotor learning offers a promising
+alternative, but deploying it in RAS presents unique challenges, such as low
+signal-to-noise ratio in visual observations, demands for high safety and
+millimeter-level precision, as well as the complex surgical environment. This
+paper addresses three key challenges: (i) sim-to-real transfer of visuomotor
+policies to ex vivo surgical scenes, (ii) visuomotor learning using only a
+single stereo camera pair -- the standard RAS setup, and (iii) object-agnostic
+grasping with a single policy that generalizes to diverse, unseen surgical
+objects without retraining or task-specific models. We introduce Grasp Anything
+for Surgery V2 (GASv2), a visuomotor learning framework for surgical grasping.
+GASv2 leverages a world-model-based architecture and a surgical perception
+pipeline for visual observations, combined with a hybrid control system for
+safe execution. We train the policy in simulation using domain randomization
+for sim-to-real transfer and deploy it on a real robot in both phantom-based
+and ex vivo surgical settings, using only a single pair of endoscopic cameras.
+Extensive experiments show our policy achieves a 65% success rate in both
+settings, generalizes to unseen objects and grippers, and adapts to diverse
+disturbances, demonstrating strong performance, generality, and robustness.",http://arxiv.org/pdf/2508.11200v1,,False
+Actor-Critic for Continuous Action Chunks: A Reinforcement Learning Framework for Long-Horizon Robotic Manipulation with Sparse Reward,15/08/2025,"Jiarui Yang, Bin Zhu, Jingjing Chen, Yu-Gang Jiang","Existing reinforcement learning (RL) methods struggle with long-horizon
+robotic manipulation tasks, particularly those involving sparse rewards. While
+action chunking is a promising paradigm for robotic manipulation, using RL to
+directly learn continuous action chunks in a stable and data-efficient manner
+remains a critical challenge. This paper introduces AC3 (Actor-Critic for
+Continuous Chunks), a novel RL framework that learns to generate
+high-dimensional, continuous action sequences. To make this learning process
+stable and data-efficient, AC3 incorporates targeted stabilization mechanisms
+for both the actor and the critic. First, to ensure reliable policy
+improvement, the actor is trained with an asymmetric update rule, learning
+exclusively from successful trajectories. Second, to enable effective value
+learning despite sparse rewards, the critic's update is stabilized using
+intra-chunk $n$-step returns and further enriched by a self-supervised module
+providing intrinsic rewards at anchor points aligned with each action chunk. We
+conducted extensive experiments on 25 tasks from the BiGym and RLBench
+benchmarks. Results show that by using only a few demonstrations and a simple
+model architecture, AC3 achieves superior success rates on most tasks,
+validating its effective design.",http://arxiv.org/pdf/2508.11143v1,,False

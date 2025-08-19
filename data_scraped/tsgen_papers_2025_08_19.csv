@@ -1,0 +1,414 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+MDPO: Overcoming the Training-Inference Divide of Masked Diffusion Language Models,18/08/2025,"Haoyu He, Katrin Renz, Yong Cao, Andreas Geiger","Diffusion language models, as a promising alternative to traditional
+autoregressive (AR) models, enable faster generation and richer conditioning on
+bidirectional context. However, they suffer from a key discrepancy between
+training and inference: during inference, MDLMs progressively reveal the
+structure of the generated sequence by producing fewer and fewer masked tokens,
+whereas this structure is ignored in training as tokens are masked at random.
+Although this discrepancy between training and inference can lead to suboptimal
+performance, it has been largely overlooked by previous works, leaving closing
+this gap between the two stages an open problem. To address this, we frame the
+problem of learning effective denoising trajectories as a sequential
+decision-making problem and use the resulting framework to apply reinforcement
+learning. We propose a novel Masked Diffusion Policy Optimization (MDPO) to
+exploit the Markov property diffusion possesses and explicitly train the model
+under the same progressive refining schedule used at inference. MDPO matches
+the performance of the previous state-of-the-art (SOTA) method with 60x fewer
+gradient updates, while achieving average improvements of 9.6% on MATH500 and
+54.2% on Countdown over SOTA when trained within the same number of weight
+updates. Additionally, we improve the remasking strategy of MDLMs as a plug-in
+inference replacement to overcome the limitation that the model cannot refine
+tokens flexibly. This simple yet effective training-free strategy, what we
+refer to as RCR, consistently improves performance and yields additional gains
+when combined with MDPO. Our findings establish great potential for
+investigating the discrepancy between pre-training and inference of MDLMs.
+Code: https://github.com/autonomousvision/mdpo. Project Page:
+https://cli212.github.io/MDPO/.",http://arxiv.org/pdf/2508.13148v1,,False
+Contrastive Representations for Temporal Reasoning,18/08/2025,"Alicja Ziarko, Michal Bortkiewicz, Michal Zawalski, Benjamin Eysenbach, Piotr Milos","In classical AI, perception relies on learning state-based representations,
+while planning, which can be thought of as temporal reasoning over action
+sequences, is typically achieved through search. We study whether such
+reasoning can instead emerge from representations that capture both perceptual
+and temporal structure. We show that standard temporal contrastive learning,
+despite its popularity, often fails to capture temporal structure due to its
+reliance on spurious features. To address this, we introduce Combinatorial
+Representations for Temporal Reasoning (CRTR), a method that uses a negative
+sampling scheme to provably remove these spurious features and facilitate
+temporal reasoning. CRTR achieves strong results on domains with complex
+temporal structure, such as Sokoban and Rubik's Cube. In particular, for the
+Rubik's Cube, CRTR learns representations that generalize across all initial
+states and allow it to solve the puzzle using fewer search steps than BestFS,
+though with longer solutions. To our knowledge, this is the first method that
+efficiently solves arbitrary Cube states using only learned representations,
+without relying on an external search algorithm.",http://arxiv.org/pdf/2508.13113v1,,False
+Causally-Guided Pairwise Transformer -- Towards Foundational Digital Twins in Process Industry,18/08/2025,"Michael Mayr, Georgios C. Chasparis","Foundational modelling of multi-dimensional time-series data in industrial
+systems presents a central trade-off: channel-dependent (CD) models capture
+specific cross-variable dynamics but lack robustness and adaptability as model
+layers are commonly bound to the data dimensionality of the tackled use-case,
+while channel-independent (CI) models offer generality at the cost of modelling
+the explicit interactions crucial for system-level predictive regression tasks.
+To resolve this, we propose the Causally-Guided Pairwise Transformer (CGPT), a
+novel architecture that integrates a known causal graph as an inductive bias.
+The core of CGPT is built around a pairwise modeling paradigm, tackling the
+CD/CI conflict by decomposing the multidimensional data into pairs. The model
+uses channel-agnostic learnable layers where all parameter dimensions are
+independent of the number of variables. CGPT enforces a CD information flow at
+the pair-level and CI-like generalization across pairs. This approach
+disentangles complex system dynamics and results in a highly flexible
+architecture that ensures scalability and any-variate adaptability. We validate
+CGPT on a suite of synthetic and real-world industrial datasets on long-term
+and one-step forecasting tasks designed to simulate common industrial
+complexities. Results demonstrate that CGPT significantly outperforms both CI
+and CD baselines in predictive accuracy and shows competitive performance with
+end-to-end trained CD models while remaining agnostic to the problem
+dimensionality.",http://arxiv.org/pdf/2508.13111v1,,False
+Denoising diffusion models for inverse design of inflatable structures with programmable deformations,18/08/2025,"Sara Karimi, Nikolaos N. Vlassis","Programmable structures are systems whose undeformed geometries and material
+property distributions are deliberately designed to achieve prescribed deformed
+configurations under specific loading conditions. Inflatable structures are a
+prominent example, using internal pressurization to realize large, nonlinear
+deformations in applications ranging from soft robotics and deployable
+aerospace systems to biomedical devices and adaptive architecture. We present a
+generative design framework based on denoising diffusion probabilistic models
+(DDPMs) for the inverse design of elastic structures undergoing large,
+nonlinear deformations under pressure-driven actuation. The method formulates
+the inverse design as a conditional generation task, using geometric
+descriptors of target deformed states as inputs and outputting image-based
+representations of the undeformed configuration. Representing these
+configurations as simple images is achieved by establishing a pre- and
+postprocessing pipeline that involves a fixed image processing, simulation
+setup, and descriptor extraction methods. Numerical experiments with scalar and
+higher-dimensional descriptors show that the framework can quickly produce
+diverse undeformed configurations that achieve the desired deformations when
+inflated, enabling parallel exploration of viable design candidates while
+accommodating complex constraints.",http://arxiv.org/pdf/2508.13097v1,,False
+Seeing the Many: Exploring Parameter Distributions Conditioned on Features in Surrogates,18/08/2025,"Xiaohan Wang, Zhimin Li, Joshua A. Levine, Matthew Berger","Recently, neural surrogate models have emerged as a compelling alternative to
+traditional simulation workflows. This is accomplished by modeling the
+underlying function of scientific simulations, removing the need to run
+expensive simulations. Beyond just mapping from input parameter to output,
+surrogates have also been shown useful for inverse problems: output to input
+parameters. Inverse problems can be understood as search, where we aim to find
+parameters whose surrogate outputs contain a specified feature. Yet finding
+these parameters can be costly, especially for high-dimensional parameter
+spaces. Thus, existing surrogate-based solutions primarily focus on finding a
+small set of matching parameters, in the process overlooking the broader
+picture of plausible parameters. Our work aims to model and visualize the
+distribution of possible input parameters that produce a given output feature.
+To achieve this goal, we aim to address two challenges: (1) the approximation
+error inherent in the surrogate model and (2) forming the parameter
+distribution in an interactive manner. We model error via density estimation,
+reporting high density only if a given parameter configuration is close to
+training parameters, measured both over the input and output space. Our density
+estimate is used to form a prior belief on parameters, and when combined with a
+likelihood on features, gives us an efficient way to sample plausible parameter
+configurations that generate a target output feature. We demonstrate the
+usability of our solution through a visualization interface by performing
+feature-driven parameter analysis over the input parameter space of three
+simulation datasets. Source code is available at
+https://github.com/matthewberger/seeing-the-many",http://arxiv.org/pdf/2508.13088v1,,False
+Hierarchical Evaluation Function (HEF): A Multi-Metric Approach for Optimizing Demand Forecasting Models,18/08/2025,"Adolfo González, Víctor Parada","Demand forecasting is essential for strategic planning in competitive
+environments, enabling resource optimization and improved responsiveness to
+market dynamics. However, multivariate time series modeling faces challenges
+due to data complexity, uncertainty, and frequent regime shifts. Traditional
+evaluation metrics can introduce biases and limit generalization. This work
+compares two custom evaluation functions: FMAE (Focused Mean Absolute Error),
+focused on minimizing absolute errors, and HEF (Hierarchical Evaluation
+Function), designed to weight global metrics and penalize large deviations.
+Experiments were conducted under different data splits (91:9, 80:20, 70:30)
+using three optimizers (Grid Search, PSO, Optuna), assessing fit, relative
+accuracy, robustness, and computational efficiency. Results show that HEF
+consistently outperforms FMAE in global metrics (R2, Relative Accuracy, RMSE,
+RMSSE), enhancing model robustness and explanatory power. These findings were
+confirmed via visualizations and statistical tests. Conversely, FMAE offers
+advantages in local metrics (MAE, MASE) and execution time, making it suitable
+for short-term scenarios. The study highlights a methodological trade-off: HEF
+is ideal for strategic planning, while FMAE is better suited for operational
+efficiency. A replicable framework is proposed for optimizing predictive models
+in dynamic environments.",http://arxiv.org/pdf/2508.13057v1,,False
+PC-Sampler: Position-Aware Calibration of Decoding Bias in Masked Diffusion Models,18/08/2025,"Pengcheng Huang, Shuhao Liu, Zhenghao Liu, Yukun Yan, Shuo Wang, Zulong Chen, Tong Xiao","Recent advances in masked diffusion models (MDMs) have established them as
+powerful non-autoregressive alternatives for sequence generation. Nevertheless,
+our preliminary experiments reveal that the generation quality of MDMs is still
+highly sensitive to the choice of decoding strategy. In particular, widely
+adopted uncertainty-based samplers suffer from two key limitations: a lack of
+global trajectory control and a pronounced bias toward trivial tokens in the
+early stages of decoding. These shortcomings restrict the full potential of
+MDMs. In this work, we introduce Position-Aware Confidence-Calibrated Sampling
+(PC-Sampler), a novel decoding strategy that unifies global trajectory planning
+with content-aware informativeness maximization. PC-Sampler incorporates a
+position-aware weighting mechanism to regulate the decoding path and a
+calibrated confidence score to suppress the premature selection of trivial
+tokens. Extensive experiments on three advanced MDMs across seven challenging
+benchmarks-including logical reasoning and planning tasks-demonstrate that
+PC-Sampler consistently outperforms existing MDM decoding strategies by more
+than 10% on average, significantly narrowing the performance gap with
+state-of-the-art autoregressive models. All codes are available at
+https://github.com/NEUIR/PC-Sampler.",http://arxiv.org/pdf/2508.13021v1,,False
+OPTIC-ER: A Reinforcement Learning Framework for Real-Time Emergency Response and Equitable Resource Allocation in Underserved African Communities,18/08/2025,Mary Tonwe,"Public service systems in many African regions suffer from delayed emergency
+response and spatial inequity, causing avoidable suffering. This paper
+introduces OPTIC-ER, a reinforcement learning (RL) framework for real-time,
+adaptive, and equitable emergency response. OPTIC-ER uses an attention-guided
+actor-critic architecture to manage the complexity of dispatch environments.
+Its key innovations are a Context-Rich State Vector, encoding action
+sub-optimality, and a Precision Reward Function, which penalizes inefficiency.
+Training occurs in a high-fidelity simulation using real data from Rivers
+State, Nigeria, accelerated by a precomputed Travel Time Atlas. The system is
+built on the TALS framework (Thin computing, Adaptability, Low-cost,
+Scalability) for deployment in low-resource settings. In evaluations on 500
+unseen incidents, OPTIC-ER achieved a 100.00% optimality rate with negligible
+inefficiency, confirming its robustness and generalization. Beyond dispatch,
+the system generates Infrastructure Deficiency Maps and Equity Monitoring
+Dashboards to guide proactive governance and data-informed development. This
+work presents a validated blueprint for AI-augmented public services, showing
+how context-aware RL can bridge the gap between algorithmic decision-making and
+measurable human impact.",http://arxiv.org/pdf/2508.12943v1,,False
+Simulation-Based Inference: A Practical Guide,18/08/2025,"Michael Deistler, Jan Boelts, Peter Steinbach, Guy Moss, Thomas Moreau, Manuel Gloeckler, Pedro L. C. Rodrigues, Julia Linhart, Janne K. Lappalainen, Benjamin Kurt Miller, Pedro J. Gonçalves, Jan-Matthis Lueckmann, Cornelius Schröder, Jakob H. Macke","A central challenge in many areas of science and engineering is to identify
+model parameters that are consistent with prior knowledge and empirical data.
+Bayesian inference offers a principled framework for this task, but can be
+computationally prohibitive when models are defined by stochastic simulators.
+Simulation-based Inference (SBI) is a suite of methods developed to overcome
+this limitation, which has enabled scientific discoveries in fields such as
+particle physics, astrophysics, and neuroscience. The core idea of SBI is to
+train neural networks on data generated by a simulator, without requiring
+access to likelihood evaluations. Once trained, inference is amortized: The
+neural network can rapidly perform Bayesian inference on empirical observations
+without requiring additional training or simulations. In this tutorial, we
+provide a practical guide for practitioners aiming to apply SBI methods. We
+outline a structured SBI workflow and offer practical guidelines and diagnostic
+tools for every stage of the process -- from setting up the simulator and
+prior, choosing and training inference networks, to performing inference and
+validating the results. We illustrate these steps through examples from
+astrophysics, psychophysics, and neuroscience. This tutorial empowers
+researchers to apply state-of-the-art SBI methods, facilitating efficient
+parameter inference for scientific discovery.",http://arxiv.org/pdf/2508.12939v1,,False
+Towards Open-Ended Emotional Support Conversations in LLMs via Reinforcement Learning with Future-Oriented Rewards,18/08/2025,"Ting Yang, Li Chen, Huimin Wang","Emotional Support Conversation (ESC) systems aim to alleviate users'
+emotional difficulties and provide long-term, systematic support for emotional
+well-being. However, most large language model (LLM)-based ESC systems rely on
+predefined strategies, which limits their effectiveness in complex, real-life
+scenarios. To enable flexible responses to diverse emotional problem scenarios,
+this paper introduces a novel end-to-end framework (RLFF-ESC) that directly
+learns enduring emotionally supportive response skills using reinforcement
+learning. For sustained emotional support, we first employ an LLM-based
+multi-agent mechanism to simulate future dialogue trajectories and collect
+future-oriented rewards. We then train a future-oriented reward model, which is
+subsequently used to train the emotional support policy model. Additionally, we
+incorporate an explicit reasoning process during response generation to further
+enhance the quality, relevance, and contextual appropriateness of the system's
+responses. We evaluate the backbone policy model on Qwen2.5-7B-Instruct-1M and
+LLaMA3.1-8B-Instruct models, testing the proposed RLFF-ESC framework across two
+public ESC datasets. Experimental results demonstrate that RLFF-ESC
+consistently outperforms existing baselines in terms of goal completion and
+response quality.",http://arxiv.org/pdf/2508.12935v1,,False
+CTFlow: Video-Inspired Latent Flow Matching for 3D CT Synthesis,18/08/2025,"Jiayi Wang, Hadrien Reynaud, Franciskus Xaverius Erick, Bernhard Kainz","Generative modelling of entire CT volumes conditioned on clinical reports has
+the potential to accelerate research through data augmentation,
+privacy-preserving synthesis and reducing regulator-constraints on patient data
+while preserving diagnostic signals. With the recent release of CT-RATE, a
+large-scale collection of 3D CT volumes paired with their respective clinical
+reports, training large text-conditioned CT volume generation models has become
+achievable. In this work, we introduce CTFlow, a 0.5B latent flow matching
+transformer model, conditioned on clinical reports. We leverage the A-VAE from
+FLUX to define our latent space, and rely on the CT-Clip text encoder to encode
+the clinical reports. To generate consistent whole CT volumes while keeping the
+memory constraints tractable, we rely on a custom autoregressive approach,
+where the model predicts the first sequence of slices of the volume from
+text-only, and then relies on the previously generated sequence of slices and
+the text, to predict the following sequence. We evaluate our results against
+state-of-the-art generative CT model, and demonstrate the superiority of our
+approach in terms of temporal coherence, image diversity and text-image
+alignment, with FID, FVD, IS scores and CLIP score.",http://arxiv.org/pdf/2508.12900v1,,False
+Next Visual Granularity Generation,18/08/2025,"Yikai Wang, Zhouxia Wang, Zhonghua Wu, Qingyi Tao, Kang Liao, Chen Change Loy","We propose a novel approach to image generation by decomposing an image into
+a structured sequence, where each element in the sequence shares the same
+spatial resolution but differs in the number of unique tokens used, capturing
+different level of visual granularity. Image generation is carried out through
+our newly introduced Next Visual Granularity (NVG) generation framework, which
+generates a visual granularity sequence beginning from an empty image and
+progressively refines it, from global layout to fine details, in a structured
+manner. This iterative process encodes a hierarchical, layered representation
+that offers fine-grained control over the generation process across multiple
+granularity levels. We train a series of NVG models for class-conditional image
+generation on the ImageNet dataset and observe clear scaling behavior. Compared
+to the VAR series, NVG consistently outperforms it in terms of FID scores (3.30
+-> 3.03, 2.57 ->2.44, 2.09 -> 2.06). We also conduct extensive analysis to
+showcase the capability and potential of the NVG framework. Our code and models
+will be released.",http://arxiv.org/pdf/2508.12811v1,,False
+HeroBench: A Benchmark for Long-Horizon Planning and Structured Reasoning in Virtual Worlds,18/08/2025,"Petr Anokhin, Roman Khalikov, Stefan Rebrikov, Viktor Volkov, Artyom Sorokin, Vincent Bissonnette","Large language models (LLMs) have shown remarkable capabilities in isolated
+step-by-step reasoning tasks such as mathematics and programming, but their
+proficiency in long-horizon planning, where solutions require extended,
+structured sequences of interdependent actions, remains underexplored. Existing
+benchmarks typically assess LLMs through abstract or low-dimensional
+algorithmic tasks, failing to capture the complexity of realistic planning
+environments. We introduce HeroBench, a novel benchmark designed specifically
+to evaluate long-horizon planning and structured reasoning within complex
+RPG-inspired virtual worlds. HeroBench provides a rigorously constructed
+dataset of tasks covering a wide range of difficulties, a simulated environment
+to execute and validate agent plans, and detailed analytical tools for
+evaluating model performance. Tasks challenge models to formulate strategic
+plans, efficiently gather resources, master necessary skills, craft equipment,
+and defeat adversaries, reflecting practical scenarios' layered dependencies
+and constraints. Our extensive evaluation of 25 state-of-the-art LLMs, spanning
+both open-source and proprietary models, including the GPT-5 family, reveals
+substantial performance disparities rarely observed in conventional reasoning
+benchmarks. Detailed error analysis further uncovers specific weaknesses in
+current models' abilities to generate robust high-level plans and reliably
+execute structured actions. HeroBench thus not only significantly advances the
+evaluation of LLM reasoning but also provides a flexible, scalable foundation
+for future research into advanced, autonomous planning in virtual environments.",http://arxiv.org/pdf/2508.12782v1,,False
+Unlearning Comparator: A Visual Analytics System for Comparative Evaluation of Machine Unlearning Methods,18/08/2025,"Jaeung Lee, Suhyeon Yu, Yurim Jang, Simon S. Woo, Jaemin Jo","Machine Unlearning (MU) aims to remove target training data from a trained
+model so that the removed data no longer influences the model's behavior,
+fulfilling ""right to be forgotten"" obligations under data privacy laws. Yet, we
+observe that researchers in this rapidly emerging field face challenges in
+analyzing and understanding the behavior of different MU methods, especially in
+terms of three fundamental principles in MU: accuracy, efficiency, and privacy.
+Consequently, they often rely on aggregate metrics and ad-hoc evaluations,
+making it difficult to accurately assess the trade-offs between methods. To
+fill this gap, we introduce a visual analytics system, Unlearning Comparator,
+designed to facilitate the systematic evaluation of MU methods. Our system
+supports two important tasks in the evaluation process: model comparison and
+attack simulation. First, it allows the user to compare the behaviors of two
+models, such as a model generated by a certain method and a retrained baseline,
+at class-, instance-, and layer-levels to better understand the changes made
+after unlearning. Second, our system simulates membership inference attacks
+(MIAs) to evaluate the privacy of a method, where an attacker attempts to
+determine whether specific data samples were part of the original training set.
+We evaluate our system through a case study visually analyzing prominent MU
+methods and demonstrate that it helps the user not only understand model
+behaviors but also gain insights that can inform the improvement of MU methods.",http://arxiv.org/pdf/2508.12730v1,,False
+Argos: A Decentralized Federated System for Detection of Traffic Signs in CAVs,18/08/2025,"Seyed Mahdi Haji Seyed Hossein, Alireza Hosseini, Soheil Hajian Manesh, Amirali Shahriary","Connected and automated vehicles generate vast amounts of sensor data daily,
+raising significant privacy and communication challenges for centralized
+machine learning approaches in perception tasks. This study presents a
+decentralized, federated learning framework tailored for traffic sign detection
+in vehicular networks to enable collaborative model training without sharing
+raw data. The framework partitioned traffic sign classes across vehicles for
+specialized local training using lightweight object detectors, aggregated model
+parameters via algorithms like FedProx, FedAdam and FedAVG in a simulated
+environment with the Flower framework, and evaluated multiple configurations
+including varying server rounds, local epochs, client participation fractions,
+and data distributions. Experiments demonstrated that increasing server rounds
+from 2 to 20 boosted accuracy from below 0.1 to over 0.8, moderate local epochs
+(8-10) provided optimal efficiency with accuracies around 0.67, higher client
+participation fractions enhanced generalization up to 0.83, FedProx
+outperformed other aggregators in handling heterogeneity, non-IID data
+distributions reduced performance compared to IID, and training duration
+primarily scaled with the number of rounds rather than aggregation strategy. We
+conclude that this federated approach may offer a scalable, privacy-preserving
+solution for real-world vehicular deployments, potentially guiding future
+integrations of robust aggregation and communication optimizations to advance
+intelligent transportation systems.",http://arxiv.org/pdf/2508.12712v1,,False
+Asymmetric Diffusion Recommendation Model,18/08/2025,"Yongchun Zhu, Guanyu Jiang, Jingwu Chen, Feng Zhang, Xiao Yang, Zuotao Liu","Recently, motivated by the outstanding achievements of diffusion models, the
+diffusion process has been employed to strengthen representation learning in
+recommendation systems. Most diffusion-based recommendation models typically
+utilize standard Gaussian noise in symmetric forward and reverse processes in
+continuous data space. Nevertheless, the samples derived from recommendation
+systems inhabit a discrete data space, which is fundamentally different from
+the continuous one. Moreover, Gaussian noise has the potential to corrupt
+personalized information within latent representations. In this work, we
+propose a novel and effective method, named Asymmetric Diffusion Recommendation
+Model (AsymDiffRec), which learns forward and reverse processes in an
+asymmetric manner. We define a generalized forward process that simulates the
+missing features in real-world recommendation samples. The reverse process is
+then performed in an asymmetric latent feature space. To preserve personalized
+information within the latent representation, a task-oriented optimization
+strategy is introduced. In the serving stage, the raw sample with missing
+features is regarded as a noisy input to generate a denoising and robust
+representation for the final prediction. By equipping base models with
+AsymDiffRec, we conduct online A/B tests, achieving improvements of +0.131% and
++0.166% in terms of users' active days and app usage duration respectively.
+Additionally, the extended offline experiments also demonstrate improvements.
+AsymDiffRec has been implemented in the Douyin Music App.",http://arxiv.org/pdf/2508.12706v1,10.1145/3746252.3760833,False
+BUILDA: A Thermal Building Data Generation Framework for Transfer Learning,18/08/2025,"Thomas Krug, Fabian Raisch, Dominik Aimer, Markus Wirnsberger, Ferdinand Sigg, Benjamin Schäfer, Benjamin Tischler","Transfer learning (TL) can improve data-driven modeling of building thermal
+dynamics. Therefore, many new TL research areas emerge in the field, such as
+selecting the right source model for TL. However, these research directions
+require massive amounts of thermal building data which is lacking presently.
+Neither public datasets nor existing data generators meet the needs of TL
+research in terms of data quality and quantity. Moreover, existing data
+generation approaches typically require expert knowledge in building
+simulation. We present BuilDa, a thermal building data generation framework for
+producing synthetic data of adequate quality and quantity for TL research. The
+framework does not require profound building simulation knowledge to generate
+large volumes of data. BuilDa uses a single-zone Modelica model that is
+exported as a Functional Mock-up Unit (FMU) and simulated in Python. We
+demonstrate BuilDa by generating data and utilizing it for pretraining and
+fine-tuning TL models.",http://arxiv.org/pdf/2508.12703v1,,False
+ToolACE-MT: Non-Autoregressive Generation for Agentic Multi-Turn Interaction,18/08/2025,"Xingshan Zeng, Weiwen Liu, Lingzhi Wang, Liangyou Li, Fei Mi, Yasheng Wang, Lifeng Shang, Xin Jiang, Qun Liu","Agentic task-solving with Large Language Models (LLMs) requires multi-turn,
+multi-step interactions, often involving complex function calls and dynamic
+user-agent exchanges. Existing simulation-based data generation methods for
+such scenarios rely heavily on costly autoregressive interactions between
+multiple LLM agents, thereby limiting real-world performance of agentic tasks.
+In this paper, we propose a novel Non-Autoregressive Iterative Generation
+framework, called ToolACE-MT, for constructing high-quality multi-turn agentic
+dialogues. ToolACE-MT generates full conversational trajectories through three
+stages: coarse-grained initialization, iterative refinement, and offline
+verification. The initialization phase builds a structurally complete yet
+semantically coarse dialogue skeleton; the iterative refinement phase
+introduces realistic complexities and continued refinement via mask-and-fill
+operations; and the offline verification phase ensures correctness and
+coherence via rule- and model-based checks. Experiments demonstrate that
+ToolACE-MT enables efficient, effective and generalizable agentic data
+generation, offering a new paradigm for high-quality data construction in
+tool-augmented LLM scenarios.",http://arxiv.org/pdf/2508.12685v1,,False
+A Generalized Genetic Random Field Method for the Genetic Association Analysis of Sequencing Data,18/08/2025,"Ming Li, Zihuai He, Min Zhang, Xiaowei Zhan, Changshuai Wei, Robert C Elston, Qing Lu","With the advance of high-throughput sequencing technologies, it has become
+feasible to investigate the influence of the entire spectrum of sequencing
+variations on complex human diseases. Although association studies utilizing
+the new sequencing technologies hold great promise to unravel novel genetic
+variants, especially rare genetic variants that contribute to human diseases,
+the statistical analysis of high-dimensional sequencing data remains a
+challenge. Advanced analytical methods are in great need to facilitate
+high-dimensional sequencing data analyses. In this article, we propose a
+generalized genetic random field (GGRF) method for association analyses of
+sequencing data. Like other similarity-based methods (e.g., SIMreg and SKAT),
+the new method has the advantages of avoiding the need to specify thresholds
+for rare variants and allowing for testing multiple variants acting in
+different directions and magnitude of effects. The method is built on the
+generalized estimating equation framework and thus accommodates a variety of
+disease phenotypes (e.g., quantitative and binary phenotypes). Moreover, it has
+a nice asymptotic property, and can be applied to small-scale sequencing data
+without need for small-sample adjustment. Through simulations, we demonstrate
+that the proposed GGRF attains an improved or comparable power over a commonly
+used method, SKAT, under various disease scenarios, especially when rare
+variants play a significant role in disease etiology. We further illustrate
+GGRF with an application to a real dataset from the Dallas Heart Study. By
+using GGRF, we were able to detect the association of two candidate genes,
+ANGPTL3 and ANGPTL4, with serum triglyceride.",http://arxiv.org/pdf/2508.12617v1,10.1002/gepi.21790,False
+SSPO: Self-traced Step-wise Preference Optimization for Process Supervision and Reasoning Compression,18/08/2025,"Yuyang Xu, Yi Cheng, Haochao Ying, Zhuoyun Du, Renjun Hu, Xing Shi, Wei Lin, Jian Wu","Test-time scaling has proven effective in further enhancing the performance
+of pretrained Large Language Models (LLMs). However, mainstream post-training
+methods (i.e., reinforcement learning (RL) with chain-of-thought (CoT)
+reasoning) often incur substantial computational overhead due to auxiliary
+models and overthinking. In this paper, we empirically reveal that the
+incorrect answers partially stem from verbose reasoning processes lacking
+correct self-fix, where errors accumulate across multiple reasoning steps. To
+this end, we propose Self-traced Step-wise Preference Optimization (SSPO), a
+pluggable RL process supervision framework that enables fine-grained
+optimization of each reasoning step. Specifically, SSPO requires neither
+auxiliary models nor stepwise manual annotations. Instead, it leverages
+step-wise preference signals generated by the model itself to guide the
+optimization process for reasoning compression. Experiments demonstrate that
+the generated reasoning sequences from SSPO are both accurate and succinct,
+effectively mitigating overthinking behaviors without compromising model
+performance across diverse domains and languages.",http://arxiv.org/pdf/2508.12604v1,,False
+Data-driven particle dynamics: Structure-preserving coarse-graining for emergent behavior in non-equilibrium systems,18/08/2025,"Quercus Hernandez, Max Win, Thomas C. O'Connor, Paulo E. Arratia, Nathaniel Trask","Multiscale systems are ubiquitous in science and technology, but are
+notoriously challenging to simulate as short spatiotemporal scales must be
+appropriately linked to emergent bulk physics. When expensive high-dimensional
+dynamical systems are coarse-grained into low-dimensional models, the entropic
+loss of information leads to emergent physics which are dissipative,
+history-dependent, and stochastic. To machine learn coarse-grained dynamics
+from time-series observations of particle trajectories, we propose a framework
+using the metriplectic bracket formalism that preserves these properties by
+construction; most notably, the framework guarantees discrete notions of the
+first and second laws of thermodynamics, conservation of momentum, and a
+discrete fluctuation-dissipation balance crucial for capturing non-equilibrium
+statistics. We introduce the mathematical framework abstractly before
+specializing to a particle discretization. As labels are generally unavailable
+for entropic state variables, we introduce a novel self-supervised learning
+strategy to identify emergent structural variables. We validate the method on
+benchmark systems and demonstrate its utility on two challenging examples: (1)
+coarse-graining star polymers at challenging levels of coarse-graining while
+preserving non-equilibrium statistics, and (2) learning models from high-speed
+video of colloidal suspensions that capture coupling between local
+rearrangement events and emergent stochastic dynamics. We provide open-source
+implementations in both PyTorch and LAMMPS, enabling large-scale inference and
+extensibility to diverse particle-based systems.",http://arxiv.org/pdf/2508.12569v1,,False
+Deep Learning-Based Financial Time Series Forecasting via Sliding Window and Variational Mode Decomposition,18/08/2025,Luke Li,"To address the complexity of financial time series, this paper proposes a
+forecasting model combining sliding window and variational mode decomposition
+(VMD) methods. Historical stock prices and relevant market indicators are used
+to construct datasets. VMD decomposes non-stationary financial time series into
+smoother subcomponents, improving model adaptability. The decomposed data is
+then input into a deep learning model for prediction. The study compares the
+forecasting effects of an LSTM model trained on VMD-processed sequences with
+those using raw time series, demonstrating better performance and stability.",http://arxiv.org/pdf/2508.12565v1,,False

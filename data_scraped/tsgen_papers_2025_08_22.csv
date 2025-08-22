@@ -1,0 +1,415 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Neural Robot Dynamics,21/08/2025,"Jie Xu, Eric Heiden, Iretiayo Akinola, Dieter Fox, Miles Macklin, Yashraj Narang","Accurate and efficient simulation of modern robots remains challenging due to
+their high degrees of freedom and intricate mechanisms. Neural simulators have
+emerged as a promising alternative to traditional analytical simulators,
+capable of efficiently predicting complex dynamics and adapting to real-world
+data; however, existing neural simulators typically require
+application-specific training and fail to generalize to novel tasks and/or
+environments, primarily due to inadequate representations of the global state.
+In this work, we address the problem of learning generalizable neural
+simulators for robots that are structured as articulated rigid bodies. We
+propose NeRD (Neural Robot Dynamics), learned robot-specific dynamics models
+for predicting future states for articulated rigid bodies under contact
+constraints. NeRD uniquely replaces the low-level dynamics and contact solvers
+in an analytical simulator and employs a robot-centric and spatially-invariant
+simulation state representation. We integrate the learned NeRD models as an
+interchangeable backend solver within a state-of-the-art robotics simulator. We
+conduct extensive experiments to show that the NeRD simulators are stable and
+accurate over a thousand simulation steps; generalize across tasks and
+environment configurations; enable policy learning exclusively in a neural
+engine; and, unlike most classical simulators, can be fine-tuned from
+real-world data to bridge the gap between simulation and reality.",http://arxiv.org/pdf/2508.15755v1,,False
+"Tutorial on the Probabilistic Unification of Estimation Theory, Machine Learning, and Generative AI",21/08/2025,Mohammed Elmusrati,"Extracting meaning from uncertain, noisy data is a fundamental problem across
+time series analysis, pattern recognition, and language modeling. This survey
+presents a unified mathematical framework that connects classical estimation
+theory, statistical inference, and modern machine learning, including deep
+learning and large language models. By analyzing how techniques such as maximum
+likelihood estimation, Bayesian inference, and attention mechanisms address
+uncertainty, the paper illustrates that many AI methods are rooted in shared
+probabilistic principles. Through illustrative scenarios including system
+identification, image classification, and language generation, we show how
+increasingly complex models build upon these foundations to tackle practical
+challenges like overfitting, data sparsity, and interpretability. In other
+words, the work demonstrates that maximum likelihood, MAP estimation, Bayesian
+classification, and deep learning all represent different facets of a shared
+goal: inferring hidden causes from noisy and/or biased observations. It serves
+as both a theoretical synthesis and a practical guide for students and
+researchers navigating the evolving landscape of machine learning.",http://arxiv.org/pdf/2508.15719v1,,False
+StreamMem: Query-Agnostic KV Cache Memory for Streaming Video Understanding,21/08/2025,"Yanlai Yang, Zhuokai Zhao, Satya Narayan Shukla, Aashu Singh, Shlok Kumar Mishra, Lizhu Zhang, Mengye Ren","Multimodal large language models (MLLMs) have made significant progress in
+visual-language reasoning, but their ability to efficiently handle long videos
+remains limited. Despite recent advances in long-context MLLMs, storing and
+attending to the key-value (KV) cache for long visual contexts incurs
+substantial memory and computational overhead. Existing visual compression
+methods require either encoding the entire visual context before compression or
+having access to the questions in advance, which is impractical for long video
+understanding and multi-turn conversational settings. In this work, we propose
+StreamMem, a query-agnostic KV cache memory mechanism for streaming video
+understanding. Specifically, StreamMem encodes new video frames in a streaming
+manner, compressing the KV cache using attention scores between visual tokens
+and generic query tokens, while maintaining a fixed-size KV memory to enable
+efficient question answering (QA) in memory-constrained, long-video scenarios.
+Evaluation on three long video understanding and two streaming video question
+answering benchmarks shows that StreamMem achieves state-of-the-art performance
+in query-agnostic KV cache compression and is competitive with query-aware
+compression approaches.",http://arxiv.org/pdf/2508.15717v1,,False
+Tensorized Multi-Task Learning for Personalized Modeling of Heterogeneous Individuals with High-Dimensional Data,21/08/2025,"Elif Konyar, Mostafa Reisi Gahrooei, Kamran Paynabar","Effective modeling of heterogeneous subpopulations presents a significant
+challenge due to variations in individual characteristics and behaviors. This
+paper proposes a novel approach to address this issue through multi-task
+learning (MTL) and low-rank tensor decomposition techniques. Our MTL approach
+aims to enhance personalized modeling by leveraging shared structures among
+similar tasks while accounting for distinct subpopulation-specific variations.
+We introduce a framework where low-rank decomposition decomposes the collection
+of task model parameters into a low-rank structure that captures commonalities
+and variations across tasks and subpopulations. This approach allows for
+efficient learning of personalized models by sharing knowledge between similar
+tasks while preserving the unique characteristics of each subpopulation.
+Experimental results in simulation and case study datasets demonstrate the
+superior performance of the proposed method compared to several benchmarks,
+particularly in scenarios with high variability among subpopulations. The
+proposed framework not only improves prediction accuracy but also enhances
+interpretability by revealing underlying patterns that contribute to the
+personalization of models.",http://arxiv.org/pdf/2508.15676v1,,False
+Exploiting Policy Idling for Dexterous Manipulation,21/08/2025,"Annie S. Chen, Philemon Brakel, Antonia Bronars, Annie Xie, Sandy Huang, Oliver Groth, Maria Bauza, Markus Wulfmeier, Nicolas Heess, Dushyant Rao","Learning-based methods for dexterous manipulation have made notable progress
+in recent years. However, learned policies often still lack reliability and
+exhibit limited robustness to important factors of variation. One failure
+pattern that can be observed across many settings is that policies idle, i.e.
+they cease to move beyond a small region of states when they reach certain
+states. This policy idling is often a reflection of the training data. For
+instance, it can occur when the data contains small actions in areas where the
+robot needs to perform high-precision motions, e.g., when preparing to grasp an
+object or object insertion. Prior works have tried to mitigate this phenomenon
+e.g. by filtering the training data or modifying the control frequency.
+However, these approaches can negatively impact policy performance in other
+ways. As an alternative, we investigate how to leverage the detectability of
+idling behavior to inform exploration and policy improvement. Our approach,
+Pause-Induced Perturbations (PIP), applies perturbations at detected idling
+states, thus helping it to escape problematic basins of attraction. On a range
+of challenging simulated dual-arm tasks, we find that this simple approach can
+already noticeably improve test-time performance, with no additional
+supervision or training. Furthermore, since the robot tends to idle at critical
+points in a movement, we also find that learning from the resulting episodes
+leads to better iterative policy improvement compared to prior approaches. Our
+perturbation strategy also leads to a 15-35% improvement in absolute success
+rate on a real-world insertion task that requires complex multi-finger
+manipulation.",http://arxiv.org/pdf/2508.15669v1,,False
+Inductive Domain Transfer In Misspecified Simulation-Based Inference,21/08/2025,"Ortal Senouf, Antoine Wehenkel, Cédric Vincent-Cuaz, Emmanuel Abbé, Pascal Frossard","Simulation-based inference (SBI) is a statistical inference approach for
+estimating latent parameters of a physical system when the likelihood is
+intractable but simulations are available. In practice, SBI is often hindered
+by model misspecification--the mismatch between simulated and real-world
+observations caused by inherent modeling simplifications. RoPE, a recent SBI
+approach, addresses this challenge through a two-stage domain transfer process
+that combines semi-supervised calibration with optimal transport (OT)-based
+distribution alignment. However, RoPE operates in a fully transductive setting,
+requiring access to a batch of test samples at inference time, which limits
+scalability and generalization. We propose here a fully inductive and amortized
+SBI framework that integrates calibration and distributional alignment into a
+single, end-to-end trainable model. Our method leverages mini-batch OT with a
+closed-form coupling to align real and simulated observations that correspond
+to the same latent parameters, using both paired calibration data and unpaired
+samples. A conditional normalizing flow is then trained to approximate the
+OT-induced posterior, enabling efficient inference without simulation access at
+test time. Across a range of synthetic and real-world benchmarks--including
+complex medical biomarker estimation--our approach matches or surpasses the
+performance of RoPE, as well as other standard SBI and non-SBI estimators,
+while offering improved scalability and applicability in challenging,
+misspecified environments.",http://arxiv.org/pdf/2508.15593v1,,False
+HEAS: Hierarchical Evolutionary Agent Simulation Framework for Cross-Scale Modeling and Multi-Objective Search,21/08/2025,"Ruiyu Zhang, Lin Nie, Xin Zhao","Hierarchical Evolutionary Agent Simulation (HEAS) is a Python framework that
+unifies layered agent-based modeling with evolutionary optimization and
+tournament evaluation in a single, reproducible workflow. HEAS represents
+models as hierarchies of lightweight processes (""streams"") scheduled in
+deterministic layers that read and write a shared context, making cross-scale
+couplings explicit and auditable. A compact API and CLI-simulate, optimize,
+evaluate-expose single- and multi-objective evolution, PyTorch policy
+integration via parameter flattening/unflattening, and general tournament
+tooling with user-defined scoring and voting rules. The framework standardizes
+evaluation through uniform per-step and episode metrics, persists seeds,
+logbooks, and hall-of-fame archives, and provides plotting helpers for traces,
+Pareto fronts, and comparative outcomes, reducing glue code and improving
+comparability across studies. HEAS emphasizes separation of mechanism from
+orchestration, allowing exogenous drivers, endogenous agents, and aggregators
+to be composed and swapped without refactoring, while the same model can be
+used for forward simulation, optimization, or systematic comparison. We
+illustrate usage with two compact examples-an ecological system and an
+enterprise decision-making setting. HEAS offers a practical foundation for
+cross-disciplinary, multi-level inquiry, yielding reliable, reproducible
+results.",http://arxiv.org/pdf/2508.15555v1,,False
+High-dimensional Asymptotics of Generalization Performance in Continual Ridge Regression,21/08/2025,"Yihan Zhao, Wenqing Su, Ying Yang","Continual learning is motivated by the need to adapt to real-world dynamics
+in tasks and data distribution while mitigating catastrophic forgetting.
+Despite significant advances in continual learning techniques, the theoretical
+understanding of their generalization performance lags behind. This paper
+examines the theoretical properties of continual ridge regression in
+high-dimensional linear models, where the dimension is proportional to the
+sample size in each task. Using random matrix theory, we derive exact
+expressions of the asymptotic prediction risk, thereby enabling the
+characterization of three evaluation metrics of generalization performance in
+continual learning: average risk, backward transfer, and forward transfer.
+Furthermore, we present the theoretical risk curves to illustrate the trends in
+these evaluation metrics throughout the continual learning process. Our
+analysis reveals several intriguing phenomena in the risk curves, demonstrating
+how model specifications influence the generalization performance. Simulation
+studies are conducted to validate our theoretical findings.",http://arxiv.org/pdf/2508.15494v1,,False
+Multiply Robust Conformal Risk Control with Coarsened Data,21/08/2025,"Manit Paul, Arun Kumar Kuchibhotla, Eric J. Tchetgen Tchetgen","Conformal Prediction (CP) has recently received a tremendous amount of
+interest, leading to a wide range of new theoretical and methodological results
+for predictive inference with formal theoretical guarantees. However, the vast
+majority of CP methods assume that all units in the training data have fully
+observed data on both the outcome and covariates of primary interest, an
+assumption that rarely holds in practice. In reality, training data are often
+missing the outcome, a subset of covariates, or both on some units. In
+addition, time-to-event outcomes in the training set may be censored due to
+dropout or administrative end-of-follow-up. Accurately accounting for such
+coarsened data in the training sample while fulfilling the primary objective of
+well-calibrated conformal predictive inference, requires robustness and
+efficiency considerations. In this paper, we consider the general problem of
+obtaining distribution-free valid prediction regions for an outcome given
+coarsened training data. Leveraging modern semiparametric theory, we achieve
+our goal by deriving the efficient influence function of the quantile of the
+outcome we aim to predict, under a given semiparametric model for the coarsened
+data, carefully combined with a novel conformal risk control procedure. Our
+principled use of semiparametric theory has the key advantage of facilitating
+flexible machine learning methods such as random forests to learn the
+underlying nuisance functions of the semiparametric model. A straightforward
+application of the proposed general framework produces prediction intervals
+with stronger coverage properties under covariate shift, as well as the
+construction of multiply robust prediction sets in monotone missingness
+scenarios. We further illustrate the performance of our methods through various
+simulation studies.",http://arxiv.org/pdf/2508.15489v1,,False
+Learning Protein-Ligand Binding in Hyperbolic Space,21/08/2025,"Jianhui Wang, Wenyu Zhu, Bowen Gao, Xin Hong, Ya-Qin Zhang, Wei-Ying Ma, Yanyan Lan","Protein-ligand binding prediction is central to virtual screening and
+affinity ranking, two fundamental tasks in drug discovery. While recent
+retrieval-based methods embed ligands and protein pockets into Euclidean space
+for similarity-based search, the geometry of Euclidean embeddings often fails
+to capture the hierarchical structure and fine-grained affinity variations
+intrinsic to molecular interactions. In this work, we propose HypSeek, a
+hyperbolic representation learning framework that embeds ligands, protein
+pockets, and sequences into Lorentz-model hyperbolic space. By leveraging the
+exponential geometry and negative curvature of hyperbolic space, HypSeek
+enables expressive, affinity-sensitive embeddings that can effectively model
+both global activity and subtle functional differences-particularly in
+challenging cases such as activity cliffs, where structurally similar ligands
+exhibit large affinity gaps. Our mode unifies virtual screening and affinity
+ranking in a single framework, introducing a protein-guided three-tower
+architecture to enhance representational structure. HypSeek improves early
+enrichment in virtual screening on DUD-E from 42.63 to 51.44 (+20.7%) and
+affinity ranking correlation on JACS from 0.5774 to 0.7239 (+25.4%),
+demonstrating the benefits of hyperbolic geometry across both tasks and
+highlighting its potential as a powerful inductive bias for protein-ligand
+modeling.",http://arxiv.org/pdf/2508.15480v1,,False
+A Solvable Molecular Switch Model for Stable Temporal Information Processing,21/08/2025,"H. I. Nurdin, C. A. Nijhuis","This paper studies an input-driven one-state differential equation model
+initially developed for an experimentally demonstrated dynamic molecular switch
+that switches like synapses in the brain do. The linear-in-the-state and
+nonlinear-in-the-input model is exactly solvable, and it is shown that it also
+possesses mathematical properties of convergence and fading memory that enable
+stable processing of time-varying inputs by nonlinear dynamical systems. Thus,
+the model exhibits the co-existence of biologically-inspired behavior and
+desirable mathematical properties for stable learning on sequential data. The
+results give theoretical support for the use of the dynamic molecular switches
+as computational units in deep cascaded/layered feedforward and recurrent
+architectures as well as other more general structures for neuromorphic
+computing. They could also inspire more general exactly solvable models that
+can be fitted to emulate arbitrary physical devices which can mimic
+brain-inspired behaviour and perform stable computation on input signals.",http://arxiv.org/pdf/2508.15451v1,,False
+EvoFormer: Learning Dynamic Graph-Level Representations with Structural and Temporal Bias Correction,21/08/2025,"Haodi Zhong, Liuxin Zou, Di Wang, Bo Wang, Zhenxing Niu, Quan Wang","Dynamic graph-level embedding aims to capture structural evolution in
+networks, which is essential for modeling real-world scenarios. However,
+existing methods face two critical yet under-explored issues: Structural Visit
+Bias, where random walk sampling disproportionately emphasizes high-degree
+nodes, leading to redundant and noisy structural representations; and Abrupt
+Evolution Blindness, the failure to effectively detect sudden structural
+changes due to rigid or overly simplistic temporal modeling strategies,
+resulting in inconsistent temporal embeddings. To overcome these challenges, we
+propose EvoFormer, an evolution-aware Transformer framework tailored for
+dynamic graph-level representation learning. To mitigate Structural Visit Bias,
+EvoFormer introduces a Structure-Aware Transformer Module that incorporates
+positional encoding based on node structural roles, allowing the model to
+globally differentiate and accurately represent node structures. To overcome
+Abrupt Evolution Blindness, EvoFormer employs an Evolution-Sensitive Temporal
+Module, which explicitly models temporal evolution through a sequential
+three-step strategy: (I) Random Walk Timestamp Classification, generating
+initial timestamp-aware graph-level embeddings; (II) Graph-Level Temporal
+Segmentation, partitioning the graph stream into segments reflecting
+structurally coherent periods; and (III) Segment-Aware Temporal Self-Attention
+combined with an Edge Evolution Prediction task, enabling the model to
+precisely capture segment boundaries and perceive structural evolution trends,
+effectively adapting to rapid temporal shifts. Extensive evaluations on five
+benchmark datasets confirm that EvoFormer achieves state-of-the-art performance
+in graph similarity ranking, temporal anomaly detection, and temporal
+segmentation tasks, validating its effectiveness in correcting structural and
+temporal biases.",http://arxiv.org/pdf/2508.15378v1,10.1145/3746252.3761134,False
+DiagECG: An LLM-Driven Framework for Diagnostic Reasoning via Discretized ECG Tokenization,21/08/2025,"Jinning Yang, Wen Shi","Electrocardiography plays a central role in cardiovascular diagnostics, yet
+existing automated approaches often struggle to generalize across clinical
+tasks and offer limited support for open-ended reasoning. We present DiagECG, a
+novel framework that integrates time-series and language modeling by enabling
+large language models to process 12-lead ECG signals for clinical text
+generation tasks. Our approach discretizes continuous ECG embeddings into
+symbolic tokens using a lead-independent encoder and quantization module. These
+tokens are then used to extend the vocabulary of LLM, allowing the model to
+handle both ECG and natural language inputs in a unified manner. To bridge the
+modality gap, we pretrain the model on an autoregressive ECG forecasting task,
+enabling the LLM to model temporal dynamics using its native language modeling
+capabilities. Finally, we perform instruction tuning on both ECG question
+answering and diagnostic report generation. Without modifying the core model,
+DiagECG achieves strong performance across tasks while maintaining
+generalization to out-of-distribution settings. Extensive experiments
+demonstrate the effectiveness of each component and highlight the potential of
+integrating symbolic ECG representations into LLMs for medical reasoning.",http://arxiv.org/pdf/2508.15338v1,,False
+Predicting Road Crossing Behaviour using Pose Detection and Sequence Modelling,21/08/2025,"Subhasis Dasgupta, Preetam Saha, Agniva Roy, Jaydip Sen","The world is constantly moving towards AI based systems and autonomous
+vehicles are now reality in different parts of the world. These vehicles
+require sensors and cameras to detect objects and maneuver according to that.
+It becomes important to for such vehicles to also predict from a distant if a
+person is about to cross a road or not. The current study focused on predicting
+the intent of crossing the road by pedestrians in an experimental setup. The
+study involved working with deep learning models to predict poses and sequence
+modelling for temporal predictions. The study analysed three different sequence
+modelling to understand the prediction behaviour and it was found out that GRU
+was better in predicting the intent compared to LSTM model but 1D CNN was the
+best model in terms of speed. The study involved video analysis, and the output
+of pose detection model was integrated later on to sequence modelling
+techniques for an end-to-end deep learning framework for predicting road
+crossing intents.",http://arxiv.org/pdf/2508.15336v1,,False
+M-$LLM^3$REC: A Motivation-Aware User-Item Interaction Framework for Enhancing Recommendation Accuracy with LLMs,21/08/2025,"Lining Chen, Qingwen Zeng, Huaming Chen","Recommendation systems have been essential for both user experience and
+platform efficiency by alleviating information overload and supporting
+decision-making. Traditional methods, i.e., content-based filtering,
+collaborative filtering, and deep learning, have achieved impressive results in
+recommendation systems. However, the cold-start and sparse-data scenarios are
+still challenging to deal with. Existing solutions either generate
+pseudo-interaction sequence, which often introduces redundant or noisy signals,
+or rely heavily on semantic similarity, overlooking dynamic shifts in user
+motivation. To address these limitations, this paper proposes a novel
+recommendation framework, termed M-$LLM^3$REC, which leverages large language
+models for deep motivational signal extraction from limited user interactions.
+M-$LLM^3$REC comprises three integrated modules: the Motivation-Oriented
+Profile Extractor (MOPE), Motivation-Oriented Trait Encoder (MOTE), and
+Motivational Alignment Recommender (MAR). By emphasizing motivation-driven
+semantic modeling, M-$LLM^3$REC demonstrates robust, personalized, and
+generalizable recommendations, particularly boosting performance in cold-start
+situations in comparison with the state-of-the-art frameworks.",http://arxiv.org/pdf/2508.15262v1,10.1145/3746252.3761214,False
+Pretrained Diffusion Models Are Inherently Skipped-Step Samplers,21/08/2025,Wenju Xu,"Diffusion models have been achieving state-of-the-art results across various
+generation tasks. However, a notable drawback is their sequential generation
+process, requiring long-sequence step-by-step generation. Existing methods,
+such as DDIM, attempt to reduce sampling steps by constructing a class of
+non-Markovian diffusion processes that maintain the same training objective.
+However, there remains a gap in understanding whether the original diffusion
+process can achieve the same efficiency without resorting to non-Markovian
+processes. In this paper, we provide a confirmative answer and introduce
+skipped-step sampling, a mechanism that bypasses multiple intermediate
+denoising steps in the iterative generation process, in contrast with the
+traditional step-by-step refinement of standard diffusion inference. Crucially,
+we demonstrate that this skipped-step sampling mechanism is derived from the
+same training objective as the standard diffusion model, indicating that
+accelerated sampling via skipped-step sampling via a Markovian way is an
+intrinsic property of pretrained diffusion models. Additionally, we propose an
+enhanced generation method by integrating our accelerated sampling technique
+with DDIM. Extensive experiments on popular pretrained diffusion models,
+including the OpenAI ADM, Stable Diffusion, and Open Sora models, show that our
+method achieves high-quality generation with significantly reduced sampling
+steps.",http://arxiv.org/pdf/2508.15233v1,,False
+Robust and Efficient Quantum Reservoir Computing with Discrete Time Crystal,21/08/2025,"Da Zhang, Xin Li, Yibin Guo, Haifeng Yu, Yirong Jin, Zhang-Qi Yin","The rapid development of machine learning and quantum computing has placed
+quantum machine learning at the forefront of research. However, existing
+quantum machine learning algorithms based on quantum variational algorithms
+face challenges in trainability and noise robustness. In order to address these
+challenges, we introduce a gradient-free, noise-robust quantum reservoir
+computing algorithm that harnesses discrete time crystal dynamics as a
+reservoir. We first calibrate the memory, nonlinear, and information scrambling
+capacities of the quantum reservoir, revealing their correlation with dynamical
+phases and non-equilibrium phase transitions. We then apply the algorithm to
+the binary classification task and establish a comparative quantum kernel
+advantage. For ten-class classification, both noisy simulations and
+experimental results on superconducting quantum processors match ideal
+simulations, demonstrating the enhanced accuracy with increasing system size
+and confirming the topological noise robustness. Our work presents the first
+experimental demonstration of quantum reservoir computing for image
+classification based on digital quantum simulation. It establishes the
+correlation between quantum many-body non-equilibrium phase transitions and
+quantum machine learning performance, providing new design principles for
+quantum reservoir computing and broader quantum machine learning algorithms in
+the NISQ era.",http://arxiv.org/pdf/2508.15230v1,,False
+Learning ECG Representations via Poly-Window Contrastive Learning,21/08/2025,"Yi Yuan, Joseph Van Duyn, Runze Yan, Zhuoyi Huang, Sulaiman Vesal, Sergey Plis, Xiao Hu, Gloria Hyunjung Kwak, Ran Xiao, Alex Fedorov","Electrocardiogram (ECG) analysis is foundational for cardiovascular disease
+diagnosis, yet the performance of deep learning models is often constrained by
+limited access to annotated data. Self-supervised contrastive learning has
+emerged as a powerful approach for learning robust ECG representations from
+unlabeled signals. However, most existing methods generate only pairwise
+augmented views and fail to leverage the rich temporal structure of ECG
+recordings. In this work, we present a poly-window contrastive learning
+framework. We extract multiple temporal windows from each ECG instance to
+construct positive pairs and maximize their agreement via statistics. Inspired
+by the principle of slow feature analysis, our approach explicitly encourages
+the model to learn temporally invariant and physiologically meaningful features
+that persist across time. We validate our approach through extensive
+experiments and ablation studies on the PTB-XL dataset. Our results demonstrate
+that poly-window contrastive learning consistently outperforms conventional
+two-view methods in multi-label superclass classification, achieving higher
+AUROC (0.891 vs. 0.888) and F1 scores (0.680 vs. 0.679) while requiring up to
+four times fewer pre-training epochs (32 vs. 128) and 14.8% in total wall clock
+pre-training time reduction. Despite processing multiple windows per sample, we
+achieve a significant reduction in the number of training epochs and total
+computation time, making our method practical for training foundational models.
+Through extensive ablations, we identify optimal design choices and demonstrate
+robustness across various hyperparameters. These findings establish poly-window
+contrastive learning as a highly efficient and scalable paradigm for automated
+ECG analysis and provide a promising general framework for self-supervised
+representation learning in biomedical time-series data.",http://arxiv.org/pdf/2508.15225v1,,False
+SleepDIFFormer: Sleep Stage Classification via Multivariate Differential Transformer,21/08/2025,"Benjamin Wei Hao Chin, Yuin Torng Yew, Haocheng Wu, Lanxin Liang, Chow Khuen Chan, Norita Mohd Zain, Siti Balqis Samdin, Sim Kuan Goh","Classification of sleep stages is essential for assessing sleep quality and
+diagnosing sleep disorders such as insomnia. However, manual inspection of EEG
+characteristics for each stage is time-consuming and prone to human error.
+Although machine learning and deep learning methods have been actively
+developed, they continue to face challenges from the non-stationarity and
+variability of electroencephalography (EEG) and electrooculography (EOG)
+signals, often leading to poor generalization on unseen datasets. This research
+proposed a Sleep Stage Classification method by developing Multivariate
+Differential Transformer (SleepDIFFormer) for joint EEG and EOG representation
+learning. Specifically, SleepDIFFormer was developed to process EEG and EOG
+signals using our Multivariate Differential Transformer Architecture (MDTA) for
+time series, trained with cross-domain alignment. Our method mitigated spatial
+and temporal attention noise while learning a domain-invariant joint EEG-EOG
+representation through feature distribution alignment, thereby enabling
+generalization to unseen target datasets. Empirically, we evaluated our method
+on five different sleep staging datasets and compared it with existing
+approaches, achieving state-of-the-art performance. We also conducted thorough
+ablation analyses of SleepDIFFormer and interpreted the differential attention
+weights, highlighting their relevance to characteristic sleep EEG patterns.
+These findings have implications for advancing automated sleep stage
+classification and its application to sleep quality assessment. Our source code
+is publicly available at https://github.com/Ben1001409/SleepDIFFormer",http://arxiv.org/pdf/2508.15215v1,,False
+SparK: Query-Aware Unstructured Sparsity with Recoverable KV Cache Channel Pruning,21/08/2025,"Huanxuan Liao, Yixing Xu, Shizhu He, Guanchen Li, Xuanwu Yin, Dong Li, Emad Barsoum, Jun Zhao, Kang Liu","Long-context inference in large language models (LLMs) is increasingly
+constrained by the KV cache bottleneck: memory usage grows linearly with
+sequence length, while attention computation scales quadratically. Existing
+approaches address this issue by compressing the KV cache along the temporal
+axis through strategies such as token eviction or merging to reduce memory and
+computational overhead. However, these methods often neglect fine-grained
+importance variations across feature dimensions (i.e., the channel axis),
+thereby limiting their ability to effectively balance efficiency and model
+accuracy. In reality, we observe that channel saliency varies dramatically
+across both queries and positions: certain feature channels carry near-zero
+information for a given query, while others spike in relevance. To address this
+oversight, we propose SPARK, a training-free plug-and-play method that applies
+unstructured sparsity by pruning KV at the channel level, while dynamically
+restoring the pruned entries during attention score computation. Notably, our
+approach is orthogonal to existing KV compression and quantization techniques,
+making it compatible for integration with them to achieve further acceleration.
+By reducing channel-level redundancy, SPARK enables processing of longer
+sequences within the same memory budget. For sequences of equal length, SPARK
+not only preserves or improves model accuracy but also reduces KV cache storage
+by over 30% compared to eviction-based methods. Furthermore, even with an
+aggressive pruning ratio of 80%, SPARK maintains performance with less
+degradation than 5% compared to the baseline eviction method, demonstrating its
+robustness and effectiveness. Our code will be available at
+https://github.com/Xnhyacinth/SparK.",http://arxiv.org/pdf/2508.15212v1,,False
+A Unified Framework for Inference with General Missingness Patterns and Machine Learning Imputation,21/08/2025,"Xingran Chen, Tyler McCormick, Bhramar Mukherjee, Zhenke Wu","Pre-trained machine learning (ML) predictions have been increasingly used to
+complement incomplete data to enable downstream scientific inquiries, but their
+naive integration risks biased inferences. Recently, multiple methods have been
+developed to provide valid inference with ML imputations regardless of
+prediction quality and to enhance efficiency relative to complete-case
+analyses. However, existing approaches are often limited to missing outcomes
+under a missing-completely-at-random (MCAR) assumption, failing to handle
+general missingness patterns under the more realistic missing-at-random (MAR)
+assumption. This paper develops a novel method which delivers valid statistical
+inference framework for general Z-estimation problems using ML imputations
+under the MAR assumption and for general missingness patterns. The core
+technical idea is to stratify observations by distinct missingness patterns and
+construct an estimator by appropriately weighting and aggregating
+pattern-specific information through a masking-and-imputation procedure on the
+complete cases. We provide theoretical guarantees of asymptotic normality of
+the proposed estimator and efficiency dominance over weighted complete-case
+analyses. Practically, the method affords simple implementations by leveraging
+existing weighted complete-case analysis software. Extensive simulations are
+carried out to validate theoretical results. The paper concludes with a brief
+discussion on practical implications, limitations, and potential future
+directions.",http://arxiv.org/pdf/2508.15162v1,,False

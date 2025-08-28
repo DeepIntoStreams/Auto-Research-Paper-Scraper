@@ -1,0 +1,264 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Neural Conditional Simulation for Complex Spatial Processes,27/08/2025,"Julia Walchessen, Andrew Zammit-Mangion, Raphaël Huser, Mikael Kuusela","A key objective in spatial statistics is to simulate from the distribution of
+a spatial process at a selection of unobserved locations conditional on
+observations (i.e., a predictive distribution) to enable spatial prediction and
+uncertainty quantification. However, exact conditional simulation from this
+predictive distribution is intractable or inefficient for many spatial process
+models. In this paper, we propose neural conditional simulation (NCS), a
+general method for spatial conditional simulation that is based on neural
+diffusion models. Specifically, using spatial masks, we implement a conditional
+score-based diffusion model that evolves Gaussian noise into samples from a
+predictive distribution when given a partially observed spatial field and
+spatial process parameters as inputs. The diffusion model relies on a neural
+network that only requires unconditional samples from the spatial process for
+training. Once trained, the diffusion model is amortized with respect to the
+observations in the partially observed field, the number and locations of those
+observations, and the spatial process parameters, and can therefore be used to
+conditionally simulate from a broad class of predictive distributions without
+retraining the neural network. We assess the NCS-generated simulations against
+simulations from the true conditional distribution of a Gaussian process model,
+and against Markov chain Monte Carlo (MCMC) simulations from a Brown--Resnick
+process model for spatial extremes. In the latter case, we show that it is more
+efficient and accurate to conditionally simulate using NCS than classical MCMC
+techniques implemented in standard software. We conclude that NCS enables
+efficient and accurate conditional simulation from spatial predictive
+distributions that are challenging to sample from using traditional methods.",http://arxiv.org/pdf/2508.20067v1,,False
+Using item recommendations and LLMs in marketing email titles,27/08/2025,"Deddy Jobson, Muktti Shukla, Phuong Dinh, Julio Christian Young, Nick Pitton, Nina Chen, Ryan Ginstrom","E-commerce marketplaces make use of a number of marketing channels like
+emails, push notifications, etc. to reach their users and stimulate purchases.
+Personalized emails especially are a popular touch point for marketers to
+inform users of latest items in stock, especially for those who stopped
+visiting the marketplace. Such emails contain personalized recommendations
+tailored to each user's interests, enticing users to buy relevant items. A
+common limitation of these emails is that the primary entry point, the title of
+the email, tends to follow fixed templates, failing to inspire enough interest
+in the contents. In this work, we explore the potential of large language
+models (LLMs) for generating thematic titles that reflect the personalized
+content of the emails. We perform offline simulations and conduct online
+experiments on the order of millions of users, finding our techniques useful in
+improving the engagement between customers and our emails. We highlight key
+findings and learnings as we productionize the safe and automated generation of
+email titles for millions of users.",http://arxiv.org/pdf/2508.20024v1,,False
+SWIRL: A Staged Workflow for Interleaved Reinforcement Learning in Mobile GUI Control,27/08/2025,"Quanfeng Lu, Zhantao Ma, Shuai Zhong, Jin Wang, Dahai Yu, Michael K. Ng, Ping Luo","The rapid advancement of large vision language models (LVLMs) and agent
+systems has heightened interest in mobile GUI agents that can reliably
+translate natural language into interface operations. Existing single-agent
+approaches, however, remain limited by structural constraints. Although
+multi-agent systems naturally decouple different competencies, recent progress
+in multi-agent reinforcement learning (MARL) has often been hindered by
+inefficiency and remains incompatible with current LVLM architectures. To
+address these challenges, we introduce SWIRL, a staged workflow for interleaved
+reinforcement learning designed for multi-agent systems. SWIRL reformulates
+MARL into a sequence of single-agent reinforcement learning tasks, updating one
+agent at a time while keeping the others fixed. This formulation enables stable
+training and promotes efficient coordination across agents. Theoretically, we
+provide a stepwise safety bound, a cross-round monotonic improvement theorem,
+and convergence guarantees on return, ensuring robust and principled
+optimization. In application to mobile GUI control, SWIRL instantiates a
+Navigator that converts language and screen context into structured plans, and
+an Interactor that grounds these plans into executable atomic actions.
+Extensive experiments demonstrate superior performance on both high-level and
+low-level GUI benchmarks. Beyond GUI tasks, SWIRL also demonstrates strong
+capability in multi-agent mathematical reasoning, underscoring its potential as
+a general framework for developing efficient and robust multi-agent systems.",http://arxiv.org/pdf/2508.20018v1,,False
+Diffusion Language Models Know the Answer Before Decoding,27/08/2025,"Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen, Yi Liang, Soroush Vosoughi, Shiwei Liu","Diffusion language models (DLMs) have recently emerged as an alternative to
+autoregressive approaches, offering parallel sequence generation and flexible
+token orders. However, their inference remains slower than that of
+autoregressive models, primarily due to the cost of bidirectional attention and
+the large number of refinement steps required for high quality outputs. In this
+work, we highlight and leverage an overlooked property of DLMs early answer
+convergence: in many cases, the correct answer can be internally identified by
+half steps before the final decoding step, both under semi-autoregressive and
+random remasking schedules. For example, on GSM8K and MMLU, up to 97% and 99%
+of instances, respectively, can be decoded correctly using only half of the
+refinement steps. Building on this observation, we introduce Prophet, a
+training-free fast decoding paradigm that enables early commit decoding.
+Specifically, Prophet dynamically decides whether to continue refinement or to
+go ""all-in"" (i.e., decode all remaining tokens in one step), using the
+confidence gap between the top-2 prediction candidates as the criterion. It
+integrates seamlessly into existing DLM implementations, incurs negligible
+overhead, and requires no additional training. Empirical evaluations of
+LLaDA-8B and Dream-7B across multiple tasks show that Prophet reduces the
+number of decoding steps by up to 3.4x while preserving high generation
+quality. These results recast DLM decoding as a problem of when to stop
+sampling, and demonstrate that early decode convergence provides a simple yet
+powerful mechanism for accelerating DLM inference, complementary to existing
+speedup techniques. Our code is publicly available at
+https://github.com/pixeli99/Prophet.",http://arxiv.org/pdf/2508.19982v1,,False
+Constraint Learning in Multi-Agent Dynamic Games from Demonstrations of Local Nash Interactions,27/08/2025,"Zhouyu Zhang, Chih-Yuan Chiu, Glen Chou","We present an inverse dynamic game-based algorithm to learn parametric
+constraints from a given dataset of local generalized Nash equilibrium
+interactions between multiple agents. Specifically, we introduce mixed-integer
+linear programs (MILP) encoding the Karush-Kuhn-Tucker (KKT) conditions of the
+interacting agents, which recover constraints consistent with the Nash
+stationarity of the interaction demonstrations. We establish theoretical
+guarantees that our method learns inner approximations of the true safe and
+unsafe sets, as well as limitations of constraint learnability from
+demonstrations of Nash equilibrium interactions. We also use the interaction
+constraints recovered by our method to design motion plans that robustly
+satisfy the underlying constraints. Across simulations and hardware
+experiments, our methods proved capable of inferring constraints and designing
+interactive motion plans for various classes of constraints, both convex and
+non-convex, from interaction demonstrations of agents with nonlinear dynamics.",http://arxiv.org/pdf/2508.19945v1,,False
+Generative AI for Testing of Autonomous Driving Systems: A Survey,27/08/2025,"Qunying Song, He Ye, Mark Harman, Federica Sarro","Autonomous driving systems (ADS) have been an active area of research, with
+the potential to deliver significant benefits to society. However, before
+large-scale deployment on public roads, extensive testing is necessary to
+validate their functionality and safety under diverse driving conditions.
+Therefore, different testing approaches are required, and achieving effective
+and efficient testing of ADS remains an open challenge. Recently, generative AI
+has emerged as a powerful tool across many domains, and it is increasingly
+being applied to ADS testing due to its ability to interpret context, reason
+about complex tasks, and generate diverse outputs. To gain a deeper
+understanding of its role in ADS testing, we systematically analyzed 91
+relevant studies and synthesized their findings into six major application
+categories, primarily centered on scenario-based testing of ADS. We also
+reviewed their effectiveness and compiled a wide range of datasets, simulators,
+ADS, metrics, and benchmarks used for evaluation, while identifying 27
+limitations. This survey provides an overview and practical insights into the
+use of generative AI for testing ADS, highlights existing challenges, and
+outlines directions for future research in this rapidly evolving field.",http://arxiv.org/pdf/2508.19882v1,,False
+Quantum latent distributions in deep generative models,27/08/2025,"Omar Bacarreza, Thorin Farnsworth, Alexander Makarovskiy, Hugo Wallner, Tessa Hicks, Santiago Sempere-Llagostera, John Price, Robert J. A. Francis-Jones, William R. Clements","Many successful families of generative models leverage a low-dimensional
+latent distribution that is mapped to a data distribution. Though simple latent
+distributions are commonly used, it has been shown that more sophisticated
+distributions can improve performance. For instance, recent work has explored
+using the distributions produced by quantum processors and found empirical
+improvements. However, when latent space distributions produced by quantum
+processors can be expected to improve performance, and whether these
+improvements are reproducible, are open questions that we investigate in this
+work. We prove that, under certain conditions, these ""quantum latent
+distributions"" enable generative models to produce data distributions that
+classical latent distributions cannot efficiently produce. We also provide
+actionable intuitions to identify when such quantum advantages may arise in
+real-world settings. We perform benchmarking experiments on both a synthetic
+quantum dataset and the QM9 molecular dataset, using both simulated and real
+photonic quantum processors. Our results demonstrate that quantum latent
+distributions can lead to improved generative performance in GANs compared to a
+range of classical baselines. We also explore diffusion and flow matching
+models, identifying architectures compatible with quantum latent distributions.
+This work confirms that near-term quantum processors can expand the
+capabilities of deep generative models.",http://arxiv.org/pdf/2508.19857v1,,False
+Tracking World States with Language Models: State-Based Evaluation Using Chess,27/08/2025,"Romain Harang, Jason Naradowsky, Yaswitha Gujju, Yusuke Miyao","Large Language Models (LLMs) exhibit emergent capabilities in structured
+domains, suggesting they may implicitly internalize high-fidelity
+representations of world models. While probing techniques have shown promising
+signs of this in scientific and game-based settings, they rely on
+model-specific internal activations, which limit interpretability and
+generalizability. In this work, we propose a model-agnostic, state-based
+evaluation framework using chess as a benchmark to assess whether LLMs preserve
+the semantics of structured environments. Our method analyzes the downstream
+legal move distributions (state affordances) to estimate semantic fidelity
+between predicted and actual game states. This approach offers a more
+meaningful evaluation than conventional string-based metrics by aligning more
+closely with the strategic and rule-governed nature of chess. Experimental
+results demonstrate that our metrics capture deficiencies in state-tracking,
+highlighting limitations of LLMs in maintaining coherent internal models over
+long sequences. Our framework provides a robust tool for evaluating structured
+reasoning in LLMs without requiring internal model access, and generalizes to a
+wide class of symbolic environments.",http://arxiv.org/pdf/2508.19851v1,,False
+Conditional Normalizing Flow Surrogate for Monte Carlo Prediction of Radiative Properties in Nanoparticle-Embedded Layers,27/08/2025,"Fahime Seyedheydari, Kevin Conley, Simo Särkkä","We present a probabilistic, data-driven surrogate model for predicting the
+radiative properties of nanoparticle embedded scattering media. The model uses
+conditional normalizing flows, which learn the conditional distribution of
+optical outputs, including reflectance, absorbance, and transmittance, given
+input parameters such as the absorption coefficient, scattering coefficient,
+anisotropy factor, and particle size distribution. We generate training data
+using Monte Carlo radiative transfer simulations, with optical properties
+derived from Mie theory. Unlike conventional neural networks, the conditional
+normalizing flow model yields full posterior predictive distributions, enabling
+both accurate forecasts and principled uncertainty quantification. Our results
+demonstrate that this model achieves high predictive accuracy and reliable
+uncertainty estimates, establishing it as a powerful and efficient surrogate
+for radiative transfer simulations.",http://arxiv.org/pdf/2508.19841v1,,False
+Fast 3D Diffusion for Scalable Granular Media Synthesis,27/08/2025,"Muhammad Moeeze Hassan, Régis Cottereau, Filippo Gatti, Patryk Dec","Simulating granular media, using Discrete Element Method is a computationally
+intensive task. This is especially true during initialization phase, which
+dominates total simulation time because of large displacements involved and
+associated kinetic energy. We overcome this bottleneck with a novel generative
+pipeline based on 3D diffusion models that directly synthesizes arbitrarily
+large granular assemblies in their final and physically realistic
+configurations. The approach frames the problem as a 3D generative modeling
+task, consisting of a two-stage pipeline. First a diffusion model is trained to
+generate independent 3D voxel grids representing granular media. Second, a 3D
+inpainting model, adapted from 2D inpainting techniques using masked inputs,
+stitches these grids together seamlessly, enabling synthesis of large samples
+with physically realistic structure. The inpainting model explores several
+masking strategies for the inputs to the underlying UNets by training the
+network to infer missing portions of voxel grids from a concatenation of noised
+tensors, masks, and masked tensors as input channels. The model also adapts a
+2D repainting technique of re-injecting noise scheduler output with ground
+truth to provide a strong guidance to the 3D model. This along with weighted
+losses ensures long-term coherence over generation of masked regions. Both
+models are trained on the same binarized 3D occupancy grids extracted from
+small-scale DEM simulations, achieving linear scaling of computational time
+with respect to sample size. Quantitatively, a 1.2 m long ballasted rail track
+synthesis equivalent to a 3-hour DEM simulation, was completed under 20
+seconds. The generated voxel grids can also be post-processed to extract grain
+geometries for DEM-compatibility as well, enabling physically coherent,
+real-time, scalable granular media synthesis for industrial applications.",http://arxiv.org/pdf/2508.19752v1,,False
+Beyond BEV: Optimizing Point-Level Tokens for Collaborative Perception,27/08/2025,"Yang Li, Quan Yuan, Guiyang Luo, Xiaoyuan Fu, Rui Pan, Yujia Yang, Congzhang Shao, Yuewen Liu, Jinglin Li","Collaborative perception allows agents to enhance their perceptual
+capabilities by exchanging intermediate features. Existing methods typically
+organize these intermediate features as 2D bird's-eye-view (BEV)
+representations, which discard critical fine-grained 3D structural cues
+essential for accurate object recognition and localization. To this end, we
+first introduce point-level tokens as intermediate representations for
+collaborative perception. However, point-cloud data are inherently unordered,
+massive, and position-sensitive, making it challenging to produce compact and
+aligned point-level token sequences that preserve detailed structural
+information. Therefore, we present CoPLOT, a novel Collaborative perception
+framework that utilizes Point-Level Optimized Tokens. It incorporates a
+point-native processing pipeline, including token reordering, sequence
+modeling, and multi-agent spatial alignment. A semantic-aware token reordering
+module generates adaptive 1D reorderings by leveraging scene-level and
+token-level semantic information. A frequency-enhanced state space model
+captures long-range sequence dependencies across both spatial and spectral
+domains, improving the differentiation between foreground tokens and background
+clutter. Lastly, a neighbor-to-ego alignment module applies a closed-loop
+process, combining global agent-level correction with local token-level
+refinement to mitigate localization noise. Extensive experiments on both
+simulated and real-world datasets show that CoPLOT outperforms state-of-the-art
+models, with even lower communication and computation overhead. Code will be
+available at https://github.com/CheeryLeeyy/CoPLOT.",http://arxiv.org/pdf/2508.19638v1,,False
+Instructional Agents: LLM Agents on Automated Course Material Generation for Teaching Faculties,27/08/2025,"Huaiyuan Yao, Wanpeng Xu, Justin Turnau, Nadia Kellam, Hua Wei","Preparing high-quality instructional materials remains a labor-intensive
+process that often requires extensive coordination among teaching faculty,
+instructional designers, and teaching assistants. In this work, we present
+Instructional Agents, a multi-agent large language model (LLM) framework
+designed to automate end-to-end course material generation, including syllabus
+creation, lecture scripts, LaTeX-based slides, and assessments. Unlike existing
+AI-assisted educational tools that focus on isolated tasks, Instructional
+Agents simulates role-based collaboration among educational agents to produce
+cohesive and pedagogically aligned content. The system operates in four modes:
+Autonomous, Catalog-Guided, Feedback-Guided, and Full Co-Pilot mode, enabling
+flexible control over the degree of human involvement. We evaluate
+Instructional Agents across five university-level computer science courses and
+show that it produces high-quality instructional materials while significantly
+reducing development time and human workload. By supporting institutions with
+limited instructional design capacity, Instructional Agents provides a scalable
+and cost-effective framework to democratize access to high-quality education,
+particularly in underserved or resource-constrained settings.",http://arxiv.org/pdf/2508.19611v1,,False
+FinCast: A Foundation Model for Financial Time-Series Forecasting,27/08/2025,"Zhuohang Zhu, Haodong Chen, Qiang Qu, Vera Chung","Financial time-series forecasting is critical for maintaining economic
+stability, guiding informed policymaking, and promoting sustainable investment
+practices. However, it remains challenging due to various underlying pattern
+shifts. These shifts arise primarily from three sources: temporal
+non-stationarity (distribution changes over time), multi-domain diversity
+(distinct patterns across financial domains such as stocks, commodities, and
+futures), and varying temporal resolutions (patterns differing across
+per-second, hourly, daily, or weekly indicators). While recent deep learning
+methods attempt to address these complexities, they frequently suffer from
+overfitting and typically require extensive domain-specific fine-tuning. To
+overcome these limitations, we introduce FinCast, the first foundation model
+specifically designed for financial time-series forecasting, trained on
+large-scale financial datasets. Remarkably, FinCast exhibits robust zero-shot
+performance, effectively capturing diverse patterns without domain-specific
+fine-tuning. Comprehensive empirical and qualitative evaluations demonstrate
+that FinCast surpasses existing state-of-the-art methods, highlighting its
+strong generalization capabilities.",http://arxiv.org/pdf/2508.19609v1,,False
+Energy-Efficient Learning-Based Beamforming for ISAC-Enabled V2X Networks,27/08/2025,"Chen Shang, Jiadong Yu, Dinh Thai Hoang","This work proposes an energy-efficient, learning-based beamforming scheme for
+integrated sensing and communication (ISAC)-enabled V2X networks. Specifically,
+we first model the dynamic and uncertain nature of V2X environments as a Markov
+Decision Process. This formulation allows the roadside unit to generate
+beamforming decisions based solely on current sensing information, thereby
+eliminating the need for frequent pilot transmissions and extensive channel
+state information acquisition. We then develop a deep reinforcement learning
+(DRL) algorithm to jointly optimize beamforming and power allocation, ensuring
+both communication throughput and sensing accuracy in highly dynamic scenario.
+To address the high energy demands of conventional learning-based schemes, we
+embed spiking neural networks (SNNs) into the DRL framework. Leveraging their
+event-driven and sparsely activated architecture, SNNs significantly enhance
+energy efficiency while maintaining robust performance. Simulation results
+confirm that the proposed method achieves substantial energy savings and
+superior communication performance, demonstrating its potential to support
+green and sustainable connectivity in future V2X systems.",http://arxiv.org/pdf/2508.19566v1,,False

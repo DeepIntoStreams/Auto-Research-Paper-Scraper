@@ -1,0 +1,438 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Mixture of Contexts for Long Video Generation,28/08/2025,"Shengqu Cai, Ceyuan Yang, Lvmin Zhang, Yuwei Guo, Junfei Xiao, Ziyan Yang, Yinghao Xu, Zhenheng Yang, Alan Yuille, Leonidas Guibas, Maneesh Agrawala, Lu Jiang, Gordon Wetzstein","Long video generation is fundamentally a long context memory problem: models
+must retain and retrieve salient events across a long range without collapsing
+or drifting. However, scaling diffusion transformers to generate long-context
+videos is fundamentally limited by the quadratic cost of self-attention, which
+makes memory and computation intractable and difficult to optimize for long
+sequences. We recast long-context video generation as an internal information
+retrieval task and propose a simple, learnable sparse attention routing module,
+Mixture of Contexts (MoC), as an effective long-term memory retrieval engine.
+In MoC, each query dynamically selects a few informative chunks plus mandatory
+anchors (caption, local windows) to attend to, with causal routing that
+prevents loop closures. As we scale the data and gradually sparsify the
+routing, the model allocates compute to salient history, preserving identities,
+actions, and scenes over minutes of content. Efficiency follows as a byproduct
+of retrieval (near-linear scaling), which enables practical training and
+synthesis, and the emergence of memory and consistency at the scale of minutes.",http://arxiv.org/pdf/2508.21058v1,,False
+Veritas: Generalizable Deepfake Detection via Pattern-Aware Reasoning,28/08/2025,"Hao Tan, Jun Lan, Zichang Tan, Ajian Liu, Chuanbiao Song, Senyuan Shi, Huijia Zhu, Weiqiang Wang, Jun Wan, Zhen Lei","Deepfake detection remains a formidable challenge due to the complex and
+evolving nature of fake content in real-world scenarios. However, existing
+academic benchmarks suffer from severe discrepancies from industrial practice,
+typically featuring homogeneous training sources and low-quality testing
+images, which hinder the practical deployments of current detectors. To
+mitigate this gap, we introduce HydraFake, a dataset that simulates real-world
+challenges with hierarchical generalization testing. Specifically, HydraFake
+involves diversified deepfake techniques and in-the-wild forgeries, along with
+rigorous training and evaluation protocol, covering unseen model architectures,
+emerging forgery techniques and novel data domains. Building on this resource,
+we propose Veritas, a multi-modal large language model (MLLM) based deepfake
+detector. Different from vanilla chain-of-thought (CoT), we introduce
+pattern-aware reasoning that involves critical reasoning patterns such as
+""planning"" and ""self-reflection"" to emulate human forensic process. We further
+propose a two-stage training pipeline to seamlessly internalize such deepfake
+reasoning capacities into current MLLMs. Experiments on HydraFake dataset
+reveal that although previous detectors show great generalization on
+cross-model scenarios, they fall short on unseen forgeries and data domains.
+Our Veritas achieves significant gains across different OOD scenarios, and is
+capable of delivering transparent and faithful detection outputs.",http://arxiv.org/pdf/2508.21048v1,,False
+ChainReaction! Structured Approach with Causal Chains as Intermediate Representations for Improved and Explainable Causal Video Question Answering,28/08/2025,"Paritosh Parmar, Eric Peh, Basura Fernando","Existing Causal-Why Video Question Answering (VideoQA) models often struggle
+with higher-order reasoning, relying on opaque, monolithic pipelines that
+entangle video understanding, causal inference, and answer generation. These
+black-box approaches offer limited interpretability and tend to depend on
+shallow heuristics. We propose a novel, modular framework that explicitly
+decouples causal reasoning from answer generation, introducing natural language
+causal chains as interpretable intermediate representations. Inspired by human
+cognitive models, these structured cause-effect sequences bridge low-level
+video content with high-level causal reasoning, enabling transparent and
+logically coherent inference. Our two-stage architecture comprises a Causal
+Chain Extractor (CCE) that generates causal chains from video-question pairs,
+and a Causal Chain-Driven Answerer (CCDA) that produces answers grounded in
+these chains. To address the lack of annotated reasoning traces, we introduce a
+scalable method for generating high-quality causal chains from existing
+datasets using large language models. We also propose CauCo, a new evaluation
+metric for causality-oriented captioning. Experiments on three large-scale
+benchmarks demonstrate that our approach not only outperforms state-of-the-art
+models, but also yields substantial gains in explainability, user trust, and
+generalization -- positioning the CCE as a reusable causal reasoning engine
+across diverse domains. Project page:
+https://paritoshparmar.github.io/chainreaction/",http://arxiv.org/pdf/2508.21010v1,,False
+ExpertSim: Fast Particle Detector Simulation Using Mixture-of-Generative-Experts,28/08/2025,"Patryk Będkowski, Jan Dubiński, Filip Szatkowski, Kamil Deja, Przemysław Rokita, Tomasz Trzciński","Simulating detector responses is a crucial part of understanding the inner
+workings of particle collisions in the Large Hadron Collider at CERN. Such
+simulations are currently performed with statistical Monte Carlo methods, which
+are computationally expensive and put a significant strain on CERN's
+computational grid. Therefore, recent proposals advocate for generative machine
+learning methods to enable more efficient simulations. However, the
+distribution of the data varies significantly across the simulations, which is
+hard to capture with out-of-the-box methods. In this study, we present
+ExpertSim - a deep learning simulation approach tailored for the Zero Degree
+Calorimeter in the ALICE experiment. Our method utilizes a
+Mixture-of-Generative-Experts architecture, where each expert specializes in
+simulating a different subset of the data. This allows for a more precise and
+efficient generation process, as each expert focuses on a specific aspect of
+the calorimeter response. ExpertSim not only improves accuracy, but also
+provides a significant speedup compared to the traditional Monte-Carlo methods,
+offering a promising solution for high-efficiency detector simulations in
+particle physics experiments at CERN. We make the code available at
+https://github.com/patrick-bedkowski/expertsim-mix-of-generative-experts.",http://arxiv.org/pdf/2508.20991v1,,False
+A Multi-Objective Genetic Algorithm for Healthcare Workforce Scheduling,28/08/2025,"Vipul Patel, Anirudh Deodhar, Dagnachew Birru","Workforce scheduling in the healthcare sector is a significant operational
+challenge, characterized by fluctuating patient loads, diverse clinical skills,
+and the critical need to control labor costs while upholding high standards of
+patient care. This problem is inherently multi-objective, demanding a delicate
+balance between competing goals: minimizing payroll, ensuring adequate staffing
+for patient needs, and accommodating staff preferences to mitigate burnout. We
+propose a Multi-objective Genetic Algorithm (MOO-GA) that models the hospital
+unit workforce scheduling problem as a multi-objective optimization task. Our
+model incorporates real-world complexities, including hourly appointment-driven
+demand and the use of modular shifts for a multi-skilled workforce. By defining
+objective functions for cost, patient care coverage, and staff satisfaction,
+the GA navigates the vast search space to identify a set of high-quality,
+non-dominated solutions. Demonstrated on datasets representing a typical
+hospital unit, the results show that our MOO-GA generates robust and balanced
+schedules. On average, the schedules produced by our algorithm showed a 66\%
+performance improvement over a baseline that simulates a conventional, manual
+scheduling process. This approach effectively manages trade-offs between
+critical operational and staff-centric objectives, providing a practical
+decision support tool for nurse managers and hospital administrators.",http://arxiv.org/pdf/2508.20953v1,,False
+Quantum Verifiable Rewards for Post-Training Qiskit Code Assistant,28/08/2025,"Nicolas Dupuis, Adarsh Tiwari, Youssef Mroueh, David Kremer, Ismael Faro, Juan Cruz-Benito","Qiskit is an open-source quantum computing framework that allows users to
+design, simulate, and run quantum circuits on real quantum hardware. We explore
+post-training techniques for LLMs to assist in writing Qiskit code. We
+introduce quantum verification as an effective method for ensuring code quality
+and executability on quantum hardware. To support this, we developed a
+synthetic data pipeline that generates quantum problem-unit test pairs and used
+it to create preference data for aligning LLMs with DPO. Additionally, we
+trained models using GRPO, leveraging quantum-verifiable rewards provided by
+the quantum hardware. Our best-performing model, combining DPO and GRPO,
+surpasses the strongest open-source baselines on the challenging
+Qiskit-HumanEval-hard benchmark.",http://arxiv.org/pdf/2508.20907v1,,False
+AI Agentic Vulnerability Injection And Transformation with Optimized Reasoning,28/08/2025,"Amine Lbath, Massih-Reza Amini, Aurelien Delaitre, Vadim Okun","The increasing complexity of software systems and the sophistication of
+cyber-attacks have underscored the critical need for effective automated
+vulnerability detection and repair systems. Traditional methods, such as static
+program analysis, face significant challenges related to scalability,
+adaptability, and high false-positive and false-negative rates. AI-driven
+approaches, particularly those using machine learning and deep learning models,
+show promise but are heavily reliant on the quality and quantity of training
+data. This paper introduces a novel framework designed to automatically
+introduce realistic, category-specific vulnerabilities into secure C/C++
+codebases to generate datasets. The proposed approach coordinates multiple AI
+agents that simulate expert reasoning, along with function agents and
+traditional code analysis tools. It leverages Retrieval-Augmented Generation
+for contextual grounding and employs Low-Rank approximation of weights for
+efficient model fine-tuning. Our experimental study on 116 code samples from
+three different benchmarks suggests that our approach outperforms other
+techniques with regard to dataset accuracy, achieving between 89\% and 95\%
+success rates in injecting vulnerabilities at function level.",http://arxiv.org/pdf/2508.20866v1,,False
+Practical Physical Layer Authentication for Mobile Scenarios Using a Synthetic Dataset Enhanced Deep Learning Approach,28/08/2025,"Yijia Guo, Junqing Zhang, Y. -W. Peter Hong","The Internet of Things (IoT) is ubiquitous thanks to the rapid development of
+wireless technologies. However, the broadcast nature of wireless transmissions
+results in great vulnerability to device authentication. Physical layer
+authentication emerges as a promising approach by exploiting the unique channel
+characteristics. However, a practical scheme applicable to dynamic channel
+variations is still missing. In this paper, we proposed a deep learning-based
+physical layer channel state information (CSI) authentication for mobile
+scenarios and carried out comprehensive simulation and experimental evaluation
+using IEEE 802.11n. Specifically, a synthetic training dataset was generated
+based on the WLAN TGn channel model and the autocorrelation and the distance
+correlation of the channel, which can significantly reduce the overhead of
+manually collecting experimental datasets. A convolutional neural network
+(CNN)-based Siamese network was exploited to learn the temporal and spatial
+correlation between the CSI pair and output a score to measure their
+similarity. We adopted a synergistic methodology involving both simulation and
+experimental evaluation. The experimental testbed consisted of WiFi IoT
+development kits and a few typical scenarios were specifically considered. Both
+simulation and experimental evaluation demonstrated excellent generalization
+performance of our proposed deep learning-based approach and excellent
+authentication performance. Demonstrated by our practical measurement results,
+our proposed scheme improved the area under the curve (AUC) by 0.03 compared to
+the fully connected network-based (FCN-based) Siamese model and by 0.06
+compared to the correlation-based benchmark algorithm.",http://arxiv.org/pdf/2508.20861v1,,False
+GPT-FT: An Efficient Automated Feature Transformation Using GPT for Sequence Reconstruction and Performance Enhancement,28/08/2025,"Yang Gao, Dongjie Wang, Scott Piersall, Ye Zhang, Liqiang Wang","Feature transformation plays a critical role in enhancing machine learning
+model performance by optimizing data representations. Recent state-of-the-art
+approaches address this task as a continuous embedding optimization problem,
+converting discrete search into a learnable process. Although effective, these
+methods often rely on sequential encoder-decoder structures that cause high
+computational costs and parameter requirements, limiting scalability and
+efficiency. To address these limitations, we propose a novel framework that
+accomplishes automated feature transformation through four steps:
+transformation records collection, embedding space construction with a revised
+Generative Pre-trained Transformer (GPT) model, gradient-ascent search, and
+autoregressive reconstruction. In our approach, the revised GPT model serves
+two primary functions: (a) feature transformation sequence reconstruction and
+(b) model performance estimation and enhancement for downstream tasks by
+constructing the embedding space. Such a multi-objective optimization framework
+reduces parameter size and accelerates transformation processes. Experimental
+results on benchmark datasets show that the proposed framework matches or
+exceeds baseline performance, with significant gains in computational
+efficiency. This work highlights the potential of transformer-based
+architectures for scalable, high-performance automated feature transformation.",http://arxiv.org/pdf/2508.20824v1,,False
+cMALC-D: Contextual Multi-Agent LLM-Guided Curriculum Learning with Diversity-Based Context Blending,28/08/2025,"Anirudh Satheesh, Keenan Powell, Hua Wei","Many multi-agent reinforcement learning (MARL) algorithms are trained in
+fixed simulation environments, making them brittle when deployed in real-world
+scenarios with more complex and uncertain conditions. Contextual MARL (cMARL)
+addresses this by parameterizing environments with context variables and
+training a context-agnostic policy that performs well across all environment
+configurations. Existing cMARL methods attempt to use curriculum learning to
+help train and evaluate context-agnostic policies, but they often rely on
+unreliable proxy signals, such as value estimates or generalized advantage
+estimates that are noisy and unstable in multi-agent settings due to
+inter-agent dynamics and partial observability. To address these issues, we
+propose Contextual Multi-Agent LLM-Guided Curriculum Learning with
+Diversity-Based Context Blending (cMALC-D), a framework that uses Large
+Language Models (LLMs) to generate semantically meaningful curricula and
+provide a more robust evaluation signal. To prevent mode collapse and encourage
+exploration, we introduce a novel diversity-based context blending mechanism
+that creates new training scenarios by combining features from prior contexts.
+Experiments in traffic signal control domains demonstrate that cMALC-D
+significantly improves both generalization and sample efficiency compared to
+existing curriculum learning baselines. We provide code at
+https://github.com/DaRL-LibSignal/cMALC-D.",http://arxiv.org/pdf/2508.20818v1,,False
+SeqVLM: Proposal-Guided Multi-View Sequences Reasoning via VLM for Zero-Shot 3D Visual Grounding,28/08/2025,"Jiawen Lin, Shiran Bian, Yihang Zhu, Wenbin Tan, Yachao Zhang, Yuan Xie, Yanyun Qu","3D Visual Grounding (3DVG) aims to localize objects in 3D scenes using
+natural language descriptions. Although supervised methods achieve higher
+accuracy in constrained settings, zero-shot 3DVG holds greater promise for
+real-world applications since eliminating scene-specific training requirements.
+However, existing zero-shot methods face challenges of spatial-limited
+reasoning due to reliance on single-view localization, and contextual omissions
+or detail degradation. To address these issues, we propose SeqVLM, a novel
+zero-shot 3DVG framework that leverages multi-view real-world scene images with
+spatial information for target object reasoning. Specifically, SeqVLM first
+generates 3D instance proposals via a 3D semantic segmentation network and
+refines them through semantic filtering, retaining only semantic-relevant
+candidates. A proposal-guided multi-view projection strategy then projects
+these candidate proposals onto real scene image sequences, preserving spatial
+relationships and contextual details in the conversion process of 3D point
+cloud to images. Furthermore, to mitigate VLM computational overload, we
+implement a dynamic scheduling mechanism that iteratively processes
+sequances-query prompts, leveraging VLM's cross-modal reasoning capabilities to
+identify textually specified objects. Experiments on the ScanRefer and Nr3D
+benchmarks demonstrate state-of-the-art performance, achieving Acc@0.25 scores
+of 55.6% and 53.2%, surpassing previous zero-shot methods by 4.0% and 5.2%,
+respectively, which advance 3DVG toward greater generalization and real-world
+applicability. The code is available at https://github.com/JiawLin/SeqVLM.",http://arxiv.org/pdf/2508.20758v1,,False
+Amadeus: Autoregressive Model with Bidirectional Attribute Modelling for Symbolic Music,28/08/2025,"Hongju Su, Ke Li, Lan Yang, Honggang Zhang, Yi-Zhe Song","Existing state-of-the-art symbolic music generation models predominantly
+adopt autoregressive or hierarchical autoregressive architectures, modelling
+symbolic music as a sequence of attribute tokens with unidirectional temporal
+dependencies, under the assumption of a fixed, strict dependency structure
+among these attributes. However, we observe that using different attributes as
+the initial token in these models leads to comparable performance. This
+suggests that the attributes of a musical note are, in essence, a concurrent
+and unordered set, rather than a temporally dependent sequence. Based on this
+insight, we introduce Amadeus, a novel symbolic music generation framework.
+Amadeus adopts a two-level architecture: an autoregressive model for note
+sequences and a bidirectional discrete diffusion model for attributes. To
+enhance performance, we propose Music Latent Space Discriminability Enhancement
+Strategy(MLSDES), incorporating contrastive learning constraints that amplify
+discriminability of intermediate music representations. The Conditional
+Information Enhancement Module (CIEM) simultaneously strengthens note latent
+vector representation via attention mechanisms, enabling more precise note
+decoding. We conduct extensive experiments on unconditional and
+text-conditioned generation tasks. Amadeus significantly outperforms SOTA
+models across multiple metrics while achieving at least 4$\times$ speed-up.
+Furthermore, we demonstrate training-free, fine-grained note attribute control
+feasibility using our model. To explore the upper performance bound of the
+Amadeus architecture, we compile the largest open-source symbolic music dataset
+to date, AMD (Amadeus MIDI Dataset), supporting both pre-training and
+fine-tuning.",http://arxiv.org/pdf/2508.20665v1,,False
+Compositionality in Time Series: A Proof of Concept using Symbolic Dynamics and Compositional Data Augmentation,28/08/2025,"Michael Hagmann, Michael Staniek, Stefan Riezler","This work investigates whether time series of natural phenomena can be
+understood as being generated by sequences of latent states which are ordered
+in systematic and regular ways. We focus on clinical time series and ask
+whether clinical measurements can be interpreted as being generated by
+meaningful physiological states whose succession follows systematic principles.
+Uncovering the underlying compositional structure will allow us to create
+synthetic data to alleviate the notorious problem of sparse and low-resource
+data settings in clinical time series forecasting, and deepen our understanding
+of clinical data. We start by conceptualizing compositionality for time series
+as a property of the data generation process, and then study data-driven
+procedures that can reconstruct the elementary states and composition rules of
+this process. We evaluate the success of this methods using two empirical tests
+originating from a domain adaptation perspective. Both tests infer the
+similarity of the original time series distribution and the synthetic time
+series distribution from the similarity of expected risk of time series
+forecasting models trained and tested on original and synthesized data in
+specific ways. Our experimental results show that the test set performance
+achieved by training on compositionally synthesized data is comparable to
+training on original clinical time series data, and that evaluation of models
+on compositionally synthesized test data shows similar results to evaluating on
+original test data, outperforming randomization-based data augmentation. An
+additional downstream evaluation of the prediction task of sequential organ
+failure assessment (SOFA) scores shows significant performance gains when model
+training is entirely based on compositionally synthesized data compared to
+training on original data.",http://arxiv.org/pdf/2508.20656v1,,False
+SemSR: Semantics aware robust Session-based Recommendations,28/08/2025,"Jyoti Narwariya, Priyanka Gupta, Muskan Gupta, Jyotsana Khatri, Lovekesh Vig","Session-based recommendation (SR) models aim to recommend items to anonymous
+users based on their behavior during the current session. While various SR
+models in the literature utilize item sequences to predict the next item, they
+often fail to leverage semantic information from item titles or descriptions
+impeding session intent identification and interpretability. Recent research
+has explored Large Language Models (LLMs) as promising approaches to enhance
+session-based recommendations, with both prompt-based and fine-tuning based
+methods being widely investigated. However, prompt-based methods struggle to
+identify optimal prompts that elicit correct reasoning and lack task-specific
+feedback at test time, resulting in sub-optimal recommendations. Fine-tuning
+methods incorporate domain-specific knowledge but incur significant
+computational costs for implementation and maintenance. In this paper, we
+present multiple approaches to utilize LLMs for session-based recommendation:
+(i) in-context LLMs as recommendation agents, (ii) LLM-generated
+representations for semantic initialization of deep learning SR models, and
+(iii) integration of LLMs with data-driven SR models. Through comprehensive
+experiments on two real-world publicly available datasets, we demonstrate that
+LLM-based methods excel at coarse-level retrieval (high recall values), while
+traditional data-driven techniques perform well at fine-grained ranking (high
+Mean Reciprocal Rank values). Furthermore, the integration of LLMs with
+data-driven SR models significantly out performs both standalone LLM approaches
+and data-driven deep learning models, as well as baseline SR models, in terms
+of both Recall and MRR metrics.",http://arxiv.org/pdf/2508.20587v1,,False
+Enhancing Corpus Callosum Segmentation in Fetal MRI via Pathology-Informed Domain Randomization,28/08/2025,"Marina Grifell i Plana, Vladyslav Zalevskyi, Léa Schmidt, Yvan Gomez, Thomas Sanchez, Vincent Dunet, Mériam Koob, Vanessa Siffredi, Meritxell Bach Cuadra","Accurate fetal brain segmentation is crucial for extracting biomarkers and
+assessing neurodevelopment, especially in conditions such as corpus callosum
+dysgenesis (CCD), which can induce drastic anatomical changes. However, the
+rarity of CCD severely limits annotated data, hindering the generalization of
+deep learning models. To address this, we propose a pathology-informed domain
+randomization strategy that embeds prior knowledge of CCD manifestations into a
+synthetic data generation pipeline. By simulating diverse brain alterations
+from healthy data alone, our approach enables robust segmentation without
+requiring pathological annotations.
+  We validate our method on a cohort comprising 248 healthy fetuses, 26 with
+CCD, and 47 with other brain pathologies, achieving substantial improvements on
+CCD cases while maintaining performance on both healthy fetuses and those with
+other pathologies. From the predicted segmentations, we derive clinically
+relevant biomarkers, such as corpus callosum length (LCC) and volume, and show
+their utility in distinguishing CCD subtypes. Our pathology-informed
+augmentation reduces the LCC estimation error from 1.89 mm to 0.80 mm in
+healthy cases and from 10.9 mm to 0.7 mm in CCD cases. Beyond these
+quantitative gains, our approach yields segmentations with improved topological
+consistency relative to available ground truth, enabling more reliable
+shape-based analyses. Overall, this work demonstrates that incorporating
+domain-specific anatomical priors into synthetic data pipelines can effectively
+mitigate data scarcity and enhance analysis of rare but clinically significant
+malformations.",http://arxiv.org/pdf/2508.20475v1,,False
+Photonic restricted Boltzmann machine for content generation tasks,28/08/2025,"Li Luo, Yisheng Fang, Wanyi Zhang, Zhichao Ruan","The restricted Boltzmann machine (RBM) is a neural network based on the Ising
+model, well known for its ability to learn probability distributions and
+stochastically generate new content. However, the high computational cost of
+Gibbs sampling in content generation tasks imposes significant bottlenecks on
+electronic implementations. Here, we propose a photonic restricted Boltzmann
+machine (PRBM) that leverages photonic computing to accelerate Gibbs sampling,
+enabling efficient content generation. By introducing an efficient encoding
+method, the PRBM eliminates the need for computationally intensive matrix
+decomposition and reduces the computational complexity of Gibbs sampling from
+$O(N)$ to $O(1)$. Moreover, its non-Von Neumann photonic computing architecture
+circumvents the memory storage of interaction matrices, providing substantial
+advantages for large-scale RBMs. We experimentally validate the
+photonic-accelerated Gibbs sampling by simulating a two-dimensional Ising
+model, where the observed phase transition temperature closely matches the
+theoretical predictions. Beyond physics-inspired tasks, the PRBM demonstrates
+robust capabilities in generating and restoring diverse content, including
+images and temporal sequences, even in the presence of noise and aberrations.
+The scalability and reduced training cost of the PRBM framework underscore its
+potential as a promising pathway for advancing photonic computing in generative
+artificial intelligence.",http://arxiv.org/pdf/2508.20472v1,,False
+QTMRL: An Agent for Quantitative Trading Decision-Making Based on Multi-Indicator Guided Reinforcement Learning,28/08/2025,"Xiangdong Liu, Jiahao Chen","In the highly volatile and uncertain global financial markets, traditional
+quantitative trading models relying on statistical modeling or empirical rules
+often fail to adapt to dynamic market changes and black swan events due to
+rigid assumptions and limited generalization. To address these issues, this
+paper proposes QTMRL (Quantitative Trading Multi-Indicator Reinforcement
+Learning), an intelligent trading agent combining multi-dimensional technical
+indicators with reinforcement learning (RL) for adaptive and stable portfolio
+management. We first construct a comprehensive multi-indicator dataset using 23
+years of S&P 500 daily OHLCV data (2000-2022) for 16 representative stocks
+across 5 sectors, enriching raw data with trend, volatility, and momentum
+indicators to capture holistic market dynamics. Then we design a lightweight RL
+framework based on the Advantage Actor-Critic (A2C) algorithm, including data
+processing, A2C algorithm, and trading agent modules to support policy learning
+and actionable trading decisions. Extensive experiments compare QTMRL with 9
+baselines (e.g., ARIMA, LSTM, moving average strategies) across diverse market
+regimes, verifying its superiority in profitability, risk adjustment, and
+downside risk control. The code of QTMRL is publicly available at
+https://github.com/ChenJiahaoJNU/QTMRL.git",http://arxiv.org/pdf/2508.20467v1,,False
+On Identifying Why and When Foundation Models Perform Well on Time-Series Forecasting Using Automated Explanations and Rating,28/08/2025,"Michael Widener, Kausik Lakkaraju, John Aydin, Biplav Srivastava","Time-series forecasting models (TSFM) have evolved from classical statistical
+methods to sophisticated foundation models, yet understanding why and when
+these models succeed or fail remains challenging. Despite this known
+limitation, time series forecasting models are increasingly used to generate
+information that informs real-world actions with equally real consequences.
+Understanding the complexity, performance variability, and opaque nature of
+these models then becomes a valuable endeavor to combat serious concerns about
+how users should interact with and rely on these models' outputs. This work
+addresses these concerns by combining traditional explainable AI (XAI) methods
+with Rating Driven Explanations (RDE) to assess TSFM performance and
+interpretability across diverse domains and use cases. We evaluate four
+distinct model architectures: ARIMA, Gradient Boosting, Chronos (time-series
+specific foundation model), Llama (general-purpose; both fine-tuned and base
+models) on four heterogeneous datasets spanning finance, energy,
+transportation, and automotive sales domains. In doing so, we demonstrate that
+feature-engineered models (e.g., Gradient Boosting) consistently outperform
+foundation models (e.g., Chronos) in volatile or sparse domains (e.g., power,
+car parts) while providing more interpretable explanations, whereas foundation
+models excel only in stable or trend-driven contexts (e.g., finance).",http://arxiv.org/pdf/2508.20437v1,,False
+Uncertainty Under the Curve: A Sequence-Level Entropy Area Metric for Reasoning LLM,28/08/2025,"Yongfu Zhu, Lin Sun, Guangxiang Zhao, Weihong Lin, Xiangzheng Zhang","In this work, we introduce Entropy Area Score (EAS), a simple yet effective
+metric to quantify uncertainty in the answer generation process of reasoning
+large language models (LLMs). EAS requires neither external models nor repeated
+sampling, it integrates token-level predictive entropy from the model itself to
+capture the evolution of uncertainty during generation. Empirical results show
+that EAS is strongly correlated with answer entropy across models and datasets.
+In training data selection, EAS identifies high-potential samples and
+consistently outperforms Pass Rate filtering under equal sample budgets,
+improving student model accuracy on math benchmarks. EAS is both efficient and
+interpretable, offering a practical tool for uncertainty modeling and data
+quality assessment in LLM training.",http://arxiv.org/pdf/2508.20384v1,,False
+P2C: Path to Counterfactuals,28/08/2025,"Sopam Dasgupta, Sadaf MD Halim, Joaquín Arias, Elmer Salazar, Gopal Gupta","Machine-learning models are increasingly driving decisions in high-stakes
+settings, such as finance, law, and hiring, thus, highlighting the need for
+transparency. However, the key challenge is to balance transparency --
+clarifying `why' a decision was made -- with recourse: providing actionable
+steps on `how' to achieve a favourable outcome from an unfavourable outcome.
+Counterfactual explanations reveal `why' an undesired outcome occurred and
+`how' to reverse it through targeted feature changes (interventions).
+  Current counterfactual approaches have limitations: 1) they often ignore
+causal dependencies between features, and 2) they typically assume all
+interventions can happen simultaneously, an unrealistic assumption in practical
+scenarios where actions are typically taken in a sequence. As a result, these
+counterfactuals are often not achievable in the real world.
+  We present P2C (Path-to-Counterfactuals), a model-agnostic framework that
+produces a plan (ordered sequence of actions) converting an unfavourable
+outcome to a causally consistent favourable outcome. P2C addresses both
+limitations by 1) Explicitly modelling causal relationships between features
+and 2) Ensuring that each intermediate state in the plan is feasible and
+causally valid. P2C uses the goal-directed Answer Set Programming system
+s(CASP) to generate the plan accounting for feature changes that happen
+automatically due to causal dependencies. Furthermore, P2C refines cost
+(effort) computation by only counting changes actively made by the user,
+resulting in realistic cost estimates. Finally, P2C highlights how its causal
+planner outperforms standard planners, which lack causal knowledge and thus can
+generate illegal actions.",http://arxiv.org/pdf/2508.20371v1,,False
+Developing a Multi-Modal Machine Learning Model For Predicting Performance of Automotive Hood Frames,28/08/2025,"Abhishek Indupally, Satchit Ramnath","Is there a way for a designer to evaluate the performance of a given hood
+frame geometry without spending significant time on simulation setup? This
+paper seeks to address this challenge by developing a multimodal
+machine-learning (MMML) architecture that learns from different modalities of
+the same data to predict performance metrics. It also aims to use the MMML
+architecture to enhance the efficiency of engineering design processes by
+reducing reliance on computationally expensive simulations. The proposed
+architecture accelerates design exploration, enabling rapid iteration while
+maintaining high-performance standards, especially in the concept design phase.
+The study also presents results that show that by combining multiple data
+modalities, MMML outperforms traditional single-modality approaches. Two new
+frame geometries, not part of the training dataset, are also used for
+prediction using the trained MMML model to showcase the ability to generalize
+to unseen frame models. The findings underscore MMML's potential in
+supplementing traditional simulation-based workflows, particularly in the
+conceptual design phase, and highlight its role in bridging the gap between
+machine learning and real-world engineering applications. This research paves
+the way for the broader adoption of machine learning techniques in engineering
+design, with a focus on refining multimodal approaches to optimize structural
+development and accelerate the design cycle.",http://arxiv.org/pdf/2508.20358v1,,False
+Adaptive Segmentation of EEG for Machine Learning Applications,28/08/2025,"Johnson Zhou, Joseph West, Krista A. Ehinger, Zhenming Ren, Sam E. John, David B. Grayden","Objective. Electroencephalography (EEG) data is derived by sampling
+continuous neurological time series signals. In order to prepare EEG signals
+for machine learning, the signal must be divided into manageable segments. The
+current naive approach uses arbitrary fixed time slices, which may have limited
+biological relevance because brain states are not confined to fixed intervals.
+We investigate whether adaptive segmentation methods are beneficial for machine
+learning EEG analysis.
+  Approach. We introduce a novel adaptive segmentation method, CTXSEG, that
+creates variable-length segments based on statistical differences in the EEG
+data and propose ways to use them with modern machine learning approaches that
+typically require fixed-length input. We assess CTXSEG using controllable
+synthetic data generated by our novel signal generator CTXGEN. While our CTXSEG
+method has general utility, we validate it on a real-world use case by applying
+it to an EEG seizure detection problem. We compare the performance of CTXSEG
+with fixed-length segmentation in the preprocessing step of a typical EEG
+machine learning pipeline for seizure detection.
+  Main results. We found that using CTXSEG to prepare EEG data improves seizure
+detection performance compared to fixed-length approaches when evaluated using
+a standardized framework, without modifying the machine learning method, and
+requires fewer segments.
+  Significance. This work demonstrates that adaptive segmentation with CTXSEG
+can be readily applied to modern machine learning approaches, with potential to
+improve performance. It is a promising alternative to fixed-length segmentation
+for signal preprocessing and should be considered as part of the standard
+preprocessing repertoire in EEG machine learning applications.",http://arxiv.org/pdf/2508.20336v1,,False

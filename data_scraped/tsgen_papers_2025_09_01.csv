@@ -1,0 +1,319 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"Neural Network Acceleration on MPSoC board: Integrating SLAC's SNL, Rogue Software and Auto-SNL",29/08/2025,"Hamza Ezzaoui Rahali, Abhilasha Dave, Larry Ruckman, Mohammad Mehdi Rahimifar, Audrey C. Therrien, James J. Russel, Ryan T. Herbst","The LCLS-II Free Electron Laser (FEL) will generate X-ray pulses for beamline
+experiments at rates of up to 1~MHz, with detectors producing data throughputs
+exceeding 1 TB/s. Managing such massive data streams presents significant
+challenges, as transmission and storage infrastructures become prohibitively
+expensive. Machine learning (ML) offers a promising solution for real-time data
+reduction, but conventional implementations introduce excessive latency, making
+them unsuitable for high-speed experimental environments. To address these
+challenges, SLAC developed the SLAC Neural Network Library (SNL), a specialized
+framework designed to deploy real-time ML inference models on
+Field-Programmable Gate Arrays (FPGA). SNL's key feature is the ability to
+dynamically update model weights without requiring FPGA resynthesis, enhancing
+flexibility for adaptive learning applications. To further enhance usability
+and accessibility, we introduce Auto-SNL, a Python extension that streamlines
+the process of converting Python-based neural network models into
+SNL-compatible high-level synthesis code. This paper presents a benchmark
+comparison against hls4ml, the current state-of-the-art tool, across multiple
+neural network architectures, fixed-point precisions, and synthesis
+configurations targeting a Xilinx ZCU102 FPGA. The results showed that SNL
+achieves competitive or superior latency in most tested architectures, while in
+some cases also offering FPGA resource savings. This adaptation demonstrates
+SNL's versatility, opening new opportunities for researchers and academics in
+fields such as high-energy physics, medical imaging, robotics, and many more.",http://arxiv.org/pdf/2508.21739v1,,False
+Freeze and Conquer: Reusable Ansatz for Solving the Traveling Salesman Problem,29/08/2025,"Fabrizio Fagiolo, Nicolo' Vescera","In this paper we present a variational algorithm for the Traveling Salesman
+Problem (TSP) that combines (i) a compact encoding of permutations, which
+reduces the qubit requirement too, (ii) an optimize-freeze-reuse strategy:
+where the circuit topology (``Ansatz'') is first optimized on a training
+instance by Simulated Annealing (SA), then ``frozen'' and re-used on novel
+instances, limited to a rapid re-optimization of only the circuit parameters.
+This pipeline eliminates costly structural research in testing, making the
+procedure immediately implementable on NISQ hardware.
+  On a set of $40$ randomly generated symmetric instances that span $4 - 7$
+cities, the resulting Ansatz achieves an average optimal trip sampling
+probability of $100\%$ for 4 city cases, $90\%$ for 5 city cases and $80\%$ for
+6 city cases. With 7 cities the success rate drops markedly to an average of
+$\sim 20\%$, revealing the onset of scalability limitations of the proposed
+method.
+  The results show robust generalization ability for moderate problem sizes and
+indicate how freezing the Ansatz can dramatically reduce time-to-solution
+without degrading solution quality. The paper also discusses scalability
+limitations, the impact of ``warm-start'' initialization of parameters, and
+prospects for extension to more complex problems, such as Vehicle Routing and
+Job-Shop Scheduling.",http://arxiv.org/pdf/2508.21730v1,,False
+Surface Stability Modeling with Universal Machine Learning Interatomic Potentials: A Comprehensive Cleavage Energy Benchmarking Study,29/08/2025,"Ardavan Mehdizadeh, Peter Schindler","Machine learning interatomic potentials (MLIPs) have revolutionized
+computational materials science by bridging the gap between quantum mechanical
+accuracy and classical simulation efficiency, enabling unprecedented
+exploration of materials properties across the periodic table. Despite their
+remarkable success in predicting bulk properties, no systematic evaluation has
+assessed how well these universal MLIPs (uMLIPs) can predict cleavage energies,
+a critical property governing fracture, catalysis, surface stability, and
+interfacial phenomena. Here, we present a comprehensive benchmark of 19
+state-of-the-art uMLIPs for cleavage energy prediction using our previously
+established density functional theory (DFT) database of 36,718 slab structures
+spanning elemental, binary, and ternary metallic compounds. We evaluate diverse
+architectural paradigms, analyzing their performance across chemical
+compositions, crystal systems, thickness, and surface orientations. Our results
+reveal that training data composition dominates architectural sophistication:
+models trained on the Open Materials 2024 (OMat24) dataset, which emphasizes
+non-equilibrium configurations, achieve mean absolute percentage errors below
+6% and correctly identify the thermodynamically most stable surface
+terminations in 87% of cases, without any explicit surface energy training. In
+contrast, architecturally identical models trained on equilibrium-only datasets
+show five-fold higher errors, while models trained on surface-adsorbate data
+fail catastrophically with a 17-fold degradation. Remarkably, simpler
+architectures trained on appropriate data achieve comparable accuracy to
+complex transformers while offering 10-100x computational speedup. These
+findings show that the community should focus on strategic training data
+generation that captures the relevant physical phenomena.",http://arxiv.org/pdf/2508.21663v1,,False
+Integrating Large Language Models with Network Optimization for Interactive and Explainable Supply Chain Planning: A Real-World Case Study,29/08/2025,Saravanan Venkatachalam,"This paper presents an integrated framework that combines traditional network
+optimization models with large language models (LLMs) to deliver interactive,
+explainable, and role-aware decision support for supply chain planning. The
+proposed system bridges the gap between complex operations research outputs and
+business stakeholder understanding by generating natural language summaries,
+contextual visualizations, and tailored key performance indicators (KPIs). The
+core optimization model addresses tactical inventory redistribution across a
+network of distribution centers for multi-period and multi-item, using a
+mixed-integer formulation. The technical architecture incorporates AI agents,
+RESTful APIs, and a dynamic user interface to support real-time interaction,
+configuration updates, and simulation-based insights. A case study demonstrates
+how the system improves planning outcomes by preventing stockouts, reducing
+costs, and maintaining service levels. Future extensions include integrating
+private LLMs, transfer learning, reinforcement learning, and Bayesian neural
+networks to enhance explainability, adaptability, and real-time
+decision-making.",http://arxiv.org/pdf/2508.21622v1,,False
+Binary Weight Multi-Bit Activation Quantization for Compute-in-Memory CNN Accelerators,29/08/2025,"Wenyong Zhou, Zhengwu Liu, Yuan Ren, Ngai Wong","Compute-in-memory (CIM) accelerators have emerged as a promising way for
+enhancing the energy efficiency of convolutional neural networks (CNNs).
+Deploying CNNs on CIM platforms generally requires quantization of network
+weights and activations to meet hardware constraints. However, existing
+approaches either prioritize hardware efficiency with binary weight and
+activation quantization at the cost of accuracy, or utilize multi-bit weights
+and activations for greater accuracy but limited efficiency. In this paper, we
+introduce a novel binary weight multi-bit activation (BWMA) method for CNNs on
+CIM-based accelerators. Our contributions include: deriving closed-form
+solutions for weight quantization in each layer, significantly improving the
+representational capabilities of binarized weights; and developing a
+differentiable function for activation quantization, approximating the ideal
+multi-bit function while bypassing the extensive search for optimal settings.
+Through comprehensive experiments on CIFAR-10 and ImageNet datasets, we show
+that BWMA achieves notable accuracy improvements over existing methods,
+registering gains of 1.44\%-5.46\% and 0.35\%-5.37\% on respective datasets.
+Moreover, hardware simulation results indicate that 4-bit activation
+quantization strikes the optimal balance between hardware cost and model
+performance.",http://arxiv.org/pdf/2508.21524v1,,False
+"Spiking Decision Transformers: Local Plasticity, Phase-Coding, and Dendritic Routing for Low-Power Sequence Control",29/08/2025,"Vishal Pandey, Debasmita Biswas","Reinforcement learning agents based on Transformer architectures have
+achieved impressive performance on sequential decision-making tasks, but their
+reliance on dense matrix operations makes them ill-suited for
+energy-constrained, edge-oriented platforms. Spiking neural networks promise
+ultra-low-power, event-driven inference, yet no prior work has seamlessly
+merged spiking dynamics with return-conditioned sequence modeling. We present
+the Spiking Decision Transformer (SNN-DT), which embeds Leaky
+Integrate-and-Fire neurons into each self-attention block, trains end-to-end
+via surrogate gradients, and incorporates biologically inspired three-factor
+plasticity, phase-shifted spike-based positional encodings, and a lightweight
+dendritic routing module. Our implementation matches or exceeds standard
+Decision Transformer performance on classic control benchmarks (CartPole-v1,
+MountainCar-v0, Acrobot-v1, Pendulum-v1) while emitting fewer than ten spikes
+per decision, an energy proxy suggesting over four orders-of-magnitude
+reduction in per inference energy. By marrying sequence modeling with
+neuromorphic efficiency, SNN-DT opens a pathway toward real-time, low-power
+control on embedded and wearable devices.",http://arxiv.org/pdf/2508.21505v1,,False
+Data-driven Discovery of Digital Twins in Biomedical Research,29/08/2025,"Clémence Métayer, Annabelle Ballesta, Julien Martinelli","Recent technological advances have expanded the availability of
+high-throughput biological datasets, enabling the reliable design of digital
+twins of biomedical systems or patients. Such computational tools represent key
+reaction networks driving perturbation or drug response and can guide drug
+discovery and personalized therapeutics. Yet, their development still relies on
+laborious data integration by the human modeler, so that automated approaches
+are critically needed. The success of data-driven system discovery in Physics,
+rooted in clean datasets and well-defined governing laws, has fueled interest
+in applying similar techniques in Biology, which presents unique challenges.
+Here, we reviewed methodologies for automatically inferring digital twins from
+biological time series, which mostly involve symbolic or sparse regression. We
+evaluate algorithms according to eight biological and methodological
+challenges, associated to noisy/incomplete data, multiple conditions, prior
+knowledge integration, latent variables, high dimensionality, unobserved
+variable derivatives, candidate library design, and uncertainty quantification.
+Upon these criteria, sparse regression generally outperformed symbolic
+regression, particularly when using Bayesian frameworks. We further highlight
+the emerging role of deep learning and large language models, which enable
+innovative prior knowledge integration, though the reliability and consistency
+of such approaches must be improved. While no single method addresses all
+challenges, we argue that progress in learning digital twins will come from
+hybrid and modular frameworks combining chemical reaction network-based
+mechanistic grounding, Bayesian uncertainty quantification, and the generative
+and knowledge integration capacities of deep learning. To support their
+development, we further propose a benchmarking framework to evaluate methods
+across all challenges.",http://arxiv.org/pdf/2508.21484v1,,False
+Beyond expected value: geometric mean optimization for long-term policy performance in reinforcement learning,29/08/2025,"Xinyi Sheng, Dominik Baumann","Reinforcement learning (RL) algorithms typically optimize the expected
+cumulative reward, i.e., the expected value of the sum of scalar rewards an
+agent receives over the course of a trajectory. The expected value averages the
+performance over an infinite number of trajectories. However, when deploying
+the agent in the real world, this ensemble average may be uninformative for the
+performance of individual trajectories. Thus, in many applications, optimizing
+the long-term performance of individual trajectories might be more desirable.
+In this work, we propose a novel RL algorithm that combines the standard
+ensemble average with the time-average growth rate, a measure for the long-term
+performance of individual trajectories. We first define the Bellman operator
+for the time-average growth rate. We then show that, under multiplicative
+reward dynamics, the geometric mean aligns with the time-average growth rate.
+To address more general and unknown reward dynamics, we propose a modified
+geometric mean with $N$-sliding window that captures the path-dependency as an
+estimator for the time-average growth rate. This estimator is embedded as a
+regularizer into the objective, forming a practical algorithm and enabling the
+policy to benefit from ensemble average and time-average simultaneously. We
+evaluate our algorithm in challenging simulations, where it outperforms
+conventional RL methods.",http://arxiv.org/pdf/2508.21443v1,,False
+Quantum enhanced ensemble GANs for anomaly detection in continuous biomanufacturing,29/08/2025,"Rajiv Kailasanathan, William R. Clements, Mohammad Reza Boskabadi, Shawn M. Gibford, Emmanouil Papadakis, Christopher J. Savoie, Seyed Soheil Mansouri","The development of continuous biomanufacturing processes requires robust and
+early anomaly detection, since even minor deviations can compromise yield and
+stability, leading to disruptions in scheduling, reduced weekly production, and
+diminished economic performance. These processes are inherently complex and
+exhibit non-linear dynamics with intricate relationships between process
+variables, thus making advanced methods for anomaly detection essential for
+efficient operation. In this work, we present a novel framework for
+unsupervised anomaly detection in continuous biomanufacturing based on an
+ensemble of generative adversarial networks (GANs). We first establish a
+benchmark dataset simulating both normal and anomalous operation regimes in a
+continuous process for the production of a small molecule. We then demonstrate
+the effectiveness of our GAN-based framework in detecting anomalies caused by
+sudden feedstock variability. Finally, we evaluate the impact of using a hybrid
+quantum/classical GAN approach with both a simulated quantum circuit and a real
+photonic quantum processor on anomaly detection performance. We find that the
+hybrid approach yields improved anomaly detection rates. Our work shows the
+potential of hybrid quantum/classical approaches for solving real-world
+problems in complex continuous biomanufacturing processes.",http://arxiv.org/pdf/2508.21438v1,,False
+CARJAN: Agent-Based Generation and Simulation of Traffic Scenarios with AJAN,29/08/2025,"Leonard Frank Neis, Andre Antakli, Matthias Klusch","User-friendly modeling and virtual simulation of urban traffic scenarios with
+different types of interacting agents such as pedestrians, cyclists and
+autonomous vehicles remains a challenge. We present CARJAN, a novel tool for
+semi-automated generation and simulation of such scenarios based on the
+multi-agent engineering framework AJAN and the driving simulator CARLA. CARJAN
+provides a visual user interface for the modeling, storage and maintenance of
+traffic scenario layouts, and leverages SPARQL Behavior Tree-based
+decision-making and interactions for agents in dynamic scenario simulations in
+CARLA. CARJAN provides a first integrated approach for interactive, intelligent
+agent-based generation and simulation of virtual traffic scenarios in CARLA.",http://arxiv.org/pdf/2508.21411v1,,False
+RoboInspector: Unveiling the Unreliability of Policy Code for LLM-enabled Robotic Manipulation,29/08/2025,"Chenduo Ying, Linkang Du, Peng Cheng, Yuanchao Shu","Large language models (LLMs) demonstrate remarkable capabilities in reasoning
+and code generation, enabling robotic manipulation to be initiated with just a
+single instruction. The LLM carries out various tasks by generating policy code
+required to control the robot. Despite advances in LLMs, achieving reliable
+policy code generation remains a significant challenge due to the diverse
+requirements of real-world tasks and the inherent complexity of user
+instructions. In practice, different users may provide distinct instructions to
+drive the robot for the same task, which may cause the unreliability of policy
+code generation. To bridge this gap, we design RoboInspector, a pipeline to
+unveil and characterize the unreliability of the policy code for LLM-enabled
+robotic manipulation from two perspectives: the complexity of the manipulation
+task and the granularity of the instruction. We perform comprehensive
+experiments with 168 distinct combinations of tasks, instructions, and LLMs in
+two prominent frameworks. The RoboInspector identifies four main unreliable
+behaviors that lead to manipulation failure. We provide a detailed
+characterization of these behaviors and their underlying causes, giving insight
+for practical development to reduce unreliability. Furthermore, we introduce a
+refinement approach guided by failure policy code feedback that improves the
+reliability of policy code generation by up to 35% in LLM-enabled robotic
+manipulation, evaluated in both simulation and real-world environments.",http://arxiv.org/pdf/2508.21378v1,,False
+EconAgentic in DePIN Markets: A Large Language Model Approach to the Sharing Economy of Decentralized Physical Infrastructure,29/08/2025,"Yulin Liu, Mocca Schweitzer","The Decentralized Physical Infrastructure (DePIN) market is revolutionizing
+the sharing economy through token-based economics and smart contracts that
+govern decentralized operations. By 2024, DePIN projects have exceeded \$10
+billion in market capitalization, underscoring their rapid growth. However, the
+unregulated nature of these markets, coupled with the autonomous deployment of
+AI agents in smart contracts, introduces risks such as inefficiencies and
+potential misalignment with human values. To address these concerns, we
+introduce EconAgentic, a Large Language Model (LLM)-powered framework designed
+to mitigate these challenges. Our research focuses on three key areas: 1)
+modeling the dynamic evolution of DePIN markets, 2) evaluating stakeholders'
+actions and their economic impacts, and 3) analyzing macroeconomic indicators
+to align market outcomes with societal goals. Through EconAgentic, we simulate
+how AI agents respond to token incentives, invest in infrastructure, and adapt
+to market conditions, comparing AI-driven decisions with human heuristic
+benchmarks. Our results show that EconAgentic provides valuable insights into
+the efficiency, inclusion, and stability of DePIN markets, contributing to both
+academic understanding and practical improvements in the design and governance
+of decentralized, tokenized economies.",http://arxiv.org/pdf/2508.21368v1,,False
+DLGAN : Time Series Synthesis Based on Dual-Layer Generative Adversarial Networks,29/08/2025,"Xuan Hou, Shuhan Liu, Zhaohui Peng, Yaohui Chu, Yue Zhang, Yining Wang","Time series synthesis is an effective approach to ensuring the secure
+circulation of time series data. Existing time series synthesis methods
+typically perform temporal modeling based on random sequences to generate
+target sequences, which often struggle to ensure the temporal dependencies in
+the generated time series. Additionally, directly modeling temporal features on
+random sequences makes it challenging to accurately capture the feature
+information of the original time series. To address the above issues, we
+propose a simple but effective generative model \textbf{D}ual-\textbf{L}ayer
+\textbf{G}enerative \textbf{A}dversarial \textbf{N}etworks, named
+\textbf{DLGAN}. The model decomposes the time series generation process into
+two stages: sequence feature extraction and sequence reconstruction. First,
+these two stages form a complete time series autoencoder, enabling supervised
+learning on the original time series to ensure that the reconstruction process
+can restore the temporal dependencies of the sequence. Second, a Generative
+Adversarial Network (GAN) is used to generate synthetic feature vectors that
+align with the real-time sequence feature vectors, ensuring that the generator
+can capture the temporal features from real time series. Extensive experiments
+on four public datasets demonstrate the superiority of this model across
+various evaluation metrics.",http://arxiv.org/pdf/2508.21340v1,,False
+Quantum-Enhanced Natural Language Generation: A Multi-Model Framework with Hybrid Quantum-Classical Architectures,29/08/2025,"Chi-Sheng Chen, En-Jui Kuo","This paper presents a comprehensive evaluation of quantum text generation
+models against traditional Transformer/MLP architectures, addressing the
+growing interest in quantum computing applications for natural language
+processing. We conduct systematic experiments comparing five distinct models:
+Transformer (baseline), Quantum Kernel Self-Attention Network (QKSAN), Quantum
+RWKV (QRWKV), and Quantum Attention Sequence Architecture (QASA) across five
+diverse datasets including simple sentences, short stories, quantum phrases,
+haiku poetry, and proverbs. Our evaluation employs multiple metrics including
+perplexity, BLEU scores, vocabulary diversity, repetition rates, and fluency
+measures to assess different aspects of text generation quality. The
+experimental results reveal that while traditional Transformer models maintain
+overall superiority with the lowest average perplexity (1.21) and highest
+BLEU-1 score (0.2895), quantum-inspired models demonstrate competitive
+performance in specific scenarios. Notably, QKSAN achieves a competitive BLEU-1
+score of 0.2800 while maintaining zero repetition rates, and QRWKV demonstrates
+perfect vocabulary diversity (Distinct-1 = 1.000) in certain tasks.",http://arxiv.org/pdf/2508.21332v1,,False
+Stage-Diff: Stage-wise Long-Term Time Series Generation Based on Diffusion Models,29/08/2025,"Xuan Hou, Shuhan Liu, Zhaohui Peng, Yaohui Chu, Yue Zhang, Yining Wang","Generative models have been successfully used in the field of time series
+generation. However, when dealing with long-term time series, which span over
+extended periods and exhibit more complex long-term temporal patterns, the task
+of generation becomes significantly more challenging. Long-term time series
+exhibit long-range temporal dependencies, but their data distribution also
+undergoes gradual changes over time. Finding a balance between these long-term
+dependencies and the drift in data distribution is a key challenge. On the
+other hand, long-term time series contain more complex interrelationships
+between different feature sequences, making the task of effectively capturing
+both intra-sequence and inter-sequence dependencies another important
+challenge. To address these issues, we propose Stage-Diff, a staged generative
+model for long-term time series based on diffusion models. First, through
+stage-wise sequence generation and inter-stage information transfer, the model
+preserves long-term sequence dependencies while enabling the modeling of data
+distribution shifts. Second, within each stage, progressive sequence
+decomposition is applied to perform channel-independent modeling at different
+time scales, while inter-stage information transfer utilizes multi-channel
+fusion modeling. This approach combines the robustness of channel-independent
+modeling with the information fusion advantages of multi-channel modeling,
+effectively balancing the intra-sequence and inter-sequence dependencies of
+long-term time series. Extensive experiments on multiple real-world datasets
+validate the effectiveness of Stage-Diff in long-term time series generation
+tasks.",http://arxiv.org/pdf/2508.21330v1,,False
+MyGO: Memory Yielding Generative Offline-consolidation for Lifelong Learning Systems,29/08/2025,"Shihao Ji, Zihui Song","Continual or Lifelong Learning aims to develop models capable of acquiring
+new knowledge from a sequence of tasks without catastrophically forgetting what
+has been learned before. Existing approaches often rely on storing samples from
+previous tasks (experience replay) or employing complex regularization terms to
+protect learned weights. However, these methods face challenges related to data
+privacy, storage limitations, and performance degradation when tasks are
+dissimilar. To address these challenges, we introduce MyGO (Memory Yielding
+Generative Offline-consolidation), a novel lifelong learning framework inspired
+by the biological wake-sleep cycle. During the ""wake"" phase, the system rapidly
+learns a new task and trains a compact generative model (Generative Memory,
+G-mem) to capture its data distribution. During the ""sleep"" phase, the system
+enters an offline state, using all learned G-mem models to generate pseudo-data
+(""dreams"") and consolidate new and old knowledge into a core feature extractor
+via knowledge distillation. This approach obviates the need to store any raw
+data, retaining only compact generative models, which offers significant
+advantages in privacy and storage efficiency. We evaluate MyGO on computer
+vision (Split-MNIST) and natural language processing (Split-AG News)
+benchmarks, comparing it against a sequential fine-tuning baseline. The results
+demonstrate that MyGO significantly mitigates catastrophic forgetting and
+maintains high average accuracy across tasks, proving the framework's
+effectiveness and domain-generality.",http://arxiv.org/pdf/2508.21296v1,,False
+A Financial Brain Scan of the LLM,29/08/2025,"Hui Chen, Antoine Didisheim, Luciano Somoza, Hanqing Tian","Emerging techniques in computer science make it possible to ""brain scan""
+large language models (LLMs), identify the plain-English concepts that guide
+their reasoning, and steer them while holding other factors constant. We show
+that this approach can map LLM-generated economic forecasts to concepts such as
+sentiment, technical analysis, and timing, and compute their relative
+importance without reducing performance. We also show that models can be
+steered to be more or less risk-averse, optimistic, or pessimistic, which
+allows researchers to correct or simulate biases. The method is transparent,
+lightweight, and replicable for empirical research in the social sciences.",http://arxiv.org/pdf/2508.21285v1,,False

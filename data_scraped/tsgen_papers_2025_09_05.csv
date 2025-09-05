@@ -1,0 +1,397 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+SAFE--MA--RRT: Multi-Agent Motion Planning with Data-Driven Safety Certificates,04/09/2025,"Babak Esmaeili, Hamidreza Modares","This paper proposes a fully data-driven motion-planning framework for
+homogeneous linear multi-agent systems that operate in shared, obstacle-filled
+workspaces without access to explicit system models. Each agent independently
+learns its closed-loop behavior from experimental data by solving convex
+semidefinite programs that generate locally invariant ellipsoids and
+corresponding state-feedback gains. These ellipsoids, centered along grid-based
+waypoints, certify the dynamic feasibility of short-range transitions and
+define safe regions of operation. A sampling-based planner constructs a tree of
+such waypoints, where transitions are allowed only when adjacent ellipsoids
+overlap, ensuring invariant-to-invariant transitions and continuous safety. All
+agents expand their trees simultaneously and are coordinated through a
+space-time reservation table that guarantees inter-agent safety by preventing
+simultaneous occupancy and head-on collisions. Each successful edge in the tree
+is equipped with its own local controller, enabling execution without
+re-solving optimization problems at runtime. The resulting trajectories are not
+only dynamically feasible but also provably safe with respect to both
+environmental constraints and inter-agent collisions. Simulation results
+demonstrate the effectiveness of the approach in synthesizing synchronized,
+safe trajectories for multiple agents under shared dynamics and constraints,
+using only data and convex optimization tools.",http://arxiv.org/pdf/2509.04413v1,,False
+PagedEviction: Structured Block-wise KV Cache Pruning for Efficient Large Language Model Inference,04/09/2025,"Krishna Teja Chitty-Venkata, Jie Ye, Xian-He Sun, Anthony Kougkas, Murali Emani, Venkatram Vishwanath, Bogdan Nicolae","KV caching significantly improves the efficiency of Large Language Model
+(LLM) inference by storing attention states from previously processed tokens,
+enabling faster generation of subsequent tokens. However, as sequence length
+increases, the KV cache quickly becomes a major memory bottleneck. To address
+this, we propose PagedEviction, a novel fine-grained, structured KV cache
+pruning strategy that enhances the memory efficiency of vLLM's PagedAttention.
+Unlike existing approaches that rely on attention-based token importance or
+evict tokens across different vLLM pages, PagedEviction introduces an efficient
+block-wise eviction algorithm tailored for paged memory layouts. Our method
+integrates seamlessly with PagedAttention without requiring any modifications
+to its CUDA attention kernels. We evaluate PagedEviction across
+Llama-3.1-8B-Instruct, Llama-3.2-1B-Instruct, and Llama-3.2-3B-Instruct models
+on the LongBench benchmark suite, demonstrating improved memory usage with
+better accuracy than baselines on long context tasks.",http://arxiv.org/pdf/2509.04377v1,,False
+Using causal abstractions to accelerate decision-making in complex bandit problems,04/09/2025,"Joel Dyer, Nicholas Bishop, Anisoara Calinescu, Michael Wooldridge, Fabio Massimo Zennaro","Although real-world decision-making problems can often be encoded as causal
+multi-armed bandits (CMABs) at different levels of abstraction, a general
+methodology exploiting the information and computational advantages of each
+abstraction level is missing. In this paper, we propose AT-UCB, an algorithm
+which efficiently exploits shared information between CMAB problem instances
+defined at different levels of abstraction. More specifically, AT-UCB leverages
+causal abstraction (CA) theory to explore within a cheap-to-simulate and
+coarse-grained CMAB instance, before employing the traditional upper confidence
+bound (UCB) algorithm on a restricted set of potentially optimal actions in the
+CMAB of interest, leading to significant reductions in cumulative regret when
+compared to the classical UCB algorithm. We illustrate the advantages of AT-UCB
+theoretically, through a novel upper bound on the cumulative regret, and
+empirically, by applying AT-UCB to epidemiological simulators with varying
+resolution and computational cost.",http://arxiv.org/pdf/2509.04296v1,,False
+Rethinking the long-range dependency in Mamba/SSM and transformer models,04/09/2025,"Cong Ma, Kayvan Najarian","Long-range dependency is one of the most desired properties of recent
+sequence models such as state-space models (particularly Mamba) and transformer
+models. New model architectures are being actively developed and benchmarked
+for prediction tasks requiring long-range dependency. However, the capability
+of modeling long-range dependencies of these models has not been investigated
+from a theoretical perspective, which hinders a systematic improvement on this
+aspect. In this work, we mathematically define long-range dependency using the
+derivative of hidden states with respect to past inputs and compare the
+capability of SSM and transformer models of modeling long-range dependency
+based on this definition. We showed that the long-range dependency of SSM
+decays exponentially with the sequence length, which aligns with the
+exponential decay of memory function in RNN. But the attention mechanism used
+in transformers is more flexible and is not constrained to exponential decay,
+which could in theory perform better at modeling long-range dependency with
+sufficient training data, computing resources, and proper training. To combine
+the flexibility of long-range dependency of attention mechanism and computation
+efficiency of SSM, we propose a new formulation for hidden state update in SSM
+and prove its stability under a standard Gaussian distribution of the input
+data.",http://arxiv.org/pdf/2509.04226v1,,False
+Sharp Convergence Rates of Empirical Unbalanced Optimal Transport for Spatio-Temporal Point Processes,04/09/2025,"Marina Struleva, Shayan Hundrieser, Dominic Schuhmacher, Axel Munk","We statistically analyze empirical plug-in estimators for unbalanced optimal
+transport (UOT) formalisms, focusing on the Kantorovich-Rubinstein distance,
+between general intensity measures based on observations from spatio-temporal
+point processes. Specifically, we model the observations by two weakly
+time-stationary point processes with spatial intensity measures $\mu$ and $\nu$
+over the expanding window $(0,t]$ as $t$ increases to infinity, and establish
+sharp convergence rates of the empirical UOT in terms of the intrinsic
+dimensions of the measures. We assume a sub-quadratic temporal growth condition
+of the variance of the process, which allows for a wide range of temporal
+dependencies. As the growth approaches quadratic, the convergence rate becomes
+slower. This variance assumption is related to the time-reduced factorial
+covariance measure, and we exemplify its validity for various point processes,
+including the Poisson cluster, Hawkes, Neyman-Scott, and log-Gaussian Cox
+processes. Complementary to our upper bounds, we also derive matching lower
+bounds for various spatio-temporal point processes of interest and establish
+near minimax rate optimality of the empirical Kantorovich-Rubinstein distance.",http://arxiv.org/pdf/2509.04225v1,,False
+Domain size asymptotics for Markov logic networks,04/09/2025,Vera Koponen,"A Markov logic network (MLN) determines a probability distribution on the set
+of structures, or ``possible worlds'', with an arbitrary finite domain. We
+study the properties of such distributions as the domain size tends to
+infinity. Three types of concrete examples of MLNs will be considered, and the
+properties of random structures with domain sizes tending to infinity will be
+studied: (1) Arbitrary quantifier-free MLNs over a language with only one
+relation symbol which has arity 1. In this case we give a pretty complete
+characterization of the possible limit behaviours of random structures. (2) An
+MLN that favours graphs with fewer triangles (or more generally, fewer
+k-cliques). As a corollary of the analysis a ``$\delta$-approximate 0-1 law''
+for first-order logic is obtained. (3) An MLN that favours graphs with fewer
+vertices with degree higher than a fixed (but arbitrary) number. The analysis
+shows that depending on which ``soft constraints'' an MLN uses the limit
+behaviour of random structures can be quite different, and the weights of the
+soft constraints may, or may not, have influence on the limit behaviour. It
+will also be demonstrated, using (1), that quantifier-free MLNs and lifted
+Bayesian networks (in a broad sense) are asymptotically incomparable, roughly
+meaning that there is a sequence of distributions on possible worlds with
+increasing domain sizes that can be defined by one of the formalisms but not
+even approximated by the other. In a rather general context it is also shown
+that on large domains the distribution determined by an MLN concentrates almost
+all its probability mass on a totally different part of the space of possible
+worlds than the uniform distribution does.",http://arxiv.org/pdf/2509.04192v1,,False
+The human biological advantage over AI,04/09/2025,William Stewart,"Recent advances in AI raise the possibility that AI systems will one day be
+able to do anything humans can do, only better. If artificial general
+intelligence (AGI) is achieved, AI systems may be able to understand, reason,
+problem solve, create, and evolve at a level and speed that humans will
+increasingly be unable to match, or even understand. These possibilities raise
+a natural question as to whether AI will eventually become superior to humans,
+a successor ""digital species"", with a rightful claim to assume leadership of
+the universe. However, a deeper consideration suggests the overlooked
+differentiator between human beings and AI is not the brain, but the central
+nervous system (CNS), providing us with an immersive integration with physical
+reality. It is our CNS that enables us to experience emotion including pain,
+joy, suffering, and love, and therefore to fully appreciate the consequences of
+our actions on the world around us. And that emotional understanding of the
+consequences of our actions is what is required to be able to develop
+sustainable ethical systems, and so be fully qualified to be the leaders of the
+universe. A CNS cannot be manufactured or simulated; it must be grown as a
+biological construct. And so, even the development of consciousness will not be
+sufficient to make AI systems superior to humans. AI systems may become more
+capable than humans on almost every measure and transform our society. However,
+the best foundation for leadership of our universe will always be DNA, not
+silicon.",http://arxiv.org/pdf/2509.04130v1,10.1007/s00146-024-02112-w,False
+Keypoint-based Diffusion for Robotic Motion Planning on the NICOL Robot,04/09/2025,"Lennart Clasmeier, Jan-Gerrit Habekost, Connor Gäde, Philipp Allgeuer, Stefan Wermter","We propose a novel diffusion-based action model for robotic motion planning.
+Commonly, established numerical planning approaches are used to solve general
+motion planning problems, but have significant runtime requirements. By
+leveraging the power of deep learning, we are able to achieve good results in a
+much smaller runtime by learning from a dataset generated by these planners.
+While our initial model uses point cloud embeddings in the input to predict
+keypoint-based joint sequences in its output, we observed in our ablation study
+that it remained challenging to condition the network on the point cloud
+embeddings. We identified some biases in our dataset and refined it, which
+improved the model's performance. Our model, even without the use of the point
+cloud encodings, outperforms numerical models by an order of magnitude
+regarding the runtime, while reaching a success rate of up to 90% of collision
+free solutions on the test set.",http://arxiv.org/pdf/2509.04076v1,,False
+Balancing Signal and Variance: Adaptive Offline RL Post-Training for VLA Flow Models,04/09/2025,"Hongyin Zhang, Shiyuan Zhang, Junxi Jin, Qixin Zeng, Yifan Qiao, Hongchao Lu, Donglin Wang","Vision-Language-Action (VLA) models based on flow matching have shown
+excellent performance in general-purpose robotic manipulation tasks. However,
+the action accuracy of these models on complex downstream tasks is
+unsatisfactory. One important reason is that these models rely solely on the
+post-training paradigm of imitation learning, which makes it difficult to have
+a deeper understanding of the distribution properties of data quality, which is
+exactly what Reinforcement Learning (RL) excels at. In this paper, we
+theoretically propose an offline RL post-training objective for VLA flow models
+and induce an efficient and feasible offline RL fine-tuning algorithm --
+Adaptive Reinforced Flow Matching (ARFM). By introducing an adaptively adjusted
+scaling factor in the VLA flow model loss, we construct a principled
+bias-variance trade-off objective function to optimally control the impact of
+RL signal on flow loss. ARFM adaptively balances RL advantage preservation and
+flow loss gradient variance control, resulting in a more stable and efficient
+fine-tuning process. Extensive simulation and real-world experimental results
+show that ARFM exhibits excellent generalization, robustness, few-shot
+learning, and continuous learning performance.",http://arxiv.org/pdf/2509.04063v1,,False
+TensoIS: A Step Towards Feed-Forward Tensorial Inverse Subsurface Scattering for Perlin Distributed Heterogeneous Media,04/09/2025,"Ashish Tiwari, Satyam Bhardwaj, Yash Bachwana, Parag Sarvoday Sahu, T. M. Feroz Ali, Bhargava Chintalapati, Shanmuganathan Raman","Estimating scattering parameters of heterogeneous media from images is a
+severely under-constrained and challenging problem. Most of the existing
+approaches model BSSRDF either through an analysis-by-synthesis approach,
+approximating complex path integrals, or using differentiable volume rendering
+techniques to account for heterogeneity. However, only a few studies have
+applied learning-based methods to estimate subsurface scattering parameters,
+but they assume homogeneous media. Interestingly, no specific distribution is
+known to us that can explicitly model the heterogeneous scattering parameters
+in the real world. Notably, procedural noise models such as Perlin and Fractal
+Perlin noise have been effective in representing intricate heterogeneities of
+natural, organic, and inorganic surfaces. Leveraging this, we first create
+HeteroSynth, a synthetic dataset comprising photorealistic images of
+heterogeneous media whose scattering parameters are modeled using Fractal
+Perlin noise. Furthermore, we propose Tensorial Inverse Scattering (TensoIS), a
+learning-based feed-forward framework to estimate these Perlin-distributed
+heterogeneous scattering parameters from sparse multi-view image observations.
+Instead of directly predicting the 3D scattering parameter volume, TensoIS uses
+learnable low-rank tensor components to represent the scattering volume. We
+evaluate TensoIS on unseen heterogeneous variations over shapes from the
+HeteroSynth test set, smoke and cloud geometries obtained from open-source
+realistic volumetric simulations, and some real-world samples to establish its
+effectiveness for inverse scattering. Overall, this study is an attempt to
+explore Perlin noise distribution, given the lack of any such well-defined
+distribution in literature, to potentially model real-world heterogeneous
+scattering in a feed-forward manner.",http://arxiv.org/pdf/2509.04047v1,,False
+LMAE4Eth: Generalizable and Robust Ethereum Fraud Detection by Exploring Transaction Semantics and Masked Graph Embedding,04/09/2025,"Yifan Jia, Yanbin Wang, Jianguo Sun, Ye Tian, Peng Qian","Current Ethereum fraud detection methods rely on context-independent,
+numerical transaction sequences, failing to capture semantic of account
+transactions. Furthermore, the pervasive homogeneity in Ethereum transaction
+records renders it challenging to learn discriminative account embeddings.
+Moreover, current self-supervised graph learning methods primarily learn node
+representations through graph reconstruction, resulting in suboptimal
+performance for node-level tasks like fraud account detection, while these
+methods also encounter scalability challenges. To tackle these challenges, we
+propose LMAE4Eth, a multi-view learning framework that fuses transaction
+semantics, masked graph embedding, and expert knowledge. We first propose a
+transaction-token contrastive language model (TxCLM) that transforms
+context-independent numerical transaction records into logically cohesive
+linguistic representations. To clearly characterize the semantic differences
+between accounts, we also use a token-aware contrastive learning pre-training
+objective together with the masked transaction model pre-training objective,
+learns high-expressive account representations. We then propose a masked
+account graph autoencoder (MAGAE) using generative self-supervised learning,
+which achieves superior node-level account detection by focusing on
+reconstructing account node features. To enable MAGAE to scale for large-scale
+training, we propose to integrate layer-neighbor sampling into the graph, which
+reduces the number of sampled vertices by several times without compromising
+training quality. Finally, using a cross-attention fusion network, we unify the
+embeddings of TxCLM and MAGAE to leverage the benefits of both. We evaluate our
+method against 21 baseline approaches on three datasets. Experimental results
+show that our method outperforms the best baseline by over 10% in F1-score on
+two of the datasets.",http://arxiv.org/pdf/2509.03939v1,,False
+SelfAug: Mitigating Catastrophic Forgetting in Retrieval-Augmented Generation via Distribution Self-Alignment,04/09/2025,"Yuqing Huang, Rongyang Zhang, Qimeng Wang, Chengqiang Lu, Yan Gao, Yi Wu, Yao Hu, Xuyang Zhi, Guiquan Liu, Xin Li, Hao Wang, Enhong Chen","Recent advancements in large language models (LLMs) have revolutionized
+natural language processing through their remarkable capabilities in
+understanding and executing diverse tasks. While supervised fine-tuning,
+particularly in Retrieval-Augmented Generation (RAG) scenarios, effectively
+enhances task-specific performance, it often leads to catastrophic forgetting,
+where models lose their previously acquired knowledge and general capabilities.
+Existing solutions either require access to general instruction data or face
+limitations in preserving the model's original distribution. To overcome these
+limitations, we propose SelfAug, a self-distribution alignment method that
+aligns input sequence logits to preserve the model's semantic distribution,
+thereby mitigating catastrophic forgetting and improving downstream
+performance. Extensive experiments demonstrate that SelfAug achieves a superior
+balance between downstream learning and general capability retention. Our
+comprehensive empirical analysis reveals a direct correlation between
+distribution shifts and the severity of catastrophic forgetting in RAG
+scenarios, highlighting how the absence of RAG capabilities in general
+instruction tuning leads to significant distribution shifts during fine-tuning.
+Our findings not only advance the understanding of catastrophic forgetting in
+RAG contexts but also provide a practical solution applicable across diverse
+fine-tuning scenarios. Our code is publicly available at
+https://github.com/USTC-StarTeam/SelfAug.",http://arxiv.org/pdf/2509.03934v1,,False
+An invertible generative model for forward and inverse problems,04/09/2025,"Tristan van Leeuwen, Christoph Brune, Marcello Carioni","We formulate the inverse problem in a Bayesian framework and aim to train a
+generative model that allows us to simulate (i.e., sample from the likelihood)
+and do inference (i.e., sample from the posterior). We review the use of
+triangular normalizing flows for conditional sampling in this context and show
+how to combine two such triangular maps (an upper and a lower one) in to one
+invertible mapping that can be used for simulation and inference. We work out
+several useful properties of this invertible generative model and propose a
+possible training loss for training the map directly. We illustrate the
+workings of this new approach to conditional generative modeling numerically on
+a few stylized examples.",http://arxiv.org/pdf/2509.03910v1,,False
+"Diffusion Generative Models Meet Compressed Sensing, with Applications to Image Data and Financial Time Series",04/09/2025,"Zhengyi Guo, Jiatu Li, Wenpin Tang, David D. Yao","This paper develops dimension reduction techniques for accelerating diffusion
+model inference in the context of synthetic data generation. The idea is to
+integrate compressed sensing into diffusion models: (i) compress the data into
+a latent space, (ii) train a diffusion model in the latent space, and (iii)
+apply a compressed sensing algorithm to the samples generated in the latent
+space, facilitating the efficiency of both model training and inference. Under
+suitable sparsity assumptions on data, the proposed algorithm is proved to
+enjoy faster convergence by combining diffusion model inference with sparse
+recovery. As a byproduct, we obtain an optimal value for the latent space
+dimension. We also conduct numerical experiments on a range of datasets,
+including image data (handwritten digits, medical images, and climate data) and
+financial time series for stress testing.",http://arxiv.org/pdf/2509.03898v1,,False
+Reactive In-Air Clothing Manipulation with Confidence-Aware Dense Correspondence and Visuotactile Affordance,04/09/2025,"Neha Sunil, Megha Tippur, Arnau Saumell, Edward Adelson, Alberto Rodriguez","Manipulating clothing is challenging due to complex configurations, variable
+material dynamics, and frequent self-occlusion. Prior systems often flatten
+garments or assume visibility of key features. We present a dual-arm
+visuotactile framework that combines confidence-aware dense visual
+correspondence and tactile-supervised grasp affordance to operate directly on
+crumpled and suspended garments. The correspondence model is trained on a
+custom, high-fidelity simulated dataset using a distributional loss that
+captures cloth symmetries and generates correspondence confidence estimates.
+These estimates guide a reactive state machine that adapts folding strategies
+based on perceptual uncertainty. In parallel, a visuotactile grasp affordance
+network, self-supervised using high-resolution tactile feedback, determines
+which regions are physically graspable. The same tactile classifier is used
+during execution for real-time grasp validation. By deferring action in
+low-confidence states, the system handles highly occluded table-top and in-air
+configurations. We demonstrate our task-agnostic grasp selection module in
+folding and hanging tasks. Moreover, our dense descriptors provide a reusable
+intermediate representation for other planning modalities, such as extracting
+grasp targets from human video demonstrations, paving the way for more
+generalizable and scalable garment manipulation.",http://arxiv.org/pdf/2509.03889v1,,False
+Continuous Monitoring of Large-Scale Generative AI via Deterministic Knowledge Graph Structures,04/09/2025,"Kishor Datta Gupta, Mohd Ariful Haque, Hasmot Ali, Marufa Kamal, Syed Bahauddin Alam, Mohammad Ashiqur Rahman","Generative AI (GEN AI) models have revolutionized diverse application domains
+but present substantial challenges due to reliability concerns, including
+hallucinations, semantic drift, and inherent biases. These models typically
+operate as black-boxes, complicating transparent and objective evaluation.
+Current evaluation methods primarily depend on subjective human assessment,
+limiting scalability, transparency, and effectiveness. This research proposes a
+systematic methodology using deterministic and Large Language Model
+(LLM)-generated Knowledge Graphs (KGs) to continuously monitor and evaluate GEN
+AI reliability. We construct two parallel KGs: (i) a deterministic KG built
+using explicit rule-based methods, predefined ontologies, domain-specific
+dictionaries, and structured entity-relation extraction rules, and (ii) an
+LLM-generated KG dynamically derived from real-time textual data streams such
+as live news articles. Utilizing real-time news streams ensures authenticity,
+mitigates biases from repetitive training, and prevents adaptive LLMs from
+bypassing predefined benchmarks through feedback memorization. To quantify
+structural deviations and semantic discrepancies, we employ several established
+KG metrics, including Instantiated Class Ratio (ICR), Instantiated Property
+Ratio (IPR), and Class Instantiation (CI). An automated real-time monitoring
+framework continuously computes deviations between deterministic and
+LLM-generated KGs. By establishing dynamic anomaly thresholds based on
+historical structural metric distributions, our method proactively identifies
+and flags significant deviations, thus promptly detecting semantic anomalies or
+hallucinations. This structured, metric-driven comparison between deterministic
+and dynamically generated KGs delivers a robust and scalable evaluation
+framework.",http://arxiv.org/pdf/2509.03857v1,,False
+Simulation-based Inference via Langevin Dynamics with Score Matching,04/09/2025,"Haoyu Jiang, Yuexi Wang, Yun Yang","Simulation-based inference (SBI) enables Bayesian analysis when the
+likelihood is intractable but model simulations are available. Recent advances
+in statistics and machine learning, including Approximate Bayesian Computation
+and deep generative models, have expanded the applicability of SBI, yet these
+methods often face challenges in moderate to high-dimensional parameter spaces.
+Motivated by the success of gradient-based Monte Carlo methods in Bayesian
+sampling, we propose a novel SBI method that integrates score matching with
+Langevin dynamics to explore complex posterior landscapes more efficiently in
+such settings. Our approach introduces tailored score-matching procedures for
+SBI, including a localization scheme that reduces simulation costs and an
+architectural regularization that embeds the statistical structure of
+log-likelihood scores to improve score-matching accuracy. We provide
+theoretical analysis of the method and illustrate its practical benefits on
+benchmark tasks and on more challenging problems in moderate to high
+dimensions, where it performs favorably compared to existing approaches.",http://arxiv.org/pdf/2509.03853v1,,False
+MillGNN: Learning Multi-Scale Lead-Lag Dependencies for Multi-Variate Time Series Forecasting,04/09/2025,"Binqing Wu, Zongjiang Shang, Jianlong Huang, Ling Chen","Multi-variate time series (MTS) forecasting is crucial for various
+applications. Existing methods have shown promising results owing to their
+strong ability to capture intra- and inter-variate dependencies. However, these
+methods often overlook lead-lag dependencies at multiple grouping scales,
+failing to capture hierarchical lead-lag effects in complex systems. To this
+end, we propose MillGNN, a novel \underline{g}raph \underline{n}eural
+\underline{n}etwork-based method that learns \underline{m}ult\underline{i}ple
+grouping scale \underline{l}ead-\underline{l}ag dependencies for MTS
+forecasting, which can comprehensively capture lead-lag effects considering
+variate-wise and group-wise dynamics and decays. Specifically, MillGNN
+introduces two key innovations: (1) a scale-specific lead-lag graph learning
+module that integrates cross-correlation coefficients and dynamic decaying
+features derived from real-time inputs and time lags to learn lead-lag
+dependencies for each scale, which can model evolving lead-lag dependencies
+with statistical interpretability and data-driven flexibility; (2) a
+hierarchical lead-lag message passing module that passes lead-lag messages at
+multiple grouping scales in a structured way to simultaneously propagate intra-
+and inter-scale lead-lag effects, which can capture multi-scale lead-lag
+effects with a balance of comprehensiveness and efficiency. Experimental
+results on 11 datasets demonstrate the superiority of MillGNN for long-term and
+short-term MTS forecasting, compared with 16 state-of-the-art methods.",http://arxiv.org/pdf/2509.03852v1,,False
+"Hardware-Aware Data and Instruction Mapping for AI Tasks: Balancing Parallelism, I/O and Memory Tradeoffs",04/09/2025,"Md Rownak Hossain Chowdhury, Mostafizur Rahman","We introduce a mapping framework for deep learning inference that takes
+advantage of predictable neural network behavior to plan both computation and
+communication ahead of time. The framework generates a unified stream of
+instructions and data, enabling the hardware to execute operations and route
+information on its own, without frequent involvement from the host and with
+minimal off-chip memory use. This naturally reduces reliance on I/O, off-chip
+memory, and host control. By leveraging fine-grained message passing on a
+programmable, message-based compute architecture, the framework keeps data
+movement local and coordinates computation across the array using techniques
+such as stationary-weight reuse, in-array multicasting, and staged reductions.
+Applied to VGG-19, the framework sustains high utilization (88 to 92 percent),
+with over 97 percent of messages generated internally and nearly 89 percent of
+time consumed on-chip transfers. Computation throughput scales beyond 1 TFLOP/s
+on larger arrays, while traffic reductions from reuse and local aggregation
+reach up to 100 MB per layer. Overall, the results highlight the effectiveness
+of streaming-based computation and show how our mapper enables this execution
+style by tightly coordinating data and instruction flow across the hardware.",http://arxiv.org/pdf/2509.03846v1,,False
+Vehicle-to-Infrastructure Collaborative Spatial Perception via Multimodal Large Language Models,04/09/2025,"Kimia Ehsani, Walid Saad","Accurate prediction of communication link quality metrics is essential for
+vehicle-to-infrastructure (V2I) systems, enabling smooth handovers, efficient
+beam management, and reliable low-latency communication. The increasing
+availability of sensor data from modern vehicles motivates the use of
+multimodal large language models (MLLMs) because of their adaptability across
+tasks and reasoning capabilities. However, MLLMs inherently lack
+three-dimensional spatial understanding. To overcome this limitation, a
+lightweight, plug-and-play bird's-eye view (BEV) injection connector is
+proposed. In this framework, a BEV of the environment is constructed by
+collecting sensing data from neighboring vehicles. This BEV representation is
+then fused with the ego vehicle's input to provide spatial context for the
+large language model. To support realistic multimodal learning, a co-simulation
+environment combining CARLA simulator and MATLAB-based ray tracing is developed
+to generate RGB, LiDAR, GPS, and wireless signal data across varied scenarios.
+Instructions and ground-truth responses are programmatically extracted from the
+ray-tracing outputs. Extensive experiments are conducted across three V2I link
+prediction tasks: line-of-sight (LoS) versus non-line-of-sight (NLoS)
+classification, link availability, and blockage prediction. Simulation results
+show that the proposed BEV injection framework consistently improved
+performance across all tasks. The results indicate that, compared to an
+ego-only baseline, the proposed approach improves the macro-average of the
+accuracy metrics by up to 13.9%. The results also show that this performance
+gain increases by up to 32.7% under challenging rainy and nighttime conditions,
+confirming the robustness of the framework in adverse settings.",http://arxiv.org/pdf/2509.03837v1,,False
+SAMVAD: A Multi-Agent System for Simulating Judicial Deliberation Dynamics in India,04/09/2025,"Prathamesh Devadiga, Omkaar Jayadev Shetty, Pooja Agarwal","Understanding the complexities of judicial deliberation is crucial for
+assessing the efficacy and fairness of a justice system. However, empirical
+studies of judicial panels are constrained by significant ethical and practical
+barriers. This paper introduces SAMVAD, an innovative Multi-Agent System (MAS)
+designed to simulate the deliberation process within the framework of the
+Indian justice system.
+  Our system comprises agents representing key judicial roles: a Judge, a
+Prosecution Counsel, a Defense Counsel, and multiple Adjudicators (simulating a
+judicial bench), all powered by large language models (LLMs). A primary
+contribution of this work is the integration of Retrieval-Augmented Generation
+(RAG), grounded in a domain-specific knowledge base of landmark Indian legal
+documents, including the Indian Penal Code and the Constitution of India. This
+RAG functionality enables the Judge and Counsel agents to generate legally
+sound instructions and arguments, complete with source citations, thereby
+enhancing both the fidelity and transparency of the simulation.
+  The Adjudicator agents engage in iterative deliberation rounds, processing
+case facts, legal instructions, and arguments to reach a consensus-based
+verdict. We detail the system architecture, agent communication protocols, the
+RAG pipeline, the simulation workflow, and a comprehensive evaluation plan
+designed to assess performance, deliberation quality, and outcome consistency.
+  This work provides a configurable and explainable MAS platform for exploring
+legal reasoning and group decision-making dynamics in judicial simulations,
+specifically tailored to the Indian legal context and augmented with verifiable
+legal grounding via RAG.",http://arxiv.org/pdf/2509.03793v1,,False

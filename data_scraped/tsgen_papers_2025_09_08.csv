@@ -1,0 +1,280 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+SpikingBrain Technical Report: Spiking Brain-inspired Large Models,05/09/2025,"Yuqi Pan, Yupeng Feng, Jinghao Zhuang, Siyu Ding, Zehao Liu, Bohan Sun, Yuhong Chou, Han Xu, Xuerui Qiu, Anlin Deng, Anjie Hu, Peng Zhou, Man Yao, Jibin Wu, Jian Yang, Guoliang Sun, Bo Xu, Guoqi Li","Mainstream Transformer-based large language models face major efficiency
+bottlenecks: training computation scales quadratically with sequence length,
+and inference memory grows linearly, limiting long-context processing. Building
+large models on non-NVIDIA platforms also poses challenges for stable and
+efficient training. To address this, we introduce SpikingBrain, a family of
+brain-inspired models designed for efficient long-context training and
+inference. SpikingBrain leverages the MetaX GPU cluster and focuses on three
+aspects: (1) Model Architecture: linear and hybrid-linear attention
+architectures with adaptive spiking neurons; (2) Algorithmic Optimizations: an
+efficient, conversion-based training pipeline and a dedicated spike coding
+framework; (3) System Engineering: customized training frameworks, operator
+libraries, and parallelism strategies tailored to MetaX hardware.
+  Using these techniques, we develop two models: SpikingBrain-7B, a linear LLM,
+and SpikingBrain-76B, a hybrid-linear MoE LLM. These models demonstrate the
+feasibility of large-scale LLM development on non-NVIDIA platforms.
+SpikingBrain achieves performance comparable to open-source Transformer
+baselines while using only about 150B tokens for continual pre-training. Our
+models significantly improve long-sequence training efficiency and deliver
+inference with (partially) constant memory and event-driven spiking behavior.
+For example, SpikingBrain-7B attains over 100x speedup in Time to First Token
+for 4M-token sequences. Training remains stable for weeks on hundreds of MetaX
+C550 GPUs, with the 7B model reaching a Model FLOPs Utilization of 23.4
+percent. The proposed spiking scheme achieves 69.15 percent sparsity, enabling
+low-power operation. Overall, this work demonstrates the potential of
+brain-inspired mechanisms to drive the next generation of efficient and
+scalable large model design.",http://arxiv.org/pdf/2509.05276v1,,False
+LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation,05/09/2025,"Yinglin Duan, Zhengxia Zou, Tongwei Gu, Wei Jia, Zhan Zhao, Luyi Xu, Xinzhu Liu, Hao Jiang, Kang Chen, Shuang Qiu","Recent research has been increasingly focusing on developing 3D world models
+that simulate complex real-world scenarios. World models have found broad
+applications across various domains, including embodied AI, autonomous driving,
+entertainment, etc. A more realistic simulation with accurate physics will
+effectively narrow the sim-to-real gap and allow us to gather rich information
+about the real world conveniently. While traditional manual modeling has
+enabled the creation of virtual 3D scenes, modern approaches have leveraged
+advanced machine learning algorithms for 3D world generation, with most recent
+advances focusing on generative methods that can create virtual worlds based on
+user instructions. This work explores such a research direction by proposing
+LatticeWorld, a simple yet effective 3D world generation framework that
+streamlines the industrial production pipeline of 3D environments. LatticeWorld
+leverages lightweight LLMs (LLaMA-2-7B) alongside the industry-grade rendering
+engine (e.g., Unreal Engine 5) to generate a dynamic environment. Our proposed
+framework accepts textual descriptions and visual instructions as multimodal
+inputs and creates large-scale 3D interactive worlds with dynamic agents,
+featuring competitive multi-agent interaction, high-fidelity physics
+simulation, and real-time rendering. We conduct comprehensive experiments to
+evaluate LatticeWorld, showing that it achieves superior accuracy in scene
+layout generation and visual fidelity. Moreover, LatticeWorld achieves over a
+$90\times$ increase in industrial production efficiency while maintaining high
+creative quality compared with traditional manual production methods. Our demo
+video is available at https://youtu.be/8VWZXpERR18",http://arxiv.org/pdf/2509.05263v1,,False
+HoPE: Hyperbolic Rotary Positional Encoding for Stable Long-Range Dependency Modeling in Large Language Models,05/09/2025,"Chang Dai, Hongyu Shan, Mingyang Song, Di Liang","Positional encoding mechanisms enable Transformers to model sequential
+structure and long-range dependencies in text. While absolute positional
+encodings struggle with extrapolation to longer sequences due to fixed
+positional representations, and relative approaches like Alibi exhibit
+performance degradation on extremely long contexts, the widely-used Rotary
+Positional Encoding (RoPE) introduces oscillatory attention patterns that
+hinder stable long-distance dependency modelling. We address these limitations
+through a geometric reformulation of positional encoding. Drawing inspiration
+from Lorentz transformations in hyperbolic geometry, we propose Hyperbolic
+Rotary Positional Encoding (HoPE), which leverages hyperbolic functions to
+implement Lorentz rotations on token representations. Theoretical analysis
+demonstrates that RoPE is a special case of our generalized formulation. HoPE
+fundamentally resolves RoPE's slation issues by enforcing monotonic decay of
+attention weights with increasing token distances. Extensive experimental
+results, including perplexity evaluations under several extended sequence
+benchmarks, show that HoPE consistently exceeds existing positional encoding
+methods. These findings underscore HoPE's enhanced capacity for representing
+and generalizing long-range dependencies. Data and code will be available.",http://arxiv.org/pdf/2509.05218v1,,False
+BEDTime: A Unified Benchmark for Automatically Describing Time Series,05/09/2025,"Medhasweta Sen, Zachary Gottesman, Jiaxing Qiu, C. Bayan Bruss, Nam Nguyen, Tom Hartvigsen","Many recent studies have proposed general-purpose foundation models designed
+for a variety of time series analysis tasks. While several established datasets
+already exist for evaluating these models, previous works frequently introduce
+their models in conjunction with new datasets, limiting opportunities for
+direct, independent comparisons and obscuring insights into the relative
+strengths of different methods. Additionally, prior evaluations often cover
+numerous tasks simultaneously, assessing a broad range of model abilities
+without clearly pinpointing which capabilities contribute to overall
+performance. To address these gaps, we formalize and evaluate 3 tasks that test
+a model's ability to describe time series using generic natural language: (1)
+recognition (True/False question-answering), (2) differentiation (multiple
+choice question-answering), and (3) generation (open-ended natural language
+description). We then unify 4 recent datasets to enable head-to-head model
+comparisons on each task. Experimentally, in evaluating 13 state-of-the-art
+language, vision--language, and time series--language models, we find that (1)
+popular language-only methods largely underperform, indicating a need for time
+series-specific architectures, (2) VLMs are quite successful, as expected,
+identifying the value of vision models for these tasks and (3) pretrained
+multimodal time series--language models successfully outperform LLMs, but still
+have significant room for improvement. We also find that all approaches exhibit
+clear fragility in a range of robustness tests. Overall, our benchmark provides
+a standardized evaluation on a task necessary for time series reasoning
+systems.",http://arxiv.org/pdf/2509.05215v1,,False
+AI Agents for Web Testing: A Case Study in the Wild,05/09/2025,"Naimeng Ye, Xiao Yu, Ruize Xu, Tianyi Peng, Zhou Yu","Automated web testing plays a critical role in ensuring high-quality user
+experiences and delivering business value. Traditional approaches primarily
+focus on code coverage and load testing, but often fall short of capturing
+complex user behaviors, leaving many usability issues undetected. The emergence
+of large language models (LLM) and AI agents opens new possibilities for web
+testing by enabling human-like interaction with websites and a general
+awareness of common usability problems. In this work, we present WebProber, a
+prototype AI agent-based web testing framework. Given a URL, WebProber
+autonomously explores the website, simulating real user interactions,
+identifying bugs and usability issues, and producing a human-readable report.
+We evaluate WebProber through a case study of 120 academic personal websites,
+where it uncovered 29 usability issues--many of which were missed by
+traditional tools. Our findings highlight agent-based testing as a promising
+direction while outlining directions for developing next-generation,
+user-centered testing frameworks.",http://arxiv.org/pdf/2509.05197v1,,False
+Exploring Situated Stabilities of a Rhythm Generation System through Variational Cross-Examination,05/09/2025,"Błażej Kotowski, Nicholas Evans, Behzad Haki, Frederic Font, Sergi Jordà","This paper investigates GrooveTransformer, a real-time rhythm generation
+system, through the postphenomenological framework of Variational
+Cross-Examination (VCE). By reflecting on its deployment across three distinct
+artistic contexts, we identify three stabilities: an autonomous drum
+accompaniment generator, a rhythmic control voltage sequencer in Eurorack
+format, and a rhythm driver for a harmonic accompaniment system. The
+versatility of its applications was not an explicit goal from the outset of the
+project. Thus, we ask: how did this multistability emerge? Through VCE, we
+identify three key contributors to its emergence: the affordances of system
+invariants, the interdisciplinary collaboration, and the situated nature of its
+development. We conclude by reflecting on the viability of VCE as a descriptive
+and analytical method for Digital Musical Instrument (DMI) design, emphasizing
+its value in uncovering how technologies mediate, co-shape, and are co-shaped
+by users and contexts.",http://arxiv.org/pdf/2509.05145v1,,False
+Dynamical Learning in Deep Asymmetric Recurrent Neural Networks,05/09/2025,"Davide Badalotti, Carlo Baldassi, Marc Mézard, Mattia Scardecchia, Riccardo Zecchina","We show that asymmetric deep recurrent neural networks, enhanced with
+additional sparse excitatory couplings, give rise to an exponentially large,
+dense accessible manifold of internal representations which can be found by
+different algorithms, including simple iterative dynamics. Building on the
+geometrical properties of the stable configurations, we propose a distributed
+learning scheme in which input-output associations emerge naturally from the
+recurrent dynamics, without any need of gradient evaluation. A critical feature
+enabling the learning process is the stability of the configurations reached at
+convergence, even after removal of the supervisory output signal. Extensive
+simulations demonstrate that this approach performs competitively on standard
+AI benchmarks. The model can be generalized in multiple directions, both
+computational and biological, potentially contributing to narrowing the gap
+between AI and computational neuroscience.",http://arxiv.org/pdf/2509.05041v1,,False
+High-Resolution Global Land Surface Temperature Retrieval via a Coupled Mechanism-Machine Learning Framework,05/09/2025,"Tian Xie, Huanfeng Shen, Menghui Jiang, Juan-Carlos Jiménez-Muñoz, José A. Sobrino, Huifang Li, Chao Zeng","Land surface temperature (LST) is vital for land-atmosphere interactions and
+climate processes. Accurate LST retrieval remains challenging under
+heterogeneous land cover and extreme atmospheric conditions. Traditional split
+window (SW) algorithms show biases in humid environments; purely machine
+learning (ML) methods lack interpretability and generalize poorly with limited
+data. We propose a coupled mechanism model-ML (MM-ML) framework integrating
+physical constraints with data-driven learning for robust LST retrieval. Our
+approach fuses radiative transfer modeling with data components, uses MODTRAN
+simulations with global atmospheric profiles, and employs physics-constrained
+optimization. Validation against 4,450 observations from 29 global sites shows
+MM-ML achieves MAE=1.84K, RMSE=2.55K, and R-squared=0.966, outperforming
+conventional methods. Under extreme conditions, MM-ML reduces errors by over
+50%. Sensitivity analysis indicates LST estimates are most sensitive to sensor
+radiance, then water vapor, and less to emissivity, with MM-ML showing superior
+stability. These results demonstrate the effectiveness of our coupled modeling
+strategy for retrieving geophysical parameters. The MM-ML framework combines
+physical interpretability with nonlinear modeling capacity, enabling reliable
+LST retrieval in complex environments and supporting climate monitoring and
+ecosystem studies.",http://arxiv.org/pdf/2509.04991v1,,False
+Scaling Law for Large-Scale Pre-Training Using Chaotic Time Series and Predictability in Financial Time Series,05/09/2025,Yuki Takemoto,"Time series forecasting plays a critical role in decision-making processes
+across diverse fields including meteorology, traffic, electricity, economics,
+finance, and so on. Especially, predicting returns on financial instruments is
+a challenging problem. Some researchers have proposed time series foundation
+models applicable to various forecasting tasks. Simultaneously, based on the
+recognition that real-world time series exhibit chaotic properties, methods
+have been developed to artificially generate synthetic chaotic time series,
+construct diverse datasets and train models. In this study, we propose a
+methodology for modeling financial time series by generating artificial chaotic
+time series and applying resampling techniques to simulate financial time
+series data, which we then use as training samples. Increasing the resampling
+interval to extend predictive horizons, we conducted large-scale pre-training
+using 10 billion training samples for each case. We subsequently created test
+datasets for multiple timeframes using actual Bitcoin trade data and performed
+zero-shot prediction without re-training the pre-trained model. The results of
+evaluating the profitability of a simple trading strategy based on these
+predictions demonstrated significant performance improvements over
+autocorrelation models. During the large-scale pre-training process, we
+observed a scaling law-like phenomenon that we can achieve predictive
+performance at a certain level with extended predictive horizons for chaotic
+time series by increasing the number of training samples exponentially. If this
+scaling law proves robust and holds true across various chaotic models, it
+suggests the potential to predict near-future events by investing substantial
+computational resources. Future research should focus on further large-scale
+training and verifying the applicability of this scaling law to diverse chaotic
+models.",http://arxiv.org/pdf/2509.04921v1,,False
+SynGen-Vision: Synthetic Data Generation for training industrial vision models,05/09/2025,"Alpana Dubey, Suma Mani Kuriakose, Nitish Bhardwaj","We propose an approach to generate synthetic data to train computer vision
+(CV) models for industrial wear and tear detection. Wear and tear detection is
+an important CV problem for predictive maintenance tasks in any industry.
+However, data curation for training such models is expensive and time-consuming
+due to the unavailability of datasets for different wear and tear scenarios.
+Our approach employs a vision language model along with a 3D simulation and
+rendering engine to generate synthetic data for varying rust conditions. We
+evaluate our approach by training a CV model for rust detection using the
+generated dataset and tested the trained model on real images of rusted
+industrial objects. The model trained with the synthetic data generated by our
+approach, outperforms the other approaches with a mAP50 score of 0.87. The
+approach is customizable and can be easily extended to other industrial wear
+and tear detection scenarios",http://arxiv.org/pdf/2509.04894v1,,False
+"Cloning a Conversational Voice AI Agent from Call\,Recording Datasets for Telesales",05/09/2025,"Krittanon Kaewtawee, Wachiravit Modecrua, Krittin Pachtrachai, Touchapon Kraisingkorn","Recent advances in language and speech modelling have made it possible to
+build autonomous voice assistants that understand and generate human dialogue
+in real time. These systems are increasingly being deployed in domains such as
+customer service and healthcare care, where they can automate repetitive tasks,
+reduce operational costs, and provide constant support around the clock. In
+this paper, we present a general methodology for cloning a conversational voice
+AI agent from a corpus of call recordings. Although the case study described in
+this paper uses telesales data to illustrate the approach, the underlying
+process generalizes to any domain where call transcripts are available. Our
+system listens to customers over the telephone, responds with a synthetic
+voice, and follows a structured playbook learned from top performing human
+agents. We describe the domain selection, knowledge extraction, and prompt
+engineering used to construct the agent, integrating automatic speech
+recognition, a large language model based dialogue manager, and text to speech
+synthesis into a streaming inference pipeline. The cloned agent is evaluated
+against human agents on a rubric of 22 criteria covering introduction, product
+communication, sales drive, objection handling, and closing. Blind tests show
+that the AI agent approaches human performance in routine aspects of the call
+while underperforming in persuasion and objection handling. We analyze these
+shortcomings and refine the prompt accordingly. The paper concludes with design
+lessons and avenues for future research, including large scale simulation and
+automated evaluation.",http://arxiv.org/pdf/2509.04871v1,,False
+A Knowledge-Driven Diffusion Policy for End-to-End Autonomous Driving Based on Expert Routing,05/09/2025,"Chengkai Xu, Jiaqi Liu, Yicheng Guo, Peng Hang, Jian Sun","End-to-end autonomous driving remains constrained by the need to generate
+multi-modal actions, maintain temporal stability, and generalize across diverse
+scenarios. Existing methods often collapse multi-modality, struggle with
+long-horizon consistency, or lack modular adaptability. This paper presents
+KDP, a knowledge-driven diffusion policy that integrates generative diffusion
+modeling with a sparse mixture-of-experts routing mechanism. The diffusion
+component generates temporally coherent and multi-modal action sequences, while
+the expert routing mechanism activates specialized and reusable experts
+according to context, enabling modular knowledge composition. Extensive
+experiments across representative driving scenarios demonstrate that KDP
+achieves consistently higher success rates, reduced collision risk, and
+smoother control compared to prevailing paradigms. Ablation studies highlight
+the effectiveness of sparse expert activation and the Transformer backbone, and
+activation analyses reveal structured specialization and cross-scenario reuse
+of experts. These results establish diffusion with expert routing as a scalable
+and interpretable paradigm for knowledge-driven end-to-end autonomous driving.",http://arxiv.org/pdf/2509.04853v1,,False
+Enhancing Diversity in Large Language Models via Determinantal Point Processes,05/09/2025,"Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Ioannis Ch. Paschalidis, Aldo Pacchiano","Supervised fine-tuning and reinforcement learning are two popular methods for
+post-training large language models (LLMs). While improving the model's
+performance on downstream tasks, they often reduce the model's output
+diversity, leading to narrow, canonical responses. Existing methods to enhance
+diversity are limited, either by operating at inference time or by focusing on
+lexical differences. We propose a novel training method named DQO based on
+determinantal point processes (DPPs) to jointly optimize LLMs for quality and
+semantic diversity. Our approach samples and embeds a group of responses for
+each prompt, then uses the determinant of a kernel-based similarity matrix to
+measure diversity as the volume spanned by the embeddings of these responses.
+Experiments across instruction-following, summarization, story generation, and
+reasoning tasks demonstrate that our method substantially improves semantic
+diversity without sacrificing model quality.",http://arxiv.org/pdf/2509.04784v1,,False
+CoVeR: Conformal Calibration for Versatile and Reliable Autoregressive Next-Token Prediction,05/09/2025,"Yuzhu Chen, Yingjie Wang, Shunyu Liu, Yongcheng Jing, Dacheng Tao","Autoregressive pre-trained models combined with decoding methods have
+achieved impressive performance on complex reasoning tasks. While mainstream
+decoding strategies such as beam search can generate plausible candidate sets,
+they often lack provable coverage guarantees, and struggle to effectively
+balance search efficiency with the need for versatile trajectories,
+particularly those involving long-tail sequences that are essential in certain
+real-world applications. To address these limitations, we propose
+\textsc{CoVeR}, a novel model-free decoding strategy wihtin the conformal
+prediction framework that simultaneously maintains a compact search space and
+ensures high coverage probability over desirable trajectories. Theoretically,
+we establish a PAC-style generalization bound, guaranteeing that \textsc{CoVeR}
+asymptotically achieves a coverage rate of at least $1 - \alpha$ for any target
+level $\alpha \in (0,1)$.",http://arxiv.org/pdf/2509.04733v1,,False
+Language-Driven Hierarchical Task Structures as Explicit World Models for Multi-Agent Learning,05/09/2025,Brennen Hill,"The convergence of Language models, Agent models, and World models represents
+a critical frontier for artificial intelligence. While recent progress has
+focused on scaling Language and Agent models, the development of sophisticated,
+explicit World Models remains a key bottleneck, particularly for complex,
+long-horizon multi-agent tasks. In domains such as robotic soccer, agents
+trained via standard reinforcement learning in high-fidelity but
+structurally-flat simulators often fail due to intractable exploration spaces
+and sparse rewards. This position paper argues that the next frontier in
+developing capable agents lies in creating environments that possess an
+explicit, hierarchical World Model. We contend that this is best achieved
+through hierarchical scaffolding, where complex goals are decomposed into
+structured, manageable subgoals. Drawing evidence from a systematic review of
+2024 research in multi-agent soccer, we identify a clear and decisive trend
+towards integrating symbolic and hierarchical methods with multi-agent
+reinforcement learning (MARL). These approaches implicitly or explicitly
+construct a task-based world model to guide agent learning. We then propose a
+paradigm shift: leveraging Large Language Models to dynamically generate this
+hierarchical scaffold, effectively using language to structure the World Model
+on the fly. This language-driven world model provides an intrinsic curriculum,
+dense and meaningful learning signals, and a framework for compositional
+learning, enabling Agent Models to acquire sophisticated, strategic behaviors
+with far greater sample efficiency. By building environments with explicit,
+language-configurable task layers, we can bridge the gap between low-level
+reactive behaviors and high-level strategic team play, creating a powerful and
+generalizable framework for training the next generation of intelligent agents.",http://arxiv.org/pdf/2509.04731v1,,False

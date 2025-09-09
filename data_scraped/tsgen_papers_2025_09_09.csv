@@ -1,0 +1,483 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Deep Reactive Policy: Learning Reactive Manipulator Motion Planning for Dynamic Environments,08/09/2025,"Jiahui Yang, Jason Jingzhou Liu, Yulong Li, Youssef Khaky, Kenneth Shaw, Deepak Pathak","Generating collision-free motion in dynamic, partially observable
+environments is a fundamental challenge for robotic manipulators. Classical
+motion planners can compute globally optimal trajectories but require full
+environment knowledge and are typically too slow for dynamic scenes. Neural
+motion policies offer a promising alternative by operating in closed-loop
+directly on raw sensory inputs but often struggle to generalize in complex or
+dynamic settings. We propose Deep Reactive Policy (DRP), a visuo-motor neural
+motion policy designed for reactive motion generation in diverse dynamic
+environments, operating directly on point cloud sensory input. At its core is
+IMPACT, a transformer-based neural motion policy pretrained on 10 million
+generated expert trajectories across diverse simulation scenarios. We further
+improve IMPACT's static obstacle avoidance through iterative student-teacher
+finetuning. We additionally enhance the policy's dynamic obstacle avoidance at
+inference time using DCP-RMP, a locally reactive goal-proposal module. We
+evaluate DRP on challenging tasks featuring cluttered scenes, dynamic moving
+obstacles, and goal obstructions. DRP achieves strong generalization,
+outperforming prior classical and neural methods in success rate across both
+simulated and real-world settings. Video results and code available at
+https://deep-reactive-policy.com",http://arxiv.org/pdf/2509.06953v1,,False
+Learning spatially structured open quantum dynamics with regional-attention transformers,08/09/2025,"Dounan Du, Eden Figueroa","Simulating the dynamics of open quantum systems with spatial structure and
+external control is an important challenge in quantum information science.
+Classical numerical solvers for such systems require integrating coupled master
+and field equations, which is computationally demanding for simulation and
+optimization tasks and often precluding real-time use in network-scale
+simulations or feedback control. We introduce a regional attention-based neural
+architecture that learns the spatiotemporal dynamics of structured open quantum
+systems. The model incorporates translational invariance of physical laws as an
+inductive bias to achieve scalable complexity, and supports conditioning on
+time-dependent global control parameters. We demonstrate learning on two
+representative systems: a driven dissipative single qubit and an
+electromagnetically induced transparency (EIT) quantum memory. The model
+achieves high predictive fidelity under both in-distribution and
+out-of-distribution control protocols, and provides substantial acceleration up
+to three orders of magnitude over numerical solvers. These results demonstrate
+that the architecture establishes a general surrogate modeling framework for
+spatially structured open quantum dynamics, with immediate relevance to
+large-scale quantum network simulation, quantum repeater and protocol design,
+real-time experimental optimization, and scalable device modeling across
+diverse light-matter platforms.",http://arxiv.org/pdf/2509.06871v1,,False
+Automated Radiographic Total Sharp Score (ARTSS) in Rheumatoid Arthritis: A Solution to Reduce Inter-Intra Reader Variation and Enhancing Clinical Practice,08/09/2025,"Hajar Moradmand, Lei Ren","Assessing the severity of rheumatoid arthritis (RA) using the Total Sharp/Van
+Der Heijde Score (TSS) is crucial, but manual scoring is often time-consuming
+and subjective. This study introduces an Automated Radiographic Sharp Scoring
+(ARTSS) framework that leverages deep learning to analyze full-hand X-ray
+images, aiming to reduce inter- and intra-observer variability. The research
+uniquely accommodates patients with joint disappearance and variable-length
+image sequences. We developed ARTSS using data from 970 patients, structured
+into four stages: I) Image pre-processing and re-orientation using ResNet50,
+II) Hand segmentation using UNet.3, III) Joint identification using YOLOv7, and
+IV) TSS prediction using models such as VGG16, VGG19, ResNet50, DenseNet201,
+EfficientNetB0, and Vision Transformer (ViT). We evaluated model performance
+with Intersection over Union (IoU), Mean Average Precision (MAP), mean absolute
+error (MAE), Root Mean Squared Error (RMSE), and Huber loss. The average TSS
+from two radiologists was used as the ground truth. Model training employed
+3-fold cross-validation, with each fold consisting of 452 training and 227
+validation samples, and external testing included 291 unseen subjects. Our
+joint identification model achieved 99% accuracy. The best-performing model,
+ViT, achieved a notably low Huber loss of 0.87 for TSS prediction. Our results
+demonstrate the potential of deep learning to automate RA scoring, which can
+significantly enhance clinical practice. Our approach addresses the challenge
+of joint disappearance and variable joint numbers, offers timesaving benefits,
+reduces inter- and intra-reader variability, improves radiologist accuracy, and
+aids rheumatologists in making more informed decisions.",http://arxiv.org/pdf/2509.06854v1,,False
+Reinforcement learning meets bioprocess control through behaviour cloning: Real-world deployment in an industrial photobioreactor,08/09/2025,"Juan D. Gil, Ehecatl Antonio Del Rio Chanona, José L. Guzmán, Manuel Berenguel","The inherent complexity of living cells as production units creates major
+challenges for maintaining stable and optimal bioprocess conditions, especially
+in open Photobioreactors (PBRs) exposed to fluctuating environments. To address
+this, we propose a Reinforcement Learning (RL) control approach, combined with
+Behavior Cloning (BC), for pH regulation in open PBR systems. This represents,
+to the best of our knowledge, the first application of an RL-based control
+strategy to such a nonlinear and disturbance-prone bioprocess. Our method
+begins with an offline training stage in which the RL agent learns from
+trajectories generated by a nominal Proportional-Integral-Derivative (PID)
+controller, without direct interaction with the real system. This is followed
+by a daily online fine-tuning phase, enabling adaptation to evolving process
+dynamics and stronger rejection of fast, transient disturbances. This hybrid
+offline-online strategy allows deployment of an adaptive control policy capable
+of handling the inherent nonlinearities and external perturbations in open
+PBRs. Simulation studies highlight the advantages of our method: the Integral
+of Absolute Error (IAE) was reduced by 8% compared to PID control and by 5%
+relative to standard off-policy RL. Moreover, control effort decreased
+substantially-by 54% compared to PID and 7% compared to standard RL-an
+important factor for minimizing operational costs. Finally, an 8-day
+experimental validation under varying environmental conditions confirmed the
+robustness and reliability of the proposed approach. Overall, this work
+demonstrates the potential of RL-based methods for bioprocess control and paves
+the way for their broader application to other nonlinear, disturbance-prone
+systems.",http://arxiv.org/pdf/2509.06853v1,,False
+Video-Based MPAA Rating Prediction: An Attention-Driven Hybrid Architecture Using Contrastive Learning,08/09/2025,"Dipta Neogi, Nourash Azmine Chowdhury, Muhammad Rafsan Kabir, Mohammad Ashrafuzzaman Khan","The rapid growth of visual content consumption across platforms necessitates
+automated video classification for age-suitability standards like the MPAA
+rating system (G, PG, PG-13, R). Traditional methods struggle with large
+labeled data requirements, poor generalization, and inefficient feature
+learning. To address these challenges, we employ contrastive learning for
+improved discrimination and adaptability, exploring three frameworks: Instance
+Discrimination, Contextual Contrastive Learning, and Multi-View Contrastive
+Learning. Our hybrid architecture integrates an LRCN (CNN+LSTM) backbone with a
+Bahdanau attention mechanism, achieving state-of-the-art performance in the
+Contextual Contrastive Learning framework, with 88% accuracy and an F1 score of
+0.8815. By combining CNNs for spatial features, LSTMs for temporal modeling,
+and attention mechanisms for dynamic frame prioritization, the model excels in
+fine-grained borderline distinctions, such as differentiating PG-13 and R-rated
+content. We evaluate the model's performance across various contrastive loss
+functions, including NT-Xent, NT-logistic, and Margin Triplet, demonstrating
+the robustness of our proposed architecture. To ensure practical application,
+the model is deployed as a web application for real-time MPAA rating
+classification, offering an efficient solution for automated content compliance
+across streaming platforms.",http://arxiv.org/pdf/2509.06826v1,,False
+Green Learning for STAR-RIS mmWave Systems with Implicit CSI,08/09/2025,"Yu-Hsiang Huang, Po-Heng Chou, Wan-Jen Huang, Walid Saad, C. -C. Jay Kuo","In this paper, a green learning (GL)-based precoding framework is proposed
+for simultaneously transmitting and reflecting reconfigurable intelligent
+surface (STAR-RIS)-aided millimeter-wave (mmWave) MIMO broadcasting systems.
+Motivated by the growing emphasis on environmental sustainability in future 6G
+networks, this work adopts a broadcasting transmission architecture for
+scenarios where multiple users share identical information, improving spectral
+efficiency and reducing redundant transmissions and power consumption.
+Different from conventional optimization methods, such as block coordinate
+descent (BCD) that require perfect channel state information (CSI) and
+iterative computation, the proposed GL framework operates directly on received
+uplink pilot signals without explicit CSI estimation. Unlike deep learning (DL)
+approaches that require CSI-based labels for training, the proposed GL approach
+also avoids deep neural networks and backpropagation, leading to a more
+lightweight design. Although the proposed GL framework is trained with
+supervision generated by BCD under full CSI, inference is performed in a fully
+CSI-free manner. The proposed GL integrates subspace approximation with
+adjusted bias (Saab), relevant feature test (RFT)-based supervised feature
+selection, and eXtreme gradient boosting (XGBoost)-based decision learning to
+jointly predict the STAR-RIS coefficients and transmit precoder. Simulation
+results show that the proposed GL approach achieves competitive spectral
+efficiency compared to BCD and DL-based models, while reducing floating-point
+operations (FLOPs) by over four orders of magnitude. These advantages make the
+proposed GL approach highly suitable for real-time deployment in energy- and
+hardware-constrained broadcasting scenarios.",http://arxiv.org/pdf/2509.06820v1,,False
+Dato: A Task-Based Programming Model for Dataflow Accelerators,08/09/2025,"Shihan Fang, Hongzheng Chen, Niansong Zhang, Jiajie Li, Han Meng, Adrian Liu, Zhiru Zhang","Recent deep learning workloads increasingly push computational demand beyond
+what current memory systems can sustain, with many kernels stalling on data
+movement rather than computation. While modern dataflow accelerators
+incorporate on-chip streaming to mitigate off-chip bandwidth limitations,
+existing programming models struggle to harness these capabilities effectively.
+Low-level interfaces provide fine-grained control but impose significant
+development overhead, whereas high-level tile-based languages abstract away
+communication details, restricting optimization and forcing compilers to
+reconstruct the intended dataflow. We present Dato, a Python-embedded,
+task-based programming model for dataflow accelerators that elevates data
+communication and sharding to first-class type constructs. Developers write
+programs as a graph of tasks connected via explicit stream types, with sharded
+inputs specified using layout types. These tasks are first mapped virtually
+onto the accelerator's spatial fabric, and the compiler then generates a
+physical mapping that respects hardware constraints. Experimental results on
+both AMD Ryzen AI NPU and Alveo FPGA devices demonstrate that Dato achieves
+high performance while significantly reducing the burden of writing optimized
+code. On the NPU, Dato attains up to 84% hardware utilization for GEMM and
+delivers a 2.81x speedup on attention kernels compared to a state-of-the-art
+commercial framework. On the FPGA, Dato surpasses leading frameworks in
+performance when generating custom systolic arrays, achieving 98% of the
+theoretical peak performance.",http://arxiv.org/pdf/2509.06794v1,,False
+RT-HCP: Dealing with Inference Delays and Sample Efficiency to Learn Directly on Robotic Platforms,08/09/2025,"Zakariae El Asri, Ibrahim Laiche, Clément Rambour, Olivier Sigaud, Nicolas Thome","Learning a controller directly on the robot requires extreme sample
+efficiency. Model-based reinforcement learning (RL) methods are the most sample
+efficient, but they often suffer from a too long inference time to meet the
+robot control frequency requirements. In this paper, we address the sample
+efficiency and inference time challenges with two contributions. First, we
+define a general framework to deal with inference delays where the slow
+inference robot controller provides a sequence of actions to feed the
+control-hungry robotic platform without execution gaps. Then, we compare
+several RL algorithms in the light of this framework and propose RT-HCP, an
+algorithm that offers an excellent trade-off between performance, sample
+efficiency and inference time. We validate the superiority of RT-HCP with
+experiments where we learn a controller directly on a simple but high frequency
+FURUTA pendulum platform. Code: github.com/elasriz/RTHCP",http://arxiv.org/pdf/2509.06714v1,,False
+Nested Optimal Transport Distances,08/09/2025,"Ruben Bontorno, Songyan Hou","Simulating realistic financial time series is essential for stress testing,
+scenario generation, and decision-making under uncertainty. Despite advances in
+deep generative models, there is no consensus metric for their evaluation. We
+focus on generative AI for financial time series in decision-making
+applications and employ the nested optimal transport distance, a time-causal
+variant of optimal transport distance, which is robust to tasks such as
+hedging, optimal stopping, and reinforcement learning. Moreover, we propose a
+statistically consistent, naturally parallelizable algorithm for its
+computation, achieving substantial speedups over existing approaches.",http://arxiv.org/pdf/2509.06702v1,,False
+"Small Vectors, Big Effects: A Mechanistic Study of RL-Induced Reasoning via Steering Vectors",08/09/2025,"Viacheslav Sinii, Nikita Balagansky, Yaroslav Aksenov, Vadim Kurochkin, Daniil Laptev, Gleb Gerasimov, Alexey Gorbatovski, Boris Shaposhnikov, Daniil Gavrilov","The mechanisms by which reasoning training reshapes language-model
+computations remain poorly understood. We study lightweight steering vectors
+inserted into the base model's residual stream and trained with a
+reinforcement-learning objective, which can match full fine-tuning performance
+while retaining the interpretability of small, additive interventions. Using
+logit-lens readouts, path patching, and circuit analyses, we analyze two models
+and find: (i) the last-layer steering vector behaves like a token-substitution
+bias concentrated on the first generated token, consistently boosting tokens
+such as ""To"" and ""Step""; and (ii) the penultimate-layer steering vector leaves
+attention patterns largely unchanged and instead acts through the MLP and
+unembedding, preferentially up-weighting process words and structure symbols.
+These results establish a principled framework for interpreting the behavioral
+changes induced by reasoning training.",http://arxiv.org/pdf/2509.06608v1,,False
+Optimal Exit Time for Liquidity Providers in Automated Market Makers,08/09/2025,"Philippe Bergault, Sébastien Bieber, Leandro Sánchez-Betancourt","We study the problem of optimal liquidity withdrawal for a representative
+liquidity provider (LP) in an automated market maker (AMM). LPs earn fees from
+trading activity but are exposed to impermanent loss (IL) due to price
+fluctuations. While existing work has focused on static provision and exogenous
+exit strategies, we characterise the optimal exit time as the solution to a
+stochastic control problem with an endogenous stopping time. Mathematically,
+the LP's value function is shown to satisfy a Hamilton-Jacobi-Bellman
+quasi-variational inequality, for which we establish uniqueness in the
+viscosity sense. To solve the problem numerically, we develop two complementary
+approaches: a Euler scheme based on operator splitting and a Longstaff-Schwartz
+regression method. Calibrated simulations highlight how the LP's optimal exit
+strategy depends on the oracle price volatility, fee levels, and the behaviour
+of arbitrageurs and noise traders. Our results show that while arbitrage
+generates both fees and IL, the LP's optimal decision balances these opposing
+effects based on the pool state variables and price misalignments. This work
+contributes to a deeper understanding of dynamic liquidity provision in AMMs
+and provides insights into the sustainability of passive LP strategies under
+different market regimes.",http://arxiv.org/pdf/2509.06510v1,,False
+An AI system to help scientists write expert-level empirical software,08/09/2025,"Eser Aygün, Anastasiya Belyaeva, Gheorghe Comanici, Marc Coram, Hao Cui, Jake Garrison, Renee Johnston Anton Kast, Cory Y. McLean, Peter Norgaard, Zahra Shamsi, David Smalling, James Thompson, Subhashini Venugopalan, Brian P. Williams, Chujun He, Sarah Martinson, Martyna Plomecka, Lai Wei, Yuchen Zhou, Qian-Ze Zhu, Matthew Abraham, Erica Brand, Anna Bulanova, Jeffrey A. Cardille, Chris Co, Scott Ellsworth, Grace Joseph, Malcolm Kane, Ryan Krueger, Johan Kartiwa, Dan Liebling, Jan-Matthis Lueckmann, Paul Raccuglia, Xuefei, Wang, Katherine Chou, James Manyika, Yossi Matias, John C. Platt, Lizzie Dorfman, Shibl Mourad, Michael P. Brenner","The cycle of scientific discovery is frequently bottlenecked by the slow,
+manual creation of software to support computational experiments. To address
+this, we present an AI system that creates expert-level scientific software
+whose goal is to maximize a quality metric. The system uses a Large Language
+Model (LLM) and Tree Search (TS) to systematically improve the quality metric
+and intelligently navigate the large space of possible solutions. The system
+achieves expert-level results when it explores and integrates complex research
+ideas from external sources. The effectiveness of tree search is demonstrated
+across a wide range of benchmarks. In bioinformatics, it discovered 40 novel
+methods for single-cell data analysis that outperformed the top human-developed
+methods on a public leaderboard. In epidemiology, it generated 14 models that
+outperformed the CDC ensemble and all other individual models for forecasting
+COVID-19 hospitalizations. Our method also produced state-of-the-art software
+for geospatial analysis, neural activity prediction in zebrafish, time series
+forecasting and numerical solution of integrals. By devising and implementing
+novel solutions to diverse tasks, the system represents a significant step
+towards accelerating scientific progress.",http://arxiv.org/pdf/2509.06503v1,,False
+Scaling up Multi-Turn Off-Policy RL and Multi-Agent Tree Search for LLM Step-Provers,08/09/2025,"Ran Xin, Zeyu Zheng, Yanchen Nie, Kun Yuan, Xia Xiao","The integration of Large Language Models (LLMs) into automated theorem
+proving has shown immense promise, yet is fundamentally constrained by
+challenges in scaling up both training-time reinforcement learning (RL) and
+inference-time compute. This paper introduces \texttt{BFS-Prover-V2}, a system
+designed to address this dual scaling problem. We present two primary
+innovations. The first is a novel multi-turn off-policy RL framework for
+continually improving the performance of LLM step-prover at training time. This
+framework, inspired by the principles of AlphaZero, utilizes a multi-stage
+expert iteration pipeline featuring adaptive tactic-level data filtering and
+periodic retraining to surmount the performance plateaus that typically curtail
+long-term RL in LLM-based agents. The second innovation is a planner-enhanced
+multi-agent search architecture that scales reasoning capabilities at inference
+time. This architecture employs a general reasoning model as a high-level
+planner to iteratively decompose complex theorems into a sequence of simpler
+subgoals. This hierarchical approach substantially reduces the search space,
+enabling a team of parallel prover agents to collaborate efficiently by
+leveraging a shared proof cache. We demonstrate that this dual approach to
+scaling yields state-of-the-art results on established formal mathematics
+benchmarks. \texttt{BFS-Prover-V2} achieves 95.08\% and 41.4\% on the MiniF2F
+and ProofNet test sets respectively. While demonstrated in the domain of formal
+mathematics, the RL and inference techniques presented in this work are of
+broader interest and may be applied to other domains requiring long-horizon
+multi-turn reasoning and complex search.",http://arxiv.org/pdf/2509.06493v1,,False
+DyC-STG: Dynamic Causal Spatio-Temporal Graph Network for Real-time Data Credibility Analysis in IoT,08/09/2025,"Guanjie Cheng, Boyi Li, Peihan Wu, Feiyi Chen, Xinkui Zhao, Mengying Zhu, Shuiguang Deng","The wide spreading of Internet of Things (IoT) sensors generates vast
+spatio-temporal data streams, but ensuring data credibility is a critical yet
+unsolved challenge for applications like smart homes. While spatio-temporal
+graph (STG) models are a leading paradigm for such data, they often fall short
+in dynamic, human-centric environments due to two fundamental limitations: (1)
+their reliance on static graph topologies, which fail to capture physical,
+event-driven dynamics, and (2) their tendency to confuse spurious correlations
+with true causality, undermining robustness in human-centric environments. To
+address these gaps, we propose the Dynamic Causal Spatio-Temporal Graph Network
+(DyC-STG), a novel framework designed for real-time data credibility analysis
+in IoT. Our framework features two synergistic contributions: an event-driven
+dynamic graph module that adapts the graph topology in real-time to reflect
+physical state changes, and a causal reasoning module to distill causally-aware
+representations by strictly enforcing temporal precedence. To facilitate the
+research in this domain we release two new real-world datasets. Comprehensive
+experiments show that DyC-STG establishes a new state-of-the-art, outperforming
+the strongest baselines by 1.4 percentage points and achieving an F1-Score of
+up to 0.930.",http://arxiv.org/pdf/2509.06483v1,,False
+CAME-AB: Cross-Modality Attention with Mixture-of-Experts for Antibody Binding Site Prediction,08/09/2025,"Hongzong Li, Jiahao Ma, Zhanpeng Shi, Fanming Jin, Ye-Fan Hu, Jian-Dong Huang","Antibody binding site prediction plays a pivotal role in computational
+immunology and therapeutic antibody design. Existing sequence or structure
+methods rely on single-view features and fail to identify antibody-specific
+binding sites on the antigens-a dual limitation in representation and
+prediction. In this paper, we propose CAME-AB, a novel Cross-modality Attention
+framework with a Mixture-of-Experts (MoE) backbone for robust antibody binding
+site prediction. CAME-AB integrates five biologically grounded modalities,
+including raw amino acid encodings, BLOSUM substitution profiles, pretrained
+language model embeddings, structure-aware features, and GCN-refined
+biochemical graphs-into a unified multimodal representation. To enhance
+adaptive cross-modal reasoning, we propose an adaptive modality fusion module
+that learns to dynamically weight each modality based on its global relevance
+and input-specific contribution. A Transformer encoder combined with an MoE
+module further promotes feature specialization and capacity expansion. We
+additionally incorporate a supervised contrastive learning objective to
+explicitly shape the latent space geometry, encouraging intra-class compactness
+and inter-class separability. To improve optimization stability and
+generalization, we apply stochastic weight averaging during training. Extensive
+experiments on benchmark antibody-antigen datasets demonstrate that CAME-AB
+consistently outperforms strong baselines on multiple metrics, including
+Precision, Recall, F1-score, AUC-ROC, and MCC. Ablation studies further
+validate the effectiveness of each architectural component and the benefit of
+multimodal feature integration. The model implementation details and the codes
+are available on https://anonymous.4open.science/r/CAME-AB-C525",http://arxiv.org/pdf/2509.06465v1,,False
+Musculoskeletal simulation of limb movement biomechanics in Drosophila melanogaster,08/09/2025,"Pembe Gizem Özdil, Chuanfang Ning, Jasper S. Phelps, Sibo Wang-Chen, Guy Elisha, Alexander Blanke, Auke Ijspeert, Pavan Ramdya","Computational models are critical to advance our understanding of how neural,
+biomechanical, and physical systems interact to orchestrate animal behaviors.
+Despite the availability of near-complete reconstructions of the Drosophila
+melanogaster central nervous system, musculature, and exoskeleton, anatomically
+and physically grounded models of fly leg muscles are still missing. These
+models provide an indispensable bridge between motor neuron activity and joint
+movements. Here, we introduce the first 3D, data-driven musculoskeletal model
+of Drosophila legs, implemented in both OpenSim and MuJoCo simulation
+environments. Our model incorporates a Hill-type muscle representation based on
+high-resolution X-ray scans from multiple fixed specimens. We present a
+pipeline for constructing muscle models using morphological imaging data and
+for optimizing unknown muscle parameters specific to the fly. We then combine
+our musculoskeletal models with detailed 3D pose estimation data from behaving
+flies to achieve muscle-actuated behavioral replay in OpenSim. Simulations of
+muscle activity across diverse walking and grooming behaviors predict
+coordinated muscle synergies that can be tested experimentally. Furthermore, by
+training imitation learning policies in MuJoCo, we test the effect of different
+passive joint properties on learning speed and find that damping and stiffness
+facilitate learning. Overall, our model enables the investigation of motor
+control in an experimentally tractable model organism, providing insights into
+how biomechanics contribute to generation of complex limb movements. Moreover,
+our model can be used to control embodied artificial agents to generate
+naturalistic and compliant locomotion in simulated environments.",http://arxiv.org/pdf/2509.06426v1,,False
+CAPMix: Robust Time Series Anomaly Detection Based on Abnormal Assumptions with Dual-Space Mixup,08/09/2025,"Xudong Mou, Rui Wang, Tiejun Wang, Renyu Yang, Shiru Chen, Jie Sun, Tianyu Wo, Xudong Liu","Time series anomaly detection (TSAD) is a vital yet challenging task,
+particularly in scenarios where labeled anomalies are scarce and temporal
+dependencies are complex. Recent anomaly assumption (AA) approaches alleviate
+the lack of anomalies by injecting synthetic samples and training
+discriminative models. Despite promising results, these methods often suffer
+from two fundamental limitations: patchy generation, where scattered anomaly
+knowledge leads to overly simplistic or incoherent anomaly injection, and
+Anomaly Shift, where synthetic anomalies either resemble normal data too
+closely or diverge unrealistically from real anomalies, thereby distorting
+classification boundaries. In this paper, we propose CAPMix, a controllable
+anomaly augmentation framework that addresses both issues. First, we design a
+CutAddPaste mechanism to inject diverse and complex anomalies in a targeted
+manner, avoiding patchy generation. Second, we introduce a label revision
+strategy to adaptively refine anomaly labels, reducing the risk of anomaly
+shift. Finally, we employ dual-space mixup within a temporal convolutional
+network to enforce smoother and more robust decision boundaries. Extensive
+experiments on five benchmark datasets, including AIOps, UCR, SWaT, WADI, and
+ESA, demonstrate that CAPMix achieves significant improvements over
+state-of-the-art baselines, with enhanced robustness against contaminated
+training data. The code is available at https://github.com/alsike22/CAPMix.",http://arxiv.org/pdf/2509.06419v1,,False
+Graph Neural Networks for Resource Allocation in Interference-limited Multi-Channel Wireless Networks with QoS Constraints,08/09/2025,"Lili Chen, Changyang She, Jingge Zhu, Jamie Evans","Meeting minimum data rate constraints is a significant challenge in wireless
+communication systems, particularly as network complexity grows. Traditional
+deep learning approaches often address these constraints by incorporating
+penalty terms into the loss function and tuning hyperparameters empirically.
+However, this heuristic treatment offers no theoretical convergence guarantees
+and frequently fails to satisfy QoS requirements in practical scenarios.
+Building upon the structure of the WMMSE algorithm, we first extend it to a
+multi-channel setting with QoS constraints, resulting in the enhanced WMMSE
+(eWMMSE) algorithm, which is provably convergent to a locally optimal solution
+when the problem is feasible. To further reduce computational complexity and
+improve scalability, we develop a GNN-based algorithm, JCPGNN-M, capable of
+supporting simultaneous multi-channel allocation per user. To overcome the
+limitations of traditional deep learning methods, we propose a principled
+framework that integrates GNN with a Lagrangian-based primal-dual optimization
+method. By training the GNN within the Lagrangian framework, we ensure
+satisfaction of QoS constraints and convergence to a stationary point.
+Extensive simulations demonstrate that JCPGNN-M matches the performance of
+eWMMSE while offering significant gains in inference speed, generalization to
+larger networks, and robustness under imperfect channel state information. This
+work presents a scalable and theoretically grounded solution for constrained
+resource allocation in future wireless networks.",http://arxiv.org/pdf/2509.06395v1,,False
+A data-driven discretized CS:GO simulation environment to facilitate strategic multi-agent planning research,08/09/2025,"Yunzhe Wang, Volkan Ustun, Chris McGroarty","Modern simulation environments for complex multi-agent interactions must
+balance high-fidelity detail with computational efficiency. We present DECOY, a
+novel multi-agent simulator that abstracts strategic, long-horizon planning in
+3D terrains into high-level discretized simulation while preserving low-level
+environmental fidelity. Using Counter-Strike: Global Offensive (CS:GO) as a
+testbed, our framework accurately simulates gameplay using only movement
+decisions as tactical positioning -- without explicitly modeling low-level
+mechanics such as aiming and shooting. Central to our approach is a waypoint
+system that simplifies and discretizes continuous states and actions, paired
+with neural predictive and generative models trained on real CS:GO tournament
+data to reconstruct event outcomes. Extensive evaluations show that replays
+generated from human data in DECOY closely match those observed in the original
+game. Our publicly available simulation environment provides a valuable tool
+for advancing research in strategic multi-agent planning and behavior
+generation.",http://arxiv.org/pdf/2509.06355v1,,False
+Large Language Models as Virtual Survey Respondents: Evaluating Sociodemographic Response Generation,08/09/2025,"Jianpeng Zhao, Chenyu Yuan, Weiming Luo, Haoling Xie, Guangwei Zhang, Steven Jige Quan, Zixuan Yuan, Pengyang Wang, Denghui Zhang","Questionnaire-based surveys are foundational to social science research and
+public policymaking, yet traditional survey methods remain costly,
+time-consuming, and often limited in scale. This paper explores a new paradigm:
+simulating virtual survey respondents using Large Language Models (LLMs). We
+introduce two novel simulation settings, namely Partial Attribute Simulation
+(PAS) and Full Attribute Simulation (FAS), to systematically evaluate the
+ability of LLMs to generate accurate and demographically coherent responses. In
+PAS, the model predicts missing attributes based on partial respondent
+profiles, whereas FAS involves generating complete synthetic datasets under
+both zero-context and context-enhanced conditions. We curate a comprehensive
+benchmark suite, LLM-S^3 (Large Language Model-based Sociodemographic Survey
+Simulation), that spans 11 real-world public datasets across four sociological
+domains. Our evaluation of multiple mainstream LLMs (GPT-3.5/4 Turbo, LLaMA
+3.0/3.1-8B) reveals consistent trends in prediction performance, highlights
+failure modes, and demonstrates how context and prompt design impact simulation
+fidelity. This work establishes a rigorous foundation for LLM-driven survey
+simulations, offering scalable and cost-effective tools for sociological
+research and policy evaluation. Our code and dataset are available at:
+https://github.com/dart-lab-research/LLM-S-Cube-Benchmark",http://arxiv.org/pdf/2509.06337v1,,False
+WindFM: An Open-Source Foundation Model for Zero-Shot Wind Power Forecasting,08/09/2025,"Hang Fan, Yu Shi, Zongliang Fu, Shuo Chen, Wei Wei, Wei Xu, Jian Li","High-quality wind power forecasting is crucial for the operation of modern
+power grids. However, prevailing data-driven paradigms either train a
+site-specific model which cannot generalize to other locations or rely on
+fine-tuning of general-purpose time series foundation models which are
+difficult to incorporate domain-specific data in the energy sector. This paper
+introduces WindFM, a lightweight and generative Foundation Model designed
+specifically for probabilistic wind power forecasting. WindFM employs a
+discretize-and-generate framework. A specialized time-series tokenizer first
+converts continuous multivariate observations into discrete, hierarchical
+tokens. Subsequently, a decoder-only Transformer learns a universal
+representation of wind generation dynamics by autoregressively pre-training on
+these token sequences. Using the comprehensive WIND Toolkit dataset comprising
+approximately 150 billion time steps from more than 126,000 sites, WindFM
+develops a foundational understanding of the complex interplay between
+atmospheric conditions and power output. Extensive experiments demonstrate that
+our compact 8.1M parameter model achieves state-of-the-art zero-shot
+performance on both deterministic and probabilistic tasks, outperforming
+specialized models and larger foundation models without any fine-tuning. In
+particular, WindFM exhibits strong adaptiveness under out-of-distribution data
+from a different continent, demonstrating the robustness and transferability of
+its learned representations. Our pre-trained model is publicly available at
+https://github.com/shiyu-coder/WindFM.",http://arxiv.org/pdf/2509.06311v1,,False
+Minimax optimal transfer learning for high-dimensional additive regression,08/09/2025,Seung Hyun Moon,"This paper studies high-dimensional additive regression under the transfer
+learning framework, where one observes samples from a target population
+together with auxiliary samples from different but potentially related
+regression models. We first introduce a target-only estimation procedure based
+on the smooth backfitting estimator with local linear smoothing. In contrast to
+previous work, we establish general error bounds under sub-Weibull($\alpha$)
+noise, thereby accommodating heavy-tailed error distributions. In the
+sub-exponential case ($\alpha=1$), we show that the estimator attains the
+minimax lower bound under regularity conditions, which requires a substantial
+departure from existing proof strategies. We then develop a novel two-stage
+estimation method within a transfer learning framework, and provide theoretical
+guarantees at both the population and empirical levels. Error bounds are
+derived for each stage under general tail conditions, and we further
+demonstrate that the minimax optimal rate is achieved when the auxiliary and
+target distributions are sufficiently close. All theoretical results are
+supported by simulation studies and real data analysis.",http://arxiv.org/pdf/2509.06308v1,,False
+Learning to Walk with Less: a Dyna-Style Approach to Quadrupedal Locomotion,08/09/2025,"Francisco Affonso, Felipe Andrade G. Tommaselli, Juliano Negri, Vivian S. Medeiros, Mateus V. Gasparino, Girish Chowdhary, Marcelo Becker","Traditional RL-based locomotion controllers often suffer from low data
+efficiency, requiring extensive interaction to achieve robust performance. We
+present a model-based reinforcement learning (MBRL) framework that improves
+sample efficiency for quadrupedal locomotion by appending synthetic data to the
+end of standard rollouts in PPO-based controllers, following the Dyna-Style
+paradigm. A predictive model, trained alongside the policy, generates
+short-horizon synthetic transitions that are gradually integrated using a
+scheduling strategy based on the policy update iterations. Through an ablation
+study, we identified a strong correlation between sample efficiency and rollout
+length, which guided the design of our experiments. We validated our approach
+in simulation on the Unitree Go1 robot and showed that replacing part of the
+simulated steps with synthetic ones not only mimics extended rollouts but also
+improves policy return and reduces variance. Finally, we demonstrate that this
+improvement transfers to the ability to track a wide range of locomotion
+commands using fewer simulated steps.",http://arxiv.org/pdf/2509.06296v1,,False
+Statistical Inference for Misspecified Contextual Bandits,08/09/2025,"Yongyi Guo, Ziping Xu","Contextual bandit algorithms have transformed modern experimentation by
+enabling real-time adaptation for personalized treatment and efficient use of
+data. Yet these advantages create challenges for statistical inference due to
+adaptivity. A fundamental property that supports valid inference is policy
+convergence, meaning that action-selection probabilities converge in
+probability given the context. Convergence ensures replicability of adaptive
+experiments and stability of online algorithms. In this paper, we highlight a
+previously overlooked issue: widely used algorithms such as LinUCB may fail to
+converge when the reward model is misspecified, and such non-convergence
+creates fundamental obstacles for statistical inference. This issue is
+practically important, as misspecified models -- such as linear approximations
+of complex dynamic system -- are often employed in real-world adaptive
+experiments to balance bias and variance.
+  Motivated by this insight, we propose and analyze a broad class of algorithms
+that are guaranteed to converge even under model misspecification. Building on
+this guarantee, we develop a general inference framework based on an
+inverse-probability-weighted Z-estimator (IPW-Z) and establish its asymptotic
+normality with a consistent variance estimator. Simulation studies confirm that
+the proposed method provides robust and data-efficient confidence intervals,
+and can outperform existing approaches that exist only in the special case of
+offline policy evaluation. Taken together, our results underscore the
+importance of designing adaptive algorithms with built-in convergence
+guarantees to enable stable experimentation and valid statistical inference in
+practice.",http://arxiv.org/pdf/2509.06287v1,,False
+UrbanMIMOMap: A Ray-Traced MIMO CSI Dataset with Precoding-Aware Maps and Benchmarks,08/09/2025,"Honggang Jia, Xiucheng Wang, Nan Cheng, Ruijin Sun, Changle Li","Sixth generation (6G) systems require environment-aware communication, driven
+by native artificial intelligence (AI) and integrated sensing and communication
+(ISAC). Radio maps (RMs), providing spatially continuous channel information,
+are key enablers. However, generating high-fidelity RM ground truth via
+electromagnetic (EM) simulations is computationally intensive, motivating
+machine learning (ML)-based RM construction. The effectiveness of these
+data-driven methods depends on large-scale, high-quality training data. Current
+public datasets often focus on single-input single-output (SISO) and limited
+information, such as path loss, which is insufficient for advanced multi-input
+multi-output (MIMO) systems requiring detailed channel state information (CSI).
+To address this gap, this paper presents UrbanMIMOMap, a novel large-scale
+urban MIMO CSI dataset generated using high-precision ray tracing. UrbanMIMOMap
+offers comprehensive complex CSI matrices across a dense spatial grid, going
+beyond traditional path loss data. This rich CSI is vital for constructing
+high-fidelity RMs and serves as a fundamental resource for data-driven RM
+generation, including deep learning. We demonstrate the dataset's utility
+through baseline performance evaluations of representative ML methods for RM
+construction. This work provides a crucial dataset and reference for research
+in high-precision RM generation, MIMO spatial performance, and ML for 6G
+environment awareness. The code and data for this work are available at:
+https://github.com/UNIC-Lab/UrbanMIMOMap.",http://arxiv.org/pdf/2509.06270v1,,False

@@ -1,0 +1,194 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"ImportSnare: Directed ""Code Manual"" Hijacking in Retrieval-Augmented Code Generation",09/09/2025,"Kai Ye, Liangcai Su, Chenxiong Qian","Code generation has emerged as a pivotal capability of Large Language
+Models(LLMs), revolutionizing development efficiency for programmers of all
+skill levels. However, the complexity of data structures and algorithmic logic
+often results in functional deficiencies and security vulnerabilities in
+generated code, reducing it to a prototype requiring extensive manual
+debugging. While Retrieval-Augmented Generation (RAG) can enhance correctness
+and security by leveraging external code manuals, it simultaneously introduces
+new attack surfaces.
+  In this paper, we pioneer the exploration of attack surfaces in
+Retrieval-Augmented Code Generation (RACG), focusing on malicious dependency
+hijacking. We demonstrate how poisoned documentation containing hidden
+malicious dependencies (e.g., matplotlib_safe) can subvert RACG, exploiting
+dual trust chains: LLM reliance on RAG and developers' blind trust in LLM
+suggestions. To construct poisoned documents, we propose ImportSnare, a novel
+attack framework employing two synergistic strategies: 1)Position-aware beam
+search optimizes hidden ranking sequences to elevate poisoned documents in
+retrieval results, and 2)Multilingual inductive suggestions generate
+jailbreaking sequences to manipulate LLMs into recommending malicious
+dependencies. Through extensive experiments across Python, Rust, and
+JavaScript, ImportSnare achieves significant attack success rates (over 50% for
+popular libraries such as matplotlib and seaborn) in general, and is also able
+to succeed even when the poisoning ratio is as low as 0.01%, targeting both
+custom and real-world malicious packages. Our findings reveal critical supply
+chain risks in LLM-powered development, highlighting inadequate security
+alignment for code generation tasks. To support future research, we will
+release the multilingual benchmark suite and datasets. The project homepage is
+https://importsnare.github.io.",http://arxiv.org/pdf/2509.07941v1,,False
+CP-Model-Zoo: A Natural Language Query System for Constraint Programming Models,09/09/2025,"Augustin Crespin, Ioannis Kostis, Hélène Verhaeghe, Pierre Schaus","Constraint Programming and its high-level modeling languages have long been
+recognized for their potential to achieve the holy grail of problem-solving.
+However, the complexity of modeling languages, the large number of global
+constraints, and the art of creating good models have often hindered
+non-experts from choosing CP to solve their combinatorial problems. While
+generating an expert-level model from a natural-language description of a
+problem would be the dream, we are not yet there. We propose a tutoring system
+called CP-Model-Zoo, exploiting expert-written models accumulated through the
+years. CP-Model-Zoo retrieves the closest source code model from a database
+based on a user's natural language description of a combinatorial problem. It
+ensures that expert-validated models are presented to the user while
+eliminating the need for human data labeling. Our experiments show excellent
+accuracy in retrieving the correct model based on a user-input description of a
+problem simulated with different levels of expertise.",http://arxiv.org/pdf/2509.07867v1,,False
+Spectral Masking and Interpolation Attack (SMIA): A Black-box Adversarial Attack against Voice Authentication and Anti-Spoofing Systems,09/09/2025,"Kamel Kamel, Hridoy Sankar Dutta, Keshav Sood, Sunil Aryal","Voice Authentication Systems (VAS) use unique vocal characteristics for
+verification. They are increasingly integrated into high-security sectors such
+as banking and healthcare. Despite their improvements using deep learning, they
+face severe vulnerabilities from sophisticated threats like deepfakes and
+adversarial attacks. The emergence of realistic voice cloning complicates
+detection, as systems struggle to distinguish authentic from synthetic audio.
+While anti-spoofing countermeasures (CMs) exist to mitigate these risks, many
+rely on static detection models that can be bypassed by novel adversarial
+methods, leaving a critical security gap. To demonstrate this vulnerability, we
+propose the Spectral Masking and Interpolation Attack (SMIA), a novel method
+that strategically manipulates inaudible frequency regions of AI-generated
+audio. By altering the voice in imperceptible zones to the human ear, SMIA
+creates adversarial samples that sound authentic while deceiving CMs. We
+conducted a comprehensive evaluation of our attack against state-of-the-art
+(SOTA) models across multiple tasks, under simulated real-world conditions.
+SMIA achieved a strong attack success rate (ASR) of at least 82% against
+combined VAS/CM systems, at least 97.5% against standalone speaker verification
+systems, and 100% against countermeasures. These findings conclusively
+demonstrate that current security postures are insufficient against adaptive
+adversarial attacks. This work highlights the urgent need for a paradigm shift
+toward next-generation defenses that employ dynamic, context-aware frameworks
+capable of evolving with the threat landscape.",http://arxiv.org/pdf/2509.07677v1,,False
+Unleashing the True Potential of LLMs: A Feedback-Triggered Self-Correction with Long-Term Multipath Decoding,09/09/2025,"Jipeng Li, Zeyu Gao, Yubin Qi, Hande Dong, Weijian Chen, Qiang Lin","Large Language Models (LLMs) have achieved remarkable performance across
+diverse tasks, yet their susceptibility to generating incorrect content during
+inference remains a critical unsolved challenge. While self-correction methods
+offer potential solutions, their effectiveness is hindered by two inherent
+limitations: (1) the absence of reliable guidance signals for error
+localization, and (2) the restricted reasoning depth imposed by conventional
+next-token decoding paradigms. To address these issues, we propose
+Feedback-Triggered Regeneration (FTR), a novel framework that synergizes user
+feedback with enhanced decoding dynamics. Specifically, FTR activates response
+regeneration only upon receiving negative user feedback, thereby circumventing
+error propagation from faulty self-assessment while preserving originally
+correct outputs. Furthermore, we introduce Long-Term Multipath (LTM) decoding,
+which enables systematic exploration of multiple reasoning trajectories through
+delayed sequence evaluation, effectively overcoming the myopic decision-making
+characteristic of standard next-token prediction. Extensive experiments on
+mathematical reasoning and code generation benchmarks demonstrate that our
+framework achieves consistent and significant improvements over
+state-of-the-art prompt-based self-correction methods.",http://arxiv.org/pdf/2509.07676v1,,False
+Beyond Rebalancing: Benchmarking Binary Classifiers Under Class Imbalance Without Rebalancing Techniques,09/09/2025,"Ali Nawaz, Amir Ahmad, Shehroz S. Khan","Class imbalance poses a significant challenge to supervised classification,
+particularly in critical domains like medical diagnostics and anomaly detection
+where minority class instances are rare. While numerous studies have explored
+rebalancing techniques to address this issue, less attention has been given to
+evaluating the performance of binary classifiers under imbalance when no such
+techniques are applied. Therefore, the goal of this study is to assess the
+performance of binary classifiers ""as-is"", without performing any explicit
+rebalancing. Specifically, we systematically evaluate the robustness of a
+diverse set of binary classifiers across both real-world and synthetic
+datasets, under progressively reduced minority class sizes, using one-shot and
+few-shot scenarios as baselines. Our approach also explores varying data
+complexities through synthetic decision boundary generation to simulate
+real-world conditions. In addition to standard classifiers, we include
+experiments using undersampling, oversampling strategies, and one-class
+classification (OCC) methods to examine their behavior under severe imbalance.
+The results confirm that classification becomes more difficult as data
+complexity increases and the minority class size decreases. While traditional
+classifiers deteriorate under extreme imbalance, advanced models like TabPFN
+and boosting-based ensembles retain relatively higher performance and better
+generalization compared to traditional classifiers. Visual interpretability and
+evaluation metrics further validate these findings. Our work offers valuable
+guidance on model selection for imbalanced learning, providing insights into
+classifier robustness without dependence on explicit rebalancing techniques.",http://arxiv.org/pdf/2509.07605v1,,False
+Bayesian Pliable Lasso with Horseshoe Prior for Interaction Effects in GLMs with Missing Responses,09/09/2025,The Tien Mai,"Sparse regression problems, where the goal is to identify a small set of
+relevant predictors, often require modeling not only main effects but also
+meaningful interactions through other variables. While the pliable lasso has
+emerged as a powerful frequentist tool for modeling such interactions under
+strong heredity constraints, it lacks a natural framework for uncertainty
+quantification and incorporation of prior knowledge. In this paper, we propose
+a Bayesian pliable lasso that extends this approach by placing
+sparsity-inducing priors, such as the horseshoe, on both main and interaction
+effects. The hierarchical prior structure enforces heredity constraints while
+adaptively shrinking irrelevant coefficients and allowing important effects to
+persist. We extend this framework to Generalized Linear Models (GLMs) and
+develop a tailored approach to handle missing responses. To facilitate
+posterior inference, we develop an efficient Gibbs sampling algorithm based on
+a reparameterization of the horseshoe prior. Our Bayesian framework yields
+sparse, interpretable interaction structures, and principled measures of
+uncertainty. Through simulations and real-data studies, we demonstrate its
+advantages over existing methods in recovering complex interaction patterns
+under both complete and incomplete data.
+  Our method is implemented in the package \texttt{hspliable} available on
+Github.",http://arxiv.org/pdf/2509.07501v1,,False
+RINO: Renormalization Group Invariance with No Labels,09/09/2025,"Zichun Hao, Raghav Kansal, Abhijith Gandrakota, Chang Sun, Ngadiuba Jennifer, Javier Duarte, Maria Spiropulu","A common challenge with supervised machine learning (ML) in high energy
+physics (HEP) is the reliance on simulations for labeled data, which can often
+mismodel the underlying collision or detector response. To help mitigate this
+problem of domain shift, we propose RINO (Renormalization Group Invariance with
+No Labels), a self-supervised learning approach that can instead pretrain
+models directly on collision data, learning embeddings invariant to
+renormalization group flow scales. In this work, we pretrain a
+transformer-based model on jets originating from quantum chromodynamic (QCD)
+interactions from the JetClass dataset, emulating real QCD-dominated
+experimental data, and then finetune on the JetNet dataset -- emulating
+simulations -- for the task of identifying jets originating from top quark
+decays. RINO demonstrates improved generalization from the JetNet training data
+to JetClass data compared to supervised training on JetNet from scratch,
+demonstrating the potential for RINO pretraining on real collision data
+followed by fine-tuning on small, high-quality MC datasets, to improve the
+robustness of ML models in HEP.",http://arxiv.org/pdf/2509.07486v1,,False
+DepthVision: Robust Vision-Language Understanding through GAN-Based LiDAR-to-RGB Synthesis,09/09/2025,"Sven Kirchner, Nils Purschke, Ross Greer, Alois C. Knoll","Ensuring reliable robot operation when visual input is degraded or
+insufficient remains a central challenge in robotics. This letter introduces
+DepthVision, a framework for multimodal scene understanding designed to address
+this problem. Unlike existing Vision-Language Models (VLMs), which use only
+camera-based visual input alongside language, DepthVision synthesizes RGB
+images from sparse LiDAR point clouds using a conditional generative
+adversarial network (GAN) with an integrated refiner network. These synthetic
+views are then combined with real RGB data using a Luminance-Aware Modality
+Adaptation (LAMA), which blends the two types of data dynamically based on
+ambient lighting conditions. This approach compensates for sensor degradation,
+such as darkness or motion blur, without requiring any fine-tuning of
+downstream vision-language models. We evaluate DepthVision on real and
+simulated datasets across various models and tasks, with particular attention
+to safety-critical tasks. The results demonstrate that our approach improves
+performance in low-light conditions, achieving substantial gains over RGB-only
+baselines while preserving compatibility with frozen VLMs. This work highlights
+the potential of LiDAR-guided RGB synthesis for achieving robust robot
+operation in real-world environments.",http://arxiv.org/pdf/2509.07463v1,,False
+Synthetic Data Generation with Lorenzetti for Time Series Anomaly Detection in High-Energy Physics Calorimeters,09/09/2025,"Laura Boggia, Bogdan Malaescu","Anomaly detection in multivariate time series is crucial to ensure the
+quality of data coming from a physics experiment. Accurately identifying the
+moments when unexpected errors or defects occur is essential, yet challenging
+due to scarce labels, unknown anomaly types, and complex correlations across
+dimensions. To address the scarcity and unreliability of labelled data, we use
+the Lorenzetti Simulator to generate synthetic events with injected calorimeter
+anomalies. We then assess the sensitivity of several time series anomaly
+detection methods, including transformer-based and other deep learning models.
+The approach employed here is generic and applicable to different detector
+designs and defects.",http://arxiv.org/pdf/2509.07451v1,,False
+Performative Thinking? The Brittle Correlation Between CoT Length and Problem Complexity,09/09/2025,"Vardhan Palod, Karthik Valmeekam, Kaya Stechly, Subbarao Kambhampati","Intermediate token generation (ITG), where a model produces output before the
+solution, has been proposed as a method to improve the performance of language
+models on reasoning tasks. While these reasoning traces or Chain of Thoughts
+(CoTs) are correlated with performance gains, the mechanisms underlying them
+remain unclear. A prevailing assumption in the community has been to
+anthropomorphize these tokens as ""thinking"", treating longer traces as evidence
+of higher problem-adaptive computation. In this work, we critically examine
+whether intermediate token sequence length reflects or correlates with problem
+difficulty. To do so, we train transformer models from scratch on derivational
+traces of the A* search algorithm, where the number of operations required to
+solve a maze problem provides a precise and verifiable measure of problem
+complexity. We first evaluate the models on trivial free-space problems,
+finding that even for the simplest tasks, they often produce excessively long
+reasoning traces and sometimes fail to generate a solution. We then
+systematically evaluate the model on out-of-distribution problems and find that
+the intermediate token length and ground truth A* trace length only loosely
+correlate. We notice that the few cases where correlation appears are those
+where the problems are closer to the training distribution, suggesting that the
+effect arises from approximate recall rather than genuine problem-adaptive
+computation. This suggests that the inherent computational complexity of the
+problem instance is not a significant factor, but rather its distributional
+distance from the training data. These results challenge the assumption that
+intermediate trace generation is adaptive to problem difficulty and caution
+against interpreting longer sequences in systems like R1 as automatically
+indicative of ""thinking effort"".",http://arxiv.org/pdf/2509.07339v1,,False

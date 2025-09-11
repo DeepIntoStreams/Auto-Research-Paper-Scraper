@@ -1,0 +1,201 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+FinZero: Launching Multi-modal Financial Time Series Forecast with Large Reasoning Model,10/09/2025,"Yanlong Wang, Jian Xu, Fei Ma, Hongkang Zhang, Hang Yu, Tiantian Gao, Yu Wang, Haochen You, Shao-Lun Huang, Danny Dongning Sun, Xiao-Ping Zhang","Financial time series forecasting is both highly significant and challenging.
+Previous approaches typically standardized time series data before feeding it
+into forecasting models, but this encoding process inherently leads to a loss
+of important information. Moreover, past time series models generally require
+fixed numbers of variables or lookback window lengths, which further limits the
+scalability of time series forecasting. Besides, the interpretability and the
+uncertainty in forecasting remain areas requiring further research, as these
+factors directly impact the reliability and practical value of predictions. To
+address these issues, we first construct a diverse financial image-text dataset
+(FVLDB) and develop the Uncertainty-adjusted Group Relative Policy Optimization
+(UARPO) method to enable the model not only output predictions but also analyze
+the uncertainty of those predictions. We then proposed FinZero, a multimodal
+pre-trained model finetuned by UARPO to perform reasoning, prediction, and
+analytical understanding on the FVLDB financial time series. Extensive
+experiments validate that FinZero exhibits strong adaptability and scalability.
+After fine-tuning with UARPO, FinZero achieves an approximate 13.48\%
+improvement in prediction accuracy over GPT-4o in the high-confidence group,
+demonstrating the effectiveness of reinforcement learning fine-tuning in
+multimodal large model, including in financial time series forecasting tasks.",http://arxiv.org/pdf/2509.08742v1,,False
+Data-driven generative simulation of SDEs using diffusion models,10/09/2025,"Xuefeng Gao, Jiale Zha, Xun Yu Zhou","This paper introduces a new approach to generating sample paths of unknown
+stochastic differential equations (SDEs) using diffusion models, a class of
+generative AI models commonly employed in image and video applications. Unlike
+the traditional Monte Carlo methods for simulating SDEs, which require explicit
+specifications of the drift and diffusion coefficients, our method takes a
+model-free, data-driven approach. Given a finite set of sample paths from an
+SDE, we utilize conditional diffusion models to generate new, synthetic paths
+of the same SDE. To demonstrate the effectiveness of our approach, we conduct a
+simulation experiment to compare our method with alternative benchmark ones
+including neural SDEs. Furthermore, in an empirical study we leverage these
+synthetically generated sample paths to enhance the performance of
+reinforcement learning algorithms for continuous-time mean-variance portfolio
+selection, hinting promising applications of diffusion models in financial
+analysis and decision-making.",http://arxiv.org/pdf/2509.08731v1,,False
+TANGO: Traversability-Aware Navigation with Local Metric Control for Topological Goals,10/09/2025,"Stefan Podgorski, Sourav Garg, Mehdi Hosseinzadeh, Lachlan Mares, Feras Dayoub, Ian Reid","Visual navigation in robotics traditionally relies on globally-consistent 3D
+maps or learned controllers, which can be computationally expensive and
+difficult to generalize across diverse environments. In this work, we present a
+novel RGB-only, object-level topometric navigation pipeline that enables
+zero-shot, long-horizon robot navigation without requiring 3D maps or
+pre-trained controllers. Our approach integrates global topological path
+planning with local metric trajectory control, allowing the robot to navigate
+towards object-level sub-goals while avoiding obstacles. We address key
+limitations of previous methods by continuously predicting local trajectory
+using monocular depth and traversability estimation, and incorporating an
+auto-switching mechanism that falls back to a baseline controller when
+necessary. The system operates using foundational models, ensuring open-set
+applicability without the need for domain-specific fine-tuning. We demonstrate
+the effectiveness of our method in both simulated environments and real-world
+tests, highlighting its robustness and deployability. Our approach outperforms
+existing state-of-the-art methods, offering a more adaptable and effective
+solution for visual navigation in open-set environments. The source code is
+made publicly available: https://github.com/podgorki/TANGO.",http://arxiv.org/pdf/2509.08699v1,10.1109/ICRA55743.2025.11127998,False
+Automatic Failure Attribution and Critical Step Prediction Method for Multi-Agent Systems Based on Causal Inference,10/09/2025,"Guoqing Ma, Jia Zhu, Hanghui Guo, Weijie Shi, Jiawei Shen, Jingjiang Liu, Yidan Liang","Multi-agent systems (MAS) are critical for automating complex tasks, yet
+their practical deployment is severely hampered by the challenge of failure
+attribution. Current diagnostic tools, which rely on statistical correlations,
+are fundamentally inadequate; on challenging benchmarks like Who\&When,
+state-of-the-art methods achieve less than 15\% accuracy in locating the
+root-cause step of a failure. To address this critical gap, we introduce the
+first failure attribution framework for MAS grounded in multi-granularity
+causal inference. Our approach makes two key technical contributions: (1) a
+performance causal inversion principle, which correctly models performance
+dependencies by reversing the data flow in execution logs, combined with
+Shapley values to accurately assign agent-level blame; (2) a novel causal
+discovery algorithm, CDC-MAS, that robustly identifies critical failure steps
+by tackling the non-stationary nature of MAS interaction data. The framework's
+attribution results directly fuel an automated optimization loop, generating
+targeted suggestions whose efficacy is validated via counterfactual
+simulations. Evaluations on the Who\&When and TRAIL benchmarks demonstrate a
+significant leap in performance. Our method achieves up to 36.2\% step-level
+accuracy. Crucially, the generated optimizations boost overall task success
+rates by an average of 22.4\%. This work provides a principled and effective
+solution for debugging complex agent interactions, paving the way for more
+reliable and interpretable multi-agent systems.",http://arxiv.org/pdf/2509.08682v1,,False
+Signal Fidelity Index-Aware Calibration for Dementia Predictions Across Heterogeneous Real-World Data,10/09/2025,"Jingya Cheng, Jiazi Tian, Federica Spoto, Alaleh Azhir, Daniel Mork, Hossein Estiri","\textbf{Background:} Machine learning models trained on electronic health
+records (EHRs) often degrade across healthcare systems due to distributional
+shift. A fundamental but underexplored factor is diagnostic signal decay:
+variability in diagnostic quality and consistency across institutions, which
+affects the reliability of codes used for training and prediction.
+  \textbf{Objective:} To develop a Signal Fidelity Index (SFI) quantifying
+diagnostic data quality at the patient level in dementia, and to test SFI-aware
+calibration for improving model performance across heterogeneous datasets
+without outcome labels.
+  \textbf{Methods:} We built a simulation framework generating 2,500 synthetic
+datasets, each with 1,000 patients and realistic demographics, encounters, and
+coding patterns based on dementia risk factors. The SFI was derived from six
+interpretable components: diagnostic specificity, temporal consistency,
+entropy, contextual concordance, medication alignment, and trajectory
+stability. SFI-aware calibration applied a multiplicative adjustment, optimized
+across 50 simulation batches.
+  \textbf{Results:} At the optimal parameter ($\alpha$ = 2.0), SFI-aware
+calibration significantly improved all metrics (p $<$ 0.001). Gains ranged from
+10.3\% for Balanced Accuracy to 32.5\% for Recall, with notable increases in
+Precision (31.9\%) and F1-score (26.1\%). Performance approached reference
+standards, with F1-score and Recall within 1\% and Balanced Accuracy and
+Detection Rate improved by 52.3\% and 41.1\%, respectively.
+  \textbf{Conclusions:} Diagnostic signal decay is a tractable barrier to model
+generalization. SFI-aware calibration provides a practical, label-free strategy
+to enhance prediction across healthcare contexts, particularly for large-scale
+administrative datasets lacking outcome labels.",http://arxiv.org/pdf/2509.08679v1,,False
+Variational Rank Reduction Autoencoders for Generative,10/09/2025,"Alicia Tierz, Jad Mounayer, Beatriz Moya, Francisco Chinesta","Generative thermal design for complex geometries is fundamental in many areas
+of engineering, yet it faces two main challenges: the high computational cost
+of high-fidelity simulations and the limitations of conventional generative
+models. Approaches such as autoencoders (AEs) and variational autoencoders
+(VAEs) often produce unstructured latent spaces with discontinuities, which
+restricts their capacity to explore designs and generate physically consistent
+solutions.
+  To address these limitations, we propose a hybrid framework that combines
+Variational Rank-Reduction Autoencoders (VRRAEs) with Deep Operator Networks
+(DeepONets). The VRRAE introduces a truncated SVD within the latent space,
+leading to continuous, interpretable, and well-structured representations that
+mitigate posterior collapse and improve geometric reconstruction. The DeepONet
+then exploits this compact latent encoding in its branch network, together with
+spatial coordinates in the trunk network, to predict temperature gradients
+efficiently and accurately.
+  This hybrid approach not only enhances the quality of generated geometries
+and the accuracy of gradient prediction, but also provides a substantial
+advantage in inference efficiency compared to traditional numerical solvers.
+Overall, the study underscores the importance of structured latent
+representations for operator learning and highlights the potential of combining
+generative models and operator networks in thermal design and broader
+engineering applications.",http://arxiv.org/pdf/2509.08515v1,,False
+HumanAgencyBench: Scalable Evaluation of Human Agency Support in AI Assistants,10/09/2025,"Benjamin Sturgeon, Daniel Samuelson, Jacob Haimes, Jacy Reese Anthis","As humans delegate more tasks and decisions to artificial intelligence (AI),
+we risk losing control of our individual and collective futures. Relatively
+simple algorithmic systems already steer human decision-making, such as social
+media feed algorithms that lead people to unintentionally and absent-mindedly
+scroll through engagement-optimized content. In this paper, we develop the idea
+of human agency by integrating philosophical and scientific theories of agency
+with AI-assisted evaluation methods: using large language models (LLMs) to
+simulate and validate user queries and to evaluate AI responses. We develop
+HumanAgencyBench (HAB), a scalable and adaptive benchmark with six dimensions
+of human agency based on typical AI use cases. HAB measures the tendency of an
+AI assistant or agent to Ask Clarifying Questions, Avoid Value Manipulation,
+Correct Misinformation, Defer Important Decisions, Encourage Learning, and
+Maintain Social Boundaries. We find low-to-moderate agency support in
+contemporary LLM-based assistants and substantial variation across system
+developers and dimensions. For example, while Anthropic LLMs most support human
+agency overall, they are the least supportive LLMs in terms of Avoid Value
+Manipulation. Agency support does not appear to consistently result from
+increasing LLM capabilities or instruction-following behavior (e.g., RLHF), and
+we encourage a shift towards more robust safety and alignment targets.",http://arxiv.org/pdf/2509.08494v1,,False
+Efficient Decoding Methods for Language Models on Encrypted Data,10/09/2025,"Matan Avitan, Moran Baruch, Nir Drucker, Itamar Zimerman, Yoav Goldberg","Large language models (LLMs) power modern AI applications, but processing
+sensitive data on untrusted servers raises privacy concerns. Homomorphic
+encryption (HE) enables computation on encrypted data for secure inference.
+However, neural text generation requires decoding methods like argmax and
+sampling, which are non-polynomial and thus computationally expensive under
+encryption, creating a significant performance bottleneck. We introduce cutmax,
+an HE-friendly argmax algorithm that reduces ciphertext operations compared to
+prior methods, enabling practical greedy decoding under encryption. We also
+propose the first HE-compatible nucleus (top-p) sampling method, leveraging
+cutmax for efficient stochastic decoding with provable privacy guarantees. Both
+techniques are polynomial, supporting efficient inference in privacy-preserving
+settings. Moreover, their differentiability facilitates gradient-based
+sequence-level optimization as a polynomial alternative to straight-through
+estimators. We further provide strong theoretical guarantees for cutmax,
+proving it converges globally to a unique two-level fixed point, independent of
+the input values beyond the identity of the maximizer, which explains its rapid
+convergence in just a few iterations. Evaluations on realistic LLM outputs show
+latency reductions of 24x-35x over baselines, advancing secure text generation.",http://arxiv.org/pdf/2509.08383v1,,False
+Grasp Like Humans: Learning Generalizable Multi-Fingered Grasping from Human Proprioceptive Sensorimotor Integration,10/09/2025,"Ce Guo, Xieyuanli Chen, Zhiwen Zeng, Zirui Guo, Yihong Li, Haoran Xiao, Dewen Hu, Huimin Lu","Tactile and kinesthetic perceptions are crucial for human dexterous
+manipulation, enabling reliable grasping of objects via proprioceptive
+sensorimotor integration. For robotic hands, even though acquiring such tactile
+and kinesthetic feedback is feasible, establishing a direct mapping from this
+sensory feedback to motor actions remains challenging. In this paper, we
+propose a novel glove-mediated tactile-kinematic perception-prediction
+framework for grasp skill transfer from human intuitive and natural operation
+to robotic execution based on imitation learning, and its effectiveness is
+validated through generalized grasping tasks, including those involving
+deformable objects. Firstly, we integrate a data glove to capture tactile and
+kinesthetic data at the joint level. The glove is adaptable for both human and
+robotic hands, allowing data collection from natural human hand demonstrations
+across different scenarios. It ensures consistency in the raw data format,
+enabling evaluation of grasping for both human and robotic hands. Secondly, we
+establish a unified representation of multi-modal inputs based on graph
+structures with polar coordinates. We explicitly integrate the morphological
+differences into the designed representation, enhancing the compatibility
+across different demonstrators and robotic hands. Furthermore, we introduce the
+Tactile-Kinesthetic Spatio-Temporal Graph Networks (TK-STGN), which leverage
+multidimensional subgraph convolutions and attention-based LSTM layers to
+extract spatio-temporal features from graph inputs to predict node-based states
+for each hand joint. These predictions are then mapped to final commands
+through a force-position hybrid mapping.",http://arxiv.org/pdf/2509.08354v1,,False
+Generative Quasi-Continuum Modeling of Confined Fluids at the Nanoscale,10/09/2025,"Bugra Yalcin, Ishan Nadkarni, Jinu Jeong, Chenxing Liang, Narayana R. Aluru","We present a data-efficient, multiscale framework for predicting the density
+profiles of confined fluids at the nanoscale. While accurate density estimates
+require prohibitively long timescales that are inaccessible by ab initio
+molecular dynamics (AIMD) simulations, machine-learned molecular dynamics
+(MLMD) offers a scalable alternative, enabling the generation of force
+predictions at ab initio accuracy with reduced computational cost. However,
+despite their efficiency, MLMD simulations remain constrained by femtosecond
+timesteps, which limit their practicality for computing long-time averages
+needed for accurate density estimation. To address this, we propose a
+conditional denoising diffusion probabilistic model (DDPM) based
+quasi-continuum approach that predicts the long-time behavior of force profiles
+along the confinement direction, conditioned on noisy forces extracted from a
+limited AIMD dataset. The predicted smooth forces are then linked to continuum
+theory via the Nernst-Planck equation to reveal the underlying density
+behavior. We test the framework on water confined between two graphene
+nanoscale slits and demonstrate that density profiles for channel widths
+outside of the training domain can be recovered with ab initio accuracy.
+Compared to AIMD and MLMD simulations, our method achieves orders-of-magnitude
+speed-up in runtime and requires significantly less training data than prior
+works.",http://arxiv.org/pdf/2509.08223v1,,False

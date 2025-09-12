@@ -1,0 +1,161 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Finite Scalar Quantization Enables Redundant and Transmission-Robust Neural Audio Compression at Low Bit-rates,11/09/2025,"Harry Julia, Rachel Beeson, Lohith Konathala, Johanna Ulin, Jiameng Gao","Neural Audio Codecs (NACs) have become increasingly adopted in speech
+processing tasks due to their excellent rate-distortion performance and
+compatibility with Large Language Models (LLMs) as discrete feature
+representations for audio generation. While most existing codecs rely on
+Residual Vector Quantization (RVQ), Finite Scalar Quantization (FSQ) has
+recently emerged as a compelling alternative that simplifies training and
+natively supports single codebooks. We introduce NeuCodec, an FSQ-based NAC,
+and show that FSQ encodes baked-in redundancy which produces an encoding which
+is robust when transmitted through noisy channels. First, through an encoder
+distillation experiment, we show that two different encoders can learn to
+encode identical audio into vastly different code sequences whilst maintaining
+comparable reconstruction quality with the same quantizer and decoder. Second,
+we demonstrate that FSQ has vastly superior bit-level perturbation robustness
+by comparing the performance of RVQ and FSQ codecs when simulating the
+transmission of code sequences through a noisy channel.",http://arxiv.org/pdf/2509.09550v1,,False
+Representation-Aware Distributionally Robust Optimization: A Knowledge Transfer Framework,11/09/2025,"Zitao Wang, Nian Si, Molei Liu","We propose REpresentation-Aware Distributionally Robust Estimation (READ), a
+novel framework for Wasserstein distributionally robust learning that accounts
+for predictive representations when guarding against distributional shifts.
+Unlike classical approaches that treat all feature perturbations equally, READ
+embeds a multidimensional alignment parameter into the transport cost, allowing
+the model to differentially discourage perturbations along directions
+associated with informative representations. This yields robustness to feature
+variation while preserving invariant structure. Our first contribution is a
+theoretical foundation: we show that seminorm regularizations for linear
+regression and binary classification arise as Wasserstein distributionally
+robust objectives, thereby providing tractable reformulations of READ and
+unifying a broad class of regularized estimators under the DRO lens. Second, we
+adopt a principled procedure for selecting the Wasserstein radius using the
+techniques of robust Wasserstein profile inference. This further enables the
+construction of valid, representation-aware confidence regions for model
+parameters with distinct geometric features. Finally, we analyze the geometry
+of READ estimators as the alignment parameters vary and propose an optimization
+algorithm to estimate the projection of the global optimum onto this solution
+surface. This procedure selects among equally robust estimators while optimally
+constructing a representation structure. We conclude by demonstrating the
+effectiveness of our framework through extensive simulations and a real-world
+study, providing a powerful robust estimation grounded in learning
+representation.",http://arxiv.org/pdf/2509.09371v1,,False
+Modality-Agnostic Input Channels Enable Segmentation of Brain lesions in Multimodal MRI with Sequences Unavailable During Training,11/09/2025,"Anthony P. Addison, Felix Wagner, Wentian Xu, Natalie Voets, Konstantinos Kamnitsas","Segmentation models are important tools for the detection and analysis of
+lesions in brain MRI. Depending on the type of brain pathology that is imaged,
+MRI scanners can acquire multiple, different image modalities (contrasts). Most
+segmentation models for multimodal brain MRI are restricted to fixed modalities
+and cannot effectively process new ones at inference. Some models generalize to
+unseen modalities but may lose discriminative modality-specific information.
+This work aims to develop a model that can perform inference on data that
+contain image modalities unseen during training, previously seen modalities,
+and heterogeneous combinations of both, thus allowing a user to utilize any
+available imaging modalities. We demonstrate this is possible with a simple,
+thus practical alteration to the U-net architecture, by integrating a
+modality-agnostic input channel or pathway, alongside modality-specific input
+channels. To train this modality-agnostic component, we develop an image
+augmentation scheme that synthesizes artificial MRI modalities. Augmentations
+differentially alter the appearance of pathological and healthy brain tissue to
+create artificial contrasts between them while maintaining realistic anatomical
+integrity. We evaluate the method using 8 MRI databases that include 5 types of
+pathologies (stroke, tumours, traumatic brain injury, multiple sclerosis and
+white matter hyperintensities) and 8 modalities (T1, T1+contrast, T2, PD, SWI,
+DWI, ADC and FLAIR). The results demonstrate that the approach preserves the
+ability to effectively process MRI modalities encountered during training,
+while being able to process new, unseen modalities to improve its segmentation.
+Project code: https://github.com/Anthony-P-Addison/AGN-MOD-SEG",http://arxiv.org/pdf/2509.09290v1,,False
+Virtual staining for 3D X-ray histology of bone implants,11/09/2025,"Sarah C. Irvine, Christian Lucas, Diana Krüger, Bianca Guedert, Julian Moosmann, Berit Zeller-Plumhoff","Three-dimensional X-ray histology techniques offer a non-invasive alternative
+to conventional 2D histology, enabling volumetric imaging of biological tissues
+without the need for physical sectioning or chemical staining. However, the
+inherent greyscale image contrast of X-ray tomography limits its biochemical
+specificity compared to traditional histological stains. Within digital
+pathology, deep learning-based virtual staining has demonstrated utility in
+simulating stained appearances from label-free optical images. In this study,
+we extend virtual staining to the X-ray domain by applying cross-modality image
+translation to generate artificially stained slices from
+synchrotron-radiation-based micro-CT scans. Using over 50 co-registered image
+pairs of micro-CT and toluidine blue-stained histology from bone-implant
+samples, we trained a modified CycleGAN network tailored for limited paired
+data. Whole slide histology images were downsampled to match the voxel size of
+the CT data, with on-the-fly data augmentation for patch-based training. The
+model incorporates pixelwise supervision and greyscale consistency terms,
+producing histologically realistic colour outputs while preserving
+high-resolution structural detail. Our method outperformed Pix2Pix and standard
+CycleGAN baselines across SSIM, PSNR, and LPIPS metrics. Once trained, the
+model can be applied to full CT volumes to generate virtually stained 3D
+datasets, enhancing interpretability without additional sample preparation.
+While features such as new bone formation were able to be reproduced, some
+variability in the depiction of implant degradation layers highlights the need
+for further training data and refinement. This work introduces virtual staining
+to 3D X-ray imaging and offers a scalable route for chemically informative,
+label-free tissue characterisation in biomedical research.",http://arxiv.org/pdf/2509.09235v1,,False
+Constructing a Question-Answering Simulator through the Distillation of LLMs,11/09/2025,"Haipeng Liu, Ting Long, Jing Fu","The question-answering (QA) simulator is a model that mimics real student
+learning behaviors and predicts their correctness of their responses to
+questions. QA simulators enable educational recommender systems (ERS) to
+collect large amounts of training data without interacting with real students,
+thereby preventing harmful recommendations made by an undertrained ERS from
+undermining actual student learning. Given the QA history, there are two
+categories of solutions to predict the correctness, conducting the simulation:
+(1) LLM-free methods, which apply a traditional sequential model to transfer
+the QA history into a vector representation first, and make predictions based
+on the representation; (2) LLM-based methods, which leverage the domain
+knowledge and reasoning capability of LLM to enhence the prediction. LLM-free
+methods offer fast inference but generally yield suboptimal performance. In
+contrast, most LLM-based methods achieve better results, but at the cost of
+slower inference speed and higher GPU memory consumption. In this paper, we
+propose a method named LLM Distillation based Simulator (LDSim), which distills
+domain knowledge and reasoning capability from an LLM to better assist
+prediction, thereby improving simulation performance. Extensive experiments
+demonstrate that our LDSim achieves strong results on both the simulation task
+and the knowledge tracing (KT) task. Our code is publicly available at
+https://anonymous.4open.science/r/LDSim-05A9.",http://arxiv.org/pdf/2509.09226v1,,False
+Video Understanding by Design: How Datasets Shape Architectures and Insights,11/09/2025,"Lei Wang, Piotr Koniusz, Yongsheng Gao","Video understanding has advanced rapidly, fueled by increasingly complex
+datasets and powerful architectures. Yet existing surveys largely classify
+models by task or family, overlooking the structural pressures through which
+datasets guide architectural evolution. This survey is the first to adopt a
+dataset-driven perspective, showing how motion complexity, temporal span,
+hierarchical composition, and multimodal richness impose inductive biases that
+models should encode. We reinterpret milestones, from two-stream and 3D CNNs to
+sequential, transformer, and multimodal foundation models, as concrete
+responses to these dataset-driven pressures. Building on this synthesis, we
+offer practical guidance for aligning model design with dataset invariances
+while balancing scalability and task demands. By unifying datasets, inductive
+biases, and architectures into a coherent framework, this survey provides both
+a comprehensive retrospective and a prescriptive roadmap for advancing
+general-purpose video understanding.",http://arxiv.org/pdf/2509.09151v1,,False
+Learning What Matters: Causal Time Series Modeling for Arctic Sea Ice Prediction,11/09/2025,"Emam Hossain, Md Osman Gani","Conventional machine learning and deep learning models typically rely on
+correlation-based learning, which often fails to distinguish genuine causal
+relationships from spurious associations, limiting their robustness,
+interpretability, and ability to generalize. To overcome these limitations, we
+introduce a causality-aware deep learning framework that integrates
+Multivariate Granger Causality (MVGC) and PCMCI+ for causal feature selection
+within a hybrid neural architecture. Leveraging 43 years (1979-2021) of Arctic
+Sea Ice Extent (SIE) data and associated ocean-atmospheric variables at daily
+and monthly resolutions, the proposed method identifies causally influential
+predictors, prioritizes direct causes of SIE dynamics, reduces unnecessary
+features, and enhances computational efficiency. Experimental results show that
+incorporating causal inputs leads to improved prediction accuracy and
+interpretability across varying lead times. While demonstrated on Arctic SIE
+forecasting, the framework is broadly applicable to other dynamic,
+high-dimensional domains, offering a scalable approach that advances both the
+theoretical foundations and practical performance of causality-informed
+predictive modeling.",http://arxiv.org/pdf/2509.09128v1,,False
+Scalable extensions to given-data Sobol' index estimators,11/09/2025,"Teresa Portone, Bert Debusschere, Samantha Yang, Emiliano Islas-Quinones, T. Patrick Xiao","Given-data methods for variance-based sensitivity analysis have significantly
+advanced the feasibility of Sobol' index computation for computationally
+expensive models and models with many inputs. However, the limitations of
+existing methods still preclude their application to models with an extremely
+large number of inputs. In this work, we present practical extensions to the
+existing given-data Sobol' index method, which allow variance-based sensitivity
+analysis to be efficiently performed on large models such as neural networks,
+which have $>10^4$ parameterizable inputs. For models of this size, holding all
+input-output evaluations simultaneously in memory -- as required by existing
+methods -- can quickly become impractical. These extensions also support
+nonstandard input distributions with many repeated values, which are not
+amenable to equiprobable partitions employed by existing given-data methods.
+  Our extensions include a general definition of the given-data Sobol' index
+estimator with arbitrary partition, a streaming algorithm to process
+input-output samples in batches, and a heuristic to filter out small indices
+that are indistinguishable from zero indices due to statistical noise. We show
+that the equiprobable partition employed in existing given-data methods can
+introduce significant bias into Sobol' index estimates even at large sample
+sizes and provide numerical analyses that demonstrate why this can occur. We
+also show that our streaming algorithm can achieve comparable accuracy and
+runtimes with lower memory requirements, relative to current methods which
+process all samples at once. We demonstrate our novel developments on two
+application problems in neural network modeling.",http://arxiv.org/pdf/2509.09078v1,,False

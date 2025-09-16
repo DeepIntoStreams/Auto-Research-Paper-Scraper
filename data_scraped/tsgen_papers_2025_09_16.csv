@@ -1,0 +1,265 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+RAGs to Riches: RAG-like Few-shot Learning for Large Language Model Role-playing,15/09/2025,"Timothy Rupprecht, Enfu Nan, Arash Akbari, Arman Akbari, Lei Lu, Priyanka Maan, Sean Duffy, Pu Zhao, Yumei He, David Kaeli, Yanzhi Wang","Role-playing Large language models (LLMs) are increasingly deployed in
+high-stakes domains such as healthcare, education, and governance, where
+failures can directly impact user trust and well-being. A cost effective
+paradigm for LLM role-playing is few-shot learning, but existing approaches
+often cause models to break character in unexpected and potentially harmful
+ways, especially when interacting with hostile users. Inspired by
+Retrieval-Augmented Generation (RAG), we reformulate LLM role-playing into a
+text retrieval problem and propose a new prompting framework called
+RAGs-to-Riches, which leverages curated reference demonstrations to condition
+LLM responses. We evaluate our framework with LLM-as-a-judge preference voting
+and introduce two novel token-level ROUGE metrics: Intersection over Output
+(IOO) to quantity how much an LLM improvises and Intersection over References
+(IOR) to measure few-shot demonstrations utilization rate during the evaluation
+tasks. When simulating interactions with a hostile user, our prompting strategy
+incorporates in its responses during inference an average of 35% more tokens
+from the reference demonstrations. As a result, across 453 role-playing
+interactions, our models are consistently judged as being more authentic, and
+remain in-character more often than zero-shot and in-context Learning (ICL)
+methods. Our method presents a scalable strategy for building robust,
+human-aligned LLM role-playing frameworks.",http://arxiv.org/pdf/2509.12168v1,,False
+In-domain SSL pre-training and streaming ASR,15/09/2025,"Jarod Duret, Salima Mdhaffar, Gaëlle Laperrière, Ryan Whetten, Audrey Galametz, Catherine Kobus, Marion-Cécile Martin, Jo Oleiwan, Yannick Estève","In this study, we investigate the benefits of domain-specific self-supervised
+pre-training for both offline and streaming ASR in Air Traffic Control (ATC)
+environments. We train BEST-RQ models on 4.5k hours of unlabeled ATC data, then
+fine-tune on a smaller supervised ATC set. To enable real-time processing, we
+propose using chunked attention and dynamic convolutions, ensuring low-latency
+inference. We compare these in-domain SSL models against state-of-the-art,
+general-purpose speech encoders such as w2v-BERT 2.0 and HuBERT. Results show
+that domain-adapted pre-training substantially improves performance on standard
+ATC benchmarks, significantly reducing word error rates when compared to models
+trained on broad speech corpora. Furthermore, the proposed streaming approach
+further improves word error rate under tighter latency constraints, making it
+particularly suitable for safety-critical aviation applications. These findings
+highlight that specializing SSL representations for ATC data is a practical
+path toward more accurate and efficient ASR systems in real-world operational
+settings.",http://arxiv.org/pdf/2509.12101v1,,False
+Deceptive Risk Minimization: Out-of-Distribution Generalization by Deceiving Distribution Shift Detectors,15/09/2025,Anirudha Majumdar,"This paper proposes deception as a mechanism for out-of-distribution (OOD)
+generalization: by learning data representations that make training data appear
+independent and identically distributed (iid) to an observer, we can identify
+stable features that eliminate spurious correlations and generalize to unseen
+domains. We refer to this principle as deceptive risk minimization (DRM) and
+instantiate it with a practical differentiable objective that simultaneously
+learns features that eliminate distribution shifts from the perspective of a
+detector based on conformal martingales while minimizing a task-specific loss.
+In contrast to domain adaptation or prior invariant representation learning
+methods, DRM does not require access to test data or a partitioning of training
+data into a finite number of data-generating domains. We demonstrate the
+efficacy of DRM on numerical experiments with concept shift and a simulated
+imitation learning setting with covariate shift in environments that a robot is
+deployed in.",http://arxiv.org/pdf/2509.12081v1,,False
+A Time-Series Foundation Model by Universal Delay Embedding,15/09/2025,"Zijian Wang, Peng Tao, Jifan Shi, Rui Bao, Rui Liu, Luonan Chen","This study introduces Universal Delay Embedding (UDE), a pretrained
+foundation model designed to revolutionize time-series forecasting through
+principled integration of delay embedding representation and Koopman operator
+prediction. Leveraging Takens' embedding theorem, UDE as a dynamical
+representation of observed data constructs two-dimensional subspace patches
+from Hankel matrices, theoretically preserving dynamical and topological
+properties of underlying dynamical systems. Such patches are viewed as images,
+which can be efficiently processed by exploiting advanced deep learning
+technologies. Computationally, these patches further serve as tokens for
+learning a self-attention encoder, thus enabling accurate prediction of
+nonlinear time-series by a finite-dimensional Koopman operator in a linear
+manner in a latent space. Extensive evaluations across various benchmarks and
+real-world climate datasets demonstrate over 20% average reduction in mean
+squared error versus state-of-the-art foundation models, alongside superior
+generalization in fine-tuning scenarios. In particular, the learned dynamical
+representations and Koopman operator prediction forms from the patches exhibit
+exceptional interpretability, with consistent identification of topologically
+informative subspaces and robust encoding of domain-invariant dynamics,
+establishing UDE as a scalable, interpretable framework for universal
+time-series modeling and forecasting with broad scientific and industrial
+applicability.",http://arxiv.org/pdf/2509.12080v1,,False
+Travel Time and Weather-Aware Traffic Forecasting in a Conformal Graph Neural Network Framework,15/09/2025,"Mayur Patil, Qadeer Ahmed, Shawn Midlam-Mohler","Traffic flow forecasting is essential for managing congestion, improving
+safety, and optimizing various transportation systems. However, it remains a
+prevailing challenge due to the stochastic nature of urban traffic and
+environmental factors. Better predictions require models capable of
+accommodating the traffic variability influenced by multiple dynamic and
+complex interdependent factors. In this work, we propose a Graph Neural Network
+(GNN) framework to address the stochasticity by leveraging adaptive adjacency
+matrices using log-normal distributions and Coefficient of Variation (CV)
+values to reflect real-world travel time variability. Additionally, weather
+factors such as temperature, wind speed, and precipitation adjust edge weights
+and enable GNN to capture evolving spatio-temporal dependencies across traffic
+stations. This enhancement over the static adjacency matrix allows the model to
+adapt effectively to traffic stochasticity and changing environmental
+conditions. Furthermore, we utilize the Adaptive Conformal Prediction (ACP)
+framework to provide reliable uncertainty quantification, achieving target
+coverage while maintaining acceptable prediction intervals. Experimental
+results demonstrate that the proposed model, in comparison with baseline
+methods, showed better prediction accuracy and uncertainty bounds. We, then,
+validate this method by constructing traffic scenarios in SUMO and applying
+Monte-Carlo simulation to derive a travel time distribution for a Vehicle Under
+Test (VUT) to reflect real-world variability. The simulated mean travel time of
+the VUT falls within the intervals defined by INRIX historical data, verifying
+the model's robustness.",http://arxiv.org/pdf/2509.12043v1,,False
+Imitation Learning as Return Distribution Matching,15/09/2025,"Filippo Lazzati, Alberto Maria Metelli","We study the problem of training a risk-sensitive reinforcement learning (RL)
+agent through imitation learning (IL). Unlike standard IL, our goal is not only
+to train an agent that matches the expert's expected return (i.e., its average
+performance) but also its risk attitude (i.e., other features of the return
+distribution, such as variance). We propose a general formulation of the
+risk-sensitive IL problem in which the objective is to match the expert's
+return distribution in Wasserstein distance. We focus on the tabular setting
+and assume the expert's reward is known. After demonstrating the limited
+expressivity of Markovian policies for this task, we introduce an efficient and
+sufficiently expressive subclass of non-Markovian policies tailored to it.
+Building on this subclass, we develop two provably efficient algorithms, RS-BC
+and RS-KT, for solving the problem when the transition model is unknown and
+known, respectively. We show that RS-KT achieves substantially lower sample
+complexity than RS-BC by exploiting dynamics information. We further
+demonstrate the sample efficiency of return distribution matching in the
+setting where the expert's reward is unknown by designing an oracle-based
+variant of RS-KT. Finally, we complement our theoretical analysis of RS-KT and
+RS-BC with numerical simulations, highlighting both their sample efficiency and
+the advantages of non-Markovian policies over standard sample-efficient IL
+algorithms.",http://arxiv.org/pdf/2509.12026v1,,False
+Generalizing Behavior via Inverse Reinforcement Learning with Closed-Form Reward Centroids,15/09/2025,"Filippo Lazzati, Alberto Maria Metelli","We study the problem of generalizing an expert agent's behavior, provided
+through demonstrations, to new environments and/or additional constraints.
+Inverse Reinforcement Learning (IRL) offers a promising solution by seeking to
+recover the expert's underlying reward function, which, if used for planning in
+the new settings, would reproduce the desired behavior. However, IRL is
+inherently ill-posed: multiple reward functions, forming the so-called feasible
+set, can explain the same observed behavior. Since these rewards may induce
+different policies in the new setting, in the absence of additional
+information, a decision criterion is needed to select which policy to deploy.
+In this paper, we propose a novel, principled criterion that selects the
+""average"" policy among those induced by the rewards in a certain bounded subset
+of the feasible set. Remarkably, we show that this policy can be obtained by
+planning with the reward centroid of that subset, for which we derive a
+closed-form expression. We then present a provably efficient algorithm for
+estimating this centroid using an offline dataset of expert demonstrations
+only. Finally, we conduct numerical simulations that illustrate the
+relationship between the expert's behavior and the behavior produced by our
+method.",http://arxiv.org/pdf/2509.12010v1,,False
+Identifiable Autoregressive Variational Autoencoders for Nonlinear and Nonstationary Spatio-Temporal Blind Source Separation,15/09/2025,"Mika Sipilä, Klaus Nordhausen, Sara Taskinen","The modeling and prediction of multivariate spatio-temporal data involve
+numerous challenges. Dimension reduction methods can significantly simplify
+this process, provided that they account for the complex dependencies between
+variables and across time and space. Nonlinear blind source separation has
+emerged as a promising approach, particularly following recent advances in
+identifiability results. Building on these developments, we introduce the
+identifiable autoregressive variational autoencoder, which ensures the
+identifiability of latent components consisting of nonstationary autoregressive
+processes. The blind source separation efficacy of the proposed method is
+showcased through a simulation study, where it is compared against
+state-of-the-art methods, and the spatio-temporal prediction performance is
+evaluated against several competitors on air pollution and weather datasets.",http://arxiv.org/pdf/2509.11962v1,,False
+Neuro-Symbolic Agents with Modal Logic for Autonomous Diagnostics,15/09/2025,"Antonin Sulc, Thorsten Hellert","The development of intelligent agents, particularly those powered by language
+models (LMs), has shown the critical role in various environments that require
+intelligent and autonomous decision. Environments are not passive testing
+grounds and they represent the data required for agents to learn and exhibit
+very challenging conditions that require adaptive, complex and autonomous
+capacity to make decisions. While the paradigm of scaling models and datasets
+has led to remarkable emergent capabilities, we argue that scaling the
+structure, fidelity, and logical consistency of agent reasoning within these
+environments is a crucial, yet underexplored, dimension of AI research. This
+paper introduces a neuro-symbolic multi-agent architecture where the belief
+states of individual agents are formally represented as Kripke models. This
+foundational choice enables them to reason about known concepts of
+\emph{possibility} and \emph{necessity} using the formal language of modal
+logic. In this work, we use of immutable, domain-specific knowledge to make
+infere information, which is encoded as logical constraints essential for
+proper diagnosis. In the proposed model, we show constraints that actively
+guide the hypothesis generation of LMs, effectively preventing them from
+reaching physically or logically untenable conclusions. In a high-fidelity
+simulated particle accelerator environment, our system successfully diagnoses
+complex, cascading failures by combining the powerful semantic intuition of LMs
+with the rigorous, verifiable validation of modal logic and a factual world
+model and showcasing a viable path toward more robust, reliable, and verifiable
+autonomous agents.",http://arxiv.org/pdf/2509.11943v1,,False
+EgoMem: Lifelong Memory Agent for Full-duplex Omnimodal Models,15/09/2025,"Yiqun Yao, Naitong Yu, Xiang Li, Xin Jiang, Xuezhi Fang, Wenjia Ma, Xuying Meng, Jing Li, Aixin Sun, Yequan Wang","We introduce EgoMem, the first lifelong memory agent tailored for full-duplex
+models that process real-time omnimodal streams. EgoMem enables real-time
+models to recognize multiple users directly from raw audiovisual streams, to
+provide personalized response, and to maintain long-term knowledge of users'
+facts, preferences, and social relationships extracted from audiovisual
+history. EgoMem operates with three asynchronous processes: (i) a retrieval
+process that dynamically identifies user via face and voice, and gathers
+relevant context from a long-term memory; (ii) an omnimodal dialog process that
+generates personalized audio responses based on the retrieved context; and
+(iii) a memory management process that automatically detects dialog boundaries
+from omnimodal streams, and extracts necessary information to update the
+long-term memory. Unlike existing memory agents for LLMs, EgoMem relies
+entirely on raw audiovisual streams, making it especially suitable for
+lifelong, real-time, and embodied scenarios. Experimental results demonstrate
+that EgoMem's retrieval and memory management modules achieve over 95% accuracy
+on the test set. When integrated with a fine-tuned RoboEgo omnimodal chatbot,
+the system achieves fact-consistency scores above 87% in real-time personalized
+dialogs, establishing a strong baseline for future research.",http://arxiv.org/pdf/2509.11914v1,,False
+Growing Perspectives: Modelling Embodied Perspective Taking and Inner Narrative Development Using Large Language Models,15/09/2025,"Sabrina Patania, Luca Annese, Anna Lambiase, Anita Pellegrini, Tom Foulsham, Azzurra Ruggeri, Silvia Rossi, Silvia Serino, Dimitri Ognibene","Language and embodied perspective taking are essential for human
+collaboration, yet few computational models address both simultaneously. This
+work investigates the PerspAct system [1], which integrates the ReAct (Reason
+and Act) paradigm with Large Language Models (LLMs) to simulate developmental
+stages of perspective taking, grounded in Selman's theory [2]. Using an
+extended director task, we evaluate GPT's ability to generate internal
+narratives aligned with specified developmental stages, and assess how these
+influence collaborative performance both qualitatively (action selection) and
+quantitatively (task efficiency). Results show that GPT reliably produces
+developmentally-consistent narratives before task execution but often shifts
+towards more advanced stages during interaction, suggesting that language
+exchanges help refine internal representations. Higher developmental stages
+generally enhance collaborative effectiveness, while earlier stages yield more
+variable outcomes in complex contexts. These findings highlight the potential
+of integrating embodied perspective taking and language in LLMs to better model
+developmental dynamics and stress the importance of evaluating internal speech
+during combined linguistic and embodied tasks.",http://arxiv.org/pdf/2509.11868v1,,False
+Synthetic vs. Real Training Data for Visual Navigation,15/09/2025,"Lauri Suomela, Sasanka Kuruppu Arachchige, German F. Torres, Harry Edelman, Joni-Kristian Kämäräinen","This paper investigates how the performance of visual navigation policies
+trained in simulation compares to policies trained with real-world data.
+Performance degradation of simulator-trained policies is often significant when
+they are evaluated in the real world. However, despite this well-known
+sim-to-real gap, we demonstrate that simulator-trained policies can match the
+performance of their real-world-trained counterparts.
+  Central to our approach is a navigation policy architecture that bridges the
+sim-to-real appearance gap by leveraging pretrained visual representations and
+runs real-time on robot hardware. Evaluations on a wheeled mobile robot show
+that the proposed policy, when trained in simulation, outperforms its
+real-world-trained version by 31% and the prior state-of-the-art methods by 50%
+in navigation success rate. Policy generalization is verified by deploying the
+same model onboard a drone.
+  Our results highlight the importance of diverse image encoder pretraining for
+sim-to-real generalization, and identify on-policy learning as a key advantage
+of simulated training over training with real data.",http://arxiv.org/pdf/2509.11791v1,,False
+Task-Agnostic Learnable Weighted-Knowledge Base Scheme for Robust Semantic Communications,15/09/2025,"Shiyao Jiang, Jian Jiao, Xingjian Zhang, Ye Wang, Dusit Niyato, Qinyu Zhang","With the emergence of diverse and massive data in the upcoming
+sixth-generation (6G) networks, the task-agnostic semantic communication system
+is regarded to provide robust intelligent services. In this paper, we propose a
+task-agnostic learnable weighted-knowledge base semantic communication (TALSC)
+framework for robust image transmission to address the real-world heterogeneous
+data bias in KB, including label flipping noise and class imbalance. The TALSC
+framework incorporates a sample confidence module (SCM) as meta-learner and the
+semantic coding networks as learners. The learners are updated based on the
+empirical knowledge provided by the learnable weighted-KB (LW-KB). Meanwhile,
+the meta-learner evaluates the significance of samples according to the task
+loss feedback, and adjusts the update strategy of learners to enhance the
+robustness in semantic recovery for unknown tasks. To strike a balance between
+SCM parameters and precision of significance evaluation, we design an SCM-grid
+extension (SCM-GE) approach by embedding the Kolmogorov-Arnold networks (KAN)
+within SCM, which leverages the concept of spline refinement in KAN and enables
+scalable SCM with customizable granularity without retraining. Simulations
+demonstrate that the TALSC framework effectively mitigates the effects of
+flipping noise and class imbalance in task-agnostic image semantic
+communication, achieving at least 12% higher semantic recovery accuracy (SRA)
+and multi-scale structural similarity (MS-SSIM) compared to state-of-the-art
+methods.",http://arxiv.org/pdf/2509.11636v1,,False
+A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models,15/09/2025,"Ching Chang, Yidan Shi, Defu Cao, Wei Yang, Jeehyun Hwang, Haixin Wang, Jiacheng Pang, Wei Wang, Yan Liu, Wen-Chih Peng, Tien-Fu Chen","Time series reasoning treats time as a first-class axis and incorporates
+intermediate evidence directly into the answer. This survey defines the problem
+and organizes the literature by reasoning topology with three families: direct
+reasoning in one step, linear chain reasoning with explicit intermediates, and
+branch-structured reasoning that explores, revises, and aggregates. The
+topology is crossed with the main objectives of the field, including
+traditional time series analysis, explanation and understanding, causal
+inference and decision making, and time series generation, while a compact tag
+set spans these axes and captures decomposition and verification, ensembling,
+tool use, knowledge access, multimodality, agent loops, and LLM alignment
+regimes. Methods and systems are reviewed across domains, showing what each
+topology enables and where it breaks down in faithfulness or robustness, along
+with curated datasets, benchmarks, and resources that support study and
+deployment (https://github.com/blacksnail789521/Time-Series-Reasoning-Survey).
+Evaluation practices that keep evidence visible and temporally aligned are
+highlighted, and guidance is distilled on matching topology to uncertainty,
+grounding with observable artifacts, planning for shift and streaming, and
+treating cost and latency as design budgets. We emphasize that reasoning
+structures must balance capacity for grounding and self-correction against
+computational cost and reproducibility, while future progress will likely
+depend on benchmarks that tie reasoning quality to utility and on closed-loop
+testbeds that trade off cost and risk under shift-aware, streaming, and
+long-horizon settings. Taken together, these directions mark a shift from
+narrow accuracy toward reliability at scale, enabling systems that not only
+analyze but also understand, explain, and act on dynamic worlds with traceable
+evidence and credible outcomes.",http://arxiv.org/pdf/2509.11575v1,,False

@@ -1,0 +1,425 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+QDFlow: A Python package for physics simulations of quantum dot devices,16/09/2025,"Donovan L. Buterakos, Sandesh S. Kalantre, Joshua Ziegler, Jacob M Taylor, Justyna P. Zwolak","Recent advances in machine learning (ML) have accelerated progress in
+calibrating and operating quantum dot (QD) devices. However, most ML approaches
+rely on access to large, high-quality labeled datasets for training,
+benchmarking, and validation, with labels capturing key features in the data.
+Obtaining such datasets experimentally is challenging due to limited data
+availability and the labor-intensive nature of labeling. QDFlow is an
+open-source physics simulator for multi-QD arrays that generates realistic
+synthetic data with ground-truth labels. QDFlow combines a self-consistent
+Thomas-Fermi solver, a dynamic capacitance model, and flexible noise modules to
+produce charge stability diagrams and ray-based data closely resembling
+experiments. With extensive tunable parameters and customizable noise models,
+QDFlow supports the creation of large, diverse datasets for ML development,
+benchmarking, and quantum device research.",http://arxiv.org/pdf/2509.13298v1,,False
+Accelerating Protein Molecular Dynamics Simulation with DeepJump,16/09/2025,"Allan dos Santos Costa, Manvitha Ponnapati, Dana Rubin, Tess Smidt, Joseph Jacobson","Unraveling the dynamical motions of biomolecules is essential for bridging
+their structure and function, yet it remains a major computational challenge.
+Molecular dynamics (MD) simulation provides a detailed depiction of
+biomolecular motion, but its high-resolution temporal evolution comes at
+significant computational cost, limiting its applicability to timescales of
+biological relevance. Deep learning approaches have emerged as promising
+solutions to overcome these computational limitations by learning to predict
+long-timescale dynamics. However, generalizable kinetics models for proteins
+remain largely unexplored, and the fundamental limits of achievable
+acceleration while preserving dynamical accuracy are poorly understood. In this
+work, we fill this gap with DeepJump, an Euclidean-Equivariant Flow
+Matching-based model for predicting protein conformational dynamics across
+multiple temporal scales. We train DeepJump on trajectories of the diverse
+proteins of mdCATH, systematically studying our model's performance in
+generalizing to long-term dynamics of fast-folding proteins and characterizing
+the trade-off between computational acceleration and prediction accuracy. We
+demonstrate the application of DeepJump to ab initio folding, showcasing
+prediction of folding pathways and native states. Our results demonstrate that
+DeepJump achieves significant $\approx$1000$\times$ computational acceleration
+while effectively recovering long-timescale dynamics, providing a stepping
+stone for enabling routine simulation of proteins.",http://arxiv.org/pdf/2509.13294v1,,False
+Learning Discrete Bayesian Networks with Hierarchical Dirichlet Shrinkage,16/09/2025,"Alexander Dombowsky, David B. Dunson","Discrete Bayesian networks (DBNs) provide a broadly useful framework for
+modeling dependence structures in multivariate categorical data. There is a
+vast literature on methods for inferring conditional probabilities and
+graphical structure in DBNs, but data sparsity and parametric assumptions are
+major practical issues. In this article, we detail a comprehensive Bayesian
+framework for learning DBNs. First, we propose a hierarchical prior for the
+conditional probabilities that enables complicated interactions between parent
+variables and stability in sparse regimes. We give a novel Markov chain Monte
+Carlo (MCMC) algorithm utilizing parallel Langevin proposals to generate exact
+posterior samples, avoiding the pitfalls of variational approximations.
+Moreover, we verify that the full conditional distribution of the concentration
+parameters is log-concave under mild conditions, facilitating efficient
+sampling. We then propose two methods for learning network structures,
+including parent sets, Markov blankets, and DAGs, from categorical data. The
+first cycles through individual edges each MCMC iteration, whereas the second
+updates the entire structure as a single step. We evaluate the accuracy, power,
+and MCMC performance of our methods on several simulation studies. Finally, we
+apply our methodology to uncover prognostic network structure from primary
+breast cancer samples.",http://arxiv.org/pdf/2509.13267v1,,False
+Simulating Clinical AI Assistance using Multimodal LLMs: A Case Study in Diabetic Retinopathy,16/09/2025,"Nadim Barakat, William Lotter","Diabetic retinopathy (DR) is a leading cause of blindness worldwide, and AI
+systems can expand access to fundus photography screening. Current FDA-cleared
+systems primarily provide binary referral outputs, where this minimal output
+may limit clinical trust and utility. Yet, determining the most effective
+output format to enhance clinician-AI performance is an empirical challenge
+that is difficult to assess at scale. We evaluated multimodal large language
+models (MLLMs) for DR detection and their ability to simulate clinical AI
+assistance across different output types. Two models were tested on IDRiD and
+Messidor-2: GPT-4o, a general-purpose MLLM, and MedGemma, an open-source
+medical model. Experiments included: (1) baseline evaluation, (2) simulated AI
+assistance with synthetic predictions, and (3) actual AI-to-AI collaboration
+where GPT-4o incorporated MedGemma outputs. MedGemma outperformed GPT-4o at
+baseline, achieving higher sensitivity and AUROC, while GPT-4o showed
+near-perfect specificity but low sensitivity. Both models adjusted predictions
+based on simulated AI inputs, but GPT-4o's performance collapsed with incorrect
+ones, whereas MedGemma remained more stable. In actual collaboration, GPT-4o
+achieved strong results when guided by MedGemma's descriptive outputs, even
+without direct image access (AUROC up to 0.96). These findings suggest MLLMs
+may improve DR screening pipelines and serve as scalable simulators for
+studying clinical AI assistance across varying output configurations. Open,
+lightweight models such as MedGemma may be especially valuable in low-resource
+settings, while descriptive outputs could enhance explainability and clinician
+trust in clinical workflows.",http://arxiv.org/pdf/2509.13234v1,,False
+Single-stream Policy Optimization,16/09/2025,"Zhongwen Xu, Zihan Ding","We revisit policy-gradient optimization for Large Language Models (LLMs) from
+a single-stream perspective. Prevailing group-based methods like GRPO reduce
+variance with on-the-fly baselines but suffer from critical flaws: frequent
+degenerate groups erase learning signals, and synchronization barriers hinder
+scalability. We introduce Single-stream Policy Optimization (SPO), which
+eliminates these issues by design. SPO replaces per-group baselines with a
+persistent, KL-adaptive value tracker and normalizes advantages globally across
+the batch, providing a stable, low-variance learning signal for every sample.
+Being group-free, SPO enables higher throughput and scales effectively in
+long-horizon or tool-integrated settings where generation times vary.
+Furthermore, the persistent value tracker naturally enables an adaptive
+curriculum via prioritized sampling. Experiments using Qwen3-8B show that SPO
+converges more smoothly and attains higher accuracy than GRPO, while
+eliminating computation wasted on degenerate groups. Ablation studies confirm
+that SPO's gains stem from its principled approach to baseline estimation and
+advantage normalization, offering a more robust and efficient path for LLM
+reasoning. Across five hard math benchmarks with Qwen3 8B, SPO improves the
+average maj@32 by +3.4 percentage points (pp) over GRPO, driven by substantial
+absolute point gains on challenging datasets, including +7.3 pp on BRUMO 25,
++4.4 pp on AIME 25, +3.3 pp on HMMT 25, and achieves consistent relative gain
+in pass@$k$ across the evaluated $k$ values. SPO's success challenges the
+prevailing trend of adding incidental complexity to RL algorithms, highlighting
+a path where fundamental principles, not architectural workarounds, drive the
+next wave of progress in LLM reasoning.",http://arxiv.org/pdf/2509.13232v1,,False
+Curriculum Learning for Mesh-based simulations,16/09/2025,"Paul Garnier, Vincent Lannelongue, Elie Hachem","Graph neural networks (GNNs) have emerged as powerful surrogates for
+mesh-based computational fluid dynamics (CFD), but training them on
+high-resolution unstructured meshes with hundreds of thousands of nodes remains
+prohibitively expensive. We study a \emph{coarse-to-fine curriculum} that
+accelerates convergence by first training on very coarse meshes and then
+progressively introducing medium and high resolutions (up to \(3\times10^5\)
+nodes). Unlike multiscale GNN architectures, the model itself is unchanged;
+only the fidelity of the training data varies over time. We achieve comparable
+generalization accuracy while reducing total wall-clock time by up to 50\%.
+Furthermore, on datasets where our model lacks the capacity to learn the
+underlying physics, using curriculum learning enables it to break through
+plateaus.",http://arxiv.org/pdf/2509.13138v1,,False
+Discovering Mathematical Equations with Diffusion Language Model,16/09/2025,"Xiaoxu Han, Chengzhen Ning, Jinghui Zhong, Fubiao Yang, Yu Wang, Xin Mu","Discovering valid and meaningful mathematical equations from observed data
+plays a crucial role in scientific discovery. While this task, symbolic
+regression, remains challenging due to the vast search space and the trade-off
+between accuracy and complexity. In this paper, we introduce DiffuSR, a
+pre-training framework for symbolic regression built upon a continuous-state
+diffusion language model. DiffuSR employs a trainable embedding layer within
+the diffusion process to map discrete mathematical symbols into a continuous
+latent space, modeling equation distributions effectively. Through iterative
+denoising, DiffuSR converts an initial noisy sequence into a symbolic equation,
+guided by numerical data injected via a cross-attention mechanism. We also
+design an effective inference strategy to enhance the accuracy of the
+diffusion-based equation generator, which injects logit priors into genetic
+programming. Experimental results on standard symbolic regression benchmarks
+demonstrate that DiffuSR achieves competitive performance with state-of-the-art
+autoregressive methods and generates more interpretable and diverse
+mathematical expressions.",http://arxiv.org/pdf/2509.13136v1,,False
+"An Uncertainty-Weighted Decision Transformer for Navigation in Dense, Complex Driving Scenarios",16/09/2025,"Zhihao Zhang, Chengyang Peng, Minghao Zhu, Ekim Yurtsever, Keith A. Redmill","Autonomous driving in dense, dynamic environments requires decision-making
+systems that can exploit both spatial structure and long-horizon temporal
+dependencies while remaining robust to uncertainty. This work presents a novel
+framework that integrates multi-channel bird's-eye-view occupancy grids with
+transformer-based sequence modeling for tactical driving in complex roundabout
+scenarios. To address the imbalance between frequent low-risk states and rare
+safety-critical decisions, we propose the Uncertainty-Weighted Decision
+Transformer (UWDT). UWDT employs a frozen teacher transformer to estimate
+per-token predictive entropy, which is then used as a weight in the student
+model's loss function. This mechanism amplifies learning from uncertain,
+high-impact states while maintaining stability across common low-risk
+transitions. Experiments in a roundabout simulator, across varying traffic
+densities, show that UWDT consistently outperforms other baselines in terms of
+reward, collision rate, and behavioral stability. The results demonstrate that
+uncertainty-aware, spatial-temporal transformers can deliver safer and more
+efficient decision-making for autonomous driving in complex traffic
+environments.",http://arxiv.org/pdf/2509.13132v1,,False
+A Design Co-Pilot for Task-Tailored Manipulators,16/09/2025,"Jonathan Külz, Sehoon Ha, Matthias Althoff","Although robotic manipulators are used in an ever-growing range of
+applications, robot manufacturers typically follow a ``one-fits-all''
+philosophy, employing identical manipulators in various settings. This often
+leads to suboptimal performance, as general-purpose designs fail to exploit
+particularities of tasks. The development of custom, task-tailored robots is
+hindered by long, cost-intensive development cycles and the high cost of
+customized hardware. Recently, various computational design methods have been
+devised to overcome the bottleneck of human engineering. In addition, a surge
+of modular robots allows quick and economical adaptation to changing industrial
+settings. This work proposes an approach to automatically designing and
+optimizing robot morphologies tailored to a specific environment. To this end,
+we learn the inverse kinematics for a wide range of different manipulators. A
+fully differentiable framework realizes gradient-based fine-tuning of designed
+robots and inverse kinematics solutions. Our generative approach accelerates
+the generation of specialized designs from hours with optimization-based
+methods to seconds, serving as a design co-pilot that enables instant
+adaptation and effective human-AI collaboration. Numerical experiments show
+that our approach finds robots that can navigate cluttered environments,
+manipulators that perform well across a specified workspace, and can be adapted
+to different hardware constraints. Finally, we demonstrate the real-world
+applicability of our method by setting up a modular robot designed in
+simulation that successfully moves through an obstacle course.",http://arxiv.org/pdf/2509.13077v1,,False
+A Visualized Framework for Event Cooperation with Generative Agents,16/09/2025,"Yuyang Tian, Shunqiang Mao, Wenchang Gao, Lanlan Qiu, Tianxing He","Large Language Models (LLMs) have revolutionized the simulation of agent
+societies, enabling autonomous planning, memory formation, and social
+interactions. However, existing frameworks often overlook systematic
+evaluations for event organization and lack visualized integration with
+physically grounded environments, limiting agents' ability to navigate spaces
+and interact with items realistically. We develop MiniAgentPro, a visualization
+platform featuring an intuitive map editor for customizing environments and a
+simulation player with smooth animations. Based on this tool, we introduce a
+comprehensive test set comprising eight diverse event scenarios with basic and
+hard variants to assess agents' ability. Evaluations using GPT-4o demonstrate
+strong performance in basic settings but highlight coordination challenges in
+hard variants.",http://arxiv.org/pdf/2509.13011v1,,False
+Toward PDDL Planning Copilot,16/09/2025,"Yarin Benyamin, Argaman Mordoch, Shahaf S. Shperberg, Roni Stern","Large Language Models (LLMs) are increasingly being used as autonomous agents
+capable of performing complicated tasks. However, they lack the ability to
+perform reliable long-horizon planning on their own. This paper bridges this
+gap by introducing the Planning Copilot, a chatbot that integrates multiple
+planning tools and allows users to invoke them through instructions in natural
+language. The Planning Copilot leverages the Model Context Protocol (MCP), a
+recently developed standard for connecting LLMs with external tools and
+systems. This approach allows using any LLM that supports MCP without
+domain-specific fine-tuning. Our Planning Copilot supports common planning
+tasks such as checking the syntax of planning problems, selecting an
+appropriate planner, calling it, validating the plan it generates, and
+simulating their execution. We empirically evaluate the ability of our Planning
+Copilot to perform these tasks using three open-source LLMs. The results show
+that the Planning Copilot highly outperforms using the same LLMs without the
+planning tools. We also conducted a limited qualitative comparison of our tool
+against Chat GPT-5, a very recent commercial LLM. Our results shows that our
+Planning Copilot significantly outperforms GPT-5 despite relying on a much
+smaller LLM. This suggests dedicated planning tools may be an effective way to
+enable LLMs to perform planning tasks.",http://arxiv.org/pdf/2509.12987v1,,False
+Modeling nonstationary spatial processes with normalizing flows,16/09/2025,"Pratik Nag, Andrew Zammit-Mangion, Ying Sun","Nonstationary spatial processes can often be represented as stationary
+processes on a warped spatial domain. Selecting an appropriate spatial warping
+function for a given application is often difficult and, as a result of this,
+warping methods have largely been limited to two-dimensional spatial domains.
+In this paper, we introduce a novel approach to modeling nonstationary,
+anisotropic spatial processes using neural autoregressive flows (NAFs), a class
+of invertible mappings capable of generating complex, high-dimensional
+warpings. Through simulation studies we demonstrate that a NAF-based model has
+greater representational capacity than other commonly used spatial process
+models. We apply our proposed modeling framework to a subset of the 3D Argo
+Floats dataset, highlighting the utility of our framework in real-world
+applications.",http://arxiv.org/pdf/2509.12884v1,,False
+Towards Context-Aware Human-like Pointing Gestures with RL Motion Imitation,16/09/2025,"Anna Deichler, Siyang Wang, Simon Alexanderson, Jonas Beskow","Pointing is a key mode of interaction with robots, yet most prior work has
+focused on recognition rather than generation. We present a motion capture
+dataset of human pointing gestures covering diverse styles, handedness, and
+spatial targets. Using reinforcement learning with motion imitation, we train
+policies that reproduce human-like pointing while maximizing precision. Results
+show our approach enables context-aware pointing behaviors in simulation,
+balancing task performance with natural dynamics.",http://arxiv.org/pdf/2509.12880v1,,False
+CECT-Mamba: a Hierarchical Contrast-enhanced-aware Model for Pancreatic Tumor Subtyping from Multi-phase CECT,16/09/2025,"Zhifang Gong, Shuo Gao, Ben Zhao, Yingjing Xu, Yijun Yang, Shenghong Ju, Guangquan Zhou","Contrast-enhanced computed tomography (CECT) is the primary imaging technique
+that provides valuable spatial-temporal information about lesions, enabling the
+accurate diagnosis and subclassification of pancreatic tumors. However, the
+high heterogeneity and variability of pancreatic tumors still pose substantial
+challenges for precise subtyping diagnosis. Previous methods fail to
+effectively explore the contextual information across multiple CECT phases
+commonly used in radiologists' diagnostic workflows, thereby limiting their
+performance. In this paper, we introduce, for the first time, an automatic way
+to combine the multi-phase CECT data to discriminate between pancreatic tumor
+subtypes, among which the key is using Mamba with promising learnability and
+simplicity to encourage both temporal and spatial modeling from multi-phase
+CECT. Specifically, we propose a dual hierarchical contrast-enhanced-aware
+Mamba module incorporating two novel spatial and temporal sampling sequences to
+explore intra and inter-phase contrast variations of lesions. A
+similarity-guided refinement module is also imposed into the temporal scanning
+modeling to emphasize the learning on local tumor regions with more obvious
+temporal variations. Moreover, we design the space complementary integrator and
+multi-granularity fusion module to encode and aggregate the semantics across
+different scales, achieving more efficient learning for subtyping pancreatic
+tumors. The experimental results on an in-house dataset of 270 clinical cases
+achieve an accuracy of 97.4% and an AUC of 98.6% in distinguishing between
+pancreatic ductal adenocarcinoma (PDAC) and pancreatic neuroendocrine tumors
+(PNETs), demonstrating its potential as a more accurate and efficient tool.",http://arxiv.org/pdf/2509.12777v1,,False
+Toward Ownership Understanding of Objects: Active Question Generation with Large Language Model and Probabilistic Generative Model,16/09/2025,"Saki Hashimoto, Shoichi Hasegawa, Tomochika Ishikawa, Akira Taniguchi, Yoshinobu Hagiwara, Lotfi El Hafi, Tadahiro Taniguchi","Robots operating in domestic and office environments must understand object
+ownership to correctly execute instructions such as ``Bring me my cup.''
+However, ownership cannot be reliably inferred from visual features alone. To
+address this gap, we propose Active Ownership Learning (ActOwL), a framework
+that enables robots to actively generate and ask ownership-related questions to
+users. ActOwL employs a probabilistic generative model to select questions that
+maximize information gain, thereby acquiring ownership knowledge efficiently to
+improve learning efficiency. Additionally, by leveraging commonsense knowledge
+from Large Language Models (LLM), objects are pre-classified as either shared
+or owned, and only owned objects are targeted for questioning. Through
+experiments in a simulated home environment and a real-world laboratory
+setting, ActOwL achieved significantly higher ownership clustering accuracy
+with fewer questions than baseline methods. These findings demonstrate the
+effectiveness of combining active inference with LLM-guided commonsense
+reasoning, advancing the capability of robots to acquire ownership knowledge
+for practical and socially appropriate task execution.",http://arxiv.org/pdf/2509.12754v1,,False
+A Novel Recurrent Neural Network Framework for Prediction and Treatment of Oncogenic Mutation Progression,16/09/2025,"Rishab Parthasarathy, Achintya Bhowmik","Despite significant medical advancements, cancer remains the second leading
+cause of death, with over 600,000 deaths per year in the US. One emerging
+field, pathway analysis, is promising but still relies on manually derived wet
+lab data, which is time-consuming to acquire. This work proposes an efficient,
+effective end-to-end framework for Artificial Intelligence (AI) based pathway
+analysis that predicts both cancer severity and mutation progression, thus
+recommending possible treatments. The proposed technique involves a novel
+combination of time-series machine learning models and pathway analysis. First,
+mutation sequences were isolated from The Cancer Genome Atlas (TCGA) Database.
+Then, a novel preprocessing algorithm was used to filter key mutations by
+mutation frequency. This data was fed into a Recurrent Neural Network (RNN)
+that predicted cancer severity. Then, the model probabilistically used the RNN
+predictions, information from the preprocessing algorithm, and multiple
+drug-target databases to predict future mutations and recommend possible
+treatments. This framework achieved robust results and Receiver Operating
+Characteristic (ROC) curves (a key statistical metric) with accuracies greater
+than 60%, similar to existing cancer diagnostics. In addition, preprocessing
+played an instrumental role in isolating important mutations, demonstrating
+that each cancer stage studied may contain on the order of a few-hundred key
+driver mutations, consistent with current research. Heatmaps based on predicted
+gene frequency were also generated, highlighting key mutations in each cancer.
+Overall, this work is the first to propose an efficient, cost-effective
+end-to-end framework for projecting cancer progression and providing possible
+treatments without relying on expensive, time-consuming wet lab work.",http://arxiv.org/pdf/2509.12732v1,,False
+Generalizable Holographic Reconstruction via Amplitude-Only Diffusion Priors,16/09/2025,"Jeongsol Kim, Chanseok Lee, Jong Chul Ye, Mooseok Jang","Phase retrieval in inline holography is a fundamental yet ill-posed inverse
+problem due to the nonlinear coupling between amplitude and phase in coherent
+imaging. We present a novel off-the-shelf solution that leverages a diffusion
+model trained solely on object amplitude to recover both amplitude and phase
+from diffraction intensities. Using a predictor-corrector sampling framework
+with separate likelihood gradients for amplitude and phase, our method enables
+complex field reconstruction without requiring ground-truth phase data for
+training. We validate the proposed approach through extensive simulations and
+experiments, demonstrating robust generalization across diverse object shapes,
+imaging system configurations, and modalities, including lensless setups.
+Notably, a diffusion prior trained on simple amplitude data (e.g., polystyrene
+beads) successfully reconstructs complex biological tissue structures,
+highlighting the method's adaptability. This framework provides a
+cost-effective, generalizable solution for nonlinear inverse problems in
+computational imaging, and establishes a foundation for broader coherent
+imaging applications beyond holography.",http://arxiv.org/pdf/2509.12728v1,,False
+Unbiased Online Curvature Approximation for Regularized Graph Continual Learning,16/09/2025,"Jie Yin, Ke Sun, Han Wu","Graph continual learning (GCL) aims to learn from a continuous sequence of
+graph-based tasks. Regularization methods are vital for preventing catastrophic
+forgetting in GCL, particularly in the challenging replay-free,
+class-incremental setting, where each task consists of a set of unique classes.
+In this work, we first establish a general regularization framework for GCL
+based on the curved parameter space induced by the Fisher information matrix
+(FIM). We show that the dominant Elastic Weight Consolidation (EWC) and its
+variants are a special case within this framework, using a diagonal
+approximation of the empirical FIM based on parameters from previous tasks. To
+overcome their limitations, we propose a new unbiased online curvature
+approximation of the full FIM based on the model's current learning state. Our
+method directly estimates the regularization term in an online manner without
+explicitly evaluating and storing the FIM itself. This enables the model to
+better capture the loss landscape during learning new tasks while retaining the
+knowledge learned from previous tasks. Extensive experiments on three graph
+datasets demonstrate that our method significantly outperforms existing
+regularization-based methods, achieving a superior trade-off between stability
+(retaining old knowledge) and plasticity (acquiring new knowledge).",http://arxiv.org/pdf/2509.12727v1,,False
+Joint AoI and Handover Optimization in Space-Air-Ground Integrated Network,16/09/2025,"Zifan Lang, Guixia Liu, Geng Sun, Jiahui Li, Jiacheng Wang, Weijie Yuan, Dusit Niyato, Dong In Kim","Despite the widespread deployment of terrestrial networks, providing reliable
+communication services to remote areas and maintaining connectivity during
+emergencies remains challenging. Low Earth orbit (LEO) satellite constellations
+offer promising solutions with their global coverage capabilities and reduced
+latency, yet struggle with intermittent coverage and limited communication
+windows due to orbital dynamics. This paper introduces an age of information
+(AoI)-aware space-air-ground integrated network (SAGIN) architecture that
+leverages a high-altitude platform (HAP) as intelligent relay between the LEO
+satellites and ground terminals. Our three-layer design employs hybrid
+free-space optical (FSO) links for high-capacity satellite-to-HAP communication
+and reliable radio frequency (RF) links for HAP-to-ground transmission, and
+thus addressing the temporal discontinuity in LEO satellite coverage while
+serving diverse user priorities. Specifically, we formulate a joint
+optimization problem to simultaneously minimize the AoI and satellite handover
+frequency through optimal transmit power distribution and satellite selection
+decisions. This highly dynamic, non-convex problem with time-coupled
+constraints presents significant computational challenges for traditional
+approaches. To address these difficulties, we propose a novel diffusion model
+(DM)-enhanced dueling double deep Q-network with action decomposition and state
+transformer encoder (DD3QN-AS) algorithm that incorporates transformer-based
+temporal feature extraction and employs a DM-based latent prompt generative
+module to refine state-action representations through conditional denoising.
+Simulation results highlight the superior performance of the proposed approach
+compared with policy-based methods and some other deep reinforcement learning
+(DRL) benchmarks.",http://arxiv.org/pdf/2509.12716v1,,False
+DoubleAgents: Exploring Mechanisms of Building Trust with Proactive AI,16/09/2025,"Tao Long, Xuanming Zhang, Sitong Wang, Zhou Yu, Lydia B Chilton","Agentic workflows promise efficiency, but adoption hinges on whether people
+actually trust systems that act on their behalf. We present DoubleAgents, an
+agentic planning tool that embeds transparency and control through user
+intervention, value-reflecting policies, rich state visualizations, and
+uncertainty flagging for human coordination tasks. A built-in respondent
+simulation generates realistic scenarios, allowing users to rehearse, refine
+policies, and calibrate their reliance before live use. We evaluate
+DoubleAgents in a two-day lab study (n=10), two deployments (n=2), and a
+technical evaluation. Results show that participants initially hesitated to
+delegate but grew more reliant as they experienced transparency, control, and
+adaptive learning during simulated cases. Deployment results demonstrate
+DoubleAgents' real-world relevance and usefulness, showing that the effort
+required scaled appropriately with task complexity and contextual data. We
+contribute trust-by-design patterns and mechanisms for proactive AI --
+consistency, controllability, and explainability -- along with simulation as a
+safe path to build and calibrate trust over time.",http://arxiv.org/pdf/2509.12626v1,,False
+Mob-based cattle weight gain forecasting using ML models,16/09/2025,"Muhammad Riaz Hasib Hossain, Rafiqul Islam, Shawn R McGrath, Md Zahidul Islam, David Lamb","Forecasting mob based cattle weight gain (MB CWG) may benefit large livestock
+farms, allowing farmers to refine their feeding strategies, make educated
+breeding choices, and reduce risks linked to climate variability and market
+fluctuations. In this paper, a novel technique termed MB CWG is proposed to
+forecast the one month advanced weight gain of herd based cattle using
+historical data collected from the Charles Sturt University Farm. This research
+employs a Random Forest (RF) model, comparing its performance against Support
+Vector Regression (SVR) and Long Short Term Memory (LSTM) models for monthly
+weight gain prediction. Four datasets were used to evaluate the performance of
+models, using 756 sample data from 108 herd-based cattle, along with weather
+data (rainfall and temperature) influencing CWG. The RF model performs better
+than the SVR and LSTM models across all datasets, achieving an R^2 of 0.973,
+RMSE of 0.040, and MAE of 0.033 when both weather and age factors were
+included. The results indicate that including both weather and age factors
+significantly improves the accuracy of weight gain predictions, with the RF
+model outperforming the SVR and LSTM models in all scenarios. These findings
+demonstrate the potential of RF as a robust tool for forecasting cattle weight
+gain in variable conditions, highlighting the influence of age and climatic
+factors on herd based weight trends. This study has also developed an
+innovative automated pre processing tool to generate a benchmark dataset for MB
+CWG predictive models. The tool is publicly available on GitHub and can assist
+in preparing datasets for current and future analytical research..",http://arxiv.org/pdf/2509.12615v1,10.1016/j.atech.2025.101428,False
+Match Chat: Real Time Generative AI and Generative Computing for Tennis,16/09/2025,"Aaron Baughman, Gozde Akay, Eduardo Morales, Rahul Agarwal, Preetika Srivastava","We present Match Chat, a real-time, agent-driven assistant designed to
+enhance the tennis fan experience by delivering instant, accurate responses to
+match-related queries. Match Chat integrates Generative Artificial Intelligence
+(GenAI) with Generative Computing (GenComp) techniques to synthesize key
+insights during live tennis singles matches. The system debuted at the 2025
+Wimbledon Championships and the 2025 US Open, where it provided about 1 million
+users with seamless access to streaming and static data through natural
+language queries. The architecture is grounded in an Agent-Oriented
+Architecture (AOA) combining rule engines, predictive models, and agents to
+pre-process and optimize user queries before passing them to GenAI components.
+The Match Chat system had an answer accuracy of 92.83% with an average response
+time of 6.25 seconds under loads of up to 120 requests per second (RPS). Over
+96.08% of all queries were guided using interactive prompt design, contributing
+to a user experience that prioritized clarity, responsiveness, and minimal
+effort. The system was designed to mask architectural complexity, offering a
+frictionless and intuitive interface that required no onboarding or technical
+familiarity. Across both Grand Slam deployments, Match Chat maintained 100%
+uptime and supported nearly 1 million unique users, underscoring the
+scalability and reliability of the platform. This work introduces key design
+patterns for real-time, consumer-facing AI systems that emphasize speed,
+precision, and usability that highlights a practical path for deploying
+performant agentic systems in dynamic environments.",http://arxiv.org/pdf/2509.12592v1,,False
+DeepEyeNet: Generating Medical Report for Retinal Images,16/09/2025,Jia-Hong Huang,"The increasing prevalence of retinal diseases poses a significant challenge
+to the healthcare system, as the demand for ophthalmologists surpasses the
+available workforce. This imbalance creates a bottleneck in diagnosis and
+treatment, potentially delaying critical care. Traditional methods of
+generating medical reports from retinal images rely on manual interpretation,
+which is time-consuming and prone to errors, further straining
+ophthalmologists' limited resources. This thesis investigates the potential of
+Artificial Intelligence (AI) to automate medical report generation for retinal
+images. AI can quickly analyze large volumes of image data, identifying subtle
+patterns essential for accurate diagnosis. By automating this process, AI
+systems can greatly enhance the efficiency of retinal disease diagnosis,
+reducing doctors' workloads and enabling them to focus on more complex cases.
+The proposed AI-based methods address key challenges in automated report
+generation: (1) A multi-modal deep learning approach captures interactions
+between textual keywords and retinal images, resulting in more comprehensive
+medical reports; (2) Improved methods for medical keyword representation
+enhance the system's ability to capture nuances in medical terminology; (3)
+Strategies to overcome RNN-based models' limitations, particularly in capturing
+long-range dependencies within medical descriptions; (4) Techniques to enhance
+the interpretability of the AI-based report generation system, fostering trust
+and acceptance in clinical practice. These methods are rigorously evaluated
+using various metrics and achieve state-of-the-art performance. This thesis
+demonstrates AI's potential to revolutionize retinal disease diagnosis by
+automating medical report generation, ultimately improving clinical efficiency,
+diagnostic accuracy, and patient care.",http://arxiv.org/pdf/2509.12534v1,,False

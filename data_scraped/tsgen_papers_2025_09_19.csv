@@ -1,0 +1,467 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Explicit Context-Driven Neural Acoustic Modeling for High-Fidelity RIR Generation,18/09/2025,"Chen Si, Qianyi Wu, Chaitanya Amballa, Romit Roy Choudhury","Realistic sound simulation plays a critical role in many applications. A key
+element in sound simulation is the room impulse response (RIR), which
+characterizes how sound propagates from a source to a listener within a given
+space. Recent studies have applied neural implicit methods to learn RIR using
+context information collected from the environment, such as scene images.
+However, these approaches do not effectively leverage explicit geometric
+information from the environment. To further exploit the potential of neural
+implicit models with direct geometric features, we present Mesh-infused Neural
+Acoustic Field (MiNAF), which queries a rough room mesh at given locations and
+extracts distance distributions as an explicit representation of local context.
+Our approach demonstrates that incorporating explicit local geometric features
+can better guide the neural network in generating more accurate RIR
+predictions. Through comparisons with conventional and state-of-the-art
+baseline methods, we show that MiNAF performs competitively across various
+evaluation metrics. Furthermore, we verify the robustness of MiNAF in datasets
+with limited training samples, demonstrating an advance in high-fidelity sound
+simulation.",http://arxiv.org/pdf/2509.15210v1,,False
+TITAN: A Trajectory-Informed Technique for Adaptive Parameter Freezing in Large-Scale VQE,18/09/2025,"Yifeng Peng, Xinyi Li, Samuel Yen-Chi Chen, Kaining Zhang, Zhiding Liang, Ying Wang, Yuxuan Du","Variational quantum Eigensolver (VQE) is a leading candidate for harnessing
+quantum computers to advance quantum chemistry and materials simulations, yet
+its training efficiency deteriorates rapidly for large Hamiltonians. Two issues
+underlie this bottleneck: (i) the no-cloning theorem imposes a linear growth in
+circuit evaluations with the number of parameters per gradient step; and (ii)
+deeper circuits encounter barren plateaus (BPs), leading to exponentially
+increasing measurement overheads. To address these challenges, here we propose
+a deep learning framework, dubbed Titan, which identifies and freezes inactive
+parameters of a given ansatze at initialization for a specific class of
+Hamiltonians, reducing the optimization overhead without sacrificing accuracy.
+The motivation of Titan starts with our empirical findings that a subset of
+parameters consistently has a negligible influence on training dynamics. Its
+design combines a theoretically grounded data construction strategy, ensuring
+each training example is informative and BP-resilient, with an adaptive neural
+architecture that generalizes across ansatze of varying sizes. Across benchmark
+transverse-field Ising models, Heisenberg models, and multiple molecule systems
+up to 30 qubits, Titan achieves up to 3 times faster convergence and 40% to 60%
+fewer circuit evaluations than state-of-the-art baselines, while matching or
+surpassing their estimation accuracy. By proactively trimming parameter space,
+Titan lowers hardware demands and offers a scalable path toward utilizing VQE
+to advance practical quantum chemistry and materials science.",http://arxiv.org/pdf/2509.15193v1,,False
+Self-Improving Embodied Foundation Models,18/09/2025,"Seyed Kamyar Seyed Ghasemipour, Ayzaan Wahid, Jonathan Tompson, Pannag Sanketi, Igor Mordatch","Foundation models trained on web-scale data have revolutionized robotics, but
+their application to low-level control remains largely limited to behavioral
+cloning. Drawing inspiration from the success of the reinforcement learning
+stage in fine-tuning large language models, we propose a two-stage
+post-training approach for robotics. The first stage, Supervised Fine-Tuning
+(SFT), fine-tunes pretrained foundation models using both: a) behavioral
+cloning, and b) steps-to-go prediction objectives. In the second stage,
+Self-Improvement, steps-to-go prediction enables the extraction of a
+well-shaped reward function and a robust success detector, enabling a fleet of
+robots to autonomously practice downstream tasks with minimal human
+supervision. Through extensive experiments on real-world and simulated robot
+embodiments, our novel post-training recipe unveils significant results on
+Embodied Foundation Models. First, we demonstrate that the combination of SFT
+and Self-Improvement is significantly more sample-efficient than scaling
+imitation data collection for supervised learning, and that it leads to
+policies with significantly higher success rates. Further ablations highlight
+that the combination of web-scale pretraining and Self-Improvement is the key
+to this sample-efficiency. Next, we demonstrate that our proposed combination
+uniquely unlocks a capability that current methods cannot achieve: autonomously
+practicing and acquiring novel skills that generalize far beyond the behaviors
+observed in the imitation learning datasets used during training. These
+findings highlight the transformative potential of combining pretrained
+foundation models with online Self-Improvement to enable autonomous skill
+acquisition in robotics. Our project website can be found at
+https://self-improving-efms.github.io .",http://arxiv.org/pdf/2509.15155v1,,False
+Super-Linear: A Lightweight Pretrained Mixture of Linear Experts for Time Series Forecasting,18/09/2025,"Liran Nochumsohn, Raz Marshanski, Hedi Zisling, Omri Azencot","Time series forecasting (TSF) is critical in domains like energy, finance,
+healthcare, and logistics, requiring models that generalize across diverse
+datasets. Large pre-trained models such as Chronos and Time-MoE show strong
+zero-shot (ZS) performance but suffer from high computational costs. In this
+work, We introduce Super-Linear, a lightweight and scalable mixture-of-experts
+(MoE) model for general forecasting. It replaces deep architectures with simple
+frequency-specialized linear experts, trained on resampled data across multiple
+frequency regimes. A lightweight spectral gating mechanism dynamically selects
+relevant experts, enabling efficient, accurate forecasting. Despite its
+simplicity, Super-Linear matches state-of-the-art performance while offering
+superior efficiency, robustness to various sampling rates, and enhanced
+interpretability. The implementation of Super-Linear is available at
+\href{https://github.com/azencot-group/SuperLinear}{https://github.com/azencot-group/SuperLinear}",http://arxiv.org/pdf/2509.15105v1,,False
+Real-Time Streaming Mel Vocoding with Generative Flow Matching,18/09/2025,"Simon Welker, Tal Peer, Timo Gerkmann","The task of Mel vocoding, i.e., the inversion of a Mel magnitude spectrogram
+to an audio waveform, is still a key component in many text-to-speech (TTS)
+systems today. Based on generative flow matching, our prior work on generative
+STFT phase retrieval (DiffPhase), and the pseudoinverse operator of the Mel
+filterbank, we develop MelFlow, a streaming-capable generative Mel vocoder for
+speech sampled at 16 kHz with an algorithmic latency of only 32 ms and a total
+latency of 48 ms. We show real-time streaming capability at this latency not
+only in theory, but in practice on a consumer laptop GPU. Furthermore, we show
+that our model achieves substantially better PESQ and SI-SDR values compared to
+well-established not streaming-capable baselines for Mel vocoding including
+HiFi-GAN.",http://arxiv.org/pdf/2509.15085v1,,False
+Forecasting and Visualizing Air Quality from Sky Images with Vision-Language Models,18/09/2025,"Mohammad Saleh Vahdatpour, Maryam Eyvazi, Yanqing Zhang","Air pollution remains a critical threat to public health and environmental
+sustainability, yet conventional monitoring systems are often constrained by
+limited spatial coverage and accessibility. This paper proposes an AI-driven
+agent that predicts ambient air pollution levels from sky images and
+synthesizes realistic visualizations of pollution scenarios using generative
+modeling. Our approach combines statistical texture analysis with supervised
+learning for pollution classification, and leverages vision-language model
+(VLM)-guided image generation to produce interpretable representations of air
+quality conditions. The generated visuals simulate varying degrees of
+pollution, offering a foundation for user-facing interfaces that improve
+transparency and support informed environmental decision-making. These outputs
+can be seamlessly integrated into intelligent applications aimed at enhancing
+situational awareness and encouraging behavioral responses based on real-time
+forecasts. We validate our method using a dataset of urban sky images and
+demonstrate its effectiveness in both pollution level estimation and
+semantically consistent visual synthesis. The system design further
+incorporates human-centered user experience principles to ensure accessibility,
+clarity, and public engagement in air quality forecasting. To support scalable
+and energy-efficient deployment, future iterations will incorporate a green CNN
+architecture enhanced with FPGA-based incremental learning, enabling real-time
+inference on edge platforms.",http://arxiv.org/pdf/2509.15076v1,,False
+Improving Internet Traffic Matrix Prediction via Time Series Clustering,18/09/2025,"Martha Cash, Alexander Wyglinski","We present a novel framework that leverages time series clustering to improve
+internet traffic matrix (TM) prediction using deep learning (DL) models.
+Traffic flows within a TM often exhibit diverse temporal behaviors, which can
+hinder prediction accuracy when training a single model across all flows. To
+address this, we propose two clustering strategies, source clustering and
+histogram clustering, that group flows with similar temporal patterns prior to
+model training. Clustering creates more homogeneous data subsets, enabling
+models to capture underlying patterns more effectively and generalize better
+than global prediction approaches that fit a single model to the entire TM.
+Compared to existing TM prediction methods, our method reduces RMSE by up to
+92\% for Abilene and 75\% for G\'EANT. In routing scenarios, our clustered
+predictions also reduce maximum link utilization (MLU) bias by 18\% and 21\%,
+respectively, demonstrating the practical benefits of clustering when TMs are
+used for network optimization.",http://arxiv.org/pdf/2509.15072v1,,False
+Communication Efficient Split Learning of ViTs with Attention-based Double Compression,18/09/2025,"Federico Alvetreti, Jary Pomponi, Paolo Di Lorenzo, Simone Scardapane","This paper proposes a novel communication-efficient Split Learning (SL)
+framework, named Attention-based Double Compression (ADC), which reduces the
+communication overhead required for transmitting intermediate Vision
+Transformers activations during the SL training process. ADC incorporates two
+parallel compression strategies. The first one merges samples' activations that
+are similar, based on the average attention score calculated in the last client
+layer; this strategy is class-agnostic, meaning that it can also merge samples
+having different classes, without losing generalization ability nor decreasing
+final results. The second strategy follows the first and discards the least
+meaningful tokens, further reducing the communication cost. Combining these
+strategies not only allows for sending less during the forward pass, but also
+the gradients are naturally compressed, allowing the whole model to be trained
+without additional tuning or approximations of the gradients. Simulation
+results demonstrate that Attention-based Double Compression outperforms
+state-of-the-art SL frameworks by significantly reducing communication
+overheads while maintaining high accuracy.",http://arxiv.org/pdf/2509.15058v1,,False
+Balancing Sparse RNNs with Hyperparameterization Benefiting Meta-Learning,18/09/2025,"Quincy Hershey, Randy Paffenroth","This paper develops alternative hyperparameters for specifying sparse
+Recurrent Neural Networks (RNNs). These hyperparameters allow for varying
+sparsity within the trainable weight matrices of the model while improving
+overall performance. This architecture enables the definition of a novel
+metric, hidden proportion, which seeks to balance the distribution of unknowns
+within the model and provides significant explanatory power of model
+performance. Together, the use of the varied sparsity RNN architecture combined
+with the hidden proportion metric generates significant performance gains while
+improving performance expectations on an a priori basis. This combined approach
+provides a path forward towards generalized meta-learning applications and
+model optimization based on intrinsic characteristics of the data set,
+including input and output dimensions.",http://arxiv.org/pdf/2509.15057v1,,False
+From Patterns to Predictions: A Shapelet-Based Framework for Directional Forecasting in Noisy Financial Markets,18/09/2025,"Juwon Kim, Hyunwook Lee, Hyotaek Jeon, Seungmin Jin, Sungahn Ko","Directional forecasting in financial markets requires both accuracy and
+interpretability. Before the advent of deep learning, interpretable approaches
+based on human-defined patterns were prevalent, but their structural vagueness
+and scale ambiguity hindered generalization. In contrast, deep learning models
+can effectively capture complex dynamics, yet often offer limited transparency.
+To bridge this gap, we propose a two-stage framework that integrates
+unsupervised pattern extracion with interpretable forecasting. (i) SIMPC
+segments and clusters multivariate time series, extracting recurrent patterns
+that are invariant to amplitude scaling and temporal distortion, even under
+varying window sizes. (ii) JISC-Net is a shapelet-based classifier that uses
+the initial part of extracted patterns as input and forecasts subsequent
+partial sequences for short-term directional movement. Experiments on Bitcoin
+and three S&P 500 equities demonstrate that our method ranks first or second in
+11 out of 12 metric--dataset combinations, consistently outperforming
+baselines. Unlike conventional deep learning models that output buy-or-sell
+signals without interpretable justification, our approach enables transparent
+decision-making by revealing the underlying pattern structures that drive
+predictive outcomes.",http://arxiv.org/pdf/2509.15040v1,10.1145/3746252.3761250,False
+Beyond Marginals: Learning Joint Spatio-Temporal Patterns for Multivariate Anomaly Detection,18/09/2025,"Padmaksha Roy, Almuatazbellah Boker, Lamine Mili","In this paper, we aim to improve multivariate anomaly detection (AD) by
+modeling the \textit{time-varying non-linear spatio-temporal correlations}
+found in multivariate time series data . In multivariate time series data, an
+anomaly may be indicated by the simultaneous deviation of interrelated time
+series from their expected collective behavior, even when no individual time
+series exhibits a clearly abnormal pattern on its own. In many existing
+approaches, time series variables are assumed to be (conditionally)
+independent, which oversimplifies real-world interactions. Our approach
+addresses this by modeling joint dependencies in the latent space and
+decoupling the modeling of \textit{marginal distributions, temporal dynamics,
+and inter-variable dependencies}. We use a transformer encoder to capture
+temporal patterns, and to model spatial (inter-variable) dependencies, we fit a
+multi-variate likelihood and a copula. The temporal and the spatial components
+are trained jointly in a latent space using a self-supervised contrastive
+learning objective to learn meaningful feature representations to separate
+normal and anomaly samples.",http://arxiv.org/pdf/2509.15033v1,,False
+M4Diffuser: Multi-View Diffusion Policy with Manipulability-Aware Control for Robust Mobile Manipulation,18/09/2025,"Ju Dong, Lei Zhang, Liding Zhang, Yao Ling, Yu Fu, Kaixin Bai, Zoltán-Csaba Márton, Zhenshan Bing, Zhaopeng Chen, Alois Christian Knoll, Jianwei Zhang","Mobile manipulation requires the coordinated control of a mobile base and a
+robotic arm while simultaneously perceiving both global scene context and
+fine-grained object details. Existing single-view approaches often fail in
+unstructured environments due to limited fields of view, exploration, and
+generalization abilities. Moreover, classical controllers, although stable,
+struggle with efficiency and manipulability near singularities. To address
+these challenges, we propose M4Diffuser, a hybrid framework that integrates a
+Multi-View Diffusion Policy with a novel Reduced and Manipulability-aware QP
+(ReM-QP) controller for mobile manipulation. The diffusion policy leverages
+proprioceptive states and complementary camera perspectives with both
+close-range object details and global scene context to generate task-relevant
+end-effector goals in the world frame. These high-level goals are then executed
+by the ReM-QP controller, which eliminates slack variables for computational
+efficiency and incorporates manipulability-aware preferences for robustness
+near singularities. Comprehensive experiments in simulation and real-world
+environments show that M4Diffuser achieves 7 to 56 percent higher success rates
+and reduces collisions by 3 to 31 percent over baselines. Our approach
+demonstrates robust performance for smooth whole-body coordination, and strong
+generalization to unseen tasks, paving the way for reliable mobile manipulation
+in unstructured environments. Details of the demo and supplemental material are
+available on our project website https://sites.google.com/view/m4diffuser.",http://arxiv.org/pdf/2509.14980v1,,False
+Towards universal property prediction in Cartesian space: TACE is all you need,18/09/2025,"Zemin Xu, Wenbo Xie, Daiqian Xie, P. Hu","Machine learning has revolutionized atomistic simulations and materials
+science, yet current approaches often depend on spherical-harmonic
+representations. Here we introduce the Tensor Atomic Cluster Expansion and
+Tensor Moment Potential, the first unified framework formulated entirely in
+Cartesian space for the systematic prediction of arbitrary structure-determined
+tensorial properties. TACE achieves this by decomposing atomic environments
+into a complete hierarchy of (irreducible) Cartesian tensors, ensuring
+symmetry-consistent representations that naturally encode invariance and
+equivariance constraints. Beyond geometry, TACE incorporates universal
+embeddings that flexibly integrate diverse attributes including basis sets,
+charges, magnetic moments and field perturbations. This allows explicit control
+over external invariants and equivariants in the prediction process. Long-range
+interactions are also accurately described through the Latent Ewald Summation
+module within the short-range approximation, providing a rigorous yet
+computationally efficient treatment of electrostatic interactions. We
+demonstrate that TACE attains accuracy, stability, and efficiency on par with
+or surpassing leading equivariant frameworks across finite molecules and
+extended materials, including in-domain and out-of-domain benchmarks, spectra,
+hessians, external-field response, charged systems, magnetic systems,
+multi-fidelity training, and heterogeneous catalytic systems. Crucially, TACE
+bridges scalar and tensorial modeling and establishes a Cartesian-space
+paradigm that unifies and extends beyond the design space of
+spherical-harmonic-based methods. This work lays the foundation for a new
+generation of universal atomistic machine learning models capable of
+systematically capturing the rich interplay of geometry, fields and material
+properties within a single coherent framework.",http://arxiv.org/pdf/2509.14961v1,,False
+Sentinel Agents for Secure and Trustworthy Agentic AI in Multi-Agent Systems,18/09/2025,"Diego Gosmar, Deborah A. Dahl","This paper proposes a novel architectural framework aimed at enhancing
+security and reliability in multi-agent systems (MAS). A central component of
+this framework is a network of Sentinel Agents, functioning as a distributed
+security layer that integrates techniques such as semantic analysis via large
+language models (LLMs), behavioral analytics, retrieval-augmented verification,
+and cross-agent anomaly detection. Such agents can potentially oversee
+inter-agent communications, identify potential threats, enforce privacy and
+access controls, and maintain comprehensive audit records. Complementary to the
+idea of Sentinel Agents is the use of a Coordinator Agent. The Coordinator
+Agent supervises policy implementation, and manages agent participation. In
+addition, the Coordinator also ingests alerts from Sentinel Agents. Based on
+these alerts, it can adapt policies, isolate or quarantine misbehaving agents,
+and contain threats to maintain the integrity of the MAS ecosystem. This
+dual-layered security approach, combining the continuous monitoring of Sentinel
+Agents with the governance functions of Coordinator Agents, supports dynamic
+and adaptive defense mechanisms against a range of threats, including prompt
+injection, collusive agent behavior, hallucinations generated by LLMs, privacy
+breaches, and coordinated multi-agent attacks. In addition to the architectural
+design, we present a simulation study where 162 synthetic attacks of different
+families (prompt injection, hallucination, and data exfiltration) were injected
+into a multi-agent conversational environment. The Sentinel Agents successfully
+detected the attack attempts, confirming the practical feasibility of the
+proposed monitoring approach. The framework also offers enhanced system
+observability, supports regulatory compliance, and enables policy evolution
+over time.",http://arxiv.org/pdf/2509.14956v1,,False
+DAG: A Dual Causal Network for Time Series Forecasting with Exogenous Variables,18/09/2025,"Xiangfei Qiu, Yuhan Zhu, Zhengyu Li, Hanyin Cheng, Xingjian Wu, Chenjuan Guo, Bin Yang, Jilin Hu","Time series forecasting is crucial in various fields such as economics,
+traffic, and AIOps. However, in real-world applications, focusing solely on the
+endogenous variables (i.e., target variables), is often insufficient to ensure
+accurate predictions. Considering exogenous variables (i.e., covariates)
+provides additional predictive information, thereby improving forecasting
+accuracy. However, existing methods for time series forecasting with exogenous
+variables (TSF-X) have the following shortcomings: 1) they do not leverage
+future exogenous variables, 2) they fail to account for the causal
+relationships between endogenous and exogenous variables. As a result, their
+performance is suboptimal. In this study, to better leverage exogenous
+variables, especially future exogenous variable, we propose a general framework
+DAG, which utilizes dual causal network along both the temporal and channel
+dimensions for time series forecasting with exogenous variables. Specifically,
+we first introduce the Temporal Causal Module, which includes a causal
+discovery module to capture how historical exogenous variables affect future
+exogenous variables. Following this, we construct a causal injection module
+that incorporates the discovered causal relationships into the process of
+forecasting future endogenous variables based on historical endogenous
+variables. Next, we propose the Channel Causal Module, which follows a similar
+design principle. It features a causal discovery module models how historical
+exogenous variables influence historical endogenous variables, and a causal
+injection module incorporates the discovered relationships to enhance the
+prediction of future endogenous variables based on future exogenous variables.",http://arxiv.org/pdf/2509.14933v1,,False
+Inspired by machine learning optimization: can gradient-based optimizers solve cycle skipping in full waveform inversion given sufficient iterations?,18/09/2025,"Xinru Mu, Omar M. Saad, Shaowen Wang, Tariq Alkhalifah","Full waveform inversion (FWI) iteratively updates the velocity model by
+minimizing the difference between observed and simulated data. Due to the high
+computational cost and memory requirements associated with global optimization
+algorithms, FWI is typically implemented using local optimization methods.
+However, when the initial velocity model is inaccurate and low-frequency
+seismic data (e.g., below 3 Hz) are absent, the mismatch between simulated and
+observed data may exceed half a cycle, a phenomenon known as cycle skipping. In
+such cases, local optimization algorithms (e.g., gradient-based local
+optimizers) tend to converge to local minima, leading to inaccurate inversion
+results. In machine learning, neural network training is also an optimization
+problem prone to local minima. It often employs gradient-based optimizers with
+a relatively large learning rate (beyond the theoretical limits of local
+optimization that are usually determined numerically by a line search), which
+allows the optimization to behave like a quasi-global optimizer. Consequently,
+after training for several thousand iterations, we can obtain a neural network
+model with strong generative capability. In this study, we also employ
+gradient-based optimizers with a relatively large learning rate for FWI.
+Results from both synthetic and field data experiments show that FWI may
+initially converge to a local minimum; however, with sufficient additional
+iterations, the inversion can gradually approach the global minimum, slowly
+from shallow subsurface to deep, ultimately yielding an accurate velocity
+model. Furthermore, numerical examples indicate that, given sufficient
+iterations, reasonable velocity inversion results can still be achieved even
+when low-frequency data below 5 Hz are missing.",http://arxiv.org/pdf/2509.14919v1,,False
+Beyond Spherical geometry: Unraveling complex features of objects orbiting around stars from its transit light curve using deep learning,18/09/2025,"Ushasi Bhowmick, Shivam Kumaran","Characterizing the geometry of an object orbiting around a star from its
+transit light curve is a powerful tool to uncover various complex phenomena.
+This problem is inherently ill-posed, since similar or identical light curves
+can be produced by multiple different shapes. In this study, we investigate the
+extent to which the features of a shape can be embedded in a transit light
+curve. We generate a library of two-dimensional random shapes and simulate
+their transit light curves with light curve simulator, Yuti. Each shape is
+decomposed into a series of elliptical components expressed in the form of
+Fourier coefficients that adds increasingly diminishing perturbations to an
+ideal ellipse. We train deep neural networks to predict these Fourier
+coefficients directly from simulated light curves. Our results demonstrate that
+the neural network can successfully reconstruct the low-order ellipses, which
+describe overall shape, orientation and large-scale perturbations. For higher
+order ellipses the scale is successfully determined but the inference of
+eccentricity and orientation is limited, demonstrating the extent of shape
+information in the light curve. We explore the impact of non-convex shape
+features in reconstruction, and show its dependence on shape orientation. The
+level of reconstruction achieved by the neural network underscores the utility
+of using light curves as a means to extract geometric information from
+transiting systems.",http://arxiv.org/pdf/2509.14875v1,,False
+Diffusion-Based Scenario Tree Generation for Multivariate Time Series Prediction and Multistage Stochastic Optimization,18/09/2025,"Stelios Zarifis, Ioannis Kordonis, Petros Maragos","Stochastic forecasting is critical for efficient decision-making in uncertain
+systems, such as energy markets and finance, where estimating the full
+distribution of future scenarios is essential. We propose Diffusion Scenario
+Tree (DST), a general framework for constructing scenario trees for
+multivariate prediction tasks using diffusion-based probabilistic forecasting
+models. DST recursively samples future trajectories and organizes them into a
+tree via clustering, ensuring non-anticipativity (decisions depending only on
+observed history) at each stage. We evaluate the framework on the optimization
+task of energy arbitrage in New York State's day-ahead electricity market.
+Experimental results show that our approach consistently outperforms the same
+optimization algorithms that use scenario trees from more conventional models
+and Model-Free Reinforcement Learning baselines. Furthermore, using DST for
+stochastic optimization yields more efficient decision policies, achieving
+higher performance by better handling uncertainty than deterministic and
+stochastic MPC variants using the same diffusion-based forecaster.",http://arxiv.org/pdf/2509.14832v1,,False
+DeCoP: Enhancing Self-Supervised Time Series Representation with Dependency Controlled Pre-training,18/09/2025,"Yuemin Wu, Zhongze Wu, Xiu Su, Feng Yang, Hongyan Xu, Xi Lin, Wenti Huang, Shan You, Chang Xu","Modeling dynamic temporal dependencies is a critical challenge in time series
+pre-training, which evolve due to distribution shifts and multi-scale patterns.
+This temporal variability severely impairs the generalization of pre-trained
+models to downstream tasks. Existing frameworks fail to capture the complex
+interactions of short- and long-term dependencies, making them susceptible to
+spurious correlations that degrade generalization. To address these
+limitations, we propose DeCoP, a Dependency Controlled Pre-training framework
+that explicitly models dynamic, multi-scale dependencies by simulating evolving
+inter-patch dependencies. At the input level, DeCoP introduces Instance-wise
+Patch Normalization (IPN) to mitigate distributional shifts while preserving
+the unique characteristics of each patch, creating a robust foundation for
+representation learning. At the latent level, a hierarchical Dependency
+Controlled Learning (DCL) strategy explicitly models inter-patch dependencies
+across multiple temporal scales, with an Instance-level Contrastive Module
+(ICM) enhances global generalization by learning instance-discriminative
+representations from time-invariant positive pairs. DeCoP achieves
+state-of-the-art results on ten datasets with lower computing resources,
+improving MSE by 3% on ETTh1 over PatchTST using only 37% of the FLOPs.",http://arxiv.org/pdf/2509.14642v1,,False
+DyWPE: Signal-Aware Dynamic Wavelet Positional Encoding for Time Series Transformers,18/09/2025,"Habib Irani, Vangelis Metsis","Existing positional encoding methods in transformers are fundamentally
+signal-agnostic, deriving positional information solely from sequence indices
+while ignoring the underlying signal characteristics. This limitation is
+particularly problematic for time series analysis, where signals exhibit
+complex, non-stationary dynamics across multiple temporal scales. We introduce
+Dynamic Wavelet Positional Encoding (DyWPE), a novel signal-aware framework
+that generates positional embeddings directly from input time series using the
+Discrete Wavelet Transform (DWT). Comprehensive experiments in ten diverse time
+series datasets demonstrate that DyWPE consistently outperforms eight existing
+state-of-the-art positional encoding methods, achieving average relative
+improvements of 9.1\% compared to baseline sinusoidal absolute position
+encoding in biomedical signals, while maintaining competitive computational
+efficiency.",http://arxiv.org/pdf/2509.14640v1,,False
+Mitigating Intra-Speaker Variability in Diarization with Style-Controllable Speech Augmentation,18/09/2025,"Miseul Kim, Soo Jin Park, Kyungguen Byun, Hyeon-Kyeong Shin, Sunkuk Moon, Shuhua Zhang, Erik Visser","Speaker diarization systems often struggle with high intrinsic intra-speaker
+variability, such as shifts in emotion, health, or content. This can cause
+segments from the same speaker to be misclassified as different individuals,
+for example, when one raises their voice or speaks faster during conversation.
+To address this, we propose a style-controllable speech generation model that
+augments speech across diverse styles while preserving the target speaker's
+identity. The proposed system starts with diarized segments from a conventional
+diarizer. For each diarized segment, it generates augmented speech samples
+enriched with phonetic and stylistic diversity. And then, speaker embeddings
+from both the original and generated audio are blended to enhance the system's
+robustness in grouping segments with high intrinsic intra-speaker variability.
+We validate our approach on a simulated emotional speech dataset and the
+truncated AMI dataset, demonstrating significant improvements, with error rate
+reductions of 49% and 35% on each dataset, respectively.",http://arxiv.org/pdf/2509.14632v1,,False
+Automating Modelica Module Generation Using Large Language Models: A Case Study on Building Control Description Language,18/09/2025,"Hanlong Wan, Xing Lu, Yan Chen, Karthik Devaprasad, Laura Hinkle","Dynamic energy systems and controls require advanced modeling frameworks to
+design and test supervisory and fault tolerant strategies. Modelica is a widely
+used equation based language, but developing control modules is labor intensive
+and requires specialized expertise. This paper examines the use of large
+language models (LLMs) to automate the generation of Control Description
+Language modules in the Building Modelica Library as a case study. We developed
+a structured workflow that combines standardized prompt scaffolds, library
+aware grounding, automated compilation with OpenModelica, and human in the loop
+evaluation. Experiments were carried out on four basic logic tasks (And, Or,
+Not, and Switch) and five control modules (chiller enable/disable, bypass valve
+control, cooling tower fan speed, plant requests, and relief damper control).
+The results showed that GPT 4o failed to produce executable Modelica code in
+zero shot mode, while Claude Sonnet 4 achieved up to full success for basic
+logic blocks with carefully engineered prompts. For control modules, success
+rates reached 83 percent, and failed outputs required medium level human repair
+(estimated one to eight hours). Retrieval augmented generation often produced
+mismatches in module selection (for example, And retrieved as Or), while a
+deterministic hard rule search strategy avoided these errors. Human evaluation
+also outperformed AI evaluation, since current LLMs cannot assess simulation
+results or validate behavioral correctness. Despite these limitations, the LLM
+assisted workflow reduced the average development time from 10 to 20 hours down
+to 4 to 6 hours per module, corresponding to 40 to 60 percent time savings.
+These results highlight both the potential and current limitations of LLM
+assisted Modelica generation, and point to future research in pre simulation
+validation, stronger grounding, and closed loop evaluation.",http://arxiv.org/pdf/2509.14623v1,,False
+TICA-Based Free Energy Matching for Machine-Learned Molecular Dynamics,18/09/2025,"Alexander Aghili, Andy Bruce, Daniel Sabo, Razvan Marinescu","Molecular dynamics (MD) simulations provide atomistic insight into
+biomolecular systems but are often limited by high computational costs required
+to access long timescales. Coarse-grained machine learning models offer a
+promising avenue for accelerating sampling, yet conventional force matching
+approaches often fail to capture the full thermodynamic landscape as fitting a
+model on the gradient may not fit the absolute differences between low-energy
+conformational states. In this work, we incorporate a complementary energy
+matching term into the loss function. We evaluate our framework on the
+Chignolin protein using the CGSchNet model, systematically varying the weight
+of the energy loss term. While energy matching did not yield statistically
+significant improvements in accuracy, it revealed distinct tendencies in how
+models generalize the free energy surface. Our results suggest future
+opportunities to enhance coarse-grained modeling through improved energy
+estimation techniques and multi-modal loss formulations.",http://arxiv.org/pdf/2509.14600v1,,False
+Online reinforcement learning via sparse Gaussian mixture model Q-functions,18/09/2025,"Minh Vu, Konstantinos Slavakis","This paper introduces a structured and interpretable online policy-iteration
+framework for reinforcement learning (RL), built around the novel class of
+sparse Gaussian mixture model Q-functions (S-GMM-QFs). Extending earlier work
+that trained GMM-QFs offline, the proposed framework develops an online scheme
+that leverages streaming data to encourage exploration. Model complexity is
+regulated through sparsification by Hadamard overparametrization, which
+mitigates overfitting while preserving expressiveness. The parameter space of
+S-GMM-QFs is naturally endowed with a Riemannian manifold structure, allowing
+for principled parameter updates via online gradient descent on a smooth
+objective. Numerical tests show that S-GMM-QFs match the performance of dense
+deep RL (DeepRL) methods on standard benchmarks while using significantly fewer
+parameters, and maintain strong performance even in low-parameter-count regimes
+where sparsified DeepRL methods fail to generalize.",http://arxiv.org/pdf/2509.14585v1,,False
+Rationality Check! Benchmarking the Rationality of Large Language Models,18/09/2025,"Zhilun Zhou, Jing Yi Wang, Nicholas Sukiennik, Chen Gao, Fengli Xu, Yong Li, James Evans","Large language models (LLMs), a recent advance in deep learning and machine
+intelligence, have manifested astonishing capacities, now considered among the
+most promising for artificial general intelligence. With human-like
+capabilities, LLMs have been used to simulate humans and serve as AI assistants
+across many applications. As a result, great concern has arisen about whether
+and under what circumstances LLMs think and behave like real human agents.
+Rationality is among the most important concepts in assessing human behavior,
+both in thinking (i.e., theoretical rationality) and in taking action (i.e.,
+practical rationality). In this work, we propose the first benchmark for
+evaluating the omnibus rationality of LLMs, covering a wide range of domains
+and LLMs. The benchmark includes an easy-to-use toolkit, extensive experimental
+results, and analysis that illuminates where LLMs converge and diverge from
+idealized human rationality. We believe the benchmark can serve as a
+foundational tool for both developers and users of LLMs.",http://arxiv.org/pdf/2509.14546v1,,False
+Predicting Case Suffixes With Activity Start and End Times: A Sweep-Line Based Approach,18/09/2025,"Muhammad Awais Ali, Marlon Dumas, Fredrik Milani","Predictive process monitoring techniques support the operational decision
+making by predicting future states of ongoing cases of a business process. A
+subset of these techniques predict the remaining sequence of activities of an
+ongoing case (case suffix prediction). Existing approaches for case suffix
+prediction generate sequences of activities with a single timestamp (e.g. the
+end timestamp). This output is insufficient for resource capacity planning,
+where we need to reason about the periods of time when resources will be busy
+performing work. This paper introduces a technique for predicting case suffixes
+consisting of activities with start and end timestamps. In other words, the
+proposed technique predicts both the waiting time and the processing time of
+each activity. Since the waiting time of an activity in a case depends on how
+busy resources are in other cases, the technique adopts a sweep-line approach,
+wherein the suffixes of all ongoing cases in the process are predicted in
+lockstep, rather than predictions being made for each case in isolation. An
+evaluation on real-life and synthetic datasets compares the accuracy of
+different instantiations of this approach, demonstrating the advantages of a
+multi-model approach to case suffix prediction.",http://arxiv.org/pdf/2509.14536v1,,False

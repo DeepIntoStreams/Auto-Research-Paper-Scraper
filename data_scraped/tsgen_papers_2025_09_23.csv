@@ -1,0 +1,368 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+FinFlowRL: An Imitation-Reinforcement Learning Framework for Adaptive Stochastic Control in Finance,22/09/2025,"Yang Li, Zhi Chen, Steve Y. Yang, Ruixun Zhang","Traditional stochastic control methods in finance rely on simplifying
+assumptions that often fail in real world markets. While these methods work
+well in specific, well defined scenarios, they underperform when market
+conditions change. We introduce FinFlowRL, a novel framework for financial
+stochastic control that combines imitation learning with reinforcement
+learning. The framework first pretrains an adaptive meta policy by learning
+from multiple expert strategies, then finetunes it through reinforcement
+learning in the noise space to optimize the generation process. By employing
+action chunking, that is generating sequences of actions rather than single
+decisions, it addresses the non Markovian nature of financial markets.
+FinFlowRL consistently outperforms individually optimized experts across
+diverse market conditions.",http://arxiv.org/pdf/2509.17964v1,,False
+StefaLand: An Efficient Geoscience Foundation Model That Improves Dynamic Land-Surface Predictions,22/09/2025,"Nicholas Kraabel, Jiangtao Liu, Yuchen Bian, Daniel Kifer, Chaopeng Shen","Stewarding natural resources, mitigating floods, droughts, wildfires, and
+landslides, and meeting growing demands require models that can predict
+climate-driven land-surface responses and human feedback with high accuracy.
+Traditional impact models, whether process-based, statistical, or machine
+learning, struggle with spatial generalization due to limited observations and
+concept drift. Recently proposed vision foundation models trained on satellite
+imagery demand massive compute and are ill-suited for dynamic land-surface
+prediction. We introduce StefaLand, a generative spatiotemporal earth
+foundation model centered on landscape interactions. StefaLand improves
+predictions on three tasks and four datasets: streamflow, soil moisture, and
+soil composition, compared to prior state-of-the-art. Results highlight its
+ability to generalize across diverse, data-scarce regions and support broad
+land-surface applications. The model builds on a masked autoencoder backbone
+that learns deep joint representations of landscape attributes, with a
+location-aware architecture fusing static and time-series inputs,
+attribute-based representations that drastically reduce compute, and residual
+fine-tuning adapters that enhance transfer. While inspired by prior methods,
+their alignment with geoscience and integration in one model enables robust
+performance on dynamic land-surface tasks. StefaLand can be pretrained and
+finetuned on academic compute yet outperforms state-of-the-art baselines and
+even fine-tuned vision foundation models. To our knowledge, this is the first
+geoscience land-surface foundation model that demonstrably improves dynamic
+land-surface interaction predictions and supports diverse downstream
+applications.",http://arxiv.org/pdf/2509.17942v1,,False
+ComposableNav: Instruction-Following Navigation in Dynamic Environments via Composable Diffusion,22/09/2025,"Zichao Hu, Chen Tang, Michael J. Munje, Yifeng Zhu, Alex Liu, Shuijing Liu, Garrett Warnell, Peter Stone, Joydeep Biswas","This paper considers the problem of enabling robots to navigate dynamic
+environments while following instructions. The challenge lies in the
+combinatorial nature of instruction specifications: each instruction can
+include multiple specifications, and the number of possible specification
+combinations grows exponentially as the robot's skill set expands. For example,
+""overtake the pedestrian while staying on the right side of the road"" consists
+of two specifications: ""overtake the pedestrian"" and ""walk on the right side of
+the road."" To tackle this challenge, we propose ComposableNav, based on the
+intuition that following an instruction involves independently satisfying its
+constituent specifications, each corresponding to a distinct motion primitive.
+Using diffusion models, ComposableNav learns each primitive separately, then
+composes them in parallel at deployment time to satisfy novel combinations of
+specifications unseen in training. Additionally, to avoid the onerous need for
+demonstrations of individual motion primitives, we propose a two-stage training
+procedure: (1) supervised pre-training to learn a base diffusion model for
+dynamic navigation, and (2) reinforcement learning fine-tuning that molds the
+base model into different motion primitives. Through simulation and real-world
+experiments, we show that ComposableNav enables robots to follow instructions
+by generating trajectories that satisfy diverse and unseen combinations of
+specifications, significantly outperforming both non-compositional VLM-based
+policies and costmap composing baselines. Videos and additional materials can
+be found on the project page: https://amrl.cs.utexas.edu/ComposableNav/",http://arxiv.org/pdf/2509.17941v1,,False
+Lipschitz-Based Robustness Certification for Recurrent Neural Networks via Convex Relaxation,22/09/2025,"Paul Hamelbeck, Johannes Schiffer","Robustness certification against bounded input noise or adversarial
+perturbations is increasingly important for deployment recurrent neural
+networks (RNNs) in safety-critical control applications. To address this
+challenge, we present RNN-SDP, a relaxation based method that models the RNN's
+layer interactions as a convex problem and computes a certified upper bound on
+the Lipschitz constant via semidefinite programming (SDP). We also explore an
+extension that incorporates known input constraints to further tighten the
+resulting Lipschitz bounds. RNN-SDP is evaluated on a synthetic multi-tank
+system, with upper bounds compared to empirical estimates. While incorporating
+input constraints yields only modest improvements, the general method produces
+reasonably tight and certifiable bounds, even as sequence length increases. The
+results also underscore the often underestimated impact of initialization
+errors, an important consideration for applications where models are frequently
+re-initialized, such as model predictive control (MPC).",http://arxiv.org/pdf/2509.17898v1,,False
+Conv-like Scale-Fusion Time Series Transformer: A Multi-Scale Representation for Variable-Length Long Time Series,22/09/2025,"Kai Zhang, Siming Sun, Zhengyu Fan, Qinmin Yang, Xuejun Jiang","Time series analysis faces significant challenges in handling variable-length
+data and achieving robust generalization. While Transformer-based models have
+advanced time series tasks, they often struggle with feature redundancy and
+limited generalization capabilities. Drawing inspiration from classical CNN
+architectures' pyramidal structure, we propose a Multi-Scale Representation
+Learning Framework based on a Conv-like ScaleFusion Transformer. Our approach
+introduces a temporal convolution-like structure that combines patching
+operations with multi-head attention, enabling progressive temporal dimension
+compression and feature channel expansion. We further develop a novel
+cross-scale attention mechanism for effective feature fusion across different
+temporal scales, along with a log-space normalization method for
+variable-length sequences. Extensive experiments demonstrate that our framework
+achieves superior feature independence, reduced redundancy, and better
+performance in forecasting and classification tasks compared to
+state-of-the-art methods.",http://arxiv.org/pdf/2509.17845v1,,False
+Fine-Grained Detection of AI-Generated Text Using Sentence-Level Segmentation,22/09/2025,"Lekkala Sai Teja, Annepaka Yadagiri, and Partha Pakray, Chukhu Chunka, Mangadoddi Srikar Vardhan","Generation of Artificial Intelligence (AI) texts in important works has
+become a common practice that can be used to misuse and abuse AI at various
+levels. Traditional AI detectors often rely on document-level classification,
+which struggles to identify AI content in hybrid or slightly edited texts
+designed to avoid detection, leading to concerns about the model's efficiency,
+which makes it hard to distinguish between human-written and AI-generated
+texts. A sentence-level sequence labeling model proposed to detect transitions
+between human- and AI-generated text, leveraging nuanced linguistic signals
+overlooked by document-level classifiers. By this method, detecting and
+segmenting AI and human-written text within a single document at the
+token-level granularity is achieved. Our model combines the state-of-the-art
+pre-trained Transformer models, incorporating Neural Networks (NN) and
+Conditional Random Fields (CRFs). This approach extends the power of
+transformers to extract semantic and syntactic patterns, and the neural network
+component to capture enhanced sequence-level representations, thereby improving
+the boundary predictions by the CRF layer, which enhances sequence recognition
+and further identification of the partition between Human- and AI-generated
+texts. The evaluation is performed on two publicly available benchmark datasets
+containing collaborative human and AI-generated texts. Our experimental
+comparisons are with zero-shot detectors and the existing state-of-the-art
+models, along with rigorous ablation studies to justify that this approach, in
+particular, can accurately detect the spans of AI texts in a completely
+collaborative text. All our source code and the processed datasets are
+available in our GitHub repository.",http://arxiv.org/pdf/2509.17830v1,,False
+TS-P$^2$CL: Plug-and-Play Dual Contrastive Learning for Vision-Guided Medical Time Series Classification,22/09/2025,"Qi'ao Xu, Pengfei Wang, Bo Zhong, Tianwen Qian, Xiaoling Wang, Ye Wang, Hong Yu","Medical time series (MedTS) classification is pivotal for intelligent
+healthcare, yet its efficacy is severely limited by poor cross-subject
+generation due to the profound cross-individual heterogeneity. Despite advances
+in architectural innovations and transfer learning techniques, current methods
+remain constrained by modality-specific inductive biases that limit their
+ability to learn universally invariant representations. To overcome this, we
+propose TS-P$^2$CL, a novel plug-and-play framework that leverages the
+universal pattern recognition capabilities of pre-trained vision models. We
+introduce a vision-guided paradigm that transforms 1D physiological signals
+into 2D pseudo-images, establishing a bridge to the visual domain. This
+transformation enables implicit access to rich semantic priors learned from
+natural images. Within this unified space, we employ a dual-contrastive
+learning strategy: intra-modal consistency enforces temporal coherence, while
+cross-modal alignment aligns time-series dynamics with visual semantics,
+thereby mitigating individual-specific biases and learning robust,
+domain-invariant features. Extensive experiments on six MedTS datasets
+demonstrate that TS-P$^2$CL consistently outperforms fourteen methods in both
+subject-dependent and subject-independent settings.",http://arxiv.org/pdf/2509.17802v1,,False
+Qwen3-Omni Technical Report,22/09/2025,"Jin Xu, Zhifang Guo, Hangrui Hu, Yunfei Chu, Xiong Wang, Jinzheng He, Yuxuan Wang, Xian Shi, Ting He, Xinfa Zhu, Yuanjun Lv, Yongqi Wang, Dake Guo, He Wang, Linhan Ma, Pei Zhang, Xinyu Zhang, Hongkun Hao, Zishan Guo, Baosong Yang, Bin Zhang, Ziyang Ma, Xipin Wei, Shuai Bai, Keqin Chen, Xuejing Liu, Peng Wang, Mingkun Yang, Dayiheng Liu, Xingzhang Ren, Bo Zheng, Rui Men, Fan Zhou, Bowen Yu, Jianxin Yang, Le Yu, Jingren Zhou, Junyang Lin","We present Qwen3-Omni, a single multimodal model that, for the first time,
+maintains state-of-the-art performance across text, image, audio, and video
+without any degradation relative to single-modal counterparts. Qwen3-Omni
+matches the performance of same-sized single-modal models within the Qwen
+series and excels particularly on audio tasks. Across 36 audio and audio-visual
+benchmarks, Qwen3-Omni achieves open-source SOTA on 32 benchmarks and overall
+SOTA on 22, outperforming strong closed-source models such as Gemini-2.5-Pro,
+Seed-ASR, and GPT-4o-Transcribe. Qwen3-Omni adopts a Thinker-Talker MoE
+architecture that unifies perception and generation across text, images, audio,
+and video, yielding fluent text and natural real-time speech. It supports text
+interaction in 119 languages, speech understanding in 19 languages, and speech
+generation in 10 languages. To reduce first-packet latency in streaming
+synthesis, Talker autoregressively predicts discrete speech codecs using a
+multi-codebook scheme. Leveraging the representational capacity of these
+codebooks, we replace computationally intensive block-wise diffusion with a
+lightweight causal ConvNet, enabling streaming from the first codec frame. In
+cold-start settings, Qwen3-Omni achieves a theoretical end-to-end first-packet
+latency of 234 ms. To further strengthen multimodal reasoning, we introduce a
+Thinking model that explicitly reasons over inputs from any modality. Since the
+research community currently lacks a general-purpose audio captioning model, we
+fine-tuned Qwen3-Omni-30B-A3B to obtain Qwen3-Omni-30B-A3B-Captioner, which
+produces detailed, low-hallucination captions for arbitrary audio inputs.
+Qwen3-Omni-30B-A3B, Qwen3-Omni-30B-A3B-Thinking, and
+Qwen3-Omni-30B-A3B-Captioner are publicly released under the Apache 2.0
+license.",http://arxiv.org/pdf/2509.17765v1,,False
+A non-smooth regularization framework for learning over multitask graphs,22/09/2025,"Yara Zgheib, Luca Calatroni, Marc Antonini, Roula Nassif","In this work, we consider learning over multitask graphs, where each agent
+aims to estimate its own parameter vector. Although agents seek distinct
+objectives, collaboration among them can be beneficial in scenarios where
+relationships between tasks exist. Among the various approaches to promoting
+relationships between tasks and, consequently, enhancing collaboration between
+agents, one notable method is regularization. While previous multitask learning
+studies have focused on smooth regularization to enforce graph smoothness, this
+work explores non-smooth regularization techniques that promote sparsity,
+making them particularly effective in encouraging piecewise constant
+transitions on the graph. We begin by formulating a global regularized
+optimization problem, which involves minimizing the aggregate sum of individual
+costs, regularized by a general non-smooth term designed to promote
+piecewise-constant relationships between the tasks of neighboring agents. Based
+on the forward-backward splitting strategy, we propose a decentralized learning
+approach that enables efficient solutions to the regularized optimization
+problem. Then, under convexity assumptions on the cost functions and
+co-regularization, we establish that the proposed approach converges in the
+mean-square-error sense within $O(\mu)$ of the optimal solution of the globally
+regularized cost. For broader applicability and improved computational
+efficiency, we also derive closed-form expressions for commonly used non-smooth
+(and, possibly, non-convex) regularizers, such as the weighted sum of the
+$\ell_0$-norm, $\ell_1$-norm, and elastic net regularization. Finally, we
+illustrate both the theoretical findings and the effectiveness of the approach
+through simulations.",http://arxiv.org/pdf/2509.17728v1,,False
+Evaluating LLM-Generated Versus Human-Authored Responses in Role-Play Dialogues,22/09/2025,"Dongxu Lu, Johan Jeuring, Albert Gatt","Evaluating large language models (LLMs) in long-form, knowledge-grounded
+role-play dialogues remains challenging. This study compares LLM-generated and
+human-authored responses in multi-turn professional training simulations
+through human evaluation ($N=38$) and automated LLM-as-a-judge assessment.
+Human evaluation revealed significant degradation in LLM-generated response
+quality across turns, particularly in naturalness, context maintenance and
+overall quality, while human-authored responses progressively improved. In line
+with this finding, participants also indicated a consistent preference for
+human-authored dialogue. These human judgements were validated by our automated
+LLM-as-a-judge evaluation, where Gemini 2.0 Flash achieved strong alignment
+with human evaluators on both zero-shot pairwise preference and stochastic
+6-shot construct ratings, confirming the widening quality gap between LLM and
+human responses over time. Our work contributes a multi-turn benchmark exposing
+LLM degradation in knowledge-grounded role-play dialogues and provides a
+validated hybrid evaluation framework to guide the reliable integration of LLMs
+in training simulations.",http://arxiv.org/pdf/2509.17694v1,,False
+Comparing Data Assimilation and Likelihood-Based Inference on Latent State Estimation in Agent-Based Models,22/09/2025,"Blas Kolic, Corrado Monti, Gianmarco De Francisci Morales, Marco Pangallo","In this paper, we present the first systematic comparison of Data
+Assimilation (DA) and Likelihood-Based Inference (LBI) in the context of
+Agent-Based Models (ABMs). These models generate observable time series driven
+by evolving, partially-latent microstates. Latent states need to be estimated
+to align simulations with real-world data -- a task traditionally addressed by
+DA, especially in continuous and equation-based models such as those used in
+weather forecasting. However, the nature of ABMs poses challenges for standard
+DA methods. Solving such issues requires adaptation of previous DA techniques,
+or ad-hoc alternatives such as LBI. DA approximates the likelihood in a
+model-agnostic way, making it broadly applicable but potentially less precise.
+In contrast, LBI provides more accurate state estimation by directly leveraging
+the model's likelihood, but at the cost of requiring a hand-crafted,
+model-specific likelihood function, which may be complex or infeasible to
+derive. We compare the two methods on the Bounded-Confidence Model, a
+well-known opinion dynamics ABM, where agents are affected only by others
+holding sufficiently similar opinions. We find that LBI better recovers latent
+agent-level opinions, even under model mis-specification, leading to improved
+individual-level forecasts. At the aggregate level, however, both methods
+perform comparably, and DA remains competitive across levels of aggregation
+under certain parameter settings. Our findings suggest that DA is well-suited
+for aggregate predictions, while LBI is preferable for agent-level inference.",http://arxiv.org/pdf/2509.17625v1,,False
+SeqBattNet: A Discrete-State Physics-Informed Neural Network with Aging Adaptation for Battery Modeling,22/09/2025,"Khoa Tran, Hung-Cuong Trinh, Vy-Rin Nguyen, T. Nguyen-Thoi, Vin Nguyen-Thai","Accurate battery modeling is essential for reliable state estimation in
+modern applications, such as predicting the remaining discharge time and
+remaining discharge energy in battery management systems. Existing approaches
+face several limitations: model-based methods require a large number of
+parameters; data-driven methods rely heavily on labeled datasets; and current
+physics-informed neural networks (PINNs) often lack aging adaptation, or still
+depend on many parameters, or continuously regenerate states. In this work, we
+propose SeqBattNet, a discrete-state PINN with built-in aging adaptation for
+battery modeling, to predict terminal voltage during the discharge process.
+SeqBattNet consists of two components: (i) an encoder, implemented as the
+proposed HRM-GRU deep learning module, which generates cycle-specific aging
+adaptation parameters; and (ii) a decoder, based on the equivalent circuit
+model (ECM) combined with deep learning, which uses these parameters together
+with the input current to predict voltage. The model requires only three basic
+battery parameters and, when trained on data from a single cell, still achieves
+robust performance. Extensive evaluations across three benchmark datasets (TRI,
+RT-Batt, and NASA) demonstrate that SeqBattNet significantly outperforms
+classical sequence models and PINN baselines, achieving consistently lower RMSE
+while maintaining computational efficiency.",http://arxiv.org/pdf/2509.17621v1,,False
+Is It Certainly a Deepfake? Reliability Analysis in Detection & Generation Ecosystem,22/09/2025,"Neslihan Kose, Anthony Rhodes, Umur Aybars Ciftci, Ilke Demir","As generative models are advancing in quality and quantity for creating
+synthetic content, deepfakes begin to cause online mistrust. Deepfake detectors
+are proposed to counter this effect, however, misuse of detectors claiming fake
+content as real or vice versa further fuels this misinformation problem. We
+present the first comprehensive uncertainty analysis of deepfake detectors,
+systematically investigating how generative artifacts influence prediction
+confidence. As reflected in detectors' responses, deepfake generators also
+contribute to this uncertainty as their generative residues vary, so we cross
+the uncertainty analysis of deepfake detectors and generators. Based on our
+observations, the uncertainty manifold holds enough consistent information to
+leverage uncertainty for deepfake source detection. Our approach leverages
+Bayesian Neural Networks and Monte Carlo dropout to quantify both aleatoric and
+epistemic uncertainties across diverse detector architectures. We evaluate
+uncertainty on two datasets with nine generators, with four blind and two
+biological detectors, compare different uncertainty methods, explore region-
+and pixel-based uncertainty, and conduct ablation studies. We conduct and
+analyze binary real/fake, multi-class real/fake, source detection, and
+leave-one-out experiments between the generator/detector combinations to share
+their generalization capability, model calibration, uncertainty, and robustness
+against adversarial attacks. We further introduce uncertainty maps that
+localize prediction confidence at the pixel level, revealing distinct patterns
+correlated with generator-specific artifacts. Our analysis provides critical
+insights for deploying reliable deepfake detection systems and establishes
+uncertainty quantification as a fundamental requirement for trustworthy
+synthetic media detection.",http://arxiv.org/pdf/2509.17550v1,,False
+Achilles' Heel of Mamba: Essential difficulties of the Mamba architecture demonstrated by synthetic data,22/09/2025,"Tianyi Chen, Pengxiao Lin, Zhiwei Wang, Zhi-Qin John Xu","State Space Models (SSMs) have emerged as promising alternatives to attention
+mechanisms, with the Mamba architecture demonstrating impressive performance
+and linear complexity for processing long sequences. However, the fundamental
+differences between Mamba and Transformer architectures remain incompletely
+understood. In this work, we use carefully designed synthetic tasks to reveal
+Mamba's inherent limitations. Through experiments, we identify that Mamba's
+nonlinear convolution introduces an asymmetry bias that significantly impairs
+its ability to recognize symmetrical patterns and relationships. Using
+composite function and inverse sequence matching tasks, we demonstrate that
+Mamba strongly favors compositional solutions over symmetrical ones and
+struggles with tasks requiring the matching of reversed sequences. We show
+these limitations stem not from the SSM module itself but from the nonlinear
+convolution preceding it, which fuses token information asymmetrically. These
+insights provide a new understanding of Mamba's constraints and suggest
+concrete architectural improvements for future sequence models.",http://arxiv.org/pdf/2509.17514v1,,False
+Evaluating Multimodal Large Language Models with Daily Composite Tasks in Home Environments,22/09/2025,"Zhenliang Zhang, Yuxi Wang, Hongzhao Xie, Shiyun Zhao, Mingyuan Liu, Yujie Lu, Xinyi He, Zhenku Cheng, Yujia Peng","A key feature differentiating artificial general intelligence (AGI) from
+traditional AI is that AGI can perform composite tasks that require a wide
+range of capabilities. Although embodied agents powered by multimodal large
+language models (MLLMs) offer rich perceptual and interactive capabilities, it
+remains largely unexplored whether they can solve composite tasks. In the
+current work, we designed a set of composite tasks inspired by common daily
+activities observed in early childhood development. Within a dynamic and
+simulated home environment, these tasks span three core domains: object
+understanding, spatial intelligence, and social activity. We evaluated 17
+leading proprietary and open-source MLLMs on these tasks. The results
+consistently showed poor performance across all three domains, indicating a
+substantial gap between current capabilities and general intelligence
+requirements. Together, our tasks offer a preliminary framework for evaluating
+the general capabilities of embodied agents, marking an early but significant
+step toward the development of embodied MLLMs and their real-world deployment.",http://arxiv.org/pdf/2509.17425v1,,False
+Pre-Trained CNN Architecture for Transformer-Based Image Caption Generation Model,22/09/2025,Amanuel Tafese Dufera,"Automatic image captioning, a multifaceted task bridging computer vision and
+natural lan- guage processing, aims to generate descriptive textual content
+from visual input. While Convolutional Neural Networks (CNNs) and Long
+Short-Term Memory (LSTM) networks have achieved significant advancements, they
+present limitations. The inherent sequential nature of RNNs leads to sluggish
+training and inference times. LSTMs further struggle with retaining information
+from earlier sequence elements when dealing with very long se- quences. This
+project presents a comprehensive guide to constructing and comprehending
+transformer models for image captioning. Transformers employ self-attention
+mechanisms, capturing both short- and long-range dependencies within the data.
+This facilitates efficient parallelization during both training and inference
+phases. We leverage the well-established Transformer architecture, recognized
+for its effectiveness in managing sequential data, and present a meticulous
+methodology. Utilizing the Flickr30k dataset, we conduct data pre- processing,
+construct a model architecture that integrates an EfficientNetB0 CNN for fea-
+ture extraction, and train the model with attention mechanisms incorporated.
+Our approach exemplifies the utilization of parallelization for efficient
+training and inference. You can find the project on GitHub.",http://arxiv.org/pdf/2509.17365v1,,False
+SeqUDA-Rec: Sequential User Behavior Enhanced Recommendation via Global Unsupervised Data Augmentation for Personalized Content Marketing,22/09/2025,"Ruihan Luo, Xuanjing Chen, Ziyang Ding","Personalized content marketing has become a crucial strategy for digital
+platforms, aiming to deliver tailored advertisements and recommendations that
+match user preferences. Traditional recommendation systems often suffer from
+two limitations: (1) reliance on limited supervised signals derived from
+explicit user feedback, and (2) vulnerability to noisy or unintentional
+interactions. To address these challenges, we propose SeqUDA-Rec, a novel deep
+learning framework that integrates user behavior sequences with global
+unsupervised data augmentation to enhance recommendation accuracy and
+robustness. Our approach first constructs a Global User-Item Interaction Graph
+(GUIG) from all user behavior sequences, capturing both local and global item
+associations. Then, a graph contrastive learning module is applied to generate
+robust embeddings, while a sequential Transformer-based encoder models users'
+evolving preferences. To further enhance diversity and counteract sparse
+supervised labels, we employ a GAN-based augmentation strategy, generating
+plausible interaction patterns and supplementing training data. Extensive
+experiments on two real-world marketing datasets (Amazon Ads and TikTok Ad
+Clicks) demonstrate that SeqUDA-Rec significantly outperforms state-of-the-art
+baselines such as SASRec, BERT4Rec, and GCL4SR. Our model achieves a 6.7%
+improvement in NDCG@10 and 11.3% improvement in HR@10, proving its
+effectiveness in personalized advertising and intelligent content
+recommendation.",http://arxiv.org/pdf/2509.17361v1,,False
+Multi-Scenario Highway Lane-Change Intention Prediction: A Physics-Informed AI Framework for Three-Class Classification,22/09/2025,"Jiazhao Shi, Yichen Lin, Yiheng Hua, Ziyu Wang, Zijian Zhang, Wenjia Zheng, Yun Song, Kuan Lu, Shoufeng Lu","Lane-change maneuvers are a leading cause of highway accidents, underscoring
+the need for accurate intention prediction to improve the safety and
+decision-making of autonomous driving systems. While prior studies using
+machine learning and deep learning methods (e.g., SVM, CNN, LSTM, Transformers)
+have shown promise, most approaches remain limited by binary classification,
+lack of scenario diversity, and degraded performance under longer prediction
+horizons. In this study, we propose a physics-informed AI framework that
+explicitly integrates vehicle kinematics, interaction feasibility, and
+traffic-safety metrics (e.g., distance headway, time headway,
+time-to-collision, closing gap time) into the learning process. lane-change
+prediction is formulated as a three-class problem that distinguishes left
+change, right change, and no change, and is evaluated across both straight
+highway segments (highD) and complex ramp scenarios (exiD). By integrating
+vehicle kinematics with interaction features, our machine learning models,
+particularly LightGBM, achieve state-of-the-art accuracy and strong
+generalization. Results show up to 99.8% accuracy and 93.6% macro F1 on highD,
+and 96.1% accuracy and 88.7% macro F1 on exiD at a 1-second horizon,
+outperforming a two-layer stacked LSTM baseline. These findings demonstrate the
+practical advantages of a physics-informed and feature-rich machine learning
+framework for real-time lane-change intention prediction in autonomous driving
+systems.",http://arxiv.org/pdf/2509.17354v1,,False
+GraphWeave: Interpretable and Robust Graph Generation via Random Walk Trajectories,22/09/2025,"Rahul Nandakumar, Deepayan Chakrabarti","Given a set of graphs from some unknown family, we want to generate new
+graphs from that family. Recent methods use diffusion on either graph
+embeddings or the discrete space of nodes and edges. However, simple changes to
+embeddings (say, adding noise) can mean uninterpretable changes in the graph.
+In discrete-space diffusion, each step may add or remove many nodes/edges. It
+is hard to predict what graph patterns we will observe after many diffusion
+steps. Our proposed method, called GraphWeave, takes a different approach. We
+separate pattern generation and graph construction. To find patterns in the
+training graphs, we see how they transform vectors during random walks. We then
+generate new graphs in two steps. First, we generate realistic random walk
+""trajectories"" which match the learned patterns. Then, we find the optimal
+graph that fits these trajectories. The optimization infers all edges jointly,
+which improves robustness to errors. On four simulated and five real-world
+benchmark datasets, GraphWeave outperforms existing methods. The most
+significant differences are on large-scale graph structures such as PageRank,
+cuts, communities, degree distributions, and flows. GraphWeave is also 10x
+faster than its closest competitor. Finally, GraphWeave is simple, needing only
+a transformer and standard optimizers.",http://arxiv.org/pdf/2509.17291v1,,False

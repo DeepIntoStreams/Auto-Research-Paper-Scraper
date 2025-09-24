@@ -1,0 +1,356 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+MOIS-SAM2: Exemplar-based Segment Anything Model 2 for multilesion interactive segmentation of neurobromas in whole-body MRI,23/09/2025,"Georgii Kolokolnikov, Marie-Lena Schmalhofer, Sophie Götz, Lennart Well, Said Farschtschi, Victor-Felix Mautner, Inka Ristow, Rene Werner","Background and Objectives: Neurofibromatosis type 1 is a genetic disorder
+characterized by the development of numerous neurofibromas (NFs) throughout the
+body. Whole-body MRI (WB-MRI) is the clinical standard for detection and
+longitudinal surveillance of NF tumor growth. Existing interactive segmentation
+methods fail to combine high lesion-wise precision with scalability to hundreds
+of lesions. This study proposes a novel interactive segmentation model tailored
+to this challenge.
+  Methods: We introduce MOIS-SAM2, a multi-object interactive segmentation
+model that extends the state-of-the-art, transformer-based, promptable Segment
+Anything Model 2 (SAM2) with exemplar-based semantic propagation. MOIS-SAM2 was
+trained and evaluated on 119 WB-MRI scans from 84 NF1 patients acquired using
+T2-weighted fat-suppressed sequences. The dataset was split at the patient
+level into a training set and four test sets (one in-domain and three
+reflecting different domain shift scenarios, e.g., MRI field strength
+variation, low tumor burden, differences in clinical site and scanner vendor).
+  Results: On the in-domain test set, MOIS-SAM2 achieved a scan-wise DSC of
+0.60 against expert manual annotations, outperforming baseline 3D nnU-Net (DSC:
+0.54) and SAM2 (DSC: 0.35). Performance of the proposed model was maintained
+under MRI field strength shift (DSC: 0.53) and scanner vendor variation (DSC:
+0.50), and improved in low tumor burden cases (DSC: 0.61). Lesion detection F1
+scores ranged from 0.62 to 0.78 across test sets. Preliminary inter-reader
+variability analysis showed model-to-expert agreement (DSC: 0.62-0.68),
+comparable to inter-expert agreement (DSC: 0.57-0.69).
+  Conclusions: The proposed MOIS-SAM2 enables efficient and scalable
+interactive segmentation of NFs in WB-MRI with minimal user input and strong
+generalization, supporting integration into clinical workflows.",http://arxiv.org/pdf/2509.19277v1,,False
+Study Design and Demystification of Physics Informed Neural Networks for Power Flow Simulation,23/09/2025,"Milad Leyli-abadi, Antoine Marot, Jérôme Picault","In the context of the energy transition, with increasing integration of
+renewable sources and cross-border electricity exchanges, power grids are
+encountering greater uncertainty and operational risk. Maintaining grid
+stability under varying conditions is a complex task, and power flow simulators
+are commonly used to support operators by evaluating potential actions before
+implementation. However, traditional physical solvers, while accurate, are
+often too slow for near real-time use. Machine learning models have emerged as
+fast surrogates, and to improve their adherence to physical laws (e.g.,
+Kirchhoff's laws), they are often trained with embedded constraints which are
+also known as physics-informed or hybrid models. This paper presents an
+ablation study to demystify hybridization strategies, ranging from
+incorporating physical constraints as regularization terms or unsupervised
+losses, and exploring model architectures from simple multilayer perceptrons to
+advanced graph-based networks enabling the direct optimization of physics
+equations. Using our custom benchmarking pipeline for hybrid models called
+LIPS, we evaluate these models across four dimensions: accuracy, physical
+compliance, industrial readiness, and out-of-distribution generalization. The
+results highlight how integrating physical knowledge impacts performance across
+these criteria. All the implementations are reproducible and provided in the
+corresponding Github page.",http://arxiv.org/pdf/2509.19233v1,,False
+GSTM-HMU: Generative Spatio-Temporal Modeling for Human Mobility Understanding,23/09/2025,"Wenying Luo, Zhiyuan Lin, Wenhao Xu, Minghao Liu, Zhi Li","Human mobility traces, often recorded as sequences of check-ins, provide a
+unique window into both short-term visiting patterns and persistent lifestyle
+regularities. In this work we introduce GSTM-HMU, a generative spatio-temporal
+framework designed to advance mobility analysis by explicitly modeling the
+semantic and temporal complexity of human movement. The framework consists of
+four key innovations. First, a Spatio-Temporal Concept Encoder (STCE)
+integrates geographic location, POI category semantics, and periodic temporal
+rhythms into unified vector representations. Second, a Cognitive Trajectory
+Memory (CTM) adaptively filters historical visits, emphasizing recent and
+behaviorally salient events in order to capture user intent more effectively.
+Third, a Lifestyle Concept Bank (LCB) contributes structured human preference
+cues, such as activity types and lifestyle patterns, to enhance
+interpretability and personalization. Finally, task-oriented generative heads
+transform the learned representations into predictions for multiple downstream
+tasks. We conduct extensive experiments on four widely used real-world
+datasets, including Gowalla, WeePlace, Brightkite, and FourSquare, and evaluate
+performance on three benchmark tasks: next-location prediction, trajectory-user
+identification, and time estimation. The results demonstrate consistent and
+substantial improvements over strong baselines, confirming the effectiveness of
+GSTM-HMU in extracting semantic regularities from complex mobility data. Beyond
+raw performance gains, our findings also suggest that generative modeling
+provides a promising foundation for building more robust, interpretable, and
+generalizable systems for human mobility intelligence.",http://arxiv.org/pdf/2509.19135v1,,False
+PipelineRL: Faster On-policy Reinforcement Learning for Long Sequence Generatio,23/09/2025,"Alexandre Piché, Ehsan Kamaloo, Rafael Pardinas, Dzmitry Bahdanau","Reinforcement Learning (RL) is increasingly utilized to enhance the reasoning
+capabilities of Large Language Models (LLMs). However, effectively scaling
+these RL methods presents significant challenges, primarily due to the
+difficulty in maintaining high AI accelerator utilization without generating
+stale, off-policy data that harms common RL algorithms. This paper introduces
+PipelineRL, an approach designed to achieve a superior trade-off between
+hardware efficiency and data on-policyness for LLM training. PipelineRL employs
+concurrent asynchronous data generation and model training, distinguished by
+the novel in-flight weight updates. This mechanism allows the LLM generation
+engine to receive updated model weights with minimal interruption during the
+generation of token sequences, thereby maximizing both the accelerator
+utilization and the freshness of training data. Experiments conducted on
+long-form reasoning tasks using 128 H100 GPUs demonstrate that PipelineRL
+achieves approximately $\sim 2x$ faster learning compared to conventional RL
+baselines while maintaining highly on-policy training data. A scalable and
+modular open-source implementation of PipelineRL is also released as a key
+contribution.",http://arxiv.org/pdf/2509.19128v1,,False
+Towards Practical Multi-label Causal Discovery in High-Dimensional Event Sequences via One-Shot Graph Aggregation,23/09/2025,"Hugo Math, Rainer Lienhart","Understanding causality in event sequences where outcome labels such as
+diseases or system failures arise from preceding events like symptoms or error
+codes is critical. Yet remains an unsolved challenge across domains like
+healthcare or vehicle diagnostics. We introduce CARGO, a scalable multi-label
+causal discovery method for sparse, high-dimensional event sequences comprising
+of thousands of unique event types. Using two pretrained causal Transformers as
+domain-specific foundation models for event sequences. CARGO infers in
+parallel, per sequence one-shot causal graphs and aggregates them using an
+adaptive frequency fusion to reconstruct the global Markov boundaries of
+labels. This two-stage approach enables efficient probabilistic reasoning at
+scale while bypassing the intractable cost of full-dataset conditional
+independence testing. Our results on a challenging real-world automotive fault
+prediction dataset with over 29,100 unique event types and 474 imbalanced
+labels demonstrate CARGO's ability to perform structured reasoning.",http://arxiv.org/pdf/2509.19112v1,,False
+A Fast Initialization Method for Neural Network Controllers: A Case Study of Image-based Visual Servoing Control for the multicopter Interception,23/09/2025,"Chenxu Ke, Congling Tian, Kaichen Xu, Ye Li, Lingcong Bao","Reinforcement learning-based controller design methods often require
+substantial data in the initial training phase. Moreover, the training process
+tends to exhibit strong randomness and slow convergence. It often requires
+considerable time or high computational resources. Another class of
+learning-based method incorporates Lyapunov stability theory to obtain a
+control policy with stability guarantees. However, these methods generally
+require an initially stable neural network control policy at the beginning of
+training. Evidently, a stable neural network controller can not only serve as
+an initial policy for reinforcement learning, allowing the training to focus on
+improving controller performance, but also act as an initial state for
+learning-based Lyapunov control methods. Although stable controllers can be
+designed using traditional control theory, designers still need to have a great
+deal of control design knowledge to address increasingly complicated control
+problems. The proposed neural network rapid initialization method in this paper
+achieves the initial training of the neural network control policy by
+constructing datasets that conform to the stability conditions based on the
+system model. Furthermore, using the image-based visual servoing control for
+multicopter interception as a case study, simulations and experiments were
+conducted to validate the effectiveness and practical performance of the
+proposed method. In the experiment, the trained control policy attains a final
+interception velocity of 15 m/s.",http://arxiv.org/pdf/2509.19110v1,,False
+FUNCanon: Learning Pose-Aware Action Primitives via Functional Object Canonicalization for Generalizable Robotic Manipulation,23/09/2025,"Hongli Xu, Lei Zhang, Xiaoyue Hu, Boyang Zhong, Kaixin Bai, Zoltán-Csaba Márton, Zhenshan Bing, Zhaopeng Chen, Alois Christian Knoll, Jianwei Zhang","General-purpose robotic skills from end-to-end demonstrations often leads to
+task-specific policies that fail to generalize beyond the training
+distribution. Therefore, we introduce FunCanon, a framework that converts
+long-horizon manipulation tasks into sequences of action chunks, each defined
+by an actor, verb, and object. These chunks focus policy learning on the
+actions themselves, rather than isolated tasks, enabling compositionality and
+reuse. To make policies pose-aware and category-general, we perform functional
+object canonicalization for functional alignment and automatic manipulation
+trajectory transfer, mapping objects into shared functional frames using
+affordance cues from large vision language models. An object centric and action
+centric diffusion policy FuncDiffuser trained on this aligned data naturally
+respects object affordances and poses, simplifying learning and improving
+generalization ability. Experiments on simulated and real-world benchmarks
+demonstrate category-level generalization, cross-task behavior reuse, and
+robust sim2real deployment, showing that functional canonicalization provides a
+strong inductive bias for scalable imitation learning in complex manipulation
+domains. Details of the demo and supplemental material are available on our
+project website https://sites.google.com/view/funcanon.",http://arxiv.org/pdf/2509.19102v1,,False
+World4RL: Diffusion World Models for Policy Refinement with Reinforcement Learning for Robotic Manipulation,23/09/2025,"Zhennan Jiang, Kai Liu, Yuxin Qin, Shuai Tian, Yupeng Zheng, Mingcai Zhou, Chao Yu, Haoran Li, Dongbin Zhao","Robotic manipulation policies are commonly initialized through imitation
+learning, but their performance is limited by the scarcity and narrow coverage
+of expert data. Reinforcement learning can refine polices to alleviate this
+limitation, yet real-robot training is costly and unsafe, while training in
+simulators suffers from the sim-to-real gap. Recent advances in generative
+models have demonstrated remarkable capabilities in real-world simulation, with
+diffusion models in particular excelling at generation. This raises the
+question of how diffusion model-based world models can be combined to enhance
+pre-trained policies in robotic manipulation. In this work, we propose
+World4RL, a framework that employs diffusion-based world models as
+high-fidelity simulators to refine pre-trained policies entirely in imagined
+environments for robotic manipulation. Unlike prior works that primarily employ
+world models for planning, our framework enables direct end-to-end policy
+optimization. World4RL is designed around two principles: pre-training a
+diffusion world model that captures diverse dynamics on multi-task datasets and
+refining policies entirely within a frozen world model to avoid online
+real-world interactions. We further design a two-hot action encoding scheme
+tailored for robotic manipulation and adopt diffusion backbones to improve
+modeling fidelity. Extensive simulation and real-world experiments demonstrate
+that World4RL provides high-fidelity environment modeling and enables
+consistent policy refinement, yielding significantly higher success rates
+compared to imitation learning and other baselines. More visualization results
+are available at https://world4rl.github.io/.",http://arxiv.org/pdf/2509.19080v1,,False
+Pure Vision Language Action (VLA) Models: A Comprehensive Survey,23/09/2025,"Dapeng Zhang, Jin Sun, Chenghui Hu, Xiaoyan Wu, Zhenlong Yuan, Rui Zhou, Fei Shen, Qingguo Zhou","The emergence of Vision Language Action (VLA) models marks a paradigm shift
+from traditional policy-based control to generalized robotics, reframing Vision
+Language Models (VLMs) from passive sequence generators into active agents for
+manipulation and decision-making in complex, dynamic environments. This survey
+delves into advanced VLA methods, aiming to provide a clear taxonomy and a
+systematic, comprehensive review of existing research. It presents a
+comprehensive analysis of VLA applications across different scenarios and
+classifies VLA approaches into several paradigms: autoregression-based,
+diffusion-based, reinforcement-based, hybrid, and specialized methods; while
+examining their motivations, core strategies, and implementations in detail. In
+addition, foundational datasets, benchmarks, and simulation platforms are
+introduced. Building on the current VLA landscape, the review further proposes
+perspectives on key challenges and future directions to advance research in VLA
+models and generalizable robotics. By synthesizing insights from over three
+hundred recent studies, this survey maps the contours of this rapidly evolving
+field and highlights the opportunities and challenges that will shape the
+development of scalable, general-purpose VLA methods.",http://arxiv.org/pdf/2509.19012v1,,False
+Learning From Simulators: A Theory of Simulation-Grounded Learning,23/09/2025,"Carson Dudley, Marisa Eisenberg","Simulation-Grounded Neural Networks (SGNNs) are predictive models trained
+entirely on synthetic data from mechanistic simulations. They have achieved
+state-of-the-art performance in domains where real-world labels are limited or
+unobserved, but lack a formal underpinning.
+  We present the foundational theory of simulation-grounded learning. We show
+that SGNNs implement amortized Bayesian inference under a simulation prior and
+converge to the Bayes-optimal predictor. We derive generalization bounds under
+model misspecification and prove that SGNNs can learn unobservable scientific
+quantities that empirical methods provably cannot. We also formalize a novel
+form of mechanistic interpretability uniquely enabled by SGNNs: by attributing
+predictions to the simulated mechanisms that generated them, SGNNs yield
+posterior-consistent, scientifically grounded explanations.
+  We provide numerical experiments to validate all theoretical predictions.
+SGNNs recover latent parameters, remain robust under mismatch, and outperform
+classical tools: in a model selection task, SGNNs achieve half the error of AIC
+in distinguishing mechanistic dynamics. These results establish SGNNs as a
+principled and practical framework for scientific prediction in data-limited
+regimes.",http://arxiv.org/pdf/2509.18990v1,,False
+On the Convergence of Policy Mirror Descent with Temporal Difference Evaluation,23/09/2025,"Jiacai Liu, Wenye Li, Ke Wei","Policy mirror descent (PMD) is a general policy optimization framework in
+reinforcement learning, which can cover a wide range of typical policy
+optimization methods by specifying different mirror maps. Existing analysis of
+PMD requires exact or approximate evaluation (for example unbiased estimation
+via Monte Carlo simulation) of action values solely based on policy. In this
+paper, we consider policy mirror descent with temporal difference evaluation
+(TD-PMD). It is shown that, given the access to exact policy evaluations, the
+dimension-free $O(1/T)$ sublinear convergence still holds for TD-PMD with any
+constant step size and any initialization. In order to achieve this result, new
+monotonicity and shift invariance arguments have been developed. The dimension
+free $\gamma$-rate linear convergence of TD-PMD is also established provided
+the step size is selected adaptively. For the two common instances of TD-PMD
+(i.e., TD-PQA and TD-NPG), it is further shown that they enjoy the convergence
+in the policy domain. Additionally, we investigate TD-PMD in the inexact
+setting and give the sample complexity for it to achieve the last iterate
+$\varepsilon$-optimality under a generative model, which improves the last
+iterate sample complexity for PMD over the dependence on $1/(1-\gamma)$.",http://arxiv.org/pdf/2509.18822v1,,False
+Experience Scaling: Post-Deployment Evolution For Large Language Models,23/09/2025,"Xingkun Yin, Kaibin Huang, Dong In Kim, Hongyang Du","Scaling model size, training data, and compute power have driven advances in
+large language models (LLMs), but these approaches are reaching saturation as
+human-generated text is exhausted and further gains diminish. We propose
+experience scaling, a framework for continuous post-deployment evolution for
+LLMs through autonomous interaction with the environment and collaborative
+sharing of accumulated experience. The framework captures raw interactions,
+distills them into compact, reusable knowledge, and periodically refines stored
+content to preserve relevance and efficiency. We validate the framework in
+simulated real-world scenarios involving generalization to previously unseen
+but related tasks, repetitive queries, and over-saturated knowledge stores.
+Across all settings, experience scaling improves accuracy, sustains performance
+over time, and maintains gains when applied to novel situations. These results
+demonstrate that structured post-deployment learning can extend LLM
+capabilities beyond the limits of static human-generated data, offering a
+scalable path for continued intelligence progress.",http://arxiv.org/pdf/2509.18771v1,,False
+Diagonal Linear Networks and the Lasso Regularization Path,23/09/2025,Raphaël Berthier,"Diagonal linear networks are neural networks with linear activation and
+diagonal weight matrices. Their theoretical interest is that their implicit
+regularization can be rigorously analyzed: from a small initialization, the
+training of diagonal linear networks converges to the linear predictor with
+minimal 1-norm among minimizers of the training loss. In this paper, we deepen
+this analysis showing that the full training trajectory of diagonal linear
+networks is closely related to the lasso regularization path. In this
+connection, the training time plays the role of an inverse regularization
+parameter. Both rigorous results and simulations are provided to illustrate
+this conclusion. Under a monotonicity assumption on the lasso regularization
+path, the connection is exact while in the general case, we show an approximate
+connection.",http://arxiv.org/pdf/2509.18766v1,,False
+COLT: Enhancing Video Large Language Models with Continual Tool Usage,23/09/2025,"Yuyang Liu, Xinyuan Shi, Bang Yang, Peilin Zhou, Jiahua Dong, Long Chen, Ian Reid, Xiaondan Liang","The success of Large Language Models (LLMs) has significantly propelled the
+research of video understanding. To harvest the benefits of well-trained expert
+models (i.e., tools), video LLMs prioritize the exploration of tool usage
+capabilities. Existing methods either prompt closed-source LLMs or employ the
+instruction tuning paradigm for tool-use fine-tuning. These methods, however,
+assume an established repository of fixed tools and struggle to generalize to
+real-world environments where tool data is perpetually evolving and streaming
+in. To this end, we propose to enhance open-source video LLMs with COntinuaL
+Tool usage (termed COLT), which automatically acquires tool-use ability in a
+successive tool stream without suffering 'catastrophic forgetting' of the past
+learned tools. Specifically, our COLT incorporates a learnable tool codebook as
+a tool-specific memory system. Then relevant tools are dynamically selected
+based on the similarity between user instruction and tool features within the
+codebook. To unleash the tool usage potential of video LLMs, we collect a
+video-centric tool-use instruction tuning dataset VideoToolBench. Extensive
+experiments on both previous video LLM benchmarks and the tool-use-specific
+VideoToolBench dataset demonstrate the state-of-the-art performance of our
+proposed COLT.",http://arxiv.org/pdf/2509.18754v1,,False
+MOMEMTO: Patch-based Memory Gate Model in Time Series Foundation Model,23/09/2025,"Samuel Yoon, Jongwon Kim, Juyoung Ha, Young Myoung Ko","Recently reconstruction-based deep models have been widely used for time
+series anomaly detection, but as their capacity and representation capability
+increase, these models tend to over-generalize, often reconstructing unseen
+anomalies accurately. Prior works have attempted to mitigate this by
+incorporating a memory architecture that stores prototypes of normal patterns.
+Nevertheless, these approaches suffer from high training costs and have yet to
+be effectively integrated with time series foundation models (TFMs). To address
+these challenges, we propose \textbf{MOMEMTO}, a TFM for anomaly detection,
+enhanced with a patch-based memory module to mitigate over-generalization. The
+memory module is designed to capture representative normal patterns from
+multiple domains and enables a single model to be jointly fine-tuned across
+multiple datasets through a multi-domain training strategy. MOMEMTO initializes
+memory items with latent representations from a pre-trained encoder, organizes
+them into patch-level units, and updates them via an attention mechanism. We
+evaluate our method using 23 univariate benchmark datasets. Experimental
+results demonstrate that MOMEMTO, as a single model, achieves higher scores on
+AUC and VUS metrics compared to baseline methods, and further enhances the
+performance of its backbone TFM, particularly in few-shot learning scenarios.",http://arxiv.org/pdf/2509.18751v1,,False
+Consistency of Selection Strategies for Fraud Detection,23/09/2025,"Christos Revelas, Otilia Boldea, Bas J. M. Werker","This paper studies how insurers can chose which claims to investigate for
+fraud. Given a prediction model, typically only claims with the highest
+predicted propability of being fraudulent are investigated. We argue that this
+can lead to inconsistent learning and propose a randomized alternative. More
+generally, we draw a parallel with the multi-arm bandit literature and argue
+that, in the presence of selection, the obtained observations are not iid.
+Hence, dependence on past observations should be accounted for when updating
+parameter estimates. We formalize selection in a binary regression framework
+and show that model updating and maximum-likelihood estimation can be
+implemented as if claims were investigated at random. Then, we define
+consistency of selection strategies and conjecture sufficient conditions for
+consistency. Our simulations suggest that the often-used selection strategy can
+be inconsistent while the proposed randomized alternative is consistent.
+Finally, we compare our randomized selection strategy with Thompson sampling, a
+standard multi-arm bandit heuristic. Our simulations suggest that the latter
+can be inefficient in learning low fraud probabilities.",http://arxiv.org/pdf/2509.18739v1,,False
+An overview of neural architectures for self-supervised audio representation learning from masked spectrograms,23/09/2025,"Sarthak Yadav, Sergios Theodoridis, Zheng-Hua Tan","In recent years, self-supervised learning has amassed significant interest
+for training deep neural representations without labeled data. One such
+self-supervised learning approach is masked spectrogram modeling, where the
+objective is to learn semantically rich contextual representations by
+predicting removed or hidden portions of the input audio spectrogram. With the
+Transformer neural architecture at its core, masked spectrogram modeling has
+emerged as the prominent approach for learning general purpose audio
+representations, a.k.a. audio foundation models. Meanwhile, addressing the
+issues of the Transformer architecture, in particular the underlying Scaled
+Dot-product Attention operation, which scales quadratically with input sequence
+length, has led to renewed interest in recurrent sequence modeling approaches.
+Among them, Selective structured state space models (such as Mamba) and
+extended Long Short-Term Memory (xLSTM) are the two most promising approaches
+which have experienced widespread adoption. While the body of work on these two
+topics continues to grow, there is currently a lack of an adequate overview
+encompassing the intersection of these topics. In this paper, we present a
+comprehensive overview of the aforementioned research domains, covering masked
+spectrogram modeling and the previously mentioned neural sequence modeling
+architectures, Mamba and xLSTM. Further, we compare Transformers, Mamba and
+xLSTM based masked spectrogram models in a unified, reproducible framework on
+ten diverse downstream audio classification tasks, which will help interested
+readers to make informed decisions regarding suitability of the evaluated
+approaches to adjacent applications.",http://arxiv.org/pdf/2509.18691v1,,False
+Generalizable Domain Adaptation for Sim-and-Real Policy Co-Training,23/09/2025,"Shuo Cheng, Liqian Ma, Zhenyang Chen, Ajay Mandlekar, Caelan Garrett, Danfei Xu","Behavior cloning has shown promise for robot manipulation, but real-world
+demonstrations are costly to acquire at scale. While simulated data offers a
+scalable alternative, particularly with advances in automated demonstration
+generation, transferring policies to the real world is hampered by various
+simulation and real domain gaps. In this work, we propose a unified
+sim-and-real co-training framework for learning generalizable manipulation
+policies that primarily leverages simulation and only requires a few real-world
+demonstrations. Central to our approach is learning a domain-invariant,
+task-relevant feature space. Our key insight is that aligning the joint
+distributions of observations and their corresponding actions across domains
+provides a richer signal than aligning observations (marginals) alone. We
+achieve this by embedding an Optimal Transport (OT)-inspired loss within the
+co-training framework, and extend this to an Unbalanced OT framework to handle
+the imbalance between abundant simulation data and limited real-world examples.
+We validate our method on challenging manipulation tasks, showing it can
+leverage abundant simulation data to achieve up to a 30% improvement in the
+real-world success rate and even generalize to scenarios seen only in
+simulation.",http://arxiv.org/pdf/2509.18631v1,,False
+DS-Diffusion: Data Style-Guided Diffusion Model for Time-Series Generation,23/09/2025,"Mingchun Sun, Rongqiang Zhao, Jie Liu","Diffusion models are the mainstream approach for time series generation
+tasks. However, existing diffusion models for time series generation require
+retraining the entire framework to introduce specific conditional guidance.
+There also exists a certain degree of distributional bias between the generated
+data and the real data, which leads to potential model biases in downstream
+tasks. Additionally, the complexity of diffusion models and the latent spaces
+leads to an uninterpretable inference process. To address these issues, we
+propose the data style-guided diffusion model (DS-Diffusion). In the
+DS-Diffusion, a diffusion framework based on style-guided kernels is developed
+to avoid retraining for specific conditions. The time-information based
+hierarchical denoising mechanism (THD) is developed to reduce the
+distributional bias between the generated data and the real data. Furthermore,
+the generated samples can clearly indicate the data style from which they
+originate. We conduct comprehensive evaluations using multiple public datasets
+to validate our approach. Experimental results show that, compared to the
+state-of-the-art model such as ImagenTime, the predictive score and the
+discriminative score decrease by 5.56% and 61.55%, respectively. The
+distributional bias between the generated data and the real data is further
+reduced, the inference process is also more interpretable. Moreover, by
+eliminating the need to retrain the diffusion model, the flexibility and
+adaptability of the model to specific conditions are also enhanced.",http://arxiv.org/pdf/2509.18584v1,,False

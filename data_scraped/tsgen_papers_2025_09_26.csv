@@ -1,0 +1,399 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Taxonomy-aware Dynamic Motion Generation on Hyperbolic Manifolds,25/09/2025,"Luis Augenstein, Noémie Jaquier, Tamim Asfour, Leonel Rozo","Human-like motion generation for robots often draws inspiration from
+biomechanical studies, which often categorize complex human motions into
+hierarchical taxonomies. While these taxonomies provide rich structural
+information about how movements relate to one another, this information is
+frequently overlooked in motion generation models, leading to a disconnect
+between the generated motions and their underlying hierarchical structure. This
+paper introduces the \ac{gphdm}, a novel approach that learns latent
+representations preserving both the hierarchical structure of motions and their
+temporal dynamics to ensure physical consistency. Our model achieves this by
+extending the dynamics prior of the Gaussian Process Dynamical Model (GPDM) to
+the hyperbolic manifold and integrating it with taxonomy-aware inductive
+biases. Building on this geometry- and taxonomy-aware frameworks, we propose
+three novel mechanisms for generating motions that are both
+taxonomically-structured and physically-consistent: two probabilistic recursive
+approaches and a method based on pullback-metric geodesics. Experiments on
+generating realistic motion sequences on the hand grasping taxonomy show that
+the proposed GPHDM faithfully encodes the underlying taxonomy and temporal
+dynamics, and generates novel physically-consistent trajectories.",http://arxiv.org/pdf/2509.21281v1,,False
+SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips,25/09/2025,"Xinyu Lian, Masahiro Tanaka, Olatunji Ruwase, Minjia Zhang","The emergence of Superchips represents a significant advancement in
+next-generation AI hardware. These Superchips employ a tightly coupled
+heterogeneous architecture that integrates GPU and CPU on the same package,
+which offers unprecedented computational power. However, there has been scant
+research investigating how LLM training benefits from this new architecture. In
+this work, for the first time, we study LLM training solutions based on
+offloading for Superchips. We observe important differences between Superchips
+and traditional loosely-coupled GPU-CPU architecture, which necessitate
+revisiting prevailing assumptions about offloading. Based on that, we present
+SuperOffload, a Superchip-centric offloading system that simultaneously uses
+Hopper GPU, Grace CPU, and NVLink-C2C interconnect more efficiently.
+SuperOffload accomplishes this via a combination of techniques, such as
+adaptive weight offloading, bucketization repartitioning, Superchip-aware
+casting, speculative execution, and a highly optimized Adam optimizer for Grace
+CPUs. Our evaluation of SuperOffload on NVIDIA GH200 demonstrates up to 2.5x
+throughput improvement compared to state-of-the-art offloading-based systems,
+enabling training of up to 25B model on a single Superchip while achieving high
+training throughput. We also extend SuperOffload with ZeRO-style data
+parallelism and DeepSpeed-Ulysses sequence parallelism, enabling training of
+13B model with sequence lengths up to 1 million tokens on 8 GH200 while
+achieving 55% MFU.",http://arxiv.org/pdf/2509.21271v1,,False
+From Physics to Machine Learning and Back: Part II - Learning and Observational Bias in PHM,25/09/2025,"Olga Fink, Ismail Nejjar, Vinay Sharma, Keivan Faghih Niresi, Han Sun, Hao Dong, Chenghao Xu, Amaury Wei, Arthur Bizzi, Raffael Theiler, Yuan Tian, Leandro Von Krannichfeldt, Zhan Ma, Sergei Garmaev, Zepeng Zhang, Mengjie Zhao","Prognostics and Health Management ensures the reliability, safety, and
+efficiency of complex engineered systems by enabling fault detection,
+anticipating equipment failures, and optimizing maintenance activities
+throughout an asset lifecycle. However, real-world PHM presents persistent
+challenges: sensor data is often noisy or incomplete, available labels are
+limited, and degradation behaviors and system interdependencies can be highly
+complex and nonlinear. Physics-informed machine learning has emerged as a
+promising approach to address these limitations by embedding physical knowledge
+into data-driven models. This review examines how incorporating learning and
+observational biases through physics-informed modeling and data strategies can
+guide models toward physically consistent and reliable predictions. Learning
+biases embed physical constraints into model training through physics-informed
+loss functions and governing equations, or by incorporating properties like
+monotonicity. Observational biases influence data selection and synthesis to
+ensure models capture realistic system behavior through virtual sensing for
+estimating unmeasured states, physics-based simulation for data augmentation,
+and multi-sensor fusion strategies. The review then examines how these
+approaches enable the transition from passive prediction to active
+decision-making through reinforcement learning, which allows agents to learn
+maintenance policies that respect physical constraints while optimizing
+operational objectives. This closes the loop between model-based predictions,
+simulation, and actual system operation, empowering adaptive decision-making.
+Finally, the review addresses the critical challenge of scaling PHM solutions
+from individual assets to fleet-wide deployment. Fast adaptation methods
+including meta-learning and few-shot learning are reviewed alongside domain
+generalization techniques ...",http://arxiv.org/pdf/2509.21207v1,,False
+Towards Foundation Models for Zero-Shot Time Series Anomaly Detection: Leveraging Synthetic Data and Relative Context Discrepancy,25/09/2025,"Tian Lan, Hao Duong Le, Jinbo Li, Wenjun He, Meng Wang, Chenghao Liu, Chen Zhang","Time series anomaly detection (TSAD) is a critical task, but developing
+models that generalize to unseen data in a zero-shot manner remains a major
+challenge. Prevailing foundation models for TSAD predominantly rely on
+reconstruction-based objectives, which suffer from a fundamental objective
+mismatch: they struggle to identify subtle anomalies while often
+misinterpreting complex normal patterns, leading to high rates of false
+negatives and positives. To overcome these limitations, we introduce
+\texttt{TimeRCD}, a novel foundation model for TSAD built upon a new
+pre-training paradigm: Relative Context Discrepancy (RCD). Instead of learning
+to reconstruct inputs, \texttt{TimeRCD} is explicitly trained to identify
+anomalies by detecting significant discrepancies between adjacent time windows.
+This relational approach, implemented with a standard Transformer architecture,
+enables the model to capture contextual shifts indicative of anomalies that
+reconstruction-based methods often miss. To facilitate this paradigm, we
+develop a large-scale, diverse synthetic corpus with token-level anomaly
+labels, providing the rich supervisory signal necessary for effective
+pre-training. Extensive experiments demonstrate that \texttt{TimeRCD}
+significantly outperforms existing general-purpose and anomaly-specific
+foundation models in zero-shot TSAD across diverse datasets. Our results
+validate the superiority of the RCD paradigm and establish a new, effective
+path toward building robust and generalizable foundation models for time series
+anomaly detection.",http://arxiv.org/pdf/2509.21190v1,,False
+CAD-Tokenizer: Towards Text-based CAD Prototyping via Modality-Specific Tokenization,25/09/2025,"Ruiyu Wang, Shizhao Sun, Weijian Ma, Jiang Bian","Computer-Aided Design (CAD) is a foundational component of industrial
+prototyping, where models are defined not by raw coordinates but by
+construction sequences such as sketches and extrusions. This sequential
+structure enables both efficient prototype initialization and subsequent
+editing. Text-guided CAD prototyping, which unifies Text-to-CAD generation and
+CAD editing, has the potential to streamline the entire design pipeline.
+However, prior work has not explored this setting, largely because standard
+large language model (LLM) tokenizers decompose CAD sequences into
+natural-language word pieces, failing to capture primitive-level CAD semantics
+and hindering attention modules from modeling geometric structure. We
+conjecture that a multimodal tokenization strategy, aligned with CAD's
+primitive and structural nature, can provide more effective representations. To
+this end, we propose CAD-Tokenizer, a framework that represents CAD data with
+modality-specific tokens using a sequence-based VQ-VAE with primitive-level
+pooling and constrained decoding. This design produces compact, primitive-aware
+representations that align with CAD's structural nature. Applied to unified
+text-guided CAD prototyping, CAD-Tokenizer significantly improves instruction
+following and generation quality, achieving better quantitative and qualitative
+performance over both general-purpose LLMs and task-specific baselines.",http://arxiv.org/pdf/2509.21150v1,,False
+ToMPO: Training LLM Strategic Decision Making from a Multi-Agent Perspective,25/09/2025,"Yiwen Zhang, Ziang Chen, Fanqi Kong, Yizhe Huang, Xue Feng","Large Language Models (LLMs) have been used to make decisions in complex
+scenarios, where they need models to think deeply, reason logically, and decide
+wisely. Many existing studies focus solely on multi-round conversations in
+social tasks or simulated environments, neglecting the various types of
+decisions and their interdependence. Current reinforcement learning methods
+struggle to consider the strategies of others during training. To address these
+issues, we first define a strategic decision-making problem that includes two
+types of decisions and their temporal dependencies. Furthermore, we propose
+**T**heory **o**f **M**ind **P**olicy **O**ptimization **(ToMPO)** algorithm to
+optimize the perception of other individual strategies and the game situation
+trends. Compared to the Group Relative Policy Optimization (GRPO) algorithm,
+ToMPO enhances the LLM's strategic decision-making mainly by: 1) generating
+rollouts based on reasoning the strategies of other individuals, 2) estimating
+advantages at both the graph-level and sample-level, and 3) balancing global
+and partial rewards. The ToMPO algorithm outperforms the GRPO method by 35% in
+terms of model output compliance and cooperative outcomes. Additionally, when
+compared to models with parameter sizes 100 times larger, it shows an 18%
+improvement. This demonstrates the effectiveness of the ToMPO algorithm in
+enhancing the model's strategic decision-making capabilities.",http://arxiv.org/pdf/2509.21134v1,,False
+Cross-Modal Instructions for Robot Motion Generation,25/09/2025,"William Barron, Xiaoxiang Dong, Matthew Johnson-Roberson, Weiming Zhi","Teaching robots novel behaviors typically requires motion demonstrations via
+teleoperation or kinaesthetic teaching, that is, physically guiding the robot.
+While recent work has explored using human sketches to specify desired
+behaviors, data collection remains cumbersome, and demonstration datasets are
+difficult to scale. In this paper, we introduce an alternative paradigm,
+Learning from Cross-Modal Instructions, where robots are shaped by
+demonstrations in the form of rough annotations, which can contain free-form
+text labels, and are used in lieu of physical motion. We introduce the
+CrossInstruct framework, which integrates cross-modal instructions as examples
+into the context input to a foundational vision-language model (VLM). The VLM
+then iteratively queries a smaller, fine-tuned model, and synthesizes the
+desired motion over multiple 2D views. These are then subsequently fused into a
+coherent distribution over 3D motion trajectories in the robot's workspace. By
+incorporating the reasoning of the large VLM with a fine-grained pointing
+model, CrossInstruct produces executable robot behaviors that generalize beyond
+the environment of in the limited set of instruction examples. We then
+introduce a downstream reinforcement learning pipeline that leverages
+CrossInstruct outputs to efficiently learn policies to complete fine-grained
+tasks. We rigorously evaluate CrossInstruct on benchmark simulation tasks and
+real hardware, demonstrating effectiveness without additional fine-tuning and
+providing a strong initialization for policies subsequently refined via
+reinforcement learning.",http://arxiv.org/pdf/2509.21107v1,,False
+"Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution",25/09/2025,"Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu","Recent years, multimodal models have made remarkable strides and pave the way
+for intelligent browser use agents. However, when solving tasks on real world
+webpages in multi-turn, long-horizon trajectories, current agents still suffer
+from disordered action sequencing and excessive trial and error during
+execution. This paper introduces Recon-Act, a self-evolving multi-agent
+framework grounded in Reconnaissance-Action behavioral paradigm. The system
+comprises a Reconnaissance Team and an Action Team: the former conducts
+comparative analysis and tool generation, while the latter handles intent
+decomposition, tool orchestration, and execution. By contrasting the erroneous
+trajectories with successful ones, the Reconnaissance Team infers remedies, and
+abstracts them into a unified notion of generalized tools, either expressed as
+hints or as rule-based codes, and register to the tool archive in real time.
+The Action Team reinference the process empowered with these targeting tools,
+thus establishing a closed-loop training pipeline of
+data-tools-action-feedback. Following the 6 level implementation roadmap
+proposed in this work, we have currently reached Level 3 (with limited
+human-in-the-loop intervention). Leveraging generalized tools obtained through
+reconnaissance, Recon-Act substantially improves adaptability to unseen
+websites and solvability on long-horizon tasks, and achieves state-of-the-art
+performance on the challenging VisualWebArena dataset.",http://arxiv.org/pdf/2509.21072v1,,False
+Lossless Compression: A New Benchmark for Time Series Model Evaluation,25/09/2025,"Meng Wan, Benxi Tian, Jue Wang, Cui Hui, Ningming Nie, Tiantian Liu, Zongguo Wang, Cao Rongqiang, Peng Shi, Yangang Wang","The evaluation of time series models has traditionally focused on four
+canonical tasks: forecasting, imputation, anomaly detection, and
+classification. While these tasks have driven significant progress, they
+primarily assess task-specific performance and do not rigorously measure
+whether a model captures the full generative distribution of the data. We
+introduce lossless compression as a new paradigm for evaluating time series
+models, grounded in Shannon's source coding theorem. This perspective
+establishes a direct equivalence between optimal compression length and the
+negative log-likelihood, providing a strict and unified information-theoretic
+criterion for modeling capacity. Then We define a standardized evaluation
+protocol and metrics. We further propose and open-source a comprehensive
+evaluation framework TSCom-Bench, which enables the rapid adaptation of time
+series models as backbones for lossless compression. Experiments across diverse
+datasets on state-of-the-art models, including TimeXer, iTransformer, and
+PatchTST, demonstrate that compression reveals distributional weaknesses
+overlooked by classic benchmarks. These findings position lossless compression
+as a principled task that complements and extends existing evaluation for time
+series modeling.",http://arxiv.org/pdf/2509.21002v1,,False
+Empirical PAC-Bayes bounds for Markov chains,25/09/2025,"Vahe Karagulyan, Pierre Alquier","The core of generalization theory was developed for independent observations.
+Some PAC and PAC-Bayes bounds are available for data that exhibit a temporal
+dependence. However, there are constants in these bounds that depend on
+properties of the data-generating process: mixing coefficients, mixing time,
+spectral gap... Such constants are unknown in practice. In this paper, we prove
+a new PAC-Bayes bound for Markov chains. This bound depends on a quantity
+called the pseudo-spectral gap. The main novelty is that we can provide an
+empirical bound on the pseudo-spectral gap when the state space is finite.
+Thus, we obtain the first fully empirical PAC-Bayes bound for Markov chains.
+This extends beyond the finite case, although this requires additional
+assumptions. On simulated experiments, the empirical version of the bound is
+essentially as tight as the non-empirical one.",http://arxiv.org/pdf/2509.20985v1,,False
+GenFacts-Generative Counterfactual Explanations for Multi-Variate Time Series,25/09/2025,"Sarah Seifi, Anass Ibrahimi, Tobias Sukianto, Cecilia Carbonelli, Lorenzo Servadei, Robert Wille","Counterfactual explanations aim to enhance model transparency by showing how
+inputs can be minimally altered to change predictions. For multivariate time
+series, existing methods often generate counterfactuals that are invalid,
+implausible, or unintuitive. We introduce GenFacts, a generative framework
+based on a class-discriminative variational autoencoder. It integrates
+contrastive and classification-consistency objectives, prototype-based
+initialization, and realism-constrained optimization. We evaluate GenFacts on
+radar gesture data as an industrial use case and handwritten letter
+trajectories as an intuitive benchmark. Across both datasets, GenFacts
+outperforms state-of-the-art baselines in plausibility (+18.7%) and achieves
+the highest interpretability scores in a human study. These results highlight
+that plausibility and user-centered interpretability, rather than sparsity
+alone, are key to actionable counterfactuals in time series data.",http://arxiv.org/pdf/2509.20936v1,,False
+Conditionally Whitened Generative Models for Probabilistic Time Series Forecasting,25/09/2025,"Yanfeng Yang, Siwei Chen, Pingping Hu, Zhaotong Shen, Yingjie Zhang, Zhuoran Sun, Shuai Li, Ziqi Chen, Kenji Fukumizu","Probabilistic forecasting of multivariate time series is challenging due to
+non-stationarity, inter-variable dependencies, and distribution shifts. While
+recent diffusion and flow matching models have shown promise, they often ignore
+informative priors such as conditional means and covariances. In this work, we
+propose Conditionally Whitened Generative Models (CW-Gen), a framework that
+incorporates prior information through conditional whitening. Theoretically, we
+establish sufficient conditions under which replacing the traditional terminal
+distribution of diffusion models, namely the standard multivariate normal, with
+a multivariate normal distribution parameterized by estimators of the
+conditional mean and covariance improves sample quality. Guided by this
+analysis, we design a novel Joint Mean-Covariance Estimator (JMCE) that
+simultaneously learns the conditional mean and sliding-window covariance.
+Building on JMCE, we introduce Conditionally Whitened Diffusion Models
+(CW-Diff) and extend them to Conditionally Whitened Flow Matching (CW-Flow).
+Experiments on five real-world datasets with six state-of-the-art generative
+models demonstrate that CW-Gen consistently enhances predictive performance,
+capturing non-stationary dynamics and inter-variable correlations more
+effectively than prior-free approaches. Empirical results further demonstrate
+that CW-Gen can effectively mitigate the effects of distribution shift.",http://arxiv.org/pdf/2509.20928v1,,False
+Nuclear Diffusion Models for Low-Rank Background Suppression in Videos,25/09/2025,"Tristan S. W. Stevens, Oisín Nolan, Jean-Luc Robert, Ruud J. G. van Sloun","Video sequences often contain structured noise and background artifacts that
+obscure dynamic content, posing challenges for accurate analysis and
+restoration. Robust principal component methods address this by decomposing
+data into low-rank and sparse components. Still, the sparsity assumption often
+fails to capture the rich variability present in real video data. To overcome
+this limitation, a hybrid framework that integrates low-rank temporal modeling
+with diffusion posterior sampling is proposed. The proposed method, Nuclear
+Diffusion, is evaluated on a real-world medical imaging problem, namely cardiac
+ultrasound dehazing, and demonstrates improved dehazing performance compared to
+traditional RPCA concerning contrast enhancement (gCNR) and signal preservation
+(KS statistic). These results highlight the potential of combining model-based
+temporal models with deep generative priors for high-fidelity video
+restoration.",http://arxiv.org/pdf/2509.20886v1,,False
+Causal Time Series Generation via Diffusion Models,25/09/2025,"Yutong Xia, Chang Xu, Yuxuan Liang, Qingsong Wen, Roger Zimmermann, Jiang Bian","Time series generation (TSG) synthesizes realistic sequences and has achieved
+remarkable success. Among TSG, conditional models generate sequences given
+observed covariates, however, such models learn observational correlations
+without considering unobserved confounding. In this work, we propose a causal
+perspective on conditional TSG and introduce causal time series generation as a
+new TSG task family, formalized within Pearl's causal ladder, extending beyond
+observational generation to include interventional and counterfactual settings.
+To instantiate these tasks, we develop CaTSG, a unified diffusion-based
+framework with backdoor-adjusted guidance that causally steers sampling toward
+desired interventions and individual counterfactuals while preserving
+observational fidelity. Specifically, our method derives causal score functions
+via backdoor adjustment and the abduction-action-prediction procedure, thus
+enabling principled support for all three levels of TSG. Extensive experiments
+on both synthetic and real-world datasets show that CaTSG achieves superior
+fidelity and also supporting interventional and counterfactual generation that
+existing baselines cannot handle. Overall, we propose the causal TSG family and
+instantiate it with CaTSG, providing an initial proof-of-concept and opening a
+promising direction toward more reliable simulation under interventions and
+counterfactual generation.",http://arxiv.org/pdf/2509.20846v1,,False
+"ImaginationPolicy: Towards Generalizable, Precise and Reliable End-to-End Policy for Robotic Manipulation",25/09/2025,"Dekun Lu, Wei Gao, Kui Jia","End-to-end robot manipulation policies offer significant potential for
+enabling embodied agents to understand and interact with the world. Unlike
+traditional modular pipelines, end-to-end learning mitigates key limitations
+such as information loss between modules and feature misalignment caused by
+isolated optimization targets. Despite these advantages, existing end-to-end
+neural networks for robotic manipulation--including those based on large
+VLM/VLA models--remain insufficiently performant for large-scale practical
+deployment. In this paper, we take a step towards an end-to-end manipulation
+policy that is generalizable, accurate and reliable. To achieve this goal, we
+propose a novel Chain of Moving Oriented Keypoints (CoMOK) formulation for
+robotic manipulation. Our formulation is used as the action representation of a
+neural policy, which can be trained in an end-to-end fashion. Such an action
+representation is general, as it extends the standard end-effector pose action
+representation and supports a diverse set of manipulation tasks in a unified
+manner. The oriented keypoint in our method enables natural generalization to
+objects with different shapes and sizes, while achieving sub-centimeter
+accuracy. Moreover, our formulation can easily handle multi-stage tasks,
+multi-modal robot behaviors, and deformable objects. Extensive simulated and
+hardware experiments demonstrate the effectiveness of our method.",http://arxiv.org/pdf/2509.20841v1,,False
+CaTS-Bench: Can Language Models Describe Numeric Time Series?,25/09/2025,"Luca Zhou, Pratham Yashwante, Marshall Fisher, Alessio Sampieri, Zihao Zhou, Fabio Galasso, Rose Yu","Time series captioning, the task of describing numeric time series in natural
+language, requires numerical reasoning, trend interpretation, and contextual
+understanding. Existing benchmarks, however, often rely on synthetic data or
+overly simplistic captions, and typically neglect metadata and visual
+representations. To close this gap, we introduce CaTS-Bench, the first
+large-scale, real-world benchmark for Context-aware Time Series captioning.
+CaTS-Bench is derived from 11 diverse datasets reframed as captioning and Q&A
+tasks, comprising roughly 465k training and 105k test timestamps. Each sample
+includes a numeric series segment, contextual metadata, a line-chart image, and
+a caption. A key contribution of this work is the scalable pipeline used to
+generate reference captions: while most references are produced by an oracle
+LLM and verified through factual checks, human indistinguishability studies,
+and diversity analyses, we also provide a human-revisited subset of 579 test
+captions, refined from LLM outputs to ensure accuracy and human-like style.
+Beyond captioning, CaTS-Bench offers 460 multiple-choice questions targeting
+deeper aspects of time series reasoning. We further propose new tailored
+evaluation metrics and benchmark leading VLMs, highlighting both their
+strengths and persistent limitations. Together, these contributions establish
+CaTS-Bench and its captioning pipeline as a reliable and extensible foundation
+for future research at the intersection of time series analysis and foundation
+models.",http://arxiv.org/pdf/2509.20823v1,,False
+Aligning Inductive Bias for Data-Efficient Generalization in State Space Models,25/09/2025,"Qiyu Chen, Guozhang Chen","The remarkable success of large-scale models is fundamentally tied to scaling
+laws, yet the finite nature of high-quality data presents a looming challenge.
+One of the next frontiers in modeling is data efficiency: the ability to learn
+more from less. A model's inductive bias is a critical lever for this, but
+foundational sequence models like State Space Models (SSMs) rely on a fixed
+bias. This fixed prior is sample-inefficient when a task's underlying structure
+does not match. In this work, we introduce a principled framework to solve this
+problem. We first formalize the inductive bias of linear time-invariant SSMs
+through an SSM-induced kernel, mathematically and empirically proving its
+spectrum is directly governed by the model's frequency response. Further, we
+propose a method of Task-Dependent Initialization (TDI): power spectrum
+matching, a fast and efficient method that aligns the model's inductive bias
+with the task's spectral characteristics before large-scale training. Our
+experiments on a diverse set of real-world benchmarks show that TDI
+significantly improves generalization and sample efficiency, particularly in
+low-data regimes. This work provides a theoretical and practical tool to create
+more data-efficient models, a crucial step towards sustainable scaling.",http://arxiv.org/pdf/2509.20789v1,,False
+IConv: Focusing on Local Variation with Channel Independent Convolution for Multivariate Time Series Forecasting,25/09/2025,"Gawon Lee, Hanbyeol Park, Minseop Kim, Dohee Kim, Hyerim Bae","Real-world time-series data often exhibit non-stationarity, including
+changing trends, irregular seasonality, and residuals. In terms of changing
+trends, recently proposed multi-layer perceptron (MLP)-based models have shown
+excellent performance owing to their computational efficiency and ability to
+capture long-term dependency. However, the linear nature of MLP architectures
+poses limitations when applied to channels with diverse distributions,
+resulting in local variations such as seasonal patterns and residual components
+being ignored. However, convolutional neural networks (CNNs) can effectively
+incorporate these variations. To resolve the limitations of MLP, we propose
+combining them with CNNs. The overall trend is modeled using an MLP to consider
+long-term dependencies. The CNN uses diverse kernels to model fine-grained
+local patterns in conjunction with MLP trend predictions. To focus on modeling
+local variation, we propose IConv, a novel convolutional architecture that
+processes the temporal dependency channel independently and considers the
+inter-channel relationship through distinct layers. Independent channel
+processing enables the modeling of diverse local temporal dependencies and the
+adoption of a large kernel size. Distinct inter-channel considerations reduce
+computational cost. The proposed model is evaluated through extensive
+experiments on time-series datasets. The results reveal the superiority of the
+proposed method for multivariate time-series forecasting.",http://arxiv.org/pdf/2509.20783v1,,False
+Extrapolating Phase-Field Simulations in Space and Time with Purely Convolutional Architectures,25/09/2025,"Christophe Bonneville, Nathan Bieberdorf, Pieterjan Robbe, Mark Asta, Habib N. Najm, Laurent Capolungo, Cosmin Safta","Phase-field models of liquid metal dealloying (LMD) can resolve rich
+microstructural dynamics but become intractable for large domains or long time
+horizons. We present a conditionally parameterized, fully convolutional U-Net
+surrogate that generalizes far beyond its training window in both space and
+time. The design integrates convolutional self-attention and physics-aware
+padding, while parameter conditioning enables variable time-step skipping and
+adaptation to diverse alloy systems. Although trained only on short,
+small-scale simulations, the surrogate exploits the translational invariance of
+convolutions to extend predictions to much longer horizons than traditional
+solvers. It accurately reproduces key LMD physics, with relative errors
+typically under 5% within the training regime and below 10% when extrapolating
+to larger domains and later times. The method accelerates computations by up to
+16,000 times, cutting weeks of simulation down to seconds, and marks an early
+step toward scalable, high-fidelity extrapolation of LMD phase-field models.",http://arxiv.org/pdf/2509.20770v1,,False
+Joint Flow Trajectory Optimization For Feasible Robot Motion Generation from Video Demonstrations,25/09/2025,"Xiaoxiang Dong, Matthew Johnson-Roberson, Weiming Zhi","Learning from human video demonstrations offers a scalable alternative to
+teleoperation or kinesthetic teaching, but poses challenges for robot
+manipulators due to embodiment differences and joint feasibility constraints.
+We address this problem by proposing the Joint Flow Trajectory Optimization
+(JFTO) framework for grasp pose generation and object trajectory imitation
+under the video-based Learning-from-Demonstration (LfD) paradigm. Rather than
+directly imitating human hand motions, our method treats demonstrations as
+object-centric guides, balancing three objectives: (i) selecting a feasible
+grasp pose, (ii) generating object trajectories consistent with demonstrated
+motions, and (iii) ensuring collision-free execution within robot kinematics.
+To capture the multimodal nature of demonstrations, we extend flow matching to
+$\SE(3)$ for probabilistic modeling of object trajectories, enabling
+density-aware imitation that avoids mode collapse. The resulting optimization
+integrates grasp similarity, trajectory likelihood, and collision penalties
+into a unified differentiable objective. We validate our approach in both
+simulation and real-world experiments across diverse real-world manipulation
+tasks.",http://arxiv.org/pdf/2509.20703v1,,False
+Accelerate Creation of Product Claims Using Generative AI,25/09/2025,"Po-Yu Liang, Yong Zhang, Tatiana Hwa, Aaron Byers","The benefit claims of a product is a critical driver of consumers' purchase
+behavior. Creating product claims is an intense task that requires substantial
+time and funding. We have developed the $\textbf{Claim Advisor}$ web
+application to accelerate claim creations using in-context learning and
+fine-tuning of large language models (LLM). $\textbf{Claim Advisor}$ was
+designed to disrupt the speed and economics of claim search, generation,
+optimization, and simulation. It has three functions: (1) semantically
+searching and identifying existing claims and/or visuals that resonate with the
+voice of consumers; (2) generating and/or optimizing claims based on a product
+description and a consumer profile; and (3) ranking generated and/or manually
+created claims using simulations via synthetic consumers. Applications in a
+consumer packaged goods (CPG) company have shown very promising results. We
+believe that this capability is broadly useful and applicable across product
+categories and industries. We share our learning to encourage the research and
+application of generative AI in different industries.",http://arxiv.org/pdf/2509.20652v1,,False
+A Hierarchical Variational Graph Fused Lasso for Recovering Relative Rates in Spatial Compositional Data,25/09/2025,"Joaquim Valerio Teixeira, Ed Reznik, Sudpito Banerjee, Wesley Tansey","The analysis of spatial data from biological imaging technology, such as
+imaging mass spectrometry (IMS) or imaging mass cytometry (IMC), is challenging
+because of a competitive sampling process which convolves signals from
+molecules in a single pixel. To address this, we develop a scalable Bayesian
+framework that leverages natural sparsity in spatial signal patterns to recover
+relative rates for each molecule across the entire image. Our method relies on
+the use of a heavy-tailed variant of the graphical lasso prior and a novel
+hierarchical variational family, enabling efficient inference via automatic
+differentiation variational inference. Simulation results show that our
+approach outperforms state-of-the-practice point estimate methodologies in IMS,
+and has superior posterior coverage than mean-field variational inference
+techniques. Results on real IMS data demonstrate that our approach better
+recovers the true anatomical structure of known tissue, removes artifacts, and
+detects active regions missed by the standard analysis approach.",http://arxiv.org/pdf/2509.20636v1,,False

@@ -1,0 +1,510 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation",26/09/2025,"Chih Yao Hu, Yang-Sen Lin, Yuna Lee, Chih-Hai Su, Jie-Ying Lee, Shr-Ruei Tsai, Chin-Yang Lin, Kuan-Wen Chen, Tsung-Wei Ke, Yu-Lun Liu","We present See, Point, Fly (SPF), a training-free aerial vision-and-language
+navigation (AVLN) framework built atop vision-language models (VLMs). SPF is
+capable of navigating to any goal based on any type of free-form instructions
+in any kind of environment. In contrast to existing VLM-based approaches that
+treat action prediction as a text generation task, our key insight is to
+consider action prediction for AVLN as a 2D spatial grounding task. SPF
+harnesses VLMs to decompose vague language instructions into iterative
+annotation of 2D waypoints on the input image. Along with the predicted
+traveling distance, SPF transforms predicted 2D waypoints into 3D displacement
+vectors as action commands for UAVs. Moreover, SPF also adaptively adjusts the
+traveling distance to facilitate more efficient navigation. Notably, SPF
+performs navigation in a closed-loop control manner, enabling UAVs to follow
+dynamic targets in dynamic environments. SPF sets a new state of the art in DRL
+simulation benchmark, outperforming the previous best method by an absolute
+margin of 63%. In extensive real-world evaluations, SPF outperforms strong
+baselines by a large margin. We also conduct comprehensive ablation studies to
+highlight the effectiveness of our design choice. Lastly, SPF shows remarkable
+generalization to different VLMs. Project page: https://spf-web.pages.dev",http://arxiv.org/pdf/2509.22653v1,,False
+Hierarchical Representation Matching for CLIP-based Class-Incremental Learning,26/09/2025,"Zhen-Hao Wen, Yan Wang, Ji Feng, Han-Jia Ye, De-Chuan Zhan, Da-Wei Zhou","Class-Incremental Learning (CIL) aims to endow models with the ability to
+continuously adapt to evolving data streams. Recent advances in pre-trained
+vision-language models (e.g., CLIP) provide a powerful foundation for this
+task. However, existing approaches often rely on simplistic templates, such as
+""a photo of a [CLASS]"", which overlook the hierarchical nature of visual
+concepts. For example, recognizing ""cat"" versus ""car"" depends on coarse-grained
+cues, while distinguishing ""cat"" from ""lion"" requires fine-grained details.
+Similarly, the current feature mapping in CLIP relies solely on the
+representation from the last layer, neglecting the hierarchical information
+contained in earlier layers. In this work, we introduce HiErarchical
+Representation MAtchiNg (HERMAN) for CLIP-based CIL. Our approach leverages
+LLMs to recursively generate discriminative textual descriptors, thereby
+augmenting the semantic space with explicit hierarchical cues. These
+descriptors are matched to different levels of the semantic hierarchy and
+adaptively routed based on task-specific requirements, enabling precise
+discrimination while alleviating catastrophic forgetting in incremental tasks.
+Extensive experiments on multiple benchmarks demonstrate that our method
+consistently achieves state-of-the-art performance.",http://arxiv.org/pdf/2509.22645v1,,False
+The Lie of the Average: How Class Incremental Learning Evaluation Deceives You?,26/09/2025,"Guannan Lai, Da-Wei Zhou, Xin Yang, Han-Jia Ye","Class Incremental Learning (CIL) requires models to continuously learn new
+classes without forgetting previously learned ones, while maintaining stable
+performance across all possible class sequences. In real-world settings, the
+order in which classes arrive is diverse and unpredictable, and model
+performance can vary substantially across different sequences. Yet mainstream
+evaluation protocols calculate mean and variance from only a small set of
+randomly sampled sequences. Our theoretical analysis and empirical results
+demonstrate that this sampling strategy fails to capture the full performance
+range, resulting in biased mean estimates and a severe underestimation of the
+true variance in the performance distribution. We therefore contend that a
+robust CIL evaluation protocol should accurately characterize and estimate the
+entire performance distribution. To this end, we introduce the concept of
+extreme sequences and provide theoretical justification for their crucial role
+in the reliable evaluation of CIL. Moreover, we observe a consistent positive
+correlation between inter-task similarity and model performance, a relation
+that can be leveraged to guide the search for extreme sequences. Building on
+these insights, we propose EDGE (Extreme case-based Distribution and
+Generalization Evaluation), an evaluation protocol that adaptively identifies
+and samples extreme class sequences using inter-task similarity, offering a
+closer approximation of the ground-truth performance distribution. Extensive
+experiments demonstrate that EDGE effectively captures performance extremes and
+yields more accurate estimates of distributional boundaries, providing
+actionable insights for model selection and robustness checking. Our code is
+available at https://github.com/AIGNLAI/EDGE.",http://arxiv.org/pdf/2509.22580v1,,False
+ECHO: Toward Contextual Seq2Seq Paradigms in Large EEG Models,26/09/2025,"Chenyu Liu, Yuqiu Deng, Tianyu Liu, Jinan Zhou, Xinliang Zhou, Ziyu Jia, Yi Ding","Electroencephalography (EEG), with its broad range of applications,
+necessitates models that can generalize effectively across various tasks and
+datasets. Large EEG Models (LEMs) address this by pretraining encoder-centric
+architectures on large-scale unlabeled data to extract universal
+representations. While effective, these models lack decoders of comparable
+capacity, limiting the full utilization of the learned features. To address
+this issue, we introduce ECHO, a novel decoder-centric LEM paradigm that
+reformulates EEG modeling as sequence-to-sequence learning. ECHO captures
+layered relationships among signals, labels, and tasks within sequence space,
+while incorporating discrete support samples to construct contextual cues. This
+design equips ECHO with in-context learning, enabling dynamic adaptation to
+heterogeneous tasks without parameter updates. Extensive experiments across
+multiple datasets demonstrate that, even with basic model components, ECHO
+consistently outperforms state-of-the-art single-task LEMs in multi-task
+settings, showing superior generalization and adaptability.",http://arxiv.org/pdf/2509.22556v1,,False
+Physics-informed GNN for medium-high voltage AC power flow with edge-aware attention and line search correction operator,26/09/2025,"Changhun Kim, Timon Conrad, Redwanul Karim, Julian Oelhaf, David Riebesel, Tomás Arias-Vergara, Andreas Maier, Johann Jäger, Siming Bayer","Physics-informed graph neural networks (PIGNNs) have emerged as fast AC
+power-flow solvers that can replace classic Newton--Raphson (NR) solvers,
+especially when thousands of scenarios must be evaluated. However, current
+PIGNNs still need accuracy improvements at parity speed; in particular, the
+physics loss is inoperative at inference, which can deter operational adoption.
+We address this with PIGNN-Attn-LS, combining an edge-aware attention mechanism
+that explicitly encodes line physics via per-edge biases, capturing the grid's
+anisotropy, with a backtracking line-search-based globalized correction
+operator that restores an operative decrease criterion at inference. Training
+and testing use a realistic High-/Medium-Voltage scenario generator, with NR
+used only to construct reference states. On held-out HV cases consisting of
+4--32-bus grids, PIGNN-Attn-LS achieves a test RMSE of 0.00033 p.u. in voltage
+and 0.08$^\circ$ in angle, outperforming the PIGNN-MLP baseline by 99.5\% and
+87.1\%, respectively. With streaming micro-batches, it delivers 2--5$\times$
+faster batched inference than NR on 4--1024-bus grids.",http://arxiv.org/pdf/2509.22458v1,,False
+Overclocking Electrostatic Generative Models,26/09/2025,"Daniil Shlenskii, Alexander Korotin","Electrostatic generative models such as PFGM++ have recently emerged as a
+powerful framework, achieving state-of-the-art performance in image synthesis.
+PFGM++ operates in an extended data space with auxiliary dimensionality $D$,
+recovering the diffusion model framework as $D\to\infty$, while yielding
+superior empirical results for finite $D$. Like diffusion models, PFGM++ relies
+on expensive ODE simulations to generate samples, making it computationally
+costly. To address this, we propose Inverse Poisson Flow Matching (IPFM), a
+novel distillation framework that accelerates electrostatic generative models
+across all values of $D$. Our IPFM reformulates distillation as an inverse
+problem: learning a generator whose induced electrostatic field matches that of
+the teacher. We derive a tractable training objective for this problem and show
+that, as $D \to \infty$, our IPFM closely recovers Score Identity Distillation
+(SiD), a recent method for distilling diffusion models. Empirically, our IPFM
+produces distilled generators that achieve near-teacher or even superior sample
+quality using only a few function evaluations. Moreover, we observe that
+distillation converges faster for finite $D$ than in the $D \to \infty$
+(diffusion) limit, which is consistent with prior findings that finite-$D$
+PFGM++ models exhibit more favorable optimization and sampling properties.",http://arxiv.org/pdf/2509.22454v1,,False
+Guiding Evolution of Artificial Life Using Vision-Language Models,26/09/2025,"Nikhil Baid, Hannah Erlebach, Paul Hellegouarch, Frederico Wieser","Foundation models (FMs) have recently opened up new frontiers in the field of
+artificial life (ALife) by providing powerful tools to automate search through
+ALife simulations. Previous work aligns ALife simulations with natural language
+target prompts using vision-language models (VLMs). We build on Automated
+Search for Artificial Life (ASAL) by introducing ASAL++, a method for
+open-ended-like search guided by multimodal FMs. We use a second FM to propose
+new evolutionary targets based on a simulation's visual history. This induces
+an evolutionary trajectory with increasingly complex targets.
+  We explore two strategies: (1) evolving a simulation to match a single new
+prompt at each iteration (Evolved Supervised Targets: EST) and (2) evolving a
+simulation to match the entire sequence of generated prompts (Evolved Temporal
+Targets: ETT). We test our method empirically in the Lenia substrate using
+Gemma-3 to propose evolutionary targets, and show that EST promotes greater
+visual novelty, while ETT fosters more coherent and interpretable evolutionary
+sequences.
+  Our results suggest that ASAL++ points towards new directions for FM-driven
+ALife discovery with open-ended characteristics.",http://arxiv.org/pdf/2509.22447v1,,False
+ReLAM: Learning Anticipation Model for Rewarding Visual Robotic Manipulation,26/09/2025,"Nan Tang, Jing-Cheng Pang, Guanlin Li, Chao Qian, Yang Yu","Reward design remains a critical bottleneck in visual reinforcement learning
+(RL) for robotic manipulation. In simulated environments, rewards are
+conventionally designed based on the distance to a target position. However,
+such precise positional information is often unavailable in real-world visual
+settings due to sensory and perceptual limitations. In this study, we propose a
+method that implicitly infers spatial distances through keypoints extracted
+from images. Building on this, we introduce Reward Learning with Anticipation
+Model (ReLAM), a novel framework that automatically generates dense, structured
+rewards from action-free video demonstrations. ReLAM first learns an
+anticipation model that serves as a planner and proposes intermediate
+keypoint-based subgoals on the optimal path to the final goal, creating a
+structured learning curriculum directly aligned with the task's geometric
+objectives. Based on the anticipated subgoals, a continuous reward signal is
+provided to train a low-level, goal-conditioned policy under the hierarchical
+reinforcement learning (HRL) framework with provable sub-optimality bound.
+Extensive experiments on complex, long-horizon manipulation tasks show that
+ReLAM significantly accelerates learning and achieves superior performance
+compared to state-of-the-art methods.",http://arxiv.org/pdf/2509.22402v1,,False
+Preventing Model Collapse Under Overparametrization: Optimal Mixing Ratios for Interpolation Learning and Ridge Regression,26/09/2025,"Anvit Garg, Sohom Bhattacharya, Pragya Sur","Model collapse occurs when generative models degrade after repeatedly
+training on their own synthetic outputs. We study this effect in
+overparameterized linear regression in a setting where each iteration mixes
+fresh real labels with synthetic labels drawn from the model fitted in the
+previous iteration. We derive precise generalization error formulae for
+minimum-$\ell_2$-norm interpolation and ridge regression under this iterative
+scheme. Our analysis reveals intriguing properties of the optimal mixing weight
+that minimizes long-term prediction error and provably prevents model collapse.
+For instance, in the case of min-$\ell_2$-norm interpolation, we establish that
+the optimal real-data proportion converges to the reciprocal of the golden
+ratio for fairly general classes of covariate distributions. Previously, this
+property was known only for ordinary least squares, and additionally in low
+dimensions. For ridge regression, we further analyze two popular model classes
+-- the random-effects model and the spiked covariance model -- demonstrating
+how spectral geometry governs optimal weighting. In both cases, as well as for
+isotropic features, we uncover that the optimal mixing ratio should be at least
+one-half, reflecting the necessity of favoring real-data over synthetic. We
+validate our theoretical results with extensive simulations.",http://arxiv.org/pdf/2509.22341v1,,False
+Aurora: Towards Universal Generative Multimodal Time Series Forecasting,26/09/2025,"Xingjian Wu, Jianxin Jin, Wanghui Qiu, Peng Chen, Yang Shu, Bin Yang, Chenjuan Guo","Cross-domain generalization is very important in Time Series Forecasting
+because similar historical information may lead to distinct future trends due
+to the domain-specific characteristics. Recent works focus on building unimodal
+time series foundation models and end-to-end multimodal supervised models.
+Since domain-specific knowledge is often contained in modalities like texts,
+the former lacks the explicit utilization of them, thus hindering the
+performance. The latter is tailored for end-to-end scenarios and does not
+support zero-shot inference for cross-domain scenarios. In this work, we
+introduce Aurora, a Multimodal Time Series Foundation Model, which supports
+multimodal inputs and zero-shot inference. Pretrained on Corss-domain
+Multimodal Time Series Corpus, Aurora can adaptively extract and focus on key
+domain knowledge contained in corrsponding text or image modalities, thus
+possessing strong Cross-domain generalization capability. Through tokenization,
+encoding, and distillation, Aurora can extract multimodal domain knowledge as
+guidance and then utilizes a Modality-Guided Multi-head Self-Attention to
+inject them into the modeling of temporal representations. In the decoding
+phase, the multimodal representations are used to generate the conditions and
+prototypes of future tokens, contributing to a novel Prototype-Guided Flow
+Matching for generative probabilistic forecasting. Comprehensive experiments on
+well-recognized benchmarks, including TimeMMD, TSFM-Bench and ProbTS,
+demonstrate the consistent state-of-the-art performance of Aurora on both
+unimodal and multimodal scenarios.",http://arxiv.org/pdf/2509.22295v1,,False
+Conditional Denoising Diffusion Autoencoders for Wireless Semantic Communications,26/09/2025,"Mehdi Letafati, Samad Ali, Matti Latva-aho","Semantic communication (SemCom) systems aim to learn the mapping from
+low-dimensional semantics to high-dimensional ground-truth. While this is more
+akin to a ""domain translation"" problem, existing frameworks typically emphasize
+on channel-adaptive neural encoding-decoding schemes, lacking full exploration
+of signal distribution. Moreover, such methods so far have employed
+autoencoder-based architectures, where the encoding is tightly coupled to a
+matched decoder, causing scalability issues in practice. To address these gaps,
+diffusion autoencoder models are proposed for wireless SemCom. The goal is to
+learn a ""semantic-to-clean"" mapping, from the semantic space to the
+ground-truth probability distribution. A neural encoder at semantic transmitter
+extracts the high-level semantics, and a conditional diffusion model (CDiff) at
+the semantic receiver exploits the source distribution for signal-space
+denoising, while the received semantic latents are incorporated as the
+conditioning input to ""steer"" the decoding process towards the semantics
+intended by the transmitter. It is analytically proved that the proposed
+decoder model is a consistent estimator of the ground-truth data. Furthermore,
+extensive simulations over CIFAR-10 and MNIST datasets are provided along with
+design insights, highlighting the performance compared to legacy autoencoders
+and variational autoencoders (VAE). Simulations are further extended to the
+multi-user SemCom, identifying the dominating factors in a more realistic
+setup.",http://arxiv.org/pdf/2509.22282v1,,False
+Unlocking the Power of Mixture-of-Experts for Task-Aware Time Series Analytics,26/09/2025,"Xingjian Wu, Zhengyu Li, Hanyin Cheng, Xiangfei Qiu, Jilin Hu, Chenjuan Guo, Bin Yang","Time Series Analysis is widely used in various real-world applications such
+as weather forecasting, financial fraud detection, imputation for missing data
+in IoT systems, and classification for action recognization. Mixture-of-Experts
+(MoE), as a powerful architecture, though demonstrating effectiveness in NLP,
+still falls short in adapting to versatile tasks in time series analytics due
+to its task-agnostic router and the lack of capability in modeling channel
+correlations. In this study, we propose a novel, general MoE-based time series
+framework called PatchMoE to support the intricate ``knowledge'' utilization
+for distinct tasks, thus task-aware. Based on the observation that hierarchical
+representations often vary across tasks, e.g., forecasting vs. classification,
+we propose a Recurrent Noisy Gating to utilize the hierarchical information in
+routing, thus obtaining task-sepcific capability. And the routing strategy is
+operated on time series tokens in both temporal and channel dimensions, and
+encouraged by a meticulously designed Temporal \& Channel Load Balancing Loss
+to model the intricate temporal and channel correlations. Comprehensive
+experiments on five downstream tasks demonstrate the state-of-the-art
+performance of PatchMoE.",http://arxiv.org/pdf/2509.22279v1,,False
+InfiMed-Foundation: Pioneering Advanced Multimodal Medical Models with Compute-Efficient Pre-Training and Multi-Stage Fine-Tuning,26/09/2025,"Guanghao Zhu, Zhitian Hou, Zeyu Liu, Zhijie Sang, Congkai Xie, Hongxia Yang","Multimodal large language models (MLLMs) have shown remarkable potential in
+various domains, yet their application in the medical field is hindered by
+several challenges. General-purpose MLLMs often lack the specialized knowledge
+required for medical tasks, leading to uncertain or hallucinatory responses.
+Knowledge distillation from advanced models struggles to capture
+domain-specific expertise in radiology and pharmacology. Additionally, the
+computational cost of continual pretraining with large-scale medical data poses
+significant efficiency challenges. To address these issues, we propose
+InfiMed-Foundation-1.7B and InfiMed-Foundation-4B, two medical-specific MLLMs
+designed to deliver state-of-the-art performance in medical applications. We
+combined high-quality general-purpose and medical multimodal data and proposed
+a novel five-dimensional quality assessment framework to curate high-quality
+multimodal medical datasets. We employ low-to-high image resolution and
+multimodal sequence packing to enhance training efficiency, enabling the
+integration of extensive medical data. Furthermore, a three-stage supervised
+fine-tuning process ensures effective knowledge extraction for complex medical
+tasks. Evaluated on the MedEvalKit framework, InfiMed-Foundation-1.7B
+outperforms Qwen2.5VL-3B, while InfiMed-Foundation-4B surpasses HuatuoGPT-V-7B
+and MedGemma-27B-IT, demonstrating superior performance in medical visual
+question answering and diagnostic tasks. By addressing key challenges in data
+quality, training efficiency, and domain-specific knowledge extraction, our
+work paves the way for more reliable and effective AI-driven solutions in
+healthcare. InfiMed-Foundation-4B model is available at
+\href{https://huggingface.co/InfiX-ai/InfiMed-Foundation-4B}{InfiMed-Foundation-4B}.",http://arxiv.org/pdf/2509.22261v1,,False
+Beyond Classification Accuracy: Neural-MedBench and the Need for Deeper Reasoning Benchmarks,26/09/2025,"Miao Jing, Mengting Jia, Junling Lin, Zhongxia Shen, Lijun Wang, Yuanyuan Peng, Huan Gao, Mingkun Xu, Shangyang Li","Recent advances in vision-language models (VLMs) have achieved remarkable
+performance on standard medical benchmarks, yet their true clinical reasoning
+ability remains unclear. Existing datasets predominantly emphasize
+classification accuracy, creating an evaluation illusion in which models appear
+proficient while still failing at high-stakes diagnostic reasoning. We
+introduce Neural-MedBench, a compact yet reasoning-intensive benchmark
+specifically designed to probe the limits of multimodal clinical reasoning in
+neurology. Neural-MedBench integrates multi-sequence MRI scans, structured
+electronic health records, and clinical notes, and encompasses three core task
+families: differential diagnosis, lesion recognition, and rationale generation.
+To ensure reliable evaluation, we develop a hybrid scoring pipeline that
+combines LLM-based graders, clinician validation, and semantic similarity
+metrics. Through systematic evaluation of state-of-the-art VLMs, including
+GPT-4o, Claude-4, and MedGemma, we observe a sharp performance drop compared to
+conventional datasets. Error analysis shows that reasoning failures, rather
+than perceptual errors, dominate model shortcomings. Our findings highlight the
+necessity of a Two-Axis Evaluation Framework: breadth-oriented large datasets
+for statistical generalization, and depth-oriented, compact benchmarks such as
+Neural-MedBench for reasoning fidelity. We release Neural-MedBench at
+https://neuromedbench.github.io/ as an open and extensible diagnostic testbed,
+which guides the expansion of future benchmarks and enables rigorous yet
+cost-effective assessment of clinically trustworthy AI.",http://arxiv.org/pdf/2509.22258v1,,False
+Log2Plan: An Adaptive GUI Automation Framework Integrated with Task Mining Approach,26/09/2025,"Seoyoung Lee, Seonbin Yoon, Seongbeen Lee, Hyesoo Kim, Joo Yong Sim","GUI task automation streamlines repetitive tasks, but existing LLM or
+VLM-based planner-executor agents suffer from brittle generalization, high
+latency, and limited long-horizon coherence. Their reliance on single-shot
+reasoning or static plans makes them fragile under UI changes or complex tasks.
+Log2Plan addresses these limitations by combining a structured two-level
+planning framework with a task mining approach over user behavior logs,
+enabling robust and adaptable GUI automation. Log2Plan constructs high-level
+plans by mapping user commands to a structured task dictionary, enabling
+consistent and generalizable automation. To support personalization and reuse,
+it employs a task mining approach from user behavior logs that identifies
+user-specific patterns. These high-level plans are then grounded into low-level
+action sequences by interpreting real-time GUI context, ensuring robust
+execution across varying interfaces. We evaluated Log2Plan on 200 real-world
+tasks, demonstrating significant improvements in task success rate and
+execution time. Notably, it maintains over 60.0% success rate even on
+long-horizon task sequences, highlighting its robustness in complex, multi-step
+workflows.",http://arxiv.org/pdf/2509.22137v1,,False
+Bridging Draft Policy Misalignment: Group Tree Optimization for Speculative Decoding,26/09/2025,"Shijing Hu, Jingyang Li, Zhihui Lu, Pan Zhou","Speculative decoding accelerates large language model (LLM) inference by
+letting a lightweight draft model propose multiple tokens that the target model
+verifies in parallel. Yet existing training objectives optimize only a single
+greedy draft path, while decoding follows a tree policy that re-ranks and
+verifies multiple branches. This draft policy misalignment limits achievable
+speedups. We introduce Group Tree Optimization (GTO), which aligns training
+with the decoding-time tree policy through two components: (i) Draft Tree
+Reward, a sampling-free objective equal to the expected acceptance length of
+the draft tree under the target model, directly measuring decoding performance;
+(ii) Group-based Draft Policy Training, a stable optimization scheme that
+contrasts trees from the current and a frozen reference draft model, forming
+debiased group-standardized advantages and applying a PPO-style surrogate along
+the longest accepted sequence for robust updates. We further prove that
+increasing our Draft Tree Reward provably improves acceptance length and
+speedup. Across dialogue (MT-Bench), code (HumanEval), and math (GSM8K), and
+multiple LLMs (e.g., LLaMA-3.1-8B, LLaMA-3.3-70B, Vicuna-1.3-13B,
+DeepSeek-R1-Distill-LLaMA-8B), GTO increases acceptance length by 7.4% and
+yields an additional 7.7% speedup over prior state-of-the-art EAGLE-3. By
+bridging draft policy misalignment, GTO offers a practical, general solution
+for efficient LLM inference.",http://arxiv.org/pdf/2509.22134v1,,False
+Direct Bias-Correction Term Estimation for Propensity Scores and Average Treatment Effect Estimation,26/09/2025,Masahiro Kato,"This study considers the estimation of the average treatment effect (ATE).
+For ATE estimation, we estimate the propensity score through direct
+bias-correction term estimation. Let $\{(X_i, D_i, Y_i)\}_{i=1}^{n}$ be the
+observations, where $X_i \in \mathbb{R}^p$ denotes $p$-dimensional covariates,
+$D_i \in \{0, 1\}$ denotes a binary treatment assignment indicator, and $Y_i
+\in \mathbb{R}$ is an outcome. In ATE estimation, the bias-correction term
+$h_0(X_i, D_i) = \frac{1[D_i = 1]}{e_0(X_i)} - \frac{1[D_i = 0]}{1 - e_0(X_i)}$
+plays an important role, where $e_0(X_i)$ is the propensity score, the
+probability of being assigned treatment $1$. In this study, we propose
+estimating $h_0$ (or equivalently the propensity score $e_0$) by directly
+minimizing the prediction error of $h_0$. Since the bias-correction term $h_0$
+is essential for ATE estimation, this direct approach is expected to improve
+estimation accuracy for the ATE. For example, existing studies often employ
+maximum likelihood or covariate balancing to estimate $e_0$, but these
+approaches may not be optimal for accurately estimating $h_0$ or the ATE. We
+present a general framework for this direct bias-correction term estimation
+approach from the perspective of Bregman divergence minimization and conduct
+simulation studies to evaluate the effectiveness of the proposed method.",http://arxiv.org/pdf/2509.22122v1,,False
+Reinforcement Learning for Durable Algorithmic Recourse,26/09/2025,"Marina Ceccon, Alessandro Fabris, Goran Radanović, Asia J. Biega, Gian Antonio Susto","Algorithmic recourse seeks to provide individuals with actionable
+recommendations that increase their chances of receiving favorable outcomes
+from automated decision systems (e.g., loan approvals). While prior research
+has emphasized robustness to model updates, considerably less attention has
+been given to the temporal dynamics of recourse--particularly in competitive,
+resource-constrained settings where recommendations shape future applicant
+pools. In this work, we present a novel time-aware framework for algorithmic
+recourse, explicitly modeling how candidate populations adapt in response to
+recommendations. Additionally, we introduce a novel reinforcement learning
+(RL)-based recourse algorithm that captures the evolving dynamics of the
+environment to generate recommendations that are both feasible and valid. We
+design our recommendations to be durable, supporting validity over a predefined
+time horizon T. This durability allows individuals to confidently reapply after
+taking time to implement the suggested changes. Through extensive experiments
+in complex simulation environments, we show that our approach substantially
+outperforms existing baselines, offering a superior balance between feasibility
+and long-term validity. Together, these results underscore the importance of
+incorporating temporal and behavioral dynamics into the design of practical
+recourse systems.",http://arxiv.org/pdf/2509.22102v1,,False
+Comparative Analysis of GAN and Diffusion for MRI-to-CT translation,26/09/2025,"Emily Honey, Anders Helbo, Jens Petersen","Computed tomography (CT) is essential for treatment and diagnostics; In case
+CT are missing or otherwise difficult to obtain, methods for generating
+synthetic CT (sCT) images from magnetic resonance imaging (MRI) images are
+sought after. Therefore, it is valuable to establish a reference for what
+strategies are most effective for MRI-to-CT translation. In this paper, we
+compare the performance of two frequently used architectures for MRI-to-CT
+translation: a conditional generative adversarial network (cGAN) and a
+conditional denoising diffusion probabilistic model (cDDPM). We chose
+well-established implementations to represent each architecture: Pix2Pix for
+cGAN, and Palette for cDDPM. We separate the classical 3D translation problem
+into a sequence of 2D translations on the transverse plane, to investigate the
+viability of a strategy that reduces the computational cost. We also
+investigate the impact of conditioning the generative process on a single MRI
+image/slice and on multiple MRI slices. The performance is assessed using a
+thorough evaluation protocol, including a novel slice-wise metric Similarity Of
+Slices (SIMOS), which measures the continuity between transverse slices when
+compiling the sCTs into 3D format. Our comparative analysis revealed that
+MRI-to-CT generative models benefit from multi-channel conditional input and
+using cDDPM as an architecture.",http://arxiv.org/pdf/2509.22049v1,,False
+A Nonparametric Discrete Hawkes Model with a Collapsed Gaussian-Process Prior,26/09/2025,"Trinnhallen Brisley, Gordon Ross, Daniel Paulin","Hawkes process models are used in settings where past events increase the
+likelihood of future events occurring. Many applications record events as
+counts on a regular grid, yet discrete-time Hawkes models remain comparatively
+underused and are often constrained by fixed-form baselines and excitation
+kernels. In particular, there is a lack of flexible, nonparametric treatments
+of both the baseline and the excitation in discrete time. To this end, we
+propose the Gaussian Process Discrete Hawkes Process (GP-DHP), a nonparametric
+framework that places Gaussian process priors on both the baseline and the
+excitation and performs inference through a collapsed latent representation.
+This yields smooth, data-adaptive structure without prespecifying trends,
+periodicities, or decay shapes, and enables maximum a posteriori (MAP)
+estimation with near-linear-time \(O(T\log T)\) complexity. A closed-form
+projection recovers interpretable baseline and excitation functions from the
+optimized latent trajectory. In simulations, GP-DHP recovers diverse excitation
+shapes and evolving baselines. In case studies on U.S. terrorism incidents and
+weekly Cryptosporidiosis counts, it improves test predictive log-likelihood
+over standard parametric discrete Hawkes baselines while capturing bursts,
+delays, and seasonal background variation. The results indicate that flexible
+discrete-time self-excitation can be achieved without sacrificing scalability
+or interpretability.",http://arxiv.org/pdf/2509.21996v1,,False
+Extracting Actionable Insights from Building Energy Data using Vision LLMs on Wavelet and 3D Recurrence Representations,26/09/2025,"Amine Bechar, Adel Oulefki, Abbes Amira, Fatih Kurogollu, Yassine Himeur","The analysis of complex building time-series for actionable insights and
+recommendations remains challenging due to the nonlinear and multi-scale
+characteristics of energy data. To address this, we propose a framework that
+fine-tunes visual language large models (VLLMs) on 3D graphical representations
+of the data. The approach converts 1D time-series into 3D representations using
+continuous wavelet transforms (CWTs) and recurrence plots (RPs), which capture
+temporal dynamics and localize frequency anomalies. These 3D encodings enable
+VLLMs to visually interpret energy-consumption patterns, detect anomalies, and
+provide recommendations for energy efficiency. We demonstrate the framework on
+real-world building-energy datasets, where fine-tuned VLLMs successfully
+monitor building states, identify recurring anomalies, and generate
+optimization recommendations. Quantitatively, the Idefics-7B VLLM achieves
+validation losses of 0.0952 with CWTs and 0.1064 with RPs on the University of
+Sharjah energy dataset, outperforming direct fine-tuning on raw time-series
+data (0.1176) for anomaly detection. This work bridges time-series analysis and
+visualization, providing a scalable and interpretable framework for energy
+analytics.",http://arxiv.org/pdf/2509.21934v1,,False
+SAGE: Scene Graph-Aware Guidance and Execution for Long-Horizon Manipulation Tasks,26/09/2025,"Jialiang Li, Wenzheng Wu, Gaojing Zhang, Yifan Han, Wenzhao Lian","Successfully solving long-horizon manipulation tasks remains a fundamental
+challenge. These tasks involve extended action sequences and complex object
+interactions, presenting a critical gap between high-level symbolic planning
+and low-level continuous control. To bridge this gap, two essential
+capabilities are required: robust long-horizon task planning and effective
+goal-conditioned manipulation. Existing task planning methods, including
+traditional and LLM-based approaches, often exhibit limited generalization or
+sparse semantic reasoning. Meanwhile, image-conditioned control methods
+struggle to adapt to unseen tasks. To tackle these problems, we propose SAGE, a
+novel framework for Scene Graph-Aware Guidance and Execution in Long-Horizon
+Manipulation Tasks. SAGE utilizes semantic scene graphs as a structural
+representation for scene states. A structural scene graph enables bridging
+task-level semantic reasoning and pixel-level visuo-motor control. This also
+facilitates the controllable synthesis of accurate, novel sub-goal images. SAGE
+consists of two key components: (1) a scene graph-based task planner that uses
+VLMs and LLMs to parse the environment and reason about physically-grounded
+scene state transition sequences, and (2) a decoupled structural image editing
+pipeline that controllably converts each target sub-goal graph into a
+corresponding image through image inpainting and composition. Extensive
+experiments have demonstrated that SAGE achieves state-of-the-art performance
+on distinct long-horizon tasks.",http://arxiv.org/pdf/2509.21928v1,,False
+Discrete Guidance Matching: Exact Guidance for Discrete Flow Matching,26/09/2025,"Zhengyan Wan, Yidong Ouyang, Liyan Xie, Fang Fang, Hongyuan Zha, Guang Cheng","Guidance provides a simple and effective framework for posterior sampling by
+steering the generation process towards the desired distribution. When modeling
+discrete data, existing approaches mostly focus on guidance with the
+first-order Taylor approximation to improve the sampling efficiency. However,
+such an approximation is inappropriate in discrete state spaces since the
+approximation error could be large. A novel guidance framework for discrete
+data is proposed to address this problem: We derive the exact transition rate
+for the desired distribution given a learned discrete flow matching model,
+leading to guidance that only requires a single forward pass in each sampling
+step, significantly improving efficiency. This unified novel framework is
+general enough, encompassing existing guidance methods as special cases, and it
+can also be seamlessly applied to the masked diffusion model. We demonstrate
+the effectiveness of our proposed guidance on energy-guided simulations and
+preference alignment on text-to-image generation and multimodal understanding
+tasks. The code is available through
+https://github.com/WanZhengyan/Discrete-Guidance-Matching/tree/main.",http://arxiv.org/pdf/2509.21912v1,,False
+"MolSpectLLM: A Molecular Foundation Model Bridging Spectroscopy, Molecule Elucidation, and 3D Structure Generation",26/09/2025,"Shuaike Shen, Jiaqing Xie, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li","Recent advances in molecular foundation models have shown impressive
+performance in molecular property prediction and de novo molecular design, with
+promising applications in areas such as drug discovery and reaction prediction.
+Nevertheless, most existing approaches rely exclusively on SMILES
+representations and overlook both experimental spectra and 3D structural
+information-two indispensable sources for capturing molecular behavior in
+real-world scenarios. This limitation reduces their effectiveness in tasks
+where stereochemistry, spatial conformation, and experimental validation are
+critical. To overcome these challenges, we propose MolSpectLLM, a molecular
+foundation model pretrained on Qwen2.5-7B that unifies experimental
+spectroscopy with molecular 3D structure. By explicitly modeling molecular
+spectra, MolSpectLLM achieves state-of-the-art performance on spectrum-related
+tasks, with an average accuracy of 0.53 across NMR, IR, and MS benchmarks.
+MolSpectLLM also shows strong performance on the spectra analysis task,
+obtaining 15.5% sequence accuracy and 41.7% token accuracy on
+Spectra-to-SMILES, substantially outperforming large general-purpose LLMs. More
+importantly, MolSpectLLM not only achieves strong performance on molecular
+elucidation tasks, but also generates accurate 3D molecular structures directly
+from SMILES or spectral inputs, bridging spectral analysis, molecular
+elucidation, and molecular design.",http://arxiv.org/pdf/2509.21861v1,,False
+Self-Speculative Biased Decoding for Faster Live Translation,26/09/2025,"Linxiao Zeng, Haoyun Deng, Kangyuan Shu, Shizhen Wang","Large Language Models (LLMs) have recently demonstrated impressive
+capabilities in various text generation tasks. However, it remains challenging
+to use them off-the-shelf in streaming applications (such as live translation),
+where the output must continually update as the input context expands, while
+still maintaining a reasonable computational cost to meet the latency
+requirement.
+  In this work, we reexamine the re-translation approach to simultaneous
+translation and propose Self-Speculative Biased Decoding, a novel inference
+paradigm designed to avoid repeatedly generating output from scratch for a
+consistently growing input stream. We propose using the most recent output as a
+draft for the current growing input context. During the verification stage, the
+output will be biased towards the draft token for a higher draft acceptance
+rate. This strategy not only minimizes flickering that might distract users but
+also leads to higher speedups. Conventional decoding may take charge from the
+point of divergence after draft verification and continue until the end
+condition is met.
+  Unlike existing speculative decoding strategies, our approach eliminates the
+need for draft computations, making it a model-agnostic and plug-and-play
+solution for accelerating latency-sensitive streaming applications.
+Experimental results on simultaneous text-to-text re-translation demonstrate
+that our approach achieves up to 1.7x speedup compared to conventional
+auto-regressive re-translation without compromising quality. Additionally, it
+significantly reduces flickering by 80% by incorporating the display-only
+mask-k technique.",http://arxiv.org/pdf/2509.21740v1,,False
+UISim: An Interactive Image-Based UI Simulator for Dynamic Mobile Environments,26/09/2025,"Jiannan Xiang, Yun Zhu, Lei Shu, Maria Wang, Lijun Yu, Gabriel Barcik, James Lyon, Srinivas Sunkara, Jindong Chen","Developing and testing user interfaces (UIs) and training AI agents to
+interact with them are challenging due to the dynamic and diverse nature of
+real-world mobile environments. Existing methods often rely on cumbersome
+physical devices or limited static analysis of screenshots, which hinders
+scalable testing and the development of intelligent UI agents. We introduce
+UISim, a novel image-based UI simulator that offers a dynamic and interactive
+platform for exploring mobile phone environments purely from screen images. Our
+system employs a two-stage method: given an initial phone screen image and a
+user action, it first predicts the abstract layout of the next UI state, then
+synthesizes a new, visually consistent image based on this predicted layout.
+This approach enables the realistic simulation of UI transitions. UISim
+provides immediate practical benefits for UI testing, rapid prototyping, and
+synthetic data generation. Furthermore, its interactive capabilities pave the
+way for advanced applications, such as UI navigation task planning for AI
+agents. Our experimental results show that UISim outperforms end-to-end UI
+generation baselines in generating realistic and coherent subsequent UI states,
+highlighting its fidelity and potential to streamline UI development and
+enhance AI agent training.",http://arxiv.org/pdf/2509.21733v1,,False
+Multi-modal Bayesian Neural Network Surrogates with Conjugate Last-Layer Estimation,26/09/2025,"Ian Taylor, Juliane Mueller, Julie Bessac","As data collection and simulation capabilities advance, multi-modal learning,
+the task of learning from multiple modalities and sources of data, is becoming
+an increasingly important area of research. Surrogate models that learn from
+data of multiple auxiliary modalities to support the modeling of a highly
+expensive quantity of interest have the potential to aid outer loop
+applications such as optimization, inverse problems, or sensitivity analyses
+when multi-modal data are available. We develop two multi-modal Bayesian neural
+network surrogate models and leverage conditionally conjugate distributions in
+the last layer to estimate model parameters using stochastic variational
+inference (SVI). We provide a method to perform this conjugate SVI estimation
+in the presence of partially missing observations. We demonstrate improved
+prediction accuracy and uncertainty quantification compared to uni-modal
+surrogate models for both scalar and time series data.",http://arxiv.org/pdf/2509.21711v1,,False

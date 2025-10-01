@@ -1,0 +1,407 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Importance of localized dilatation and distensibility in identifying determinants of thoracic aortic aneurysm with neural operators,30/09/2025,"David S. Li, Somdatta Goswami, Qianying Cao, Vivek Oommen, Roland Assi, Jay D. Humphrey, George E. Karniadakis","Thoracic aortic aneurysms (TAAs) arise from diverse mechanical and
+mechanobiological disruptions to the aortic wall that increase the risk of
+dissection or rupture. Evidence links TAA development to dysfunctions in the
+aortic mechanotransduction axis, including loss of elastic fiber integrity and
+cell-matrix connections. Because distinct insults create different mechanical
+vulnerabilities, there is a critical need to identify interacting factors that
+drive progression. Here, we use a finite element framework to generate
+synthetic TAAs from hundreds of heterogeneous insults spanning varying degrees
+of elastic fiber damage and impaired mechanosensing. From these simulations, we
+construct spatial maps of localized dilatation and distensibility to train
+neural networks that predict the initiating combined insult. We compare several
+architectures (Deep Operator Networks, UNets, and Laplace Neural Operators) and
+multiple input data formats to define a standard for future subject-specific
+modeling. We also quantify predictive performance when networks are trained
+using only geometric data (dilatation) versus both geometric and mechanical
+data (dilatation plus distensibility). Across all networks, prediction errors
+are significantly higher when trained on dilatation alone, underscoring the
+added value of distensibility information. Among the tested models, UNet
+consistently provides the highest accuracy across all data formats. These
+findings highlight the importance of acquiring full-field measurements of both
+dilatation and distensibility in TAA assessment to reveal the mechanobiological
+drivers of disease and support the development of personalized treatment
+strategies.",http://arxiv.org/pdf/2509.26576v1,,False
+The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain,30/09/2025,"Adrian Kosowski, Przemysław Uznański, Jan Chorowski, Zuzanna Stamirowska, Michał Bartoszkiewicz","The relationship between computing systems and the brain has served as
+motivation for pioneering theoreticians since John von Neumann and Alan Turing.
+Uniform, scale-free biological networks, such as the brain, have powerful
+properties, including generalizing over time, which is the main barrier for
+Machine Learning on the path to Universal Reasoning Models.
+  We introduce `Dragon Hatchling' (BDH), a new Large Language Model
+architecture based on a scale-free biologically inspired network of \$n\$
+locally-interacting neuron particles. BDH couples strong theoretical
+foundations and inherent interpretability without sacrificing Transformer-like
+performance.
+  BDH is a practical, performant state-of-the-art attention-based state space
+sequence learning architecture. In addition to being a graph model, BDH admits
+a GPU-friendly formulation. It exhibits Transformer-like scaling laws:
+empirically BDH rivals GPT2 performance on language and translation tasks, at
+the same number of parameters (10M to 1B), for the same training data.
+  BDH can be represented as a brain model. The working memory of BDH during
+inference entirely relies on synaptic plasticity with Hebbian learning using
+spiking neurons. We confirm empirically that specific, individual synapses
+strengthen connection whenever BDH hears or reasons about a specific concept
+while processing language inputs. The neuron interaction network of BDH is a
+graph of high modularity with heavy-tailed degree distribution. The BDH model
+is biologically plausible, explaining one possible mechanism which human
+neurons could use to achieve speech.
+  BDH is designed for interpretability. Activation vectors of BDH are sparse
+and positive. We demonstrate monosemanticity in BDH on language tasks.
+Interpretability of state, which goes beyond interpretability of neurons and
+model parameters, is an inherent feature of the BDH architecture.",http://arxiv.org/pdf/2509.26507v1,,False
+fev-bench: A Realistic Benchmark for Time Series Forecasting,30/09/2025,"Oleksandr Shchur, Abdul Fatir Ansari, Caner Turkmen, Lorenzo Stella, Nick Erickson, Pablo Guerron, Michael Bohlke-Schneider, Yuyang Wang","Benchmark quality is critical for meaningful evaluation and sustained
+progress in time series forecasting, particularly given the recent rise of
+pretrained models. Existing benchmarks often have narrow domain coverage or
+overlook important real-world settings, such as tasks with covariates.
+Additionally, their aggregation procedures often lack statistical rigor, making
+it unclear whether observed performance differences reflect true improvements
+or random variation. Many benchmarks also fail to provide infrastructure for
+consistent evaluation or are too rigid to integrate into existing pipelines. To
+address these gaps, we propose fev-bench, a benchmark comprising 100
+forecasting tasks across seven domains, including 46 tasks with covariates.
+Supporting the benchmark, we introduce fev, a lightweight Python library for
+benchmarking forecasting models that emphasizes reproducibility and seamless
+integration with existing workflows. Usingfev, fev-bench employs principled
+aggregation methods with bootstrapped confidence intervals to report model
+performance along two complementary dimensions: win rates and skill scores. We
+report results on fev-bench for various pretrained, statistical and baseline
+models, and identify promising directions for future research.",http://arxiv.org/pdf/2509.26468v1,,False
+Stabilization of nonlinear systems with unknown delays via delay-adaptive neural operator approximate predictors,30/09/2025,"Luke Bhan, Miroslav Krstic, Yuanyuan Shi","This work establishes the first rigorous stability guarantees for approximate
+predictors in delay-adaptive control of nonlinear systems, addressing a key
+challenge in practical implementations where exact predictors are unavailable.
+We analyze two scenarios: (i) when the actuated input is directly measurable,
+and (ii) when it is estimated online. For the measurable input case, we prove
+semi-global practical asymptotic stability with an explicit bound proportional
+to the approximation error $\epsilon$. For the unmeasured input case, we
+demonstrate local practical asymptotic stability, with the region of attraction
+explicitly dependent on both the initial delay estimate and the predictor
+approximation error. To bridge theory and practice, we show that neural
+operators-a flexible class of neural network-based approximators-can achieve
+arbitrarily small approximation errors, thus satisfying the conditions of our
+stability theorems. Numerical experiments on two nonlinear benchmark systems-a
+biological protein activator/repressor model and a micro-organism growth
+Chemostat model-validate our theoretical results. In particular, our numerical
+simulations confirm stability under approximate predictors, highlight the
+strong generalization capabilities of neural operators, and demonstrate a
+substantial computational speedup of up to 15x compared to a baseline
+fixed-point method.",http://arxiv.org/pdf/2509.26443v1,,False
+"Refine Drugs, Don't Complete Them: Uniform-Source Discrete Flows for Fragment-Based Drug Discovery",30/09/2025,"Benno Kaech, Luis Wyss, Karsten Borgwardt, Gianvito Grasso","We introduce InVirtuoGen, a discrete flow generative model for fragmented
+SMILES for de novo and fragment-constrained generation, and
+target-property/lead optimization of small molecules. The model learns to
+transform a uniform source over all possible tokens into the data distribution.
+Unlike masked models, its training loss accounts for predictions on all
+sequence positions at every denoising step, shifting the generation paradigm
+from completion to refinement, and decoupling the number of sampling steps from
+the sequence length. For \textit{de novo} generation, InVirtuoGen achieves a
+stronger quality-diversity pareto frontier than prior fragment-based models and
+competitive performance on fragment-constrained tasks. For property and lead
+optimization, we propose a hybrid scheme that combines a genetic algorithm with
+a Proximal Property Optimization fine-tuning strategy adapted to discrete
+flows. Our approach sets a new state-of-the-art on the Practical Molecular
+Optimization benchmark, measured by top-10 AUC across tasks, and yields higher
+docking scores in lead optimization than previous baselines. InVirtuoGen thus
+establishes a versatile generative foundation for drug discovery, from early
+hit finding to multi-objective lead optimization. We further contribute to open
+science by releasing pretrained checkpoints and code, making our results fully
+reproducible\footnote{https://github.com/invirtuolabs/InVirtuoGen_results}.",http://arxiv.org/pdf/2509.26405v1,,False
+SDA-PLANNER: State-Dependency Aware Adaptive Planner for Embodied Task Planning,30/09/2025,"Zichao Shen, Chen Gao, Jiaqi Yuan, Tianchen Zhu, Xingcheng Fu, Qingyun Sun","Embodied task planning requires agents to produce executable actions in a
+close-loop manner within the environment. With progressively improving
+capabilities of LLMs in task decomposition, planning, and generalization,
+current embodied task planning methods adopt LLM-based architecture.However,
+existing LLM-based planners remain limited in three aspects, i.e., fixed
+planning paradigms, lack of action sequence constraints, and error-agnostic. In
+this work, we propose SDA-PLANNER, enabling an adaptive planning paradigm,
+state-dependency aware and error-aware mechanisms for comprehensive embodied
+task planning. Specifically, SDA-PLANNER introduces a State-Dependency Graph to
+explicitly model action preconditions and effects, guiding the dynamic
+revision. To handle execution error, it employs an error-adaptive replanning
+strategy consisting of Error Backtrack and Diagnosis and Adaptive Action
+SubTree Generation, which locally reconstructs the affected portion of the plan
+based on the current environment state. Experiments demonstrate that
+SDA-PLANNER consistently outperforms baselines in success rate and goal
+completion, particularly under diverse error conditions.",http://arxiv.org/pdf/2509.26375v1,,False
+How Far Do Time Series Foundation Models Paint the Landscape of Real-World Benchmarks ?,30/09/2025,"Lujun Li, Lama Sleem, Yiqun Wang, Yangjie Xu, Niccolò Gentile, Radu State","Recent evaluations of time-series foundation models (TSFMs) have emphasized
+synthetic benchmarks, leaving real-world generalization less thoroughly
+examined. This work proposes a novel benchmarking approach that bridges
+synthetic and realistic data by extracting temporal signals from real-world
+video using optical flow and curating datasets reflecting everyday temporal
+dynamics. Building upon this pipeline, we introduce REAL-V-TSFM, a novel
+dataset designed to capture rich and diverse time series derived from
+real-world videos. Experimental results on three state-of-the-art of TSFMs
+under zero-shot forecasting shows that, despite strong performance on
+conventional benchmarks, these models predominantly exhibit performance
+degradation on the proposed dataset, indicating limited generalizability in
+these foundation models. These findings highlight the urgent need for
+data-centric benchmarking and diverse model structure to advance TSFMs toward
+genuine universality, while further validating the effectiveness of our
+video-based time series data extraction pipeline.",http://arxiv.org/pdf/2509.26347v1,,False
+SafeBehavior: Simulating Human-Like Multistage Reasoning to Mitigate Jailbreak Attacks in Large Language Models,30/09/2025,"Qinjian Zhao, Jiaqi Wang, Zhiqiang Gao, Zhihao Dou, Belal Abuhaija, Kaizhu Huang","Large Language Models (LLMs) have achieved impressive performance across
+diverse natural language processing tasks, but their growing power also
+amplifies potential risks such as jailbreak attacks that circumvent built-in
+safety mechanisms. Existing defenses including input paraphrasing, multi step
+evaluation, and safety expert models often suffer from high computational
+costs, limited generalization, or rigid workflows that fail to detect subtle
+malicious intent embedded in complex contexts. Inspired by cognitive science
+findings on human decision making, we propose SafeBehavior, a novel
+hierarchical jailbreak defense mechanism that simulates the adaptive multistage
+reasoning process of humans. SafeBehavior decomposes safety evaluation into
+three stages: intention inference to detect obvious input risks, self
+introspection to assess generated responses and assign confidence based
+judgments, and self revision to adaptively rewrite uncertain outputs while
+preserving user intent and enforcing safety constraints. We extensively
+evaluate SafeBehavior against five representative jailbreak attack types
+including optimization based, contextual manipulation, and prompt based attacks
+and compare it with seven state of the art defense baselines. Experimental
+results show that SafeBehavior significantly improves robustness and
+adaptability across diverse threat scenarios, offering an efficient and human
+inspired approach to safeguarding LLMs against jailbreak attempts.",http://arxiv.org/pdf/2509.26345v1,,False
+Tuning the Tuner: Introducing Hyperparameter Optimization for Auto-Tuning,30/09/2025,"Floris-Jan Willemsen, Rob V. van Nieuwpoort, Ben van Werkhoven","Automatic performance tuning (auto-tuning) is widely used to optimize
+performance-critical applications across many scientific domains by finding the
+best program variant among many choices. Efficient optimization algorithms are
+crucial for navigating the vast and complex search spaces in auto-tuning. As is
+well known in the context of machine learning and similar fields,
+hyperparameters critically shape optimization algorithm efficiency. Yet for
+auto-tuning frameworks, these hyperparameters are almost never tuned, and their
+potential performance impact has not been studied.
+  We present a novel method for general hyperparameter tuning of optimization
+algorithms for auto-tuning, thus ""tuning the tuner"". In particular, we propose
+a robust statistical method for evaluating hyperparameter performance across
+search spaces, publish a FAIR data set and software for reproducibility, and
+present a simulation mode that replays previously recorded tuning data,
+lowering the costs of hyperparameter tuning by two orders of magnitude. We show
+that even limited hyperparameter tuning can improve auto-tuner performance by
+94.8% on average, and establish that the hyperparameters themselves can be
+optimized efficiently with meta-strategies (with an average improvement of
+204.7%), demonstrating the often overlooked hyperparameter tuning as a powerful
+technique for advancing auto-tuning research and practice.",http://arxiv.org/pdf/2509.26300v1,,False
+ExoPredicator: Learning Abstract Models of Dynamic Worlds for Robot Planning,30/09/2025,"Yichao Liang, Dat Nguyen, Cambridge Yang, Tianyang Li, Joshua B. Tenenbaum, Carl Edward Rasmussen, Adrian Weller, Zenna Tavares, Tom Silver, Kevin Ellis","Long-horizon embodied planning is challenging because the world does not only
+change through an agent's actions: exogenous processes (e.g., water heating,
+dominoes cascading) unfold concurrently with the agent's actions. We propose a
+framework for abstract world models that jointly learns (i) symbolic state
+representations and (ii) causal processes for both endogenous actions and
+exogenous mechanisms. Each causal process models the time course of a
+stochastic causal-effect relation. We learn these world models from limited
+data via variational Bayesian inference combined with LLM proposals. Across
+five simulated tabletop robotics environments, the learned models enable fast
+planning that generalizes to held-out tasks with more objects and more complex
+goals, outperforming a range of baselines.",http://arxiv.org/pdf/2509.26255v1,,False
+LLM Agents for Knowledge Discovery in Atomic Layer Processing,30/09/2025,"Andreas Werbrouck, Marshall B. Lindsay, Matthew Maschmann, Matthias J. Young","Large Language Models (LLMs) have garnered significant attention for several
+years now. Recently, their use as independently reasoning agents has been
+proposed. In this work, we test the potential of such agents for knowledge
+discovery in materials science. We repurpose LangGraph's tool functionality to
+supply agents with a black box function to interrogate. In contrast to process
+optimization or performing specific, user-defined tasks, knowledge discovery
+consists of freely exploring the system, posing and verifying statements about
+the behavior of this black box, with the sole objective of generating and
+verifying generalizable statements. We provide proof of concept for this
+approach through a children's parlor game, demonstrating the role of
+trial-and-error and persistence in knowledge discovery, and the strong
+path-dependence of results. We then apply the same strategy to show that LLM
+agents can explore, discover, and exploit diverse chemical interactions in an
+advanced Atomic Layer Processing reactor simulation using intentionally limited
+probe capabilities without explicit instructions.",http://arxiv.org/pdf/2509.26201v1,,False
+R-Log: Incentivizing Log Analysis Capability in LLMs via Reasoning-based Reinforcement Learning,30/09/2025,"Yilun Liu, Ziang Chen, Song Xu, Minggui He, Shimin Tao, Weibin Meng, Yuming Xie, Tao Han, Chunguang Zhao, Jingzhou Du, Daimeng Wei, Shenglin Zhang, Yongqian Sun","The growing complexity of log data in modern software systems has prompted
+the use of Large Language Models (LLMs) for automated log analysis. Current
+approaches typically rely on direct supervised fine-tuning (SFT) on log-label
+pairs. However, this exacerbates the domain discrepancy between general-purpose
+LLMs and specialized log data, causing overfitting. Furthermore, SFT's
+imbalanced loss computation often allows lengthy contexts to overwhelm
+critical, concise details in model answers, leading to hallucinations. To
+address these limitations, we propose R-Log, a novel reasoning-based paradigm
+that mirrors the structured, step-by-step analytical process of human
+engineers. This approach enhances generalizability by learning the underlying
+rules behind conclusions. We further employ Reinforcement Learning (RL) to
+optimize the model within a simulated O&M environment, thereby reducing
+hallucinations by directly rewarding correct outcomes. R-Log is first
+cold-started on a curated dataset of 2k+ reasoning trajectories, guided by 13
+strategies from manual O&M practices, to establish an initial reasoning
+capability. This ability is then refined via RL using a joint reward function.
+Empirical evaluations on real-world logs show that R-Log outperforms existing
+methods across five log analysis tasks, particularly in unseen scenarios (by
+228.05%). We also designed R-Log-fast with 5x speedup while keeping 93% of the
+efficacy.",http://arxiv.org/pdf/2509.25987v1,,False
+scUnified: An AI-Ready Standardized Resource for Single-Cell RNA Sequencing Analysis,30/09/2025,"Ping Xu, Zaitian Wang, Zhirui Wang, Pengjiang Li, Ran Zhang, Gaoyang Li, Hanyu Xie, Jiajia Wang, Yuanchun Zhou, Pengfei Wang","Single-cell RNA sequencing (scRNA-seq) technology enables systematic
+delineation of cellular states and interactions, providing crucial insights
+into cellular heterogeneity. Building on this potential, numerous computational
+methods have been developed for tasks such as cell clustering, cell type
+annotation, and marker gene identification. To fully assess and compare these
+methods, standardized, analysis-ready datasets are essential. However, such
+datasets remain scarce, and variations in data formats, preprocessing
+workflows, and annotation strategies hinder reproducibility and complicate
+systematic evaluation of existing methods. To address these challenges, we
+present scUnified, an AI-ready standardized resource for single-cell RNA
+sequencing data that consolidates 13 high-quality datasets spanning two species
+(human and mouse) and nine tissue types. All datasets undergo standardized
+quality control and preprocessing and are stored in a uniform format to enable
+direct application in diverse computational analyses without additional data
+cleaning. We further demonstrate the utility of scUnified through experimental
+analyses of representative biological tasks, providing a reproducible
+foundation for the standardized evaluation of computational methods on a
+unified dataset.",http://arxiv.org/pdf/2509.25884v1,,False
+Aging Decline in Basketball Career Trend Prediction Based on Machine Learning and LSTM Model,30/09/2025,"Yi-chen Yao, Jerry Wang, Yi-cheng Lai, Lyn Chao-ling Chen","The topic of aging decline on performance of NBA players has been discussed
+in this study. The autoencoder with K-means clustering machine learning method
+was adopted to career trend classification of NBA players, and the LSTM deep
+learning method was adopted in performance prediction of each NBA player. The
+dataset was collected from the basketball game data of veteran NBA players. The
+contribution of the work performed better than the other methods with
+generalization ability for evaluating various types of NBA career trend, and
+can be applied in different types of sports in the field of sport analytics.",http://arxiv.org/pdf/2509.25858v1,,False
+Online Decision Making with Generative Action Sets,30/09/2025,"Jianyu Xu, Vidhi Jain, Bryan Wilder, Aarti Singh","With advances in generative AI, decision-making agents can now dynamically
+create new actions during online learning, but action generation typically
+incurs costs that must be balanced against potential benefits. We study an
+online learning problem where an agent can generate new actions at any time
+step by paying a one-time cost, with these actions becoming permanently
+available for future use. The challenge lies in learning the optimal sequence
+of two-fold decisions: which action to take and when to generate new ones,
+further complicated by the triangular tradeoffs among exploitation, exploration
+and $\textit{creation}$. To solve this problem, we propose a doubly-optimistic
+algorithm that employs Lower Confidence Bounds (LCB) for action selection and
+Upper Confidence Bounds (UCB) for action generation. Empirical evaluation on
+healthcare question-answering datasets demonstrates that our approach achieves
+favorable generation-quality tradeoffs compared to baseline strategies. From
+theoretical perspectives, we prove that our algorithm achieves the optimal
+regret of $O(T^{\frac{d}{d+2}}d^{\frac{d}{d+2}} + d\sqrt{T\log T})$, providing
+the first sublinear regret bound for online learning with expanding action
+spaces.",http://arxiv.org/pdf/2509.25777v1,,False
+OPPO: Accelerating PPO-based RLHF via Pipeline Overlap,30/09/2025,"Kaizhuo Yan, Yingjie Yu, Yifan Yu, Haizhong Zheng, Fan Lai","Proximal Policy Optimization (PPO)-based reinforcement learning from human
+feedback (RLHF) is a widely adopted paradigm for aligning large language models
+(LLMs) with human preferences. However, its training pipeline suffers from
+substantial inefficiencies due to sequential multi-model dependencies (e.g.,
+reward model depends on actor outputs) and long-tail response lengths, where a
+few long responses straggle the stage completion. We present OPPO, a novel,
+lightweight, and model-agnostic PPO-based RLHF framework that improves training
+efficiency by overlapping pipeline execution. OPPO introduces two novel
+techniques: (1) Intra-step overlap, which streams upstream model outputs (e.g.,
+actor model) in right-sized chunks, enabling the downstream model (e.g.,
+reward) to begin prefill while the upstream continues decoding; and (2)
+Inter-step overlap, which adaptively overcommits a few prompts and defers long
+generations to future steps, mitigating tail latency without discarding partial
+work. OPPO integrates easily with existing PPO implementations with a few lines
+of code change. Extensive evaluations show that OPPO accelerates PPO-based RLHF
+training by $1.8 \times-2.8 \times$ and improves GPU utilization by $1.4
+\times-2.1 \times$ without compromising training convergence.",http://arxiv.org/pdf/2509.25762v1,,False
+A Physics-Guided Probabilistic Surrogate Modeling Framework for Digital Twins of Underwater Radiated Noise,30/09/2025,"Indu Kant Deo, Akash Venkateshwaran, Rajeev K. Jaiman","Ship traffic is an increasing source of underwater radiated noise in coastal
+waters, motivating real-time digital twins of ocean acoustics for operational
+noise mitigation. We present a physics-guided probabilistic framework to
+predict three-dimensional transmission loss in realistic ocean environments. As
+a case study, we consider the Salish Sea along shipping routes from the Pacific
+Ocean to the Port of Vancouver. A dataset of over 30 million source-receiver
+pairs was generated with a Gaussian beam solver across seasonal sound speed
+profiles and one-third-octave frequency bands spanning 12.5 Hz to 8 kHz. We
+first assess sparse variational Gaussian processes (SVGP) and then incorporate
+physics-based mean functions combining spherical spreading with
+frequency-dependent absorption. To capture nonlinear effects, we examine deep
+sigma-point processes and stochastic variational deep kernel learning. The
+final framework integrates four components: (i) a learnable physics-informed
+mean that represents dominant propagation trends, (ii) a convolutional encoder
+for bathymetry along the source-receiver track, (iii) a neural encoder for
+source, receiver, and frequency coordinates, and (iv) a residual SVGP layer
+that provides calibrated predictive uncertainty. This probabilistic digital
+twin facilitates the construction of sound-exposure bounds and worst-case
+scenarios for received levels. We further demonstrate the application of the
+framework to ship speed optimization, where predicted transmission loss
+combined with near-field source models provides sound exposure level estimates
+for minimizing acoustic impacts on marine mammals. The proposed framework
+advances uncertainty-aware digital twins for ocean acoustics and illustrates
+how physics-guided machine learning can support sustainable maritime
+operations.",http://arxiv.org/pdf/2509.25730v1,,False
+Boundary-to-Region Supervision for Offline Safe Reinforcement Learning,30/09/2025,"Huikang Su, Dengyun Peng, Zifeng Zhuang, YuHan Liu, Qiguang Chen, Donglin Wang, Qinghe Liu","Offline safe reinforcement learning aims to learn policies that satisfy
+predefined safety constraints from static datasets. Existing
+sequence-model-based methods condition action generation on symmetric input
+tokens for return-to-go and cost-to-go, neglecting their intrinsic asymmetry:
+return-to-go (RTG) serves as a flexible performance target, while cost-to-go
+(CTG) should represent a rigid safety boundary. This symmetric conditioning
+leads to unreliable constraint satisfaction, especially when encountering
+out-of-distribution cost trajectories. To address this, we propose
+Boundary-to-Region (B2R), a framework that enables asymmetric conditioning
+through cost signal realignment . B2R redefines CTG as a boundary constraint
+under a fixed safety budget, unifying the cost distribution of all feasible
+trajectories while preserving reward structures. Combined with rotary
+positional embeddings , it enhances exploration within the safe region.
+Experimental results show that B2R satisfies safety constraints in 35 out of 38
+safety-critical tasks while achieving superior reward performance over baseline
+methods. This work highlights the limitations of symmetric token conditioning
+and establishes a new theoretical and practical approach for applying sequence
+models to safe RL. Our code is available at https://github.com/HuikangSu/B2R.",http://arxiv.org/pdf/2509.25727v1,,False
+Transformer-Based Rate Prediction for Multi-Band Cellular Handsets,30/09/2025,"Ruibin Chen, Haozhe Lei, Hao Guo, Marco Mezzavilla, Hitesh Poddar, Tomoki Yoshimura, Sundeep Rangan","Cellular wireless systems are witnessing the proliferation of frequency bands
+over a wide spectrum, particularly with the expansion of new bands in FR3.
+These bands must be supported in user equipment (UE) handsets with multiple
+antennas in a constrained form factor. Rapid variations in channel quality
+across the bands from motion and hand blockage, limited field-of-view of
+antennas, and hardware and power-constrained measurement sparsity pose
+significant challenges to reliable multi-band channel tracking. This paper
+formulates the problem of predicting achievable rates across multiple antenna
+arrays and bands with sparse historical measurements. We propose a
+transformer-based neural architecture that takes asynchronous rate histories as
+input and outputs per-array rate predictions. Evaluated on ray-traced
+simulations in a dense urban micro-cellular setting with FR1 and FR3 arrays,
+our method demonstrates superior performance over baseline predictors, enabling
+more informed band selection under realistic mobility and hardware constraints.",http://arxiv.org/pdf/2509.25722v1,,False
+Can VLM Pseudo-Labels Train a Time-Series QA Model That Outperforms the VLM?,30/09/2025,"Takuya Fujimura, Kota Dohi, Natsuo Yamashita, Yohei Kawaguchi","Time-series question answering (TSQA) tasks face significant challenges due
+to the lack of labeled data. Alternatively, with recent advancements in
+large-scale models, vision-language models (VLMs) have demonstrated the
+potential to analyze time-series signals in a zero-shot manner. In this paper,
+we propose a training approach that uses pseudo labels generated by a VLM.
+Although VLMs can produce incorrect labels, TSQA models can still be
+effectively trained based on the property that deep neural networks are
+inherently robust to such noisy labels. Our experimental results demonstrate
+that TSQA models are not only successfully trained with pseudo labels, but also
+surpass the performance of the VLM itself by leveraging a large amount of
+unlabeled data.",http://arxiv.org/pdf/2509.25696v1,,False
+Iterative Residual Cross-Attention Mechanism: An Integrated Approach for Audio-Visual Navigation Tasks,30/09/2025,"Hailong Zhang, Yinfeng Yu, Liejun Wang, Fuchun Sun, Wendong Zheng","Audio-visual navigation represents a significant area of research in which
+intelligent agents utilize egocentric visual and auditory perceptions to
+identify audio targets. Conventional navigation methodologies typically adopt a
+staged modular design, which involves first executing feature fusion, then
+utilizing Gated Recurrent Unit (GRU) modules for sequence modeling, and finally
+making decisions through reinforcement learning. While this modular approach
+has demonstrated effectiveness, it may also lead to redundant information
+processing and inconsistencies in information transmission between the various
+modules during the feature fusion and GRU sequence modeling phases. This paper
+presents IRCAM-AVN (Iterative Residual Cross-Attention Mechanism for
+Audiovisual Navigation), an end-to-end framework that integrates multimodal
+information fusion and sequence modeling within a unified IRCAM module, thereby
+replacing the traditional separate components for fusion and GRU. This
+innovative mechanism employs a multi-level residual design that concatenates
+initial multimodal sequences with processed information sequences. This
+methodological shift progressively optimizes the feature extraction process
+while reducing model bias and enhancing the model's stability and
+generalization capabilities. Empirical results indicate that intelligent agents
+employing the iterative residual cross-attention mechanism exhibit superior
+navigation performance.",http://arxiv.org/pdf/2509.25652v1,,False
+STAC: When Innocent Tools Form Dangerous Chains to Jailbreak LLM Agents,30/09/2025,"Jing-Jing Li, Jianfeng He, Chao Shang, Devang Kulshreshtha, Xun Xian, Yi Zhang, Hang Su, Sandesh Swamy, Yanjun Qi","As LLMs advance into autonomous agents with tool-use capabilities, they
+introduce security challenges that extend beyond traditional content-based LLM
+safety concerns. This paper introduces Sequential Tool Attack Chaining (STAC),
+a novel multi-turn attack framework that exploits agent tool use. STAC chains
+together tool calls that each appear harmless in isolation but, when combined,
+collectively enable harmful operations that only become apparent at the final
+execution step. We apply our framework to automatically generate and
+systematically evaluate 483 STAC cases, featuring 1,352 sets of
+user-agent-environment interactions and spanning diverse domains, tasks, agent
+types, and 10 failure modes. Our evaluations show that state-of-the-art LLM
+agents, including GPT-4.1, are highly vulnerable to STAC, with attack success
+rates (ASR) exceeding 90% in most cases. The core design of STAC's automated
+framework is a closed-loop pipeline that synthesizes executable multi-step tool
+chains, validates them through in-environment execution, and reverse-engineers
+stealthy multi-turn prompts that reliably induce agents to execute the verified
+malicious sequence. We further perform defense analysis against STAC and find
+that existing prompt-based defenses provide limited protection. To address this
+gap, we propose a new reasoning-driven defense prompt that achieves far
+stronger protection, cutting ASR by up to 28.8%. These results highlight a
+crucial gap: defending tool-enabled agents requires reasoning over entire
+action sequences and their cumulative effects, rather than evaluating isolated
+prompts or responses.",http://arxiv.org/pdf/2509.25624v1,,False
+Unsupervised Detection of Spatiotemporal Anomalies in PMU Data Using Transformer-Based BiGAN,30/09/2025,"Muhammad Imran Hossain, Jignesh Solanki, Sarika Khushlani Solanki","Ensuring power grid resilience requires the timely and unsupervised detection
+of anomalies in synchrophasor data streams. We introduce T-BiGAN, a novel
+framework that integrates window-attention Transformers within a bidirectional
+Generative Adversarial Network (BiGAN) to address this challenge. Its
+self-attention encoder-decoder architecture captures complex spatio-temporal
+dependencies across the grid, while a joint discriminator enforces cycle
+consistency to align the learned latent space with the true data distribution.
+Anomalies are flagged in real-time using an adaptive score that combines
+reconstruction error, latent space drift, and discriminator confidence.
+Evaluated on a realistic hardware-in-the-loop PMU benchmark, T-BiGAN achieves
+an ROC-AUC of 0.95 and an average precision of 0.996, significantly
+outperforming leading supervised and unsupervised methods. It shows particular
+strength in detecting subtle frequency and voltage deviations, demonstrating
+its practical value for live, wide-area monitoring without relying on manually
+labeled fault data.",http://arxiv.org/pdf/2509.25612v1,,False

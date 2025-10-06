@@ -1,0 +1,370 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Cache-to-Cache: Direct Semantic Communication Between Large Language Models,03/10/2025,"Tianyu Fu, Zihan Min, Hanling Zhang, Jichao Yan, Guohao Dai, Wanli Ouyang, Yu Wang","Multi-LLM systems harness the complementary strengths of diverse Large
+Language Models, achieving performance and efficiency gains unattainable by a
+single model. In existing designs, LLMs communicate through text, forcing
+internal representations to be transformed into output token sequences. This
+process both loses rich semantic information and incurs token-by-token
+generation latency. Motivated by these limitations, we ask: Can LLMs
+communicate beyond text? Oracle experiments show that enriching the KV-Cache
+semantics can improve response quality without increasing cache size,
+supporting KV-Cache as an effective medium for inter-model communication. Thus,
+we propose Cache-to-Cache (C2C), a new paradigm for direct semantic
+communication between LLMs. C2C uses a neural network to project and fuse the
+source model's KV-cache with that of the target model to enable direct semantic
+transfer. A learnable gating mechanism selects the target layers that benefit
+from cache communication. Compared with text communication, C2C utilizes the
+deep, specialized semantics from both models, while avoiding explicit
+intermediate text generation. Experiments show that C2C achieves 8.5-10.5%
+higher average accuracy than individual models. It further outperforms the text
+communication paradigm by approximately 3.0-5.0%, while delivering an average
+2.0x speedup in latency. Our code is available at
+https://github.com/thu-nics/C2C.",http://arxiv.org/pdf/2510.03215v1,,False
+Automatic Generation of Digital Twins for Network Testing,03/10/2025,"Shenjia Ding, David Flynn, Paul Harvey","The increased use of software in the operation and management of
+telecommunication networks has moved the industry one step closer to realizing
+autonomous network operation. One consequence of this shift is the
+significantly increased need for testing and validation before such software
+can be deployed. Complementing existing simulation or hardware-based
+approaches, digital twins present an environment to achieve this testing;
+however, they require significant time and human effort to configure and
+execute. This paper explores the automatic generation of digital twins to
+provide efficient and accurate validation tools, aligned to the ITU-T
+autonomous network architecture's experimentation subsystem. We present
+experimental results for an initial use case, demonstrating that the approach
+is feasible in automatically creating efficient digital twins with sufficient
+accuracy to be included as part of existing validation pipelines.",http://arxiv.org/pdf/2510.03205v1,,False
+Simulation to Rules: A Dual-VLM Framework for Formal Visual Planning,03/10/2025,"Yilun Hao, Yongchao Chen, Chuchu Fan, Yang Zhang","Vision Language Models (VLMs) show strong potential for visual planning but
+struggle with precise spatial and long-horizon reasoning. In contrast, Planning
+Domain Definition Language (PDDL) planners excel at long-horizon formal
+planning, but cannot interpret visual inputs. Recent works combine these
+complementary advantages by enabling VLMs to turn visual planning problems into
+PDDL files for formal planning. However, while VLMs can generate PDDL problem
+files satisfactorily, they struggle to accurately generate the PDDL domain
+files, which describe all the planning rules. As a result, prior methods rely
+on human experts to predefine domain files or on constant environment access
+for refinement. We propose VLMFP, a Dual-VLM-guided framework that can
+autonomously generate both PDDL problem and domain files for formal visual
+planning. VLMFP introduces two VLMs to ensure reliable PDDL file generation: A
+SimVLM that simulates action consequences based on input rule descriptions, and
+a GenVLM that generates and iteratively refines PDDL files by comparing the
+PDDL and SimVLM execution results. VLMFP unleashes multiple levels of
+generalizability: The same generated PDDL domain file works for all the
+different instances under the same problem, and VLMs generalize to different
+problems with varied appearances and rules. We evaluate VLMFP with 6 grid-world
+domains and test its generalization to unseen instances, appearance, and game
+rules. On average, SimVLM accurately describes 95.5%, 82.6% of scenarios,
+simulates 85.5%, 87.8% of action sequence, and judges 82.4%, 85.6% goal
+reaching for seen and unseen appearances, respectively. With the guidance of
+SimVLM, VLMFP can generate PDDL files to reach 70.0%, 54.1% valid plans for
+unseen instances in seen and unseen appearances, respectively. Project page:
+https://sites.google.com/view/vlmfp.",http://arxiv.org/pdf/2510.03182v1,,False
+ReeMark: Reeb Graphs for Simulating Patterns of Life in Spatiotemporal Trajectories,03/10/2025,"Anantajit Subrahmanya, Chandrakanth Gudavalli, Connor Levenson, Umang Garg, B. S. Manjunath","Accurately modeling human mobility is critical for urban planning,
+epidemiology, and traffic management. In this work, we introduce Markovian Reeb
+Graphs, a novel framework for simulating spatiotemporal trajectories that
+preserve Patterns of Life (PoLs) learned from baseline data. By combining
+individual- and population-level mobility structures within a probabilistic
+topological model, our approach generates realistic future trajectories that
+capture both consistency and variability in daily life. Evaluations on the
+Urban Anomalies dataset (Atlanta and Berlin subsets) using the Jensen-Shannon
+Divergence (JSD) across population- and agent-level metrics demonstrate that
+the proposed method achieves strong fidelity while remaining data- and
+compute-efficient. These results position Markovian Reeb Graphs as a scalable
+framework for trajectory simulation with broad applicability across diverse
+urban environments.",http://arxiv.org/pdf/2510.03152v1,,False
+Total Robustness in Bayesian Nonlinear Regression for Measurement Error Problems under Model Misspecification,03/10/2025,"Mengqi Chen, Charita Dellaporta, Thomas B. Berrett, Theodoros Damoulas","Modern regression analyses are often undermined by covariate measurement
+error, misspecification of the regression model, and misspecification of the
+measurement error distribution. We present, to the best of our knowledge, the
+first Bayesian nonparametric framework targeting total robustness that tackles
+all three challenges in general nonlinear regression. The framework assigns a
+Dirichlet process prior to the latent covariate-response distribution and
+updates it with posterior pseudo-samples of the latent covariates, thereby
+providing the Dirichlet process posterior with observation-informed latent
+inputs and yielding estimators that minimise the discrepancy between Dirichlet
+process realisations and the model-induced joint law. This design allows
+practitioners to (i) encode prior beliefs, (ii) choose between pseudo-sampling
+latent covariates or working directly with error-prone observations, and (iii)
+tune the influence of prior and data. We establish generalisation bounds that
+tighten whenever the prior or pseudo-sample generator aligns with the
+underlying data generating process, ensuring robustness without sacrificing
+consistency. A gradient-based algorithm enables efficient computations;
+simulations and two real-world studies show lower estimation error and reduced
+estimation sensitivity to misspecification compared to Bayesian and frequentist
+competitors. The framework, therefore, offers a practical and interpretable
+paradigm for trustworthy regression when data and models are jointly imperfect.",http://arxiv.org/pdf/2510.03131v1,,False
+A Study of Rule Omission in Raven's Progressive Matrices,03/10/2025,Binze Li,"Analogical reasoning lies at the core of human cognition and remains a
+fundamental challenge for artificial intelligence. Raven's Progressive Matrices
+(RPM) serve as a widely used benchmark to assess abstract reasoning by
+requiring the inference of underlying structural rules. While many vision-based
+and language-based models have achieved success on RPM tasks, it remains
+unclear whether their performance reflects genuine reasoning ability or
+reliance on statistical shortcuts. This study investigates the generalization
+capacity of modern AI systems under conditions of incomplete training by
+deliberately omitting several structural rules during training. Both
+sequence-to-sequence transformer models and vision-based architectures such as
+CoPINet and the Dual-Contrast Network are evaluated on the Impartial-RAVEN
+(I-RAVEN) dataset. Experiments reveal that although transformers demonstrate
+strong performance on familiar rules, their accuracy declines sharply when
+faced with novel or omitted rules. Moreover, the gap between token-level
+accuracy and complete answer accuracy highlights fundamental limitations in
+current approaches. These findings provide new insights into the reasoning
+mechanisms underlying deep learning models and underscore the need for
+architectures that move beyond pattern recognition toward robust abstract
+reasoning.",http://arxiv.org/pdf/2510.03127v1,,False
+Bayesian E(3)-Equivariant Interatomic Potential with Iterative Restratification of Many-body Message Passing,03/10/2025,"Soohaeng Yoo Willow, Tae Hyeon Park, Gi Beom Sim, Sung Wook Moon, Seung Kyu Min, D. ChangMo Yang, Hyun Woo Kim, Juho Lee, Chang Woo Myung","Machine learning potentials (MLPs) have become essential for large-scale
+atomistic simulations, enabling ab initio-level accuracy with computational
+efficiency. However, current MLPs struggle with uncertainty quantification,
+limiting their reliability for active learning, calibration, and
+out-of-distribution (OOD) detection. We address these challenges by developing
+Bayesian E(3) equivariant MLPs with iterative restratification of many-body
+message passing. Our approach introduces the joint energy-force negative
+log-likelihood (NLL$_\text{JEF}$) loss function, which explicitly models
+uncertainty in both energies and interatomic forces, yielding superior accuracy
+compared to conventional NLL losses. We systematically benchmark multiple
+Bayesian approaches, including deep ensembles with mean-variance estimation,
+stochastic weight averaging Gaussian, improved variational online Newton, and
+laplace approximation by evaluating their performance on uncertainty
+prediction, OOD detection, calibration, and active learning tasks. We further
+demonstrate that NLL$_\text{JEF}$ facilitates efficient active learning by
+quantifying energy and force uncertainties. Using Bayesian active learning by
+disagreement (BALD), our framework outperforms random sampling and
+energy-uncertainty-based sampling. Our results demonstrate that Bayesian MLPs
+achieve competitive accuracy with state-of-the-art models while enabling
+uncertainty-guided active learning, OOD detection, and energy/forces
+calibration. This work establishes Bayesian equivariant neural networks as a
+powerful framework for developing uncertainty-aware MLPs for atomistic
+simulations at scale.",http://arxiv.org/pdf/2510.03046v1,,False
+oRANS: Online optimisation of RANS machine learning models with embedded DNS data generation,03/10/2025,"Daniel Dehtyriov, Jonathan F. MacArt, Justin Sirignano","Deep learning (DL) has demonstrated promise for accelerating and enhancing
+the accuracy of flow physics simulations, but progress is constrained by the
+scarcity of high-fidelity training data, which is costly to generate and
+inherently limited to a small set of flow conditions. Consequently, closures
+trained in the conventional offline paradigm tend to overfit and fail to
+generalise to new regimes. We introduce an online optimisation framework for
+DL-based Reynolds-averaged Navier--Stokes (RANS) closures which seeks to
+address the challenge of limited high-fidelity datasets. Training data is
+dynamically generated by embedding a direct numerical simulation (DNS) within a
+subdomain of the RANS domain. The RANS solution supplies boundary conditions to
+the DNS, while the DNS provides mean velocity and turbulence statistics that
+are used to update a DL closure model during the simulation. This feedback loop
+enables the closure to adapt to the embedded DNS target flow, avoiding reliance
+on precomputed datasets and improving out-of-distribution performance. The
+approach is demonstrated for the stochastically forced Burgers equation and for
+turbulent channel flow at $Re_\tau=180$, $270$, $395$ and $590$ with varying
+embedded domain lengths $1\leq L_0/L\leq 8$. Online-optimised RANS models
+significantly outperform both offline-trained and literature-calibrated
+closures, with accurate training achieved using modest DNS subdomains.
+Performance degrades primarily when boundary-condition contamination dominates
+or when domains are too short to capture low-wavenumber modes. This framework
+provides a scalable route to physics-informed machine learning closures,
+enabling data-adaptive reduced-order models that generalise across flow regimes
+without requiring large precomputed training datasets.",http://arxiv.org/pdf/2510.02982v1,,False
+RAxSS: Retrieval-Augmented Sparse Sampling for Explainable Variable-Length Medical Time Series Classification,03/10/2025,"Aydin Javadov, Samir Garibov, Tobias Hoesli, Qiyang Sun, Florian von Wangenheim, Joseph Ollier, Björn W. Schuller","Medical time series analysis is challenging due to data sparsity, noise, and
+highly variable recording lengths. Prior work has shown that stochastic sparse
+sampling effectively handles variable-length signals, while retrieval-augmented
+approaches improve explainability and robustness to noise and weak temporal
+correlations. In this study, we generalize the stochastic sparse sampling
+framework for retrieval-informed classification. Specifically, we weight window
+predictions by within-channel similarity and aggregate them in probability
+space, yielding convex series-level scores and an explicit evidence trail for
+explainability. Our method achieves competitive iEEG classification performance
+and provides practitioners with greater transparency and explainability. We
+evaluate our method in iEEG recordings collected in four medical centers,
+demonstrating its potential for reliable and explainable clinical
+variable-length time series classification.",http://arxiv.org/pdf/2510.02936v1,,False
+"Multimodal Carotid Risk Stratification with Large Vision-Language Models: Benchmarking, Fine-Tuning, and Clinical Insights",03/10/2025,"Daphne Tsolissou, Theofanis Ganitidis, Konstantinos Mitsis, Stergios CHristodoulidis, Maria Vakalopoulou, Konstantina Nikita","Reliable risk assessment for carotid atheromatous disease remains a major
+clinical challenge, as it requires integrating diverse clinical and imaging
+information in a manner that is transparent and interpretable to clinicians.
+This study investigates the potential of state-of-the-art and recent large
+vision-language models (LVLMs) for multimodal carotid plaque assessment by
+integrating ultrasound imaging (USI) with structured clinical, demographic,
+laboratory, and protein biomarker data. A framework that simulates realistic
+diagnostic scenarios through interview-style question sequences is proposed,
+comparing a range of open-source LVLMs, including both general-purpose and
+medically tuned models. Zero-shot experiments reveal that even if they are very
+powerful, not all LVLMs can accurately identify imaging modality and anatomy,
+while all of them perform poorly in accurate risk classification. To address
+this limitation, LLaVa-NeXT-Vicuna is adapted to the ultrasound domain using
+low-rank adaptation (LoRA), resulting in substantial improvements in stroke
+risk stratification. The integration of multimodal tabular data in the form of
+text further enhances specificity and balanced accuracy, yielding competitive
+performance compared to prior convolutional neural network (CNN) baselines
+trained on the same dataset. Our findings highlight both the promise and
+limitations of LVLMs in ultrasound-based cardiovascular risk prediction,
+underscoring the importance of multimodal integration, model calibration, and
+domain adaptation for clinical translation.",http://arxiv.org/pdf/2510.02922v1,,False
+SALSA-V: Shortcut-Augmented Long-form Synchronized Audio from Videos,03/10/2025,"Amir Dellali, Luca A. Lanzendörfer, Florian Grötschla, Roger Wattenhofer","We propose SALSA-V, a multimodal video-to-audio generation model capable of
+synthesizing highly synchronized, high-fidelity long-form audio from silent
+video content. Our approach introduces a masked diffusion objective, enabling
+audio-conditioned generation and the seamless synthesis of audio sequences of
+unconstrained length. Additionally, by integrating a shortcut loss into our
+training process, we achieve rapid generation of high-quality audio samples in
+as few as eight sampling steps, paving the way for near-real-time applications
+without requiring dedicated fine-tuning or retraining. We demonstrate that
+SALSA-V significantly outperforms existing state-of-the-art methods in both
+audiovisual alignment and synchronization with video content in quantitative
+evaluation and a human listening study. Furthermore, our use of random masking
+during training enables our model to match spectral characteristics of
+reference audio samples, broadening its applicability to professional audio
+synthesis tasks such as Foley generation and sound design.",http://arxiv.org/pdf/2510.02916v1,,False
+Consolidating Reinforcement Learning for Multimodal Discrete Diffusion Models,03/10/2025,"Tianren Ma, Mu Zhang, Yibing Wang, Qixiang Ye","Optimizing discrete diffusion model (DDM) with rewards remains a challenge:
+the non-autoregressive paradigm makes importance sampling intractable and
+rollout complex, puzzling reinforcement learning methods such as Group Relative
+Policy Optimization (GRPO). In this study, we introduce MaskGRPO, the first
+viable approach to enable scalable multimodal reinforcement learning in
+discrete diffusion with effective importance sampling and modality-specific
+adaptations. To this end, we first clarify the theoretical foundation for DDMs,
+which facilitates building an importance estimator that captures valuable token
+fluctuation for gradient updates. We then delicately tailored the rollout
+method for visual sequences, which yields diverse completions and reliable
+optimization gradients. Upon math reasoning, coding, and visual generation
+benchmarks, MaskGRPO brings more stable and efficient updates, leading to
+stronger reasoning performance and better generation quality. This study
+establishes MaskGRPO as a systematic policy optimization approach and the first
+practical way for discretized visual diffusion.",http://arxiv.org/pdf/2510.02880v1,,False
+The Curious Case of In-Training Compression of State Space Models,03/10/2025,"Makram Chahine, Philipp Nazari, Daniela Rus, T. Konstantin Rusch","State Space Models (SSMs), developed to tackle long sequence modeling tasks
+efficiently, offer both parallelizable training and fast inference. At their
+core are recurrent dynamical systems that maintain a hidden state, with update
+costs scaling with the state dimension. A key design challenge is striking the
+right balance between maximizing expressivity and limiting this computational
+burden. Control theory, and more specifically Hankel singular value analysis,
+provides a potent framework for the measure of energy for each state, as well
+as the balanced truncation of the original system down to a smaller
+representation with performance guarantees. Leveraging the eigenvalue stability
+properties of Hankel matrices, we apply this lens to SSMs during training,
+where only dimensions of high influence are identified and preserved. Our
+approach applies to Linear Time-Invariant SSMs such as Linear Recurrent Units,
+but is also extendable to selective models. Experiments show that in-training
+reduction significantly accelerates optimization while preserving expressivity,
+with compressed models retaining task-critical structure lost by models trained
+directly at smaller dimension. In other words, SSMs that begin large and shrink
+during training achieve computational efficiency while maintaining higher
+performance.",http://arxiv.org/pdf/2510.02823v1,,False
+Online Learning in the Random Order Model,03/10/2025,"Martino Bernasconi, Andrea Celli, Riccardo Colini-Baldeschi, Federico Fusco, Stefano Leonardi, Matteo Russo","In the random-order model for online learning,
+  the sequence of losses is chosen upfront by an adversary and presented to the
+learner
+  after a random permutation. Any random-order input is \emph{asymptotically}
+equivalent to a stochastic i.i.d. one, but, for finite times, it may exhibit
+significant {\em non-stationarity}, which can hinder the performance of
+stochastic learning algorithms.
+  While algorithms for adversarial inputs naturally maintain their regret
+guarantees in random order, simple no-regret algorithms exist for the
+stochastic model that fail against random-order instances.
+  In this paper, we propose a general template to adapt stochastic learning
+algorithms to the random-order model without substantially affecting their
+regret guarantees. This allows us to recover improved regret bounds for
+prediction with delays, online learning with constraints, and bandits with
+switching costs. Finally, we investigate online classification and prove that,
+in random order, learnability is characterized by the VC dimension rather than
+the Littlestone dimension, thus providing a further separation from the general
+adversarial model.",http://arxiv.org/pdf/2510.02820v1,,False
+Prototyping Digital Social Spaces through Metaphor-Driven Design: Translating Spatial Concepts into an Interactive Social Simulation,03/10/2025,"Yoojin Hong, Martina Di Paola, Braahmi Padmakumar, Hwi Joon Lee, Mahnoor Shafiq, Joseph Seering","Social media platforms are central to communication, yet their designs remain
+narrowly focused on engagement and scale. While researchers have proposed
+alternative visions for online spaces, these ideas are difficult to prototype
+within platform constraints. In this paper, we introduce a metaphor-driven
+system to help users imagine and explore new social media environments. The
+system translates users' metaphors into structured sets of platform features
+and generates interactive simulations populated with LLM-driven agents. To
+evaluate this approach, we conducted a study where participants created and
+interacted with simulated social media spaces. Our findings show that metaphors
+allow users to express distinct social expectations, and that perceived
+authenticity of the simulation depended on how well it captured dynamics like
+intimacy, participation, and temporal engagement. We conclude by discussing how
+metaphor-driven simulation can be a powerful design tool for prototyping
+alternative social architectures and expanding the design space for future
+social platforms.",http://arxiv.org/pdf/2510.02759v1,,False
+TokenFlow: Responsive LLM Text Streaming Serving under Request Burst via Preemptive Scheduling,03/10/2025,"Junyi Chen, Chuheng Du, Renyuan Liu, Shuochao Yao, Dingtian Yan, Jiang Liao, Shengzhong Liu, Fan Wu, Guihai Chen","Real-time LLM interactions demand streamed token generations, where text
+tokens are progressively generated and delivered to users while balancing two
+objectives: responsiveness (i.e., low time-to-first-token) and steady
+generation (i.e.,required time-between-tokens). Standard LLM serving systems
+suffer from the inflexibility caused by non-preemptive request scheduling and
+reactive memory management, leading to poor resource utilization and low
+request processing parallelism under request bursts. Therefore, we present
+TokenFlow, a novel LLM serving system with enhanced text streaming performance
+via preemptive request scheduling and proactive key-value (KV) cache
+management. TokenFlow dynamically prioritizes requests based on real-time token
+buffer occupancy and token consumption rate, while actively transferring KV
+cache between GPU and CPU memory in the background and overlapping I/O with
+computation to minimize request preemption overhead. Extensive experiments on
+Llama3-8B and Qwen2.5-32B across multiple GPUs (RTX 4090, A6000, H200)
+demonstrate that TokenFlow achieves up to 82.5% higher effective throughput
+(accounting for actual user consumption) while reducing P99 TTFT by up to
+80.2%, without degrading overall token throughput.",http://arxiv.org/pdf/2510.02758v1,,False
+Flow with the Force Field: Learning 3D Compliant Flow Matching Policies from Force and Demonstration-Guided Simulation Data,03/10/2025,"Tianyu Li, Yihan Li, Zizhe Zhang, Nadia Figueroa","While visuomotor policy has made advancements in recent years, contact-rich
+tasks still remain a challenge. Robotic manipulation tasks that require
+continuous contact demand explicit handling of compliance and force. However,
+most visuomotor policies ignore compliance, overlooking the importance of
+physical interaction with the real world, often leading to excessive contact
+forces or fragile behavior under uncertainty. Introducing force information
+into vision-based imitation learning could help improve awareness of contacts,
+but could also require a lot of data to perform well. One remedy for data
+scarcity is to generate data in simulation, yet computationally taxing
+processes are required to generate data good enough not to suffer from the
+Sim2Real gap. In this work, we introduce a framework for generating
+force-informed data in simulation, instantiated by a single human
+demonstration, and show how coupling with a compliant policy improves the
+performance of a visuomotor policy learned from synthetic data. We validate our
+approach on real-robot tasks, including non-prehensile block flipping and a
+bi-manual object moving, where the learned policy exhibits reliable contact
+maintenance and adaptation to novel conditions. Project Website:
+https://flow-with-the-force-field.github.io/webpage/",http://arxiv.org/pdf/2510.02738v1,,False
+Can Data-Driven Dynamics Reveal Hidden Physics? There Is A Need for Interpretable Neural Operators,03/10/2025,"Wenhan Gao, Jian Luo, Fang Wan, Ruichen Xu, Xiang Liu, Haipeng Xing, Yi Liu","Recently, neural operators have emerged as powerful tools for learning
+mappings between function spaces, enabling data-driven simulations of complex
+dynamics. Despite their successes, a deeper understanding of their learning
+mechanisms remains underexplored. In this work, we classify neural operators
+into two types: (1) Spatial domain models that learn on grids and (2)
+Functional domain models that learn with function bases. We present several
+viewpoints based on this classification and focus on learning data-driven
+dynamics adhering to physical principles. Specifically, we provide a way to
+explain the prediction-making process of neural operators and show that neural
+operator can learn hidden physical patterns from data. However, this
+explanation method is limited to specific situations, highlighting the urgent
+need for generalizable explanation methods. Next, we show that a simple
+dual-space multi-scale model can achieve SOTA performance and we believe that
+dual-space multi-spatio-scale models hold significant potential to learn
+complex physics and require further investigation. Lastly, we discuss the
+critical need for principled frameworks to incorporate known physics into
+neural operators, enabling better generalization and uncovering more hidden
+physical phenomena.",http://arxiv.org/pdf/2510.02683v1,,False
+HALO: Memory-Centric Heterogeneous Accelerator with 2.5D Integration for Low-Batch LLM Inference,03/10/2025,"Shubham Negi, Kaushik Roy","The rapid adoption of Large Language Models (LLMs) has driven a growing
+demand for efficient inference, particularly in latency-sensitive applications
+such as chatbots and personalized assistants. Unlike traditional deep neural
+networks, LLM inference proceeds in two distinct phases: the prefill phase,
+which processes the full input sequence in parallel, and the decode phase,
+which generates tokens sequentially. These phases exhibit highly diverse
+compute and memory requirements, which makes accelerator design particularly
+challenging. Prior works have primarily been optimized for high-batch inference
+or evaluated only short input context lengths, leaving the low-batch and long
+context regime, which is critical for interactive applications, largely
+underexplored.
+  We propose HALO, a heterogeneous memory centric accelerator designed for
+these unique challenges of prefill and decode phases in low-batch LLM
+inference. HALO integrates HBM based Compute-in-DRAM (CiD) with an on-chip
+analog Compute-in-Memory (CiM), co-packaged using 2.5D integration. To further
+improve the hardware utilization, we introduce a phase-aware mapping strategy
+that adapts to the distinct demands of the prefill and decode phases. Compute
+bound operations in the prefill phase are mapped to CiM to exploit its high
+throughput matrix multiplication capability, while memory-bound operations in
+the decode phase are executed on CiD to benefit from reduced data movement
+within DRAM. Additionally, we present an analysis of the performance tradeoffs
+of LLMs under two architectural extremes: a fully CiD and a fully on-chip
+analog CiM design to highlight the need for a heterogeneous design. We evaluate
+HALO on LLaMA-2 7B and Qwen3 8B models. Our experimental results show that LLMs
+mapped to HALO achieve up to 18x geometric mean speedup over AttAcc, an
+attention-optimized mapping and 2.5x over CENT, a fully CiD based mapping.",http://arxiv.org/pdf/2510.02675v1,,False
+What is in the model? A Comparison of variable selection criteria and model search approaches,03/10/2025,"Shuangshuang Xu, Marco A. R. Ferreira, Allison N. Tegge","For many scientific questions, understanding the underlying mechanism is the
+goal. To help investigators better understand the underlying mechanism,
+variable selection is a crucial step that permits the identification of the
+most associated regression variables of interest. A variable selection method
+consists of model evaluation using an information criterion and a search of the
+model space. Here, we provide a comprehensive comparison of variable selection
+methods using performance measures of correct identification rate (CIR),
+recall, and false discovery rate (FDR). We consider the BIC and AIC for
+evaluating models, and exhaustive, greedy, LASSO path, and stochastic search
+approaches for searching the model space; we also consider LASSO using cross
+validation. We perform simulation studies for linear and generalized linear
+models that parametrically explore a wide range of realistic sample sizes,
+effect sizes, and correlations among regression variables. We consider model
+spaces with a small and larger number of potential regressors. The results show
+that the exhaustive search BIC and stochastic search BIC outperform the other
+methods when considering the performance measures on small and large model
+spaces, respectively. These approaches result in the highest CIR and lowest
+FDR, which collectively may support long-term efforts towards increasing
+replicability in research.",http://arxiv.org/pdf/2510.02628v1,,False

@@ -1,0 +1,442 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+"Finish First, Perfect Later: Test-Time Token-Level Cross-Validation for Diffusion Large Language Models",06/10/2025,"Runchu Tian, Junxia Cui, Xueqiang Xu, Feng Yao, Jingbo Shang","Diffusion large language models (dLLMs) have recently emerged as a promising
+alternative to autoregressive (AR) models, offering advantages such as
+accelerated parallel decoding and bidirectional context modeling. However, the
+vanilla decoding strategy in discrete dLLMs suffers from a critical limitation:
+once a token is accepted, it can no longer be revised in subsequent steps. As a
+result, early mistakes persist across iterations, harming both intermediate
+predictions and final output quality. To address this issue, we propose
+Tolerator (Token-Level Cross-Validation Refinement), a training-free decoding
+strategy that leverages cross-validation among predicted tokens. Unlike
+existing methods that follow a single progressive unmasking procedure,
+Tolerator introduces a two-stage process: (i) sequence fill-up and (ii)
+iterative refinement by remasking and decoding a subset of tokens while
+treating the remaining as context. This design enables previously accepted
+tokens to be reconsidered and corrected when necessary, leading to more
+reliable diffusion decoding outputs. We evaluate Tolerator on five standard
+benchmarks covering language understanding, code generation, and mathematics.
+Experiments show that our method achieves consistent improvements over the
+baselines under the same computational budget. These findings suggest that
+decoding algorithms are crucial to realizing the full potential of diffusion
+large language models. Code and data are publicly available.",http://arxiv.org/pdf/2510.05090v1,,False
+ResMimic: From General Motion Tracking to Humanoid Whole-body Loco-Manipulation via Residual Learning,06/10/2025,"Siheng Zhao, Yanjie Ze, Yue Wang, C. Karen Liu, Pieter Abbeel, Guanya Shi, Rocky Duan","Humanoid whole-body loco-manipulation promises transformative capabilities
+for daily service and warehouse tasks. While recent advances in general motion
+tracking (GMT) have enabled humanoids to reproduce diverse human motions, these
+policies lack the precision and object awareness required for
+loco-manipulation. To this end, we introduce ResMimic, a two-stage residual
+learning framework for precise and expressive humanoid control from human
+motion data. First, a GMT policy, trained on large-scale human-only motion,
+serves as a task-agnostic base for generating human-like whole-body movements.
+An efficient but precise residual policy is then learned to refine the GMT
+outputs to improve locomotion and incorporate object interaction. To further
+facilitate efficient training, we design (i) a point-cloud-based object
+tracking reward for smoother optimization, (ii) a contact reward that
+encourages accurate humanoid body-object interactions, and (iii) a
+curriculum-based virtual object controller to stabilize early training. We
+evaluate ResMimic in both simulation and on a real Unitree G1 humanoid. Results
+show substantial gains in task success, training efficiency, and robustness
+over strong baselines. Videos are available at https://resmimic.github.io/ .",http://arxiv.org/pdf/2510.05070v1,,False
+Staircase Streaming for Low-Latency Multi-Agent Inference,06/10/2025,"Junlin Wang, Jue Wang, Zhen, Xu, Ben Athiwaratkun, Bhuwan Dhingra, Ce Zhang, James Zou","Recent advances in large language models (LLMs) opened up new directions for
+leveraging the collective expertise of multiple LLMs. These methods, such as
+Mixture-of-Agents, typically employ additional inference steps to generate
+intermediate outputs, which are then used to produce the final response. While
+multi-agent inference can enhance response quality, it can significantly
+increase the time to first token (TTFT), posing a challenge for
+latency-sensitive applications and hurting user experience. To address this
+issue, we propose staircase streaming for low-latency multi-agent inference.
+Instead of waiting for the complete intermediate outputs from previous steps,
+we begin generating the final response as soon as we receive partial outputs
+from these steps. Experimental results demonstrate that staircase streaming
+reduces TTFT by up to 93% while maintaining response quality.",http://arxiv.org/pdf/2510.05059v1,,False
+Modeling Student Learning with 3.8 Million Program Traces,06/10/2025,"Alexis Ross, Megha Srivastava, Jeremiah Blanchard, Jacob Andreas","As programmers write code, they often edit and retry multiple times, creating
+rich ""interaction traces"" that reveal how they approach coding tasks and
+provide clues about their level of skill development. For novice programmers in
+particular, these traces reflect the diverse reasoning processes they employ to
+code, such as exploratory behavior to understand how a programming concept
+works, re-strategizing in response to bugs, and personalizing stylistic
+choices. In this work, we explore what can be learned from training language
+models on such reasoning traces: not just about code, but about coders, and
+particularly students learning to program. We introduce a dataset of over 3.8
+million programming reasoning traces from users of Pencil Code, a free online
+educational platform used by students to learn simple programming concepts.
+Compared to models trained only on final programs or synthetically-generated
+traces, we find that models trained on real traces are stronger at modeling
+diverse student behavior. Through both behavioral and probing analyses, we also
+find that many properties of code traces, such as goal backtracking or number
+of comments, can be predicted from learned representations of the students who
+write them. Building on this result, we show that we can help students recover
+from mistakes by steering code generation models to identify a sequence of
+edits that will results in more correct code while remaining close to the
+original student's style. Together, our results suggest that many properties of
+code are properties of individual students and that training on edit traces can
+lead to models that are more steerable, more predictive of student behavior
+while programming, and better at generating programs in their final states.
+Code and data is available at https://github.com/meghabyte/pencilcode-public",http://arxiv.org/pdf/2510.05056v1,,False
+Test-Time Scaling in Diffusion LLMs via Hidden Semi-Autoregressive Experts,06/10/2025,"Jihoon Lee, Hoyeon Moon, Kevin Zhai, Arun Kumar Chithanar, Anit Kumar Sahu, Soummya Kar, Chul Lee, Souradip Chakraborty, Amrit Singh Bedi","Diffusion-based large language models (dLLMs) are trained flexibly to model
+extreme dependence in the data distribution; however, how to best utilize this
+information at inference time remains an open problem. In this work, we uncover
+an interesting property of these models: dLLMs trained on textual data
+implicitly learn a mixture of semi-autoregressive experts, where different
+generation orders reveal different specialized behaviors. We show that
+committing to any single, fixed inference time schedule, a common practice,
+collapses performance by failing to leverage this latent ensemble. To address
+this, we introduce HEX (Hidden semiautoregressive EXperts for test-time
+scaling), a training-free inference method that ensembles across heterogeneous
+block schedules. By doing a majority vote over diverse block-sized generation
+paths, HEX robustly avoids failure modes associated with any single fixed
+schedule. On reasoning benchmarks such as GSM8K, it boosts accuracy by up to
+3.56X (from 24.72% to 88.10%), outperforming top-K margin inference and
+specialized fine-tuned methods like GRPO, without additional training. HEX even
+yields significant gains on MATH benchmark from 16.40% to 40.00%, scientific
+reasoning on ARC-C from 54.18% to 87.80%, and TruthfulQA from 28.36% to 57.46%.
+Our results establish a new paradigm for test-time scaling in diffusion-based
+LLMs (dLLMs), revealing that the sequence in which masking is performed plays a
+critical role in determining performance during inference.",http://arxiv.org/pdf/2510.05040v1,,False
+Graph-Aware Diffusion for Signal Generation,06/10/2025,"Sergio Rozada, Vimal K. B., Andrea Cavallo, Antonio G. Marques, Hadi Jamali-Rad, Elvin Isufi","We study the problem of generating graph signals from unknown distributions
+defined over given graphs, relevant to domains such as recommender systems or
+sensor networks. Our approach builds on generative diffusion models, which are
+well established in vision and graph generation but remain underexplored for
+graph signals. Existing methods lack generality, either ignoring the graph
+structure in the forward process or designing graph-aware mechanisms tailored
+to specific domains. We adopt a forward process that incorporates the graph
+through the heat equation. Rather than relying on the standard formulation, we
+consider a time-warped coefficient to mitigate the exponential decay of the
+drift term, yielding a graph-aware generative diffusion model (GAD). We analyze
+its forward dynamics, proving convergence to a Gaussian Markov random field
+with covariance parametrized by the graph Laplacian, and interpret the backward
+dynamics as a sequence of graph-signal denoising problems. Finally, we
+demonstrate the advantages of GAD on synthetic data, real traffic speed
+measurements, and a temperature sensor network.",http://arxiv.org/pdf/2510.05036v1,,False
+Curiosity-Driven Co-Development of Action and Language in Robots Through Self-Exploration,06/10/2025,"Theodore Jerome Tinker, Kenji Doya, Jun Tani","Human infants acquire language and action co-developmentally, achieving
+remarkable generalization capabilities from only a minimal number of learning
+examples. In contrast, recent large language models require exposure to
+billions of training tokens to achieve such generalization. What mechanisms
+underlie such efficient developmental learning in humans? This study addresses
+this question through simulation experiments in which robots learn to perform
+various actions corresponding to imperative sentences (e.g., \textit{push red
+cube}) via trials of self-guided exploration. Our approach integrates the
+active inference framework with reinforcement learning, enabling
+curiosity-driven developmental learning. The simulations yielded several
+nontrivial findings: i) Curiosity-driven exploration combined with motor noise
+substantially outperforms learning without curiosity. ii) Simpler,
+prerequisite-like actions emerge earlier in development, while more complex
+actions involving these prerequisites develop later. iii) Rote pairing of
+sentences and actions occurs before the emergence of compositional
+generalization. iv) Generalization is drastically improved as the number of
+compositional elements increases. These results shed light into possible
+mechanisms underlying efficient co-developmental learning in infants and
+provide computational parallels to findings in developmental psychology.",http://arxiv.org/pdf/2510.05013v1,,False
+On Structured State-Space Duality,06/10/2025,"Jerry Yao-Chieh Hu, Xiwen Zhang, Weimin Wu, Han Liu","Structured State-Space Duality (SSD) [Dao & Gu, ICML 2024] is an equivalence
+between a simple Structured State-Space Model (SSM) and a masked attention
+mechanism. In particular, a state-space model with a scalar-times-identity
+state matrix is equivalent to a masked self-attention with a $1$-semiseparable
+causal mask. Consequently, the same sequence transformation (model) has two
+algorithmic realizations: as a linear-time $O(T)$ recurrence or as a
+quadratic-time $O(T^2)$ attention. In this note, we formalize and generalize
+this duality: (i) we extend SSD from the scalar-identity case to general
+diagonal SSMs (diagonal state matrices); (ii) we show that these diagonal SSMs
+match the scalar case's training complexity lower bounds while supporting
+richer dynamics; (iii) we establish a necessary and sufficient condition under
+which an SSM is equivalent to $1$-semiseparable masked attention; and (iv) we
+show that such duality fails to extend to standard softmax attention due to
+rank explosion. Together, these results tighten bridge between recurrent SSMs
+and Transformers, and widen the design space for expressive yet efficient
+sequence models.",http://arxiv.org/pdf/2510.04944v1,,False
+Glocal Information Bottleneck for Time Series Imputation,06/10/2025,"Jie Yang, Kexin Zhang, Guibin Zhang, Philip S. Yu, Kaize Ding","Time Series Imputation (TSI), which aims to recover missing values in
+temporal data, remains a fundamental challenge due to the complex and often
+high-rate missingness in real-world scenarios. Existing models typically
+optimize the point-wise reconstruction loss, focusing on recovering numerical
+values (local information). However, we observe that under high missing rates,
+these models still perform well in the training phase yet produce poor
+imputations and distorted latent representation distributions (global
+information) in the inference phase. This reveals a critical optimization
+dilemma: current objectives lack global guidance, leading models to overfit
+local noise and fail to capture global information of the data. To address this
+issue, we propose a new training paradigm, Glocal Information Bottleneck
+(Glocal-IB). Glocal-IB is model-agnostic and extends the standard IB framework
+by introducing a Global Alignment loss, derived from a tractable mutual
+information approximation. This loss aligns the latent representations of
+masked inputs with those of their originally observed counterparts. It helps
+the model retain global structure and local details while suppressing noise
+caused by missing values, giving rise to better generalization under high
+missingness. Extensive experiments on nine datasets confirm that Glocal-IB
+leads to consistently improved performance and aligned latent representations
+under missingness. Our code implementation is available in
+https://github.com/Muyiiiii/NeurIPS-25-Glocal-IB.",http://arxiv.org/pdf/2510.04910v1,,False
+How Different from the Past? Spatio-Temporal Time Series Forecasting with Self-Supervised Deviation Learning,06/10/2025,"Haotian Gao, Zheng Dong, Jiawei Yong, Shintaro Fukushima, Kenjiro Taura, Renhe Jiang","Spatio-temporal forecasting is essential for real-world applications such as
+traffic management and urban computing. Although recent methods have shown
+improved accuracy, they often fail to account for dynamic deviations between
+current inputs and historical patterns. These deviations contain critical
+signals that can significantly affect model performance. To fill this gap, we
+propose ST-SSDL, a Spatio-Temporal time series forecasting framework that
+incorporates a Self-Supervised Deviation Learning scheme to capture and utilize
+such deviations. ST-SSDL anchors each input to its historical average and
+discretizes the latent space using learnable prototypes that represent typical
+spatio-temporal patterns. Two auxiliary objectives are proposed to refine this
+structure: a contrastive loss that enhances inter-prototype discriminability
+and a deviation loss that regularizes the distance consistency between input
+representations and corresponding prototypes to quantify deviation. Optimized
+jointly with the forecasting objective, these components guide the model to
+organize its hidden space and improve generalization across diverse input
+conditions. Experiments on six benchmark datasets show that ST-SSDL
+consistently outperforms state-of-the-art baselines across multiple metrics.
+Visualizations further demonstrate its ability to adaptively respond to varying
+levels of deviation in complex spatio-temporal scenarios. Our code and datasets
+are available at https://github.com/Jimmy-7664/ST-SSDL.",http://arxiv.org/pdf/2510.04908v1,,False
+Benchmarking M-LTSF: Frequency and Noise-Based Evaluation of Multivariate Long Time Series Forecasting Models,06/10/2025,"Nick Janßen, Melanie Schaller, Bodo Rosenhahn","Understanding the robustness of deep learning models for multivariate
+long-term time series forecasting (M-LTSF) remains challenging, as evaluations
+typically rely on real-world datasets with unknown noise properties. We propose
+a simulation-based evaluation framework that generates parameterizable
+synthetic datasets, where each dataset instance corresponds to a different
+configuration of signal components, noise types, signal-to-noise ratios, and
+frequency characteristics. These configurable components aim to model
+real-world multivariate time series data without the ambiguity of unknown
+noise. This framework enables fine-grained, systematic evaluation of M-LTSF
+models under controlled and diverse scenarios. We benchmark four representative
+architectures S-Mamba (state-space), iTransformer (transformer-based), R-Linear
+(linear), and Autoformer (decomposition-based). Our analysis reveals that all
+models degrade severely when lookback windows cannot capture complete periods
+of seasonal patters in the data. S-Mamba and Autoformer perform best on
+sawtooth patterns, while R-Linear and iTransformer favor sinusoidal signals.
+White and Brownian noise universally degrade performance with lower
+signal-to-noise ratio while S-Mamba shows specific trend-noise and iTransformer
+shows seasonal-noise vulnerability. Further spectral analysis shows that
+S-Mamba and iTransformer achieve superior frequency reconstruction. This
+controlled approach, based on our synthetic and principle-driven testbed,
+offers deeper insights into model-specific strengths and limitations through
+the aggregation of MSE scores and provides concrete guidance for model
+selection based on signal characteristics and noise conditions.",http://arxiv.org/pdf/2510.04900v1,,False
+Revealing Interconnections between Diseases: from Statistical Methods to Large Language Models,06/10/2025,"Alina Ermilova, Dmitrii Kornilov, Sofia Samoilova, Ekaterina Laptenkova, Anastasia Kolesnikova, Ekaterina Podplutova, Senotrusova Sofya, Maksim G. Sharaev","Identifying disease interconnections through manual analysis of large-scale
+clinical data is labor-intensive, subjective, and prone to expert disagreement.
+While machine learning (ML) shows promise, three critical challenges remain:
+(1) selecting optimal methods from the vast ML landscape, (2) determining
+whether real-world clinical data (e.g., electronic health records, EHRs) or
+structured disease descriptions yield more reliable insights, (3) the lack of
+""ground truth,"" as some disease interconnections remain unexplored in medicine.
+Large language models (LLMs) demonstrate broad utility, yet they often lack
+specialized medical knowledge. To address these gaps, we conduct a systematic
+evaluation of seven approaches for uncovering disease relationships based on
+two data sources: (i) sequences of ICD-10 codes from MIMIC-IV EHRs and (ii) the
+full set of ICD-10 codes, both with and without textual descriptions. Our
+framework integrates the following: (i) a statistical co-occurrence analysis
+and a masked language modeling (MLM) approach using real clinical data; (ii)
+domain-specific BERT variants (Med-BERT and BioClinicalBERT); (iii) a
+general-purpose BERT and document retrieval; and (iv) four LLMs (Mistral,
+DeepSeek, Qwen, and YandexGPT). Our graph-based comparison of the obtained
+interconnection matrices shows that the LLM-based approach produces
+interconnections with the lowest diversity of ICD code connections to different
+diseases compared to other methods, including text-based and domain-based
+approaches. This suggests an important implication: LLMs have limited potential
+for discovering new interconnections. In the absence of ground truth databases
+for medical interconnections between ICD codes, our results constitute a
+valuable medical disease ontology that can serve as a foundational resource for
+future clinical research and artificial intelligence applications in
+healthcare.",http://arxiv.org/pdf/2510.04888v1,,False
+A Noise Resilient Approach for Robust Hurst Exponent Estimation,06/10/2025,"Malith Premarathna, Fabrizio Ruggeri, Dixon Vimalajeewa","Understanding signal behavior across scales is vital in areas such as natural
+phenomena analysis and financial modeling. A key property is self-similarity,
+quantified by the Hurst exponent (H), which reveals long-term dependencies.
+Wavelet-based methods are effective for estimating H due to their multi-scale
+analysis capability, but additive noise in real-world measurements often
+degrades accuracy. We propose Noise-Controlled ALPHEE (NC-ALPHEE), an
+enhancement of the Average Level-Pairwise Hurst Exponent Estimator (ALPHEE),
+incorporating noise mitigation and generating multiple level-pairwise estimates
+from signal energy pairs. A neural network (NN) combines these estimates,
+replacing traditional averaging. This adaptive learning maintains ALPHEE's
+behavior in noise-free cases while improving performance in noisy conditions.
+Extensive simulations show that in noise-free data, NC-ALPHEE matches ALPHEE's
+accuracy using both averaging and NN-based methods. Under noise, however,
+traditional averaging deteriorates and requires impractical level restrictions,
+while NC-ALPHEE consistently outperforms existing techniques without such
+constraints. NC-ALPHEE offers a robust, adaptive approach for H estimation,
+significantly enhancing the reliability of wavelet-based methods in noisy
+environments.",http://arxiv.org/pdf/2510.04811v1,,False
+Online automatic code generation for robot swarms: LLMs and self-organizing hierarchy,06/10/2025,"Weixu Zhu, Marco Dorigo, Mary Katherine Heinrich","Our recently introduced self-organizing nervous system (SoNS) provides robot
+swarms with 1) ease of behavior design and 2) global estimation of the swarm
+configuration and its collective environment, facilitating the implementation
+of online automatic code generation for robot swarms. In a demonstration with 6
+real robots and simulation trials with >30 robots, we show that when a
+SoNS-enhanced robot swarm gets stuck, it can automatically solicit and run code
+generated by an external LLM on the fly, completing its mission with an 85%
+success rate.",http://arxiv.org/pdf/2510.04774v1,,False
+LMM-Incentive: Large Multimodal Model-based Incentive Design for User-Generated Content in Web 3.0,06/10/2025,"Jinbo Wen, Jiawen Kang, Linfeng Zhang, Xiaoying Tang, Jianhang Tang, Yang Zhang, Zhaohui Yang, Dusit Niyato","Web 3.0 represents the next generation of the Internet, which is widely
+recognized as a decentralized ecosystem that focuses on value expression and
+data ownership. By leveraging blockchain and artificial intelligence
+technologies, Web 3.0 offers unprecedented opportunities for users to create,
+own, and monetize their content, thereby enabling User-Generated Content (UGC)
+to an entirely new level. However, some self-interested users may exploit the
+limitations of content curation mechanisms and generate low-quality content
+with less effort, obtaining platform rewards under information asymmetry. Such
+behavior can undermine Web 3.0 performance. To this end, we propose
+\textit{LMM-Incentive}, a novel Large Multimodal Model (LMM)-based incentive
+mechanism for UGC in Web 3.0. Specifically, we propose an LMM-based
+contract-theoretic model to motivate users to generate high-quality UGC,
+thereby mitigating the adverse selection problem from information asymmetry. To
+alleviate potential moral hazards after contract selection, we leverage LMM
+agents to evaluate UGC quality, which is the primary component of the contract,
+utilizing prompt engineering techniques to improve the evaluation performance
+of LMM agents. Recognizing that traditional contract design methods cannot
+effectively adapt to the dynamic environment of Web 3.0, we develop an improved
+Mixture of Experts (MoE)-based Proximal Policy Optimization (PPO) algorithm for
+optimal contract design. Simulation results demonstrate the superiority of the
+proposed MoE-based PPO algorithm over representative benchmarks in the context
+of contract design. Finally, we deploy the designed contract within an Ethereum
+smart contract framework, further validating the effectiveness of the proposed
+scheme.",http://arxiv.org/pdf/2510.04765v1,,False
+"Speak, Edit, Repeat: High-Fidelity Voice Editing and Zero-Shot TTS with Cross-Attentive Mamba",06/10/2025,"Baher Mohammad, Magauiya Zhussip, Stamatios Lefkimmiatis","We introduce MAVE (Mamba with Cross-Attention for Voice Editing and
+Synthesis), a novel autoregressive architecture for text-conditioned voice
+editing and high-fidelity text-to-speech (TTS) synthesis, built on a
+cross-attentive Mamba backbone. MAVE achieves state-of-the-art performance in
+speech editing and very competitive results in zero-shot TTS, while not being
+explicitly trained on the latter task, outperforming leading autoregressive and
+diffusion models on diverse, real-world audio. By integrating Mamba for
+efficient audio sequence modeling with cross-attention for precise
+text-acoustic alignment, MAVE enables context-aware voice editing with
+exceptional naturalness and speaker consistency. In pairwise human evaluations
+on a random 40-sample subset of the RealEdit benchmark (400 judgments), 57.2%
+of listeners rated MAVE - edited speech as perceptually equal to the original,
+while 24.8% prefered the original and 18.0% MAVE - demonstrating that in the
+majority of cases edits are indistinguishable from the source. MAVE compares
+favorably with VoiceCraft and FluentSpeech both on pairwise comparisons and
+standalone mean opinion score (MOS) evaluations. For zero-shot TTS, MAVE
+exceeds VoiceCraft in both speaker similarity and naturalness, without
+requiring multiple inference runs or post-processing. Remarkably, these quality
+gains come with a significantly lower memory cost and approximately the same
+latency: MAVE requires ~6x less memory than VoiceCraft during inference on
+utterances from the RealEdit database (mean duration: 6.21s, A100, FP16, batch
+size 1). Our results demonstrate that MAVE establishes a new standard for
+flexible, high-fidelity voice editing and synthesis through the synergistic
+integration of structured state-space modeling and cross-modal attention.",http://arxiv.org/pdf/2510.04738v1,,False
+ViTs: Teaching Machines to See Time Series Anomalies Like Human Experts,06/10/2025,"Zexin Wang, Changhua Pei, Yang Liu, Hengyue Jiang, Quan Zhou, Haotian Si, Hang Cui, Jianhui Li, Gaogang Xie, Jingjing Li, Dan Pei","Web service administrators must ensure the stability of multiple systems by
+promptly detecting anomalies in Key Performance Indicators (KPIs). Achieving
+the goal of ""train once, infer across scenarios"" remains a fundamental
+challenge for time series anomaly detection models. Beyond improving zero-shot
+generalization, such models must also flexibly handle sequences of varying
+lengths during inference, ranging from one hour to one week, without
+retraining. Conventional approaches rely on sliding-window encoding and
+self-supervised learning, which restrict inference to fixed-length inputs.
+Large Language Models (LLMs) have demonstrated remarkable zero-shot
+capabilities across general domains. However, when applied to time series data,
+they face inherent limitations due to context length. To address this issue, we
+propose ViTs, a Vision-Language Model (VLM)-based framework that converts time
+series curves into visual representations. By rescaling time series images,
+temporal dependencies are preserved while maintaining a consistent input size,
+thereby enabling efficient processing of arbitrarily long sequences without
+context constraints. Training VLMs for this purpose introduces unique
+challenges, primarily due to the scarcity of aligned time series image-text
+data. To overcome this, we employ an evolutionary algorithm to automatically
+generate thousands of high-quality image-text pairs and design a three-stage
+training pipeline consisting of: (1) time series knowledge injection, (2)
+anomaly detection enhancement, and (3) anomaly reasoning refinement. Extensive
+experiments demonstrate that ViTs substantially enhance the ability of VLMs to
+understand and detect anomalies in time series data. All datasets and code will
+be publicly released at: https://anonymous.4open.science/r/ViTs-C484/.",http://arxiv.org/pdf/2510.04710v1,,False
+Fairness in Repeated Matching: A Maximin Perspective,06/10/2025,"Eugene Lim, Tzeh Yuan Neoh, Nicholas Teh","We study a sequential decision-making model where a set of items is
+repeatedly matched to the same set of agents over multiple rounds. The
+objective is to determine a sequence of matchings that either maximizes the
+utility of the least advantaged agent at the end of all rounds (optimal) or at
+the end of every individual round (anytime optimal). We investigate the
+computational challenges associated with finding (anytime) optimal outcomes and
+demonstrate that these problems are generally computationally intractable.
+However, we provide approximation algorithms, fixed-parameter tractable
+algorithms, and identify several special cases whereby the problem(s) can be
+solved efficiently. Along the way, we also establish characterizations of
+Pareto-optimal/maximum matchings, which may be of independent interest to works
+in matching theory and house allocation.",http://arxiv.org/pdf/2510.04624v1,,False
+Forecasting-Based Biomedical Time-series Data Synthesis for Open Data and Robust AI,06/10/2025,"Youngjoon Lee, Seongmin Cho, Yehhyun Jo, Jinu Gong, Hyunjoo Jenny Lee, Joonhyuk Kang","The limited data availability due to strict privacy regulations and
+significant resource demands severely constrains biomedical time-series AI
+development, which creates a critical gap between data requirements and
+accessibility. Synthetic data generation presents a promising solution by
+producing artificial datasets that maintain the statistical properties of real
+biomedical time-series data without compromising patient confidentiality. We
+propose a framework for synthetic biomedical time-series data generation based
+on advanced forecasting models that accurately replicates complex
+electrophysiological signals such as EEG and EMG with high fidelity. These
+synthetic datasets preserve essential temporal and spectral properties of real
+data, which enables robust analysis while effectively addressing data scarcity
+and privacy challenges. Our evaluations across multiple subjects demonstrate
+that the generated synthetic data can serve as an effective substitute for real
+data and also significantly boost AI model performance. The approach maintains
+critical biomedical features while provides high scalability for various
+applications and integrates seamlessly into open-source repositories,
+substantially expanding resources for AI-driven biomedical research.",http://arxiv.org/pdf/2510.04622v1,,False
+Code World Models for General Game Playing,06/10/2025,"Wolfgang Lehrach, Daniel Hennes, Miguel Lazaro-Gredilla, Xinghua Lou, Carter Wendelken, Zun Li, Antoine Dedieu, Jordi Grau-Moya, Marc Lanctot, Atil Iscen, John Schultz, Marcus Chiam, Ian Gemp, Piotr Zielinski, Satinder Singh, Kevin P. Murphy","Large Language Models (LLMs) reasoning abilities are increasingly being
+applied to classical board and card games, but the dominant approach --
+involving prompting for direct move generation -- has significant drawbacks. It
+relies on the model's implicit fragile pattern-matching capabilities, leading
+to frequent illegal moves and strategically shallow play. Here we introduce an
+alternative approach: We use the LLM to translate natural language rules and
+game trajectories into a formal, executable world model represented as Python
+code. This generated model -- comprising functions for state transition, legal
+move enumeration, and termination checks -- serves as a verifiable simulation
+engine for high-performance planning algorithms like Monte Carlo tree search
+(MCTS). In addition, we prompt the LLM to generate heuristic value functions
+(to make MCTS more efficient), and inference functions (to estimate hidden
+states in imperfect information games). Our method offers three distinct
+advantages compared to directly using the LLM as a policy: (1) Verifiability:
+The generated CWM serves as a formal specification of the game's rules,
+allowing planners to algorithmically enumerate valid actions and avoid illegal
+moves, contingent on the correctness of the synthesized model; (2) Strategic
+Depth: We combine LLM semantic understanding with the deep search power of
+classical planners; and (3) Generalization: We direct the LLM to focus on the
+meta-task of data-to-code translation, enabling it to adapt to new games more
+easily. We evaluate our agent on 10 different games, of which 4 are novel and
+created for this paper. 5 of the games are fully observed (perfect
+information), and 5 are partially observed (imperfect information). We find
+that our method outperforms or matches Gemini 2.5 Pro in 9 out of the 10
+considered games.",http://arxiv.org/pdf/2510.04542v1,,False
+Quantum generative model on bicycle-sharing system and an application,06/10/2025,"Fumio Nemoto, Nobuyuki Koike, Daichi Sato, Yuuta Kawaai, Masayuki Ohzeki","Recently, bicycle-sharing systems have been implemented in numerous cities,
+becoming integral to daily life. However, a prevalent issue arises when
+intensive commuting demand leads to bicycle shortages in specific areas and at
+particular times. To address this challenge, we employ a novel quantum machine
+learning model that analyzes time series data by fitting quantum time evolution
+to observed sequences. This model enables us to capture actual trends in
+bicycle counts at individual ports and identify correlations between different
+ports. Utilizing the trained model, we simulate the impact of proactively
+adding bicycles to high-demand ports on the overall rental number across the
+system. Given that the core of this method lies in a Monte Carlo simulation, it
+is anticipated to have a wide range of industrial applications.",http://arxiv.org/pdf/2510.04512v1,,False
+Wavelet Predictive Representations for Non-Stationary Reinforcement Learning,06/10/2025,"Min Wang, Xin Li, Ye He, Yao-Hui Li, Hasnaa Bennis, Riashat Islam, Mingzhong Wang","The real world is inherently non-stationary, with ever-changing factors, such
+as weather conditions and traffic flows, making it challenging for agents to
+adapt to varying environmental dynamics. Non-Stationary Reinforcement Learning
+(NSRL) addresses this challenge by training agents to adapt rapidly to
+sequences of distinct Markov Decision Processes (MDPs). However, existing NSRL
+approaches often focus on tasks with regularly evolving patterns, leading to
+limited adaptability in highly dynamic settings. Inspired by the success of
+Wavelet analysis in time series modeling, specifically its ability to capture
+signal trends at multiple scales, we propose WISDOM to leverage wavelet-domain
+predictive task representations to enhance NSRL. WISDOM captures these
+multi-scale features in evolving MDP sequences by transforming task
+representation sequences into the wavelet domain, where wavelet coefficients
+represent both global trends and fine-grained variations of non-stationary
+changes. In addition to the auto-regressive modeling commonly employed in time
+series forecasting, we devise a wavelet temporal difference (TD) update
+operator to enhance tracking and prediction of MDP evolution. We theoretically
+prove the convergence of this operator and demonstrate policy improvement with
+wavelet task representations. Experiments on diverse benchmarks show that
+WISDOM significantly outperforms existing baselines in both sample efficiency
+and asymptotic performance, demonstrating its remarkable adaptability in
+complex environments characterized by non-stationary and stochastically
+evolving tasks.",http://arxiv.org/pdf/2510.04507v1,,False
+Impatient Users Confuse AI Agents: High-fidelity Simulations of Human Traits for Testing Agents,06/10/2025,"Muyu He, Anand Kumar, Tsach Mackey, Meghana Rajeev, James Zou, Nazneen Rajani","Despite rapid progress in building conversational AI agents, robustness is
+still largely untested. Small shifts in user behavior, such as being more
+impatient, incoherent, or skeptical, can cause sharp drops in agent
+performance, revealing how brittle current AI agents are. Today's benchmarks
+fail to capture this fragility: agents may perform well under standard
+evaluations but degrade spectacularly in more realistic and varied settings. We
+address this robustness testing gap by introducing TraitBasis, a lightweight,
+model-agnostic method for systematically stress testing AI agents. TraitBasis
+learns directions in activation space corresponding to steerable user traits
+(e.g., impatience or incoherence), which can be controlled, scaled, composed,
+and applied at inference time without any fine-tuning or extra data. Using
+TraitBasis, we extend $\tau$-Bench to $\tau$-Trait, where user behaviors are
+altered via controlled trait vectors. We observe on average a 2%-30%
+performance degradation on $\tau$-Trait across frontier models, highlighting
+the lack of robustness of current AI agents to variations in user behavior.
+Together, these results highlight both the critical role of robustness testing
+and the promise of TraitBasis as a simple, data-efficient, and compositional
+tool. By powering simulation-driven stress tests and training loops, TraitBasis
+opens the door to building AI agents that remain reliable in the unpredictable
+dynamics of real-world human interactions. We have open-sourced $\tau$-Trai
+across four domains: airline, retail, telecom, and telehealth, so the community
+can systematically QA their agents under realistic, behaviorally diverse
+intents and trait scenarios: https://github.com/collinear-ai/tau-trait.",http://arxiv.org/pdf/2510.04491v1,,False

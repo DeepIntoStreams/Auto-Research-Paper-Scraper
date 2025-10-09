@@ -1,0 +1,485 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Artificial Hippocampus Networks for Efficient Long-Context Modeling,08/10/2025,"Yunhao Fang, Weihao Yu, Shu Zhong, Qinghao Ye, Xuehan Xiong, Lai Wei","Long-sequence modeling faces a fundamental trade-off between the efficiency
+of compressive fixed-size memory in RNN-like models and the fidelity of
+lossless growing memory in attention-based Transformers. Inspired by the
+Multi-Store Model in cognitive science, we introduce a memory framework of
+artificial neural networks. Our method maintains a sliding window of the
+Transformer's KV cache as lossless short-term memory, while a learnable module
+termed Artificial Hippocampus Network (AHN) recurrently compresses
+out-of-window information into a fixed-size compact long-term memory. To
+validate this framework, we instantiate AHNs using modern RNN-like
+architectures, including Mamba2, DeltaNet, and Gated DeltaNet. Extensive
+experiments on long-context benchmarks LV-Eval and InfiniteBench demonstrate
+that AHN-augmented models consistently outperform sliding window baselines and
+achieve performance comparable or even superior to full-attention models, while
+substantially reducing computational and memory requirements. For instance,
+augmenting the Qwen2.5-3B-Instruct with AHNs reduces inference FLOPs by 40.5%
+and memory cache by 74.0%, while improving its average score on LV-Eval (128k
+sequence length) from 4.41 to 5.88. Code is available at:
+https://github.com/ByteDance-Seed/AHN.",http://arxiv.org/pdf/2510.07318v1,,False
+GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations,08/10/2025,"Fabian Paischer, Gianluca Galletti, William Hornsby, Paul Setinek, Lorenzo Zanisi, Naomi Carey, Stanislas Pamela, Johannes Brandstetter","Nuclear fusion plays a pivotal role in the quest for reliable and sustainable
+energy production. A major roadblock to viable fusion power is understanding
+plasma turbulence, which significantly impairs plasma confinement, and is vital
+for next-generation reactor design. Plasma turbulence is governed by the
+nonlinear gyrokinetic equation, which evolves a 5D distribution function over
+time. Due to its high computational cost, reduced-order models are often
+employed in practice to approximate turbulent transport of energy. However,
+they omit nonlinear effects unique to the full 5D dynamics. To tackle this, we
+introduce GyroSwin, the first scalable 5D neural surrogate that can model 5D
+nonlinear gyrokinetic simulations, thereby capturing the physical phenomena
+neglected by reduced models, while providing accurate estimates of turbulent
+heat transport.GyroSwin (i) extends hierarchical Vision Transformers to 5D,
+(ii) introduces cross-attention and integration modules for latent
+3D$\leftrightarrow$5D interactions between electrostatic potential fields and
+the distribution function, and (iii) performs channelwise mode separation
+inspired by nonlinear physics. We demonstrate that GyroSwin outperforms widely
+used reduced numerics on heat flux prediction, captures the turbulent energy
+cascade, and reduces the cost of fully resolved nonlinear gyrokinetics by three
+orders of magnitude while remaining physically verifiable. GyroSwin shows
+promising scaling laws, tested up to one billion parameters, paving the way for
+scalable neural surrogates for gyrokinetic simulations of plasma turbulence.",http://arxiv.org/pdf/2510.07314v1,,False
+Dynamic Regret Bounds for Online Omniprediction with Long Term Constraints,08/10/2025,"Yahav Bechavod, Jiuyao Lu, Aaron Roth","We present an algorithm guaranteeing dynamic regret bounds for online
+omniprediction with long term constraints. The goal in this recently introduced
+problem is for a learner to generate a sequence of predictions which are
+broadcast to a collection of downstream decision makers. Each decision maker
+has their own utility function, as well as a vector of constraint functions,
+each mapping their actions and an adversarially selected state to reward or
+constraint violation terms. The downstream decision makers select actions ""as
+if"" the state predictions are correct, and the goal of the learner is to
+produce predictions such that all downstream decision makers choose actions
+that give them worst-case utility guarantees while minimizing worst-case
+constraint violation. Within this framework, we give the first algorithm that
+obtains simultaneous \emph{dynamic regret} guarantees for all of the agents --
+where regret for each agent is measured against a potentially changing sequence
+of actions across rounds of interaction, while also ensuring vanishing
+constraint violation for each agent. Our results do not require the agents
+themselves to maintain any state -- they only solve one-round constrained
+optimization problems defined by the prediction made at that round.",http://arxiv.org/pdf/2510.07266v1,,False
+TIGeR: Tool-Integrated Geometric Reasoning in Vision-Language Models for Robotics,08/10/2025,"Yi Han, Cheng Chi, Enshen Zhou, Shanyu Rong, Jingkun An, Pengwei Wang, Zhongyuan Wang, Lu Sheng, Shanghang Zhang","Vision-Language Models (VLMs) have shown remarkable capabilities in spatial
+reasoning, yet they remain fundamentally limited to qualitative precision and
+lack the computational precision required for real-world robotics. Current
+approaches fail to leverage metric cues from depth sensors and camera
+calibration, instead reducing geometric problems to pattern recognition tasks
+that cannot deliver the centimeter-level accuracy essential for robotic
+manipulation. We present TIGeR (Tool-Integrated Geometric Reasoning), a novel
+framework that transforms VLMs from perceptual estimators to geometric
+computers by enabling them to generate and execute precise geometric
+computations through external tools. Rather than attempting to internalize
+complex geometric operations within neural networks, TIGeR empowers models to
+recognize geometric reasoning requirements, synthesize appropriate
+computational code, and invoke specialized libraries for exact calculations. To
+support this paradigm, we introduce TIGeR-300K, a comprehensive
+tool-invocation-oriented dataset covering point transformations, pose
+estimation, trajectory generation, and spatial compatibility verification,
+complete with tool invocation sequences and intermediate computations. Through
+a two-stage training pipeline combining supervised fine-tuning (SFT) and
+reinforcement fine-tuning (RFT) with our proposed hierarchical reward design,
+TIGeR achieves SOTA performance on geometric reasoning benchmarks while
+demonstrating centimeter-level precision in real-world robotic manipulation
+tasks.",http://arxiv.org/pdf/2510.07181v1,,False
+NewtonBench: Benchmarking Generalizable Scientific Law Discovery in LLM Agents,08/10/2025,"Tianshi Zheng, Kelvin Kiu-Wai Tam, Newt Hue-Nam K. Nguyen, Baixuan Xu, Zhaowei Wang, Jiayang Cheng, Hong Ting Tsang, Weiqi Wang, Jiaxin Bai, Tianqing Fang, Yangqiu Song, Ginny Y. Wong, Simon See","Large language models are emerging as powerful tools for scientific law
+discovery, a foundational challenge in AI-driven science. However, existing
+benchmarks for this task suffer from a fundamental methodological trilemma,
+forcing a trade-off between scientific relevance, scalability, and resistance
+to memorization. Furthermore, they oversimplify discovery as static function
+fitting, failing to capture the authentic scientific process of uncovering
+embedded laws through the interactive exploration of complex model systems. To
+address these critical gaps, we introduce NewtonBench, a benchmark comprising
+324 scientific law discovery tasks across 12 physics domains. Our design
+mitigates the evaluation trilemma by using metaphysical shifts - systematic
+alterations of canonical laws - to generate a vast suite of problems that are
+scalable, scientifically relevant, and memorization-resistant. Moreover, we
+elevate the evaluation from static function fitting to interactive model
+discovery, requiring agents to experimentally probe simulated complex systems
+to uncover hidden principles. Our extensive experiment reveals a clear but
+fragile capability for discovery in frontier LLMs: this ability degrades
+precipitously with increasing system complexity and exhibits extreme
+sensitivity to observational noise. Notably, we uncover a paradoxical effect of
+tool assistance: providing a code interpreter can hinder more capable models by
+inducing a premature shift from exploration to exploitation, causing them to
+satisfice on suboptimal solutions. These results demonstrate that robust,
+generalizable discovery in complex, interactive environments remains the core
+challenge. By providing a scalable, robust, and scientifically authentic
+testbed, NewtonBench offers a crucial tool for measuring true progress and
+guiding the development of next-generation AI agents capable of genuine
+scientific discovery.",http://arxiv.org/pdf/2510.07172v1,,False
+A Digital Twin Framework for Metamorphic Testing of Autonomous Driving Systems Using Generative Model,08/10/2025,"Tony Zhang, Burak Kantarci, Umair Siddique","Ensuring the safety of self-driving cars remains a major challenge due to the
+complexity and unpredictability of real-world driving environments. Traditional
+testing methods face significant limitations, such as the oracle problem, which
+makes it difficult to determine whether a system's behavior is correct, and the
+inability to cover the full range of scenarios an autonomous vehicle may
+encounter. In this paper, we introduce a digital twin-driven metamorphic
+testing framework that addresses these challenges by creating a virtual replica
+of the self-driving system and its operating environment. By combining digital
+twin technology with AI-based image generative models such as Stable Diffusion,
+our approach enables the systematic generation of realistic and diverse driving
+scenes. This includes variations in weather, road topology, and environmental
+features, all while maintaining the core semantics of the original scenario.
+The digital twin provides a synchronized simulation environment where changes
+can be tested in a controlled and repeatable manner. Within this environment,
+we define three metamorphic relations inspired by real-world traffic rules and
+vehicle behavior. We validate our framework in the Udacity self-driving
+simulator and demonstrate that it significantly enhances test coverage and
+effectiveness. Our method achieves the highest true positive rate (0.719), F1
+score (0.689), and precision (0.662) compared to baseline approaches. This
+paper highlights the value of integrating digital twins with AI-powered
+scenario generation to create a scalable, automated, and high-fidelity testing
+solution for autonomous vehicle safety.",http://arxiv.org/pdf/2510.07133v1,,False
+"jmstate, a Flexible Python Package for Multi-State Joint Modeling",08/10/2025,"Félix Laplante, Christophe Ambroise, Estelle Kuhn, Sarah Lemler","Classical joint modeling approaches often rely on competing risks or
+recurrent event formulations to account for complex real-world processes
+involving evolving longitudinal markers and discrete event occurrences.
+However, these frameworks typically capture only limited aspects of the
+underlying event dynamics.
+  Multi-state joint models offer a more flexible alternative by representing
+full event histories through a network of possible transitions, including
+recurrent cycles and terminal absorptions, all potentially influenced by
+longitudinal covariates.
+  In this paper, we propose a general framework that unifies longitudinal
+biomarker modeling with multi-state event processes defined on arbitrary
+directed graphs. Our approach accommodates both Markovian and semi-Markovian
+transition structures, and extends classical joint models by coupling nonlinear
+mixed-effects longitudinal submodels with multi-state survival processes via
+shared latent structures.
+  We derive the full likelihood and develop scalable inference procedures based
+on stochastic gradient descent. Furthermore, we introduce a dynamic prediction
+framework, enabling individualized risk assessments along complex
+state-transition trajectories.
+  To facilitate reproducibility and dissemination, we provide an open-source
+Python library \texttt{jmstate} implementing the proposed methodology,
+available on \href{https://pypi.org/project/jmstate/}{PyPI}. Simulation
+experiments and a biomedical case study demonstrate the flexibility and
+performance of the framework in representing complex longitudinal and
+multi-state event dynamics. The full Python notebooks used to reproduce the
+experiments as well as the source code of this paper are available on
+\href{https://gitlab.com/felixlaplante0/jmstate-paper/}{GitLab}.",http://arxiv.org/pdf/2510.07128v1,,False
+HTMformer: Hybrid Time and Multivariate Transformer for Time Series Forecasting,08/10/2025,"Tan Wang, Yun Wei Dong, Tao Zhang, Qi Wang","Transformer-based methods have achieved impressive results in time series
+forecasting. However, existing Transformers still exhibit limitations in
+sequence modeling as they tend to overemphasize temporal dependencies. This
+incurs additional computational overhead without yielding corresponding
+performance gains. We find that the performance of Transformers is highly
+dependent on the embedding method used to learn effective representations. To
+address this issue, we extract multivariate features to augment the effective
+information captured in the embedding layer, yielding multidimensional
+embeddings that convey richer and more meaningful sequence representations.
+These representations enable Transformer-based forecasters to better understand
+the series. Specifically, we introduce Hybrid Temporal and Multivariate
+Embeddings (HTME). The HTME extractor integrates a lightweight temporal feature
+extraction module with a carefully designed multivariate feature extraction
+module to provide complementary features, thereby achieving a balance between
+model complexity and performance. By combining HTME with the Transformer
+architecture, we present HTMformer, leveraging the enhanced feature extraction
+capability of the HTME extractor to build a lightweight forecaster. Experiments
+conducted on eight real-world datasets demonstrate that our approach
+outperforms existing baselines in both accuracy and efficiency.",http://arxiv.org/pdf/2510.07084v1,,False
+Native Hybrid Attention for Efficient Sequence Modeling,08/10/2025,"Jusen Du, Jiaxi Hu, Tao Zhang, Weigao Sun, Yu Cheng","Transformers excel at sequence modeling but face quadratic complexity, while
+linear attention offers improved efficiency but often compromises recall
+accuracy over long contexts. In this work, we introduce Native Hybrid Attention
+(NHA), a novel hybrid architecture of linear and full attention that integrates
+both intra \& inter-layer hybridization into a unified layer design. NHA
+maintains long-term context in key-value slots updated by a linear RNN, and
+augments them with short-term tokens from a sliding window. A single
+\texttt{softmax attention} operation is then applied over all keys and values,
+enabling per-token and per-head context-dependent weighting without requiring
+additional fusion parameters. The inter-layer behavior is controlled through a
+single hyperparameter, the sliding window size, which allows smooth adjustment
+between purely linear and full attention while keeping all layers structurally
+uniform. Experimental results show that NHA surpasses Transformers and other
+hybrid baselines on recall-intensive and commonsense reasoning tasks.
+Furthermore, pretrained LLMs can be structurally hybridized with NHA, achieving
+competitive accuracy while delivering significant efficiency gains. Code is
+available at https://github.com/JusenD/NHA.",http://arxiv.org/pdf/2510.07019v1,,False
+VelLMes: A high-interaction AI-based deception framework,08/10/2025,"Muris Sladić, Veronica Valeros, Carlos Catania, Sebastian Garcia","There are very few SotA deception systems based on Large Language Models. The
+existing ones are limited only to simulating one type of service, mainly SSH
+shells. These systems - but also the deception technologies not based on LLMs -
+lack an extensive evaluation that includes human attackers. Generative AI has
+recently become a valuable asset for cybersecurity researchers and
+practitioners, and the field of cyber-deception is no exception. Researchers
+have demonstrated how LLMs can be leveraged to create realistic-looking
+honeytokens, fake users, and even simulated systems that can be used as
+honeypots. This paper presents an AI-based deception framework called VelLMes,
+which can simulate multiple protocols and services such as SSH Linux shell,
+MySQL, POP3, and HTTP. All of these can be deployed and used as honeypots, thus
+VelLMes offers a variety of choices for deception design based on the users'
+needs. VelLMes is designed to be attacked by humans, so interactivity and
+realism are key for its performance. We evaluate the generative capabilities
+and the deception capabilities. Generative capabilities were evaluated using
+unit tests for LLMs. The results of the unit tests show that, with careful
+prompting, LLMs can produce realistic-looking responses, with some LLMs having
+a 100% passing rate. In the case of the SSH Linux shell, we evaluated deception
+capabilities with 89 human attackers. The results showed that about 30% of the
+attackers thought that they were interacting with a real system when they were
+assigned an LLM-based honeypot. Lastly, we deployed 10 instances of the SSH
+Linux shell honeypot on the Internet to capture real-life attacks. Analysis of
+these attacks showed us that LLM honeypots simulating Linux shells can perform
+well against unstructured and unexpected attacks on the Internet, responding
+correctly to most of the issued commands.",http://arxiv.org/pdf/2510.06975v1,10.1109/EuroSPW67616.2025.00082,False
+High-Rate Mixout: Revisiting Mixout for Robust Domain Generalization,08/10/2025,"Masih Aminbeidokhti, Heitor Rapela Medeiros, Eric Granger, Marco Pedersoli","Ensembling fine-tuned models initialized from powerful pre-trained weights is
+a common strategy to improve robustness under distribution shifts, but it comes
+with substantial computational costs due to the need to train and store
+multiple models. Dropout offers a lightweight alternative by simulating
+ensembles through random neuron deactivation; however, when applied to
+pre-trained models, it tends to over-regularize and disrupt critical
+representations necessary for generalization. In this work, we investigate
+Mixout, a stochastic regularization technique that provides an alternative to
+Dropout for domain generalization. Rather than deactivating neurons, Mixout
+mitigates overfitting by probabilistically swapping a subset of fine-tuned
+weights with their pre-trained counterparts during training, thereby
+maintaining a balance between adaptation and retention of prior knowledge. Our
+study reveals that achieving strong performance with Mixout on domain
+generalization benchmarks requires a notably high masking probability of 0.9
+for ViTs and 0.8 for ResNets. While this may seem like a simple adjustment, it
+yields two key advantages for domain generalization: (1) higher masking rates
+more strongly penalize deviations from the pre-trained parameters, promoting
+better generalization to unseen domains; and (2) high-rate masking
+substantially reduces computational overhead, cutting gradient computation by
+up to 45% and gradient memory usage by up to 90%. Experiments across five
+domain generalization benchmarks, PACS, VLCS, OfficeHome, TerraIncognita, and
+DomainNet, using ResNet and ViT architectures, show that our approach,
+High-rate Mixout, achieves out-of-domain accuracy comparable to ensemble-based
+methods while significantly reducing training costs.",http://arxiv.org/pdf/2510.06955v1,,False
+Bayesian Nonparametric Dynamical Clustering of Time Series,08/10/2025,"Adrián Pérez-Herrero, Paulo Félix, Jesús Presedo, Carl Henrik Ek","We present a method that models the evolution of an unbounded number of time
+series clusters by switching among an unknown number of regimes with linear
+dynamics. We develop a Bayesian non-parametric approach using a hierarchical
+Dirichlet process as a prior on the parameters of a Switching Linear Dynamical
+System and a Gaussian process prior to model the statistical variations in
+amplitude and temporal alignment within each cluster. By modeling the evolution
+of time series patterns, the method avoids unnecessary proliferation of
+clusters in a principled manner. We perform inference by formulating a
+variational lower bound for off-line and on-line scenarios, enabling efficient
+learning through optimization. We illustrate the versatility and effectiveness
+of the approach through several case studies of electrocardiogram analysis
+using publicly available databases.",http://arxiv.org/pdf/2510.06919v1,,False
+DecompGAIL: Learning Realistic Traffic Behaviors with Decomposed Multi-Agent Generative Adversarial Imitation Learning,08/10/2025,"Ke Guo, Haochen Liu, Xiaojun Wu, Chen Lv","Realistic traffic simulation is critical for the development of autonomous
+driving systems and urban mobility planning, yet existing imitation learning
+approaches often fail to model realistic traffic behaviors. Behavior cloning
+suffers from covariate shift, while Generative Adversarial Imitation Learning
+(GAIL) is notoriously unstable in multi-agent settings. We identify a key
+source of this instability: irrelevant interaction misguidance, where a
+discriminator penalizes an ego vehicle's realistic behavior due to unrealistic
+interactions among its neighbors. To address this, we propose Decomposed
+Multi-agent GAIL (DecompGAIL), which explicitly decomposes realism into ego-map
+and ego-neighbor components, filtering out misleading neighbor: neighbor and
+neighbor: map interactions. We further introduce a social PPO objective that
+augments ego rewards with distance-weighted neighborhood rewards, encouraging
+overall realism across agents. Integrated into a lightweight SMART-based
+backbone, DecompGAIL achieves state-of-the-art performance on the WOMD Sim
+Agents 2025 benchmark.",http://arxiv.org/pdf/2510.06913v1,,False
+Explaining raw data complexity to improve satellite onboard processing,08/10/2025,"Adrien Dorise, Marjorie Bellizzi, Adrien Girard, Benjamin Francesconi, Stéphane May","With increasing processing power, deploying AI models for remote sensing
+directly onboard satellites is becoming feasible. However, new constraints
+arise, mainly when using raw, unprocessed sensor data instead of preprocessed
+ground-based products. While current solutions primarily rely on preprocessed
+sensor images, few approaches directly leverage raw data. This study
+investigates the effects of utilising raw data on deep learning models for
+object detection and classification tasks. We introduce a simulation workflow
+to generate raw-like products from high-resolution L1 imagery, enabling
+systemic evaluation. Two object detection models (YOLOv11s and YOLOX-S) are
+trained on both raw and L1 datasets, and their performance is compared using
+standard detection metrics and explainability tools. Results indicate that
+while both models perform similarly at low to medium confidence thresholds, the
+model trained on raw data struggles with object boundary identification at high
+confidence levels. It suggests that adapting AI architectures with improved
+contouring methods can enhance object detection on raw images, improving
+onboard AI for remote sensing.",http://arxiv.org/pdf/2510.06858v1,,False
+Extreme Amodal Face Detection,08/10/2025,"Changlin Song, Yunzhong Hou, Michael Randall Barnes, Rahul Shome, Dylan Campbell","Extreme amodal detection is the task of inferring the 2D location of objects
+that are not fully visible in the input image but are visible within an
+expanded field-of-view. This differs from amodal detection, where the object is
+partially visible within the input image, but is occluded. In this paper, we
+consider the sub-problem of face detection, since this class provides
+motivating applications involving safety and privacy, but do not tailor our
+method specifically to this class. Existing approaches rely on image sequences
+so that missing detections may be interpolated from surrounding frames or make
+use of generative models to sample possible completions. In contrast, we
+consider the single-image task and propose a more efficient, sample-free
+approach that makes use of the contextual cues from the image to infer the
+presence of unseen faces. We design a heatmap-based extreme amodal object
+detector that addresses the problem of efficiently predicting a lot (the
+out-of-frame region) from a little (the image) with a selective coarse-to-fine
+decoder. Our method establishes strong results for this new task, even
+outperforming less efficient generative approaches.",http://arxiv.org/pdf/2510.06791v1,,False
+Incorporating Expert Knowledge into Bayesian Causal Discovery of Mixtures of Directed Acyclic Graphs,08/10/2025,"Zachris Björkman, Jorge Loría, Sophie Wharrie, Samuel Kaski","Bayesian causal discovery benefits from prior information elicited from
+domain experts, and in heterogeneous domains any prior knowledge would be badly
+needed. However, so far prior elicitation approaches have assumed a single
+causal graph and hence are not suited to heterogeneous domains. We propose a
+causal elicitation strategy for heterogeneous settings, based on Bayesian
+experimental design (BED) principles, and a variational mixture structure
+learning (VaMSL) method -- extending the earlier differentiable Bayesian
+structure learning (DiBS) method -- to iteratively infer mixtures of causal
+Bayesian networks (CBNs). We construct an informative graph prior incorporating
+elicited expert feedback in the inference of mixtures of CBNs. Our proposed
+method successfully produces a set of alternative causal models (mixture
+components or clusters), and achieves an improved structure learning
+performance on heterogeneous synthetic data when informed by a simulated
+expert. Finally, we demonstrate that our approach is capable of capturing
+complex distributions in a breast cancer database.",http://arxiv.org/pdf/2510.06735v1,,False
+A Diffusion Model for Regular Time Series Generation from Irregular Data with Completion and Masking,08/10/2025,"Gal Fadlon, Idan Arbiv, Nimrod Berman, Omri Azencot","Generating realistic time series data is critical for applications in
+healthcare, finance, and science. However, irregular sampling and missing
+values present significant challenges. While prior methods address these
+irregularities, they often yield suboptimal results and incur high
+computational costs. Recent advances in regular time series generation, such as
+the diffusion-based ImagenTime model, demonstrate strong, fast, and scalable
+generative capabilities by transforming time series into image representations,
+making them a promising solution. However, extending ImagenTime to irregular
+sequences using simple masking introduces ""unnatural"" neighborhoods, where
+missing values replaced by zeros disrupt the learning process. To overcome
+this, we propose a novel two-step framework: first, a Time Series Transformer
+completes irregular sequences, creating natural neighborhoods; second, a
+vision-based diffusion model with masking minimizes dependence on the completed
+values. This approach leverages the strengths of both completion and masking,
+enabling robust and efficient generation of realistic time series. Our method
+achieves state-of-the-art performance, achieving a relative improvement in
+discriminative score by $70\%$ and in computational cost by $85\%$. Code is at
+https://github.com/azencot-group/ImagenI2R.",http://arxiv.org/pdf/2510.06699v1,,False
+XRPO: Pushing the limits of GRPO with Targeted Exploration and Exploitation,08/10/2025,"Udbhav Bamba, Minghao Fang, Yifan Yu, Haizhong Zheng, Fan Lai","Reinforcement learning algorithms such as GRPO have driven recent advances in
+large language model (LLM) reasoning. While scaling the number of rollouts
+stabilizes training, existing approaches suffer from limited exploration on
+challenging prompts and leave informative feedback signals underexploited, due
+to context-independent rollout allocation across prompts (e.g., generating 16
+rollouts per prompt) and relying heavily on sparse rewards. This paper presents
+XRPO(eXplore - eXploit GRPO), a unified framework that recasts policy
+optimization through the principled lens of rollout exploration-exploitation.
+To enhance exploration, XRPO introduces a mathematically grounded rollout
+allocator that adaptively prioritizes prompts with higher potential for
+uncertainty reduction. It further addresses stagnation on zero-reward prompts
+through an in-context seeding strategy that injects curated exemplars, steering
+the model into more difficult reasoning trajectories. To strengthen
+exploitation, XRPO develops a group-relative, novelty-aware advantage
+sharpening mechanism that leverages sequence likelihoods to amplify
+low-probability yet correct responses, thereby extending the policy's reach
+beyond sparse rewards. Experiments across diverse math and coding benchmarks on
+both reasoning and non-reasoning models demonstrate that XRPO outperforms
+existing advances (e.g., GRPO and GSPO) up to 4% pass@1 and 6% cons@32, while
+accelerating training convergence by up to 2.7X.",http://arxiv.org/pdf/2510.06672v1,,False
+The Effect of Attention Head Count on Transformer Approximation,08/10/2025,"Penghao Yu, Haotian Jiang, Zeyu Bao, Ruoxi Yu, Qianxiao Li","Transformer has become the dominant architecture for sequence modeling, yet a
+detailed understanding of how its structural parameters influence expressive
+power remains limited. In this work, we study the approximation properties of
+transformers, with particular emphasis on the role of the number of attention
+heads. Our analysis begins with the introduction of a generalized $D$-retrieval
+task, which we prove to be dense in the space of continuous functions, thereby
+providing the basis for our theoretical framework. We then establish both upper
+and lower bounds on the parameter complexity required for
+$\epsilon$-approximation. Specifically, we show that transformers with
+sufficiently many heads admit efficient approximation, whereas with too few
+heads, the number of parameters must scale at least as $O(1/\epsilon^{cT})$,
+for some constant $c$ and sequence length $T$. To the best of our knowledge,
+this constitutes the first rigorous lower bound of this type in a nonlinear and
+practically relevant setting. We further examine the single-head case and
+demonstrate that an embedding dimension of order $O(T)$ allows complete
+memorization of the input, where approximation is entirely achieved by the
+feed-forward block. Finally, we validate our theoretical findings with
+experiments on both synthetic data and real-world tasks, illustrating the
+practical relevance of our results.",http://arxiv.org/pdf/2510.06662v1,,False
+Rethinking Nonlinearity: Trainable Gaussian Mixture Modules for Modern Neural Architectures,08/10/2025,"Weiguo Lu, Gangnan Yuan, Hong-kun Zhang, Shangyang Li","Neural networks in general, from MLPs and CNNs to attention-based
+Transformers, are constructed from layers of linear combinations followed by
+nonlinear operations such as ReLU, Sigmoid, or Softmax. Despite their strength,
+these conventional designs are often limited in introducing non-linearity by
+the choice of activation functions. In this work, we introduce Gaussian
+Mixture-Inspired Nonlinear Modules (GMNM), a new class of differentiable
+modules that draw on the universal density approximation Gaussian mixture
+models (GMMs) and distance properties (metric space) of Gaussian kernal. By
+relaxing probabilistic constraints and adopting a flexible parameterization of
+Gaussian projections, GMNM can be seamlessly integrated into diverse neural
+architectures and trained end-to-end with gradient-based methods. Our
+experiments demonstrate that incorporating GMNM into architectures such as
+MLPs, CNNs, attention mechanisms, and LSTMs consistently improves performance
+over standard baselines. These results highlight GMNM's potential as a powerful
+and flexible module for enhancing efficiency and accuracy across a wide range
+of machine learning applications.",http://arxiv.org/pdf/2510.06660v1,,False
+Three Forms of Stochastic Injection for Improved Distribution-to-Distribution Generative Modeling,08/10/2025,"Shiye Su, Yuhui Zhang, Linqi Zhou, Rajesh Ranganath, Serena Yeung-Levy","Modeling transformations between arbitrary data distributions is a
+fundamental scientific challenge, arising in applications like drug discovery
+and evolutionary simulation. While flow matching offers a natural framework for
+this task, its use has thus far primarily focused on the noise-to-data setting,
+while its application in the general distribution-to-distribution setting is
+underexplored. We find that in the latter case, where the source is also a data
+distribution to be learned from limited samples, standard flow matching fails
+due to sparse supervision. To address this, we propose a simple and
+computationally efficient method that injects stochasticity into the training
+process by perturbing source samples and flow interpolants. On five diverse
+imaging tasks spanning biology, radiology, and astronomy, our method
+significantly improves generation quality, outperforming existing baselines by
+an average of 9 FID points. Our approach also reduces the transport cost
+between input and generated samples to better highlight the true effect of the
+transformation, making flow matching a more practical tool for simulating the
+diverse distribution transformations that arise in science.",http://arxiv.org/pdf/2510.06634v1,,False
+FEAorta: A Fully Automated Framework for Finite Element Analysis of the Aorta From 3D CT Images,08/10/2025,"Jiasong Chen, Linchen Qian, Ruonan Gong, Christina Sun, Tongran Qin, Thuy Pham, Caitlin Martin, Mohammad Zafar, John Elefteriades, Wei Sun, Liang Liang","Aortic aneurysm disease ranks consistently in the top 20 causes of death in
+the U.S. population. Thoracic aortic aneurysm is manifested as an abnormal
+bulging of thoracic aortic wall and it is a leading cause of death in adults.
+From the perspective of biomechanics, rupture occurs when the stress acting on
+the aortic wall exceeds the wall strength. Wall stress distribution can be
+obtained by computational biomechanical analyses, especially structural Finite
+Element Analysis. For risk assessment, probabilistic rupture risk of TAA can be
+calculated by comparing stress with material strength using a material failure
+model. Although these engineering tools are currently available for TAA rupture
+risk assessment on patient specific level, clinical adoption has been limited
+due to two major barriers: labor intensive 3D reconstruction current patient
+specific anatomical modeling still relies on manual segmentation, making it
+time consuming and difficult to scale to a large patient population, and
+computational burden traditional FEA simulations are resource intensive and
+incompatible with time sensitive clinical workflows. The second barrier was
+successfully overcome by our team through the development of the PyTorch FEA
+library and the FEA DNN integration framework. By incorporating the FEA
+functionalities within PyTorch FEA and applying the principle of static
+determinacy, we reduced the FEA based stress computation time to approximately
+three minutes per case. Moreover, by integrating DNN and FEA through the
+PyTorch FEA library, our approach further decreases the computation time to
+only a few seconds per case. This work focuses on overcoming the first barrier
+through the development of an end to end deep neural network capable of
+generating patient specific finite element meshes of the aorta directly from 3D
+CT images.",http://arxiv.org/pdf/2510.06621v1,,False
+Reading Between the Lines: Towards Reliable Black-box LLM Fingerprinting via Zeroth-order Gradient Estimation,08/10/2025,"Shuo Shao, Yiming Li, Hongwei Yao, Yifei Chen, Yuchen Yang, Zhan Qin","The substantial investment required to develop Large Language Models (LLMs)
+makes them valuable intellectual property, raising significant concerns about
+copyright protection. LLM fingerprinting has emerged as a key technique to
+address this, which aims to verify a model's origin by extracting an intrinsic,
+unique signature (a ""fingerprint"") and comparing it to that of a source model
+to identify illicit copies. However, existing black-box fingerprinting methods
+often fail to generate distinctive LLM fingerprints. This ineffectiveness
+arises because black-box methods typically rely on model outputs, which lose
+critical information about the model's unique parameters due to the usage of
+non-linear functions. To address this, we first leverage Fisher Information
+Theory to formally demonstrate that the gradient of the model's input is a more
+informative feature for fingerprinting than the output. Based on this insight,
+we propose ZeroPrint, a novel method that approximates these information-rich
+gradients in a black-box setting using zeroth-order estimation. ZeroPrint
+overcomes the challenge of applying this to discrete text by simulating input
+perturbations via semantic-preserving word substitutions. This operation allows
+ZeroPrint to estimate the model's Jacobian matrix as a unique fingerprint.
+Experiments on the standard benchmark show ZeroPrint achieves a
+state-of-the-art effectiveness and robustness, significantly outperforming
+existing black-box methods.",http://arxiv.org/pdf/2510.06605v1,,False
+SDQM: Synthetic Data Quality Metric for Object Detection Dataset Evaluation,08/10/2025,"Ayush Zenith, Arnold Zumbrun, Neel Raut, Jing Lin","The performance of machine learning models depends heavily on training data.
+The scarcity of large-scale, well-annotated datasets poses significant
+challenges in creating robust models. To address this, synthetic data generated
+through simulations and generative models has emerged as a promising solution,
+enhancing dataset diversity and improving the performance, reliability, and
+resilience of models. However, evaluating the quality of this generated data
+requires an effective metric. This paper introduces the Synthetic Dataset
+Quality Metric (SDQM) to assess data quality for object detection tasks without
+requiring model training to converge. This metric enables more efficient
+generation and selection of synthetic datasets, addressing a key challenge in
+resource-constrained object detection tasks. In our experiments, SDQM
+demonstrated a strong correlation with the mean Average Precision (mAP) scores
+of YOLOv11, a leading object detection model, while previous metrics only
+exhibited moderate or weak correlations. Additionally, it provides actionable
+insights for improving dataset quality, minimizing the need for costly
+iterative training. This scalable and efficient metric sets a new standard for
+evaluating synthetic data. The code for SDQM is available at
+https://github.com/ayushzenith/SDQM",http://arxiv.org/pdf/2510.06596v1,,False
+Cluster Paths: Navigating Interpretability in Neural Networks,08/10/2025,"Nicholas M. Kroeger, Vincent Bindschaedler","While modern deep neural networks achieve impressive performance in vision
+tasks, they remain opaque in their decision processes, risking unwarranted
+trust, undetected biases and unexpected failures. We propose cluster paths, a
+post-hoc interpretability method that clusters activations at selected layers
+and represents each input as its sequence of cluster IDs. To assess these
+cluster paths, we introduce four metrics: path complexity (cognitive load),
+weighted-path purity (class alignment), decision-alignment faithfulness
+(predictive fidelity), and path agreement (stability under perturbations). In a
+spurious-cue CIFAR-10 experiment, cluster paths identify color-based shortcuts
+and collapse when the cue is removed. On a five-class CelebA hair-color task,
+they achieve 90% faithfulness and maintain 96% agreement under Gaussian noise
+without sacrificing accuracy. Scaling to a Vision Transformer pretrained on
+ImageNet, we extend cluster paths to concept paths derived from prompting a
+large language model on minimal path divergences. Finally, we show that cluster
+paths can serve as an effective out-of-distribution (OOD) detector, reliably
+flagging anomalous samples before the model generates over-confident
+predictions. Cluster paths uncover visual concepts, such as color palettes,
+textures, or object contexts, at multiple network depths, demonstrating that
+cluster paths scale to large vision models while generating concise and
+human-readable explanations.",http://arxiv.org/pdf/2510.06541v1,,False

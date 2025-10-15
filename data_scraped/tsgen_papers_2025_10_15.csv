@@ -1,0 +1,444 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+MVP4D: Multi-View Portrait Video Diffusion for Animatable 4D Avatars,14/10/2025,"Felix Taubner, Ruihang Zhang, Mathieu Tuli, Sherwin Bahmani, David B. Lindell","Digital human avatars aim to simulate the dynamic appearance of humans in
+virtual environments, enabling immersive experiences across gaming, film,
+virtual reality, and more. However, the conventional process for creating and
+animating photorealistic human avatars is expensive and time-consuming,
+requiring large camera capture rigs and significant manual effort from
+professional 3D artists. With the advent of capable image and video generation
+models, recent methods enable automatic rendering of realistic animated avatars
+from a single casually captured reference image of a target subject. While
+these techniques significantly lower barriers to avatar creation and offer
+compelling realism, they lack constraints provided by multi-view information or
+an explicit 3D representation. So, image quality and realism degrade when
+rendered from viewpoints that deviate strongly from the reference image. Here,
+we build a video model that generates animatable multi-view videos of digital
+humans based on a single reference image and target expressions. Our model,
+MVP4D, is based on a state-of-the-art pre-trained video diffusion model and
+generates hundreds of frames simultaneously from viewpoints varying by up to
+360 degrees around a target subject. We show how to distill the outputs of this
+model into a 4D avatar that can be rendered in real-time. Our approach
+significantly improves the realism, temporal consistency, and 3D consistency of
+generated avatars compared to previous methods.",http://arxiv.org/pdf/2510.12785v1,,False
+Dr.LLM: Dynamic Layer Routing in LLMs,14/10/2025,"Ahmed Heakl, Martin Gubri, Salman Khan, Sangdoo Yun, Seong Joon Oh","Large Language Models (LLMs) process every token through all layers of a
+transformer stack, causing wasted computation on simple queries and
+insufficient flexibility for harder ones that need deeper reasoning.
+Adaptive-depth methods can improve efficiency, but prior approaches rely on
+costly inference-time search, architectural changes, or large-scale retraining,
+and in practice often degrade accuracy despite efficiency gains. We introduce
+Dr.LLM, Dynamic routing of Layers for LLMs, a retrofittable framework that
+equips pretrained models with lightweight per-layer routers deciding to skip,
+execute, or repeat a block. Routers are trained with explicit supervision:
+using Monte Carlo Tree Search (MCTS), we derive high-quality layer
+configurations that preserve or improve accuracy under a compute budget. Our
+design, windowed pooling for stable routing, focal loss with class balancing,
+and bottleneck MLP routers, ensures robustness under class imbalance and long
+sequences. On ARC (logic) and DART (math), Dr.LLM improves accuracy by up to
++3.4%p while saving 5 layers per example on average. Routers generalize to
+out-of-domain tasks (MMLU, GSM8k, AIME, TruthfulQA, SQuADv2, GPQA, PIQA,
+AGIEval) with only 0.85% accuracy drop while retaining efficiency, and
+outperform prior routing methods by up to +7.7%p. Overall, Dr.LLM shows that
+explicitly supervised routers retrofit frozen LLMs for budget-aware,
+accuracy-driven inference without altering base weights.",http://arxiv.org/pdf/2510.12773v1,,False
+"Hey, wait a minute: on at-issue sensitivity in Language Models",14/10/2025,"Sanghee J. Kim, Kanishka Misra","Evaluating the naturalness of dialogue in language models (LMs) is not
+trivial: notions of 'naturalness' vary, and scalable quantitative metrics
+remain limited. This study leverages the linguistic notion of 'at-issueness' to
+assess dialogue naturalness and introduces a new method: Divide, Generate,
+Recombine, and Compare (DGRC). DGRC (i) divides a dialogue as a prompt, (ii)
+generates continuations for subparts using LMs, (iii) recombines the dialogue
+and continuations, and (iv) compares the likelihoods of the recombined
+sequences. This approach mitigates bias in linguistic analyses of LMs and
+enables systematic testing of discourse-sensitive behavior. Applying DGRC, we
+find that LMs prefer to continue dialogue on at-issue content, with this effect
+enhanced in instruct-tuned models. They also reduce their at-issue preference
+when relevant cues (e.g., ""Hey, wait a minute"") are present. Although
+instruct-tuning does not further amplify this modulation, the pattern reflects
+a hallmark of successful dialogue dynamics.",http://arxiv.org/pdf/2510.12740v1,,False
+Doctor Rashomon and the UNIVERSE of Madness: Variable Importance with Unobserved Confounding and the Rashomon Effect,14/10/2025,"Jon Donnelly, Srikar Katta, Emanuele Borgonovo, Cynthia Rudin","Variable importance (VI) methods are often used for hypothesis generation,
+feature selection, and scientific validation. In the standard VI pipeline, an
+analyst estimates VI for a single predictive model with only the observed
+features. However, the importance of a feature depends heavily on which other
+variables are included in the model, and essential variables are often omitted
+from observational datasets. Moreover, the VI estimated for one model is often
+not the same as the VI estimated for another equally-good model - a phenomenon
+known as the Rashomon Effect. We address these gaps by introducing
+UNobservables and Inference for Variable importancE using Rashomon SEts
+(UNIVERSE). Our approach adapts Rashomon sets - the sets of near-optimal models
+in a dataset - to produce bounds on the true VI even with missing features. We
+theoretically guarantee the robustness of our approach, show strong performance
+on semi-synthetic simulations, and demonstrate its utility in a credit risk
+task.",http://arxiv.org/pdf/2510.12734v1,,False
+CoRA: Covariate-Aware Adaptation of Time Series Foundation Models,14/10/2025,"Guo Qin, Zhi Chen, Yong Liu, Zhiyuan Shi, Haixuan Liu, Xiangdong Huang, Jianmin Wang, Mingsheng Long","Time Series Foundation Models (TSFMs) have shown significant impact through
+their model capacity, scalability, and zero-shot generalization. However, due
+to the heterogeneity of inter-variate dependencies and the backbone scalability
+on large-scale multivariate datasets, most TSFMs are typically pre-trained on
+univariate time series. This limitation renders them oblivious to crucial
+information from diverse covariates in real-world forecasting tasks. To further
+enhance the performance of TSFMs, we propose a general covariate-aware
+adaptation (CoRA) framework for TSFMs. It leverages pre-trained backbones of
+foundation models while effectively incorporating exogenous covariates from
+various modalities, including time series, language, and images, to improve the
+quality of predictions. Technically, CoRA maintains the equivalence of
+initialization and parameter consistency during adaptation. With preserved
+backbones of foundation models as frozen feature extractors, the outcome
+embeddings from foundation models are empirically demonstrated more informative
+than raw data. Further, CoRA employs a novel Granger Causality Embedding (GCE)
+to automatically evaluate covariates regarding their causal predictability with
+respect to the target variate. We incorporate these weighted embeddings with a
+zero-initialized condition-injection mechanism, avoiding catastrophic
+forgetting of pre-trained foundation models and gradually integrates exogenous
+information. Extensive experiments show that CoRA of TSFMs surpasses
+state-of-the-art covariate-aware deep forecasters with full or few-shot
+training samples, achieving 31.1% MSE reduction on covariate-aware forecasting.
+Compared to other adaptation methods, CoRA exhibits strong compatibility with
+various advanced TSFMs and extends the scope of covariates to other modalities,
+presenting a practical paradigm for the application of TSFMs.",http://arxiv.org/pdf/2510.12681v1,,False
+On Foundation Models for Temporal Point Processes to Accelerate Scientific Discovery,14/10/2025,"David Berghaus, Patrick Seifner, Kostadin Cvejoski, Ramses J. Sanchez","Many scientific fields, from medicine to seismology, rely on analyzing
+sequences of events over time to understand complex systems. Traditionally,
+machine learning models must be built and trained from scratch for each new
+dataset, which is a slow and costly process. We introduce a new approach: a
+single, powerful model that learns the underlying patterns of event data in
+context. We trained this ""foundation model"" on millions of simulated event
+sequences, teaching it a general-purpose understanding of how events can
+unfold. As a result, our model can analyze new scientific data instantly,
+without retraining, simply by looking at a few examples from the dataset. It
+can also be quickly fine-tuned for even higher accuracy. This approach makes
+sophisticated event analysis more accessible and accelerates the pace of
+scientific discovery.",http://arxiv.org/pdf/2510.12640v1,,False
+Learning-To-Measure: In-context Active Feature Acquisition,14/10/2025,"Yuta Kobayashi, Zilin Jing, Jiayu Yao, Hongseok Namkoong, Shalmali Joshi","Active feature acquisition (AFA) is a sequential decision-making problem
+where the goal is to improve model performance for test instances by adaptively
+selecting which features to acquire. In practice, AFA methods often learn from
+retrospective data with systematic missingness in the features and limited
+task-specific labels. Most prior work addresses acquisition for a single
+predetermined task, limiting scalability. To address this limitation, we
+formalize the meta-AFA problem, where the goal is to learn acquisition policies
+across various tasks. We introduce Learning-to-Measure (L2M), which consists of
+i) reliable uncertainty quantification over unseen tasks, and ii) an
+uncertainty-guided greedy feature acquisition agent that maximizes conditional
+mutual information. We demonstrate a sequence-modeling or autoregressive
+pre-training approach that underpins reliable uncertainty quantification for
+tasks with arbitrary missingness. L2M operates directly on datasets with
+retrospective missingness and performs the meta-AFA task in-context,
+eliminating per-task retraining. Across synthetic and real-world tabular
+benchmarks, L2M matches or surpasses task-specific baselines, particularly
+under scarce labels and high missingness.",http://arxiv.org/pdf/2510.12624v1,,False
+Towards Fast Coarse-graining and Equation Discovery with Foundation Inference Models,14/10/2025,"Manuel Hinz, Maximilian Mauel, Patrick Seifner, David Berghaus, Kostadin Cvejoski, Ramses J. Sanchez","High-dimensional recordings of dynamical processes are often characterized by
+a much smaller set of effective variables, evolving on low-dimensional
+manifolds. Identifying these latent dynamics requires solving two intertwined
+problems: discovering appropriate coarse-grained variables and simultaneously
+fitting the governing equations. Most machine learning approaches tackle these
+tasks jointly by training autoencoders together with models that enforce
+dynamical consistency. We propose to decouple the two problems by leveraging
+the recently introduced Foundation Inference Models (FIMs). FIMs are pretrained
+models that estimate the infinitesimal generators of dynamical systems (e.g.,
+the drift and diffusion of a stochastic differential equation) in zero-shot
+mode. By amortizing the inference of the dynamics through a FIM with frozen
+weights, and training only the encoder-decoder map, we define a simple,
+simulation-consistent loss that stabilizes representation learning. A proof of
+concept on a stochastic double-well system with semicircle diffusion, embedded
+into synthetic video data, illustrates the potential of this approach for fast
+and reusable coarse-graining pipelines.",http://arxiv.org/pdf/2510.12618v1,,False
+"Same model, better performance: the impact of shuffling on DNA Language Models benchmarking",14/10/2025,"Davide Greco, Konrad Rawlik","Large Language Models are increasingly popular in genomics due to their
+potential to decode complex biological sequences. Hence, researchers require a
+standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities.
+However, evaluating DNA LMs is a complex task that intersects genomic's
+domain-specific challenges and machine learning methodologies, where seemingly
+minor implementation details can significantly compromise benchmark validity.
+We demonstrate this through BEND (Benchmarking DNA Language Models), where
+hardware-dependent hyperparameters -- number of data loading workers and buffer
+sizes -- create spurious performance variations of up to 4% for identical
+models. The problem stems from inadequate data shuffling interacting with
+domain specific data characteristics. Experiments with three DNA language
+models (HyenaDNA, DNABERT-2, ResNet-LM) show these artifacts affect both
+absolute performance and relative model rankings. We propose a simple solution:
+pre-shuffling data before storage eliminates hardware dependencies while
+maintaining efficiency. This work highlights how standard ML practices can
+interact unexpectedly with domain-specific data characteristics, with broader
+implications for benchmark design in specialized domains.",http://arxiv.org/pdf/2510.12617v1,,False
+Time-Correlated Video Bridge Matching,14/10/2025,"Viacheslav Vasilev, Arseny Ivanov, Nikita Gushchin, Maria Kovaleva, Alexander Korotin","Diffusion models excel in noise-to-data generation tasks, providing a mapping
+from a Gaussian distribution to a more complex data distribution. However they
+struggle to model translations between complex distributions, limiting their
+effectiveness in data-to-data tasks. While Bridge Matching (BM) models address
+this by finding the translation between data distributions, their application
+to time-correlated data sequences remains unexplored. This is a critical
+limitation for video generation and manipulation tasks, where maintaining
+temporal coherence is particularly important. To address this gap, we propose
+Time-Correlated Video Bridge Matching (TCVBM), a framework that extends BM to
+time-correlated data sequences in the video domain. TCVBM explicitly models
+inter-sequence dependencies within the diffusion bridge, directly incorporating
+temporal correlations into the sampling process. We compare our approach to
+classical methods based on bridge matching and diffusion models for three
+video-related tasks: frame interpolation, image-to-video generation, and video
+super-resolution. TCVBM achieves superior performance across multiple
+quantitative metrics, demonstrating enhanced generation quality and
+reconstruction fidelity.",http://arxiv.org/pdf/2510.12453v1,,False
+Improving Generative Behavior Cloning via Self-Guidance and Adaptive Chunking,14/10/2025,"Junhyuk So, Chiwoong Lee, Shinyoung Lee, Jungseul Ok, Eunhyeok Park","Generative Behavior Cloning (GBC) is a simple yet effective framework for
+robot learning, particularly in multi-task settings. Recent GBC methods often
+employ diffusion policies with open-loop (OL) control, where actions are
+generated via a diffusion process and executed in multi-step chunks without
+replanning. While this approach has demonstrated strong success rates and
+generalization, its inherent stochasticity can result in erroneous action
+sampling, occasionally leading to unexpected task failures. Moreover, OL
+control suffers from delayed responses, which can degrade performance in noisy
+or dynamic environments. To address these limitations, we propose two novel
+techniques to enhance the consistency and reactivity of diffusion policies: (1)
+self-guidance, which improves action fidelity by leveraging past observations
+and implicitly promoting future-aware behavior; and (2) adaptive chunking,
+which selectively updates action sequences when the benefits of reactivity
+outweigh the need for temporal consistency. Extensive experiments show that our
+approach substantially improves GBC performance across a wide range of
+simulated and real-world robotic manipulation tasks. Our code is available at
+https://github.com/junhyukso/SGAC",http://arxiv.org/pdf/2510.12392v1,,False
+LLM-REVal: Can We Trust LLM Reviewers Yet?,14/10/2025,"Rui Li, Jia-Chen Gu, Po-Nien Kung, Heming Xia, Junfeng liu, Xiangwen Kong, Zhifang Sui, Nanyun Peng","The rapid advancement of large language models (LLMs) has inspired
+researchers to integrate them extensively into the academic workflow,
+potentially reshaping how research is practiced and reviewed. While previous
+studies highlight the potential of LLMs in supporting research and peer review,
+their dual roles in the academic workflow and the complex interplay between
+research and review bring new risks that remain largely underexplored. In this
+study, we focus on how the deep integration of LLMs into both peer-review and
+research processes may influence scholarly fairness, examining the potential
+risks of using LLMs as reviewers by simulation. This simulation incorporates a
+research agent, which generates papers and revises, alongside a review agent,
+which assesses the submissions. Based on the simulation results, we conduct
+human annotations and identify pronounced misalignment between LLM-based
+reviews and human judgments: (1) LLM reviewers systematically inflate scores
+for LLM-authored papers, assigning them markedly higher scores than
+human-authored ones; (2) LLM reviewers persistently underrate human-authored
+papers with critical statements (e.g., risk, fairness), even after multiple
+revisions. Our analysis reveals that these stem from two primary biases in LLM
+reviewers: a linguistic feature bias favoring LLM-generated writing styles, and
+an aversion toward critical statements. These results highlight the risks and
+equity concerns posed to human authors and academic research if LLMs are
+deployed in the peer review cycle without adequate caution. On the other hand,
+revisions guided by LLM reviews yield quality gains in both LLM-based and human
+evaluations, illustrating the potential of the LLMs-as-reviewers for
+early-stage researchers and enhancing low-quality papers.",http://arxiv.org/pdf/2510.12367v1,,False
+Leveraging Teleconnections with Physics-Informed Graph Attention Networks for Long-Range Extreme Rainfall Forecasting in Thailand,14/10/2025,"Kiattikun Chobtham, Kanoksri Sarinnapakorn, Kritanai Torsri, Prattana Deeprasertkul, Jirawan Kamma","Accurate rainfall forecasting, particularly for extreme events, remains a
+significant challenge in climatology and the Earth system. This paper presents
+novel physics-informed Graph Neural Networks (GNNs) combined with extreme-value
+analysis techniques to improve gauge-station rainfall predictions across
+Thailand. The model leverages a graph-structured representation of gauge
+stations to capture complex spatiotemporal patterns, and it offers
+explainability through teleconnections. We preprocess relevant climate indices
+that potentially influence regional rainfall. The proposed Graph Attention
+Network with Long Short-Term Memory (Attention-LSTM) applies the attention
+mechanism using initial edge features derived from simple
+orographic-precipitation physics formulation. The embeddings are subsequently
+processed by LSTM layers. To address extremes, we perform Peak-Over-Threshold
+(POT) mapping using the novel Spatial Season-aware Generalized Pareto
+Distribution (GPD) method, which overcomes limitations of traditional
+machine-learning models. Experiments demonstrate that our method outperforms
+well-established baselines across most regions, including areas prone to
+extremes, and remains strongly competitive with the state of the art. Compared
+with the operational forecasting system SEAS5, our real-world application
+improves extreme-event prediction and offers a practical enhancement to produce
+fine-resolution maps that support decision-making in long-term water
+management.",http://arxiv.org/pdf/2510.12328v1,,False
+Multi-Action Self-Improvement for Neural Combinatorial Optimization,14/10/2025,"Laurin Luttmann, Lin Xie","Self-improvement has emerged as a state-of-the-art paradigm in Neural
+Combinatorial Optimization (NCO), where models iteratively refine their
+policies by generating and imitating high-quality solutions. Despite strong
+empirical performance, existing methods face key limitations. Training is
+computationally expensive, as policy updates require sampling numerous
+candidate solutions per instance to extract a single expert trajectory. More
+fundamentally, these approaches fail to exploit the structure of combinatorial
+problems involving the coordination of multiple agents, such as vehicles in
+min-max routing or machines in scheduling. By supervising on single-action
+trajectories, they fail to exploit agent-permutation symmetries, where distinct
+sequences of actions yield identical solutions, hindering generalization and
+the ability to learn coordinated behavior.
+  We address these challenges by extending self-improvement to operate over
+joint multi-agent actions. Our model architecture predicts complete agent-task
+assignments jointly at each decision step. To explicitly leverage symmetries,
+we employ a set-prediction loss, which supervises the policy on multiple expert
+assignments for any given state. This approach enhances sample efficiency and
+the model's ability to learn coordinated behavior. Furthermore, by generating
+multi-agent actions in parallel, it drastically accelerates the solution
+generation phase of the self-improvement loop. Empirically, we validate our
+method on several combinatorial problems, demonstrating consistent improvements
+in the quality of the final solution and a reduced generation latency compared
+to standard self-improvement.",http://arxiv.org/pdf/2510.12273v1,,False
+Heterogeneous RBCs via deep multi-agent reinforcement learning,14/10/2025,"Federico Gabriele, Aldo Glielmo, Marco Taboga","Current macroeconomic models with agent heterogeneity can be broadly divided
+into two main groups. Heterogeneous-agent general equilibrium (GE) models, such
+as those based on Heterogeneous Agents New Keynesian (HANK) or Krusell-Smith
+(KS) approaches, rely on GE and 'rational expectations', somewhat unrealistic
+assumptions that make the models very computationally cumbersome, which in turn
+limits the amount of heterogeneity that can be modelled. In contrast,
+agent-based models (ABMs) can flexibly encompass a large number of arbitrarily
+heterogeneous agents, but typically require the specification of explicit
+behavioural rules, which can lead to a lengthy trial-and-error
+model-development process. To address these limitations, we introduce MARL-BC,
+a framework that integrates deep multi-agent reinforcement learning (MARL) with
+Real Business Cycle (RBC) models. We demonstrate that MARL-BC can: (1) recover
+textbook RBC results when using a single agent; (2) recover the results of the
+mean-field KS model using a large number of identical agents; and (3)
+effectively simulate rich heterogeneity among agents, a hard task for
+traditional GE approaches. Our framework can be thought of as an ABM if used
+with a variety of heterogeneous interacting agents, and can reproduce GE
+results in limit cases. As such, it is a step towards a synthesis of these
+often opposed modelling paradigms.",http://arxiv.org/pdf/2510.12272v1,,False
+HiLoRA: Adaptive Hierarchical LoRA Routing for Training-Free Domain Generalization,14/10/2025,"Ziyi Han, Huanyu Wang, Zeyu Zhang, Xiangxiang Dai, Xutong Liu, John C. S. Lui","Low-Rank Adaptation (LoRA) has emerged as a widely used technique for
+adapting large language models (LLMs) to new domains, due to its modular design
+and broad availability on platforms such as HuggingFace. This availability has
+motivated efforts to reuse existing LoRAs for domain generalization.
+  However, existing methods often rely on explicit task labels or additional
+training, which are impractical for deployment. Moreover, they typically
+activate a fixed number of entire LoRA modules, leading to parameter redundancy
+or insufficiency that degrade performance.
+  In this paper, we propose \texttt{HiLoRA}, a training-free framework that
+performs adaptive hierarchical routing over LoRA pools. Drawing on structural
+properties of LoRA, we define rank-one components (ROCs), in which each rank
+parameter is regarded as an independent unit. For a given input sequence,
+\texttt{HiLoRA} first adaptively selects a subset of LoRAs and determines their
+ROC allocation based on Gaussian likelihoods at the sequence level. At the
+token level, it further refines routing by activating only the most informative
+ROCs.
+  We further provide theoretical guarantees that \texttt{HiLoRA} selects the
+most relevant LoRAs with high probability.
+  Extensive experiments show that \texttt{HiLoRA} achieves substantial
+improvements in domain generalization, with accuracy gains of up to {\small
+$55\%$} over state-of-the-art baselines, while maintaining comparable inference
+throughput.",http://arxiv.org/pdf/2510.12266v1,,False
+Controllable Collision Scenario Generation via Collision Pattern Prediction,14/10/2025,"Pin-Lun Chen, Chi-Hsi Kung, Che-Han Chang, Wei-Chen Chiu, Yi-Ting Chen","Evaluating the safety of autonomous vehicles (AVs) requires diverse,
+safety-critical scenarios, with collisions being especially important yet rare
+and unsafe to collect in the real world. Therefore, the community has been
+focusing on generating safety-critical scenarios in simulation. However,
+controlling attributes such as collision type and time-to-accident (TTA)
+remains challenging. We introduce a new task called controllable collision
+scenario generation, where the goal is to produce trajectories that realize a
+user-specified collision type and TTA, to investigate the feasibility of
+automatically generating desired collision scenarios. To support this task, we
+present COLLIDE, a large-scale collision scenario dataset constructed by
+transforming real-world driving logs into diverse collisions, balanced across
+five representative collision types and different TTA intervals. We propose a
+framework that predicts Collision Pattern, a compact and interpretable
+representation that captures the spatial configuration of the ego and the
+adversarial vehicles at impact, before rolling out full adversarial
+trajectories. Experiments show that our approach outperforms strong baselines
+in both collision rate and controllability. Furthermore, generated scenarios
+consistently induce higher planner failure rates, revealing limitations of
+existing planners. We demonstrate that these scenarios fine-tune planners for
+robustness improvements, contributing to safer AV deployment in different
+collision scenarios.",http://arxiv.org/pdf/2510.12206v1,,False
+Probabilistic Super-Resolution for Urban Micrometeorology via a Schrödinger Bridge,14/10/2025,"Yuki Yasuda, Ryo Onishi","This study employs a neural network that represents the solution to a
+Schr\""odinger bridge problem to perform super-resolution of 2-m temperature in
+an urban area. Schr\""odinger bridges generally describe transformations between
+two data distributions based on diffusion processes. We use a specific
+Schr\""odinger-bridge model (SM) that directly transforms low-resolution data
+into high-resolution data, unlike denoising diffusion probabilistic models
+(simply, diffusion models; DMs) that generate high-resolution data from
+Gaussian noise. Low-resolution and high-resolution data were obtained from
+separate numerical simulations with a physics-based model under common initial
+and boundary conditions. Compared with a DM, the SM attains comparable accuracy
+at one-fifth the computational cost, requiring 50 neural-network evaluations
+per datum for the DM and only 10 for the SM. Furthermore, high-resolution
+samples generated by the SM exhibit larger variance, implying superior
+uncertainty quantification relative to the DM. Owing to the reduced
+computational cost of the SM, our results suggest the feasibility of real-time
+ensemble micrometeorological prediction using SM-based super-resolution.",http://arxiv.org/pdf/2510.12148v1,,False
+Chimera: State Space Models Beyond Sequences,14/10/2025,"Aakash Lahoti, Tanya Marwah, Ratish Puduppully, Albert Gu","Transformer-based deep learning methods have become the standard approach for
+modeling diverse data such as sequences, images, and graphs. These methods rely
+on self-attention, which treats data as an unordered set of elements. This
+ignores the neighborhood structure or graph topology of the data and requires
+inductive biases--such as position embeddings in sequences and images, or
+random walks in graphs--to incorporate topology. However, designing such
+task-specific biases requires significant effort and can introduce side effects
+that hinder generalization. We introduce Chimera, a unified model that directly
+incorporates data topology in a principled way, removing the need for
+domain-specific biases. The key idea is that state space models--which
+naturally do not require position embeddings--can be generalized to capture any
+graph topology. Our experiments show that Chimera achieves strong performance
+across language, vision, and graph domains, outperforming BERT on GLUE by 0.7
+points, ViT on ImageNet-1k by 2.6%, and all baselines on the Long Range Graph
+Benchmark. We further propose algorithmic optimizations to improve Chimera's
+efficiency: (1) for Directed Acyclic Graphs, Chimera can be implemented as a
+linear-time recurrence; (2) for general graphs, a simple mathematical
+relaxation achieves Transformer's quadratic complexity without domain-specific
+heuristics. These results validate Chimera's core contribution and support the
+idea that data topology is a powerful inductive bias across modalities.",http://arxiv.org/pdf/2510.12111v1,,False
+ToPolyAgent: AI Agents for Coarse-Grained Topological Polymer Simulations,14/10/2025,"Lijie Ding, Jan-Michael Carrillo, Changwoo Do","We introduce ToPolyAgent, a multi-agent AI framework for performing
+coarse-grained molecular dynamics (MD) simulations of topological polymers
+through natural language instructions. By integrating large language models
+(LLMs) with domain-specific computational tools, ToPolyAgent supports both
+interactive and autonomous simulation workflows across diverse polymer
+architectures, including linear, ring, brush, and star polymers, as well as
+dendrimers. The system consists of four LLM-powered agents: a Config Agent for
+generating initial polymer-solvent configurations, a Simulation Agent for
+executing LAMMPS-based MD simulations and conformational analyses, a Report
+Agent for compiling markdown reports, and a Workflow Agent for streamlined
+autonomous operations. Interactive mode incorporates user feedback loops for
+iterative refinements, while autonomous mode enables end-to-end task execution
+from detailed prompts. We demonstrate ToPolyAgent's versatility through case
+studies involving diverse polymer architectures under varying solvent
+condition, thermostats, and simulation lengths. Furthermore, we highlight its
+potential as a research assistant by directing it to investigate the effect of
+interaction parameters on the linear polymer conformation, and the influence of
+grafting density on the persistence length of the brush polymer. By coupling
+natural language interfaces with rigorous simulation tools, ToPolyAgent lowers
+barriers to complex computational workflows and advances AI-driven materials
+discovery in polymer science. It lays the foundation for autonomous and
+extensible multi-agent scientific research ecosystems.",http://arxiv.org/pdf/2510.12091v1,,False
+One Life to Learn: Inferring Symbolic World Models for Stochastic Environments from Unguided Exploration,14/10/2025,"Zaid Khan, Archiki Prasad, Elias Stengel-Eskin, Jaemin Cho, Mohit Bansal","Symbolic world modeling requires inferring and representing an environment's
+transitional dynamics as an executable program. Prior work has focused on
+largely deterministic environments with abundant interaction data, simple
+mechanics, and human guidance. We address a more realistic and challenging
+setting, learning in a complex, stochastic environment where the agent has only
+""one life"" to explore a hostile environment without human guidance. We
+introduce OneLife, a framework that models world dynamics through
+conditionally-activated programmatic laws within a probabilistic programming
+framework. Each law operates through a precondition-effect structure,
+activating in relevant world states. This creates a dynamic computation graph
+that routes inference and optimization only through relevant laws, avoiding
+scaling challenges when all laws contribute to predictions about a complex,
+hierarchical state, and enabling the learning of stochastic dynamics even with
+sparse rule activation. To evaluate our approach under these demanding
+constraints, we introduce a new evaluation protocol that measures (a) state
+ranking, the ability to distinguish plausible future states from implausible
+ones, and (b) state fidelity, the ability to generate future states that
+closely resemble reality. We develop and evaluate our framework on Crafter-OO,
+our reimplementation of the Crafter environment that exposes a structured,
+object-oriented symbolic state and a pure transition function that operates on
+that state alone. OneLife can successfully learn key environment dynamics from
+minimal, unguided interaction, outperforming a strong baseline on 16 out of 23
+scenarios tested. We also test OneLife's planning ability, with simulated
+rollouts successfully identifying superior strategies. Our work establishes a
+foundation for autonomously constructing programmatic world models of unknown,
+complex environments.",http://arxiv.org/pdf/2510.12088v1,,False
+EmboMatrix: A Scalable Training-Ground for Embodied Decision-Making,14/10/2025,"Zixing Lei, Sheng Yin, Yichen Xiong, Yuanzhuo Ding, Wenhao Huang, Yuxi Wei, Qingyao Xu, Yiming Li, Weixin Li, Yunhong Wang, Siheng Chen","Embodied decision-making enables agents to translate high-level goals into
+executable actions through continuous interactions within the physical world,
+forming a cornerstone of general-purpose embodied intelligence. Large language
+models (LLMs), with their general decision-making capabilities, offer a
+promising path to realize this potential; however, LLMs trained solely on
+language lack exposure to physical environments, limiting their true embodied
+understanding. To bridge this gap, we propose the concept of a training ground:
+a comprehensive infrastructure that provides task and scene simulation,
+embodied interaction, and feedback signals, offering a one-stop solution for
+LLM acquire genuine embodied decision-making skills. In this work, we present
+EmboMatrix, the first training ground of its kind, providing massive and
+diverse tasks with efficient simulation and precise rewards. EmboMatrix
+incorporates a series of novel techniques: a multi-agent data engine for
+large-scale task and scene generation, a distributed heterogeneous-hardware
+system for scalable simulation, and a multi-level reward architecture for
+precise supervision. Leveraging EmboMatrix, we cultivate EmboBrain, an LLM
+whose embodied decision-making abilities emerge from extensive embodied
+interactions. Experiments show that EmboBrain-7B surpasses the 671B DeepSeek-R1
+baseline by 9.5\% on two challenging embodied decision-making benchmarks,
+demonstrating the power of interactive, environment-grounded learning for
+building truly intelligent embodied agents.",http://arxiv.org/pdf/2510.12072v1,,False
+Mamaba Can Learn Low-Dimensional Targets In-Context via Test-Time Feature Learning,14/10/2025,"Junsoo Oh, Wei Huang, Taiji Suzuki","Mamba, a recently proposed linear-time sequence model, has attracted
+significant attention for its computational efficiency and strong empirical
+performance. However, a rigorous theoretical understanding of its underlying
+mechanisms remains limited. In this work, we provide a theoretical analysis of
+Mamba's in-context learning (ICL) capability by focusing on tasks defined by
+low-dimensional nonlinear target functions. Specifically, we study in-context
+learning of a single-index model $y \approx g_*(\langle \boldsymbol{\beta},
+\boldsymbol{x} \rangle)$, which depends on only a single relevant direction
+$\boldsymbol{\beta}$, referred to as feature. We prove that Mamba, pretrained
+by gradient-based methods, can achieve efficient ICL via test-time feature
+learning, extracting the relevant direction directly from context examples.
+Consequently, we establish a test-time sample complexity that improves upon
+linear Transformers -- analyzed to behave like kernel methods -- and is
+comparable to nonlinear Transformers, which have been shown to surpass the
+Correlational Statistical Query (CSQ) lower bound and achieve near
+information-theoretically optimal rate in previous works. Our analysis reveals
+the crucial role of the nonlinear gating mechanism in Mamba for feature
+extraction, highlighting it as the fundamental driver behind Mamba's ability to
+achieve both computational efficiency and high performance.",http://arxiv.org/pdf/2510.12026v1,,False

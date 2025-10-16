@@ -1,0 +1,350 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy,15/10/2025,"Xinyi Chen, Yilun Chen, Yanwei Fu, Ning Gao, Jiaya Jia, Weiyang Jin, Hao Li, Yao Mu, Jiangmiao Pang, Yu Qiao, Yang Tian, Bin Wang, Bolun Wang, Fangjing Wang, Hanqing Wang, Tai Wang, Ziqin Wang, Xueyuan Wei, Chao Wu, Shuai Yang, Jinhui Ye, Junqiu Yu, Jia Zeng, Jingjing Zhang, Jinyu Zhang, Shi Zhang, Feng Zheng, Bowen Zhou, Yangkun Zhu","We introduce InternVLA-M1, a unified framework for spatial grounding and
+robot control that advances instruction-following robots toward scalable,
+general-purpose intelligence. Its core idea is spatially guided
+vision-language-action training, where spatial grounding serves as the critical
+link between instructions and robot actions. InternVLA-M1 employs a two-stage
+pipeline: (i) spatial grounding pre-training on over 2.3M spatial reasoning
+data to determine ``where to act'' by aligning instructions with visual,
+embodiment-agnostic positions, and (ii) spatially guided action post-training
+to decide ``how to act'' by generating embodiment-aware actions through
+plug-and-play spatial prompting. This spatially guided training recipe yields
+consistent gains: InternVLA-M1 outperforms its variant without spatial guidance
+by +14.6% on SimplerEnv Google Robot, +17% on WidowX, and +4.3% on LIBERO
+Franka, while demonstrating stronger spatial reasoning capability in box,
+point, and trace prediction. To further scale instruction following, we built a
+simulation engine to collect 244K generalizable pick-and-place episodes,
+enabling a 6.2% average improvement across 200 tasks and 3K+ objects. In
+real-world clustered pick-and-place, InternVLA-M1 improved by 7.3%, and with
+synthetic co-training, achieved +20.6% on unseen objects and novel
+configurations. Moreover, in long-horizon reasoning-intensive scenarios, it
+surpassed existing works by over 10%. These results highlight spatially guided
+training as a unifying principle for scalable and resilient generalist robots.
+Code and models are available at
+https://github.com/InternRobotics/InternVLA-M1.",http://arxiv.org/pdf/2510.13778v1,,False
+PriorGuide: Test-Time Prior Adaptation for Simulation-Based Inference,15/10/2025,"Yang Yang, Severi Rissanen, Paul E. Chang, Nasrulloh Loka, Daolang Huang, Arno Solin, Markus Heinonen, Luigi Acerbi","Amortized simulator-based inference offers a powerful framework for tackling
+Bayesian inference in computational fields such as engineering or neuroscience,
+increasingly leveraging modern generative methods like diffusion models to map
+observed data to model parameters or future predictions. These approaches yield
+posterior or posterior-predictive samples for new datasets without requiring
+further simulator calls after training on simulated parameter-data pairs.
+However, their applicability is often limited by the prior distribution(s) used
+to generate model parameters during this training phase. To overcome this
+constraint, we introduce PriorGuide, a technique specifically designed for
+diffusion-based amortized inference methods. PriorGuide leverages a novel
+guidance approximation that enables flexible adaptation of the trained
+diffusion model to new priors at test time, crucially without costly
+retraining. This allows users to readily incorporate updated information or
+expert knowledge post-training, enhancing the versatility of pre-trained
+inference models.",http://arxiv.org/pdf/2510.13763v1,,False
+From Refusal to Recovery: A Control-Theoretic Approach to Generative AI Guardrails,15/10/2025,"Ravi Pandya, Madison Bland, Duy P. Nguyen, Changliu Liu, Jaime Fernández Fisac, Andrea Bajcsy","Generative AI systems are increasingly assisting and acting on behalf of end
+users in practical settings, from digital shopping assistants to
+next-generation autonomous cars. In this context, safety is no longer about
+blocking harmful content, but about preempting downstream hazards like
+financial or physical harm. Yet, most AI guardrails continue to rely on output
+classification based on labeled datasets and human-specified criteria,making
+them brittle to new hazardous situations. Even when unsafe conditions are
+flagged, this detection offers no path to recovery: typically, the AI system
+simply refuses to act--which is not always a safe choice. In this work, we
+argue that agentic AI safety is fundamentally a sequential decision problem:
+harmful outcomes arise from the AI system's continually evolving interactions
+and their downstream consequences on the world. We formalize this through the
+lens of safety-critical control theory, but within the AI model's latent
+representation of the world. This enables us to build predictive guardrails
+that (i) monitor an AI system's outputs (actions) in real time and (ii)
+proactively correct risky outputs to safe ones, all in a model-agnostic manner
+so the same guardrail can be wrapped around any AI model. We also offer a
+practical training recipe for computing such guardrails at scale via
+safety-critical reinforcement learning. Our experiments in simulated driving
+and e-commerce settings demonstrate that control-theoretic guardrails can
+reliably steer LLM agents clear of catastrophic outcomes (from collisions to
+bankruptcy) while preserving task performance, offering a principled dynamic
+alternative to today's flag-and-block guardrails.",http://arxiv.org/pdf/2510.13727v1,,False
+Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling,15/10/2025,"Carlo Saccardi, Maximilian Pierzyna, Haitz Sáez de Ocáriz Borde, Simone Monaco, Cristian Meo, Pietro Liò, Rudolf Saathof, Geethu Joseph, Justin Dauwels","Kilometer-scale weather data is crucial for real-world applications but
+remains computationally intensive to produce using traditional weather
+simulations. An emerging solution is to use deep learning models, which offer a
+faster alternative for climate downscaling. However, their reliability is still
+in question, as they are often evaluated using standard machine learning
+metrics rather than insights from atmospheric and weather physics. This paper
+benchmarks recent state-of-the-art deep learning models and introduces
+physics-inspired diagnostics to evaluate their performance and reliability,
+with a particular focus on geographic generalization and physical consistency.
+Our experiments show that, despite the seemingly strong performance of models
+such as CorrDiff, when trained on a limited set of European geographies (e.g.,
+central Europe), they struggle to generalize to other regions such as Iberia,
+Morocco in the south, or Scandinavia in the north. They also fail to accurately
+capture second-order variables such as divergence and vorticity derived from
+predicted velocity fields. These deficiencies appear even in in-distribution
+geographies, indicating challenges in producing physically consistent
+predictions. We propose a simple initial solution: introducing a power spectral
+density loss function that empirically improves geographic generalization by
+encouraging the reconstruction of small-scale physical structures. The code for
+reproducing the experimental results can be found at
+https://github.com/CarloSaccardi/PSD-Downscaling",http://arxiv.org/pdf/2510.13722v1,,False
+On Pretraining for Project-Level Code Completion,15/10/2025,"Maksim Sapronov, Evgeniy Glukhov","Repository-level pretraining is commonly used to enable large language models
+for code to leverage codebase-wide context. This enhances their ability to
+generate accurate and context-aware code completions. In this work, we
+investigate how different repository-processing strategies affect in-context
+learning in OpenCoder, a 1.5B-parameter model. We extend its context window
+from 4,096 to 16,384 tokens by training on additional 1B tokens of curated
+repository-level data. Despite relying on a smaller dataset than competing
+models (which often use hundreds of billions of tokens), our model achieves
+comparable performance on the Long Code Arena benchmark. We find that various
+repository-processing techniques yield similarly strong results, with the
+primary gain coming from adapting to a new rotary positional embedding (RoPE)
+scaling parameter. Finally, we show that a simpler file-level training approach
+at the original sequence length remains highly effective, opening up
+repository-level code completion research to settings with more constrained
+data and compute resources.",http://arxiv.org/pdf/2510.13697v1,,False
+Multi-Objective $\textit{min-max}$ Online Convex Optimization,15/10/2025,"Rahul Vaze, Sumiran Mishra","In online convex optimization (OCO), a single loss function sequence is
+revealed over a time horizon of $T$, and an online algorithm has to choose its
+action at time $t$, before the loss function at time $t$ is revealed. The goal
+of the online algorithm is to incur minimal penalty (called $\textit{regret}$
+compared to a static optimal action made by an optimal offline algorithm
+knowing all functions of the sequence in advance.
+  In this paper, we broaden the horizon of OCO, and consider multi-objective
+OCO, where there are $K$ distinct loss function sequences, and an algorithm has
+to choose its action at time $t$, before the $K$ loss functions at time $t$ are
+revealed. To capture the tradeoff between tracking the $K$ different sequences,
+we consider the $\textit{min-max}$ regret, where the benchmark (optimal offline
+algorithm) takes a static action across all time slots that minimizes the
+maximum of the total loss (summed across time slots) incurred by each of the
+$K$ sequences. An online algorithm is allowed to change its action across time
+slots, and its {\it min-max} regret is defined as the difference between its
+$\textit{min-max}$ cost and that of the benchmark. The $\textit{min-max}$
+regret is a stringent performance measure and an algorithm with small regret
+needs to `track' all loss function sequences closely at all times.
+  We consider this $\textit{min-max}$ regret in the i.i.d. input setting where
+all loss functions are i.i.d. generated from an unknown distribution. For the
+i.i.d. model we propose a simple algorithm that combines the well-known
+$\textit{Hedge}$ and online gradient descent (OGD) and show via a remarkably
+simple proof that its expected $\textit{min-max}$ regret is $O(\sqrt{T \log
+K})$.",http://arxiv.org/pdf/2510.13560v1,,False
+Modeling Cultural Bias in Facial Expression Recognition with Adaptive Agents,15/10/2025,"David Freire-Obregón, José Salas-Cáceres, Javier Lorenzo-Navarro, Oliverio J. Santana, Daniel Hernández-Sosa, Modesto Castrillón-Santana","Facial expression recognition (FER) must remain robust under both cultural
+variation and perceptually degraded visual conditions, yet most existing
+evaluations assume homogeneous data and high-quality imagery. We introduce an
+agent-based, streaming benchmark that reveals how cross-cultural composition
+and progressive blurring interact to shape face recognition robustness. Each
+agent operates in a frozen CLIP feature space with a lightweight residual
+adapter trained online at sigma=0 and fixed during testing. Agents move and
+interact on a 5x5 lattice, while the environment provides inputs with
+sigma-scheduled Gaussian blur. We examine monocultural populations
+(Western-only, Asian-only) and mixed environments with balanced (5/5) and
+imbalanced (8/2, 2/8) compositions, as well as different spatial contact
+structures. Results show clear asymmetric degradation curves between cultural
+groups: JAFFE (Asian) populations maintain higher performance at low blur but
+exhibit sharper drops at intermediate stages, whereas KDEF (Western)
+populations degrade more uniformly. Mixed populations exhibit intermediate
+patterns, with balanced mixtures mitigating early degradation, but imbalanced
+settings amplify majority-group weaknesses under high blur. These findings
+quantify how cultural composition and interaction structure influence the
+robustness of FER as perceptual conditions deteriorate.",http://arxiv.org/pdf/2510.13557v1,,False
+Data-driven learning of feedback maps for explicit robust predictive control: an approximation theoretic view,15/10/2025,"Siddhartha Ganguly, Shubham Gupta, Debasish Chatterjee","We establish an algorithm to learn feedback maps from data for a class of
+robust model predictive control (MPC) problems. The algorithm accounts for the
+approximation errors due to the learning directly at the synthesis stage,
+ensuring recursive feasibility by construction. The optimal control problem
+consists of a linear noisy dynamical system, a quadratic stage and quadratic
+terminal costs as the objective, and convex constraints on the state, control,
+and disturbance sequences; the control minimizes and the disturbance maximizes
+the objective. We proceed via two steps -- (a) Data generation: First, we
+reformulate the given minmax problem into a convex semi-infinite program and
+employ recently developed tools to solve it in an exact fashion on grid points
+of the state space to generate (state, action) data. (b) Learning approximate
+feedback maps: We employ a couple of approximation schemes that furnish tight
+approximations within preassigned uniform error bounds on the admissible state
+space to learn the unknown feedback policy. The stability of the closed-loop
+system under the approximate feedback policies is also guaranteed under a
+standard set of hypotheses. Two benchmark numerical examples are provided to
+illustrate the results.",http://arxiv.org/pdf/2510.13522v1,,False
+Prediction Markets with Intermittent Contributions,15/10/2025,"Michael Vitali, Pierre Pinson","Although both data availability and the demand for accurate forecasts are
+increasing, collaboration between stakeholders is often constrained by data
+ownership and competitive interests. In contrast to recent proposals within
+cooperative game-theoretical frameworks, we place ourselves in a more general
+framework, based on prediction markets. There, independent agents trade
+forecasts of uncertain future events in exchange for rewards. We introduce and
+analyse a prediction market that (i) accounts for the historical performance of
+the agents, (ii) adapts to time-varying conditions, while (iii) permitting
+agents to enter and exit the market at will. The proposed design employs robust
+regression models to learn the optimal forecasts' combination whilst handling
+missing submissions. Moreover, we introduce a pay-off allocation mechanism that
+considers both in-sample and out-of-sample performance while satisfying several
+desirable economic properties. Case-studies using simulated and real-world data
+allow demonstrating the effectiveness and adaptability of the proposed market
+design.",http://arxiv.org/pdf/2510.13385v1,,False
+"Injection, Attack and Erasure: Revocable Backdoor Attacks via Machine Unlearning",15/10/2025,"Baogang Song, Dongdong Zhao, Jianwen Xiang, Qiben Xu, Zizhuo Yu","Backdoor attacks pose a persistent security risk to deep neural networks
+(DNNs) due to their stealth and durability. While recent research has explored
+leveraging model unlearning mechanisms to enhance backdoor concealment,
+existing attack strategies still leave persistent traces that may be detected
+through static analysis. In this work, we introduce the first paradigm of
+revocable backdoor attacks, where the backdoor can be proactively and
+thoroughly removed after the attack objective is achieved. We formulate the
+trigger optimization in revocable backdoor attacks as a bilevel optimization
+problem: by simulating both backdoor injection and unlearning processes, the
+trigger generator is optimized to achieve a high attack success rate (ASR)
+while ensuring that the backdoor can be easily erased through unlearning. To
+mitigate the optimization conflict between injection and removal objectives, we
+employ a deterministic partition of poisoning and unlearning samples to reduce
+sampling-induced variance, and further apply the Projected Conflicting Gradient
+(PCGrad) technique to resolve the remaining gradient conflicts. Experiments on
+CIFAR-10 and ImageNet demonstrate that our method maintains ASR comparable to
+state-of-the-art backdoor attacks, while enabling effective removal of backdoor
+behavior after unlearning. This work opens a new direction for backdoor attack
+research and presents new challenges for the security of machine learning
+systems.",http://arxiv.org/pdf/2510.13322v1,,False
+Km-scale dynamical downscaling through conformalized latent diffusion models,15/10/2025,"Alessandro Brusaferri, Andrea Ballarino","Dynamical downscaling is crucial for deriving high-resolution meteorological
+fields from coarse-scale simulations, enabling detailed analysis for critical
+applications such as weather forecasting and renewable energy modeling.
+Generative Diffusion models (DMs) have recently emerged as powerful data-driven
+tools for this task, offering reconstruction fidelity and more scalable
+sampling supporting uncertainty quantification. However, DMs lack finite-sample
+guarantees against overconfident predictions, resulting in miscalibrated
+grid-point-level uncertainty estimates hindering their reliability in
+operational contexts. In this work, we tackle this issue by augmenting the
+downscaling pipeline with a conformal prediction framework. Specifically, the
+DM's samples are post-processed to derive conditional quantile estimates,
+incorporated into a conformalized quantile regression procedure targeting
+locally adaptive prediction intervals with finite-sample marginal validity. The
+proposed approach is evaluated on ERA5 reanalysis data over Italy, downscaled
+to a 2-km grid. Results demonstrate grid-point-level uncertainty estimates with
+markedly improved coverage and stable probabilistic scores relative to the DM
+baseline, highlighting the potential of conformalized generative models for
+more trustworthy probabilistic downscaling to high-resolution meteorological
+fields.",http://arxiv.org/pdf/2510.13301v1,,False
+Two Heads Are Better Than One: Audio-Visual Speech Error Correction with Dual Hypotheses,15/10/2025,"Sungnyun Kim, Kangwook Jang, Sungwoo Cho, Joon Son Chung, Hoirin Kim, Se-Young Yun","This paper introduces a new paradigm for generative error correction (GER)
+framework in audio-visual speech recognition (AVSR) that reasons over
+modality-specific evidences directly in the language space. Our framework,
+DualHyp, empowers a large language model (LLM) to compose independent N-best
+hypotheses from separate automatic speech recognition (ASR) and visual speech
+recognition (VSR) models. To maximize the effectiveness of DualHyp, we further
+introduce RelPrompt, a noise-aware guidance mechanism that provides
+modality-grounded prompts to the LLM. RelPrompt offers the temporal reliability
+of each modality stream, guiding the model to dynamically switch its focus
+between ASR and VSR hypotheses for an accurate correction. Under various
+corruption scenarios, our framework attains up to 57.7% error rate gain on the
+LRS2 benchmark over standard ASR baseline, contrary to single-stream GER
+approaches that achieve only 10% gain. To facilitate research within our
+DualHyp framework, we release the code and the dataset comprising ASR and VSR
+hypotheses at https://github.com/sungnyun/dualhyp.",http://arxiv.org/pdf/2510.13281v1,,False
+Model-agnostic Adversarial Attack and Defense for Vision-Language-Action Models,15/10/2025,"Haochuan Xu, Yun Sing Koh, Shuhuai Huang, Zirun Zhou, Di Wang, Jun Sakuma, Jingfeng Zhang","Vision-Language-Action (VLA) models have achieved revolutionary progress in
+robot learning, enabling robots to execute complex physical robot tasks from
+natural language instructions. Despite this progress, their adversarial
+robustness remains underexplored. In this work, we propose both adversarial
+patch attack and corresponding defense strategies for VLA models. We first
+introduce the Embedding Disruption Patch Attack (EDPA), a model-agnostic
+adversarial attack that generates patches directly placeable within the
+camera's view. In comparison to prior methods, EDPA can be readily applied to
+different VLA models without requiring prior knowledge of the model
+architecture, or the controlled robotic manipulator. EDPA constructs these
+patches by (i) disrupting the semantic alignment between visual and textual
+latent representations, and (ii) maximizing the discrepancy of latent
+representations between adversarial and corresponding clean visual inputs.
+Through the optimization of these objectives, EDPA distorts the VLA's
+interpretation of visual information, causing the model to repeatedly generate
+incorrect actions and ultimately result in failure to complete the given
+robotic task. To counter this, we propose an adversarial fine-tuning scheme for
+the visual encoder, in which the encoder is optimized to produce similar latent
+representations for both clean and adversarially perturbed visual inputs.
+Extensive evaluations on the widely recognized LIBERO robotic simulation
+benchmark demonstrate that EDPA substantially increases the task failure rate
+of cutting-edge VLA models, while our proposed defense effectively mitigates
+this degradation. The codebase is accessible via the homepage at
+https://edpa-attack.github.io/.",http://arxiv.org/pdf/2510.13237v1,,False
+MimicParts: Part-aware Style Injection for Speech-Driven 3D Motion Generation,15/10/2025,"Lianlian Liu, YongKang He, Zhaojie Chu, Xiaofen Xing, Xiangmin Xu","Generating stylized 3D human motion from speech signals presents substantial
+challenges, primarily due to the intricate and fine-grained relationships among
+speech signals, individual styles, and the corresponding body movements.
+Current style encoding approaches either oversimplify stylistic diversity or
+ignore regional motion style differences (e.g., upper vs. lower body), limiting
+motion realism. Additionally, motion style should dynamically adapt to changes
+in speech rhythm and emotion, but existing methods often overlook this. To
+address these issues, we propose MimicParts, a novel framework designed to
+enhance stylized motion generation based on part-aware style injection and
+part-aware denoising network. It divides the body into different regions to
+encode localized motion styles, enabling the model to capture fine-grained
+regional differences. Furthermore, our part-aware attention block allows rhythm
+and emotion cues to guide each body region precisely, ensuring that the
+generated motion aligns with variations in speech rhythm and emotional state.
+Experimental results show that our method outperforming existing methods
+showcasing naturalness and expressive 3D human motion sequences.",http://arxiv.org/pdf/2510.13208v1,,False
+Emotional Cognitive Modeling Framework with Desire-Driven Objective Optimization for LLM-empowered Agent in Social Simulation,15/10/2025,"Qun Ma, Xiao Xue, Xuwen Zhang, Zihan Zhao, Yuwei Guo, Ming Zhang","The advent of large language models (LLMs) has enabled agents to represent
+virtual humans in societal simulations, facilitating diverse interactions
+within complex social systems. However, existing LLM-based agents exhibit
+severe limitations in affective cognition: They fail to simulate the bounded
+rationality essential for bridging virtual and real-world services; They lack
+empirically validated integration mechanisms embedding emotions within agent
+decision architectures. This paper constructs an emotional cognition framework
+incorporating desire generation and objective management, designed to achieve
+emotion alignment between LLM-based agents and humans, modeling the complete
+decision-making process of LLM-based agents, encompassing state evolution,
+desire generation, objective optimization, decision generation, and action
+execution. This study implements the proposed framework within our proprietary
+multi-agent interaction environment. Experimental results demonstrate that
+agents governed by our framework not only exhibit behaviors congruent with
+their emotional states but also, in comparative assessments against other agent
+types, demonstrate superior ecological validity and generate decision outcomes
+that significantly more closely approximate human behavioral patterns.",http://arxiv.org/pdf/2510.13195v1,,False
+Behavioral Embeddings of Programs: A Quasi-Dynamic Approach for Optimization Prediction,15/10/2025,"Haolin Pan, Jinyuan Dong, Hongbin Zhang, Hongyu Lin, Mingjie Xing, Yanjun Wu","Learning effective numerical representations, or embeddings, of programs is a
+fundamental prerequisite for applying machine learning to automate and enhance
+compiler optimization. Prevailing paradigms, however, present a dilemma. Static
+representations, derived from source code or intermediate representation (IR),
+are efficient and deterministic but offer limited insight into how a program
+will behave or evolve under complex code transformations. Conversely, dynamic
+representations, which rely on runtime profiling, provide profound insights
+into performance bottlenecks but are often impractical for large-scale tasks
+due to prohibitive overhead and inherent non-determinism. This paper transcends
+this trade-off by proposing a novel quasi-dynamic framework for program
+representation. The core insight is to model a program's optimization
+sensitivity. We introduce the Program Behavior Spectrum, a new representation
+generated by probing a program's IR with a diverse set of optimization
+sequences and quantifying the resulting changes in its static features. To
+effectively encode this high-dimensional, continuous spectrum, we pioneer a
+compositional learning approach. Product Quantization is employed to discretize
+the continuous reaction vectors into structured, compositional sub-words.
+Subsequently, a multi-task Transformer model, termed PQ-BERT, is pre-trained to
+learn the deep contextual grammar of these behavioral codes. Comprehensive
+experiments on two representative compiler optimization tasks -- Best Pass
+Prediction and -Oz Benefit Prediction -- demonstrate that our method
+outperforms state-of-the-art static baselines. Our code is publicly available
+at https://github.com/Panhaolin2001/PREP/.",http://arxiv.org/pdf/2510.13158v1,,False
+AMORE: Adaptive Multi-Output Operator Network for Stiff Chemical Kinetics,15/10/2025,"Kamaljyoti Nath, Additi Pandey, Bryan T. Susi, Hessam Babaee, George Em Karniadakis","Time integration of stiff systems is a primary source of computational cost
+in combustion, hypersonics, and other reactive transport systems. This
+stiffness can introduce time scales significantly smaller than those associated
+with other physical processes, requiring extremely small time steps in explicit
+schemes or computationally intensive implicit methods. Consequently, strategies
+to alleviate challenges posed by stiffness are important. While neural
+operators (DeepONets) can act as surrogates for stiff kinetics, a reliable
+operator learning strategy is required to appropriately account for differences
+in the error between output variables and samples. Here, we develop AMORE,
+Adaptive Multi-Output Operator Network, a framework comprising an operator
+capable of predicting multiple outputs and adaptive loss functions ensuring
+reliable operator learning. The operator predicts all thermochemical states
+from given initial conditions. We propose two adaptive loss functions within
+the framework, considering each state variable's and sample's error to penalize
+the loss function. We designed the trunk to automatically satisfy Partition of
+Unity. To enforce unity mass-fraction constraint exactly, we propose an
+invertible analytical map that transforms the $n$-dimensional species
+mass-fraction vector into an ($n-1$)-dimensional space, where DeepONet training
+is performed. We consider two-step training for DeepONet for multiple outputs
+and extend adaptive loss functions for trunk and branch training. We
+demonstrate the efficacy and applicability of our models through two examples:
+the syngas (12 states) and GRI-Mech 3.0 (24 active states out of 54). The
+proposed DeepONet will be a backbone for future CFD studies to accelerate
+turbulent combustion simulations. AMORE is a general framework, and here, in
+addition to DeepONet, we also demonstrate it for FNO.",http://arxiv.org/pdf/2510.12999v1,,False
+Time-Varying Optimization for Streaming Data Via Temporal Weighting,15/10/2025,"Muhammad Faraz Ul Abrar, Nicolò Michelusi, Erik G. Larsson","Classical optimization theory deals with fixed, time-invariant objective
+functions. However, time-varying optimization has emerged as an important
+subject for decision-making in dynamic environments. In this work, we study the
+problem of learning from streaming data through a time-varying optimization
+lens. Unlike prior works that focus on generic formulations, we introduce a
+structured, \emph{weight-based} formulation that explicitly captures the
+streaming-data origin of the time-varying objective, where at each time step,
+an agent aims to minimize a weighted average loss over all the past data
+samples. We focus on two specific weighting strategies: (1) uniform weights,
+which treat all samples equally, and (2) discounted weights, which
+geometrically decay the influence of older data. For both schemes, we derive
+tight bounds on the ``tracking error'' (TE), defined as the deviation between
+the model parameter and the time-varying optimum at a given time step, under
+gradient descent (GD) updates. We show that under uniform weighting, the TE
+vanishes asymptotically with a $\mathcal{O}(1/t)$ decay rate, whereas
+discounted weighting incurs a nonzero error floor controlled by the discount
+factor and the number of gradient updates performed at each time step. Our
+theoretical findings are validated through numerical simulations.",http://arxiv.org/pdf/2510.13052v1,,False

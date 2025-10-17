@@ -1,0 +1,521 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Coupled Diffusion Sampling for Training-Free Multi-View Image Editing,16/10/2025,"Hadi Alzayer, Yunzhi Zhang, Chen Geng, Jia-Bin Huang, Jiajun Wu","We present an inference-time diffusion sampling method to perform multi-view
+consistent image editing using pre-trained 2D image editing models. These
+models can independently produce high-quality edits for each image in a set of
+multi-view images of a 3D scene or object, but they do not maintain consistency
+across views. Existing approaches typically address this by optimizing over
+explicit 3D representations, but they suffer from a lengthy optimization
+process and instability under sparse view settings. We propose an implicit 3D
+regularization approach by constraining the generated 2D image sequences to
+adhere to a pre-trained multi-view image distribution. This is achieved through
+coupled diffusion sampling, a simple diffusion sampling technique that
+concurrently samples two trajectories from both a multi-view image distribution
+and a 2D edited image distribution, using a coupling term to enforce the
+multi-view consistency among the generated images. We validate the
+effectiveness and generality of this framework on three distinct multi-view
+image editing tasks, demonstrating its applicability across various model
+architectures and highlighting its potential as a general solution for
+multi-view consistent editing.",http://arxiv.org/pdf/2510.14981v1,,False
+Attention Is All You Need for KV Cache in Diffusion LLMs,16/10/2025,"Quan Nguyen-Tri, Mukul Ranjan, Zhiqiang Shen","This work studies how to adaptively recompute key-value (KV) caches for
+diffusion large language models (DLMs) to maximize prediction accuracy while
+minimizing decoding latency. Prior methods' decoders recompute QKV for all
+tokens at every denoising step and layer, despite KV states changing little
+across most steps, especially in shallow layers, leading to substantial
+redundancy. We make three observations: (1) distant ${\bf MASK}$ tokens
+primarily act as a length-bias and can be cached block-wise beyond the active
+prediction window; (2) KV dynamics increase with depth, suggesting that
+selective refresh starting from deeper layers is sufficient; and (3) the
+most-attended token exhibits the smallest KV drift, providing a conservative
+lower bound on cache change for other tokens. Building on these, we propose
+${\bf Elastic-Cache}$, a training-free, architecture-agnostic strategy that
+jointly decides ${when}$ to refresh (via an attention-aware drift test on the
+most-attended token) and ${where}$ to refresh (via a depth-aware schedule that
+recomputes from a chosen layer onward while reusing shallow-layer caches and
+off-window MASK caches). Unlike fixed-period schemes, Elastic-Cache performs
+adaptive, layer-aware cache updates for diffusion LLMs, reducing redundant
+computation and accelerating decoding with negligible loss in generation
+quality. Experiments on LLaDA-Instruct, LLaDA-1.5, and LLaDA-V across
+mathematical reasoning and code generation tasks demonstrate consistent
+speedups: $8.7\times$ on GSM8K (256 tokens), $45.1\times$ on longer sequences,
+and $4.8\times$ on HumanEval, while consistently maintaining higher accuracy
+than the baseline. Our method achieves significantly higher throughput
+($6.8\times$ on GSM8K) than existing confidence-based approaches while
+preserving generation quality, enabling practical deployment of diffusion LLMs.",http://arxiv.org/pdf/2510.14973v1,,False
+"LLMs as Scalable, General-Purpose Simulators For Evolving Digital Agent Training",16/10/2025,"Yiming Wang, Da Yin, Yuedong Cui, Ruichen Zheng, Zhiqian Li, Zongyu Lin, Di Wu, Xueqing Wu, Chenchen Ye, Yu Zhou, Kai-Wei Chang","Digital agents require diverse, large-scale UI trajectories to generalize
+across real-world tasks, yet collecting such data is prohibitively expensive in
+both human annotation, infra and engineering perspectives. To this end, we
+introduce $\textbf{UI-Simulator}$, a scalable paradigm that generates
+structured UI states and transitions to synthesize training trajectories at
+scale. Our paradigm integrates a digital world simulator for diverse UI states,
+a guided rollout process for coherent exploration, and a trajectory wrapper
+that produces high-quality and diverse trajectories for agent training. We
+further propose $\textbf{UI-Simulator-Grow}$, a targeted scaling strategy that
+enables more rapid and data-efficient scaling by prioritizing high-impact tasks
+and synthesizes informative trajectory variants. Experiments on WebArena and
+AndroidWorld show that UI-Simulator rivals or surpasses open-source agents
+trained on real UIs with significantly better robustness, despite using weaker
+teacher models. Moreover, UI-Simulator-Grow matches the performance of
+Llama-3-70B-Instruct using only Llama-3-8B-Instruct as the base model,
+highlighting the potential of targeted synthesis scaling paradigm to
+continuously and efficiently enhance the digital agents.",http://arxiv.org/pdf/2510.14969v1,,False
+VT-Refine: Learning Bimanual Assembly with Visuo-Tactile Feedback via Simulation Fine-Tunin,16/10/2025,"Binghao Huang, Jie Xu, Iretiayo Akinola, Wei Yang, Balakumar Sundaralingam, Rowland O'Flaherty, Dieter Fox, Xiaolong Wang, Arsalan Mousavian, Yu-Wei Chao, Yunzhu Li","Humans excel at bimanual assembly tasks by adapting to rich tactile feedback
+-- a capability that remains difficult to replicate in robots through
+behavioral cloning alone, due to the suboptimality and limited diversity of
+human demonstrations. In this work, we present VT-Refine, a visuo-tactile
+policy learning framework that combines real-world demonstrations,
+high-fidelity tactile simulation, and reinforcement learning to tackle precise,
+contact-rich bimanual assembly. We begin by training a diffusion policy on a
+small set of demonstrations using synchronized visual and tactile inputs. This
+policy is then transferred to a simulated digital twin equipped with simulated
+tactile sensors and further refined via large-scale reinforcement learning to
+enhance robustness and generalization. To enable accurate sim-to-real transfer,
+we leverage high-resolution piezoresistive tactile sensors that provide normal
+force signals and can be realistically modeled in parallel using
+GPU-accelerated simulation. Experimental results show that VT-Refine improves
+assembly performance in both simulation and the real world by increasing data
+diversity and enabling more effective policy fine-tuning. Our project page is
+available at https://binghao-huang.github.io/vt_refine/.",http://arxiv.org/pdf/2510.14930v1,,False
+"A Multi-Task Deep Learning Framework for Skin Lesion Classification, ABCDE Feature Quantification, and Evolution Simulation",16/10/2025,"Harsha Kotla, Arun Kumar Rajasekaran, Hannah Rana","Early detection of melanoma has grown to be essential because it
+significantly improves survival rates, but automated analysis of skin lesions
+still remains challenging. ABCDE, which stands for Asymmetry, Border
+irregularity, Color variation, Diameter, and Evolving, is a well-known
+classification method for skin lesions, but most deep learning mechanisms treat
+it as a black box, as most of the human interpretable features are not
+explained. In this work, we propose a deep learning framework that both
+classifies skin lesions into categories and also quantifies scores for each
+ABCD feature. It simulates the evolution of these features over time in order
+to represent the E aspect, opening more windows for future exploration. The A,
+B, C, and D values are quantified particularly within this work. Moreover, this
+framework also visualizes ABCD feature trajectories in latent space as skin
+lesions evolve from benign nevuses to malignant melanoma. The experiments are
+conducted using the HAM10000 dataset that contains around ten thousand images
+of skin lesions of varying stages. In summary, the classification worked with
+an accuracy of around 89 percent, with melanoma AUC being 0.96, while the
+feature evaluation performed well in predicting asymmetry, color variation, and
+diameter, though border irregularity remains more difficult to model. Overall,
+this work provides a deep learning framework that will allow doctors to link ML
+diagnoses to clinically relevant criteria, thus improving our understanding of
+skin cancer progression.",http://arxiv.org/pdf/2510.14855v1,,False
+Intelligent Dynamic Handover via AI-assisted Signal Quality Prediction in 6G Multi-RAT Networks,16/10/2025,"Maria Lamprini A. Bartsioka, Anastasios Giannopoulos, Sotirios Spantideas","The emerging paradigm of 6G multiple Radio Access Technology (multi-RAT)
+networks, where cellular and Wireless Fidelity (WiFi) transmitters coexist,
+requires mobility decisions that remain reliable under fast channel dynamics,
+interference, and heterogeneous coverage. Handover in multi-RAT deployments is
+still highly reactive and event-triggered, relying on instantaneous
+measurements and threshold events. This work proposes a Machine Learning
+(ML)-assisted Predictive Conditional Handover (P-CHO) framework based on a
+model-driven and short-horizon signal quality forecasts. We present a
+generalized P-CHO sequence workflow orchestrated by a RAT Steering Controller,
+which standardizes data collection, parallel per-RAT predictions, decision
+logic with hysteresis-based conditions, and CHO execution. Considering a
+realistic multi-RAT environment, we train RAT-aware Long Short Term Memory
+(LSTM) networks to forecast the signal quality indicators of mobile users along
+randomized trajectories. The proposed P-CHO models are trained and evaluated
+under different channel models for cellular and IEEE 802.11 WiFi integrated
+coverage. We study the impact of hyperparameter tuning of LSTM models under
+different system settings, and compare direct multi-step versus recursive P-CHO
+variants. Comparisons against baseline predictors are also carried out.
+Finally, the proposed P-CHO is tested under soft and hard handover settings,
+showing that hysteresis-enabled P-CHO scheme is able to reduce handover
+failures and ping-pong events. Overall, the proposed P-CHO framework can enable
+accurate, low-latency, and proactive handovers suitable for ML-assisted
+handover steering in 6G multi-RAT deployments.",http://arxiv.org/pdf/2510.14832v1,,False
+RoboGPT-R1: Enhancing Robot Planning with Reinforcement Learning,16/10/2025,"Jinrui Liu, Bingyan Nie, Boyu Li, Yaran Chen, Yuze Wang, Shunsen He, Haoran Li","Improving the reasoning capabilities of embodied agents is crucial for robots
+to complete complex human instructions in long-view manipulation tasks
+successfully. Despite the success of large language models and vision language
+models based on Supervised Fine-Tuning (SFT) in planning tasks, they continue
+facing challenges in performing long-horizon manipulation tasks in complex
+real-world environments, owing to their restricted common sense and reasoning
+capabilities. Considering that aligning general-purpose vision language models
+to robotic planning tasks via supervised fine-tuning suffers from poor
+generalization and insufficient physical understanding, we propose RoboGPT-R1,
+a two-stage fine-tuning framework for embodied planning. In this framework,
+supervised training acquires foundational knowledge through expert sequences,
+followed by RL to address the model's shortcomings in visual-spatial
+understanding and reasoning. To achieve physical understanding and action
+sequence consistency in multi-step reasoning tasks, we design a rule-based
+reward function that simultaneously considers long-horizon performance and
+action constraint in the environment. The reasoning model, trained on
+Qwen2.5-VL-3B, significantly outperforms the larger-scale model, GPT-4o-mini,
+by 21.33% and surpasses other work trained on Qwen2.5-VL-7B by 20.33% on the
+EmbodiedBench benchmark.",http://arxiv.org/pdf/2510.14828v1,,False
+To Infinity and Beyond: Tool-Use Unlocks Length Generalization in State Space Models,16/10/2025,"Eran Malach, Omid Saremi, Sinead Williamson, Arwen Bradley, Aryo Lotfi, Emmanuel Abbe, Josh Susskind, Etai Littwin","State Space Models (SSMs) have become the leading alternative to Transformers
+for sequence modeling. Their primary advantage is efficiency in long-context
+and long-form generation, enabled by fixed-size memory and linear scaling of
+computational complexity. We begin this work by showing a simple theoretical
+result stating that SSMs cannot accurately solve any ``truly long-form''
+generation problem (in a sense we formally define), undermining their main
+competitive advantage. However, we show that this limitation can be mitigated
+by allowing SSMs interactive access to external tools. In fact, we show that
+given the right choice of tool access and problem-dependent training data, SSMs
+can learn to solve any tractable problem and generalize to arbitrary problem
+length/complexity (i.e., achieve length generalization). Following our
+theoretical finding, we demonstrate that tool-augmented SSMs achieve remarkable
+length generalization on a variety of arithmetic, reasoning, and coding tasks.
+These findings highlight SSMs as a potential efficient alternative to
+Transformers in interactive tool-based and agentic settings.",http://arxiv.org/pdf/2510.14826v1,,False
+Tackling Time-Series Forecasting Generalization via Mitigating Concept Drift,16/10/2025,"Zhiyuan Zhao, Haoxin Liu, B. Aditya Prakash","Time-series forecasting finds broad applications in real-world scenarios. Due
+to the dynamic nature of time series data, it is important for time-series
+forecasting models to handle potential distribution shifts over time. In this
+paper, we initially identify two types of distribution shifts in time series:
+concept drift and temporal shift. We acknowledge that while existing studies
+primarily focus on addressing temporal shift issues in time series forecasting,
+designing proper concept drift methods for time series forecasting has received
+comparatively less attention.
+  Motivated by the need to address potential concept drift, while conventional
+concept drift methods via invariant learning face certain challenges in
+time-series forecasting, we propose a soft attention mechanism that finds
+invariant patterns from both lookback and horizon time series. Additionally, we
+emphasize the critical importance of mitigating temporal shifts as a
+preliminary to addressing concept drift. In this context, we introduce ShifTS,
+a method-agnostic framework designed to tackle temporal shift first and then
+concept drift within a unified approach. Extensive experiments demonstrate the
+efficacy of ShifTS in consistently enhancing the forecasting accuracy of
+agnostic models across multiple datasets, and outperforming existing concept
+drift, temporal shift, and combined baselines.",http://arxiv.org/pdf/2510.14814v1,,False
+Beyond Multi-Token Prediction: Pretraining LLMs with Future Summaries,16/10/2025,"Divyat Mahajan, Sachin Goyal, Badr Youbi Idrissi, Mohammad Pezeshki, Ioannis Mitliagkas, David Lopez-Paz, Kartik Ahuja","Next-token prediction (NTP) has driven the success of large language models
+(LLMs), but it struggles with long-horizon reasoning, planning, and creative
+writing, with these limitations largely attributed to teacher-forced training.
+Multi-token prediction (MTP) partially mitigates these issues by predicting
+several future tokens at once, but it mostly captures short-range dependencies
+and offers limited improvement. We propose future summary prediction (FSP),
+which trains an auxiliary head to predict a compact representation of the
+long-term future, preserving information relevant for long-form generations. We
+explore two variants of FSP: handcrafted summaries, for example, a bag of words
+summary of the future of the sequence, and learned summaries, which use
+embeddings produced by a reverse language model trained from right to left.
+Large-scale pretraining experiments (3B and 8B-parameter models) demonstrate
+that FSP provides improvements over both NTP and MTP across math, reasoning,
+and coding benchmarks.",http://arxiv.org/pdf/2510.14751v1,,False
+Code-driven Number Sequence Calculation: Enhancing the inductive Reasoning Abilities of Large Language Models,16/10/2025,"Kedi Chen, Zhikai Lei, Xu Guo, Xuecheng Wu, Siyuan Zeng, Jianghao Yin, Yinqi Zhang, Qin Chen, Jie Zhou, Liang He, Qipeng Guo, Kai Chen, Wei Zhang","Large language models (LLMs) make remarkable progress in reasoning tasks.
+Among different reasoning modes, inductive reasoning, due to its better
+alignment with human learning, attracts increasing interest. However, research
+on inductive reasoning faces certain challenges. First, existing inductive data
+mostly focuses on superficial regularities while lacking more complex internal
+patterns. Second, current works merely prompt LLMs or finetune on simple
+prompt-response pairs, but do not provide precise thinking processes nor
+implement difficulty control. Unlike previous work, we address these challenges
+by introducing \textit{CodeSeq}, a synthetic post-training dataset built from
+number sequences. We package number sequences into algorithmic problems to
+discover their general terms, defining a general term generation (GTG) task
+correspondingly. Our pipeline generates supervised finetuning data by
+reflecting on failed test cases and incorporating iterative corrections,
+thereby teaching LLMs to learn autonomous case generation and self-checking.
+Additionally, it leverages reinforcement learning with a novel Case-Synergy
+Solvability Scaling Reward based on both solvability, estimated from the
+problem pass rate, and the success rate of self-directed case generation,
+enabling models to learn more effectively from both successes and failures.
+Experimental results show that the models trained with \textit{CodeSeq} improve
+on various reasoning tasks and can preserve the models' OOD performance.",http://arxiv.org/pdf/2510.14620v1,,False
+Beyond Correctness: Evaluating Subjective Writing Preferences Across Cultures,16/10/2025,"Shuangshuang Ying, Yunwen Li, Xingwei Qu, Xin Li, Sheng Jin, Minghao Liu, Zhoufutu Wen, Xeron Du, Tianyu Zheng, Yichi Zhang, Letian Ni, Yuyang Cheng, Qiguang Chen, Jingzhe Ding, Shengda Long, Wangchunshu Zhou, Jiazhan Feng, Wanjun Zhong, Libo Qin, Ge Zhang, Wenhao Huang, Wanxiang Che, Chenghua Lin","Current preference learning methods achieve high accuracy on standard
+benchmarks but exhibit significant performance degradation when objective
+quality signals are removed. We introduce WritingPreferenceBench, a dataset of
+1,800 human-annotated preference pairs (1,200 English, 600 Chinese) across 8
+creative writing genres, where responses are matched for objective correctness,
+factual accuracy, and length. On this benchmark, sequence-based reward
+models--the standard architecture for RLHF--achieve only 52.7% mean accuracy,
+while zero-shot language model judges perform at 53.9%. In contrast, generative
+reward models that produce explicit reasoning chains achieve 81.8% accuracy. We
+observe high within-model variance across genres: individual models range from
+18.2% to 81.8% accuracy across different writing categories, with standard
+deviations averaging 10.1%. This variance persists regardless of model scale,
+with 27B parameter models showing no consistent improvement over 8B variants.
+Our results suggest that current RLHF methods primarily learn to detect
+objective errors rather than capture subjective quality preferences (e.g.,
+creativity, stylistic flair, and emotional resonance), and that successful
+preference modeling may require intermediate reasoning representations rather
+than direct classification.",http://arxiv.org/pdf/2510.14616v1,,False
+State-Space Models for Tabular Prior-Data Fitted Networks,16/10/2025,"Felix Koch, Marcel Wever, Fabian Raisch, Benjamin Tischler","Recent advancements in foundation models for tabular data, such as TabPFN,
+demonstrated that pretrained Transformer architectures can approximate Bayesian
+inference with high predictive performance. However, Transformers suffer from
+quadratic complexity with respect to sequence length, motivating the
+exploration of more efficient sequence models. In this work, we investigate the
+potential of using Hydra, a bidirectional linear-time structured state space
+model (SSM), as an alternative to Transformers in TabPFN. A key challenge lies
+in SSM's inherent sensitivity to the order of input tokens - an undesirable
+property for tabular datasets where the row order is semantically meaningless.
+We investigate to what extent a bidirectional approach can preserve efficiency
+and enable symmetric context aggregation. Our experiments show that this
+approach reduces the order-dependence, achieving predictive performance
+competitive to the original TabPFN model.",http://arxiv.org/pdf/2510.14573v1,,False
+Helmsman: Autonomous Synthesis of Federated Learning Systems via Multi-Agent Collaboration,16/10/2025,"Haoyuan Li, Mathias Funk, Aaqib Saeed","Federated Learning (FL) offers a powerful paradigm for training models on
+decentralized data, but its promise is often undermined by the immense
+complexity of designing and deploying robust systems. The need to select,
+combine, and tune strategies for multifaceted challenges like data
+heterogeneity and system constraints has become a critical bottleneck,
+resulting in brittle, bespoke solutions. To address this, we introduce
+Helmsman, a novel multi-agent system that automates the end-to-end synthesis of
+federated learning systems from high-level user specifications. It emulates a
+principled research and development workflow through three collaborative
+phases: (1) interactive human-in-the-loop planning to formulate a sound
+research plan, (2) modular code generation by supervised agent teams, and (3) a
+closed-loop of autonomous evaluation and refinement in a sandboxed simulation
+environment. To facilitate rigorous evaluation, we also introduce
+AgentFL-Bench, a new benchmark comprising 16 diverse tasks designed to assess
+the system-level generation capabilities of agentic systems in FL. Extensive
+experiments demonstrate that our approach generates solutions competitive with,
+and often superior to, established hand-crafted baselines. Our work represents
+a significant step towards the automated engineering of complex decentralized
+AI systems.",http://arxiv.org/pdf/2510.14512v1,,False
+From Guess2Graph: When and How Can Unreliable Experts Safely Boost Causal Discovery in Finite Samples?,16/10/2025,"Sujai Hiremath, Dominik Janzing, Philipp Faller, Patrick Blöbaum, Elke Kirschbaum, Shiva Prasad Kasiviswanathan, Kyra Gan","Causal discovery algorithms often perform poorly with limited samples. While
+integrating expert knowledge (including from LLMs) as constraints promises to
+improve performance, guarantees for existing methods require perfect
+predictions or uncertainty estimates, making them unreliable for practical use.
+We propose the Guess2Graph (G2G) framework, which uses expert guesses to guide
+the sequence of statistical tests rather than replacing them. This maintains
+statistical consistency while enabling performance improvements. We develop two
+instantiations of G2G: PC-Guess, which augments the PC algorithm, and
+gPC-Guess, a learning-augmented variant designed to better leverage
+high-quality expert input. Theoretically, both preserve correctness regardless
+of expert error, with gPC-Guess provably outperforming its non-augmented
+counterpart in finite samples when experts are ""better than random.""
+Empirically, both show monotonic improvement with expert accuracy, with
+gPC-Guess achieving significantly stronger gains.",http://arxiv.org/pdf/2510.14488v1,,False
+Towards Adaptable Humanoid Control via Adaptive Motion Tracking,16/10/2025,"Tao Huang, Huayi Wang, Junli Ren, Kangning Yin, Zirui Wang, Xiao Chen, Feiyu Jia, Wentao Zhang, Junfeng Long, Jingbo Wang, Jiangmiao Pang","Humanoid robots are envisioned to adapt demonstrated motions to diverse
+real-world conditions while accurately preserving motion patterns. Existing
+motion prior approaches enable well adaptability with a few motions but often
+sacrifice imitation accuracy, whereas motion-tracking methods achieve accurate
+imitation yet require many training motions and a test-time target motion to
+adapt. To combine their strengths, we introduce AdaMimic, a novel motion
+tracking algorithm that enables adaptable humanoid control from a single
+reference motion. To reduce data dependence while ensuring adaptability, our
+method first creates an augmented dataset by sparsifying the single reference
+motion into keyframes and applying light editing with minimal physical
+assumptions. A policy is then initialized by tracking these sparse keyframes to
+generate dense intermediate motions, and adapters are subsequently trained to
+adjust tracking speed and refine low-level actions based on the adjustment,
+enabling flexible time warping that further improves imitation accuracy and
+adaptability. We validate these significant improvements in our approach in
+both simulation and the real-world Unitree G1 humanoid robot in multiple tasks
+across a wide range of adaptation conditions. Videos and code are available at
+https://taohuang13.github.io/adamimic.github.io/.",http://arxiv.org/pdf/2510.14454v1,,False
+"Towards geological inference with process-based and deep generative modeling, part 1: training on fluvial deposits",16/10/2025,"Guillaume Rongier, Luk Peeters","The distribution of resources in the subsurface is deeply linked to the
+variations of its physical properties. Generative modeling has long been used
+to predict those physical properties while quantifying the associated
+uncertainty. But current approaches struggle to properly reproduce geological
+structures, and fluvial deposits in particular, because of their continuity.
+This study explores whether a generative adversarial network (GAN) - a type of
+deep-learning algorithm for generative modeling - can be trained to reproduce
+fluvial deposits simulated by a process-based model - a more expensive model
+that mimics geological processes. An ablation study shows that developments
+from the deep-learning community to generate large 2D images are directly
+transferable to 3D images of fluvial deposits. Training remains stable, and the
+generated samples reproduce the non-stationarity and details of the deposits
+without mode collapse or pure memorization of the training data. Using a
+process-based model to generate those training data allows us to include
+valuable properties other than the usual physical properties. We show how the
+deposition time let us monitor and validate the performance of a GAN by
+checking that its samples honor the law of superposition. Our work joins a
+series of previous studies suggesting that GANs are more robust that given
+credit for, at least for training datasets targeting specific geological
+structures. Whether this robustness transfers to larger 3D images and
+multimodal datasets remains to be seen. Exploring how deep generative models
+can leverage geological principles like the law of superposition shows a lot of
+promise.",http://arxiv.org/pdf/2510.14445v1,,False
+Big Data Approaches to Bovine Bioacoustics: A FAIR-Compliant Dataset and Scalable ML Framework for Precision Livestock Welfare,16/10/2025,"Mayuri Kate, Suresh Neethirajan","The convergence of IoT sensing, edge computing, and machine learning is
+transforming precision livestock farming. Yet bioacoustic data streams remain
+underused because of computational complexity and ecological validity
+challenges. We present one of the most comprehensive bovine vocalization
+datasets to date, with 569 curated clips covering 48 behavioral classes,
+recorded across three commercial dairy farms using multiple microphone arrays
+and expanded to 2900 samples through domain informed augmentation. This FAIR
+compliant resource addresses major Big Data challenges - volume (90 hours of
+recordings, 65.6 GB), variety (multi farm and multi zone acoustics), velocity
+(real time processing), and veracity (noise robust feature extraction). Our
+distributed processing framework integrates advanced denoising using iZotope
+RX, multimodal synchronization through audio and video alignment, and
+standardized feature engineering with 24 acoustic descriptors generated from
+Praat, librosa, and openSMILE. Preliminary benchmarks reveal distinct class
+level acoustic patterns for estrus detection, distress classification, and
+maternal communication. The datasets ecological realism, reflecting authentic
+barn acoustics rather than controlled settings, ensures readiness for field
+deployment. This work establishes a foundation for animal centered AI, where
+bioacoustic data enable continuous and non invasive welfare assessment at
+industrial scale. By releasing standardized pipelines and detailed metadata, we
+promote reproducible research that connects Big Data analytics, sustainable
+agriculture, and precision livestock management. The framework supports UN SDG
+9, showing how data science can turn traditional farming into intelligent,
+welfare optimized systems that meet global food needs while upholding ethical
+animal care.",http://arxiv.org/pdf/2510.14443v1,,False
+Hi-Agent: Hierarchical Vision-Language Agents for Mobile Device Control,16/10/2025,"Zhe Wu, Hongjin Lu, Junliang Xing, Changhao Zhang, Yin Zhu, Yuhao Yang, Yuheng Jing, Kai Li, Kun Shao, Jianye Hao, Jun Wang, Yuanchun Shi","Building agents that autonomously operate mobile devices has attracted
+increasing attention. While Vision-Language Models (VLMs) show promise, most
+existing approaches rely on direct state-to-action mappings, which lack
+structured reasoning and planning, and thus generalize poorly to novel tasks or
+unseen UI layouts. We introduce Hi-Agent, a trainable hierarchical
+vision-language agent for mobile control, featuring a high-level reasoning
+model and a low-level action model that are jointly optimized. For efficient
+training, we reformulate multi-step decision-making as a sequence of
+single-step subgoals and propose a foresight advantage function, which
+leverages execution feedback from the low-level model to guide high-level
+optimization. This design alleviates the path explosion issue encountered by
+Group Relative Policy Optimization (GRPO) in long-horizon tasks and enables
+stable, critic-free joint training. Hi-Agent achieves a new State-Of-The-Art
+(SOTA) 87.9% task success rate on the Android-in-the-Wild (AitW) benchmark,
+significantly outperforming prior methods across three paradigms: prompt-based
+(AppAgent: 17.7%), supervised (Filtered BC: 54.5%), and reinforcement
+learning-based (DigiRL: 71.9%). It also demonstrates competitive zero-shot
+generalization on the ScreenSpot-v2 benchmark. On the more challenging
+AndroidWorld benchmark, Hi-Agent also scales effectively with larger backbones,
+showing strong adaptability in high-complexity mobile control scenarios.",http://arxiv.org/pdf/2510.14388v1,,False
+AI for Service: Proactive Assistance with AI Glasses,16/10/2025,"Zichen Wen, Yiyu Wang, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, Xu Zheng, Xuming Hu, Linfeng Zhang","In an era where AI is evolving from a passive tool into an active and
+adaptive companion, we introduce AI for Service (AI4Service), a new paradigm
+that enables proactive and real-time assistance in daily life. Existing AI
+services remain largely reactive, responding only to explicit user commands. We
+argue that a truly intelligent and helpful assistant should be capable of
+anticipating user needs and taking actions proactively when appropriate. To
+realize this vision, we propose Alpha-Service, a unified framework that
+addresses two fundamental challenges: Know When to intervene by detecting
+service opportunities from egocentric video streams, and Know How to provide
+both generalized and personalized services. Inspired by the von Neumann
+computer architecture and based on AI glasses, Alpha-Service consists of five
+key components: an Input Unit for perception, a Central Processing Unit for
+task scheduling, an Arithmetic Logic Unit for tool utilization, a Memory Unit
+for long-term personalization, and an Output Unit for natural human
+interaction. As an initial exploration, we implement Alpha-Service through a
+multi-agent system deployed on AI glasses. Case studies, including a real-time
+Blackjack advisor, a museum tour guide, and a shopping fit assistant,
+demonstrate its ability to seamlessly perceive the environment, infer user
+intent, and provide timely and useful assistance without explicit prompts.",http://arxiv.org/pdf/2510.14359v1,,False
+Learning Human-Humanoid Coordination for Collaborative Object Carrying,16/10/2025,"Yushi Du, Yixuan Li, Baoxiong Jia, Yutang Lin, Pei Zhou, Wei Liang, Yanchao Yang, Siyuan Huang","Human-humanoid collaboration shows significant promise for applications in
+healthcare, domestic assistance, and manufacturing. While compliant robot-human
+collaboration has been extensively developed for robotic arms, enabling
+compliant human-humanoid collaboration remains largely unexplored due to
+humanoids' complex whole-body dynamics. In this paper, we propose a
+proprioception-only reinforcement learning approach, COLA, that combines leader
+and follower behaviors within a single policy. The model is trained in a
+closed-loop environment with dynamic object interactions to predict object
+motion patterns and human intentions implicitly, enabling compliant
+collaboration to maintain load balance through coordinated trajectory planning.
+We evaluate our approach through comprehensive simulator and real-world
+experiments on collaborative carrying tasks, demonstrating the effectiveness,
+generalization, and robustness of our model across various terrains and
+objects. Simulation experiments demonstrate that our model reduces human effort
+by 24.7%. compared to baseline approaches while maintaining object stability.
+Real-world experiments validate robust collaborative carrying across different
+object types (boxes, desks, stretchers, etc.) and movement patterns
+(straight-line, turning, slope climbing). Human user studies with 23
+participants confirm an average improvement of 27.4% compared to baseline
+models. Our method enables compliant human-humanoid collaborative carrying
+without requiring external sensors or complex interaction models, offering a
+practical solution for real-world deployment.",http://arxiv.org/pdf/2510.14293v1,,False
+Stable Prediction of Adverse Events in Medical Time-Series Data,16/10/2025,"Mayank Keoliya, Seewon Choi, Rajeev Alur, Mayur Naik, Eric Wong","Early event prediction (EEP) systems continuously estimate a patient's
+imminent risk to support clinical decision-making. For bedside trust, risk
+trajectories must be accurate and temporally stable, shifting only with new,
+relevant evidence. However, current benchmarks (a) ignore stability of risk
+scores and (b) evaluate mainly on tabular inputs, leaving trajectory behavior
+untested. To address this gap, we introduce CAREBench, an EEP benchmark that
+evaluates deployability using multi-modal inputs-tabular EHR, ECG waveforms,
+and clinical text-and assesses temporal stability alongside predictive
+accuracy. We propose a stability metric that quantifies short-term variability
+in per-patient risk and penalizes abrupt oscillations based on local-Lipschitz
+constants. CAREBench spans six prediction tasks such as sepsis onset and
+compares classical learners, deep sequence models, and zero-shot LLMs. Across
+tasks, existing methods, especially LLMs, struggle to jointly optimize accuracy
+and stability, with notably poor recall at high-precision operating points.
+These results highlight the need for models that produce evidence-aligned,
+stable trajectories to earn clinician trust in continuous monitoring settings.
+(Code: https://github.com/SeewonChoi/CAREBench.)",http://arxiv.org/pdf/2510.14286v1,,False
+MorphoBench: A Benchmark with Difficulty Adaptive to Model Reasoning,16/10/2025,"Xukai Wang, Xuanbo Liu, Mingrui Chen, Haitian Zhong, Xuanlin Yang, Bohan Zeng, Jinbo Hu, Hao Liang, Junbo Niu, Xuchen Li, Ruitao Wu, Ruichuan An, Yang Shi, Liu Liu, Xu-Yao Zhang, Qiang Liu, Zhouchen Lin, Wentao Zhang, Bin Dong","With the advancement of powerful large-scale reasoning models, effectively
+evaluating the reasoning capabilities of these models has become increasingly
+important. However, existing benchmarks designed to assess the reasoning
+abilities of large models tend to be limited in scope and lack the flexibility
+to adapt their difficulty according to the evolving reasoning capacities of the
+models. To address this, we propose MorphoBench, a benchmark that incorporates
+multidisciplinary questions to evaluate the reasoning capabilities of large
+models and can adjust and update question difficulty based on the reasoning
+abilities of advanced models. Specifically, we curate the benchmark by
+selecting and collecting complex reasoning questions from existing benchmarks
+and sources such as Olympiad-level competitions. Additionally, MorphoBench
+adaptively modifies the analytical challenge of questions by leveraging key
+statements generated during the model's reasoning process. Furthermore, it
+includes questions generated using simulation software, enabling dynamic
+adjustment of benchmark difficulty with minimal resource consumption. We have
+gathered over 1,300 test questions and iteratively adjusted the difficulty of
+MorphoBench based on the reasoning capabilities of models such as o3 and GPT-5.
+MorphoBench enhances the comprehensiveness and validity of model reasoning
+evaluation, providing reliable guidance for improving both the reasoning
+abilities and scientific robustness of large models. The code has been released
+in https://github.com/OpenDCAI/MorphoBench.",http://arxiv.org/pdf/2510.14265v1,,False
+Generalist vs Specialist Time Series Foundation Models: Investigating Potential Emergent Behaviors in Assessing Human Health Using PPG Signals,16/10/2025,"Saurabh Kataria, Yi Wu, Zhaoliang Chen, Hyunjung Gloria Kwak, Yuhao Xu, Lovely Yeswanth Panchumarthi, Ran Xiao, Jiaying Lu, Ayca Ermis, Anni Zhao, Runze Yan, Alex Federov, Zewen Liu, Xu Wu, Wei Jin, Carl Yang, Jocelyn Grunwell, Stephanie R. Brown, Amit Shah, Craig Jabaley, Tim Buchman, Sivasubramanium V Bhavani, Randall J. Lee, Xiao Hu","Foundation models are large-scale machine learning models that are
+pre-trained on massive amounts of data and can be adapted for various
+downstream tasks. They have been extensively applied to tasks in Natural
+Language Processing and Computer Vision with models such as GPT, BERT, and
+CLIP. They are now also increasingly gaining attention in time-series analysis,
+particularly for physiological sensing. However, most time series foundation
+models are specialist models - with data in pre-training and testing of the
+same type, such as Electrocardiogram, Electroencephalogram, and
+Photoplethysmogram (PPG). Recent works, such as MOMENT, train a generalist time
+series foundation model with data from multiple domains, such as weather,
+traffic, and electricity. This paper aims to conduct a comprehensive
+benchmarking study to compare the performance of generalist and specialist
+models, with a focus on PPG signals. Through an extensive suite of total 51
+tasks covering cardiac state assessment, laboratory value estimation, and
+cross-modal inference, we comprehensively evaluate both models across seven
+dimensions, including win score, average performance, feature quality, tuning
+gain, performance variance, transferability, and scalability. These metrics
+jointly capture not only the models' capability but also their adaptability,
+robustness, and efficiency under different fine-tuning strategies, providing a
+holistic understanding of their strengths and limitations for diverse
+downstream scenarios. In a full-tuning scenario, we demonstrate that the
+specialist model achieves a 27% higher win score. Finally, we provide further
+analysis on generalization, fairness, attention visualizations, and the
+importance of training data choice.",http://arxiv.org/pdf/2510.14254v1,,False
+A Physics Prior-Guided Dual-Stream Attention Network for Motion Prediction of Elastic Bragg Breakwaters,16/10/2025,"Lianzi Jiang, Jianxin Zhang, Xinyu Han, Huanhe Dong, Xiangrong Wang","Accurate motion response prediction for elastic Bragg breakwaters is critical
+for their structural safety and operational integrity in marine environments.
+However, conventional deep learning models often exhibit limited generalization
+capabilities when presented with unseen sea states. These deficiencies stem
+from the neglect of natural decay observed in marine systems and inadequate
+modeling of wave-structure interaction (WSI). To overcome these challenges,
+this study proposes a novel Physics Prior-Guided Dual-Stream Attention Network
+(PhysAttnNet). First, the decay bidirectional self-attention (DBSA) module
+incorporates a learnable temporal decay to assign higher weights to recent
+states, aiming to emulate the natural decay phenomenon. Meanwhile, the phase
+differences guided bidirectional cross-attention (PDG-BCA) module explicitly
+captures the bidirectional interaction and phase relationship between waves and
+the structure using a cosine-based bias within a bidirectional
+cross-computation paradigm. These streams are synergistically integrated
+through a global context fusion (GCF) module. Finally, PhysAttnNet is trained
+with a hybrid time-frequency loss that jointly minimizes time-domain prediction
+errors and frequency-domain spectral discrepancies. Comprehensive experiments
+on wave flume datasets demonstrate that PhysAttnNet significantly outperforms
+mainstream models. Furthermore,cross-scenario generalization tests validate the
+model's robustness and adaptability to unseen environments, highlighting its
+potential as a framework to develop predictive models for complex systems in
+ocean engineering.",http://arxiv.org/pdf/2510.14250v1,,False
+Spatial Computing Communications for Multi-User Virtual Reality in Distributed Mobile Edge Computing Network,16/10/2025,"Caolu Xu, Zhiyong Chen, Meixia Tao, Li Song, Wenjun Zhang","Immersive virtual reality (VR) applications impose stringent requirements on
+latency, energy efficiency, and computational resources, particularly in
+multi-user interactive scenarios. To address these challenges, we introduce the
+concept of spatial computing communications (SCC), a framework designed to meet
+the latency and energy demands of multi-user VR over distributed mobile edge
+computing (MEC) networks. SCC jointly represents the physical space, defined by
+users and base stations, and the virtual space, representing shared immersive
+environments, using a probabilistic model of user dynamics and resource
+requirements. The resource deployment task is then formulated as a
+multi-objective combinatorial optimization (MOCO) problem that simultaneously
+minimizes system latency and energy consumption across distributed MEC
+resources. To solve this problem, we propose MO-CMPO, a multi-objective
+consistency model with policy optimization that integrates supervised learning
+and reinforcement learning (RL) fine-tuning guided by preference weights.
+Leveraging a sparse graph neural network (GNN), MO-CMPO efficiently generates
+Pareto-optimal solutions. Simulations with real-world New Radio base station
+datasets demonstrate that MO-CMPO achieves superior hypervolume performance and
+significantly lower inference latency than baseline methods. Furthermore, the
+analysis reveals practical deployment patterns: latency-oriented solutions
+favor local MEC execution to reduce transmission delay, while energy-oriented
+solutions minimize redundant placements to save energy.",http://arxiv.org/pdf/2510.14243v1,,False
+DPRF: A Generalizable Dynamic Persona Refinement Framework for Optimizing Behavior Alignment Between Personalized LLM Role-Playing Agents and Humans,16/10/2025,"Bingsheng Yao, Bo Sun, Yuanzhe Dong, Yuxuan Lu, Dakuo Wang","The emerging large language model role-playing agents (LLM RPAs) aim to
+simulate individual human behaviors, but the persona fidelity is often
+undermined by manually-created profiles (e.g., cherry-picked information and
+personality characteristics) without validating the alignment with the target
+individuals. To address this limitation, our work introduces the Dynamic
+Persona Refinement Framework (DPRF).DPRF aims to optimize the alignment of LLM
+RPAs' behaviors with those of target individuals by iteratively identifying the
+cognitive divergence, either through free-form or theory-grounded, structured
+analysis, between generated behaviors and human ground truth, and refining the
+persona profile to mitigate these divergences.We evaluate DPRF with five LLMs
+on four diverse behavior-prediction scenarios: formal debates, social media
+posts with mental health issues, public interviews, and movie reviews.DPRF can
+consistently improve behavioral alignment considerably over baseline personas
+and generalizes across models and scenarios.Our work provides a robust
+methodology for creating high-fidelity persona profiles and enhancing the
+validity of downstream applications, such as user simulation, social studies,
+and personalized AI.",http://arxiv.org/pdf/2510.14205v1,,False

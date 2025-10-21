@@ -1,0 +1,512 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Enterprise Deep Research: Steerable Multi-Agent Deep Research for Enterprise Analytics,20/10/2025,"Akshara Prabhakar, Roshan Ram, Zixiang Chen, Silvio Savarese, Frank Wang, Caiming Xiong, Huan Wang, Weiran Yao","As information grows exponentially, enterprises face increasing pressure to
+transform unstructured data into coherent, actionable insights. While
+autonomous agents show promise, they often struggle with domain-specific
+nuances, intent alignment, and enterprise integration. We present Enterprise
+Deep Research (EDR), a multi-agent system that integrates (1) a Master Planning
+Agent for adaptive query decomposition, (2) four specialized search agents
+(General, Academic, GitHub, LinkedIn), (3) an extensible MCP-based tool
+ecosystem supporting NL2SQL, file analysis, and enterprise workflows, (4) a
+Visualization Agent for data-driven insights, and (5) a reflection mechanism
+that detects knowledge gaps and updates research direction with optional
+human-in-the-loop steering guidance. These components enable automated report
+generation, real-time streaming, and seamless enterprise deployment, as
+validated on internal datasets. On open-ended benchmarks including DeepResearch
+Bench and DeepConsult, EDR outperforms state-of-the-art agentic systems without
+any human steering. We release the EDR framework and benchmark trajectories to
+advance research on multi-agent reasoning applications.
+  Code at https://github.com/SalesforceAIResearch/enterprise-deep-research and
+Dataset at https://huggingface.co/datasets/Salesforce/EDR-200",http://arxiv.org/pdf/2510.17797v1,,False
+SoftMimic: Learning Compliant Whole-body Control from Examples,20/10/2025,"Gabriel B. Margolis, Michelle Wang, Nolan Fey, Pulkit Agrawal","We introduce SoftMimic, a framework for learning compliant whole-body control
+policies for humanoid robots from example motions. Imitating human motions with
+reinforcement learning allows humanoids to quickly learn new skills, but
+existing methods incentivize stiff control that aggressively corrects
+deviations from a reference motion, leading to brittle and unsafe behavior when
+the robot encounters unexpected contacts. In contrast, SoftMimic enables robots
+to respond compliantly to external forces while maintaining balance and
+posture. Our approach leverages an inverse kinematics solver to generate an
+augmented dataset of feasible compliant motions, which we use to train a
+reinforcement learning policy. By rewarding the policy for matching compliant
+responses rather than rigidly tracking the reference motion, SoftMimic learns
+to absorb disturbances and generalize to varied tasks from a single motion
+clip. We validate our method through simulations and real-world experiments,
+demonstrating safe and effective interaction with the environment.",http://arxiv.org/pdf/2510.17792v1,,False
+Efficient Tensor Completion Algorithms for Highly Oscillatory Operators,20/10/2025,"Navjot Singh, Edgar Solomonik, Xiaoye Sherry Li, Yang Liu","This paper presents low-complexity tensor completion algorithms and their
+efficient implementation to reconstruct highly oscillatory operators
+discretized as $n\times n$ matrices. The underlying tensor decomposition is
+based on the reshaping of the input matrix and its butterfly decomposition into
+an order $\mathcal{O} (\log n)$ tensor. The reshaping of the input matrix into
+a tensor allows for representation of the butterfly decomposition as a tensor
+decomposition with dense tensors. This leads to efficient utilization of the
+existing software infrastructure for dense and sparse tensor computations. We
+propose two tensor completion algorithms in the butterfly format, using
+alternating least squares and gradient-based optimization, as well as a novel
+strategy that uses low-rank matrix completion to efficiently generate an
+initial guess for the proposed algorithms. To demonstrate the efficiency and
+applicability of our proposed algorithms, we perform three numerical
+experiments using simulated oscillatory operators in seismic applications. In
+these experiments, we use $\mathcal {O} (n \log n)$ observed entries in the
+input matrix and demonstrate an $\mathcal{O}(n\log^3 n)$ computational cost of
+the proposed algorithms, leading to a speedup of orders of magnitudes per
+iteration for large matrices compared to the low-rank matrix and quantized
+tensor-train completion. Moreover, the proposed butterfly completion
+algorithms, equipped with the novel initial guess generation strategy, achieve
+reconstruction errors that are smaller by an order of magnitude, enabling
+accurate recovery of the underlying structure compared to the state-of-the-art
+completion algorithms.",http://arxiv.org/pdf/2510.17734v1,,False
+Quantum Synthetic Data Generation for Industrial Bioprocess Monitoring,20/10/2025,"Shawn M. Gibford, Mohammad Reza Boskabadi, Christopher J. Savoie, Seyed Soheil Mansouri","Data scarcity and sparsity in bio-manufacturing poses challenges for accurate
+model
+  development, process monitoring, and optimization. We aim to replicate and
+capture
+  the complex dynamics of industrial bioprocesses by proposing the use of a
+Quantum
+  Wasserstein Generative Adversarial Network with Gradient Penalty (QWGAN-GP)
+to
+  generate synthetic time series data for industrially relevant processes. The
+  generator within our GAN is comprised of a Parameterized Quantum Circuit
+(PQC). This
+  methodology offers potential advantages in process monitoring, modeling,
+  forecasting, and optimization, enabling more efficient bioprocess management
+by
+  reducing the dependence on scarce experimental data. Our results demonstrate
+  acceptable performance in capturing the temporal dynamics of real bioprocess
+data.
+  We focus on Optical Density, a key measurement for Dry Biomass estimation.
+The data
+  generated showed high fidelity to the actual historical experimental data.
+This
+  intersection of quantum computing and machine learning has opened new
+frontiers in
+  data analysis and generation, particularly in computationally intensive
+fields, for
+  use cases such as increasing prediction accuracy for soft sensor design or
+for use
+  in predictive control.",http://arxiv.org/pdf/2510.17688v1,,False
+ZACH-ViT: A Zero-Token Vision Transformer with ShuffleStrides Data Augmentation for Robust Lung Ultrasound Classification,20/10/2025,"Athanasios Angelakis, Amne Mousa, Micah L. A. Heldeweg, Laurens A. Biesheuvel, Mark A. Haaksma, Jasper M. Smit, Pieter R. Tuinman, Paul W. G. Elbers","Differentiating cardiogenic pulmonary oedema (CPE) from non-cardiogenic and
+structurally normal lungs in lung ultrasound (LUS) videos remains challenging
+due to the high visual variability of non-cardiogenic inflammatory patterns
+(NCIP/ARDS-like), interstitial lung disease, and healthy lungs. This
+heterogeneity complicates automated classification as overlapping B-lines and
+pleural artefacts are common. We introduce ZACH-ViT (Zero-token Adaptive
+Compact Hierarchical Vision Transformer), a 0.25 M-parameter Vision Transformer
+variant that removes both positional embeddings and the [CLS] token, making it
+fully permutation-invariant and suitable for unordered medical image data. To
+enhance generalization, we propose ShuffleStrides Data Augmentation (SSDA),
+which permutes probe-view sequences and frame orders while preserving
+anatomical validity. ZACH-ViT was evaluated on 380 LUS videos from 95
+critically ill patients against nine state-of-the-art baselines. Despite the
+heterogeneity of the non-cardiogenic group, ZACH-ViT achieved the highest
+validation and test ROC-AUC (0.80 and 0.79) with balanced sensitivity (0.60)
+and specificity (0.91), while all competing models collapsed to trivial
+classification. It trains 1.35x faster than Minimal ViT (0.62M parameters) with
+2.5x fewer parameters, supporting real-time clinical deployment. These results
+show that aligning architectural design with data structure can outperform
+scale in small-data medical imaging.",http://arxiv.org/pdf/2510.17650v1,,False
+Intent-Driven LLM Ensemble Planning for Flexible Multi-Robot Disassembly: Demonstration on EV Batteries,20/10/2025,"Cansu Erdogan, Cesar Alan Contreras, Alireza Rastegarpanah, Manolis Chiou, Rustam Stolkin","This paper addresses the problem of planning complex manipulation tasks, in
+which multiple robots with different end-effectors and capabilities, informed
+by computer vision, must plan and execute concatenated sequences of actions on
+a variety of objects that can appear in arbitrary positions and configurations
+in unstructured scenes. We propose an intent-driven planning pipeline which can
+robustly construct such action sequences with varying degrees of supervisory
+input from a human using simple language instructions. The pipeline integrates:
+(i) perception-to-text scene encoding, (ii) an ensemble of large language
+models (LLMs) that generate candidate removal sequences based on the operator's
+intent, (iii) an LLM-based verifier that enforces formatting and precedence
+constraints, and (iv) a deterministic consistency filter that rejects
+hallucinated objects. The pipeline is evaluated on an example task in which two
+robot arms work collaboratively to dismantle an Electric Vehicle battery for
+recycling applications. A variety of components must be grasped and removed in
+specific sequences, determined by human instructions and/or by task-order
+feasibility decisions made by the autonomous system. On 200 real scenes with
+600 operator prompts across five component classes, we used metrics of
+full-sequence correctness and next-task correctness to evaluate and compare
+five LLM-based planners (including ablation analyses of pipeline components).
+We also evaluated the LLM-based human interface in terms of time to execution
+and NASA TLX with human participant experiments. Results indicate that our
+ensemble-with-verification approach reliably maps operator intent to safe,
+executable multi-robot plans while maintaining low user effort.",http://arxiv.org/pdf/2510.17576v1,,False
+Semi-supervised Latent Bayesian Optimization for Designing Antimicrobial Peptides,20/10/2025,"Jyler Menard, R. A. Mansbach","Antimicrobial peptides (AMPs) are a promising class of therapeutics to treat
+bacterial infections. Discovering and designing such peptides is difficult
+because of the vast number of possible sequences of amino acids. Deep
+generative models, such as variational autoencoders, have shown value in
+peptide design due to their ability to model sequence space with a
+continuous-valued latent space. Although such models have already been used to
+great effect in biomolecular design, they still suffer from a lack of
+interpretability and rigorous quantification of latent space quality as a
+search space. We investigate (1) whether further compression of the design
+space via dimensionality reduction may facilitate optimization, (2) the
+interpretability of the spaces, and (3) how organizing latent spaces with
+physicochemical properties may improve the efficiency of optimizing
+antimicrobial activity. We find that further reduction of the latent space via
+dimensionality reduction can be advantageous when organizing the space with
+more relevant information at data availability, that using the dimensionality
+reduction search space can be more interpretable, and that we can organize the
+latent space with different physicochemical properties even at different
+percentages of available labels.",http://arxiv.org/pdf/2510.17569v1,,False
+Plasma Shape Control via Zero-shot Generative Reinforcement Learning,20/10/2025,"Niannian Wu, Rongpeng Li, Zongyu Yang, Yong Xiao, Ning Wei, Yihang Chen, Bo Li, Zhifeng Zhao, Wulyu Zhong","Traditional PID controllers have limited adaptability for plasma shape
+control, and task-specific reinforcement learning (RL) methods suffer from
+limited generalization and the need for repetitive retraining. To overcome
+these challenges, this paper proposes a novel framework for developing a
+versatile, zero-shot control policy from a large-scale offline dataset of
+historical PID-controlled discharges. Our approach synergistically combines
+Generative Adversarial Imitation Learning (GAIL) with Hilbert space
+representation learning to achieve dual objectives: mimicking the stable
+operational style of the PID data and constructing a geometrically structured
+latent space for efficient, goal-directed control. The resulting foundation
+policy can be deployed for diverse trajectory tracking tasks in a zero-shot
+manner without any task-specific fine-tuning. Evaluations on the HL-3 tokamak
+simulator demonstrate that the policy excels at precisely and stably tracking
+reference trajectories for key shape parameters across a range of plasma
+scenarios. This work presents a viable pathway toward developing highly
+flexible and data-efficient intelligent control systems for future fusion
+reactors.",http://arxiv.org/pdf/2510.17531v1,,False
+MUG-V 10B: High-efficiency Training Pipeline for Large Video Generation Models,20/10/2025,"Yongshun Zhang, Zhongyi Fan, Yonghang Zhang, Zhangzikang Li, Weifeng Chen, Zhongwei Feng, Chaoyue Wang, Peng Hou, Anxiang Zeng","In recent years, large-scale generative models for visual content
+(\textit{e.g.,} images, videos, and 3D objects/scenes) have made remarkable
+progress. However, training large-scale video generation models remains
+particularly challenging and resource-intensive due to cross-modal text-video
+alignment, the long sequences involved, and the complex spatiotemporal
+dependencies. To address these challenges, we present a training framework that
+optimizes four pillars: (i) data processing, (ii) model architecture, (iii)
+training strategy, and (iv) infrastructure for large-scale video generation
+models. These optimizations delivered significant efficiency gains and
+performance improvements across all stages of data preprocessing, video
+compression, parameter scaling, curriculum-based pretraining, and
+alignment-focused post-training. Our resulting model, MUG-V 10B, matches recent
+state-of-the-art video generators overall and, on e-commerce-oriented video
+generation tasks, surpasses leading open-source baselines in human evaluations.
+More importantly, we open-source the complete stack, including model weights,
+Megatron-Core-based large-scale training code, and inference pipelines for
+video generation and enhancement. To our knowledge, this is the first public
+release of large-scale video generation training code that exploits
+Megatron-Core to achieve high training efficiency and near-linear multi-node
+scaling, details are available in
+\href{https://github.com/Shopee-MUG/MUG-V}{our webpage}.",http://arxiv.org/pdf/2510.17519v1,,False
+SAFE-D: A Spatiotemporal Detection Framework for Abnormal Driving Among Parkinson's Disease-like Drivers,20/10/2025,"Hangcheng Cao, Baixiang Huang, Longzhi Yuan, Haonan An, Zihan Fang, Xianhao Chen, Yuguang Fang","A driver's health state serves as a determinant factor in driving behavioral
+regulation. Subtle deviations from normalcy can lead to operational anomalies,
+posing risks to public transportation safety. While prior efforts have
+developed detection mechanisms for functionally-driven temporary anomalies such
+as drowsiness and distraction, limited research has addressed
+pathologically-triggered deviations, especially those stemming from chronic
+medical conditions. To bridge this gap, we investigate the driving behavior of
+Parkinson's disease patients and propose SAFE-D, a novel framework for
+detecting Parkinson-related behavioral anomalies to enhance driving safety. Our
+methodology starts by performing analysis of Parkinson's disease
+symptomatology, focusing on primary motor impairments, and establishes causal
+links to degraded driving performance. To represent the subclinical behavioral
+variations of early-stage Parkinson's disease, our framework integrates data
+from multiple vehicle control components to build a behavioral profile. We then
+design an attention-based network that adaptively prioritizes spatiotemporal
+features, enabling robust anomaly detection under physiological variability.
+Finally, we validate SAFE-D on the Logitech G29 platform and CARLA simulator,
+using data from three road maps to emulate real-world driving. Our results show
+SAFE-D achieves 96.8% average accuracy in distinguishing normal and
+Parkinson-affected driving patterns.",http://arxiv.org/pdf/2510.17517v1,,False
+Layer Specialization Underlying Compositional Reasoning in Transformers,20/10/2025,Jing Liu,"Transformers exhibit compositional reasoning on sequences not observed during
+training, a capability often attributed to in-context learning (ICL) and skill
+composition. We investigate this phenomenon using the Random Hierarchy Model
+(RHM), a probabilistic context-free grammar that generates sequences through
+recursive rule application. Models are trained on subsets of sequences and
+evaluated across four generalization conditions: memorization, in-distribution
+generalization, out-of-distribution generalization with the same rules, and
+cross-layer transfer. Behaviorally, performance improves systematically with
+task complexity and the number of in-context examples, with out-of-distribution
+tasks requiring substantially more examples than in-distribution scenarios.
+Mechanistically, we identify a progressive emergence of layer specialization
+during training that correlates with generalization performance. Principal
+component analysis and attention pattern clustering reveal that transformers
+develop structured, hierarchically organized representations in specialized
+layers. These results demonstrate that transformers develop modular,
+interpretable mechanisms supporting compositional reasoning, linking internal
+algorithmic structure to observed behavioral capabilities.",http://arxiv.org/pdf/2510.17469v1,,False
+Active Inference for an Intelligent Agent in Autonomous Reconnaissance Missions,20/10/2025,"Johan Schubert, Farzad Kamrani, Tove Gustavi","We develop an active inference route-planning method for the autonomous
+control of intelligent agents. The aim is to reconnoiter a geographical area to
+maintain a common operational picture. To achieve this, we construct an
+evidence map that reflects our current understanding of the situation,
+incorporating both positive and ""negative"" sensor observations of possible
+target objects collected over time, and diffusing the evidence across the map
+as time progresses. The generative model of active inference uses
+Dempster-Shafer theory and a Gaussian sensor model, which provides input to the
+agent. The generative process employs a Bayesian approach to update a posterior
+probability distribution. We calculate the variational free energy for all
+positions within the area by assessing the divergence between a pignistic
+probability distribution of the evidence map and a posterior probability
+distribution of a target object based on the observations, including the level
+of surprise associated with receiving new observations. Using the free energy,
+we direct the agents' movements in a simulation by taking an incremental step
+toward a position that minimizes the free energy. This approach addresses the
+challenge of exploration and exploitation, allowing agents to balance searching
+extensive areas of the geographical map while tracking identified target
+objects.",http://arxiv.org/pdf/2510.17450v1,,False
+From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors,20/10/2025,"Zhengshen Zhang, Hao Li, Yalun Dai, Zhengbang Zhu, Lei Zhou, Chenchen Liu, Dong Wang, Francis E. H. Tay, Sijin Chen, Ziwei Liu, Yuxiao Liu, Xinghang Li, Pan Zhou","Existing vision-language-action (VLA) models act in 3D real-world but are
+typically built on 2D encoders, leaving a spatial reasoning gap that limits
+generalization and adaptability. Recent 3D integration techniques for VLAs
+either require specialized sensors and transfer poorly across modalities, or
+inject weak cues that lack geometry and degrade vision-language alignment. In
+this work, we introduce FALCON (From Spatial to Action), a novel paradigm that
+injects rich 3D spatial tokens into the action head. FALCON leverages spatial
+foundation models to deliver strong geometric priors from RGB alone, and
+includes an Embodied Spatial Model that can optionally fuse depth, or pose for
+higher fidelity when available, without retraining or architectural changes. To
+preserve language reasoning, spatial tokens are consumed by a Spatial-Enhanced
+Action Head rather than being concatenated into the vision-language backbone.
+These designs enable FALCON to address limitations in spatial representation,
+modality transferability, and alignment. In comprehensive evaluations across
+three simulation benchmarks and eleven real-world tasks, our proposed FALCON
+achieves state-of-the-art performance, consistently surpasses competitive
+baselines, and remains robust under clutter, spatial-prompt conditioning, and
+variations in object scale and height.",http://arxiv.org/pdf/2510.17439v1,,False
+Diverse Planning with Simulators via Linear Temporal Logic,20/10/2025,"Mustafa F. Abdelwahed, Alice Toniolo, Joan Espasa, Ian P. Gent","Autonomous agents rely on automated planning algorithms to achieve their
+objectives. Simulation-based planning offers a significant advantage over
+declarative models in modelling complex environments. However, relying solely
+on a planner that produces a single plan may not be practical, as the generated
+plans may not always satisfy the agent's preferences. To address this
+limitation, we introduce $\texttt{FBI}_\texttt{LTL}$, a diverse planner
+explicitly designed for simulation-based planning problems.
+$\texttt{FBI}_\texttt{LTL}$ utilises Linear Temporal Logic (LTL) to define
+semantic diversity criteria, enabling agents to specify what constitutes
+meaningfully different plans. By integrating these LTL-based diversity models
+directly into the search process, $\texttt{FBI}_\texttt{LTL}$ ensures the
+generation of semantically diverse plans, addressing a critical limitation of
+existing diverse planning approaches that may produce syntactically different
+but semantically identical solutions. Extensive evaluations on various
+benchmarks consistently demonstrate that $\texttt{FBI}_\texttt{LTL}$ generates
+more diverse plans compared to a baseline approach. This work establishes the
+feasibility of semantically-guided diverse planning in simulation-based
+environments, paving the way for innovative approaches in realistic,
+non-symbolic domains where traditional model-based approaches fail.",http://arxiv.org/pdf/2510.17418v1,,False
+BenCao: An Instruction-Tuned Large Language Model for Traditional Chinese Medicine,20/10/2025,"Jiacheng Xie, Yang Yu, Yibo Chen, Hanyao Zhang, Lening Zhao, Jiaxuan He, Lei Jiang, Xiaoting Tang, Guanghui An, Dong Xu","Traditional Chinese Medicine (TCM), with a history spanning over two
+millennia, plays a role in global healthcare. However, applying large language
+models (LLMs) to TCM remains challenging due to its reliance on holistic
+reasoning, implicit logic, and multimodal diagnostic cues. Existing TCM-domain
+LLMs have made progress in text-based understanding but lack multimodal
+integration, interpretability, and clinical applicability. To address these
+limitations, we developed BenCao, a ChatGPT-based multimodal assistant for TCM,
+integrating structured knowledge bases, diagnostic data, and expert feedback
+refinement. BenCao was trained through natural language instruction tuning
+rather than parameter retraining, aligning with expert-level reasoning and
+ethical norms specific to TCM. The system incorporates a comprehensive
+knowledge base of over 1,000 classical and modern texts, a scenario-based
+instruction framework for diverse interactions, a chain-of-thought simulation
+mechanism for interpretable reasoning, and a feedback refinement process
+involving licensed TCM practitioners. BenCao connects to external APIs for
+tongue-image classification and multimodal database retrieval, enabling dynamic
+access to diagnostic resources. In evaluations across single-choice question
+benchmarks and multimodal classification tasks, BenCao achieved superior
+accuracy to general-domain and TCM-domain models, particularly in diagnostics,
+herb recognition, and constitution classification. The model was deployed as an
+interactive application on the OpenAI GPTs Store, accessed by nearly 1,000
+users globally as of October 2025. This study demonstrates the feasibility of
+developing a TCM-domain LLM through natural language-based instruction tuning
+and multimodal integration, offering a practical framework for aligning
+generative AI with traditional medical reasoning and a scalable pathway for
+real-world deployment.",http://arxiv.org/pdf/2510.17415v1,,False
+A Conditional Diffusion Model for Probabilistic Prediction of Battery Capacity Degradation,20/10/2025,"Hequn Li, Zhongwei Deng, Chunlin Jiang, Yvxin He andZhansheng Ning","Accurate prediction of lithium-ion battery capacity and its associated
+uncertainty is essential for reliable battery management but remains
+challenging due to the stochastic nature of aging. This paper presents a novel
+method, termed the Condition Diffusion U-Net with Attention (CDUA), which
+integrates feature engineering and deep learning to address this challenge. The
+proposed approach employs a diffusion-based generative model for time-series
+forecasting and incorporates attention mechanisms to enhance predictive
+performance. Battery capacity is first derived from real-world vehicle
+operation data. The most relevant features are then identified using the
+Pearson correlation coefficient and the XGBoost algorithm. These features are
+used to train the CDUA model, which comprises two core components: (1) a
+contextual U-Net with self-attention to capture complex temporal dependencies,
+and (2) a denoising network to reconstruct accurate capacity values from noisy
+observations. Experimental validation on the real-world vehicle data
+demonstrates that the proposed CDUA model achieves a relative Mean Absolute
+Error (MAE) of 0.94% and a relative Root Mean Square Error (RMSE) of 1.14%,
+with a narrow 95% confidence interval of 3.74% in relative width. These results
+confirm that CDUA provides both accurate capacity estimation and reliable
+uncertainty quantification. Comparative experiments further verify its
+robustness and superior performance over existing mainstream approaches.",http://arxiv.org/pdf/2510.17414v1,,False
+RINS-T: Robust Implicit Neural Solvers for Time Series Linear Inverse Problems,20/10/2025,"Keivan Faghih Niresi, Zepeng Zhang, Olga Fink","Time series data are often affected by various forms of corruption, such as
+missing values, noise, and outliers, which pose significant challenges for
+tasks such as forecasting and anomaly detection. To address these issues,
+inverse problems focus on reconstructing the original signal from corrupted
+data by leveraging prior knowledge about its underlying structure. While deep
+learning methods have demonstrated potential in this domain, they often require
+extensive pretraining and struggle to generalize under distribution shifts. In
+this work, we propose RINS-T (Robust Implicit Neural Solvers for Time Series
+Linear Inverse Problems), a novel deep prior framework that achieves high
+recovery performance without requiring pretraining data. RINS-T leverages
+neural networks as implicit priors and integrates robust optimization
+techniques, making it resilient to outliers while relaxing the reliance on
+Gaussian noise assumptions. To further improve optimization stability and
+robustness, we introduce three key innovations: guided input initialization,
+input perturbation, and convex output combination techniques. Each of these
+contributions strengthens the framework's optimization stability and
+robustness. These advancements make RINS-T a flexible and effective solution
+for addressing complex real-world time series challenges. Our code is available
+at https://github.com/EPFL-IMOS/RINS-T.",http://arxiv.org/pdf/2510.17396v1,,False
+Recurrent Attention-based Token Selection for Efficient Streaming Video-LLMs,20/10/2025,"Vaggelis Dorovatas, Soroush Seifi, Gunshi Gupta, Rahaf Aljundi","Video Large Language Models (Video-LLMs) excel at understanding videos
+in-context, provided they have full access to the video when answering queries.
+However, these models face challenges in streaming scenarios where hour-long
+videos must be processed online, and questions need timely responses. In this
+work, we propose a training-free approach compatible with standard Video-LLMs,
+leveraging three key concepts: 1) LLM-informed selection of visual tokens to
+identify those that the LLM has attended to and contributed to its
+understanding of each short clip. Our attention-based selection allows us to
+discard up to ~95% of unimportant visual tokens with minimal performance loss;
+2) Recurrent processing of past selected tokens to generate temporally coherent
+understanding of each processed clip; 3) Caption-based question answering for
+lightweight and accurate responses. Our method achieves state-of-the-art
+performance on streaming video benchmarks, striking a balance between
+efficiency and effectiveness.",http://arxiv.org/pdf/2510.17364v1,,False
+Fair and Interpretable Deepfake Detection in Videos,20/10/2025,"Akihito Yoshii, Ryosuke Sonoda, Ramya Srinivasan","Existing deepfake detection methods often exhibit bias, lack transparency,
+and fail to capture temporal information, leading to biased decisions and
+unreliable results across different demographic groups. In this paper, we
+propose a fairness-aware deepfake detection framework that integrates temporal
+feature learning and demographic-aware data augmentation to enhance fairness
+and interpretability. Our method leverages sequence-based clustering for
+temporal modeling of deepfake videos and concept extraction to improve
+detection reliability while also facilitating interpretable decisions for
+non-expert users. Additionally, we introduce a demography-aware data
+augmentation method that balances underrepresented groups and applies
+frequency-domain transformations to preserve deepfake artifacts, thereby
+mitigating bias and improving generalization. Extensive experiments on
+FaceForensics++, DFD, Celeb-DF, and DFDC datasets using state-of-the-art (SoTA)
+architectures (Xception, ResNet) demonstrate the efficacy of the proposed
+method in obtaining the best tradeoff between fairness and accuracy when
+compared to SoTA.",http://arxiv.org/pdf/2510.17264v1,,False
+High-Level Multi-Robot Trajectory Planning And Spurious Behavior Detection,20/10/2025,"Fernando Salanova, Jesús Roche, Cristian Mahuela, Eduardo Montijano","The reliable execution of high-level missions in multi-robot systems with
+heterogeneous agents, requires robust methods for detecting spurious behaviors.
+In this paper, we address the challenge of identifying spurious executions of
+plans specified as a Linear Temporal Logic (LTL) formula, as incorrect task
+sequences, violations of spatial constraints, timing inconsis- tencies, or
+deviations from intended mission semantics. To tackle this, we introduce a
+structured data generation framework based on the Nets-within-Nets (NWN)
+paradigm, which coordinates robot actions with LTL-derived global mission
+specifications. We further propose a Transformer-based anomaly detection
+pipeline that classifies robot trajectories as normal or anomalous. Experi-
+mental evaluations show that our method achieves high accuracy (91.3%) in
+identifying execution inefficiencies, and demonstrates robust detection
+capabilities for core mission violations (88.3%) and constraint-based adaptive
+anomalies (66.8%). An ablation experiment of the embedding and architecture was
+carried out, obtaining successful results where our novel proposition performs
+better than simpler representations.",http://arxiv.org/pdf/2510.17261v1,,False
+Understanding and Improving Length Generalization in Hierarchical Sparse Attention Models,20/10/2025,"Jiaqi Leng, Xiang Hu, Junxiong Wang, Jianguo Li, Wei Wu, Yucheng Lu","Effectively processing long contexts is a critical challenge for language
+models. While standard Transformers are limited by quadratic complexity and
+poor length extrapolation, alternative architectures like sliding window
+attention and state space models sacrifice the ability to effectively utilize
+the full context due to their fixed-size memory. Chunk-based sparse attention
+has emerged as a promising paradigm for extreme length generalization, yet the
+key architectural principles underpinning its success are not yet fully
+understood. In this work, we present a systematic dissection of these models to
+identify the core components driving their performance. Through a unified
+framework and comprehensive ablation studies, we demonstrate that a combination
+of three design principles is critical: (1) an expressive, non-linear Chunk
+Encoder with a dedicated CLS token to produce representations for retrieval;
+(2) a Bypassing Residual Path to stably integrate retrieved global information
+without it being overridden by the local residual stream; and (3) enforced
+selection sparsity during pre-training to bridge the train-test distribution
+gap. We provide a theoretical motivation for intra-chunk information processing
+and landmark generation. By combining these principles, we establish a new
+state-of-the-art for training-free length extrapolation, successfully
+generalizing models trained on a 4K context to 32 million tokens on RULER and
+BABILong. Our findings provide a clear and empirically-grounded set of design
+principles for developing future, highly-capable long-context language models.",http://arxiv.org/pdf/2510.17196v1,,False
+Offline Policy Evaluation of Multi-Turn LLM Health Coaching with Real Users,20/10/2025,"Melik Ozolcer, Sang Won Bae","We study a web-deployed, tool-augmented LLM health coach with real users. In
+a pilot with seven users (280 rated turns), offline policy evaluation (OPE)
+over factorized decision heads (Tool/Style) shows that a uniform heavy-tool
+policy raises average value on logs but harms specific subgroups, most notably
+low-health-literacy/high-self-efficacy users. A lightweight simulator with
+hidden archetypes further shows that adding a small early information-gain
+bonus reliably shortens trait identification and improves goal success and
+pass@3. Together, these early findings indicate an evaluation-first path to
+personalization: freeze the generator, learn subgroup-aware decision heads on
+typed rewards (objective tool outcomes and satisfaction), and always report
+per-archetype metrics to surface subgroup harms that averages obscure.",http://arxiv.org/pdf/2510.17173v1,,False
+Discovering Causal Relationships using Proxy Variables under Unmeasured Confounding,20/10/2025,"Yong Wu, Yanwei Fu, Shouyan Wang, Yizhou Wang, Xinwei Sun","Inferring causal relationships between variable pairs in the observational
+study is crucial but challenging, due to the presence of unmeasured
+confounding. While previous methods employed the negative controls to adjust
+for the confounding bias, they were either restricted to the discrete setting
+(i.e., all variables are discrete) or relied on strong assumptions for
+identification. To address these problems, we develop a general nonparametric
+approach that accommodates both discrete and continuous settings for testing
+causal hypothesis under unmeasured confounders. By using only a single negative
+control outcome (NCO), we establish a new identification result based on a
+newly proposed integral equation that links the outcome and NCO, requiring only
+the completeness and mild regularity conditions. We then propose a kernel-based
+testing procedure that is more efficient than existing moment-restriction
+methods. We derive the asymptotic level and power properties for our tests.
+Furthermore, we examine cases where our procedure using only NCO fails to
+achieve identification, and introduce a new procedure that incorporates a
+negative control exposure (NCE) to restore identifiability. We demonstrate the
+effectiveness of our approach through extensive simulations and real-world data
+from the Intensive Care Data and World Values Survey.",http://arxiv.org/pdf/2510.17167v1,,False
+ALPINE: A Lightweight and Adaptive Privacy-Decision Agent Framework for Dynamic Edge Crowdsensing,20/10/2025,"Guanjie Cheng, Siyang Liu, Junqin Huang, Xinkui Zhao, Yin Wang, Mengying Zhu, Linghe Kong, Shuiguang Deng","Mobile edge crowdsensing (MECS) systems continuously generate and transmit
+user data in dynamic, resource-constrained environments, exposing users to
+significant privacy threats. In practice, many privacy-preserving mechanisms
+build on differential privacy (DP). However, static DP mechanisms often fail to
+adapt to evolving risks, for example, shifts in adversarial capabilities,
+resource constraints and task requirements, resulting in either excessive noise
+or inadequate protection. To address this challenge, we propose ALPINE, a
+lightweight, adaptive framework that empowers terminal devices to autonomously
+adjust differential privacy levels in real time. ALPINE operates as a
+closed-loop control system consisting of four modules: dynamic risk perception,
+privacy decision via twin delayed deep deterministic policy gradient (TD3),
+local privacy execution and performance verification from edge nodes. Based on
+environmental risk assessments, we design a reward function that balances
+privacy gains, data utility and energy cost, guiding the TD3 agent to
+adaptively tune noise magnitude across diverse risk scenarios and achieve a
+dynamic equilibrium among privacy, utility and cost. Both the collaborative
+risk model and pretrained TD3-based agent are designed for low-overhead
+deployment. Extensive theoretical analysis and real-world simulations
+demonstrate that ALPINE effectively mitigates inference attacks while
+preserving utility and cost, making it practical for large-scale edge
+applications.",http://arxiv.org/pdf/2510.17162v1,,False
+GACO-CAD: Geometry-Augmented and Conciseness-Optimized CAD Model Generation from Single Image,20/10/2025,"Yinghui Wang, Xinyu Zhang, Peng Du","Generating editable, parametric CAD models from a single image holds great
+potential to lower the barriers of industrial concept design. However, current
+multi-modal large language models (MLLMs) still struggle with accurately
+inferring 3D geometry from 2D images due to limited spatial reasoning
+capabilities. We address this limitation by introducing GACO-CAD, a novel
+two-stage post-training framework. It is designed to achieve a joint objective:
+simultaneously improving the geometric accuracy of the generated CAD models and
+encouraging the use of more concise modeling procedures. First, during
+supervised fine-tuning, we leverage depth and surface normal maps as dense
+geometric priors, combining them with the RGB image to form a multi-channel
+input. In the context of single-view reconstruction, these priors provide
+complementary spatial cues that help the MLLM more reliably recover 3D geometry
+from 2D observations. Second, during reinforcement learning, we introduce a
+group length reward that, while preserving high geometric fidelity, promotes
+the generation of more compact and less redundant parametric modeling
+sequences. A simple dynamic weighting strategy is adopted to stabilize
+training. Experiments on the DeepCAD and Fusion360 datasets show that GACO-CAD
+achieves state-of-the-art performance under the same MLLM backbone,
+consistently outperforming existing methods in terms of code validity,
+geometric accuracy, and modeling conciseness.",http://arxiv.org/pdf/2510.17157v1,,False
+Matricial Free Energy as a Gaussianizing Regularizer: Enhancing Autoencoders for Gaussian Code Generation,20/10/2025,"Rishi Sonthalia, Raj Rao Nadakuditi","We introduce a novel regularization scheme for autoencoders based on
+matricial free energy. Our approach defines a differentiable loss function in
+terms of the singular values of the code matrix (code dimension x batch size).
+From the standpoint of free probability an d random matrix theory, this loss
+achieves its minimum when the singular value distribution of the code matrix
+coincides with that of an appropriately sculpted random metric with i.i.d.
+Gaussian entries. Empirical simulations demonstrate that minimizing the
+negative matricial free energy through standard stochastic gradient-based
+training yields Gaussian-like codes that generalize across training and test
+sets. Building on this foundation, we propose a matricidal free energy
+maximizing autoencoder that reliably produces Gaussian codes and show its
+application to underdetermined inverse problems.",http://arxiv.org/pdf/2510.17120v1,,False
+A Brain Cell Type Resource Created by Large Language Models and a Multi-Agent AI System for Collaborative Community Annotation,20/10/2025,"Rongbin Li, Wenbo Chen, Zhao Li, Rodrigo Munoz-Castaneda, Jinbo Li, Neha S. Maurya, Arnav Solanki, Huan He, Hanwen Xing, Meaghan Ramlakhan, Zachary Wise, Zhuhao Wu, Hua Xu, Michael Hawrylycz, W. Jim Zheng","Single-cell RNA sequencing has transformed our ability to identify diverse
+cell types and their transcriptomic signatures. However, annotating these
+signatures-especially those involving poorly characterized genes-remains a
+major challenge. Traditional methods, such as Gene Set Enrichment Analysis
+(GSEA), depend on well-curated annotations and often perform poorly in these
+contexts. Large Language Models (LLMs) offer a promising alternative but
+struggle to represent complex biological knowledge within structured
+ontologies. To address this, we present BRAINCELL-AID (BRAINCELL-AID:
+https://biodataai.uth.edu/BRAINCELL-AID), a novel multi-agent AI system that
+integrates free-text descriptions with ontology labels to enable more accurate
+and robust gene set annotation. By incorporating retrieval-augmented generation
+(RAG), we developed a robust agentic workflow that refines predictions using
+relevant PubMed literature, reducing hallucinations and enhancing
+interpretability. Using this workflow, we achieved correct annotations for 77%
+of mouse gene sets among their top predictions. Applying this approach, we
+annotated 5,322 brain cell clusters from the comprehensive mouse brain cell
+atlas generated by the BRAIN Initiative Cell Census Network, enabling novel
+insights into brain cell function by identifying region-specific gene
+co-expression patterns and inferring functional roles of gene ensembles.
+BRAINCELL-AID also identifies Basal Ganglia-related cell types with
+neurologically meaningful descriptions. Hence, we create a valuable resource to
+support community-driven cell type annotation.",http://arxiv.org/pdf/2510.17064v1,,False

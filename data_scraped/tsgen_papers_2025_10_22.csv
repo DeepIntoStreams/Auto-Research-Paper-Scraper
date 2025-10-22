@@ -1,0 +1,189 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Lyapunov-Aware Quantum-Inspired Reinforcement Learning for Continuous-Time Vehicle Control: A Feasibility Study,21/10/2025,"Nutkritta Kraipatthanapong, Natthaphat Thathong, Pannita Suksawas, Thanunnut Klunklin, Kritin Vongthonglua, Krit Attahakul, Aueaphum Aueawatthanaphisut","This paper presents a novel Lyapunov-Based Quantum Reinforcement Learning
+(LQRL) framework that integrates quantum policy optimization with Lyapunov
+stability analysis for continuous-time vehicle control. The proposed approach
+combines the representational power of variational quantum circuits (VQCs) with
+a stability-aware policy gradient mechanism to ensure asymptotic convergence
+and safe decision-making under dynamic environments. The vehicle longitudinal
+control problem was formulated as a continuous-state reinforcement learning
+task, where the quantum policy network generates control actions subject to
+Lyapunov stability constraints. Simulation experiments were conducted in a
+closed-loop adaptive cruise control scenario using a quantum-inspired policy
+trained under stability feedback. The results demonstrate that the LQRL
+framework successfully embeds Lyapunov stability verification into quantum
+policy learning, enabling interpretable and stability-aware control
+performance. Although transient overshoot and Lyapunov divergence were observed
+under aggressive acceleration, the system maintained bounded state evolution,
+validating the feasibility of integrating safety guarantees within quantum
+reinforcement learning architectures. The proposed framework provides a
+foundational step toward provably safe quantum control in autonomous systems
+and hybrid quantum-classical optimization domains.",http://arxiv.org/pdf/2510.18852v1,,False
+Protein generation with embedding learning for motif diversification,21/10/2025,"Kevin Michalewicz, Chen Jin, Philip Alexander Teare, Tom Diethe, Mauricio Barahona, Barbara Bravi, Asher Mullokandov","A fundamental challenge in protein design is the trade-off between generating
+structural diversity while preserving motif biological function. Current
+state-of-the-art methods, such as partial diffusion in RFdiffusion, often fail
+to resolve this trade-off: small perturbations yield motifs nearly identical to
+the native structure, whereas larger perturbations violate the geometric
+constraints necessary for biological function. We introduce Protein Generation
+with Embedding Learning (PGEL), a general framework that learns
+high-dimensional embeddings encoding sequence and structural features of a
+target motif in the representation space of a diffusion model's frozen
+denoiser, and then enhances motif diversity by introducing controlled
+perturbations in the embedding space. PGEL is thus able to loosen geometric
+constraints while satisfying typical design metrics, leading to more diverse
+yet viable structures. We demonstrate PGEL on three representative cases: a
+monomer, a protein-protein interface, and a cancer-related transcription factor
+complex. In all cases, PGEL achieves greater structural diversity, better
+designability, and improved self-consistency, as compared to partial diffusion.
+Our results establish PGEL as a general strategy for embedding-driven protein
+generation allowing for systematic, viable diversification of functional
+motifs.",http://arxiv.org/pdf/2510.18790v1,,False
+Diffusion Buffer for Online Generative Speech Enhancement,21/10/2025,"Bunlong Lay, Rostislav Makarov, Simon Welker, Maris Hillemann, Timo Gerkmann","Online Speech Enhancement was mainly reserved for predictive models. A key
+advantage of these models is that for an incoming signal frame from a stream of
+data, the model is called only once for enhancement. In contrast, generative
+Speech Enhancement models often require multiple calls, resulting in a
+computational complexity that is too high for many online speech enhancement
+applications. This work presents the Diffusion Buffer, a generative
+diffusion-based Speech Enhancement model which only requires one neural network
+call per incoming signal frame from a stream of data and performs enhancement
+in an online fashion on a consumer-grade GPU. The key idea of the Diffusion
+Buffer is to align physical time with Diffusion time-steps. The approach
+progressively denoises frames through physical time, where past frames have
+more noise removed. Consequently, an enhanced frame is output to the listener
+with a delay defined by the Diffusion Buffer, and the output frame has a
+corresponding look-ahead. In this work, we extend upon our previous work by
+carefully designing a 2D convolutional UNet architecture that specifically
+aligns with the Diffusion Buffer's look-ahead. We observe that the proposed
+UNet improves performance, particularly when the algorithmic latency is low.
+Moreover, we show that using a Data Prediction loss instead of Denoising Score
+Matching loss enables flexible control over the trade-off between algorithmic
+latency and quality during inference. The extended Diffusion Buffer equipped
+with a novel NN and loss function drastically reduces the algorithmic latency
+from 320 - 960 ms to 32 - 176 ms with an even increased performance. While it
+has been shown before that offline generative diffusion models outperform
+predictive approaches in unseen noisy speech data, we confirm that the online
+Diffusion Buffer also outperforms its predictive counterpart on unseen noisy
+speech data.",http://arxiv.org/pdf/2510.18744v1,,False
+Sherlock Your Queries: Learning to Ask the Right Questions for Dialogue-Based Retrieval,21/10/2025,"Dong Yun, Marco Schouten, Dim Papadopoulos","User queries in information retrieval are often ambiguous, making it
+challenging for systems to identify a user's target from a single query. While
+recent dialogue-based interactive retrieval systems can clarify user intent,
+they are inefficient as they often lack an explicit strategy to ask the most
+informative questions. To address this limitation, we propose SherlockLLM, a
+dialogue-driven retrieval framework that learns an optimal questioning strategy
+via Reinforcement Learning (RL) and avoids the need for large-scale annotated
+dialogue data. In our framework, an agent is trained to generate a sequence of
+binary questions to efficiently narrow down the search space. To validate our
+approach, we introduce a benchmark with both structured and unstructured tasks.
+Experimental results show that SherlockLLM is a robust and efficient solution.
+On the structured tasks, its performance matches strong baselines and
+approaches the theoretical optimal defined by binary search. On the challenging
+unstructured task, our agent significantly outperforms these baselines,
+showcasing its ability to learn a highly effective information-seeking dialogue
+policy.",http://arxiv.org/pdf/2510.18659v1,,False
+Hardness of Learning Regular Languages in the Next Symbol Prediction Setting,21/10/2025,"Satwik Bhattamishra, Phil Blunsom, Varun Kanade","We study the learnability of languages in the Next Symbol Prediction (NSP)
+setting, where a learner receives only positive examples from a language
+together with, for every prefix, (i) whether the prefix itself is in the
+language and (ii) which next symbols can lead to an accepting string. This
+setting has been used in prior works to empirically analyze neural sequence
+models, and additionally, we observe that efficient algorithms for the NSP
+setting can be used to learn the (truncated) support of language models. We
+formalize the setting so as to make it amenable to PAC-learning analysis. While
+the setting provides a much richer set of labels than the conventional
+classification setting, we show that learning concept classes such as DFAs and
+Boolean formulas remains computationally hard. The proof is via a construction
+that makes almost all additional labels uninformative, yielding a reduction
+from the conventional learning problem to learning with NSP labels. Under
+cryptographic assumptions, the reduction implies that the problem of learning
+DFAs is computationally hard in the NSP setting.",http://arxiv.org/pdf/2510.18634v1,,False
+SOCIA-Nabla: Textual Gradient Meets Multi-Agent Orchestration for Automated Simulator Generation,21/10/2025,"Yuncheng Hua, Sion Weatherhead, Mehdi Jafari, Hao Xue, Flora D. Salim","In this paper, we present SOCIA-Nabla, an end-to-end, agentic framework that
+treats simulator construction asinstance optimization over code within a
+textual computation graph. Specialized LLM-driven agents are embedded as graph
+nodes, and a workflow manager executes a loss-driven loop: code synthesis ->
+execution -> evaluation -> code repair. The optimizer performs Textual-Gradient
+Descent (TGD), while human-in-the-loop interaction is reserved for task-spec
+confirmation, minimizing expert effort and keeping the code itself as the
+trainable object. Across three CPS tasks, i.e., User Modeling, Mask Adoption,
+and Personal Mobility, SOCIA-Nabla attains state-of-the-art overall accuracy.
+By unifying multi-agent orchestration with a loss-aligned optimization view,
+SOCIA-Nabla converts brittle prompt pipelines into reproducible,
+constraint-aware simulator code generation that scales across domains and
+simulation granularities. This work is under review, and we will release the
+code soon.",http://arxiv.org/pdf/2510.18551v1,,False
+Overparametrization bends the landscape: BBP transitions at initialization in simple Neural Networks,21/10/2025,"Brandon Livio Annesi, Dario Bocchi, Chiara Cammarota","High-dimensional non-convex loss landscapes play a central role in the theory
+of Machine Learning. Gaining insight into how these landscapes interact with
+gradient-based optimization methods, even in relatively simple models, can shed
+light on this enigmatic feature of neural networks. In this work, we will focus
+on a prototypical simple learning problem, which generalizes the Phase
+Retrieval inference problem by allowing the exploration of overparametrized
+settings. Using techniques from field theory, we analyze the spectrum of the
+Hessian at initialization and identify a Baik-Ben Arous-P\'ech\'e (BBP)
+transition in the amount of data that separates regimes where the
+initialization is informative or uninformative about a planted signal of a
+teacher-student setup. Crucially, we demonstrate how overparameterization can
+bend the loss landscape, shifting the transition point, even reaching the
+information-theoretic weak-recovery threshold in the large overparameterization
+limit, while also altering its qualitative nature. We distinguish between
+continuous and discontinuous BBP transitions and support our analytical
+predictions with simulations, examining how they compare to the finite-N
+behavior. In the case of discontinuous BBP transitions strong finite-N
+corrections allow the retrieval of information at a signal-to-noise ratio (SNR)
+smaller than the predicted BBP transition. In these cases we provide estimates
+for a new lower SNR threshold that marks the point at which initialization
+becomes entirely uninformative.",http://arxiv.org/pdf/2510.18435v1,,False
+MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation,21/10/2025,"Chengshu Li, Mengdi Xu, Arpit Bahety, Hang Yin, Yunfan Jiang, Huang Huang, Josiah Wong, Sujay Garlanka, Cem Gokmen, Ruohan Zhang, Weiyu Liu, Jiajun Wu, Roberto Martín-Martín, Li Fei-Fei","Imitation learning from large-scale, diverse human demonstrations has proven
+effective for training robots, but collecting such data is costly and
+time-consuming. This challenge is amplified for multi-step bimanual mobile
+manipulation, where humans must teleoperate both a mobile base and two
+high-degree-of-freedom arms. Prior automated data generation frameworks have
+addressed static bimanual manipulation by augmenting a few human demonstrations
+in simulation, but they fall short for mobile settings due to two key
+challenges: (1) determining base placement to ensure reachability, and (2)
+positioning the camera to provide sufficient visibility for visuomotor
+policies. To address these issues, we introduce MoMaGen, which formulates data
+generation as a constrained optimization problem that enforces hard constraints
+(e.g., reachability) while balancing soft constraints (e.g., visibility during
+navigation). This formulation generalizes prior approaches and provides a
+principled foundation for future methods. We evaluate MoMaGen on four
+multi-step bimanual mobile manipulation tasks and show that it generates
+significantly more diverse datasets than existing methods. Leveraging this
+diversity, MoMaGen can train successful imitation learning policies from a
+single source demonstration, and these policies can be fine-tuned with as few
+as 40 real-world demonstrations to achieve deployment on physical robotic
+hardware. More details are available at our project page: momagen.github.io.",http://arxiv.org/pdf/2510.18316v1,,False
+Towards Identifiability of Hierarchical Temporal Causal Representation Learning,21/10/2025,"Zijian Li, Minghao Fu, Junxian Huang, Yifan Shen, Ruichu Cai, Yuewen Sun, Guangyi Chen, Kun Zhang","Modeling hierarchical latent dynamics behind time series data is critical for
+capturing temporal dependencies across multiple levels of abstraction in
+real-world tasks. However, existing temporal causal representation learning
+methods fail to capture such dynamics, as they fail to recover the joint
+distribution of hierarchical latent variables from \textit{single-timestep
+observed variables}. Interestingly, we find that the joint distribution of
+hierarchical latent variables can be uniquely determined using three
+conditionally independent observations. Building on this insight, we propose a
+Causally Hierarchical Latent Dynamic (CHiLD) identification framework. Our
+approach first employs temporal contextual observed variables to identify the
+joint distribution of multi-layer latent variables. Sequentially, we exploit
+the natural sparsity of the hierarchical structure among latent variables to
+identify latent variables within each layer. Guided by the theoretical results,
+we develop a time series generative model grounded in variational inference.
+This model incorporates a contextual encoder to reconstruct multi-layer latent
+variables and normalize flow-based hierarchical prior networks to impose the
+independent noise condition of hierarchical latent dynamics. Empirical
+evaluations on both synthetic and real-world datasets validate our theoretical
+claims and demonstrate the effectiveness of CHiLD in modeling hierarchical
+latent dynamics.",http://arxiv.org/pdf/2510.18310v1,,False
+Online Time Series Forecasting with Theoretical Guarantees,21/10/2025,"Zijian Li, Changze Zhou, Minghao Fu, Sanjay Manjunath, Fan Feng, Guangyi Chen, Yingyao Hu, Ruichu Cai, Kun Zhang","This paper is concerned with online time series forecasting, where unknown
+distribution shifts occur over time, i.e., latent variables influence the
+mapping from historical to future observations. To develop an automated way of
+online time series forecasting, we propose a Theoretical framework for Online
+Time-series forecasting (TOT in short) with theoretical guarantees.
+Specifically, we prove that supplying a forecaster with latent variables
+tightens the Bayes risk, the benefit endures under estimation uncertainty of
+latent variables and grows as the latent variables achieve a more precise
+identifiability. To better introduce latent variables into online forecasting
+algorithms, we further propose to identify latent variables with minimal
+adjacent observations. Based on these results, we devise a model-agnostic
+blueprint by employing a temporal decoder to match the distribution of observed
+variables and two independent noise estimators to model the causal inference of
+latent variables and mixing procedures of observed variables, respectively.
+Experiment results on synthetic data support our theoretical claims. Moreover,
+plug-in implementations built on several baselines yield general improvement
+across multiple benchmarks, highlighting the effectiveness in real-world
+applications.",http://arxiv.org/pdf/2510.18281v1,,False

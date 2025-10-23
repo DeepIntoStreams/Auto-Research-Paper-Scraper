@@ -1,0 +1,404 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Memo: Training Memory-Efficient Embodied Agents with Reinforcement Learning,22/10/2025,"Gunshi Gupta, Karmesh Yadav, Zsolt Kira, Yarin Gal, Rahaf Aljundi","To enable embodied agents to operate effectively over extended timeframes, it
+is crucial to develop models that form and access memories to stay
+contextualized in their environment. In the current paradigm of training
+transformer-based policies for embodied sequential decision-making tasks,
+visual inputs often overwhelm the context limits of transformers, while humans
+can maintain and utilize a lifetime of experience compressed as memories.
+Significant compression is possible in principle, as much of the input is
+irrelevant and can be abstracted. However, existing approaches predominantly
+focus on either recurrent models with fixed-size memory or transformers with
+full-context reliance. In this work, we propose Memo, a transformer-based
+architecture and training recipe for reinforcement learning (RL) on
+memory-intensive, long-horizon tasks. Memo incorporates the creation and
+retrieval of memory by interleaving periodic summarization tokens with the
+inputs of a model during training. We demonstrate Memo's effectiveness on a
+gridworld meta-RL benchmark and a multi-object navigation task in
+photo-realistic indoor settings. Memo outperforms naive long-context
+transformer baselines while being more compute and storage efficient.
+Additionally, Memo generalizes better to longer contexts at inference time and
+remains robust in streaming settings, where historical context must be
+truncated to fit inference constraints.",http://arxiv.org/pdf/2510.19732v1,,False
+Enabling Granular Subgroup Level Model Evaluations by Generating Synthetic Medical Time Series,22/10/2025,"Mahmoud Ibrahim, Bart Elen, Chang Sun, Gökhan Ertaylan, Michel Dumontier","We present a novel framework for leveraging synthetic ICU time-series data
+not only to train but also to rigorously and trustworthily evaluate predictive
+models, both at the population level and within fine-grained demographic
+subgroups. Building on prior diffusion and VAE-based generators (TimeDiff,
+HealthGen, TimeAutoDiff), we introduce \textit{Enhanced TimeAutoDiff}, which
+augments the latent diffusion objective with distribution-alignment penalties.
+We extensively benchmark all models on MIMIC-III and eICU, on 24-hour mortality
+and binary length-of-stay tasks. Our results show that Enhanced TimeAutoDiff
+reduces the gap between real-on-synthetic and real-on-real evaluation (``TRTS
+gap'') by over 70\%, achieving $\Delta_{TRTS} \leq 0.014$ AUROC, while
+preserving training utility ($\Delta_{TSTR} \approx 0.01$). Crucially, for 32
+intersectional subgroups, large synthetic cohorts cut subgroup-level AUROC
+estimation error by up to 50\% relative to small real test sets, and outperform
+them in 72--84\% of subgroups. This work provides a practical,
+privacy-preserving roadmap for trustworthy, granular model evaluation in
+critical care, enabling robust and reliable performance analysis across diverse
+patient populations without exposing sensitive EHR data, contributing to the
+overall trustworthiness of Medical AI.",http://arxiv.org/pdf/2510.19728v1,,False
+SEMPO: Lightweight Foundation Models for Time Series Forecasting,22/10/2025,"Hui He, Kun Yi, Yuanchi Ma, Qi Zhang, Zhendong Niu, Guansong Pang","The recent boom of large pre-trained models witnesses remarkable success in
+developing foundation models (FMs) for time series forecasting. Despite
+impressive performance across diverse downstream forecasting tasks, existing
+time series FMs possess massive network architectures and require substantial
+pre-training on large-scale datasets, which significantly hinders their
+deployment in resource-constrained environments. In response to this growing
+tension between versatility and affordability, we propose SEMPO, a novel
+lightweight foundation model that requires pretraining on relatively
+small-scale data, yet exhibits strong general time series forecasting.
+Concretely, SEMPO comprises two key modules: 1) energy-aware SpEctral
+decomposition module, that substantially improves the utilization of
+pre-training data by modeling not only the high-energy frequency signals but
+also the low-energy yet informative frequency signals that are ignored in
+current methods; and 2) Mixture-of-PrOmpts enabled Transformer, that learns
+heterogeneous temporal patterns through small dataset-specific prompts and
+adaptively routes time series tokens to prompt-based experts for
+parameter-efficient model adaptation across different datasets and domains.
+Equipped with these modules, SEMPO significantly reduces both pre-training data
+scale and model size, while achieving strong generalization. Extensive
+experiments on two large-scale benchmarks covering 16 datasets demonstrate the
+superior performance of SEMPO in both zero-shot and few-shot forecasting
+scenarios compared with state-of-the-art methods. Code and data are available
+at https://github.com/mala-lab/SEMPO.",http://arxiv.org/pdf/2510.19710v1,,False
+From Forecasting to Planning: Policy World Model for Collaborative State-Action Prediction,22/10/2025,"Zhida Zhao, Talas Fu, Yifan Wang, Lijun Wang, Huchuan Lu","Despite remarkable progress in driving world models, their potential for
+autonomous systems remains largely untapped: the world models are mostly
+learned for world simulation and decoupled from trajectory planning. While
+recent efforts aim to unify world modeling and planning in a single framework,
+the synergistic facilitation mechanism of world modeling for planning still
+requires further exploration. In this work, we introduce a new driving paradigm
+named Policy World Model (PWM), which not only integrates world modeling and
+trajectory planning within a unified architecture, but is also able to benefit
+planning using the learned world knowledge through the proposed action-free
+future state forecasting scheme. Through collaborative state-action prediction,
+PWM can mimic the human-like anticipatory perception, yielding more reliable
+planning performance. To facilitate the efficiency of video forecasting, we
+further introduce a dynamically enhanced parallel token generation mechanism,
+equipped with a context-guided tokenizer and an adaptive dynamic focal loss.
+Despite utilizing only front camera input, our method matches or exceeds
+state-of-the-art approaches that rely on multi-view and multi-modal inputs.
+Code and model weights will be released at
+https://github.com/6550Zhao/Policy-World-Model.",http://arxiv.org/pdf/2510.19654v1,,False
+Learning and Simulating Building Evacuation Patterns for Enhanced Safety Design Using Generative Models,22/10/2025,"Jin Han, Zhe Zheng, Yi Gu, Jia-Rui Lin, Xin-Zheng Lu","Evacuation simulation is essential for building safety design, ensuring
+properly planned evacuation routes. However, traditional evacuation simulation
+relies heavily on refined modeling with extensive parameters, making it
+challenging to adopt such methods in a rapid iteration process in early design
+stages. Thus, this study proposes DiffEvac, a novel method to learn building
+evacuation patterns based on Generative Models (GMs), for efficient evacuation
+simulation and enhanced safety design. Initially, a dataset of 399 diverse
+functional layouts and corresponding evacuation heatmaps of buildings was
+established. Then, a decoupled feature representation is proposed to embed
+physical features like layouts and occupant density for GMs. Finally, a
+diffusion model based on image prompts is proposed to learn evacuation patterns
+from simulated evacuation heatmaps. Compared to existing research using
+Conditional GANs with RGB representation, DiffEvac achieves up to a 37.6%
+improvement in SSIM, 142% in PSNR, and delivers results 16 times faster,
+thereby cutting simulation time to 2 minutes. Case studies further demonstrate
+that the proposed method not only significantly enhances the rapid design
+iteration and adjustment process with efficient evacuation simulation but also
+offers new insights and technical pathways for future safety optimization in
+intelligent building design. The research implication is that the approach
+lowers the modeling burden, enables large-scale what-if exploration, and
+facilitates coupling with multi-objective design tools.",http://arxiv.org/pdf/2510.19623v1,,False
+A Climate-Aware Deep Learning Framework for Generalizable Epidemic Forecasting,22/10/2025,"Jinpyo Hong, Rachel E. Baker","Precise outbreak forecasting of infectious diseases is essential for
+effective public health responses and epidemic control. The increased
+availability of machine learning (ML) methods for time-series forecasting
+presents an enticing avenue to enhance outbreak forecasting. Though the
+COVID-19 outbreak demonstrated the value of applying ML models to predict
+epidemic profiles, using ML models to forecast endemic diseases remains
+underexplored. In this work, we present ForecastNet-XCL (an ensemble model
+based on XGBoost+CNN+BiLSTM), a deep learning hybrid framework designed to
+addresses this gap by creating accurate multi-week RSV forecasts up to 100
+weeks in advance based on climate and temporal data, without access to
+real-time surveillance on RSV. The framework combines high-resolution feature
+learning with long-range temporal dependency capturing mechanisms, bolstered by
+an autoregressive module trained on climate-controlled lagged relations.
+Stochastic inference returns probabilistic intervals to inform decision-making.
+Evaluated across 34 U.S. states, ForecastNet-XCL reliably outperformed
+statistical baselines, individual neural nets, and conventional ensemble
+methods in both within- and cross-state scenarios, sustaining accuracy over
+extended forecast horizons. Training on climatologically diverse datasets
+enhanced generalization furthermore, particularly in locations having irregular
+or biennial RSV patterns. ForecastNet-XCL's efficiency, performance, and
+uncertainty-aware design make it a deployable early-warning tool amid
+escalating climate pressures and constrained surveillance resources.",http://arxiv.org/pdf/2510.19611v1,,False
+From Prototypes to Sparse ECG Explanations: SHAP-Driven Counterfactuals for Multivariate Time-Series Multi-class Classification,22/10/2025,"Maciej Mozolewski, Betül Bayrak, Kerstin Bach, Grzegorz J. Nalepa","In eXplainable Artificial Intelligence (XAI), instance-based explanations for
+time series have gained increasing attention due to their potential for
+actionable and interpretable insights in domains such as healthcare. Addressing
+the challenges of explainability of state-of-the-art models, we propose a
+prototype-driven framework for generating sparse counterfactual explanations
+tailored to 12-lead ECG classification models. Our method employs SHAP-based
+thresholds to identify critical signal segments and convert them into interval
+rules, uses Dynamic Time Warping (DTW) and medoid clustering to extract
+representative prototypes, and aligns these prototypes to query R-peaks for
+coherence with the sample being explained. The framework generates
+counterfactuals that modify only 78% of the original signal while maintaining
+81.3% validity across all classes and achieving 43% improvement in temporal
+stability. We evaluate three variants of our approach, Original, Sparse, and
+Aligned Sparse, with class-specific performance ranging from 98.9% validity for
+myocardial infarction (MI) to challenges with hypertrophy (HYP) detection
+(13.2%). This approach supports near realtime generation (< 1 second) of
+clinically valid counterfactuals and provides a foundation for interactive
+explanation platforms. Our findings establish design principles for
+physiologically-aware counterfactual explanations in AI-based diagnosis systems
+and outline pathways toward user-controlled explanation interfaces for clinical
+deployment.",http://arxiv.org/pdf/2510.19514v1,,False
+Modeling realistic human behavior using generative agents in a multimodal transport system: Software architecture and Application to Toulouse,22/10/2025,"Trung-Dung Vu, Benoit Gaudou, Kamaldeep Singh Oberoi","Modeling realistic human behaviour to understand people's mode choices in
+order to propose personalised mobility solutions remains challenging. This
+paper presents an architecture for modeling realistic human mobility behavior
+in complex multimodal transport systems, demonstrated through a case study in
+Toulouse, France. We apply Large Language Models (LLMs) within an agent-based
+simulation to capture decision-making in a real urban setting. The framework
+integrates the GAMA simulation platform with an LLM-based generative agent,
+along with General Transit Feed Specification (GTFS) data for public transport,
+and OpenTripPlanner for multimodal routing. GAMA platform models the
+interactive transport environment, providing visualization and dynamic agent
+interactions while eliminating the need to construct the simulation environment
+from scratch. This design enables a stronger focus on developing generative
+agents and evaluating their performance in transport decision-making processes.
+Over a simulated month, results show that agents not only make context-aware
+transport decisions but also form habits over time. We conclude that combining
+LLMs with agent-based simulation offers a promising direction for advancing
+intelligent transportation systems and personalised multimodal mobility
+solutions. We also discuss some limitations of this approach and outline future
+work on scaling to larger regions, integrating real-time data, and refining
+memory models.",http://arxiv.org/pdf/2510.19497v1,,False
+HybridEP: Scaling Expert Parallelism to Cross-Datacenter Scenario via Hybrid Expert/Data Transmission,22/10/2025,"Weihao Yang, Hao Huang, Donglei Wu, Ningke Li, Yanqi Pan, Qiyang Zheng, Wen Xia, Shiyi Li, Qiang Wang","Mixture-of-Experts (MoE) has become a popular architecture for scaling large
+models. However, the rapidly growing scale outpaces model training on a single
+DC, driving a shift toward a more flexible, cross-DC training paradigm. Under
+this, Expert Parallelism (EP) of MoE faces significant scalability issues due
+to the limited cross-DC bandwidth. Specifically, existing EP optimizations
+attempt to overlap data communication and computation, which has little benefit
+in low-bandwidth scenarios due to a much longer data communication time.
+Therefore, the trends of cross-DC EP scaling is fast becoming a critical
+roadblock to the continued growth of MoE models.
+  To address this, we propose HybridEP, a modeling-guided framework to optimize
+EP under constrained bandwidth. Our key idea is to dynamically transform the
+spatial placement of experts to reduce data communication traffic and
+frequency, thereby minimizing EP's communication overheads. However, it is
+non-trivial to find the optimal solution because it complicates the original
+communication pattern by mixing data and expert communication. We therefore
+build a stream-based model to determine the optimal transmission ratio. Guided
+by this, we incorporate two techniques: (1) domain-based partition to construct
+the mapping between hybrid patterns and specific communication topology at GPU
+level, and (2) parameter-efficient migration to further refine this topology by
+reducing expert transmission overhead and enlarging the domain size. Combining
+all these designs, HybridEP can be considered as a more general EP with better
+scalability. Experimental results show that HybridEP outperforms existing
+state-of-the-art MoE training systems by up to 5.6x under constrained
+bandwidth. We further compare HybridEP and EP on large-scale simulations.
+HybridEP achieves up to 1.45x speedup with 1k DCs under different bandwidths.",http://arxiv.org/pdf/2510.19470v1,,False
+LLM Unlearning with LLM Beliefs,22/10/2025,"Kemou Li, Qizhou Wang, Yue Wang, Fengpeng Li, Jun Liu, Bo Han, Jiantao Zhou","Large language models trained on vast corpora inherently risk memorizing
+sensitive or harmful content, which may later resurface in their outputs.
+Prevailing unlearning methods generally rely on gradient ascent and its
+variants to lower the probability of specific target responses. However, we
+find that this strategy induces a critical side effect: probability mass is
+redistributed into high-likelihood regions, often corresponding to semantically
+related rephrasings of the targets. We refer to this as the squeezing effect,
+which explains why many methods yield merely spurious unlearning, a problem
+further obscured by automated metrics (e.g., ROUGE, truth ratio) that misreport
+actual success. To address this, we propose a bootstrapping (BS) framework that
+explicitly links the squeezing effect with the model's own high-confidence
+generations, namely its model beliefs. Since model beliefs inherently capture
+the very high-likelihood regions where probability mass is squeezed,
+incorporating them into the unlearning objective directly counters the
+squeezing effect. By jointly suppressing both target responses and model
+beliefs, BS-T (token) attenuates high-probability tokens, whereas BS-S
+(sequence) removes entire high-confidence generations, together achieving more
+thorough forgetting while preserving utility. Extensive experiments across
+diverse benchmarks with various model families confirm the effectiveness of our
+approach.",http://arxiv.org/pdf/2510.19422v1,,False
+LMFD: Latent Monotonic Feature Discovery,22/10/2025,"Guus Toussaint, Arno Knobbe","Many systems in our world age, degrade or otherwise move slowly but steadily
+in a certain direction. When monitoring such systems by means of sensors, one
+often assumes that some form of `age' is latently present in the data, but
+perhaps the available sensors do not readily provide this useful information.
+The task that we study in this paper is to extract potential proxies for this
+`age' from the available multi-variate time series without having clear data on
+what `age' actually is. We argue that when we find a sensor, or more likely
+some discovered function of the available sensors, that is sufficiently
+monotonic, that function can act as the proxy we are searching for. Using a
+carefully defined grammar and optimising the resulting equations in terms of
+monotonicity, defined as the absolute Spearman's Rank Correlation between time
+and the candidate formula, the proposed approach generates a set of candidate
+features which are then fitted and assessed on monotonicity. The proposed
+system is evaluated against an artificially generated dataset and two
+real-world datasets. In all experiments, we show that the system is able to
+combine sensors with low individual monotonicity into latent features with high
+monotonicity. For the real-world dataset of InfraWatch, a structural health
+monitoring project, we show that two features with individual absolute
+Spearman's $\rho$ values of $0.13$ and $0.09$ can be combined into a proxy with
+an absolute Spearman's $\rho$ of $0.95$. This demonstrates that our proposed
+method can find interpretable equations which can serve as a proxy for the
+`age' of the system.",http://arxiv.org/pdf/2510.19383v1,10.1007/978-3-031-74633-8_2,False
+Using Temperature Sampling to Effectively Train Robot Learning Policies on Imbalanced Datasets,22/10/2025,"Basavasagar Patil, Sydney Belt, Jayjun Lee, Nima Fazeli, Bernadette Bucher","Increasingly large datasets of robot actions and sensory observations are
+being collected to train ever-larger neural networks. These datasets are
+collected based on tasks and while these tasks may be distinct in their
+descriptions, many involve very similar physical action sequences (e.g., 'pick
+up an apple' versus 'pick up an orange'). As a result, many datasets of robotic
+tasks are substantially imbalanced in terms of the physical robotic actions
+they represent. In this work, we propose a simple sampling strategy for policy
+training that mitigates this imbalance. Our method requires only a few lines of
+code to integrate into existing codebases and improves generalization. We
+evaluate our method in both pre-training small models and fine-tuning large
+foundational models. Our results show substantial improvements on low-resource
+tasks compared to prior state-of-the-art methods, without degrading performance
+on high-resource tasks. This enables more effective use of model capacity for
+multi-task policies. We also further validate our approach in a real-world
+setup on a Franka Panda robot arm across a diverse set of tasks.",http://arxiv.org/pdf/2510.19373v1,,False
+Topology of Currencies: Persistent Homology for FX Co-movements: A Comparative Clustering Study,22/10/2025,"Pattravadee de Favereau de Jeneret, Ioannis Diamantis","This study investigates whether Topological Data Analysis (TDA) can provide
+additional insights beyond traditional statistical methods in clustering
+currency behaviours. We focus on the foreign exchange (FX) market, which is a
+complex system often exhibiting non-linear and high-dimensional dynamics that
+classical techniques may not fully capture. We compare clustering results based
+on TDA-derived features versus classical statistical features using monthly
+logarithmic returns of 13 major currency exchange rates (all against the euro).
+Two widely-used clustering algorithms, \(k\)-means and Hierarchical clustering,
+are applied on both types of features, and cluster quality is evaluated via the
+Silhouette score and the Calinski-Harabasz index. Our findings show that
+TDA-based feature clustering produces more compact and well-separated clusters
+than clustering on traditional statistical features, particularly achieving
+substantially higher Calinski-Harabasz scores. However, all clustering
+approaches yield modest Silhouette scores, underscoring the inherent difficulty
+of grouping FX time series. The differing cluster compositions under TDA vs.
+classical features suggest that TDA captures structural patterns in currency
+co-movements that conventional methods might overlook. These results highlight
+TDA as a valuable complementary tool for analysing financial time series, with
+potential applications in risk management where understanding structural
+co-movements is crucial.",http://arxiv.org/pdf/2510.19306v1,,False
+Collaborative penetration testing suite for emerging generative AI algorithms,22/10/2025,Petar Radanliev,"Problem Space: AI Vulnerabilities and Quantum Threats Generative AI
+vulnerabilities: model inversion, data poisoning, adversarial inputs. Quantum
+threats Shor Algorithm breaking RSA ECC encryption. Challenge Secure generative
+AI models against classical and quantum cyberattacks. Proposed Solution
+Collaborative Penetration Testing Suite Five Integrated Components: DAST SAST
+OWASP ZAP, Burp Suite, SonarQube, Fortify. IAST Contrast Assess integrated with
+CI CD pipeline. Blockchain Logging Hyperledger Fabric for tamper-proof logs.
+Quantum Cryptography Lattice based RLWE protocols. AI Red Team Simulations
+Adversarial ML & Quantum-assisted attacks. Integration Layer: Unified workflow
+for AI, cybersecurity, and quantum experts. Key Results 300+ vulnerabilities
+identified across test environments. 70% reduction in high-severity issues
+within 2 weeks. 90% resolution efficiency for blockchain-logged
+vulnerabilities. Quantum-resistant cryptography maintained 100% integrity in
+tests. Outcome: Quantum AI Security Protocol integrating Blockchain Quantum
+Cryptography AI Red Teaming.",http://arxiv.org/pdf/2510.19303v1,10.1007/s10489-025-06908-1,False
+Data Efficient Any Transformer-to-Mamba Distillation via Attention Bridge,22/10/2025,"Penghao Wang, Yuhao Zhou, Mengxuan Wu, Panpan Zhang, Zhangyang Wang, Kai Wang","State-space models (SSMs) have emerged as efficient alternatives to
+Transformers for sequence modeling, offering superior scalability through
+recurrent structures. However, their training remains costly and the ecosystem
+around them is far less mature than that of Transformers. Moreover, the
+structural heterogeneity between SSMs and Transformers makes it challenging to
+efficiently distill knowledge from pretrained attention models. In this work,
+we propose Cross-architecture distillation via Attention Bridge (CAB), a novel
+data-efficient distillation framework that efficiently transfers attention
+knowledge from Transformer teachers to state-space student models. Unlike
+conventional knowledge distillation that transfers knowledge only at the output
+level, CAB enables token-level supervision via a lightweight bridge and
+flexible layer-wise alignment, improving both efficiency and transferability.
+We further introduce flexible layer-wise alignment strategies to accommodate
+architectural discrepancies between teacher and student. Extensive experiments
+across vision and language domains demonstrate that our method consistently
+improves the performance of state-space models, even under limited training
+data, outperforming both standard and cross-architecture distillation methods.
+Our findings suggest that attention-based knowledge can be efficiently
+transferred to recurrent models, enabling rapid utilization of Transformer
+expertise for building a stronger SSM community.",http://arxiv.org/pdf/2510.19266v1,,False
+"See, Think, Act: Online Shopper Behavior Simulation with VLM Agents",22/10/2025,"Yimeng Zhang, Jiri Gesi, Ran Xue, Tian Wang, Ziyi Wang, Yuxuan Lu, Sinong Zhan, Huimin Zeng, Qingjun Cui, Yufan Guo, Jing Huang, Mubarak Shah, Dakuo Wang","LLMs have recently demonstrated strong potential in simulating online shopper
+behavior. Prior work has improved action prediction by applying SFT on action
+traces with LLM-generated rationales, and by leveraging RL to further enhance
+reasoning capabilities. Despite these advances, current approaches rely on
+text-based inputs and overlook the essential role of visual perception in
+shaping human decision-making during web GUI interactions. In this paper, we
+investigate the integration of visual information, specifically webpage
+screenshots, into behavior simulation via VLMs, leveraging OPeRA dataset. By
+grounding agent decision-making in both textual and visual modalities, we aim
+to narrow the gap between synthetic agents and real-world users, thereby
+enabling more cognitively aligned simulations of online shopping behavior.
+Specifically, we employ SFT for joint action prediction and rationale
+generation, conditioning on the full interaction context, which comprises
+action history, past HTML observations, and the current webpage screenshot. To
+further enhance reasoning capabilities, we integrate RL with a hierarchical
+reward structure, scaled by a difficulty-aware factor that prioritizes
+challenging decision points. Empirically, our studies show that incorporating
+visual grounding yields substantial gains: the combination of text and image
+inputs improves exact match accuracy by more than 6% over text-only inputs.
+These results indicate that multi-modal grounding not only boosts predictive
+accuracy but also enhances simulation fidelity in visually complex
+environments, which captures nuances of human attention and decision-making
+that text-only agents often miss. Finally, we revisit the design space of
+behavior simulation frameworks, identify key methodological limitations, and
+propose future research directions toward building efficient and effective
+human behavior simulators.",http://arxiv.org/pdf/2510.19245v1,,False
+Understanding the Implicit Biases of Design Choices for Time Series Foundation Models,22/10/2025,"Annan Yu, Danielle C. Maddix, Boran Han, Xiyuan Zhang, Abdul Fatir Ansari, Oleksandr Shchur, Christos Faloutsos, Andrew Gordon Wilson, Michael W. Mahoney, Yuyang Wang","Time series foundation models (TSFMs) are a class of potentially powerful,
+general-purpose tools for time series forecasting and related temporal tasks,
+but their behavior is strongly shaped by subtle inductive biases in their
+design. Rather than developing a new model and claiming that it is better than
+existing TSFMs, e.g., by winning on existing well-established benchmarks, our
+objective is to understand how the various ``knobs'' of the training process
+affect model quality. Using a mix of theory and controlled empirical
+evaluation, we identify several design choices (patch size, embedding choice,
+training objective, etc.) and show how they lead to implicit biases in
+fundamental model properties (temporal behavior, geometric structure, how
+aggressively or not the model regresses to the mean, etc.); and we show how
+these biases can be intuitive or very counterintuitive, depending on properties
+of the model and data. We also illustrate in a case study on outlier handling
+how multiple biases can interact in complex ways; and we discuss implications
+of our results for learning the bitter lesson and building TSFMs.",http://arxiv.org/pdf/2510.19236v1,,False
+No Intelligence Without Statistics: The Invisible Backbone of Artificial Intelligence,22/10/2025,Ernest Fokoué,"The rapid ascent of artificial intelligence (AI) is often portrayed as a
+revolution born from computer science and engineering. This narrative, however,
+obscures a fundamental truth: the theoretical and methodological core of AI is,
+and has always been, statistical. This paper systematically argues that the
+field of statistics provides the indispensable foundation for machine learning
+and modern AI. We deconstruct AI into nine foundational pillars-Inference,
+Density Estimation, Sequential Learning, Generalization, Representation
+Learning, Interpretability, Causality, Optimization, and
+Unification-demonstrating that each is built upon century-old statistical
+principles. From the inferential frameworks of hypothesis testing and
+estimation that underpin model evaluation, to the density estimation roots of
+clustering and generative AI; from the time-series analysis inspiring recurrent
+networks to the causal models that promise true understanding, we trace an
+unbroken statistical lineage. While celebrating the computational engines that
+power modern AI, we contend that statistics provides the brain-the theoretical
+frameworks, uncertainty quantification, and inferential goals-while computer
+science provides the brawn-the scalable algorithms and hardware. Recognizing
+this statistical backbone is not merely an academic exercise, but a necessary
+step for developing more robust, interpretable, and trustworthy intelligent
+systems. We issue a call to action for education, research, and practice to
+re-embrace this statistical foundation. Ignoring these roots risks building a
+fragile future; embracing them is the path to truly intelligent machines. There
+is no machine learning without statistical learning; no artificial intelligence
+without statistical thought.",http://arxiv.org/pdf/2510.19212v1,,False
+News-Aware Direct Reinforcement Trading for Financial Markets,22/10/2025,"Qing-Yu Lan, Zhan-He Wang, Jun-Qian Jiang, Yu-Tong Wang, Yun-Song Piao","The financial market is known to be highly sensitive to news. Therefore,
+effectively incorporating news data into quantitative trading remains an
+important challenge. Existing approaches typically rely on manually designed
+rules and/or handcrafted features. In this work, we directly use the news
+sentiment scores derived from large language models, together with raw price
+and volume data, as observable inputs for reinforcement learning. These inputs
+are processed by sequence models such as recurrent neural networks or
+Transformers to make end-to-end trading decisions. We conduct experiments using
+the cryptocurrency market as an example and evaluate two representative
+reinforcement learning algorithms, namely Double Deep Q-Network (DDQN) and
+Group Relative Policy Optimization (GRPO). The results demonstrate that our
+news-aware approach, which does not depend on handcrafted features or manually
+designed rules, can achieve performance superior to market benchmarks. We
+further highlight the critical role of time-series information in this process.",http://arxiv.org/pdf/2510.19173v1,,False
+Extreme Event Aware ($η$-) Learning,22/10/2025,"Kai Chang, Themistoklis P. Sapsis","Quantifying and predicting rare and extreme events persists as a crucial yet
+challenging task in understanding complex dynamical systems. Many practical
+challenges arise from the infrequency and severity of these events, including
+the considerable variance of simple sampling methods and the substantial
+computational cost of high-fidelity numerical simulations. Numerous data-driven
+methods have recently been developed to tackle these challenges. However, a
+typical assumption for the success of these methods is the occurrence of
+multiple extreme events, either within the training dataset or during the
+sampling process. This leads to accurate models in regions of quiescent events
+but with high epistemic uncertainty in regions associated with extremes. To
+overcome this limitation, we introduce Extreme Event Aware (e2a or eta) or
+$\eta$-learning which does not assume the existence of extreme events in the
+available data. $\eta$-learning reduces the uncertainty even in `uncharted'
+extreme event regions, by enforcing the extreme event statistics of an
+observable indicative of extremeness during training, which can be available
+through qualitative arguments or estimated with unlabeled data. This type of
+statistical regularization results in models that fit the observed data, while
+enforcing consistency with the prescribed observable statistics, enabling the
+generation of unprecedented extreme events even when the training data lack
+extremes therein. Theoretical results based on optimal transport offer a
+rigorous justification and highlight the optimality of the introduced method.
+Additionally, extensive numerical experiments illustrate the favorable
+properties of the $\eta$-learning framework on several prototype problems and
+real-world precipitation downscaling problems.",http://arxiv.org/pdf/2510.19161v1,,False

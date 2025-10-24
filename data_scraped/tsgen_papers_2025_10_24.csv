@@ -1,0 +1,370 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+VAMOS: A Hierarchical Vision-Language-Action Model for Capability-Modulated and Steerable Navigation,23/10/2025,"Mateo Guaman Castro, Sidharth Rajagopal, Daniel Gorbatov, Matt Schmittle, Rohan Baijal, Octi Zhang, Rosario Scalise, Sidharth Talia, Emma Romig, Celso de Melo, Byron Boots, Abhishek Gupta","A fundamental challenge in robot navigation lies in learning policies that
+generalize across diverse environments while conforming to the unique physical
+constraints and capabilities of a specific embodiment (e.g., quadrupeds can
+walk up stairs, but rovers cannot). We propose VAMOS, a hierarchical VLA that
+decouples semantic planning from embodiment grounding: a generalist planner
+learns from diverse, open-world data, while a specialist affordance model
+learns the robot's physical constraints and capabilities in safe, low-cost
+simulation. We enabled this separation by carefully designing an interface that
+lets a high-level planner propose candidate paths directly in image space that
+the affordance model then evaluates and re-ranks. Our real-world experiments
+show that VAMOS achieves higher success rates in both indoor and complex
+outdoor navigation than state-of-the-art model-based and end-to-end learning
+methods. We also show that our hierarchical design enables cross-embodied
+navigation across legged and wheeled robots and is easily steerable using
+natural language. Real-world ablations confirm that the specialist model is key
+to embodiment grounding, enabling a single high-level planner to be deployed
+across physically distinct wheeled and legged robots. Finally, this model
+significantly enhances single-robot reliability, achieving 3X higher success
+rates by rejecting physically infeasible plans. Website:
+https://vamos-vla.github.io/",http://arxiv.org/pdf/2510.20818v1,,False
+Video Prediction of Dynamic Physical Simulations With Pixel-Space Spatiotemporal Transformers,23/10/2025,"Dean L Slack, G Thomas Hudson, Thomas Winterbottom, Noura Al Moubayed","Inspired by the performance and scalability of autoregressive large language
+models (LLMs), transformer-based models have seen recent success in the visual
+domain. This study investigates a transformer adaptation for video prediction
+with a simple end-to-end approach, comparing various spatiotemporal
+self-attention layouts. Focusing on causal modeling of physical simulations
+over time; a common shortcoming of existing video-generative approaches, we
+attempt to isolate spatiotemporal reasoning via physical object tracking
+metrics and unsupervised training on physical simulation datasets. We introduce
+a simple yet effective pure transformer model for autoregressive video
+prediction, utilizing continuous pixel-space representations for video
+prediction. Without the need for complex training strategies or latent
+feature-learning components, our approach significantly extends the time
+horizon for physically accurate predictions by up to 50% when compared with
+existing latent-space approaches, while maintaining comparable performance on
+common video quality metrics. In addition, we conduct interpretability
+experiments to identify network regions that encode information useful to
+perform accurate estimations of PDE simulation parameters via probing models,
+and find that this generalizes to the estimation of out-of-distribution
+simulation parameters. This work serves as a platform for further
+attention-based spatiotemporal modeling of videos via a simple, parameter
+efficient, and interpretable approach.",http://arxiv.org/pdf/2510.20807v1,10.1109/TNNLS.2025.3585949,False
+Simple Context Compression: Mean-Pooling and Multi-Ratio Training,23/10/2025,"Yair Feldman, Yoav Artzi","A common strategy to reduce the computational costs of using long contexts in
+retrieval-augmented generation (RAG) with large language models (LLMs) is soft
+context compression, where the input sequence is transformed into a shorter
+continuous representation. We develop a lightweight and simple mean-pooling
+approach that consistently outperforms the widely used compression-tokens
+architecture, and study training the same compressor to output multiple
+compression ratios. We conduct extensive experiments across in-domain and
+out-of-domain QA datasets, as well as across model families, scales, and
+compression ratios. Overall, our simple mean-pooling approach achieves the
+strongest performance, with a relatively small drop when training for multiple
+compression ratios. More broadly though, across architectures and training
+regimes the trade-offs are more nuanced, illustrating the complex landscape of
+compression methods.",http://arxiv.org/pdf/2510.20797v1,,False
+FieldGen: From Teleoperated Pre-Manipulation Trajectories to Field-Guided Data Generation,23/10/2025,"Wenhao Wang, Kehe Ye, Xinyu Zhou, Tianxing Chen, Cao Min, Qiaoming Zhu, Xiaokang Yang, Yongjian Shen, Yang Yang, Maoqing Yao, Yao Mu","Large-scale and diverse datasets are vital for training robust robotic
+manipulation policies, yet existing data collection methods struggle to balance
+scale, diversity, and quality. Simulation offers scalability but suffers from
+sim-to-real gaps, while teleoperation yields high-quality demonstrations with
+limited diversity and high labor cost. We introduce FieldGen, a field-guided
+data generation framework that enables scalable, diverse, and high-quality
+real-world data collection with minimal human supervision. FieldGen decomposes
+manipulation into two stages: a pre-manipulation phase, allowing trajectory
+diversity, and a fine manipulation phase requiring expert precision. Human
+demonstrations capture key contact and pose information, after which an
+attraction field automatically generates diverse trajectories converging to
+successful configurations. This decoupled design combines scalable trajectory
+diversity with precise supervision. Moreover, FieldGen-Reward augments
+generated data with reward annotations to further enhance policy learning.
+Experiments demonstrate that policies trained with FieldGen achieve higher
+success rates and improved stability compared to teleoperation-based baselines,
+while significantly reducing human effort in long-term real-world data
+collection. Webpage is available at https://fieldgen.github.io/.",http://arxiv.org/pdf/2510.20774v1,,False
+Reinforcement Learning and Consumption-Savings Behavior,23/10/2025,Brandon Kaplowitz,"This paper demonstrates how reinforcement learning can explain two puzzling
+empirical patterns in household consumption behavior during economic downturns.
+I develop a model where agents use Q-learning with neural network approximation
+to make consumption-savings decisions under income uncertainty, departing from
+standard rational expectations assumptions. The model replicates two key
+findings from recent literature: (1) unemployed households with previously low
+liquid assets exhibit substantially higher marginal propensities to consume
+(MPCs) out of stimulus transfers compared to high-asset households (0.50 vs
+0.34), even when neither group faces borrowing constraints, consistent with
+Ganong et al. (2024); and (2) households with more past unemployment
+experiences maintain persistently lower consumption levels after controlling
+for current economic conditions, a ""scarring"" effect documented by Malmendier
+and Shen (2024). Unlike existing explanations based on belief updating about
+income risk or ex-ante heterogeneity, the reinforcement learning mechanism
+generates both higher MPCs and lower consumption levels simultaneously through
+value function approximation errors that evolve with experience. Simulation
+results closely match the empirical estimates, suggesting that adaptive
+learning through reinforcement learning provides a unifying framework for
+understanding how past experiences shape current consumption behavior beyond
+what current economic conditions would predict.",http://arxiv.org/pdf/2510.20748v1,,False
+Unsupervised Anomaly Prediction with N-BEATS and Graph Neural Network in Multi-variate Semiconductor Process Time Series,23/10/2025,"Daniel Sorensen, Bappaditya Dey, Minjin Hwang, Sandip Halder","Semiconductor manufacturing is an extremely complex and precision-driven
+process, characterized by thousands of interdependent parameters collected
+across diverse tools and process steps. Multi-variate time-series analysis has
+emerged as a critical field for real-time monitoring and fault detection in
+such environments. However, anomaly prediction in semiconductor fabrication
+presents several critical challenges, including high dimensionality of sensor
+data and severe class imbalance due to the rarity of true faults. Furthermore,
+the complex interdependencies between variables complicate both anomaly
+prediction and root-cause-analysis. This paper proposes two novel approaches to
+advance the field from anomaly detection to anomaly prediction, an essential
+step toward enabling real-time process correction and proactive fault
+prevention. The proposed anomaly prediction framework contains two main stages:
+(a) training a forecasting model on a dataset assumed to contain no anomalies,
+and (b) performing forecast on unseen time series data. The forecast is
+compared with the forecast of the trained signal. Deviations beyond a
+predefined threshold are flagged as anomalies. The two approaches differ in the
+forecasting model employed. The first assumes independence between variables by
+utilizing the N-BEATS model for univariate time series forecasting. The second
+lifts this assumption by utilizing a Graph Neural Network (GNN) to capture
+inter-variable relationships. Both models demonstrate strong forecasting
+performance up to a horizon of 20 time points and maintain stable anomaly
+prediction up to 50 time points. The GNN consistently outperforms the N-BEATS
+model while requiring significantly fewer trainable parameters and lower
+computational cost. These results position the GNN as promising solution for
+online anomaly forecasting to be deployed in manufacturing environments.",http://arxiv.org/pdf/2510.20718v1,,False
+Separating the what and how of compositional computation to enable reuse and continual learning,23/10/2025,"Haozhe Shan, Sun Minni, Lea Duncker","The ability to continually learn, retain and deploy skills to accomplish
+goals is a key feature of intelligent and efficient behavior. However, the
+neural mechanisms facilitating the continual learning and flexible
+(re-)composition of skills remain elusive. Here, we study continual learning
+and the compositional reuse of learned computations in recurrent neural network
+(RNN) models using a novel two-system approach: one system that infers what
+computation to perform, and one that implements how to perform it. We focus on
+a set of compositional cognitive tasks commonly studied in neuroscience. To
+construct the what system, we first show that a large family of tasks can be
+systematically described by a probabilistic generative model, where
+compositionality stems from a shared underlying vocabulary of discrete task
+epochs. The shared epoch structure makes these tasks inherently compositional.
+We first show that this compositionality can be systematically described by a
+probabilistic generative model. Furthermore, We develop an unsupervised online
+learning approach that can learn this model on a single-trial basis, building
+its vocabulary incrementally as it is exposed to new tasks, and inferring the
+latent epoch structure as a time-varying computational context within a trial.
+We implement the how system as an RNN whose low-rank components are composed
+according to the context inferred by the what system. Contextual inference
+facilitates the creation, learning, and reuse of low-rank RNN components as new
+tasks are introduced sequentially, enabling continual learning without
+catastrophic forgetting. Using an example task set, we demonstrate the efficacy
+and competitive performance of this two-system learning framework, its
+potential for forward and backward transfer, as well as fast compositional
+generalization to unseen tasks.",http://arxiv.org/pdf/2510.20709v1,,False
+Fusing Narrative Semantics for Financial Volatility Forecasting,23/10/2025,"Yaxuan Kong, Yoontae Hwang, Marcus Kaiser, Chris Vryonides, Roel Oomen, Stefan Zohren","We introduce M2VN: Multi-Modal Volatility Network, a novel deep
+learning-based framework for financial volatility forecasting that unifies time
+series features with unstructured news data. M2VN leverages the
+representational power of deep neural networks to address two key challenges in
+this domain: (i) aligning and fusing heterogeneous data modalities, numerical
+financial data and textual information, and (ii) mitigating look-ahead bias
+that can undermine the validity of financial models. To achieve this, M2VN
+combines open-source market features with news embeddings generated by Time
+Machine GPT, a recently introduced point-in-time LLM, ensuring temporal
+integrity. An auxiliary alignment loss is introduced to enhance the integration
+of structured and unstructured data within the deep learning architecture.
+Extensive experiments demonstrate that M2VN consistently outperforms existing
+baselines, underscoring its practical value for risk management and financial
+decision-making in dynamic markets.",http://arxiv.org/pdf/2510.20699v1,,False
+Towards the Formalization of a Trustworthy AI for Mining Interpretable Models explOiting Sophisticated Algorithms,23/10/2025,"Riccardo Guidotti, Martina Cinquini, Marta Marchiori Manerba, Mattia Setzu, Francesco Spinnato","Interpretable-by-design models are crucial for fostering trust,
+accountability, and safe adoption of automated decision-making models in
+real-world applications. In this paper we formalize the ground for the MIMOSA
+(Mining Interpretable Models explOiting Sophisticated Algorithms) framework, a
+comprehensive methodology for generating predictive models that balance
+interpretability with performance while embedding key ethical properties. We
+formally define here the supervised learning setting across diverse
+decision-making tasks and data types, including tabular data, time series,
+images, text, transactions, and trajectories. We characterize three major
+families of interpretable models: feature importance, rule, and instance based
+models. For each family, we analyze their interpretability dimensions,
+reasoning mechanisms, and complexity. Beyond interpretability, we formalize
+three critical ethical properties, namely causality, fairness, and privacy,
+providing formal definitions, evaluation metrics, and verification procedures
+for each. We then examine the inherent trade-offs between these properties and
+discuss how privacy requirements, fairness constraints, and causal reasoning
+can be embedded within interpretable pipelines. By evaluating ethical measures
+during model generation, this framework establishes the theoretical foundations
+for developing AI systems that are not only accurate and interpretable but also
+fair, privacy-preserving, and causally aware, i.e., trustworthy.",http://arxiv.org/pdf/2510.20621v1,,False
+OnlineSplatter: Pose-Free Online 3D Reconstruction for Free-Moving Objects,23/10/2025,"Mark He Huang, Lin Geng Foo, Christian Theobalt, Ying Sun, De Wen Soh","Free-moving object reconstruction from monocular video remains challenging,
+particularly without reliable pose or depth cues and under arbitrary object
+motion. We introduce OnlineSplatter, a novel online feed-forward framework
+generating high-quality, object-centric 3D Gaussians directly from RGB frames
+without requiring camera pose, depth priors, or bundle optimization. Our
+approach anchors reconstruction using the first frame and progressively refines
+the object representation through a dense Gaussian primitive field, maintaining
+constant computational cost regardless of video sequence length. Our core
+contribution is a dual-key memory module combining latent appearance-geometry
+keys with explicit directional keys, robustly fusing current frame features
+with temporally aggregated object states. This design enables effective
+handling of free-moving objects via spatial-guided memory readout and an
+efficient sparsification mechanism, ensuring comprehensive yet compact object
+coverage. Evaluations on real-world datasets demonstrate that OnlineSplatter
+significantly outperforms state-of-the-art pose-free reconstruction baselines,
+consistently improving with more observations while maintaining constant memory
+and runtime.",http://arxiv.org/pdf/2510.20605v1,,False
+Blur2seq: Blind Deblurring and Camera Trajectory Estimation from a Single Camera Motion-blurred Image,23/10/2025,"Guillermo Carbajal, Andrés Almansa, Pablo Musé","Motion blur caused by camera shake, particularly under large or rotational
+movements, remains a major challenge in image restoration. We propose a deep
+learning framework that jointly estimates the latent sharp image and the
+underlying camera motion trajectory from a single blurry image. Our method
+leverages the Projective Motion Blur Model (PMBM), implemented efficiently
+using a differentiable blur creation module compatible with modern networks. A
+neural network predicts a full 3D rotation trajectory, which guides a
+model-based restoration network trained end-to-end. This modular architecture
+provides interpretability by revealing the camera motion that produced the
+blur. Moreover, this trajectory enables the reconstruction of the sequence of
+sharp images that generated the observed blurry image. To further refine
+results, we optimize the trajectory post-inference via a reblur loss, improving
+consistency between the blurry input and the restored output. Extensive
+experiments show that our method achieves state-of-the-art performance on both
+synthetic and real datasets, particularly in cases with severe or spatially
+variant blur, where end-to-end deblurring networks struggle.
+  Code and trained models are available at
+https://github.com/GuillermoCarbajal/Blur2Seq/",http://arxiv.org/pdf/2510.20539v1,,False
+Hierarchical Sequence Iteration for Heterogeneous Question Answering,23/10/2025,"Ruiyi Yang, Hao Xue, Imran Razzak, Hakim Hacid, Flora D. Salim","Retrieval-augmented generation (RAG) remains brittle on multi-step questions
+and heterogeneous evidence sources, trading accuracy against latency and
+token/tool budgets. This paper introducesHierarchical Sequence (HSEQ) Iteration
+for Heterogeneous Question Answering, a unified framework that (i) linearize
+documents, tables, and knowledge graphs into a reversible hierarchical sequence
+with lightweight structural tags, and (ii) perform structure-aware iteration to
+collect just-enough evidence before answer synthesis. A Head Agent provides
+guidance that leads retrieval, while an Iteration Agent selects and expands
+HSeq via structure-respecting actions (e.g., parent/child hops, table
+row/column neighbors, KG relations); Finally the head agent composes
+canonicalized evidence to genearte the final answer, with an optional
+refinement loop to resolve detected contradictions. Experiments on HotpotQA
+(text), HybridQA/TAT-QA (table+text), and MetaQA (KG) show consistent EM/F1
+gains over strong single-pass, multi-hop, and agentic RAG baselines with high
+efficiency. Besides, HSEQ exhibits three key advantages: (1) a format-agnostic
+unification that enables a single policy to operate across text, tables, and
+KGs without per-dataset specialization; (2) guided, budget-aware iteration that
+reduces unnecessary hops, tool calls, and tokens while preserving accuracy; and
+(3) evidence canonicalization for reliable QA, improving answers consistency
+and auditability.",http://arxiv.org/pdf/2510.20505v1,,False
+Learning Decentralized Routing Policies via Graph Attention-based Multi-Agent Reinforcement Learning in Lunar Delay-Tolerant Networks,23/10/2025,"Federico Lozano-Cuadra, Beatriz Soret, Marc Sanchez Net, Abhishek Cauligi, Federico Rossi","We present a fully decentralized routing framework for multi-robot
+exploration missions operating under the constraints of a Lunar Delay-Tolerant
+Network (LDTN). In this setting, autonomous rovers must relay collected data to
+a lander under intermittent connectivity and unknown mobility patterns. We
+formulate the problem as a Partially Observable Markov Decision Problem (POMDP)
+and propose a Graph Attention-based Multi-Agent Reinforcement Learning
+(GAT-MARL) policy that performs Centralized Training, Decentralized Execution
+(CTDE). Our method relies only on local observations and does not require
+global topology updates or packet replication, unlike classical approaches such
+as shortest path and controlled flooding-based algorithms. Through Monte Carlo
+simulations in randomized exploration environments, GAT-MARL provides higher
+delivery rates, no duplications, and fewer packet losses, and is able to
+leverage short-term mobility forecasts; offering a scalable solution for future
+space robotic systems for planetary exploration, as demonstrated by successful
+generalization to larger rover teams.",http://arxiv.org/pdf/2510.20436v1,,False
+Identification and Debiased Learning of Causal Effects with General Instrumental Variables,23/10/2025,"Shuyuan Chen, Peng Zhang, Yifan Cui","Instrumental variable methods are fundamental to causal inference when
+treatment assignment is confounded by unobserved variables. In this article, we
+develop a general nonparametric framework for identification and learning with
+multi-categorical or continuous instrumental variables. Specifically, we
+propose an additive instrumental variable framework to identify mean potential
+outcomes and the average treatment effect with a weighting function. Leveraging
+semiparametric theory, we derive efficient influence functions and construct
+consistent, asymptotically normal estimators via debiased machine learning.
+Extensions to longitudinal data, dynamic treatment regimes, and multiplicative
+instrumental variables are further developed. We demonstrate the proposed
+method by employing simulation studies and analyzing real data from the Job
+Training Partnership Act program.",http://arxiv.org/pdf/2510.20404v1,,False
+Hierarchical Time Series Forecasting with Robust Reconciliation,23/10/2025,"Shuhei Aikawa, Aru Suzuki, Kei Yoshitake, Kanata Teshigawara, Akira Iwabuchi, Ken Kobayashi, Kazuhide Nakata","This paper focuses on forecasting hierarchical time-series data, where each
+higher-level observation equals the sum of its corresponding lower-level time
+series. In such contexts, the forecast values should be coherent, meaning that
+the forecast value of each parent series exactly matches the sum of the
+forecast values of its child series. Existing hierarchical forecasting methods
+typically generate base forecasts independently for each series and then apply
+a reconciliation procedure to adjust them so that the resulting forecast values
+are coherent across the hierarchy. These methods generally derive an optimal
+reconciliation, using a covariance matrix of the forecast error. In practice,
+however, the true covariance matrix is unknown and has to be estimated from
+finite samples in advance. This gap between the true and estimated covariance
+matrix may degrade forecast performance. To address this issue, we propose a
+robust optimization framework for hierarchical reconciliation that accounts for
+uncertainty in the estimated covariance matrix. We first introduce an
+uncertainty set for the estimated covariance matrix and formulate a
+reconciliation problem that minimizes the worst-case expected squared error
+over this uncertainty set. We show that our problem can be cast as a
+semidefinite optimization problem. Numerical experiments demonstrate that the
+proposed robust reconciliation method achieved better forecast performance than
+existing hierarchical forecasting methods, which indicates the effectiveness of
+integrating uncertainty into the reconciliation process.",http://arxiv.org/pdf/2510.20383v1,,False
+Synthetic Data for Robust Runway Detection,23/10/2025,"Estelle Chigot, Dennis G. Wilson, Meriem Ghrib, Fabrice Jimenez, Thomas Oberlin","Deep vision models are now mature enough to be integrated in industrial and
+possibly critical applications such as autonomous navigation. Yet, data
+collection and labeling to train such models requires too much efforts and
+costs for a single company or product. This drawback is more significant in
+critical applications, where training data must include all possible conditions
+including rare scenarios. In this perspective, generating synthetic images is
+an appealing solution, since it allows a cheap yet reliable covering of all the
+conditions and environments, if the impact of the synthetic-to-real
+distribution shift is mitigated. In this article, we consider the case of
+runway detection that is a critical part in autonomous landing systems
+developed by aircraft manufacturers. We propose an image generation approach
+based on a commercial flight simulator that complements a few annotated real
+images. By controlling the image generation and the integration of real and
+synthetic data, we show that standard object detection models can achieve
+accurate prediction. We also evaluate their robustness with respect to adverse
+conditions, in our case nighttime images, that were not represented in the real
+data, and show the interest of using a customized domain adaptation strategy.",http://arxiv.org/pdf/2510.20349v1,10.1007/978-3-032-04968-1_25,False
+InvDec: Inverted Decoder for Multivariate Time Series Forecasting with Separated Temporal and Variate Modeling,23/10/2025,Yuhang Wang,"Multivariate time series forecasting requires simultaneously modeling
+temporal patterns and cross-variate dependencies. Channel-independent methods
+such as PatchTST excel at temporal modeling but ignore variable correlations,
+while pure variate-attention approaches such as iTransformer sacrifice temporal
+encoding. We proposeInvDec (Inverted Decoder), a hybrid architecture that
+achieves principled separation between temporal encoding and variate-level
+decoding. InvDec combines a patch-based temporal encoder with an inverted
+decoder operating on the variate dimension through variate-wise self-attention.
+We introduce delayed variate embeddings that enrich variable-specific
+representations only after temporal encoding, preserving temporal feature
+integrity. An adaptive residual fusion mechanism dynamically balances temporal
+and variate information across datasets of varying dimensions. Instantiating
+InvDec with PatchTST yields InvDec-PatchTST. Extensive experiments on seven
+benchmarks demonstrate significant gains on high-dimensional datasets: 20.9%
+MSE reduction on Electricity (321 variables), 4.3% improvement on Weather, and
+2.7% gain on Traffic compared to PatchTST, while maintaining competitive
+performance on low-dimensional ETT datasets. Ablation studies validate each
+component, and analysis reveals that InvDec's advantage grows with dataset
+dimensionality, confirming that cross-variate modeling becomes critical as the
+number of variables increases.",http://arxiv.org/pdf/2510.20302v1,,False
+Using Large Language Models for Abstraction of Planning Domains - Extended Version,23/10/2025,"Bita Banihashemi, Megh Patel, Yves Lespérance","Generating an abstraction of a dynamic domain that aligns with a given
+purpose remains a significant challenge given that the choice of such an
+abstraction can impact an agent's ability to plan, reason, and provide
+explanations effectively. We model the agent's concrete behaviors in PDDL and
+investigate the use of in-context learning with large language models (LLMs)
+for the generation of abstract PDDL domains and problem instances, given an
+abstraction objective specified in natural language. The benchmark examples we
+use are new and have not been part of the data any LLMs have been trained on.
+We consider three categories of abstractions: abstraction of choice of
+alternative concrete actions, abstraction of sequences of concrete actions, and
+abstraction of action/predicate parameters, as well as combinations of these.
+The generated abstract PDDL domains and problem instances are then checked by
+symbolic validation tools as well as human experts. Our experiments show that
+GPT-4o can generally synthesize useful planning domain abstractions in simple
+settings, although it is better at abstracting over actions than over the
+associated fluents.",http://arxiv.org/pdf/2510.20258v1,,False
+Individualized Cognitive Simulation in Large Language Models: Evaluating Different Cognitive Representation Methods,23/10/2025,"Tianyi Zhang, Xiaolin Zhou, Yunzhe Wang, Erik Cambria, David Traum, Rui Mao","Individualized cognitive simulation (ICS) aims to build computational models
+that approximate the thought processes of specific individuals. While large
+language models (LLMs) convincingly mimic surface-level human behavior such as
+role-play, their ability to simulate deeper individualized cognitive processes
+remains poorly understood. To address this gap, we introduce a novel task that
+evaluates different cognitive representation methods in ICS. We construct a
+dataset from recently published novels (later than the release date of the
+tested LLMs) and propose an 11-condition cognitive evaluation framework to
+benchmark seven off-the-shelf LLMs in the context of authorial style emulation.
+We hypothesize that effective cognitive representations can help LLMs generate
+storytelling that better mirrors the original author. Thus, we test different
+cognitive representations, e.g., linguistic features, concept mappings, and
+profile-based information. Results show that combining conceptual and
+linguistic features is particularly effective in ICS, outperforming static
+profile-based cues in overall evaluation. Importantly, LLMs are more effective
+at mimicking linguistic style than narrative structure, underscoring their
+limits in deeper cognitive simulation. These findings provide a foundation for
+developing AI systems that adapt to individual ways of thinking and expression,
+advancing more personalized and human-aligned creative technologies.",http://arxiv.org/pdf/2510.20252v1,,False
+Compositional Generation for Long-Horizon Coupled PDEs,23/10/2025,"Somayajulu L. N. Dhulipala, Deep Ray, Nicholas Forman","Simulating coupled PDE systems is computationally intensive, and prior
+efforts have largely focused on training surrogates on the joint (coupled)
+data, which requires a large amount of data. In the paper, we study
+compositional diffusion approaches where diffusion models are only trained on
+the decoupled PDE data and are composed at inference time to recover the
+coupled field. Specifically, we investigate whether the compositional strategy
+can be feasible under long time horizons involving a large number of time
+steps. In addition, we compare a baseline diffusion model with that trained
+using the v-parameterization strategy. We also introduce a symmetric
+compositional scheme for the coupled fields based on the Euler scheme. We
+evaluate on Reaction-Diffusion and modified Burgers with longer time grids, and
+benchmark against a Fourier Neural Operator trained on coupled data. Despite
+seeing only decoupled training data, the compositional diffusion models recover
+coupled trajectories with low error. v-parameterization can improve accuracy
+over a baseline diffusion model, while the neural operator surrogate remains
+strongest given that it is trained on the coupled data. These results show that
+compositional diffusion is a viable strategy towards efficient, long-horizon
+modeling of coupled PDEs.",http://arxiv.org/pdf/2510.20141v1,,False

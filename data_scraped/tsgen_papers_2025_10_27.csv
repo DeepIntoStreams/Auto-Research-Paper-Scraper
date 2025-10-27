@@ -1,0 +1,402 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+On Uncertainty Calibration for Equivariant Functions,24/10/2025,"Edward Berman, Jacob Ginesin, Marco Pacini, Robin Walters","Data-sparse settings such as robotic manipulation, molecular physics, and
+galaxy morphology classification are some of the hardest domains for deep
+learning. For these problems, equivariant networks can help improve modeling
+across undersampled parts of the input space, and uncertainty estimation can
+guard against overconfidence. However, until now, the relationships between
+equivariance and model confidence, and more generally equivariance and model
+calibration, has yet to be studied. Since traditional classification and
+regression error terms show up in the definitions of calibration error, it is
+natural to suspect that previous work can be used to help understand the
+relationship between equivariance and calibration error. In this work, we
+present a theory relating equivariance to uncertainty estimation. By proving
+lower and upper bounds on uncertainty calibration errors (ECE and ENCE) under
+various equivariance conditions, we elucidate the generalization limits of
+equivariant models and illustrate how symmetry mismatch can result in
+miscalibration in both classification and regression. We complement our
+theoretical framework with numerical experiments that clarify the relationship
+between equivariance and uncertainty using a variety of real and simulated
+datasets, and we comment on trends with symmetry mismatch, group size, and
+aleatoric and epistemic uncertainties.",http://arxiv.org/pdf/2510.21691v1,,False
+DeepAgent: A General Reasoning Agent with Scalable Toolsets,24/10/2025,"Xiaoxi Li, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, Zhicheng Dou","Large reasoning models have demonstrated strong problem-solving abilities,
+yet real-world tasks often require external tools and long-horizon
+interactions. Existing agent frameworks typically follow predefined workflows,
+which limit autonomous and global task completion. In this paper, we introduce
+DeepAgent, an end-to-end deep reasoning agent that performs autonomous
+thinking, tool discovery, and action execution within a single, coherent
+reasoning process. To address the challenges of long-horizon interactions,
+particularly the context length explosion from multiple tool calls and the
+accumulation of interaction history, we introduce an autonomous memory folding
+mechanism that compresses past interactions into structured episodic, working,
+and tool memories, reducing error accumulation while preserving critical
+information. To teach general-purpose tool use efficiently and stably, we
+develop an end-to-end reinforcement learning strategy, namely ToolPO, that
+leverages LLM-simulated APIs and applies tool-call advantage attribution to
+assign fine-grained credit to the tool invocation tokens. Extensive experiments
+on eight benchmarks, including general tool-use tasks (ToolBench, API-Bank,
+TMDB, Spotify, ToolHop) and downstream applications (ALFWorld, WebShop, GAIA,
+HLE), demonstrate that DeepAgent consistently outperforms baselines across both
+labeled-tool and open-set tool retrieval scenarios. This work takes a step
+toward more general and capable agents for real-world applications. The code
+and demo are available at https://github.com/RUC-NLPIR/DeepAgent.",http://arxiv.org/pdf/2510.21618v1,,False
+Generative Correlation Manifolds: Generating Synthetic Data with Preserved Higher-Order Correlations,24/10/2025,"Jens E. d'Hondt, Wieger R. Punter, Odysseas Papapetrou","The increasing need for data privacy and the demand for robust machine
+learning models have fueled the development of synthetic data generation
+techniques. However, current methods often succeed in replicating simple
+summary statistics but fail to preserve both the pairwise and higher-order
+correlation structure of the data that define the complex, multi-variable
+interactions inherent in real-world systems. This limitation can lead to
+synthetic data that is superficially realistic but fails when used for
+sophisticated modeling tasks. In this white paper, we introduce Generative
+Correlation Manifolds (GCM), a computationally efficient method for generating
+synthetic data. The technique uses Cholesky decomposition of a target
+correlation matrix to produce datasets that, by mathematical proof, preserve
+the entire correlation structure -- from simple pairwise relationships to
+higher-order interactions -- of the source dataset. We argue that this method
+provides a new approach to synthetic data generation with potential
+applications in privacy-preserving data sharing, robust model training, and
+simulation.",http://arxiv.org/pdf/2510.21610v1,,False
+Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds,24/10/2025,"Oscar Davis, Michael S. Albergo, Nicholas M. Boffi, Michael M. Bronstein, Avishek Joey Bose","Geometric data and purpose-built generative models on them have become
+ubiquitous in high-impact deep learning application domains, ranging from
+protein backbone generation and computational chemistry to geospatial data.
+Current geometric generative models remain computationally expensive at
+inference -- requiring many steps of complex numerical simulation -- as they
+are derived from dynamical measure transport frameworks such as diffusion and
+flow-matching on Riemannian manifolds. In this paper, we propose Generalised
+Flow Maps (GFM), a new class of few-step generative models that generalises the
+Flow Map framework in Euclidean spaces to arbitrary Riemannian manifolds. We
+instantiate GFMs with three self-distillation-based training methods:
+Generalised Lagrangian Flow Maps, Generalised Eulerian Flow Maps, and
+Generalised Progressive Flow Maps. We theoretically show that GFMs, under
+specific design decisions, unify and elevate existing Euclidean few-step
+generative models, such as consistency models, shortcut models, and meanflows,
+to the Riemannian setting. We benchmark GFMs against other geometric generative
+models on a suite of geometric datasets, including geospatial data, RNA torsion
+angles, and hyperbolic manifolds, and achieve state-of-the-art sample quality
+for single- and few-step evaluations, and superior or competitive
+log-likelihoods using the implicit probability flow.",http://arxiv.org/pdf/2510.21608v1,,False
+SHAP Meets Tensor Networks: Provably Tractable Explanations with Parallelism,24/10/2025,"Reda Marzouk, Shahaf Bassan, Guy Katz","Although Shapley additive explanations (SHAP) can be computed in polynomial
+time for simple models like decision trees, they unfortunately become NP-hard
+to compute for more expressive black-box models like neural networks - where
+generating explanations is often most critical. In this work, we analyze the
+problem of computing SHAP explanations for *Tensor Networks (TNs)*, a broader
+and more expressive class of models than those for which current exact SHAP
+algorithms are known to hold, and which is widely used for neural network
+abstraction and compression. First, we introduce a general framework for
+computing provably exact SHAP explanations for general TNs with arbitrary
+structures. Interestingly, we show that, when TNs are restricted to a *Tensor
+Train (TT)* structure, SHAP computation can be performed in *poly-logarithmic*
+time using *parallel* computation. Thanks to the expressiveness power of TTs,
+this complexity result can be generalized to many other popular ML models such
+as decision trees, tree ensembles, linear models, and linear RNNs, therefore
+tightening previously reported complexity results for these families of models.
+Finally, by leveraging reductions of binarized neural networks to Tensor
+Network representations, we demonstrate that SHAP computation can become
+*efficiently tractable* when the network's *width* is fixed, while it remains
+computationally hard even with constant *depth*. This highlights an important
+insight: for this class of models, width - rather than depth - emerges as the
+primary computational bottleneck in SHAP computation.",http://arxiv.org/pdf/2510.21599v1,,False
+Learning Neural Control Barrier Functions from Expert Demonstrations using Inverse Constraint Learning,24/10/2025,"Yuxuan Yang, Hussein Sibai","Safety is a fundamental requirement for autonomous systems operating in
+critical domains. Control barrier functions (CBFs) have been used to design
+safety filters that minimally alter nominal controls for such systems to
+maintain their safety. Learning neural CBFs has been proposed as a data-driven
+alternative for their computationally expensive optimization-based synthesis.
+However, it is often the case that the failure set of states that should be
+avoided is non-obvious or hard to specify formally, e.g., tailgating in
+autonomous driving, while a set of expert demonstrations that achieve the task
+and avoid the failure set is easier to generate. We use ICL to train a
+constraint function that classifies the states of the system under
+consideration to safe, i.e., belong to a controlled forward invariant set that
+is disjoint from the unspecified failure set, and unsafe ones, i.e., belong to
+the complement of that set. We then use that function to label a new set of
+simulated trajectories to train our neural CBF. We empirically evaluate our
+approach in four different environments, demonstrating that it outperforms
+existing baselines and achieves comparable performance to a neural CBF trained
+with the same data but annotated with ground-truth safety labels.",http://arxiv.org/pdf/2510.21560v1,,False
+ParaRNN: Unlocking Parallel Training of Nonlinear RNNs for Large Language Models,24/10/2025,"Federico Danieli, Pau Rodriguez, Miguel Sarabia, Xavier Suau, Luca Zappella","Recurrent Neural Networks (RNNs) laid the foundation for sequence modeling,
+but their intrinsic sequential nature restricts parallel computation, creating
+a fundamental barrier to scaling. This has led to the dominance of
+parallelizable architectures like Transformers and, more recently, State Space
+Models (SSMs). While SSMs achieve efficient parallelization through structured
+linear recurrences, this linearity constraint limits their expressive power and
+precludes modeling complex, nonlinear sequence-wise dependencies. To address
+this, we present ParaRNN, a framework that breaks the sequence-parallelization
+barrier for nonlinear RNNs. Building on prior work, we cast the sequence of
+nonlinear recurrence relationships as a single system of equations, which we
+solve in parallel using Newton's iterations combined with custom parallel
+reductions. Our implementation achieves speedups of up to 665x over naive
+sequential application, allowing training nonlinear RNNs at unprecedented
+scales. To showcase this, we apply ParaRNN to adaptations of LSTM and GRU
+architectures, successfully training models of 7B parameters that attain
+perplexity comparable to similarly-sized Transformers and Mamba2 architectures.
+To accelerate research in efficient sequence modeling, we release the ParaRNN
+codebase as an open-source framework for automatic training-parallelization of
+nonlinear RNNs, enabling researchers and practitioners to explore new nonlinear
+RNN models at scale.",http://arxiv.org/pdf/2510.21450v1,,False
+Unified token representations for sequential decision models,24/10/2025,"Zhuojing Tian, Yushu Chen","Transformers have demonstrated strong potential in offline reinforcement
+learning (RL) by modeling trajectories as sequences of return-to-go, states,
+and actions. However, existing approaches such as the Decision Transformer(DT)
+and its variants suffer from redundant tokenization and quadratic attention
+complexity, limiting their scalability in real-time or resource-constrained
+settings. To address this, we propose a Unified Token Representation (UTR) that
+merges return-to-go, state, and action into a single token, substantially
+reducing sequence length and model complexity. Theoretical analysis shows that
+UTR leads to a tighter Rademacher complexity bound, suggesting improved
+generalization. We further develop two variants: UDT and UDC, built upon
+transformer and gated CNN backbones, respectively. Both achieve comparable or
+superior performance to state-of-the-art methods with markedly lower
+computation. These findings demonstrate that UTR generalizes well across
+architectures and may provide an efficient foundation for scalable control in
+future large decision models.",http://arxiv.org/pdf/2510.21448v1,,False
+PhysWorld: From Real Videos to World Models of Deformable Objects via Physics-Aware Demonstration Synthesis,24/10/2025,"Yu Yang, Zhilu Zhang, Xiang Zhang, Yihan Zeng, Hui Li, Wangmeng Zuo","Interactive world models that simulate object dynamics are crucial for
+robotics, VR, and AR. However, it remains a significant challenge to learn
+physics-consistent dynamics models from limited real-world video data,
+especially for deformable objects with spatially-varying physical properties.
+To overcome the challenge of data scarcity, we propose PhysWorld, a novel
+framework that utilizes a simulator to synthesize physically plausible and
+diverse demonstrations to learn efficient world models. Specifically, we first
+construct a physics-consistent digital twin within MPM simulator via
+constitutive model selection and global-to-local optimization of physical
+properties. Subsequently, we apply part-aware perturbations to the physical
+properties and generate various motion patterns for the digital twin,
+synthesizing extensive and diverse demonstrations. Finally, using these
+demonstrations, we train a lightweight GNN-based world model that is embedded
+with physical properties. The real video can be used to further refine the
+physical properties. PhysWorld achieves accurate and fast future predictions
+for various deformable objects, and also generalizes well to novel
+interactions. Experiments show that PhysWorld has competitive performance while
+enabling inference speeds 47 times faster than the recent state-of-the-art
+method, i.e., PhysTwin.",http://arxiv.org/pdf/2510.21447v1,,False
+Randomized Neural Network with Adaptive Forward Regularization for Online Task-free Class Incremental Learning,24/10/2025,"Junda Wang, Minghui Hu, Ning Li, Abdulaziz Al-Ali, Ponnuthurai Nagaratnam Suganthan","Class incremental learning (CIL) requires an agent to learn distinct tasks
+consecutively with knowledge retention against forgetting. Problems impeding
+the practical applications of CIL methods are twofold: (1) non-i.i.d batch
+streams and no boundary prompts to update, known as the harsher online
+task-free CIL (OTCIL) scenario; (2) CIL methods suffer from memory loss in
+learning long task streams, as shown in Fig. 1 (a). To achieve efficient
+decision-making and decrease cumulative regrets during the OTCIL process, a
+randomized neural network (Randomized NN) with forward regularization (-F) is
+proposed to resist forgetting and enhance learning performance. This general
+framework integrates unsupervised knowledge into recursive convex optimization,
+has no learning dissipation, and can outperform the canonical ridge style (-R)
+in OTCIL. Based on this framework, we derive the algorithm of the ensemble deep
+random vector functional link network (edRVFL) with adjustable forward
+regularization (-kF), where k mediates the intensity of the intervention.
+edRVFL-kF generates one-pass closed-form incremental updates and variable
+learning rates, effectively avoiding past replay and catastrophic forgetting
+while achieving superior performance. Moreover, to curb unstable penalties
+caused by non-i.i.d and mitigate intractable tuning of -kF in OTCIL, we improve
+it to the plug-and-play edRVFL-kF-Bayes, enabling all hard ks in multiple
+sub-learners to be self-adaptively determined based on Bayesian learning.
+Experiments were conducted on 2 image datasets including 6 metrics, dynamic
+performance, ablation tests, and compatibility, which distinctly validates the
+efficacy of our OTCIL frameworks with -kF-Bayes and -kF styles.",http://arxiv.org/pdf/2510.21367v1,,False
+Patient-specific AI for generation of 3D dosimetry imaging from two 2D-planar measurements,24/10/2025,"Alejandro Lopez-Montes, Robert Seifert, Astrid Delker, Guido Boening, Jiahui Wang, Christoph Clement, Ali Afshar-Oromieh, Axel Rominger, Kuangyu Shi","In this work we explored the use of patient specific reinforced learning to
+generate 3D activity maps from two 2D planar images (anterior and posterior).
+The solution of this problem remains unachievable using conventional
+methodologies and is of particular interest for dosimetry in nuclear medicine
+where approaches for post-therapy distribution of radiopharmaceuticals such as
+177Lu-PSMA are typically done via either expensive and long 3D SPECT
+acquisitions or fast, yet only 2D, planar scintigraphy. Being able to generate
+3D activity maps from planar scintigraphy opens the gate for new dosimetry
+applications removing the need for SPECT and facilitating multi-time point
+dosimetry studies. Our solution comprises the generation of a patient specific
+dataset with possible 3D uptake maps of the radiopharmaceuticals withing the
+anatomy of the individual followed by an AI approach (we explored both the use
+of 3DUnet and diffusion models) able to generate 3D activity maps from 2D
+planar images. We have validated our method both in simulation and real planar
+acquisitions. We observed enhanced results using patient specific reinforcement
+learning (~20% reduction on MAE and ~5% increase in SSIM) and better organ
+delineation and patient anatomy especially when combining diffusion models with
+patient specific training yielding a SSIM=0.89 compared to the ground truth for
+simulations and 0.73 when compared to a SPECT acquisition performed half an
+hour after the planar. We believe that our methodology can set a change of
+paradigm for nuclear medicine dosimetry allowing for 3D quantification using
+only planar scintigraphy without the need of expensive and time-consuming SPECT
+leveraging the pre-therapy information of the patients.",http://arxiv.org/pdf/2510.21362v1,,False
+CausalRec: A CausalBoost Attention Model for Sequential Recommendation,24/10/2025,"Yunbo Hou, Tianle Yang, Ruijie Li, Li He, Liang Wang, Weiping Li, Bo Zheng, Guojie Song","Recent advances in correlation-based sequential recommendation systems have
+demonstrated substantial success. Specifically, the attention-based model
+outperforms other RNN-based and Markov chains-based models by capturing both
+short- and long-term dependencies more effectively. However, solely focusing on
+item co-occurrences overlooks the underlying motivations behind user behaviors,
+leading to spurious correlations and potentially inaccurate recommendations. To
+address this limitation, we present a novel framework that integrates causal
+attention for sequential recommendation, CausalRec. It incorporates a causal
+discovery block and a CausalBooster. The causal discovery block learns the
+causal graph in user behavior sequences, and we provide a theory to guarantee
+the identifiability of the learned causal graph. The CausalBooster utilizes the
+discovered causal graph to refine the attention mechanism, prioritizing
+behaviors with causal significance. Experimental evaluations on real-world
+datasets indicate that CausalRec outperforms several state-of-the-art methods,
+with average improvements of 7.21% in Hit Rate (HR) and 8.65% in Normalized
+Discounted Cumulative Gain (NDCG). To the best of our knowledge, this is the
+first model to incorporate causality through the attention mechanism in
+sequential recommendation, demonstrating the value of causality in generating
+more accurate and reliable recommendations.",http://arxiv.org/pdf/2510.21333v1,,False
+Unified Implementations of Recurrent Neural Networks in Multiple Deep Learning Frameworks,24/10/2025,Francesco Martinuzzi,"Recurrent neural networks (RNNs) are a cornerstone of sequence modeling
+across various scientific and industrial applications. Owing to their
+versatility, numerous RNN variants have been proposed over the past decade,
+aiming to improve the modeling of long-term dependencies and to address
+challenges such as vanishing and exploding gradients. However, no central
+library is available to test these variations, and reimplementing diverse
+architectures can be time-consuming and error-prone, limiting reproducibility
+and exploration. Here, we introduce three open-source libraries in Julia and
+Python that centralize numerous recurrent cell implementations and higher-level
+recurrent architectures. torchrecurrent, RecurrentLayers.jl, and
+LuxRecurrentLayers.jl offer a consistent framework for constructing and
+extending RNN models, providing built-in mechanisms for customization and
+experimentation. All packages are available under the MIT license and actively
+maintained on GitHub.",http://arxiv.org/pdf/2510.21252v1,,False
+OutboundEval: A Dual-Dimensional Benchmark for Expert-Level Intelligent Outbound Evaluation of Xbench's Professional-Aligned Series,24/10/2025,"Pengyu Xu, Shijia Li, Ao Sun, Feng Zhang, Yahan Li, Bo Wu, Zhanyu Ma, Jiguo Li, Jun Xu, Jiuchong Gao, Jinghua Hao, Renqing He, Rui Wang, Yang Liu, Xiaobo Hu, Fan Yang, Jia Zheng, Guanghua Yao","We propose OutboundEval, a comprehensive benchmark for evaluating large
+language models (LLMs) in expert-level intelligent outbound calling scenarios.
+Unlike existing methods that suffer from three key limitations - insufficient
+dataset diversity and category coverage, unrealistic user simulation, and
+inaccurate evaluation metrics - OutboundEval addresses these issues through a
+structured framework. First, we design a benchmark spanning six major business
+domains and 30 representative sub-scenarios, each with scenario-specific
+process decomposition, weighted scoring, and domain-adaptive metrics. Second,
+we develop a large-model-driven User Simulator that generates diverse,
+persona-rich virtual users with realistic behaviors, emotional variability, and
+communication styles, providing a controlled yet authentic testing environment.
+Third, we introduce a dynamic evaluation method that adapts to task variations,
+integrating automated and human-in-the-loop assessment to measure task
+execution accuracy, professional knowledge application, adaptability, and user
+experience quality. Experiments on 12 state-of-the-art LLMs reveal distinct
+trade-offs between expert-level task completion and interaction fluency,
+offering practical insights for building reliable, human-like outbound AI
+systems. OutboundEval establishes a practical, extensible, and domain-oriented
+standard for benchmarking LLMs in professional applications.",http://arxiv.org/pdf/2510.21244v1,,False
+On the flow matching interpretability,24/10/2025,"Francesco Pivi, Simone Gazza, Davide Evangelista, Roberto Amadini, Maurizio Gabbrielli","Generative models based on flow matching have demonstrated remarkable success
+in various domains, yet they suffer from a fundamental limitation: the lack of
+interpretability in their intermediate generation steps. In fact these models
+learn to transform noise into data through a series of vector field updates,
+however the meaning of each step remains opaque. We address this problem by
+proposing a general framework constraining each flow step to be sampled from a
+known physical distribution. Flow trajectories are mapped to (and constrained
+to traverse) the equilibrium states of the simulated physical process. We
+implement this approach through the 2D Ising model in such a way that flow
+steps become thermal equilibrium points along a parametric cooling schedule.
+  Our proposed architecture includes an encoder that maps discrete Ising
+configurations into a continuous latent space, a flow-matching network that
+performs temperature-driven diffusion, and a projector that returns to discrete
+Ising states while preserving physical constraints.
+  We validate this framework across multiple lattice sizes, showing that it
+preserves physical fidelity while outperforming Monte Carlo generation in speed
+as the lattice size increases. In contrast with standard flow matching, each
+vector field represents a meaningful stepwise transition in the 2D Ising
+model's latent space. This demonstrates that embedding physical semantics into
+generative flows transforms opaque neural trajectories into interpretable
+physical processes.",http://arxiv.org/pdf/2510.21210v1,,False
+Shylock: Causal Discovery in Multivariate Time Series based on Hybrid Constraints,24/10/2025,"Shuo Li, Keqin Xu, Jie Liu, Dan Ye","Causal relationship discovery has been drawing increasing attention due to
+its prevalent application. Existing methods rely on human experience,
+statistical methods, or graphical criteria methods which are error-prone, stuck
+at the idealized assumption, and rely on a huge amount of data. And there is
+also a serious data gap in accessing Multivariate time series(MTS) in many
+areas, adding difficulty in finding their causal relationship. Existing methods
+are easy to be over-fitting on them. To fill the gap we mentioned above, in
+this paper, we propose Shylock, a novel method that can work well in both
+few-shot and normal MTS to find the causal relationship. Shylock can reduce the
+number of parameters exponentially by using group dilated convolution and a
+sharing kernel, but still learn a better representation of variables with time
+delay. By combing the global constraint and the local constraint, Shylock
+achieves information sharing among networks to help improve the accuracy. To
+evaluate the performance of Shylock, we also design a data generation method to
+generate MTS with time delay. We evaluate it on commonly used benchmarks and
+generated datasets. Extensive experiments show that Shylock outperforms two
+existing state-of-art methods on both few-shot and normal MTS. We also
+developed Tcausal, a library for easy use and deployed it on the EarthDataMiner
+platform",http://arxiv.org/pdf/2510.21181v1,,False
+Uncertainty-Aware Multi-Objective Reinforcement Learning-Guided Diffusion Models for 3D De Novo Molecular Design,24/10/2025,"Lianghong Chen, Dongkyu Eugene Kim, Mike Domaratzki, Pingzhao Hu","Designing de novo 3D molecules with desirable properties remains a
+fundamental challenge in drug discovery and molecular engineering. While
+diffusion models have demonstrated remarkable capabilities in generating
+high-quality 3D molecular structures, they often struggle to effectively
+control complex multi-objective constraints critical for real-world
+applications. In this study, we propose an uncertainty-aware Reinforcement
+Learning (RL) framework to guide the optimization of 3D molecular diffusion
+models toward multiple property objectives while enhancing the overall quality
+of the generated molecules. Our method leverages surrogate models with
+predictive uncertainty estimation to dynamically shape reward functions,
+facilitating balance across multiple optimization objectives. We
+comprehensively evaluate our framework across three benchmark datasets and
+multiple diffusion model architectures, consistently outperforming baselines
+for molecular quality and property optimization. Additionally, Molecular
+Dynamics (MD) simulations and ADMET profiling of top generated candidates
+indicate promising drug-like behavior and binding stability, comparable to
+known Epidermal Growth Factor Receptor (EGFR) inhibitors. Our results
+demonstrate the strong potential of RL-guided generative diffusion models for
+advancing automated molecular design.",http://arxiv.org/pdf/2510.21153v1,,False
+String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation,24/10/2025,"Kou Misaki, Takuya Akiba","We introduce String Seed of Thought (SSoT), a novel prompting method for LLMs
+that improves Probabilistic Instruction Following (PIF). We define PIF as a
+task requiring an LLM to select its answer from a predefined set of options,
+each associated with a specific probability, such that the empirical
+distribution of the generated answers aligns with the target distribution when
+prompted multiple times. While LLMs excel at tasks with single, deterministic
+answers, they often fail at PIF, exhibiting biases problematic for applications
+requiring non-deterministic behaviors, such as human-behavior simulation,
+content diversification, and multiplayer games. It also harms the diversity of
+generated responses, a crucial factor in test-time scaling, by causing the
+outputs to collapse into a limited set of answers. To address this, we propose
+SSoT, a simple prompting method that instructs an LLM to first output a random
+string to generate sufficient entropy. SSoT also instructs the LLM to extract
+randomness by manipulating this string to derive a final answer, thereby
+preserving diversity while adhering to specific constraints. We demonstrate
+that SSoT significantly improves the PIF performance of LLMs, approaching the
+ideal performance of a pseudo-random number generator. Furthermore, our
+experiments on NoveltyBench show SSoT's benefits extend beyond closed-set tasks
+to open-ended tasks by enhancing response diversity.",http://arxiv.org/pdf/2510.21150v1,,False
+PanicToCalm: A Proactive Counseling Agent for Panic Attacks,24/10/2025,"Jihyun Lee, Yejin Min, San Kim, Yejin Jeon, SungJun Yang, Hyounghun Kim, Gary Geunbae Lee","Panic attacks are acute episodes of fear and distress, in which timely,
+appropriate intervention can significantly help individuals regain stability.
+However, suitable datasets for training such models remain scarce due to
+ethical and logistical issues. To address this, we introduce PACE, which is a
+dataset that includes high-distress episodes constructed from first-person
+narratives, and structured around the principles of Psychological First Aid
+(PFA). Using this data, we train PACER, a counseling model designed to provide
+both empathetic and directive support, which is optimized through supervised
+learning and simulated preference alignment. To assess its effectiveness, we
+propose PanicEval, a multi-dimensional framework covering general counseling
+quality and crisis-specific strategies. Experimental results show that PACER
+outperforms strong baselines in both counselor-side metrics and client affect
+improvement. Human evaluations further confirm its practical value, with PACER
+consistently preferred over general, CBT-based, and GPT-4-powered models in
+panic scenarios (Code is available at https://github.com/JihyunLee1/PanicToCalm
+).",http://arxiv.org/pdf/2510.21143v1,,False
+Enhanced Evolutionary Multi-Objective Deep Reinforcement Learning for Reliable and Efficient Wireless Rechargeable Sensor Networks,24/10/2025,"Bowei Tong, Hui Kang, Jiahui Li, Geng Sun, Jiacheng Wang, Yaoqi Yang, Bo Xu, Dusit Niyato","Despite rapid advancements in sensor networks, conventional battery-powered
+sensor networks suffer from limited operational lifespans and frequent
+maintenance requirements that severely constrain their deployment in remote and
+inaccessible environments. As such, wireless rechargeable sensor networks
+(WRSNs) with mobile charging capabilities offer a promising solution to extend
+network lifetime. However, WRSNs face critical challenges from the inherent
+trade-off between maximizing the node survival rates and maximizing charging
+energy efficiency under dynamic operational conditions. In this paper, we
+investigate a typical scenario where mobile chargers move and charge the
+sensor, thereby maintaining the network connectivity while minimizing the
+energy waste. Specifically, we formulate a multi-objective optimization problem
+that simultaneously maximizes the network node survival rate and mobile charger
+energy usage efficiency across multiple time slots, which presents NP-hard
+computational complexity with long-term temporal dependencies that make
+traditional optimization approaches ineffective. To address these challenges,
+we propose an enhanced evolutionary multi-objective deep reinforcement learning
+algorithm, which integrates a long short-term memory (LSTM)-based policy
+network for temporal pattern recognition, a multilayer perceptron-based
+prospective increment model for future state prediction, and a time-varying
+Pareto policy evaluation method for dynamic preference adaptation. Extensive
+simulation results demonstrate that the proposed algorithm significantly
+outperforms existing approaches in balancing node survival rate and energy
+efficiency while generating diverse Pareto-optimal solutions. Moreover, the
+LSTM-enhanced policy network converges 25% faster than conventional networks,
+with the time-varying evaluation method effectively adapting to dynamic
+conditions.",http://arxiv.org/pdf/2510.21127v1,,False
+Generalizable Hierarchical Skill Learning via Object-Centric Representation,24/10/2025,"Haibo Zhao, Yu Qi, Boce Hu, Yizhe Zhu, Ziyan Chen, Heng Tian, Xupeng Zhu, Owen Howell, Haojie Huang, Robin Walters, Dian Wang, Robert Platt","We present Generalizable Hierarchical Skill Learning (GSL), a novel framework
+for hierarchical policy learning that significantly improves policy
+generalization and sample efficiency in robot manipulation. One core idea of
+GSL is to use object-centric skills as an interface that bridges the high-level
+vision-language model and the low-level visual-motor policy. Specifically, GSL
+decomposes demonstrations into transferable and object-canonicalized skill
+primitives using foundation models, ensuring efficient low-level skill learning
+in the object frame. At test time, the skill-object pairs predicted by the
+high-level agent are fed to the low-level module, where the inferred canonical
+actions are mapped back to the world frame for execution. This structured yet
+flexible design leads to substantial improvements in sample efficiency and
+generalization of our method across unseen spatial arrangements, object
+appearances, and task compositions. In simulation, GSL trained with only 3
+demonstrations per task outperforms baselines trained with 30 times more data
+by 15.5 percent on unseen tasks. In real-world experiments, GSL also surpasses
+the baseline trained with 10 times more data.",http://arxiv.org/pdf/2510.21121v1,,False

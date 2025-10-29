@@ -1,0 +1,266 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Generative View Stitching,28/10/2025,"Chonghyuk Song, Michal Stary, Boyuan Chen, George Kopanas, Vincent Sitzmann","Autoregressive video diffusion models are capable of long rollouts that are
+stable and consistent with history, but they are unable to guide the current
+generation with conditioning from the future. In camera-guided video generation
+with a predefined camera trajectory, this limitation leads to collisions with
+the generated scene, after which autoregression quickly collapses. To address
+this, we propose Generative View Stitching (GVS), which samples the entire
+sequence in parallel such that the generated scene is faithful to every part of
+the predefined camera trajectory. Our main contribution is a sampling algorithm
+that extends prior work on diffusion stitching for robot planning to video
+generation. While such stitching methods usually require a specially trained
+model, GVS is compatible with any off-the-shelf video model trained with
+Diffusion Forcing, a prevalent sequence diffusion framework that we show
+already provides the affordances necessary for stitching. We then introduce
+Omni Guidance, a technique that enhances the temporal consistency in stitching
+by conditioning on both the past and future, and that enables our proposed
+loop-closing mechanism for delivering long-range coherence. Overall, GVS
+achieves camera-guided video generation that is stable, collision-free,
+frame-to-frame consistent, and closes loops for a variety of predefined camera
+paths, including Oscar Reutersv\""ard's Impossible Staircase. Results are best
+viewed as videos at https://andrewsonga.github.io/gvs.",http://arxiv.org/pdf/2510.24718v1,,False
+ParallelMuse: Agentic Parallel Thinking for Deep Information Seeking,28/10/2025,"Baixuan Li, Dingchu Zhang, Jialong Wu, Wenbiao Yin, Zhengwei Tao, Yida Zhao, Liwen Zhang, Haiyang Shen, Runnan Fang, Pengjun Xie, Jingren Zhou, Yong Jiang","Parallel thinking expands exploration breadth, complementing the deep
+exploration of information-seeking (IS) agents to further enhance
+problem-solving capability. However, conventional parallel thinking faces two
+key challenges in this setting: inefficiency from repeatedly rolling out from
+scratch, and difficulty in integrating long-horizon reasoning trajectories
+during answer generation, as limited context capacity prevents full
+consideration of the reasoning process. To address these issues, we propose
+ParallelMuse, a two-stage paradigm designed for deep IS agents. The first
+stage, Functionality-Specified Partial Rollout, partitions generated sequences
+into functional regions and performs uncertainty-guided path reuse and
+branching to enhance exploration efficiency. The second stage, Compressed
+Reasoning Aggregation, exploits reasoning redundancy to losslessly compress
+information relevant to answer derivation and synthesize a coherent final
+answer. Experiments across multiple open-source agents and benchmarks
+demonstrate up to 62% performance improvement with a 10--30% reduction in
+exploratory token consumption.",http://arxiv.org/pdf/2510.24698v1,,False
+Fast algorithms enabling optimization and deep learning for photoacoustic tomography in a circular detection geometry,28/10/2025,"Andreas Hauptmann, Leonid Kunyansky, Jenni Poimala","The inverse source problem arising in photoacoustic tomography and in several
+other coupled-physics modalities is frequently solved by iterative algorithms.
+Such algorithms are based on the minimization of a certain cost functional. In
+addition, novel deep learning techniques are currently being investigated to
+further improve such optimization approaches. All such methods require multiple
+applications of the operator defining the forward problem, and of its adjoint.
+In this paper, we present new asymptotically fast algorithms for numerical
+evaluation of the forward and adjoint operators, applicable in the circular
+acquisition geometry. For an $(n \times n)$ image, our algorithms compute these
+operators in $\mathcal{O}(n^2 \log n)$ floating point operations. We
+demonstrate the performance of our algorithms in numerical simulations, where
+they are used as an integral part of several iterative image reconstruction
+techniques: classic variational methods, such as non-negative least squares and
+total variation regularized least squares, as well as deep learning methods,
+such as learned primal dual. A Python implementation of our algorithms and
+computational examples is available to the general public.",http://arxiv.org/pdf/2510.24687v1,,False
+Dual-Mind World Models: A General Framework for Learning in Dynamic Wireless Networks,28/10/2025,"Lingyi Wang, Rashed Shelim, Walid Saad, Naren Ramakrishnan","Despite the popularity of reinforcement learning (RL) in wireless networks,
+existing approaches that rely on model-free RL (MFRL) and model-based RL (MBRL)
+are data inefficient and short-sighted. Such RL-based solutions cannot
+generalize to novel network states since they capture only statistical patterns
+rather than the underlying physics and logic from wireless data. These
+limitations become particularly challenging in complex wireless networks with
+high dynamics and long-term planning requirements. To address these
+limitations, in this paper, a novel dual-mind world model-based learning
+framework is proposed with the goal of optimizing completeness-weighted age of
+information (CAoI) in a challenging mmWave V2X scenario. Inspired by cognitive
+psychology, the proposed dual-mind world model encompasses a pattern-driven
+System 1 component and a logic-driven System 2 component to learn dynamics and
+logic of the wireless network, and to provide long-term link scheduling over
+reliable imagined trajectories. Link scheduling is learned through end-to-end
+differentiable imagined trajectories with logical consistency over an extended
+horizon rather than relying on wireless data obtained from environment
+interactions. Moreover, through imagination rollouts, the proposed world model
+can jointly reason network states and plan link scheduling. During intervals
+without observations, the proposed method remains capable of making efficient
+decisions. Extensive experiments are conducted on a realistic simulator based
+on Sionna with real-world physical channel, ray-tracing, and scene objects with
+material properties. Simulation results show that the proposed world model
+achieves a significant improvement in data efficiency and achieves strong
+generalization and adaptation to unseen environments, compared to the
+state-of-the-art RL baselines, and the world model approach with only System 1.",http://arxiv.org/pdf/2510.24546v1,,False
+Unsupervised Machine-Learning Pipeline for Data-Driven Defect Detection and Characterisation: Application to Displacement Cascades,28/10/2025,"Samuel Del Fré, Andrée de Backer, Christophe Domain, Ludovic Thuinet, Charlotte S. Becquart","Neutron irradiation produces, within a few picoseconds, displacement cascades
+that are sequences of atomic collisions generating point and extended defects
+which subsequently affects the long-term evolution of materials. The diversity
+of these defects, characterized morphologically and statistically, defines what
+is called the ""primary damage"". In this work, we present a fully unsupervised
+machine learning (ML) workflow that detects and classifies these defects
+directly from molecular dynamics data. Local environments are encoded by the
+Smooth Overlap of Atomic Positions (SOAP) vector, anomalous atoms are isolated
+with autoencoder neural networks (AE), embedded with Uniform Manifold
+Approximation and Projection (UMAP) and clustered using Hierarchical
+Density-Based Spatial Clustering of Applications with Noise (HDBSCAN). Applied
+to 80 keV displacement cascades in Ni, Fe$_7$0Ni$_{10}$Cr$_{20}$, and Zr, the
+AE successfully identify the small fraction of outlier atoms that participate
+in defect formation. HDBSCAN then partitions the UMAP latent space of
+AE-flagged SOAP descriptors into well defined groups representing vacancy- and
+interstitial-dominated regions and, within each, separates small from large
+aggregates, assigning 99.7 % of outliers to compact physical motifs. A signed
+cluster-identification score confirms this separation, and cluster size scales
+with net defect counts (R2 > 0.89). Statistical cross analyses between the ML
+outlier map and several conventional detectors (centrosymmetry, dislocation
+extraction, etc.) reveal strong overlap and complementary coverage, all
+achieved without template or threshold tuning. This ML workflow thus provides
+an efficient tool for the quantitative mapping of structural anomalies in
+materials, particularly those arising from irradiation damage in displacement
+cascades.",http://arxiv.org/pdf/2510.24523v1,,False
+A word association network methodology for evaluating implicit biases in LLMs compared to humans,28/10/2025,"Katherine Abramski, Giulio Rossetti, Massimo Stella","As Large language models (LLMs) become increasingly integrated into our
+lives, their inherent social biases remain a pressing concern. Detecting and
+evaluating these biases can be challenging because they are often implicit
+rather than explicit in nature, so developing evaluation methods that assess
+the implicit knowledge representations of LLMs is essential. We present a novel
+word association network methodology for evaluating implicit biases in LLMs
+based on simulating semantic priming within LLM-generated word association
+networks. Our prompt-based approach taps into the implicit relational
+structures encoded in LLMs, providing both quantitative and qualitative
+assessments of bias. Unlike most prompt-based evaluation methods, our method
+enables direct comparisons between various LLMs and humans, providing a
+valuable point of reference and offering new insights into the alignment of
+LLMs with human cognition. To demonstrate the utility of our methodology, we
+apply it to both humans and several widely used LLMs to investigate social
+biases related to gender, religion, ethnicity, sexual orientation, and
+political party. Our results reveal both convergences and divergences between
+LLM and human biases, providing new perspectives on the potential risks of
+using LLMs. Our methodology contributes to a systematic, scalable, and
+generalizable framework for evaluating and comparing biases across multiple
+LLMs and humans, advancing the goal of transparent and socially responsible
+language technologies.",http://arxiv.org/pdf/2510.24488v1,,False
+"ARIMA_PLUS: Large-scale, Accurate, Automatic and Interpretable In-Database Time Series Forecasting and Anomaly Detection in Google BigQuery",28/10/2025,"Xi Cheng, Weijie Shen, Haoming Chen, Chaoyi Shen, Jean Ortega, Jiashang Liu, Steve Thomas, Honglin Zheng, Haoyun Wu, Yuxiang Li, Casey Lichtendahl, Jenny Ortiz, Gang Liu, Haiyang Qi, Omid Fatemieh, Chris Fry, Jing Jing Long","Time series forecasting and anomaly detection are common tasks for
+practitioners in industries such as retail, manufacturing, advertising and
+energy. Two unique challenges stand out: (1) efficiently and accurately
+forecasting time series or detecting anomalies in large volumes automatically;
+and (2) ensuring interpretability of results to effectively incorporate
+business insights. We present ARIMA_PLUS, a novel framework to overcome these
+two challenges by a unique combination of (a) accurate and interpretable time
+series models and (b) scalable and fully managed system infrastructure. The
+model has a sequential and modular structure to handle different components of
+the time series, including holiday effects, seasonality, trend, and anomalies,
+which enables high interpretability of the results. Novel enhancements are made
+to each module, and a unified framework is established to address both
+forecasting and anomaly detection tasks simultaneously. In terms of accuracy,
+its comprehensive benchmark on the 42 public datasets in the Monash forecasting
+repository shows superior performance over not only well-established
+statistical alternatives (such as ETS, ARIMA, TBATS, Prophet) but also newer
+neural network models (such as DeepAR, N-BEATS, PatchTST, TimeMixer). In terms
+of infrastructure, it is directly built into the query engine of BigQuery in
+Google Cloud. It uses a simple SQL interface and automates tedious
+technicalities such as data cleaning and model selection. It automatically
+scales with managed cloud computational and storage resources, making it
+possible to forecast 100 million time series using only 1.5 hours with a
+throughput of more than 18000 time series per second. In terms of
+interpretability, we present several case studies to demonstrate time series
+insights it generates and customizability it offers.",http://arxiv.org/pdf/2510.24452v1,,False
+MiniOneRec: An Open-Source Framework for Scaling Generative Recommendation,28/10/2025,"Xiaoyu Kong, Leheng Sheng, Junfei Tan, Yuxin Chen, Jiancan Wu, An Zhang, Xiang Wang, Xiangnan He","The recent success of large language models (LLMs) has renewed interest in
+whether recommender systems can achieve similar scaling benefits. Conventional
+recommenders, dominated by massive embedding tables, tend to plateau as
+embedding dimensions grow. In contrast, the emerging generative paradigm
+replaces embeddings with compact Semantic ID (SID) sequences produced by
+autoregressive Transformers. Yet most industrial deployments remain
+proprietary, leaving two fundamental questions open: (1) Do the expected
+scaling laws hold on public benchmarks? (2) What is the minimal post-training
+recipe that enables competitive performance?
+  We present MiniOneRec, to the best of our knowledge, the first fully
+open-source generative recommendation framework, which provides an end-to-end
+workflow spanning SID construction, supervised fine-tuning, and
+recommendation-oriented reinforcement learning. We generate SIDs via a Residual
+Quantized VAE and post-train Qwen backbones ranging from 0.5B to 7B parameters
+on the Amazon Review dataset. Our experiments reveal a consistent downward
+trend in both training and evaluation losses with increasing model size,
+validating the parameter efficiency of the generative approach. To further
+enhance performance, we propose a lightweight yet effective post-training
+pipeline that (1) enforces full-process SID alignment and (2) applies
+reinforcement learning with constrained decoding and hybrid rewards. Together,
+these techniques yield significant improvements in both ranking accuracy and
+candidate diversity.",http://arxiv.org/pdf/2510.24431v1,,False
+PRIVET: Privacy Metric Based on Extreme Value Theory,28/10/2025,"Antoine Szatkownik, Aurélien Decelle, Beatriz Seoane, Nicolas Bereux, Léo Planche, Guillaume Charpiat, Burak Yelmen, Flora Jay, Cyril Furtlehner","Deep generative models are often trained on sensitive data, such as genetic
+sequences, health data, or more broadly, any copyrighted, licensed or protected
+content. This raises critical concerns around privacy-preserving synthetic
+data, and more specifically around privacy leakage, an issue closely tied to
+overfitting. Existing methods almost exclusively rely on global criteria to
+estimate the risk of privacy failure associated to a model, offering only
+quantitative non interpretable insights. The absence of rigorous evaluation
+methods for data privacy at the sample-level may hinder the practical
+deployment of synthetic data in real-world applications. Using extreme value
+statistics on nearest-neighbor distances, we propose PRIVET, a generic
+sample-based, modality-agnostic algorithm that assigns an individual privacy
+leak score to each synthetic sample. We empirically demonstrate that PRIVET
+reliably detects instances of memorization and privacy leakage across diverse
+data modalities, including settings with very high dimensionality, limited
+sample sizes such as genetic data and even under underfitting regimes. We
+compare our method to existing approaches under controlled settings and show
+its advantage in providing both dataset level and sample level assessments
+through qualitative and quantitative outputs. Additionally, our analysis
+reveals limitations in existing computer vision embeddings to yield
+perceptually meaningful distances when identifying near-duplicate samples.",http://arxiv.org/pdf/2510.24233v1,,False
+V-SAT: Video Subtitle Annotation Tool,28/10/2025,"Arpita Kundu, Joyita Chakraborty, Anindita Desarkar, Aritra Sen, Srushti Anil Patil, Vishwanathan Raman","The surge of audiovisual content on streaming platforms and social media has
+heightened the demand for accurate and accessible subtitles. However, existing
+subtitle generation methods primarily speech-based transcription or OCR-based
+extraction suffer from several shortcomings, including poor synchronization,
+incorrect or harmful text, inconsistent formatting, inappropriate reading
+speeds, and the inability to adapt to dynamic audio-visual contexts. Current
+approaches often address isolated issues, leaving post-editing as a
+labor-intensive and time-consuming process. In this paper, we introduce V-SAT
+(Video Subtitle Annotation Tool), a unified framework that automatically
+detects and corrects a wide range of subtitle quality issues. By combining
+Large Language Models(LLMs), Vision-Language Models (VLMs), Image Processing,
+and Automatic Speech Recognition (ASR), V-SAT leverages contextual cues from
+both audio and video. Subtitle quality improved, with the SUBER score reduced
+from 9.6 to 3.54 after resolving all language mode issues and F1-scores of
+~0.80 for image mode issues. Human-in-the-loop validation ensures high-quality
+results, providing the first comprehensive solution for robust subtitle
+annotation.",http://arxiv.org/pdf/2510.24180v1,,False
+EddyFormer: Accelerated Neural Simulations of Three-Dimensional Turbulence at Scale,28/10/2025,"Yiheng Du, Aditi S. Krishnapriyan","Computationally resolving turbulence remains a central challenge in fluid
+dynamics due to its multi-scale interactions. Fully resolving large-scale
+turbulence through direct numerical simulation (DNS) is computationally
+prohibitive, motivating data-driven machine learning alternatives. In this
+work, we propose EddyFormer, a Transformer-based spectral-element (SEM)
+architecture for large-scale turbulence simulation that combines the accuracy
+of spectral methods with the scalability of the attention mechanism. We
+introduce an SEM tokenization that decomposes the flow into grid-scale and
+subgrid-scale components, enabling capture of both local and global features.
+We create a new three-dimensional isotropic turbulence dataset and train
+EddyFormer to achieves DNS-level accuracy at 256^3 resolution, providing a 30x
+speedup over DNS. When applied to unseen domains up to 4x larger than in
+training, EddyFormer preserves accuracy on physics-invariant metrics-energy
+spectra, correlation functions, and structure functions-showing domain
+generalization. On The Well benchmark suite of diverse turbulent flows,
+EddyFormer resolves cases where prior ML models fail to converge, accurately
+reproducing complex dynamics across a wide range of physical conditions.",http://arxiv.org/pdf/2510.24173v1,,False
+Learning from History: A Retrieval-Augmented Framework for Spatiotemporal Prediction,28/10/2025,"Hao Jia, Penghao Zhao, Hao Wu, Yuan Gao, Yangyu Tao, Bin Cui","Accurate and long-term spatiotemporal prediction for complex physical systems
+remains a fundamental challenge in scientific computing. While deep learning
+models, as powerful parametric approximators, have shown remarkable success,
+they suffer from a critical limitation: the accumulation of errors during
+long-term autoregressive rollouts often leads to physically implausible
+artifacts. This deficiency arises from their purely parametric nature, which
+struggles to capture the full constraints of a system's intrinsic dynamics. To
+address this, we introduce a novel \textbf{Retrieval-Augmented Prediction
+(RAP)} framework, a hybrid paradigm that synergizes the predictive power of
+deep networks with the grounded truth of historical data. The core philosophy
+of RAP is to leverage historical evolutionary exemplars as a non-parametric
+estimate of the system's local dynamics. For any given state, RAP efficiently
+retrieves the most similar historical analog from a large-scale database. The
+true future evolution of this analog then serves as a \textbf{reference
+target}. Critically, this target is not a hard constraint in the loss function
+but rather a powerful conditional input to a specialized dual-stream
+architecture. It provides strong \textbf{dynamic guidance}, steering the
+model's predictions towards physically viable trajectories. In extensive
+benchmarks across meteorology, turbulence, and fire simulation, RAP not only
+surpasses state-of-the-art methods but also significantly outperforms a strong
+\textbf{analog-only forecasting baseline}. More importantly, RAP generates
+predictions that are more physically realistic by effectively suppressing error
+divergence in long-term rollouts.",http://arxiv.org/pdf/2510.24049v1,,False
+OneCast: Structured Decomposition and Modular Generation for Cross-Domain Time Series Forecasting,28/10/2025,"Tingyue Pan, Mingyue Cheng, Shilong Zhang, Zhiding Liu, Xiaoyu Tao, Yucong Luo, Jintao Zhang, Qi Liu","Cross-domain time series forecasting is a valuable task in various web
+applications. Despite its rapid advancement, achieving effective generalization
+across heterogeneous time series data remains a significant challenge. Existing
+methods have made progress by extending single-domain models, yet often fall
+short when facing domain-specific trend shifts and inconsistent periodic
+patterns. We argue that a key limitation lies in treating temporal series as
+undifferentiated sequence, without explicitly decoupling their inherent
+structural components. To address this, we propose OneCast, a structured and
+modular forecasting framework that decomposes time series into seasonal and
+trend components, each modeled through tailored generative pathways.
+Specifically, the seasonal component is captured by a lightweight projection
+module that reconstructs periodic patterns via interpretable basis functions.
+In parallel, the trend component is encoded into discrete tokens at segment
+level via a semantic-aware tokenizer, and subsequently inferred through a
+masked discrete diffusion mechanism. The outputs from both branches are
+combined to produce a final forecast that captures seasonal patterns while
+tracking domain-specific trends. Extensive experiments across eight domains
+demonstrate that OneCast mostly outperforms state-of-the-art baselines.",http://arxiv.org/pdf/2510.24028v1,,False

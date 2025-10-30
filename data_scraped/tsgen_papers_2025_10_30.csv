@@ -1,0 +1,398 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+Scaling flow-based approaches for topology sampling in $\mathrm{SU}(3)$ gauge theory,29/10/2025,"Claudio Bonanno, Andrea Bulgarelli, Elia Cellini, Alessandro Nada, Dario Panfalone, Davide Vadacchino, Lorenzo Verzichelli","We develop a methodology based on out-of-equilibrium simulations to mitigate
+topological freezing when approaching the continuum limit of lattice gauge
+theories. We reduce the autocorrelation of the topological charge employing
+open boundary conditions, while removing exactly their unphysical effects using
+a non-equilibrium Monte Carlo approach in which periodic boundary conditions
+are gradually switched on. We perform a detailed analysis of the computational
+costs of this strategy in the case of the four-dimensional $\mathrm{SU}(3)$
+Yang-Mills theory. After achieving full control of the scaling, we outline a
+clear strategy to sample topology efficiently in the continuum limit, which we
+check at lattice spacings as small as $0.045$ fm. We also generalize this
+approach by designing a customized Stochastic Normalizing Flow for evolutions
+in the boundary conditions, obtaining superior performances with respect to the
+purely stochastic non-equilibrium approach, and paving the way for more
+efficient future flow-based solutions.",http://arxiv.org/pdf/2510.25704v1,,False
+Graph Network-based Structural Simulator: Graph Neural Networks for Structural Dynamics,29/10/2025,"Alessandro Lucchetti, Francesco Cadini, Marco Giglio, Luca Lomazzi","Graph Neural Networks (GNNs) have recently been explored as surrogate models
+for numerical simulations. While their applications in computational fluid
+dynamics have been investigated, little attention has been given to structural
+problems, especially for dynamic cases. To address this gap, we introduce the
+Graph Network-based Structural Simulator (GNSS), a GNN framework for surrogate
+modeling of dynamic structural problems.
+  GNSS follows the encode-process-decode paradigm typical of GNN-based machine
+learning models, and its design makes it particularly suited for dynamic
+simulations thanks to three key features: (i) expressing node kinematics in
+node-fixed local frames, which avoids catastrophic cancellation in
+finite-difference velocities; (ii) employing a sign-aware regression loss,
+which reduces phase errors in long rollouts; and (iii) using a
+wavelength-informed connectivity radius, which optimizes graph construction.
+  We evaluate GNSS on a case study involving a beam excited by a 50kHz
+Hanning-modulated pulse. The results show that GNSS accurately reproduces the
+physics of the problem over hundreds of timesteps and generalizes to unseen
+loading conditions, where existing GNNs fail to converge or deliver meaningful
+predictions.
+  Compared with explicit finite element baselines, GNSS achieves substantial
+inference speedups while preserving spatial and temporal fidelity. These
+findings demonstrate that locality-preserving GNNs with physics-consistent
+update rules are a competitive alternative for dynamic, wave-dominated
+structural simulations.",http://arxiv.org/pdf/2510.25683v1,,False
+Mechanistic Interpretability of RNNs emulating Hidden Markov Models,29/10/2025,"Elia Torre, Michele Viscione, Lucas Pompe, Benjamin F Grewe, Valerio Mante","Recurrent neural networks (RNNs) provide a powerful approach in neuroscience
+to infer latent dynamics in neural populations and to generate hypotheses about
+the neural computations underlying behavior. However, past work has focused on
+relatively simple, input-driven, and largely deterministic behaviors - little
+is known about the mechanisms that would allow RNNs to generate the richer,
+spontaneous, and potentially stochastic behaviors observed in natural settings.
+Modeling with Hidden Markov Models (HMMs) has revealed a segmentation of
+natural behaviors into discrete latent states with stochastic transitions
+between them, a type of dynamics that may appear at odds with the continuous
+state spaces implemented by RNNs. Here we first show that RNNs can replicate
+HMM emission statistics and then reverse-engineer the trained networks to
+uncover the mechanisms they implement. In the absence of inputs, the activity
+of trained RNNs collapses towards a single fixed point. When driven by
+stochastic input, trajectories instead exhibit noise-sustained dynamics along
+closed orbits. Rotation along these orbits modulates the emission probabilities
+and is governed by transitions between regions of slow, noise-driven dynamics
+connected by fast, deterministic transitions. The trained RNNs develop highly
+structured connectivity, with a small set of ""kick neurons"" initiating
+transitions between these regions. This mechanism emerges during training as
+the network shifts into a regime of stochastic resonance, enabling it to
+perform probabilistic computations. Analyses across multiple HMM architectures
+- fully connected, cyclic, and linear-chain - reveal that this solution
+generalizes through the modular reuse of the same dynamical motif, suggesting a
+compositional principle by which RNNs can emulate complex discrete latent
+dynamics.",http://arxiv.org/pdf/2510.25674v1,,False
+Continuous subsurface property retrieval from sparse radar observations using physics informed neural networks,29/10/2025,"Ishfaq Aziz, Mohamad Alipour","Estimating subsurface dielectric properties is essential for applications
+ranging from environmental surveys of soils to nondestructive evaluation of
+concrete in infrastructure. Conventional wave inversion methods typically
+assume few discrete homogeneous layers and require dense measurements or strong
+prior knowledge of material boundaries, limiting scalability and accuracy in
+realistic settings where properties vary continuously. We present a physics
+informed machine learning framework that reconstructs subsurface permittivity
+as a fully neural, continuous function of depth, trained to satisfy both
+measurement data and Maxwells equations. We validate the framework with both
+simulations and custom built radar experiments on multilayered natural
+materials. Results show close agreement with in-situ permittivity measurements
+(R^2=0.93), with sensitivity to even subtle variations (Delta eps_r=2).
+Parametric analysis reveals that accurate profiles can be recovered with as few
+as three strategically placed sensors in two layer systems. This approach
+reframes subsurface inversion from boundary-driven to continuous property
+estimation, enabling accurate characterization of smooth permittivity
+variations and advancing electromagnetic imaging using low cost radar systems.",http://arxiv.org/pdf/2510.25648v1,,False
+Hybrid Quantum-Classical Recurrent Neural Networks,29/10/2025,Wenduan Xu,"We present a hybrid quantum-classical recurrent neural network (QRNN)
+architecture in which the entire recurrent core is realized as a parametrized
+quantum circuit (PQC) controlled by a classical feedforward network. The hidden
+state is the quantum state of an $n$-qubit PQC, residing in an exponentially
+large Hilbert space $\mathbb{C}^{2^n}$. The PQC is unitary by construction,
+making the hidden-state evolution norm-preserving without external constraints.
+At each timestep, mid-circuit readouts are combined with the input embedding
+and processed by the feedforward network, which provides explicit classical
+nonlinearity. The outputs parametrize the PQC, which updates the hidden state
+via unitary dynamics. The QRNN is compact and physically consistent, and it
+unifies (i) unitary recurrence as a high-capacity memory, (ii) partial
+observation via mid-circuit measurements, and (iii) nonlinear classical control
+for input-conditioned parametrization. We evaluate the model in simulation with
+up to 14 qubits on sentiment analysis, MNIST, permuted MNIST, copying memory,
+and language modeling, adopting projective measurements as a limiting case to
+obtain mid-circuit readouts while maintaining a coherent recurrent quantum
+memory. We further devise a soft attention mechanism over the mid-circuit
+readouts in a sequence-to-sequence model and show its effectiveness for machine
+translation. To our knowledge, this is the first model (RNN or otherwise)
+grounded in quantum operations to achieve competitive performance against
+strong classical baselines across a broad class of sequence-learning tasks.",http://arxiv.org/pdf/2510.25557v1,,False
+Error Bounds and Optimal Schedules for Masked Diffusions with Factorized Approximations,29/10/2025,"Hugo Lavenant, Giacomo Zanella","Recently proposed generative models for discrete data, such as Masked
+Diffusion Models (MDMs), exploit conditional independence approximations to
+reduce the computational cost of popular Auto-Regressive Models (ARMs), at the
+price of some bias in the sampling distribution. We study the resulting
+computation-vs-accuracy trade-off, providing general error bounds (in relative
+entropy) that depend only on the average number of tokens generated per
+iteration and are independent of the data dimensionality (i.e. sequence
+length), thus supporting the empirical success of MDMs. We then investigate the
+gain obtained by using non-constant schedule sizes (i.e. varying the number of
+unmasked tokens during the generation process) and identify the optimal
+schedule as a function of a so-called information profile of the data
+distribution, thus allowing for a principled optimization of schedule sizes. We
+define methods directly as sampling algorithms and do not use classical
+derivations as time-reversed diffusion processes, leading us to simple and
+transparent proofs.",http://arxiv.org/pdf/2510.25544v1,,False
+Transformers Provably Learn Directed Acyclic Graphs via Kernel-Guided Mutual Information,29/10/2025,"Yuan Cheng, Yu Huang, Zhe Xiong, Yingbin Liang, Vincent Y. F. Tan","Uncovering hidden graph structures underlying real-world data is a critical
+challenge with broad applications across scientific domains. Recently,
+transformer-based models leveraging the attention mechanism have demonstrated
+strong empirical success in capturing complex dependencies within graphs.
+However, the theoretical understanding of their training dynamics has been
+limited to tree-like graphs, where each node depends on a single parent.
+Extending provable guarantees to more general directed acyclic graphs (DAGs) --
+which involve multiple parents per node -- remains challenging, primarily due
+to the difficulty in designing training objectives that enable different
+attention heads to separately learn multiple different parent relationships.
+  In this work, we address this problem by introducing a novel
+information-theoretic metric: the kernel-guided mutual information (KG-MI),
+based on the $f$-divergence. Our objective combines KG-MI with a multi-head
+attention framework, where each head is associated with a distinct marginal
+transition kernel to model diverse parent-child dependencies effectively. We
+prove that, given sequences generated by a $K$-parent DAG, training a
+single-layer, multi-head transformer via gradient ascent converges to the
+global optimum in polynomial time. Furthermore, we characterize the attention
+score patterns at convergence. In addition, when particularizing the
+$f$-divergence to the KL divergence, the learned attention scores accurately
+reflect the ground-truth adjacency matrix, thereby provably recovering the
+underlying graph structure. Experimental results validate our theoretical
+findings.",http://arxiv.org/pdf/2510.25542v1,,False
+TempoPFN: Synthetic Pre-training of Linear RNNs for Zero-shot Time Series Forecasting,29/10/2025,"Vladyslav Moroshan, Julien Siems, Arber Zela, Timur Carstensen, Frank Hutter","Foundation models for zero-shot time series forecasting face challenges in
+efficient long-horizon prediction and reproducibility, with existing
+synthetic-only approaches underperforming on challenging benchmarks. This paper
+presents TempoPFN, a univariate time series foundation model based on linear
+Recurrent Neural Networks (RNNs) pre-trained exclusively on synthetic data. The
+model uses a GatedDeltaProduct architecture with state-weaving for fully
+parallelizable training across sequence lengths, eliminating the need for
+windowing or summarization techniques while maintaining robust temporal
+state-tracking. Our comprehensive synthetic data pipeline unifies diverse
+generators, including stochastic differential equations, Gaussian processes,
+and audio synthesis, with novel augmentations. In zero-shot evaluations on the
+Gift-Eval benchmark, TempoPFN achieves top-tier competitive performance,
+outperforming all existing synthetic-only approaches and surpassing the vast
+majority of models trained on real-world data, while being more efficient than
+existing baselines by leveraging fully parallelizable training and inference.
+We open-source our complete data generation pipeline and training code,
+providing a reproducible foundation for future research.",http://arxiv.org/pdf/2510.25502v1,,False
+Grounded in Reality: Learning and Deploying Proactive LLM from Offline Logs,29/10/2025,"Fei Wei, Daoyuan Chen, Ce Wang, Yilun Huang, Yushuo Chen, Xuchen Pan, Yaliang Li, Bolin Ding","Large Language Models (LLMs) excel as passive responders, but teaching them
+to be proactive, goal-oriented partners, a critical capability in high-stakes
+domains, remains a major challenge. Current paradigms either myopically
+optimize single-turn attributes or rely on brittle, high-cost user simulators,
+creating a persistent ``reality gap''. To bridge this gap, we introduce
+\texttt{Learn-to-Ask}, a general, simulator-free framework for learning and
+deploying proactive dialogue agents \textit{directly from offline expert data},
+bypassing the need to model complex user dynamics. Our key insight is to
+reframe the offline policy learning problem by leveraging the \textbf{observed
+future} of each expert trajectory. This allows us to infer a dense,
+turn-by-turn reward signal grounded in the expert's revealed strategy,
+decomposing the intractable long-horizon problem into a series of supervised
+learning tasks, and training a policy to output a structured \texttt{(action,
+state_assessment)} tuple, governing both \textbf{what to ask} and, crucially,
+\textbf{when to stop}. To ensure reward fidelity, our Automated Grader
+Calibration pipeline systematically purges noise from the LLM-based reward
+model with minimal human supervision. Empirically, we demonstrate the efficacy
+of \texttt{Learn-to-Ask} in a real-world medical dataset, using LLMs of varying
+sizes up to 32B. Our approach culminates in the successful deployment of LLMs
+into a live, large-scale online AI service. In rigorous in-house evaluations,
+our model was launched and achieved performance even superior to human experts,
+proving our framework's ability to translate offline data into tangible,
+real-world impact. We hope this work provides a practical and economically
+viable blueprint for transforming passive LLMs into proactive, goal-oriented
+LLM applications.",http://arxiv.org/pdf/2510.25441v1,,False
+Adaptive End-to-End Transceiver Design for NextG Pilot-Free and CP-Free Wireless Systems,29/10/2025,"Jiaming Cheng, Wei Chen, Bo Ai","The advent of artificial intelligence (AI)-native wireless communication is
+fundamentally reshaping the design paradigm of next-generation (NextG) systems,
+where intelligent air interfaces are expected to operate adaptively and
+efficiently in highly dynamic environments. Conventional orthogonal frequency
+division multiplexing (OFDM) systems rely heavily on pilots and the cyclic
+prefix (CP), resulting in significant overhead and reduced spectral efficiency.
+To address these limitations, we propose an adaptive end-to-end (E2E)
+transceiver architecture tailored for pilot-free and CP-free wireless systems.
+The architecture combines AI-driven constellation shaping and a neural receiver
+through joint training. To enhance robustness against mismatched or
+time-varying channel conditions, we introduce a lightweight channel adapter
+(CA) module, which enables rapid adaptation with minimal computational overhead
+by updating only the CA parameters. Additionally, we present a framework that
+is scalable to multiple modulation orders within a unified model, significantly
+reducing model storage requirements. Moreover, to tackle the high
+peak-to-average power ratio (PAPR) inherent to OFDM, we incorporate constrained
+E2E training, achieving compliance with PAPR targets without additional
+transmission overhead. Extensive simulations demonstrate that the proposed
+framework delivers superior bit error rate (BER), throughput, and resilience
+across diverse channel scenarios, highlighting its potential for AI-native
+NextG.",http://arxiv.org/pdf/2510.25416v1,,False
+SynHLMA:Synthesizing Hand Language Manipulation for Articulated Object with Discrete Human Object Interaction Representation,29/10/2025,"Wang zhi, Yuyan Liu, Liu Liu, Li Zhang, Ruixuan Lu, Dan Guo","Generating hand grasps with language instructions is a widely studied topic
+that benefits from embodied AI and VR/AR applications. While transferring into
+hand articulatied object interaction (HAOI), the hand grasps synthesis requires
+not only object functionality but also long-term manipulation sequence along
+the object deformation. This paper proposes a novel HAOI sequence generation
+framework SynHLMA, to synthesize hand language manipulation for articulated
+objects. Given a complete point cloud of an articulated object, we utilize a
+discrete HAOI representation to model each hand object interaction frame. Along
+with the natural language embeddings, the representations are trained by an
+HAOI manipulation language model to align the grasping process with its
+language description in a shared representation space. A joint-aware loss is
+employed to ensure hand grasps follow the dynamic variations of articulated
+object joints. In this way, our SynHLMA achieves three typical hand
+manipulation tasks for articulated objects of HAOI generation, HAOI prediction
+and HAOI interpolation. We evaluate SynHLMA on our built HAOI-lang dataset and
+experimental results demonstrate the superior hand grasp sequence generation
+performance comparing with state-of-the-art. We also show a robotics grasp
+application that enables dexterous grasps execution from imitation learning
+using the manipulation sequence provided by our SynHLMA. Our codes and datasets
+will be made publicly available.",http://arxiv.org/pdf/2510.25268v1,,False
+TV-Rec: Time-Variant Convolutional Filter for Sequential Recommendation,29/10/2025,"Yehjin Shin, Jeongwhan Choi, Seojin Kim, Noseong Park","Recently, convolutional filters have been increasingly adopted in sequential
+recommendation for their ability to capture local sequential patterns. However,
+most of these models complement convolutional filters with self-attention. This
+is because convolutional filters alone, generally fixed filters, struggle to
+capture global interactions necessary for accurate recommendation. We propose
+Time-Variant Convolutional Filters for Sequential Recommendation (TV-Rec), a
+model inspired by graph signal processing, where time-variant graph filters
+capture position-dependent temporal variations in user sequences. By replacing
+both fixed kernels and self-attention with time-variant filters, TV-Rec
+achieves higher expressive power and better captures complex interaction
+patterns in user behavior. This design not only eliminates the need for
+self-attention but also reduces computation while accelerating inference.
+Extensive experiments on six public benchmarks show that TV-Rec outperforms
+state-of-the-art baselines by an average of 7.49%.",http://arxiv.org/pdf/2510.25259v1,,False
+One-shot Humanoid Whole-body Motion Learning,29/10/2025,"Hao Huang, Geeta Chandra Raju Bethala, Shuaihang Yuan, Congcong Wen, Anthony Tzes, Yi Fang","Whole-body humanoid motion represents a cornerstone challenge in robotics,
+integrating balance, coordination, and adaptability to enable human-like
+behaviors. However, existing methods typically require multiple training
+samples per motion category, rendering the collection of high-quality human
+motion datasets both labor-intensive and costly. To address this, we propose a
+novel approach that trains effective humanoid motion policies using only a
+single non-walking target motion sample alongside readily available walking
+motions. The core idea lies in leveraging order-preserving optimal transport to
+compute distances between walking and non-walking sequences, followed by
+interpolation along geodesics to generate new intermediate pose skeletons,
+which are then optimized for collision-free configurations and retargeted to
+the humanoid before integration into a simulated environment for policy
+training via reinforcement learning. Experimental evaluations on the CMU MoCap
+dataset demonstrate that our method consistently outperforms baselines,
+achieving superior performance across metrics. Code will be released upon
+acceptance.",http://arxiv.org/pdf/2510.25241v1,,False
+Generative Bayesian Optimization: Generative Models as Acquisition Functions,29/10/2025,"Rafael Oliveira, Daniel M. Steinberg, Edwin V. Bonilla","We present a general strategy for turning generative models into candidate
+solution samplers for batch Bayesian optimization (BO). The use of generative
+models for BO enables large batch scaling as generative sampling, optimization
+of non-continuous design spaces, and high-dimensional and combinatorial design.
+Inspired by the success of direct preference optimization (DPO), we show that
+one can train a generative model with noisy, simple utility values directly
+computed from observations to then form proposal distributions whose densities
+are proportional to the expected utility, i.e., BO's acquisition function
+values. Furthermore, this approach is generalizable beyond preference-based
+feedback to general types of reward signals and loss functions. This
+perspective avoids the construction of surrogate (regression or classification)
+models, common in previous methods that have used generative models for
+black-box optimization. Theoretically, we show that the generative models
+within the BO process approximately follow a sequence of distributions which
+asymptotically concentrate at the global optima under certain conditions. We
+also demonstrate this effect through experiments on challenging optimization
+problems involving large batches in high dimensions.",http://arxiv.org/pdf/2510.25240v1,,False
+Learning Disentangled Speech- and Expression-Driven Blendshapes for 3D Talking Face Animation,29/10/2025,"Yuxiang Mao, Zhijie Zhang, Zhiheng Zhang, Jiawei Liu, Chen Zeng, Shihong Xia","Expressions are fundamental to conveying human emotions. With the rapid
+advancement of AI-generated content (AIGC), realistic and expressive 3D facial
+animation has become increasingly crucial. Despite recent progress in
+speech-driven lip-sync for talking-face animation, generating emotionally
+expressive talking faces remains underexplored. A major obstacle is the
+scarcity of real emotional 3D talking-face datasets due to the high cost of
+data capture. To address this, we model facial animation driven by both speech
+and emotion as a linear additive problem. Leveraging a 3D talking-face dataset
+with neutral expressions (VOCAset) and a dataset of 3D expression sequences
+(Florence4D), we jointly learn a set of blendshapes driven by speech and
+emotion. We introduce a sparsity constraint loss to encourage disentanglement
+between the two types of blendshapes while allowing the model to capture
+inherent secondary cross-domain deformations present in the training data. The
+learned blendshapes can be further mapped to the expression and jaw pose
+parameters of the FLAME model, enabling the animation of 3D Gaussian avatars.
+Qualitative and quantitative experiments demonstrate that our method naturally
+generates talking faces with specified expressions while maintaining accurate
+lip synchronization. Perceptual studies further show that our approach achieves
+superior emotional expressivity compared to existing methods, without
+compromising lip-sync quality.",http://arxiv.org/pdf/2510.25234v1,,False
+GReF: A Unified Generative Framework for Efficient Reranking via Ordered Multi-token Prediction,29/10/2025,"Zhijie Lin, Zhuofeng Li, Chenglei Dai, Wentian Bao, Shuai Lin, Enyun Yu, Haoxiang Zhang, Liang Zhao","In a multi-stage recommendation system, reranking plays a crucial role in
+modeling intra-list correlations among items. A key challenge lies in exploring
+optimal sequences within the combinatorial space of permutations. Recent
+research follows a two-stage (generator-evaluator) paradigm, where a generator
+produces multiple feasible sequences, and an evaluator selects the best one. In
+practice, the generator is typically implemented as an autoregressive model.
+However, these two-stage methods face two main challenges. First, the
+separation of the generator and evaluator hinders end-to-end training. Second,
+autoregressive generators suffer from inference efficiency. In this work, we
+propose a Unified Generative Efficient Reranking Framework (GReF) to address
+the two primary challenges. Specifically, we introduce Gen-Reranker, an
+autoregressive generator featuring a bidirectional encoder and a dynamic
+autoregressive decoder to generate causal reranking sequences. Subsequently, we
+pre-train Gen-Reranker on the item exposure order for high-quality parameter
+initialization. To eliminate the need for the evaluator while integrating
+sequence-level evaluation during training for end-to-end optimization, we
+propose post-training the model through Rerank-DPO. Moreover, for efficient
+autoregressive inference, we introduce ordered multi-token prediction (OMTP),
+which trains Gen-Reranker to simultaneously generate multiple future items
+while preserving their order, ensuring practical deployment in real-time
+recommender systems. Extensive offline experiments demonstrate that GReF
+outperforms state-of-the-art reranking methods while achieving latency that is
+nearly comparable to non-autoregressive models. Additionally, GReF has also
+been deployed in a real-world video app Kuaishou with over 300 million daily
+active users, significantly improving online recommendation quality.",http://arxiv.org/pdf/2510.25220v1,,False
+Transformers in Medicine: Improving Vision-Language Alignment for Medical Image Captioning,29/10/2025,"Yogesh Thakku Suresh, Vishwajeet Shivaji Hogale, Luca-Alexandru Zamfira, Anandavardhana Hegde","We present a transformer-based multimodal framework for generating clinically
+relevant captions for MRI scans. Our system combines a DEiT-Small vision
+transformer as an image encoder, MediCareBERT for caption embedding, and a
+custom LSTM-based decoder. The architecture is designed to semantically align
+image and textual embeddings, using hybrid cosine-MSE loss and contrastive
+inference via vector similarity. We benchmark our method on the MultiCaRe
+dataset, comparing performance on filtered brain-only MRIs versus general MRI
+images against state-of-the-art medical image captioning methods including
+BLIP, R2GenGPT, and recent transformer-based approaches. Results show that
+focusing on domain-specific data improves caption accuracy and semantic
+alignment. Our work proposes a scalable, interpretable solution for automated
+medical image reporting.",http://arxiv.org/pdf/2510.25164v1,,False
+TabMGP: Martingale Posterior with TabPFN,29/10/2025,"Kenyon Ng, Edwin Fong, David T. Frazier, Jeremias Knoblauch, Susan Wei","Bayesian inference provides principled uncertainty quantification but is
+often limited by challenges of prior elicitation, likelihood misspecification,
+and computational burden. The martingale posterior (MGP, Fong et al., 2023)
+offers an alternative, replacing prior-likelihood elicitation with a predictive
+rule - namely, a sequence of one-step-ahead predictive distributions - for
+forward data generation. The utility of MGPs depends on the choice of
+predictive rule, yet the literature has offered few compelling examples.
+Foundation transformers are well-suited here, as their autoregressive
+generation mirrors this forward simulation and their general-purpose design
+enables rich predictive modeling. We introduce TabMGP, an MGP built on TabPFN,
+a transformer foundation model that is currently state-of-the-art for tabular
+data. TabMGP produces credible sets with near-nominal coverage and often
+outperforms both existing MGP constructions and standard Bayes.",http://arxiv.org/pdf/2510.25154v1,,False
+An Analysis of Causal Effect Estimation using Outcome Invariant Data Augmentation,29/10/2025,"Uzair Akbar, Niki Kilbertus, Hao Shen, Krikamol Muandet, Bo Dai","The technique of data augmentation (DA) is often used in machine learning for
+regularization purposes to better generalize under i.i.d. settings. In this
+work, we present a unifying framework with topics in causal inference to make a
+case for the use of DA beyond just the i.i.d. setting, but for generalization
+across interventions as well. Specifically, we argue that when the outcome
+generating mechanism is invariant to our choice of DA, then such augmentations
+can effectively be thought of as interventions on the treatment generating
+mechanism itself. This can potentially help to reduce bias in causal effect
+estimation arising from hidden confounders. In the presence of such unobserved
+confounding we typically make use of instrumental variables (IVs) -- sources of
+treatment randomization that are conditionally independent of the outcome.
+However, IVs may not be as readily available as DA for many applications, which
+is the main motivation behind this work. By appropriately regularizing IV based
+estimators, we introduce the concept of IV-like (IVL) regression for mitigating
+confounding bias and improving predictive performance across interventions even
+when certain IV properties are relaxed. Finally, we cast parameterized DA as an
+IVL regression problem and show that when used in composition can simulate a
+worst-case application of such DA, further improving performance on causal
+estimation and generalization tasks beyond what simple DA may offer. This is
+shown both theoretically for the population case and via simulation experiments
+for the finite sample case using a simple linear example. We also present real
+data experiments to support our case.",http://arxiv.org/pdf/2510.25128v1,,False
+Bridging the Divide: End-to-End Sequence-Graph Learning,29/10/2025,"Yuen Chen, Yulun Wu, Samuel Sharpe, Igor Melnyk, Nam H. Nguyen, Furong Huang, C. Bayan Bruss, Rizal Fathony","Many real-world datasets are both sequential and relational: each node
+carries an event sequence while edges encode interactions. Existing methods in
+sequence modeling and graph modeling often neglect one modality or the other.
+We argue that sequences and graphs are not separate problems but complementary
+facets of the same dataset, and should be learned jointly. We introduce BRIDGE,
+a unified end-to-end architecture that couples a sequence encoder with a GNN
+under a single objective, allowing gradients to flow across both modules and
+learning task-aligned representations. To enable fine-grained token-level
+message passing among neighbors, we add TOKENXATTN, a token-level
+cross-attention layer that passes messages between events in neighboring
+sequences. Across two settings, friendship prediction (Brightkite) and fraud
+detection (Amazon), BRIDGE consistently outperforms static GNNs, temporal graph
+methods, and sequence-only baselines on ranking and classification metrics.",http://arxiv.org/pdf/2510.25126v1,,False
+Scalable predictive processing framework for multitask caregiving robots,29/10/2025,"Hayato Idei, Tamon Miyake, Tetsuya Ogata, Yuichi Yamashita","The rapid aging of societies is intensifying demand for autonomous care
+robots; however, most existing systems are task-specific and rely on
+handcrafted preprocessing, limiting their ability to generalize across diverse
+scenarios. A prevailing theory in cognitive neuroscience proposes that the
+human brain operates through hierarchical predictive processing, which
+underlies flexible cognition and behavior by integrating multimodal sensory
+signals. Inspired by this principle, we introduce a hierarchical multimodal
+recurrent neural network grounded in predictive processing under the
+free-energy principle, capable of directly integrating over 30,000-dimensional
+visuo-proprioceptive inputs without dimensionality reduction. The model was
+able to learn two representative caregiving tasks, rigid-body repositioning and
+flexible-towel wiping, without task-specific feature engineering. We
+demonstrate three key properties: (i) self-organization of hierarchical latent
+dynamics that regulate task transitions, capture variability in uncertainty,
+and infer occluded states; (ii) robustness to degraded vision through
+visuo-proprioceptive integration; and (iii) asymmetric interference in
+multitask learning, where the more variable wiping task had little influence on
+repositioning, whereas learning the repositioning task led to a modest
+reduction in wiping performance, while the model maintained overall robustness.
+Although the evaluation was limited to simulation, these results establish
+predictive processing as a universal and scalable computational principle,
+pointing toward robust, flexible, and autonomous caregiving robots while
+offering theoretical insight into the human brain's ability to achieve flexible
+adaptation in uncertain real-world environments.",http://arxiv.org/pdf/2510.25053v1,,False

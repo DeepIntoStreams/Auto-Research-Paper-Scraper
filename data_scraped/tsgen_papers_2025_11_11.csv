@@ -1,0 +1,360 @@
+Title,Publication Date,Author(s),Abstract,Link,DOI,Relevant
+SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards,10/11/2025,"Hunar Batra, Haoqin Tu, Hardy Chen, Yuanze Lin, Cihang Xie, Ronald Clark","Multimodal large language models (MLLMs) have achieved remarkable progress in
+vision-language tasks, but they continue to struggle with spatial
+understanding. Existing spatial MLLMs often rely on explicit 3D inputs or
+architecture-specific modifications, and remain constrained by large-scale
+datasets or sparse supervision. To address these limitations, we introduce
+SpatialThinker, a 3D-aware MLLM trained with RL to integrate structured spatial
+grounding with multi-step reasoning. The model simulates human-like spatial
+perception by constructing a scene graph of task-relevant objects and spatial
+relations, and reasoning towards an answer via dense spatial rewards.
+SpatialThinker consists of two key contributions: (1) a data synthesis pipeline
+that generates STVQA-7K, a high-quality spatial VQA dataset, and (2) online RL
+with a multi-objective dense spatial reward enforcing spatial grounding.
+SpatialThinker-7B outperforms supervised fine-tuning and the sparse RL baseline
+on spatial understanding and real-world VQA benchmarks, nearly doubling the
+base-model gain compared to sparse RL, and surpassing GPT-4o. These results
+showcase the effectiveness of combining spatial supervision with reward-aligned
+reasoning in enabling robust 3D spatial understanding with limited data and
+advancing MLLMs towards human-level visual reasoning.",http://arxiv.org/pdf/2511.07403v1,,False
+StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation,10/11/2025,"Tianrui Feng, Zhi Li, Shuo Yang, Haocheng Xi, Muyang Li, Xiuyu Li, Lvmin Zhang, Keting Yang, Kelly Peng, Song Han, Maneesh Agrawala, Kurt Keutzer, Akio Kodaira, Chenfeng Xu","Generative models are reshaping the live-streaming industry by redefining how
+content is created, styled, and delivered. Previous image-based streaming
+diffusion models have powered efficient and creative live streaming products
+but have hit limits on temporal consistency due to the foundation of
+image-based designs. Recent advances in video diffusion have markedly improved
+temporal consistency and sampling efficiency for offline generation. However,
+offline generation systems primarily optimize throughput by batching large
+workloads. In contrast, live online streaming operates under strict
+service-level objectives (SLOs): time-to-first-frame must be minimal, and every
+frame must meet a per-frame deadline with low jitter. Besides, scalable
+multi-GPU serving for real-time streams remains largely unresolved so far. To
+address this, we present StreamDiffusionV2, a training-free pipeline for
+interactive live streaming with video diffusion models. StreamDiffusionV2
+integrates an SLO-aware batching scheduler and a block scheduler, together with
+a sink-token--guided rolling KV cache, a motion-aware noise controller, and
+other system-level optimizations. Moreover, we introduce a scalable pipeline
+orchestration that parallelizes the diffusion process across denoising steps
+and network layers, achieving near-linear FPS scaling without violating latency
+guarantees. The system scales seamlessly across heterogeneous GPU environments
+and supports flexible denoising steps (e.g., 1--4), enabling both
+ultra-low-latency and higher-quality modes. Without TensorRT or quantization,
+StreamDiffusionV2 renders the first frame within 0.5s and attains 58.28 FPS
+with a 14B-parameter model and 64.52 FPS with a 1.3B-parameter model on four
+H100 GPUs, making state-of-the-art generative live streaming practical and
+accessible--from individual creators to enterprise-scale platforms.",http://arxiv.org/pdf/2511.07399v1,,False
+A Diffusion Model to Shrink Proteins While Maintaining Their Function,10/11/2025,"Ethan Baron, Alan N. Amin, Ruben Weitzman, Debora Marks, Andrew Gordon Wilson","Many proteins useful in modern medicine or bioengineering are challenging to
+make in the lab, fuse with other proteins in cells, or deliver to tissues in
+the body, because their sequences are too long. Shortening these sequences
+typically involves costly, time-consuming experimental campaigns. Ideally, we
+could instead use modern models of massive databases of sequences from nature
+to learn how to propose shrunken proteins that resemble sequences found in
+nature. Unfortunately, these models struggle to efficiently search the
+combinatorial space of all deletions, and are not trained with inductive biases
+to learn how to delete. To address this gap, we propose SCISOR, a novel
+discrete diffusion model that deletes letters from sequences to generate
+protein samples that resemble those found in nature. To do so, SCISOR trains a
+de-noiser to reverse a forward noising process that adds random insertions to
+natural sequences. As a generative model, SCISOR fits evolutionary sequence
+data competitively with previous large models. In evaluation, SCISOR achieves
+state-of-the-art predictions of the functional effects of deletions on
+ProteinGym. Finally, we use the SCISOR de-noiser to shrink long protein
+sequences, and show that its suggested deletions result in significantly more
+realistic proteins and more often preserve functional motifs than previous
+models of evolutionary sequences.",http://arxiv.org/pdf/2511.07390v1,,False
+DeepPersona: A Generative Engine for Scaling Deep Synthetic Personas,10/11/2025,"Zhen Wang, Yufan Zhou, Zhongyan Luo, Lyumanshan Ye, Adam Wood, Man Yao, Luoshang Pan","Simulating human profiles by instilling personas into large language models
+(LLMs) is rapidly transforming research in agentic behavioral simulation, LLM
+personalization, and human-AI alignment. However, most existing synthetic
+personas remain shallow and simplistic, capturing minimal attributes and
+failing to reflect the rich complexity and diversity of real human identities.
+We introduce DEEPPERSONA, a scalable generative engine for synthesizing
+narrative-complete synthetic personas through a two-stage, taxonomy-guided
+method. First, we algorithmically construct the largest-ever human-attribute
+taxonomy, comprising over hundreds of hierarchically organized attributes, by
+mining thousands of real user-ChatGPT conversations. Second, we progressively
+sample attributes from this taxonomy, conditionally generating coherent and
+realistic personas that average hundreds of structured attributes and roughly 1
+MB of narrative text, two orders of magnitude deeper than prior works.
+Intrinsic evaluations confirm significant improvements in attribute diversity
+(32 percent higher coverage) and profile uniqueness (44 percent greater)
+compared to state-of-the-art baselines. Extrinsically, our personas enhance
+GPT-4.1-mini's personalized question answering accuracy by 11.6 percent on
+average across ten metrics and substantially narrow (by 31.7 percent) the gap
+between simulated LLM citizens and authentic human responses in social surveys.
+Our generated national citizens reduced the performance gap on the Big Five
+personality test by 17 percent relative to LLM-simulated citizens. DEEPPERSONA
+thus provides a rigorous, scalable, and privacy-free platform for high-fidelity
+human simulation and personalized AI research.",http://arxiv.org/pdf/2511.07338v1,,False
+Beyond Detection: Exploring Evidence-based Multi-Agent Debate for Misinformation Intervention and Persuasion,10/11/2025,"Chen Han, Yijia Ma, Jin Tan, Wenzhen Zheng, Xijin Tang","Multi-agent debate (MAD) frameworks have emerged as promising approaches for
+misinformation detection by simulating adversarial reasoning. While prior work
+has focused on detection accuracy, it overlooks the importance of helping users
+understand the reasoning behind factual judgments and develop future
+resilience. The debate transcripts generated during MAD offer a rich but
+underutilized resource for transparent reasoning. In this study, we introduce
+ED2D, an evidence-based MAD framework that extends previous approach by
+incorporating factual evidence retrieval. More importantly, ED2D is designed
+not only as a detection framework but also as a persuasive multi-agent system
+aimed at correcting user beliefs and discouraging misinformation sharing. We
+compare the persuasive effects of ED2D-generated debunking transcripts with
+those authored by human experts. Results demonstrate that ED2D outperforms
+existing baselines across three misinformation detection benchmarks. When ED2D
+generates correct predictions, its debunking transcripts exhibit persuasive
+effects comparable to those of human experts; However, when ED2D misclassifies,
+its accompanying explanations may inadvertently reinforce users'misconceptions,
+even when presented alongside accurate human explanations. Our findings
+highlight both the promise and the potential risks of deploying MAD systems for
+misinformation intervention. We further develop a public community website to
+help users explore ED2D, fostering transparency, critical thinking, and
+collaborative fact-checking.",http://arxiv.org/pdf/2511.07267v1,,False
+Conditional Diffusion as Latent Constraints for Controllable Symbolic Music Generation,10/11/2025,"Matteo Pettenó, Alessandro Ilic Mezza, Alberto Bernardini","Recent advances in latent diffusion models have demonstrated state-of-the-art
+performance in high-dimensional time-series data synthesis while providing
+flexible control through conditioning and guidance. However, existing
+methodologies primarily rely on musical context or natural language as the main
+modality of interacting with the generative process, which may not be ideal for
+expert users who seek precise fader-like control over specific musical
+attributes. In this work, we explore the application of denoising diffusion
+processes as plug-and-play latent constraints for unconditional symbolic music
+generation models. We focus on a framework that leverages a library of small
+conditional diffusion models operating as implicit probabilistic priors on the
+latents of a frozen unconditional backbone. While previous studies have
+explored domain-specific use cases, this work, to the best of our knowledge, is
+the first to demonstrate the versatility of such an approach across a diverse
+array of musical attributes, such as note density, pitch range, contour, and
+rhythm complexity. Our experiments show that diffusion-driven constraints
+outperform traditional attribute regularization and other latent constraints
+architectures, achieving significantly stronger correlations between target and
+generated attributes while maintaining high perceptual quality and diversity.",http://arxiv.org/pdf/2511.07156v1,,False
+Dynamics-Decoupled Trajectory Alignment for Sim-to-Real Transfer in Reinforcement Learning for Autonomous Driving,10/11/2025,"Thomas Steinecker, Alexander Bienemann, Denis Trescher, Thorsten Luettel, Mirko Maehlisch","Reinforcement learning (RL) has shown promise in robotics, but deploying RL
+on real vehicles remains challenging due to the complexity of vehicle dynamics
+and the mismatch between simulation and reality. Factors such as tire
+characteristics, road surface conditions, aerodynamic disturbances, and vehicle
+load make it infeasible to model real-world dynamics accurately, which hinders
+direct transfer of RL agents trained in simulation. In this paper, we present a
+framework that decouples motion planning from vehicle control through a spatial
+and temporal alignment strategy between a virtual vehicle and the real system.
+An RL agent is first trained in simulation using a kinematic bicycle model to
+output continuous control actions. Its behavior is then distilled into a
+trajectory-predicting agent that generates finite-horizon ego-vehicle
+trajectories, enabling synchronization between virtual and real vehicles. At
+deployment, a Stanley controller governs lateral dynamics, while longitudinal
+alignment is maintained through adaptive update mechanisms that compensate for
+deviations between virtual and real trajectories. We validate our approach on a
+real vehicle and demonstrate that the proposed alignment strategy enables
+robust zero-shot transfer of RL-based motion planning from simulation to
+reality, successfully decoupling high-level trajectory generation from
+low-level vehicle control.",http://arxiv.org/pdf/2511.07155v1,,False
+A Theoretical Analysis of Detecting Large Model-Generated Time Series,10/11/2025,"Junji Hou, Junzhou Zhao, Shuo Zhang, Pinghui Wang","Motivated by the increasing risks of data misuse and fabrication, we
+investigate the problem of identifying synthetic time series generated by
+Time-Series Large Models (TSLMs) in this work. While there are extensive
+researches on detecting model generated text, we find that these existing
+methods are not applicable to time series data due to the fundamental modality
+difference, as time series usually have lower information density and smoother
+probability distributions than text data, which limit the discriminative power
+of token-based detectors. To address this issue, we examine the subtle
+distributional differences between real and model-generated time series and
+propose the contraction hypothesis, which states that model-generated time
+series, unlike real ones, exhibit progressively decreasing uncertainty under
+recursive forecasting. We formally prove this hypothesis under theoretical
+assumptions on model behavior and time series structure. Model-generated time
+series exhibit progressively concentrated distributions under recursive
+forecasting, leading to uncertainty contraction. We provide empirical
+validation of the hypothesis across diverse datasets. Building on this insight,
+we introduce the Uncertainty Contraction Estimator (UCE), a white-box detector
+that aggregates uncertainty metrics over successive prefixes to identify
+TSLM-generated time series. Extensive experiments on 32 datasets show that UCE
+consistently outperforms state-of-the-art baselines, offering a reliable and
+generalizable solution for detecting model-generated time series.",http://arxiv.org/pdf/2511.07104v1,,False
+"Do LLMs Feel? Teaching Emotion Recognition with Prompts, Retrieval, and Curriculum Learning",10/11/2025,"Xinran Li, Xiujuan Xu, Jiaqi Qiao, Yu Liu","Emotion Recognition in Conversation (ERC) is a crucial task for understanding
+human emotions and enabling natural human-computer interaction. Although Large
+Language Models (LLMs) have recently shown great potential in this field, their
+ability to capture the intrinsic connections between explicit and implicit
+emotions remains limited. We propose a novel ERC training framework, PRC-Emo,
+which integrates Prompt engineering, demonstration Retrieval, and Curriculum
+learning, with the goal of exploring whether LLMs can effectively perceive
+emotions in conversational contexts. Specifically, we design emotion-sensitive
+prompt templates based on both explicit and implicit emotional cues to better
+guide the model in understanding the speaker's psychological states. We
+construct the first dedicated demonstration retrieval repository for ERC, which
+includes training samples from widely used datasets, as well as high-quality
+dialogue examples generated by LLMs and manually verified. Moreover, we
+introduce a curriculum learning strategy into the LoRA fine-tuning process,
+incorporating weighted emotional shifts between same-speaker and
+different-speaker utterances to assign difficulty levels to dialogue samples,
+which are then organized in an easy-to-hard training sequence. Experimental
+results on two benchmark datasets-- IEMOCAP and MELD --show that our method
+achieves new state-of-the-art (SOTA) performance, demonstrating the
+effectiveness and generalizability of our approach in improving LLM-based
+emotional understanding.",http://arxiv.org/pdf/2511.07061v1,,False
+Counterfactual Explanation for Multivariate Time Series Forecasting with Exogenous Variables,10/11/2025,Keita Kinjo,"Currently, machine learning is widely used across various domains, including
+time series data analysis. However, some machine learning models function as
+black boxes, making interpretability a critical concern. One approach to
+address this issue is counterfactual explanation (CE), which aims to provide
+insights into model predictions. This study focuses on the relatively
+underexplored problem of generating counterfactual explanations for time series
+forecasting. We propose a method for extracting CEs in time series forecasting
+using exogenous variables, which are frequently encountered in fields such as
+business and marketing. In addition, we present methods for analyzing the
+influence of each variable over an entire time series, generating CEs by
+altering only specific variables, and evaluating the quality of the resulting
+CEs. We validate the proposed method through theoretical analysis and empirical
+experiments, showcasing its accuracy and practical applicability. These
+contributions are expected to support real-world decision-making based on time
+series data analysis.",http://arxiv.org/pdf/2511.06906v1,,False
+Beyond Observations: Reconstruction Error-Guided Irregularly Sampled Time Series Representation Learning,10/11/2025,"Jiexi Liu, Meng Cao, Songcan Chen","Irregularly sampled time series (ISTS), characterized by non-uniform time
+intervals with natural missingness, are prevalent in real-world applications.
+Existing approaches for ISTS modeling primarily rely on observed values to
+impute unobserved ones or infer latent dynamics. However, these methods
+overlook a critical source of learning signal: the reconstruction error
+inherently produced during model training. Such error implicitly reflects how
+well a model captures the underlying data structure and can serve as an
+informative proxy for unobserved values. To exploit this insight, we propose
+iTimER, a simple yet effective self-supervised pre-training framework for ISTS
+representation learning. iTimER models the distribution of reconstruction
+errors over observed values and generates pseudo-observations for unobserved
+timestamps through a mixup strategy between sampled errors and the last
+available observations. This transforms unobserved timestamps into noise-aware
+training targets, enabling meaningful reconstruction signals. A Wasserstein
+metric aligns reconstruction error distributions between observed and
+pseudo-observed regions, while a contrastive learning objective enhances the
+discriminability of learned representations. Extensive experiments on
+classification, interpolation, and forecasting tasks demonstrate that iTimER
+consistently outperforms state-of-the-art methods under the ISTS setting.",http://arxiv.org/pdf/2511.06854v1,,False
+AgentSUMO: An Agentic Framework for Interactive Simulation Scenario Generation in SUMO via Large Language Models,10/11/2025,"Minwoo Jeong, Jeeyun Chang, Yoonjin Yoon","The growing complexity of urban mobility systems has made traffic simulation
+indispensable for evidence-based transportation planning and policy evaluation.
+However, despite the analytical capabilities of platforms such as the
+Simulation of Urban MObility (SUMO), their application remains largely confined
+to domain experts. Developing realistic simulation scenarios requires expertise
+in network construction, origin-destination modeling, and parameter
+configuration for policy experimentation, creating substantial barriers for
+non-expert users such as policymakers, urban planners, and city officials.
+Moreover, the requests expressed by these users are often incomplete and
+abstract-typically articulated as high-level objectives, which are not well
+aligned with the imperative, sequential workflows employed in existing
+language-model-based simulation frameworks. To address these challenges, this
+study proposes AgentSUMO, an agentic framework for interactive simulation
+scenario generation via large language models. AgentSUMO departs from
+imperative, command-driven execution by introducing an adaptive reasoning layer
+that interprets user intents, assesses task complexity, infers missing
+parameters, and formulates executable simulation plans. The framework is
+structured around two complementary components, the Interactive Planning
+Protocol, which governs reasoning and user interaction, and the Model Context
+Protocol, which manages standardized communication and orchestration among
+simulation tools. Through this design, AgentSUMO converts abstract policy
+objectives into executable simulation scenarios. Experiments on urban networks
+in Seoul and Manhattan demonstrate that the agentic workflow achieves
+substantial improvements in traffic flow metrics while maintaining
+accessibility for non-expert users, successfully bridging the gap between
+policy goals and executable simulation workflows.",http://arxiv.org/pdf/2511.06804v1,,False
+On the Mechanisms of Collaborative Learning in VAE Recommenders,10/11/2025,"Tung-Long Vuong, Julien Monteil, Hien Dang, Volodymyr Vaskovych, Trung Le, Vu Nguyen","Variational Autoencoders (VAEs) are a powerful alternative to matrix
+factorization for recommendation. A common technique in VAE-based collaborative
+filtering (CF) consists in applying binary input masking to user interaction
+vectors, which improves performance but remains underexplored theoretically. In
+this work, we analyze how collaboration arises in VAE-based CF and show it is
+governed by latent proximity: we derive a latent sharing radius that informs
+when an SGD update on one user strictly reduces the loss on another user, with
+influence decaying as the latent Wasserstein distance increases. We further
+study the induced geometry: with clean inputs, VAE-based CF primarily exploits
+\emph{local} collaboration between input-similar users and under-utilizes
+global collaboration between far-but-related users. We compare two mechanisms
+that encourage \emph{global} mixing and characterize their trade-offs: (1)
+$\beta$-KL regularization directly tightens the information bottleneck,
+promoting posterior overlap but risking representational collapse if too large;
+(2) input masking induces stochastic geometric contractions and expansions,
+which can bring distant users onto the same latent neighborhood but also
+introduce neighborhood drift. To preserve user identity while enabling global
+consistency, we propose an anchor regularizer that aligns user posteriors with
+item embeddings, stabilizing users under masking and facilitating signal
+sharing across related items. Our analyses are validated on the Netflix,
+MovieLens-20M, and Million Song datasets. We also successfully deployed our
+proposed algorithm on an Amazon streaming platform following a successful
+online experiment.",http://arxiv.org/pdf/2511.06781v1,,False
+Structural Enforcement of Statistical Rigor in AI-Driven Discovery: A Functional Architecture,10/11/2025,Karen Sargsyan,"Sequential statistical protocols require meticulous state management and
+robust error handling -- challenges naturally suited to functional programming.
+We present a functional architecture for structural enforcement of statistical
+rigor in automated research systems (AI-Scientists). These LLM-driven systems
+risk generating spurious discoveries through dynamic hypothesis testing. We
+introduce the Research monad, a Haskell eDSL that enforces sequential
+statistical protocols (e.g., Online FDR (false discovery rate) control) using a
+monad transformer stack. To address risks in hybrid architectures where LLMs
+generate imperative code, we employ Declarative Scaffolding -- generating rigid
+harnesses that structurally constrain execution and prevent methodological
+errors like data leakage. We validate this approach through large-scale
+simulation (N=2000 hypotheses) and an end-to-end case study, demonstrating
+essential defense-in-depth for automated science integrity.",http://arxiv.org/pdf/2511.06701v1,,False
+Rapidly Learning Soft Robot Control via Implicit Time-Stepping,10/11/2025,"Andrew Choi, Dezhong Tong","With the explosive growth of rigid-body simulators, policy learning in
+simulation has become the de facto standard for most rigid morphologies. In
+contrast, soft robotic simulation frameworks remain scarce and are seldom
+adopted by the soft robotics community. This gap stems partly from the lack of
+easy-to-use, general-purpose frameworks and partly from the high computational
+cost of accurately simulating continuum mechanics, which often renders policy
+learning infeasible. In this work, we demonstrate that rapid soft robot policy
+learning is indeed achievable via implicit time-stepping. Our simulator of
+choice, DisMech, is a general-purpose, fully implicit soft-body simulator
+capable of handling both soft dynamics and frictional contact. We further
+introduce delta natural curvature control, a method analogous to delta joint
+position control in rigid manipulators, providing an intuitive and effective
+means of enacting control for soft robot learning. To highlight the benefits of
+implicit time-stepping and delta curvature control, we conduct extensive
+comparisons across four diverse soft manipulator tasks against one of the most
+widely used soft-body frameworks, Elastica. With implicit time-stepping,
+parallel stepping of 500 environments achieves up to 6x faster speeds for
+non-contact cases and up to 40x faster for contact-rich scenarios. Finally, a
+comprehensive sim-to-sim gap evaluation--training policies in one simulator and
+evaluating them in another--demonstrates that implicit time-stepping provides a
+rare free lunch: dramatic speedups achieved without sacrificing accuracy.",http://arxiv.org/pdf/2511.06667v1,,False
+CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction,10/11/2025,"Kaiyuan Zhai, Jiacheng Cui, Zhehao Zhang, Junyu Xue, Yang Deng, Kui Wu, Guoming Tang","Cross-domain HVAC energy prediction is essential for scalable building energy
+management, particularly because collecting extensive labeled data for every
+new building is both costly and impractical. Yet, this task remains highly
+challenging due to the scarcity and heterogeneity of data across different
+buildings, climate zones, and seasonal patterns. In particular, buildings
+situated in distinct climatic regions introduce variability that often leads
+existing methods to overfit to spurious correlations, rely heavily on expert
+intervention, or compromise on data diversity. To address these limitations, we
+propose CaberNet, a causal and interpretable deep sequence model that learns
+invariant (Markov blanket) representations for robust cross-domain prediction.
+In a purely data-driven fashion and without requiring any prior knowledge,
+CaberNet integrates i) a global feature gate trained with a self-supervised
+Bernoulli regularization to distinguish superior causal features from inferior
+ones, and ii) a domain-wise training scheme that balances domain contributions,
+minimizes cross-domain loss variance, and promotes latent factor independence.
+We evaluate CaberNet on real-world datasets collected from three buildings
+located in three climatically diverse cities, and it consistently outperforms
+all baselines, achieving a 22.9\% reduction in normalized mean squared error
+(NMSE) compared to the best benchmark. Our code is available at
+https://github.com/rickzky1001/CaberNet-CRL.",http://arxiv.org/pdf/2511.06634v1,,False
+How Do VLAs Effectively Inherit from VLMs?,10/11/2025,"Chuheng Zhang, Rushuai Yang, Xiaoyu Chen, Kaixin Wang, Li Zhao, Yi Chen, Jiang Bian","Vision-language-action (VLA) models hold the promise to attain generalizable
+embodied control. To achieve this, a pervasive paradigm is to leverage the rich
+vision-semantic priors of large vision-language models (VLMs). However, the
+fundamental question persists: How do VLAs effectively inherit the prior
+knowledge from VLMs? To address this critical question, we introduce a
+diagnostic benchmark, GrinningFace, an emoji tabletop manipulation task where
+the robot arm is asked to place objects onto printed emojis corresponding to
+language instructions. This task design is particularly revealing -- knowledge
+associated with emojis is ubiquitous in Internet-scale datasets used for VLM
+pre-training, yet emojis themselves are largely absent from standard robotics
+datasets. Consequently, they provide a clean proxy: successful task completion
+indicates effective transfer of VLM priors to embodied control. We implement
+this diagnostic task in both simulated environment and a real robot, and
+compare various promising techniques for knowledge transfer. Specifically, we
+investigate the effects of parameter-efficient fine-tuning, VLM freezing,
+co-training, predicting discretized actions, and predicting latent actions.
+Through systematic evaluation, our work not only demonstrates the critical
+importance of preserving VLM priors for the generalization of VLA but also
+establishes guidelines for future research in developing truly generalizable
+embodied AI systems.",http://arxiv.org/pdf/2511.06619v1,,False
+SPUR: A Plug-and-Play Framework for Integrating Spatial Audio Understanding and Reasoning into Large Audio-Language Models,10/11/2025,"S Sakshi, Vaibhavi Lokegaonkar, Neil Zhang, Ramani Duraiswami, Sreyan Ghosh, Dinesh Manocha, Lie Lu","Spatial perception is central to auditory intelligence, enabling accurate
+understanding of real-world acoustic scenes and advancing human-level
+perception of the world around us. While recent large audio-language models
+(LALMs) show strong reasoning over complex audios, most operate on monaural
+inputs and lack the ability to capture spatial cues such as direction,
+elevation, and distance. We introduce SPUR, a lightweight, plug-in approach
+that equips LALMs with spatial perception through minimal architectural
+changes. SPUR consists of: (i) a First-Order Ambisonics (FOA) encoder that maps
+(W, X, Y, Z) channels to rotation-aware, listener-centric spatial features,
+integrated into target LALMs via a multimodal adapter; and (ii) SPUR-Set, a
+spatial QA dataset combining open-source FOA recordings with controlled
+simulations, emphasizing relative direction, elevation, distance, and overlap
+for supervised spatial reasoning. Fine-tuning our model on the SPUR-Set
+consistently improves spatial QA and multi-speaker attribution while preserving
+general audio understanding. SPUR provides a simple recipe that transforms
+monaural LALMs into spatially aware models. Extensive ablations validate the
+effectiveness of our approach.",http://arxiv.org/pdf/2511.06606v1,,False
